@@ -1,0 +1,57 @@
+﻿add_namespace = senshado_events
+#欢迎游玩mod
+country_event = {
+	id = senshado_events.1
+	title = senshado_events.1.t
+	desc = senshado_events.1.d
+	picture = GFX_event_senshado_welcome
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = senshado_events.1.c1
+	}
+}
+#一号池陆军将领重复招募
+country_event = {
+	id = senshado_events.3
+	title = senshado_events.3.t
+	desc = senshado_events.3.d
+	picture = GFX_event_senshado_repeatrecruit
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = senshado_events.3.c1
+		army_experience = 10
+		air_experience = 10
+		add_manpower = 10000
+	}
+}
+#将领招募成功
+country_event = {
+	id = senshado_events.4
+	title = senshado_events.4.t
+	desc = senshado_events.4.d
+	picture = GFX_event_senshado_recruitsuccess
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = senshado_events.4.c1
+	}
+}
+#海军将领重复招募，成功事件和陆军共享
+country_event = {
+	id = senshado_events.5
+	title = senshado_events.5.t
+	desc = senshado_events.5.d
+	picture = GFX_event_senshado_repeatrecruit
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = senshado_events.5.c1
+		navy_experience = 20
+	}
+}

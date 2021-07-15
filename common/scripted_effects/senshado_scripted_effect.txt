@@ -1,0 +1,37 @@
+#触发好感度事件,章节直接取人物好感度
+fire_affinity_dialogue_maho = {
+	set_country_flag = dialogue.maho
+	set_country_flag = open_affinity_dialogue
+}
+
+fire_affinity_dialogue_erika = {
+	set_country_flag = dialogue.erika
+	set_country_flag = open_affinity_dialogue
+}
+
+
+#一号人物增加好感度并触发事件
+affinity_increase_1 = {
+	
+	if = {
+		limit = { check_variable = {affinity_1 < 9} tag = GER}
+		add_to_variable = {
+			var = affinity_1
+			value = 1
+		}
+		fire_affinity_dialogue_maho  = yes
+	}
+}
+
+#一号人物增加好感度并触发事件
+affinity_increase_2 = {
+	
+	if = {
+		limit = { check_variable = {affinity_1 < 9} tag = GER}
+		add_to_variable = {
+			var = affinity_2
+			value = 1
+		}
+		fire_affinity_dialogue_erika  = yes
+	}
+}

@@ -1,0 +1,55 @@
+scripted_gui = {
+	affinity_dialogue = {
+	  window_name = "affinity_dialogue"
+	  context_type = player_context
+  
+	  visible = {
+		has_country_flag = open_affinity_dialogue
+	  }
+  
+	  effects = {
+		affinity_dialogue_close_click = {
+			clr_country_flag = open_affinity_dialogue
+			clr_country_flag = dialogue.maho
+			clr_country_flag = dialogue.erika
+
+			clear_variable = dialogue_process
+			clear_variable = dialogue_figure
+		}
+		affinity_dialogue_bar_click = {
+			add_to_variable = { dialogue_process = 1 }
+		}
+	  }
+  
+	  triggers = {
+		# <element>_click_enabled = {
+		#     <triggers>
+		# }
+			
+		
+	  }
+  
+	  dynamic_lists = {
+		}
+  
+	  properties = {
+	  }
+  
+	  ai_enabled = {
+		  always = no
+	  }
+  
+	  ai_test_interval = 290  # The higher, the long it takes the ai to do actions
+	  ai_test_variance = 0.5
+  
+	  ai_check = {
+	  }
+  
+	  ai_check_scope = {
+	  }
+  
+	  ai_weights = {
+	  }
+	}
+}
+  

@@ -1,0 +1,49 @@
+add_namespace = senshado_japan_events
+
+#德国优势碾压事件选项1
+country_event = {
+	id = japan.500
+	title = japan.500.t
+	desc = japan.500.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		#强硬
+		name = japan.500.a
+		JAP = { add_war_support = 0.15 }
+		GER = {country_event = { id = germany.511 days = 1}}
+	}
+	option = {
+		#软弱
+		name = japan.500.b
+		JAP = { add_stability = -0.05 add_political_power = 200 }
+		GER = {country_event = { id = germany.512 days = 1}}
+	}
+}
+
+#德国优势碾压事件选项2
+country_event = {
+	id = japan.501
+	title = japan.501.t
+	desc = japan.501.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		#回礼技术援助
+		name = japan.501.a
+		JAP = { add_tech_bonus = {
+			bonus = 0.3
+			uses = 1
+			category = land_doctrine
+		} }
+		GER = { country_event = { id = germany.513 days = 1} }
+	}
+	option = {
+		#回礼装备援助
+		name = japan.501.b
+		JAP = { add_political_power = 80 air_experience = 5 }
+		GER = { country_event = { id = germany.514 days = 1} }
+	}
+}

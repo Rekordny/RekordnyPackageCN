@@ -1,0 +1,276 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "affinity_main"
+		position = { x = 0 y = 0}	
+		size = { width = 800 height= 650 }
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable = yes
+		fade_type = linear
+		click_to_front = no
+		clipping = no
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_affinity_main_background"
+		}
+
+		buttonType ={
+			name ="close_button"
+			spriteType = "GFX_affinity_close_button_background"
+			position = { x= -60 y = 15 }
+			Orientation = "UPPER_RIGHT"
+		}	
+
+
+		#第一个item####################################################
+		buttonType ={
+			name ="item_bar_1"
+			spriteType = "GFX_affinity_bar_item"
+			position = { x= 60 y = 68 }
+			Orientation = "UPPER_LEFT"
+		}
+		#第一个人物头像
+		buttonType ={
+			name ="chara_thumb_maho"
+			spriteType = "GFX_affinity_maho"
+			position = { x= 68 y = 76 }
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name ="affinity_level_1"
+			position = { x= 208 y = 106 }
+			font = "hoi_18mbs"
+			text = "affinity_level"
+			format = center
+			maxWidth = 130
+			maxHeight = 22
+			fixedsize = yes
+			pdx_tooltip = "affinity_tooltip" 
+			# pdx_tooltip_delayed = "MONEY_TOOLTIP_DELAYED"
+		}
+		#LEVEL
+		iconType = {
+			name = "affinity_level_1_icon_0"
+			spriteType = "GFX_affinity_level_0"
+			position = { x= 338 y = 106 }
+		}
+		iconType = {
+			name = "affinity_level_1_icon_1"
+			spriteType = "GFX_affinity_level_1"
+			position = { x= 338 y = 106 }
+		}
+		iconType = {
+			name = "affinity_level_1_icon_2"
+			spriteType = "GFX_affinity_level_2"
+			position = { x= 338 y = 106 }
+		}
+		iconType = {
+			name = "affinity_level_1_icon_3"
+			spriteType = "GFX_affinity_level_3"
+			position = { x= 338 y = 106 }
+		}
+		iconType = {
+			name = "affinity_level_1_icon_4"
+			spriteType = "GFX_affinity_level_4"
+			position = { x= 338 y = 106 }
+		}
+		iconType = {
+			name = "affinity_level_1_icon_5"
+			spriteType = "GFX_affinity_level_5"
+			position = { x= 338 y = 106 }
+		}
+		iconType = {
+			name = "affinity_level_1_icon_6"
+			spriteType = "GFX_affinity_level_6"
+			position = { x= 338 y = 106 }
+		}
+		iconType = {
+			name = "affinity_level_1_icon_7"
+			spriteType = "GFX_affinity_level_7"
+			position = { x= 338 y = 106 }
+		}
+		iconType = {
+			name = "affinity_level_1_icon_8"
+			spriteType = "GFX_affinity_level_8"
+			position = { x= 338 y = 106 }
+		}
+
+
+		#第二个item########################################################
+		buttonType ={
+			name ="item_bar_2"
+			spriteType = "GFX_affinity_bar_item"
+			position = { x= 60 y = 225 }
+			Orientation = "UPPER_LEFT"
+		}	
+		#第二个人物头像
+		buttonType ={
+			name ="chara_thumb_erika"
+			spriteType = "GFX_affinity_erika"
+			position = { x= 68 y = 233 }
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name ="affinity_level_2"
+			position = { x= 208 y = 266 }
+			font = "hoi_18mbs"
+			text = "affinity_level"
+			format = center
+			maxWidth = 130
+			maxHeight = 22
+			fixedsize = yes
+			pdx_tooltip = "affinity_tooltip" 
+			# pdx_tooltip_delayed = "MONEY_TOOLTIP_DELAYED"
+		}
+		#LEVEL
+		iconType = {
+			name = "affinity_level_2_icon_0"
+			spriteType = "GFX_affinity_level_0"
+			position = { x= 338 y = 266 }
+		}
+		iconType = {
+			name = "affinity_level_2_icon_1"
+			spriteType = "GFX_affinity_level_1"
+			position = { x= 338 y = 266 }
+		}
+		iconType = {
+			name = "affinity_level_2_icon_2"
+			spriteType = "GFX_affinity_level_2"
+			position = { x= 338 y = 266 }
+		}
+		iconType = {
+			name = "affinity_level_2_icon_3"
+			spriteType = "GFX_affinity_level_3"
+			position = { x= 338 y = 266 }
+		}
+		iconType = {
+			name = "affinity_level_2_icon_4"
+			spriteType = "GFX_affinity_level_4"
+			position = { x= 338 y = 266 }
+		}
+		iconType = {
+			name = "affinity_level_2_icon_5"
+			spriteType = "GFX_affinity_level_5"
+			position = { x= 338 y = 266 }
+		}
+		iconType = {
+			name = "affinity_level_2_icon_6"
+			spriteType = "GFX_affinity_level_6"
+			position = { x= 338 y = 266 }
+		}
+		iconType = {
+			name = "affinity_level_2_icon_7"
+			spriteType = "GFX_affinity_level_7"
+			position = { x= 338 y = 266 }
+		}
+		iconType = {
+			name = "affinity_level_2_icon_8"
+			spriteType = "GFX_affinity_level_8"
+			position = { x= 338 y = 266 }
+		}
+
+
+
+		#第三个item########################################################
+		buttonType ={
+			name ="item_bar_3"
+			spriteType = "GFX_affinity_bar_item"
+			position = { x= 60 y = 375 }
+			Orientation = "UPPER_LEFT"
+		}	
+		#第三个人物头像
+		buttonType ={
+			name ="chara_thumb_miho"
+			spriteType = "GFX_affinity_miho"
+			position = { x= 68 y = 383 }
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name ="affinity_level_3"
+			position = { x= 208 y = 416 }
+			font = "hoi_18mbs"
+			text = "affinity_level"
+			format = center
+			maxWidth = 130
+			maxHeight = 22
+			fixedsize = yes
+			pdx_tooltip = "affinity_tooltip" 
+			# pdx_tooltip_delayed = "MONEY_TOOLTIP_DELAYED"
+		}
+		#LEVEL
+		iconType = {
+			name = "affinity_level_3_icon_0"
+			spriteType = "GFX_affinity_level_0"
+			position = { x= 338 y = 416 }
+		}
+		iconType = {
+			name = "affinity_level_3_icon_1"
+			spriteType = "GFX_affinity_level_1"
+			position = { x= 338 y = 416 }
+		}
+		iconType = {
+			name = "affinity_level_3_icon_2"
+			spriteType = "GFX_affinity_level_2"
+			position = { x= 338 y = 416 }
+		}
+		iconType = {
+			name = "affinity_level_3_icon_3"
+			spriteType = "GFX_affinity_level_3"
+			position = { x= 338 y = 416 }
+		}
+		iconType = {
+			name = "affinity_level_3_icon_4"
+			spriteType = "GFX_affinity_level_4"
+			position = { x= 338 y = 416 }
+		}
+		iconType = {
+			name = "affinity_level_3_icon_5"
+			spriteType = "GFX_affinity_level_5"
+			position = { x= 338 y = 416 }
+		}
+		iconType = {
+			name = "affinity_level_3_icon_6"
+			spriteType = "GFX_affinity_level_6"
+			position = { x= 338 y = 416 }
+		}
+		iconType = {
+			name = "affinity_level_3_icon_7"
+			spriteType = "GFX_affinity_level_7"
+			position = { x= 338 y = 416 }
+		}
+		iconType = {
+			name = "affinity_level_3_icon_8"
+			spriteType = "GFX_affinity_level_8"
+			position = { x= 338 y = 416 }
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		#instantTextboxType = {
+		#	name = "political_title"
+		#	position = { x = 45 y = 8 }
+		#	font = "hoi_36header"
+		#	borderSize = {x = 0 y = 0}
+		#	text = "POLITICAL_POLITICAL"
+		#	maxWidth = 400
+		#	maxHeight = 20
+		#	fixedsize = yes
+		#}
+	}
+}

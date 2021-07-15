@@ -1,0 +1,91 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_affinity_dialogue_bar"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_dialogue_bar.dds"
+	}
+	spriteType = {
+		name = "GFX_affinity_dialogue_bg"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_dialogue_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_affinity_dialogue_close"
+		textureFile = "/gfx/interface/scripted_gui_graphics/close_button.dds"
+	}
+	spriteType = {
+		name = "GFX_affinity_dialogue_choice"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_dialogue_choice.dds"
+	}
+
+	spriteType = {
+		name = "GFX_erika_1"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_2"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_3"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_4"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_4.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_5"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_5.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_6"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_6.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_7"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_7.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_8"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_8.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_9"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_9.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_10"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_10.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_11"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_11.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = ""
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_12.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_13"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_13.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_14"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_14.dds"
+		legacy_lazy_load = no
+	}
+
+}

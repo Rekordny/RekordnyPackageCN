@@ -1,0 +1,148 @@
+scripted_gui = {
+	province_governor = {
+	
+		context_type = selected_state_context
+		
+		window_name = "province_governor_container"
+		visible = {
+			is_controlled_by = ROOT
+		}
+		
+		effects = {
+			province_governor_add_steel_click = {
+				add_resource = {
+					type = steel
+					amount = 5
+				}
+				ROOT = { 
+					add_timed_idea = { idea = Adding_resources_generic days = 90 } 
+					add_to_variable = { ROOT.ssdp = -80 }
+				}
+			}
+			province_governor_add_aluminum_click = {
+				add_resource = {
+					type = aluminum
+					amount = 4
+				}
+				ROOT = { 
+					add_timed_idea = { idea = Adding_resources_generic days = 90 } 
+					add_to_variable = { ROOT.ssdp = -80 }
+				}
+			}
+			province_governor_add_tungsten_click = {
+				add_resource = {
+					type = tungsten
+					amount = 4
+				}
+				ROOT = { 
+					add_timed_idea = { idea = Adding_resources_generic days = 90 } 
+					add_to_variable = { ROOT.ssdp = -80 }
+				}
+			}
+			province_governor_add_chromium_click = {
+				add_resource = {
+					type = chromium
+					amount = 3
+				}
+				ROOT = { 
+					add_timed_idea = { idea = Adding_resources_generic days = 90 } 
+					add_to_variable = { ROOT.ssdp = -80 }
+				}
+			}
+			province_governor_senshado_click = {
+				set_temp_variable = { ideacost = 0 }
+				if = {
+					limit = { owner = { senshado_school = 1 }} 
+					add_to_temp_variable = { ideacost = 10 }
+				}
+				if = {
+					limit = { owner = { senshado_school = 2 }} 
+					add_to_temp_variable = { ideacost = 20 }
+				}
+				if = {
+					limit = { owner = { senshado_school = 3 }} 
+					add_to_temp_variable = { ideacost = 30 }
+				}
+				if = {
+					limit = { owner = { senshado_school = 4 }}
+					add_to_temp_variable = { ideacost = 40 }
+				}
+				if = {
+					limit = { owner = { senshado_school = 5 }}
+					add_to_temp_variable = { ideacost = 50 }
+				}
+				if = {
+					limit = { owner = { senshado_school = 6 }}
+					add_to_temp_variable = { ideacost = 60 }
+				}
+				if = {
+					limit = { owner = { senshado_school = 7 }}
+					add_to_temp_variable = { ideacost = 70 }
+				}
+				if = {
+					limit = { owner = { senshado_school = 8 }}
+					add_to_temp_variable = { ideacost = 80 }
+				}
+				if = {
+					limit = { owner = { senshado_school = 9 }}
+					add_to_temp_variable = { ideacost = 90 }
+				}
+				if = {
+					limit = { owner = { senshado_school > 9 }}
+					add_to_temp_variable = { ideacost = 100 }
+				}
+				ROOT = { 
+					add_to_variable = { ROOT.ssdp = ideacost }
+					multiply_temp_variable = { ideacost = 2 }
+					add_timed_idea = { idea = Recruiting_senshado_generic days = ideacost }
+				}
+			}
+			province_governor_add_manpower_click = {
+				set_temp_variable = { temp1 = state_population_k }
+				multiply_temp_variable = { temp1 = 0.1 }
+				set_temp_variable = { temp2 = temp1 }
+				multiply_temp_variable = { temp2 = -1 }
+				set_temp_variable = { temp3 = temp1 }
+				multiply_temp_variable = { temp1 = 1000 }
+				ROOT = { 
+					add_timed_idea = { idea = Adding_manpower_generic days = 120 } 
+					add_to_variable = { ROOT.ssdp = temp2 }
+					round_variable = ROOT.ssdp
+					add_manpower = temp1 
+				}
+			}
+		}
+
+		
+		
+		triggers = {
+			province_governor_add_steel_click_enabled = {
+				check_variable = { ROOT.ssdp > 79.999 }
+				ROOT = { NOT = { has_idea = Adding_resources_generic } }
+			}
+			province_governor_add_tungsten_click_enabled = {
+				check_variable = { ROOT.ssdp > 79.999 }
+				ROOT = { NOT = { has_idea = Adding_resources_generic } }
+			}
+			province_governor_add_aluminum_click_enabled = {
+				check_variable = { ROOT.ssdp > 79.999 }
+				ROOT = { NOT = { has_idea = Adding_resources_generic } }
+			}
+			province_governor_add_chromium_click_enabled = {
+				check_variable = { ROOT.ssdp > 79.999 }
+				ROOT = { NOT = { has_idea = Adding_resources_generic } }
+			}
+			province_governor_senshado_click_enabled = {
+				owner = { senshado_school > 0 }
+				ROOT = { NOT = { has_idea = Recruiting_senshado_generic } }
+			}
+			province_governor_add_manpower_click_enabled = {
+				check_variable = { ROOT.ssdp > temp3 }
+				ROOT = { NOT = { has_idea = Adding_manpower_generic } }
+			}
+		}
+		
+	}
+	
+}
+

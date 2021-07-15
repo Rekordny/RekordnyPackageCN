@@ -1,0 +1,36 @@
+spriteTypes = {	
+	#genric
+	spriteType = {
+		name = "GFX_event_senshado_welcome"
+		texturefile = "gfx/event_pictures/event_generic_welcome_to_senshado.dds"
+		legacy_lazy_load = no
+	}
+
+	
+	spriteType = {
+		name = "GFX_event_senshado_repeatrecruit"
+		texturefile = "gfx/event_pictures/event_senshado_repeatrecruit.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_event_senshado_recruitsuccess"
+		texturefile = "gfx/event_pictures/event_senshado_recruitsuccess.dds"
+		legacy_lazy_load = no
+	}
+
+	#POL
+	spriteType = {
+		name = "GFX_event_POL_rebuildbonple"
+		texturefile = "gfx/event_pictures/event_POL_rebuildbonple.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_event_POL_askBurma"
+		texturefile = "gfx/event_pictures/event_POL_askBurma.dds"
+		legacy_lazy_load = no
+	}
+
+	#GER
+}

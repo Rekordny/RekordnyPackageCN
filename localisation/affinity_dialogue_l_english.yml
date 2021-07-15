@@ -1,0 +1,64 @@
+﻿l_english:
+ 
+ dialogue_name.0:0 "默认名字"
+ dialogue_name.maho:0 "西住真穗"
+ dialogue_name.erika:0 "逸见艾丽卡"
+
+ #对话必须要每句话配一个立绘
+ dialogue_content:0 "默认对话"
+ maho_d1_0:0 "西住真穗默认对话内容"
+#maho-1
+ maho_d1_1:0 "西住真穗第1章"
+ maho_d1_1f:0 ""
+#maho-2
+ maho_d2_1:0 "西住真穗第2章"
+ maho_d2_1f:0 ""
+#maho-3
+ maho_d3_1:0 "西住真穗第3章"
+ maho_d3_1f:0 ""
+#maho-4
+ maho_d4_1:0 "西住真穗第4章"
+ maho_d4_1f:0 ""
+#maho-1
+ maho_d5_1:0 "西住真穗第5章"
+ maho_d5_1f:0 ""
+#maho-1
+ maho_d6_1:0 "西住真穗第6章"
+ maho_d6_1f:0 ""
+#maho-1
+ maho_d7_1:0 "西住真穗第7章"
+ maho_d7_1f:0 ""
+#maho-1
+ maho_d8_1:0 "西住真穗第8章"
+ maho_d8_1f:0 ""
+ 
+ erika_d1_0:0 "逸见艾丽卡默认对话内容"
+#erika-1
+ erika_d1_1:0 "erika第1章"
+ erika_d1_1f:0 "£GFX_erika_9"
+ erika_d1_2:0 "你好啊新人"
+ erika_d1_2f:0 "£GFX_erika_1"
+#erika-2
+ erika_d2_1:0 "erika第2章"
+ erika_d2_1f:0 "£GFX_erika_1"
+#erika-3
+ erika_d3_1:0 "erika第3章"
+ erika_d3_1f:0 "£GFX_erika_1"
+#erika-4
+ erika_d4_1:0 "erika第4章"
+ erika_d4_1f:0 "£GFX_erika_12"
+ erika_d4_2:0 "erika第4章第二句话"
+ erika_d4_2f:0 "£GFX_erika_4"
+#erika-5
+ erika_d5_1:0 "erika第5章"
+ erika_d5_1f:0 "£GFX_erika_1"
+#erika-6
+ erika_d6_1:0 "erika第6章"
+ erika_d6_1f:0 "£GFX_erika_1"
+#erika-7
+ erika_d7_1:0 "erika第7章"
+ erika_d7_1f:0 "£GFX_erika_1"
+#erika-8
+ erika_d8_1:0 "erika第8章"
+ erika_d8_1f:0 "£GFX_erika_1"
+ 

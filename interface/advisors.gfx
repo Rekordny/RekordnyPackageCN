@@ -1,0 +1,34 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_idea_erika"
+		texturefile = "gfx/interface/advisors/idea_erika.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_maho"
+		texturefile = "gfx/interface/advisors/idea_maho.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_miho"
+		texturefile = "gfx/interface/advisors/idea_miho.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_koume"
+		texturefile = "gfx/interface/advisors/idea_koume.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mauko"
+		texturefile = "gfx/interface/advisors/idea_mauko.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_geshiko"
+		texturefile = "gfx/interface/advisors/idea_geshiko.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ritaiko"
+		texturefile = "gfx/interface/advisors/idea_ritaiko.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sangou"
+		texturefile = "gfx/interface/advisors/idea_sangou.dds"
+	}
+}

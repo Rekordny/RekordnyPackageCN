@@ -1,0 +1,49 @@
+spriteTypes = {	
+	#POL
+	spriteType = {
+		name = "GFX_idea_POL_purchase_from_st_gloriana"
+		texturefile = "gfx/interface/ideas/idea_POL_purchase_from_st_gloriana.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_final_tech_contract"
+		texturefile = "gfx/interface/ideas/idea_POL_final_tech_contract.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_armor_first"
+		texturefile = "gfx/interface/ideas/idea_POL_armor_first.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_over_production"
+		texturefile = "gfx/interface/ideas/idea_POL_over_production.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_start_of_new_lane"
+		texturefile = "gfx/interface/ideas/idea_POL_start_of_new_lane.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_traditional_cavalry"
+		texturefile = "gfx/interface/ideas/idea_POL_traditional_cavalry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_exchange_student"
+		texturefile = "gfx/interface/ideas/idea_POL_exchange_student.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_prepare_for_tankathlon"
+		texturefile = "gfx/interface/ideas/idea_POL_prepare_for_tankathlon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_tankathlon_spirit"
+		texturefile = "gfx/interface/ideas/idea_POL_tankathlon_spirit.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_cuisine"
+		texturefile = "gfx/interface/ideas/idea_POL_cuisine.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_tiny_senshado"
+		texturefile = "gfx/interface/ideas/idea_POL_tiny_senshado.dds"
+	}
+	
+	#GER
+}

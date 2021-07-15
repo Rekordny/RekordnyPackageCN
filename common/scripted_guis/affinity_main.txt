@@ -1,0 +1,200 @@
+scripted_gui = {
+  affinity_main = {
+    window_name = "affinity_main"
+    context_type = player_context
+
+    visible = {
+      has_country_flag = open_affinity_main
+    }
+
+    effects = {
+      close_button_click = {
+        clr_country_flag = open_affinity_main
+      }
+      item_bar_1_click = {
+        affinity_increase_1 = yes
+      }
+      item_bar_2_click = {
+        affinity_increase_2 = yes
+      }
+      chara_thumb_erika_click = {
+        fire_affinity_dialogue_erika = yes
+        clr_country_flag = open_affinity_main
+      }
+    }
+
+    triggers = {
+      # <element>_click_enabled = {
+      #     <triggers>
+      # }
+      chara_thumb_maho_visible = {
+        tag = GER
+      }
+      chara_thumb_erika_visible = {
+        tag = GER
+      }
+      chara_thumb_miho_visible = {
+        tag = GER
+      }
+      affinity_level_1_icon_0_visible = {
+        check_variable = {
+          affinity_1 = 0
+        } 
+      }
+      affinity_level_1_icon_1_visible = {
+        check_variable = {
+          affinity_1 = 1
+        } 
+      }
+      affinity_level_1_icon_2_visible = {
+        check_variable = {
+          affinity_1 = 2
+        } 
+      }
+      affinity_level_1_icon_3_visible = {
+        check_variable = {
+          affinity_1 = 3
+        }
+      }
+      affinity_level_1_icon_4_visible = {
+        check_variable = {
+          affinity_1 = 4
+        } 
+      }
+      affinity_level_1_icon_5_visible = {
+        check_variable = {
+          affinity_1 = 5
+        } 
+      }
+      affinity_level_1_icon_6_visible = {
+        check_variable = {
+          affinity_1 = 6
+        } 
+      }
+      affinity_level_1_icon_7_visible = {
+        check_variable = {
+          affinity_1 = 7
+        } 
+      }
+      affinity_level_1_icon_8_visible = {
+        check_variable = {
+          affinity_1 > 7
+        } 
+      }
+
+      affinity_level_2_icon_0_visible = {
+        check_variable = {
+          affinity_2 = 0
+        } 
+      }
+      affinity_level_2_icon_1_visible = {
+        check_variable = {
+          affinity_2 = 1
+        } 
+      }
+      affinity_level_2_icon_2_visible = {
+        check_variable = {
+          affinity_2 = 2
+        } 
+      }
+      affinity_level_2_icon_3_visible = {
+        check_variable = {
+          affinity_2 = 3
+        } 
+      }
+      affinity_level_2_icon_4_visible = {
+        check_variable = {
+          affinity_2 = 4
+        } 
+      }
+      affinity_level_2_icon_5_visible = {
+        check_variable = {
+          affinity_2 = 5
+        } 
+      }
+      affinity_level_2_icon_6_visible = {
+        check_variable = {
+          affinity_2 = 6
+        } 
+      }
+      affinity_level_2_icon_7_visible = {
+        check_variable = {
+          affinity_2 = 7
+        } 
+      }
+      affinity_level_2_icon_8_visible = {
+        check_variable = {
+          affinity_2 > 7
+        } 
+      }
+
+      affinity_level_3_icon_0_visible = {
+        check_variable = {
+          affinity_3 = 0
+        } 
+      }
+      affinity_level_3_icon_1_visible = {
+        check_variable = {
+          affinity_3 = 1
+        } 
+      }
+      affinity_level_3_icon_2_visible = {
+        check_variable = {
+          affinity_3 = 2
+        } 
+      }
+      affinity_level_3_icon_3_visible = {
+        check_variable = {
+          affinity_3 = 3
+        } 
+      }
+      affinity_level_3_icon_4_visible = {
+        check_variable = {
+          affinity_3 = 4
+        } 
+      }
+      affinity_level_3_icon_5_visible = {
+        check_variable = {
+          affinity_3 = 5
+        } 
+      }
+      affinity_level_3_icon_6_visible = {
+        check_variable = {
+          affinity_3 = 6
+        } 
+      }
+      affinity_level_3_icon_7_visible = {
+        check_variable = {
+          affinity_3 = 7
+        } 
+      }
+      affinity_level_3_icon_8_visible = {
+        check_variable = {
+          affinity_3 > 7
+        } 
+      }
+    }
+
+    dynamic_lists = {
+	  }
+
+    properties = {
+    }
+
+    ai_enabled = {
+		always = no
+    }
+
+    ai_test_interval = 290  # The higher, the long it takes the ai to do actions
+	ai_test_variance = 0.5
+
+    ai_check = {
+    }
+
+    ai_check_scope = {
+    }
+
+    ai_weights = {
+    }
+  }
+}

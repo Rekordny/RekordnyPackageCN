@@ -1,0 +1,22 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_add_steel"
+		texturefile = "gfx/add_steel.dds"
+	}
+	spriteType = {
+		name = "GFX_add_aluminum"
+		texturefile = "gfx/add_aluminum.dds"
+	}
+	spriteType = {
+		name = "GFX_add_tungsten"
+		texturefile = "gfx/add_tungsten.dds"
+	}
+	spriteType = {
+		name = "GFX_add_chromium"
+		texturefile = "gfx/add_chromium.dds"
+	}
+	spriteType = {
+		name = "GFX_add_manpower"
+		texturefile = "gfx/add_manpower.dds"
+	}
+}

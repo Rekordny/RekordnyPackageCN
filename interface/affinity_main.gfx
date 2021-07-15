@@ -1,0 +1,71 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_affinity_main_background"
+		textureFile = "/gfx/interface/scripted_gui_graphics/scripted_gui_background.dds"
+	}
+	spriteType = {
+		name = "GFX_affinity_close_button_background"
+		textureFile = "/gfx/interface/scripted_gui_graphics/close_button.dds"
+	}
+	spriteType = {
+		name = "GFX_affinity_bar_item"
+		textureFile = "/gfx/interface/scripted_gui_graphics/item_bar_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_affinity_maho"
+		textureFile = "/gfx/interface/scripted_gui_graphics/chara_thumb_maho.dds"
+	}
+	spriteType = {
+		name = "GFX_affinity_erika"
+		textureFile = "/gfx/interface/scripted_gui_graphics/chara_thumb_erika.dds"
+	}
+	spriteType = {
+		name = "GFX_affinity_miho"
+		textureFile = "/gfx/interface/scripted_gui_graphics/chara_thumb_miho.dds"
+	}
+	spriteType = {
+		name = "GFX_affinity_level"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_level.dds"
+		noOfFrames = 9
+        transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_affinity_level_0"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_level_0.dds"
+	}
+	spriteType = {
+		name = "GFX_affinity_level_1"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_level_1.dds"
+	}
+	spriteType = {
+		name = "GFX_affinity_level_2"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_level_2.dds"
+	}
+	spriteType = {
+		name = "GFX_affinity_level_3"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_level_3.dds"
+	}
+	spriteType = {
+		name = "GFX_affinity_level_4"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_level_4.dds"
+	}
+	spriteType = {
+		name = "GFX_affinity_level_5"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_level_5.dds"
+	}
+	spriteType = {
+		name = "GFX_affinity_level_6"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_level_6.dds"
+	}
+	spriteType = {
+		name = "GFX_affinity_level_7"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_level_7.dds"
+	}
+	spriteType = {
+		name = "GFX_affinity_level_8"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_level_8.dds"
+	}
+
+
+}

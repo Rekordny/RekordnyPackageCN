@@ -1,0 +1,4 @@
+﻿l_english:
+ MONEY_MAIN:0 "[?ssdp]"
+ MONEY_TOOLTIP:0 "§Y战车道点数§!\n\n目前拥有点数： §Y[?ssdp]§!\n\n"
+ MONEY_TOOLTIP_DELAYED:0 "战车道点数只能通过特殊的国策，决策和事件获得,你也可以通过决策和新的系统来消费战车道点数。"

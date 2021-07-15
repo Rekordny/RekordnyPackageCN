@@ -1,0 +1,20 @@
+scripted_gui = {
+	money = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "money_container"
+		visible = {
+            always = yes
+		}
+		effects = {
+			money_bg_click = {
+		    	set_country_flag = open_affinity_main
+			}
+			money_icon_click = {
+				set_country_flag = open_affinity_main
+			}
+		}
+	}
+	
+}
+
