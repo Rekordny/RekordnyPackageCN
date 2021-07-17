@@ -47,7 +47,7 @@ focus_tree = {
 	
 	
 
-	#黑森峰工团
+	#黑森峰工业课
 	focus = {
 		id = GER_kuromorimine_industriegruppe
 		icon = GFX_focus_GER_kuromorimine_industriegruppe
@@ -571,7 +571,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
 			unlock_decision_category_tooltip = senshado_decisions
 			GER = { country_event = { id = germany.500 days = 0 } }
 		}
@@ -1626,7 +1625,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-
+			#触发西住美穗回归GAL过场
+			
 		}
 
 		ai_will_do = {
@@ -2928,7 +2928,7 @@ focus_tree = {
 		}
 	}
 
-	#存在舰队学说
+	#存在舰队理论
 	focus = {
 		id = GER_fleet_in_being
 		icon = GFX_focus_GER_fleet_in_being
@@ -3369,6 +3369,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = GER_land_control_from_sea
 		}
 
 		ai_will_do = {
@@ -3401,6 +3402,12 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = base_strike_main
+				ahead_reduction = 0.5
+			}
 		}
 
 		ai_will_do = {

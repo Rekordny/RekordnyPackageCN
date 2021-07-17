@@ -440,3 +440,27 @@ country_event = {
 		}
 	}
 }
+
+#重新邀请西住美穗
+country_event = {
+	id = germany.521
+	title = germany.521.t
+	desc = germany.521.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = germany.521.a
+		create_field_marshal = {
+			name = "Miho Nishizumi"
+			picture = "Portrait_GER_Miho.dds"
+			traits = { Brilliant_Strategist Armor_Officer Panzer_Expert }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 6
+			logistics_skill = 4
+			id = 1021
+		}
+	}
+}

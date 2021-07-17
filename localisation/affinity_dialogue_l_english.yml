@@ -1,64 +1,98 @@
 ﻿l_english:
  
+ none:0 ""
  dialogue_name.0:0 "默认名字"
  dialogue_name.maho:0 "西住真穗"
  dialogue_name.erika:0 "逸见艾丽卡"
 
- #对话必须要每句话配一个立绘
+#场景背景
+ scene_art_corridor:0 "£GFX_bg_corridor"
+
+#附件
+ item_art_beer:0 "£GFX_item_beer"
+
+#立绘（请对照文件）
+ maho_f1:0 "£GFX_maho_1"
+ maho_f2:0 "£GFX_maho_2"
+ maho_f3:0 "£GFX_maho_3"
+ maho_f4:0 "£GFX_maho_4"
+ maho_f5:0 "£GFX_maho_5"
+ maho_f6:0 "£GFX_maho_6"
+ maho_f7:0 "£GFX_maho_7"
+ maho_f8:0 "£GFX_maho_8"
+ maho_f9:0 "£GFX_maho_9"
+ maho_f10:0 "£GFX_maho_10"
+ maho_f11:0 "£GFX_maho_11"
+ maho_f12:0 "£GFX_maho_12"
+ maho_f13:0 "£GFX_maho_13"
+ maho_f14:0 "£GFX_maho_14"
+ maho_f15:0 "£GFX_maho_15"
+ maho_f16:0 "£GFX_maho_16"
+ maho_f17:0 "£GFX_maho_17"
+ maho_f18:0 "£GFX_maho_18"
+ maho_f19:0 "£GFX_maho_19"
+ maho_f20:0 "£GFX_maho_20"
+ maho_f21:0 "£GFX_maho_21"
+
+ erika_f1:0 "£GFX_erika_1"
+ erika_f2:0 "£GFX_erika_2"
+ erika_f3:0 "£GFX_erika_3"
+ erika_f4:0 "£GFX_erika_4"
+ erika_f5:0 "£GFX_erika_5"
+ erika_f6:0 "£GFX_erika_6"
+ erika_f7:0 "£GFX_erika_7"
+ erika_f8:0 "£GFX_erika_8"
+ erika_f9:0 "£GFX_erika_9"
+ erika_f10:0 "£GFX_erika_10"
+ erika_f11:0 "£GFX_erika_11"
+ erika_f12:0 "£GFX_erika_12"
+ erika_f13:0 "£GFX_erika_13"
+ erika_f14:0 "£GFX_erika_14"
+ erika_f15:0 "£GFX_erika_15"
+ 
+
+#对话必须要每句话配一个立绘和一个场景，没有额外人物和附件情况下留空即可
  dialogue_content:0 "默认对话"
+
  maho_d1_0:0 "西住真穗默认对话内容"
 #maho-1
  maho_d1_1:0 "西住真穗第1章"
- maho_d1_1f:0 ""
 #maho-2
  maho_d2_1:0 "西住真穗第2章"
- maho_d2_1f:0 ""
 #maho-3
  maho_d3_1:0 "西住真穗第3章"
- maho_d3_1f:0 ""
 #maho-4
  maho_d4_1:0 "西住真穗第4章"
- maho_d4_1f:0 ""
-#maho-1
+#maho-5
  maho_d5_1:0 "西住真穗第5章"
- maho_d5_1f:0 ""
-#maho-1
+#maho-6
  maho_d6_1:0 "西住真穗第6章"
- maho_d6_1f:0 ""
-#maho-1
+#maho-7
  maho_d7_1:0 "西住真穗第7章"
- maho_d7_1f:0 ""
-#maho-1
+#maho-8
  maho_d8_1:0 "西住真穗第8章"
- maho_d8_1f:0 ""
  
  erika_d1_0:0 "逸见艾丽卡默认对话内容"
 #erika-1
- erika_d1_1:0 "erika第1章"
- erika_d1_1f:0 "£GFX_erika_9"
- erika_d1_2:0 "你好啊新人"
- erika_d1_2f:0 "£GFX_erika_1"
+ erika_d1_1:0 "今天中午吃什么好呢队长"
+ erika_d1_2:0 "不如今天让你决定吧"
+ erika_d1_3:0 "那我们去喝啤酒吧！"
+
 #erika-2
  erika_d2_1:0 "erika第2章"
- erika_d2_1f:0 "£GFX_erika_1"
 #erika-3
  erika_d3_1:0 "erika第3章"
- erika_d3_1f:0 "£GFX_erika_1"
 #erika-4
  erika_d4_1:0 "erika第4章"
- erika_d4_1f:0 "£GFX_erika_12"
+
  erika_d4_2:0 "erika第4章第二句话"
- erika_d4_2f:0 "£GFX_erika_4"
+
 #erika-5
  erika_d5_1:0 "erika第5章"
- erika_d5_1f:0 "£GFX_erika_1"
 #erika-6
  erika_d6_1:0 "erika第6章"
- erika_d6_1f:0 "£GFX_erika_1"
 #erika-7
  erika_d7_1:0 "erika第7章"
- erika_d7_1f:0 "£GFX_erika_1"
 #erika-8
  erika_d8_1:0 "erika第8章"
- erika_d8_1f:0 "£GFX_erika_1"
  

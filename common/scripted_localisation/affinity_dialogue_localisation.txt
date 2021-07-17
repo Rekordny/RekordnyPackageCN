@@ -1,14 +1,657 @@
-#决定了对话对象的名字
+###########################
+###########################
+#决定了附件item_art,将会巨长无比
+###########################
+###########################
 defined_text = {
-	name = dialogue_name
+	name = item_art
 
+	#maho-1
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
 			GER = {
 				is_ai = no
 			}
+			check_variable = { affinity_1 = 1 }
+			check_variable = { dialogue_process = 0 }
 		}
+
+		localization_key = none
+	}
+	#maho-2
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 2 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = none
+	}
+	#maho-3
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 3 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = none
+	}
+	#maho-4
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 4 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = none
+	}
+	#maho-5
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 5 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = none
+	}
+	#maho-6
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 6 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = none
+	}
+	#maho-7
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 7 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = none
+	}
+	#maho-8
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 8 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = none
+	}
+
+	#erika-1
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 1 }
+		}
+		
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 2 }
+		}
+		
+		localization_key = item_art_beer
+	}
+	#erika-2
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = none
+	}
+	#erika-3
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 3 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = none
+	}
+	#erika-4
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 4 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 4 }
+			check_variable = { dialogue_process = 1 }
+		}
+		
+		localization_key = affinity_item_beer
+	}
+	#erika-5
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 5 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = none
+	}
+	#erika-6
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 6 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = none
+	}
+	#erika-7
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 7 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = none
+	}
+	#erika-8
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 8 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = none
+	}
+
+
+	text = {
+		localization_key = none
+	}
+}
+###########################
+###########################
+#决定了背景图scene_art,将会巨长无比
+###########################
+###########################
+defined_text = {
+	name = scene_art
+
+	#maho-1
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 1 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = scene_art_corridor
+	}
+	#maho-2
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 2 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = scene_art_corridor
+	}
+	#maho-3
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 3 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = scene_art_corridor
+	}
+	#maho-4
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 4 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = scene_art_corridor
+	}
+	#maho-5
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 5 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = scene_art_corridor
+	}
+	#maho-6
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 6 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = scene_art_corridor
+	}
+	#maho-7
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 7 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = scene_art_corridor
+	}
+	#maho-8
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 8 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = scene_art_corridor
+	}
+
+	#erika-1
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = scene_art_corridor
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 1 }
+		}
+		
+		localization_key = scene_art_corridor
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 2 }
+		}
+		
+		localization_key = scene_art_corridor
+	}
+	#erika-2
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = scene_art_corridor
+	}
+	#erika-3
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 3 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = scene_art_corridor
+	}
+	#erika-4
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 4 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = scene_art_corridor
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 4 }
+			check_variable = { dialogue_process = 1 }
+		}
+		
+		localization_key = scene_art_corridor
+	}
+	#erika-5
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 5 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = scene_art_corridor
+	}
+	#erika-6
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 6 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = scene_art_corridor
+	}
+	#erika-7
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 7 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = scene_art_corridor
+	}
+	#erika-8
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 8 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = scene_art_corridor
+	}
+
+
+	text = {
+		localization_key = none
+	}
+}
+###########################
+###########################
+#决定了对话的名字,将会巨长无比
+###########################
+###########################
+defined_text = {
+	name = dialogue_name
+
+	#maho-1
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 1 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = dialogue_name.maho
+	}
+	#maho-2
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 2 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = dialogue_name.maho
+	}
+	#maho-3
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 3 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = dialogue_name.maho
+	}
+	#maho-4
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 4 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = dialogue_name.maho
+	}
+	#maho-5
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 5 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = dialogue_name.maho
+	}
+	#maho-6
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 6 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = dialogue_name.maho
+	}
+	#maho-7
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 7 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = dialogue_name.maho
+	}
+	#maho-8
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 8 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = dialogue_name.maho
+	}
+
+	#erika-1
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = dialogue_name.erika
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 1 }
+		}
+		
 		localization_key = dialogue_name.maho
 	}
 	text = {
@@ -17,15 +660,126 @@ defined_text = {
 			GER = {
 				is_ai = no
 			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 2 }
 		}
+		
 		localization_key = dialogue_name.erika
 	}
+	#erika-2
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = dialogue_name.erika
+	}
+	#erika-3
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 3 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = dialogue_name.erika
+	}
+	#erika-4
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 4 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = dialogue_name.erika
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 4 }
+			check_variable = { dialogue_process = 1 }
+		}
+		
+		localization_key = dialogue_name.erika
+	}
+	#erika-5
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 5 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = dialogue_name.erika
+	}
+	#erika-6
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 6 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = dialogue_name.erika
+	}
+	#erika-7
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 7 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = dialogue_name.erika
+	}
+	#erika-8
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 8 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = dialogue_name.erika
+	}
+
+
 	text = {
 		localization_key = dialogue_name.0
 	}
 }
 ###########################
+###########################
 #决定了对话的内容,将会巨长无比
+###########################
+###########################
 defined_text = {
 	name = dialogue_content
 
@@ -159,6 +913,18 @@ defined_text = {
 		
 		localization_key = erika_d1_2
 	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 2 }
+		}
+		
+		localization_key = erika_d1_3
+	}
 	#erika-2
 	text = {
 		trigger = {
@@ -271,7 +1037,7 @@ defined_text = {
 
 ########################################
 ########################################
-#决定了配对对话的立绘,将会和对话一样巨长无比
+#决定了配对对话的立绘右1,将会和对话一样巨长无比
 ########################################
 ########################################
 defined_text = {
@@ -288,7 +1054,7 @@ defined_text = {
 			check_variable = { dialogue_process = 0 }
 		}
 
-		localization_key = maho_d1_1f
+		localization_key = maho_f1
 	}
 	#maho-2
 	text = {
@@ -301,7 +1067,7 @@ defined_text = {
 			check_variable = { dialogue_process = 0 }
 		}
 
-		localization_key = maho_d2_1f
+		localization_key = maho_f1
 	}
 	#maho-3
 	text = {
@@ -314,7 +1080,7 @@ defined_text = {
 			check_variable = { dialogue_process = 0 }
 		}
 
-		localization_key = maho_d3_1f
+		localization_key = maho_f1
 	}
 	#maho-4
 	text = {
@@ -327,7 +1093,7 @@ defined_text = {
 			check_variable = { dialogue_process = 0 }
 		}
 
-		localization_key = maho_d4_1f
+		localization_key = maho_f1
 	}
 	#maho-5
 	text = {
@@ -340,7 +1106,7 @@ defined_text = {
 			check_variable = { dialogue_process = 0 }
 		}
 
-		localization_key = maho_d5_1f
+		localization_key = maho_f1
 	}
 	#maho-6
 	text = {
@@ -353,7 +1119,7 @@ defined_text = {
 			check_variable = { dialogue_process = 0 }
 		}
 
-		localization_key = maho_d6_1f
+		localization_key = maho_f1
 	}
 	#maho-7
 	text = {
@@ -366,7 +1132,7 @@ defined_text = {
 			check_variable = { dialogue_process = 0 }
 		}
 
-		localization_key = maho_d7_1f
+		localization_key = maho_f1
 	}
 	#maho-8
 	text = {
@@ -379,7 +1145,7 @@ defined_text = {
 			check_variable = { dialogue_process = 0 }
 		}
 
-		localization_key = maho_d8_1f
+		localization_key = maho_f1
 	}
 
 	#erika-1
@@ -393,7 +1159,7 @@ defined_text = {
 			check_variable = { dialogue_process = 0 }
 		}
 		
-		localization_key = erika_d1_1f
+		localization_key = erika_f5
 	}
 	text = {
 		trigger = {
@@ -405,7 +1171,19 @@ defined_text = {
 			check_variable = { dialogue_process = 1 }
 		}
 		
-		localization_key = erika_d1_2f
+		localization_key = erika_f7
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 2 }
+		}
+		
+		localization_key = erika_f4
 	}
 	#erika-2
 	text = {
@@ -418,7 +1196,7 @@ defined_text = {
 			check_variable = { dialogue_process = 0 }
 		}
 		
-		localization_key = erika_d2_1f
+		localization_key = erika_f5
 	}
 	#erika-3
 	text = {
@@ -431,7 +1209,7 @@ defined_text = {
 			check_variable = { dialogue_process = 0 }
 		}
 		
-		localization_key = erika_d3_1f
+		localization_key = erika_f5
 	}
 	#erika-4
 	text = {
@@ -444,7 +1222,7 @@ defined_text = {
 			check_variable = { dialogue_process = 0 }
 		}
 		
-		localization_key = erika_d4_1f
+		localization_key = erika_f5
 	}
 	text = {
 		trigger = {
@@ -456,7 +1234,7 @@ defined_text = {
 			check_variable = { dialogue_process = 1 }
 		}
 		
-		localization_key = erika_d4_2f
+		localization_key = erika_f5
 	}
 	#erika-5
 	text = {
@@ -469,7 +1247,7 @@ defined_text = {
 			check_variable = { dialogue_process = 0 }
 		}
 		
-		localization_key = erika_d5_1f
+		localization_key = erika_f5
 	}
 	#erika-6
 	text = {
@@ -482,7 +1260,7 @@ defined_text = {
 			check_variable = { dialogue_process = 0 }
 		}
 		
-		localization_key = erika_d6_1f
+		localization_key = erika_f5
 	}
 	#erika-7
 	text = {
@@ -495,7 +1273,7 @@ defined_text = {
 			check_variable = { dialogue_process = 0 }
 		}
 		
-		localization_key = erika_d7_1f
+		localization_key = erika_f5
 	}
 	#erika-8
 	text = {
@@ -508,7 +1286,264 @@ defined_text = {
 			check_variable = { dialogue_process = 0 }
 		}
 		
-		localization_key = erika_d8_1f
+		localization_key = erika_f5
+	}
+	
+	
+}
+
+########################################
+########################################
+#决定了配对对话的立绘右2,将会和对话一样巨长无比
+########################################
+########################################
+defined_text = {
+	name = dialogue_figure_1
+	
+	#maho-1
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 1 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = none
+	}
+	#maho-2
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 2 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = none
+	}
+	#maho-3
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 3 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = none
+	}
+	#maho-4
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 4 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = none
+	}
+	#maho-5
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 5 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = none
+	}
+	#maho-6
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 6 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = none
+	}
+	#maho-7
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 7 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = none
+	}
+	#maho-8
+	text = {
+		trigger = {
+			has_country_flag = dialogue.maho
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_1 = 8 }
+			check_variable = { dialogue_process = 0 }
+		}
+
+		localization_key = none
+	}
+
+	#erika-1
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = maho_f9
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 1 }
+		}
+		
+		localization_key = maho_f8
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 2 }
+		}
+		
+		localization_key = maho_f9
+	}
+	#erika-2
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = none
+	}
+	#erika-3
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 3 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = none
+	}
+	#erika-4
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 4 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 4 }
+			check_variable = { dialogue_process = 1 }
+		}
+		
+		localization_key = none
+	}
+	#erika-5
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 5 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = none
+	}
+	#erika-6
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 6 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = none
+	}
+	#erika-7
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 7 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = none
+	}
+	#erika-8
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			GER = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 8 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = none
 	}
 	
 	

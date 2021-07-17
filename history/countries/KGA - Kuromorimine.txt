@@ -1,0 +1,176 @@
+﻿capital = 64
+
+set_technology = {
+	infantry_weapons = 1
+}
+set_research_slots = 5
+set_convoys = 20
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 2
+	fascism = 45
+	communism = 3
+	neutrality = 50
+}
+
+create_country_leader = {
+	name = "Maho Nishizumi"
+	desc = "She is the best"
+	picture = "Portrait_KGA_Maho.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		Autocratic_Imperialist
+	}
+}
+create_country_leader = {
+	name = "Miho Nishizumi"
+	desc = "She is even better"
+	picture = "Portrait_KGA_Miho.dds"
+	expire = "1965.1.1"
+	ideology = moderatism 
+	traits = {
+		The_Director
+	}
+}
+
+create_country_leader = {
+	name = "Emi Nakasuga"
+	desc = "Strange...huh"
+	picture = "Portrait_KGA_Emi.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		Revolutionary_General
+	}
+}
+
+create_country_leader = {
+	name = "Miho & Maho"
+	desc = "THEY ARE THE BEST!!!"
+	picture = "Portrait_KGA_Miho&Maho.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		Nationalist_Symbol
+	}
+}
+
+add_namespace = {
+	name = "kga_unit_leader"
+	type = unit_leader
+}
+
+create_field_marshal = {
+	name = "Miho Nishizumi"
+	picture = "Portrait_KGA_Miho.dds"
+	traits = { Brilliant_Strategist Armor_Officer Panzer_Expert }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 4
+	id = 1021
+}
+
+create_field_marshal = {
+	name = "Maho Nishizumi"
+	picture = "Portrait_KGA_Maho.dds"
+	traits = { Brilliant_Strategist Armor_Officer Panzer_Expert }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+	id = 1015
+}
+
+create_corps_commander = {
+	name = "Erika Itsumi"
+	picture = "Portrait_KGA_Erika.dds"
+	traits = { Harsh_Leader war_hero armor_officer }
+	skill = 4
+	id = 1016
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Koume Akaboshi"
+	picture = "Portrait_KGA_Koume.dds"
+	traits = { trickster war_hero armor_officer }
+	skill = 4
+	id = 1017
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Erwin"
+	picture = "Portrait_KGA_Erwin.dds"
+	traits = { Bearer_of_Artillery armor_officer }
+	skill = 3
+	id = 1024
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Mauko"
+	picture = "Portrait_KGA_Mauko.dds"
+	traits = { armor_officer trait_engineer }
+	skill = 3
+	id = 1018
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Sangou"
+	picture = "Portrait_KGA_Sangou.dds"
+	traits = { trickster armor_officer }
+	skill = 3
+	id = 1019
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Ritaiko"
+	picture = "Portrait_KGA_Ritaiko.dds"
+	traits = { armor_officer Hill_Fighter }
+	skill = 3
+	id = 1020
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Geshiko"
+	picture = "Portrait_KGA_Geshiko.dds"
+	traits = { armor_officer trait_cautious }
+	skill = 3
+	id = 1023
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}

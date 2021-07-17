@@ -229,6 +229,20 @@ ideas = {
 				naval_invasion_penalty = 0.1
 			}
 		}
+
+		GER_land_control_from_sea = {
+			allowed = {
+				tag = GER
+			}
+			modifier = {
+				navy_carrier_air_agility_factor = 0.15
+				navy_carrier_air_attack_factor = 0.15
+				air_range_factor = 0.1
+				navy_visibility = 0.2
+				navy_carrier_air_targetting_factor = 0.1
+				carrier_capacity_penalty_reduction = -0.1
+			}
+		}
 		##########################################ORIGIN#############################
 		sour_loser = {
 			

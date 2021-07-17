@@ -1,0 +1,76 @@
+﻿capital = 10
+
+set_technology = {
+	infantry_weapons = 1
+}
+set_research_slots = 5
+set_convoys = 20
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 2
+	fascism = 45
+	communism = 3
+	neutrality = 50
+}
+create_country_leader = {
+	name = "Maiko"
+	desc = "A new leader from Girls und Panzar, YES!"
+	picture = "Portrait_BON_Maiko.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		Champion_of_Peace_5
+	}
+}
+
+create_country_leader = {
+	name = "Jajka"
+	desc = "A new leader from Girls und Panzar, YES!"
+	picture = "Portrait_BON_Jajka.dds"
+	expire = "1965.1.1"
+	ideology = falangism
+	traits = {
+		Disdain_for_Politicians_1
+	}
+}
+
+create_field_marshal = {
+	name = "Maiko"
+	id = 1012
+	picture = "Portrait_BON_Maiko.dds"
+	traits = { Cavalry_Officer }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Uszka"
+	id = 1014
+	picture = "Portrait_BON_Uszka.dds"
+	traits = { Skilled_Staffer Defensive_Doctrine}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Jajka"
+	id = 1013
+	picture = "Portrait_BON_Jajka.dds"
+	traits = { Harsh_Leader }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 3
+}
+
