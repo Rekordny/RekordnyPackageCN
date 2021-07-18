@@ -11,6 +11,7 @@
  KGA_democratic_ADJ:0 "黑森峰"
  KGA_neutrality_ADJ:0 "黑森峰"
  KGA_communism_ADJ:0 "黑森峰"
+
  BON_fascism:0 "冯布诺高中"
  BON_fascism_DEF:0 "冯布诺高中"
  BON_democratic:0 "冯布诺高中"
@@ -23,6 +24,7 @@
  BON_democratic_ADJ:0 "冯布诺"
  BON_neutrality_ADJ:0 "冯布诺"
  BON_communism_ADJ:0 "冯布诺"
+
  BCF_fascism:0 "BC自由学园"
  BCF_fascism_DEF:0 "BC自由学园"
  BCF_democratic:0 "BC自由学园"
@@ -35,6 +37,7 @@
  BCF_democratic_ADJ:0 "BC自由"
  BCF_neutrality_ADJ:0 "BC自由"
  BCF_communism_ADJ:0 "BC自由"
+ 
  ANZ_fascism:0 "安齐奥高中"
  ANZ_fascism_DEF:0 "安齐奥高中"
  ANZ_democratic:0 "安齐奥高中"
@@ -47,3 +50,16 @@
  ANZ_democratic_ADJ:0 "安齐奥"
  ANZ_neutrality_ADJ:0 "安齐奥"
  ANZ_communism_ADJ:0 "安齐奥"
+
+ PRA_fascism:0 "真理高中"
+ PRA_fascism_DEF:0 "真理高中"
+ PRA_democratic:0 "真理高中"
+ PRA_democratic_DEF:0 "真理高中"
+ PRA_neutrality:0 "真理高中"
+ PRA_neutrality_DEF:0 "真理高中"
+ PRA_communism:0 "真理高中"
+ PRA_communism_DEF:0 "真理高中"
+ PRA_fascism_ADJ:0 "真理"
+ PRA_democratic_ADJ:0 "真理"
+ PRA_neutrality_ADJ:0 "真理"
+ PRA_communism_ADJ:0 "真理"
