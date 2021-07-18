@@ -563,7 +563,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1918"
+						text = "1970"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -576,7 +576,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1934"
+						text = "1972"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -589,7 +589,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1936"
+						text = "1973"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -602,7 +602,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1939"
+						text = "1974"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -615,7 +615,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1941"
+						text = "1975"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -628,7 +628,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1943"
+						text = "1976"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -641,7 +641,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1945"
+						text = "1977"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -662,7 +662,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1934"
+						text = "1972"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -675,7 +675,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1936"
+						text = "1973"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -688,7 +688,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1939"
+						text = "1974"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -701,7 +701,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1941"
+						text = "1975"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -714,7 +714,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1943"
+						text = "1976"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -727,7 +727,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1945"
+						text = "1977"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -798,7 +798,7 @@ guiTypes = {
 
 				
 			gridboxtype = {
-				name = "gwtank_tree"
+				name = "senshado_prototype_tank_tree"
 				position = { x = 10% y = 172 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }

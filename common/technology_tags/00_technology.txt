@@ -11,6 +11,15 @@ technology_categories = {
 	naval_battery
 	naval_shell
 	naval_bb_armor
+	food
+	armor_lt
+	armor_mt
+	armor_ht
+	armor_spg
+	armor_td
+	armor_atd
+	armor_ar
+	armor_at
 	###############ORIGIN############
 	light_air
 	medium_air
