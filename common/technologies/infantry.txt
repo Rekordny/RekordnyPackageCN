@@ -14,7 +14,7 @@ technologies = {
 
 
 	food = {
-		light_armor = {
+		modern_armor = {
 			defense = 0.1
 			breakthrough = 0.1
 		}
@@ -29,7 +29,7 @@ technologies = {
 		}
 		
 		categories = {
-			food
+			infantry_weapons
 		}
 		
 		ai_will_do = {

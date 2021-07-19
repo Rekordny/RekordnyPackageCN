@@ -3,8 +3,8 @@ sub_units = {
 	medium_armor = {
 		sprite = "medium_armor"
 		map_icon_category = armored
-		priority = 650
-		ai_priority = 250
+		priority = 2502
+		ai_priority = 3500
 		active = yes
 		
 		type = {
@@ -14,7 +14,6 @@ sub_units = {
 		group = armor
 		
 		categories = {
-			category_mt
 			category_tanks
 			category_front_line
 			category_all_armor
@@ -27,21 +26,21 @@ sub_units = {
 			medium_tank_equipment = 50
 		}
 		manpower = 500
-		max_organisation = 60
+		max_organisation = 10
 		max_strength = 2
 		default_morale = 0.3
-		training_time = 110
+		training_time = 180
 		weight = 1.25
-		supply_consumption = 0.12
+		supply_consumption = 0.22
 
 		#Tanks are awesome
 		# soft_attack = 0.5
 
-		suppression = 2	
+		suppression = 2.5	
 
 		forest = {
-		    attack = -0.2
-			movement = -0.35
+		    attack = -0.3
+			movement = -0.4
 		}
 		hills = 	{
 		    attack = -0.1
@@ -50,15 +49,15 @@ sub_units = {
 		    attack = -0.2
 		}
 		jungle = {
-		    attack = -0.3
-			movement = -0.35
+		    attack = -0.4
+			movement = -0.4
 		}
 		marsh = {
 		    attack = -0.1 
 			movement = -0.1
 		}
 		urban = {
-			attack = -0.3
+			attack = -0.4
 			defence = -0.1
 		}
 		river = { 
