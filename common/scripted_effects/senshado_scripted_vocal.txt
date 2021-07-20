@@ -1,0 +1,14 @@
+#这个文档只有放出声音的效果
+#只在点击对话框后触发
+#所有国家所有人物所有的语音每一句都会放在这里触发
+#所以会超长
+fire_vocal = {
+	###########KGA#########
+	#Maho
+	if = {
+		limit = { tag = KGA check_variable = {affinity_1 = 1} check_variable = {process = 1} }
+		sound_effect = "Miho_31"
+	}
+	#Erika
+	#Miho
+}

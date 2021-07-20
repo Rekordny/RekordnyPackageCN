@@ -10,7 +10,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 1 }
@@ -23,7 +23,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 2 }
@@ -36,7 +36,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 3 }
@@ -49,7 +49,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 4 }
@@ -62,7 +62,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 5 }
@@ -75,7 +75,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 6 }
@@ -88,7 +88,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 7 }
@@ -101,7 +101,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 8 }
@@ -115,7 +115,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 1 }
@@ -127,7 +127,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 1 }
@@ -139,7 +139,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 1 }
@@ -152,7 +152,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 2 }
@@ -165,7 +165,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 3 }
@@ -178,7 +178,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 4 }
@@ -190,7 +190,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 4 }
@@ -203,7 +203,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 5 }
@@ -216,7 +216,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 6 }
@@ -229,7 +229,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 7 }
@@ -242,7 +242,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 8 }
@@ -269,246 +269,246 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 1 }
 			check_variable = { dialogue_process = 0 }
 		}
 
-		localization_key = scene_art_corridor
+		localization_key = none
 	}
 	#maho-2
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 2 }
 			check_variable = { dialogue_process = 0 }
 		}
 
-		localization_key = scene_art_corridor
+		localization_key = none
 	}
 	#maho-3
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 3 }
 			check_variable = { dialogue_process = 0 }
 		}
 
-		localization_key = scene_art_corridor
+		localization_key = none
 	}
 	#maho-4
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 4 }
 			check_variable = { dialogue_process = 0 }
 		}
 
-		localization_key = scene_art_corridor
+		localization_key = none
 	}
 	#maho-5
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 5 }
 			check_variable = { dialogue_process = 0 }
 		}
 
-		localization_key = scene_art_corridor
+		localization_key = none
 	}
 	#maho-6
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 6 }
 			check_variable = { dialogue_process = 0 }
 		}
 
-		localization_key = scene_art_corridor
+		localization_key = none
 	}
 	#maho-7
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 7 }
 			check_variable = { dialogue_process = 0 }
 		}
 
-		localization_key = scene_art_corridor
+		localization_key = none
 	}
 	#maho-8
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 8 }
 			check_variable = { dialogue_process = 0 }
 		}
 
-		localization_key = scene_art_corridor
+		localization_key = none
 	}
 
 	#erika-1
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 1 }
 			check_variable = { dialogue_process = 0 }
 		}
 		
-		localization_key = scene_art_corridor
+		localization_key = bg_24
 	}
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 1 }
 			check_variable = { dialogue_process = 1 }
 		}
 		
-		localization_key = scene_art_corridor
+		localization_key = bg_24
 	}
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 1 }
 			check_variable = { dialogue_process = 2 }
 		}
 		
-		localization_key = scene_art_corridor
+		localization_key = bg_24
 	}
 	#erika-2
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 2 }
 			check_variable = { dialogue_process = 0 }
 		}
 		
-		localization_key = scene_art_corridor
+		localization_key = none
 	}
 	#erika-3
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 3 }
 			check_variable = { dialogue_process = 0 }
 		}
 		
-		localization_key = scene_art_corridor
+		localization_key = none
 	}
 	#erika-4
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 4 }
 			check_variable = { dialogue_process = 0 }
 		}
 		
-		localization_key = scene_art_corridor
+		localization_key = none
 	}
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 4 }
 			check_variable = { dialogue_process = 1 }
 		}
 		
-		localization_key = scene_art_corridor
+		localization_key = none
 	}
 	#erika-5
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 5 }
 			check_variable = { dialogue_process = 0 }
 		}
 		
-		localization_key = scene_art_corridor
+		localization_key = none
 	}
 	#erika-6
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 6 }
 			check_variable = { dialogue_process = 0 }
 		}
 		
-		localization_key = scene_art_corridor
+		localization_key = none
 	}
 	#erika-7
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 7 }
 			check_variable = { dialogue_process = 0 }
 		}
 		
-		localization_key = scene_art_corridor
+		localization_key = none
 	}
 	#erika-8
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 8 }
 			check_variable = { dialogue_process = 0 }
 		}
 		
-		localization_key = scene_art_corridor
+		localization_key = none
 	}
 
 
@@ -528,7 +528,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 1 }
@@ -541,7 +541,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 2 }
@@ -554,7 +554,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 3 }
@@ -567,7 +567,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 4 }
@@ -580,7 +580,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 5 }
@@ -593,7 +593,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 6 }
@@ -606,7 +606,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 7 }
@@ -619,7 +619,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 8 }
@@ -633,7 +633,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 1 }
@@ -645,7 +645,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 1 }
@@ -657,7 +657,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 1 }
@@ -670,7 +670,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 2 }
@@ -683,7 +683,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 3 }
@@ -696,7 +696,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 4 }
@@ -708,7 +708,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 4 }
@@ -721,7 +721,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 5 }
@@ -734,7 +734,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 6 }
@@ -747,7 +747,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 7 }
@@ -760,7 +760,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 8 }
@@ -787,7 +787,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 1 }
@@ -800,7 +800,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 2 }
@@ -813,7 +813,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 3 }
@@ -826,7 +826,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 4 }
@@ -839,7 +839,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 5 }
@@ -852,7 +852,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 6 }
@@ -865,7 +865,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 7 }
@@ -878,7 +878,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 8 }
@@ -892,7 +892,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 1 }
@@ -904,7 +904,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 1 }
@@ -916,7 +916,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 1 }
@@ -929,7 +929,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 2 }
@@ -942,7 +942,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 3 }
@@ -955,7 +955,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 4 }
@@ -967,7 +967,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 4 }
@@ -980,7 +980,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 5 }
@@ -993,7 +993,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 6 }
@@ -1006,7 +1006,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 7 }
@@ -1019,7 +1019,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 8 }
@@ -1047,7 +1047,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 1 }
@@ -1060,7 +1060,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 2 }
@@ -1073,7 +1073,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 3 }
@@ -1086,7 +1086,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 4 }
@@ -1099,7 +1099,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 5 }
@@ -1112,7 +1112,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 6 }
@@ -1125,7 +1125,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 7 }
@@ -1138,7 +1138,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 8 }
@@ -1152,7 +1152,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 1 }
@@ -1164,7 +1164,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 1 }
@@ -1176,7 +1176,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 1 }
@@ -1189,7 +1189,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 2 }
@@ -1202,7 +1202,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 3 }
@@ -1215,7 +1215,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 4 }
@@ -1227,7 +1227,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 4 }
@@ -1240,7 +1240,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 5 }
@@ -1253,7 +1253,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 6 }
@@ -1266,7 +1266,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 7 }
@@ -1279,7 +1279,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 8 }
@@ -1304,7 +1304,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 1 }
@@ -1317,7 +1317,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 2 }
@@ -1330,7 +1330,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 3 }
@@ -1343,7 +1343,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 4 }
@@ -1356,7 +1356,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 5 }
@@ -1369,7 +1369,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 6 }
@@ -1382,7 +1382,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 7 }
@@ -1395,7 +1395,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.maho
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_1 = 8 }
@@ -1409,7 +1409,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 1 }
@@ -1421,7 +1421,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 1 }
@@ -1433,7 +1433,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 1 }
@@ -1446,7 +1446,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 2 }
@@ -1459,7 +1459,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 3 }
@@ -1472,7 +1472,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 4 }
@@ -1484,7 +1484,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 4 }
@@ -1497,7 +1497,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 5 }
@@ -1510,7 +1510,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 6 }
@@ -1523,7 +1523,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 7 }
@@ -1536,7 +1536,7 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			GER = {
+			KGA = {
 				is_ai = no
 			}
 			check_variable = { affinity_2 = 8 }

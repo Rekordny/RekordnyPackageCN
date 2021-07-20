@@ -9,29 +9,50 @@ fire_affinity_dialogue_erika = {
 	set_country_flag = open_affinity_dialogue
 }
 
+fire_affinity_dialogue_miho = {
+	set_country_flag = dialogue.miho
+	set_country_flag = open_affinity_dialogue
+}
 
-#一号人物增加好感度并触发事件
+
+#KGA一号人物增加好感度并触发事件
 affinity_increase_1 = {
 	
 	if = {
-		limit = { check_variable = {affinity_1 < 9} tag = GER}
+		limit = { check_variable = {affinity_1 < 9} tag = KGA}
 		add_to_variable = {
 			var = affinity_1
 			value = 1
 		}
 		fire_affinity_dialogue_maho  = yes
+		clr_country_flag = open_affinity_main
 	}
 }
 
-#一号人物增加好感度并触发事件
+#KGA二号人物增加好感度并触发事件
 affinity_increase_2 = {
 	
 	if = {
-		limit = { check_variable = {affinity_1 < 9} tag = GER}
+		limit = { check_variable = {affinity_2 < 9} tag = KGA}
 		add_to_variable = {
 			var = affinity_2
 			value = 1
 		}
 		fire_affinity_dialogue_erika  = yes
+		clr_country_flag = open_affinity_main
+	}
+}
+
+#KGA三号人物增加好感度并触发事件
+affinity_increase_3 = {
+	
+	if = {
+		limit = { check_variable = {affinity_3 < 9} tag = KGA}
+		add_to_variable = {
+			var = affinity_3
+			value = 1
+		}
+		fire_affinity_dialogue_miho  = yes
+		clr_country_flag = open_affinity_main
 	}
 }

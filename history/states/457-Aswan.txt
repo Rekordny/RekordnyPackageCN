@@ -7,7 +7,7 @@ state=
 	state_category = wasteland
 	
 	history = {
-		owner = ENG
+		owner = STG
 		buildings = {
 			infrastructure = 1
 		}

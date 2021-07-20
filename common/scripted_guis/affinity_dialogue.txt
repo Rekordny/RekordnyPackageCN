@@ -12,12 +12,14 @@ scripted_gui = {
 			clr_country_flag = open_affinity_dialogue
 			clr_country_flag = dialogue.maho
 			clr_country_flag = dialogue.erika
+			clr_country_flag = dialogue.miho
 
 			clear_variable = dialogue_process
 			clear_variable = dialogue_figure
 		}
 		affinity_dialogue_bar_click = {
 			add_to_variable = { dialogue_process = 1 }
+			fire_vocal = yes
 		}
 	  }
   

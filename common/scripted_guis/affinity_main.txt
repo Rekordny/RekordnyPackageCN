@@ -17,9 +17,11 @@ scripted_gui = {
       item_bar_2_click = {
         affinity_increase_2 = yes
       }
-      chara_thumb_erika_click = {
-        fire_affinity_dialogue_erika = yes
-        clr_country_flag = open_affinity_main
+      item_bar_3_click = {
+        affinity_increase_3 = yes
+      }
+      chara_thumb_maho_click = {
+        sound_effect = "Miho_1"
       }
     }
 
@@ -28,13 +30,13 @@ scripted_gui = {
       #     <triggers>
       # }
       chara_thumb_maho_visible = {
-        tag = GER
+        tag = KGA
       }
       chara_thumb_erika_visible = {
-        tag = GER
+        tag = KGA
       }
       chara_thumb_miho_visible = {
-        tag = GER
+        tag = KGA
       }
       affinity_level_1_icon_0_visible = {
         check_variable = {

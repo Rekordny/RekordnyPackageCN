@@ -12,7 +12,7 @@ state={
 
 	history={
 		add_core_of = SCO
-		owner = ENG
+		owner = STG
 		victory_points = {
 			3273 15
 		}
@@ -27,7 +27,7 @@ state={
 			}
 
 		}
-		add_core_of = ENG
+		add_core_of = STG
 		1939.1.1 = {
 			buildings = {
 				dockyard = 5

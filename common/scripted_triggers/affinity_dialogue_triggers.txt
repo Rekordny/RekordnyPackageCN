@@ -30,6 +30,8 @@
 
 #所有弹出好感事件,加在每次好感度增加后面检测，如果符合其中一个就开始相应国家相应人物的事件，章节由变量控制
 show_affinity_dialogue = {
-	tag = GER
+	tag = KGA
 	has_country_flag = dialogue.erika
+	has_country_flag = dialogue.miho
+	has_country_flag = dialogue.maho
 }
