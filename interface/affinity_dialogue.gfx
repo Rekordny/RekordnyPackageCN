@@ -305,7 +305,101 @@ spriteTypes = {
 		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_bgs/affinity_bg55.dds"
 		legacy_lazy_load = no
 	}
-
+	spriteType = {
+		name = "GFX_bg_56"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_bgs/affinity_bg56.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_bg_57"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_bgs/affinity_bg57.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_bg_58"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_bgs/affinity_bg58.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_bg_59"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_bgs/affinity_bg59.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_bg_60"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_bgs/affinity_bg60.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_bg_61"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_bgs/affinity_bg61.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_bg_62"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_bgs/affinity_bg62.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_bg_63"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_bgs/affinity_bg63.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_bg_64"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_bgs/affinity_bg64.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_bg_65"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_bgs/affinity_bg65.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_bg_66"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_bgs/affinity_bg66.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_bg_67"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_bgs/affinity_bg67.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_bg_68"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_bgs/affinity_bg68.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_bg_69"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_bgs/affinity_bg69.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_bg_70"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_bgs/affinity_bg70.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_bg_71"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_bgs/affinity_bg71.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_bg_72"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_bgs/affinity_bg72.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_bg_73"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_bgs/affinity_bg73.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_bg_74"
+		textureFile = "/gfx/interface/scripted_gui_graphics/affinity_bgs/affinity_bg74.dds"
+		legacy_lazy_load = no
+	}
 	
 
 
@@ -632,6 +726,166 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_koume_21"
 		textureFile = "/gfx/interface/scripted_gui_graphics/koume/Koume_21.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_1"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_2"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_3"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_4"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_4.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_5"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_5.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_6"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_6.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_7"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_7.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_8"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_8.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_9"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_9.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_10"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_10.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_11"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_11.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_12"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_12.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_13"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_13.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_14"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_14.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_15"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_15.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_16"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_16.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_17"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_17.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_18"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_18.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_19"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_19.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_20"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_20.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_21"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_21.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_22"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_22.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_23"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_23.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_24"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_24.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_25"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_25.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_26"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_26.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_27"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_27.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_28"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_28.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_29"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_29.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_30"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_30.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_31"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_31.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_miho_32"
+		textureFile = "/gfx/interface/scripted_gui_graphics/miho/Miho_32.dds"
 		legacy_lazy_load = no
 	}
 }

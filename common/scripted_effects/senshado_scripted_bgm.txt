@@ -1,0 +1,18 @@
+#这个文档只有放出bgm的效果
+#只在特定的条件后触发
+#所以会比较长
+
+###########KGA#########
+fire_bgm_KGA = {
+	
+	#Miho-1
+	if = {
+		limit = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 0 }
+		}
+		play_song = "bgm_9"
+	}
+	#Erika
+	#Maho
+}

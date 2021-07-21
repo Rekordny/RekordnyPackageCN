@@ -2,13 +2,136 @@
 #只在点击对话框后触发
 #所有国家所有人物所有的语音每一句都会放在这里触发
 #所以会超长
-fire_vocal = {
-	###########KGA#########
-	#Maho
+###########KGA#########
+fire_vocal_KGA = {
+	
+	#Miho-1
 	if = {
-		limit = { tag = KGA check_variable = {affinity_1 = 1} check_variable = {process = 1} }
-		sound_effect = "Miho_31"
+		limit = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 2 }
+		}
+		sound_effect = "miho_32"
+	}
+	if = {
+		limit = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 6 }
+		}
+		sound_effect = "miho_43"
+	}
+	if = {
+		limit = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 7 }
+		}
+		sound_effect = "miho_36"
+	}
+	if = {
+		limit = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 10 }
+		}
+		sound_effect = "miho_44"
+	}
+	if = {
+		limit = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 12 }
+		}
+		sound_effect = "miho_31"
+	}
+	if = {
+		limit = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 13 }
+		}
+		sound_effect = "miho_43"
+	}
+	if = {
+		limit = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 17 }
+		}
+		sound_effect = "miho_22"
+	}
+	if = {
+		limit = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 20 }
+		}
+		sound_effect = "miho_30"
+	}
+	if = {
+		limit = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 22 }
+		}
+		sound_effect = "miho_36"
+	}
+	if = {
+		limit = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 24 }
+		}
+		sound_effect = "miho_35"
+	}
+	if = {
+		limit = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 27 }
+		}
+		sound_effect = "miho_43"
+	}
+	if = {
+		limit = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 35 }
+		}
+		sound_effect = "miho_19"
+	}
+	if = {
+		limit = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 36 }
+		}
+		sound_effect = "miho_19"
+	}
+	if = {
+		limit = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 37 }
+		}
+		sound_effect = "miho_38"
+	}
+	if = {
+		limit = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 38 }
+		}
+		sound_effect = "miho_8"
+	}
+	if = {
+		limit = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 39 }
+		}
+		sound_effect = "miho_43"
+	}
+	if = {
+		limit = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 43 }
+		}
+		sound_effect = "miho_9"
+	}
+	if = {
+		limit = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 44 }
+		}
+		sound_effect = "miho_4"
 	}
 	#Erika
-	#Miho
+	#Maho
 }

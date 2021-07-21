@@ -1,6 +1,6 @@
 ###########################
 ###########################
-#决定了附件item_art,将会巨长无比
+#决定了附件item_art,将会巨长无比,默认为none没有可以不加
 ###########################
 ###########################
 defined_text = {
@@ -511,268 +511,16 @@ defined_text = {
 		localization_key = none
 	}
 
+	#miho-1
+	text = {
+		trigger = { has_country_flag = dialogue.miho
+			check_variable = { affinity_3 = 1 }
+		}
+		localization_key = bg_7
+	}
 
 	text = {
 		localization_key = none
-	}
-}
-###########################
-###########################
-#决定了对话的名字,将会巨长无比
-###########################
-###########################
-defined_text = {
-	name = dialogue_name
-
-	#maho-1
-	text = {
-		trigger = {
-			has_country_flag = dialogue.maho
-			KGA = {
-				is_ai = no
-			}
-			check_variable = { affinity_1 = 1 }
-			check_variable = { dialogue_process = 0 }
-		}
-
-		localization_key = dialogue_name.maho
-	}
-	#maho-2
-	text = {
-		trigger = {
-			has_country_flag = dialogue.maho
-			KGA = {
-				is_ai = no
-			}
-			check_variable = { affinity_1 = 2 }
-			check_variable = { dialogue_process = 0 }
-		}
-
-		localization_key = dialogue_name.maho
-	}
-	#maho-3
-	text = {
-		trigger = {
-			has_country_flag = dialogue.maho
-			KGA = {
-				is_ai = no
-			}
-			check_variable = { affinity_1 = 3 }
-			check_variable = { dialogue_process = 0 }
-		}
-
-		localization_key = dialogue_name.maho
-	}
-	#maho-4
-	text = {
-		trigger = {
-			has_country_flag = dialogue.maho
-			KGA = {
-				is_ai = no
-			}
-			check_variable = { affinity_1 = 4 }
-			check_variable = { dialogue_process = 0 }
-		}
-
-		localization_key = dialogue_name.maho
-	}
-	#maho-5
-	text = {
-		trigger = {
-			has_country_flag = dialogue.maho
-			KGA = {
-				is_ai = no
-			}
-			check_variable = { affinity_1 = 5 }
-			check_variable = { dialogue_process = 0 }
-		}
-
-		localization_key = dialogue_name.maho
-	}
-	#maho-6
-	text = {
-		trigger = {
-			has_country_flag = dialogue.maho
-			KGA = {
-				is_ai = no
-			}
-			check_variable = { affinity_1 = 6 }
-			check_variable = { dialogue_process = 0 }
-		}
-
-		localization_key = dialogue_name.maho
-	}
-	#maho-7
-	text = {
-		trigger = {
-			has_country_flag = dialogue.maho
-			KGA = {
-				is_ai = no
-			}
-			check_variable = { affinity_1 = 7 }
-			check_variable = { dialogue_process = 0 }
-		}
-
-		localization_key = dialogue_name.maho
-	}
-	#maho-8
-	text = {
-		trigger = {
-			has_country_flag = dialogue.maho
-			KGA = {
-				is_ai = no
-			}
-			check_variable = { affinity_1 = 8 }
-			check_variable = { dialogue_process = 0 }
-		}
-
-		localization_key = dialogue_name.maho
-	}
-
-	#erika-1
-	text = {
-		trigger = {
-			has_country_flag = dialogue.erika
-			KGA = {
-				is_ai = no
-			}
-			check_variable = { affinity_2 = 1 }
-			check_variable = { dialogue_process = 0 }
-		}
-		
-		localization_key = dialogue_name.erika
-	}
-	text = {
-		trigger = {
-			has_country_flag = dialogue.erika
-			KGA = {
-				is_ai = no
-			}
-			check_variable = { affinity_2 = 1 }
-			check_variable = { dialogue_process = 1 }
-		}
-		
-		localization_key = dialogue_name.maho
-	}
-	text = {
-		trigger = {
-			has_country_flag = dialogue.erika
-			KGA = {
-				is_ai = no
-			}
-			check_variable = { affinity_2 = 1 }
-			check_variable = { dialogue_process = 2 }
-		}
-		
-		localization_key = dialogue_name.erika
-	}
-	#erika-2
-	text = {
-		trigger = {
-			has_country_flag = dialogue.erika
-			KGA = {
-				is_ai = no
-			}
-			check_variable = { affinity_2 = 2 }
-			check_variable = { dialogue_process = 0 }
-		}
-		
-		localization_key = dialogue_name.erika
-	}
-	#erika-3
-	text = {
-		trigger = {
-			has_country_flag = dialogue.erika
-			KGA = {
-				is_ai = no
-			}
-			check_variable = { affinity_2 = 3 }
-			check_variable = { dialogue_process = 0 }
-		}
-		
-		localization_key = dialogue_name.erika
-	}
-	#erika-4
-	text = {
-		trigger = {
-			has_country_flag = dialogue.erika
-			KGA = {
-				is_ai = no
-			}
-			check_variable = { affinity_2 = 4 }
-			check_variable = { dialogue_process = 0 }
-		}
-		
-		localization_key = dialogue_name.erika
-	}
-	text = {
-		trigger = {
-			has_country_flag = dialogue.erika
-			KGA = {
-				is_ai = no
-			}
-			check_variable = { affinity_2 = 4 }
-			check_variable = { dialogue_process = 1 }
-		}
-		
-		localization_key = dialogue_name.erika
-	}
-	#erika-5
-	text = {
-		trigger = {
-			has_country_flag = dialogue.erika
-			KGA = {
-				is_ai = no
-			}
-			check_variable = { affinity_2 = 5 }
-			check_variable = { dialogue_process = 0 }
-		}
-		
-		localization_key = dialogue_name.erika
-	}
-	#erika-6
-	text = {
-		trigger = {
-			has_country_flag = dialogue.erika
-			KGA = {
-				is_ai = no
-			}
-			check_variable = { affinity_2 = 6 }
-			check_variable = { dialogue_process = 0 }
-		}
-		
-		localization_key = dialogue_name.erika
-	}
-	#erika-7
-	text = {
-		trigger = {
-			has_country_flag = dialogue.erika
-			KGA = {
-				is_ai = no
-			}
-			check_variable = { affinity_2 = 7 }
-			check_variable = { dialogue_process = 0 }
-		}
-		
-		localization_key = dialogue_name.erika
-	}
-	#erika-8
-	text = {
-		trigger = {
-			has_country_flag = dialogue.erika
-			KGA = {
-				is_ai = no
-			}
-			check_variable = { affinity_2 = 8 }
-			check_variable = { dialogue_process = 0 }
-		}
-		
-		localization_key = dialogue_name.erika
-	}
-
-
-	text = {
-		localization_key = dialogue_name.0
 	}
 }
 ###########################
@@ -1028,7 +776,338 @@ defined_text = {
 		
 		localization_key = erika_d8_1
 	}
-	
+
+	#miho-1
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 0 }
+		}
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 1 }
+		}
+		localization_key = miho_d1_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 2 }
+		}
+		localization_key = miho_d1_2
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 3 }
+		}
+		localization_key = miho_d1_3
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 4 }
+		}
+		localization_key = miho_d1_4
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 5 }
+		}
+		localization_key = miho_d1_5
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 6 }
+		}
+		localization_key = miho_d1_6
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 7 }
+		}
+		localization_key = miho_d1_7
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 8 }
+		}
+		localization_key = miho_d1_8
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 9 }
+		}
+		localization_key = miho_d1_9
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 10 }
+		}
+		localization_key = miho_d1_10
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 11 }
+		}
+		localization_key = miho_d1_11
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 12 }
+		}
+		localization_key = miho_d1_12
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 13 }
+		}
+		localization_key = miho_d1_13
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 14 }
+		}
+		localization_key = miho_d1_14
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 15 }
+		}
+		localization_key = miho_d1_15
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 16 }
+		}
+		localization_key = miho_d1_16
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 17 }
+		}
+		localization_key = miho_d1_17
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 18 }
+		}
+		localization_key = miho_d1_18
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 19 }
+		}
+		localization_key = miho_d1_19
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 20 }
+		}
+		localization_key = miho_d1_20
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 21 }
+		}
+		localization_key = miho_d1_21
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 22 }
+		}
+		localization_key = miho_d1_22
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 23 }
+		}
+		localization_key = miho_d1_23
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 24 }
+		}
+		localization_key = miho_d1_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 25 }
+		}
+		localization_key = miho_d1_25
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 26 }
+		}
+		localization_key = miho_d1_26
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 27 }
+		}
+		localization_key = miho_d1_27
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 28 }
+		}
+		localization_key = miho_d1_28
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 29 }
+		}
+		localization_key = miho_d1_29
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 30 }
+		}
+		localization_key = miho_d1_30
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 31 }
+		}
+		localization_key = miho_d1_31
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 32 }
+		}
+		localization_key = miho_d1_32
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 33 }
+		}
+		localization_key = miho_d1_33
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 34 }
+		}
+		localization_key = miho_d1_34
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 35 }
+		}
+		localization_key = miho_d1_35
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 36 }
+		}
+		localization_key = miho_d1_36
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 37 }
+		}
+		localization_key = miho_d1_37
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 38 }
+		}
+		localization_key = miho_d1_38
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 39 }
+		}
+		localization_key = miho_d1_39
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 40 }
+		}
+		localization_key = miho_d1_40
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 41 }
+		}
+		localization_key = miho_d1_41
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 42 }
+		}
+		localization_key = miho_d1_42
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 43 }
+		}
+		localization_key = miho_d1_43
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 44 }
+		}
+		localization_key = miho_d1_44
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 45 }
+		}
+		localization_key = miho_d1_45
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 46 }
+		}
+		localization_key = miho_d1_46
+	}
+
 
 	text = {
 		localization_key = dialogue_content
@@ -1279,14 +1358,342 @@ defined_text = {
 	text = {
 		trigger = {
 			has_country_flag = dialogue.erika
-			KGA = {
-				is_ai = no
-			}
+			KGA = { is_ai = no }
 			check_variable = { affinity_2 = 8 }
 			check_variable = { dialogue_process = 0 }
 		}
-		
 		localization_key = erika_f5
+	}
+
+	#miho-1
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 0 }
+		}
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 1 }
+		}
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 2 }
+		}
+		localization_key = miho_f3
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 3 }
+		}
+		localization_key = miho_f8
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 4 }
+		}
+		localization_key = miho_f8
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 5 }
+		}
+		localization_key = miho_f8
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 6 }
+		}
+		localization_key = miho_f7
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 7 }
+		}
+		localization_key = miho_f2
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 8 }
+		}
+		localization_key = miho_f2
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 9 }
+		}
+		localization_key = miho_f2
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 10 }
+		}
+		localization_key = miho_f31
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 11 }
+		}
+		localization_key = miho_f31
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 12 }
+		}
+		localization_key = miho_f32
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 13 }
+		}
+		localization_key = miho_f16
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no }check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 14 }
+		}
+		localization_key = miho_f5
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 15 }
+		}
+		localization_key = miho_f5
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 16 }
+		}
+		localization_key = miho_f8
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 17 }
+		}
+		localization_key = miho_f26
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 18 }
+		}
+		localization_key = miho_f28
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 19 }
+		}
+		localization_key = miho_f28
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 20 }
+		}
+		localization_key = miho_f16
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 21 }
+		}
+		localization_key = miho_f7
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 22 }
+		}
+		localization_key = miho_f1
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 23 }
+		}
+		localization_key = miho_f6
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 24 }
+		}
+		localization_key = miho_f3
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 25 }
+		}
+		localization_key = miho_f3
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 26 }
+		}
+		localization_key = miho_f8
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 27 }
+		}
+		localization_key = miho_f9
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 28 }
+		}
+		localization_key = miho_f9
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 29 }
+		}
+		localization_key = miho_f15
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 30 }
+		}
+		localization_key = miho_f13
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 31 }
+		}
+		localization_key = miho_f8
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 32 }
+		}
+		localization_key = miho_f8
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 33 }
+		}
+		localization_key = miho_f3
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 34 }
+		}
+		localization_key = miho_f3
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 35 }
+		}
+		localization_key = miho_f9
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 36 }
+		}
+		localization_key = miho_f17
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 37 }
+		}
+		localization_key = miho_f30
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 38 }
+		}
+		localization_key = miho_f31
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 39 }
+		}
+		localization_key = miho_f29
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 40 }
+		}
+		localization_key = miho_f29
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 41 }
+		}
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 42 }
+		}
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 43 }
+		}
+		localization_key = miho_f24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 44 }
+		}
+		localization_key = miho_f24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 45 }
+		}
+		localization_key = miho_f24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.miho KGA = { is_ai = no } check_variable = { affinity_3 = 1 }
+			check_variable = { dialogue_process = 46 }
+		}
+		localization_key = none
 	}
 	
 	

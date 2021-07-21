@@ -16,10 +16,11 @@ scripted_gui = {
 
 			clear_variable = dialogue_process
 			clear_variable = dialogue_figure
+			play_song = "bgm_0"
 		}
 		affinity_dialogue_bar_click = {
 			add_to_variable = { dialogue_process = 1 }
-			fire_vocal = yes
+			fire_vocal_KGA = yes
 		}
 	  }
   
@@ -32,7 +33,7 @@ scripted_gui = {
 	  }
   
 	  dynamic_lists = {
-		}
+	  }
   
 	  properties = {
 	  }

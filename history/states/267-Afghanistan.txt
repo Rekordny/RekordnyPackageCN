@@ -10,7 +10,7 @@ state={
 		tungsten=3 # was: 3
 	}
 	history={
-		owner = AFG
+		owner = PRA
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1

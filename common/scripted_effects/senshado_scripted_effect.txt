@@ -2,16 +2,19 @@
 fire_affinity_dialogue_maho = {
 	set_country_flag = dialogue.maho
 	set_country_flag = open_affinity_dialogue
+	fire_bgm_KGA = yes
 }
 
 fire_affinity_dialogue_erika = {
 	set_country_flag = dialogue.erika
 	set_country_flag = open_affinity_dialogue
+	fire_bgm_KGA = yes
 }
 
 fire_affinity_dialogue_miho = {
 	set_country_flag = dialogue.miho
 	set_country_flag = open_affinity_dialogue
+	fire_bgm_KGA = yes
 }
 
 

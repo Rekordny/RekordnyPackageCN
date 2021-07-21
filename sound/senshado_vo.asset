@@ -1,0 +1,331 @@
+category = 
+{
+ name = "Miho_Voices1"
+ soundeffects = {
+    miho_1
+    miho_2
+    miho_3
+    miho_4
+    miho_5
+    miho_6
+    miho_7
+    miho_8
+    miho_9
+    miho_10
+    miho_11
+    miho_12
+    miho_13
+    miho_14
+    miho_15
+    miho_16
+    miho_17
+    miho_18
+    miho_19
+    miho_20
+    miho_21
+    miho_22
+    miho_23
+    miho_24
+    miho_25
+    miho_26
+    miho_27
+    miho_28
+    miho_29
+    miho_30
+    miho_31
+    miho_32
+    miho_33
+    miho_34
+    miho_35
+    miho_36
+    miho_37
+    miho_38
+    miho_39
+    miho_40
+    miho_41
+    miho_42
+    miho_43
+	miho_44
+	miho_45
+ }
+  compressor = 
+ {
+ }
+}
+
+
+soundeffect = { name = "miho_1" sounds = { sound = miho_1 } }
+soundeffect = { name = "miho_2" sounds = { sound = miho_2 } }
+soundeffect = { name = "miho_3" sounds = { sound = miho_3 } }
+soundeffect = { name = "miho_4" sounds = { sound = miho_4 } }
+soundeffect = { name = "miho_5" sounds = { sound = miho_5 } }
+soundeffect = { name = "miho_6" sounds = { sound = miho_6 } }
+soundeffect = { name = "miho_7" sounds = { sound = miho_7 } }
+soundeffect = { name = "miho_8" sounds = { sound = miho_8 } }
+soundeffect = { name = "miho_9" sounds = { sound = miho_9 } }
+soundeffect = { name = "miho_10" sounds = { sound = miho_10 } }
+soundeffect = { name = "miho_11" sounds = { sound = miho_11 } }
+soundeffect = { name = "miho_12" sounds = { sound = miho_12 } }
+soundeffect = { name = "miho_13" sounds = { sound = miho_13 } }
+soundeffect = { name = "miho_14" sounds = { sound = miho_14 } }
+soundeffect = { name = "miho_15" sounds = { sound = miho_15 } }
+soundeffect = { name = "miho_16" sounds = { sound = miho_16 } }
+soundeffect = { name = "miho_17" sounds = { sound = miho_17 } }
+soundeffect = { name = "miho_18" sounds = { sound = miho_18 } }
+soundeffect = { name = "miho_19" sounds = { sound = miho_19 } }
+soundeffect = { name = "miho_20" sounds = { sound = miho_20 } }
+soundeffect = { name = "miho_21" sounds = { sound = miho_21 } }
+soundeffect = { name = "miho_22" sounds = { sound = miho_22 } }
+soundeffect = { name = "miho_23" sounds = { sound = miho_23 } }
+soundeffect = { name = "miho_24" sounds = { sound = miho_24 } }
+soundeffect = { name = "miho_25" sounds = { sound = miho_25 } }
+soundeffect = { name = "miho_26" sounds = { sound = miho_26 } }
+soundeffect = { name = "miho_27" sounds = { sound = miho_27 } }
+soundeffect = { name = "miho_28" sounds = { sound = miho_28 } }
+soundeffect = { name = "miho_29" sounds = { sound = miho_29 } }
+soundeffect = { name = "miho_30" sounds = { sound = miho_30 } }
+soundeffect = { name = "miho_31" sounds = { sound = miho_31 } }
+soundeffect = { name = "miho_32" sounds = { sound = miho_32 } }
+soundeffect = { name = "miho_33" sounds = { sound = miho_33 } }
+soundeffect = { name = "miho_34" sounds = { sound = miho_34 } }
+soundeffect = { name = "miho_35" sounds = { sound = miho_35 } }
+soundeffect = { name = "miho_36" sounds = { sound = miho_36 } }
+soundeffect = { name = "miho_37" sounds = { sound = miho_37 } }
+soundeffect = { name = "miho_38" sounds = { sound = miho_38 } }
+soundeffect = { name = "miho_39" sounds = { sound = miho_39 } }
+soundeffect = { name = "miho_40" sounds = { sound = miho_40 } }
+soundeffect = { name = "miho_41" sounds = { sound = miho_41 } }
+soundeffect = { name = "miho_42" sounds = { sound = miho_42 } }
+soundeffect = { name = "miho_43" sounds = { sound = miho_43 } }
+soundeffect = { name = "miho_44" sounds = { sound = miho_44 } }
+soundeffect = { name = "miho_45" sounds = { sound = miho_45 } }
+
+
+
+
+####################文件必须在此声明################
+sound = 
+{
+	name = "miho_1"
+	file = "senshado_vocal/Miho/miho_1.wav"
+}
+sound = 
+{
+	name = "miho_2"
+	file = "senshado_vocal/Miho/miho_2.wav"
+}
+sound = 
+{
+	name = "miho_3"
+	file = "senshado_vocal/Miho/miho_3.wav"
+}
+sound = 
+{
+	name = "miho_4"
+	file = "senshado_vocal/Miho/miho_4.wav"
+}
+sound = 
+{
+	name = "miho_5"
+	file = "senshado_vocal/Miho/miho_5.wav"
+}
+sound = 
+{
+	name = "miho_6"
+	file = "senshado_vocal/Miho/miho_6.wav"
+}
+sound = 
+{
+	name = "miho_7"
+	file = "senshado_vocal/Miho/miho_7.wav"
+}
+sound = 
+{
+	name = "miho_8"
+	file = "senshado_vocal/Miho/miho_8.wav"
+}
+sound = 
+{
+	name = "miho_9"
+	file = "senshado_vocal/Miho/miho_9.wav"
+}
+sound = 
+{
+	name = "miho_10"
+	file = "senshado_vocal/Miho/miho_10.wav"
+}
+sound = 
+{
+	name = "miho_11"
+	file = "senshado_vocal/Miho/miho_11.wav"
+}
+sound = 
+{
+	name = "miho_12"
+	file = "senshado_vocal/Miho/miho_12.wav"
+}
+sound = 
+{
+	name = "miho_13"
+	file = "senshado_vocal/Miho/miho_13.wav"
+}
+sound = 
+{
+	name = "miho_14"
+	file = "senshado_vocal/Miho/miho_14.wav"
+}
+sound = 
+{
+	name = "miho_15"
+	file = "senshado_vocal/Miho/miho_15.wav"
+}
+sound = 
+{
+	name = "miho_16"
+	file = "senshado_vocal/Miho/miho_16.wav"
+}
+sound = 
+{
+	name = "miho_17"
+	file = "senshado_vocal/Miho/miho_17.wav"
+}
+sound = 
+{
+	name = "miho_18"
+	file = "senshado_vocal/Miho/miho_18.wav"
+}
+sound = 
+{
+	name = "miho_19"
+	file = "senshado_vocal/Miho/miho_19.wav"
+}
+sound = 
+{
+	name = "miho_20"
+	file = "senshado_vocal/Miho/miho_20.wav"
+}
+sound = 
+{
+	name = "miho_21"
+	file = "senshado_vocal/Miho/miho_21.wav"
+}
+sound = 
+{
+	name = "miho_22"
+	file = "senshado_vocal/Miho/miho_22.wav"
+}
+sound = 
+{
+	name = "miho_23"
+	file = "senshado_vocal/Miho/miho_23.wav"
+}
+sound = 
+{
+	name = "miho_24"
+	file = "senshado_vocal/Miho/miho_24.wav"
+}
+sound = 
+{
+	name = "miho_25"
+	file = "senshado_vocal/Miho/miho_25.wav"
+}
+sound = 
+{
+	name = "miho_26"
+	file = "senshado_vocal/Miho/miho_26.wav"
+}
+sound = 
+{
+	name = "miho_27"
+	file = "senshado_vocal/Miho/miho_27.wav"
+}
+sound = 
+{
+	name = "miho_28"
+	file = "senshado_vocal/Miho/miho_28.wav"
+}
+sound = 
+{
+	name = "miho_29"
+	file = "senshado_vocal/Miho/miho_29.wav"
+}
+sound = 
+{
+	name = "miho_30"
+	file = "senshado_vocal/Miho/miho_30.wav"
+}
+sound = 
+{
+	name = "miho_31"
+	file = "senshado_vocal/Miho/miho_31.wav"
+}
+sound = 
+{
+	name = "miho_32"
+	file = "senshado_vocal/Miho/miho_32.wav"
+}
+sound = 
+{
+	name = "miho_33"
+	file = "senshado_vocal/Miho/miho_33.wav"
+}
+sound = 
+{
+	name = "miho_34"
+	file = "senshado_vocal/Miho/miho_34.wav"
+}
+sound = 
+{
+	name = "miho_35"
+	file = "senshado_vocal/Miho/miho_35.wav"
+}
+sound = 
+{
+	name = "miho_36"
+	file = "senshado_vocal/Miho/miho_36.wav"
+}
+sound = 
+{
+	name = "miho_37"
+	file = "senshado_vocal/Miho/miho_37.wav"
+}
+sound = 
+{
+	name = "miho_38"
+	file = "senshado_vocal/Miho/miho_38.wav"
+}
+sound = 
+{
+	name = "miho_39"
+	file = "senshado_vocal/Miho/miho_39.wav"
+}
+sound = 
+{
+	name = "miho_40"
+	file = "senshado_vocal/Miho/miho_40.wav"
+}
+sound = 
+{
+	name = "miho_41"
+	file = "senshado_vocal/Miho/miho_41.wav"
+}
+sound = 
+{
+	name = "miho_42"
+	file = "senshado_vocal/Miho/miho_42.wav"
+}
+sound = 
+{
+	name = "miho_43"
+	file = "senshado_vocal/Miho/miho_43.wav"
+}
+sound = 
+{
+	name = "miho_44"
+	file = "senshado_vocal/Miho/miho_44.wav"
+}
+sound = 
+{
+	name = "miho_45"
+	file = "senshado_vocal/Miho/miho_45.wav"
+}

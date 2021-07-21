@@ -20,9 +20,6 @@ scripted_gui = {
       item_bar_3_click = {
         affinity_increase_3 = yes
       }
-      chara_thumb_maho_click = {
-        sound_effect = "Miho_1"
-      }
     }
 
     triggers = {

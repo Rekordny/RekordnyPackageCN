@@ -91,26 +91,26 @@ guiTypes = {
 		}	
 
 
-		#名字
-		instantTextboxType = {
-			name = "dialogue_nametag"
-			position = { x = 130 y = 810 }
-			font = "hoi_36header"
-			borderSize = {x = 0 y = 0}
-			text = "[dialogue_name]"
-			maxWidth = 600
-			maxHeight = 20
-			fixedsize = yes
-		}
+		# #名字
+		# instantTextboxType = {
+		# 	name = "dialogue_nametag"
+		# 	position = { x = 130 y = 810 }
+		# 	font = "hoi_36header"
+		# 	borderSize = {x = 0 y = 0}
+		# 	text = "[dialogue_name]"
+		# 	maxWidth = 600
+		# 	maxHeight = 20
+		# 	fixedsize = yes
+		# }
 		#对话
 		instantTextboxType = {
 			name = "dialogue_text"
-			position = { x = 160 y = 870 }
+			position = { x = 160 y = 830 }
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
 			text = "[dialogue_content]"
 			maxWidth = 1500
-			maxHeight = 40
+			maxHeight = 80
 			fixedsize = yes
 		}
 	}

@@ -1,0 +1,148 @@
+music = {
+	name = "bgm_0"
+	file = "PlaceHolder.ogg"
+}
+music = {
+	name = "bgm_1"
+	file = "Girls Und Panzer OST Asu ni Sonaete Nemasu!.ogg"
+}
+music = {
+	name = "bgm_2"
+	file = "Girls Und Panzer OST Atarashii Asa no Hajimari desu!.ogg"
+}
+music = {
+	name = "bgm_3"
+	file = "Girls Und Panzer OST Eikou no Senshadou Zenkoku Daikai Hajimarimasu!.ogg"
+}
+music = {
+	name = "bgm_4"
+	file = "Girls Und Panzer OST Gakuenkan wa Kyou mo Yuusou ni Unabara wo Susumimasu!.ogg"
+}
+music = {
+	name = "bgm_5"
+	file = "Girls Und Panzer OST Iki wo Koroshite Machibuse Shimasu!.ogg"
+}
+music = {
+	name = "bgm_6"
+	file = "Girls Und Panzer OST Iza! Shiai ni Nozomimasu!.ogg"
+}
+music = {
+	name = "bgm_7"
+	file = "Girls Und Panzer OST Kaikaishiki desu!.ogg"
+}
+music = {
+	name = "bgm_8"
+	file = "Girls Und Panzer OST Kentou wo Tataeaimasu!.ogg"
+}
+music = {
+	name = "bgm_9"
+	file = "Girls Und Panzer OST Kinou no Teki wa Kyou no Tomo desu!.ogg"
+}
+music = {
+	name = "bgm_10"
+	file = "Girls Und Panzer OST Kinpaku Suru Senkyou desu!.ogg"
+}
+music = {
+	name = "bgm_11"
+	file = "Girls Und Panzer OST Konna Futsuu no Gakuen Seikatsutte Suteki desu!.ogg"
+}
+music = {
+	name = "bgm_12"
+	file = "Girls Und Panzer OST Kore ga Yuujou desu ne!.ogg"
+}
+music = {
+	name = "bgm_13"
+	file = "Girls Und Panzer OST Minna Saikou no Tomodachi desu!.ogg"
+}
+music = {
+	name = "bgm_14"
+	file = "Girls Und Panzer OST Oarai Joshi Gakuen Team Zenshin Shimasu!.ogg"
+}
+music = {
+	name = "bgm_15"
+	file = "Girls Und Panzer OST Obaa ni Ai ni Ikimasu!.ogg"
+}
+music = {
+	name = "bgm_16"
+	file = "Girls Und Panzer OST Otome no Tashinami Senshadou March!.ogg"
+}
+music = {
+	name = "bgm_17"
+	file = "Girls Und Panzer OST Oubou wa Seitokai ni Ataerareta Seitou na Kenri desu!.ogg"
+}
+music = {
+	name = "bgm_18"
+	file = "Girls Und Panzer OST Outlet de Okaimono Shimasu!.ogg"
+}
+music = {
+	name = "bgm_19"
+	file = "Girls Und Panzer OST Riyuu ga Arimasu....ogg"
+}
+music = {
+	name = "bgm_20"
+	file = "Girls Und Panzer OST Seitokai, Hisou na Ketsui to Tomo ni Susumimasu!.ogg"
+}
+music = {
+	name = "bgm_21"
+	file = "Girls Und Panzer OST Sensen wa Kouchaku Joutai desu!.ogg"
+}
+music = {
+	name = "bgm_22"
+	file = "Girls Und Panzer OST Sensha Kissa ni Kimashita!.ogg"
+}
+music = {
+	name = "bgm_23"
+	file = "Girls Und Panzer OST Sensha no Chishiki de wa Dare ni mo Makemasen!.ogg"
+}
+music = {
+	name = "bgm_24"
+	file = "Girls Und Panzer OST Sensha wo Kawaiku Decoration Shichaimasu!.ogg"
+}
+music = {
+	name = "bgm_25"
+	file = "Girls Und Panzer OST Sensha, Norimasu!.ogg"
+}
+music = {
+	name = "bgm_26"
+	file = "Girls Und Panzer OST Senshadou Anthem desu!.ogg"
+}
+music = {
+	name = "bgm_27"
+	file = "Girls Und Panzer OST Senshadou Koushinkyoku! Panzer Vor!.ogg"
+}
+music = {
+	name = "bgm_28"
+	file = "Girls Und Panzer OST Senshadou to wa Joshi toshite no Michi wo Kiwameru Koto demo Arimasu!.ogg"
+}
+music = {
+	name = "bgm_29"
+	file = "Girls Und Panzer OST Sports News wa Kyou mo Senshadou wo Houjiteimasu!.ogg"
+}
+music = {
+	name = "bgm_30"
+	file = "Girls Und Panzer OST Teki Sensha Shingun Shitekimasu!.ogg"
+}
+music = {
+	name = "bgm_31"
+	file = "Girls Und Panzer OST Tenkou Shitekite Yokatta desu!.ogg"
+}
+music = {
+	name = "bgm_32"
+	file = "Girls Und Panzer OST Volley-bu Fukatsu wo Kakete Tatakaimasu!.ogg"
+}
+music = {
+	name = "bgm_33"
+	file = "Girls Und Panzer OST Watashi, Iya na Yokan ga Shimasu!.ogg"
+}
+music = {
+	name = "bgm_34"
+	file = "Girls Und Panzer OST Watashi, Kimemasu!.ogg"
+}
+music = {
+	name = "bgm_35"
+	file = "Girls Und Panzer OST Watashi, Motemote de Komattemasu!.ogg"
+}
+music = {
+	name = "bgm_36"
+	file = "Girls Und Panzer OST Watashitachi, Sei Ippai Ganbarimasu!.ogg"
+}
