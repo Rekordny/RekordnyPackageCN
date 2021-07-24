@@ -103,26 +103,6 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_KGA_senshado_self_propelled_gun_1_medium"
-		texturefile = "gfx/interface/technologies/KGA_senshado_self_propelled_gun_1.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_KGA_senshado_self_propelled_gun_2_medium"
-		texturefile = "gfx/interface/technologies/KGA_senshado_self_propelled_gun_2.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_KGA_senshado_self_propelled_gun_3_medium"
-		texturefile = "gfx/interface/technologies/KGA_senshado_self_propelled_gun_3.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_KGA_senshado_self_propelled_gun_4_medium"
-		texturefile = "gfx/interface/technologies/KGA_senshado_self_propelled_gun_4.dds"
-	}
-
-	SpriteType = {
 		name = "GFX_KGA_senshado_tank_destroyer_1_medium"
 		texturefile = "gfx/interface/technologies/KGA_senshado_tank_destroyer_1.dds"
 	}
@@ -157,6 +137,138 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/KGA_senshado_assult_tank_destroyer_3.dds"
 	}
 	
+	#####PRA#####
+	SpriteType = {
+		name = "GFX_PRA_senshado_prototype_tank_medium"
+		texturefile = "gfx/interface/technologies/PRA_senshado_prototype_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PRA_senshado_light_tank_1_medium"
+		texturefile = "gfx/interface/technologies/PRA_senshado_light_tank_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PRA_senshado_light_tank_2_medium"
+		texturefile = "gfx/interface/technologies/PRA_senshado_light_tank_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PRA_senshado_light_tank_3_medium"
+		texturefile = "gfx/interface/technologies/PRA_senshado_light_tank_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PRA_senshado_light_tank_4_medium"
+		texturefile = "gfx/interface/technologies/PRA_senshado_light_tank_4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PRA_senshado_light_tank_5_medium"
+		texturefile = "gfx/interface/technologies/PRA_senshado_light_tank_5.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PRA_senshado_light_tank_6_medium"
+		texturefile = "gfx/interface/technologies/PRA_senshado_light_tank_6.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PRA_senshado_light_tank_7_medium"
+		texturefile = "gfx/interface/technologies/PRA_senshado_light_tank_7.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PRA_senshado_medium_tank_1_medium"
+		texturefile = "gfx/interface/technologies/PRA_senshado_medium_tank_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_PRA_senshado_medium_tank_2_medium"
+		texturefile = "gfx/interface/technologies/PRA_senshado_medium_tank_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PRA_senshado_medium_tank_3_medium"
+		texturefile = "gfx/interface/technologies/PRA_senshado_medium_tank_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PRA_senshado_medium_tank_4_medium"
+		texturefile = "gfx/interface/technologies/PRA_senshado_medium_tank_4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PRA_senshado_medium_tank_5_medium"
+		texturefile = "gfx/interface/technologies/PRA_senshado_medium_tank_5.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PRA_senshado_medium_tank_6_medium"
+		texturefile = "gfx/interface/technologies/PRA_senshado_medium_tank_6.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PRA_senshado_heavy_tank_1_medium"
+		texturefile = "gfx/interface/technologies/PRA_senshado_heavy_tank_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_PRA_senshado_heavy_tank_2_medium"
+		texturefile = "gfx/interface/technologies/PRA_senshado_heavy_tank_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PRA_senshado_heavy_tank_3_medium"
+		texturefile = "gfx/interface/technologies/PRA_senshado_heavy_tank_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PRA_senshado_heavy_tank_4_medium"
+		texturefile = "gfx/interface/technologies/PRA_senshado_heavy_tank_4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PRA_senshado_heavy_tank_5_medium"
+		texturefile = "gfx/interface/technologies/PRA_senshado_heavy_tank_5.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PRA_senshado_tank_destroyer_1_medium"
+		texturefile = "gfx/interface/technologies/PRA_senshado_tank_destroyer_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_PRA_senshado_tank_destroyer_2_medium"
+		texturefile = "gfx/interface/technologies/PRA_senshado_tank_destroyer_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PRA_senshado_tank_destroyer_3_medium"
+		texturefile = "gfx/interface/technologies/PRA_senshado_tank_destroyer_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PRA_senshado_tank_destroyer_4_medium"
+		texturefile = "gfx/interface/technologies/PRA_senshado_tank_destroyer_4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PRA_senshado_assult_tank_destroyer_1_medium"
+		texturefile = "gfx/interface/technologies/PRA_senshado_assult_tank_destroyer_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_PRA_senshado_assult_tank_destroyer_2_medium"
+		texturefile = "gfx/interface/technologies/PRA_senshado_assult_tank_destroyer_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PRA_senshado_assult_tank_destroyer_3_medium"
+		texturefile = "gfx/interface/technologies/PRA_senshado_assult_tank_destroyer_3.dds"
+	}
+
+	###############################################ORIGIN########################
 	### generic equipment archetypes ###
 
 	SpriteType = {

@@ -1,0 +1,215 @@
+#################################
+#决定商店内商品的图标和描述替换内容#
+#################################
+
+####################
+#决定了商品的六个图标#
+####################
+defined_text = {
+	name = goods_1f
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 8 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = none
+	}
+    #默认
+	text = { localization_key = item_random }
+}
+defined_text = {
+	name = goods_2f
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 8 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = none
+	}
+    #默认
+	text = { localization_key = item_present }
+}
+defined_text = {
+	name = goods_3f
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 8 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = none
+	}
+    #默认
+	text = { localization_key = item_random }
+}
+defined_text = {
+	name = goods_4f
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 8 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = none
+	}
+    #默认
+	text = { localization_key = item_tank }
+}
+defined_text = {
+	name = goods_5f
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 8 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = none
+	}
+    #默认
+	text = { localization_key = item_tank }
+}
+defined_text = {
+	name = goods_6f
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 8 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = none
+	}
+    #默认
+	text = { localization_key = item_support }
+}
+
+####################
+#决定了商品的六个描述#
+####################
+defined_text = {
+	name = goods_1d
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 8 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = none
+	}
+    #默认
+	text = { localization_key = shop_desc1 }
+}
+defined_text = {
+	name = goods_2d
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 8 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = none
+	}
+    #默认
+	text = { localization_key = shop_desc4 }
+}
+defined_text = {
+	name = goods_3d
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 8 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = none
+	}
+    #默认
+	text = { localization_key = shop_desc1 }
+}
+defined_text = {
+	name = goods_4d
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 8 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = none
+	}
+    #默认
+	text = { localization_key = shop_desc9 }
+}
+defined_text = {
+	name = goods_5d
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 8 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = none
+	}
+    #默认
+	text = { localization_key = shop_desc6 }
+}
+defined_text = {
+	name = goods_6d
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 8 }
+			check_variable = { dialogue_process = 0 }
+		}
+		
+		localization_key = none
+	}
+    #默认
+	text = { localization_key = shop_desc5 }
+}

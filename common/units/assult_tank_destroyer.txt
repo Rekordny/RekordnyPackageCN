@@ -60,7 +60,7 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			senshado_assult_tank_destroyer_equipment = 30
+			senshado_assult_tank_destroyer_equipment = 25
 		}
 
 		manpower = 500

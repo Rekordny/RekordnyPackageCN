@@ -1,0 +1,31 @@
+
+guiTypes = {
+	containerWindowType = {
+		name = "gold_storage_container"
+		position = { x = 1043 y = 5 }
+		buttonType ={
+			name ="gold_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=0 y=0 }
+		}
+		
+		iconType = {
+			name ="gold_icon"
+			spriteType = "GFX_gold_icon"
+			position = { x= 3 y = 3 }
+		}
+
+		instantTextBoxType = {
+			name ="gold_storage_text"
+			position = { x= 22 y = 4 }
+			font = "hoi_18mbs"
+			text = "GOLD_STORAGE"
+			format = center
+			maxWidth = 46
+			maxHeight = 22
+			fixedsize = yes
+			pdx_tooltip = "GOLD_STORAGE_TOOLTIP" 
+			pdx_tooltip_delayed = "GOLD_STORAGE_TOOLTIP_DELAYED"
+		}
+	}
+}

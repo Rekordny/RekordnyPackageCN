@@ -47,6 +47,74 @@ category =
     miho_43
 	miho_44
 	miho_45
+	maho_1
+    maho_2
+    maho_3
+    maho_4
+    maho_5
+    maho_6
+    maho_7
+    maho_8
+    maho_9
+    maho_10
+    maho_11
+    maho_12
+    maho_13
+    maho_14
+    maho_15
+    maho_16
+    maho_17
+    maho_18
+    maho_19
+    maho_20
+    maho_21
+    maho_22
+    maho_23
+    maho_24
+    maho_25
+    maho_26
+    maho_27
+    maho_28
+    maho_29
+    maho_30
+    maho_31
+    maho_32
+    maho_33
+    maho_34
+    maho_35
+    maho_36
+    maho_37
+    maho_38
+    maho_39
+    maho_40
+    maho_41
+    maho_42
+    maho_43
+	maho_44
+	maho_45
+	maho_46
+	maho_47
+	maho_48
+	maho_49
+	maho_50
+	maho_51
+    maho_52
+    maho_53
+    maho_54
+    maho_55
+    maho_56
+    maho_57
+    maho_58
+    maho_59
+    maho_60
+	maho_61
+    maho_62
+    maho_63
+    maho_64
+    maho_65
+    maho_66
+    maho_67
+    maho_68
  }
   compressor = 
  {
@@ -100,6 +168,74 @@ soundeffect = { name = "miho_43" sounds = { sound = miho_43 } }
 soundeffect = { name = "miho_44" sounds = { sound = miho_44 } }
 soundeffect = { name = "miho_45" sounds = { sound = miho_45 } }
 
+soundeffect = { name = "maho_1" sounds = { sound = maho_1 } }
+soundeffect = { name = "maho_2" sounds = { sound = maho_2 } }
+soundeffect = { name = "maho_3" sounds = { sound = maho_3 } }
+soundeffect = { name = "maho_4" sounds = { sound = maho_4 } }
+soundeffect = { name = "maho_5" sounds = { sound = maho_5 } }
+soundeffect = { name = "maho_6" sounds = { sound = maho_6 } }
+soundeffect = { name = "maho_7" sounds = { sound = maho_7 } }
+soundeffect = { name = "maho_8" sounds = { sound = maho_8 } }
+soundeffect = { name = "maho_9" sounds = { sound = maho_9 } }
+soundeffect = { name = "maho_10" sounds = { sound = maho_10 } }
+soundeffect = { name = "maho_11" sounds = { sound = maho_11 } }
+soundeffect = { name = "maho_12" sounds = { sound = maho_12 } }
+soundeffect = { name = "maho_13" sounds = { sound = maho_13 } }
+soundeffect = { name = "maho_14" sounds = { sound = maho_14 } }
+soundeffect = { name = "maho_15" sounds = { sound = maho_15 } }
+soundeffect = { name = "maho_16" sounds = { sound = maho_16 } }
+soundeffect = { name = "maho_17" sounds = { sound = maho_17 } }
+soundeffect = { name = "maho_18" sounds = { sound = maho_18 } }
+soundeffect = { name = "maho_19" sounds = { sound = maho_19 } }
+soundeffect = { name = "maho_20" sounds = { sound = maho_20 } }
+soundeffect = { name = "maho_21" sounds = { sound = maho_21 } }
+soundeffect = { name = "maho_22" sounds = { sound = maho_22 } }
+soundeffect = { name = "maho_23" sounds = { sound = maho_23 } }
+soundeffect = { name = "maho_24" sounds = { sound = maho_24 } }
+soundeffect = { name = "maho_25" sounds = { sound = maho_25 } }
+soundeffect = { name = "maho_26" sounds = { sound = maho_26 } }
+soundeffect = { name = "maho_27" sounds = { sound = maho_27 } }
+soundeffect = { name = "maho_28" sounds = { sound = maho_28 } }
+soundeffect = { name = "maho_29" sounds = { sound = maho_29 } }
+soundeffect = { name = "maho_30" sounds = { sound = maho_30 } }
+soundeffect = { name = "maho_31" sounds = { sound = maho_31 } }
+soundeffect = { name = "maho_32" sounds = { sound = maho_32 } }
+soundeffect = { name = "maho_33" sounds = { sound = maho_33 } }
+soundeffect = { name = "maho_34" sounds = { sound = maho_34 } }
+soundeffect = { name = "maho_35" sounds = { sound = maho_35 } }
+soundeffect = { name = "maho_36" sounds = { sound = maho_36 } }
+soundeffect = { name = "maho_37" sounds = { sound = maho_37 } }
+soundeffect = { name = "maho_38" sounds = { sound = maho_38 } }
+soundeffect = { name = "maho_39" sounds = { sound = maho_39 } }
+soundeffect = { name = "maho_40" sounds = { sound = maho_40 } }
+soundeffect = { name = "maho_41" sounds = { sound = maho_41 } }
+soundeffect = { name = "maho_42" sounds = { sound = maho_42 } }
+soundeffect = { name = "maho_43" sounds = { sound = maho_43 } }
+soundeffect = { name = "maho_44" sounds = { sound = maho_44 } }
+soundeffect = { name = "maho_45" sounds = { sound = maho_45 } }
+soundeffect = { name = "maho_46" sounds = { sound = maho_46 } }
+soundeffect = { name = "maho_47" sounds = { sound = maho_47 } }
+soundeffect = { name = "maho_48" sounds = { sound = maho_48 } }
+soundeffect = { name = "maho_49" sounds = { sound = maho_49 } }
+soundeffect = { name = "maho_50" sounds = { sound = maho_50 } }
+soundeffect = { name = "maho_51" sounds = { sound = maho_51 } }
+soundeffect = { name = "maho_52" sounds = { sound = maho_52 } }
+soundeffect = { name = "maho_53" sounds = { sound = maho_53 } }
+soundeffect = { name = "maho_54" sounds = { sound = maho_54 } }
+soundeffect = { name = "maho_55" sounds = { sound = maho_55 } }
+soundeffect = { name = "maho_56" sounds = { sound = maho_56 } }
+soundeffect = { name = "maho_57" sounds = { sound = maho_57 } }
+soundeffect = { name = "maho_58" sounds = { sound = maho_58 } }
+soundeffect = { name = "maho_59" sounds = { sound = maho_59 } }
+soundeffect = { name = "maho_60" sounds = { sound = maho_60 } }
+soundeffect = { name = "maho_61" sounds = { sound = maho_61 } }
+soundeffect = { name = "maho_62" sounds = { sound = maho_62 } }
+soundeffect = { name = "maho_63" sounds = { sound = maho_63 } }
+soundeffect = { name = "maho_64" sounds = { sound = maho_64 } }
+soundeffect = { name = "maho_65" sounds = { sound = maho_65 } }
+soundeffect = { name = "maho_66" sounds = { sound = maho_66 } }
+soundeffect = { name = "maho_67" sounds = { sound = maho_67 } }
+soundeffect = { name = "maho_68" sounds = { sound = maho_68 } }
 
 
 
@@ -328,4 +464,346 @@ sound =
 {
 	name = "miho_45"
 	file = "senshado_vocal/Miho/miho_45.wav"
+}
+
+
+sound = 
+{
+	name = "maho_1"
+	file = "senshado_vocal/Maho/maho_1.wav"
+}
+sound = 
+{
+	name = "maho_2"
+	file = "senshado_vocal/Maho/maho_2.wav"
+}
+sound = 
+{
+	name = "maho_3"
+	file = "senshado_vocal/Maho/maho_3.wav"
+}
+sound = 
+{
+	name = "maho_4"
+	file = "senshado_vocal/Maho/maho_4.wav"
+}
+sound = 
+{
+	name = "maho_5"
+	file = "senshado_vocal/Maho/maho_5.wav"
+}
+sound = 
+{
+	name = "maho_6"
+	file = "senshado_vocal/Maho/maho_6.wav"
+}
+sound = 
+{
+	name = "maho_7"
+	file = "senshado_vocal/Maho/maho_7.wav"
+}
+sound = 
+{
+	name = "maho_8"
+	file = "senshado_vocal/Maho/maho_8.wav"
+}
+sound = 
+{
+	name = "maho_9"
+	file = "senshado_vocal/Maho/maho_9.wav"
+}
+sound = 
+{
+	name = "maho_10"
+	file = "senshado_vocal/Maho/maho_10.wav"
+}
+sound = 
+{
+	name = "maho_11"
+	file = "senshado_vocal/Maho/maho_11.wav"
+}
+sound = 
+{
+	name = "maho_12"
+	file = "senshado_vocal/Maho/maho_12.wav"
+}
+sound = 
+{
+	name = "maho_13"
+	file = "senshado_vocal/Maho/maho_13.wav"
+}
+sound = 
+{
+	name = "maho_14"
+	file = "senshado_vocal/Maho/maho_14.wav"
+}
+sound = 
+{
+	name = "maho_15"
+	file = "senshado_vocal/Maho/maho_15.wav"
+}
+sound = 
+{
+	name = "maho_16"
+	file = "senshado_vocal/Maho/maho_16.wav"
+}
+sound = 
+{
+	name = "maho_17"
+	file = "senshado_vocal/Maho/maho_17.wav"
+}
+sound = 
+{
+	name = "maho_18"
+	file = "senshado_vocal/Maho/maho_18.wav"
+}
+sound = 
+{
+	name = "maho_19"
+	file = "senshado_vocal/Maho/maho_19.wav"
+}
+sound = 
+{
+	name = "maho_20"
+	file = "senshado_vocal/Maho/maho_20.wav"
+}
+sound = 
+{
+	name = "maho_21"
+	file = "senshado_vocal/Maho/maho_21.wav"
+}
+sound = 
+{
+	name = "maho_22"
+	file = "senshado_vocal/Maho/maho_22.wav"
+}
+sound = 
+{
+	name = "maho_23"
+	file = "senshado_vocal/Maho/maho_23.wav"
+}
+sound = 
+{
+	name = "maho_24"
+	file = "senshado_vocal/Maho/maho_24.wav"
+}
+sound = 
+{
+	name = "maho_25"
+	file = "senshado_vocal/Maho/maho_25.wav"
+}
+sound = 
+{
+	name = "maho_26"
+	file = "senshado_vocal/Maho/maho_26.wav"
+}
+sound = 
+{
+	name = "maho_27"
+	file = "senshado_vocal/Maho/maho_27.wav"
+}
+sound = 
+{
+	name = "maho_28"
+	file = "senshado_vocal/Maho/maho_28.wav"
+}
+sound = 
+{
+	name = "maho_29"
+	file = "senshado_vocal/Maho/maho_29.wav"
+}
+sound = 
+{
+	name = "maho_30"
+	file = "senshado_vocal/Maho/maho_30.wav"
+}
+sound = 
+{
+	name = "maho_31"
+	file = "senshado_vocal/Maho/maho_31.wav"
+}
+sound = 
+{
+	name = "maho_32"
+	file = "senshado_vocal/Maho/maho_32.wav"
+}
+sound = 
+{
+	name = "maho_33"
+	file = "senshado_vocal/Maho/maho_33.wav"
+}
+sound = 
+{
+	name = "maho_34"
+	file = "senshado_vocal/Maho/maho_34.wav"
+}
+sound = 
+{
+	name = "maho_35"
+	file = "senshado_vocal/Maho/maho_35.wav"
+}
+sound = 
+{
+	name = "maho_36"
+	file = "senshado_vocal/Maho/maho_36.wav"
+}
+sound = 
+{
+	name = "maho_37"
+	file = "senshado_vocal/Maho/maho_37.wav"
+}
+sound = 
+{
+	name = "maho_38"
+	file = "senshado_vocal/Maho/maho_38.wav"
+}
+sound = 
+{
+	name = "maho_39"
+	file = "senshado_vocal/Maho/maho_39.wav"
+}
+sound = 
+{
+	name = "maho_40"
+	file = "senshado_vocal/Maho/maho_40.wav"
+}
+sound = 
+{
+	name = "maho_41"
+	file = "senshado_vocal/Maho/maho_41.wav"
+}
+sound = 
+{
+	name = "maho_42"
+	file = "senshado_vocal/Maho/maho_42.wav"
+}
+sound = 
+{
+	name = "maho_43"
+	file = "senshado_vocal/Maho/maho_43.wav"
+}
+sound = 
+{
+	name = "maho_44"
+	file = "senshado_vocal/Maho/maho_44.wav"
+}
+sound = 
+{
+	name = "maho_45"
+	file = "senshado_vocal/Maho/maho_45.wav"
+}
+sound = 
+{
+	name = "maho_46"
+	file = "senshado_vocal/Maho/maho_46.wav"
+}
+sound = 
+{
+	name = "maho_47"
+	file = "senshado_vocal/Maho/maho_47.wav"
+}
+sound = 
+{
+	name = "maho_48"
+	file = "senshado_vocal/Maho/maho_48.wav"
+}
+sound = 
+{
+	name = "maho_49"
+	file = "senshado_vocal/Maho/maho_49.wav"
+}
+sound = 
+{
+	name = "maho_50"
+	file = "senshado_vocal/Maho/maho_50.wav"
+}
+sound = 
+{
+	name = "maho_51"
+	file = "senshado_vocal/Maho/maho_1.wav"
+}
+sound = 
+{
+	name = "maho_52"
+	file = "senshado_vocal/Maho/maho_2.wav"
+}
+sound = 
+{
+	name = "maho_53"
+	file = "senshado_vocal/Maho/maho_3.wav"
+}
+sound = 
+{
+	name = "maho_54"
+	file = "senshado_vocal/Maho/maho_4.wav"
+}
+sound = 
+{
+	name = "maho_55"
+	file = "senshado_vocal/Maho/maho_5.wav"
+}
+sound = 
+{
+	name = "maho_56"
+	file = "senshado_vocal/Maho/maho_6.wav"
+}
+sound = 
+{
+	name = "maho_57"
+	file = "senshado_vocal/Maho/maho_7.wav"
+}
+sound = 
+{
+	name = "maho_58"
+	file = "senshado_vocal/Maho/maho_8.wav"
+}
+sound = 
+{
+	name = "maho_59"
+	file = "senshado_vocal/Maho/maho_9.wav"
+}
+sound = 
+{
+	name = "maho_60"
+	file = "senshado_vocal/Maho/maho_10.wav"
+}
+sound = 
+{
+	name = "maho_61"
+	file = "senshado_vocal/Maho/maho_1.wav"
+}
+sound = 
+{
+	name = "maho_62"
+	file = "senshado_vocal/Maho/maho_2.wav"
+}
+sound = 
+{
+	name = "maho_63"
+	file = "senshado_vocal/Maho/maho_3.wav"
+}
+sound = 
+{
+	name = "maho_64"
+	file = "senshado_vocal/Maho/maho_4.wav"
+}
+sound = 
+{
+	name = "maho_65"
+	file = "senshado_vocal/Maho/maho_5.wav"
+}
+sound = 
+{
+	name = "maho_66"
+	file = "senshado_vocal/Maho/maho_6.wav"
+}
+sound = 
+{
+	name = "maho_67"
+	file = "senshado_vocal/Maho/maho_7.wav"
+}
+sound = 
+{
+	name = "maho_68"
+	file = "senshado_vocal/Maho/maho_8.wav"
 }

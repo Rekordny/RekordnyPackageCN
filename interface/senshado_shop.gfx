@@ -1,0 +1,40 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_shop_container"
+		texturefile = "gfx/interface/scripted_gui_graphics/shop_container.dds"
+	}
+    spriteType = {
+		name = "GFX_shop_item_frames"
+		texturefile = "gfx/interface/scripted_gui_graphics/shopitemframes.dds"
+        noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+    spriteType = {
+		name = "GFX_shop_item_frame"
+		texturefile = "gfx/interface/scripted_gui_graphics/shopitemframe.dds"
+	}
+    spriteType = {
+		name = "GFX_shop_item_frame_0"
+		texturefile = "gfx/interface/scripted_gui_graphics/shopitemframe_hover.dds"
+	}
+    spriteType = {
+		name = "GFX_item_tank"
+		texturefile = "gfx/interface/scripted_gui_graphics/item_tank.dds"
+		legacy_lazy_load = no
+	}
+    spriteType = {
+		name = "GFX_item_present"
+		texturefile = "gfx/interface/scripted_gui_graphics/item_present.dds"
+		legacy_lazy_load = no
+	}
+    spriteType = {
+		name = "GFX_item_support"
+		texturefile = "gfx/interface/scripted_gui_graphics/item_support.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_item_random"
+		texturefile = "gfx/interface/scripted_gui_graphics/item_random.dds"
+		legacy_lazy_load = no
+	}
+}

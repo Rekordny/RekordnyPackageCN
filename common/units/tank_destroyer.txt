@@ -27,9 +27,9 @@ sub_units = {
 			senshado_tank_destroyer_equipment = 35
 		}
 		manpower = 500
-		max_organisation = 30
+		max_organisation = 20
 		default_morale = 0.3
-		max_strength = 0.6
+		max_strength = 0.8
 		training_time = 140
 		weight = 1.2
 		supply_consumption = 0.14
@@ -63,7 +63,7 @@ sub_units = {
 			attack = -0.6
 		}
 		fort = {
-			attack = 0.1
+			attack = 0.2
 		}
 	}
 }

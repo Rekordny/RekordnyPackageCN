@@ -1,3 +1,7 @@
+######################################################
+#####################好感度系统相关####################
+######################################################
+
 #触发好感度事件,章节直接取人物好感度
 fire_affinity_dialogue_maho = {
 	set_country_flag = dialogue.maho
@@ -59,3 +63,90 @@ affinity_increase_3 = {
 		clr_country_flag = open_affinity_main
 	}
 }
+
+######################################################
+######################黄金系统相关#####################
+######################################################
+#刷新黄金储备标准
+refresh_gold_standard = {
+	set_temp_variable = { temp1 = num_of_civilian_factories }
+	set_temp_variable = { temp2 = num_of_military_factories }
+	set_temp_variable = { temp3 = num_of_naval_factories }
+	multiply_temp_variable = { temp1 = 2 }
+	multiply_temp_variable = { temp2 = 1.5 }
+	multiply_temp_variable = { temp3 = 1.5 }
+	add_to_temp_variable = { temp1 = temp2 }
+	add_to_temp_variable = { temp1 = temp3 }
+	set_variable = {
+		var = gold_standard
+		value = temp1
+	}
+}
+#移除黄金储备国家精神
+remove_gold_storage_ideas = {
+	remove_ideas = {
+		gold_storage_epic gold_storage_great gold_storage_good gold_storage_average gold_storage_low gold_storage_poor gold_storage_bad
+	}
+}
+
+#刷新黄金储备国家精神
+refresh_gold_storage_ideas = {
+	
+	set_temp_variable = { temp0 = gold }
+	set_temp_variable = { temp1 = gold_standard }
+	multiply_temp_variable = { temp1 = 1.399 }
+	if = { 
+		limit = { check_variable = { temp0 > temp1 } } 
+		add_ideas = gold_storage_epic
+	}
+	set_temp_variable = { temp1 = gold_standard }
+	set_temp_variable = { temp2 = gold_standard }
+	multiply_temp_variable = { temp1 = 1.399 }
+	multiply_temp_variable = { temp2 = 1.149 }
+	if = { 
+		limit = { check_variable = { temp0 > temp2 } check_variable = { temp0 < temp1 }} 
+		add_ideas = gold_storage_great
+	}
+	set_temp_variable = { temp1 = gold_standard }
+	set_temp_variable = { temp2 = gold_standard }
+	multiply_temp_variable = { temp1 = 1.149 }
+	multiply_temp_variable = { temp2 = 1.049 }
+	if = { 
+		limit = { check_variable = { temp0 > temp2 } check_variable = { temp0 < temp1 }} 
+		add_ideas = gold_storage_good
+	}
+	set_temp_variable = { temp1 = gold_standard }
+	set_temp_variable = { temp2 = gold_standard }
+	multiply_temp_variable = { temp1 = 1.049 }
+	multiply_temp_variable = { temp2 = 0.949 }
+	if = { 
+		limit = { check_variable = { temp0 > temp2 } check_variable = { temp0 < temp1 }} 
+		add_ideas = gold_storage_average
+	}
+	set_temp_variable = { temp1 = gold_standard }
+	set_temp_variable = { temp2 = gold_standard }
+	multiply_temp_variable = { temp1 = 0.949 }
+	multiply_temp_variable = { temp2 = 0.849 }
+	if = { 
+		limit = { check_variable = { temp0 > temp2 } check_variable = { temp0 < temp1 }} 
+		add_ideas = gold_storage_low
+	}
+	set_temp_variable = { temp1 = gold_standard }
+	set_temp_variable = { temp2 = gold_standard }
+	multiply_temp_variable = { temp1 = 0.849 }
+	multiply_temp_variable = { temp2 = 0.599 }
+	if = { 
+		limit = { check_variable = { temp0 > temp2 } check_variable = { temp0 < temp1 }} 
+		add_ideas = gold_storage_poor
+	}
+	set_temp_variable = { temp1 = gold_standard }
+	multiply_temp_variable = { temp1 = 0.599 }
+	if = { 
+		limit = { check_variable = { temp0 <temp1 }} 
+		add_ideas = gold_storage_bad
+	}
+}
+
+######################################################
+#####################商店系统相关######################
+######################################################

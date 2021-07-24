@@ -100,26 +100,6 @@
  KGA_senshado_heavy_tank_5:0 "§OMAUS"
  KGA_senshado_heavy_tank_5_desc:0 "鼠式重型坦克是由德国保时捷公司在第二次世界大战末期设计的超重型坦克，战斗全重达188吨，是当时最重的坦克。也正是由于车身极重，使得鼠式坦克的越野能力极差，最终因缺少实战价值而流产。"
 
- senshado_self_propelled_gun_1:0 "一级自行火炮"
- senshado_self_propelled_gun_1_desc:0 ""
- KGA_senshado_self_propelled_gun_1:0 "§OPWESPE"
- KGA_senshado_self_propelled_gun_1_desc:0 "黄蜂式自行火炮（Wespe，Sd.Kfz.124）是第二次世界大战纳粹德国以二号战车车体为基础，开发出来的一款自行火炮，主要武装为一门105mm榴弹炮。"
-
- senshado_self_propelled_gun_2:0 "二级自型火炮"
- senshado_self_propelled_gun_2_desc:0 ""
- KGA_senshado_self_propelled_gun_2:0 "§OGRILLE"
- KGA_senshado_self_propelled_gun_2_desc:0 "在1942年，德国为了谋求加强战车的火力，便开始研究如何在旧有坦克的底盘中加装重型火炮。设计者把捷克的Panzer 38(t)H型坦克的炮塔移去，并在坦克顶部划开一个隔间，再在这个隔间中加装了150毫米SIG 33重型火炮，便成为了一架自行火炮。"
- 
- senshado_self_propelled_gun_3:0 "三级自行火炮"
- senshado_self_propelled_gun_3_desc:0 ""
- KGA_senshado_self_propelled_gun_3:0 "§OG.W.PANTHER"
- KGA_senshado_self_propelled_gun_3_desc:0 "二战时期，为了满足德军远距离机动支援火力的需求，克虏伯公司在“黑豹”中型坦克底盘的基础上，研制了“黑豹”自行火炮。凭借“黑豹”底盘的强大机动力，这款自行火炮的机动性很可观。但它只制造出模型而没有生产出样车。"
- 
- senshado_self_propelled_gun_4:0 "四级自行火炮"
- senshado_self_propelled_gun_4_desc:0 ""
- KGA_senshado_self_propelled_gun_4:0 "§OG.W.TIGER"
- KGA_senshado_self_propelled_gun_4_desc:0 "1943年，德军做出以“虎王”重型坦克底盘为基础，研制新型重型自行火炮的决定。1945年2月，研制工作被暂停。生产出的第一辆试验车在战争的最后阶段通过了测试。但此时，已经没有时间让它投入生产装备部队了。"
-
  senshado_tank_destroyer_1:0 "一级坦克歼击车"
  senshado_tank_destroyer_1_desc:0 ""
  KGA_senshado_tank_destroyer_1:0 "§OMARDER 38T"

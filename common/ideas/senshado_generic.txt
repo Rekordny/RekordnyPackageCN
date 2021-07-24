@@ -1,0 +1,116 @@
+ideas = {
+    country = {
+        gold_storage_epic = {
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = no
+            }
+            
+            removal_cost = -1
+            
+            modifier = {
+                stability_factor = 0.3
+                war_support_factor = -0.15
+            }
+        }
+        gold_storage_great = {
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = no
+            }
+            
+            removal_cost = -1
+            
+            modifier = {
+                stability_factor = 0.2
+                war_support_factor = -0.1
+            }
+        }
+        gold_storage_good = {
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = no
+            }
+            
+            removal_cost = -1
+            
+            modifier = {
+                stability_factor = 0.1
+                war_support_factor = -0.05
+            }
+        }
+        gold_storage_avergae = {
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = no
+            }
+            
+            removal_cost = -1
+            
+            modifier = {
+                stability_factor = 0.05
+            }
+        }
+        gold_storage_low = {
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = no
+            }
+            
+            removal_cost = -1
+            
+            modifier = {
+                stability_factor = -0.1
+                war_support_factor = 0.05
+            }
+        }
+        gold_storage_poor = {
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = no
+            }
+            
+            removal_cost = -1
+            
+            modifier = {
+                stability_factor = -0.2
+                war_support_factor = 0.1
+            }
+        }
+        gold_storage_bad = {
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = no
+            }
+            
+            removal_cost = -1
+            
+            modifier = {
+                stability_factor = -0.3
+                war_support_factor = 0.15
+            }
+        }
+    }
+    
+}

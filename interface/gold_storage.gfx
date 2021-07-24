@@ -1,0 +1,7 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_gold_icon"
+		texturefile = "gfx/gold_icon.dds"
+		legacy_lazy_load = no
+	}
+}
