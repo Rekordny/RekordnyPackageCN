@@ -9,12 +9,12 @@ state={
 	}
 
 	history={
-		owner = BEL
+		owner = STG
 		buildings = {
 			infrastructure = 2
 
 		}
-		add_core_of = COG
+		
 	}
 
 	provinces={

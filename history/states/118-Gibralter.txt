@@ -6,7 +6,7 @@ state=
 	
 	state_category = enclave
 	history={
-		owner = STG
+		owner = BDH
 		victory_points = { 4135 10 }
 		buildings = {
 			infrastructure = 6

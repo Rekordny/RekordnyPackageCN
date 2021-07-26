@@ -6,9 +6,9 @@ state=
 	state_category = large_town
 	history=
 	{
-		owner = STG
-		add_core_of = CHI
-		add_core_of = PRC
+		owner = ASU
+		add_core_of = ASU
+		
 		victory_points = {
 			10062 3 
 		}

@@ -6,12 +6,12 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = BRA
+		owner = SDS
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = BRA
+		add_core_of = SDS
 
 	}
 

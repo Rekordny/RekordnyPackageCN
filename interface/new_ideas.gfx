@@ -1,4 +1,37 @@
 spriteTypes = {	
+	######################################
+	###############GENERIC################
+	######################################
+	spriteType = {
+		name = "GFX_idea_gold_storage_epic"
+		texturefile = "gfx/interface/ideas/idea_gold_storage_epic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gold_storage_great"
+		texturefile = "gfx/interface/ideas/idea_gold_storage_great.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gold_storage_good"
+		texturefile = "gfx/interface/ideas/idea_gold_storage_good.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gold_storage_avergae"
+		texturefile = "gfx/interface/ideas/idea_gold_storage_avergae.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gold_storage_low"
+		texturefile = "gfx/interface/ideas/idea_gold_storage_low.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gold_storage_poor"
+		texturefile = "gfx/interface/ideas/idea_gold_storage_poor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_gold_storage_bad"
+		texturefile = "gfx/interface/ideas/idea_gold_storage_bad.dds"
+	}
+
+
 	#POL
 	spriteType = {
 		name = "GFX_idea_POL_purchase_from_st_gloriana"

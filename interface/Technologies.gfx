@@ -2,8 +2,8 @@ spriteTypes = {
 
 	################MOD###############
 	SpriteType = {
-		name = "GFX_senshado_prototype_tank_medium"
-		texturefile = "gfx/interface/technologies/senshado_prototype_tank.dds"
+		name = "GFX_tech_ammunition_medium"
+		texturefile = "gfx/interface/technologies/special_ammunition_1.dds"
 	}		
 
 	#####KGA#####
@@ -268,7 +268,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/PRA_senshado_assult_tank_destroyer_3.dds"
 	}
 
-	###############################################ORIGIN########################
+	###############################################################################
+	###############################################ORIGIN##########################
+	###############################################################################
 	### generic equipment archetypes ###
 
 	SpriteType = {

@@ -9,11 +9,12 @@ state=
 
 	history=
 	{
-		owner = IRE
+		owner = STG
+		add_core_of = STG
 		buildings = {
 			infrastructure = 6
 		}
-		add_core_of = IRE
+		
 	}
 
 	provinces=

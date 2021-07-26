@@ -7,7 +7,7 @@ state={
 	state_category = large_town
 
 	history={
-		owner = BRA
+		owner = SDS
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
@@ -16,7 +16,7 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = BRA
+		add_core_of = SDS
 		victory_points = {
 			10946 1 
 		}

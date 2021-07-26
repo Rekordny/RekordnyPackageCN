@@ -6,10 +6,9 @@ state={
 	}
 
 	history={
-		owner = BCF
-		add_core_of = YUN
-		add_core_of = CHI
-		add_core_of = PRC
+		owner = ASU
+		add_core_of = ASU
+		
 		victory_points = {
 			1319 10 
 		}
@@ -17,22 +16,6 @@ state={
 			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 3
-
-		}
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "Waking the Tiger" 
-					}
-
-				}
-				CHI = {
-					transfer_state = PREV
-
-				}
-
-			}
 
 		}
 

@@ -1,14 +1,45 @@
 equipments = {
 
+	special_ammunition = {
+		year = 1970
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = {
+			armor
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		reliability = 0.7
+
+		#Space taken in convoy
+		lend_lease_cost = 0.5
+
+		build_cost_ic = 1
+		resources = {
+			aluminium = 1
+			steel = 1
+			tungsten = 1
+		}
+	}
+
+	special_ammunition_1 = {
+		year = 1970
+
+		archetype = special_ammunition
+		priority = 20	
+	}
+
 	support_equipment = {
-		year = 1918
+		year = 1970
 
 		is_archetype = yes
 		picture = archetype_support_equipment
 		is_buildable = no
 		type = {
-			infantry
-			motorized
+			armor
 		}
 		group_by = archetype
 		
@@ -19,7 +50,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 1
 
-		build_cost_ic = 4
+		build_cost_ic = 2
 		resources = {
 			aluminium = 1
 			steel = 2
@@ -27,10 +58,40 @@ equipments = {
 	}
 
 	support_equipment_1 = {
-		year = 1918
+		year = 1970
 
 		archetype = support_equipment
 		priority = 20	
 	}
 
+	armorpiece = {
+		year = 1970
+		is_archetype = yes
+		picture = archetype_support_equipment
+		is_buildable = no
+		type = {
+			armor
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		reliability = 0.7
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+
+		build_cost_ic = 1
+		resources = {
+			chromium = 1
+			steel = 2
+		}
+	}
+
+	armorpiece_1 = {
+		year = 1970
+
+		archetype = armorpiece
+		priority = 20	
+	}
 }

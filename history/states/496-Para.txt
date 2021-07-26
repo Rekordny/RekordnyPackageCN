@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = BRA
+		owner = SDS
 		victory_points = {
 			7476 3
 		}
@@ -25,7 +25,7 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = BRA
+		add_core_of = SDS
 	}
 
 	provinces={

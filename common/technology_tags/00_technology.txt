@@ -20,6 +20,22 @@ technology_categories = {
 	armor_atd
 	armor_ar
 	armor_at
+	uniform_common
+	uniform_winter
+	support_tech
+	scope_tech
+	amphibious_tech
+	repairkit_tech
+	firstaid_tech
+	ammunition_tech
+	HE_tech
+	AP_tech
+	armorpiece_tech
+	chemical_armor_tech
+	physical_armor_tech
+
+	
+
 	###############ORIGIN############
 	light_air
 	medium_air
@@ -88,7 +104,6 @@ technology_categories = {
 	night_vision
 	base_strike_main
 	mot_rockets
-	support_tech
 	para_tech
 	engineers_tech
 	recon_tech

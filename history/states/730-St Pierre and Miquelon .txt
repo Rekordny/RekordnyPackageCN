@@ -5,7 +5,8 @@ state={
 	state_category = tiny_island
 
 	history={
-		owner = FRA
+		owner = MAP
+		add_core_of = MAP
 		buildings = {
 			infrastructure = 3
 			373 = {

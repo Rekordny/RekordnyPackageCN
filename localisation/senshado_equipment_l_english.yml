@@ -1,4 +1,16 @@
 ﻿l_english:
+
+#支援连
+ tech_support:0 "战车道支援装备"
+ tech_support_desc:0 "额外的可携带支援装备。"
+ special_ammunition_1:0 "额外弹药"
+ special_ammunition_1_desc:0 "战车可以装备的额外高爆和穿甲变种弹药。"
+ armorpiece_1:0 "额外装甲"
+ armorpiece_1_desc:0 "战车上不可或缺的各种装甲。"
+ 
+
+
+#战车
  
  tank_destroyer:0 "坦克歼击车"
  assult_tank_destroyer:0 "突击坦克歼击车"

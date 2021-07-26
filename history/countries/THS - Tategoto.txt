@@ -1,0 +1,37 @@
+﻿capital = 439
+set_technology = {
+	infantry_weapons = 1
+}
+set_research_slots = 5
+set_convoys = 20
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 25
+	fascism = 25
+	communism = 25
+	neutrality = 25
+}
+
+create_country_leader = {
+	name = ""
+	desc = ""
+	picture = "0.dds"
+	expire = "1965.1.1"
+	ideology = neutrality
+	traits = {
+		
+	}
+}
+
+
+add_namespace = {
+	name = "kga_unit_leader"
+	type = unit_leader
+}
+

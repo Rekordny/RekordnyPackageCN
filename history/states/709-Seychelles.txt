@@ -8,6 +8,7 @@ state={
 	history=
 	{
 		owner = STG
+		
 		buildings = {
 			infrastructure = 3
 			2188 = {

@@ -6,6 +6,7 @@ state={
 
 	history={
 		owner = STG
+		
 		victory_points = {
 			13010 1
 		}

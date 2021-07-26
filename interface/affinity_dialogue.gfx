@@ -409,115 +409,252 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_empty_figure"
-		textureFile = "/gfx/interface/scripted_gui_graphics/empty_dialogue_figure.dds"
-		legacy_lazy_load = no
+		textureFile = "/gfx/interface/scripted_gui_graphics/empty_dialogue_figure.dds" legacy_lazy_load = no
 	}
 
 	spriteType = {
 		name = "GFX_erika_1"
-		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_1.dds"
-		legacy_lazy_load = no
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_1.dds" legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_erika_2"
-		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_2.dds"
-		legacy_lazy_load = no
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_2.dds" legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_erika_3"
-		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_3.dds"
-		legacy_lazy_load = no
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_3.dds" legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_erika_4"
-		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_4.dds"
-		legacy_lazy_load = no
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_4.dds" legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_erika_5"
-		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_5.dds"
-		legacy_lazy_load = no
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_5.dds" legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_erika_6"
-		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_6.dds"
-		legacy_lazy_load = no
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_6.dds" legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_erika_7"
-		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_7.dds"
-		legacy_lazy_load = no
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_7.dds" legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_erika_8"
-		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_8.dds"
-		legacy_lazy_load = no
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_8.dds" legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_erika_9"
-		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_9.dds"
-		legacy_lazy_load = no
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_9.dds" legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_erika_10"
-		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_10.dds"
-		legacy_lazy_load = no
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_10.dds" legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_erika_11"
-		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_11.dds"
-		legacy_lazy_load = no
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_11.dds" legacy_lazy_load = no
 	}
 	spriteType = {
-		name = ""
-		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_12.dds"
-		legacy_lazy_load = no
+		name = "GFX_erika_12"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_12.dds" legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_erika_13"
-		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_13.dds"
-		legacy_lazy_load = no
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_13.dds" legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_erika_14"
-		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_14.dds"
-		legacy_lazy_load = no
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_14.dds" legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_erika_15"
-		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_15.dds"
-		legacy_lazy_load = no
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_15.dds" legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_erika_16"
-		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_16.dds"
-		legacy_lazy_load = no
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_16.dds" legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_erika_17"
-		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_17.dds"
-		legacy_lazy_load = no
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_17.dds" legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_erika_18"
-		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_18.dds"
-		legacy_lazy_load = no
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_18.dds" legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_erika_19"
-		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_19.dds"
-		legacy_lazy_load = no
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_19.dds" legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_erika_20"
-		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_20.dds"
-		legacy_lazy_load = no
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_20.dds" legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_erika_21"
-		textureFile = "/gfx/interface/scripted_gui_graphics/erika/Erika_21.dds"
-		legacy_lazy_load = no
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_21.dds" legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_erika_22"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_22.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_23"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_23.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_24"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_24.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_25"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_25.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_26"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_26.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_27"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_27.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_28"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_28.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_29"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_29.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_30"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_30.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_31"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_31.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_32"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_32.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_33"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_33.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_34"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_34.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_35"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_35.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_36"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_36.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_37"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_37.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_38"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_38.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_39"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_39.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_40"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_40.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_41"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_41.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_42"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_42.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_43"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_43.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_44"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_44.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_45"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_45.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_46"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_46.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_47"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_47.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_48"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_48.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_49"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_49.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_50"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_50.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_51"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_51.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_52"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_52.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_53"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_53.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_54"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_54.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_55"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_55.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_56"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_56.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_57"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_57.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_58"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_58.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_59"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_59.dds" legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_erika_60"
+		textureFile = "/gfx/interface/scripted_gui_graphics/erika/erika_60.dds" legacy_lazy_load = no
+	}
+
+
+
 	spriteType = {
 		name = "GFX_maho_1"
 		textureFile = "/gfx/interface/scripted_gui_graphics/maho/Maho_1.dds"

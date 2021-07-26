@@ -1,0 +1,8 @@
+﻿l_english:
+ gold_storage_epic:0 "黄金储备量溢出"
+ gold_storage_great:0 "黄金储备量优秀"
+ gold_storage_good:0 "黄金储备量较好"
+ gold_storage_average:0 "黄金储备量一般"
+ gold_storage_low:0 "黄金储备量较低"
+ gold_storage_poor:0 "黄金储备量非常低"
+ gold_storage_bad:0 "黄金储备量严重不足"

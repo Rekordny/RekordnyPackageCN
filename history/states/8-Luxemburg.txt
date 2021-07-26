@@ -12,14 +12,14 @@ state=
 
 	history=
 	{
-		owner = BCF
+		owner = WAF
 		buildings = {
 			infrastructure = 6
 			arms_factory = 1
 			industrial_complex = 3
 		}
 		victory_points = { 6583 5 }
-		add_core_of = BCF
+		add_core_of = WAF
 	}
 
 	provinces=

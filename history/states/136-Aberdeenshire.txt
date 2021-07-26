@@ -11,13 +11,14 @@ state={
 	}
 
 	history={
-		add_core_of = SCO
+		
 		owner = STG
+		add_core_of = STG
 		buildings = {
 			infrastructure = 6
 			dockyard = 2
 		}
-		add_core_of = STG
+		
 	}
 
 	provinces={

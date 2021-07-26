@@ -10,10 +10,11 @@ state={
 	}
 
 	history={
-		owner = RAJ
+		owner = ASU
 		buildings = {
 			infrastructure = 1
 		}
+		add_core_of = ASU
 
 	}
 
