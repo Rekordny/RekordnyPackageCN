@@ -31,3 +31,24 @@
 #	category = country
 #}
 
+ssdp_daily_modifier = {
+    color_type = good
+    value_type = percentage
+    precision = 2
+    postfix = none
+}
+
+tax_daily_modifier = {
+    color_type = good
+    value_type = percentage
+    precision = 2
+    postfix = none
+}
+
+gold_standard_modifier = {
+    color_type = neutral
+    value_type = percentage
+    precision = 2
+    postfix = none
+}
+

@@ -1,6 +1,93 @@
 ######################################################
+#####################战车道点数相关####################
+######################################################
+clear_ssdp = {
+	set_variable = { ssdp = 0 }
+}
+add_ssdp_50 = {
+	add_to_variable = { ssdp = 50 }
+}
+add_ssdp_100 = {
+	add_to_variable = { ssdp = 100 }
+}
+add_ssdp_200 = {
+	add_to_variable = { ssdp = 200 }
+}
+add_ssdp_300 = {
+	add_to_variable = { ssdp = 300 }
+}
+#战车道学院数量统计刷新保存至senshado_school_num
+fetch_senshado_school_num = {
+	if = {
+		limit = { owner = { senshado_school = 1 } }
+		set_variable = { senshado_school_num = 1 }
+	}
+	if = {
+		limit = { owner = { senshado_school = 2 } }
+		set_variable = { senshado_school_num = 2 }
+	}
+	if = {
+		limit = { owner = { senshado_school = 3 } }
+		set_variable = { senshado_school_num = 3 }
+	}
+	if = {
+		limit = { owner = { senshado_school = 4 } }
+		set_variable = { senshado_school_num = 4 }
+	}
+	if = {
+		limit = { owner = { senshado_school = 5 } }
+		set_variable = { senshado_school_num = 5 }
+	}
+	if = {
+		limit = { owner = { senshado_school = 6 } }
+		set_variable = { senshado_school_num = 6 }
+	}
+	if = {
+		limit = { owner = { senshado_school = 7 } }
+		set_variable = { senshado_school_num = 7 }
+	}
+	if = {
+		limit = { owner = { senshado_school = 8 } }
+		set_variable = { senshado_school_num = 8 }
+	}
+	if = {
+		limit = { owner = { senshado_school = 9 } }
+		set_variable = { senshado_school_num = 9 }
+	}
+	if = {
+		limit = { owner = { senshado_school > 9 } }
+		set_variable = { senshado_school_num = 10 }
+	}
+}
+
+#统计增长值并增加当日ssdp
+increase_ssdp_daily = {
+	fetch_senshado_school_num = yes
+	set_temp_variable = {temp1 = senshado_school_num}
+	multiply_temp_variable = { temp1 = modifier@ssdp_daily_modifier }
+	add_to_temp_variable = {temp1 = senshado_school_num}
+	set_variable = { current_daily_ssdp = temp1 }
+	multiply_temp_variable = { temp1 = 0.048 }
+	add_to_variable = { ssdp = temp1 }
+}
+	
+
+######################################################
 #####################好感度系统相关####################
 ######################################################
+
+#查看当前1号人物好感度
+log_affinity_1 = {
+	log = "affinity_1: [?affinity_1]"
+}
+#查看当前2号人物好感度
+log_affinity_2 = {
+	log = "affinity_2: [?affinity_2]"
+}
+#查看当前3号人物好感度
+log_affinity_3 = {
+	log = "affinity_3: [?affinity_3]"
+}
 
 #触发好感度事件,章节直接取人物好感度
 fire_affinity_dialogue_maho = {
@@ -22,64 +109,76 @@ fire_affinity_dialogue_miho = {
 }
 
 
-#KGA一号人物增加好感度并触发事件
+#一号人物增加好感度并触发事件
 affinity_increase_1 = {
-	
 	if = {
-		limit = { check_variable = {affinity_1 < 9} tag = KGA}
+		limit = { check_variable = {affinity_1 < 9}}
 		add_to_variable = {
 			var = affinity_1
 			value = 1
 		}
-		fire_affinity_dialogue_maho  = yes
 		clr_country_flag = open_affinity_main
+		if = {
+			limit = { tag = KGA }
+			fire_affinity_dialogue_maho  = yes
+		}
 	}
 }
 
-#KGA二号人物增加好感度并触发事件
+#二号人物增加好感度并触发事件
 affinity_increase_2 = {
 	
 	if = {
-		limit = { check_variable = {affinity_2 < 9} tag = KGA}
+		limit = { check_variable = {affinity_2 < 9}}
 		add_to_variable = {
 			var = affinity_2
 			value = 1
 		}
-		fire_affinity_dialogue_erika  = yes
 		clr_country_flag = open_affinity_main
+		if = {
+			limit = { tag = KGA }
+			fire_affinity_dialogue_erika  = yes
+		}
 	}
 }
 
-#KGA三号人物增加好感度并触发事件
+#三号人物增加好感度并触发事件
 affinity_increase_3 = {
 	
 	if = {
-		limit = { check_variable = {affinity_3 < 9} tag = KGA}
+		limit = { check_variable = {affinity_3 < 9}}
 		add_to_variable = {
 			var = affinity_3
 			value = 1
 		}
-		fire_affinity_dialogue_miho  = yes
 		clr_country_flag = open_affinity_main
+		if = {
+			limit = { tag = KGA }
+			fire_affinity_dialogue_miho  = yes
+		}
 	}
 }
 
 ######################################################
 ######################黄金系统相关#####################
 ######################################################
-#刷新黄金储备标准
+#刷新黄金储备标准和工业值权重
 refresh_gold_standard = {
 	set_temp_variable = { temp1 = num_of_civilian_factories }
 	set_temp_variable = { temp2 = num_of_military_factories }
 	set_temp_variable = { temp3 = num_of_naval_factories }
-	multiply_temp_variable = { temp1 = 2 }
-	multiply_temp_variable = { temp2 = 1.5 }
+	multiply_temp_variable = { temp1 = 1.5 }
+	multiply_temp_variable = { temp2 = 2 }
 	multiply_temp_variable = { temp3 = 1.5 }
 	add_to_temp_variable = { temp1 = temp2 }
 	add_to_temp_variable = { temp1 = temp3 }
+	set_variable = { industry_weights = temp1 }
+	set_temp_variable = { temp4 = temp1 }
+	multiply_temp_variable = { temp1 = modifier@gold_standard_modifier }
+	add_to_temp_variable = { temp4 = temp1 }
 	set_variable = {
 		var = gold_standard
-		value = temp1
+		value = temp4
 	}
 }
 #移除黄金储备国家精神
@@ -145,6 +244,59 @@ refresh_gold_storage_ideas = {
 		limit = { check_variable = { temp0 <temp1 }} 
 		add_ideas = gold_storage_bad
 	}
+}
+
+#刷新黄金储备标准并刷新精神
+refresh_gold_standard_and_ideas = {
+	refresh_gold_standard = yes
+	remove_gold_storage_ideas = yes
+	refresh_gold_storage_ideas = yes
+}
+
+#计算国家产值权重并保存到country_weigths
+get_industry_weights = {
+	set_temp_variable = { temp10 = 0 } 
+	set_temp_variable = { temp11 = max_manpower_k }
+	multiply_temp_variable = { temp11 = 0.001}
+	multiply_temp_variable = { temp11 = 0.1}
+	for_each_scope_loop = {
+		array = controlled_states
+		break = break
+		set_temp_variable = { temp0 = 0 }
+		set_temp_variable = { temp1 = arms_factory_level }
+		multiply_temp_variable = { temp1 = 0.25 }
+		set_temp_variable = { temp2 = industrial_complex_level }
+		multiply_temp_variable = { temp2 = 0.3 }
+		set_temp_variable = { temp3 = infrastructure_level }
+		set_temp_variable = { temp4 = buildinglevel@dockyard }
+		multiply_temp_variable = { temp4 = 0.2 }
+		set_temp_variable = { temp5 = buildinglevel@synthetic_refinery }
+		multiply_temp_variable = { temp5 = 0.15 }
+		add_to_temp_variable = { temp0 = temp1 }
+		add_to_temp_variable = { temp0 = temp2 }
+		add_to_temp_variable = { temp0 = temp4 }
+		add_to_temp_variable = { temp0 = temp5 }
+		multiply_temp_variable = { temp3 = 0.1}
+		add_to_temp_variable = { temp3 = infrastructure_level }
+		multiply_temp_variable = { temp0 = temp3 }
+		add_to_temp_variable = { temp10 = temp0 }
+	}
+	add_to_temp_variable = { temp10 = temp11 }
+	set_variable = { country_weigths = temp10 }
+}
+
+
+#每日黄金增长
+tax_daily = {
+	get_industry_weights = yes
+	set_temp_variable = { temp1 = country_weigths }
+	set_temp_variable = { temp2 = modifier@tax_daily_modifier }
+	add_to_temp_variable = { temp2 = 1 }
+	multiply_temp_variable = { temp1 = temp2 }
+	multiply_temp_variable = { temp1 = 0.005 }
+	set_variable = { current_daily_tax = temp1 }
+	multiply_temp_variable = { temp1 = 0.048 }
+	add_to_variable = { gold = temp1 }
 }
 
 ######################################################

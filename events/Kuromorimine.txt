@@ -1,0 +1,466 @@
+add_namespace = kuromorimine
+#62th senshado tournament
+country_event = {
+	id = kuromorimine.500
+	title = kuromorimine.500.t
+	desc = kuromorimine.500.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.500.a
+		KGA = { country_event = { id = kuromorimine.501 days = 1 } }
+	}
+}
+
+country_event = {
+	id = kuromorimine.501
+	title = kuromorimine.501.t
+	desc = kuromorimine.501.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.501.a
+		KGA = { add_war_support = 0.1 country_event = { id = kuromorimine.502 days = 1} }
+	}
+}
+
+country_event = {
+	id = kuromorimine.502
+	title = kuromorimine.502.t
+	desc = kuromorimine.502.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.502.a
+		KGA = { country_event = { id = kuromorimine.503 days = 1} }
+	}
+}
+
+country_event = {
+	id = kuromorimine.503
+	title = kuromorimine.503.t
+	desc = kuromorimine.503.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.503.a
+		KGA = { 
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			add_ideas = KGA_dying_kuromorimine_1
+		}
+		KGA = { every_unit_leader = {
+			limit = { has_id = 1021 }
+			retire = yes
+		} }
+	}
+}
+
+#无酒精啤酒节
+country_event = {
+	id = kuromorimine.504
+	title = kuromorimine.504.t
+	desc = kuromorimine.504.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.504.a
+		KGA = {
+			add_stability = 0.1
+			add_ideas = KGA_non_alcoholic_beer_festival
+		}
+	}
+	option = {
+		name = kuromorimine.504.b
+		KGA = {
+			add_war_support = 0.1
+			add_ideas = KGA_non_alcoholic_beer_festival
+		}
+	}
+}
+
+#重振士气-有新人加入
+country_event = {
+	id = kuromorimine.505
+	title = kuromorimine.505.t
+	desc = kuromorimine.505.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.505.a
+		KGA = {
+			create_corps_commander = {
+				name = "Sheska"
+				picture = "Portrait_KGA_Sheska.dds"
+				traits = { trait_cautious Bearer_of_Artillery }
+				skill = 4
+				id = 1011
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 4
+			}
+			remove_ideas = dying_kuromorimine_1
+			add_ideas = KGA_dying_kuromorimine_2
+		}
+	}
+}
+
+#二号突击
+country_event = {
+	id = kuromorimine.506
+	title = kuromorimine.506.t
+	desc = kuromorimine.506.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.506.a
+		KGA = {
+			add_ideas = KGA_war_of_attrition
+		}
+	}
+	option = {
+		name = kuromorimine.506.b
+		KGA = {
+			add_ideas = KGA_lightning_strike
+		}
+	}
+}
+
+#碾压排球道
+country_event = {
+	id = kuromorimine.507
+	title = kuromorimine.507.t
+	desc = kuromorimine.507.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.507.a
+		KGA = {
+			army_experience = 15
+			air_experience = 15
+			navy_experience = 15
+		}
+	}
+	option = {
+		name = kuromorimine.507.b
+		KGA = {
+			country_event = { id = kuromorimine.508 days = 1}
+		}
+	}
+}
+
+country_event = {
+	id = kuromorimine.508
+	title = kuromorimine.508.t
+	desc = kuromorimine.508.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.508.a
+		KGA = {
+			create_corps_commander = {
+				name = "Noriko Isobe"
+				picture = "Portrait_generic_Isobe.dds"
+				traits = { trait_cautious Bearer_of_Artillery }
+				skill = 3
+				id = 1011
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+			}
+		}
+	}
+}
+
+#铁之准则
+country_event = {
+	id = kuromorimine.509
+	title = kuromorimine.509.t
+	desc = kuromorimine.509.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.509.a
+		KGA = {
+			add_ideas = KGA_rule_of_iron
+		}
+	}
+}
+
+#优势碾压
+country_event = {
+	id = kuromorimine.510
+	title = kuromorimine.510.t
+	desc = kuromorimine.510.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.510.a
+		KGA = {
+			add_war_support = 0.15
+			add_political_power = -50
+		}
+		JAP = { country_event = { id = japan.500 days = 1} }
+	}
+	option = {
+		name = kuromorimine.510.b
+		KGA = {
+			army_experience = -10
+		}
+		JAP = { country_event = { id = japan.501 days = 1} }
+	}
+	option = {
+		name = kuromorimine.510.c
+		KGA = {
+			add_war_support = 0.05
+		}
+	}
+}
+
+#优势碾压选项一日本强硬
+country_event = {
+	id = kuromorimine.511
+	title = kuromorimine.511.t
+	desc = kuromorimine.511.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.511.a
+		KGA = {
+			add_stability = -0.05
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.08
+			}
+			add_state_claim = 282
+			add_state_claim = 154
+		}
+	}
+	option = {
+		name = kuromorimine.511.b
+		KGA = {
+			add_political_power = 50
+		}
+	}
+}
+
+#优势碾压选项一日本软弱
+country_event = {
+	id = kuromorimine.512
+	title = kuromorimine.512.t
+	desc = kuromorimine.512.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.512.a
+		KGA = {
+			add_political_power = 200
+			add_stability = 0.1
+		}
+	}
+}
+
+#优势碾压选项二日本回礼技术
+country_event = {
+	id = kuromorimine.513
+	title = kuromorimine.513.t
+	desc = kuromorimine.513.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.513.a
+		KGA = {
+			add_tech_bonus = {
+				add_tech_bonus = {
+					bonus = 1.0
+					uses = 0.7
+					category = cl_tech
+				}
+			}
+		}
+	}
+}
+
+#优势碾压选项二日本回礼装备
+country_event = {
+	id = kuromorimine.514
+	title = kuromorimine.514.t
+	desc = kuromorimine.514.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.514.a
+		KGA = {
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 40
+				producer = JAP
+			}
+		}
+	}
+}
+
+#生产力战争
+country_event = {
+	id = kuromorimine.515
+	title = kuromorimine.515.t
+	desc = kuromorimine.515.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.515.a
+		SOV = {
+			country_event = { id = soviet.500 days = 0 }
+		}
+	}
+	option = {
+		name = kuromorimine.515.b
+		KGA = {
+			add_ideas = KGA_large_factories_productivity
+		}
+	}
+	option = {
+		name = kuromorimine.515.c
+		KGA = {
+			add_manpower = 150000
+		}
+	}
+}
+
+#完全胜利
+country_event = {
+	id = kuromorimine.516
+	title = kuromorimine.516.t
+	desc = kuromorimine.516.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.516.a
+		KGA = {
+			add_ideas = KGA_will_of_steel
+		}
+	}
+}
+
+#向冯布诺施压回应1交出旦泽波兹南
+country_event = {
+	id = kuromorimine.517
+	title = kuromorimine.517.t
+	desc = kuromorimine.517.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.517.a
+		KGA = {
+			transfer_state = 85
+			transfer_state = 86
+		}
+		if = {
+			limit = {
+				is_faction_leader = yes
+			}
+			POL = { country_event = generic.5 }
+		}
+		else = {
+			give_guarantee = POL
+		}
+	}
+}
+
+#向冯布诺施压回应2拒绝交出
+country_event = {
+	id = kuromorimine.518
+	title = kuromorimine.518.t
+	desc = kuromorimine.518.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.518.a
+		KGA = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = POL
+				expire = 0
+			}
+		}
+	}
+}
+
+#向冯布诺施压回应3拒绝交出
+country_event = {
+	id = kuromorimine.519
+	title = kuromorimine.519.t
+	desc = kuromorimine.519.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.519.a
+		add_political_power = 50
+	}
+}
+
+#审判BC被拒绝
+country_event = {
+	id = kuromorimine.520
+	title = kuromorimine.520.t
+	desc = kuromorimine.520.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.520.a
+		create_wargoal = {
+			type = annex_everything
+			target = FRA
+			expire = 0
+		}
+	}
+}
+
+#重新邀请西住美穗
+country_event = {
+	id = kuromorimine.521
+	title = kuromorimine.521.t
+	desc = kuromorimine.521.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.521.a
+		create_field_marshal = {
+			name = "Miho Nishizumi"
+			picture = "Portrait_KGA_Miho.dds"
+			traits = { Brilliant_Strategist Armor_Officer Panzer_Expert }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 6
+			logistics_skill = 4
+			id = 1021
+		}
+	}
+}

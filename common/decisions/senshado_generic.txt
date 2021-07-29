@@ -1,16 +1,24 @@
 senshado_decisions = {
-	debug_free_ssdp_points = {
+	debug_free_300_ssdp_points = {
 		available = {
 			is_debug = yes
 		}
 		days_re_enable = 1
 		complete_effect = {
-			add_to_variable = {
-				var = ssdp
-				value = 1000
-			}
+			add_ssdp_300 = yes
 		}
 	}
+
+	debug_clear_ssdp_points = {
+		available = {
+			is_debug = yes
+		}
+		days_re_enable = 1
+		complete_effect = {
+			clear_ssdp = yes
+		}
+	}
+	
 	debug_clear_affinity = {
 		available = {
 			is_debug = yes
@@ -22,14 +30,29 @@ senshado_decisions = {
 			clear_variable = affinity_3
 		}
 	}
-	debug_add_manpower = {
+
+	debug_senshado_test = {
 		available = {
 			is_debug = yes
 		}
 		complete_effect = {
-			if = { 
-				limit = { OR = { has_unit_leader = 1021 has_unit_leader = 1000 }}
-				country_event = senshado_events.3
+			get_industry_weights = yes
+		}
+	}
+
+	debug_add_senshado_school = {
+		available = {
+			is_debug = yes
+		}
+		complete_effect = {
+			random_state = {
+				limit = { is_controlled_by = ROOT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = senshado_school
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}

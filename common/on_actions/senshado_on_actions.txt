@@ -9,6 +9,8 @@ on_actions = {
 			}
 
 			every_country = {
+				set_variable = { ssdp_daily_increase_modifier = 1 }
+				set_variable = { ssdp = 0 }
 				refresh_gold_standard = yes
 			}
 			
@@ -100,9 +102,19 @@ on_actions = {
 	on_weekly = {
 		effect = {
 			every_country = {
-				refresh_gold_standard = yes
-				remove_gold_storage_ideas = yes
-				refresh_gold_storage_ideas = yes
+				#刷新每周黄金储备精神
+				refresh_gold_standard_and_ideas = yes
+			}
+		}
+	}
+	#每日增量除以21！未知原因
+	on_daily = {
+		effect = {
+			every_country = {
+				#增加每日战车道点数
+				increase_ssdp_daily = yes
+				#增加每日的税收
+				tax_daily = yes
 			}
 		}
 	}

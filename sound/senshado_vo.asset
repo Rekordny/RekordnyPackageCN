@@ -115,6 +115,42 @@ category =
     maho_66
     maho_67
     maho_68
+	Катюша_1
+    Катюша_2
+    Катюша_3
+    Катюша_4
+    Катюша_5
+    Катюша_6
+    Катюша_7
+    Катюша_8
+    Катюша_9
+    Катюша_10
+    Катюша_11
+    Катюша_12
+    Катюша_13
+    Катюша_14
+    Катюша_15
+    Катюша_16
+    Катюша_17
+    Катюша_18
+    Катюша_19
+    Катюша_20
+    Катюша_21
+    Катюша_22
+    Катюша_23
+    Катюша_24
+    Катюша_25
+    Катюша_26
+    Катюша_27
+    Катюша_28
+    Катюша_29
+    Катюша_30
+    Катюша_31
+    Катюша_32
+    Катюша_33
+    Катюша_34
+    Катюша_35
+    Катюша_36
  }
   compressor = 
  {
@@ -237,7 +273,42 @@ soundeffect = { name = "maho_66" sounds = { sound = maho_66 } }
 soundeffect = { name = "maho_67" sounds = { sound = maho_67 } }
 soundeffect = { name = "maho_68" sounds = { sound = maho_68 } }
 
-
+soundeffect = { name = "Катюша_1" sounds = { sound = Катюша_1 } }
+soundeffect = { name = "Катюша_2" sounds = { sound = Катюша_2 } }
+soundeffect = { name = "Катюша_3" sounds = { sound = Катюша_3 } }
+soundeffect = { name = "Катюша_4" sounds = { sound = Катюша_4 } }
+soundeffect = { name = "Катюша_5" sounds = { sound = Катюша_5 } }
+soundeffect = { name = "Катюша_6" sounds = { sound = Катюша_6 } }
+soundeffect = { name = "Катюша_7" sounds = { sound = Катюша_7 } }
+soundeffect = { name = "Катюша_8" sounds = { sound = Катюша_8 } }
+soundeffect = { name = "Катюша_9" sounds = { sound = Катюша_9 } }
+soundeffect = { name = "Катюша_10" sounds = { sound = Катюша_10 } }
+soundeffect = { name = "Катюша_11" sounds = { sound = Катюша_11 } }
+soundeffect = { name = "Катюша_12" sounds = { sound = Катюша_12 } }
+soundeffect = { name = "Катюша_13" sounds = { sound = Катюша_13 } }
+soundeffect = { name = "Катюша_14" sounds = { sound = Катюша_14 } }
+soundeffect = { name = "Катюша_15" sounds = { sound = Катюша_15 } }
+soundeffect = { name = "Катюша_16" sounds = { sound = Катюша_16 } }
+soundeffect = { name = "Катюша_17" sounds = { sound = Катюша_17 } }
+soundeffect = { name = "Катюша_18" sounds = { sound = Катюша_18 } }
+soundeffect = { name = "Катюша_19" sounds = { sound = Катюша_19 } }
+soundeffect = { name = "Катюша_20" sounds = { sound = Катюша_20 } }
+soundeffect = { name = "Катюша_21" sounds = { sound = Катюша_21 } }
+soundeffect = { name = "Катюша_22" sounds = { sound = Катюша_22 } }
+soundeffect = { name = "Катюша_23" sounds = { sound = Катюша_23 } }
+soundeffect = { name = "Катюша_24" sounds = { sound = Катюша_24 } }
+soundeffect = { name = "Катюша_25" sounds = { sound = Катюша_25 } }
+soundeffect = { name = "Катюша_26" sounds = { sound = Катюша_26 } }
+soundeffect = { name = "Катюша_27" sounds = { sound = Катюша_27 } }
+soundeffect = { name = "Катюша_28" sounds = { sound = Катюша_28 } }
+soundeffect = { name = "Катюша_29" sounds = { sound = Катюша_29 } }
+soundeffect = { name = "Катюша_30" sounds = { sound = Катюша_30 } }
+soundeffect = { name = "Катюша_31" sounds = { sound = Катюша_31 } }
+soundeffect = { name = "Катюша_32" sounds = { sound = Катюша_32 } }
+soundeffect = { name = "Катюша_33" sounds = { sound = Катюша_33 } }
+soundeffect = { name = "Катюша_34" sounds = { sound = Катюша_34 } }
+soundeffect = { name = "Катюша_35" sounds = { sound = Катюша_35 } }
+soundeffect = { name = "Катюша_36" sounds = { sound = Катюша_36 } }
 
 ####################文件必须在此声明################
 sound = 
@@ -806,4 +877,184 @@ sound =
 {
 	name = "maho_68"
 	file = "senshado_vocal/Maho/maho_8.wav"
+}
+sound = 
+{
+	name = "Катюша_1"
+	file = "senshado_vocal/Katyusha/Катюша_1.wav"
+}
+sound = 
+{
+	name = "Катюша_2"
+	file = "senshado_vocal/Katyusha/Катюша_2.wav"
+}
+sound = 
+{
+	name = "Катюша_3"
+	file = "senshado_vocal/Katyusha/Катюша_3.wav"
+}
+sound = 
+{
+	name = "Катюша_4"
+	file = "senshado_vocal/Katyusha/Катюша_4.wav"
+}
+sound = 
+{
+	name = "Катюша_5"
+	file = "senshado_vocal/Katyusha/Катюша_5.wav"
+}
+sound = 
+{
+	name = "Катюша_6"
+	file = "senshado_vocal/Katyusha/Катюша_6.wav"
+}
+sound = 
+{
+	name = "Катюша_7"
+	file = "senshado_vocal/Katyusha/Катюша_7.wav"
+}
+sound = 
+{
+	name = "Катюша_8"
+	file = "senshado_vocal/Katyusha/Катюша_8.wav"
+}
+sound = 
+{
+	name = "Катюша_9"
+	file = "senshado_vocal/Katyusha/Катюша_9.wav"
+}
+sound = 
+{
+	name = "Катюша_10"
+	file = "senshado_vocal/Katyusha/Катюша_10.wav"
+}
+sound = 
+{
+	name = "Катюша_11"
+	file = "senshado_vocal/Katyusha/Катюша_11.wav"
+}
+sound = 
+{
+	name = "Катюша_12"
+	file = "senshado_vocal/Katyusha/Катюша_12.wav"
+}
+sound = 
+{
+	name = "Катюша_13"
+	file = "senshado_vocal/Katyusha/Катюша_13.wav"
+}
+sound = 
+{
+	name = "Катюша_14"
+	file = "senshado_vocal/Katyusha/Катюша_14.wav"
+}
+sound = 
+{
+	name = "Катюша_15"
+	file = "senshado_vocal/Katyusha/Катюша_15.wav"
+}
+sound = 
+{
+	name = "Катюша_16"
+	file = "senshado_vocal/Katyusha/Катюша_16.wav"
+}
+sound = 
+{
+	name = "Катюша_17"
+	file = "senshado_vocal/Katyusha/Катюша_17.wav"
+}
+sound = 
+{
+	name = "Катюша_18"
+	file = "senshado_vocal/Katyusha/Катюша_18.wav"
+}
+sound = 
+{
+	name = "Катюша_19"
+	file = "senshado_vocal/Katyusha/Катюша_19.wav"
+}
+sound = 
+{
+	name = "Катюша_20"
+	file = "senshado_vocal/Katyusha/Катюша_20.wav"
+}
+sound = 
+{
+	name = "Катюша_21"
+	file = "senshado_vocal/Katyusha/Катюша_21.wav"
+}
+sound = 
+{
+	name = "Катюша_22"
+	file = "senshado_vocal/Katyusha/Катюша_22.wav"
+}
+sound = 
+{
+	name = "Катюша_23"
+	file = "senshado_vocal/Katyusha/Катюша_23.wav"
+}
+sound = 
+{
+	name = "Катюша_24"
+	file = "senshado_vocal/Katyusha/Катюша_24.wav"
+}
+sound = 
+{
+	name = "Катюша_25"
+	file = "senshado_vocal/Katyusha/Катюша_25.wav"
+}
+sound = 
+{
+	name = "Катюша_26"
+	file = "senshado_vocal/Katyusha/Катюша_26.wav"
+}
+sound = 
+{
+	name = "Катюша_27"
+	file = "senshado_vocal/Katyusha/Катюша_27.wav"
+}
+sound = 
+{
+	name = "Катюша_28"
+	file = "senshado_vocal/Katyusha/Катюша_28.wav"
+}
+sound = 
+{
+	name = "Катюша_29"
+	file = "senshado_vocal/Katyusha/Катюша_29.wav"
+}
+sound = 
+{
+	name = "Катюша_30"
+	file = "senshado_vocal/Katyusha/Катюша_30.wav"
+}
+sound = 
+{
+	name = "Катюша_31"
+	file = "senshado_vocal/Katyusha/Катюша_31.wav"
+}
+sound = 
+{
+	name = "Катюша_32"
+	file = "senshado_vocal/Katyusha/Катюша_32.wav"
+}
+sound = 
+{
+	name = "Катюша_33"
+	file = "senshado_vocal/Katyusha/Катюша_33.wav"
+}
+sound = 
+{
+	name = "Катюша_34"
+	file = "senshado_vocal/Katyusha/Катюша_34.wav"
+}
+sound = 
+{
+	name = "Катюша_35"
+	file = "senshado_vocal/Katyusha/Катюша_35.wav"
+}
+sound = 
+{
+	name = "Катюша_36"
+	file = "senshado_vocal/Katyusha/Катюша_36.wav"
 }

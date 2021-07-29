@@ -50,52 +50,7 @@ scripted_gui = {
 				}
 			}
 			province_governor_senshado_click = {
-				set_temp_variable = { ideacost = 0 }
-				if = {
-					limit = { owner = { senshado_school = 1 }} 
-					add_to_temp_variable = { ideacost = 10 }
-				}
-				if = {
-					limit = { owner = { senshado_school = 2 }} 
-					add_to_temp_variable = { ideacost = 20 }
-				}
-				if = {
-					limit = { owner = { senshado_school = 3 }} 
-					add_to_temp_variable = { ideacost = 30 }
-				}
-				if = {
-					limit = { owner = { senshado_school = 4 }}
-					add_to_temp_variable = { ideacost = 40 }
-				}
-				if = {
-					limit = { owner = { senshado_school = 5 }}
-					add_to_temp_variable = { ideacost = 50 }
-				}
-				if = {
-					limit = { owner = { senshado_school = 6 }}
-					add_to_temp_variable = { ideacost = 60 }
-				}
-				if = {
-					limit = { owner = { senshado_school = 7 }}
-					add_to_temp_variable = { ideacost = 70 }
-				}
-				if = {
-					limit = { owner = { senshado_school = 8 }}
-					add_to_temp_variable = { ideacost = 80 }
-				}
-				if = {
-					limit = { owner = { senshado_school = 9 }}
-					add_to_temp_variable = { ideacost = 90 }
-				}
-				if = {
-					limit = { owner = { senshado_school > 9 }}
-					add_to_temp_variable = { ideacost = 100 }
-				}
-				ROOT = { 
-					add_to_variable = { ROOT.ssdp = ideacost }
-					multiply_temp_variable = { ideacost = 2 }
-					add_timed_idea = { idea = Recruiting_senshado_generic days = ideacost }
-				}
+				
 			}
 			province_governor_add_manpower_click = {
 				set_temp_variable = { temp1 = state_population_k }
@@ -134,7 +89,7 @@ scripted_gui = {
 			}
 			province_governor_senshado_click_enabled = {
 				owner = { senshado_school > 0 }
-				ROOT = { NOT = { has_idea = Recruiting_senshado_generic } }
+				ROOT = { NOT = { has_idea = senshado_school_recruiting } }
 			}
 			province_governor_add_manpower_click_enabled = {
 				check_variable = { ROOT.ssdp > temp3 }

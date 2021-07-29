@@ -1,5 +1,24 @@
 ideas = {
     country = {
+        #战车道点数日获取和黄金储备水平翻倍！(仅在debug决议中使用)
+        ssdp_daily_twice = {
+            
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = no
+            }
+            
+            removal_cost = -1
+            
+            modifier = {
+                ssdp_daily_modifier = 1
+                gold_standard_modifier = 1
+            }
+        }
+        #黄金储备状况（每周刷新的精神）
         gold_storage_epic = {
             picture = GFX_idea_gold_storage_epic
             allowed = {

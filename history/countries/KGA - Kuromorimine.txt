@@ -1,7 +1,16 @@
 ﻿capital = 64
 
 set_technology = {
-	#senshado_prototype_tank = 1
+	senshado_prototype_tank = 1
+	senshado_light_tank_1 = 1
+	senshado_light_tank_2 = 1
+	senshado_medium_tank_1 = 1
+	senshado_medium_tank_2 = 1
+	senshado_tank_destroyer_1 = 1
+	senshado_heavy_tank_1 = 1
+
+	tech_support = 1
+	tech_scope_1 = 1
 }
 set_research_slots = 5
 set_convoys = 20

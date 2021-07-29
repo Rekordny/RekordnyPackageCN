@@ -1,0 +1,34 @@
+###########################
+# News Events
+###########################
+
+add_namespace = news
+
+news_event = {
+    title = news.1.t
+	desc = news.1.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+    fire_only_once = no
+
+	trigger = {
+        NOT = { has_global_flag = news1fired }
+		date > 1972.09.12
+	}
+
+	immediate = {
+		set_global_flag = news1fired
+    }
+
+	option = {
+		name = news.1.a
+	}
+	option = {
+		name = news.1.b
+	}
+	option = {
+		name = news.1.c
+	}
+}

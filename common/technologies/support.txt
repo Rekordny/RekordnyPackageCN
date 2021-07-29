@@ -67,12 +67,12 @@ technologies = {
 	}
 
 	tech_scope_1 = {
-		enable_subunits = { scope_equipment }
+		enable_subunits = { senshado_scope_brigade }
 		path = {
 			leads_to_tech = tech_scope_2
 			research_cost_coeff = 1
 		}
-		research_cost = 2
+		research_cost = 0.1
 		start_year = 1972
 		folder = {
 			name = support_folder
