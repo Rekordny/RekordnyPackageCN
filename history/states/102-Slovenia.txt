@@ -8,7 +8,7 @@ state=
 	
 	history =
 	{
-		owner = ANZ
+		owner = OAN
 		buildings = {
 			infrastructure = 6
 		}
@@ -16,7 +16,7 @@ state=
 			9627 3 
 		}
 		add_core_of = ANZ
-		add_core_of = SLV
+		add_core_of = OAN
 	}
 	provinces={
 		596 665 3631 3654 6650 6672 9596 9627 }

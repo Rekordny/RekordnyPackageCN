@@ -1,0 +1,216 @@
+add_namespace = event_StGloriana
+
+country_event = {
+	
+	#任命财务大臣
+	id = event_StGloriana.1
+	title = event_StGloriana.1.t
+	desc = event_StGloriana.1.d
+
+	picture = GFX_event_StGloriana_1
+
+	is_triggered_only = yes
+
+	option = {
+		name = event_StGloriana.a
+		add_popularity = {
+			ideology = democratic 
+			popularity = 0.05 
+		}
+	}
+	
+	option = {
+		name = event_StGloriana.b
+		add_popularity = {
+			ideology = communism  
+			popularity = 0.05 
+		}
+	}
+	
+	option = {
+		name = event_StGloriana.c
+		add_popularity = {
+			ideology = fascism  
+			popularity = 0.05 
+		}
+	}
+	
+	option = {
+		name = event_StGloriana.e
+		add_popularity = {
+			ideology = neutrality  
+			popularity = 0.05 
+		}
+	}
+}
+
+country_event = {
+	#任命外交大臣
+	id = event_StGloriana.2
+	title = event_StGloriana.2.t
+	desc = event_StGloriana.2.d
+
+	picture = GFX_event_StGloriana_2
+
+	is_triggered_only = yes
+
+	option = {
+		name = event_StGloriana.a
+		add_popularity = {
+			ideology = democratic 
+			popularity = 0.05 
+		}
+	}
+	
+	option = {
+		name = event_StGloriana.b
+		add_popularity = {
+			ideology = communism  
+			popularity = 0.05 
+		}
+	}
+	
+	option = {
+		name = event_StGloriana.c
+		add_popularity = {
+			ideology = fascism  
+			popularity = 0.05 
+		}
+	}
+	
+	option = {
+		name = event_StGloriana.e
+		add_popularity = {
+			ideology = neutrality  
+			popularity = 0.05 
+		}
+	}
+}
+	
+country_event = {
+	#任命国防大臣
+	id = event_StGloriana.3
+	title = event_StGloriana.3.t
+	desc = event_StGloriana.3.d
+
+	picture = GFX_event_StGloriana_3
+
+	is_triggered_only = yes
+
+	option = {
+		name = event_StGloriana.a
+		add_popularity = {
+			ideology = democratic 
+			popularity = 0.05 
+		}
+	}
+	
+	option = {
+		name = event_StGloriana.b
+		add_popularity = {
+			ideology = communism  
+			popularity = 0.05 
+		}
+	}
+	
+	option = {
+		name = event_StGloriana.c
+		add_popularity = {
+			ideology = fascism  
+			popularity = 0.05 
+		}
+	}
+	
+	option = {
+		name = event_StGloriana.e
+		add_popularity = {
+			ideology = neutrality  
+			popularity = 0.05 
+		}
+	}
+}
+
+country_event = {
+	#任命大法官
+	id = event_StGloriana.4
+	title = event_StGloriana.4.t
+	desc = event_StGloriana.4.d
+
+	picture = GFX_event_StGloriana_4
+
+	is_triggered_only = yes
+
+	option = {
+		name = event_StGloriana.a
+		add_popularity = {
+			ideology = democratic 
+			popularity = 0.05 
+		}
+	}
+	
+	option = {
+		name = event_StGloriana.b
+		add_popularity = {
+			ideology = communism  
+			popularity = 0.05 
+		}
+	}
+	
+	option = {
+		name = event_StGloriana.c
+		add_popularity = {
+			ideology = fascism  
+			popularity = 0.05 
+		}
+	}
+	
+	option = {
+		name = event_StGloriana.e
+		add_popularity = {
+			ideology = neutrality  
+			popularity = 0.05 
+		}
+	}
+}
+country_event = {
+	#任命内务大臣
+	id = event_StGloriana.5
+	title = event_StGloriana.5.t
+	desc = event_StGloriana.5.d
+
+	picture = GFX_event_StGloriana_5
+
+	is_triggered_only = yes
+
+	option = {
+		name = event_StGloriana.a
+		add_popularity = {
+			ideology = democratic 
+			popularity = 0.05 
+		}
+	}
+	
+	option = {
+		name = event_StGloriana.b
+		add_popularity = {
+			ideology = communism  
+			popularity = 0.05 
+		}
+	}
+	
+	option = {
+		name = event_StGloriana.c
+		add_popularity = {
+			ideology = fascism  
+			popularity = 0.05 
+		}
+	}
+	
+	option = {
+		name = event_StGloriana.e
+		add_popularity = {
+			ideology = neutrality  
+			popularity = 0.05 
+		}
+	}
+}

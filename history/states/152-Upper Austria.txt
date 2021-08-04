@@ -12,7 +12,7 @@ state={
 	}
 
 	history={
-		owner = ANZ
+		owner = OAN
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 3
@@ -33,6 +33,7 @@ state={
 		#	11612 3
 		#}
 		add_core_of = KGA
+		add_core_of = OAN
 
 	}
 

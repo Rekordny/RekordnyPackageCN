@@ -11,7 +11,7 @@ state=
 	}
 	history=
 	{
-		owner = SDS
+		owner = OTU
 		buildings = {
 			infrastructure = 4
 			arms_factory = 1
@@ -22,6 +22,7 @@ state=
 			}
 		}
 		add_core_of = SDS
+		add_core_of = OTU
 		victory_points = {
 			4641 5 
 		}

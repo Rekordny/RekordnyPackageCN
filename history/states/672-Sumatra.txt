@@ -14,8 +14,8 @@ state={
 
 	history=
 	{
-		owner = KFA
-		add_core_of = KFA
+		owner = OLE
+		add_core_of = OLE
 		victory_points = {
 			4652 1 
 		}

@@ -1,13 +1,15 @@
 ﻿capital = 64
 
+add_ideas = {
+	KGA_broken_kuromorimine
+	KGA_nishizumi_family_origin
+	KGA_huge_debt
+}
+
 set_technology = {
 	senshado_prototype_tank = 1
 	senshado_light_tank_1 = 1
-	senshado_light_tank_2 = 1
-	senshado_medium_tank_1 = 1
-	senshado_medium_tank_2 = 1
 	senshado_tank_destroyer_1 = 1
-	senshado_heavy_tank_1 = 1
 
 	tech_support = 1
 	tech_scope_1 = 1
@@ -23,9 +25,9 @@ set_politics = {
 }
 set_popularities = {
 	democratic = 2
-	fascism = 45
+	fascism = 36
 	communism = 3
-	neutrality = 50
+	neutrality = 59
 }
 
 create_country_leader = {

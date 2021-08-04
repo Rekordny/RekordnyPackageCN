@@ -7,14 +7,14 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = KFA
+		owner = OLE
 		buildings = {
 			infrastructure = 3
 			12190 ={
 				naval_base = 1
 			}
 		}
-		add_core_of = KFA
+		add_core_of = OLE
 	}
 
 	provinces={

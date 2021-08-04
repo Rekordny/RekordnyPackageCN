@@ -13,18 +13,48 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 25
-	fascism = 25
-	communism = 25
-	neutrality = 25
+	democratic = 30
+	fascism = 20
+	communism = 20
+	neutrality = 30
 }
 
 create_country_leader = {
-	name = ""
-	desc = ""
-	picture = "0.dds"
-	expire = "1965.1.1"
-	ideology = neutrality
+	name = "Assam"
+	desc = "She is the best"
+	picture = "Portrait_STG_Assam.dds"
+	expire = "2000.1.1"
+	ideology = nazism
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Darjeeling"
+	desc = "She is the best"
+	picture = "Portrait_STG_Darjeeling.dds"
+	expire = "2000.1.1"
+	ideology = moderatism
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Rukuriri"
+	desc = "She is the best"
+	picture = "Portrait_STG_Rukuriri.dds"
+	expire = "2000.1.1"
+	ideology = leninism
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "OrangePekoe"
+	desc = "She is the best"
+	picture = "Portrait_STG_OrangePekoe.dds"
+	expire = "2000.1.1"
+	ideology = conservatism
 	traits = {
 		
 	}

@@ -11,7 +11,8 @@ state={
 	}
 
 	history={
-		owner = STG
+		owner = OMA
+		add_core_of = OMA
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1

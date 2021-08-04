@@ -1,0 +1,110 @@
+ideas = {
+	country = {
+		nationalism_fever = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				neutrality_drift = 0.1
+			}
+		}
+
+		political_instability = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.4
+				war_support_factor = -0.2
+				political_power_factor = -0.2
+			}
+		}
+
+		paris_treaty = { #cannot change recruit law
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				set_rule = {
+					can_join_factions = no
+				}
+			}
+		}
+
+		weak_military_factory = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory	= -0.3
+				equipment_conversion_speed = -0.4
+			}
+		}
+
+		manpower_shortage = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				recruitable_population_factor = -0.1
+			}
+		}
+
+		supress_from_PRA = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				communism_drift = 0.1			
+			}
+		}
+
+	}
+}

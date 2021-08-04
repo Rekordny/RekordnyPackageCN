@@ -6,7 +6,8 @@ state={
 	
 	history=
 	{
-		owner = STG
+		owner = OLE
+		add_core_of = OLE
 		
 		buildings = {
 			infrastructure = 3

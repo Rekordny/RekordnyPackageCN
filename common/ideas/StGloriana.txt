@@ -1,0 +1,140 @@
+ideas = {
+	country = {
+	
+	#三年计划
+	STG_Three_year_plan_idea = {
+	
+		picture = GFX_idea_STG_Three_year_plan_idea
+		
+		name = STG_Three_year_plan
+		
+		allowed = {
+			tag = STG
+		}
+		available = { }
+		cancel = { }
+		allowed_civil_war = { always = no }
+		removal_cost = -1
+		
+		modifier = {
+			production_speed_arms_factory_factor = 0.15
+			production_speed_infrastructure_factor = 0.1
+		}
+		
+	}
+	
+	#建立合作社
+	STG_Establishment_cooperatives_idea = {
+	
+		picture = GFX_idea_STG_Establishment_cooperatives_idea
+		
+		allowed = {
+			tag = STG
+		}
+		
+		available = { }
+		cancel = { }
+		allowed_civil_war = { always = no }
+		removal_cost = -1
+		
+		modifier = {
+			consumer_goods_factor = -0.05
+			political_power_factor = 0.1
+		}
+		
+	}
+	
+	#稳步向前
+	STG_Steady_forward_idea = {
+	
+		picture = GFX_idea_STG_Steady_forward_idea
+		
+		name = STG_Steady_forward
+		
+		allowed = {
+			tag = STG
+		}
+		
+		available = { }
+		cancel = { }
+		allowed_civil_war = { always = no }
+		removal_cost = -1
+		
+		modifier = {
+			economy_cost_factor = -0.3
+			trade_laws_cost_factor = -0.3
+		}
+		
+	}
+	
+	#鼓励科研创新
+	STG_Encourage_scientific_research_innovation_idea = {
+	
+		picture = GFX_idea_STG_Encourage_scientific_research_innovation
+		
+		name = STG_Encourage_scientific_research_innovation
+		
+		allowed = {
+			tag = STG
+		}
+		
+		available = { }
+		cancel = { }
+		allowed_civil_war = { always = no }
+		removal_cost = -1
+		
+		modifier = {
+			research_speed_factor = 0.05
+		}
+		
+	}
+	
+	#政府力量
+	STG_Government_power_idea = {
+	
+		picture = GFX_idea_STG_Government_power_idea
+		
+		name = STG_Encourage_scientific_research_innovation
+		
+		allowed = {
+			tag = STG
+		}
+		
+		available = { }
+		cancel = { }
+		allowed_civil_war = { always = no }
+		removal_cost = -1
+		
+		modifier = {
+			global_building_slots_factor = 0.15
+			drift_defence_factor = 0.1
+		}
+		
+	}
+	
+	#强化国有企业
+	STG_Strengthening_stateowned_enterprises_idea = {
+	
+		picture = GFX_idea_STG_Strengthening_stateowned_enterprises_idea
+		
+		name = STG_Strengthening_stateowned_enterprises
+		
+		allowed = {
+			tag = STG
+		}
+		
+		available = { }
+		cancel = { }
+		allowed_civil_war = { always = no }
+		removal_cost = -1
+		
+		modifier = {
+			line_change_production_efficiency_factor = 0.1
+		}
+		
+	}
+	
+	
+	
+	
+}

@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		owner = CHT
+		owner = OHI
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -20,7 +20,7 @@ state={
 			4052 1
 		}	
 
-		add_core_of = KOR
+		add_core_of = OHI
 	}
 
 	provinces={

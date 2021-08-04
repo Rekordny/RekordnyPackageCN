@@ -10,24 +10,9 @@ bookmarks = {
 			history = KGA_1972_DESC
 			ideology = democratic
 			ideas={
-				FRA_victors_of_wwi
-				FRA_disjointed_government
-				FRA_protected_by_the_maginot_line
-			}
-			focuses = {
-				FRA_strengthen_government_support
-				FRA_arms_purchases_in_the_us
-				FRA_french_union
-			}
-		}
-
-		BON = {
-			history = BON_1972_DESC
-			ideology = democratic
-			ideas={
-				FRA_victors_of_wwi
-				FRA_disjointed_government
-				FRA_protected_by_the_maginot_line
+				KGA_broken_kuromorimine
+				KGA_nishizumi_family_origin
+				KGA_huge_debt
 			}
 			focuses = {
 				FRA_strengthen_government_support
@@ -65,6 +50,82 @@ bookmarks = {
 				FRA_french_union
 			}
 		}
+
+		STG = {
+			history = STG_1972_DESC
+			ideology = democratic
+			ideas={
+				FRA_victors_of_wwi
+				FRA_disjointed_government
+				FRA_protected_by_the_maginot_line
+			}
+			focuses = {
+				FRA_strengthen_government_support
+				FRA_arms_purchases_in_the_us
+				FRA_french_union
+			}
+		}
+
+		CHT = {
+			history = CHT_1972_DESC
+			ideology = democratic
+			ideas={
+				FRA_victors_of_wwi
+				FRA_disjointed_government
+				FRA_protected_by_the_maginot_line
+			}
+			focuses = {
+				FRA_strengthen_government_support
+				FRA_arms_purchases_in_the_us
+				FRA_french_union
+			}
+		}
+
+		SDS = {
+			history = SDS_1972_DESC
+			ideology = democratic
+			ideas={
+				FRA_victors_of_wwi
+				FRA_disjointed_government
+				FRA_protected_by_the_maginot_line
+			}
+			focuses = {
+				FRA_strengthen_government_support
+				FRA_arms_purchases_in_the_us
+				FRA_french_union
+			}
+		}
+
+		PRA = {
+			history = PRA_1972_DESC
+			ideology = democratic
+			ideas={
+				FRA_victors_of_wwi
+				FRA_disjointed_government
+				FRA_protected_by_the_maginot_line
+			}
+			focuses = {
+				FRA_strengthen_government_support
+				FRA_arms_purchases_in_the_us
+				FRA_french_union
+			}
+		}
+
+		JHS = {
+			history = JHS_1972_DESC
+			ideology = democratic
+			ideas={
+				FRA_victors_of_wwi
+				FRA_disjointed_government
+				FRA_protected_by_the_maginot_line
+			}
+			focuses = {
+				FRA_strengthen_government_support
+				FRA_arms_purchases_in_the_us
+				FRA_french_union
+			}
+		}
+
 		effect = {
 			randomize_weather = 12345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

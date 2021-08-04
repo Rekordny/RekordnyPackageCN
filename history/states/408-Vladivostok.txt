@@ -10,7 +10,7 @@ state={
 	state_category = town
 
 	history={
-		owner = PRA
+		owner = OHI
 		victory_points = {
 			957 15
 		}
@@ -24,6 +24,7 @@ state={
 			}
 		}
 		add_core_of = PRA
+		add_core_of = OHI
 	}
 
 	provinces={

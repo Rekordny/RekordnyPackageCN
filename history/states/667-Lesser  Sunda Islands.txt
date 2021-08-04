@@ -6,8 +6,8 @@ state={
 	}
 
 	history={
-		owner = KFA
-		add_core_of = KFA
+		owner = OLE
+		add_core_of = OLE
 		buildings = {
 			infrastructure = 3
 			1355 = {

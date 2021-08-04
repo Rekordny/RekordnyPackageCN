@@ -3,7 +3,8 @@ state={
 	name="STATE_701"
 
 	history={
-		owner = STG
+		owner = OMA
+		add_core_of = OMA
 		
 		victory_points = {
 			4989 1 

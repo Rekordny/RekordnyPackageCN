@@ -67,7 +67,8 @@ technologies = {
 	}
 
 	tech_scope_1 = {
-		enable_subunits = { senshado_scope_brigade }
+		enable_subunits = { scope_brigade }
+
 		path = {
 			leads_to_tech = tech_scope_2
 			research_cost_coeff = 1
@@ -104,7 +105,10 @@ technologies = {
 		}
 	}
 	tech_scope_2 = {
-		enable_subunits = { scope_equipment }
+		scope_brigade  = {
+			recon = 2
+			initiative = 0.02
+		}
 		path = {
 			leads_to_tech = tech_scope_3
 			research_cost_coeff = 1
@@ -141,7 +145,11 @@ technologies = {
 		}
 	}
 	tech_scope_3 = {
-		enable_subunits = { scope_equipment }
+		scope_brigade  = {
+			recon = 2
+			initiative = 0.02
+		}
+		
 		path = {
 			leads_to_tech = tech_scope_4
 			research_cost_coeff = 1
@@ -178,7 +186,10 @@ technologies = {
 		}
 	}
 	tech_scope_4 = {
-		enable_subunits = { scope_equipment }
+		scope_brigade  = {
+			recon = 2
+			initiative = 0.02
+		}
 		path = {
 		}
 		research_cost = 2
@@ -215,7 +226,8 @@ technologies = {
 
 	
 	tech_firstaid_1 = {
-		enable_subunits = { scope_equipment }
+		enable_subunits = { firstaid_brigade  }
+		
 		path = {
 			leads_to_tech = tech_firstaid_2
 			research_cost_coeff = 1
@@ -252,7 +264,9 @@ technologies = {
 		}
 	}
 	tech_firstaid_2 = {
-		enable_subunits = { scope_equipment }
+		firstaid_brigade  = {
+			experience_loss_factor = -0.05
+		}
 		path = {
 			leads_to_tech = tech_firstaid_3
 			research_cost_coeff = 1
@@ -289,7 +303,9 @@ technologies = {
 		}
 	}
 	tech_firstaid_3 = {
-		enable_subunits = { scope_equipment }
+		firstaid_brigade  = {
+			experience_loss_factor = -0.05
+		}
 		path = {
 			leads_to_tech = tech_firstaid_4
 			research_cost_coeff = 1
@@ -326,7 +342,9 @@ technologies = {
 		}
 	}
 	tech_firstaid_4 = {
-		enable_subunits = { scope_equipment }
+		firstaid_brigade  = {
+			experience_loss_factor = -0.05
+		}
 		path = {
 		}
 		research_cost = 2
@@ -363,7 +381,8 @@ technologies = {
 
 	
 	tech_amphibious_1 = {
-		enable_subunits = { scope_equipment }
+		enable_subunits = { amphibious_brigade  }
+		
 		path = {
 			leads_to_tech = tech_amphibious_2
 			research_cost_coeff = 1
@@ -400,7 +419,17 @@ technologies = {
 		}
 	}
 	tech_amphibious_2 = {
-		enable_subunits = { scope_equipment }
+
+		amphibious_brigade = {
+			amphibious = { 
+				attack = 0.05
+				defence = 0.05
+			}
+			river = { 
+				attack = 0.05
+				defence = 0.05
+			}
+		}
 		path = {
 			leads_to_tech = tech_amphibious_3
 			research_cost_coeff = 1
@@ -437,7 +466,17 @@ technologies = {
 		}
 	}
 	tech_amphibious_3 = {
-		enable_subunits = { scope_equipment }
+
+		amphibious_brigade = {
+			amphibious = { 
+				attack = 0.05
+				defence = 0.05
+			}
+			river = { 
+				attack = 0.05
+				defence = 0.05
+			}
+		}
 		path = {
 			leads_to_tech = tech_amphibious_4
 			research_cost_coeff = 1
@@ -474,7 +513,17 @@ technologies = {
 		}
 	}
 	tech_amphibious_4 = {
-		enable_subunits = { scope_equipment }
+
+		amphibious_brigade = {
+			amphibious = { 
+				attack = 0.05
+				defence = 0.05
+			}
+			river = { 
+				attack = 0.05
+				defence = 0.05
+			}
+		}
 		path = {
 		}
 		research_cost = 2
@@ -510,7 +559,8 @@ technologies = {
 	}
 	
 	tech_repairkit_1 = {
-		enable_subunits = { scope_equipment }
+		enable_subunits = { repairkit_brigade  }
+
 		path = {
 			leads_to_tech = tech_repairkit_2
 			research_cost_coeff = 1
@@ -547,7 +597,10 @@ technologies = {
 		}
 	}
 	tech_repairkit_2 = {
-		enable_subunits = { scope_equipment }
+		repairkit_brigade = {
+			reliability_factor = 0.05
+			equipment_capture_factor = 0.07
+		}
 		path = {
 			leads_to_tech = tech_repairkit_3
 			research_cost_coeff = 1
@@ -584,7 +637,10 @@ technologies = {
 		}
 	}
 	tech_repairkit_3 = {
-		enable_subunits = { scope_equipment }
+		repairkit_brigade = {
+			reliability_factor = 0.05
+			equipment_capture_factor = 0.07
+		}
 		path = {
 			leads_to_tech = tech_repairkit_4
 			research_cost_coeff = 1
@@ -621,7 +677,10 @@ technologies = {
 		}
 	}
 	tech_repairkit_4 = {
-		enable_subunits = { scope_equipment }
+		repairkit_brigade = {
+			reliability_factor = 0.05
+			equipment_capture_factor = 0.07
+		}
 		path = {
 		}
 		research_cost = 2
@@ -695,7 +754,7 @@ technologies = {
 		}
 	}
 	tech_high_explosive_ammunition_1 = {
-		enable_subunits = { scope_equipment }
+		enable_subunits = { high_explosive_ammunition }
 		path = {
 			leads_to_tech = tech_high_explosive_ammunition_2
 			research_cost_coeff = 1
@@ -732,7 +791,10 @@ technologies = {
 		}
 	}
 	tech_high_explosive_ammunition_2 = {
-		enable_subunits = { scope_equipment }
+		high_explosive_ammunition = {              
+			soft_attack = 0.1
+			hard_attack = -0.05
+		}
 		path = {
 			leads_to_tech = tech_high_explosive_ammunition_3
 			research_cost_coeff = 1
@@ -769,7 +831,10 @@ technologies = {
 		}
 	}
 	tech_high_explosive_ammunition_3 = {
-		enable_subunits = { scope_equipment }
+		high_explosive_ammunition = {              
+			soft_attack = 0.1
+			hard_attack = -0.05
+		}
 		path = {
 			leads_to_tech = tech_high_explosive_ammunition_4
 			research_cost_coeff = 1
@@ -806,7 +871,10 @@ technologies = {
 		}
 	}
 	tech_high_explosive_ammunition_4 = {
-		enable_subunits = { scope_equipment }
+		high_explosive_ammunition = {              
+			soft_attack = 0.1
+			hard_attack = -0.05
+		}
 		path = {
 		}
 		research_cost = 2
@@ -842,7 +910,7 @@ technologies = {
 	}
 
 	tech_armorpiercing_ammunition_1 = {
-		enable_subunits = { scope_equipment }
+		enable_subunits = { armorpiercing_ammunition }
 		path = {
 			leads_to_tech = tech_armorpiercing_ammunition_2
 			research_cost_coeff = 1
@@ -879,7 +947,10 @@ technologies = {
 		}
 	}
 	tech_armorpiercing_ammunition_2 = {
-		enable_subunits = { scope_equipment }
+		armorpiercing_ammunition = {             
+			soft_attack = -0.05
+			hard_attack = 0.1
+		}
 		path = {
 			leads_to_tech = tech_armorpiercing_ammunition_3
 			research_cost_coeff = 1
@@ -916,7 +987,10 @@ technologies = {
 		}
 	}
 	tech_armorpiercing_ammunition_3 = {
-		enable_subunits = { scope_equipment }
+		armorpiercing_ammunition = {             
+			soft_attack = -0.05
+			hard_attack = 0.1
+		}
 		path = {
 			leads_to_tech = tech_armorpiercing_ammunition_4
 			research_cost_coeff = 1
@@ -953,7 +1027,10 @@ technologies = {
 		}
 	}
 	tech_armorpiercing_ammunition_4 = {
-		enable_subunits = { scope_equipment }
+		armorpiercing_ammunition = {             
+			soft_attack = -0.05
+			hard_attack = 0.1
+		}
 		path = {
 		}
 		research_cost = 2
@@ -1029,7 +1106,7 @@ technologies = {
 	}
 
 	tech_chemical_armor_1 = {
-		enable_subunits = { scope_equipment }
+		enable_subunits = { chemical_armor }
 		path = {
 			leads_to_tech = tech_chemical_armor_2
 			research_cost_coeff = 1
@@ -1066,7 +1143,10 @@ technologies = {
 		}
 	}
 	tech_chemical_armor_2 = {
-		enable_subunits = { scope_equipment }
+		chemical_armor = {
+			max_organisation = 5
+			defense = 0.05
+		}
 		path = {
 			leads_to_tech = tech_chemical_armor_3
 			research_cost_coeff = 1
@@ -1103,7 +1183,10 @@ technologies = {
 		}
 	}
 	tech_chemical_armor_3 = {
-		enable_subunits = { scope_equipment }
+		chemical_armor = {
+			max_organisation = 5
+			defense = 0.05
+		}
 		path = {
 		}
 		research_cost = 2
@@ -1139,7 +1222,7 @@ technologies = {
 	}
 
 	tech_physical_armor_1 = {
-		enable_subunits = { scope_equipment }
+		enable_subunits = { physical_armor }
 		path = {
 			leads_to_tech = tech_physical_armor_2
 			research_cost_coeff = 1
@@ -1176,7 +1259,10 @@ technologies = {
 		}
 	}
 	tech_physical_armor_2 = {
-		enable_subunits = { scope_equipment }
+		physical_armor = {
+			armor_value = 0.1
+			defense = 0.05
+		}
 		path = {
 			leads_to_tech = tech_physical_armor_3
 			research_cost_coeff = 1
@@ -1213,7 +1299,10 @@ technologies = {
 		}
 	}
 	tech_physical_armor_3 = {
-		enable_subunits = { scope_equipment }
+		physical_armor = {
+			armor_value = 0.1
+			defense = 0.05
+		}
 		path = {
 		}
 		research_cost = 2

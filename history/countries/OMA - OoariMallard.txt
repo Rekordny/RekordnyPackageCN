@@ -1,0 +1,62 @@
+capital = 553
+
+set_technology = {
+	
+}
+set_research_slots = 5
+set_convoys = 20
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 100
+}
+
+
+create_country_leader = {
+	name = "Midoriko"
+	desc = ""
+	picture = "Portrait_generic_Midoriko.dds"
+	expire = "2000.1.1"
+	ideology = nazism
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Midoriko"
+	desc = ""
+	picture = "Portrait_generic_Midoriko.dds"
+	expire = "2000.1.1"
+	ideology = moderatism
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Midoriko"
+	desc = ""
+	picture = "Portrait_generic_Midoriko.dds"
+	expire = "2000.1.1"
+	ideology = leninism
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Midoriko"
+	desc = ""
+	picture = "Portrait_generic_Midoriko.dds"
+	expire = "2000.1.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}

@@ -18,6 +18,7 @@ state={
 		buildings = {
 			infrastructure = 6
 		}
+		add_core_of = KGA
 	}
 
 	provinces={

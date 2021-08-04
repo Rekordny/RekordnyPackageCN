@@ -12,7 +12,8 @@ state=
 
 	history={
 		add_core_of = THS
-		owner = THS
+		add_core_of = OLE
+		owner = OLE
 		victory_points = {
 			10201 3 
 		}

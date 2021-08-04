@@ -7,7 +7,7 @@ state=
 	state_category = rural
 	
 	history={
-		owner = STG
+		owner = OSH
 		
 		victory_points = {
 			12991 3 
@@ -19,6 +19,7 @@ state=
 				naval_base = 2
 			}
 		}
+		add_core_of = OSH
 	}
 	provinces=
 	{

@@ -7,7 +7,7 @@ state={
 	state_category = rural
 
 	history={
-		owner = BCF
+		owner = ORA
 		victory_points = {
 			4111 5
 		}
@@ -15,7 +15,7 @@ state={
 			infrastructure = 3
 			air_base = 1
 		}
-		add_core_of = SYR	
+		add_core_of = ORA
 
 	}
 

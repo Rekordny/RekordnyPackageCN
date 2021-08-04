@@ -6,7 +6,8 @@ state={
 
 	history={
 		add_core_of = SDS
-		owner = SDS
+		add_core_of = OTU
+		owner = OTU
 		buildings = {
 			infrastructure = 4
 			11350 = {

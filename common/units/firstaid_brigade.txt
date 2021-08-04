@@ -1,0 +1,45 @@
+sub_units = {
+
+	firstaid_brigade = {
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+		training_time = 0
+
+		type = {
+			infantry
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_support_battalions
+			category_front_line
+			category_scope
+		}
+
+
+		combat_width = 0
+
+
+		need = {
+			support_equipment_1 = 20
+			
+		}
+
+		defense = 0.5
+		manpower = 0
+		max_organisation = 30
+		recon = 1
+		default_morale = 0.3
+		max_strength = 1
+		weight = 0.1
+		
+		experience_loss_factor = -0.1
+		
+		supply_consumption = 0.01	
+	}
+}

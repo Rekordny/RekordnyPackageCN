@@ -11,14 +11,14 @@ state={
 
 
 	history={
-		owner = BCF
+		owner = OLE
 		buildings = {
 			infrastructure = 3
 		}
 		victory_points = {
 			7236 1 
 		}
-		add_core_of = BCF
+		add_core_of = OLE
 	}
 	
 	provinces={

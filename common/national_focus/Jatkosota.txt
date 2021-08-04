@@ -1,0 +1,1125 @@
+focus_tree = {
+	id = JHS
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JHS
+		}
+	}
+	default = no
+	focus = {
+		id = Rule_JHS
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 14
+		y = 0
+
+	}
+	focus = {
+		id = Financial_Report
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = Rule_JHS
+		}
+		x = 8
+		y = 1
+		
+	}
+	focus = {
+		id = Industrial_plan
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = Financial_Report
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = Infrastructure_engineering
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Industrial_plan
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = Defense_zone
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Infrastructure_engineering
+		}
+		x = 1
+		y = 4
+
+	}
+	focus = {
+		id = Finnish_highway
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Infrastructure_engineering
+		}
+		x = 4
+		y = 4
+
+	}
+	focus = {
+		id = Adjust_military_budget
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = Financial_Report
+		}
+		x = 11
+		y = 2
+
+	}
+	focus = {
+		id = Military_investment
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = Adjust_military_budget
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = Adjust_the_budget
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = Infrastructure_engineering
+		}
+		prerequisite = {
+			focus = Military_investment
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = Enterprise_bidding
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = Military_investment
+		}
+		x = 11
+		y = 4
+
+	}
+	focus = {
+		id = KMDB
+		icon = GFX_goal_unknown
+		cost = 3.60
+		prerequisite = {
+			focus = Enterprise_bidding
+		}
+		mutually_exclusive = {
+			focus = SAKO_Oy
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = SAKO_Oy
+		icon = GFX_goal_unknown
+		cost = 3.60
+		prerequisite = {
+			focus = Enterprise_bidding
+		}
+		mutually_exclusive = {
+			focus = KMDB
+			focus = NYSE_GD
+		}
+		x = 11
+		y = 5
+
+	}
+	focus = {
+		id = NYSE_GD
+		icon = GFX_goal_unknown
+		cost = 3.60
+		prerequisite = {
+			focus = Enterprise_bidding
+		}
+		mutually_exclusive = {
+			focus = SAKO_Oy
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = Tank_research
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = KMDB
+			focus = SAKO_Oy
+			focus = NYSE_GD
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
+		id = Independent_research
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Tank_research
+		}
+		mutually_exclusive = {
+			focus = Technology_introduction
+		}
+		x = 10
+		y = 7
+
+	}
+	focus = {
+		id = Technology_introduction
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Tank_research
+		}
+		mutually_exclusive = {
+			focus = Independent_research
+		}
+		x = 12
+		y = 7
+
+	}
+	focus = {
+		id = Firepower_and_armor
+		icon = GFX_goal_unknown
+		cost = 4.30
+		prerequisite = {
+			focus = Technology_introduction
+			focus = Independent_research
+		}
+		mutually_exclusive = {
+			focus = Enhance_breakthrough_and_performance
+		}
+		x = 12
+		y = 8
+
+	}
+	focus = {
+		id = Student_Union_Meeting
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = Rule_JHS
+		}
+		x = 19
+		y = 1
+
+	}
+	focus = {
+		id = Internal_affairs
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = Student_Union_Meeting
+		}
+		x = 16
+		y = 2
+
+	}
+	focus = {
+		id = Emergency_council
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = Internal_affairs
+		}
+		mutually_exclusive = {
+			focus = PCC
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = PCC
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = Internal_affairs
+		}
+		mutually_exclusive = {
+			focus = Emergency_council
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = Great_Debate
+		icon = GFX_goal_unknown
+		cost = 8.60
+		prerequisite = {
+			focus = PCC
+		}
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = Temporary_Agreement
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Great_Debate
+		}
+		x = 17
+		y = 5
+
+	}
+	focus = {
+		id = Foreign_policy
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Student_Union_Meeting
+		}
+		x = 22
+		y = 2
+
+	}
+	focus = {
+		id = Independent_diplomacy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Foreign_policy
+		}
+		mutually_exclusive = {
+			focus = Dependency_Theory
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = Scandinavian_Diplomacy
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = Independent_diplomacy
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = Dependency_Theory
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Foreign_policy
+		}
+		mutually_exclusive = {
+			focus = Independent_diplomacy
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = Western_Diplomacy
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = Dependency_Theory
+		}
+		mutually_exclusive = {
+			focus = Turn_left
+		}
+		x = 24
+		y = 4
+
+	}
+	focus = {
+		id = Extension_of_defense
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Defense_zone
+		}
+		x = 1
+		y = 5
+
+	}
+	focus = {
+		id = Snowpiercer
+		icon = GFX_goal_unknown
+		cost = 4.30
+		prerequisite = {
+			focus = Finnish_highway
+		}
+		x = 4
+		y = 5
+
+	}
+	focus = {
+		id = Improved_production_standards
+		icon = GFX_goal_unknown
+		cost = 4.30
+		prerequisite = {
+			focus = Adjust_the_budget
+		}
+		x = 6
+		y = 5
+
+	}
+	focus = {
+		id = Construct_transportation_system
+		icon = GFX_goal_unknown
+		cost = 4.30
+		prerequisite = {
+			focus = Snowpiercer
+		}
+		x = 4
+		y = 6
+
+	}
+	focus = {
+		id = Improved_working_environment
+		icon = GFX_goal_unknown
+		cost = 4.30
+		prerequisite = {
+			focus = Improved_production_standards
+		}
+		x = 6
+		y = 6
+
+	}
+	focus = {
+		id = Production_standard_delineation
+		icon = GFX_goal_unknown
+		cost = 4.30
+		prerequisite = {
+			focus = Construct_transportation_system
+		}
+		prerequisite = {
+			focus = Improved_working_environment
+		}
+		x = 5
+		y = 7
+
+	}
+	focus = {
+		id = Quality_first
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Production_standard_delineation
+		}
+		mutually_exclusive = {
+			focus = Quantity_advantage
+		}
+		x = 4
+		y = 8
+
+	}
+	focus = {
+		id = Quantity_advantage
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Production_standard_delineation
+		}
+		mutually_exclusive = {
+			focus = Quality_first
+		}
+		x = 6
+		y = 8
+
+	}
+	focus = {
+		id = Tekes
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Improved_working_environment
+		}
+		x = 8
+		y = 7
+
+	}
+	focus = {
+		id = Technology_leads_production
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Tekes
+		}
+		x = 8
+		y = 8
+
+	}
+	focus = {
+		id = Construct_the_industrial_chain
+		icon = GFX_goal_unknown
+		cost = 8.60
+		prerequisite = {
+			focus = Quality_first
+			focus = Quantity_advantage
+		}
+		prerequisite = {
+			focus = Technology_leads_production
+		}
+		x = 6
+		y = 9
+
+	}
+	focus = {
+		id = IDA
+		icon = GFX_goal_unknown
+		cost = 8.60
+		prerequisite = {
+			focus = Construct_the_industrial_chain
+		}
+		x = 6
+		y = 10
+
+	}
+	focus = {
+		id = Enhance_breakthrough_and_performance
+		icon = GFX_goal_unknown
+		cost = 4.30
+		prerequisite = {
+			focus = Independent_research
+			focus = Technology_introduction
+		}
+		mutually_exclusive = {
+			focus = Firepower_and_armor
+		}
+		x = 10
+		y = 8
+
+	}
+	focus = {
+		id = Modern_Chasseur
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Enhance_breakthrough_and_performance
+			focus = Firepower_and_armor
+		}
+		x = 11
+		y = 9
+
+	}
+	focus = {
+		id = Military_intervention
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = Emergency_council
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = Regent_Conference
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Military_intervention
+		}
+		x = 15
+		y = 5
+
+	}
+	focus = {
+		id = Stabilize_the_situation
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Regent_Conference
+			focus = Temporary_Agreement
+		}
+		x = 16
+		y = 6
+
+	}
+	focus = {
+		id = Constitutional_conference 
+		icon = GFX_goal_unknown
+		cost = 8.60
+		prerequisite = {
+			focus = Stabilize_the_situation
+		}
+		x = 16
+		y = 8
+
+	}
+	focus = {
+		id = Turn_left
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = Dependency_Theory
+		}
+		mutually_exclusive = {
+			focus = Western_Diplomacy
+		}
+		x = 26
+		y = 4
+
+	}
+	focus = {
+		id = Paris_Peace_Treaties
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = Scandinavian_Diplomacy
+			focus = Western_Diplomacy
+			focus = Turn_left
+		}
+		x = 22
+		y = 5
+
+	}
+	focus = {
+		id = Scandinavian_countries
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Paris_Peace_Treaties
+		}
+		mutually_exclusive = {
+			focus = Noord_Zee_Multi-School_Alliance
+		}
+		x = 24
+		y = 6
+
+	}
+	focus = {
+		id = State_Council
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Constitutional_conference 
+		}
+		x = 16
+		y = 9
+
+	}
+	focus = {
+		id = Military_council
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Constitutional_conference 
+		}
+		x = 13
+		y = 9
+
+	}
+	focus = {
+		id = Foreign_office
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Constitutional_conference 
+		}
+		x = 19
+		y = 9
+
+	}
+	focus = {
+		id = International_assistance
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = Scandinavian_countries
+		}
+		x = 24
+		y = 7
+
+	}
+	focus = {
+		id = Scandinavian_Union
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = International_assistance
+		}
+		x = 24
+		y = 8
+
+	}
+	focus = {
+		id = Nordic Outpost
+		icon = GFX_goal_unknown
+		cost = 8.60
+		prerequisite = {
+			focus = Scandinavian_Union
+		}
+		x = 24
+		y = 9
+
+	}
+	focus = {
+		id = Noord_Zee_Multi-School_Alliance
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Paris_Peace_Treaties
+		}
+		mutually_exclusive = {
+			focus = Scandinavian_countries
+		}
+		x = 20
+		y = 6
+
+	}
+	focus = {
+		id = Integration_process
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = Noord_Zee_Multi-School_Alliance
+		}
+		x = 20
+		y = 7
+
+	}
+	focus = {
+		id = Scandinavian_unity
+		icon = GFX_goal_unknown
+		cost = 4.30
+		prerequisite = {
+			focus = Integration_process
+		}
+		x = 20
+		y = 8
+
+	}
+	focus = {
+		id = Claim_sovereignty
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = Scandinavian_unity
+		}
+		prerequisite = {
+			focus = Foreign_office
+		}
+		x = 19
+		y = 10
+
+	}
+	focus = {
+		id = Rectify_military_discipline
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Military_council
+		}
+		x = 13
+		y = 11
+
+	}
+	focus = {
+		id = JHS'S_Military_lectures
+		icon = GFX_goal_unknown
+		cost = 3.60
+		prerequisite = {
+			focus = Military_council
+		}
+		x = 10
+		y = 11
+
+	}
+	focus = {
+		id = Expand_enrollment
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = State_Council
+		}
+		x = 15
+		y = 10
+
+	}
+	focus = {
+		id = Surrounding _the_Baltic_Sea
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Claim_sovereignty
+		}
+		x = 21
+		y = 11
+
+	}
+	focus = {
+		id = Fleet_escort
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Surrounding _the_Baltic_Sea
+		}
+		x = 21
+		y = 12
+
+	}
+	focus = {
+		id = Naval_Academy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Fleet_escort
+		}
+		x = 21
+		y = 13
+
+	}
+	focus = {
+		id = End_political_violence
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = State_Council
+		}
+		x = 17
+		y = 10
+
+	}
+	focus = {
+		id = Restore_order
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = End_political_violence
+		}
+		x = 17
+		y = 11
+
+	}
+	focus = {
+		id = Presidentia_election
+		icon = GFX_goal_unknown
+		cost = 8.60
+		prerequisite = {
+			focus = Restore_order
+		}
+		x = 17
+		y = 12
+
+	}
+	focus = {
+		id = Finlandia_Finlandia
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Presidentia_election
+		}
+		prerequisite = {
+			focus = Claim_sovereignty
+		}
+		x = 19
+		y = 13
+
+	}
+	focus = {
+		id = Tanker_training
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = Expand_enrollment
+		}
+		x = 15
+		y = 11
+
+	}
+	focus = {
+		id = Military_reform
+		icon = GFX_goal_unknown
+		cost = 8.60
+		prerequisite = {
+			focus = Rectify_military_discipline
+		}
+		prerequisite = {
+			focus = Tanker_training
+		}
+		x = 14
+		y = 12
+
+	}
+	focus = {
+		id = JHS's_Maneuver tactics
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = JHS'S_Military_lectures
+		}
+		x = 10
+		y = 12
+
+	}
+	focus = {
+		id = Military_exercises
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Finlandia_Finlandia
+		}
+		x = 19
+		y = 14
+
+	}
+	focus = {
+		id = Säkkijärven_polkka
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = Military_exercises
+		}
+		x = 19
+		y = 15
+
+	}
+	focus = {
+		id = Continuation_War
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Säkkijärven_polkka
+		}
+		x = 19
+		y = 16
+
+	}
+	focus = {
+		id = The_sky_of_Lapland
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Continuation_War
+		}
+		x = 19
+		y = 17
+
+	}
+	focus = {
+		id = District_governor
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Continuation_War
+		}
+		x = 21
+		y = 17
+
+	}
+	focus = {
+		id = Southward_policy
+		icon = GFX_goal_unknown
+		cost = 8.60
+		prerequisite = {
+			focus = The_sky_of_Lapland
+		}
+		x = 19
+		y = 18
+
+	}
+	focus = {
+		id = Shake_the_order
+		icon = GFX_goal_unknown
+		cost = 8.60
+		prerequisite = {
+			focus = The_sky_of_Lapland
+		}
+		x = 21
+		y = 18
+
+	}
+	focus = {
+		id = March_to_Europe
+		icon = GFX_goal_unknown
+		cost = 8.60
+		prerequisite = {
+			focus = The_sky_of_Lapland
+		}
+		x = 17
+		y = 18
+
+	}
+	focus = {
+		id = Tenka_fubu
+		icon = GFX_goal_unknown
+		cost = 8.60
+		prerequisite = {
+			focus = March_to_Europe
+			focus = Southward_policy
+			focus = Shake_the_order
+		}
+		x = 19
+		y = 19
+
+	}
+	focus = {
+		id = Anti-Nepotism
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Military_reform
+		}
+		x = 13
+		y = 13
+
+	}
+	focus = {
+		id = Expand_the_conscription
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Military_reform
+		}
+		x = 15
+		y = 13
+
+	}
+	focus = {
+		id = Professional_army
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Anti-Nepotism
+		}
+		x = 13
+		y = 14
+
+	}
+	focus = {
+		id = Military_tradition
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Expand_the_conscription
+		}
+		x = 15
+		y = 14
+
+	}
+	focus = {
+		id = Helsinki_Military_Academy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Professional_army
+		}
+		prerequisite = {
+			focus = Military_tradition
+		}
+		x = 14
+		y = 15
+
+	}
+	focus = {
+		id = Breakthroug_hand_mobility
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = JHS's_Maneuver tactics
+		}
+		mutually_exclusive = {
+			focus = Ready_offense
+		}
+		x = 9
+		y = 13
+
+	}
+	focus = {
+		id = Ready_offense
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = JHS's_Maneuver tactics
+		}
+		mutually_exclusive = {
+			focus = Breakthroug_hand_mobility
+		}
+		x = 11
+		y = 13
+
+	}
+	focus = {
+		id =  Asymmetric_Warfare
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Breakthroug_hand_mobility
+			focus = Ready_offense
+		}
+		x = 10
+		y = 14
+
+	}
+	focus = {
+		id = Guerrilla_warfare
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus =  Asymmetric_Warfare
+		}
+		x = 10
+		y = 15
+
+	}
+	focus = {
+		id = White_Death
+		icon = GFX_goal_unknown
+		cost = 8.60
+		prerequisite = {
+			focus = Guerrilla_warfare
+		}
+		prerequisite = {
+			focus = Helsinki_Military_Academy
+		}
+		x = 12
+		y = 16
+
+	}
+	focus = {
+		id = Support_weapons
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus =  Asymmetric_Warfare
+		}
+		x = 8
+		y = 15
+
+	}
+	focus = {
+		id = Field_ambulance
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = Support_weapons
+		}
+		x = 8
+		y = 16
+
+	}
+}

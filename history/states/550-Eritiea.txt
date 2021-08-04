@@ -8,7 +8,7 @@ state=
 	
 	history=
 	{
-		owner = STG
+		owner = OSH
 		
 		victory_points = {
 			12766 1
@@ -20,6 +20,7 @@ state=
 				naval_base = 3
 			}
 		}
+		add_core_of = OSH
 	}
 	provinces={
 		5017 5047 5091 8043 12723 12766

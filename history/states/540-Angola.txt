@@ -6,7 +6,8 @@ state={
 	}
 
 	history={
-		owner = STG
+		owner = OMA
+		add_core_of = OMA
 		buildings = {
 			infrastructure = 1
 			8248 = {

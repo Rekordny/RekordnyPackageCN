@@ -6,8 +6,8 @@ state={
 	impassable = yes
 
 	history={
-		owner = STG
-		add_core_of = NGR
+		owner = OMA
+		add_core_of = OMA
 		buildings = {
 			infrastructure = 1
 
