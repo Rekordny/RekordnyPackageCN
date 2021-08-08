@@ -36,7 +36,7 @@ senshado_decisions = {
 			is_debug = yes
 		}
 		complete_effect = {
-			get_industry_weights = yes
+			add_goods = yes
 		}
 	}
 

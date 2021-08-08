@@ -1,5 +1,22 @@
 ideas = {
     country = {
+        #资源开发中精神
+        adding_resources_generic = {
+            picture = generic_goods_red_bonus
+            allowed = {
+            }
+            available = { }
+            cancel = { }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+            modifier = {
+                consumer_goods_factor = 0.05
+                political_power_gain = -0.3
+            }
+        }
+
         #战车道点数日获取和黄金储备水平翻倍！(仅在debug决议中使用)
         ssdp_daily_twice = {
             

@@ -1,0 +1,242 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "shop_confirm"
+		position = { x = 0 y = 0}	
+		size = { width = 1920 height= 1080 }
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable = no
+		fade_type = linear
+		click_to_front = no
+		clipping = no
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_shop_confirm_window"
+		}
+
+       	instantTextBoxType ={
+			name ="shop_confirm_yes_text"
+		 	font = "hoi_18mbs"
+		 	text = shop_confirm_yes
+		 	position = { x= 750 y = 555 }
+		 	Orientation = "UPPER_LEFT"
+		 	maxWidth = 200
+		  	maxHeight = 50
+		  	fixedsize = yes
+		}
+
+        instantTextBoxType ={
+			name ="shop_confirm_no_text"
+		 	font = "hoi_18mbs"
+		 	text = shop_confirm_no
+		 	position = { x= 1070 y = 555 }
+		 	Orientation = "UPPER_LEFT"
+		 	maxWidth = 200
+		  	maxHeight = 50
+		  	fixedsize = yes
+		}
+        buttonType = {
+            name = "shop_yes"
+            spriteType = "GFX_shop_confirm_button"
+            position = { x= 600 y = 485 }
+            Orientation = "UPPER_LEFT"
+        }
+        buttonType = {
+            name = "shop_no"
+            spriteType = "GFX_shop_confirm_button"
+            position = { x= 935 y = 485 }
+            Orientation = "UPPER_LEFT"
+        }
+
+        instantTextBoxType ={
+			name ="shop_confirm_title"
+		 	font = "hoi_18mbs"
+		 	text = shop_confirm_title
+		 	position = { x= 880 y = 470 }
+		 	Orientation = "UPPER_LEFT"
+		 	maxWidth = 200
+		  	maxHeight = 50
+		  	fixedsize = yes
+		}
+
+        
+        
+
+		# buttonType ={
+		# 	name ="close_button"
+		# 	spriteType = "GFX_affinity_close_button_background"
+		# 	position = { x= -55 y = 30 }
+		# 	Orientation = "UPPER_RIGHT"
+		# }	
+
+        
+		# #商品图标
+        # instantTextBoxType ={
+		# 	name ="shop_item1f"
+		# 	text = "[goods_1f]"
+		# 	position = { x= -723 y = 195 }
+		# 	Orientation = "UPPER_RIGHT"
+		# }
+        # instantTextBoxType ={
+		# 	name ="shop_item2f"
+		# 	text = "[goods_2f]"
+		# 	position = { x= -378 y = 195 }
+		# 	Orientation = "UPPER_RIGHT"
+		# }
+        # instantTextBoxType ={
+		# 	name ="shop_item3f"
+		# 	text = "[goods_3f]"
+		# 	position = { x= -723 y = 330 }
+		# 	Orientation = "UPPER_RIGHT"
+		# }
+        # instantTextBoxType ={
+		# 	name ="shop_item4f"
+		# 	text = "[goods_4f]"
+		# 	position = { x= -378 y = 330 }
+		# 	Orientation = "UPPER_RIGHT"
+		# }
+        # instantTextBoxType ={
+		# 	name ="shop_item5f"
+		# 	text = "[goods_5f]"
+		# 	position = { x= -723 y = 460 }
+		# 	Orientation = "UPPER_RIGHT"
+		# }
+        # instantTextBoxType ={
+		# 	name ="shop_item6f"
+		# 	text = "[goods_6f]"
+		# 	position = { x= -378 y = 460 }
+		# 	Orientation = "UPPER_RIGHT"
+		# }
+		# #商品描述
+		# instantTextBoxType ={
+		# 	name ="shop_item1d"
+		# 	font = "hoi_18mbs"
+		# 	text = "[goods_1d]"
+		# 	position = { x= -623 y = 176 }
+		# 	Orientation = "UPPER_RIGHT"
+		# 	maxWidth = 200
+		#  	maxHeight = 50
+		#  	fixedsize = yes
+		# }
+        # instantTextBoxType ={
+		# 	name ="shop_item2d"
+		# 	font = "hoi_18mbs"
+		# 	text = "[goods_2d]"
+		# 	position = { x= -278 y = 176 }
+		# 	Orientation = "UPPER_RIGHT"
+		# 	maxWidth = 200
+		#  	maxHeight = 50
+		#  	fixedsize = yes
+		# }
+        # instantTextBoxType ={
+		# 	name ="shop_item3d"
+		# 	font = "hoi_18mbs"
+		# 	text = "[goods_3d]"
+		# 	position = { x= -623 y = 311 }
+		# 	Orientation = "UPPER_RIGHT"
+		# 	maxWidth = 200
+		#  	maxHeight = 50
+		#  	fixedsize = yes
+		# }
+        # instantTextBoxType ={
+		# 	name ="shop_item4d"
+		# 	font = "hoi_18mbs"
+		# 	text = "[goods_4d]"
+		# 	position = { x= -278 y = 311 }
+		# 	Orientation = "UPPER_RIGHT"
+		# 	maxWidth = 200
+		#  	maxHeight = 50
+		#  	fixedsize = yes
+		# }
+        # instantTextBoxType ={
+		# 	name ="shop_item5d"
+		# 	font = "hoi_18mbs"
+		# 	text = "[goods_5d]"
+		# 	position = { x= -623 y = 441 }
+		# 	Orientation = "UPPER_RIGHT"
+		# 	maxWidth = 200
+		#  	maxHeight = 50
+		#  	fixedsize = yes
+		# }
+        # instantTextBoxType ={
+		# 	name ="shop_item6d"
+		# 	font = "hoi_18mbs"
+		# 	text = "[goods_6d]"
+		# 	position = { x= -278 y = 441 }
+		# 	Orientation = "UPPER_RIGHT"
+		# 	maxWidth = 200
+		#  	maxHeight = 50
+		#  	fixedsize = yes
+		# }
+		# #商品按钮
+		# buttonType ={
+		# 	name ="shop_item1"
+		# 	spriteType = "GFX_shop_item_frames"
+		# 	position = { x= -760 y = 120 }
+		# 	Orientation = "UPPER_RIGHT"
+		# }
+        # buttonType ={
+		# 	name ="shop_item2"
+		# 	spriteType = "GFX_shop_item_frames"
+		# 	position = { x= -415 y = 120 }
+		# 	Orientation = "UPPER_RIGHT"
+		# }
+        # buttonType ={
+		# 	name ="shop_item3"
+		# 	spriteType = "GFX_shop_item_frames"
+		# 	position = { x= -760 y = 255 }
+		# 	Orientation = "UPPER_RIGHT"
+		# }
+        # buttonType ={
+		# 	name ="shop_item4"
+		# 	spriteType = "GFX_shop_item_frames"
+		# 	position = { x= -415 y = 255 }
+		# 	Orientation = "UPPER_RIGHT"
+		# }
+        # buttonType ={
+		# 	name ="shop_item5"
+		# 	spriteType = "GFX_shop_item_frames"
+		# 	position = { x= -760 y = 390 }
+		# 	Orientation = "UPPER_RIGHT"
+		# }
+        # buttonType ={
+		# 	name ="shop_item6"
+		# 	spriteType = "GFX_shop_item_frames"
+		# 	position = { x= -415 y = 390 }
+		# 	Orientation = "UPPER_RIGHT"
+		# }
+		
+		# buttonType ={
+		# 	name ="item_bar_1"
+		# 	spriteType = "GFX_affinity_bar_item"
+		# 	position = { x= 60 y = 68 }
+		# 	Orientation = "UPPER_LEFT"
+		# }
+		# buttonType ={
+		# 	name ="chara_thumb_maho"
+		# 	spriteType = "GFX_affinity_maho"
+		# 	position = { x= 68 y = 76 }
+		# 	Orientation = "UPPER_LEFT"
+		# }
+		# instantTextBoxType = {
+		# 	name ="affinity_level_1"
+		# 	position = { x= 208 y = 106 }
+		# 	font = "hoi_18mbs"
+		# 	text = "affinity_level"
+		# 	format = center
+		# 	maxWidth = 130
+		# 	maxHeight = 22
+		# 	fixedsize = yes
+		# 	pdx_tooltip = "affinity_tooltip" 
+		# 	# pdx_tooltip_delayed = "MONEY_TOOLTIP_DELAYED"
+		# }
+		# iconType = {
+		# 	name = "affinity_level_1_icon_0"
+		# 	spriteType = "GFX_affinity_level_0"
+		# 	position = { x= 338 y = 106 }
+		# }
+	}
+}

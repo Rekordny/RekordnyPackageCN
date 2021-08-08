@@ -302,3 +302,102 @@ tax_daily = {
 ######################################################
 #####################商店系统相关######################
 ######################################################
+#刷新、装填商店
+add_goods = {
+	add_to_variable = { good_slot = 1 }
+	add_to_variable = { current_good_id = 0 }
+	while_loop_effect = {
+		break = break
+		limit = { check_variable = { good_slot < 7 } }
+
+		random_list = {
+			2 = { add_good_1 = yes }
+			4 = { add_good_2 = yes }
+			4 = { add_good_3 = yes }
+			1 = { add_good_4 = yes }
+			7 = { add_good_5 = yes }
+			7 = { add_good_6 = yes }
+			7 = { add_good_7 = yes }
+			7 = { add_good_8 = yes }
+			7 = { add_good_9 = yes }
+			7 = { add_good_10 = yes }
+			7 = { add_good_11 = yes }
+			7 = { add_good_12 = yes }
+			7 = { add_good_13 = yes }
+			6 = { add_good_14 = yes }
+			4 = { add_good_15 = yes }
+			4 = { add_good_16 = yes }
+			6 = { add_good_17 = yes }
+			2 = { add_good_18 = yes }
+			2 = { add_good_19 = yes }
+			2 = { add_good_20 = yes }
+		}
+		log = "[?current_good_id]"
+		add_to_variable = { good_slot = 1 }
+	}
+	clear_variable = current_good_id
+	clear_variable = good_slot
+	log = "s1:[?slot1_good]"
+	log = "s2:[?slot2_good]"
+	log = "s3:[?slot3_good]"
+	log = "s4:[?slot4_good]"
+	log = "s5:[?slot5_good]"
+	log = "s6:[?slot6_good]"
+}
+
+#上架商品id
+add_good_0 = { log = "下架" set_variable = { current_good_id = 0 } if = { limit = { check_variable = { good_slot = 1 }}  set_variable = { slot1_good = 0 }} if = { limit = { check_variable = { good_slot = 2 }}  set_variable = { slot2_good = 0 }} if = { limit = { check_variable = { good_slot = 3 }}  set_variable = { slot3_good = 0 }} if = { limit = { check_variable = { good_slot = 4 }}  set_variable = { slot4_good = 0 }} if = { limit = { check_variable = { good_slot = 5 }}  set_variable = { slot5_good = 0 }} if = { limit = { check_variable = { good_slot = 6 }}  set_variable = { slot6_good = 0 }}  }
+add_good_1 = { set_variable = { current_good_id = 1 } if = { limit = { check_variable = { good_slot = 1 }}  set_variable = { slot1_good = 1 }} if = { limit = { check_variable = { good_slot = 2 }}  set_variable = { slot2_good = 1 }} if = { limit = { check_variable = { good_slot = 3 }}  set_variable = { slot3_good = 1 }} if = { limit = { check_variable = { good_slot = 4 }}  set_variable = { slot4_good = 1 }} if = { limit = { check_variable = { good_slot = 5 }}  set_variable = { slot5_good = 1 }} if = { limit = { check_variable = { good_slot = 6 }}  set_variable = { slot6_good = 1 }} }
+add_good_2 = { set_variable = { current_good_id = 2 } if = { limit = { check_variable = { good_slot = 1 }}  set_variable = { slot1_good = 2 }} if = { limit = { check_variable = { good_slot = 2 }}  set_variable = { slot2_good = 2 }} if = { limit = { check_variable = { good_slot = 3 }}  set_variable = { slot3_good = 2 }} if = { limit = { check_variable = { good_slot = 4 }}  set_variable = { slot4_good = 2 }} if = { limit = { check_variable = { good_slot = 5 }}  set_variable = { slot5_good = 2 }} if = { limit = { check_variable = { good_slot = 6 }}  set_variable = { slot6_good = 2 }} }
+add_good_3 = { set_variable = { current_good_id = 3 } if = { limit = { check_variable = { good_slot = 1 }}  set_variable = { slot1_good = 3 }} if = { limit = { check_variable = { good_slot = 2 }}  set_variable = { slot2_good = 3 }} if = { limit = { check_variable = { good_slot = 3 }}  set_variable = { slot3_good = 3 }} if = { limit = { check_variable = { good_slot = 4 }}  set_variable = { slot4_good = 3 }} if = { limit = { check_variable = { good_slot = 5 }}  set_variable = { slot5_good = 3 }} if = { limit = { check_variable = { good_slot = 6 }}  set_variable = { slot6_good = 3 }} }
+add_good_4 = { set_variable = { current_good_id = 4 } if = { limit = { check_variable = { good_slot = 1 }}  set_variable = { slot1_good = 4 }} if = { limit = { check_variable = { good_slot = 2 }}  set_variable = { slot2_good = 4 }} if = { limit = { check_variable = { good_slot = 3 }}  set_variable = { slot3_good = 4 }} if = { limit = { check_variable = { good_slot = 4 }}  set_variable = { slot4_good = 4 }} if = { limit = { check_variable = { good_slot = 5 }}  set_variable = { slot5_good = 4 }} if = { limit = { check_variable = { good_slot = 6 }}  set_variable = { slot6_good = 4 }} }
+add_good_5 = { set_variable = { current_good_id = 5 } if = { limit = { check_variable = { good_slot = 1 }}  set_variable = { slot1_good = 5 }} if = { limit = { check_variable = { good_slot = 2 }}  set_variable = { slot2_good = 5 }} if = { limit = { check_variable = { good_slot = 3 }}  set_variable = { slot3_good = 5 }} if = { limit = { check_variable = { good_slot = 4 }}  set_variable = { slot4_good = 5 }} if = { limit = { check_variable = { good_slot = 5 }}  set_variable = { slot5_good = 5 }} if = { limit = { check_variable = { good_slot = 6 }}  set_variable = { slot6_good = 5 }} }
+add_good_6 = { set_variable = { current_good_id = 6 } if = { limit = { check_variable = { good_slot = 1 }}  set_variable = { slot1_good = 6 }} if = { limit = { check_variable = { good_slot = 2 }}  set_variable = { slot2_good = 6 }} if = { limit = { check_variable = { good_slot = 3 }}  set_variable = { slot3_good = 6 }} if = { limit = { check_variable = { good_slot = 4 }}  set_variable = { slot4_good = 6 }} if = { limit = { check_variable = { good_slot = 5 }}  set_variable = { slot5_good = 6 }} if = { limit = { check_variable = { good_slot = 6 }}  set_variable = { slot6_good = 6 }} }
+add_good_7 = { set_variable = { current_good_id = 7 } if = { limit = { check_variable = { good_slot = 1 }}  set_variable = { slot1_good = 7 }} if = { limit = { check_variable = { good_slot = 2 }}  set_variable = { slot2_good = 7 }} if = { limit = { check_variable = { good_slot = 3 }}  set_variable = { slot3_good = 7 }} if = { limit = { check_variable = { good_slot = 4 }}  set_variable = { slot4_good = 7 }} if = { limit = { check_variable = { good_slot = 5 }}  set_variable = { slot5_good = 7 }} if = { limit = { check_variable = { good_slot = 6 }}  set_variable = { slot6_good = 7 }} }
+add_good_8 = { set_variable = { current_good_id = 8 } if = { limit = { check_variable = { good_slot = 1 }}  set_variable = { slot1_good = 8 }} if = { limit = { check_variable = { good_slot = 2 }}  set_variable = { slot2_good = 8 }} if = { limit = { check_variable = { good_slot = 3 }}  set_variable = { slot3_good = 8 }} if = { limit = { check_variable = { good_slot = 4 }}  set_variable = { slot4_good = 8 }} if = { limit = { check_variable = { good_slot = 5 }}  set_variable = { slot5_good = 8 }} if = { limit = { check_variable = { good_slot = 6 }}  set_variable = { slot6_good = 8 }} }
+add_good_9 = { set_variable = { current_good_id = 9 } if = { limit = { check_variable = { good_slot = 1 }}  set_variable = { slot1_good = 9 }} if = { limit = { check_variable = { good_slot = 2 }}  set_variable = { slot2_good = 9 }} if = { limit = { check_variable = { good_slot = 3 }}  set_variable = { slot3_good = 9 }} if = { limit = { check_variable = { good_slot = 4 }}  set_variable = { slot4_good = 9 }} if = { limit = { check_variable = { good_slot = 5 }}  set_variable = { slot5_good = 9 }} if = { limit = { check_variable = { good_slot = 6 }}  set_variable = { slot6_good = 9 }} }
+add_good_10 = { set_variable = { current_good_id = 10 } if = { limit = { check_variable = { good_slot = 1 }}  set_variable = { slot1_good = 10 }} if = { limit = { check_variable = { good_slot = 2 }}  set_variable = { slot2_good = 10 }} if = { limit = { check_variable = { good_slot = 3 }}  set_variable = { slot3_good = 10 }} if = { limit = { check_variable = { good_slot = 4 }}  set_variable = { slot4_good = 10 }} if = { limit = { check_variable = { good_slot = 5 }}  set_variable = { slot5_good = 10 }} if = { limit = { check_variable = { good_slot = 6 }}  set_variable = { slot6_good = 10 }} }
+add_good_11 = { set_variable = { current_good_id = 11 } if = { limit = { check_variable = { good_slot = 1 }}  set_variable = { slot1_good = 11 }} if = { limit = { check_variable = { good_slot = 2 }}  set_variable = { slot2_good = 11 }} if = { limit = { check_variable = { good_slot = 3 }}  set_variable = { slot3_good = 11 }} if = { limit = { check_variable = { good_slot = 4 }}  set_variable = { slot4_good = 11 }} if = { limit = { check_variable = { good_slot = 5 }}  set_variable = { slot5_good = 11 }} if = { limit = { check_variable = { good_slot = 6 }}  set_variable = { slot6_good = 11 }} }
+add_good_12 = { set_variable = { current_good_id = 12 } if = { limit = { check_variable = { good_slot = 1 }}  set_variable = { slot1_good = 12 }} if = { limit = { check_variable = { good_slot = 2 }}  set_variable = { slot2_good = 12 }} if = { limit = { check_variable = { good_slot = 3 }}  set_variable = { slot3_good = 12 }} if = { limit = { check_variable = { good_slot = 4 }}  set_variable = { slot4_good = 12 }} if = { limit = { check_variable = { good_slot = 5 }}  set_variable = { slot5_good = 12 }} if = { limit = { check_variable = { good_slot = 6 }}  set_variable = { slot6_good = 12 }} }
+add_good_13 = { set_variable = { current_good_id = 13 } if = { limit = { check_variable = { good_slot = 1 }}  set_variable = { slot1_good = 13 }} if = { limit = { check_variable = { good_slot = 2 }}  set_variable = { slot2_good = 13 }} if = { limit = { check_variable = { good_slot = 3 }}  set_variable = { slot3_good = 13 }} if = { limit = { check_variable = { good_slot = 4 }}  set_variable = { slot4_good = 13 }} if = { limit = { check_variable = { good_slot = 5 }}  set_variable = { slot5_good = 13 }} if = { limit = { check_variable = { good_slot = 6 }}  set_variable = { slot6_good = 13 }} }
+add_good_14 = { set_variable = { current_good_id = 14 } if = { limit = { check_variable = { good_slot = 1 }}  set_variable = { slot1_good = 14 }} if = { limit = { check_variable = { good_slot = 2 }}  set_variable = { slot2_good = 14 }} if = { limit = { check_variable = { good_slot = 3 }}  set_variable = { slot3_good = 14 }} if = { limit = { check_variable = { good_slot = 4 }}  set_variable = { slot4_good = 14 }} if = { limit = { check_variable = { good_slot = 5 }}  set_variable = { slot5_good = 14 }} if = { limit = { check_variable = { good_slot = 6 }}  set_variable = { slot6_good = 14 }} }
+add_good_15 = { set_variable = { current_good_id = 15 } if = { limit = { check_variable = { good_slot = 1 }}  set_variable = { slot1_good = 15 }} if = { limit = { check_variable = { good_slot = 2 }}  set_variable = { slot2_good = 15 }} if = { limit = { check_variable = { good_slot = 3 }}  set_variable = { slot3_good = 15 }} if = { limit = { check_variable = { good_slot = 4 }}  set_variable = { slot4_good = 15 }} if = { limit = { check_variable = { good_slot = 5 }}  set_variable = { slot5_good = 15 }} if = { limit = { check_variable = { good_slot = 6 }}  set_variable = { slot6_good = 15 }} }
+add_good_16 = { set_variable = { current_good_id = 16 } if = { limit = { check_variable = { good_slot = 1 }}  set_variable = { slot1_good = 16 }} if = { limit = { check_variable = { good_slot = 2 }}  set_variable = { slot2_good = 16 }} if = { limit = { check_variable = { good_slot = 3 }}  set_variable = { slot3_good = 16 }} if = { limit = { check_variable = { good_slot = 4 }}  set_variable = { slot4_good = 16 }} if = { limit = { check_variable = { good_slot = 5 }}  set_variable = { slot5_good = 16 }} if = { limit = { check_variable = { good_slot = 6 }}  set_variable = { slot6_good = 16 }} }
+add_good_17 = { set_variable = { current_good_id = 17 } if = { limit = { check_variable = { good_slot = 1 }}  set_variable = { slot1_good = 17 }} if = { limit = { check_variable = { good_slot = 2 }}  set_variable = { slot2_good = 17 }} if = { limit = { check_variable = { good_slot = 3 }}  set_variable = { slot3_good = 17 }} if = { limit = { check_variable = { good_slot = 4 }}  set_variable = { slot4_good = 17 }} if = { limit = { check_variable = { good_slot = 5 }}  set_variable = { slot5_good = 17 }} if = { limit = { check_variable = { good_slot = 6 }}  set_variable = { slot6_good = 17 }} }
+add_good_18 = { set_variable = { current_good_id = 18 } if = { limit = { check_variable = { good_slot = 1 }}  set_variable = { slot1_good = 18 }} if = { limit = { check_variable = { good_slot = 2 }}  set_variable = { slot2_good = 18 }} if = { limit = { check_variable = { good_slot = 3 }}  set_variable = { slot3_good = 18 }} if = { limit = { check_variable = { good_slot = 4 }}  set_variable = { slot4_good = 18 }} if = { limit = { check_variable = { good_slot = 5 }}  set_variable = { slot5_good = 18 }} if = { limit = { check_variable = { good_slot = 6 }}  set_variable = { slot6_good = 18 }} }
+add_good_19 = { set_variable = { current_good_id = 19 } if = { limit = { check_variable = { good_slot = 1 }}  set_variable = { slot1_good = 19 }} if = { limit = { check_variable = { good_slot = 2 }}  set_variable = { slot2_good = 19 }} if = { limit = { check_variable = { good_slot = 3 }}  set_variable = { slot3_good = 19 }} if = { limit = { check_variable = { good_slot = 4 }}  set_variable = { slot4_good = 19 }} if = { limit = { check_variable = { good_slot = 5 }}  set_variable = { slot5_good = 19 }} if = { limit = { check_variable = { good_slot = 6 }}  set_variable = { slot6_good = 19 }} }
+add_good_20 = { set_variable = { current_good_id = 20 } if = { limit = { check_variable = { good_slot = 1 }}  set_variable = { slot1_good = 20 }} if = { limit = { check_variable = { good_slot = 2 }}  set_variable = { slot2_good = 20 }} if = { limit = { check_variable = { good_slot = 3 }}  set_variable = { slot3_good = 20 }} if = { limit = { check_variable = { good_slot = 4 }}  set_variable = { slot4_good = 20 }} if = { limit = { check_variable = { good_slot = 5 }}  set_variable = { slot5_good = 20 }} if = { limit = { check_variable = { good_slot = 6 }}  set_variable = { slot6_good = 20 }} }
+
+#购买商品前的检查，如果货币不够不能进入确认窗口
+
+#购买商品
+purchase_good = {
+	#判定物品，扣钱，添加至玩家库存
+	if = { limit = { check_variable = { current_good_id = 1 } } add_to_variable = { good1 = 1 } }
+	if = { limit = { check_variable = { current_good_id = 2 } } add_to_variable = { good2 = 1 } }
+	if = { limit = { check_variable = { current_good_id = 3 } } add_to_variable = { good3 = 1 } }
+	if = { limit = { check_variable = { current_good_id = 4 } } add_to_variable = { good4 = 1 } }
+	if = { limit = { check_variable = { current_good_id = 5 } } add_to_variable = { good5 = 1 } }
+	if = { limit = { check_variable = { current_good_id = 6 } } add_to_variable = { good6 = 1 } }
+	if = { limit = { check_variable = { current_good_id = 7 } } add_to_variable = { good7 = 1 } }
+	if = { limit = { check_variable = { current_good_id = 8 } } add_to_variable = { good8 = 1 } }
+	if = { limit = { check_variable = { current_good_id = 9 } } add_to_variable = { good9 = 1 } }
+	if = { limit = { check_variable = { current_good_id = 10 } } add_to_variable = { good10 = 1 } }
+	if = { limit = { check_variable = { current_good_id = 11 } } add_to_variable = { good11 = 1 } }
+	if = { limit = { check_variable = { current_good_id = 12 } } add_to_variable = { good12 = 1 } }
+	if = { limit = { check_variable = { current_good_id = 13 } } add_to_variable = { good13 = 1 } }
+	if = { limit = { check_variable = { current_good_id = 14 } } add_to_variable = { good14 = 1 } }
+	if = { limit = { check_variable = { current_good_id = 15 } } add_to_variable = { good15 = 1 } }
+	if = { limit = { check_variable = { current_good_id = 16 } } add_to_variable = { good16 = 1 } }
+	if = { limit = { check_variable = { current_good_id = 17 } } add_to_variable = { good17 = 1 } }
+	if = { limit = { check_variable = { current_good_id = 18 } } add_to_variable = { good18 = 1 } }
+	if = { limit = { check_variable = { current_good_id = 19 } } add_to_variable = { good19 = 1 } }
+	if = { limit = { check_variable = { current_good_id = 20 } } add_to_variable = { good20 = 1 } }
+	#替换槽商品为0号
+	add_good_0 = yes
+	clear_variable = good_slot
+}
+
+######################################################
+#####################省份指令相关######################
+######################################################

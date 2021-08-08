@@ -33,22 +33,7 @@ country = {
 			political_power_gain = -0.3
 		}
 	}
-	Adding_resources_generic = {
-		picture = generic_goods_red_bonus
-		allowed = {
-			tag = POL
-		}
-		available = { }
-		cancel = { }
-		allowed_civil_war = {
-			always = no
-		}
-		removal_cost = -1
-		modifier = {
-			consumer_goods_factor = 0.05
-			political_power_gain = -0.3
-		}
-	}
+	
 	POL_final_tech_contract = {
 		picture = GFX_idea_POL_final_tech_contract
 		allowed = {

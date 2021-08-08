@@ -6,3 +6,4 @@
  gold_storage_low:0 "黄金储备量较低"
  gold_storage_poor:0 "黄金储备量非常低"
  gold_storage_bad:0 "黄金储备量严重不足"
+ adding_resources_generic:0 "资源开发冷却"

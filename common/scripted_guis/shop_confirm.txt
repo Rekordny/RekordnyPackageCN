@@ -1,0 +1,48 @@
+scripted_gui = {
+    shop_confirm = {
+    window_name = "shop_confirm"
+    context_type = player_context
+
+    visible = {
+      has_country_flag = open_shop_confirm
+    }
+
+    effects = {
+      shop_yes_click = {
+        purchase_good = yes
+        clr_country_flag = open_shop_confirm
+      }
+      shop_no_click = {
+        clr_country_flag = open_shop_confirm
+      }
+    }
+
+    triggers = {
+      # <element>_click_enabled = {
+      #     <triggers>
+      # }
+    }
+
+    dynamic_lists = {
+	  }
+
+    properties = {
+    }
+
+    ai_enabled = {
+		always = no
+    }
+
+    ai_test_interval = 290  # The higher, the long it takes the ai to do actions
+	  ai_test_variance = 0.5
+
+    ai_check = {
+    }
+
+    ai_check_scope = {
+    }
+
+    ai_weights = {
+    }
+  }
+}

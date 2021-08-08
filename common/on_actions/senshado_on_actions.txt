@@ -6,6 +6,8 @@ on_actions = {
 					is_ai=no
 				}
 				country_event = { days = 0 id = senshado_events.1 }
+				#第一次开局刷新商店
+				add_goods = yes
 			}
 
 			every_country = {

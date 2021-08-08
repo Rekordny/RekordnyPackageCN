@@ -11,6 +11,37 @@ scripted_gui = {
       close_button_click = {
         clr_country_flag = open_senshado_shop
       }
+      shop_item1_click = {
+        
+        set_variable = { current_good_id = slot1_good }
+        if = { limit = { check_variable = { current_good_id > 0 } } set_variable = { good_slot = 1 } set_country_flag = open_shop_confirm }
+      }
+      shop_item2_click = {
+        
+        set_variable = { current_good_id = slot2_good }
+        if = { limit = { check_variable = { current_good_id > 0 } } set_variable = { good_slot = 2 } set_country_flag = open_shop_confirm }
+      }
+      shop_item3_click = {
+        
+        set_variable = { current_good_id = slot3_good }
+        if = { limit = { check_variable = { current_good_id > 0 } } set_variable = { good_slot = 3 } set_country_flag = open_shop_confirm }
+      }
+      shop_item4_click = {
+        
+        set_variable = { current_good_id = slot4_good }
+        if = { limit = { check_variable = { current_good_id > 0 } } set_variable = { good_slot = 4 } set_country_flag = open_shop_confirm }
+      }
+      shop_item5_click = {
+        
+        set_variable = { current_good_id = slot5_good }
+        if = { limit = { check_variable = { current_good_id > 0 } } set_variable = { good_slot = 5 } set_country_flag = open_shop_confirm }
+      }
+      shop_item6_click = {
+        
+        set_variable = { current_good_id = slot6_good }
+        if = { limit = { check_variable = { current_good_id > 0 } } set_variable = { good_slot = 6 } set_country_flag = open_shop_confirm }
+      }
+
     }
 
     triggers = {
@@ -30,7 +61,7 @@ scripted_gui = {
     }
 
     ai_test_interval = 290  # The higher, the long it takes the ai to do actions
-	ai_test_variance = 0.5
+	  ai_test_variance = 0.5
 
     ai_check = {
     }

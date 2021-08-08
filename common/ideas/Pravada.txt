@@ -1,0 +1,84 @@
+ideas = {
+
+	country = {
+	    #动荡的边境形势
+		PRA_DDDBJXS_1 = {
+
+			name = PRA_DDDBJXS
+
+			picture = generic_infantry_bonus
+
+			allowed = { original_tag = PRA }
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+                political_power_factor = -0.2
+				war_support_factor = -0.1	
+				army_speed_factor = -0.05	
+				supply_consumption_factor = 0.05	
+			}
+		}
+		
+		#潜在的经济危机
+		PRA_QZDJJWJ_1 = {
+
+			name = PRA_QZDJJWJ
+
+			picture = generic_infantry_bonus
+
+			allowed = { original_tag = PRA }
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.2	
+				war_support_factor = -0.1
+				industrial_capacity_factory = -0.2	
+				production_factory_efficiency_gain_factor = -0.1
+				production_speed_buildings_factor = -0.15
+				consumer_goods_factor = 0.1
+			}
+		}
+		
+		#官僚主义作风
+		PRA_GLZYZF_1 = {
+
+			name = PRA_GLZYZF
+
+			picture = generic_infantry_bonus
+
+			allowed = { original_tag = PRA }
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.1	
+				political_advisor_cost_factor = 0.15
+				mobilization_laws_cost_factor = 0.15	
+				trade_laws_cost_factor = 0.15
+				economy_cost_factor = 0.15
+			}
+		}
+		
+		#柯西金改革
+		PRA_KXJGG_1 = {
+
+			name = PRA_KXJGG
+
+			picture = prc_the_long_march
+
+			allowed = { original_tag = PRA }
+
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+		}
+
+
+
+   }
+}

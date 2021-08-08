@@ -37,4 +37,15 @@ spriteTypes = {
 		texturefile = "gfx/interface/scripted_gui_graphics/item_random.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_shop_confirm_button"
+		texturefile = "gfx/interface/scripted_gui_graphics/confirm_button.dds"
+        noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	spriteType = {
+		name = "GFX_shop_confirm_window"
+		texturefile = "gfx/interface/scripted_gui_graphics/shop_confirm_window.dds"
+		legacy_lazy_load = no
+	}
 }

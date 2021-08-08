@@ -69,8 +69,8 @@ guiTypes = {
 			text = "[goods_1d]"
 			position = { x= -623 y = 176 }
 			Orientation = "UPPER_RIGHT"
-			maxWidth = 100
-		 	maxHeight = 20
+			maxWidth = 200
+		 	maxHeight = 50
 		 	fixedsize = yes
 		}
         instantTextBoxType ={
@@ -79,8 +79,8 @@ guiTypes = {
 			text = "[goods_2d]"
 			position = { x= -278 y = 176 }
 			Orientation = "UPPER_RIGHT"
-			maxWidth = 100
-		 	maxHeight = 20
+			maxWidth = 200
+		 	maxHeight = 50
 		 	fixedsize = yes
 		}
         instantTextBoxType ={
@@ -89,8 +89,8 @@ guiTypes = {
 			text = "[goods_3d]"
 			position = { x= -623 y = 311 }
 			Orientation = "UPPER_RIGHT"
-			maxWidth = 100
-		 	maxHeight = 20
+			maxWidth = 200
+		 	maxHeight = 50
 		 	fixedsize = yes
 		}
         instantTextBoxType ={
@@ -99,8 +99,8 @@ guiTypes = {
 			text = "[goods_4d]"
 			position = { x= -278 y = 311 }
 			Orientation = "UPPER_RIGHT"
-			maxWidth = 100
-		 	maxHeight = 20
+			maxWidth = 200
+		 	maxHeight = 50
 		 	fixedsize = yes
 		}
         instantTextBoxType ={
@@ -109,8 +109,8 @@ guiTypes = {
 			text = "[goods_5d]"
 			position = { x= -623 y = 441 }
 			Orientation = "UPPER_RIGHT"
-			maxWidth = 100
-		 	maxHeight = 20
+			maxWidth = 200
+		 	maxHeight = 50
 		 	fixedsize = yes
 		}
         instantTextBoxType ={
@@ -119,8 +119,8 @@ guiTypes = {
 			text = "[goods_6d]"
 			position = { x= -278 y = 441 }
 			Orientation = "UPPER_RIGHT"
-			maxWidth = 100
-		 	maxHeight = 20
+			maxWidth = 200
+		 	maxHeight = 50
 		 	fixedsize = yes
 		}
 		#商品按钮
@@ -160,7 +160,6 @@ guiTypes = {
 			position = { x= -415 y = 390 }
 			Orientation = "UPPER_RIGHT"
 		}
-
 		
 		# buttonType ={
 		# 	name ="item_bar_1"
