@@ -1,12 +1,8 @@
 ideas = {
     country = {
         KGA_broken_kuromorimine = {
-			allowed = {
-				tag = KGA
-			}
-			allowed_civil_war = {
-				always = yes
-			}
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = yes }
 			modifier = {
 				political_power_cost = 0.1
                 stability_factor = -0.2
@@ -16,12 +12,8 @@ ideas = {
 		}
 
         KGA_nishizumi_family_origin = {
-			allowed = {
-				tag = KGA
-			}
-			allowed_civil_war = {
-				always = yes
-			}
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = yes }
 			modifier = {
 				max_command_power = 20
                 army_core_attack_factor = 0.1
@@ -31,28 +23,187 @@ ideas = {
 		}
 
         KGA_huge_debt = {
-			allowed = {
-				tag = KGA
-			}
-			allowed_civil_war = {
-				always = yes
-			}
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = yes }
 			modifier = {
-				tax_daily_modifier = -0.35
+				tax_daily_modifier = -0.4
                 consumer_goods_factor = 0.2
 			}
 		}
 
+		KGA_huge_debt_1 = {
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				tax_daily_modifier = -0.32
+                consumer_goods_factor = 0.16
+			}
+		}
+
+		KGA_huge_debt_2 = {
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				tax_daily_modifier = -0.24
+                consumer_goods_factor = 0.12
+			}
+		}
+
+		KGA_huge_debt_3 = {
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				tax_daily_modifier = -0.16
+                consumer_goods_factor = 0.08
+			}
+		}
+
+		KGA_huge_debt_4 = {
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				tax_daily_modifier = -0.08
+                consumer_goods_factor = 0.04
+			}
+		}
+
         KGA_country_senshado_government = {
-			allowed = {
-				tag = KGA
-			}
-			allowed_civil_war = {
-				always = yes
-			}
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = yes }
 			modifier = {
 				ssdp_daily_modifier = 0.5
 			}
 		}
+
+		KGA_schoolship_onboard_regulation = {
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = no }
+			modifier = {
+				political_power_gain = -0.5
+				industrial_capacity_dockyard = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		KGA_schoolship_onboard_regulation_1 = {
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = no }
+			modifier = {
+				political_power_gain = -0.6
+				industrial_capacity_dockyard = 0.15
+				industrial_capacity_factory = 0.15
+			}
+		}
+
+		KGA_non_alcoholic_beer_festival = {
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_factor = 0.1
+				conscription_factor = 0.2
+				add_war_support = 0.1
+			}
+		}
+
+		KGA_kuromorimine_economy = {
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		KGA_kuromorimine_economy_1 = {
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				consumer_goods_factor = -0.05
+				tax_daily_modifier = -0.1
+				production_speed_infrastructure_factor = 0.3
+			}
+		}
+
+		KGA_kuromorimine_economy_2 = {
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_infrastructure_factor = 0.3
+				production_speed_industrial_complex_factor = 0.1
+				tax_daily_modifier = 0.1
+				stability_factor = -0.03
+			}
+		}
+
+		KGA_kuromorimine_economy_3 = {
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				consumer_goods_factor = -0.05
+				tax_daily_modifier = -0.1
+				production_speed_infrastructure_factor = 0.3
+				production_speed_arms_factory_factor = 0.25
+			}
+		}
+
+		KGA_gold_store_adjustment = {
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = no }
+			modifier = {
+				gold_standard_modifier = -0.2
+			}
+		}
+
+		#BCF贸易协定
+		BCF_trade_contract_with_KGA = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+				trade_opinion_factor = 0.2
+			}
+		}
+
+		#贸易协定
+		KGA_trade_contract_with_BCF = {
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				tax_daily_modifier = 0.1
+				trade_opinion_factor = 0.2
+			}
+		}
+
+		#钟壁主义者的威胁
+		KGA_bellwall_threat = {
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = no }
+			modifier = {
+				party_popularity_stability_factor = -0.1
+			}
+		}
     }
+
+	student_union_member = {
+		KGA_maho = {
+			picture = GFX_idea_KGA_maho
+			allowed = { original_tag = KGA }
+			traits = { hidden_tenderness }
+		}
+		KGA_erika = {
+			picture = GFX_idea_KGA_erika
+			allowed = { original_tag = KGA }
+			traits = { top_ruling_bottom }
+		}
+		KGA_koume = {
+			picture = GFX_idea_KGA_koume
+			allowed = { original_tag = KGA }
+			traits = { the_most_kind }
+		}
+		KGA_ritaiko = {
+			picture = GFX_idea_KGA_ritaiko
+			allowed = { original_tag = KGA }
+			traits = { girls_have_heavy_track }
+		}
+	}
 }

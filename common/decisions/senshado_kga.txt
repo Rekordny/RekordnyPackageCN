@@ -1,0 +1,155 @@
+kga_senshado_government_decisions = {
+    kga_pay_gold = {
+		allowed = { tag = KGA }
+		visible = { AND = { has_completed_focus = KGA_atonement NOT = { has_country_flag = kga_paid_debt } } }
+		
+		days_re_enable = 80
+		custom_cost_trigger = {
+			check_variable = { gold > 69.9 }
+	   	}
+		custom_cost_text = kga_tooltip3
+		complete_effect = {
+			KGA = { add_to_variable = { gold = -70 } }
+			STG = { add_to_variable = { gold = 30 } }
+			BCF = { add_to_variable = { gold = 30 } }
+			if = { limit = { has_idea = KGA_huge_debt } swap_ideas = { remove_idea = KGA_huge_debt  add_idea = KGA_huge_debt_1 } }
+			else_if = { limit = { has_idea = KGA_huge_debt_1 } swap_ideas = { remove_idea = KGA_huge_debt_1  add_idea = KGA_huge_debt_2 } }
+			else_if = { limit = { has_idea = KGA_huge_debt_2 } swap_ideas = { remove_idea = KGA_huge_debt_2  add_idea = KGA_huge_debt_3 } }
+			else_if = { limit = { has_idea = KGA_huge_debt_3 } swap_ideas = { remove_idea = KGA_huge_debt_3  add_idea = KGA_huge_debt_4 } }
+			else_if = { limit = { has_idea = KGA_huge_debt_4 } remove_ideas = KGA_huge_debt_4 set_country_flag = kga_paid_debt KGA = { country_event = kuromorimine.9 } }
+		}
+	}
+	kga_industry_repayment_bonds = {
+		allowed = { tag = KGA }
+		visible = { AND = { has_completed_focus = KGA_industry_repayment_bonds NOT = { has_country_flag = kga_paid_debt } } }
+		available = { has_political_power > 79 }
+		days_re_enable = 100
+		complete_effect = {
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_political_power = -80
+		}
+	}
+	kga_remove_bellwall_threat = {
+		allowed = { tag = KGA }
+		visible = { AND = { has_completed_focus = KGA_stablize_senshado_military_government NOT = { has_country_flag = start_kga_prepare_civil_war_mission } } }
+		fire_only_once = yes
+		complete_effect = {
+			KGA = {
+				country_event = { id = kuromorimine.24 days = 0 }
+			}
+		}
+	}
+	
+}
+
+kga_missions = {
+	kga_build_infrastructures = {
+		allowed = { tag = KGA }
+		available = {
+			61 = { infrastructure > 7 }
+			62 = { infrastructure > 7 }
+			60 = { infrastructure > 7 }
+			64 = { infrastructure > 7 }
+			65 = { infrastructure > 7 }
+			54 = { infrastructure > 7 }
+			55 = { infrastructure > 7 }
+			53 = { infrastructure > 7 }
+			52 = { infrastructure > 7 }
+		}
+		is_good = no
+		activation = { has_country_flag  = start_kga_infrastructure_mission } 
+		days_mission_timeout = 365
+		complete_effect = {
+			custom_effect_tooltip = kga_tooltip2
+			hidden_effect = {
+				if = { limit = {date < 1974.6.30} add_ssdp_50 = yes add_stability = 0.1 }
+				add_ssdp_300 = yes
+				clr_country_flag  = start_kga_infrastructure_mission
+			}
+			
+		}
+	}
+	
+}
+
+kga_civil_war = {
+	#获得萨克森支持
+	kga_add_support_65 = {
+		visible = { has_country_flag = start_kga_prepare_civil_war_mission }
+		allowed = { tag = KGA }
+		available = { fascism > 0.55 }
+		custom_cost_trigger = {
+			has_political_power > 79.9
+	   	}
+		custom_cost_text = kga_tooltip5
+		complete_effect = {
+			add_political_power = -80
+			set_country_flag = kga_has_65_support_civil_war
+		}
+		fire_only_once = yes
+	}
+	#炸毁对手基建
+	kga_deploy_bomb = {
+		visible = { has_country_flag = start_kga_prepare_civil_war_mission }
+		available = { has_intelligence_agency = yes }
+		allowed = { tag = KGA }
+		complete_effect = {
+			set_country_flag = kga_has_deployed_bomb_civil_war
+		}
+		fire_only_once = yes
+	}
+	#获得FRA支持内战
+	kga_ask_support_from_BCF = {
+		visible = { has_country_flag = start_kga_prepare_civil_war_mission }
+		allowed = { tag = KGA }
+		available = { OR = { BCF = { has_government = fascism } BCF = { has_government = neutrality } } }
+		custom_cost_trigger = {
+			has_political_power > 19.9
+	   	}
+		custom_cost_text = kga_tooltip6
+		complete_effect = {
+			add_political_power = -20
+			set_country_flag = kga_ask_support_from_BCF
+		}
+		fire_only_once = yes
+	}
+	#获得STG支持内战
+	kga_ask_support_from_STG = {
+		visible = { has_country_flag = start_kga_prepare_civil_war_mission }
+		allowed = { tag = KGA }
+		available = { OR = { STG = { has_government = fascism } STG = { has_government = neutrality } } }
+		custom_cost_trigger = {
+			has_political_power > 19.9
+	   	}
+		custom_cost_text = kga_tooltip6
+		complete_effect = {
+			add_political_power = -20
+			set_country_flag = kga_ask_support_from_STG
+		}
+		fire_only_once = yes
+	}
+	#秘密扩充军备
+	kga_gather_equipments = {
+		visible = { has_country_flag = start_kga_prepare_civil_war_mission }
+		allowed = { tag = KGA }
+		custom_cost_trigger = {
+			check_variable = { gold > 39.9 }
+	   	}
+		custom_cost_text = kga_tooltip7
+		complete_effect = {
+			KGA = { add_to_variable = { gold = -40 } }
+			set_country_flag = kga_has_gathered_equipments
+		}
+		fire_only_once = yes
+	}
+	#发起法西斯对钟壁内战
+	kga_start_civil_war = {
+		visible = { has_country_flag = start_kga_prepare_civil_war_mission }
+		allowed = { tag = KGA }
+		available = { fascism > 0.3 communism > 0.3 }
+		complete_effect = {
+
+		}
+		fire_only_once = yes
+	}
+}

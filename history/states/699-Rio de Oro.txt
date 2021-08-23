@@ -6,8 +6,8 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = OMA
-		add_core_of = OMA
+		owner = OML
+		add_core_of = OML
 		buildings = {
 			infrastructure = 1
 			8038 = {

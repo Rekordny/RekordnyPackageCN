@@ -10,8 +10,8 @@ state={
 	}
 
 	history={
-		owner = OMA
-		add_core_of = OMA
+		owner = OML
+		add_core_of = OML
 		victory_points = {
 			5199 1
 		}

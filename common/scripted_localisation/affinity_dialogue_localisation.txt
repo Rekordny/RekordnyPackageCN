@@ -111,6 +111,7 @@ defined_text = {
 		localization_key = none
 	}
 
+
 	#erika-1
 	text = {
 		trigger = {
@@ -121,7 +122,7 @@ defined_text = {
 			check_variable = { affinity_2 = 1 }
 			check_variable = { dialogue_process = 0 }
 		}
-		
+ 
 		localization_key = none
 	}
 	text = {
@@ -133,7 +134,7 @@ defined_text = {
 			check_variable = { affinity_2 = 1 }
 			check_variable = { dialogue_process = 1 }
 		}
-		
+ 
 		localization_key = none
 	}
 	text = {
@@ -145,9 +146,586 @@ defined_text = {
 			check_variable = { affinity_2 = 1 }
 			check_variable = { dialogue_process = 2 }
 		}
-		
-		localization_key = item_art_beer
+ 
+		localization_key = none
 	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 3 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 4 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 5 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 6 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 7 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 8 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 9 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 10 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 11 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 12 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 13 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 14 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 15 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 16 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 17 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 18 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 19 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 20 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 21 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 22 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 23 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 24 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 25 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 26 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 27 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 28 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 29 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 30 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 31 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 32 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 33 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 34 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 35 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 36 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 37 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 38 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 39 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 40 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 41 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 42 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 43 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 44 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 45 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 46 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 47 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 48 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 49 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 50 }
+		}
+ 
+		localization_key = none
+	}
+	
 	#erika-2
 	text = {
 		trigger = {
@@ -158,7 +736,655 @@ defined_text = {
 			check_variable = { affinity_2 = 2 }
 			check_variable = { dialogue_process = 0 }
 		}
-		
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 1 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 2 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 3 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 4 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 5 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 6 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 7 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 8 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 9 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 10 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 11 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 12 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 13 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 14 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 15 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 16 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 17 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 18 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 19 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 20 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 21 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 22 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 23 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 24 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 25 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 26 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 27 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 28 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 29 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 30 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 31 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 32 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 33 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 34 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 35 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 36 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 37 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 38 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 39 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 40 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 41 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 42 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 43 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 44 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 45 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 46 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 47 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 48 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 49 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 50 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 51 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 52 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 53 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 54 }
+		}
+ 
 		localization_key = none
 	}
 	#erika-3
@@ -370,6 +1596,7 @@ defined_text = {
 		localization_key = none
 	}
 
+
 	#erika-1
 	text = {
 		trigger = {
@@ -380,8 +1607,8 @@ defined_text = {
 			check_variable = { affinity_2 = 1 }
 			check_variable = { dialogue_process = 0 }
 		}
-		
-		localization_key = bg_24
+ 
+		localization_key = bg_11
 	}
 	text = {
 		trigger = {
@@ -392,8 +1619,8 @@ defined_text = {
 			check_variable = { affinity_2 = 1 }
 			check_variable = { dialogue_process = 1 }
 		}
-		
-		localization_key = bg_24
+ 
+		localization_key = bg_11
 	}
 	text = {
 		trigger = {
@@ -404,9 +1631,585 @@ defined_text = {
 			check_variable = { affinity_2 = 1 }
 			check_variable = { dialogue_process = 2 }
 		}
-		
-		localization_key = bg_24
+ 
+		localization_key = bg_11
 	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 3 }
+		}
+ 
+		localization_key = bg_11
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 4 }
+		}
+ 
+		localization_key = bg_11
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 5 }
+		}
+ 
+		localization_key = bg_11
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 6 }
+		}
+ 
+		localization_key = bg_11
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 7 }
+		}
+ 
+		localization_key = bg_11
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 8 }
+		}
+ 
+		localization_key = bg_38
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 9 }
+		}
+ 
+		localization_key = bg_38
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 10 }
+		}
+ 
+		localization_key = bg_38
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 11 }
+		}
+ 
+		localization_key = bg_38
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 12 }
+		}
+ 
+		localization_key = bg_38
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 13 }
+		}
+ 
+		localization_key = bg_38
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 14 }
+		}
+ 
+		localization_key = bg_38
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 15 }
+		}
+ 
+		localization_key = bg_38
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 16 }
+		}
+ 
+		localization_key = bg_38
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 17 }
+		}
+ 
+		localization_key = bg_38
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 18 }
+		}
+ 
+		localization_key = bg_38
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 19 }
+		}
+ 
+		localization_key = bg_38
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 20 }
+		}
+ 
+		localization_key = bg_38
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 21 }
+		}
+ 
+		localization_key = bg_38
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 22 }
+		}
+ 
+		localization_key = bg_38
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 23 }
+		}
+ 
+		localization_key = bg_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 24 }
+		}
+ 
+		localization_key = bg_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 25 }
+		}
+ 
+		localization_key = bg_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 26 }
+		}
+ 
+		localization_key = bg_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 27 }
+		}
+ 
+		localization_key = bg_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 28 }
+		}
+ 
+		localization_key = bg_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 29 }
+		}
+ 
+		localization_key = bg_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 30 }
+		}
+ 
+		localization_key = bg_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 31 }
+		}
+ 
+		localization_key = bg_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 32 }
+		}
+ 
+		localization_key = bg_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 33 }
+		}
+ 
+		localization_key = bg_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 34 }
+		}
+ 
+		localization_key = bg_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 35 }
+		}
+ 
+		localization_key = bg_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 36 }
+		}
+ 
+		localization_key = bg_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 37 }
+		}
+ 
+		localization_key = bg_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 38 }
+		}
+ 
+		localization_key = bg_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 39 }
+		}
+ 
+		localization_key = bg_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 40 }
+		}
+ 
+		localization_key = bg_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 41 }
+		}
+ 
+		localization_key = bg_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 42 }
+		}
+ 
+		localization_key = bg_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 43 }
+		}
+ 
+		localization_key = bg_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 44 }
+		}
+ 
+		localization_key = bg_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 45 }
+		}
+ 
+		localization_key = bg_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 46 }
+		}
+ 
+		localization_key = bg_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 47 }
+		}
+ 
+		localization_key = bg_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 48 }
+		}
+ 
+		localization_key = bg_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 49 }
+		}
+ 
+		localization_key = bg_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 50 }
+		}
+ 
+		localization_key = bg_48
+	}	
 	#erika-2
 	text = {
 		trigger = {
@@ -417,8 +2220,656 @@ defined_text = {
 			check_variable = { affinity_2 = 2 }
 			check_variable = { dialogue_process = 0 }
 		}
-		
-		localization_key = none
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 1 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 2 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 3 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 4 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 5 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 6 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 7 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 8 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 9 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 10 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 11 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 12 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 13 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 14 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 15 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 16 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 17 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 18 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 19 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 20 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 21 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 22 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 23 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 24 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 25 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 26 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 27 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 28 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 29 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 30 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 31 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 32 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 33 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 34 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 35 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 36 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 37 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 38 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 39 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 40 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 41 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 42 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 43 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 44 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 45 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 46 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 47 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 48 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 49 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 50 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 51 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 52 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 53 }
+		}
+ 
+		localization_key = bg_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 54 }
+		}
+ 
+		localization_key = bg_24
 	}
 	#erika-3
 	text = {
@@ -636,6 +3087,7 @@ defined_text = {
 		localization_key = maho_d8_1
 	}
 
+
 	#erika-1
 	text = {
 		trigger = {
@@ -646,7 +3098,7 @@ defined_text = {
 			check_variable = { affinity_2 = 1 }
 			check_variable = { dialogue_process = 0 }
 		}
-		
+ 
 		localization_key = erika_d1_1
 	}
 	text = {
@@ -658,7 +3110,7 @@ defined_text = {
 			check_variable = { affinity_2 = 1 }
 			check_variable = { dialogue_process = 1 }
 		}
-		
+ 
 		localization_key = erika_d1_2
 	}
 	text = {
@@ -670,9 +3122,586 @@ defined_text = {
 			check_variable = { affinity_2 = 1 }
 			check_variable = { dialogue_process = 2 }
 		}
-		
+ 
 		localization_key = erika_d1_3
 	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 3 }
+		}
+ 
+		localization_key = erika_d1_4
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 4 }
+		}
+ 
+		localization_key = erika_d1_5
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 5 }
+		}
+ 
+		localization_key = erika_d1_6
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 6 }
+		}
+ 
+		localization_key = erika_d1_7
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 7 }
+		}
+ 
+		localization_key = erika_d1_8
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 8 }
+		}
+ 
+		localization_key = erika_d1_9
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 9 }
+		}
+ 
+		localization_key = erika_d1_10
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 10 }
+		}
+ 
+		localization_key = erika_d1_11
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 11 }
+		}
+ 
+		localization_key = erika_d1_12
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 12 }
+		}
+ 
+		localization_key = erika_d1_13
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 13 }
+		}
+ 
+		localization_key = erika_d1_14
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 14 }
+		}
+ 
+		localization_key = erika_d1_15
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 15 }
+		}
+ 
+		localization_key = erika_d1_16
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 16 }
+		}
+ 
+		localization_key = erika_d1_17
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 17 }
+		}
+ 
+		localization_key = erika_d1_18
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 18 }
+		}
+ 
+		localization_key = erika_d1_19
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 19 }
+		}
+ 
+		localization_key = erika_d1_20
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 20 }
+		}
+ 
+		localization_key = erika_d1_21
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 21 }
+		}
+ 
+		localization_key = erika_d1_22
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 22 }
+		}
+ 
+		localization_key = erika_d1_23
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 23 }
+		}
+ 
+		localization_key = erika_d1_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 24 }
+		}
+ 
+		localization_key = erika_d1_25
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 25 }
+		}
+ 
+		localization_key = erika_d1_26
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 26 }
+		}
+ 
+		localization_key = erika_d1_27
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 27 }
+		}
+ 
+		localization_key = erika_d1_28
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 28 }
+		}
+ 
+		localization_key = erika_d1_29
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 29 }
+		}
+ 
+		localization_key = erika_d1_30
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 30 }
+		}
+ 
+		localization_key = erika_d1_31
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 31 }
+		}
+ 
+		localization_key = erika_d1_32
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 32 }
+		}
+ 
+		localization_key = erika_d1_33
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 33 }
+		}
+ 
+		localization_key = erika_d1_34
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 34 }
+		}
+ 
+		localization_key = erika_d1_35
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 35 }
+		}
+ 
+		localization_key = erika_d1_36
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 36 }
+		}
+ 
+		localization_key = erika_d1_37
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 37 }
+		}
+ 
+		localization_key = erika_d1_38
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 38 }
+		}
+ 
+		localization_key = erika_d1_39
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 39 }
+		}
+ 
+		localization_key = erika_d1_40
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 40 }
+		}
+ 
+		localization_key = erika_d1_41
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 41 }
+		}
+ 
+		localization_key = erika_d1_42
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 42 }
+		}
+ 
+		localization_key = erika_d1_43
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 43 }
+		}
+ 
+		localization_key = erika_d1_44
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 44 }
+		}
+ 
+		localization_key = erika_d1_45
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 45 }
+		}
+ 
+		localization_key = erika_d1_46
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 46 }
+		}
+ 
+		localization_key = erika_d1_47
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 47 }
+		}
+ 
+		localization_key = erika_d1_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 48 }
+		}
+ 
+		localization_key = erika_d1_49
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 49 }
+		}
+ 
+		localization_key = erika_d1_50
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 50 }
+		}
+ 
+		localization_key = erika_d1_51
+	}
+
 	#erika-2
 	text = {
 		trigger = {
@@ -683,8 +3712,656 @@ defined_text = {
 			check_variable = { affinity_2 = 2 }
 			check_variable = { dialogue_process = 0 }
 		}
-		
+ 
 		localization_key = erika_d2_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 1 }
+		}
+ 
+		localization_key = erika_d2_2
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 2 }
+		}
+ 
+		localization_key = erika_d2_3
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 3 }
+		}
+ 
+		localization_key = erika_d2_4
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 4 }
+		}
+ 
+		localization_key = erika_d2_5
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 5 }
+		}
+ 
+		localization_key = erika_d2_6
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 6 }
+		}
+ 
+		localization_key = erika_d2_7
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 7 }
+		}
+ 
+		localization_key = erika_d2_8
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 8 }
+		}
+ 
+		localization_key = erika_d2_9
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 9 }
+		}
+ 
+		localization_key = erika_d2_10
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 10 }
+		}
+ 
+		localization_key = erika_d2_11
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 11 }
+		}
+ 
+		localization_key = erika_d2_12
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 12 }
+		}
+ 
+		localization_key = erika_d2_13
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 13 }
+		}
+ 
+		localization_key = erika_d2_14
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 14 }
+		}
+ 
+		localization_key = erika_d2_15
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 15 }
+		}
+ 
+		localization_key = erika_d2_16
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 16 }
+		}
+ 
+		localization_key = erika_d2_17
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 17 }
+		}
+ 
+		localization_key = erika_d2_18
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 18 }
+		}
+ 
+		localization_key = erika_d2_19
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 19 }
+		}
+ 
+		localization_key = erika_d2_20
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 20 }
+		}
+ 
+		localization_key = erika_d2_21
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 21 }
+		}
+ 
+		localization_key = erika_d2_22
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 22 }
+		}
+ 
+		localization_key = erika_d2_23
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 23 }
+		}
+ 
+		localization_key = erika_d2_24
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 24 }
+		}
+ 
+		localization_key = erika_d2_25
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 25 }
+		}
+ 
+		localization_key = erika_d2_26
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 26 }
+		}
+ 
+		localization_key = erika_d2_27
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 27 }
+		}
+ 
+		localization_key = erika_d2_28
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 28 }
+		}
+ 
+		localization_key = erika_d2_29
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 29 }
+		}
+ 
+		localization_key = erika_d2_30
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 30 }
+		}
+ 
+		localization_key = erika_d2_31
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 31 }
+		}
+ 
+		localization_key = erika_d2_32
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 32 }
+		}
+ 
+		localization_key = erika_d2_33
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 33 }
+		}
+ 
+		localization_key = erika_d2_34
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 34 }
+		}
+ 
+		localization_key = erika_d2_35
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 35 }
+		}
+ 
+		localization_key = erika_d2_36
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 36 }
+		}
+ 
+		localization_key = erika_d2_37
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 37 }
+		}
+ 
+		localization_key = erika_d2_38
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 38 }
+		}
+ 
+		localization_key = erika_d2_39
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 39 }
+		}
+ 
+		localization_key = erika_d2_40
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 40 }
+		}
+ 
+		localization_key = erika_d2_41
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 41 }
+		}
+ 
+		localization_key = erika_d2_42
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 42 }
+		}
+ 
+		localization_key = erika_d2_43
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 43 }
+		}
+ 
+		localization_key = erika_d2_44
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 44 }
+		}
+ 
+		localization_key = erika_d2_45
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 45 }
+		}
+ 
+		localization_key = erika_d2_46
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 46 }
+		}
+ 
+		localization_key = erika_d2_47
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 47 }
+		}
+ 
+		localization_key = erika_d2_48
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 48 }
+		}
+ 
+		localization_key = erika_d2_49
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 49 }
+		}
+ 
+		localization_key = erika_d2_50
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 50 }
+		}
+ 
+		localization_key = erika_d2_51
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 51 }
+		}
+ 
+		localization_key = erika_d2_52
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 52 }
+		}
+ 
+		localization_key = erika_d2_53
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 53 }
+		}
+ 
+		localization_key = erika_d2_54
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 2 }
+			check_variable = { dialogue_process = 54 }
+		}
+ 
+		localization_key = erika_d2_55
 	}
 	#erika-3
 	text = {
@@ -1227,6 +4904,7 @@ defined_text = {
 		localization_key = maho_f1
 	}
 
+
 	#erika-1
 	text = {
 		trigger = {
@@ -1237,8 +4915,8 @@ defined_text = {
 			check_variable = { affinity_2 = 1 }
 			check_variable = { dialogue_process = 0 }
 		}
-		
-		localization_key = erika_f5
+ 
+		localization_key = none
 	}
 	text = {
 		trigger = {
@@ -1249,8 +4927,8 @@ defined_text = {
 			check_variable = { affinity_2 = 1 }
 			check_variable = { dialogue_process = 1 }
 		}
-		
-		localization_key = erika_f7
+ 
+		localization_key = none
 	}
 	text = {
 		trigger = {
@@ -1261,8 +4939,584 @@ defined_text = {
 			check_variable = { affinity_2 = 1 }
 			check_variable = { dialogue_process = 2 }
 		}
-		
-		localization_key = erika_f4
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 3 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 4 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 5 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 6 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 7 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 8 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 9 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 10 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 11 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 12 }
+		}
+ 
+		localization_key = none
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 13 }
+		}
+ 
+		localization_key = erika_f2
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 14 }
+		}
+ 
+		localization_key = erika_f3
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 15 }
+		}
+ 
+		localization_key = erika_f2
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 16 }
+		}
+ 
+		localization_key = erika_f3
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 17 }
+		}
+ 
+		localization_key = erika_f2
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 18 }
+		}
+ 
+		localization_key = erika_f3
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 19 }
+		}
+ 
+		localization_key = erika_f3
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 20 }
+		}
+ 
+		localization_key = erika_f1
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 21 }
+		}
+ 
+		localization_key = erika_f1
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 22 }
+		}
+ 
+		localization_key = erika_f2
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 23 }
+		}
+ 
+		localization_key = erika_f2
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 24 }
+		}
+ 
+		localization_key = erika_f2
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 25 }
+		}
+ 
+		localization_key = erika_f14
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 26 }
+		}
+ 
+		localization_key = erika_f2
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 27 }
+		}
+ 
+		localization_key = erika_f2
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 28 }
+		}
+ 
+		localization_key = erika_f6
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 29 }
+		}
+ 
+		localization_key = erika_f6
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 30 }
+		}
+ 
+		localization_key = erika_f9
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 31 }
+		}
+ 
+		localization_key = erika_f7
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 32 }
+		}
+ 
+		localization_key = erika_f2
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 33 }
+		}
+ 
+		localization_key = erika_f9
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 34 }
+		}
+ 
+		localization_key = erika_f13
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 35 }
+		}
+ 
+		localization_key = erika_f2
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 36 }
+		}
+ 
+		localization_key = erika_f2
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 37 }
+		}
+ 
+		localization_key = erika_f2
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 38 }
+		}
+ 
+		localization_key = erika_f14
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 39 }
+		}
+ 
+		localization_key = erika_f14
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 40 }
+		}
+ 
+		localization_key = erika_f14
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 41 }
+		}
+ 
+		localization_key = erika_f2
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 42 }
+		}
+ 
+		localization_key = erika_f2
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 43 }
+		}
+ 
+		localization_key = erika_f2
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 44 }
+		}
+ 
+		localization_key = erika_f2
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 45 }
+		}
+ 
+		localization_key = erika_f12
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 46 }
+		}
+ 
+		localization_key = erika_f12
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 47 }
+		}
+ 
+		localization_key = erika_f7
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 48 }
+		}
+ 
+		localization_key = erika_f8
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 49 }
+		}
+ 
+		localization_key = erika_f8
+	}
+	text = {
+		trigger = {
+			has_country_flag = dialogue.erika
+			KGA = {
+				is_ai = no
+			}
+			check_variable = { affinity_2 = 1 }
+			check_variable = { dialogue_process = 50 }
+		}
+ 
+		localization_key = erika_f8
 	}
 	#erika-2
 	text = {
@@ -1823,7 +6077,7 @@ defined_text = {
 			check_variable = { dialogue_process = 0 }
 		}
 		
-		localization_key = maho_f9
+		localization_key = none
 	}
 	text = {
 		trigger = {
@@ -1835,7 +6089,7 @@ defined_text = {
 			check_variable = { dialogue_process = 1 }
 		}
 		
-		localization_key = maho_f8
+		localization_key = none
 	}
 	text = {
 		trigger = {
@@ -1847,7 +6101,7 @@ defined_text = {
 			check_variable = { dialogue_process = 2 }
 		}
 		
-		localization_key = maho_f9
+		localization_key = none
 	}
 	#erika-2
 	text = {

@@ -10,8 +10,8 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = OMA
-		add_core_of = OMA
+		owner = OML
+		add_core_of = OML
 		victory_points = {
 			4948 5 
 		}

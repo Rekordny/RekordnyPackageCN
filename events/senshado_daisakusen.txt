@@ -1,0 +1,25 @@
+﻿add_namespace = senshado_daisakusen_events
+
+country_event = {
+	id = senshado_daisakusen_events.1
+	title = senshado_daisakusen_events.1.t
+	desc = senshado_daisakusen_events.1.d
+	picture = GFX_event_senshado_welcome
+	
+	triggle = {
+		date > 1936.10.1
+	}
+	fire_only_once = yes
+	major = yes
+	option = {
+		name = senshado_daisakusen_events.1.a
+		clr_country_flag = attend_senshado_daisakusen
+		set_global_flag = senshado_daisakusen_started
+		set_variable = { global.round_highest_point = 0}
+		set_variable = { global.round_senshado_daisakusen_leader = NULL}
+		set_variable = { global.highest_victory_count = 0}
+		set_variable = { global.senshado_daisakusen_leader = NULL}
+	}
+}
+
+

@@ -1,0 +1,1026 @@
+focus_tree = {
+	id = Kuromorimine_focus
+	country = {
+			factor = 0
+				modifier = {
+					add = 10
+					tag = KGA
+			}
+	}
+	#通用持续国策位置
+	continuous_focus_position = { x = 100 y = 1300 }
+	default = no
+
+	#所有意识形态通用国策
+	#学院舰改革方案
+	focus = {
+		id = KGA_school_ship_reform_act
+		icon = GFX_focus_KGA_school_ship_reform_act
+		#relative_position_id = 国家缩写_国策名字小写
+		x = 10
+		y = 0
+		available = {  }
+		#prerequisite = { focus = 国家缩写_国策名字小写 }
+		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#民生复苏
+	focus = {
+		id = KGA_livelihood_recovery
+		icon = GFX_focus_KGA_livelihood_recovery
+		relative_position_id = KGA_school_ship_reform_act
+		x = -6
+		y = 1
+		available = {  }
+		prerequisite = { focus = KGA_school_ship_reform_act }
+		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#修改舰上管制条例
+	focus = {
+		id = KGA_schoolship_onboard_regulation
+		icon = GFX_focus_KGA_schoolship_onboard_regulation
+		relative_position_id = KGA_livelihood_recovery
+		x = 0
+		y = 1
+		available = {  }
+		prerequisite = { focus = KGA_livelihood_recovery }
+		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#触发事件：管制条例修改
+			country_event = { id = kuromorimine.1 days = 0 }
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#无酒精啤酒节
+	focus = {
+		id = KGA_non_alcoholic_beer_festival
+		icon = GFX_focus_KGA_non_alcoholic_beer_festival
+		relative_position_id = KGA_livelihood_recovery
+		x = -2
+		y = 1
+		#至少取得一次战车道大赛胜利
+		available = { custom_trigger_tooltip = { tooltip = kga_tooltip1 check_variable = { senshado_wins > 0 } } }
+		
+		prerequisite = { focus = KGA_livelihood_recovery }
+		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#触发事件无酒精啤酒节
+			country_event = { id = kuromorimine.10 days = 0 }
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#量化战车道训练
+	focus = {
+		id = KGA_quantitative_senshado_training
+		icon = GFX_focus_KGA_quantitative_senshado_training
+		relative_position_id = KGA_schoolship_onboard_regulation
+		x = -1
+		y = 1
+		available = {  }
+		prerequisite = { focus = KGA_schoolship_onboard_regulation }
+		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_state = {
+				limit = { is_core_of = KGA is_controlled_by = KGA }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = senshado_school
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = { is_core_of = KGA is_controlled_by = KGA }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = senshado_school
+					level = 1
+					instant_build = yes
+				}
+			}
+			#解锁黑森峰政府战车道下决议：紧急训练
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#缓解矛盾
+	focus = {
+		id = KGA_alleviate_conflicts
+		icon = GFX_focus_KGA_alleviate_conflicts
+		relative_position_id = KGA_schoolship_onboard_regulation
+		x = 1
+		y = 1
+		available = {  }
+		prerequisite = { focus = KGA_schoolship_onboard_regulation }
+		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#触发事件串：修改关于阶级的法律法规
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#向战车道联盟申请民生贷款
+	focus = {
+		id = KGA_apply_loan
+		icon = GFX_focus_KGA_apply_loan
+		relative_position_id = KGA_alleviate_conflicts
+		x = -1
+		y = 1
+		available = {  }
+		prerequisite = { focus = KGA_alleviate_conflicts }
+		prerequisite = { focus = KGA_quantitative_senshado_training }
+		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#触发事件串，根据世界局势申请贷款
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#经济复苏
+	focus = {
+		id = KGA_economic_recovery
+		icon = GFX_focus_KGA_economic_recovery
+		relative_position_id = KGA_school_ship_reform_act
+		x = -1
+		y = 1
+		available = {  }
+		prerequisite = { focus = KGA_school_ship_reform_act }
+		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = KGA_kuromorimine_economy
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#工业地税调整
+	focus = {
+		id = KGA_industrial_land_tax_adjustment
+		icon = GFX_focus_KGA_industrial_land_tax_adjustment
+		relative_position_id = KGA_economic_recovery
+		x = 0
+		y = 1
+		available = {  }
+		prerequisite = { focus = KGA_economic_recovery }
+		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#黑森峰经济模式：添加0.3基建建设速度和-0.1税收
+			swap_ideas = { remove_idea = KGA_kuromorimine_economy add_idea = KGA_kuromorimine_economy_1 }
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#扩大内需
+	focus = {
+		id = KGA_expand_domestic_demand
+		icon = GFX_focus_KGA_expand_domestic_demand
+		relative_position_id = KGA_economic_recovery
+		x = -2
+		y = 1
+		available = {  }
+		prerequisite = { focus = KGA_economic_recovery }
+		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#开始任务：扩大内需，1974年完成将会有额外奖励
+			unlock_decision_tooltip = kga_build_infrastructures
+			set_country_flag = start_kga_infrastructure_mission
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#扶持中小产业
+	focus = {
+		id = KGA_support_small_industries
+		icon = GFX_focus_KGA_support_small_industries
+		relative_position_id = KGA_industrial_land_tax_adjustment
+		x = -1
+		y = 1
+		available = {  }
+		prerequisite = { focus = KGA_industrial_land_tax_adjustment }
+		mutually_exclusive = { focus = KGA_monopolistic_competitiveness }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.1
+			random_state = {
+				limit = { is_core_of = KGA is_controlled_by = KGA }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex 
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = { is_core_of = KGA is_controlled_by = KGA }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex 
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#垄断竞争力
+	focus = {
+		id = KGA_monopolistic_competitiveness 
+		icon = GFX_focus_KGA_monopolistic_competitiveness
+		relative_position_id = KGA_industrial_land_tax_adjustment
+		x = 1
+		y = 1
+		available = {  }
+		prerequisite = { focus = KGA_industrial_land_tax_adjustment }
+		mutually_exclusive = { focus = KGA_support_small_industries }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#触发事件：黑森峰战车道政府对国有化市场掌控力提高
+			add_stability = -0.1
+			random_state = {
+				limit = { is_core_of = KGA is_controlled_by = KGA }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = { is_core_of = KGA is_controlled_by = KGA }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = { is_core_of = KGA is_controlled_by = KGA }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex 
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#小梅的提议
+	focus = {
+		id = KGA_koume_suggestion
+		icon = GFX_focus_KGA_koume_suggestion
+		relative_position_id = KGA_support_small_industries
+		x = 0
+		y = 1
+		#内阁启用了赤星小梅
+		available = { custom_trigger_tooltip = { tooltip = kga_tooltip8 has_idea = KGA_koume } }
+		prerequisite = { focus = KGA_support_small_industries }
+		#mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#添加精神：细水长流+生产效率增长+0.1
+			random_state = {
+				limit = { is_core_of = KGA is_controlled_by = KGA }
+				add_extra_state_shared_building_slots = 3
+			}
+			random_state = {
+				limit = { is_core_of = KGA is_controlled_by = KGA }
+				add_extra_state_shared_building_slots = 3
+			}
+			random_state = {
+				limit = { is_core_of = KGA is_controlled_by = KGA }
+				add_extra_state_shared_building_slots = 3
+			}
+			random_state = {
+				limit = { is_core_of = KGA is_controlled_by = KGA }
+				add_extra_state_shared_building_slots = 3
+			}
+			random_state = {
+				limit = { is_core_of = KGA is_controlled_by = KGA }
+				add_extra_state_shared_building_slots = 3
+			}
+			random_state = {
+				limit = { is_core_of = KGA is_controlled_by = KGA }
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#艾丽卡的改革
+	focus = {
+		id = KGA_erika_reform
+		icon = GFX_focus_KGA_erika_reform
+		relative_position_id = KGA_monopolistic_competitiveness
+		x = 0
+		y = 1
+		#内阁启用了艾丽卡
+		available = { custom_trigger_tooltip = { tooltip = kga_tooltip8 has_idea = KGA_erika } }
+		prerequisite = { focus = KGA_monopolistic_competitiveness }
+		#mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#添加精神：集中生产+生产上限0.1
+			random_state = {
+				limit = { is_core_of = KGA is_controlled_by = KGA }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory 
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#证券市场宽松化
+	focus = {
+		id = KGA_release_stock_market
+		icon = GFX_focus_KGA_release_stock_market
+		relative_position_id = KGA_koume_suggestion
+		x = -1
+		y = 1
+		available = { }
+		prerequisite = { focus = KGA_koume_suggestion }
+		#mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#黑森峰经济添加：税收+0.25，民用工厂建设+0.1
+			swap_ideas = {
+				remove_idea = KGA_kuromorimine_economy_1
+				add_idea = KGA_kuromorimine_economy_2
+			}
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#对外来资本设限
+	focus = {
+		id = KGA_limit_foreign_capital
+		icon = GFX_focus_KGA_limit_foreign_capital
+		relative_position_id = KGA_erika_reform
+		x = 1
+		y = 1
+		available = { }
+		prerequisite = { focus = KGA_erika_reform }
+		#mutually_exclusive = { }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#黑森峰经济添加：民用工厂建设速度+0.2
+			#添加新的经济法案：黑森峰监管市场经济
+			swap_ideas = {
+				remove_idea = KGA_kuromorimine_economy_1
+				add_idea = KGA_kuromorimine_economy_3
+			}
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	
+	#黑森峰工业课
+	focus = {
+		id = KGA_kuromorimine_industry_class
+		icon = GFX_focus_KGA_kuromorimine_industry_class
+		relative_position_id = KGA_erika_reform
+		x = -1
+		y = 1
+		available = {  }
+		prerequisite = { focus = KGA_koume_suggestion focus = KGA_erika_reform }
+		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = industry
+			}
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#主权复苏
+	focus = {
+		id = KGA_sovereignty_recovery
+		icon = GFX_focus_KGA_sovereignty_recovery
+		relative_position_id = KGA_school_ship_reform_act
+		x = 5
+		y = 1
+		available = {  }
+		prerequisite = { focus = KGA_school_ship_reform_act }
+		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#赎罪
+	focus = {
+		id = KGA_atonement
+		icon = GFX_focus_KGA_atonement
+		relative_position_id = KGA_sovereignty_recovery
+		x = -1
+		y = 1
+		#BCF和STG存在
+		available = {  }
+		prerequisite = { focus = KGA_sovereignty_recovery }
+		mutually_exclusive = { focus = KGA_deal_with_BC }
+		mutually_exclusive = { focus = KGA_government_capital_intergration }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#解锁黄金偿还决议
+			unlock_decision_tooltip = kga_pay_gold
+			add_political_power = 80
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#请求旧战车道联盟再仲裁
+	focus = {
+		id = KGA_request_arbitration
+		icon = GFX_focus_KGA_request_arbitration
+		relative_position_id = KGA_atonement
+		x = 1
+		y = 1
+		#旧战车道联盟存在可用
+		available = { democratic > 0.3 SDS = { is_faction_leader = yes } }
+		prerequisite = { focus = KGA_atonement }
+		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
+		#旧战车道联盟不复存在
+		bypass = { NOT = { SDS = { is_faction_leader = yes } } }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#触发仲裁事件
+			country_event = { id = kuromorimine.11 days = 0 }
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#工业产业偿还债券
+	focus = {
+		id = KGA_industry_repayment_bonds 
+		icon = GFX_focus_KGA_industry_repayment_bonds
+		relative_position_id = KGA_atonement
+		x = -2
+		y = 1
+		available = {  }
+		prerequisite = { focus = KGA_atonement }
+		prerequisite = { focus = KGA_industrial_land_tax_adjustment }
+		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#增加决议:用偿还债券吸引投资
+			unlock_decision_tooltip = kga_industry_repayment_bonds
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#黄金持有比例调整
+	focus = {
+		id = KGA_gold_store_adjustment
+		icon = GFX_focus_KGA_gold_store_adjustment
+		relative_position_id = KGA_industry_repayment_bonds
+		x = 0
+		y = 1
+		available = {  }
+		prerequisite = { focus = KGA_industry_repayment_bonds }
+		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#增加精神：黄金储备标准调整
+			add_ideas = KGA_gold_store_adjustment
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+
+	#和BC的交易
+	focus = {
+		id = KGA_deal_with_BC
+		icon = GFX_focus_KGA_deal_with_BC
+		relative_position_id = KGA_sovereignty_recovery
+		x = 3
+		y = 1
+		#BCF存在
+		available = { }
+		prerequisite = { focus = KGA_sovereignty_recovery }
+		mutually_exclusive = { focus = KGA_atonement }
+		mutually_exclusive = { focus = KGA_government_capital_intergration }
+		#BCF不存在，拥有符腾堡
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#触发事件：和BC的贸易
+			country_event  = { id = kuromorimine.8 days = 0 }
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#航母订单
+	focus = {
+		id = KGA_aircraft_contract
+		icon = GFX_focus_KGA_aircraft_contract
+		relative_position_id = KGA_deal_with_BC
+		x = 0
+		y = 1
+		#BCF不存在
+		available = {  }
+		prerequisite = { focus = KGA_deal_with_BC }
+		#mutually_exclusive = { }
+		bypass = { NOT = { has_country_flag = BCF_allow_trade } }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#添加一艘航母生产线70%
+			custom_effect_tooltip = kga_tooltip4
+			hidden_effect = {
+				create_equipment_variant = {
+					name = "De Grasse"
+					type = ship_hull_carrier_1
+					parent_version = 0
+					modules = {
+						fixed_ship_deck_slot_1 = ship_deck_space
+						fixed_ship_deck_slot_2 = ship_deck_space
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = carrier_ship_engine_2
+						fixed_ship_secondaries_slot = dp_ship_secondaries
+						front_1_custom_slot = empty
+					}
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_carrier_1
+						creator = "BCF" 
+						version_name = "De Grasse"
+					}
+					requested_factories = 1
+					progress = 0.70
+					amount = 1
+				}
+			}
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#让BC满意的结果
+	focus = {
+		id = KGA_perfect_ending
+		icon = GFX_focus_KGA_perfect_ending
+		#relative_position_id = KGA_enlargement_of_european_communities
+		x = 20
+		y = 10
+		#BCF存在
+		available = { neutrality >0.75 }
+		#prerequisite = { focus = KGA_enlargement_of_european_communities }
+		#mutually_exclusive = { focus =  }
+		#跳过：BC不复存在，拥有莫泽兰
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#触发事件：黑森峰工业体系向BC转移
+			#拿回莫泽兰
+			#触发事件串：资本家的反抗，将需要镇压国内资本家
+			country_event = { id = kuromorimine.20 days = 0 }
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#政资一体化
+	focus = {
+		id = KGA_government_capital_intergration
+		icon = GFX_focus_KGA_government_capital_intergration
+		relative_position_id = KGA_sovereignty_recovery
+		x = 6
+		y = 1
+		available = {  }
+		prerequisite = { focus = KGA_sovereignty_recovery }
+		mutually_exclusive = { focus = KGA_atonement }
+		mutually_exclusive = { focus = KGA_deal_with_BC }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.1
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#稳定战车道军政府
+	focus = {
+		id = KGA_stablize_senshado_military_government
+		icon = GFX_focus_KGA_stablize_senshado_military_government
+		relative_position_id = KGA_government_capital_intergration
+		x = -1
+		y = 1
+		available = {  }
+		prerequisite = { focus = KGA_government_capital_intergration }
+		mutually_exclusive = { focus = KGA_admit_bell_wall }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#触发事件串：钟壁主义者的兴起
+			#增加内战可能idea
+			country_event = { id = kuromorimine.21 days = 0 }
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#确立西住家的地位
+	focus = {
+		id = KGA_nishizumi_family
+		icon = GFX_focus_KGA_nishizumi_family
+		relative_position_id = KGA_stablize_senshado_military_government
+		x = 0
+		y = 1
+		#available = { fascism > 0.6 }
+		prerequisite = { focus = KGA_stablize_senshado_military_government }
+		#mutually_exclusive = { focus =  }
+		bypass = { has_government = fascism }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 100
+			KGA = {
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+					last_election = "1972.12.17"
+					election_frequency = 48
+				}
+			}
+			KGA = { country_event = { id = kuromorimine.23 days = 0 } }
+			hidden_effect = {
+				if = { limit = { has_idea = KGA_bellwall_threat } KGA = { country_event = { id = kuromorimine.22 days = 3 } } }
+			}
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	
+	#承认钟壁
+	focus = {
+		id = KGA_admit_bell_wall
+		icon = GFX_focus_KGA_admit_bell_wall
+		relative_position_id = KGA_government_capital_intergration
+		x = 1
+		y = 1
+		available = {  }
+		prerequisite = { focus = KGA_government_capital_intergration }
+		mutually_exclusive = { focus = KGA_stablize_senshado_military_government }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#获得精神，钟壁的影响
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#询问真理意见
+	focus = {
+		id = KGA_ask_for_pravda
+		icon = GFX_focus_KGA_ask_for_pravda
+		relative_position_id = KGA_admit_bell_wall
+		x = 0
+		y = 1
+		available = {  }
+		prerequisite = { focus = KGA_admit_bell_wall }
+		#mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#触发事件：真理介入冯布诺与黑森峰领土关系
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	
+
+
+	
+
+
+	#特定意识形态解锁国策
+}

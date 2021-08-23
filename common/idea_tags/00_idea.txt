@@ -19,7 +19,7 @@ idea_categories = {
 	}
 
     school_carrier = {
-		slot = student_recruit
+		slot = mobilization_laws
 		slot = trade_laws
 		slot = economy
 		slot = student_union_member

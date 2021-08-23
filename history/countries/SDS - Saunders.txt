@@ -6,6 +6,11 @@ set_technology = {
 set_research_slots = 5
 set_convoys = 20
 
+create_faction = "战车道协会互助联盟"
+add_to_faction = STG
+add_to_faction = KFA
+add_to_faction = MAP
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1933.3.5"

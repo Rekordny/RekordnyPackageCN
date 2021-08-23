@@ -1,5 +1,4 @@
 ideas = {
-
     economy = {
         law = yes
         use_list_view = yes
@@ -370,7 +369,7 @@ ideas = {
 		}
 	}
 
-	student_recruit = { 
+	mobilization_laws = { 
 		law = yes
 		use_list_view = yes
 		

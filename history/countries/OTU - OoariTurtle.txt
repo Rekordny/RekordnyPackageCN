@@ -6,6 +6,9 @@ set_technology = {
 set_research_slots = 5
 set_convoys = 20
 
+add_ideas = Ooarai_remnant
+add_ideas = Ooari_Turtle
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1933.3.5"

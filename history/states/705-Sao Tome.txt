@@ -5,8 +5,8 @@ state={
 	state_category = tiny_island
 
 	history={
-		owner = OMA
-		add_core_of = OMA
+		owner = OML
+		add_core_of = OML
 		
 		buildings = {
 			infrastructure = 2

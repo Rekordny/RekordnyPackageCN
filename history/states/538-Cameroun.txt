@@ -9,8 +9,8 @@ state={
 		rubber=5 # was: 5
 	}
 	history={
-		owner = OMA
-		add_core_of = OMA
+		owner = OML
+		add_core_of = OML
 		buildings = {
 			infrastructure = 1
 		}

@@ -1,0 +1,7 @@
+spriteTypes = {	
+	spriteType = { 
+		name = "GFX_senshado_daisakusen_picture" 
+		texturefile = "gfx/texticons/senshado_daisakusen_picture.dds" 
+		legacy_lazy_load = no     
+	} 
+}  

@@ -1,0 +1,546 @@
+test_senshado_daisakusen = {
+	test_1 = {
+		icon = generic_prepare_civil_war
+		available = { 
+			always = yes
+		}
+		complete_effect = {
+			country_event = {
+				id = senshado_daisakusen_events.1
+			}
+		}
+	}
+	
+}
+
+
+senshado_daisakusen_decisions = {
+	mission_round_one = {
+		icon = generic_prepare_civil_war
+		activation  = {
+			has_country_flag = attend_senshado_daisakusen
+			has_global_flag = senshado_daisakusen_started
+		}
+		visible = { 
+            has_country_flag = attend_senshado_daisakusen
+        } 
+		available = { 
+			always = no
+		}
+		fire_only_once = yes 
+		days_mission_timeout = 75
+		is_good = no
+		priority = 10
+		timeout_effect = { 
+			if = {
+				limit = {
+					check_variable = { global.round_senshado_daisakusen_leader = ROOT }
+				}
+				add_to_variable = { victory_count = 1} 
+			} 
+			if = {
+				limit = {
+					or = {
+						check_variable = { victory_count > global.highest_victory_count }
+						check_variable = { victory_count = global.highest_victory_count }
+					}
+				}
+				set_variable = {global.highest_victory_count = victory_count}
+				set_variable = { global.senshado_daisakusen_leader = ROOT}
+			} 
+			set_global_flag = round_oue_ended
+			set_variable = {ROOT.senshado_point = 50}
+        }
+	}
+	mission_round_two = {
+		icon = generic_prepare_civil_war
+		activation  = {
+			has_country_flag = attend_senshado_daisakusen
+			has_global_flag = senshado_daisakusen_started
+			has_global_flag = round_oue_ended
+		}
+		visible = { 
+            has_country_flag = attend_senshado_daisakusen
+        } 
+		available = { 
+			always = no
+		}
+		fire_only_once = yes 
+		days_mission_timeout = 75
+		is_good = no
+		priority = 10
+		timeout_effect = { 
+			if = {
+				limit = {
+					check_variable = { global.round_senshado_daisakusen_leader = ROOT }
+				}
+				add_to_variable = { victory_count = 1} 
+			} 
+			if = {
+				limit = {
+					or = {
+						check_variable = { victory_count > global.highest_victory_count }
+						check_variable = { victory_count = global.highest_victory_count }
+					}
+				}
+				set_variable = {global.highest_victory_count = victory_count}
+				set_variable = { global.senshado_daisakusen_leader = ROOT}
+			}
+			set_global_flag = round_two_ended 	
+			set_variable = {ROOT.senshado_point = 50}			
+        }
+	}
+	mission_round_three = {
+		icon = generic_prepare_civil_war
+		activation  = {
+			has_country_flag = attend_senshado_daisakusen
+			has_global_flag = senshado_daisakusen_started
+			has_global_flag = round_two_ended
+		}
+		visible = { 
+            has_country_flag = attend_senshado_daisakusen
+        } 
+		available = { 
+			always = no
+		}
+		fire_only_once = yes 
+		days_mission_timeout = 75
+		is_good = no
+		priority = 10
+		timeout_effect = { 
+			if = {
+				limit = {
+					check_variable = { global.round_senshado_daisakusen_leader = ROOT }
+				}
+				add_to_variable = { victory_count = 1} 
+			} 
+			if = {
+				limit = {
+					or = {
+						check_variable = { victory_count > global.highest_victory_count }
+						check_variable = { victory_count = global.highest_victory_count }
+					}
+				}
+				set_variable = {global.highest_victory_count = victory_count}
+				set_variable = { global.senshado_daisakusen_leader = ROOT}
+			}
+			
+        }
+	}
+	check_highest_point = {
+		icon = generic_prepare_civil_war
+		activation  = {
+			has_country_flag = attend_senshado_daisakusen
+		}
+		available = { 
+			always = no
+		}
+		days_mission_timeout = 2
+		is_good = yes
+		timeout_effect = { 
+			if = {
+				limit = {
+					check_variable = { global.round_highest_point < ROOT.senshado_point }
+				}
+				set_variable = {global.round_highest_point = ROOT.senshado_point}
+				set_variable = { global.round_senshado_daisakusen_leader = ROOT.id}  
+			} 
+        }
+		visible = { 
+            has_country_flag = attend_senshado_daisakusen
+        }
+	}
+	join_senshado_daisakusen = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_global_flag = senshado_daisakusen_started
+			not = {
+				has_country_flag = attend_senshado_daisakusen
+			}
+		}
+		ai_will_do = {
+			factor = 500
+			modifier = {
+				factor = 500
+				tag = STG
+			}
+		}
+		complete_effect = {
+			set_country_flag = attend_senshado_daisakusen
+			set_variable = { ROOT.senshado_point = 50}
+			set_variable = { victory_count = 0}
+		}
+		visible = { 
+            not = {has_country_flag = attend_senshado_daisakusen}
+        } 
+	}
+	input_army_xp = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_army_experience > 25
+			has_country_flag = attend_senshado_daisakusen
+		}
+		visible = { 
+            has_country_flag = attend_senshado_daisakusen
+        } 
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_army_experience > 50
+				factor  = 500
+			}
+			
+		}
+		days_remove = 30
+		complete_effect = {
+			army_experience = -25	
+			random_list = {
+				75 = {
+					add_to_variable = {ROOT.senshado_point = 30}
+					custom_effect_tooltip = senshado_daisakusen_decision_effect_3
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						add_to_variable = { ROOT.senshado_point = 30}
+					}
+				}
+				20 = {
+					add_to_variable = {ROOT.senshado_point = 20}
+					custom_effect_tooltip = senshado_daisakusen_decision_effect_2
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						add_to_variable = { ROOT.senshado_point = 20}
+					}
+				}
+				5 = {
+					add_to_variable = {ROOT.senshado_point = 10}
+					custom_effect_tooltip = senshado_daisakusen_decision_effect_1
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						add_to_variable = { ROOT.senshado_point = 10}
+					}
+				}
+    
+			}
+		}
+	}
+	input_navy_xp = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_navy_experience  > 25
+			has_country_flag = attend_senshado_daisakusen
+		}
+		visible = { 
+            has_country_flag = attend_senshado_daisakusen
+        } 
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_navy_experience  > 50
+				factor  = 500
+			}
+			
+		}
+		days_remove = 30
+		complete_effect = {
+			navy_experience  = -25	
+			random_list = {
+				75 = {
+					add_to_variable = {ROOT.senshado_point = 30}
+					custom_effect_tooltip = senshado_daisakusen_decision_effect_3
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						add_to_variable = { ROOT.senshado_point = 30}
+					}
+				}
+				20 = {
+					add_to_variable = {ROOT.senshado_point = 20}
+					custom_effect_tooltip = senshado_daisakusen_decision_effect_2
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						add_to_variable = { ROOT.senshado_point = 20}
+					}
+				}
+				5 = {
+					add_to_variable = {ROOT.senshado_point = 10}
+					custom_effect_tooltip = senshado_daisakusen_decision_effect_1
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						add_to_variable = { ROOT.senshado_point = 10}
+					}
+				}
+    
+			}
+		}
+	}
+	input_air_xp = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_air_experience  > 25
+			has_country_flag = attend_senshado_daisakusen
+		}
+		visible = { 
+            has_country_flag = attend_senshado_daisakusen
+        } 
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_air_experience  > 50
+				factor  = 500
+			}
+			
+		}
+		days_remove = 30
+		complete_effect = {
+			air_experience  = -25	
+			random_list = {
+				75 = {
+					add_to_variable = {ROOT.senshado_point = 30}
+					custom_effect_tooltip = senshado_daisakusen_decision_effect_3
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						add_to_variable = { ROOT.senshado_point = 30}
+					}
+				}
+				20 = {
+					add_to_variable = {ROOT.senshado_point = 20}
+					custom_effect_tooltip = senshado_daisakusen_decision_effect_2
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						add_to_variable = { ROOT.senshado_point = 20}
+					}
+				}
+				5 = {
+					add_to_variable = {ROOT.senshado_point = 10}
+					custom_effect_tooltip = senshado_daisakusen_decision_effect_1
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						add_to_variable = { ROOT.senshado_point = 10}
+					}
+				}
+    
+			}
+			 
+		}
+	} 
+	input_politic_power = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_political_power  > 50
+			has_country_flag = attend_senshado_daisakusen
+		}
+		visible = { 
+            has_country_flag = attend_senshado_daisakusen
+        } 
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_political_power  > 100
+				factor  = 500
+			}
+			
+		}
+		days_remove = 30
+		complete_effect = {
+			add_political_power  = -50
+			random_list = {
+				75 = {
+					add_to_variable = {ROOT.senshado_point = 20}
+					custom_effect_tooltip = senshado_daisakusen_decision_effect_2
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						add_to_variable = { ROOT.senshado_point = 20}
+					}
+				}
+				25 = {
+					add_to_variable = {ROOT.senshado_point = 10}
+					custom_effect_tooltip = senshado_daisakusen_decision_effect_1
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						add_to_variable = { ROOT.senshado_point = 10}
+					}
+				}
+
+    
+			}
+		}
+	}
+	input_gold_1 = {
+		icon = generic_prepare_civil_war
+		available = {
+
+			has_country_flag = attend_senshado_daisakusen
+			check_variable = {ROOT.gold > 49}
+		}
+		visible = { 
+            has_country_flag = attend_senshado_daisakusen
+        } 
+		days_remove = 30
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				check_variable = {ROOT.gold > 49}
+				factor = 500
+			}
+		}
+		complete_effect = {
+			add_to_variable = {ROOT.gold = -50}
+			random_list = {
+				75 = {
+					add_to_variable = {ROOT.senshado_point = 20}
+					custom_effect_tooltip = senshado_daisakusen_decision_effect_2
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						add_to_variable = { ROOT.senshado_point = 20}
+					}
+				}
+				25 = {
+					add_to_variable = {ROOT.senshado_point = 10}
+					custom_effect_tooltip = senshado_daisakusen_decision_effect_1
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						add_to_variable = { ROOT.senshado_point = 10}
+					}
+				}
+
+    
+			}
+		}
+	}
+	
+	input_gold_2 = {
+		icon = generic_prepare_civil_war
+		available = {
+
+			has_country_flag = attend_senshado_daisakusen
+			check_variable = {ROOT.gold > 99}
+		}
+		visible = { 
+            has_country_flag = attend_senshado_daisakusen
+        } 
+		days_remove = 30
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				check_variable = {ROOT.gold > 99}
+				factor = 500
+			}
+		}
+		complete_effect = {
+			add_to_variable = {ROOT.gold = -100}
+			random_list = {
+				75 = {
+					add_to_variable = {ROOT.senshado_point = 40}
+					custom_effect_tooltip = senshado_daisakusen_decision_effect_4
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						add_to_variable = { ROOT.senshado_point = 40}
+					}
+				}
+				20 = {
+					add_to_variable = {ROOT.senshado_point = 30}
+					custom_effect_tooltip = senshado_daisakusen_decision_effect_3
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						add_to_variable = { ROOT.senshado_point = 30}
+					}
+				}
+				5 = {
+					add_to_variable = {ROOT.senshado_point = 20}
+					custom_effect_tooltip = senshado_daisakusen_decision_effect_2
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						add_to_variable = { ROOT.senshado_point = 20}
+					}
+				}
+    
+			}
+		}
+	}
+	input_gold_3 = {
+		icon = generic_prepare_civil_war
+		available = {
+
+			has_country_flag = attend_senshado_daisakusen
+			check_variable = {ROOT.gold > 149}
+		}
+		visible = { 
+            has_country_flag = attend_senshado_daisakusen
+        } 
+		days_remove = 30
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				check_variable = {ROOT.gold > 149}
+				factor = 500
+			}
+		}
+		complete_effect = {
+			add_to_variable = {ROOT.gold = -150}
+			random_list = {
+				75 = {
+					add_to_variable = {ROOT.senshado_point = 60}
+					custom_effect_tooltip = senshado_daisakusen_decision_effect_6
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						add_to_variable = { ROOT.senshado_point = 60}
+					}
+				}
+				20 = {
+					add_to_variable = {ROOT.senshado_point = 50}
+					custom_effect_tooltip = senshado_daisakusen_decision_effect_5
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						add_to_variable = { ROOT.senshado_point = 50}
+					}
+				}
+				5 = {
+					add_to_variable = {ROOT.senshado_point = 40}
+					custom_effect_tooltip = senshado_daisakusen_decision_effect_4
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						add_to_variable = { ROOT.senshado_point = 40}
+					}
+				}
+    
+			}
+		}
+	}
+}

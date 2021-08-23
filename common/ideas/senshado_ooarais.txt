@@ -1,0 +1,54 @@
+ideas = {
+    country = {
+		Ooarai_remnant = {
+			picture = GFX_idea_Ooarai_remnant
+			allowed = { }
+			modifier = {
+				army_attack_factor = 0.3
+				army_defence_factor = 0.3
+				army_speed_factor = 0.1
+				conscription = 0.05
+			}
+		}
+		Ooari_Anteater = {
+			picture = GFX_idea_Ooari_Anteater
+			allowed = { tag = OAN }
+			modifier = { }
+		}
+		Ooari_Duck = {
+			picture = GFX_idea_Ooari_Duck
+			allowed = { tag = ODU }
+			modifier = { }
+		}
+		Ooari_Hippo = {
+			picture = GFX_idea_Ooari_Hippo
+			allowed = { tag = OHI }
+			modifier = { }
+		}
+		Ooari_Leopon = {
+			picture = GFX_idea_Ooari_Leopon
+			allowed = { tag = OLE }
+			modifier = { }
+		}
+		Ooari_Mallard = {
+			picture = GFX_idea_Ooari_Mallard
+			allowed = { tag = OML }
+			modifier = { }
+		}
+		Ooari_Rabbit = {
+			picture = GFX_idea_Ooari_Rabbit
+			allowed = { tag = ORA }
+			modifier = { }
+		}
+		Ooari_Shark = {
+			picture = GFX_idea_Ooari_Shark
+			allowed = { tag = OSH }
+			modifier = { }
+		}
+		Ooari_Turtle = {
+			picture = GFX_idea_Ooari_Turtle
+			allowed = { tag = OTU }
+			modifier = { }
+		}
+	}
+}

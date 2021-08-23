@@ -3,8 +3,8 @@ state={
 	name="STATE_777"
 
 	history={
-		owner = OMA
-		add_core_of = OMA
+		owner = OML
+		add_core_of = OML
 		victory_points = {
 			1951 1
 		}
