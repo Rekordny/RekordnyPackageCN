@@ -6,6 +6,13 @@ set_technology = {
 set_research_slots = 5
 set_convoys = 20
 
+create_faction = "战车道复兴联盟"
+add_to_faction = GHS
+add_to_faction = COU
+add_to_faction = YOG
+add_to_faction = KEB
+add_to_faction = VIK
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1933.3.5"

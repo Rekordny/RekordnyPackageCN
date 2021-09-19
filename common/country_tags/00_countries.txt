@@ -19,6 +19,7 @@ VIK = "countries/VikingFisheries.txt"
 WAF = "countries/ Waffle.txt"
 YOG = "countries/Yogurt.txt"
 KEB = "countries/Kebab.txt"
+BKC = "countries/BonpleKuromorimineComplexity.txt"
 
 ORA = "countries/OoariRabbit.txt"
 ODU = "countries/OoariDuck.txt"

@@ -103,7 +103,7 @@ country_event = {
 		name = kuromorimine.4.b
 		KGA = {
 			add_popularity = { ideology = neutrality  popularity = -0.05 }
-			add_popularity = { ideology = facism  popularity = 0.01 }
+			add_popularity = { ideology = fascism  popularity = 0.01 }
 			add_popularity = { ideology = communism  popularity = 0.01 }
 			add_popularity = { ideology = democratic  popularity = 0.01 }
 		}
@@ -454,7 +454,7 @@ country_event = {
 					start_civil_war = {
 						ruling_party = fascism
 						ideology = ROOT
-						size = 0.8
+						size = 0.5
 						only_own_territory = no
 						capital = 55
 						states = { 
@@ -470,7 +470,7 @@ country_event = {
 					start_civil_war = {
 						ruling_party = fascism
 						ideology = ROOT
-						size = 0.8
+						size = 0.5
 						only_own_territory = no
 						capital = 55
 						states = {
@@ -558,7 +558,7 @@ country_event = {
 		#暂且用装备代替三个师
 		add_equipment_to_stockpile = {
 			type = senshado_light_tank_equipment_2
-			amount = 200
+			amount = 230
 		}
 	}
 }
@@ -587,7 +587,6 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = kuromorimine.33.a
-		#暂且用装备代替三个师
 		transfer_state = 58
 	}
 }
@@ -643,6 +642,507 @@ country_event = {
 		KGA = { country_event = { id = kuromorimine.32 days = 0 } }
 	}
 }
+
+#黑森峰工人阵线成立了
+country_event = {
+	id = kuromorimine.37
+	title = kuromorimine.37.t
+	desc = kuromorimine.37.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.37.a
+		hidden_effect = {
+			country_event = { id = kuromorimine.38 days = 3 }
+		}
+	}
+}
+
+#黑森峰工人阵线第一项
+country_event = {
+	id = kuromorimine.38
+	title = kuromorimine.38.t
+	desc = kuromorimine.38.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.38.a
+		#学生会启用艾米
+		hidden_effect = {
+			country_event = { id = kuromorimine.39 days = 3 }
+		}
+	}
+	option = {
+		name = kuromorimine.38.b
+		#修改学生会赤星小梅
+		hidden_effect = {
+			country_event = { id = kuromorimine.39 days = 3 }
+		}
+	}
+	option = {
+		name = kuromorimine.38.c
+		#修改学生会艾丽卡
+		hidden_effect = {
+			country_event = { id = kuromorimine.39 days = 3 }
+		}
+	}
+}
+
+#黑森峰工人阵线第二项
+country_event = {
+	id = kuromorimine.39
+	title = kuromorimine.39.t
+	desc = kuromorimine.39.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.39.a
+		
+		add_to_variable = { gold = -120 }
+		add_political_power = -100
+		add_ideas = KGA_worker_insurance
+		custom_effect_tooltip = kga_tooltip10
+		hidden_effect = {
+			country_event = { id = kuromorimine.40 days = 3 }
+		}
+		
+	}
+	option = {
+		name = kuromorimine.39.b
+		add_to_variable = { gold = -50 }
+		add_stability = 0.1
+		custom_effect_tooltip = kga_tooltip11
+		hidden_effect = {
+			country_event = { id = kuromorimine.40 days = 3 }
+		}
+	}
+	option = {
+		name = kuromorimine.39.c
+		add_political_power = -80
+		add_stability = 0.05
+		hidden_effect = {
+			country_event = { id = kuromorimine.40 days = 3 }
+		}
+	}
+}
+
+#黑森峰工人阵线第二项
+country_event = {
+	id = kuromorimine.40
+	title = kuromorimine.40.t
+	desc = kuromorimine.40.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.40.a
+	}
+	option = {
+		name = kuromorimine.40.b
+	}
+	option = {
+		name = kuromorimine.40.c
+	}
+}
+
+#重新分化军工体系
+country_event = {
+	id = kuromorimine.41
+	title = kuromorimine.41.t
+	desc = kuromorimine.41.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.41.a
+		KGA = {
+			random_state = {
+				limit = { is_core_of = KGA }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = { is_core_of = KGA }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = { is_core_of = KGA is_controlled_by = KGA }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory 
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = { is_core_of = KGA is_controlled_by = KGA }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory 
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+		}
+	}
+	option = {
+		name = kuromorimine.41.b
+		random_state = {
+			limit = { is_core_of = KGA is_controlled_by = KGA }
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory 
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_state = {
+			limit = { is_core_of = KGA is_controlled_by = KGA }
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory 
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 2
+			category = industry
+		}
+	}
+	option = {
+		name = kuromorimine.41.c
+		random_state = {
+			limit = { is_core_of = KGA }
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_state = {
+			limit = { is_core_of = KGA }
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 2
+			category = industry
+		}
+	}
+}
+
+#接触安齐奥ANZ获得此事件
+country_event = {
+	id = kuromorimine.42
+	title = kuromorimine.42.t
+	desc = kuromorimine.42.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.42.a
+		KGA = { country_event = { id = kuromorimine.43 days = 0 } }
+		ANZ = { add_political_power = 30 }
+	}
+	option = {
+		name = kuromorimine.42.b
+		KGA = { country_event = { id = kuromorimine.44 days = 0 } }
+		ANZ = { add_political_power = -30 }
+	}
+}
+
+#接触安齐奥ANZ归还蒂罗尔
+country_event = {
+	id = kuromorimine.43
+	title = kuromorimine.43.t
+	desc = kuromorimine.43.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.43.a
+	}
+}
+
+#接触安齐奥ANZ拒绝归还蒂罗尔
+country_event = {
+	id = kuromorimine.44
+	title = kuromorimine.44.t
+	desc = kuromorimine.44.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.44.a
+		add_war_support = 0.1
+		create_wargoal = {
+			type = annex_everything
+			target = ANZ
+		}
+	}
+}
+
+#要求BC归还领土BCF获得此事件
+country_event = {
+	id = kuromorimine.45
+	title = kuromorimine.45.t
+	desc = kuromorimine.45.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.45.a
+		KGA = { country_event = { id = kuromorimine.46 days = 0 } }
+		add_political_power = 75
+	}
+	option = {
+		name = kuromorimine.45.b
+		KGA = { country_event = { id = kuromorimine.47 days = 0 } }
+		add_stability = -0.08
+	}
+}
+
+#要求BC归还领土BCF归还
+country_event = {
+	id = kuromorimine.46
+	title = kuromorimine.46.t
+	desc = kuromorimine.46.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.46.a
+		transfer_state = 42
+		transfer_state = 50
+	}
+}
+
+#要求BC归还领土BCF拒绝归还
+country_event = {
+	id = kuromorimine.47
+	title = kuromorimine.47.t
+	desc = kuromorimine.47.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.47.a
+		add_war_support = 0.1
+		create_wargoal = {
+			type = annex_everything
+			target = BCF
+		}
+	}
+}
+
+#要求STG归还领土STG获得此事件
+country_event = {
+	id = kuromorimine.48
+	title = kuromorimine.48.t
+	desc = kuromorimine.48.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.48.a
+		KGA = { country_event = { id = kuromorimine.49 days = 0 } }
+		add_political_power = 120
+	}
+	option = {
+		name = kuromorimine.48.b
+		KGA = { country_event = { id = kuromorimine.50 days = 0 } }
+		add_stability = -0.2
+	}
+}
+
+#要求STG归还领土STG归还
+country_event = {
+	id = kuromorimine.49
+	title = kuromorimine.49.t
+	desc = kuromorimine.49.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.49.a
+		transfer_state = 56
+		transfer_state = 57
+		transfer_state = 58
+		transfer_state = 59
+		transfer_state = 51
+	}
+}
+
+#要求STG归还领土STG拒绝归还
+country_event = {
+	id = kuromorimine.50
+	title = kuromorimine.50.t
+	desc = kuromorimine.50.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.50.a
+		add_war_support = 0.1
+		create_wargoal = {
+			type = annex_everything
+			target = STG
+		}
+	}
+}
+
+#KGA申请加入新战车道联盟
+country_event = {
+	id = kuromorimine.51
+	title = kuromorimine.51.t
+	desc = kuromorimine.51.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.51.a
+		BON = { add_to_faction = KGA add_ideas = BON_kuromorimine_support }
+	}
+	option = {
+		name = kuromorimine.51.b
+		KGA = { create_faction = "战车道肃正联合" }
+		if = { limit = { GHS = { has_opinion = { target = KGA value > 60 } } }
+			GHS = { leave_faction = yes }
+			KGA = { add_to_faction = GHS }
+		}
+		if = { limit = { VIK = { has_opinion = { target = KGA value > 60 } } }
+			VIK = { leave_faction = yes }
+			KGA = { add_to_faction = VIK }
+		}
+		if = { limit = { COU = { has_opinion = { target = KGA value > 60 } } }
+			COU = { leave_faction = yes }
+			KGA = { add_to_faction = COU }
+		}
+		if = { limit = { YOG = { has_opinion = { target = KGA value > 60 } } }
+			YOG = { leave_faction = yes }
+			KGA = { add_to_faction = YOG }
+		}
+		if = { limit = { KEB = { has_opinion = { target = KGA value > 60 } } }
+			KEB = { leave_faction = yes }
+			KGA = { add_to_faction = KEB }
+		}
+		KGA = { declare_war_on = {
+			target = BON
+			type = annex_everything
+		} }
+	}
+}
+
+#伟大的盟约：黑森峰拿回东部
+country_event = {
+	id = kuromorimine.52
+	title = kuromorimine.52.t
+	desc = kuromorimine.52.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.52.a
+	}
+}
+
+#冯部诺的法西斯傀儡引发内战
+country_event = {
+	id = kuromorimine.53
+	title = kuromorimine.53.t
+	desc = kuromorimine.53.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.53.a
+		
+		BKC = {
+			transfer_state = 68
+			transfer_state = 63
+			transfer_state = 66
+			declare_war_on = {
+				target = BON
+				type = annex_everything
+			}
+			#retire_country_leader = yes
+		}
+		KGA = { puppet = BKC }
+		hidden_effect = {
+			BON = { add_popularity = { ideology = fascism   popularity = -0.5 } }
+		}
+	}
+}
+
+#关于北部资源资源开发问题
+country_event = {
+	id = kuromorimine.54
+	title = kuromorimine.54.t
+	desc = kuromorimine.54.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.54.a
+		add_timed_idea = {
+			idea = KGA_resource_extraction_policy_1
+			days = 360
+		}
+		add_resource = {
+			type = oil
+			amount = 50
+			state = 58
+		}
+	}
+	option = {
+		name = kuromorimine.54.b
+		add_timed_idea = {
+			idea = KGA_resource_extraction_policy_2
+			days = 180
+		}
+		add_resource = {
+			type = oil
+			amount = 10
+			state = 58
+		}
+	}
+	option = {
+		name = kuromorimine.54.c
+		add_timed_idea = {
+			idea = KGA_resource_extraction_policy_3
+			days = 360
+		}
+		add_resource = {
+			type = oil
+			amount = 25
+			state = 58
+		}
+	}
+}
+
+
+
 
 #重新邀请西住美穗
 country_event = {

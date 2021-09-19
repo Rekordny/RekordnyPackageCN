@@ -149,3 +149,8 @@ OSH = {
 	color = rgb { 212 212 212 }
 	color_ui = rgb { 212 212 212 }
 }
+
+BKC = {
+	color = rgb { 212 212 212 }
+	color_ui = rgb { 212 212 212 }
+}

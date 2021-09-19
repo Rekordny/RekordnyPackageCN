@@ -1,252 +1,289 @@
 spriteTypes = {
+	##########################################KGA#######################################
 
-	#GENERIC
 	SpriteType = {
-		name = "GFX_focus_GENERIC_fate_of_ooarai"
-		texturefile = "gfx/interface/goals/focus_GENERIC_fate_of_ooarai.dds"			
+		name = "GFX_focus_KGA_school_ship_reform_act"
+		texturefile = "gfx/interface/goals/focus_KGA_school_ship_reform_act.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_livelihood_recovery"
+		texturefile = "gfx/interface/goals/focus_KGA_livelihood_recovery.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_schoolship_onboard_regulation"
+		texturefile = "gfx/interface/goals/focus_KGA_schoolship_onboard_regulation.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_non_alcoholic_beer_festival"
+		texturefile = "gfx/interface/goals/focus_KGA_non_alcoholic_beer_festival.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_quantitative_senshado_training"
+		texturefile = "gfx/interface/goals/focus_KGA_quantitative_senshado_training.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_alleviate_conflicts"
+		texturefile = "gfx/interface/goals/focus_KGA_alleviate_conflicts.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_apply_loan"
+		texturefile = "gfx/interface/goals/focus_KGA_apply_loan.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_economic_recovery"
+		texturefile = "gfx/interface/goals/focus_KGA_economic_recovery.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_industrial_land_tax_adjustment"
+		texturefile = "gfx/interface/goals/focus_KGA_industrial_land_tax_adjustment.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_expand_domestic_demand"
+		texturefile = "gfx/interface/goals/focus_KGA_expand_domestic_demand.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_support_small_industries"
+		texturefile = "gfx/interface/goals/focus_KGA_support_small_industries.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_monopolistic_competitiveness"
+		texturefile = "gfx/interface/goals/focus_KGA_monopolistic_competitiveness.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_koume_suggestion"
+		texturefile = "gfx/interface/goals/focus_KGA_koume_suggestion.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_erika_reform"
+		texturefile = "gfx/interface/goals/focus_KGA_erika_reform.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_release_stock_market"
+		texturefile = "gfx/interface/goals/focus_KGA_release_stock_market.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_limit_foreign_capital"
+		texturefile = "gfx/interface/goals/focus_KGA_limit_foreign_capital.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_kuromorimine_industry_class"
+		texturefile = "gfx/interface/goals/focus_KGA_kuromorimine_industry_class.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_sovereignty_recovery"
+		texturefile = "gfx/interface/goals/focus_KGA_sovereignty_recovery.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_atonement"
+		texturefile = "gfx/interface/goals/focus_KGA_atonement.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_request_arbitration"
+		texturefile = "gfx/interface/goals/focus_KGA_request_arbitration.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_industry_repayment_bonds"
+		texturefile = "gfx/interface/goals/focus_KGA_industry_repayment_bonds.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_gold_store_adjustment"
+		texturefile = "gfx/interface/goals/focus_KGA_gold_store_adjustment.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_deal_with_BC"
+		texturefile = "gfx/interface/goals/focus_KGA_deal_with_BC.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_aircraft_contract"
+		texturefile = "gfx/interface/goals/focus_KGA_aircraft_contract.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_government_capital_intergration"
+		texturefile = "gfx/interface/goals/focus_KGA_government_capital_intergration.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_stablize_senshado_military_government"
+		texturefile = "gfx/interface/goals/focus_KGA_stablize_senshado_military_government.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_nishizumi_family"
+		texturefile = "gfx/interface/goals/focus_KGA_nishizumi_family.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_submarine_based"
+		texturefile = "gfx/interface/goals/focus_KGA_submarine_based.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_advanced_silent_equipment"
+		texturefile = "gfx/interface/goals/focus_KGA_advanced_silent_equipment.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_restricted_offensive_operations"
+		texturefile = "gfx/interface/goals/focus_KGA_restricted_offensive_operations.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_unlimited_submarine_warfare"
+		texturefile = "gfx/interface/goals/focus_KGA_unlimited_submarine_warfare.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_magnetic_torpedo"
+		texturefile = "gfx/interface/goals/focus_KGA_magnetic_torpedo.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_trade_blockade"
+		texturefile = "gfx/interface/goals/focus_KGA_trade_blockade.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_light_warship_based"
+		texturefile = "gfx/interface/goals/focus_KGA_light_warship_based.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_quick_response_cruiser_force"
+		texturefile = "gfx/interface/goals/focus_KGA_quick_response_cruiser_force.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_cover_landing_operation"
+		texturefile = "gfx/interface/goals/focus_KGA_cover_landing_operation.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_update_torpedo_laucher"
+		texturefile = "gfx/interface/goals/focus_KGA_update_torpedo_laucher.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_artillery_RD_department"
+		texturefile = "gfx/interface/goals/focus_KGA_artillery_RD_department.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_import_BL6"
+		texturefile = "gfx/interface/goals/focus_KGA_import_BL6.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_advanced_turret_design"
+		texturefile = "gfx/interface/goals/focus_KGA_advanced_turret_design.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_fleet_in_being"
+		texturefile = "gfx/interface/goals/focus_KGA_fleet_in_being.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_battleship_based"
+		texturefile = "gfx/interface/goals/focus_KGA_battleship_based.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_battleship_body_design"
+		texturefile = "gfx/interface/goals/focus_KGA_battleship_body_design.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_caliber_is_justice"
+		texturefile = "gfx/interface/goals/focus_KGA_caliber_is_justice.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_increase_fuel_reserves"
+		texturefile = "gfx/interface/goals/focus_KGA_increase_fuel_reserves.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_survivability_first"
+		texturefile = "gfx/interface/goals/focus_KGA_survivability_first.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_aircraft_carrier_based"
+		texturefile = "gfx/interface/goals/focus_KGA_aircraft_carrier_based.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_aircraft_carrier_research"
+		texturefile = "gfx/interface/goals/focus_KGA_aircraft_carrier_research.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_aircraft_carrier_research"
+		texturefile = "gfx/interface/goals/focus_KGA_aircraft_carrier_research.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_SDS_aircraft_carrier_contract"
+		texturefile = "gfx/interface/goals/focus_KGA_SDS_aircraft_carrier_contract.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_land_control_from_sea"
+		texturefile = "gfx/interface/goals/focus_KGA_land_control_from_sea.dds"	
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_base_strike"
+		texturefile = "gfx/interface/goals/focus_KGA_base_strike.dds"	
 	}
 
-	#GER
+	#####################################STG#######################################
 	SpriteType = {
-		name = "GFX_focus_GER_62th_senshado_tournament"
-		texturefile = "gfx/interface/goals/focus_GER_62th_senshado_tournament.dds"			
+		name = "GFX_focus_STG_Winning_party_United_College"
+		texturefile = "gfx/interface/goals/focus_STG_Winning_party_United_College.dds"	
 	}
 	SpriteType = {
-		name = "GFX_focus_GER_63th_senshado_tournament"
-		texturefile = "gfx/interface/goals/focus_GER_63th_senshado_tournament.dds"			
+		name = "GFX_focus_STG_Appointment_finance_minister"
+		texturefile = "gfx/interface/goals/focus_STG_Appointment_finance_minister.dds"	
 	}
 	SpriteType = {
-		name = "GFX_focus_GER_63th_senshado_tournament"
-		texturefile = "gfx/interface/goals/focus_GER_63th_senshado_tournament.dds"			
+		name = "GFX_focus_STG_Appointment_Minister_interior"
+		texturefile = "gfx/interface/goals/focus_STG_Appointment_Minister_interior.dds"	
 	}
 	SpriteType = {
-		name = "GFX_focus_GER_school_carrier_development"
-		texturefile = "gfx/interface/goals/focus_GER_school_carrier_development.dds"			
+		name = "GFX_focus_STG_Appointment_Foreign_Minister"
+		texturefile = "gfx/interface/goals/focus_STG_Appointment_Foreign_Minister.dds"	
 	}
 	SpriteType = {
-		name = "GFX_focus_GER_non_alcoholic_beer_festival"
-		texturefile = "gfx/interface/goals/focus_GER_non_alcoholic_beer_festival.dds"			
+		name = "GFX_focus_STG_Appointment_Secretary_Defense"
+		texturefile = "gfx/interface/goals/focus_STG_Appointment_Secretary_Defense.dds"	
 	}
 	SpriteType = {
-		name = "GFX_focus_GER_assult_of_panzer_II"
-		texturefile = "gfx/interface/goals/focus_GER_assult_of_panzer_II.dds"			
+		name = "GFX_focus_STG_Appointment_Justices"
+		texturefile = "gfx/interface/goals/focus_STG_Appointment_Justices.dds"	
 	}
 	SpriteType = {
-		name = "GFX_focus_GER_history_on_horseback"
-		texturefile = "gfx/interface/goals/focus_GER_history_on_horseback.dds"			
+		name = "GFX_focus_STG_first_Darjeeling_cabinet"
+		texturefile = "gfx/interface/goals/focus_STG_first_Darjeeling_cabinet.dds"	
 	}
 	SpriteType = {
-		name = "GFX_focus_GER_new_hope"
-		texturefile = "gfx/interface/goals/focus_GER_new_hope.dds"			
+		name = "GFX_focus_STG_Economics"
+		texturefile = "gfx/interface/goals/focus_STG_Economics.dds"	
 	}
 	SpriteType = {
-		name = "GFX_focus_GER_no_volleyball"
-		texturefile = "gfx/interface/goals/focus_GER_no_volleyball.dds"			
+		name = "GFX_focus_STG_Three_year_plan"
+		texturefile = "gfx/interface/goals/focus_STG_Three_year_plan.dds"	
 	}
 	SpriteType = {
-		name = "GFX_focus_GER_noble_family"
-		texturefile = "gfx/interface/goals/focus_GER_noble_family.dds"			
+		name = "GFX_focus_STG_Give_priority_development_military_industry"
+		texturefile = "gfx/interface/goals/focus_STG_Give_priority_development_military_industry.dds"	
 	}
 	SpriteType = {
-		name = "GFX_focus_GER_prussian_heritage"
-		texturefile = "gfx/interface/goals/focus_GER_prussian_heritage.dds"			
+		name = "GFX_focus_STG_Establishment_cooperatives"
+		texturefile = "gfx/interface/goals/focus_STG_Establishment_cooperatives.dds"	
 	}
 	SpriteType = {
-		name = "GFX_focus_GER_reinvigorate_morale"
-		texturefile = "gfx/interface/goals/focus_GER_reinvigorate_morale.dds"			
+		name = "GFX_focus_STG_Steady_forward"
+		texturefile = "gfx/interface/goals/focus_STG_Steady_forward.dds"	
 	}
 	SpriteType = {
-		name = "GFX_focus_GER_reinvite_miho"
-		texturefile = "gfx/interface/goals/focus_GER_reinvite_miho.dds"			
+		name = "GFX_focus_STG_Increase_civil_investment"
+		texturefile = "gfx/interface/goals/focus_STG_Increase_civil_investment.dds"	
 	}
 	SpriteType = {
-		name = "GFX_focus_GER_schwarzwald_kampfgruppe"
-		texturefile = "gfx/interface/goals/focus_GER_schwarzwald_kampfgruppe.dds"			
+		name = "GFX_focus_STG_Encourage_scientific_research_innovation"
+		texturefile = "gfx/interface/goals/focus_STG_Encourage_scientific_research_innovation.dds"	
 	}
 	SpriteType = {
-		name = "GFX_focus_GER_tankathlon"
-		texturefile = "gfx/interface/goals/focus_GER_tankathlon.dds"			
+		name = "GFX_focus_STG_Government_power"
+		texturefile = "gfx/interface/goals/focus_STG_Government_power.dds"	
 	}
 	SpriteType = {
-		name = "GFX_focus_GER_team_nibelungen"
-		texturefile = "gfx/interface/goals/focus_GER_team_nibelungen.dds"			
+		name = "GFX_focus_STG_Conduct_business_merger_power"
+		texturefile = "gfx/interface/goals/focus_STG_Conduct_business_merger_power.dds"	
 	}
 	SpriteType = {
-		name = "GFX_focus_GER_victory_of_iron_corss"
-		texturefile = "gfx/interface/goals/focus_GER_victory_of_iron_corss.dds"			
+		name = "GFX_focus_STG_Strengthening_stateowned_enterprises"
+		texturefile = "gfx/interface/goals/focus_STG_Strengthening_stateowned_enterprises.dds"	
 	}
 	SpriteType = {
-		name = "GFX_focus_GER_organize_the_team"
-		texturefile = "gfx/interface/goals/focus_GER_organize_the_team.dds"			
-	}
-	SpriteType = {
-		name = "GFX_focus_GER_declare_war_to_jatkosota"
-		texturefile = "gfx/interface/goals/focus_GER_declare_war_to_jatkosota.dds"			
-	}
-	SpriteType = {
-		name = "GFX_focus_GER_extra_gain"
-		texturefile = "gfx/interface/goals/focus_GER_extra_gain.dds"			
-	}
-	SpriteType = {
-		name = "GFX_focus_GER_ice_and_snow"
-		texturefile = "gfx/interface/goals/focus_GER_ice_and_snow.dds"			
-	}
-	SpriteType = {
-		name = "GFX_focus_GER_scheme_13th"
-		texturefile = "gfx/interface/goals/focus_GER_scheme_13th.dds"			
-	}
-	SpriteType = {
-		name = "GFX_focus_GER_shoot_on_the_go"
-		texturefile = "gfx/interface/goals/focus_GER_shoot_on_the_go.dds"			
-	}
-	SpriteType = {
-		name = "GFX_focus_GER_superior_advantage"
-		texturefile = "gfx/interface/goals/focus_GER_superior_advantage.dds"			
-	}
-	SpriteType = {
-		name = "GFX_focus_GER_turret_ring_of_tiger"
-		texturefile = "gfx/interface/goals/focus_GER_turret_ring_of_tiger.dds"			
-	}
-	SpriteType = {
-		name = "GFX_focus_GER_upgrade_fire_power"
-		texturefile = "gfx/interface/goals/focus_GER_upgrade_fire_power.dds"			
-	}
-	SpriteType = {
-		name = "GFX_focus_GER_war_of_production"
-		texturefile = "gfx/interface/goals/focus_GER_war_of_production.dds"			
-	}
-	SpriteType = {
-		name = "GFX_focus_GER_winter_war"
-		texturefile = "gfx/interface/goals/focus_GER_winter_war.dds"			
-	}
-	SpriteType = {
-		name = "GFX_focus_GER_long_range_strike"
-		texturefile = "gfx/interface/goals/focus_GER_long_range_strike.dds"			
-	}
-	SpriteType = {
-		name = "GFX_focus_GER_assimilation"
-		texturefile = "gfx/interface/goals/focus_GER_assimilation.dds"			
-	}
-	SpriteType = {
-		name = "GFX_focus_GER_sand_sea_beast"
-		texturefile = "gfx/interface/goals/focus_GER_sand_sea_beast.dds"			
-	}
-	SpriteType = {
-		name = "GFX_focus_GER_burning_demand"
-		texturefile = "gfx/interface/goals/focus_GER_burning_demand.dds"			
-	}
-	SpriteType = {
-		name = "GFX_focus_GER_complete_victory"
-		texturefile = "gfx/interface/goals/focus_GER_complete_victory.dds"			
-	}
-	SpriteType = {
-		name = "GFX_focus_GER_real_nishizumi_style"
-		texturefile = "gfx/interface/goals/focus_GER_real_nishizumi_style.dds"			
-	}
-	SpriteType = {
-		name = "GFX_focus_GER_senshado_together"
-		texturefile = "gfx/interface/goals/focus_GER_senshado_together.dds"			
-	}
-	SpriteType = {
-		name = "GFX_focus_GER_will_of_steel"
-		texturefile = "gfx/interface/goals/focus_GER_will_of_steel.dds"			
-	}
-	SpriteType = {
-		name = "GFX_focus_GER_bell_wall_highschool"
-		texturefile = "gfx/interface/goals/focus_GER_bell_wall_highschool.dds"			
-	}
-	SpriteType = {
-		name = "GFX_focus_GER_environment_adaptability"
-		texturefile = "gfx/interface/goals/focus_GER_environment_adaptability.dds"			
+		name = "GFX_focus_STG_take_altogether_new_aspect"
+		texturefile = "gfx/interface/goals/focus_STG_take_altogether_new_aspect.dds"	
 	}
 
-	
-
-	#POL
-	SpriteType = {
-		name = "GFX_focus_POL_final_tech_contract"
-		texturefile = "gfx/interface/goals/focus_POL_final_tech_contract.dds"			
-	}	
-	SpriteType = {
-		name = "GFX_focus_POL_purchase_from_st_gloriana"
-		texturefile = "gfx/interface/goals/focus_POL_purchase_from_st_gloriana.dds"			
-	}	
-	SpriteType = {
-		name = "GFX_focus_POL_learn_from_st_gloriana"
-		texturefile = "gfx/interface/goals/focus_POL_learn_from_st_gloriana.dds"			
-	}	
-	SpriteType = {
-		name = "GFX_focus_POL_start_of_new_lane"
-		texturefile = "gfx/interface/goals/focus_POL_start_of_new_lane.dds"			
-	}	
-	SpriteType = {
-		name = "GFX_focus_POL_technology_share"
-		texturefile = "gfx/interface/goals/focus_POL_technology_share.dds"			
-	}	
-	SpriteType = {
-		name = "GFX_focus_POL_exchange_student"
-		texturefile = "gfx/interface/goals/focus_POL_exchange_student.dds"			
-	}	
-	SpriteType = {
-		name = "GFX_focus_POL_seek_accommodation_with_kuromorimine"
-		texturefile = "gfx/interface/goals/focus_POL_seek_accommodation_with_kuromorimine.dds"			
-	}	
-	SpriteType = {
-		name = "GFX_focus_POL_oil_is_the_soul_of_tank"
-		texturefile = "gfx/interface/goals/focus_POL_oil_is_the_soul_of_tank.dds"			
-	}	
-	SpriteType = {
-		name = "GFX_focus_POL_over_production"
-		texturefile = "gfx/interface/goals/focus_POL_over_production.dds"			
-	}	
-	SpriteType = {
-		name = "GFX_focus_POL_aluminum_mining"
-		texturefile = "gfx/interface/goals/focus_POL_aluminum_mining.dds"			
-	}	
-	SpriteType = {
-		name = "GFX_focus_POL_cavalry_master"
-		texturefile = "gfx/interface/goals/focus_POL_cavalry_master.dds"			
-	}	
-	SpriteType = {
-		name = "GFX_focus_POL_traditional_cavalry"
-		texturefile = "gfx/interface/goals/focus_POL_traditional_cavalry.dds"			
-	}	
-	SpriteType = {
-		name = "GFX_focus_POL_cauldron_tankathlon_tournament"
-		texturefile = "gfx/interface/goals/focus_POL_cauldron_tankathlon_tournament.dds"			
-	}	
-	SpriteType = {
-		name = "GFX_focus_POL_research_on_t-34"
-		texturefile = "gfx/interface/goals/focus_POL_research_on_t-34.dds"			
-	}	
-	SpriteType = {
-		name = "GFX_focus_POL_path_to_champion"
-		texturefile = "gfx/interface/goals/focus_POL_path_to_champion.dds"			
-	}	
-	SpriteType = {
-		name = "GFX_focus_POL_tiny_senshado"
-		texturefile = "gfx/interface/goals/focus_POL_tiny_senshado.dds"			
-	}	
-	SpriteType = {
-		name = "GFX_focus_POL_tankathlon_spirite"
-		texturefile = "gfx/interface/goals/focus_POL_tankathlon_spirite.dds"			
-	}	
-	SpriteType = {
-		name = "GFX_focus_POL_cuisine"
-		texturefile = "gfx/interface/goals/focus_POL_cuisine.dds"			
-	}	
-	SpriteType = {
-		name = "GFX_focus_POL_rebuild_the_bonple_high_school"
-		texturefile = "gfx/interface/goals/focus_POL_rebuild_the_bonple_high_school.dds"			
-	}	
-	SpriteType = {
-		name = "GFX_focus_POL_rejoin_the_senshado_tournament"
-		texturefile = "gfx/interface/goals/focus_POL_rejoin_the_senshado_tournament.dds"			
-	}	
-	SpriteType = {
-		name = "GFX_focus_POL_improve_school_environment"
-		texturefile = "gfx/interface/goals/focus_POL_improve_school_environment.dds"			
-	}	
 
 	
 	#### Generic continuous goal icons

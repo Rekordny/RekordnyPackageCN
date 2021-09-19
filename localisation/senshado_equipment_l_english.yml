@@ -7,13 +7,23 @@
  special_ammunition_1_desc:0 "战车可以装备的额外高爆和穿甲变种弹药。"
  armorpiece_1:0 "额外装甲"
  armorpiece_1_desc:0 "战车上不可或缺的各种装甲。"
+ high_explosive_ammunition:0 "高爆弹药"
+ armorpiercing_ammunition:0 "穿甲弹药"
+ chemical_armor:0 "化学装甲"
+ physical_armor:0 "物理装甲"
+ scope_brigade:0 "车长观测套件"
+ firstaid_brigade:0 "急救工具"
+ amphibious_brigade:0 "两栖登陆改装"
+ repairkit_brigade:0 "修理工具"
  
 
 
 #战车
  
  tank_destroyer:0 "坦克歼击车"
+ tank_destroyer_desc:0 "机动一般装甲薄弱的战斗车辆，但是极高的火炮穿深让它成为重坦杀手，对付轻坦效果一般。"
  assult_tank_destroyer:0 "突击坦克歼击车"
+ assult_tank_destroyer_desc:0 "相较于重坦还要重型的装甲和稍逊于反坦克车但依旧强劲的火炮，速度非常慢，是移动的碉堡，但是昂贵的造价和高故障率使它的成本变得极高。"
  
  senshado_prototype_tank_equipment:0 "坦克原型车"
  senshado_prototype_tank_equipment_desc:0 ""

@@ -1,15 +1,53 @@
 ﻿l_english:
+ #新增科技分类
+ naval_ss_snorkel:0 "潜艇通气管"
+ naval_fire_control:0 "火炮管制系统"
+ naval_dmg_control:0 "损害管制系统"
+ naval_advance_torpedo:0 "高级鱼雷"
+ naval_torpedo_launcher:0 "鱼雷发射装置"
+ naval_battery:0 "海军炮组"
+ naval_shell:0 "海军炮弹"
+ naval_bb_armor:0 "战列舰防护方案"
+ food:0 "战车道食品补给"
+ armor_lt:0 "轻型坦克"
+ armor_mt:0 "中型坦克"
+ armor_ht:0 "重型坦克"
+ armor_td:0 "坦克歼击车"
+ armor_atd:0 "突击坦克歼击车"
+ uniform_common:0 "常规校服"
+ uniform_winter:0 "冬季校服"
+ support_tech:0 "支援科技"
+ scope_tech:0 "战车观察装置"
+ amphibious_tech:0 "战车两栖改装"
+ repairkit_tech:0 "修理箱"
+ firstaid_tech:0 "急救箱"
+ ammunition_tech:0 "战车弹药"
+ HE_tech:0 "高爆弹"
+ AP_tech:0 "穿甲弹"
+ armorpiece_tech:0 "战车装甲"
+ chemical_armor_tech:0 "化学装甲"
+ physical_armor_tech:0 "物理装甲"
 
+ 
+ #主要页面
  INFANTRY_TITLE_FOODS:0 "食物和制服"
  SUPPORT_TITLE_SUPPORTS:0 "战车补给装备"
  SUPPORT_TITLE_AMMUNITION:0 "战车额外弹药"
  SUPPORT_TITLE_ARMORPIECE:0 "战车额外装甲"
  
  #步兵页面
- food:0 "食物补给"
+ food:0 "食物补给I"
  food_desc:0 "食物补给是每个学生身体茁壮成长的重要保障，即使在坦克里也不例外，在随时都能吃饱的情况下，才能更好的进行战车道修行。"
- KGA_food_1:0 "无酒精啤酒"
- KGA_food_1_desc:0 "无酒精啤酒是黑森峰传统饮料，喝了之后伸腿瞪眼，车组成员技能发挥提高10%"
+ food_1:0 "食物补给II"
+ food_1_desc:0 "食物补给是每个学生身体茁壮成长的重要保障，即使在坦克里也不例外，在随时都能吃饱的情况下，才能更好的进行战车道修行。"
+ food_2:0 "食物补给III"
+ food_2_desc:0 "食物补给是每个学生身体茁壮成长的重要保障，即使在坦克里也不例外，在随时都能吃饱的情况下，才能更好的进行战车道修行。"
+ food_3:0 "食物补给IV"
+ food_3_desc:0 "食物补给是每个学生身体茁壮成长的重要保障，即使在坦克里也不例外，在随时都能吃饱的情况下，才能更好的进行战车道修行。"
+ food_4:0 "食物补给V"
+ food_4_desc:0 "食物补给是每个学生身体茁壮成长的重要保障，即使在坦克里也不例外，在随时都能吃饱的情况下，才能更好的进行战车道修行。"
+ KGA_food:0 "无酒精啤酒"
+ KGA_food_desc:0 "无酒精啤酒是黑森峰传统饮料，喝了之后伸腿瞪眼，车组成员技能发挥提高10%"
  
  #支援连页面
  tech_support:0 "战车道支援装备"
@@ -214,3 +252,6 @@
  senshado_assult_tank_destroyer_3_desc:0 ""
  KGA_senshado_assult_tank_destroyer_3:0 "§OJAGDTIGER"
  KGA_senshado_assult_tank_destroyer_3_desc:0 "德国Jagdtiger猎虎重型坦克歼击车是研制于二战后期的一款重型坦克歼击车，设计的目的是远距离支援步兵和装甲战斗车辆，其第一次命名为Jagdpanzer VI，后来改成Jagdtiger，其设计编号为Sd.Kfz.186，德国于1943年2月开始研制猎虎坦克歼击车，同年10月20日，便造出木制模型给希特勒审查。1944年2月一共制造了两种原型车，一个是波尔舍悬挂装置，另一种是亨舍尔悬挂装置。"
+
+ #战术页面
+ 

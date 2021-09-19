@@ -6,7 +6,7 @@ ideas = {
 			modifier = {
 				political_power_cost = 0.1
                 stability_factor = -0.2
-                facism_drift = 0.005
+                fascism_drift = 0.005
                 conscription_factor = -0.1
 			}
 		}
@@ -18,7 +18,18 @@ ideas = {
 				max_command_power = 20
                 army_core_attack_factor = 0.1
                 army_core_defence_factor = 0.1
+			}
+		}
+
+		KGA_nishizumi_style = {
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = no }
+			modifier = {
+				max_command_power = 20
+                army_core_attack_factor = 0.2
+                army_core_defence_factor = 0.2
                 experience_gain_army = 0.05
+				army_fuel_capacity_factor = 0.1
 			}
 		}
 
@@ -182,6 +193,170 @@ ideas = {
 				party_popularity_stability_factor = -0.1
 			}
 		}
+
+		KGA_improved_production_indicators = {
+			allowed = {
+				tag = KGA
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				political_power_cost = 0.25
+			}
+		}
+
+		KGA_restricted_offensive_operations = {
+			allowed = {
+				tag = KGA
+			}
+			modifier = {
+				naval_torpedo_screen_penetration_factor= 0.2
+				navy_submarine_attack_factor = 0.1
+				navy_visibility = 0.05
+				positioning = 0.1
+			}
+		}
+
+		KGA_unlimited_submarine_warfare = {
+			allowed = {
+				tag = KGA
+			}
+			modifier = {
+				sub_retreat_speed = 0.2
+				naval_retreat_chance = 0.2
+				navy_submarine_attack_factor = 0.05
+				ships_at_battle_start = -0.1
+			}
+		}
+
+		KGA_caliber_is_justice = {
+			allowed = {
+				tag = KGA
+			}
+			modifier = {
+				naval_attrition = 0.15
+				naval_critical_effect_factor = 0.15
+				naval_damage_factor = 0.2
+				naval_has_potf_in_combat_attack = 0.1
+				naval_hit_chance = 0.1
+				navy_capital_ship_attack_factor = 0.2
+			}
+		}
+
+		KGA_survivability_first = {
+			allowed = {
+				tag = KGA
+			}
+			modifier = {
+				naval_attrition = -0.1
+				sortie_efficiency = -0.1
+				spotting_chance = 0.1
+				screening_efficiency = 0.2
+				naval_retreat_speed = 0.15
+				naval_mines_effect_reduction = 0.1
+				naval_invasion_penalty = 0.1
+			}
+		}
+
+		KGA_land_control_from_sea = {
+			allowed = {
+				tag = KGA
+			}
+			modifier = {
+				navy_carrier_air_agility_factor = 0.15
+				navy_carrier_air_attack_factor = 0.15
+				air_range_factor = 0.1
+				navy_visibility = 0.2
+				navy_carrier_air_targetting_factor = 0.1
+				carrier_capacity_penalty_reduction = -0.1
+			}
+		}
+
+		KGA_worker_insurance = {
+			allowed = {
+				tag = KGA
+			}
+			modifier = {
+				stability_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+
+		#恢复征兵法
+		KGA_reinstatement_troops = {
+			allowed = {
+				tag = KGA
+			}
+			modifier = {
+				conscription_factor = 0.5
+			}
+		} 
+
+		#BON获得的黑森峰援助
+		BON_kuromorimine_support = {
+			allowed = {
+				tag = BON
+			}
+			modifier = {
+				stability_factor = 0.1
+				research_speed_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				production_speed_infrastructure_factor = 0.05
+				fascism_drift = 0.005
+			}
+		} 
+
+		#BON获得的黑森峰思想渗透
+		BON_unknown_fascism_rising = {
+			allowed = {
+				tag = BON
+			}
+			modifier = {
+				stability_factor = -0.05
+				fascism_drift = 0.02
+			}
+		} 
+
+		#资源开采政策1:重新投资国家资源开采部门
+		KGA_resource_extraction_policy_1 = {
+			allowed = {
+				tag = KGA
+			}
+			modifier = {
+				min_export = -0.2
+				tax_daily_modifier = -0.2
+				58 = {
+					country_resource_oil = 10
+				}
+			}
+		}
+
+		#资源开采政策2:开放国外开发商获取执照
+		KGA_resource_extraction_policy_2 = {
+			allowed = {
+				tag = KGA
+			}
+			modifier = {
+				civilian_intel_to_others = 20
+				min_export = 0.2
+				tax_daily_modifier = 0.1
+				drift_defence_factor = -0.3
+			}
+		}
+
+		#资源开采政策3:开放个人承包开采资源
+		KGA_resource_extraction_policy_3 = {
+			allowed = {
+				tag = KGA
+			}
+			modifier = {
+				stability_factor = -0.1
+				tax_daily_modifier = 0.05
+			}
+		}
+
+
+
     }
 
 	student_union_member = {

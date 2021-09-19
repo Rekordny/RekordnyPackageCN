@@ -3,12 +3,27 @@ kga_senshado_government_decisions = {
 	allowed = {
 	}
 }
+kga_senshado_diplomatic_decisions = {
+	icon = GFX_decision_category_senshado
+	allowed = {
+	}
+}
 kga_missions = {
 	icon = GFX_decision_category_senshado
 	allowed = {
 	}
 }
+kga_senshado_industrial_decisions = {
+	icon = GFX_decision_category_senshado
+	allowed = {
+	}
+}
 kga_civil_war = {
+	icon = GFX_decision_category_senshado
+	allowed = {
+	}
+}
+kga_establish_puppuet_bon = {
 	icon = GFX_decision_category_senshado
 	allowed = {
 	}

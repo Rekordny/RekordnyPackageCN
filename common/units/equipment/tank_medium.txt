@@ -19,17 +19,17 @@ equipments = {
 			tank_gun_upgrade
 		}
 		#Misc Abilities
-		maximum_speed = 6
-		reliability = 0.8
+		maximum_speed = 7
+		reliability = 0.75
 
 		#Defensive Abilities
 		defense = 13
 		breakthrough = 20
-		hardness = 0.9
+		hardness = 0.6
 		armor_value = 35
 
 		#Offensive Abilities
-		soft_attack = 16
+		soft_attack = 13
 		hard_attack = 10
 		ap_attack = 20
 		air_attack = 0
@@ -64,12 +64,11 @@ equipments = {
 		is_convertable = yes
 		#Misc Abilities
 		maximum_speed = 8
-		reliability = 0.8
+		reliability = 0.75
 
 		#Defensive Abilities
 		defense = 17
 		breakthrough = 25
-		hardness = 0.9
 		armor_value = 45
 
 		#Offensive Abilities
@@ -97,13 +96,12 @@ equipments = {
 		visual_level = 2
 		is_convertable = yes
 		#Misc Abilities
-		maximum_speed = 10
-		reliability = 0.8
+		maximum_speed = 9
+		reliability = 0.75
 
 		#Defensive Abilities
 		defense = 20
 		breakthrough = 30
-		hardness = 0.9
 		armor_value = 50
 
 		#Offensive Abilities
@@ -131,13 +129,12 @@ equipments = {
 		visual_level = 3
 		is_convertable = yes
 		#Misc Abilities
-		maximum_speed = 12
-		reliability = 0.8
+		maximum_speed = 10
+		reliability = 0.75
 
 		#Defensive Abilities
 		defense = 24
 		breakthrough = 36
-		hardness = 0.9
 		armor_value = 55
 
 		#Offensive Abilities
@@ -165,13 +162,12 @@ equipments = {
 		visual_level = 4
 		is_convertable = yes
 		#Misc Abilities
-		maximum_speed = 15
-		reliability = 0.8
+		maximum_speed = 11
+		reliability = 0.75
 
 		#Defensive Abilities
 		defense = 28
 		breakthrough = 40
-		hardness = 0.9
 		armor_value = 60
 
 		#Offensive Abilities
@@ -199,13 +195,12 @@ equipments = {
 		visual_level = 5
 		is_convertable = yes
 		#Misc Abilities
-		maximum_speed = 18
-		reliability = 0.8
+		maximum_speed = 12
+		reliability = 0.75
 
 		#Defensive Abilities
 		defense = 32
 		breakthrough = 45
-		hardness = 0.9
 		armor_value = 65
 
 		#Offensive Abilities
