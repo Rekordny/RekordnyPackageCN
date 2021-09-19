@@ -34,6 +34,7 @@
 
 		completion_reward = {
 			add_political_power = 100
+			hidden_effect = { country_event = { id = event_StGloriana.7 days = 400 } }
 		}
 			
 		ai_will_do = {
@@ -527,6 +528,7 @@
 
 		completion_reward = {
 			add_ideas = STG_Government_power_idea
+			add_ideas = STG_Government_directed_economy_idea
 			add_popularity = {
 				ideology = fascism  
 				popularity = 0.05
@@ -747,7 +749,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = { id = event_StGloriana.6 days = 1}
 		}
 		
 		ai_will_do = {
@@ -847,7 +849,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			unlock_decision_tooltip = STG_Draft_wartime_mobilization_law
 		}
 		
 		ai_will_do = {
@@ -931,7 +933,7 @@
 		x = 0
 		y = 1
 	
-		available = {  }
+		available = { has_country_flag = STG_Munich_massacre_flag }
 
 		prerequisite = { focus = STG_Wartime_mobilization_law }
 		
@@ -939,14 +941,15 @@
 		
 		bypass = { }
 
-		cost = 4
+		cost = 1
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = STG_bickering_Parliament_idea
+			add_ideas = STG_rise_extremist_forces_idea
 		}
 		
 		ai_will_do = {
@@ -1012,7 +1015,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_stability = 0.1
+			unlock_decision_tooltip = STG_Cooling_off_period
 		}
 		
 		ai_will_do = {
@@ -1045,7 +1049,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			unlock_decision_tooltip = STG_Make_concessions
 		}
 		
 		ai_will_do = {
@@ -1078,7 +1082,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = { id = event_StGloriana.9 days = 1}
 		}
 		
 		ai_will_do = {
@@ -1111,7 +1115,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			unlock_decision_tooltip = STG_become_reconciled
 		}
 		
 		ai_will_do = {
@@ -1144,7 +1148,28 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			if = {
+				limit = { has_ideas = STG_bickering_Parliament_idea }
+				swap_ideas = {
+					remove_idea = STG_bickering_Parliament_idea
+					add_idea = STG_bickering_Parliament_idea_A_1_1
+				}
+			}
+			else_if = {
+				limit = { has_ideas = STG_bickering_Parliament_idea_A_1_1 }
+				swap_ideas = {
+					remove_idea = STG_bickering_Parliament_idea_A_1_1
+					add_idea = STG_bickering_Parliament_idea_A_1_2
+				}
+			}
+			else_if = {
+				limit = { has_ideas = STG_bickering_Parliament_idea_A_1_2 }
+				swap_ideas = {
+					remove_idea = STG_bickering_Parliament_idea_A_1_2
+					add_idea = STG_bickering_Parliament_idea_A_1_3
+				}
+			}
+			else = {  }
 		}
 		
 		ai_will_do = {
@@ -1177,7 +1202,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			unlock_decision_tooltip = STG_Ease_contradictions
 		}
 		
 		ai_will_do = {
@@ -1210,7 +1235,33 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			if = {
+				limit = { has_ideas = STG_bickering_Parliament_idea }
+				remove_ideas = STG_bickering_Parliament_idea
+			}
+			else_if = {
+				limit = { has_ideas = STG_bickering_Parliament_idea_A_1_1 }
+				remove_ideas = STG_bickering_Parliament_idea_A_1_1
+			}
+			else_if = {
+				limit = { has_ideas = STG_bickering_Parliament_idea_A_1_2 }
+				remove_ideas = STG_bickering_Parliament_idea_A_1_2
+			}
+			else_if = {
+				limit = { has_ideas = STG_bickering_Parliament_idea_A_1_3 }
+				remove_ideas = STG_bickering_Parliament_idea_A_1_3
+			}
+			else = {  }
+			
+			if = {
+				limit = { has_ideas = STG_rise_extremist_forces_idea }
+				remove_ideas = STG_rise_extremist_forces_idea
+			}
+			else_if = {
+				limit = { has_ideas = STG_rise_extremist_forces_idea_1 }
+				remove_ideas = STG_rise_extremist_forces_idea_1
+			}
+			else = {  }
 		}
 		
 		ai_will_do = {
@@ -1243,7 +1294,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			unlock_decision_tooltip = STG_Balanced_extremists
 		}
 		
 		ai_will_do = {
@@ -1276,7 +1327,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = { id = event_StGloriana.11 days = 1}
 		}
 		
 		ai_will_do = {
@@ -1309,7 +1360,14 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_popularity = {
+				ideology = communism  
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = fascism  
+				popularity = 0.03 
+			}
 		}
 		
 		ai_will_do = {
@@ -1443,7 +1501,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			unlock_decision_tooltip = STG_Communist_Uprising
+			unlock_decision_tooltip = STG_Fascist_riots
 		}
 		
 		ai_will_do = {
@@ -1476,7 +1535,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			unlock_decision_tooltip = STG_Suppression_fascist_activities
+			unlock_decision_tooltip = STG_Suppression_Communist_activities
 		}
 		
 		ai_will_do = {
@@ -1509,7 +1569,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			unlock_decision_tooltip = STG_GC_Special_means
+			unlock_decision_tooltip = STG_GC_Harsh_means
 		}
 		
 		ai_will_do = {
@@ -1542,7 +1603,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = { id = event_StGloriana.12 days = 1}
 		}
 		
 		ai_will_do = {
@@ -1560,7 +1621,7 @@
 		x = 0
 		y = 1
 	
-		available = {  }
+		available = { STG_House_of_Commons_d = yes }
 
 		prerequisite = { focus = STG_Lavender_List }
 		
@@ -1575,7 +1636,12 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_stability = 0.1
+			add_popularity = {
+				ideology = communism  
+				popularity = -0.1
+			}
+			add_to_variable = { GCLL = -10 }
 		}
 		
 		ai_will_do = {
@@ -1610,7 +1676,33 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			if = {
+				limit = { has_ideas = STG_bickering_Parliament_idea }
+				remove_ideas = STG_bickering_Parliament_idea
+			}
+			else_if = {
+				limit = { has_ideas = STG_bickering_Parliament_idea_A_1_1 }
+				remove_ideas = STG_bickering_Parliament_idea_A_1_1
+			}
+			else_if = {
+				limit = { has_ideas = STG_bickering_Parliament_idea_A_1_2 }
+				remove_ideas = STG_bickering_Parliament_idea_A_1_2
+			}
+			else_if = {
+				limit = { has_ideas = STG_bickering_Parliament_idea_A_1_3 }
+				remove_ideas = STG_bickering_Parliament_idea_A_1_3
+			}
+			else = {  }
+			
+			if = {
+				limit = { has_ideas = STG_rise_extremist_forces_idea }
+				remove_ideas = STG_rise_extremist_forces_idea
+			}
+			else_if = {
+				limit = { has_ideas = STG_rise_extremist_forces_idea_1 }
+				remove_ideas = STG_rise_extremist_forces_idea_1
+			}
+			else = {  }
 		}
 		
 		ai_will_do = {
@@ -1643,7 +1735,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			unlock_decision_tooltip = STG_FXS_Special_means
+			unlock_decision_tooltip = STG_FXS_Harsh_means
 		}
 		
 		ai_will_do = {
@@ -1676,7 +1769,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = { id = event_StGloriana.13 days = 1}
 		}
 		
 		ai_will_do = {
@@ -1694,7 +1787,7 @@
 		x = 0
 		y = 1
 	
-		available = {  }
+		available = { STG_House_of_Commons_e = yes }
 
 		prerequisite = { focus = STG_second_battle_cable_Street }
 		
@@ -1710,6 +1803,39 @@
 
 		completion_reward = {
 			add_political_power = 100
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#欢迎回家
+	focus = {
+		id = STG_Welcome_join
+		icon = GFX_focus_STG_Welcome_join
+		relative_position_id = STG_second_battle_cable_Street
+		x = 2
+		y = 1
+	
+		available = { STG_House_of_Commons_e = yes }
+
+		prerequisite = { focus = STG_second_battle_cable_Street }
+		
+		mutually_exclusive = {  }
+		
+		bypass = { }
+
+		cost = 4
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = { id = event_StGloriana.15 days = 1}
 		}
 		
 		ai_will_do = {
@@ -1742,7 +1868,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = STG_British_situation_idea
 		}
 		
 		ai_will_do = {
@@ -1827,7 +1953,7 @@
 		x = -3
 		y = 1
 	
-		available = {  }
+		available = { STG_House_of_Commons_f = yes }
 
 		prerequisite = { focus = STG_Unite_under_banner_democracy }
 		
@@ -1842,7 +1968,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = { id = event_StGloriana.16 days = 1 }
 		}
 		
 		ai_will_do = {
@@ -1875,7 +2001,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = { id = event_StGloriana.18 days = 1 }
 		}
 		
 		ai_will_do = {
@@ -1893,7 +2019,15 @@
 		x = 0
 		y = 1
 	
-		available = {  }
+		available = { 
+			BCF = { 
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+				NOT = { has_war_with = STG }
+			}
+		}
 
 		prerequisite = { focus = STG_Meeting_with_Mary }
 		
@@ -1901,13 +2035,13 @@
 		
 		bypass = { }
 
-		cost = 4
+		cost = 15.5
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward = {
+		select_effect = {
 			add_political_power = 100
 		}
 		
@@ -1941,7 +2075,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = { id = event_StGloriana.27 days = 1 }
 		}
 		
 		ai_will_do = {
@@ -1974,7 +2108,16 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_opinion_modifier = { 
+				target = JHS 
+				modifier = STG_Friendship_with_high_JHS
+			}
+			JHS = {
+				add_opinion_modifier = { 
+					target = JHS 
+					modifier = STG_Friendship_with_high_JHS
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -2007,7 +2150,16 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_timed_idea = { 
+				idea = STG_JHS_Aid_materials_idea
+				days = 180
+			}
+			JHS = {
+				add_timed_idea = { 
+					idea = JHS_STG_Aid_materials_idea
+					days = 180
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -2040,7 +2192,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			give_guarantee = JHS
 		}
 		
 		ai_will_do = {
@@ -2073,7 +2225,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = { id = event_StGloriana.28 days = 1 }
 		}
 		
 		ai_will_do = {
@@ -2106,7 +2258,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = { id = event_StGloriana.29 days = 1 }
 		}
 		
 		ai_will_do = {
@@ -2139,7 +2291,20 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			116 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 5
+					province = 12003
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 3
+					province = 12003
+					instant_build = yes
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -2172,7 +2337,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			ANZ = { country_event = { id = event_StGloriana.30 days = 1 } }
 		}
 		
 		ai_will_do = {
@@ -2205,7 +2370,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = { id = event_StGloriana.32 days = 1 }
 		}
 		
 		ai_will_do = {

@@ -1,0 +1,25 @@
+#下议院
+STG_House_of_Commons = {
+	icon = GFX_decision_category_senshado
+	
+	allowed = {
+		original_tag = STG
+	}
+	allowed = {
+	}
+	visible = {
+	}
+}
+
+#政治行动
+STG_political_actions = {
+	icon = GFX_decision_category_senshado
+	
+	allowed = {
+		original_tag = STG
+	}
+	allowed = {
+	}
+	visible = {
+	}
+}

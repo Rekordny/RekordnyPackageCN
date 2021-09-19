@@ -1,0 +1,81 @@
+#需要200个政府席位
+STG_House_of_Commons_a = {
+	custom_trigger_tooltip = {
+		tooltip = STG_House_of_Commons_a_tt
+		check_variable = {
+			var = XW
+			value = 200
+			compare = greater_than
+		}
+	}
+}
+
+#需要300个政府席位
+STG_House_of_Commons_b = {
+	custom_trigger_tooltip = {
+		tooltip = STG_House_of_Commons_b_tt
+		check_variable = {
+			var = XW
+			value = 300
+			compare = greater_than
+		}
+	}
+}
+
+#需要350个政府席位
+STG_House_of_Commons_c = {
+	custom_trigger_tooltip = {
+		tooltip = STG_House_of_Commons_b_tt
+		check_variable = {
+			var = XW
+			value = 350
+			compare = greater_than
+		}
+	}
+}
+
+#共产的力量值小于20且席位小于100
+STG_House_of_Commons_d = {
+	custom_trigger_tooltip = {
+		tooltip = STG_House_of_Commons_d_tt
+		check_variable = {
+			var = GC
+			value = 100
+			compare = less_than
+		}
+		check_variable = {
+			var = GCLL
+			value = 20
+			compare = less_than
+		}
+	}
+}
+
+#法西斯的力量值小于20且席位小于100
+STG_House_of_Commons_e = {
+	custom_trigger_tooltip = {
+		tooltip = STG_House_of_Commons_e_tt
+		check_variable = {
+			var = FXS
+			value = 100
+			compare = less_than
+		}
+		check_variable = {
+			var = FXSLL
+			value = 20
+			compare = less_than
+		}
+	}
+}
+
+#需要450个政府席位
+STG_House_of_Commons_f = {
+	custom_trigger_tooltip = {
+		tooltip = STG_House_of_Commons_f_tt
+		check_variable = {
+			var = XW
+			value = 450
+			compare = greater_than
+		}
+	}
+}

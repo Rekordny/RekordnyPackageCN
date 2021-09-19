@@ -1,0 +1,45 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            STG = {
+				#政府席位
+                add_to_variable = { XW = 10 }
+				
+				#民主
+				add_to_variable = { MZ = 20 }
+				
+				#共产
+				add_to_variable = { GC = 30 }
+				
+				#法西斯
+				add_to_variable = { FXS = 40 }
+				
+				#中立
+				add_to_variable = { ZL = 50 }
+				
+				
+				#恐慌值
+				add_to_variable = { KHZ = 25 }
+				
+				#共产派力量值
+				add_to_variable = { GCLL = 33 }
+				
+				#法西斯派力量值
+				add_to_variable = { FXSLL = 43 }
+				
+				#共产派愤怒值
+				add_to_variable = { GCFN = 36 }
+				
+				#法西斯派愤怒值
+				add_to_variable = { FXSFN = 46 }
+				
+				add_to_variable = { A = 0 }
+				
+				
+				
+				
+				
+            }
+        }
+    }
+}

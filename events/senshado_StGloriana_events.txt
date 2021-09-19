@@ -1,8 +1,8 @@
 add_namespace = event_StGloriana
 
+
+#任命财务大臣
 country_event = {
-	
-	#任命财务大臣
 	id = event_StGloriana.1
 	title = event_StGloriana.1.t
 	desc = event_StGloriana.1.d
@@ -44,8 +44,8 @@ country_event = {
 	}
 }
 
+#任命外交大臣
 country_event = {
-	#任命外交大臣
 	id = event_StGloriana.2
 	title = event_StGloriana.2.t
 	desc = event_StGloriana.2.d
@@ -86,9 +86,9 @@ country_event = {
 		}
 	}
 }
-	
+
+#任命国防大臣
 country_event = {
-	#任命国防大臣
 	id = event_StGloriana.3
 	title = event_StGloriana.3.t
 	desc = event_StGloriana.3.d
@@ -130,8 +130,8 @@ country_event = {
 	}
 }
 
+#任命大法官
 country_event = {
-	#任命大法官
 	id = event_StGloriana.4
 	title = event_StGloriana.4.t
 	desc = event_StGloriana.4.d
@@ -172,8 +172,9 @@ country_event = {
 		}
 	}
 }
+
+#任命内务大臣
 country_event = {
-	#任命内务大臣
 	id = event_StGloriana.5
 	title = event_StGloriana.5.t
 	desc = event_StGloriana.5.d
@@ -212,5 +213,432 @@ country_event = {
 			ideology = neutrality  
 			popularity = 0.05 
 		}
+	}
+}
+
+#国家安全法
+country_event = {
+	id = event_StGloriana.6
+	title = event_StGloriana.6.t
+	desc = event_StGloriana.6.d
+
+	picture = GFX_event_StGloriana_6
+
+	is_triggered_only = yes
+
+	option = {
+		name = event_StGloriana.6.a
+		add_popularity = {
+			ideology = democratic 
+			popularity = 0.05 
+		}
+		add_popularity = {
+			ideology = neutrality  
+			popularity = 0.05 
+		}
+	}
+	
+	option = {
+		name = event_StGloriana.6.b
+		add_popularity = {
+			ideology = communism  
+			popularity = 0.05 
+		}
+		add_popularity = {
+			ideology = fascism  
+			popularity = 0.05 
+		}
+	}
+}
+
+#慕尼黑惨案
+country_event = {
+	id = event_StGloriana.7
+	title = event_StGloriana.7.t
+	desc = event_StGloriana.7.d
+
+	picture = GFX_event_StGloriana_7
+
+	is_triggered_only = yes
+
+	option = {
+		name = event_StGloriana.7.a
+		set_country_flag = STG_Munich_massacre_flag
+	}
+}
+
+#冷静期
+country_event = {
+	id = event_StGloriana.8
+	title = event_StGloriana.8.t
+	desc = event_StGloriana.8.d
+
+	picture = GFX_event_StGloriana_8
+	is_triggered_only = yes
+
+	option = {
+		name = event_StGloriana.8.a
+	}
+}
+
+#调和双方
+country_event = {
+	id = event_StGloriana.9
+	title = event_StGloriana.9.t
+	desc = event_StGloriana.9.d
+
+	picture = GFX_event_StGloriana_9
+	is_triggered_only = yes
+
+	option = {
+		name = event_StGloriana.9.a
+	}
+}
+
+#与橙黄白毫的谈话
+country_event = {
+	id = event_StGloriana.10
+	title = event_StGloriana.10.t
+	desc = event_StGloriana.10.d
+
+	picture = GFX_event_StGloriana_10
+	is_triggered_only = yes
+
+	option = {
+		name = event_StGloriana.10.a
+	}
+}
+
+#私人会谈
+country_event = {
+	id = event_StGloriana.11
+	title = event_StGloriana.11.t
+	desc = event_StGloriana.11.d
+
+	picture = GFX_event_StGloriana_11
+	is_triggered_only = yes
+
+	option = {
+		name = event_StGloriana.11.a
+	}
+}
+
+#薰衣草名单
+country_event = {
+	id = event_StGloriana.12
+	title = event_StGloriana.12.t
+	desc = event_StGloriana.12.d
+
+	picture = GFX_event_StGloriana_12
+	is_triggered_only = yes
+
+	option = {
+		name = event_StGloriana.12.a
+	}
+}
+
+#第二次电缆街之战
+country_event = {
+	id = event_StGloriana.13
+	title = event_StGloriana.13.t
+	desc = event_StGloriana.13.d
+
+	picture = GFX_event_StGloriana_13
+	is_triggered_only = yes
+
+	option = {
+		name = event_StGloriana.13.a
+	}
+}
+
+#巧妙的意外
+country_event = {
+	id = event_StGloriana.14
+	title = event_StGloriana.14.t
+	desc = event_StGloriana.14.d
+
+	picture = GFX_event_StGloriana_14
+	is_triggered_only = yes
+
+	option = {
+		name = event_StGloriana.14.a
+		add_stability = 0.05
+		custom_effect_tooltip = event_StGloriana_14_tt
+		add_to_variable = { FXS = -1 }
+		add_to_variable = { FXSLL = -10 }
+	}
+}
+
+#岁月如梭
+country_event = {
+	id = event_StGloriana.15
+	title = event_StGloriana.15.t
+	desc = event_StGloriana.15.d
+
+	picture = GFX_event_StGloriana_15
+	is_triggered_only = yes
+
+	option = {
+		name = event_StGloriana.15.a
+		add_popularity = {
+			ideology = fascism  
+			popularity = 0.05
+		}
+		set_party_name = { 
+			ideology = fascism
+			long_name = STG_Communist_Democratic_Party_long
+			name = STG_Communist_Democratic_Party
+		}
+	}
+}
+
+#伸出橄榄枝
+country_event = {
+	id = event_StGloriana.16
+	title = event_StGloriana.16.t
+	desc = event_StGloriana.16.d
+
+	picture = GFX_event_StGloriana_16
+	is_triggered_only = yes
+
+	option = {
+		name = event_StGloriana.16.a
+		BCF = { country_event = { id = event_StGloriana.17 days = 1 } }
+	}
+}
+
+#伸出橄榄枝
+country_event = {
+	id = event_StGloriana.17
+	title = event_StGloriana.17.t
+	desc = event_StGloriana.17.d
+
+	picture = GFX_event_StGloriana_17
+	is_triggered_only = yes
+
+	option = {
+		name = event_StGloriana.17.a
+	}
+}
+
+#一次愉快的会面？
+country_event = {
+	id = event_StGloriana.18
+	title = event_StGloriana.18.t
+	desc = event_StGloriana.18.d
+
+	picture = GFX_event_StGloriana_18
+	is_triggered_only = yes
+
+	option = {
+		name = event_StGloriana.18.a
+	}
+}
+
+#一次愉快的会面？
+country_event = {
+	id = event_StGloriana.19
+	title = event_StGloriana.19.t
+	desc = event_StGloriana.19.d
+
+	picture = GFX_event_StGloriana_19
+	is_triggered_only = yes
+
+	option = {
+		name = event_StGloriana.19.a
+	}
+}
+
+#开设新学院？
+country_event = {
+	id = event_StGloriana.27
+	title = event_StGloriana.27.t
+	desc = event_StGloriana.27.d
+
+	picture = GFX_event_StGloriana_27
+	is_triggered_only = yes
+
+	option = {
+		name = event_StGloriana.27.a
+		unlock_decision_tooltip = STG_Building_an_English_College
+		hidden_effect = { set_country_flag = STG_Building_an_English_College_flag }
+	}
+}
+
+#新的盟友
+country_event = {
+	id = event_StGloriana.28
+	title = event_StGloriana.28.t
+	desc = event_StGloriana.28.d
+
+	picture = GFX_event_StGloriana_28
+	is_triggered_only = yes
+
+	option = {
+		name = event_StGloriana.28.a
+		add_ideas = Member_states_Alliance_idea
+		if = {
+			limt = { is_faction_leader = STG }
+			add_to_faction = JHS
+		}
+		else = {
+			create_faction = Member_states_Alliance
+			add_to_faction = JHS 
+		}
+	}
+	
+	option = {
+		name = event_StGloriana.28.b
+		add_ideas = Member_states_Alliance_idea
+	}
+	
+	option = {
+		name = event_StGloriana.28.c
+		
+	}
+}
+
+#圣葛罗莉安娜女子学院寻求地中海安全
+country_event = {
+	id = event_StGloriana.29
+	title = event_StGloriana.29.t
+	desc = event_StGloriana.29.d
+
+	picture = GFX_event_StGloriana_29
+	is_triggered_only = yes
+
+	option = {
+		name = event_StGloriana.29.a
+		
+	}
+}
+
+#安齐奥的开价
+country_event = {
+	id = event_StGloriana.30
+	title = event_StGloriana.30.t
+	desc = event_StGloriana.30.d
+
+	picture = GFX_event_StGloriana_30
+	is_triggered_only = yes
+
+	option = {
+		name = event_StGloriana.30.a
+		create_wargoal = {
+			type = annex_everything
+			target = OSH
+			expire = 0
+		}
+		AMZ = {
+			create_wargoal = {
+				type = annex_everything
+				target = OSH
+				expire = 0
+			}
+		}
+		set_country_flag = STG_ANZ_Y
+	}
+	
+	option = {
+		name = event_StGloriana.30.b
+	}
+}
+
+#对大洗鲨鱼队的胜利
+country_event = {
+	id = event_StGloriana.31
+	title = event_StGloriana.31.t
+	desc = event_StGloriana.31.d
+
+	picture = GFX_event_StGloriana_31
+	
+	trigger = {
+		OR = {
+			OSH = {
+				or = {
+					has_capitulated = yes 
+					is_puppet = yes
+				}
+			}
+			NOT = { country_exists = OSH }
+		}
+		has_country_flag = STG_ANZ_A
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = event_StGloriana.31.a
+		STG = {
+			transfer_state = 767
+			transfer_state = 551
+			transfer_state = 549
+			transfer_state = 548
+			transfer_state = 547
+			transfer_state = 293
+			transfer_state = 659
+			transfer_state = 294
+			transfer_state = 543
+			transfer_state = 708
+		}
+		ANZ = {
+			transfer_state = 550
+			transfer_state = 271
+			transfer_state = 559
+			transfer_state = 269
+			transfer_state = 268
+			transfer_state = 267
+		}
+	}
+	
+	option = {
+		name = event_StGloriana.31.b
+		AMZ = {
+			create_wargoal = {
+				type = take_state
+				target = STG
+				expire = 0
+			}
+			if = {
+				limt = { is_in_faction_with = STG }
+				remove_from_faction = ANZ
+			}
+		}
+		
+	}
+}
+
+#新的盟友
+country_event = {
+	id = event_StGloriana.32
+	title = event_StGloriana.32.t
+	desc = event_StGloriana.32.d
+
+	picture = GFX_event_StGloriana_32
+	is_triggered_only = yes
+
+	option = {
+		name = event_StGloriana.32.a
+		add_ideas = Member_states_Alliance_idea
+		if = {
+			limt = { is_faction_leader = STG }
+			add_to_faction = ANZ
+		}
+		else = {
+			create_faction = Member_states_Alliance
+			add_to_faction = ANZ 
+		}`
+	}
+	
+	option = {
+		name = event_StGloriana.32.b
+		add_ideas = Member_states_Alliance_idea
+	}
+	
+	option = {
+		name = event_StGloriana.32.c
+		
 	}
 }

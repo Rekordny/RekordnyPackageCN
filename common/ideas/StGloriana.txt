@@ -1,6 +1,49 @@
 ideas = {
 	country = {
 	
+	#混乱的议会
+	STG_chaotic_Parliament_idea = {
+	
+		picture = GFX_idea_STG_chaotic_Parliament_idea
+		
+		allowed = {
+			tag = STG
+		}
+		available = { }
+		cancel = { }
+		allowed_civil_war = { always = no }
+		removal_cost = -1
+		
+		modifier = {
+			political_power_cost = 0.3
+			stability_factor = -0.1
+			war_support_factor = 0.05
+		}
+		
+	}
+	
+	#经济乱象
+	STG_Economic_chaos_idea = {
+	
+		picture = GFX_idea_STG_chaotic_Parliament_idea
+		
+		allowed = {
+			tag = STG
+		}
+		available = { }
+		cancel = { }
+		allowed_civil_war = { always = no }
+		removal_cost = -1
+		
+		modifier = {
+			production_factory_max_efficiency_factor = -0.1
+			production_factory_efficiency_gain_factor = -0.1
+			line_change_production_efficiency_factor = -0.1
+			consumer_goods_factor = 0.05
+		}
+		
+	}
+	
 	#三年计划
 	STG_Three_year_plan_idea = {
 	
@@ -94,7 +137,7 @@ ideas = {
 	
 		picture = GFX_idea_STG_Government_power_idea
 		
-		name = STG_Encourage_scientific_research_innovation
+		name = STG_Government_power
 		
 		allowed = {
 			tag = STG
@@ -109,7 +152,25 @@ ideas = {
 			global_building_slots_factor = 0.15
 			drift_defence_factor = 0.1
 		}
+	}
+	
+	#政府指导的经济
+	STG_Government_directed_economy_idea = {
+	
+		picture = GFX_idea_STG_Government_directed_economy_idea
 		
+		allowed = {
+			tag = STG
+		}
+		
+		available = { }
+		cancel = { }
+		allowed_civil_war = { always = no }
+		removal_cost = -1
+		
+		modifier = {
+			line_change_production_efficiency_factor = 0.1
+		}
 	}
 	
 	#强化国有企业
@@ -131,9 +192,251 @@ ideas = {
 		modifier = {
 			line_change_production_efficiency_factor = 0.1
 		}
-		
 	}
 	
+	#争吵的议会
+	STG_bickering_Parliament_idea = {
+	
+		picture = GFX_idea_STG_bickering_Parliament_idea
+		
+		allowed = {
+			tag = STG
+		}
+		
+		available = { }
+		cancel = { }
+		allowed_civil_war = { always = no }
+		removal_cost = -1
+		
+		modifier = {
+			stability_factor = -0.3
+			war_support_factor = 0.1
+			political_power_factor = -0.2
+		}
+	}
+	STG_bickering_Parliament_idea_A_1_1 = {
+	
+		picture = GFX_idea_STG_bickering_Parliament_idea
+		
+		name = STG_bickering_Parliament_idea
+		
+		allowed = {
+			tag = STG
+		}
+		
+		available = { }
+		cancel = { }
+		allowed_civil_war = { always = no }
+		removal_cost = -1
+		
+		modifier = {
+			stability_factor = -0.2
+			war_support_factor = 0.1
+			political_power_factor = -0.15
+		}
+	}
+	STG_bickering_Parliament_idea_A_1_2 = {
+	
+		picture = GFX_idea_STG_bickering_Parliament_idea
+		
+		name = STG_bickering_Parliament_idea
+		
+		allowed = {
+			tag = STG
+		}
+		
+		available = { }
+		cancel = { }
+		allowed_civil_war = { always = no }
+		removal_cost = -1
+		
+		modifier = {
+			stability_factor = -0.1
+			war_support_factor = 0.1
+			political_power_factor = -0.10
+		}
+	}
+	STG_bickering_Parliament_idea_A_1_3 = {
+	
+		picture = GFX_idea_STG_bickering_Parliament_idea
+		
+		name = STG_bickering_Parliament_idea
+		
+		allowed = {
+			tag = STG
+		}
+		
+		available = { }
+		cancel = { }
+		allowed_civil_war = { always = no }
+		removal_cost = -1
+		
+		modifier = {
+			war_support_factor = 0.1
+			political_power_factor = -0.05
+		}
+	}
+	
+	
+	#极端势力崛起
+	STG_rise_extremist_forces_idea = {
+	
+		picture = GFX_idea_STG_rise_extremist_forces_idea
+		
+		name = STG_rise_extremist_forces_idea
+		
+		allowed = {
+			tag = STG
+		}
+		
+		available = { }
+		cancel = { }
+		allowed_civil_war = { always = no }
+		removal_cost = -1
+		
+		modifier = {
+			communism_drift = 0.03
+			fascism_drift = 0.03
+			drift_defence_factor = -0.3
+			stability_factor = -0.2
+			communism_acceptance = 50
+			fascism_acceptance = 50
+		}
+	}
+	STG_rise_extremist_forces_idea_1 = {
+	
+		picture = GFX_idea_STG_rise_extremist_forces_idea
+		
+		name = STG_rise_extremist_forces_idea
+		
+		allowed = {
+			tag = STG
+		}
+		
+		available = { }
+		cancel = { }
+		allowed_civil_war = { always = no }
+		removal_cost = -1
+		
+		modifier = {
+			communism_drift = 0.03
+			fascism_drift = 0.03
+			drift_defence_factor = -0.2
+			stability_factor = -0.1
+			communism_acceptance = 50
+			fascism_acceptance = 50
+		}
+	}
+	
+	#不列颠现状
+	STG_British_situation_idea = {
+	
+		picture = GFX_idea_STG_British_situation_idea
+		
+		allowed = {
+			tag = STG
+		}
+		
+		available = { }
+		cancel = { }
+		allowed_civil_war = { always = no }
+		removal_cost = -1
+		
+		modifier = {
+			political_power_gain = 0.5
+			stability_factor = 0.1
+			war_support_factor = 0.1
+			research_speed_factor = 0.05
+		}
+	}
+	
+	#英式战车道学院
+	STG_Building_an_English_College_idea = {
+	
+		picture = GFX_idea_STG_Building_an_English_College_idea
+		
+		allowed = {
+			tag = STG
+		}
+		
+		available = { }
+		cancel = { }
+		allowed_civil_war = { always = no }
+		removal_cost = -1
+		
+		modifier = {
+			research_speed_factor = 0.05
+		}
+	}
+	
+	#援助物资
+	STG_JHS_Aid_materials_idea = {
+	
+		picture = GFX_idea_STG_JHS_Aid_materials_idea
+		
+		allowed = {
+			tag = STG
+		}
+		
+		available = { }
+		cancel = { }
+		allowed_civil_war = { always = no }
+		removal_cost = -1
+		
+		modifier = {
+			production_speed_coastal_bunker_factor = -0.1
+			production_speed_bunker_factor = -0.1
+			production_speed_infrastructure_factor = -0.1
+		}
+	}
+
+
+#World
+
+	#战车道联盟成员国
+	Member_states_Alliance_idea = {
+	
+		picture = GFX_idea_STG_JHS_Aid_materials_idea
+		
+		allowed = {
+			tag = JHS
+			tag = BCF
+		}
+		
+		available = { }
+		cancel = { }
+		allowed_civil_war = { always = no }
+		removal_cost = -1
+		
+		modifier = {
+			political_power_gain = 0.05
+			consumer_goods_factor = -0.03
+		}
+	}
+
+
+#JHS
+
+	#援助物资(JHS)
+	JHS_STG_Aid_materials_idea = {
+	
+		picture = GFX_idea_JHS_STG_Aid_materials_idea
+		
+		allowed = {
+			tag = JHS
+		}
+		
+		available = { }
+		cancel = { }
+		allowed_civil_war = { always = no }
+		removal_cost = -1
+		
+		modifier = {
+			production_speed_coastal_bunker_factor = 0.1
+			production_speed_bunker_factor = 0.1
+			production_speed_infrastructure_factor = 0.1
+		}
+	}
 	
 	
 	

@@ -104,6 +104,8 @@
  STG_second_battle_cable_Street_desc:0 ""
  STG_Goodbye_sir:0 "再见了，爵士"
  STG_Goodbye_sir_desc:0 ""
+ STG_Welcome_join:0 "欢迎加入"
+ STG_Welcome_join_desc:0 ""
  STG_Britain_unite:0 "为了不列颠！团结一致！"
  STG_Britain_unite_desc:0 ""
  
@@ -116,6 +118,7 @@
  STG_Meeting_with_Mary:0 "与玛丽的会面"
  STG_Meeting_with_Mary_desc:0 ""
  STG_high_level_conference:0 "高层会议"
+ STG_high_level_conference_desc:0 ""
  STG_Make_up_again:0 "重归于好"
  STG_Make_up_again_desc:0 ""
  STG_Friendship_JHS_school:0 "与继续高中的友谊"
@@ -192,8 +195,8 @@
  STG_Return_Europe_desc:0 ""
  STG_Family_affairs:0 "家里事"
  STG_Family_affairs_desc:0 ""
- STG_Irish_Independents:0 ""
- STG_Irish_Independents_desc:0 "爱尔兰独立分子"
+ STG_Irish_Independents:0 "爱尔兰独立分子"
+ STG_Irish_Independents_desc:0 ""
  STG_radish:0 "萝卜"
  STG_radish_desc:0 ""
  STG_Consultation_with_Dublin_elite:0 "与都柏林精英协商"
@@ -554,9 +557,6 @@
  STG_Claim_old_territory_desc:0 ""
  STG_Meet_new_friends:0 "认识新朋友"
  STG_Meet_new_friends_desc:0 ""
- 
-#idea
- STG_Establishment_cooperatives_idea:0 "合作社"
 #event
  event_StGloriana.1:0 "任命财务大臣"
  event_StGloriana.1.t:0 "任命财务大臣"
@@ -582,8 +582,252 @@
  event_StGloriana.b:0 "共产"
  event_StGloriana.c:0 "法西斯"
  event_StGloriana.e:0 "中立"
-#advisor
+ 
+ event_StGloriana.6:0 "国家安全法"
+ event_StGloriana.6.t:0 "国家安全法"
+ event_StGloriana.6.d:0 "国家安全法"
+ event_StGloriana.6.a:0 "民主 中立"
+ event_StGloriana.6.b:0 "法西斯 共产"
+ 
+ event_StGloriana.7:0 "慕尼黑惨案"
+ event_StGloriana.7.t:0 "慕尼黑惨案"
+ event_StGloriana.7.d:0 "慕尼黑惨案"
+ event_StGloriana.7.a:0 "好的"
+ STG_Munich_massacre_flag:0 "慕尼黑惨案发生了"
+ 
+ event_StGloriana.8:0 "冷静期"
+ event_StGloriana.8.t:0 "冷静期"
+ event_StGloriana.8.d:0 "冷静期"
+ event_StGloriana.8.a:0 "好的"
+ 
+ event_StGloriana.9:0 "调和双方"
+ event_StGloriana.9.t:0 "调和双方"
+ event_StGloriana.9.d:0 "调和双方"
+ event_StGloriana.9.a:0 "好的"
+ 
+ event_StGloriana.10:0 "黄白毫的谈话"
+ event_StGloriana.10.t:0 "黄白毫的谈话"
+ event_StGloriana.10.d:0 "黄白毫的谈话"
+ event_StGloriana.10.a:0 "好的"
+ 
+ event_StGloriana.11:0 "私人会谈"
+ event_StGloriana.11.t:0 "私人会谈"
+ event_StGloriana.11.d:0 "私人会谈"
+ event_StGloriana.11.a:0 "好的"
+ 
+ event_StGloriana.12:0 "薰衣草名单"
+ event_StGloriana.12.t:0 "薰衣草名单"
+ event_StGloriana.12.d:0 "薰衣草名单"
+ event_StGloriana.12.a:0 "好的"
+ 
+ event_StGloriana.13:0 "第二次电缆街之战"
+ event_StGloriana.13.t:0 "第二次电缆街之战"
+ event_StGloriana.13.d:0 "第二次电缆街之战"
+ event_StGloriana.13.a:0 "好的"
+ 
+ event_StGloriana.14:0 "巧妙的意外"
+ event_StGloriana.14.t:0 "巧妙的意外"
+ event_StGloriana.14.d:0 "巧妙的意外"
+ event_StGloriana.14.a:0 "好的"
+ event_StGloriana_14_tt:0 "减少 §O1点法西斯党席位§!\n减少 §O10点法西斯党力量值§!\n"
+ 
+ event_StGloriana.15:0 "岁月如梭"
+ event_StGloriana.15.t:0 "岁月如梭"
+ event_StGloriana.15.d:0 "岁月如梭"
+ event_StGloriana.15.a:0 "好的"
+ STG_Communist_Democratic_Party:0 "共民党"
+ STG_Communist_Democratic_Party_long:0 "共和民主党"
+ 
+ event_StGloriana.16:0 "伸出橄榄枝"
+ event_StGloriana.16.t:0 "伸出橄榄枝"
+ event_StGloriana.16.d:0 "伸出橄榄枝"
+ event_StGloriana.16.a:0 "好的"
+ 
+ event_StGloriana.17:0 "跨越海峡的信"
+ event_StGloriana.17.t:0 "跨越海峡的信"
+ event_StGloriana.17.d:0 "跨越海峡的信"
+ event_StGloriana.17.a:0 "好的"
+ 
+ event_StGloriana.18:0 "一次愉快的会面？"
+ event_StGloriana.18.t:0 "一次愉快的会面？"
+ event_StGloriana.18.d:0 "一次愉快的会面？"
+ event_StGloriana.18.a:0 "好的"
+ 
+ event_StGloriana.19:0 "会议的简单介绍"
+ event_StGloriana.19.t:0 "会议的简单介绍"
+ event_StGloriana.19.d:0 "会议的简单介绍"
+ event_StGloriana.19.a:0 "好的"
+ 
+ event_StGloriana.20:0 "BC能否重回战车道联盟"
+ event_StGloriana.20.t:0 "BC能否重回战车道联盟"
+ event_StGloriana.20.d:0 "BC能否重回战车道联盟"
+ event_StGloriana.20.a:0 "能"
+ event_StGloriana.20.b:0 "不能"
+ 
+ event_StGloriana.21:0 "英国对法国的经济援助"
+ event_StGloriana.21.t:0 "英国对法国的经济援助"
+ event_StGloriana.21.d:0 "英国对法国的经济援助"
+ event_StGloriana.21.a:0 "当然，我们将倾囊相助"
+ event_StGloriana.21.b:0 "我们能给的并不多"
+ event_StGloriana.21.c:0 "我们自身难保"
+ 
+ event_StGloriana.22:0 "对东方态度问题"
+ event_StGloriana.22.t:0 "对东方态度问题"
+ event_StGloriana.22.d:0 "对东方态度问题"
+ event_StGloriana.22.a:0 "我们应携起手来面对激进分子"
+ event_StGloriana.22.b:0 "他们是我们共同的敌人，但也仅此而已"
+ event_StGloriana.22.c:0 "不合作"
+ 
+ event_StGloriana.23:0 "关于战车道的问题"
+ event_StGloriana.23.t:0 "关于战车道的问题"
+ event_StGloriana.23.d:0 "关于战车道的问题"
+ event_StGloriana.23.a:0 "我们的战术各有独到之处，理当交流借鉴"
+ event_StGloriana.23.b:0 "我们的学说大体相似，没必要交流"
+ event_StGloriana.23.c:0 "很明显，我们的战术更加优秀"
+ 
+ event_StGloriana.24:0 "会谈进行的十分顺利"
+ event_StGloriana.24.t:0 "会谈进行的十分顺利"
+ event_StGloriana.24.d:0 "会谈进行的十分顺利"
+ event_StGloriana.24.a:0 "好的"
+ 
+ event_StGloriana.25:0 "会议进展平平"
+ event_StGloriana.25.t:0 "会议进展平平"
+ event_StGloriana.25.d:0 "会议进展平平"
+ event_StGloriana.25.a:0 "好的"
+ 
+ event_StGloriana.26:0 "会议进行的十分糟糕"
+ event_StGloriana.26.t:0 "会议进行的十分糟糕"
+ event_StGloriana.26.d:0 "会议进行的十分糟糕"
+ event_StGloriana.26.a:0 "好的"
+ 
+ event_StGloriana.27:0 "开设新学院？"
+ event_StGloriana.27.t:0 "开设新学院？"
+ event_StGloriana.27.d:0 "开设新学院？"
+ event_StGloriana.27.a:0 "好的"
+ 
+ event_StGloriana.28:0 "新的盟友"
+ event_StGloriana.28.t:0 "新的盟友"
+ event_StGloriana.28.d:0 "新的盟友"
+ event_StGloriana.28.a:0 "我们应紧密相连"
+ event_StGloriana.28.b:0 "维持现有关系再好不过"
+ event_StGloriana.28.c:0 "放慢节奏，不要激怒真理"
+ 
+ event_StGloriana.29:0 "圣葛罗莉安娜女子学院寻求地中海安全"
+ event_StGloriana.29.t:0 "圣葛罗莉安娜女子学院寻求地中海安全"
+ event_StGloriana.29.d:0 "圣葛罗莉安娜女子学院寻求地中海安全"
+ event_StGloriana.29.a:0 "好的"
+ 
+ event_StGloriana.30:0 "安齐奥的开价"
+ event_StGloriana.30.t:0 "安齐奥的开价"
+ event_StGloriana.30.d:0 "安齐奥的开价"
+ event_StGloriana.30.a:0 "答应"
+ event_StGloriana.30.b:0 "不答应"
+ 
+ event_StGloriana.31:0 "对大洗鲨鱼队的胜利"
+ event_StGloriana.31.t:0 "对大洗鲨鱼队的胜利"
+ event_StGloriana.31.d:0 "对大洗鲨鱼队的胜利"
+ event_StGloriana.31.a:0 "答应"
+ event_StGloriana.31.b:0 "不答应"
+ 
+ event_StGloriana.32:0 "新的盟友"
+ event_StGloriana.32.t:0 "新的盟友"
+ event_StGloriana.32.d:0 "新的盟友"
+ event_StGloriana.32.a:0 "我们共同控制地中海"
+ event_StGloriana.32.b:0 "维持现有关系再好不过"
+ event_StGloriana.32.c:0 "我们的利益相冲突"
+ 
+ event_StGloriana.33:0 "新的盟友"
+ event_StGloriana.33.t:0 "新的盟友"
+ event_StGloriana.33.d:0 "新的盟友"
+ event_StGloriana.33.a:0 "我们应携手面对新局面"
+ event_StGloriana.33.b:0 "维持现有关系再好不过"
+ event_StGloriana.33.c:0 "放慢节奏，不要激怒真理与黑森峰"
+ 
+ event_StGloriana.34:0 "往日荣光"
+ event_StGloriana.34.t:0 "往日荣光"
+ event_StGloriana.34.d:0 "往日荣光"
+ event_StGloriana.34.a:0 "好的"
+ 
+ event_StGloriana.35:0 "英国声索王位"
+ event_StGloriana.35.t:0 "英国声索王位"
+ event_StGloriana.35.d:0 "英国声索王位"
+ event_StGloriana.35.a:0 "好的"
+ 
+ event_StGloriana.36:0 "多佛协定"
+ event_StGloriana.36.t:0 "多佛协定"
+ event_StGloriana.36.d:0 "多佛协定"
+ event_StGloriana.36.a:0 "好的"
+ 
+ event_StGloriana.37:0 "对BC的胜利"
+ event_StGloriana.37.t:0 "对BC的胜利"
+ event_StGloriana.37.d:0 "对BC的胜利"
+ event_StGloriana.37.a:0 "执行条约"
+ 
+ #idea
+ STG_chaotic_Parliament_idea:0 "混乱的议会"
+ STG_Economic_chaos_idea:0 "经济乱象"
+ STG_Establishment_cooperatives_idea:0 "合作社"
+ STG_Government_directed_economy_idea:0 "政府指导的经济"
+ STG_bickering_Parliament_idea:0 "争吵的议会"
+ STG_rise_extremist_forces_idea:0 "极端势力崛起"
+ STG_Dealing_with_Communist_Party_idea:0 "处理共产党"
+ STG_Dealing_with_fascist_Party_idea:0 "处理法西斯党"
+ STG_economic_aid_idea:0 "对法国的经济援助"
+ STG_British_situation_idea:0 "不列颠现况"
+ STG_Head_princes_idea:0 "诸侯之首"
+ STG_Restore_glory_past_idea:0 "重现往日荣光"
+ STG_Government_directed_economy_idea:0 "重现往日荣光"
+ 
+#decisions
+ STG_House_of_Commons:0 "下议院"
+ STG_House_of_Commons_desc:0 "\n                                                                        政府席位\n\n                                                                               [?XW|Y0]\n\n                          民主党席位                                                               共产党席位\n                                   [?MZ|B0]                                                                                  [?GC|R0]\n                              恐慌值                                                               力量值      愤怒值\n                                   [?KHZ|B0]                                                                        [?GCLL|R0]               [?GCFN|R0]\n\n                        法西斯党席位                                                           中立党席位\n                                   [?FXS|O0]\n                    力量值      愤怒值                                                                   [?ZL|g0]\n                         [?FXSLL|O0]               [?FXSFN|O0]\n"
+ STG_House_of_Commons_a_tt:0 "需要 §Y200个政府席位§!\n"
+ STG_House_of_Commons_b_tt:0 "需要 §Y300个政府席位§!\n"
+ STG_House_of_Commons_c_tt:0 "需要 §Y350个政府席位§!\n"
+ STG_House_of_Commons_d_tt:0 "小于 §R100个共产党席位§!\n    小于 §R20点共产党力量值§!\n"
+ STG_House_of_Commons_e_tt:0 "小于 §R100个法西斯党席位§!\n    小于 §R20点法西斯党力量值§!\n"
+ STG_House_of_Commons_f_tt:0 "需要 §Y450个政府席位§!\n"
+ 
+ STG_power_democracy_tt:0 "民主党席位纳入 §Y100个政府席位§!"
+ 
+ STG_Draft_wartime_mobilization_law_y:0 "§G法案已通过§!"
+ STG_Draft_wartime_mobilization_law_n:0 "§R法案未通过§!"
+ STG_Draft_wartime_mobilization_law:0 "起草战时动员法"
+ 
+ STG_Cooling_off_period:0 "冷静期"
+ STG_Cooling_off_period_desc:0 "§R如果任务失败将会爆发内乱§!"
+ 
+ STG_Make_concessions:0 "做出让步"
+ STG_become_reconciled:0 "调和双方"
+ STG_Ease_contradictions:0 "缓和矛盾"
+ STG_Balanced_extremists:0 "平衡极端派"
+ STG_Balanced_extremists_tt:0 "减少 §O10个法西斯党席位§!\n减少 §R10个共产党席位§!\n"
+ STG_Communist_Uprising:0 "共产主义者暴动"
+ STG_Fascist_riots:0 "法西斯主义者暴动"
+ STG_Suppression_fascist_activities:0 "压制法西斯主义者活动"
+ STG_Suppression_fascist_activities_tt:0 "减少 §O5点法西斯党力量值§!\n增加 §O10点法西斯党愤怒值§!\n"
+ STG_Suppression_Communist_activities:0 "压制共产主义者活动"
+ STG_Suppression_Communist_activities_tt:0 "减少 §R5点共产党力量值§!\n增加 §R10点共产党愤怒值§!\n"
+ STG_GC_Special_means:0 "处理共产党的特殊手段"
+ STG_GC_Special_means_tt:0 "减少 §R10个共产党席位§!\n增加 §Y10个政府席位§!\n"
+ STG_GC_Harsh_means:0 "处理共产党的严酷手段"
+ STG_GC_Harsh_means_tt:0 "减少 §R10点共产党力量值§!\n增加 §R20点共产党愤怒值§!\n"
+ STG_Good_old_man_tt:0 "减少 §R10点共产党力量值§!\n"
+ STG_FXS_Special_means:0 "处理法西斯党的特殊手段"
+ STG_FXS_Special_means_tt:0 "减少 §O10个法西斯党席位§!\n增加 §Y10个政府席位§!\n"
+ STG_FXS_Harsh_means:0 "处理法西斯党的严酷手段"
+ STG_FXS_Harsh_means_tt:0 "减少 §O10点法西斯党力量值§!\n增加 §O20点法西斯党愤怒值§!\n"
+ 
+ STG_Building_an_English_College:0 "在法国修建英式战车道学院"
+ 
+ STG_JHS_Aid_materials_idea:0 "援助物资"
 
+#advisor
+ DIPLOMACY_MILACC:0 "军事通行权"
+ Anglo_French_Alliance:0 "伦敦条约"
+ STG_Building_an_English_College_flag:0 "英式战车道学院"
+ STG_Spread_rumors:0 "散布谣言"
+ Head_princes:0 "新十字军同盟"
 #province governor UI(每个国家都需要复制)
  PROVINCE_GOVERNOR_ADD_STEEL:0 "使用 §G80 ssdp§! 在当前省份采掘 §Y5 钢铁§! \n 获得为期§Y90§!日的 §Y发掘国土资源§! ，其效果为 (每日政治点数增长: §R-0.3§!, 消费品工厂: §Y5%§!)。"
  PROVINCE_GOVERNOR_ADD_ALUMINUM:0 "使用 §G80 ssdp§! 在当前省份采掘 §Y4 铝§! \n 获得为期§Y90§!日的 §Y发掘国土资源§! ，其效果为 (每日政治点数增长: §R-0.3§!, 消费品工厂: §Y5%§!)。"
@@ -591,4 +835,25 @@
  PROVINCE_GOVERNOR_ADD_CHROMIUM:0 "使用 §G80 ssdp§! 在当前省份采掘 §Y3 铬§! \n 获得为期§Y90§!日的 §Y发掘国土资源§! ，其效果为 (每日政治点数增长: §R-0.3§!, 消费品工厂: §Y5%§!)。"
  PROVINCE_GOVERNOR_SENSHADO:0 "在国内为战车道学院招生 \n§G获得点数为目前拥有的战车道学院的10倍§! \n 获得为期§R学院数量20倍§!天数的 §Y战车道学院招生期§! ，其效果为 (每日政治点数增长: §R-0.1§!)。"
  PROVINCE_GOVERNOR_ADD_MANPOWER:0 "使用§Gssdp§!在当前省份根据人口招募战车道志愿者 \n§R花费点数和获得人力与省份人口成正比§! \n 获得为期§Y120§!日的 §Y招募战车道志愿者§! ，其效果为 (每日政治点数增长: §R-0.3§!)。"
+ 
+ #World
+ Member_states_Alliance:0 "战车道联盟"
+ Member_states_Alliance_idea:0 "战车道联盟成员国"
+ 
+ #BCF
+ STG_BCF_Common_enemy_idea:0 "共同的敌人"
+ STG_BCF_Army_Tactical_experience_sharing_idea:0 "陆军战术经验分享" 
+ BCF_economic_aid_idea:0 "英国的经济援助"
+ STG_Arrogant_Englishman:0 "傲慢的英国人"
+ STG_Building_an_English_College_idea:0 "英式战车道学院"
+ 
+ #JHS
+ STG_Friendship_with_high_JHS:0 "与继续高中的友谊"
+ JHS_STG_Aid_materials_idea:0 "援助物资"
+ 
+ #BOH
+ STG_support_BON:0 "支持冯布诺"
+ 
+#ANZ
+ STG_ANZ_Y:0 "我们接受安齐奥的开价"
  
