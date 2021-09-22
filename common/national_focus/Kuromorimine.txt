@@ -418,7 +418,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		#内阁启用了赤星小梅
-		available = { custom_trigger_tooltip = { tooltip = kga_tooltip8 has_idea = KGA_koume } }
+		available = { custom_trigger_tooltip = { tooltip = kga_tooltip8 has_idea = koume } }
 		prerequisite = { focus = KGA_support_small_industries }
 		#mutually_exclusive = { focus =  }
 		bypass = { }
@@ -470,7 +470,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		#内阁启用了艾丽卡
-		available = { custom_trigger_tooltip = { tooltip = kga_tooltip9 has_idea = KGA_erika } }
+		available = { custom_trigger_tooltip = { tooltip = kga_tooltip9 has_idea = erika } }
 		prerequisite = { focus = KGA_monopolistic_competitiveness }
 		#mutually_exclusive = { focus =  }
 		bypass = { }
@@ -1952,7 +1952,7 @@ focus_tree = {
 				add_equipment_production = {
 					equipment = {
 						type = ship_hull_carrier_1
-						creator = "FRA" 
+						creator = "BCF" 
 						version_name = "De Grasse"
 					}
 					requested_factories = 1
@@ -2560,7 +2560,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			ANZ = { country_event = kuromorimine.42 days = 0 }
+			ANZ = { country_event = kuromorimine.42 }
 		}
 		#AI行动之后具体设计，复制粘贴以下部分即可
 		ai_will_do = {

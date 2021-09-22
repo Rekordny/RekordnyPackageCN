@@ -49,11 +49,11 @@ focus = {
 	continue_if_invalid = yes
 	available_if_capitulated = no
 	completion_reward = {
-	  add_stbility = 0.05
+	  add_stability = 0.05
 	  add_political_power = 100
 	  add_popularity = {
 	    ideology = neutrality
-		polularity = 0.1
+		popularity = 0.1
 	  }
 	}
 	ai_will_do = {
@@ -79,7 +79,7 @@ focus = {
 	continue_if_invalid = yes
 	available_if_capitulated = no
 	completion_reward = {
-	    add_ideas = {BCF_national_intervention}
+	    add_ideas = BCF_national_intervention 
 	}
 	ai_will_do = {
 		factor = 1
@@ -104,7 +104,7 @@ focus = {
 	continue_if_invalid = yes
 	available_if_capitulated = no
 	completion_reward = {
-	    add_ideas = {BCF_national_intervention}
+	    add_ideas = BCF_national_intervention
 	}
 	ai_will_do = {
 		factor = 1
@@ -129,12 +129,13 @@ focus = {
 	continue_if_invalid = yes
 	available_if_capitulated = no
 	completion_reward = {
-	  add_stbility = -0.05
+	  add_stability = -0.05
 	  add_political_power = 50
 	  add_popularity = {
 	    ideology = communism
 		ideology = facism
-		pupularity = 0.05
+		popularity = 0.05
+	  }
 	  retire_country_leader = yes
 	  create_country_leader = {
 				name = "Rena Andou"
@@ -149,13 +150,13 @@ focus = {
 	ai_will_do = {
 		factor = 1
 			modifier = {
-			 }
-		}
+			}
+	}
 }
 	
 #第一个五年计划
 focus = {
-    id = BCF_fist_five_year_plan
+    id = BCF_first_five_year_plan
 	icon = GFX_focus_BCF_first_five_year_plan
 	relative_position_id = BCF_will_of_the_people
 	x = 0
@@ -219,7 +220,7 @@ focus = {
 	x = 2
 	y = 2
 	available = {}
-	prerequisite = {BCF_first_five_year_plan}
+	prerequisite = { focus = BCF_first_five_year_plan }
 	mutually_exclusive = {}
 	cost = 10
 	cancel_if_invalid = no
@@ -282,18 +283,19 @@ focus = {
 	continue_if_invalid = yes
 	available_if_capitulated = no
 	completion_reward = {
-	  add_stbility = -0.05
+	  add_stability = -0.05
 	  add_political_power = 50
       add_popularity = {
 	    ideology = democracy
-		polularity = 0.1
+		popularity = 0.1
+	  }
 	  retire_country_leader = yes
 	  create_country_leader = {
 		name = "Ruka Oshida"
 		desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
 		picture = GFX_portrait_fra_leon_blum
 		expire = "2021.1.1"
-		ideology = democracy
+		ideology = democrecy
 		traits = {
 				}
 	  }
@@ -1396,15 +1398,3 @@ focus = {
 			 }
 		}
 }
-}
-	
-
-	
-
-	
-	
-	
-	
-	
-	
-	

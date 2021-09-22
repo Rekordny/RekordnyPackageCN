@@ -18,6 +18,7 @@ ideas = {
 				max_command_power = 20
                 army_core_attack_factor = 0.1
                 army_core_defence_factor = 0.1
+				army_fuel_consumption_factor = -0.1
 			}
 		}
 
@@ -26,10 +27,8 @@ ideas = {
 			allowed_civil_war = { always = no }
 			modifier = {
 				max_command_power = 20
-                army_core_attack_factor = 0.2
-                army_core_defence_factor = 0.2
-                experience_gain_army = 0.05
-				army_fuel_capacity_factor = 0.1
+                army_core_attack_factor = 0.1
+                army_core_defence_factor = 0.1
 			}
 		}
 
@@ -112,7 +111,7 @@ ideas = {
 			modifier = {
 				stability_factor = 0.1
 				conscription_factor = 0.2
-				add_war_support = 0.1
+				war_support_factor = 0.1
 			}
 		}
 
@@ -190,7 +189,7 @@ ideas = {
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = no }
 			modifier = {
-				party_popularity_stability_factor = -0.1
+				stability_weekly_factor = -0.02
 			}
 		}
 
@@ -211,8 +210,6 @@ ideas = {
 			modifier = {
 				naval_torpedo_screen_penetration_factor= 0.2
 				navy_submarine_attack_factor = 0.1
-				navy_visibility = 0.05
-				positioning = 0.1
 			}
 		}
 
@@ -221,7 +218,6 @@ ideas = {
 				tag = KGA
 			}
 			modifier = {
-				sub_retreat_speed = 0.2
 				naval_retreat_chance = 0.2
 				navy_submarine_attack_factor = 0.05
 				ships_at_battle_start = -0.1
@@ -253,7 +249,6 @@ ideas = {
 				screening_efficiency = 0.2
 				naval_retreat_speed = 0.15
 				naval_mines_effect_reduction = 0.1
-				naval_invasion_penalty = 0.1
 			}
 		}
 
@@ -265,7 +260,6 @@ ideas = {
 				navy_carrier_air_agility_factor = 0.15
 				navy_carrier_air_attack_factor = 0.15
 				air_range_factor = 0.1
-				navy_visibility = 0.2
 				navy_carrier_air_targetting_factor = 0.1
 				carrier_capacity_penalty_reduction = -0.1
 			}
@@ -325,9 +319,6 @@ ideas = {
 			modifier = {
 				min_export = -0.2
 				tax_daily_modifier = -0.2
-				58 = {
-					country_resource_oil = 10
-				}
 			}
 		}
 
@@ -355,30 +346,79 @@ ideas = {
 			}
 		}
 
+		#黑森峰劳工阵线：战车道化工业
+		KGA_senshado_focus_production = {
+			allowed = {
+				tag = KGA
+			}
+			modifier = {
+				tank_manufacturer_cost_factor = -0.1
+				production_factory_efficiency_gain_factor = 0.2
+			}
+		}
+
+		#黑森峰劳工阵线：稳定的经济发展方案
+		KGA_steady_economic_plan = {
+			allowed = {
+				tag = KGA
+			}
+			modifier = {
+				tax_daily_modifier = 0.05
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+
+		#黑森峰劳工阵线：资源贸易重心
+		KGA_resources_trade_focus = {
+			allowed = {
+				tag = KGA
+			}
+			modifier = {
+				local_resources_factor = 0.1
+				trade_opinion_factor = 0.05
+			}
+		}
+
+
 
 
     }
 
 	student_union_member = {
-		KGA_maho = {
+		maho = {
 			picture = GFX_idea_KGA_maho
 			allowed = { original_tag = KGA }
 			traits = { hidden_tenderness }
 		}
-		KGA_erika = {
+		erika = {
 			picture = GFX_idea_KGA_erika
-			allowed = { original_tag = KGA }
+			allowed = { original_tag = KGA NOT = { has_country_flag = KGA_UPGRADE_ADVISOR_ERIKA } }
 			traits = { top_ruling_bottom }
 		}
-		KGA_koume = {
+		erika_0 = {
+			picture = GFX_idea_KGA_erika
+			allowed = { original_tag = KGA has_country_flag = KGA_UPGRADE_ADVISOR_ERIKA }
+			traits = { top_ruling_bottom_0 }
+		}
+		koume = {
 			picture = GFX_idea_KGA_koume
-			allowed = { original_tag = KGA }
+			allowed = { original_tag = KGA NOT = { has_country_flag = KGA_UPGRADE_ADVISOR_KOUME } }
 			traits = { the_most_kind }
 		}
-		KGA_ritaiko = {
+		koume_0 = {
+			picture = GFX_idea_KGA_koume
+			allowed = { original_tag = KGA has_country_flag = KGA_UPGRADE_ADVISOR_KOUME }
+			traits = { the_most_kind_0 }
+		}
+		ritaiko = {
 			picture = GFX_idea_KGA_ritaiko
 			allowed = { original_tag = KGA }
 			traits = { girls_have_heavy_track }
+		}
+		emi = {
+			picture = GFX_idea_KGA_emi
+			allowed = { original_tag = KGA OR = { has_government = communism has_country_flag = KGA_EMI_JOINED_ADVISOR } }
+			traits = { savior_of_the_bell_wall }
 		}
 	}
 }

@@ -1,9 +1,20 @@
 ﻿l_english:
-#country_leader
+
+#country leader
+ maho:0 "西住真穗"
+ erika:0 "逸见艾丽卡"
+ koume:0 "赤星小梅"
+ ritaiko:0 "小岛绘美"
+ emi:0 "中须贺艾米"
+
+#country leader trait
  hidden_tenderness:0 "深藏不露的温柔"
  top_ruling_bottom:0 "唯上知与下愚不移"
+ top_ruling_bottom_0:0 "唯上知与下愚不移"
  the_most_kind:0 "最温柔的智者"
+ the_most_kind_0:0 "最温柔的智者"
  girls_have_heavy_track:0 "少女的履带很沉重"
-
+ savior_of_the_bell_wall:0 "钟壁的救星"
+  
 #unit_leader
  

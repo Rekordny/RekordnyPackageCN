@@ -14,9 +14,9 @@ focus_tree = {
 
 	#第九个五年计划
 	focus = {
-		id = PRA_AAA
+		id = PRA_AAB
 		icon = GFX_goal_generic_intelligence_exchange
-		x = 5
+		x = 2
 		y = 0
 
 		cost = 2
@@ -38,16 +38,17 @@ focus_tree = {
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {		
+		completion_reward = {
+            country_event = { id = PRA.001 }		
 		}
 	}
 	
 	#重启柯西金改革
 	focus = {
-		id = PRA_AAB
+		id = PRA_AAC
 		icon = GFX_focus_pra_a_a_b
-		prerequisite = { focus = PRA_AAA }
-		x = 5
+		prerequisite = { focus = PRA_AAB }
+		x = 2
 		y = 1
 
 		cost = 4
@@ -74,12 +75,110 @@ focus_tree = {
 			add_ideas = PRA_KXJGG_1
 		}
 	}
-	
-	#以民为本
+	#推广农业机械
 	focus = {
-		id = PRA_AAC
+		id = PRA_AAD
 		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = PRA_AAB }
+		prerequisite = { focus = PRA_AAC }
+		x = 0
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = PRA_KXJGGC_1
+		}
+	}
+	
+	#提高农产品收购价
+	focus = {
+		id = PRA_AAE
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PRA_AAD }
+		x = 0
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		    remove_ideas = PRA_KXJGGC_1
+			add_ideas = PRA_KXJGGC_2
+		}
+	}
+	
+	
+	#鼓励农副产品生产
+	focus = {
+		id = PRA_AAF
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PRA_AAE }
+		x = 0
+		y = 4
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			remove_ideas = PRA_KXJGGC_2
+			add_ideas = PRA_KXJGGC_3
+		}
+	}
+	
+	#居者有其屋
+	focus = {
+		id = PRA_ABA
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PRA_AAC }
 		x = 2
 		y = 2
 
@@ -103,136 +202,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
-		}
-	}
-	
-	#推广农业机械
-	focus = {
-		id = PRA_AAD
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = PRA_AAC }
-		x = 0
-		y = 3
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			
-		}
-	}
-	
-	#提高农产品收购价
-	focus = {
-		id = PRA_AAE
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = PRA_AAD }
-		x = 0
-		y = 4
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			
-		}
-	}
-	
-	
-	#鼓励农副产品生产
-	focus = {
-		id = PRA_AAF
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = PRA_AAE }
-		x = 0
-		y = 5
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			
-		}
-	}
-	
-	#居者有其屋
-	focus = {
-		id = PRA_ABA
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = PRA_AAB }
-		x = 2
-		y = 3
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			
+			add_ideas = PRA_KXJGGB_1
 		}
 	}
 	
@@ -242,7 +212,7 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = PRA_ABA }
 		x = 2
-		y = 4
+		y = 3
 
 		cost = 5
 
@@ -264,7 +234,113 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			remove_ideas = PRA_KXJGGB_1
+			add_ideas = PRA_KXJGGB_2
+			if = {
+				limit = {
+					195 = {
+						owner = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				195 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					219 = {
+						owner = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				219 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					246 = {
+						owner = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				246 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					263 = {
+						owner = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				263 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					244 = {
+						owner = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				244 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 	
@@ -276,6 +352,42 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = PRA_ABB }
 		x = 2
+		y = 4
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			remove_ideas = PRA_KXJGGB_2
+			add_ideas = PRA_KXJGGB_3
+		}
+	}
+	
+	
+	
+	#投建面粉厂
+	focus = {
+		id = PRA_ABD
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PRA_ABC }
+		prerequisite = { focus = PRA_AAF }
+		x = 1
 		y = 5
 
 		cost = 5
@@ -298,18 +410,48 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				prioritize = { 192 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}random_owned_controlled_state = {
+				prioritize = { 197 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}random_owned_controlled_state = {
+				prioritize = { 226 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
-	
-	
-	#投建面粉厂
+	#“波舍霍尼耶牌”
 	focus = {
-		id = PRA_ABD
+		id = PRA_ABE
 		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = PRA_ABC }
-		prerequisite = { focus = PRA_AAF }
+		prerequisite = { focus = PRA_ABD }
 		x = 1
 		y = 6
 
@@ -333,16 +475,141 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			remove_ideas = PRA_KXJGGC_3
+			remove_ideas = PRA_KXJGGB_3
+			add_ideas = PRA_KXJGGD_1
+			random_owned_controlled_state = {
+				prioritize = { 237 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 236 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
-	#“波舍霍尼耶牌”
+	#扩大企业自主权
 	focus = {
-		id = PRA_ABE
+		id = PRA_ACA
 		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = PRA_ABD }
-		x = 1
+		prerequisite = { focus = PRA_AAC }
+		x = 4
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = PRA_KXJGGA_1
+		}
+	}
+	
+	#改革工资制度
+	focus = {
+		id = PRA_ACB
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PRA_ACA }
+		x = 4
+		y = 3
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			remove_ideas = PRA_KXJGGA_1
+			add_ideas = PRA_KXJGGA_2
+		}
+	}
+	
+	#调整配给制
+	focus = {
+		id = PRA_ACC
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PRA_ACB }
+		x = 4
+		y = 4
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			remove_ideas = PRA_KXJGGA_2
+			add_ideas = PRA_KXJGGA_3
+		}
+	}
+	
+	#更均衡的工业体系
+	focus = {
+		id = PRA_ACD
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PRA_ACC }
+		prerequisite = { focus = PRA_ABE }
+		x = 3
 		y = 7
 
 		cost = 5
@@ -365,136 +632,9 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
-		}
-	}
-	
-	#扩大企业自主权
-	focus = {
-		id = PRA_ACA
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = PRA_AAC }
-		x = 4
-		y = 3
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			
-		}
-	}
-	
-	#改革工资制度
-	focus = {
-		id = PRA_ACB
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = PRA_ACA }
-		x = 4
-		y = 4
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			
-		}
-	}
-	
-	#调整配给制
-	focus = {
-		id = PRA_ACC
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = PRA_ACB }
-		x = 4
-		y = 5
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			
-		}
-	}
-	
-	#更均衡的工业体系
-	focus = {
-		id = PRA_ACD
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = PRA_ACC }
-		prerequisite = { focus = PRA_ABE }
-		x = 3
-		y = 8
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			
+			remove_ideas = PRA_KXJGGA_3
+			remove_ideas = PRA_KXJGGD_1
+			add_ideas = PRA_KXJGG_2
 		}
 	}
 	
@@ -504,6 +644,42 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = PRA_AAB }
 		x = 7
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	
+	#东欧铁矿区增产
+	focus = {
+		id = PRA_ADB
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PRA_ADA }
+		x = 6
 		y = 2
 
 		cost = 10
@@ -526,39 +702,18 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
-		}
-	}
-	
-	#东欧铁矿区增产
-	focus = {
-		id = PRA_ADB
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = PRA_ADA }
-		x = 6
-		y = 3
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			
+			220 = {
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+			}
+			226 = {
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+			}
 		}
 	}
 	
@@ -568,7 +723,7 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = PRA_ADB }
 		x = 6
-		y = 4
+		y = 3
 
 		cost = 10
 
@@ -600,7 +755,7 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = PRA_ADC }
 		x = 6
-		y = 5
+		y = 4
 
 		cost = 10
 
@@ -632,7 +787,7 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = PRA_ADA }
 		x = 8
-		y = 3
+		y = 2
 
 		cost = 10
 
@@ -664,7 +819,7 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = PRA_AEA }
 		x = 8
-		y = 4
+		y = 3
 
 		cost = 10
 
@@ -697,7 +852,7 @@ focus_tree = {
 		prerequisite = { focus = PRA_AEB }
 		mutually_exclusive = { focus = PRA_AFA }
 		x = 8
-		y = 5
+		y = 4
 
 		cost = 10
 
@@ -729,6 +884,39 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = PRA_ACD }
 		x = 3
+		y = 8
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		    remove_ideas = PRA_KXJGG_2
+			add_ideas = PRA_KXJGG_3
+		}
+	}
+	
+	#第十个五年计划
+	focus = {
+		id = PRA_AFE
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = PRA_AFD }
+		x = 3
 		y = 9
 
 		cost = 10
@@ -751,39 +939,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
-		}
-	}
-	
-	#第十个五年计划
-	focus = {
-		id = PRA_AFE
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = PRA_AFD }
-		x = 3
-		y = 10
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			
+			country_event = { id = PRA.002 }
 		}
 	}
 
@@ -794,7 +950,7 @@ focus_tree = {
 		x = 21
 		y = 0
 
-		cost = 10
+		cost = 2
 
 		ai_will_do = {
 			factor = 4
@@ -814,7 +970,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			PRA = { country_event = { id = pra.1 } }
 		}
 	}
 
@@ -880,7 +1036,8 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			add_ideas = PRA_JQZJ
+			stability_factor = -0.15
 		}
 	}
 
@@ -912,7 +1069,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			political_power_factor = -50	
 		}
 	}
 
@@ -944,7 +1101,8 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			add_ideas = PRA_KDKGBQL
+			remove_ideas = PRA_DDDBJXS_1
 		}
 	}
 
@@ -976,7 +1134,8 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			stability_factor = 0.1
+			add_ideas = PRA_QXGDZF
 		}
 	}
 
@@ -1008,7 +1167,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			add_ideas = PRA_JQDLM
 		}
 	}
 
@@ -1073,7 +1232,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			remove_ideas = PRA_DDDBJXS_1
 		}
 	}
 
@@ -1171,7 +1330,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			stability_factor = 0.05
 		}
 	}
 
@@ -1203,7 +1362,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			add_ideas = PRA_JCJL
 		}
 	}
 
@@ -1235,7 +1394,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			add_ideas = PRA_JZFQ
 		}
 	}
 
@@ -1267,7 +1426,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			add_ideas = PRA_GLZBZY
 		}
 	}
 
@@ -1299,7 +1458,8 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			add_ideas = PRA_ZYJCWYH
+			remove_ideas = PRA_GLZBZY
 		}
 	}
 
@@ -1332,7 +1492,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			 remove_ideas = PRA_DDDBJXS_1
 		}
 	}
 
@@ -1430,7 +1590,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			add_ideas = PRA_JYZZQ
 		}
 	}
 
@@ -3070,7 +3230,8 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+		    max_command_power = 20
+			experience_gain_army = 10
 		}
 	}
 
@@ -3083,7 +3244,7 @@ focus_tree = {
 		x = 33
 		y = 1
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -3103,7 +3264,11 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 1.00
+				uses = 1
+				category = electronics
+			}
 		}
 	}
 
@@ -3136,7 +3301,11 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 1.00
+				uses = 1
+				category = infantry_weapons
+			}
 		}
 	}
 
@@ -3302,7 +3471,11 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = cv_tech
+			}
 		}
 	}
 
@@ -3335,7 +3508,9 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			bonus = 1.0
+			uses = 2
+			category = cat_base_strike
 		}
 	}
 
@@ -3369,7 +3544,11 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = ss_tech
+			}
 		}
 	}
 
@@ -3402,7 +3581,9 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			bonus = 1.0
+			uses = 2
+			category = trade_interdiction_tree
 		}
 	}
 

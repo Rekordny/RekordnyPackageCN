@@ -1,8 +1,8 @@
-version="1.0.0"
+version="0.9.0"
 picture="thumbnail.png"
 tags={
 	"Utilities"
 }
-name="Rekordny's Package CN"
-supported_version="1.10.7"
+name="Girls Und Panzer: RP"
+supported_version="1.10.8"
 remote_file_id="2355290879"

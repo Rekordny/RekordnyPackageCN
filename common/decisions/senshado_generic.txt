@@ -5,6 +5,7 @@ senshado_decisions = {
 		}
 		days_re_enable = 1
 		complete_effect = {
+			army_experience = 100
 			add_ssdp_300 = yes
 		}
 	}

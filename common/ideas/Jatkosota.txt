@@ -1,6 +1,7 @@
 ideas = {
+
 	country = {
-		nationalism_fever = {
+		JHS_Nationalism_Fever = {
 
 			allowed = {
 				always = no
@@ -17,7 +18,7 @@ ideas = {
 			}
 		}
 
-		political_instability = {
+		JHS_Political_Instability = {
 
 			allowed = {
 				always = no
@@ -36,7 +37,7 @@ ideas = {
 			}
 		}
 
-		paris_treaty = { #cannot change recruit law
+		JHS_Paris_Treaty = { #cannot change recruit law
 
 			allowed = {
 				always = no
@@ -48,21 +49,19 @@ ideas = {
 
 			removal_cost = -1
 
-			modifier = {
-				set_rule = {
-					can_join_factions = no
-				}
+			rule = {
+				can_join_factions = no
 			}
 		}
 
-		weak_military_factory = {
+		JHS_Weak_Military_Factory = {
 
 			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				always = no
+				always = yes
 			}
 
 			removal_cost = -1
@@ -73,14 +72,14 @@ ideas = {
 			}
 		}
 
-		manpower_shortage = {
+		JHS_Manpower_Shortage = {
 
 			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				always = no
+				always = yes
 			}
 
 			removal_cost = -1
@@ -90,7 +89,7 @@ ideas = {
 			}
 		}
 
-		supress_from_PRA = {
+		JHS_Supress_From_PRA = {
 			allowed = {
 				always = no
 			}
@@ -106,5 +105,171 @@ ideas = {
 			}
 		}
 
+		JHS_Adjust_Budget = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {#golden_gain -25%
+				political_power_factor = -0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		JHS_Investing = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {#golden_gain -50%
+				consumer_goods_factor = 0.1
+			}
+		}
+
+	}
+
+	political_advisor = {
+
+	}
+
+	tank_manufacturer = {
+		designer = yes
+
+		KMDB = {
+			allowed = {
+				original_tag = JHS
+			} 
+
+			available = {
+				has_completed_focus = JHS_KMDB
+			}	
+
+			cost = 100
+
+			research_bonus = {
+				armor = 0.15
+			}
+
+			traits = {
+			}
+
+       		equipment_bonus = {
+            	armor = {
+                	maximum_speed = 0.05
+                	reliability = 0.1
+                	breakthrough = 0.1
+            	}
+        	}
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		SAKO_Oy = {
+			allowed = {
+				original_tag = JHS
+			}
+
+			available = {
+				has_completed_focus = JHS_SAKO_Oy
+			}
+
+			cost = 100
+
+			research_bonus = {
+				armor = 0.15
+			}
+
+			traits = {
+			}
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.1
+					reliability = -0.05
+					maximum_speed = 0.1
+				}
+			}
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		NYSE_GD = {
+			allowed = {
+				original_tag = JHS
+			}
+
+			available = {
+				has_completed_focus = JHS_NYSE_GD
+			}
+
+			cost = 100
+
+			research_bonus = {
+				armor = 0.15
+			}
+
+			traits = {
+			}
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = 0.15
+					ap_attack = 0.1
+					hard_attack = 0.1
+				}
+			}
+		}
+	}
+
+	naval_manufacturer = {
+
+	}
+
+	aircraft_manufacturer = {
+
+	}
+
+	industrial_concern = {
+
+	}
+
+	materiel_manufacturer = {
+
+	}
+
+	theorist = {
+
+	}
+
+	army_chief = {
+
+	}
+
+	air_chief = {
+
+	}
+
+	navy_chief = {
+
+	}
+
+	high_command = {
+		
 	}
 }
