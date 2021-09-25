@@ -1,7 +1,7 @@
 ideas = {
 
 	country = {
-		JHS_Nationalism_Fever = {
+		JHS_Nationalism_Fever = {#民族主义热忱
 
 			allowed = {
 				always = no
@@ -18,8 +18,7 @@ ideas = {
 			}
 		}
 
-		JHS_Political_Instability = {
-
+		JHS_Political_Instability_0 = {#政局不稳
 			allowed = {
 				always = no
 			}
@@ -31,9 +30,98 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				stability_factor = -0.4
-				war_support_factor = -0.2
 				political_power_factor = -0.2
+				stability_factor = -0.4
+				war_support_factor = -0.4
+			}
+		}
+
+		JHS_Political_Consultation = {#政治协商
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = -0.2
+				war_support_factor = -0.3
+			}
+		}
+
+		JHS_Provisional_Consitution = {#临时宪法
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.1
+				war_support_factor = -0.2
+			}
+		}
+
+		JHS_Military_Intervention = {#军事戒严
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = -0.3
+				war_support_factor = -0.2
+			}
+		}
+
+		JHS_Regent_Conference = {#军队摄政
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.2
+				war_support_factor = -0.1
+			}
+		}
+
+		JHS_End_of_Chaos = {#斗争的尾声
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
 			}
 		}
 
@@ -54,8 +142,7 @@ ideas = {
 			}
 		}
 
-		JHS_Weak_Military_Factory = {
-
+		JHS_Weak_Military_Factory_0 = {
 			allowed = {
 				always = no
 			}
@@ -72,7 +159,115 @@ ideas = {
 			}
 		}
 
-		JHS_Manpower_Shortage = {
+		JHS_Weak_Military_Factory_1 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory	= -0.2
+				equipment_conversion_speed = -0.3
+			}
+		}
+
+		JHS_Weak_Military_Factory_2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory	= -0.1
+				equipment_conversion_speed = -0.2
+			}
+		}
+
+		JHS_Weak_Military_Factory_3 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory	= 0.05
+				equipment_conversion_speed = -0.05
+			}
+		}
+
+		JHS_Weak_Military_Factory_4 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory	= 0.15
+			}
+		}
+
+		JHS_Weak_Military_Factory_5 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory	= 0.25
+				equipment_conversion_speed = 0.25
+			}
+		}
+
+		JHS_Weak_Military_Factory_6 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory	= 0.25
+				equipment_conversion_speed = 0.25
+			}
+		}
+
+		JHS_Manpower_Shortage_0 = {
 
 			allowed = {
 				always = no
@@ -85,7 +280,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				recruitable_population_factor = -0.1
+				conscription_factor = -0.1
 			}
 		}
 
@@ -138,6 +333,154 @@ ideas = {
 			}
 		}
 
+		JHS_Tank_Research_0 = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			research_bonus = {
+				armor = 0.05
+			}
+
+			modifier = {
+				armor = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		JHS_Tank_Research_1 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			research_bonus = {
+				armor = 0.1
+			}
+			modifier = {
+				armor = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+
+		JHS_Tank_Research_2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			research_bonus = {
+				armor = 0.05
+			}
+			modifier = {
+				license_armor_purchase_cost = -0.5
+				armor = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		JHS_Tank_Research_3 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			research_bonus = {
+				armor = 0.1
+			}
+			modifier = {
+				armor = {
+					build_cost_ic = -0.15
+					maximum_speed = 0.05
+					hard_attack = 0.1
+					ap_attack = 0.1
+				}
+			}			
+		}
+
+		JHS_Tank_Research_4 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			research_bonus = {
+				armor = 0.05
+			}
+			modifier = {
+				license_armor_purchase_cost = -0.5
+				license_light_tank_eq_production_speed_factor = 0.25
+				license_medium_tank_eq_production_speed_factor = 0.25
+				license_heavy_tank_eq_production_speed_factor = 0.25
+			}
+		}
+
+		JHS_Modern_Chasseur = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				skill_bonus_factor = 0.5
+				army_leader_cost_factor = -0.5
+				army_leader_start_attack_level = 1
+				army_leader_start_defense_level = 1
+				army_leader_start_logistics_level = 1
+				army_leader_start_planning_level = 1
+			}
+		}
+
+		JHS_Emergency_Act = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.2
+				stability_weekly = -0.01
+			}
+		}
 	}
 
 	political_advisor = {
@@ -230,8 +573,8 @@ ideas = {
 			equipment_bonus = {
 				armor = {
 					build_cost_ic = 0.15
-					ap_attack = 0.1
-					hard_attack = 0.1
+					ap_attack = 0.15
+					hard_attack = 0.15
 				}
 			}
 		}

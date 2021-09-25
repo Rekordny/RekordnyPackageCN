@@ -1,0 +1,67 @@
+JHS_Industry_Strength = {
+    if = {
+        limit = { has_idea = JHS_Weak_Military_Factory_0 }
+        swap_ideas = {
+            remove_idea = JHS_Weak_Military_Factory_0
+            add_idea = JHS_Weak_Military_Factory_1
+        }
+    }
+
+    if = {
+        limit = { has_idea = JHS_Weak_Military_Factory_1 }
+        swap_ideas = {
+            remove_idea = JHS_Weak_Military_Factory_1
+            add_idea = JHS_Weak_Military_Factory_2
+        }
+    }
+
+    if = {
+        limit = { has_idea = JHS_Weak_Military_Factory_2 }
+        swap_ideas = {
+            remove_idea = JHS_Weak_Military_Factory_2
+            add_idea = JHS_Weak_Military_Factory_3
+        }
+    }
+
+    if = {
+        limit = { has_idea = JHS_Weak_Military_Factory_3 }
+        swap_ideas = {
+            remove_idea = JHS_Weak_Military_Factory_3
+            add_idea = JHS_Weak_Military_Factory_4
+        }
+    }
+
+    if = {
+        limit = { has_idea = JHS_Weak_Military_Factory_4 }
+        swap_ideas = {
+            remove_idea = JHS_Weak_Military_Factory_4
+            add_idea = JHS_Weak_Military_Factory_5
+        }
+    }
+
+    if = {
+        limit = { has_idea = JHS_Weak_Military_Factory_5 }
+        swap_ideas = {
+            remove_idea = JHS_Weak_Military_Factory_5
+            add_idea = JHS_Weak_Military_Factory_6
+        }
+    }
+}
+
+JHS_Stabilize_the_Situation = {
+    if = {
+        limit = { has_idea = JHS_Regent_Conference }
+        swap_ideas = {
+            remove_idea = JHS_Regent_Conference
+            add_idea = JHS_End_of_Chaos
+        }
+    }
+
+    if = {
+        limit = { has_idea = JHS_Provisional_Consitution }
+        swap_ideas = {
+            remove_idea = JHS_Provisional_Consitution
+            add_idea = JHS_End_of_Chaos
+        }
+    }
+}

@@ -15,9 +15,9 @@ bookmarks = {
 				KGA_huge_debt
 			}
 			focuses = {
-				FRA_strengthen_government_support
-				FRA_arms_purchases_in_the_us
-				FRA_french_union
+				KGA_government_capital_intergration
+				KGA_deal_with_BC
+				KGA_atonement
 			}
 		}
 

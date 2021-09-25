@@ -57,3 +57,13 @@ opinion_modifiers = {
 		value = +20 
 	}
 }
+
+opinion_modifiers = {
+    JHS_BFF = {
+		value = 50
+	}
+
+	JHS_Traitor = {
+		value = -50
+	}
+}

@@ -106,8 +106,9 @@ technologies = {
 	}
 	tech_scope_2 = {
 		scope_brigade  = {
-			recon = 2
+			recon = 1
 			initiative = 0.02
+			reliability = 0.03
 		}
 		path = {
 			leads_to_tech = tech_scope_3
@@ -146,8 +147,9 @@ technologies = {
 	}
 	tech_scope_3 = {
 		scope_brigade  = {
-			recon = 2
+			recon = 1
 			initiative = 0.02
+			reliability = 0.03
 		}
 		
 		path = {
@@ -187,11 +189,12 @@ technologies = {
 	}
 	tech_scope_4 = {
 		scope_brigade  = {
-			recon = 2
+			recon = 1
 			initiative = 0.02
+			reliability = 0.03
 		}
-		path = {
-		}
+		# path = {
+		# }
 		research_cost = 2
 		start_year = 1981
 		folder = {
@@ -266,6 +269,7 @@ technologies = {
 	tech_firstaid_2 = {
 		firstaid_brigade  = {
 			experience_loss_factor = -0.05
+			casualty_trickleback = 0.03
 		}
 		path = {
 			leads_to_tech = tech_firstaid_3
@@ -305,6 +309,7 @@ technologies = {
 	tech_firstaid_3 = {
 		firstaid_brigade  = {
 			experience_loss_factor = -0.05
+			casualty_trickleback = 0.03
 		}
 		path = {
 			leads_to_tech = tech_firstaid_4
@@ -344,9 +349,10 @@ technologies = {
 	tech_firstaid_4 = {
 		firstaid_brigade  = {
 			experience_loss_factor = -0.05
+			casualty_trickleback = 0.03
 		}
-		path = {
-		}
+		# path = {
+		# }
 		research_cost = 2
 		start_year = 1981
 		folder = {
@@ -429,6 +435,7 @@ technologies = {
 				attack = 0.05
 				defence = 0.05
 			}
+			reliability = 0.05
 		}
 		path = {
 			leads_to_tech = tech_amphibious_3
@@ -476,6 +483,7 @@ technologies = {
 				attack = 0.05
 				defence = 0.05
 			}
+			reliability = 0.05
 		}
 		path = {
 			leads_to_tech = tech_amphibious_4
@@ -523,9 +531,10 @@ technologies = {
 				attack = 0.05
 				defence = 0.05
 			}
+			reliability = 0.05
 		}
-		path = {
-		}
+		# path = {
+		# }
 		research_cost = 2
 		start_year = 1981
 		folder = {
@@ -559,6 +568,9 @@ technologies = {
 	}
 	
 	tech_repairkit_1 = {
+		category_all_armor = {
+			reliability_factor = 0.03
+		}
 		enable_subunits = { repairkit_brigade  }
 
 		path = {
@@ -597,6 +609,9 @@ technologies = {
 		}
 	}
 	tech_repairkit_2 = {
+		category_all_armor = {
+			reliability_factor = 0.03
+		}
 		repairkit_brigade = {
 			reliability_factor = 0.05
 			equipment_capture_factor = 0.07
@@ -637,6 +652,9 @@ technologies = {
 		}
 	}
 	tech_repairkit_3 = {
+		category_all_armor = {
+			reliability_factor = 0.03
+		}
 		repairkit_brigade = {
 			reliability_factor = 0.05
 			equipment_capture_factor = 0.07
@@ -677,12 +695,15 @@ technologies = {
 		}
 	}
 	tech_repairkit_4 = {
+		category_all_armor = {
+			reliability_factor = 0.03
+		}
 		repairkit_brigade = {
 			reliability_factor = 0.05
 			equipment_capture_factor = 0.07
 		}
-		path = {
-		}
+		# path = {
+		# }
 		research_cost = 2
 		start_year = 1981
 		folder = {
@@ -754,6 +775,9 @@ technologies = {
 		}
 	}
 	tech_high_explosive_ammunition_1 = {
+		category_all_armor = {
+			soft_attack = 0.03
+		}
 		enable_subunits = { high_explosive_ammunition }
 		path = {
 			leads_to_tech = tech_high_explosive_ammunition_2
@@ -791,6 +815,9 @@ technologies = {
 		}
 	}
 	tech_high_explosive_ammunition_2 = {
+		category_all_armor = {
+			soft_attack = 0.03
+		}
 		high_explosive_ammunition = {              
 			soft_attack = 0.1
 			hard_attack = -0.05
@@ -831,6 +858,9 @@ technologies = {
 		}
 	}
 	tech_high_explosive_ammunition_3 = {
+		category_all_armor = {
+			soft_attack = 0.03
+		}
 		high_explosive_ammunition = {              
 			soft_attack = 0.1
 			hard_attack = -0.05
@@ -871,12 +901,15 @@ technologies = {
 		}
 	}
 	tech_high_explosive_ammunition_4 = {
+		category_all_armor = {
+			soft_attack = 0.03
+		}
 		high_explosive_ammunition = {              
 			soft_attack = 0.1
 			hard_attack = -0.05
 		}
-		path = {
-		}
+		# path = {
+		# }
 		research_cost = 2
 		start_year = 1981
 		folder = {
@@ -910,6 +943,10 @@ technologies = {
 	}
 
 	tech_armorpiercing_ammunition_1 = {
+		category_all_armor = {
+			hard_attack = 0.02
+			ap_attack = 0.01
+		}
 		enable_subunits = { armorpiercing_ammunition }
 		path = {
 			leads_to_tech = tech_armorpiercing_ammunition_2
@@ -947,6 +984,10 @@ technologies = {
 		}
 	}
 	tech_armorpiercing_ammunition_2 = {
+		category_all_armor = {
+			hard_attack = 0.02
+			ap_attack = 0.01
+		}
 		armorpiercing_ammunition = {             
 			soft_attack = -0.05
 			hard_attack = 0.1
@@ -987,6 +1028,10 @@ technologies = {
 		}
 	}
 	tech_armorpiercing_ammunition_3 = {
+		category_all_armor = {
+			hard_attack = 0.02
+			ap_attack = 0.01
+		}
 		armorpiercing_ammunition = {             
 			soft_attack = -0.05
 			hard_attack = 0.1
@@ -1027,12 +1072,16 @@ technologies = {
 		}
 	}
 	tech_armorpiercing_ammunition_4 = {
+		category_all_armor = {
+			hard_attack = 0.02
+			ap_attack = 0.01
+		}
 		armorpiercing_ammunition = {             
 			soft_attack = -0.05
 			hard_attack = 0.1
 		}
-		path = {
-		}
+		# path = {
+		# }
 		research_cost = 2
 		start_year = 1981
 		folder = {
@@ -1106,6 +1155,10 @@ technologies = {
 	}
 
 	tech_chemical_armor_1 = {
+		category_all_armor = {
+			max_organisation = 2
+			maximum_speed = -0.03
+		}
 		enable_subunits = { chemical_armor }
 		path = {
 			leads_to_tech = tech_chemical_armor_2
@@ -1143,6 +1196,10 @@ technologies = {
 		}
 	}
 	tech_chemical_armor_2 = {
+		category_all_armor = {
+			max_organisation = 2
+			maximum_speed = -0.03
+		}
 		chemical_armor = {
 			max_organisation = 5
 			defense = 0.05
@@ -1183,12 +1240,16 @@ technologies = {
 		}
 	}
 	tech_chemical_armor_3 = {
+		category_all_armor = {
+			max_organisation = 2
+			maximum_speed = -0.03
+		}
 		chemical_armor = {
 			max_organisation = 5
 			defense = 0.05
 		}
-		path = {
-		}
+		# path = {
+		# }
 		research_cost = 2
 		start_year = 1980
 		folder = {
@@ -1222,6 +1283,10 @@ technologies = {
 	}
 
 	tech_physical_armor_1 = {
+		category_all_armor = {
+			armor_value = 0.03
+			maximum_speed = -0.03
+		}
 		enable_subunits = { physical_armor }
 		path = {
 			leads_to_tech = tech_physical_armor_2
@@ -1259,6 +1324,10 @@ technologies = {
 		}
 	}
 	tech_physical_armor_2 = {
+		category_all_armor = {
+			armor_value = 0.03
+			maximum_speed = -0.03
+		}
 		physical_armor = {
 			armor_value = 0.1
 			defense = 0.05
@@ -1299,12 +1368,16 @@ technologies = {
 		}
 	}
 	tech_physical_armor_3 = {
+		category_all_armor = {
+			armor_value = 0.03
+			maximum_speed = -0.03
+		}
 		physical_armor = {
 			armor_value = 0.1
 			defense = 0.05
 		}
-		path = {
-		}
+		# path = {
+		# }
 		research_cost = 2
 		start_year = 1980
 		folder = {

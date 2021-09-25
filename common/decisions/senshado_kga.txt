@@ -177,7 +177,7 @@ kga_establish_puppuet_bon = {
 	start_infiltration = {
 		allowed = { tag = KGA }
 		days_re_enable = 70
-		#visible = { AND = { has_completed_focus = KGA_support_puppet_faction country_exists = BON } }
+		visible = { AND = { has_completed_focus = KGA_support_puppet_faction country_exists = BON } }
 		available = { AND = { NOT = { has_war_with = BON } fascism < 0.35 } }
 		custom_cost_trigger = {
 			check_variable = { gold > 49.9 }
@@ -191,7 +191,7 @@ kga_establish_puppuet_bon = {
 
 	control_congressional_seats  = {
 		allowed = { tag = KGA }
-		#visible = { AND = { has_completed_focus = KGA_support_puppet_faction country_exists = BON } }
+		visible = { AND = { has_completed_focus = KGA_support_puppet_faction country_exists = BON } }
 		available = { AND = { NOT = { has_war_with = BON } fascism > 0.35 } }
 		custom_cost_trigger = {
 			has_political_power > 199.9
@@ -204,6 +204,7 @@ kga_establish_puppuet_bon = {
 	}
 
 	support_bkc = {
+		visible = { country_exists = BKC }
 		allowed = { tag = KGA }
 		available = { NOT = { has_war_with = BON } country_exists = BKC }
 		custom_cost_trigger = {

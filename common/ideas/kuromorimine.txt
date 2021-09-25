@@ -6,7 +6,6 @@ ideas = {
 			modifier = {
 				political_power_cost = 0.1
                 stability_factor = -0.2
-                fascism_drift = 0.005
                 conscription_factor = -0.1
 			}
 		}
@@ -16,9 +15,9 @@ ideas = {
 			allowed_civil_war = { always = yes }
 			modifier = {
 				max_command_power = 20
-                army_core_attack_factor = 0.1
-                army_core_defence_factor = 0.1
-				army_fuel_consumption_factor = -0.1
+                army_core_attack_factor = 0.05
+                army_core_defence_factor = 0.05
+				
 			}
 		}
 
@@ -29,6 +28,8 @@ ideas = {
 				max_command_power = 20
                 army_core_attack_factor = 0.1
                 army_core_defence_factor = 0.1
+				army_speed_factor = 0.05
+				army_defence_factor = 0.05
 			}
 		}
 

@@ -1037,7 +1037,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_ideas = PRA_JQZJ
-			stability_factor = -0.15
+			add_stability = -0.15
 		}
 	}
 
@@ -1069,7 +1069,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			political_power_factor = -50	
+			add_political_power = -50	
 		}
 	}
 
@@ -1134,7 +1134,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			stability_factor = 0.1
+			add_stability = 0.1
 			add_ideas = PRA_QXGDZF
 		}
 	}
@@ -1330,7 +1330,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			stability_factor = 0.05
+			add_stability = 0.05
 		}
 	}
 
@@ -3230,8 +3230,8 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-		    max_command_power = 20
-			experience_gain_army = 10
+		    add_command_power = 20
+			army_experience = 10
 		}
 	}
 
@@ -3508,9 +3508,11 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			bonus = 1.0
-			uses = 2
-			category = cat_base_strike
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = cat_base_strike
+			}
 		}
 	}
 
@@ -3581,9 +3583,11 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			bonus = 1.0
-			uses = 2
-			category = trade_interdiction_tree
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = trade_interdiction_tree
+			}
 		}
 	}
 

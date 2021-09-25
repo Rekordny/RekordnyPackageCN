@@ -1,4 +1,5 @@
 leader_traits = {
+	#KGA
     hidden_tenderness = {
 		random = no
 		offensive_war_stability_factor = 0.1
@@ -41,4 +42,20 @@ leader_traits = {
 		production_speed_arms_factory_factor = 0.05
 		production_speed_industrial_complex_factor = 0.05
 	}
+	
+	#JHS
+	KMBD = {
+        random = no
+        equipment_bonus = {
+            armor = {
+                maximum_speed = 0.05
+                reliability = 0.1
+                breakthrough = 0.1
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
 }

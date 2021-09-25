@@ -21,7 +21,7 @@ scripted_gui = {
 			}
 			province_governor_add_aluminum_click = {
 				add_resource = {
-					type = aluminum
+					type = aluminium
 					amount = 4
 				}
 				ROOT = { 
