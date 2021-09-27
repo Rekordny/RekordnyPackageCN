@@ -123,7 +123,7 @@
 
 		prerequisite = { focus = STG_Winning_party_United_College }
 
-		#mutually_exclusive = { focus =  }
+		mutually_exclusive = { focus =  }
 			
 		bypass = { }
 
@@ -156,7 +156,7 @@
 
 		prerequisite = { focus = STG_Winning_party_United_College }
 
-		#mutually_exclusive = { focus =  }
+		mutually_exclusive = { focus =  }
 			
 		bypass = { }
 
@@ -189,7 +189,7 @@
 
 		prerequisite = { focus = STG_Winning_party_United_College }
 
-		#mutually_exclusive = { focus =  }
+		mutually_exclusive = { focus =  }
 			
 		bypass = { }
 
@@ -226,7 +226,7 @@
 		prerequisite = { focus = STG_Appointment_Secretary_Defense }
 		prerequisite = { focus = STG_Appointment_Justices }
 
-		#mutually_exclusive = { focus =  }
+		mutually_exclusive = { focus =  }
 		
 		bypass = { }
 
@@ -1149,21 +1149,21 @@
 
 		completion_reward = {
 			if = {
-				limit = { has_idea = STG_bickering_Parliament_idea }
+				limit = { has_ideas = STG_bickering_Parliament_idea }
 				swap_ideas = {
 					remove_idea = STG_bickering_Parliament_idea
 					add_idea = STG_bickering_Parliament_idea_A_1_1
 				}
 			}
 			else_if = {
-				limit = { has_idea = STG_bickering_Parliament_idea_A_1_1 }
+				limit = { has_ideas = STG_bickering_Parliament_idea_A_1_1 }
 				swap_ideas = {
 					remove_idea = STG_bickering_Parliament_idea_A_1_1
 					add_idea = STG_bickering_Parliament_idea_A_1_2
 				}
 			}
 			else_if = {
-				limit = { has_idea = STG_bickering_Parliament_idea_A_1_2 }
+				limit = { has_ideas = STG_bickering_Parliament_idea_A_1_2 }
 				swap_ideas = {
 					remove_idea = STG_bickering_Parliament_idea_A_1_2
 					add_idea = STG_bickering_Parliament_idea_A_1_3
@@ -1223,6 +1223,7 @@
 		available = {  }
 
 		prerequisite = { focus = STG_piece_cake }
+		prerequisite = { focus = STG_become_reconciled }
 		
 		mutually_exclusive = { }
 		
@@ -1236,29 +1237,29 @@
 
 		completion_reward = {
 			if = {
-				limit = { has_idea = STG_bickering_Parliament_idea }
+				limit = { has_ideas = STG_bickering_Parliament_idea }
 				remove_ideas = STG_bickering_Parliament_idea
 			}
 			else_if = {
-				limit = { has_idea = STG_bickering_Parliament_idea_A_1_1 }
+				limit = { has_ideas = STG_bickering_Parliament_idea_A_1_1 }
 				remove_ideas = STG_bickering_Parliament_idea_A_1_1
 			}
 			else_if = {
-				limit = { has_idea = STG_bickering_Parliament_idea_A_1_2 }
+				limit = { has_ideas = STG_bickering_Parliament_idea_A_1_2 }
 				remove_ideas = STG_bickering_Parliament_idea_A_1_2
 			}
 			else_if = {
-				limit = { has_idea = STG_bickering_Parliament_idea_A_1_3 }
+				limit = { has_ideas = STG_bickering_Parliament_idea_A_1_3 }
 				remove_ideas = STG_bickering_Parliament_idea_A_1_3
 			}
 			else = {  }
 			
 			if = {
-				limit = { has_idea = STG_rise_extremist_forces_idea }
+				limit = { has_ideas = STG_rise_extremist_forces_idea }
 				remove_ideas = STG_rise_extremist_forces_idea
 			}
 			else_if = {
-				limit = { has_idea = STG_rise_extremist_forces_idea_1 }
+				limit = { has_ideas = STG_rise_extremist_forces_idea_1 }
 				remove_ideas = STG_rise_extremist_forces_idea_1
 			}
 			else = {  }
@@ -1663,7 +1664,7 @@
 
 		prerequisite = { focus = STG_Good_old_man }
 		prerequisite = { focus = STG_Unite_remaining_Democrats }
-		prerequisite = { focus = STG_Goodbye_sir }
+		prerequisite = { focus = STG_Goodbye_sir focus = STG_Welcome_join }
 		
 		mutually_exclusive = {  }
 		
@@ -1677,29 +1678,29 @@
 
 		completion_reward = {
 			if = {
-				limit = { has_idea = STG_bickering_Parliament_idea }
+				limit = { has_ideas = STG_bickering_Parliament_idea }
 				remove_ideas = STG_bickering_Parliament_idea
 			}
 			else_if = {
-				limit = { has_idea = STG_bickering_Parliament_idea_A_1_1 }
+				limit = { has_ideas = STG_bickering_Parliament_idea_A_1_1 }
 				remove_ideas = STG_bickering_Parliament_idea_A_1_1
 			}
 			else_if = {
-				limit = { has_idea = STG_bickering_Parliament_idea_A_1_2 }
+				limit = { has_ideas = STG_bickering_Parliament_idea_A_1_2 }
 				remove_ideas = STG_bickering_Parliament_idea_A_1_2
 			}
 			else_if = {
-				limit = { has_idea = STG_bickering_Parliament_idea_A_1_3 }
+				limit = { has_ideas = STG_bickering_Parliament_idea_A_1_3 }
 				remove_ideas = STG_bickering_Parliament_idea_A_1_3
 			}
 			else = {  }
 			
 			if = {
-				limit = { has_idea = STG_rise_extremist_forces_idea }
+				limit = { has_ideas = STG_rise_extremist_forces_idea }
 				remove_ideas = STG_rise_extremist_forces_idea
 			}
 			else_if = {
-				limit = { has_idea = STG_rise_extremist_forces_idea_1 }
+				limit = { has_ideas = STG_rise_extremist_forces_idea_1 }
 				remove_ideas = STG_rise_extremist_forces_idea_1
 			}
 			else = {  }
@@ -1791,7 +1792,7 @@
 
 		prerequisite = { focus = STG_second_battle_cable_Street }
 		
-		mutually_exclusive = {  }
+		mutually_exclusive = { focus = STG_Welcome_join }
 		
 		bypass = { }
 
@@ -1802,7 +1803,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = { id = event_StGloriana.14 days = 1 }
 		}
 		
 		ai_will_do = {
@@ -1824,7 +1825,7 @@
 
 		prerequisite = { focus = STG_second_battle_cable_Street }
 		
-		mutually_exclusive = {  }
+		mutually_exclusive = { focus = STG_Goodbye_sir }
 		
 		bypass = { }
 
@@ -2403,7 +2404,16 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_opinion_modifier = { 
+				target = BON 
+				modifier = STG_support_BON
+			}
+			BON = {
+				add_opinion_modifier = { 
+					target = STG 
+					modifier = STG_support_BON
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -2436,7 +2446,9 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			give_guarantee = BON
+			BON = { give_guarantee = COU }
+			COU = { give_guarantee = BON }
 		}
 		
 		ai_will_do = {
@@ -2469,7 +2481,30 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			85 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 5
+					province = 362
+					instant_build = yes
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -2502,7 +2537,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = { id = event_StGloriana.33 days = 1 }
 		}
 		
 		ai_will_do = {
@@ -2540,7 +2575,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			STG = { set_faction_name = Head_princes }
+			add_ideas = STG_Head_princes_idea
 		}
 		
 		ai_will_do = {
@@ -2574,7 +2610,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = { id = event_StGloriana.34 days = 1 }
 		}
 		
 		ai_will_do = {
@@ -2607,7 +2643,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = { id = event_StGloriana.35 days = 1 }
 		}
 		
 		ai_will_do = {
@@ -2640,7 +2676,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			BCF = {
+				add_stability = -0.05
+				add_war_support = 0.05
+			}
 		}
 		
 		ai_will_do = {
@@ -2673,7 +2712,12 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_timed_idea = { 
+				idea = STG_Restore_glory_past_idea
+				days = 100
+			}
 		}
 		
 		ai_will_do = {
@@ -2706,7 +2750,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			KGA = { country_event = { id = event_StGloriana.36 days = 1 } }
 		}
 		
 		ai_will_do = {
@@ -2739,7 +2783,16 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			declare_war_on = {
+				target = BCF
+				type = annex_everything
+			}
+			KGA = {
+				declare_war_on = {
+					target = BCF
+					type = annex_everything
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -2772,7 +2825,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			unlock_decision_tooltip = STG_Spread_rumors
 		}
 		
 		ai_will_do = {
@@ -2805,7 +2858,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			14 = { add_core_of = BCA }
+			30 = { add_core_of = BCA }
 		}
 		
 		ai_will_do = {
@@ -2838,7 +2892,11 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			19 = { add_core_of = BCB }
+			806 = { add_core_of = BCB }
+			31 = { add_core_of = BCB }
+			22 = { add_core_of = BCB }
+			21 = { add_core_of = BCB }
 		}
 		
 		ai_will_do = {
@@ -2872,7 +2930,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			BCF = { add_ideas = BCF_Undercurrent_surge_idea }
 		}
 		
 		ai_will_do = {
@@ -2905,7 +2963,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			declare_war_on = {
+				target = BCF
+				type = annex_everything
+			}
 		}
 		
 		ai_will_do = {
@@ -2938,7 +2999,14 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			declare_war_on = {
+				target = BCA
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = BCB
+				type = annex_everything
+			}
 		}
 		
 		ai_will_do = {
@@ -2971,7 +3039,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			19 = { add_core_of = STG }
+			806 = { add_core_of = STG }
+			25 = { add_core_of = STG }
+			31 = { add_core_of = STG }
 		}
 		
 		ai_will_do = {
@@ -3004,7 +3075,9 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			15 = { add_core_of = STG }
+			785 = { add_core_of = STG }
+			29 = { add_core_of = STG }
 		}
 		
 		ai_will_do = {
@@ -3037,7 +3110,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			27 = { add_core_of = STG }
+			17 = { add_core_of = STG }
 		}
 		
 		ai_will_do = {
@@ -3072,7 +3146,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			swap_ideas = {
+				remove_idea = STG_chaotic_Parliament_idea
+				add_idea = STG_United_Parliament_idea
+			}
 		}
 		
 		ai_will_do = {
@@ -3105,14 +3182,14 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = { id = event_StGloriana.41 days = 1 }
 		}
 		
 		ai_will_do = {
 			factor = 1
 			modifier = {
 			}
-		}
+		} 
 	}
 	
 	#与BC的洽谈
@@ -3138,7 +3215,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = { id = event_StGloriana.42 days = 1 }
 		}
 		
 		ai_will_do = {
@@ -3171,7 +3248,45 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			126 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			16 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			14 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -3204,7 +3319,11 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			release = BCF
+			set_autonomy = { 
+				target = BCF
+				autonomy_state = autonomy_integrated_puppet
+			}
 		}
 		
 		ai_will_do = {
@@ -3237,7 +3356,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_timed_idea = { 
+				idea = STG_Post_war_reconstruction_idea
+				days = 60
+			}
 		}
 		
 		ai_will_do = {
@@ -3270,7 +3392,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = STG_BC_party_idea
+			custom_effect_tooltip = STG_Receive_BC_tt
 		}
 		
 		ai_will_do = {
@@ -3303,7 +3426,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = { id = event_StGloriana.43 days = 1 }
 		}
 		
 		ai_will_do = {
@@ -3337,6 +3460,11 @@
 
 		completion_reward = {
 			add_political_power = 100
+			hidden_effect = {
+				113 = { add_core_of = IRL }
+				134 = { add_core_of = IRL }
+				135 = { add_core_of = IRL }
+			}
 		}
 		
 		ai_will_do = {
@@ -3369,7 +3497,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = { id = event_StGloriana.44 days = 1 }
 		}
 		
 		ai_will_do = {
@@ -3387,7 +3515,7 @@
 		x = -2
 		y = 1
 	
-		available = {  }
+		available = { has_country_flag = STG_radish_flag }
 
 		prerequisite = { focus = STG_Irish_Independents }
 		
@@ -3395,14 +3523,14 @@
 		
 		bypass = { }
 
-		cost = 4
+		cost = 1
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_stability = 0.05
 		}
 		
 		ai_will_do = {
@@ -3435,7 +3563,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = { id = event_StGloriana.45 days = 1 }
 		}
 		
 		ai_will_do = {
@@ -3453,7 +3581,7 @@
 		x = 2
 		y = 1
 	
-		available = {  }
+		available = { has_country_flag = STG_Big_stick_flag }
 
 		prerequisite = { focus = STG_Irish_Independents }
 		
@@ -3468,7 +3596,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_war_support = 0.05
 		}
 		
 		ai_will_do = {
@@ -3501,7 +3629,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			unlock_decision_tooltip = STG_Irish_independence
 		}
 		
 		ai_will_do = {
@@ -3519,7 +3647,12 @@
 		x = 0
 		y = 4
 	
-		available = {  }
+		available = {
+			or = {
+				NOT = { country_exists = IRL }
+				IRL = { is_subject_of = STG }
+			}
+		}
 
 		prerequisite = { focus = STG_hurry_up focus = STG_Consultation_with_Dublin_elite }
 		
@@ -3534,7 +3667,9 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			113 = { add_core_of = STG }
+			134 = { add_core_of = STG }
+			135 = { add_core_of = STG }
 		}
 		
 		ai_will_do = {
@@ -3600,7 +3735,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			BDH = { add_ideas = BDH_Carlos_glory_idea }
 		}
 		
 		ai_will_do = {
@@ -3618,7 +3753,12 @@
 		x = 0
 		y = 1
 	
-		available = {  }
+		available = { 
+			BDH = {
+				has_war = no
+				neutrality > 0.3
+			}
+		}
 
 		prerequisite = { focus = STG_Carlos_glory }
 		
@@ -3633,7 +3773,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			BDH = { country_event = { id = event_StGloriana.46 days = 1 } }
 		}
 		
 		ai_will_do = {
@@ -3651,7 +3791,7 @@
 		x = -1
 		y = 1
 	
-		available = {  }
+		available = { has_country_flag = STG_Light_woodpile_flag }
 
 		prerequisite = { focus = STG_Light_woodpile }
 		
@@ -3666,7 +3806,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			BDH = { country_event = { id = event_StGloriana.47 days = 1 } }
 		}
 		
 		ai_will_do = {
@@ -3684,7 +3824,7 @@
 		x = 0
 		y = 1
 	
-		available = {  }
+		available = { has_country_flag = STG_Summit_meeting_flag }
 
 		prerequisite = { focus = STG_crazy_idea }
 		
@@ -3699,7 +3839,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			BDH = { country_event = { id = event_StGloriana.48 days = 1 } }
 		}
 		
 		ai_will_do = {
@@ -3732,7 +3872,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_stability = 0.05
+			BDH = { add_stability = 0.05 }
 		}
 		
 		ai_will_do = {
@@ -3742,7 +3883,7 @@
 		}
 	}
 	
-	#新国王
+	#新王国
 	focus = {
 		id = STG_New_king
 		icon = GFX_focus_STG_New_king
@@ -3765,7 +3906,11 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			annex_country = { 
+				target = BDH
+				transfer_troops = yes
+			}
+			BDH = { country_event = { id = event_StGloriana.49 days = 1 } }
 		}
 		
 		ai_will_do = {
@@ -3798,7 +3943,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			BDH = { country_event = { id = event_StGloriana.50 days = 1 } }
 		}
 		
 		ai_will_do = {
@@ -3831,7 +3976,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = STG_BDH_Increasingly_frequent_trade_idea
+			BDH = { add_ideas = STG_BDH_Increasingly_frequent_trade_idea }
 		}
 		
 		ai_will_do = {
@@ -3864,7 +4010,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			BDH = { country_event = { id = event_StGloriana.51 days = 1 } }
 		}
 		
 		ai_will_do = {
@@ -3882,7 +4028,7 @@
 		x = 0
 		y = 1
 	
-		available = {  }
+		available = { BDH = { is_subject_of = STG } }
 
 		prerequisite = { focus = STG_Dominate }
 		
@@ -3897,7 +4043,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			BDH = { country_event = { id = event_StGloriana.52 days = 1 } }
 		}
 		
 		ai_will_do = {
@@ -3930,7 +4076,44 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			if = {
+				limit = { has_completed_focus = STG_Royal_Wedding }
+				add_stability = 0.2
+			}
+			else_if = {
+				limit = { has_completed_focus = STG_New_king }
+				custom_effect_tooltip = STG_United_Kingdom_Great_Britain_Libya_tt
+				hidden_effect = {
+					171 = { add_core_of = STG }
+					180 = { add_core_of = STG }
+					112 = { add_core_of = STG }
+					181 = { add_core_of = STG }
+					795 = { add_core_of = STG }
+					179 = { add_core_of = STG }
+					790 = { add_core_of = STG }
+					174 = { add_core_of = STG }
+					788 = { add_core_of = STG }
+					170 = { add_core_of = STG }
+					169 = { add_core_of = STG }
+					118 = { add_core_of = STG }
+					173 = { add_core_of = STG }
+					789 = { add_core_of = STG }
+					175 = { add_core_of = STG }
+					41 = { add_core_of = STG }
+					790 = { add_core_of = STG }
+					176 = { add_core_of = STG }
+					792 = { add_core_of = STG }
+					793 = { add_core_of = STG }
+					168 = { add_core_of = STG }
+					167 = { add_core_of = STG }
+					172 = { add_core_of = STG }
+					166 = { add_core_of = STG }
+					794 = { add_core_of = STG }
+					165 = { add_core_of = STG }
+					791 = { add_core_of = STG }
+				}
+			}
+			unlock_decision_tooltip = STG_Formation_Wuthering_soldiers
 		}
 		
 		ai_will_do = {
@@ -3996,7 +4179,16 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_opinion_modifier = { 
+				target = ANZ 
+				modifier = STG_support_ANZ
+			}
+			ANZ = {
+				add_opinion_modifier = { 
+					target = STG 
+					modifier = STG_support_ANZ
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -4029,7 +4221,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = STG_Mediterranean_trade_idea
 		}
 		
 		ai_will_do = {
@@ -4095,7 +4287,9 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			custom_effect_tooltip = STG_Gold_lasts_forever_tt
+			add_to_variable = { gold = -50 }
+			ANZ = { add_to_variable = { gold = 50 } }
 		}
 		
 		ai_will_do = {
@@ -4128,7 +4322,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = { id = event_StGloriana.54 days = 1 }
 		}
 		
 		ai_will_do = {
@@ -4161,40 +4355,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-			}
-		}
-	}
-	
-	#索要克里特岛
-	focus = {
-		id = STG_Ask_for_Crete
-		icon = GFX_focus_STG_Ask_for_Crete
-		relative_position_id = STG_Imperial_agreement
-		x = 2
-		y = 1
-	
-		available = {  }
-
-		prerequisite = { focus = STG_Imperial_agreement }
-		
-		mutually_exclusive = { }
-		
-		bypass = { }
-
-		cost = 4
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 100
+			ANZ = { country_event = { id = event_StGloriana.55 days = 1 } }
 		}
 		
 		ai_will_do = {
@@ -4227,7 +4388,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			KEB = { country_event = { id = event_StGloriana.56 days = 1 } }
 		}
 		
 		ai_will_do = {
@@ -4254,14 +4415,29 @@
 		
 		bypass = { }
 
-		cost = 4
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			army_experience = 30
+			add_tech_bonus = {
+				name = land_doctrine_bonus
+				bonus = 1
+				uses = 2
+				category = land_doctrine
+			}
+			ANZ = {
+				army_experience = 30
+				add_tech_bonus = {
+					name = land_doctrine_bonus
+					bonus = 1
+					uses = 2
+					category = land_doctrine
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -4294,7 +4470,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = { id = event_StGloriana.57 days = 1 }
 		}
 		
 		ai_will_do = {
@@ -4327,7 +4503,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			ANZ = { country_event = { id = event_StGloriana.58 days = 1 } }
 		}
 		
 		ai_will_do = {
@@ -4360,7 +4536,16 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_opinion_modifier = { 
+				target = ANZ 
+				modifier = STG_support_ANZ_NO
+			}
+			ANZ = {
+				add_opinion_modifier = { 
+					target = STG 
+					modifier = STG_support_ANZ_NO
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -4393,7 +4578,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			ANZ = { country_event = { id = event_StGloriana.59 days = 1 } }
 		}
 			
 		ai_will_do = {
@@ -4426,7 +4611,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			KGA = { country_event = { id = event_StGloriana.60 days = 1 } }
 		}
 			
 		ai_will_do = {
@@ -4459,7 +4644,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			ANZ = { country_event = { id = event_StGloriana.61 days = 1 } }
 		}
 			
 		ai_will_do = {
@@ -4492,7 +4677,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			ANZ = { country_event = { id = event_StGloriana.62 days = 1 } }
 		}
 			
 		ai_will_do = {
@@ -4525,7 +4710,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			ANZ = { country_event = { id = event_StGloriana.63 days = 1 } }
 		}
 			
 		ai_will_do = {
@@ -4562,7 +4747,18 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			declare_war_on = {
+				target = ANZ
+				type = take_state
+			}
+			KGA = { country_event = { id = event_StGloriana.68 days = 1 } }
+			ANZ = { country_event = { id = event_StGloriana.64 days = 1 } }
+			ANZ = { country_event = { id = event_StGloriana.65 days = 1 } }
+			ANZ = { country_event = { id = event_StGloriana.66 days = 1 } }
+			ANZ = { country_event = { id = event_StGloriana.67 days = 1 } }
+			hidden_effect = { 
+				ANZ = { country_event = { id = event_StGloriana.69 days = 1 } } 
+			}
 		}
 			
 		ai_will_do = {
@@ -4595,7 +4791,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_timed_idea = {
+				idea = STG_fight_quick_battle_force_quick_decision_idea
+				days = 30
+			}
 		}
 			
 		ai_will_do = {
@@ -4613,7 +4812,11 @@
 		x = 1
 		y = 1
 	
-		available = {  }
+		available = { 
+			ANZ = {
+				NOT = { has_full_control_of_state = 2 }
+			}
+		}
 
 		prerequisite = { focus = STG_Launch_rebellion }
 
@@ -4628,7 +4831,8 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_war_support = 0.2
+			add_manpower = 50000
 		}
 			
 		ai_will_do = {
@@ -4646,7 +4850,14 @@
 		x = 0
 		y = 2
 	
-		available = {  }
+		available = {
+			or = {
+				ANZ = {
+					is_puppet = yes
+				}
+				NOT = { country_exists = ANZ }
+			}				
+		}
 
 		prerequisite = { focus = STG_march_into }
 		prerequisite = { focus = STG_Rome_ours }
@@ -4662,7 +4873,13 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			if = {
+				limit = { NOT = { country_exists = ANZ } }
+				country_event = { id = event_StGloriana.70 days = 1 }
+			}
+			else = {
+				ANZ = { country_event = { id = event_StGloriana.70 days = 1 } }
+			}
 		}
 			
 		ai_will_do = {
@@ -4695,7 +4912,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = { id = event_StGloriana.71 days = 1 }
 		}
 			
 		ai_will_do = {
@@ -4728,7 +4945,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = { id = event_StGloriana.72 days = 1 }
 		}
 			
 		ai_will_do = {
@@ -4794,8 +5011,15 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
-		}
+			add_timed_idea = {
+				idea = STG_Deals_with_African_leaders_idea
+				days = 60
+			}
+			annex_country = { 
+				target = AFU
+				transfer_troops = no
+			}
+		} 
 			
 		ai_will_do = {
 			factor = 1
@@ -4827,7 +5051,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			set_autonomy = {
+				target = AFU
+				autonomy_state = autonomy_integrated_puppet
+			}
 		}
 			
 		ai_will_do = {
@@ -4860,7 +5087,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			set_autonomy = {
+				target = XLG
+				autonomy_state = autonomy_integrated_puppet
+			}
 		}
 			
 		ai_will_do = {
@@ -4893,7 +5123,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			XLG = { country_event = { id = event_StGloriana.73 days = 1 } }
 		}
 			
 		ai_will_do = {
@@ -4926,7 +5156,14 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_timed_idea = {
+				idea = STG_Local_discontent_idea
+				days = 60
+			}
+			annex_country = { 
+				target = XLG
+				transfer_troops = no
+			}
 		}
 			
 		ai_will_do = {
@@ -4992,7 +5229,15 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_timed_idea = {
+				idea = STG_Chaotic_bills_idea
+				days = 60
+			}
+			annex_country = { 
+				target = RSG
+				transfer_troops = no
+			}
+			add_ideas = GFX_idea_STG_Swiss_bank_idea
 		}
 			
 		ai_will_do = {
@@ -5025,7 +5270,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = STG_Swiss_bank_offers_idea
 		}
 			
 		ai_will_do = {
@@ -5066,7 +5311,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = -100
 		}
 			
 		ai_will_do = {
@@ -5099,7 +5344,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			
 		}
 			
 		ai_will_do = {
@@ -5132,7 +5377,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = { id = event_StGloriana.74 days = 1 }
 		}
 			
 		ai_will_do = {
@@ -5165,7 +5410,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = { id = event_StGloriana.75 days = 1 }
 		}
 			
 		ai_will_do = {
@@ -5198,7 +5443,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			annex_country = { 
+				target = ANZ
+				transfer_troops = no
+			}
 		}
 			
 		ai_will_do = {
@@ -5231,7 +5479,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = STG_ANZ_volunteer_idea
 		}
 			
 		ai_will_do = {
@@ -5264,7 +5512,11 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			create_wargoal = {
+				type = annex_everything
+				target = OAN
+				expire = 0
+			} 
 		}
 			
 		ai_will_do = {
@@ -5303,7 +5555,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = STG_Mediterranean_overlord_idea
 		}
 			
 		ai_will_do = {
@@ -5402,7 +5654,21 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 2000
+				producer = STG
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 1000
+				producer = STG
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 500
+				producer = STG
+			}
 		}
 		
 		ai_will_do = {
@@ -5435,7 +5701,32 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			126 = {
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 9239
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 6103
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 11333
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 11374
+					instant_build = yes
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -5468,7 +5759,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			unlock_decision_tooltip = STG_Expand_army
 		}
 		
 		ai_will_do = {
@@ -5501,7 +5792,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = STG_Unpopular_conscription_idea
 		}
 		
 		ai_will_do = {
@@ -5567,7 +5858,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = { id = event_StGloriana.77 days = 1 } 
 		}
 		
 		ai_will_do = {

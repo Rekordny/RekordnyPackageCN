@@ -1,6 +1,134 @@
 spriteTypes = {	
 	spriteType = {
 		name = "GFX_food_medium"
-		texturefile = "gfx/interface/technologies/food_medium.dds"
+		texturefile = "gfx/interface/technologies/food.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_scope_1_medium"
+		texturefile = "gfx/interface/technologies/tech_scope_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_scope_2_medium"
+		texturefile = "gfx/interface/technologies/tech_scope_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_scope_3_medium"
+		texturefile = "gfx/interface/technologies/tech_scope_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_scope_4_medium"
+		texturefile = "gfx/interface/technologies/tech_scope_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_firstaid_1_medium"
+		texturefile = "gfx/interface/technologies/tech_firstaid_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_firstaid_2_medium"
+		texturefile = "gfx/interface/technologies/tech_firstaid_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_firstaid_3_medium"
+		texturefile = "gfx/interface/technologies/tech_firstaid_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_firstaid_4_medium"
+		texturefile = "gfx/interface/technologies/tech_firstaid_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_amphibious_1_medium"
+		texturefile = "gfx/interface/technologies/tech_amphibious_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_amphibious_2_medium"
+		texturefile = "gfx/interface/technologies/tech_amphibious_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_amphibious_3_medium"
+		texturefile = "gfx/interface/technologies/tech_amphibious_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_amphibious_4_medium"
+		texturefile = "gfx/interface/technologies/tech_amphibious_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_repairkit_1_medium"
+		texturefile = "gfx/interface/technologies/tech_repairkit_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_repairkit_2_medium"
+		texturefile = "gfx/interface/technologies/tech_repairkit_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_repairkit_3_medium"
+		texturefile = "gfx/interface/technologies/tech_repairkit_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_repairkit_4_medium"
+		texturefile = "gfx/interface/technologies/tech_repairkit_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_ammunition_medium"
+		texturefile = "gfx/interface/technologies/tech_ammunition.dds"
+	}
+	spriteType = {
+		name = "GFX_tech_high_explosive_ammunition_1_medium"
+		texturefile = "gfx/interface/technologies/tech_high_explosive_ammunition_1.dds"
+	}
+	spriteType = {
+		name = "GFX_tech_high_explosive_ammunition_2_medium"
+		texturefile = "gfx/interface/technologies/tech_high_explosive_ammunition_2.dds"
+	}
+	spriteType = {
+		name = "GFX_tech_high_explosive_ammunition_3_medium"
+		texturefile = "gfx/interface/technologies/tech_high_explosive_ammunition_3.dds"
+	}
+	spriteType = {
+		name = "GFX_tech_high_explosive_ammunition_4_medium"
+		texturefile = "gfx/interface/technologies/tech_high_explosive_ammunition_4.dds"
+	}
+	spriteType = {
+		name = "GFX_tech_armorpiercing_ammunition_1_medium"
+		texturefile = "gfx/interface/technologies/tech_armorpiercing_ammunition_1.dds"
+	}
+	spriteType = {
+		name = "GFX_tech_armorpiercing_ammunition_2_medium"
+		texturefile = "gfx/interface/technologies/tech_armorpiercing_ammunition_2.dds"
+	}
+	spriteType = {
+		name = "GFX_tech_armorpiercing_ammunition_3_medium"
+		texturefile = "gfx/interface/technologies/tech_armorpiercing_ammunition_3.dds"
+	}
+	spriteType = {
+		name = "GFX_tech_armorpiercing_ammunition_4_medium"
+		texturefile = "gfx/interface/technologies/tech_armorpiercing_ammunition_4.dds"
+	}	
+	spriteType = {
+		name = "GFX_tech_armorpiece_medium"
+		texturefile = "gfx/interface/technologies/tech_armorpiece.dds"
+	}
+	spriteType = {
+		name = "GFX_tech_chemical_armor_1_medium"
+		texturefile = "gfx/interface/technologies/tech_chemical_armor_1.dds"
+	}
+	spriteType = {
+		name = "GFX_tech_chemical_armor_2_medium"
+		texturefile = "gfx/interface/technologies/tech_chemical_armor_2.dds"
+	}
+	spriteType = {
+		name = "GFX_tech_chemical_armor_3_medium"
+		texturefile = "gfx/interface/technologies/tech_chemical_armor_3.dds"
+	}
+	spriteType = {
+		name = "GFX_tech_physical_armor_1_medium"
+		texturefile = "gfx/interface/technologies/tech_physical_armor_1.dds"
+	}
+	spriteType = {
+		name = "GFX_tech_physical_armor_2_medium"
+		texturefile = "gfx/interface/technologies/tech_physical_armor_2.dds"
+	}
+	spriteType = {
+		name = "GFX_tech_physical_armor_3_medium"
+		texturefile = "gfx/interface/technologies/tech_physical_armor_3.dds"
 	}
 }

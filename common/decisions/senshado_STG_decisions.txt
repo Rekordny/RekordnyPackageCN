@@ -6,7 +6,7 @@ STG_House_of_Commons = {
 			is_debug = yes
 		}
 		days_re_enable = 0
-		complete_effect = {
+		remove_effect = {
 			log = "STG_XW: [?XW]"
 			log = "STG_MZ: [?MZ]"
 			log = "STG_GC: [?GC]"
@@ -21,7 +21,7 @@ STG_House_of_Commons = {
 			is_debug = yes
 		}
 		days_re_enable = 0
-		complete_effect = {
+		remove_effect = {
 			add_to_variable = { XW = 1 }
 			add_to_variable = { MZ = 1 }
 			add_to_variable = { GC = 1 }
@@ -35,7 +35,7 @@ STG_House_of_Commons = {
 			is_debug = yes
 		}
 		days_re_enable = 0
-		complete_effect = {
+		remove_effect = {
 			if = { 
 				limit = {
 					check_variable = {
@@ -156,21 +156,21 @@ STG_House_of_Commons = {
 		
 		remove_effect = {
 			if = {
-				limit = { has_ideas = STG_bickering_Parliament_idea }
+				limit = { has_idea = STG_bickering_Parliament_idea }
 				swap_ideas = {
 					remove_idea = STG_bickering_Parliament_idea
 					add_idea = STG_bickering_Parliament_idea_A_1_1
 				}
 			}
 			else_if = {
-				limit = { has_ideas = STG_bickering_Parliament_idea_A_1_1 }
+				limit = { has_idea = STG_bickering_Parliament_idea_A_1_1 }
 				swap_ideas = {
 					remove_idea = STG_bickering_Parliament_idea_A_1_1
 					add_idea = STG_bickering_Parliament_idea_A_1_2
 				}
 			}
 			else_if = {
-				limit = { has_ideas = STG_bickering_Parliament_idea_A_1_2 }
+				limit = { has_idea = STG_bickering_Parliament_idea_A_1_2 }
 				swap_ideas = {
 					remove_idea = STG_bickering_Parliament_idea_A_1_2
 					add_idea = STG_bickering_Parliament_idea_A_1_3
@@ -202,21 +202,21 @@ STG_House_of_Commons = {
 		
 		remove_effect = {
 			if = {
-				limit = { has_ideas = STG_bickering_Parliament_idea }
+				limit = { has_idea = STG_bickering_Parliament_idea }
 				swap_ideas = {
 					remove_idea = STG_bickering_Parliament_idea
 					add_idea = STG_bickering_Parliament_idea_A_1_1
 				}
 			}
 			else_if = {
-				limit = { has_ideas = STG_bickering_Parliament_idea_A_1_1 }
+				limit = { has_idea = STG_bickering_Parliament_idea_A_1_1 }
 				swap_ideas = {
 					remove_idea = STG_bickering_Parliament_idea_A_1_1
 					add_idea = STG_bickering_Parliament_idea_A_1_2
 				}
 			}
 			else_if = {
-				limit = { has_ideas = STG_bickering_Parliament_idea_A_1_2 }
+				limit = { has_idea = STG_bickering_Parliament_idea_A_1_2 }
 				swap_ideas = {
 					remove_idea = STG_bickering_Parliament_idea_A_1_2
 					add_idea = STG_bickering_Parliament_idea_A_1_3
@@ -819,10 +819,7 @@ STG_political_actions = {
 		}
 		available = {
 			113 = {
-				has_built = {
-					type = industrial_complex
-					value > 2
-				}
+				industrial_complex > 2
 			}
 		}
 		
@@ -901,7 +898,7 @@ STG_political_actions = {
 		
 		cost = 50
 		
-		complete_effect = {
+		remove_effect = {
 			
 		}
 	}
@@ -920,8 +917,11 @@ STG_political_actions = {
 		
 		cost = 50
 		
-		complete_effect = {
-			add_ideas = STG_War_unification_idea
+		remove_effect = {
+			add_timed_idea = { 
+				idea = STG_War_unification_idea
+				days = 60
+			}
 		}
 	}
 	
@@ -941,7 +941,7 @@ STG_political_actions = {
 		cost = 200
 		days_remove = 200
 		
-		complete_effect = {
+		remove_effect = {
 			set_autonomy = { 
 				target = BDH
 				autonomy_state = autonomy_colony
@@ -954,7 +954,7 @@ STG_political_actions = {
 		icon = GFX_STG_Formation_Wuthering_soldiers
 		
 		visible = {
-			has_completed_focus = STG_Reorganize_Wuthering_soldiers
+			has_completed_focus = STG_United_Kingdom_Great_Britain_Libya
 		}
 		available = {
 			
@@ -964,7 +964,7 @@ STG_political_actions = {
 		cost = 50
 		days_remove = 120
 		
-		complete_effect = {
+		remove_effect = {
 			
 		}
 	}

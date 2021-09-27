@@ -1,11 +1,5 @@
 spriteTypes = {	
 
-	################MOD###############
-	SpriteType = {
-		name = "GFX_tech_ammunition_medium"
-		texturefile = "gfx/interface/technologies/special_ammunition_1.dds"
-	}		
-
 	#####KGA#####
 	SpriteType = {
 		name = "GFX_KGA_senshado_prototype_tank_medium"
