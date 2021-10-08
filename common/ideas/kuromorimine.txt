@@ -442,6 +442,16 @@ ideas = {
 			}
 		}
 
+		#更高效的政府
+		KGA_government_with_more_efficiency = {
+			allowed = {
+				tag = KGA
+			}
+			modifier = {
+				political_power_factor = 0.15
+			}
+		}
+
 
 
 

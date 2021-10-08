@@ -30,11 +30,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/clausewitz_logo.dds"
 	}	
 
-	spriteType = {
-		name = "GFX_bound_bg"
-		texturefile = "gfx/interface/Loadingscreen_bg.dds"
-	}	
-
 	progressbartype = {
 		name = "GFX_loadingstatus_progress"
 		color = { 0.0 0.5 0.0 }

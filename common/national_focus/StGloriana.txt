@@ -1,5 +1,5 @@
 ﻿focus_tree = {
-	id = StGloriana_focus
+	id = STG_focus
 	country = {
 		factor = 0
 			modifier = {
@@ -123,7 +123,7 @@
 
 		prerequisite = { focus = STG_Winning_party_United_College }
 
-		mutually_exclusive = { focus =  }
+		#mutually_exclusive = { focus =  }
 			
 		bypass = { }
 
@@ -156,7 +156,7 @@
 
 		prerequisite = { focus = STG_Winning_party_United_College }
 
-		mutually_exclusive = { focus =  }
+		#mutually_exclusive = { focus =  }
 			
 		bypass = { }
 
@@ -189,7 +189,7 @@
 
 		prerequisite = { focus = STG_Winning_party_United_College }
 
-		mutually_exclusive = { focus =  }
+		#mutually_exclusive = { focus =  }
 			
 		bypass = { }
 
@@ -226,7 +226,7 @@
 		prerequisite = { focus = STG_Appointment_Secretary_Defense }
 		prerequisite = { focus = STG_Appointment_Justices }
 
-		mutually_exclusive = { focus =  }
+		#mutually_exclusive = { focus =  }
 		
 		bypass = { }
 
@@ -1149,21 +1149,21 @@
 
 		completion_reward = {
 			if = {
-				limit = { has_ideas = STG_bickering_Parliament_idea }
+				limit = { has_idea = STG_bickering_Parliament_idea }
 				swap_ideas = {
 					remove_idea = STG_bickering_Parliament_idea
 					add_idea = STG_bickering_Parliament_idea_A_1_1
 				}
 			}
 			else_if = {
-				limit = { has_ideas = STG_bickering_Parliament_idea_A_1_1 }
+				limit = { has_idea = STG_bickering_Parliament_idea_A_1_1 }
 				swap_ideas = {
 					remove_idea = STG_bickering_Parliament_idea_A_1_1
 					add_idea = STG_bickering_Parliament_idea_A_1_2
 				}
 			}
 			else_if = {
-				limit = { has_ideas = STG_bickering_Parliament_idea_A_1_2 }
+				limit = { has_idea = STG_bickering_Parliament_idea_A_1_2 }
 				swap_ideas = {
 					remove_idea = STG_bickering_Parliament_idea_A_1_2
 					add_idea = STG_bickering_Parliament_idea_A_1_3
@@ -1237,29 +1237,29 @@
 
 		completion_reward = {
 			if = {
-				limit = { has_ideas = STG_bickering_Parliament_idea }
+				limit = { has_idea = STG_bickering_Parliament_idea }
 				remove_ideas = STG_bickering_Parliament_idea
 			}
 			else_if = {
-				limit = { has_ideas = STG_bickering_Parliament_idea_A_1_1 }
+				limit = { has_idea = STG_bickering_Parliament_idea_A_1_1 }
 				remove_ideas = STG_bickering_Parliament_idea_A_1_1
 			}
 			else_if = {
-				limit = { has_ideas = STG_bickering_Parliament_idea_A_1_2 }
+				limit = { has_idea = STG_bickering_Parliament_idea_A_1_2 }
 				remove_ideas = STG_bickering_Parliament_idea_A_1_2
 			}
 			else_if = {
-				limit = { has_ideas = STG_bickering_Parliament_idea_A_1_3 }
+				limit = { has_idea = STG_bickering_Parliament_idea_A_1_3 }
 				remove_ideas = STG_bickering_Parliament_idea_A_1_3
 			}
 			else = {  }
 			
 			if = {
-				limit = { has_ideas = STG_rise_extremist_forces_idea }
+				limit = { has_idea = STG_rise_extremist_forces_idea }
 				remove_ideas = STG_rise_extremist_forces_idea
 			}
 			else_if = {
-				limit = { has_ideas = STG_rise_extremist_forces_idea_1 }
+				limit = { has_idea = STG_rise_extremist_forces_idea_1 }
 				remove_ideas = STG_rise_extremist_forces_idea_1
 			}
 			else = {  }
@@ -1678,29 +1678,29 @@
 
 		completion_reward = {
 			if = {
-				limit = { has_ideas = STG_bickering_Parliament_idea }
+				limit = { has_idea = STG_bickering_Parliament_idea }
 				remove_ideas = STG_bickering_Parliament_idea
 			}
 			else_if = {
-				limit = { has_ideas = STG_bickering_Parliament_idea_A_1_1 }
+				limit = { has_idea = STG_bickering_Parliament_idea_A_1_1 }
 				remove_ideas = STG_bickering_Parliament_idea_A_1_1
 			}
 			else_if = {
-				limit = { has_ideas = STG_bickering_Parliament_idea_A_1_2 }
+				limit = { has_idea = STG_bickering_Parliament_idea_A_1_2 }
 				remove_ideas = STG_bickering_Parliament_idea_A_1_2
 			}
 			else_if = {
-				limit = { has_ideas = STG_bickering_Parliament_idea_A_1_3 }
+				limit = { has_idea = STG_bickering_Parliament_idea_A_1_3 }
 				remove_ideas = STG_bickering_Parliament_idea_A_1_3
 			}
 			else = {  }
 			
 			if = {
-				limit = { has_ideas = STG_rise_extremist_forces_idea }
+				limit = { has_idea = STG_rise_extremist_forces_idea }
 				remove_ideas = STG_rise_extremist_forces_idea
 			}
 			else_if = {
-				limit = { has_ideas = STG_rise_extremist_forces_idea_1 }
+				limit = { has_idea = STG_rise_extremist_forces_idea_1 }
 				remove_ideas = STG_rise_extremist_forces_idea_1
 			}
 			else = {  }

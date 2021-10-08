@@ -5,6 +5,7 @@ bookmarks = {
 		date = 1972.9.6.12
 		picture = "GFX_select_date_1972"
 		default_country = "KGA"
+		default = yes
 	
 		KGA = {
 			history = KGA_1972_DESC

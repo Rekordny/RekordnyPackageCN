@@ -1,7 +1,8 @@
 ﻿capital = 111
 
 set_technology = {
-	
+	senshado_prototype_tank = 1
+	senshado_light_tank_1 = 1
 }
 set_research_slots = 5
 set_convoys = 20
@@ -59,10 +60,3 @@ create_country_leader = {
 		
 	}
 }
-
-
-add_namespace = {
-	name = "jhs_unit_leader"
-	type = unit_leader
-}
-

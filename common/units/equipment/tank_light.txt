@@ -75,7 +75,7 @@ equipments = {
 		year = 1971
 		
 		archetype = senshado_light_tank_equipment
-		parent = senshado_prtotype_tank_equipment
+		parent = senshado_prototype_tank_equipment
 		priority = 10
 		visual_level = 0
 		is_convertable = yes
@@ -268,7 +268,7 @@ equipments = {
 		is_convertable = yes
 		picture = archetype_light_tank_equipment			
 		is_buildable = no
-		family = light_tank_equipment
+		family = senshado_light_tank_equipment
 		type = { 
 			armor
 			anti_tank

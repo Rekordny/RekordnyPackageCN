@@ -185,11 +185,15 @@
  KGA_glory_home_land:0 "荣耀故土"
  KGA_glory_home_land_desc:0 "一个伟大的国家需要完整的领土，这只是我们的第一步而已。"
  KGA_defining_northern_resources_mining_rights:0 "界定北部资源开采权"
- KGA_defining_northern_resources_mining_rights_desc:0 ""
+ KGA_defining_northern_resources_mining_rights_desc:0 "我们国家北部的沿海地区坐拥丰富的油气资源，最大的问题是在现有的体制下我们应该如何决定开采权的分配。"
  KGA_grab_jutland:0 "争夺日德兰半岛"
- KGA_grab_jutland_desc:0 ""
+ KGA_grab_jutland_desc:0 "如果霹雳高中不愿意和我们站在一起，那么新的战车道联盟就不可能欢迎她们。"
  KGA_recruit_students:0 "招募新生"
- KGA_recruit_students_desc:0 ""
+ KGA_recruit_students_desc:0 "从内战中恢复过来的新政府需要同样需要新鲜的血液。"
+ KGA_government_with_more_efficiency:0 "更高效的政府"
+ KGA_government_with_more_efficiency_desc:0 "新生的黑森峰政府应该有更好，更快的行政系统，我们需要扩大政治基础和其在国民生活中的比重。"
+ KGA_nibelungen_knights:0 "尼伯龙根骑士团"
+ KGA_nibelungen_knights_desc:0 "尼伯龙根的骑士团是西住真穗下属的精锐中的精锐，这支战无不胜的番号将会是黑森峰团结稳定的强力保障。"
 
 #events
  kuromorimine.1.t:0 "黑森峰战车道政府修改生活管制条例"

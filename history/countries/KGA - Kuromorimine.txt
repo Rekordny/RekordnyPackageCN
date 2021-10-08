@@ -73,11 +73,6 @@ create_country_leader = {
 	}
 }
 
-add_namespace = {
-	name = "kga_unit_leader"
-	type = unit_leader
-}
-
 create_field_marshal = {
 	name = "Miho Nishizumi"
 	picture = "Portrait_KGA_Miho.dds"

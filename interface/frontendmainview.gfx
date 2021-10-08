@@ -27,4 +27,13 @@ spriteTypes = {
 		name = "GFX_socialview_icon"
 		texturefile = "gfx/interface/icons/pi_icon.dds"
 	}
+
+	frameAnimatedSpriteType = {
+        name = "GFX_loading_ooari_gif"
+        texturefile = "gfx/interface/gifs/loading_ooari_gif.dds"
+        noOfFrames = 8
+        animation_rate_fps = 8
+        looping = yes
+        play_on_show = yes
+    }
 }

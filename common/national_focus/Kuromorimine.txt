@@ -1,5 +1,5 @@
 focus_tree = {
-	id = Kuromorimine_focus
+	id = KGA_focus
 	country = {
 			factor = 0
 				modifier = {
@@ -3235,5 +3235,61 @@ focus_tree = {
 		}
 	}
 
-	#骑士团
+	#更高效率的政府
+	focus = {
+		id = KGA_government_with_more_efficiency
+		icon = GFX_focus_KGA_government_with_more_efficiency
+		relative_position_id = KGA_recruit_students
+		x = 0
+		y = 1
+		available = {  }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_recruit_students }
+		#mutually_exclusive = { focus =  }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = KGA_government_with_more_efficiency
+		}
+
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#尼伯龙根骑士团
+	focus = {
+		id = KGA_nibelungen_knights
+		icon = GFX_focus_KGA_nibelungen_knights
+		relative_position_id = KGA_government_with_more_efficiency
+		x = 0
+		y = 1
+		available = {  }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_government_with_more_efficiency }
+		#mutually_exclusive = { focus =  }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#解锁编制nibelungen_knights
+		}
+
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
 }

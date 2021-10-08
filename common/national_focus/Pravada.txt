@@ -1,5 +1,5 @@
 focus_tree = {
-	id = german_focus
+	id = PRA_focus
 	
 	country = {
 		factor = 0

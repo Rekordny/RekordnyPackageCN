@@ -1,7 +1,8 @@
 ﻿capital = 276
 
 set_technology = {
-	infantry_weapons = 1
+	senshado_prototype_tank = 1
+	senshado_light_tank_1 = 1
 }
 set_research_slots = 5
 set_convoys = 20
@@ -24,15 +25,8 @@ create_country_leader = {
 	desc = ""
 	picture = "0.dds"
 	expire = "1965.1.1"
-	ideology = neutrality
+	ideology = moderatism
 	traits = {
 		
 	}
 }
-
-
-add_namespace = {
-	name = "kga_unit_leader"
-	type = unit_leader
-}
-
