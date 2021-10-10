@@ -349,7 +349,7 @@ country_event = {
 	option = {
 		name = kuromorimine.24.b
 		unlock_decision_category_tooltip = kga_civil_war
-		set_country_flag = start_kga_prepare_civil_war_mission 
+		set_country_flag = start_kga_prepare_civil_war_mission
 	}
 }
 

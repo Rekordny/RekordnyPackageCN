@@ -194,6 +194,14 @@
  KGA_government_with_more_efficiency_desc:0 "新生的黑森峰政府应该有更好，更快的行政系统，我们需要扩大政治基础和其在国民生活中的比重。"
  KGA_nibelungen_knights:0 "尼伯龙根骑士团"
  KGA_nibelungen_knights_desc:0 "尼伯龙根的骑士团是西住真穗下属的精锐中的精锐，这支战无不胜的番号将会是黑森峰团结稳定的强力保障。"
+ KGA_Ermachtigungsgesetz:0 "黑森峰授权法案"
+ KGA_Ermachtigungsgesetz_desc:0 "为了应对目前新的敌人和紧急的境地，一项新的法律将授予西住真穗政府对这个国家无上的掌控力，这项新授权法将成为黑森峰抵御内忧和外敌的坚实后盾。"
+ KGA_national_economy_plan:0 "国民经济建设"
+ KGA_national_economy_plan_desc:0 "国家对于国民经济的建设成就将成为未来世界衡量强国的唯一指标。"
+ KGA_tank_industry:0 "战车工业"
+ KGA_tank_industry_desc:0 "在战车道盛行的世界上，战车重工业应该是每个国家发展的领头产业。"
+ KGA_reconstruction_law:0 "黑森峰重建法"
+ KGA_reconstruction_law_desc:0 "黑森峰重建法规范了黑森峰在内战后的所有关于工业和民用建设的标准，同时加强了国家对于整个工业体系的监控。"
 
 #events
  kuromorimine.1.t:0 "黑森峰战车道政府修改生活管制条例"
@@ -398,7 +406,8 @@
  KGA_resource_extraction_policy_3:0 "开放个人承包开采资源"
  KGA_senshado_focus_production:0 "战车道化工业"
  KGA_steady_cconomic_plan:0 "稳定的经济发展方案"
- 
+ KGA_rise_tax_on_consumer_goods:0 "提高消费品税收"
+
 #custom_tooltip
  kga_tooltip1:0 "必须在至少一场战车道大赛中获胜"
  kga_tooltip2:0 "奖励§Y300§!战车道点数\n在§Y1974年7月§!前完成:奖励§Y50§!战车道点数和§Y10%§!稳定度"
@@ -428,6 +437,11 @@
  kga_tooltip19:0 "§Y中须贺艾米§!加入学生会"
  kga_tooltip20:0 "§Y赤星小梅§!的学生会效果升级"
  kga_tooltip21:0 "§Y中须贺艾米§!的学生会效果升级"
+ kga_tooltip22:0 "将在首都集结三支 §Y尼伯龙根骑士团§!"
+ kga_tooltip23:0 "25£GFX_pol_power_icon"
+ kga_tooltip23_blocked:0 "25£GFX_pol_power_icon"
+ kga_tooltip24:0 "50£GFX_pol_power_icon"
+ kga_tooltip24_blocked:0 "50£GFX_pol_power_icon"
 
 #decisions
  kga_missions:0 "黑森峰-任务"
@@ -451,10 +465,15 @@
  kga_improve_relationship_yog:0 "增进和优格的外交关系"
  kga_improve_relationship_keb:0 "增进和刻巴的外交关系"
  kga_establish_puppuet_bon:0 "冯布诺傀儡政府计划"
- control_congressional_seats:0 "控制国会席位"
- start_infiltration:0 "开始意识形态渗透"
- control_congressional_seats:0 "驱动反对分子"
- support_bkc:0 "支援黑森峰-冯布诺联合"
+ kga_control_congressional_seats:0 "控制国会席位"
+ kga_start_infiltration:0 "开始意识形态渗透"
+ kga_control_congressional_seats:0 "驱动反对分子"
+ kga_support_bkc:0 "支援黑森峰-冯布诺联合"
+ kga_plan_industrial_land:0 "规划工业用地"
+ kga_senshado_industrial_decisions:0 "黑森峰-工业"
+ kga_rise_tax_on_consumer_goods:0 "提高消费品进口税收"
+
+
 #flags
  BCF_allow_trade:0 "BC批准了贸易协定"
 

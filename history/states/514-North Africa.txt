@@ -9,7 +9,7 @@ state={
 
 	history={
 		owner = ANZ
-		add_core_of = ALG
+		add_core_of = ANZ
 		buildings = {
 			infrastructure = 0
 		}

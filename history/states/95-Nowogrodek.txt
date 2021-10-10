@@ -13,7 +13,6 @@ state={
 
 		}
 		add_core_of = BON
-		add_core_of = BLR
 
 	}
 

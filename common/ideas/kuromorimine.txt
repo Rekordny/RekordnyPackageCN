@@ -452,7 +452,32 @@ ideas = {
 			}
 		}
 
+		#黑森峰授权法案
+		KGA_Ermachtigungsgesetz = {
+			allowed = {
+				tag = KGA
+			}
+			modifier = {
+				political_power_cost = 0.3
+				drift_defence_factor = 0.5
+				offensive_war_stability_factor = 0.3
+				defensive_war_stability_factor = 0.3
+				max_surrender_limit_offset = 0.3
+			}
+		}
 
+		#提高消费品税收
+		KGA_rise_tax_on_consumer_goods = {
+			allowed = {
+				tag = KGA
+			}
+			modifier = {
+				tax_daily_modifier = 0.1
+				consumer_goods_factor = 0.02
+				stability_weekly = -0.01
+				trade_opinion_factor = -0.1
+			}
+		}
 
 
     }

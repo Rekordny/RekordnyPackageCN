@@ -4,7 +4,7 @@ state={
 
 	history={
 		owner = KFA
-		add_core_of = SOL
+		add_core_of = KFA
 		buildings = {
 			infrastructure = 2
 			1269 = {

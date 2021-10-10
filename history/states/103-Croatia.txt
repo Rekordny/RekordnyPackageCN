@@ -30,8 +30,6 @@ state={
 			}
 		}
 		add_core_of = ANZ
-		#add_claim_by = ITA #added by focus
-		add_core_of = CRO
 	}
 
 	provinces={

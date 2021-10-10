@@ -3,7 +3,7 @@ state={
 	name="STATE_621"
 
 	history={
-		owner = SHX
+		owner = ASU
 		
 		add_core_of = ASU
 		
@@ -18,8 +18,6 @@ state={
 				level = 1
 
 			}
-			owner = ASU
-			controller = ASU
 
 		}
 

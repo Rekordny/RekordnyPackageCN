@@ -3,7 +3,6 @@ state={
 	name="STATE_585"
 
 	history={
-		add_core_of = UZB
 		victory_points = {
 			1614 1
 		}

@@ -1,0 +1,282 @@
+ideas = {
+    country = {
+		#虚弱的中央政府4
+		BCF_weak_government_4 = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				conscription = -0.02
+				consumer_goods_factor = 0.1
+				production_factory_max_efficiency_factor = -0.1
+				production_speed_buildings_factor = -0.1
+				industrial_capacity_factory = -0.15
+			}
+		}
+
+		#虚弱的中央政府3
+		BCF_weak_government_3 = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				conscription = -0.015
+				consumer_goods_factor = 0.1
+				production_factory_max_efficiency_factor = -0.08
+				production_speed_buildings_factor = -0.08
+				industrial_capacity_factory = -0.15
+			}
+		}
+
+		#虚弱的中央政府2
+		BCF_weak_government_2 = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				conscription = -0.01
+				consumer_goods_factor = 0.1
+				production_factory_max_efficiency_factor = -0.06
+				production_speed_buildings_factor = -0.06
+				industrial_capacity_factory = -0.1
+			}
+		}
+
+		#虚弱的中央政府1
+		BCF_weak_government_1 = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				conscription = -0.005
+				consumer_goods_factor = 0.1
+				production_factory_max_efficiency_factor = -0.04
+				production_speed_buildings_factor = -0.04
+				industrial_capacity_factory = -0.1
+			}
+		}
+
+		#虚弱的中央政府0
+		BCF_weak_government_0 = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_factory_max_efficiency_factor = -0.102
+				production_speed_buildings_factor = -0.02
+				industrial_capacity_factory = -0.05
+			}
+		}
+
+		#派系斗争4
+		BCF_faction_struggle_4 = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				stability_factor = -0.5
+				political_power_cost = 0.25
+			}
+		}
+		#派系斗争3
+		BCF_faction_struggle_3 = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				stability_factor = -0.4
+				political_power_cost = 0.20
+			}
+		}
+		#派系斗争2
+		BCF_faction_struggle_2 = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				stability_factor = -0.3
+				political_power_cost = 0.15
+			}
+		}
+		#派系斗争1
+		BCF_faction_struggle_1 = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				stability_factor = -0.2
+				political_power_cost = 0.1
+			}
+		}
+		#派系斗争0
+		BCF_faction_struggle_0 = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				stability_factor = -0.1
+				political_power_cost = 0.05
+			}
+		}
+
+		#政局动荡1
+		BCF_political_instability_1 = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				political_power_factor = -0.3
+				surrender_limit = -0.25
+				war_support_factor = 0.3
+			}
+		}
+
+		#政局动荡0
+		BCF_political_instability_0 = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				political_power_factor = -0.15
+				surrender_limit = -0.125
+				war_support_factor = 0.15
+			}
+		}
+
+		#混乱的军队
+		BCF_chaotic_army = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = yes }
+			research_bonus = {
+				land_doctrine = -0.75
+			}
+			modifier = {
+				experience_gain_army = -0.5
+				army_org_Factor = -0.15
+			}
+		}
+
+		#改革中的军队
+		BCF_reforming_army = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = yes }
+			research_bonus = {
+				land_doctrine = -0.1
+			}
+			modifier = {
+				army_org_Factor = -0.05
+			}
+		}
+
+		#第一个五年计划1
+        BCF_first_five_year_plan_0 = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		#国家干涉
+		BCF_state_inteference = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		#战时动员
+		BCF_war_time_consription = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				conscription_factor = 0.15
+			}
+		}
+
+		#BC自由桑达斯经济合作
+		BCF_bc_freedom = {
+			allowed = { }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				consumer_goods_factor = -0.03
+			}
+		}
+
+		#专注重坦生产
+		BCF_heavy_panzer_focus = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			equipment_bonus = {
+				heavy_armor = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+			}
+			modifier = {
+				
+			}
+		}
+
+		#模块化生产
+		BCF_module_production = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			equipment_bonus = {
+				armor = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+			}
+			modifier = {
+				
+			}
+		}
+
+		#数量就是力量 
+		BCF_quantity_is_power = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				training_time_factor = -0.1
+			}
+		}
+
+		#现代闪电战
+		BCF_modern_blitzkeieg = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				breakthrough_factor = 0.15
+			}
+		}
+
+		#标准化生产
+		BCF_standardized_production = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				industrial_capacity_factory = 0.075
+			}
+		}
+
+		#拿起武器
+		BCF_to_arms = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				army_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+
+		#新宪法
+		BCF_new_constitution = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				democratic_drift = 0.05
+				stability_factor = 0.05
+				political_power_factor = 0.1
+			}
+		}
+    }
+
+	student_union_member = {
+		emi = {
+			picture = GFX_idea_KGA_emi
+			allowed = { original_tag = KGA OR = { has_government = communism has_country_flag = KGA_EMI_JOINED_ADVISOR } }
+			traits = { savior_of_the_bell_wall }
+		}
+	}
+}

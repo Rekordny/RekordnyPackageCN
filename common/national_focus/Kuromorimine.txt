@@ -2567,12 +2567,12 @@ focus_tree = {
 	focus = {
 		id = KGA_contact_Anzio
 		icon = GFX_focus_KGA_contact_Anzio
-		relative_position_id = KGA_nishizumi_family
-		x = 0
+		relative_position_id = KGA_Ermachtigungsgesetz
+		x = 2
 		y = 1
 		available = {  }
 		#allow_branch = { has_completed_focus = KGA_nishizumi_family }
-		prerequisite = { focus = KGA_nishizumi_family }
+		prerequisite = { focus = KGA_Ermachtigungsgesetz }
 		#mutually_exclusive = { focus =  }
 		bypass = { }
 		cost = 10
@@ -2596,7 +2596,7 @@ focus_tree = {
 		id = KGA_resume_military_service 
 		icon = GFX_focus_KGA_resume_military_service 
 		relative_position_id = KGA_nishizumi_family
-		x = -6
+		x = -8
 		y = 1
 		available = {  }
 		#allow_branch = { has_completed_focus = KGA_nishizumi_family }
@@ -2625,7 +2625,7 @@ focus_tree = {
 		id = KGA_rebalance_military_industry
 		icon = GFX_focus_KGA_rebalance_military_industry
 		relative_position_id = KGA_arbeitsfront
-		x = 0
+		x = 1
 		y = 1
 		available = { has_civil_war = no owns_state = 59 owns_state = 50 owns_state = 42 owns_state = 57 owns_state = 51 owns_state = 56 owns_state = 58  }
 		#allow_branch = { has_completed_focus =  }
@@ -2653,7 +2653,7 @@ focus_tree = {
 		id = KGA_set_up_senshado_fund
 		icon = GFX_focus_KGA_set_up_senshado_fund
 		relative_position_id = KGA_arbeitsfront
-		x = 4
+		x = 3
 		y = 1
 		available = {  }
 		#allow_branch = { has_completed_focus =  }
@@ -2683,7 +2683,7 @@ focus_tree = {
 		id = KGA_incorporate_bellwall
 		icon = GFX_focus_KGA_incorporate_bellwall
 		relative_position_id = KGA_kuromorimine_industry_class
-		x = 7
+		x = 6
 		y = 1
 		available = { has_civil_war = no }
 		#allow_branch = { has_completed_focus =  }
@@ -2917,7 +2917,7 @@ focus_tree = {
 		id = KGA_expand_ruhr_steel
 		icon = GFX_focus_KGA_expand_ruhr_steel
 		relative_position_id = KGA_arbeitsfront
-		x = -2
+		x = -1
 		y = 1
 		available = { 51 = { is_controlled_by = KGA } 57 = { is_controlled_by = KGA } }
 		#allow_branch = { has_completed_focus =  }
@@ -2955,7 +2955,7 @@ focus_tree = {
 		id = KGA_approch_new_senshado_union
 		icon = GFX_focus_KGA_approch_new_senshado_union
 		relative_position_id = KGA_nishizumi_family
-		x = 5
+		x = 7
 		y = 1
 		available = { BON = { is_faction_leader = yes } }
 		#allow_branch = { has_completed_focus = KGA_nishizumi_family }
@@ -3282,13 +3282,162 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			custom_effect_tooltip = kga_tooltip22
 			#解锁编制nibelungen_knights
+			hidden_effect = {
+				load_oob = KGA_knights
+			}
+			
 		}
 
 		#AI行动之后具体设计，复制粘贴以下部分即可
 		ai_will_do = {
 			factor = 1
 			modifier = {
+			}
+		}
+	}
+
+	#黑森峰授权法案
+	focus = {
+		id = KGA_Ermachtigungsgesetz
+		icon = GFX_focus_KGA_Ermachtigungsgesetz
+		relative_position_id = KGA_nishizumi_family
+		x = 0
+		y = 1
+		available = { has_civil_war = no }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_nishizumi_family }
+		#mutually_exclusive = { focus =  }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.5
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.5
+			}
+			add_ideas = KGA_Ermachtigungsgesetz
+		}
+	}
+
+	#黑森峰重建法
+	focus = {
+		id = KGA_reconstruction_law
+		icon = GFX_focus_KGA_reconstruction_law
+		relative_position_id = KGA_Ermachtigungsgesetz
+		x = -3
+		y = 1
+		available = {  }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_Ermachtigungsgesetz }
+		prerequisite = { focus = KGA_arbeitsfront }
+		#mutually_exclusive = { focus =  }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			unlock_decision_tooltip = kga_plan_industrial_land
+			unlock_decision_tooltip = kga_rise_tax_on_consumer_goods
+		}
+	}
+
+	#建设国民经济
+	focus = {
+		id = KGA_national_economy_plan
+		icon = GFX_focus_KGA_national_economy_plan
+		relative_position_id = KGA_rebalance_military_industry
+		x = 0
+		y = 1
+		available = {  }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_rebalance_military_industry }
+		#mutually_exclusive = { focus =  }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_state = {
+				limit = { is_core_of = KGA is_controlled_by = KGA }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = { is_core_of = KGA is_controlled_by = KGA }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = { is_core_of = KGA is_controlled_by = KGA }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#战车工业
+	focus = {
+		id = KGA_tank_industry
+		icon = GFX_focus_KGA_tank_industry
+		relative_position_id = KGA_defining_northern_resources_mining_rights
+		x = 1
+		y = 1
+		available = {  }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_defining_northern_resources_mining_rights }
+		prerequisite = { focus = KGA_national_economy_plan }
+		#mutually_exclusive = { focus =  }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = armorpiece_tech
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = ammunition_tech
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = support_tech
 			}
 		}
 	}

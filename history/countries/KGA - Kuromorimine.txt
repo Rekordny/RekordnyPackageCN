@@ -5,6 +5,7 @@ add_ideas = {
 	KGA_nishizumi_family_origin
 	KGA_huge_debt
 }
+oob = "KGA_1972"
 
 set_technology = {
 	senshado_prototype_tank = 1

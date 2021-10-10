@@ -13,7 +13,7 @@ state={
 
 	history={
 		owner = BDH
-		add_core_of = MOR
+		add_core_of = BDH
 		victory_points = {
 			9945 3
 		}

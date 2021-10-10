@@ -14,7 +14,6 @@ state={
 			infrastructure = 4
 		}
 		add_core_of = BON
-		add_core_of = BLR
 	}
 
 	provinces={

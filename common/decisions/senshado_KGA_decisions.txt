@@ -1,7 +1,7 @@
 #黑森峰-政府
 kga_senshado_government_decisions = {
 
-	##########以下为测试
+	##########以下为KGA测试
 	test_war = {
 		allowed = { tag = KGA }
 		visible = { is_debug = yes }
@@ -169,12 +169,41 @@ kga_senshado_diplomatic_decisions = {
 }
 
 kga_senshado_industrial_decisions = {
-	
+	kga_plan_industrial_land = {
+		allowed = { tag = KGA }
+		visible = { AND = { has_completed_focus = KGA_reconstruction_law } }
+		days_re_enable = 30
+		custom_cost_trigger = {
+			check_variable = { political_power > 24.9 }
+	   	}
+		custom_cost_text = kga_tooltip23
+		complete_effect = {
+			random_state = {
+				limit = { is_core_of = KGA is_controlled_by = KGA }
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	kga_rise_tax_on_consumer_goods = {
+		allowed = { tag = KGA }
+		visible = { AND = { has_completed_focus = KGA_reconstruction_law } }
+		days_re_enable = 121
+		custom_cost_trigger = {
+			check_variable = { political_power > 49.9 }
+	   	}
+		custom_cost_text = kga_tooltip24
+		complete_effect = {
+			add_timed_idea = {
+				idea = KGA_rise_tax_on_consumer_goods
+				days = 120
+			}
+		}
+	}
 }
 
 #傀儡政府-冯部诺
 kga_establish_puppuet_bon = {
-	start_infiltration = {
+	kga_start_infiltration = {
 		allowed = { tag = KGA }
 		days_re_enable = 70
 		visible = { AND = { has_completed_focus = KGA_support_puppet_faction country_exists = BON } }
@@ -189,7 +218,7 @@ kga_establish_puppuet_bon = {
 		}
 	} 
 
-	control_congressional_seats  = {
+	kga_control_congressional_seats = {
 		allowed = { tag = KGA }
 		visible = { AND = { has_completed_focus = KGA_support_puppet_faction country_exists = BON } }
 		available = { AND = { NOT = { has_war_with = BON } fascism > 0.35 } }
@@ -203,7 +232,7 @@ kga_establish_puppuet_bon = {
 		}
 	}
 
-	support_bkc = {
+	kga_support_bkc = {
 		visible = { country_exists = BKC }
 		allowed = { tag = KGA }
 		available = { NOT = { has_war_with = BON } country_exists = BKC }

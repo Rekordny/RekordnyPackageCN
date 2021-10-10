@@ -1,0 +1,34 @@
+add_namespace = BCFreedom
+
+#第二次奥尔良会议结束了
+country_event = {
+	id = bcfreedom.1
+	title = bcfreedom.1.t
+	desc = bcfreedom.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.1.a
+		hidden_effect = {
+			BCF = { set_country_flag = BCF_SEC_ORELANS_END }
+		}
+	}
+}
+
+#争取圣葛罗莉安娜支持
+country_event = {
+	id = bcfreedom.2
+	title = bcfreedom.2.t
+	desc = bcfreedom.2.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.2.a
+		hidden_effect = {
+			BCF = { set_country_flag = BCF_SEC_ORELANS_END }
+		}
+	}
+}
+

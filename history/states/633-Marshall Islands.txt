@@ -8,7 +8,7 @@ state={
 
 	history={
 		owner = CHT
-		add_core_of = FSM
+		add_core_of = CHT
 		buildings = {
 			infrastructure = 3
 			air_base = 2

@@ -18,7 +18,6 @@ state=
 			}
 		}
 		add_core_of = VIK
-		add_core_of = ICE
 	}
 	provinces=
 	{

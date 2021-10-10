@@ -1,4 +1,5 @@
 spriteTypes = {	
+	#advisor
 	spriteType = {
 		name = "GFX_idea_erika"
 		texturefile = "gfx/interface/advisors/idea_erika.dds"
@@ -30,5 +31,19 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_sangou"
 		texturefile = "gfx/interface/advisors/idea_sangou.dds"
+	}
+
+	#领导人
+	spriteType = {
+		name = "GFX_leader_Marie"
+		texturefile = "gfx/leaders/BCF/Portrait_BCF_Marie.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_Andou"
+		texturefile = "gfx/leaders/BCF/Portrait_BCF_Andou.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_Oshida"
+		texturefile = "gfx/leaders/BCF/Portrait_BCF_Oshida.dds"
 	}
 }

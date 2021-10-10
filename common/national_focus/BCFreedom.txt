@@ -20,7 +20,11 @@ focus_tree = {
 		icon = GFX_BCF_second_orleans_conference
 		x = 0
 		y = -5
-		cost = 10
+		cost = 0
+		available = {
+			has_country_flag = BCF_SEC_ORELANS_END
+		}
+		bypass = { has_country_flag = BCF_SEC_ORELANS_END }
 		
 		ai_will_do = {
 			factor = 25
@@ -48,6 +52,23 @@ focus_tree = {
 		mutually_exclusive = { focus = BCF_country_of_the_noble }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.05
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}	
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			custom_effect_tooltip = bcf_tooltip1
+			set_country_leader_portrait = {
+				portrait = GFX_leader_Andou
+			}
+			set_country_leader_name = {
+				name = "Andou"
+			}
 		}
 	}
 	
@@ -66,10 +87,16 @@ focus_tree = {
 		prerequisite = { focus = BCF_will_of_the_people }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = industry
+			}
+			add_ideas = BCF_first_five_year_plan_0
 		}
 	}
 	
-	#通往真理的调查团
+	#派往真理的考查团
 	focus = {
 		id = BCF_mission_to_pravda
 		icon = GFX_BCF_mission_to_pravda
@@ -84,6 +111,10 @@ focus_tree = {
 		prerequisite = { focus = BCF_first_five_year_plan }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_opinion_modifier = {
+				target = PRA
+				modifier = BCF_mission_to_pravda
+			}
 		}
 	}
 	
@@ -102,6 +133,33 @@ focus_tree = {
 		prerequisite = { focus = BCF_first_five_year_plan }
 		available_if_capitulated = yes
 		completion_reward = {
+			random_state = {
+				limit = { is_core_of = BCF is_controlled_by = BCF }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex 
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = { is_core_of = BCF is_controlled_by = BCF }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex 
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = { is_core_of = BCF is_controlled_by = BCF }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory 
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -122,6 +180,12 @@ focus_tree = {
 		mutually_exclusive = { focus = BCF_country_of_the_noble }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
 		}
 	}
 	
@@ -140,6 +204,7 @@ focus_tree = {
 		prerequisite = { focus = BCF_maid_of_20th_century }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_ideas = BCF_state_inteference
 		}
 	}
 	
@@ -158,6 +223,8 @@ focus_tree = {
 		prerequisite = { focus = BCF_maid_of_20th_century }
 		available_if_capitulated = yes
 		completion_reward = {
+			custom_effect_tooltip = bcf_tooltip2
+			add_to_variable = { gold = 50 }
 		}
 	}
 	
@@ -178,6 +245,18 @@ focus_tree = {
 		mutually_exclusive = { focus = BCF_maid_of_20th_century }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_stability = -0.05
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			custom_effect_tooltip = bcf_tooltip3
+			set_country_leader_portrait = {
+				portrait = GFX_leader_Oshida
+			}
+			set_country_leader_name = {
+				name = "Oshida"
+			}
 		}
 	}
 	
@@ -196,6 +275,11 @@ focus_tree = {
 		prerequisite = { focus = BCF_country_of_the_noble }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_ideas = free_trade
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
 		}
 	}
 	
@@ -214,6 +298,42 @@ focus_tree = {
 		prerequisite = { focus = BCF_laissez_faire }
 		available_if_capitulated = yes
 		completion_reward = {
+			random_state = {
+				limit = { is_core_of = BCF is_controlled_by = BCF }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex 
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = { is_core_of = BCF is_controlled_by = BCF }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex 
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = { is_core_of = BCF is_controlled_by = BCF }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex 
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = { is_core_of = BCF is_controlled_by = BCF }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory 
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -232,6 +352,8 @@ focus_tree = {
 		prerequisite = { focus = BCF_laissez_faire }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_ideas = BCF_bc_freedom
+			SDS = { add_ideas = BCF_bc_freedom }
 		}
 	}
 	
@@ -250,6 +372,47 @@ focus_tree = {
 		prerequisite = { focus = BCF_first_five_year_plan focus = BCF_protectionism  focus = BCF_state_inteference focus = BCF_laissez_faire }
 		available_if_capitulated = yes
 		completion_reward = {
+			if = {
+				limit = { has_country_leader = {
+					name = "Marie"
+					ruling_only = yes
+				} }
+				16 = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex 
+						level = 3
+						instant_build = yes
+					}
+				}
+				16 = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = arms_factory 
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+			else = {
+				16 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex 
+						level = 2
+						instant_build = yes
+					}
+				}
+				16 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory 
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			custom_effect_tooltip = bcf_tooltip4
 		}
 	}
 	
@@ -265,9 +428,18 @@ focus_tree = {
 			factor = 25
 		}
 		
+		available = {
+			OR = {
+				has_war_with = KGA
+				has_war_with = STG
+				has_war_with = PRA
+			}
+		}
 		prerequisite = { focus = BCF_ill_de_france_construction }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_stability = -0.05
+			add_ideas = BCF_war_time_consription
 		}
 	}
 	
@@ -286,6 +458,10 @@ focus_tree = {
 		prerequisite = { focus = BCF_ill_de_france_construction }
 		available_if_capitulated = yes
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = BCF_chaotic_army
+				add_idea = BCF_reforming_army
+			}
 		}
 	}
 	
@@ -300,12 +476,27 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 		}
-		
+		available = {
+			has_country_leader = {
+				name = "Oshida"
+				ruling_only = yes
+			}
+		}
 		prerequisite = { focus = BCF_land_force_reform }
 		mutually_exclusive = { focus = BCF_cooperative_combat }
 		mutually_exclusive = { focus = BCF_mobile_combat }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_tech_bonus = {
+				category = armor_ht
+				uses = 1
+				bonus = 1
+			}
+			add_tech_bonus = {
+				category = armor_atd
+				uses = 1
+				bonus = 0.5
+			}
 		}
 	}
 	
@@ -324,6 +515,11 @@ focus_tree = {
 		prerequisite = { focus = BCF_armor_first }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_tech_bonus = {
+				category = armorpiece_tech
+				uses = 2
+				bonus = 0.75
+			}
 		}
 	}
 	
@@ -342,6 +538,7 @@ focus_tree = {
 		prerequisite = { focus = BCF_armor_experiment }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_ideas = BCF_heavy_panzer_focus
 		}
 	}
 	
@@ -356,12 +553,27 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 		}
-		
+		available = {
+			has_country_leader = {
+				name = "Marie"
+				ruling_only = yes
+			}
+		}
 		prerequisite = { focus = BCF_land_force_reform }
 		mutually_exclusive = { focus = BCF_armor_first }
 		mutually_exclusive = { focus = BCF_mobile_combat }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_tech_bonus = {
+				uses = 1
+				bonus = 1
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				uses = 1
+				bonus = 1
+				category = armor_ht
+			}
 		}
 	}
 	
@@ -380,6 +592,7 @@ focus_tree = {
 		prerequisite = { focus = BCF_cooperative_combat }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_ideas = BCF_module_production
 		}
 	}
 	
@@ -398,6 +611,7 @@ focus_tree = {
 		prerequisite = { focus = BCF_module_production }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_ideas = BCF_quantity_is_power
 		}
 	}
 	
@@ -413,11 +627,27 @@ focus_tree = {
 			factor = 25
 		}
 		
+		available = {
+			has_country_leader = {
+				name = "Andou"
+				ruling_only = yes
+			}
+		}
 		prerequisite = { focus = BCF_land_force_reform }
 		mutually_exclusive = { focus = BCF_armor_first }
 		mutually_exclusive = { focus = BCF_cooperative_combat }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_tech_bonus = {
+				uses = 2
+				bonus = 0.5
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				uses = 1
+				bonus = 1
+				category = armor_lt
+			}
 		}
 	}
 	
@@ -436,6 +666,7 @@ focus_tree = {
 		prerequisite = { focus = BCF_mobile_combat }
 		available_if_capitulated = yes
 		completion_reward = {
+			#引擎科技加成
 		}
 	}
 	
@@ -454,6 +685,7 @@ focus_tree = {
 		prerequisite = { focus = BCF_more_powerful_engine }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_ideas = BCF_modern_blitzkeieg
 		}
 	}
 	
@@ -472,6 +704,7 @@ focus_tree = {
 		prerequisite = { focus = BCF_modern_blitzkeieg focus = BCF_quantity_is_power focus = BCF_french_panzer_legion }
 		available_if_capitulated = yes
 		completion_reward = {
+			remove_ideas = BCF_reforming_army
 		}
 	}
 	
@@ -490,6 +723,16 @@ focus_tree = {
 		prerequisite = { focus = BCF_modern_blitzkeieg focus = BCF_quantity_is_power focus = BCF_french_panzer_legion }
 		available_if_capitulated = yes
 		completion_reward = {
+			random_state = {
+				limit = { is_core_of = BCF is_controlled_by = BCF }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = senshado_school 
+					level = 2
+					instant_build = yes
+				}
+			}
+			army_experience = 25
 		}
 	}
 	
@@ -508,6 +751,7 @@ focus_tree = {
 		prerequisite = { focus = BCF_ill_de_france_construction }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_political_power = 50
 		}
 	}
 	
@@ -526,6 +770,11 @@ focus_tree = {
 		prerequisite = { focus = BCF_domestic_affairs }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_tech_bonus = {
+				uses = 2
+				bonus = 0.75
+				category = industry
+			}
 		}
 	}
 	
@@ -544,6 +793,7 @@ focus_tree = {
 		prerequisite = { focus = BCF_cotinue_economic_development }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_ideas = BCF_standardized_production
 		}
 	}
 	
@@ -562,10 +812,18 @@ focus_tree = {
 		prerequisite = { focus = BCF_standardized_parts }
 		available_if_capitulated = yes
 		completion_reward = {
+			14 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard 
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
-	#加强坦克投入
+	#加强坦克研发投入
 	focus = {
 		id = BCF_invest_panzer_research
 		icon = GFX_BCF_invest_panzer_research
@@ -580,6 +838,7 @@ focus_tree = {
 		prerequisite = { focus = BCF_cotinue_economic_development }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 	
@@ -595,9 +854,13 @@ focus_tree = {
 			factor = 25
 		}
 		
+		available = {
+			dockyard > 20
+		}
 		prerequisite = { focus = BCF_invest_panzer_research }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 	
@@ -617,6 +880,7 @@ focus_tree = {
 		prerequisite = { focus = BCF_expand_brest_dock }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_ideas = BCF_ship_modularization
 		}
 	}
 	
@@ -635,6 +899,7 @@ focus_tree = {
 		prerequisite = { focus = BCF_ship_modularization }
 		available_if_capitulated = yes
 		completion_reward = {
+			navy_experience = 25
 		}
 	}
 	
@@ -653,6 +918,11 @@ focus_tree = {
 		prerequisite = { focus = BCF_ship_modularization }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_tech_bonus = {
+				category = cv_tech
+				uses = 1
+				bonus = 2
+			}
 		}
 	}
 	
@@ -671,6 +941,11 @@ focus_tree = {
 		prerequisite = { focus = BCF_ship_modularization }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_tech_bonus = {
+				category = cl_tech
+				uses = 1
+				bonus = 2
+			}
 		}
 	}
 	
@@ -689,6 +964,8 @@ focus_tree = {
 		prerequisite = { focus = BCF_domestic_affairs }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 25
 		}
 	}
 	
@@ -704,6 +981,12 @@ focus_tree = {
 			factor = 25
 		}
 		
+		available = {
+			has_country_leader = {
+				name = "Andou"
+				ruling_only = yes
+			}
+		}
 		prerequisite = { focus = BCF_future_of_france }
 		mutually_exclusive = { focus = BCF_rebuild_democracy }
 		mutually_exclusive = { focus = BCF_no_change }
@@ -711,6 +994,13 @@ focus_tree = {
 		mutually_exclusive = { focus = BCF_french_nationalism }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_war_support = 0.2
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+				last_election = "1972.12.17"
+				election_frequency = 48
+			}
 		}
 	}
 	
@@ -729,10 +1019,15 @@ focus_tree = {
 		prerequisite = { focus = BCF_france_belongs_to_her_people }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_tech_bonus = {
+				category = armor_lt
+				uses = 1
+				bonus = 2
+			}
 		}
 	}
 	
-	#重建左翼联盟
+	#重建左翼政党
 	focus = {
 		id = BCF_integrate_right_wing_parties
 		icon = GFX_BCF_integrate_right_wing_parties
@@ -747,6 +1042,10 @@ focus_tree = {
 		prerequisite = { focus = BCF_meet_katyusha }
 		available_if_capitulated = yes
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = BCF_political_instability_1
+				add_idea = BCF_political_instability_0
+			}
 		}
 	}
 	
@@ -765,6 +1064,7 @@ focus_tree = {
 		prerequisite = { focus = BCF_integrate_right_wing_parties }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_ideas = BCF_to_arms
 		}
 	}
 	
@@ -779,7 +1079,18 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 		}
-		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Oshida"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Marie"
+					ruling_only = yes
+				}
+			}
+		}
 		prerequisite = { focus = BCF_future_of_france }
 		mutually_exclusive = { focus = BCF_france_belongs_to_her_people }
 		mutually_exclusive = { focus = BCF_no_change }
@@ -787,6 +1098,40 @@ focus_tree = {
 		mutually_exclusive = { focus = BCF_french_nationalism }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			if = {
+				limit = {
+					has_country_leader = {
+						name = "Marie"
+						ruling_only = yes
+					}
+				}
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = no
+					last_election = "1972.12.17"
+					election_frequency = 48
+				}
+				set_country_leader_portrait = {
+					portrait = GFX_leader_Marie
+				}
+				set_country_leader_name = {
+					name = "Marie"
+				}
+			}
+			else = {
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = no
+					last_election = "1972.12.17"
+					election_frequency = 48
+				}
+			}
+			
 		}
 	}
 	
@@ -805,6 +1150,11 @@ focus_tree = {
 		prerequisite = { focus = BCF_rebuild_democracy }
 		available_if_capitulated = yes
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = BCF_political_instability_1
+				add_idea = BCF_political_instability_0
+			}
+			add_ideas = BCF_new_constitution
 		}
 	}
 	
@@ -823,6 +1173,7 @@ focus_tree = {
 		prerequisite = { focus = BCF_constitution_revision }
 		available_if_capitulated = yes
 		completion_reward = {
+			country_event = bcfreedom.2
 		}
 	}
 	
@@ -841,6 +1192,8 @@ focus_tree = {
 		prerequisite = { focus = BCF_seek_support_from_stg }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
 		}
 	}
 	

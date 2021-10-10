@@ -1,0 +1,60 @@
+division_template = {
+	name = "Kuromorimine Nibelungen Knights"		# Infantry Division - Reserve division called to full strength in time of war
+	division_names_group = KGA_SSD_02
+
+	regiments = {
+		heavy_armor = { x = 0 y = 0 }
+		heavy_armor = { x = 0 y = 1 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 2 y = 0 }
+		medium_armor = { x = 2 y = 1 }
+	}
+	support = {
+		scope_brigade = {
+			x = 0
+			y = 0
+		}
+		armorpiercing_ammunition = {
+			x = 0
+			y = 1
+		}
+		physical_armor = {
+			x = 0
+			y = 2
+		}
+	}
+}
+
+units = {
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        location = 6521
+        division_template = "Kuromorimine Nibelungen Knights"
+        # start_experience_factor = 0.1
+        # start_equipment_factor = 0.5
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 2
+        }
+        location = 6521
+        division_template = "Kuromorimine Nibelungen Knights"
+        # start_experience_factor = 0.1
+        # start_equipment_factor = 0.5
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 3
+        }
+        location = 6521
+        division_template = "Kuromorimine Nibelungen Knights"
+        # start_experience_factor = 0.1
+        # start_equipment_factor = 0.5
+    }
+}

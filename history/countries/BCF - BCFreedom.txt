@@ -1,5 +1,8 @@
 ﻿capital = 16
-
+add_ideas = BCF_chaotic_army
+add_ideas = BCF_political_instability_1
+add_ideas = BCF_faction_struggle_4
+add_ideas = BCF_weak_government_4
 set_technology = {
 	senshado_prototype_tank = 1
 	senshado_light_tank_1 = 1

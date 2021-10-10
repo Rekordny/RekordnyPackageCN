@@ -28,6 +28,7 @@ different_party_types = {
 	value = -20
 }
 
+#STG
 opinion_modifiers = {
 	STG_Arrogant_Englishman = {
 		value = -30 
@@ -58,6 +59,7 @@ opinion_modifiers = {
 	}
 }
 
+#JHS
 opinion_modifiers = {
     JHS_BFF = {
 		value = 50
@@ -65,5 +67,12 @@ opinion_modifiers = {
 
 	JHS_Traitor = {
 		value = -50
+	}
+}
+
+#BCF
+opinion_modifiers = {
+	BCF_mission_to_pravda = {
+		value = +30
 	}
 }
