@@ -1,0 +1,55 @@
+add_namespace = Bonple
+
+#冯布诺经济委员会
+country_event = {
+	id = bonple.1
+	title = bonple.1.t
+	desc = bonple.1.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = bonple.1.a
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = bonple.1.b
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = bonple.1.c
+		hidden_effect = {
+			
+		}
+	}
+}
+
+country_event = {
+	id = bonple.2
+	title = bonple.2.t
+	desc = bonple.2.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = bonple.2.a
+		add_tech_bonus = {
+			category = excavation_tech
+			uses = 2
+			bonus = 0.75
+		}
+	}
+	option = {
+		name = bonple.2.b
+		91 = {
+			add_resource = {
+				type = tungsten
+				amount = 25
+			}
+		}
+	}
+}

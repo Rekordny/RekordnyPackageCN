@@ -17,7 +17,7 @@ focus_tree = {
     #第二次奥尔良会议
 	focus = {
 		id = BCF_second_orelans_conference
-		icon = GFX_BCF_second_orleans_conference
+		icon = GFX_focus_BCF_second_orleans_conference
 		x = 0
 		y = -5
 		cost = 0
@@ -38,7 +38,7 @@ focus_tree = {
 	#人民代表一切
 	focus = {
 		id = BCF_will_of_the_people
-		icon = GFX_BCF_will_of_the_people
+		icon = GFX_focus_BCF_will_of_the_people
 		x = -4
 		y = -4
 		cost = 5
@@ -75,7 +75,7 @@ focus_tree = {
 	#第一个五年计划
 	focus = {
 		id = BCF_first_five_year_plan
-		icon = GFX_BCF_first_five_year_plan
+		icon = GFX_focus_BCF_first_five_year_plan
 		x = -4
 		y = -3
 		cost = 10
@@ -99,7 +99,7 @@ focus_tree = {
 	#派往真理的考查团
 	focus = {
 		id = BCF_mission_to_pravda
-		icon = GFX_BCF_mission_to_pravda
+		icon = GFX_focus_BCF_mission_to_pravda
 		x = -6
 		y = -2
 		cost = 5
@@ -121,7 +121,7 @@ focus_tree = {
 	#创立国有工厂
 	focus = {
 		id = BCF_state_owned_factories
-		icon = GFX_BCF_state_owned_factories
+		icon = GFX_focus_BCF_state_owned_factories
 		x = -2
 		y = -2
 		cost = 10
@@ -166,7 +166,7 @@ focus_tree = {
 	#二十世纪的圣女
 	focus = {
 		id = BCF_maid_of_20th_century
-		icon = GFX_BCF_maid_of_20th_century
+		icon = GFX_focus_BCF_maid_of_20th_century
 		x = 0
 		y = -4
 		cost = 5
@@ -192,7 +192,7 @@ focus_tree = {
 	#加强国家干涉
 	focus = {
 		id = BCF_state_inteference
-		icon = GFX_BCF_state_inteference
+		icon = GFX_focus_BCF_state_inteference
 		x = -1
 		y = -3
 		cost = 5
@@ -211,7 +211,7 @@ focus_tree = {
 	#贸易保护主义
 	focus = {
 		id = BCF_protectionism
-		icon = GFX_BCF_protectionism
+		icon = GFX_focus_BCF_protectionism
 		x = 1
 		y = -3
 		cost = 5
@@ -231,7 +231,7 @@ focus_tree = {
 	#高贵者引领国家
 	focus = {
 		id = BCF_country_of_the_noble
-		icon = GFX_BCF_country_of_the_noble
+		icon = GFX_focus_BCF_country_of_the_noble
 		x = 4
 		y = -4
 		cost = 5
@@ -263,7 +263,7 @@ focus_tree = {
 	#自由放任
 	focus = {
 		id = BCF_laissez_faire
-		icon = GFX_BCF_laissez_faire
+		icon = GFX_focus_BCF_laissez_faire
 		x = 4
 		y = -3
 		cost = 10
@@ -286,7 +286,7 @@ focus_tree = {
 	#鼓励企业家投资
 	focus = {
 		id = BCF_encourage_investment
-		icon = GFX_BCF_encourage_investment
+		icon = GFX_focus_BCF_encourage_investment
 		x = 2
 		y = -2
 		cost = 10
@@ -340,7 +340,7 @@ focus_tree = {
 	#BC自由-桑德斯经济合作
 	focus = {
 		id = BCF_bc_freedom
-		icon = GFX_BCF_bc_freedom
+		icon = GFX_focus_BCF_bc_freedom
 		x = 6
 		y = -2
 		cost = 5
@@ -360,7 +360,7 @@ focus_tree = {
 	#法兰西岛建设
 	focus = {
 		id = BCF_ill_de_france_construction
-		icon = GFX_BCF_ill_de_france_construction
+		icon = GFX_focus_BCF_ill_de_france_construction
 		x = 0
 		y = 0
 		cost = 8
@@ -419,7 +419,7 @@ focus_tree = {
 	#战时动员
 	focus = {
 		id = BCF_war_time_consription
-		icon = GFX_BCF_war_time_consription
+		icon = GFX_focus_BCF_war_time_consription
 		x = 0
 		y = 1
 		cost = 5
@@ -446,7 +446,7 @@ focus_tree = {
 	#军事重组
 	focus = {
 		id = BCF_land_force_reform
-		icon = GFX_BCF_land_force_reform
+		icon = GFX_focus_BCF_land_force_reform
 		x = -5
 		y = 1
 		cost = 8
@@ -468,7 +468,7 @@ focus_tree = {
 	#防护优先
 	focus = {
 		id = BCF_armor_first
-		icon = GFX_BCF_armor_first
+		icon = GFX_focus_BCF_armor_first
 		x = -7
 		y = 2
 		cost = 10
@@ -503,7 +503,7 @@ focus_tree = {
 	#复合装甲实验
 	focus = {
 		id = BCF_armor_experiment
-		icon = GFX_BCF_armor_experiment
+		icon = GFX_focus_BCF_armor_experiment
 		x = -7
 		y = 3
 		cost = 10
@@ -526,7 +526,7 @@ focus_tree = {
 	#法兰西压路机
 	focus = {
 		id = BCF_french_panzer_legion
-		icon = GFX_BCF_french_panzer_legion
+		icon = GFX_focus_BCF_french_panzer_legion
 		x = -7
 		y = 4
 		cost = 10
@@ -545,7 +545,7 @@ focus_tree = {
 	#协同作战
 	focus = {
 		id = BCF_cooperative_combat
-		icon = GFX_BCF_cooperative_combat
+		icon = GFX_focus_BCF_cooperative_combat
 		x = -5
 		y = 2
 		cost = 10
@@ -580,7 +580,7 @@ focus_tree = {
 	#模块化生产
 	focus = {
 		id = BCF_module_production
-		icon = GFX_BCF_module_production
+		icon = GFX_focus_BCF_module_production
 		x = -5
 		y = 3
 		cost = 10
@@ -599,7 +599,7 @@ focus_tree = {
 	#数量就是力量
 	focus = {
 		id = BCF_quantity_is_power
-		icon = GFX_BCF_quantity_is_power
+		icon = GFX_focus_BCF_quantity_is_power
 		x = -5
 		y = 4
 		cost = 10
@@ -618,7 +618,7 @@ focus_tree = {
 	#机动作战
 	focus = {
 		id = BCF_mobile_combat
-		icon = GFX_BCF_mobile_combat
+		icon = GFX_focus_BCF_mobile_combat
 		x = -3
 		y = 2
 		cost = 10
@@ -654,7 +654,7 @@ focus_tree = {
 	#更强大的引擎
 	focus = {
 		id = BCF_more_powerful_engine
-		icon = GFX_BCF_more_powerful_engine
+		icon = GFX_focus_BCF_more_powerful_engine
 		x = -3
 		y = 3
 		cost = 10
@@ -673,7 +673,7 @@ focus_tree = {
 	#现代闪电战
 	focus = {
 		id = BCF_modern_blitzkeieg
-		icon = GFX_BCF_modern_blitzkeieg
+		icon = GFX_focus_BCF_modern_blitzkeieg
 		x = -3
 		y = 4
 		cost = 10
@@ -692,7 +692,7 @@ focus_tree = {
 	#模范装甲师
 	focus = {
 		id = BCF_model_armor_division
-		icon = GFX_BCF_model_armor_division
+		icon = GFX_focus_BCF_model_armor_division
 		x = -6
 		y = 5
 		cost = 10
@@ -711,7 +711,7 @@ focus_tree = {
 	#扩建装甲兵学院
 	focus = {
 		id = BCF_expand_academy
-		icon = GFX_BCF_expand_academy
+		icon = GFX_focus_BCF_expand_academy
 		x = -4
 		y = 5
 		cost = 10
@@ -739,7 +739,7 @@ focus_tree = {
 	#国内事务
 	focus = {
 		id = BCF_domestic_affairs
-		icon = GFX_BCF_domestic_affairs
+		icon = GFX_focus_BCF_domestic_affairs
 		x = 7
 		y = 1
 		cost = 5
@@ -758,7 +758,7 @@ focus_tree = {
 	#继续经济建设
 	focus = {
 		id = BCF_cotinue_economic_development
-		icon = GFX_BCF_cotinue_economic_development
+		icon = GFX_focus_BCF_cotinue_economic_development
 		x = 4
 		y = 2
 		cost = 10
@@ -781,7 +781,7 @@ focus_tree = {
 	#零件标准化
 	focus = {
 		id = BCF_standardized_parts
-		icon = GFX_BCF_standardized_parts
+		icon = GFX_focus_BCF_standardized_parts
 		x = 4
 		y = 3
 		cost = 10
@@ -800,7 +800,7 @@ focus_tree = {
 	#扩建布雷斯特船坞
 	focus = {
 		id = BCF_expand_brest_dock
-		icon = GFX_BCF_expand_brest_dock
+		icon = GFX_focus_BCF_expand_brest_dock
 		x = 4
 		y = 4
 		cost = 10
@@ -826,7 +826,7 @@ focus_tree = {
 	#加强坦克研发投入
 	focus = {
 		id = BCF_invest_panzer_research
-		icon = GFX_BCF_invest_panzer_research
+		icon = GFX_focus_BCF_invest_panzer_research
 		x = 2
 		y = 3
 		cost = 10
@@ -845,7 +845,7 @@ focus_tree = {
 	#海军科研计划
 	focus = {
 		id = BCF_naval_reseach_plan
-		icon = GFX_BCF_naval_reseach_plan
+		icon = GFX_focus_BCF_naval_reseach_plan
 		x = 2
 		y = 4
 		cost = 10
@@ -867,7 +867,7 @@ focus_tree = {
 	#舰船模块化
 	focus = {
 		id = BCF_ship_modularization
-		icon = GFX_BCF_ship_modularization
+		icon = GFX_focus_BCF_ship_modularization
 		x = 3
 		y = 5
 		cost = 10
@@ -887,7 +887,7 @@ focus_tree = {
 	#扩建学院舰
 	focus = {
 		id = BCF_expand_school_ship
-		icon = GFX_BCF_expand_school_ship
+		icon = GFX_focus_BCF_expand_school_ship
 		x = 0
 		y = 6
 		cost = 10
@@ -906,7 +906,7 @@ focus_tree = {
 	#戴高乐号航母
 	focus = {
 		id = BCF_cdg_class
-		icon = GFX_BCF_cdg_class
+		icon = GFX_focus_BCF_cdg_class
 		x = 2
 		y = 6
 		cost = 10
@@ -929,7 +929,7 @@ focus_tree = {
 	#BC自由级巡洋舰
 	focus = {
 		id = BCF_bcf_class_crushier
-		icon = GFX_BCF_bcf_class_crushier
+		icon = GFX_focus_BCF_bcf_class_crushier
 		x = 4
 		y = 6
 		cost = 10
@@ -952,7 +952,7 @@ focus_tree = {
 	#国家的未来
 	focus = {
 		id = BCF_future_of_france
-		icon = GFX_BCF_future_of_france
+		icon = GFX_focus_BCF_future_of_france
 		x = 12
 		y = 2
 		cost = 10
@@ -972,7 +972,7 @@ focus_tree = {
 	#人民的国家
 	focus = {
 		id = BCF_france_belongs_to_her_people
-		icon = GFX_BCF_france_belongs_to_her_people
+		icon = GFX_focus_BCF_france_belongs_to_her_people
 		x = 7
 		y = 3
 		cost = 5
@@ -1007,7 +1007,7 @@ focus_tree = {
 	#与喀秋莎的会晤
 	focus = {
 		id = BCF_meet_katyusha
-		icon = GFX_BCF_meet_katyusha
+		icon = GFX_focus_BCF_meet_katyusha
 		x = 7
 		y = 4
 		cost = 10
@@ -1030,7 +1030,7 @@ focus_tree = {
 	#重建左翼政党
 	focus = {
 		id = BCF_integrate_right_wing_parties
-		icon = GFX_BCF_integrate_right_wing_parties
+		icon = GFX_focus_BCF_integrate_right_wing_parties
 		x = 7
 		y = 5
 		cost = 10
@@ -1052,7 +1052,7 @@ focus_tree = {
 	#武装保卫政权
 	focus = {
 		id = BCF_to_arms
-		icon = GFX_BCF_to_arms
+		icon = GFX_focus_BCF_to_arms
 		x = 7
 		y = 6
 		cost = 10
@@ -1071,7 +1071,7 @@ focus_tree = {
 	#重建民主
 	focus = {
 		id = BCF_rebuild_democracy
-		icon = GFX_BCF_rebuild_democracy
+		icon = GFX_focus_BCF_rebuild_democracy
 		x = 9
 		y = 3
 		cost = 5
@@ -1138,7 +1138,7 @@ focus_tree = {
 	#修订宪法
 	focus = {
 		id = BCF_constitution_revision
-		icon = GFX_BCF_constitution_revision
+		icon = GFX_focus_BCF_constitution_revision
 		x = 9
 		y = 4
 		cost = 10
@@ -1161,7 +1161,7 @@ focus_tree = {
 	#争取圣葛萝莉安娜支持
 	focus = {
 		id = BCF_seek_support_from_stg
-		icon = GFX_BCF_seek_support_from_stg
+		icon = GFX_focus_BCF_seek_support_from_stg
 		x = 9
 		y = 5
 		cost = 10
@@ -1180,7 +1180,7 @@ focus_tree = {
 	#重建普选
 	focus = {
 		id = BCF_reopen_election
-		icon = GFX_BCF_reopen_election
+		icon = GFX_focus_BCF_reopen_election
 		x = 9
 		y = 6
 		cost = 10
@@ -1200,7 +1200,7 @@ focus_tree = {
 	#维持现状
 	focus = {
 		id = BCF_no_change
-		icon = GFX_BCF_no_change
+		icon = GFX_focus_BCF_no_change
 		x = 11
 		y = 3
 		cost = 5
@@ -1208,7 +1208,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 		}
-		
+		available = {
+			has_country_leader = {
+				name = "Marie"
+				ruling_only = yes
+			}
+		}
 		prerequisite = { focus = BCF_future_of_france }
 		mutually_exclusive = { focus = BCF_france_belongs_to_her_people }
 		mutually_exclusive = { focus = BCF_rebuild_democracy }
@@ -1216,13 +1221,14 @@ focus_tree = {
 		mutually_exclusive = { focus = BCF_french_nationalism }
 		available_if_capitulated = yes
 		completion_reward = {
+			remove_ideas = BCF_political_instability_1
 		}
 	}
 	
 	#伟大的监护者
 	focus = {
 		id = BCF_the_great_guardian
-		icon = GFX_BCF_the_great_guardian
+		icon = GFX_focus_BCF_the_great_guardian
 		x = 11
 		y = 4
 		cost = 10
@@ -1234,13 +1240,17 @@ focus_tree = {
 		prerequisite = { focus = BCF_no_change }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.2
+			}
 		}
 	}
 	
 	#强化爱国主义教育
 	focus = {
 		id = BCF_patriotism
-		icon = GFX_BCF_patriotism
+		icon = GFX_focus_BCF_patriotism
 		x = 11
 		y = 5
 		cost = 10
@@ -1252,13 +1262,14 @@ focus_tree = {
 		prerequisite = { focus = BCF_the_great_guardian }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_ideas = BCF_patrioism
 		}
 	}
 	
 	#和平而稳定的法兰西
 	focus = {
 		id = BCF_peaceful_and_stable_france
-		icon = GFX_BCF_peaceful_and_stable_france
+		icon = GFX_focus_BCF_peaceful_and_stable_france
 		x = 11
 		y = 6
 		cost = 10
@@ -1270,13 +1281,18 @@ focus_tree = {
 		prerequisite = { focus = BCF_patriotism }
 		available_if_capitulated = yes
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = BCF_political_instability_1
+				add_idea = BCF_political_instability_0
+			}
+			add_ideas = BCF_peaceful_and_stable_france
 		}
 	}
 	
 	#君主制的可能
 	focus = {
 		id = BCF_possibility_of_monarchy
-		icon = GFX_BCF_possibility_of_monarchy
+		icon = GFX_focus_BCF_possibility_of_monarchy
 		x = 13
 		y = 3
 		cost = 5
@@ -1284,7 +1300,18 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 		}
-		
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Marie"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Oshida"
+					ruling_only = yes
+				}
+			}
+		}
 		prerequisite = { focus = BCF_future_of_france }
 		mutually_exclusive = { focus = BCF_france_belongs_to_her_people }
 		mutually_exclusive = { focus = BCF_rebuild_democracy }
@@ -1292,13 +1319,18 @@ focus_tree = {
 		mutually_exclusive = { focus = BCF_french_nationalism }
 		available_if_capitulated = yes
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = BCF_political_instability_1
+				add_idea = BCF_political_instability_2
+			}
+			add_political_power = 50
 		}
 	}
 	
 	#秘密接触王党
 	focus = {
 		id = BCF_contact_royalist
-		icon = GFX_BCF_contact_royalist
+		icon = GFX_focus_BCF_contact_royalist
 		x = 13
 		y = 4
 		cost = 10
@@ -1310,13 +1342,19 @@ focus_tree = {
 		prerequisite = { focus = BCF_possibility_of_monarchy }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.08
+			}
+			add_war_support = 0.05
+			add_manpower = 20000
 		}
 	}
 	
 	#论证君主制可行性
 	focus = {
 		id = BCF_feasibility_of_monarchy
-		icon = GFX_BCF_feasibility_of_monarchy
+		icon = GFX_focus_BCF_feasibility_of_monarchy
 		x = 13
 		y = 5
 		cost = 10
@@ -1328,13 +1366,17 @@ focus_tree = {
 		prerequisite = { focus = BCF_contact_royalist }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_timed_idea = {
+				idea = BCF_doubt_to_monarchy
+				days = 365
+			}
 		}
 	}
 	
 	#朕即国家
 	focus = {
 		id = BCF_letat_cest_moi
-		icon = GFX_BCF_letat_cest_moi
+		icon = GFX_focus_BCF_letat_cest_moi
 		x = 13
 		y = 6
 		cost = 10
@@ -1342,18 +1384,28 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 		}
-		
+		available = {
+			has_country_leader = {
+				name = "Marie"
+				ruling_only = yes
+			}
+		}
 		prerequisite = { focus = BCF_feasibility_of_monarchy }
 		mutually_exclusive = { focus = BCF_parlimentary_monarchy }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_ideas = BCF_letat_cest_moi
+			add_timed_idea = {
+				idea = BCF_republicans_oppose_1
+				days = 365
+			}
 		}
 	}
 	
 	#立宪君主
 	focus = {
 		id = BCF_parlimentary_monarchy
-		icon = GFX_BCF_parlimentary_monarchy
+		icon = GFX_focus_BCF_parlimentary_monarchy
 		x = 15
 		y = 6
 		cost = 10
@@ -1366,13 +1418,18 @@ focus_tree = {
 		mutually_exclusive = { focus = BCF_letat_cest_moi }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_ideas = BCF_legal_moarch
+			add_timed_idea = {
+				idea = BCF_republicans_oppose_0
+				days = 270
+			}
 		}
 	}
 	
-	#法兰西至上
+	#法兰西复仇主义
 	focus = {
 		id = BCF_french_nationalism
-		icon = GFX_BCF_french_nationalism
+		icon = GFX_focus_BCF_french_nationalism
 		x = 17
 		y = 3
 		cost = 5
@@ -1388,13 +1445,19 @@ focus_tree = {
 		mutually_exclusive = { focus = BCF_possibility_of_monarchy }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			add_political_power = 20
+			add_ideas = BCF_nationalism_0
 		}
 	}
 	
 	#民族主义宣传
 	focus = {
 		id = BCF_nationalistic_propaganda
-		icon = GFX_BCF_nationalistic_propaganda
+		icon = GFX_focus_BCF_nationalistic_propaganda
 		x = 17
 		y = 4
 		cost = 10
@@ -1406,13 +1469,18 @@ focus_tree = {
 		prerequisite = { focus = BCF_french_nationalism }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_war_support = 0.1
+			swap_ideas = {
+				remove_idea = BCF_nationalism_0
+				add_idea = BCF_nationalism_1
+			}
 		}
 	}
 	
 	#法兰西决不投降！
 	focus = {
 		id = BCF_never_surrounder
-		icon = GFX_BCF_never_surrounder
+		icon = GFX_focus_BCF_never_surrounder
 		x = 17
 		y = 6
 		cost = 10
@@ -1424,13 +1492,21 @@ focus_tree = {
 		prerequisite = { focus = BCF_nationalistic_propaganda }
 		available_if_capitulated = yes
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = BCF_nationalism_1
+				add_idea = BCF_nationalism_2
+			}
+			swap_ideas = {
+				remove_idea = BCF_political_instability_1
+				add_idea = BCF_political_instability_0
+			}
 		}
 	}
 	
 	#终结乱局
 	focus = {
 		id = BCF_end_chaos
-		icon = GFX_BCF_end_chaos
+		icon = GFX_focus_BCF_end_chaos
 		x = 12
 		y = 8
 		cost = 10
@@ -1442,13 +1518,22 @@ focus_tree = {
 		prerequisite = { focus = BCF_to_arms focus = BCF_never_surrounder focus = BCF_reopen_election focus = BCF_peaceful_and_stable_france focus = BCF_letat_cest_moi focus = BCF_parlimentary_monarchy focus = BCF_never_surrounder}
 		available_if_capitulated = yes
 		completion_reward = {
+			if = {
+				limit = { has_idea = BCF_political_instability_0 }
+				remove_ideas = BCF_political_instability_0
+			}
+			if = {
+				limit = { has_idea = BCF_political_instability_2 }
+				remove_ideas = BCF_political_instability_2
+			}
+			add_political_power = 25
 		}
 	}
 	
 	#法兰西战车道联赛
 	focus = {
 		id = BCF_senshadao_league_match
-		icon = GFX_BCF_senshadao_league_match
+		icon = GFX_focus_BCF_senshadao_league_match
 		x = 16
 		y = -5
 		cost = 10
@@ -1456,16 +1541,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 		}
-		
+		available = {
+			has_country_flag = BCF_SENSHADO_LEAGUE_MATCH_END
+		}
+		bypass = {
+			has_country_flag = BCF_SENSHADO_LEAGUE_MATCH_END
+		}
 		available_if_capitulated = yes
 		completion_reward = {
+			unlock_decision_tooltip = bcf_internal_strife
 		}
 	}
 	
 	#处理马奇诺学院问题
 	focus = {
 		id = BCF_machino_issue
-		icon = GFX_BCF_machino_issue
+		icon = GFX_focus_BCF_machino_issue
 		x = 16
 		y = -4
 		cost = 5
@@ -1477,13 +1568,15 @@ focus_tree = {
 		prerequisite = { focus = BCF_senshadao_league_match }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 50
 		}
 	}
 	
 	#最后通牒
 	focus = {
 		id = BCF_ultimatum
-		icon = GFX_BCF_ultimatum
+		icon = GFX_focus_BCF_ultimatum
 		x = 14
 		y = -3
 		cost = 5
@@ -1496,31 +1589,42 @@ focus_tree = {
 		mutually_exclusive = { focus = BCF_peace_effort }
 		available_if_capitulated = yes
 		completion_reward = {
+			declare_war_on = {
+				target = MGC
+			}
 		}
 	}
 	
 	#恢复秩序
 	focus = {
 		id = BCF_restore_order
-		icon = GFX_BCF_restore_order
+		icon = GFX_focus_BCF_restore_order
 		x = 14
 		y = -2
-		cost = 10
+		cost = 1
 		
 		ai_will_do = {
 			factor = 25
 		}
 		
-		prerequisite = { focus = BCF_ultimatum }
+		#prerequisite = { focus = BCF_ultimatum }
 		available_if_capitulated = yes
 		completion_reward = {
+			KGA = {
+				for_each_loop = {
+					array = core_states
+					
+					log = "[?v]"				
+				}
+			}
+			
 		}
 	}
 	
 	#尝试和平对话
 	focus = {
 		id = BCF_peace_effort
-		icon = GFX_BCF_peace_effort
+		icon = GFX_focus_BCF_peace_effort
 		x = 18
 		y = -3
 		cost = 5
@@ -1539,7 +1643,7 @@ focus_tree = {
 	#组建联合政府
 	focus = {
 		id = BCF_coalition_government
-		icon = GFX_BCF_coalition_government
+		icon = GFX_focus_BCF_coalition_government
 		x = 17
 		y = -2
 		cost = 10
@@ -1558,7 +1662,7 @@ focus_tree = {
 	#有限自治
 	focus = {
 		id = BCF_limited_autonomy
-		icon = GFX_BCF_limited_autonomy
+		icon = GFX_focus_BCF_limited_autonomy
 		x = 19
 		y = -2
 		cost = 10
@@ -1577,7 +1681,7 @@ focus_tree = {
 	#战车道的未来
 	focus = {
 		id = BCF_future_of_senshadao
-		icon = GFX_BCF_future_of_senshadao
+		icon = GFX_focus_BCF_future_of_senshadao
 		x = 28
 		y = -5
 		cost = 5
@@ -1594,7 +1698,7 @@ focus_tree = {
 	#属于BC自由的联盟
 	focus = {
 		id = BCF_new_league
-		icon = GFX_BCF_new_league
+		icon = GFX_focus_BCF_new_league
 		x = 27
 		y = -4
 		cost = 8
@@ -1613,7 +1717,7 @@ focus_tree = {
 	#邀请冯布诺
 	focus = {
 		id = BCF_invite_bon
-		icon = GFX_BCF_invite_bon
+		icon = GFX_focus_BCF_invite_bon
 		x = 27
 		y = -3
 		cost = 10
@@ -1631,7 +1735,7 @@ focus_tree = {
 	#吸收大洗成员
 	focus = {
 		id = BCF_new_member
-		icon = GFX_BCF_new_member
+		icon = GFX_focus_BCF_new_member
 		x = 29
 		y = -4
 		cost = 8
@@ -1650,7 +1754,7 @@ focus_tree = {
 	#制衡校内派系
 	focus = {
 		id = BCF_limit_faction
-		icon = GFX_BCF_limit_faction
+		icon = GFX_focus_BCF_limit_faction
 		x = 29
 		y = -3
 		cost = 10
@@ -1668,7 +1772,7 @@ focus_tree = {
 	#联合战车道训练
 	focus = {
 		id = BCF_united_training
-		icon = GFX_BCF_united_training
+		icon = GFX_focus_BCF_united_training
 		x = 28
 		y = -2
 		cost = 10

@@ -1,29 +1,24 @@
-kga_government = {
+bcf_missions = {
 	icon = GFX_decision_category_senshado
 	allowed = {
 	}
 }
-kga_diplomatic = {
+bcf_government = {
 	icon = GFX_decision_category_senshado
 	allowed = {
 	}
 }
-kga_missions = {
+bcf_industry = {
 	icon = GFX_decision_category_senshado
 	allowed = {
 	}
 }
-kga_industry = {
+bcf_civil_war = {
 	icon = GFX_decision_category_senshado
 	allowed = {
 	}
 }
-kga_civil_war = {
-	icon = GFX_decision_category_senshado
-	allowed = {
-	}
-}
-kga_establish_puppuet_bon = {
+bcf_diplomatic = {
 	icon = GFX_decision_category_senshado
 	allowed = {
 	}

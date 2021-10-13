@@ -1,0 +1,72 @@
+ideas = {
+	country = {
+		#虚弱的领头羊
+		BON_weak_leadership = {
+			allowed = { tag = BON }
+			allowed_civil_war = { always = no }
+			modifier = {
+				political_power_factor = -0.3
+			}
+		}
+
+		#战车道和平复兴主义
+		BON_senshado_revivalism = {
+			allowed = { tag = BON }
+			allowed_civil_war = { always = no }
+			modifier = {
+				ssdp_daily_modifier = 0.3
+				offensive_war_stability_factor = -0.8
+				war_support_factor = -0.3
+			}
+		}
+
+		#崭新国家的愿景
+		BON_great_fresh_future = {
+			allowed = { tag = BON }
+			allowed_civil_war = { always = no }
+			modifier = {
+				research_speed_factor = 0.1
+				stability_factor = 0.2
+			}
+		}
+
+		#高速度
+		BON_high_industrial_velocity_0 = {
+			allowed = { tag = BON }
+			allowed_civil_war = { always = no }
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		#高积累
+		BON_high_accumulation = {
+			allowed = { tag = BON }
+			allowed_civil_war = { always = no }
+			modifier = {
+				local_resources_factor = 0.15
+			}
+		}
+
+		#高消费
+		BON_high_consuming = {
+			allowed = { tag = BON }
+			allowed_civil_war = { always = no }
+			modifier = {
+				trade_opinion_factor = 0.2
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		#高速度2
+		BON_high_industrial_velocity_1 = {
+			allowed = { tag = BON }
+			allowed_civil_war = { always = no }
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+	}
+}

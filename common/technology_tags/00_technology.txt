@@ -34,8 +34,6 @@ technology_categories = {
 	chemical_armor_tech
 	physical_armor_tech
 
-	
-
 	###############ORIGIN############
 	light_air
 	medium_air

@@ -1,0 +1,55 @@
+﻿capital = 27
+
+set_technology = {
+	senshado_prototype_tank = 1
+	senshado_light_tank_1 = 1
+}
+set_research_slots = 5
+set_convoys = 20
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 30
+	fascism = 4
+	communism = 1
+	neutrality = 65
+}
+
+create_country_leader = {
+	name = "Eclair"
+	desc = ""
+	picture = "Portrait_MGC_Eclair.dds"
+	expire = "1965.1.1"
+	ideology = moderatism
+	traits = {
+	}
+}
+
+create_field_marshal = {
+	name = "Eclair"
+	id = 1055
+	picture = "Portrait_MGC_Eclair.dds"
+	traits = {  }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Fondue"
+	id = 1056
+	picture = "Portrait_MGC_Fondue.dds"
+	traits = {  }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 4
+}

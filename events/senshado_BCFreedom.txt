@@ -26,9 +26,22 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bcfreedom.2.a
-		hidden_effect = {
-			BCF = { set_country_flag = BCF_SEC_ORELANS_END }
-		}
+		
 	}
 }
 
+#法兰西战车道联赛落下帷幕
+country_event = {
+	id = bcfreedom.3
+	title = bcfreedom.3.t
+	desc = bcfreedom.3.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.3.a
+		hidden_effect = {
+			BCF = { set_country_flag = BCF_SENSHADO_LEAGUE_MATCH_END }
+		}
+	}
+}

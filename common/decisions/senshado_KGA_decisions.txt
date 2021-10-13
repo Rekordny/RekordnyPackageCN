@@ -1,5 +1,5 @@
 #黑森峰-政府
-kga_senshado_government_decisions = {
+kga_government = {
 
 	##########以下为KGA测试
 	test_war = {
@@ -75,7 +75,7 @@ kga_senshado_government_decisions = {
 }
 
 #黑森峰-外交
-kga_senshado_diplomatic_decisions = {
+kga_diplomatic = {
 	kga_improve_relationship_vik = {
 		allowed = { tag = KGA }
 		visible = { AND = { has_completed_focus = KGA_approch_new_senshado_union country_exists = VIK } }
@@ -168,7 +168,7 @@ kga_senshado_diplomatic_decisions = {
 	}
 }
 
-kga_senshado_industrial_decisions = {
+kga_industry = {
 	kga_plan_industrial_land = {
 		allowed = { tag = KGA }
 		visible = { AND = { has_completed_focus = KGA_reconstruction_law } }

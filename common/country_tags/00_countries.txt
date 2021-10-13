@@ -20,6 +20,7 @@ WAF = "countries/ Waffle.txt"
 YOG = "countries/Yogurt.txt"
 KEB = "countries/Kebab.txt"
 BKC = "countries/BonpleKuromorimineComplexity.txt"
+MGC = "countries/Maginot.txt"
 
 ORA = "countries/OoariRabbit.txt"
 ODU = "countries/OoariDuck.txt"

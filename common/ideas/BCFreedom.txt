@@ -110,6 +110,17 @@ ideas = {
 			}
 		}
 
+		#政局动荡2
+		BCF_political_instability_2 = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				political_power_factor = -0.4
+				surrender_limit = -0.3
+				war_support_factor = 0.3
+			}
+		}
+
 		#政局动荡1
 		BCF_political_instability_1 = {
 			allowed = { tag = BCF }
@@ -117,7 +128,7 @@ ideas = {
 			modifier = {
 				political_power_factor = -0.3
 				surrender_limit = -0.25
-				war_support_factor = 0.3
+				war_support_factor = 0.2
 			}
 		}
 
@@ -128,7 +139,7 @@ ideas = {
 			modifier = {
 				political_power_factor = -0.15
 				surrender_limit = -0.125
-				war_support_factor = 0.15
+				war_support_factor = 0.1
 			}
 		}
 
@@ -268,6 +279,107 @@ ideas = {
 				democratic_drift = 0.05
 				stability_factor = 0.05
 				political_power_factor = 0.1
+			}
+		}
+
+		#爱国主义
+		BCF_patrioism = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.1
+				stability_factor = 0.1
+			}
+		}
+
+		#和平而稳定的法兰西
+		BCF_peaceful_and_stable_france = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				stability_weekly = 0.005
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		#对君主制的疑虑
+		BCF_doubt_to_monarchy = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.3
+			}
+		}
+
+		#朕即国家
+		BCF_letat_cest_moi = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				political_power_gain = 0.3
+				conscription = 0.02
+				army_org_regain = 0.1
+			}
+		}
+
+		#共和派的不满2
+		BCF_republicans_oppose_1 = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.1
+				production_speed_buildings_factor = -0.1
+			}
+		}
+
+		#共和派的不满1
+		BCF_republicans_oppose_0 = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				industrial_capacity_factory = -0.10
+				stability_factor = -0.1
+			}
+		}
+
+		#立宪君主
+		BCF_legal_moarch = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				stability_factor = 0.5
+			}
+		}
+
+		#民族主义1
+		BCF_nationalism_0 = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				war_support_factor = 0.1
+			}
+		}
+
+		#民族主义2
+		BCF_nationalism_1 = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				war_support_factor = 0.2
+				justify_war_goal_time = -0.2
+			}
+		}
+
+		#民族主义3
+		BCF_nationalism_2 = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				war_support_factor = 0.3
+				justify_war_goal_time = -0.5
 			}
 		}
     }

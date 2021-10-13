@@ -1,0 +1,465 @@
+focus_tree = {
+	id = BON_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BON
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 50 y = 2000 }
+
+
+    #黄金时代
+	focus = {
+		id = BON_golden_age
+		icon = GFX_focus_BON_golden_age
+		x = 16
+		y = 0
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#美丽的愿景
+	focus = {
+		id = BON_bright_future
+		icon = GFX_focus_BON_bright_future
+		relative_position_id = BON_golden_age
+		x = -8
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_golden_age }
+		available_if_capitulated = yes
+		completion_reward = {
+			#触发事件：冯布诺经济发展委员会
+			country_event = bonple.1
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#高速度
+	focus = {
+		id = BON_high_industrial_velocity
+		icon = GFX_focus_BON_high_industrial_velocity
+		relative_position_id = BON_bright_future
+		x = -2
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_bright_future }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = BON_high_industrial_velocity_0
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#高积累
+	focus = {
+		id = BON_high_accumulation
+		icon = GFX_focus_BON_high_accumulation
+		relative_position_id = BON_bright_future
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_bright_future }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = BON_high_accumulation
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#高消费
+	focus = {
+		id = BON_high_consuming
+		icon = GFX_focus_BON_high_consuming
+		relative_position_id = BON_bright_future
+		x = 2
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_bright_future }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = BON_high_consuming
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#扩大克拉科夫工业区
+	focus = {
+		id = BON_expand_krakow_industry
+		icon = GFX_focus_BON_expand_krakow_industry
+		relative_position_id = BON_high_industrial_velocity
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_high_industrial_velocity }
+		available_if_capitulated = yes
+		completion_reward = {
+			88 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex 
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory 
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#提高生产指标
+	focus = {
+		id = BON_raise_production_indicators
+		icon = GFX_focus_BON_raise_production_indicators
+		relative_position_id = BON_expand_krakow_industry
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_expand_krakow_industry }
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BON_high_industrial_velocity_0
+				add_idea = BON_high_industrial_velocity_1
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#矿业改革
+	focus = {
+		id = BON_mining_reform
+		icon = GFX_focus_BON_mining_reform
+		relative_position_id = BON_high_accumulation
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_high_accumulation }
+		available_if_capitulated = yes
+		completion_reward = {
+			#触发矿业改革
+			country_event = bonple.2
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#吸引投资
+	focus = {
+		id = BON_attract_investment
+		icon = GFX_focus_BON_attract_investment
+		relative_position_id = BON_mining_reform
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_mining_reform }
+		available_if_capitulated = yes
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#进口政策
+	focus = {
+		id = BON_import_adjustment
+		icon = GFX_focus_BON_import_adjustment
+		relative_position_id = BON_high_consuming
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_high_consuming }
+		available_if_capitulated = yes
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#人力资源法案
+	focus = {
+		id = BON_labour_law
+		icon = GFX_focus_BON_labour_law
+		relative_position_id = BON_import_adjustment
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_import_adjustment }
+		available_if_capitulated = yes
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#三高政策
+	focus = {
+		id = BON_trilofty
+		icon = GFX_focus_BON_trilofty
+		relative_position_id = BON_raise_production_indicators
+		x = 2
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_raise_production_indicators }
+		prerequisite = { focus = BON_attract_investment }
+		prerequisite = { focus = BON_labour_law }
+		available_if_capitulated = yes
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#残酷的现实
+	focus = {
+		id = BON_brutal_reality
+		icon = GFX_focus_BON_brutal_reality
+		relative_position_id = BON_golden_age
+		x = 6
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_golden_age }
+		available_if_capitulated = yes
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#急行的世界
+	focus = {
+		id = BON_world_on_rush
+		icon = GFX_focus_BON_brutal_reality
+		relative_position_id = BON_brutal_reality
+		x = -2
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_brutal_reality }
+		available_if_capitulated = yes
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#Jajka政府上台
+	focus = {
+		id = BON_jajka_government
+		icon = GFX_focus_BON_jajka_government
+		relative_position_id = BON_world_on_rush
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_world_on_rush }
+		available_if_capitulated = yes
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#依法治国
+	focus = {
+		id = BON_rule_by_law
+		icon = GFX_focus_BON_rule_by_law
+		relative_position_id = BON_jajka_government
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_jajka_government }
+		available_if_capitulated = yes
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#改革官僚系统
+	focus = {
+		id = BON_reform_the_bureaucracy 
+		icon = GFX_focus_BON_reform_the_bureaucracy
+		relative_position_id = BON_brutal_reality
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_brutal_reality }
+		available_if_capitulated = yes
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#稳定的中央政府
+	focus = {
+		id = BON_stable_central_government
+		icon = GFX_focus_BON_stable_central_government
+		relative_position_id = BON_reform_the_bureaucracy
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_reform_the_bureaucracy }
+		available_if_capitulated = yes
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#迁都克拉科夫
+	focus = {
+		id = BON_move_to_krakow
+		icon = GFX_focus_BON_move_to_krakow
+		relative_position_id = BON_stable_central_government
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_stable_central_government }
+		available_if_capitulated = yes
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#人民推动国家
+	focus = {
+		id = BON_country_powered_by_people
+		icon = GFX_focus_BON_country_powered_by_people
+		relative_position_id = BON_brutal_reality
+		x = 2
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_brutal_reality }
+		available_if_capitulated = yes
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#工团化改革
+	focus = {
+		id = BON_syndicate_reform 
+		icon = GFX_focus_BON_syndicate_reform
+		relative_position_id = BON_country_powered_by_people
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_country_powered_by_people }
+		available_if_capitulated = yes
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#政教分离
+	focus = {
+		id = BON_separate_church_from_state 
+		icon = GFX_focus_BON_separate_church_from_state
+		relative_position_id = BON_syndicate_reform
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_syndicate_reform }
+		available_if_capitulated = yes
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+}

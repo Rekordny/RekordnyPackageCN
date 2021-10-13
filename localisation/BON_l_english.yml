@@ -1,0 +1,80 @@
+﻿l_english:
+ 
+#focus
+ BON_golden_age:0 "黄金时代"
+ BON_golden_age_desc:0 "这是属于冯布诺的黄金时代，我们坐拥崭新的国家和大片的领土，白鹰向前进！"
+ BON_bright_future:0 "美丽的愿景"
+ BON_bright_future_desc:0 "冯布诺占据着大半东欧的工商命脉，我们对未来的经济和工业保有着美好的愿景。"
+ BON_high_industrial_velocity:0 "高速度"
+ BON_high_industrial_velocity_desc:0 "高速度是对于生产能力调整的整体指导，也是一切的根基。"
+ BON_high_accumulation:0 "高积累"
+ BON_high_accumulation_desc:0 "提高生产资料积累，提高资源产出和出口能力。"
+ BON_high_consuming:0 "高消费"
+ BON_high_consuming_desc:0 "高度的消费可以促进经济的循环力，通过进口生产必须的设备材料来确保基础产业的蓬勃发展是至关重要的。"
+ BON_expand_krakow_industry:0 "扩大克拉科夫工业区"
+ BON_expand_krakow_industry_desc:0 "克拉科夫作为全国第钢铁工业重镇，是工业改革进步的首个试点。"
+ BON_raise_production_indicators:0 "提高生产指标"
+ BON_raise_production_indicators_desc:0 ""
+ BON_mining_reform:0 "矿业改革"
+ BON_mining_reform_desc:0 ""
+ BON_attract_investment:0 "吸引投资"
+ BON_attract_investment_desc:0 ""
+ BON_import_adjustment:0 "进口政策"
+ BON_import_adjustment_desc:0 ""
+ BON_labour_law:0 "人力资源法案"
+ BON_labour_law_desc:0 ""
+ BON_trilofty:0 "三高政策"
+ BON_trilofty_desc:0 ""
+ BON_brutal_reality:0 "残酷的现实"
+ BON_brutal_reality_desc:0 ""
+ BON_world_on_rush:0 "急行的世界"
+ BON_world_on_rush_desc:0 ""
+ BON_jajka_government:0 "Jajka政府上台"
+ BON_jajka_government_desc:0 ""
+ BON_rule_by_law:0 "依法治国"
+ BON_rule_by_law_desc:0 ""
+ BON_reform_the_bureaucracy:0 "改革官僚系统"
+ BON_reform_the_bureaucracy_desc:0 ""
+ BON_stable_central_government:0 "稳定的中央政权"
+ BON_stable_central_government_desc:0 ""
+ BON_move_to_krakow:0 "迁都克拉科夫"
+ BON_move_to_krakow_desc:0 ""
+ BON_country_powered_by_people:0 "人民推动国家"
+ BON_country_powered_by_people_desc:0 ""
+ BON_syndicate_reform:0 "工团化改革"
+ BON_syndicate_reform_desc:0 ""
+ BON_separate_church_from_state:0 "政教分离"
+ BON_separate_church_from_state_desc:0 ""
+ 
+  
+#custom_tooltip
+ bon_tooltip1:0 "§YAndou§!将成为国家领导人"
+
+#events
+ bonple.1.t:0 "冯布诺经济发展委员会"
+ bonple.1.d:0 ""
+ bonple.1.a:0 ""
+ bonple.2.t:0 "矿业改革"
+ bonple.2.d:0 ""
+ bonple.2.a:0 "资源采集技术是重中之重"
+ bonple.2.a:0 "增加资源采集的人力"
+ 
+#ideas
+ BON_weak_leadership:0 "虚弱的领头羊"
+ BON_senshado_revivalism:0 "战车道和平复兴主义"
+ BON_great_fresh_future:0 "崭新国家的愿景"
+ BON_high_industrial_velocity_0:0 "高速度"
+ BON_high_industrial_velocity_1:0 "高速度"
+
+#decisions
+ bon_missions:0 "BC自由-任务"
+ bon_government:0 "BC自由-政府"
+ bon_industry:0 "BC自由-工业"
+ bon_civil_war:0 "BC自由-内战"
+ bon_diplomatic:0 "BC自由-外交"
+ 
+#flags
+ BCF_SEC_ORELANS_END:0 "BC自由的第二次奥尔良会议结束"
+
+#opinion modifier
+ 

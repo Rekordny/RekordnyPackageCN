@@ -1,0 +1,12 @@
+
+bcf_missions = {
+	#兄弟阋墙
+	bcf_internal_strife = {
+		allowed = { tag = BCF }
+		visible = { has_completed_focus = BCF_senshadao_league_match }
+		fire_only_once = yes
+		complete_effect = {
+			
+		}
+	}
+}

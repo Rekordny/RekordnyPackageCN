@@ -14,6 +14,10 @@ add_to_faction = YOG
 add_to_faction = KEB
 add_to_faction = VIK
 
+add_ideas = BON_weak_leadership
+add_ideas = BON_senshado_revivalism
+add_ideas = BON_great_fresh_future
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1933.3.5"
@@ -22,8 +26,8 @@ set_politics = {
 }
 set_popularities = {
 	democratic = 2
-	fascism = 45
-	communism = 3
+	fascism = 3
+	communism = 45
 	neutrality = 50
 }
 create_country_leader = {
@@ -45,6 +49,17 @@ create_country_leader = {
 	ideology = falangism
 	traits = {
 		Disdain_for_Politicians_1
+	}
+}
+
+create_country_leader = {
+	name = "Maiko"
+	desc = "A new leader from Girls und Panzar, YES!"
+	picture = "Portrait_BON_Maiko.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		Champion_of_Peace_5
 	}
 }
 
