@@ -75,4 +75,31 @@ opinion_modifiers = {
 	BCF_mission_to_pravda = {
 		value = +30
 	}
+	BCF_democratic_diplomatic = {
+		value = +20
+	}
+	BCF_conference_with_kga = {
+		value = +20
+	}
+	BCF_unconditional_withdrawal = {
+		value = +40
+	}
+	BCF_political_communication = {
+		value = +20
+	}
+	BCF_isolate_kga = {
+		value = -50
+	}
+	BCF_deal_with_kga = {
+		value = +30
+	}
+	BCF_sell_bon = {
+		value = -30
+	}
+	BCF_deal_with_pra = {
+		value = +30
+	}
+    BCF_handling_territorial_disputes = {
+		value = +10
+	}
 }

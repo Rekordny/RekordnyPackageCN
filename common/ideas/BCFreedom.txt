@@ -151,7 +151,7 @@ ideas = {
 				land_doctrine = -0.75
 			}
 			modifier = {
-				experience_gain_army = -0.5
+				experience_gain_army_factor = -0.5
 				army_org_Factor = -0.15
 			}
 		}
@@ -174,6 +174,16 @@ ideas = {
 			allowed_civil_war = { always = yes }
 			modifier = {
 				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		#第一个五年计划2
+        BCF_first_five_year_plan_1 = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
 			}
 		}
 
@@ -380,6 +390,240 @@ ideas = {
 			modifier = {
 				war_support_factor = 0.3
 				justify_war_goal_time = -0.5
+			}
+		}
+
+		#受到制衡的派系
+		BCF_restricted_faction = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+
+		#舰船模块化
+		BCF_ship_modularization = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			equipment_bonus = {
+				screen_ship = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				capital_ship = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		#混编车组
+		BCF_mixed_sets = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			modifier = {
+				experience_gain_army_factor = 0.1
+				army_org_regain = 0.1
+			}
+		}
+
+		#公平教育
+		BCF_equal_education = {
+			allowed = { tag = BCF }
+			on_add = {
+				
+			}
+			allowed_civil_war = { always = no }
+			modifier = {
+				army_leader_start_attack_level = 1 
+			}
+		}
+
+		#拆分BC自由
+		BCF_two_schools = {
+			allowed = { tag = BCF }
+			on_add = {
+				
+			}
+			allowed_civil_war = { always = no }
+			modifier = {
+				army_org_factor = -0.05
+			}
+		}
+
+		#高贵者的学院
+		BCF_noble_school = {
+			allowed = { tag = BCF }
+			on_add = {
+				
+			}
+			allowed_civil_war = { always = no }
+			modifier = {
+				army_leader_start_planning_level = 1
+			}
+		}
+
+		#扩大意面贸易
+		BCF_expand_pasta_trade = {
+			allowed = {
+				NOT = { has_war_with = ANZ }
+			}
+			allowed_civil_war = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		#扩大海峡贸易
+		BCF_expand_anglican_french_trade = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.2
+				}
+			}
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		#专注港口袭击
+		BCF_focus_on_port_attack = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			equipment_bonus = {
+				
+			}
+			modifier = {
+				port_strike = 0.3
+			}
+		}
+
+		#BC自由支援军
+		BCF_volunteers = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			equipment_bonus = {
+			}
+			modifier = {
+				send_volunteer_size = 5
+				send_volunteers_tension = -0.5
+			}
+		}
+
+		#限制黑森峰
+		BCF_protect_from_kga = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			equipment_bonus = {
+			}
+			modifier = {
+				army_org_Factor = 0.05
+				max_planning_factor = 0.05
+			}
+		}
+
+		#红色武装
+		BCF_red_army = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			equipment_bonus = {
+			}
+			modifier = {
+				army_org_Factor = -0.3
+				training_time_factor = -0.2
+				army_org_regain = -0.1
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				no_supply_grace = 24
+			}
+		}
+
+		#一切皆归法兰西
+		BCF_everything_belong_to_france = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			equipment_bonus = {
+			}
+			modifier = {
+				conscription = 0.05
+				stability_factor = 0.05
+				local_resources_factor = 0.15
+			}
+		}
+
+		#法兰西的女主人
+		BCF_hostess_of_france = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			equipment_bonus = {
+			}
+			modifier = {
+				political_power_gain = 0.3
+				stability_factor = 0.1
+			}
+		}
+
+		#受保护的资产阶级
+		BCF_protected_bourgeois = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			equipment_bonus = {
+			}
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		#言论管控
+		BCF_speech_control = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			equipment_bonus = {
+			}
+			modifier = {
+				subversive_activites_upkeep = -0.25
+				drift_defence_factor = 0.5
+			}
+		}
+
+		#战斗至最后一人
+		BCF_fight_to_last_one = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			equipment_bonus = {
+			}
+			modifier = {
+				surrender_limit = 0.2
+				army_core_defence_factor = 0.2
+				political_power_gain = -0.4
+			}
+		}
+
+		#对圣葛罗莉安娜作战
+		BCF_war_with_STG = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			equipment_bonus = {
+			}
+			targeted_modifier = {
+				tag = STG
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+
+		#登陆演习
+		BCF_landing_exercise = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			equipment_bonus = {
+			}
+			modifier = {
+				invasion_preparation = -0.25
+				naval_invasion_capacity = 5
 			}
 		}
     }

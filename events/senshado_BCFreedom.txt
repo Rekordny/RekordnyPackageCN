@@ -45,3 +45,225 @@ country_event = {
 		}
 	}
 }
+
+#BC自由尝试与马奇诺和平对话
+country_event = {
+	id = bcfreedom.4
+	title = bcfreedom.4.t
+	desc = bcfreedom.4.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.4.a
+	}
+}
+
+#组建联合政府
+country_event = {
+	id = bcfreedom.5
+	title = bcfreedom.5.t
+	desc = bcfreedom.5.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.5.a
+	}
+}
+
+#有限自治
+country_event = {
+	id = bcfreedom.6
+	title = bcfreedom.6.t
+	desc = bcfreedom.6.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.6.a
+	}
+}
+
+#邀请冯布诺
+country_event = {
+	id = bcfreedom.7
+	title = bcfreedom.7.t
+	desc = bcfreedom.7.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.7.a
+	}
+}
+
+#评估安齐奥局势
+country_event = {
+	id = bcfreedom.8
+	title = bcfreedom.8.t
+	desc = bcfreedom.8.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.8.a
+	}
+}
+
+#皮埃蒙特或战争
+country_event = {
+	id = bcfreedom.9
+	title = bcfreedom.9.t
+	desc = bcfreedom.9.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.9.a
+	}
+}
+
+#用皮埃蒙特换取支持
+country_event = {
+	id = bcfreedom.10
+	title = bcfreedom.10.t
+	desc = bcfreedom.10.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.9.a
+	}
+}
+
+#BC自由在热那亚
+country_event = {
+	id = bcfreedom.11
+	title = bcfreedom.11.t
+	desc = bcfreedom.11.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.11.a
+	}
+}
+
+#解决摩泽兰问题
+country_event = {
+	id = bcfreedom.12
+	title = bcfreedom.12.t
+	desc = bcfreedom.12.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.12.a
+	}
+}
+
+#KGA:解决莱茵兰问题
+country_event = {
+	id = bcfreedom.13
+	title = bcfreedom.13.t
+	desc = bcfreedom.13.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.13.a
+	}
+}
+
+#KGA:追加战争赔款
+country_event = {
+	id = bcfreedom.14
+	title = bcfreedom.14.t
+	desc = bcfreedom.14.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.14.a
+	}
+}
+
+#卢森堡条约
+country_event = {
+	id = bcfreedom.15
+	title = bcfreedom.15.t
+	desc = bcfreedom.15.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.15.a
+	}
+}
+
+#尝试和解
+country_event = {
+	id = bcfreedom.16
+	title = bcfreedom.16.t
+	desc = bcfreedom.16.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.16.a
+	}
+}
+
+#法德联合公报
+country_event = {
+	id = bcfreedom.17
+	title = bcfreedom.17.t
+	desc = bcfreedom.17.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.17.a
+	}
+}
+
+#和真理的交涉问题
+country_event = {
+	id = bcfreedom.18
+	title = bcfreedom.18.t
+	desc = bcfreedom.18.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.18.a
+	}
+}
+
+#取消马奇诺自治
+country_event = {
+	id = bcfreedom.19
+	title = bcfreedom.19.t
+	desc = bcfreedom.19.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.19.a
+	}
+}
+
+#STG：BC自由寻求内战帮助
+country_event = {
+	id = bcfreedom.20
+	title = bcfreedom.20.t
+	desc = bcfreedom.20.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.20.a
+	}
+}
+

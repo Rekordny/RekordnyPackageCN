@@ -1,25 +1,27 @@
 bcf_missions = {
 	icon = GFX_decision_category_senshado
-	allowed = {
-	}
+	allowed = { tag = BCF }
 }
 bcf_government = {
 	icon = GFX_decision_category_senshado
-	allowed = {
-	}
+	allowed = { tag = BCF }
 }
 bcf_industry = {
 	icon = GFX_decision_category_senshado
-	allowed = {
-	}
+	allowed = { tag = BCF }
 }
 bcf_civil_war = {
 	icon = GFX_decision_category_senshado
-	allowed = {
-	}
+	allowed = { tag = BCF }
 }
 bcf_diplomatic = {
 	icon = GFX_decision_category_senshado
-	allowed = {
-	}
+	allowed = { tag = BCF }
 }
+bcf_school_factional_strife = {
+	icon = GFX_decision_category_senshado
+	allowed = {
+		tag = BCF
+		OR = { has_completed_focus = BCF_school_reform is_debug = yes }
+	}
+} 

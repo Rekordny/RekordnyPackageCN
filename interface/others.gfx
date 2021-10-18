@@ -1,0 +1,22 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_bcf_school_factional_strife_picture"
+		texturefile = "gfx/texticons/bcf_school_factional_strife_picture.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_bcf_school_factional_strife_marie"
+		texturefile = "gfx/texticons/bcf_school_factional_strife_marie.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_bcf_school_factional_strife_andou"
+		texturefile = "gfx/texticons/bcf_school_factional_strife_andou.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_bcf_school_factional_strife_oshida"
+		texturefile = "gfx/texticons/bcf_school_factional_strife_oshida.dds"
+		legacy_lazy_load = no
+	}
+}

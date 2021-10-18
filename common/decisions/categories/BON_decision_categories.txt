@@ -1,25 +1,20 @@
 bon_missions = {
 	icon = GFX_decision_category_senshado
-	allowed = {
-	}
+	allowed = { tag = BON }
 }
 bon_government = {
 	icon = GFX_decision_category_senshado
-	allowed = {
-	}
+	allowed = { tag = BON }
 }
 bon_industry = {
 	icon = GFX_decision_category_senshado
-	allowed = {
-	}
+	allowed = { tag = BON }
 }
 bon_civil_war = {
 	icon = GFX_decision_category_senshado
-	allowed = {
-	}
+	allowed = { tag = BON }
 }
 bon_diplomatic = {
 	icon = GFX_decision_category_senshado
-	allowed = {
-	}
+	allowed = { tag = BON }
 }

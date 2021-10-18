@@ -1508,7 +1508,7 @@ focus_tree = {
 		id = BCF_end_chaos
 		icon = GFX_focus_BCF_end_chaos
 		x = 12
-		y = 8
+		y = 7
 		cost = 10
 		
 		ai_will_do = {
@@ -1607,17 +1607,11 @@ focus_tree = {
 			factor = 25
 		}
 		
-		#prerequisite = { focus = BCF_ultimatum }
+		prerequisite = { focus = BCF_ultimatum }
 		available_if_capitulated = yes
 		completion_reward = {
-			KGA = {
-				for_each_loop = {
-					array = core_states
-					
-					log = "[?v]"				
-				}
-			}
-			
+			27 = { add_core_of = BCF }
+			17 = { add_core_of = BCF }
 		}
 	}
 	
@@ -1637,6 +1631,8 @@ focus_tree = {
 		mutually_exclusive = { focus = BCF_ultimatum }
 		available_if_capitulated = yes
 		completion_reward = {
+			#触发BCF打开和MGC和平对话
+			country_event = bcfreedom.4
 		}
 	}
 	
@@ -1656,6 +1652,8 @@ focus_tree = {
 		mutually_exclusive = { focus = BCF_limited_autonomy }
 		available_if_capitulated = yes
 		completion_reward = {
+			#触发事件 组建联合政府
+			country_event = bcfreedom.5
 		}
 	}
 	
@@ -1675,6 +1673,8 @@ focus_tree = {
 		mutually_exclusive = { focus = BCF_coalition_government }
 		available_if_capitulated = yes
 		completion_reward = {
+			#触发事件 有限自治
+			country_event = bcfreedom.6
 		}
 	}
 	
@@ -1682,7 +1682,7 @@ focus_tree = {
 	focus = {
 		id = BCF_future_of_senshadao
 		icon = GFX_focus_BCF_future_of_senshadao
-		x = 28
+		x = 22
 		y = -5
 		cost = 5
 		
@@ -1692,6 +1692,11 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 		completion_reward = {
+			add_political_power = 50
+			custom_effect_tooltip = bcf_tooltip5
+			add_to_variable = {
+				ssdp = 100
+			}
 		}
 	}
 	
@@ -1699,7 +1704,7 @@ focus_tree = {
 	focus = {
 		id = BCF_new_league
 		icon = GFX_focus_BCF_new_league
-		x = 27
+		x = 21
 		y = -4
 		cost = 8
 		
@@ -1711,6 +1716,7 @@ focus_tree = {
 		mutually_exclusive = { focus = BCF_new_member }
 		available_if_capitulated = yes
 		completion_reward = {
+			unlock_decision_tooltip = bcf_new_league
 		}
 	}
 	
@@ -1718,7 +1724,7 @@ focus_tree = {
 	focus = {
 		id = BCF_invite_bon
 		icon = GFX_focus_BCF_invite_bon
-		x = 27
+		x = 21
 		y = -3
 		cost = 10
 		
@@ -1729,6 +1735,7 @@ focus_tree = {
 		prerequisite = { focus = BCF_new_league }
 		available_if_capitulated = yes
 		completion_reward = {
+			country_event = bcfreedom.7
 		}
 	}
 	
@@ -1736,7 +1743,7 @@ focus_tree = {
 	focus = {
 		id = BCF_new_member
 		icon = GFX_focus_BCF_new_member
-		x = 29
+		x = 23
 		y = -4
 		cost = 8
 		
@@ -1748,6 +1755,7 @@ focus_tree = {
 		mutually_exclusive = { focus = BCF_new_league }
 		available_if_capitulated = yes
 		completion_reward = {
+			unlock_decision_tooltip = bcf_provide_help_ooari
 		}
 	}
 	
@@ -1755,7 +1763,7 @@ focus_tree = {
 	focus = {
 		id = BCF_limit_faction
 		icon = GFX_focus_BCF_limit_faction
-		x = 29
+		x = 23
 		y = -3
 		cost = 10
 		
@@ -1766,6 +1774,7 @@ focus_tree = {
 		prerequisite = { focus = BCF_new_member }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_ideas = BCF_restricted_faction
 		}
 	}
 	
@@ -1773,7 +1782,7 @@ focus_tree = {
 	focus = {
 		id = BCF_united_training
 		icon = GFX_focus_BCF_united_training
-		x = 28
+		x = 22
 		y = -2
 		cost = 10
 		
@@ -1784,6 +1793,1972 @@ focus_tree = {
 		prerequisite = { focus = BCF_invite_bon focus = BCF_limit_faction }
 		available_if_capitulated = yes
 		completion_reward = {
+			army_experience = 35
+			if = {
+				limit = { is_in_faction_with = BON }
+				BON = {
+					army_experience = 35
+				}
+			}
+		}
+	}
+
+	#第61届战车道联赛
+	focus = {
+		id = BCF_61th_league_match
+		icon = GFX_focus_BCF_61th_league_match
+		x = 28
+		y = -5
+		cost = 0
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = { has_global_flag = 61ND_SENSHADO_DAISAKUSEN_END }
+		bypass = { has_global_flag = 61ND_SENSHADO_DAISAKUSEN_END }
+		prerequisite = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+		}
+	}
+
+	#失败的教训
+	focus = {
+		id = BCF_lesson_of_failure
+		icon = GFX_focus_BCF_lesson_of_failure
+		relative_position_id = BCF_61th_league_match
+		x = 0
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_61th_league_match }
+		available_if_capitulated = yes
+		completion_reward = {
+			army_experience = 10
+		}
+	}
+
+	#推动学院改革
+	focus = {
+		id = BCF_school_reform
+		icon = GFX_focus_BCF_school_reform
+		relative_position_id = BCF_lesson_of_failure
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_lesson_of_failure }
+		available_if_capitulated = yes
+		completion_reward = {
+			custom_effect_tooltip = bcf_tooltip6
+			if = {
+				limit = { has_country_leader = {
+					name = "Marie"
+					ruling_only = yes
+				} }
+				add_to_variable = {
+					bcf_marie_support = 50
+				}
+				add_to_variable = {
+					bcf_andou_support = 20
+				}
+				add_to_variable = {
+					bcf_oshida_support = 30
+				}
+			}
+			if = {
+				limit = { has_country_leader = {
+					name = "Andou"
+					ruling_only = yes
+				} }
+				add_to_variable = {
+					bcf_marie_support = 40
+				}
+				add_to_variable = {
+					bcf_andou_support = 30
+				}
+				add_to_variable = {
+					bcf_oshida_support = 30
+				}
+			}
+			if = {
+				limit = { has_country_leader = {
+					name = "Andou"
+					ruling_only = yes
+				} }
+				add_to_variable = {
+					bcf_marie_support = 45
+				}
+				add_to_variable = {
+					bcf_andou_support = 20
+				}
+				add_to_variable = {
+					bcf_oshida_support = 35
+				}
+			}
+		}
+	}
+
+	#加强学院凝聚力
+	focus = {
+		id = BCF_streghten_unity
+		icon = GFX_focus_BCF_streghten_unity
+		relative_position_id = BCF_school_reform
+		x = -2
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_school_reform }
+		mutually_exclusive = { focus = BCF_purify_the_school }
+		available_if_capitulated = yes
+		completion_reward = {
+			unlock_decision_tooltip = bcf_improve_school_unity
+			swap_ideas = {
+				remove_idea = BCF_faction_struggle_4
+				add_idea = BCF_faction_struggle_3
+			}
+		}
+	}
+
+	#学生会特别会议
+	focus = {
+		id = BCF_special_meeting
+		icon = GFX_focus_BCF_special_meeting
+		relative_position_id = BCF_streghten_unity
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_streghten_unity }
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BCF_faction_struggle_3
+				add_idea = BCF_faction_struggle_2
+			}
+		}
+	}
+
+	#鼓励派系和解
+	focus = {
+		id = BCF_encourage_compromise
+		icon = GFX_focus_BCF_encourage_compromise
+		relative_position_id = BCF_special_meeting
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_special_meeting }
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BCF_faction_struggle_2
+				add_idea = BCF_faction_struggle_1
+			}
+		}
+	}
+
+	#混编车组
+	focus = {
+		id = BCF_mixed_sets
+		icon = GFX_focus_BCF_mixed_sets
+		relative_position_id = BCF_encourage_compromise
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_encourage_compromise }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = BCF_mixed_sets
+		}
+	}
+
+	#团结的BC自由
+	focus = {
+		id = BCF_united_bcf
+		icon = GFX_focus_BCF_united_bcf
+		relative_position_id = BCF_mixed_sets
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_mixed_sets }
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BCF_faction_struggle_1
+				add_idea = BCF_faction_struggle_0
+			}
+		}
+	}
+
+	#净化学院环境
+	focus = {
+		id = BCF_purify_the_school
+		icon = GFX_focus_BCF_purify_the_school
+		relative_position_id = BCF_school_reform
+		x = 2
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_school_reform }
+		mutually_exclusive = { focus = BCF_streghten_unity }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = -0.1
+			swap_ideas = {
+				remove_idea = BCF_faction_struggle_4
+				add_idea = BCF_faction_struggle_3
+			}
+		}
+	}
+
+	#打压直升派
+	focus = {
+		id = BCF_streghten_andou_faction
+		icon = GFX_focus_BCF_streghten_andou_faction
+		relative_position_id = BCF_purify_the_school
+		x = -2
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_purify_the_school }
+		mutually_exclusive = { focus = BCF_restrict_examination_faction }
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BCF_faction_struggle_3
+				add_idea = BCF_faction_struggle_2
+			}
+		}
+	}
+
+	#查封敌对社团
+	focus = {
+		id = BCF_ban_rival_clubs
+		icon = GFX_focus_BCF_ban_rival_clubs
+		relative_position_id = BCF_streghten_andou_faction
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_streghten_andou_faction }
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BCF_faction_struggle_2
+				add_idea = BCF_faction_struggle_1
+			}
+		}
+	}
+
+	#废除直升机制
+	focus = {
+		id = BCF_abolish_escalation
+		icon = GFX_focus_BCF_abolish_escalation
+		relative_position_id = BCF_ban_rival_clubs
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_ban_rival_clubs }
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BCF_faction_struggle_2
+				add_idea = BCF_faction_struggle_1
+			}
+		}
+	}
+
+	#真正的公平
+	focus = {
+		id = BCF_real_justice
+		icon = GFX_focus_BCF_real_justice
+		relative_position_id = BCF_abolish_escalation
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_abolish_escalation }
+		available_if_capitulated = yes
+		completion_reward = {
+			remove_ideas = BCF_faction_struggle_2
+			add_ideas= BCF_equal_education
+		}
+	}
+
+	#限制外部入学者
+	focus = {
+		id = BCF_restrict_examination_faction
+		icon = GFX_focus_BCF_restrict_examination_faction
+		relative_position_id = BCF_purify_the_school
+		x = 2
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_purify_the_school }
+		mutually_exclusive = { focus = BCF_streghten_andou_faction }
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BCF_faction_struggle_3
+				add_idea = BCF_faction_struggle_2
+			}
+		}
+	}
+
+	#禁止贩卖鲷鱼烧
+	focus = {
+		id = BCF_no_taiyaki
+		icon = GFX_focus_BCF_no_taiyaki
+		relative_position_id = BCF_restrict_examination_faction
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_restrict_examination_faction }
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BCF_faction_struggle_2
+				add_idea = BCF_faction_struggle_1
+			}
+		}
+	}
+
+	#拆分BC自由
+	focus = {
+		id = BCF_two_schools
+		icon = GFX_focus_BCF_two_schools
+		relative_position_id = BCF_no_taiyaki
+		x = -2
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_no_taiyaki }
+		mutually_exclusive = { focus = BCF_abolish_examination }
+		available_if_capitulated = yes
+		completion_reward = {
+			remove_ideas = BCF_faction_struggle_1
+			add_ideas = BCF_two_schools
+		}
+	}
+
+	#眼不见心不烦
+	focus = {
+		id = BCF_out_of_sight_out_of_mind
+		icon = GFX_focus_BCF_out_of_sight_out_of_mind
+		relative_position_id = BCF_two_schools
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_two_schools }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+			#设定cosmeticflag
+		}
+	}
+
+	#取消外部入学
+	focus = {
+		id = BCF_abolish_examination
+		icon = GFX_focus_BCF_abolish_examination
+		relative_position_id = BCF_no_taiyaki
+		x = 2
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_no_taiyaki }
+		mutually_exclusive = { focus = BCF_two_schools }
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BCF_faction_struggle_1
+				add_idea = BCF_faction_struggle_0
+			}
+		}
+	}
+
+	#高贵而优雅的BC自由
+	focus = {
+		id = BCF_noble_school
+		icon = GFX_focus_BCF_noble_school
+		relative_position_id = BCF_abolish_examination
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_abolish_examination }
+		available_if_capitulated = yes
+		completion_reward = {
+			remove_ideas = BCF_faction_struggle_0
+			add_ideas = BCF_noble_school
+		}
+	}
+
+	#外交事务
+	focus = {
+		id = BCF_diplomatic_affairs
+		icon = GFX_focus_BCF_diplomatic_affairs
+		#relative_position_id = BCF_abolish_examination
+		x = 7
+		y = 8
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = { OR = {
+			has_country_flag = BCF_MARIE_FINISH_CENTRALIZATION
+			has_country_flag = BCF_CIVIL_WAR_END
+		} }
+		#prerequisite = { focus = BCF_abolish_examination }
+		available_if_capitulated = yes
+		completion_reward = {
+			unlock_decision_tooltip = bcf_the_natural_borders_of_France
+			if = {
+				limit = { NOT = { has_country_flag = BCF_STRENGHTEN_CONTROL_KGA } }
+				unlock_decision_tooltip = bcf_handling_territorial_disputes
+			}
+		}
+	}
+
+	#评估安齐奥局势
+	focus = {
+		id = BCF_evaluate_anzio_issue
+		icon = GFX_focus_BCF_evaluate_anzio_issue
+		relative_position_id = BCF_diplomatic_affairs
+		x = -4
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_diplomatic_affairs }
+		available_if_capitulated = yes
+		completion_reward = {
+			country_event = bcfreedom.8
+		}
+	}
+
+	#确保安齐奥稳定
+	focus = {
+		id = BCF_secure_stability
+		icon = GFX_focus_BCF_secure_stability
+		relative_position_id = BCF_evaluate_anzio_issue
+		x = -2
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = { has_country_flag = BCF_MAKESURE_ANZIO_STABILITY }
+		prerequisite = { focus = BCF_evaluate_anzio_issue }
+		mutually_exclusive = { focus = BCF_claim_north_italy }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+
+	#提供保障独立
+	focus = {
+		id = BCF_provide_guarantee
+		icon = GFX_focus_BCF_provide_guarantee
+		relative_position_id = BCF_secure_stability
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_secure_stability }
+		available_if_capitulated = yes
+		completion_reward = {
+			give_guarantee = ANZ
+		}
+	}
+
+	#扩大意面贸易
+	focus = {
+		id = BCF_expand_pasta_trade
+		icon = GFX_focus_BCF_expand_pasta_trade
+		relative_position_id = BCF_provide_guarantee
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_provide_guarantee }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = BCF_expand_pasta_trade
+			ANZ = {
+				add_ideas = BCF_expand_pasta_trade
+			}
+		}
+	}
+
+	#声索北意大利
+	focus = {
+		id = BCF_claim_north_italy
+		icon = GFX_focus_BCF_claim_north_italy
+		relative_position_id = BCF_evaluate_anzio_issue
+		x = 1
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = { has_country_flag = BCF_CLAIM_NORTH_ITALY_OPTION }
+		prerequisite = { focus = BCF_evaluate_anzio_issue }
+		mutually_exclusive = { focus = BCF_secure_stability }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_state_claim = 3
+			add_state_claim = 151
+			add_state_claim = 158
+		}
+	}
+
+	#皮埃蒙特或战争
+	focus = {
+		id = BCF_piemonte_or_war
+		icon = GFX_focus_BCF_piemonte_or_war
+		relative_position_id = BCF_claim_north_italy
+		x = -1
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		mutually_exclusive = { focus = BCF_piemonte_for_support }
+		prerequisite = { focus = BCF_claim_north_italy }
+		available_if_capitulated = yes
+		completion_reward = {
+			country_event = bcfreedom.9
+		}
+	}
+
+	#卫星国
+	focus = {
+		id = BCF_italian_vassal
+		icon = GFX_focus_BCF_italian_vassal
+		relative_position_id = BCF_piemonte_or_war
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_piemonte_or_war }
+		available_if_capitulated = yes
+		completion_reward = {
+			unlock_decision_tooltip = bcf_build_anzio_vassal
+		}
+	}
+
+	#皮埃蒙特换取支持
+	focus = {
+		id = BCF_piemonte_for_support
+		icon = GFX_focus_BCF_piemonte_for_support
+		relative_position_id = BCF_claim_north_italy
+		x = 1
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		mutually_exclusive = { focus = BCF_piemonte_or_war }
+		prerequisite = { focus = BCF_claim_north_italy }
+		available_if_capitulated = yes
+		completion_reward = {
+			country_event = bcfreedom.10
+		}
+	}
+
+	#开放热那亚
+	focus = {
+		id = BCF_open_genoa
+		icon = GFX_focus_BCF_open_genoa
+		relative_position_id = BCF_piemonte_for_support
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_piemonte_for_support }
+		available_if_capitulated = yes
+		completion_reward = {
+			country_event = bcfreedom.11
+			random_state = {
+				limit = { is_core_of = BCF is_controlled_by = BCF }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+				}
+			}
+			diplomatic_relation = {
+				country = ANZ
+				relation = docking_rights
+				active = yes
+			}
+		}
+	}
+
+	#处理圣葛罗莉安娜
+	focus = {
+		id = BCF_stg_issue
+		icon = GFX_focus_BCF_stg_issue
+		relative_position_id = BCF_diplomatic_affairs
+		x = 1
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_diplomatic_affairs }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	#民主乃联盟之基石
+	focus = {
+		id = BCF_democratic_friend
+		icon = GFX_focus_BCF_democratic_friend
+		relative_position_id = BCF_stg_issue
+		x = -1
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = { AND = { STG = { has_government = democratic } BCF = { has_government = democratic } } }
+		prerequisite = { focus = BCF_stg_issue }
+		mutually_exclusive = { focus = BCF_destory_stg }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_opinion_modifier = {
+				target = STG
+				modifier = BCF_democratic_diplomatic
+			}
+			STG = {
+				add_opinion_modifier = {
+					target = BCF
+					modifier = BCF_democratic_diplomatic
+				}
+			}
+		}
+	}
+
+	#扩大贸易
+	focus = {
+		id = BCF_expand_anglican_french_trade
+		icon = GFX_focus_BCF_expand_anglican_french_trade
+		relative_position_id = BCF_democratic_friend
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_democratic_friend }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = BCF_expand_anglican_french_trade
+		}
+	}
+	
+	#航母研究合作
+	focus = {
+		id = BCF_cv_research
+		icon = GFX_focus_BCF_cv_research
+		relative_position_id = BCF_expand_anglican_french_trade
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_expand_anglican_french_trade }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				category = cv_tech
+				uses = 1
+				bonus = 2
+				ahead_reduction = 1
+			}
+		}
+	}
+
+	#重建旧同盟
+	focus = {
+		id = BCF_old_ally
+		icon = GFX_focus_BCF_old_ally
+		relative_position_id = BCF_cv_research
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_cv_research }
+		available_if_capitulated = yes
+		completion_reward = {
+			give_guarantee = STG
+			STG = {
+				give_guarantee = BCF
+			}
+			unlock_decision_tooltip = bcf_rebuild_ally
+		}
+	}
+
+	#海的对面是敌人
+	focus = {
+		id = BCF_destory_stg
+		icon = GFX_focus_BCF_destory_stg
+		relative_position_id = BCF_stg_issue
+		x = 1
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_stg_issue }
+		mutually_exclusive = { focus = BCF_democratic_friend }
+		available_if_capitulated = yes
+		completion_reward = {
+			unlock_decision_tooltip = bcf_prepare_war_stg
+		}
+	}
+
+	#准备袭击朴茨茅斯
+	focus = {
+		id = BCF_attack_portsmouth
+		icon = GFX_focus_BCF_attack_portsmouth
+		relative_position_id = BCF_destory_stg
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_destory_stg }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = BCF_focus_on_port_attack
+		}
+	}
+
+	#登陆演习
+	focus = {
+		id = BCF_landing_exercise
+		icon = GFX_focus_BCF_landing_exercise
+		relative_position_id = BCF_attack_portsmouth
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_attack_portsmouth }
+		available_if_capitulated = yes
+		completion_reward = {
+			unlock_decision_tooltip = bcf_landing_exercise
+		}
+	}
+
+	#活捉大吉岭
+	focus = {
+		id = BCF_cathch_darjeeling
+		icon = GFX_focus_BCF_cathch_darjeeling
+		relative_position_id = BCF_landing_exercise
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_landing_exercise }
+		available_if_capitulated = yes
+		completion_reward = {
+			create_wargoal = {
+				target = STG
+				type = annex_everything
+			}
+		}
+	}
+
+	#与黑森峰领导人的会晤
+	focus = {
+		id = BCF_conference_with_kga
+		icon = GFX_focus_BCF_conference_with_kga
+		relative_position_id = BCF_diplomatic_affairs
+		x = 6
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_diplomatic_affairs }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 50
+			KGA = {
+				add_opinion_modifier = {
+					target = BCF
+					modifier = BCF_conference_with_kga
+				}
+			}
+		}
+	}
+
+	#解决领土争议问题
+	focus = {
+		id = BCF_disputed_terrtority
+		icon = GFX_focus_BCF_disputed_terrtority
+		relative_position_id = BCF_conference_with_kga
+		x = -1
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		available = { has_country_flag = BCF_TERRTORY_ISSUE_SOLVED }
+		prerequisite = { focus = BCF_conference_with_kga }
+		available_if_capitulated = yes
+		completion_reward = {
+			country_event = bcfreedom.12
+		}
+	}
+
+	#追加战争赔款
+	focus = {
+		id = BCF_extra_war_reparations
+		icon = GFX_focus_BCF_extra_war_reparations
+		relative_position_id = BCF_disputed_terrtority
+		x = -1
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		mutually_exclusive = { focus = BCF_unconditional_withdrawal }
+		prerequisite = { focus = BCF_disputed_terrtority }
+		available_if_capitulated = yes
+		completion_reward = {
+			KGA = { country_event = bcfreedom.14 }
+		}
+	}
+
+	#莱茵兰再次非军事化
+	focus = {
+		id = BCF_reineland_demilitarization
+		icon = GFX_focus_BCF_reineland_demilitarization
+		relative_position_id = BCF_extra_war_reparations
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = { has_global_flag = KGA_ALLOW_WAR_REPARATIONS }
+		prerequisite = { focus = BCF_extra_war_reparations }
+		available_if_capitulated = yes
+		completion_reward = {
+			42 = { set_demilitarized_zone = yes }
+			50 = { set_demilitarized_zone = yes }
+		}
+	}
+
+	#卢森堡条约
+	focus = {
+		id = BCF_luxembourg_treaty
+		icon = GFX_focus_BCF_luxembourg_treaty
+		relative_position_id = BCF_reineland_demilitarization
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_reineland_demilitarization }
+		available_if_capitulated = yes
+		completion_reward = {
+			country_event = bcfreedom.15
+		}
+	}
+
+	#无条件撤军
+	focus = {
+		id = BCF_unconditional_withdrawal
+		icon = GFX_focus_BCF_unconditional_withdrawal
+		relative_position_id = BCF_disputed_terrtority
+		x = 1
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		mutually_exclusive = { focus = BCF_extra_war_reparations }
+		prerequisite = { focus = BCF_disputed_terrtority }
+		available_if_capitulated = yes
+		completion_reward = {
+			KGA = {
+				add_opinion_modifier = {
+					target = BCF
+					modifier = BCF_unconditional_withdrawal
+				}
+				transfer_state = 42
+				transfer_state = 50
+			}
+		}
+	}
+
+	#重启政治对话
+	focus = {
+		id = BCF_reopen_communication
+		icon = GFX_focus_BCF_reopen_communication
+		relative_position_id = BCF_conference_with_kga
+		x = 2
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_conference_with_kga }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_opinion_modifier = {
+				target = KGA
+				modifier = BCF_political_communication
+			}
+			KGA = {
+				add_opinion_modifier = {
+					target = BCF
+					modifier = BCF_political_communication
+				}
+			}
+		}
+	}
+
+	#尝试和解
+	focus = {
+		id = BCF_compromise_effort
+		icon = GFX_focus_BCF_compromise_effort
+		relative_position_id = BCF_reopen_communication
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_reopen_communication }
+		mutually_exclusive = { focus = BCF_isolate_kga }
+		available_if_capitulated = yes
+		completion_reward = {
+			country_event = bcfreedom.16
+		}
+	}
+
+	#法德联合公报
+	focus = {
+		id = BCF_joint_communique
+		icon = GFX_focus_BCF_joint_communique
+		relative_position_id = BCF_compromise_effort
+		x = -1
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_compromise_effort }
+		prerequisite = { focus = BCF_unconditional_withdrawal }
+		available_if_capitulated = yes
+		completion_reward = {
+			country_event = bcfreedom.17
+			KGA = {
+				country_event = bcfreedom.17
+			}
+		}
+	}
+
+	#昔日之敌，今日之友
+	focus = {
+		id = BCF_new_ally
+		icon = GFX_focus_BCF_new_ally
+		relative_position_id = BCF_joint_communique
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_joint_communique }
+		available_if_capitulated = yes
+		completion_reward = {
+			create_faction = "法德同盟"
+			add_to_faction = KGA
+		}
+	}
+
+	#秘密访问真理
+	focus = {
+		id = BCF_pravda_issue
+		icon = GFX_focus_BCF_pravda_issue
+		relative_position_id = BCF_diplomatic_affairs
+		x = 11
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = { AND = { PRA = { has_government = communism } BCF = { has_government = communism } } }
+		prerequisite = { focus = BCF_diplomatic_affairs }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	#茶会
+	focus = {
+		id = BCF_tea_meeting
+		icon = GFX_focus_BCF_tea_meeting
+		relative_position_id = BCF_pravda_issue
+		x = -1
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_pravda_issue }
+		available_if_capitulated = yes
+		completion_reward = {
+			country_event = bcfreedom.18
+		}
+	}
+
+	
+	#孤立黑森峰
+	focus = {
+		id = BCF_isolate_kga
+		icon = GFX_focus_BCF_isolate_kga
+		relative_position_id = BCF_tea_meeting
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_tea_meeting }
+		mutually_exclusive = { focus = BCF_compromise_effort }
+		available_if_capitulated = yes
+		completion_reward = {
+			PRA = {
+				add_opinion_modifier = {
+					target = KGA
+					modifier = BCF_isolate_kga
+				}
+			}
+		}
+	}
+
+	#欧洲革命
+	focus = {
+		id = BCF_european_revolution
+		icon = GFX_focus_BCF_european_revolution
+		relative_position_id = BCF_isolate_kga
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_isolate_kga }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+			add_war_support = 0.1
+			unlock_decision_tooltip = bcf_join_pravda
+		}
+	}
+
+	#寻求工业合作
+	focus = {
+		id = BCF_seek_industrial_cooperation
+		icon = GFX_focus_BCF_seek_industrial_cooperation
+		relative_position_id = BCF_pravda_issue
+		x = 1
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_pravda_issue }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_offsite_building = { type = arms_factory level = 2 }
+		}
+	}
+
+	#五年计划追加项目
+	focus = {
+		id = BCF_extra_five_year_project
+		icon = GFX_focus_BCF_extra_five_year_project
+		relative_position_id = BCF_seek_industrial_cooperation
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = { has_idea = BCF_first_five_year_plan_0 }
+		prerequisite = { focus = BCF_seek_industrial_cooperation }
+		available_if_capitulated = yes
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+				}
+			}
+			swap_ideas = {
+				remove_idea = BCF_first_five_year_plan_0
+				add_idea = BCF_first_five_year_plan_1
+			}
+		}
+	}
+
+	#坦克技术合作
+	focus = {
+		id = BCF_tank_cooperation
+		icon = GFX_focus_BCF_tank_cooperation
+		relative_position_id = BCF_extra_five_year_project
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_extra_five_year_project }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_to_tech_sharing_group = bcf_pra_research
+			PRA = { add_to_tech_sharing_group = bcf_pra_research }
+		}
+	}
+
+	#东欧影响
+	focus = {
+		id = BCF_eastern_european_influence
+		icon = GFX_focus_BCF_eastern_european_influence
+		relative_position_id = BCF_diplomatic_affairs
+		x = 16
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_diplomatic_affairs }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	#与黑森峰的交易
+	focus = {
+		id = BCF_deal_with_kga
+		icon = GFX_focus_BCF_deal_with_kga
+		relative_position_id = BCF_eastern_european_influence
+		x = -2
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = { has_opinion = {
+			target = KGA
+			value > 14
+		} KGA = { has_opinion = {
+			target = BCF
+			value > 34
+		} } }
+		prerequisite = { focus = BCF_eastern_european_influence }
+		mutually_exclusive = {
+			focus = BCF_deal_with_pra
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_opinion_modifier = {
+				target = KGA
+				modifier = BCF_deal_with_kga
+			}
+			BON = {
+				add_opinion_modifier = {
+					target = BCF
+					modifier = BCF_sell_bon
+				}
+			}
+			add_tech_bonus = {
+				category = armor
+				uses = 1
+				bonus = 2
+			}
+		}
+	}
+
+	#与真理的交易
+	focus = {
+		id = BCF_deal_with_pra
+		icon = GFX_focus_BCF_deal_with_pra
+		relative_position_id = BCF_eastern_european_influence
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = { has_opinion = {
+			target = PRA
+			value > 14
+		} PRA = { has_opinion = {
+			target = BCF
+			value > 34
+		} } }
+		mutually_exclusive = {
+			focus = BCF_deal_with_kga
+		}
+		prerequisite = { focus = BCF_eastern_european_influence }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_opinion_modifier = {
+				target = KGA
+				modifier = BCF_deal_with_pra
+			}
+			BON = {
+				add_opinion_modifier = {
+					target = BCF
+					modifier = BCF_sell_bon
+				}
+			}
+			add_tech_bonus = {
+				category = industry
+				uses = 2
+				bonus = 1
+			}
+		}
+	}
+
+	#从东欧抽身
+	focus = {
+		id = BCF_leave_east_europe
+		icon = GFX_focus_BCF_leave_east_europe
+		relative_position_id = BCF_deal_with_pra
+		x = -1
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_deal_with_pra focus = BCF_deal_with_kga }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = -0.05
+			add_political_power = 150
+		}
+	}
+
+	#后波美拉尼亚问题
+	focus = {
+		id = BCF_pomerania_issue
+		icon = GFX_focus_BCF_pomerania_issue
+		relative_position_id = BCF_leave_east_europe
+		x = -1
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_leave_east_europe }
+		available_if_capitulated = yes
+		completion_reward = {
+			unlock_decision_tooltip = bcf_pomerania_issue
+		}
+	}
+
+	#默许真理东扩
+	focus = {
+		id = BCF_allow_pravda_expansion
+		icon = GFX_focus_BCF_allow_pravda_expansion
+		relative_position_id = BCF_leave_east_europe
+		x = 1
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_leave_east_europe }
+		available_if_capitulated = yes
+		completion_reward = {
+			unlock_decision_tooltip = bcf_allow_pravda_expansion
+		}
+	}
+
+	#重申BC自由-冯布诺同盟
+	focus = {
+		id = BCF_reassert_alliance
+		icon = GFX_focus_BCF_reassert_alliance
+		relative_position_id = BCF_eastern_european_influence
+		x = 2
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = { has_opinion = {
+			target = BON
+			value > 14
+		} BON = { has_opinion = {
+			target = BCF
+			value > 34
+		} } }
+		prerequisite = { focus = BCF_eastern_european_influence }
+		available_if_capitulated = yes
+		completion_reward = {
+			give_guarantee = BON
+		}
+	}
+
+	#限制黑森峰
+	focus = {
+		id = BCF_protect_from_kga
+		icon = GFX_focus_BCF_protect_from_kga
+		relative_position_id = BCF_reassert_alliance
+		x = -1
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_reassert_alliance }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = BCF_protect_from_kga
+		}
+	}
+
+	#强化对真理防御
+	focus = {
+		id = BCF_protect_from_pra
+		icon = GFX_focus_BCF_protect_from_pra
+		relative_position_id = BCF_reassert_alliance
+		x = 1
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_reassert_alliance }
+		available_if_capitulated = yes
+		completion_reward = {
+		}
+	}
+
+	#BC自由志愿军
+	focus = {
+		id = BCF_volunteers
+		icon = GFX_focus_BCF_volunteers
+		relative_position_id = BCF_protect_from_pra
+		x = -1
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  } 
+		prerequisite = { focus = BCF_protect_from_pra }
+		prerequisite = { focus = BCF_protect_from_kga }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = BCF_volunteers
+		}
+	}
+
+	#第三次奥尔良会议
+	focus = {
+		id = BCF_third_orelans_conference
+		icon = GFX_focus_BCF_third_orelans_conference
+		#relative_position_id = BCF_protect_from_pra
+		x = 28
+		y = 4
+		cost = 0
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = { has_country_flag = BCF_TRD_ORELANS_END }
+		bypass = { has_country_flag = BCF_TRD_ORELANS_END }
+		prerequisite = { }
+		available_if_capitulated = yes
+		completion_reward = {
+		}
+	}
+
+	#武装工农
+	focus = {
+		id = BCF_arm_workers_and_farmers
+		icon = GFX_focus_BCF_arm_workers_and_farmers
+		relative_position_id = BCF_third_orelans_conference
+		x = -2
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = { has_government = communism }
+		prerequisite = { focus = BCF_third_orelans_conference }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = BCF_red_army
+		}
+	}
+
+	#人民的国家
+	focus = {
+		id = BCF_peoples_country
+		icon = GFX_focus_BCF_peoples_country
+		relative_position_id = BCF_arm_workers_and_farmers
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = { has_country_flag = BCF_CIVIL_WAR_END }
+		prerequisite = { focus = BCF_arm_workers_and_farmers }
+		available_if_capitulated = yes
+		completion_reward = {
+			remove_ideas = BCF_red_army
+			add_popularity = {
+				ideology = communism
+				popularity = 0.3
+			}
+			add_stability = 0.25
+		}
+	}
+
+	#土地改革
+	focus = {
+		id = BCF_land_reform
+		icon = GFX_focus_BCF_land_reform
+		relative_position_id = BCF_peoples_country
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_peoples_country }
+		available_if_capitulated = yes
+		completion_reward = {
+			remove_ideas = BCF_weak_government_4
+		}
+	}
+
+	#一切皆归法兰西
+	focus = {
+		id = BCF_everything_belong_to_france
+		icon = GFX_focus_BCF_everything_belong_to_france
+		relative_position_id = BCF_land_reform
+		x = 0
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_land_reform }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = BCF_everything_belong_to_france
+		}
+	}
+
+	#中央集权尝试
+	focus = {
+		id = BCF_centrlization_effort
+		icon = GFX_focus_BCF_centrlization_effort
+		relative_position_id = BCF_third_orelans_conference
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = { has_country_leader = {
+			name = "Marie"
+			ruling_only = yes
+		} }
+		prerequisite = { focus = BCF_third_orelans_conference }
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BCF_weak_government_4
+				add_idea = BCF_weak_government_3
+			}
+		}
+	}
+
+	#解散地方民兵
+	focus = {
+		id = BCF_dismiss_local_millita
+		icon = GFX_focus_BCF_dismiss_local_millita
+		relative_position_id = BCF_centrlization_effort
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_centrlization_effort }
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BCF_weak_government_3
+				add_idea = BCF_weak_government_2
+			}
+		}
+	}
+
+	#扩大税收
+	focus = {
+		id = BCF_raise_tax
+		icon = GFX_focus_BCF_raise_tax
+		relative_position_id = BCF_dismiss_local_millita
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_dismiss_local_millita }
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BCF_weak_government_2
+				add_idea = BCF_weak_government_1
+			}
+		}
+	}
+
+	#收回地方立法权
+	focus = {
+		id = BCF_abolish_local_law
+		icon = GFX_focus_BCF_abolish_local_law
+		relative_position_id = BCF_raise_tax
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_raise_tax }
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BCF_weak_government_1
+				add_idea = BCF_weak_government_0
+			}
+		}
+	}
+
+	#全法兰西的女主人
+	focus = {
+		id = BCF_hostess_of_france
+		icon = GFX_focus_BCF_hostess_of_france
+		relative_position_id = BCF_abolish_local_law
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_abolish_local_law focus = BCF_control_social_media }
+		available_if_capitulated = yes
+		completion_reward = {
+			remove_ideas = BCF_weak_government_0
+			add_ideas = BCF_hostess_of_france
+		}
+	}
+
+	#准备根除反对势力
+	focus = {
+		id = BCF_raise_army
+		icon = GFX_focus_BCF_raise_army
+		relative_position_id = BCF_third_orelans_conference
+		x = 2
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = { has_country_leader = {
+			name = "Oshida"
+			ruling_only = yes
+		} }
+		prerequisite = { focus = BCF_third_orelans_conference }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = senshado_light_tank_equipment_1
+				amount = 500
+				producer = BCF
+			}
+			add_equipment_to_stockpile = {
+				type = senshado_medium_tank_equipment_1
+				amount = 300
+				producer = BCF
+			}
+			
+		}
+	}
+
+	#新时代的资产阶级革命
+	focus = {
+		id = BCF_modern_bourgeois_revolution
+		icon = GFX_focus_BCF_modern_bourgeois_revolution
+		relative_position_id = BCF_raise_army
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = { has_country_flag = BCF_CIVIL_WAR_END }
+		prerequisite = { focus = BCF_raise_army }
+		available_if_capitulated = yes
+		completion_reward = {
+			remove_ideas = BCF_weak_government_4
+			add_ideas = BCF_protected_bourgeois
+		}
+	}
+
+	#控制宣传媒体
+	focus = {
+		id = BCF_control_social_media
+		icon = GFX_focus_BCF_control_social_media
+		relative_position_id = BCF_modern_bourgeois_revolution
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_modern_bourgeois_revolution }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = -0.15
+			add_political_power = 50
+		}
+	}
+
+	#取消马奇诺自治
+	focus = {
+		id = BCF_revoke_autonomy
+		icon = GFX_focus_BCF_revoke_autonomy
+		relative_position_id = BCF_control_social_media
+		x = 0
+		y = 2
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = { MGC = { is_puppet_of = BCF } }
+		prerequisite = { focus = BCF_control_social_media focus = BCF_abolish_local_law }
+		available_if_capitulated = yes
+		completion_reward = {
+			country_event = bcfreedom.19
+		}
+	}
+
+	#重拳出击
+	focus = {
+		id = BCF_pack_a_punch
+		icon = GFX_focus_BCF_pack_a_punch
+		relative_position_id = BCF_third_orelans_conference
+		x = 4
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = { has_government = fascism }
+		prerequisite = { focus = BCF_third_orelans_conference }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.2
+			}
+			add_war_support = 0.3
+		}
+	}
+
+	#巴黎战车道大赛
+	focus = {
+		id = BCF_paris_senshadao
+		icon = GFX_focus_BCF_paris_senshadao
+		relative_position_id = BCF_pack_a_punch
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = { has_country_flag = BCF_CIVIL_WAR_END }
+		prerequisite = { focus = BCF_pack_a_punch }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = 0.15
+		}
+	}
+
+	#政治言论管控
+	focus = {
+		id = BCF_speech_control
+		icon = GFX_focus_BCF_speech_control
+		relative_position_id = BCF_paris_senshadao
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_paris_senshadao }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = BCF_speech_control
+		}
+	}
+
+	#法兰西的太阳
+	focus = {
+		id = BCF_sun_of_france
+		icon = GFX_focus_BCF_sun_of_france
+		relative_position_id = BCF_speech_control
+		x = 0
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_speech_control }
+		available_if_capitulated = yes
+		completion_reward = {
+			remove_ideas = BCF_weak_government_4
 		}
 	}
 }

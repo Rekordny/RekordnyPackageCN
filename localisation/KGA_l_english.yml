@@ -425,7 +425,7 @@
  kga_tooltip10:0 "国库§R支出§!§Y120黄金§!"
  kga_tooltip11:0 "国库§R支出§!§Y50黄金§!"
  kga_tooltip12:0 "增加一条由§Y桑达斯§!建造至§Y30%的航母生产线§!"
- kga_tooltip13:0 "国库§G添加§!§Y300黄金§!"
+ kga_tooltip13:0 "黄金储备：§G+300§!"
  kga_tooltip14:0 "国库拥有超过§Y100黄金§!"
  kga_tooltip15:0 "国库§R支出§!§Y100黄金§!"
  kga_tooltip16:0 "35 £GFX_gold_icon"
