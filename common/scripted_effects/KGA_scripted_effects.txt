@@ -1,6 +1,6 @@
 create_bellwall = {
 	create_dynamic_country = {
-		original_tag = BEW
+		original_tag = KGA
 		add_political_power = 200
 		transfer_state = 123
 	}

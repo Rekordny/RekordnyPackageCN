@@ -7,12 +7,16 @@
 # decay
 # months/years/days = timer
 # trade = yes/no
-
+#KGA
 opinion_modifiers = {
 	financial_support = {
 		value = +30
 		months = 12
-		decay = 1
+		decay = 2
+	}
+
+	strengthen_communication = {
+		value = +25
 	}
 }
 

@@ -1,7 +1,7 @@
 ﻿l_english:
  MONEY_MAIN:0 "[?ssdp|0]"
- MONEY_TOOLTIP:0 "§Y战车道点数§!\n\n目前拥有点数： §Y[?ssdp]§!\n\n目前每日增长点数： §Y[?current_daily_ssdp]§!"
+ MONEY_TOOLTIP:0 "§Y战车道点数§!\n\n目前拥有点数： §Y[?ssdp]§!\n\n目前每日增长点数： §Y[?ssdp_increase_base]§!"
  MONEY_TOOLTIP_DELAYED:0 "战车道点数只能通过特殊的国策，决策和事件获得,你也可以通过决策和新的系统来消费战车道点数。"
  GOLD_STORAGE:0 "[?gold|0]"
- GOLD_STORAGE_TOOLTIP:0 "§Y黄金储备量§!\n\n目前的黄金储备： §Y[?gold] k§!\n\n标准黄金储备：§Y[?gold_standard] k§!\n\n目前每日增长点数： §Y[?current_daily_tax]§!"
+ GOLD_STORAGE_TOOLTIP:0 "§Y黄金储备量§!\n\n目前的黄金储备： §Y[?gold] k§!\n\n标准黄金储备：§Y[?gold_standard] k§!\n\n目前每日收入： §Y[?current_daily_income] k§!\n\n目前每日军费支出： §R[?wages] k§!\n\n目前每日增长： §Y[?current_daily_gold] k§!"
  GOLD_STORAGE_TOOLTIP_DELAYED:0 "黄金的用处为在商店中购买物品，可购买的包括装备，向别国购买船只订单或者用于特殊决议。\n获取方式为税收和部分其他特殊方式。"

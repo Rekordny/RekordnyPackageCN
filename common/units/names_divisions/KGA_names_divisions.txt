@@ -33,7 +33,7 @@
 
 KGA_SSD_01 = 
 {
-	name = "Kuromorimine light armor Divisions"
+	name = "Kuromorimine light armor Division"
 
 	for_countries = { KGA }
 

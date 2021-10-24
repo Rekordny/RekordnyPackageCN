@@ -1,0 +1,25 @@
+
+BCF_SSD_01 = 
+{
+	name = "BCFreedom light armor Division"
+
+	for_countries = { BCF }
+
+	can_use = { always = yes }
+
+	division_types = { "armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { AFG_GAR_01 }
+
+	fallback_name = "%d. Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d light armor Divisions" } # The first division.
+		2 = { "%d light armor Divisions" } # Numbers must always start from 1 and go up
+		4 = { "%d light armor Divisions" } # The numbers do not need to be sequential
+	}
+}

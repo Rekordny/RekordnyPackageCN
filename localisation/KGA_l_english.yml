@@ -147,9 +147,7 @@
  KGA_magnetic_torpedo_desc:0 ""
  KGA_increase_fuel_reserves:0 "提高燃油储备"
  KGA_increase_fuel_reserves_desc:0 ""
- 
- 
- #fxs国策线
+
  KGA_arbeitsfront:0 "黑森峰劳工阵线"
  KGA_arbeitsfront_desc:0 "收缴以前自由工会的财富并且从资本家手中统一分配给我们的人民，建立一个以真穗政党带领的政工农结合体，是振兴工业的第一步。"
  KGA_contact_Anzio:0 "接触安齐奥"
@@ -202,6 +200,36 @@
  KGA_tank_industry_desc:0 "在战车道盛行的世界上，战车重工业应该是每个国家发展的领头产业。"
  KGA_reconstruction_law:0 "黑森峰重建法"
  KGA_reconstruction_law_desc:0 "黑森峰重建法规范了黑森峰在内战后的所有关于工业和民用建设的标准，同时加强了国家对于整个工业体系的监控。"
+ KGA_popularize_senshado_education:0 "推广战车道教育"
+ KGA_popularize_senshado_education_desc:0 ""
+ KGA_increase_heavy_industry_ratio:0 "提高重工业比重"
+ KGA_increase_heavy_industry_ratio_desc:0 ""
+ KGA_improve_environment:0 "改善生活环境"
+ KGA_improve_environment_desc:0 ""
+ KGA_agricultural_production_plan:0 "农业增产计划"
+ KGA_agricultural_production_plan_desc:0 ""
+ KGA_set_minimum_wage:0 "设定最低工资"
+ KGA_set_minimum_wage_desc:0 ""
+ KGA_look_into_the_future:0 "展望未来"
+ KGA_look_into_the_future_desc:0 ""
+ KGA_update_tactics:0 "更新战术"
+ KGA_update_tactics_desc:0 ""
+ KGA_focus_on_deployment_supply:0 "重点部署后勤"
+ KGA_focus_on_deployment_supply_desc:0 ""
+ KGA_focus_on_battle_plan:0 "着重于作战计划"
+ KGA_focus_on_battle_plan_desc:0 ""
+ KGA_combat_literacy_of_girls:0 "少女们的作战素养"
+ KGA_combat_literacy_of_girls_desc:0 ""
+ KGA_tank_command_center:0 "战车指挥中枢"
+ KGA_tank_command_center_desc:0 ""
+ KGA_strengthen_communication_with_pravda:0 "加强与真理交流"
+ KGA_strengthen_communication_with_pravda_desc:0 ""
+ KGA_deal_with_little_tyrant:0 "和小暴君的交易"
+ KGA_deal_with_little_tyrant_desc:0 ""
+ KGA_prototype_design_communicate:0 "原型车设计交流"
+ KGA_prototype_design_communicate_desc:0 ""
+ KGA_kga_pra_faction:0 "黑森峰-真理阵线"
+ KGA_kga_pra_faction_desc:0 ""
 
 #events
  kuromorimine.1.t:0 "黑森峰战车道政府修改生活管制条例"
@@ -371,7 +399,14 @@
  kuromorimine.54.a:0 "重新投资国家资源开采部门"
  kuromorimine.54.b:0 "开放国外开发商获取执照"
  kuromorimine.54.c:0 "开放个人承包开采资源"
+ kuromorimine.55.t:0 "和小暴君的交易"
+ kuromorimine.55.d:0 "喀秋莎虽然愿意和黑森峰谈判，但是对于目前态势远差于真理的我们，喀秋莎希望能获得合作的筹码和好处。目前，冯布诺是一个极好的筹码，它就像是一条砧板上肥美但是危险的鱼，需要合作才能将其拿下，虽然真理不会直接参与这场战争，但是她们会承诺以各种方式提供帮助并且承认旧德意志的主权领土，条件就是剩下的其他冯布诺领土。"
+ kuromorimine.55.a:0 "冯布诺虽然难以攻克，但有了真理的帮助形势会扭转"
+ kuromorimine.55.b:0 "她们根本不是诚心和我们合作，我们会变成马前卒"
  
+
+
+
  
 
 #ideas
@@ -400,13 +435,16 @@
  KGA_worker_insurance:0 "工人保险"
  KGA_reinstatement_troops:0 "恢复征兵法"
  KGA_nishizumi_style:0 "西住流"
- BON_unknown_facism_rising:0 "暗流涌动的法西斯主义抬头"
+ BON_unknown_fascism_rising:0 "暗流涌动的法西斯主义抬头"
  KGA_resource_extraction_policy_1:0 "重新投资国家资源开采部门"
  KGA_resource_extraction_policy_2:0 "开放国外开发商获取执照"
  KGA_resource_extraction_policy_3:0 "开放个人承包开采资源"
  KGA_senshado_focus_production:0 "战车道化工业"
  KGA_steady_cconomic_plan:0 "稳定的经济发展方案"
  KGA_rise_tax_on_consumer_goods:0 "提高消费品税收"
+ KGA_minimum_wage:0 "最低工资"
+
+
 
 #custom_tooltip
  kga_tooltip1:0 "必须在至少一场战车道大赛中获胜"
@@ -442,6 +480,14 @@
  kga_tooltip23_blocked:0 "25£GFX_pol_power_icon"
  kga_tooltip24:0 "50£GFX_pol_power_icon"
  kga_tooltip24_blocked:0 "50£GFX_pol_power_icon"
+ kga_tooltip25:0 "§Y在未来内战中将获得少量优势§!"
+ kga_tooltip26:0 "§Y在未来内战中将尝试向圣葛罗莉安娜求助§!"
+ kga_tooltip27:0 "§Y在未来内战中将尝试向BC自由求助§!"
+ kga_tooltip28:0 "§Y在未来内战中将得到萨克森省的帮助§!"
+ kga_tooltip29:0 "§Y在未来内战中将有机会摧毁对手的基建§!"
+
+
+
 
 #decisions
  kga_missions:0 "黑森峰-任务"
@@ -472,11 +518,14 @@
  kga_plan_industrial_land:0 "规划工业用地"
  kga_industry:0 "黑森峰-工业"
  kga_rise_tax_on_consumer_goods:0 "提高消费品进口税收"
+ kga_agricultural_production_plan:0 "农业增产计划"
 
 
 #flags
  BCF_allow_trade:0 "BC批准了贸易协定"
+ KGA_DIVIDE_BON:0 "答应了真理的条件"
 
 #opinion modifier
  financial_support:0 "经济援助"
+ strengthen_communication:0 "加强政治交流"
  

@@ -2,20 +2,19 @@ on_actions = {
 	on_startup = {
 		effect = {
 			every_country = {
-				limit={
-					is_ai=no
-				}
+				limit={ is_ai=no }
 				country_event = { days = 0 id = senshado_events.1 }
 				#第一次开局刷新商店
 				add_goods = yes
+				#刷新一次军费支出
+				get_daily_wages = yes
 			}
 
 			every_country = {
-				set_variable = { ssdp_daily_increase_modifier = 1 }
 				set_variable = { ssdp = 0 }
 				refresh_gold_standard = yes
 			}
-			
+
 			KGA = {
 				set_temp_variable = { temp = gold_standard }
 				multiply_temp_variable = { temp = 0.65 }
@@ -88,14 +87,6 @@ on_actions = {
 					value = temp
 				}
 			}
-			ASU = {
-				set_temp_variable = { temp = gold_standard }
-				multiply_temp_variable = { temp = 1 }
-				set_variable = {
-					var = gold
-					value = temp
-				}
-			}
 			every_country = {
 				refresh_gold_storage_ideas = yes
 			}
@@ -103,21 +94,20 @@ on_actions = {
 	}
 	on_weekly = {
 		effect = {
-			every_country = {
-				#刷新每周黄金储备精神
-				refresh_gold_standard_and_ideas = yes
-			}
+			#刷新每周黄金储备精神
+			refresh_gold_standard_and_ideas = yes
+			#刷新计算税收的国家产值
+			get_industry_weights = yes
 		}
 	}
-	#每日增量除以21！未知原因
+	
 	on_daily = {
 		effect = {
-			every_country = {
-				#增加每日战车道点数
-				increase_ssdp_daily = yes
-				#增加每日的税收
-				tax_daily = yes
-			}
+			#增加每日战车道点数
+			increase_ssdp_daily = yes
+			get_daily_wages = yes
+			#增加每日的税收
+			increase_gold_daily = yes
 		}
 	}
 }

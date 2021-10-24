@@ -833,7 +833,7 @@ focus_tree = {
 		icon = GFX_focus_KGA_perfect_ending
 		#relative_position_id = KGA_enlargement_of_european_communities
 		x = 20
-		y = 10
+		y = 14
 		#BCF存在
 		available = { neutrality >0.75 }
 		#prerequisite = { focus = KGA_enlargement_of_european_communities }
@@ -2505,14 +2505,12 @@ focus_tree = {
 		}
 	}
 
-	#特定意识形态解锁国策
-	#法西斯
 	#黑森峰劳工阵线
 	focus = {
 		id = KGA_arbeitsfront
 		icon = GFX_focus_KGA_arbeitsfront
 		relative_position_id = KGA_kuromorimine_industry_class
-		x = 0
+		x = 5
 		y = 1
 		available = {  }
 		#allow_branch = { has_completed_focus = KGA_nishizumi_family }
@@ -2567,12 +2565,12 @@ focus_tree = {
 	focus = {
 		id = KGA_contact_Anzio
 		icon = GFX_focus_KGA_contact_Anzio
-		relative_position_id = KGA_Ermachtigungsgesetz
-		x = 2
+		relative_position_id = KGA_nishizumi_family
+		x = 11
 		y = 1
 		available = {  }
 		#allow_branch = { has_completed_focus = KGA_nishizumi_family }
-		prerequisite = { focus = KGA_Ermachtigungsgesetz }
+		prerequisite = { focus = KGA_nishizumi_family }
 		#mutually_exclusive = { focus =  }
 		bypass = { }
 		cost = 10
@@ -2595,12 +2593,12 @@ focus_tree = {
 	focus = {
 		id = KGA_resume_military_service 
 		icon = GFX_focus_KGA_resume_military_service 
-		relative_position_id = KGA_nishizumi_family
-		x = -8
+		relative_position_id = KGA_sovereignty_recovery
+		x = -3
 		y = 1
 		available = {  }
 		#allow_branch = { has_completed_focus = KGA_nishizumi_family }
-		prerequisite = { focus = KGA_nishizumi_family }
+		prerequisite = { focus = KGA_sovereignty_recovery }
 		#mutually_exclusive = { focus =  }
 		bypass = { }
 		cost = 10
@@ -2652,14 +2650,12 @@ focus_tree = {
 	focus = {
 		id = KGA_set_up_senshado_fund
 		icon = GFX_focus_KGA_set_up_senshado_fund
-		relative_position_id = KGA_arbeitsfront
-		x = 3
+		relative_position_id = KGA_reconstruction_law
+		x = 0
 		y = 1
 		available = {  }
 		#allow_branch = { has_completed_focus =  }
-		prerequisite = { focus = KGA_arbeitsfront }
-		prerequisite = { focus = KGA_resume_military_service }
-		prerequisite = { focus = KGA_incorporate_bellwall }
+		prerequisite = { focus = KGA_reconstruction_law }
 		#mutually_exclusive = { focus =  }
 		bypass = { }
 		cost = 10
@@ -2682,12 +2678,12 @@ focus_tree = {
 	focus = {
 		id = KGA_incorporate_bellwall
 		icon = GFX_focus_KGA_incorporate_bellwall
-		relative_position_id = KGA_kuromorimine_industry_class
-		x = 6
+		relative_position_id = KGA_Ermachtigungsgesetz
+		x = 0
 		y = 1
 		available = { has_civil_war = no }
 		#allow_branch = { has_completed_focus =  }
-		prerequisite = { focus = KGA_kuromorimine_industry_class }
+		prerequisite = { focus = KGA_Ermachtigungsgesetz }
 		#mutually_exclusive = { focus =  }
 		bypass = { }
 		cost = 10
@@ -2916,12 +2912,12 @@ focus_tree = {
 	focus = {
 		id = KGA_expand_ruhr_steel
 		icon = GFX_focus_KGA_expand_ruhr_steel
-		relative_position_id = KGA_arbeitsfront
-		x = -1
+		relative_position_id = KGA_kuromorimine_industry_class
+		x = -3
 		y = 1
 		available = { 51 = { is_controlled_by = KGA } 57 = { is_controlled_by = KGA } }
 		#allow_branch = { has_completed_focus =  }
-		prerequisite = { focus = KGA_arbeitsfront }
+		prerequisite = { focus = KGA_kuromorimine_industry_class }
 		#mutually_exclusive = { focus = }
 		bypass = { }
 		cost = 10
@@ -2994,6 +2990,7 @@ focus_tree = {
 		#allow_branch = { has_completed_focus =  }
 		prerequisite = { focus = KGA_approch_new_senshado_union }
 		mutually_exclusive = { focus = KGA_support_puppet_faction }
+		mutually_exclusive = { focus = KGA_deal_with_little_tyrant }
 		bypass = { }
 		cost = 10
 		cancel_if_invalid = yes
@@ -3057,6 +3054,7 @@ focus_tree = {
 		#allow_branch = { has_completed_focus =  }
 		prerequisite = { focus = KGA_approch_new_senshado_union }
 		mutually_exclusive = { focus = KGA_promote_develope_senshado_union }
+		mutually_exclusive = { focus = KGA_deal_with_little_tyrant }
 		bypass = { has_war_with = BON }
 		cost = 10
 		cancel_if_invalid = yes
@@ -3085,7 +3083,7 @@ focus_tree = {
 		y = 1
 		available = { OR = { has_war_with = BON NOT = { country_exists = BON } } }
 		#allow_branch = { has_completed_focus =  }
-		prerequisite = { focus = KGA_approch_new_senshado_union }
+		prerequisite = { focus = KGA_support_puppet_faction }
 		mutually_exclusive = { focus = KGA_promote_develope_senshado_union }
 		bypass = { has_war_with = BON }
 		cost = 10
@@ -3356,12 +3354,12 @@ focus_tree = {
 	focus = {
 		id = KGA_national_economy_plan
 		icon = GFX_focus_KGA_national_economy_plan
-		relative_position_id = KGA_rebalance_military_industry
-		x = 0
+		relative_position_id = KGA_defining_northern_resources_mining_rights
+		x = -1
 		y = 1
 		available = {  }
 		#allow_branch = { has_completed_focus =  }
-		prerequisite = { focus = KGA_rebalance_military_industry }
+		prerequisite = { focus = KGA_defining_northern_resources_mining_rights }
 		#mutually_exclusive = { focus =  }
 		bypass = {  }
 		cost = 10
@@ -3400,17 +3398,56 @@ focus_tree = {
 		}
 	}
 
-	#战车工业
+	#提高重型工业比例
 	focus = {
-		id = KGA_tank_industry
-		icon = GFX_focus_KGA_tank_industry
+		id = KGA_increase_heavy_industry_ratio
+		icon = GFX_focus_KGA_increase_heavy_industry_ratio
 		relative_position_id = KGA_defining_northern_resources_mining_rights
 		x = 1
 		y = 1
 		available = {  }
 		#allow_branch = { has_completed_focus =  }
 		prerequisite = { focus = KGA_defining_northern_resources_mining_rights }
+		#mutually_exclusive = { focus =  }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_state = {
+				limit = { is_core_of = KGA is_controlled_by = KGA }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = { is_core_of = KGA is_controlled_by = KGA }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#战车工业
+	focus = {
+		id = KGA_tank_industry
+		icon = GFX_focus_KGA_tank_industry
+		relative_position_id = KGA_national_economy_plan
+		x = 1
+		y = 1
+		available = {  }
+		#allow_branch = { has_completed_focus =  }
 		prerequisite = { focus = KGA_national_economy_plan }
+		prerequisite = { focus = KGA_increase_heavy_industry_ratio }
 		#mutually_exclusive = { focus =  }
 		bypass = {  }
 		cost = 10
@@ -3441,4 +3478,374 @@ focus_tree = {
 			}
 		}
 	}
+
+	#改善生活环境
+	focus = {
+		id = KGA_improve_environment
+		icon = GFX_focus_KGA_improve_environment
+		relative_position_id = KGA_kuromorimine_industry_class
+		x = 0
+		y = 1
+		available = {  }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_kuromorimine_industry_class }
+		#mutually_exclusive = { focus =  }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = food
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = uniform_common
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = uniform_winter
+			}
+		}
+	}
+
+	#农业增产计划
+	focus = {
+		id = KGA_agricultural_production_plan 
+		icon = GFX_focus_KGA_agricultural_production_plan
+		relative_position_id = KGA_improve_environment
+		x = 0
+		y = 1
+		available = {  }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_improve_environment }
+		#mutually_exclusive = { focus =  }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			unlock_decision_tooltip = kga_agricultural_production_plan
+		}
+	}
+
+	#推广战车道教育
+	focus = {
+		id = KGA_popularize_senshado_education 
+		icon = GFX_focus_KGA_popularize_senshado_education
+		relative_position_id = KGA_agricultural_production_plan
+		x = 0
+		y = 1
+		available = { senshado_school > 7 }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_agricultural_production_plan }
+		#mutually_exclusive = { focus =  }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = KGA_popularize_senshado_education
+		}
+	}
+
+	#设定最低工资
+	focus = {
+		id = KGA_set_minimum_wage 
+		icon = GFX_focus_KGA_set_minimum_wage
+		relative_position_id = KGA_popularize_senshado_education
+		x = 0
+		y = 1
+		available = {  }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_popularize_senshado_education }
+		#mutually_exclusive = { focus =  }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = KGA_minimum_wage
+		}
+	}
+
+	#更新战术
+	focus = {
+		id = KGA_update_tactics
+		icon = GFX_focus_KGA_update_tactics
+		relative_position_id = KGA_kuromorimine_industry_class
+		x = 3
+		y = 1
+		available = {  }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_kuromorimine_industry_class }
+		#mutually_exclusive = { focus =  }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				category = land_doctrine
+				uses = 2
+				bonus = 1
+				ahead_reduction = 1
+			}
+		}
+	}
+
+	#重点部署后勤
+	focus = {
+		id = KGA_focus_on_deployment_supply 
+		icon = GFX_focus_KGA_focus_on_deployment_supply
+		relative_position_id = KGA_update_tactics
+		x = -1
+		y = 1
+		available = {  }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_update_tactics }
+		mutually_exclusive = { focus = KGA_focus_on_battle_plan }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = KGA_focus_on_deployment_supply
+		}
+	}
+
+	#着重于作战计划
+	focus = {
+		id = KGA_focus_on_battle_plan
+		icon = GFX_focus_KGA_focus_on_battle_plan
+		relative_position_id = KGA_update_tactics
+		x = 1
+		y = 1
+		available = {  }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_update_tactics }
+		mutually_exclusive = { focus = KGA_focus_on_deployment_supply }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = KGA_focus_on_battle_plan
+		}
+	}
+
+	#少女们的作战素养
+	focus = {
+		id = KGA_combat_literacy_of_girls 
+		icon = GFX_focus_KGA_combat_literacy_of_girls
+		relative_position_id = KGA_focus_on_deployment_supply
+		x = 1
+		y = 1
+		available = { has_army_manpower = { size > 500000 } }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_focus_on_deployment_supply focus = KGA_focus_on_battle_plan }
+		#mutually_exclusive = { focus =  }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = KGA_combat_literacy_of_girls
+		}
+	}
+
+	#战车指挥中枢
+	focus = {
+		id = KGA_tank_command_center 
+		icon = GFX_focus_KGA_tank_command_center
+		relative_position_id = KGA_combat_literacy_of_girls
+		x = 0
+		y = 1
+		available = {  }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_combat_literacy_of_girls }
+		#mutually_exclusive = { focus =  }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = KGA_tank_command_center
+		}
+	}
+
+	
+	#展望未来
+	focus = {
+		id = KGA_look_into_the_future
+		icon = GFX_focus_KGA_look_into_the_future
+		relative_position_id = KGA_tank_industry
+		x = 3
+		y = 1
+		available = {  }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_tank_industry }
+		prerequisite = { focus = KGA_set_minimum_wage }
+		prerequisite = { focus = KGA_tank_command_center }
+		#mutually_exclusive = { focus =  }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	#加强与真理交流
+	focus = {
+		id = KGA_strengthen_communication_with_pravda
+		icon = GFX_focus_KGA_strengthen_communication_with_pravda
+		relative_position_id = KGA_nishizumi_family
+		x = 4
+		y = 1
+		available = {  }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_nishizumi_family }
+		#mutually_exclusive = { focus =  }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			KGA = {
+				add_opinion_modifier = {
+					target = PRA
+					modifier = strengthen_communication
+				}
+			}
+			PRA = {
+				add_opinion_modifier = {
+					target = KGA
+					modifier = strengthen_communication
+				}
+			}
+			country_event = kuromorimine.55
+		}
+	}
+
+	#和小暴君的交易
+	focus = {
+		id = KGA_deal_with_little_tyrant
+		icon = GFX_focus_KGA_deal_with_little_tyrant
+		relative_position_id = KGA_strengthen_communication_with_pravda
+		x = 0
+		y = 1
+		available = { has_country_flag = KGA_DIVIDE_BON }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_strengthen_communication_with_pravda }
+		mutually_exclusive = { focus = KGA_promote_develope_senshado_union }
+		mutually_exclusive = { focus = KGA_support_puppet_faction }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_wargoal = {
+				target = BON
+				type = annex_everything
+			}
+		}
+	}
+
+	#原型车设计交流
+	focus = {
+		id = KGA_prototype_design_communicate
+		icon = GFX_focus_KGA_prototype_design_communicate
+		relative_position_id = KGA_deal_with_little_tyrant
+		x = 0
+		y = 1
+		available = {  }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_deal_with_little_tyrant }
+		#mutually_exclusive = { focus =  }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				category = armor
+				uses = 2
+				bonus = 0.75
+			}
+			add_tech_bonus = {
+				category = armorpiece_tech
+				uses = 1
+				bonus = 0.5
+			}
+			add_tech_bonus = {
+				category = ammunition_tech
+				uses = 1
+				bonus = 0.5
+			}
+			add_tech_bonus = {
+				category = support_tech
+				uses = 1
+				bonus = 1
+			}
+		}
+	}
+	
+	#黑森峰-真理阵线
+	focus = {
+		id = KGA_kga_pra_faction
+		icon = GFX_focus_KGA_kga_pra_faction
+		relative_position_id = KGA_prototype_design_communicate
+		x = 0
+		y = 1
+		available = {  }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_prototype_design_communicate }
+		#mutually_exclusive = { focus =  }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			PRA = {
+				create_faction = "真理-黑森峰阵线"
+				add_to_faction = KGA
+			}
+
+		}
+	}
 }
+

@@ -1164,6 +1164,23 @@ country_event = {
 	}
 }
 
+#和小暴君的交易
+country_event = {
+	id = kuromorimine.55
+	title = kuromorimine.55.t
+	desc = kuromorimine.55.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.55.a
+		set_country_flag = KGA_DIVIDE_BON
+	}
+	option = {
+		name = kuromorimine.55.b
+		add_political_power = 120
+	}
+}
 
 
 

@@ -3,13 +3,16 @@ add_ideas = BCF_chaotic_army
 add_ideas = BCF_political_instability_1
 add_ideas = BCF_faction_struggle_4
 add_ideas = BCF_weak_government_4
+add_ideas = limited_conscription
 set_technology = {
 	senshado_prototype_tank = 1
 	senshado_light_tank_1 = 1
+	tech_support = 1
+	tech_scope_1 = 1
 }
 set_research_slots = 5
 set_convoys = 20
-
+oob = "BCF_1972"
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1933.3.5"

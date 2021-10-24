@@ -479,7 +479,81 @@ ideas = {
 			}
 		}
 
+		#农业增产计划
+		KGA_agricultural_production_plan = {
+			allowed = {
+				tag = KGA
+			}
+			modifier = {
+				weekly_manpower = 300
+				tax_daily_modifier = -0.05
+			}
+		}
 
+		#推广战车道教育
+		KGA_popularize_senshado_education = {
+			allowed = {
+				tag = KGA
+			}
+			modifier = {
+				ssdp_daily_modifier = 0.15
+				research_speed_factor = 0.05
+			}
+		}
+
+		#最低工资
+		KGA_minimum_wage = {
+			allowed = {
+				tag = KGA
+			}
+			modifier = {
+				stability_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		#重点部署后勤
+		KGA_focus_on_deployment_supply = {
+			allowed = {
+				tag = KGA
+			}
+			modifier = {
+				supply_consumption_factor = -0.2
+			}
+		}
+
+		#着重于计划
+		KGA_focus_on_battle_plan = {
+			allowed = {
+				tag = KGA
+			}
+			modifier = {
+				max_planning = 0.1
+				planning_speed = 0.1
+			}
+		}
+
+		#少女们的作战素养
+		KGA_combat_literacy_of_girls = {
+			allowed = {
+				tag = KGA
+			}
+			modifier = {
+				army_org_Factor = 0.1
+				army_org_regain = 0.05
+			}
+		}
+
+		#战车指挥中枢
+		KGA_tank_command_center = {
+			allowed = {
+				tag = KGA
+			}
+			modifier = {
+				command_power_gain_mult = 0.1
+				max_command_power = 40
+			}
+		}
     }
 
 	student_union_member = {

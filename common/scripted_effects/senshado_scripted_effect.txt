@@ -12,7 +12,7 @@ white_peace_with_every_enemy = {
 #####################战车道点数相关####################
 ######################################################
 clear_ssdp = {
-	set_variable = { ssdp = 0 }
+	clear_variable = ssdp
 }
 add_ssdp_50 = {
 	add_to_variable = { ssdp = 50 }
@@ -26,61 +26,14 @@ add_ssdp_200 = {
 add_ssdp_300 = {
 	add_to_variable = { ssdp = 300 }
 }
-#战车道学院数量统计刷新保存至senshado_school_num
-fetch_senshado_school_num = {
-	if = {
-		limit = { owner = { senshado_school = 1 } }
-		set_variable = { senshado_school_num = 1 }
-	}
-	if = {
-		limit = { owner = { senshado_school = 2 } }
-		set_variable = { senshado_school_num = 2 }
-	}
-	if = {
-		limit = { owner = { senshado_school = 3 } }
-		set_variable = { senshado_school_num = 3 }
-	}
-	if = {
-		limit = { owner = { senshado_school = 4 } }
-		set_variable = { senshado_school_num = 4 }
-	}
-	if = {
-		limit = { owner = { senshado_school = 5 } }
-		set_variable = { senshado_school_num = 5 }
-	}
-	if = {
-		limit = { owner = { senshado_school = 6 } }
-		set_variable = { senshado_school_num = 6 }
-	}
-	if = {
-		limit = { owner = { senshado_school = 7 } }
-		set_variable = { senshado_school_num = 7 }
-	}
-	if = {
-		limit = { owner = { senshado_school = 8 } }
-		set_variable = { senshado_school_num = 8 }
-	}
-	if = {
-		limit = { owner = { senshado_school = 9 } }
-		set_variable = { senshado_school_num = 9 }
-	}
-	if = {
-		limit = { owner = { senshado_school > 9 } }
-		set_variable = { senshado_school_num = 10 }
-	}
-}
 
 #统计增长值并增加当日ssdp
 increase_ssdp_daily = {
-	fetch_senshado_school_num = yes
-	set_temp_variable = {temp1 = senshado_school_num}
-	multiply_temp_variable = { temp1 = modifier@ssdp_daily_modifier }
-	add_to_temp_variable = {temp1 = senshado_school_num}
-	set_variable = { current_daily_ssdp = temp1 }
-	multiply_temp_variable = { temp1 = 0.048 }
-	add_to_variable = { ssdp = temp1 }
+	set_variable = { ssdp_increase_base = 1 }
+	multiply_variable = { ssdp_increase_base = modifier@ssdp_daily_modifier }
+	add_to_variable = { ssdp_increase_base = 1 }
+	add_to_variable = { ssdp = ssdp_increase_base }
 }
-	
 
 ######################################################
 #####################好感度系统相关####################
@@ -295,17 +248,23 @@ get_industry_weights = {
 	set_variable = { country_weigths = temp10 }
 }
 
+#获得工资总数(负数)
+get_daily_wages = {
+	set_variable = { wages = max_available_manpower_k } 
+	multiply_variable = { wages = -0.001 }
+}
 
 #每日黄金增长
-tax_daily = {
-	get_industry_weights = yes
+increase_gold_daily = {
+	get_daily_wages = yes
 	set_temp_variable = { temp1 = country_weigths }
 	set_temp_variable = { temp2 = modifier@tax_daily_modifier }
 	add_to_temp_variable = { temp2 = 1 }
 	multiply_temp_variable = { temp1 = temp2 }
 	multiply_temp_variable = { temp1 = 0.005 }
-	set_variable = { current_daily_tax = temp1 }
-	multiply_temp_variable = { temp1 = 0.048 }
+	set_variable = { current_daily_income = temp1 }
+	add_to_temp_variable = { temp1 = wages }
+	set_variable = { current_daily_gold = temp1 }
 	add_to_variable = { gold = temp1 }
 }
 

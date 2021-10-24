@@ -20,8 +20,5 @@ kga_civil_war = {
 }
 kga_establish_puppuet_bon = {
 	icon = GFX_decision_category_senshado
-	allowed = { 
-		tag = KGA
-		has_completed_focus = KGA_support_puppet_faction
-	}
+	allowed = { tag = KGA }
 }
