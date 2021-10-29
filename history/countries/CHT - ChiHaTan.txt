@@ -7,6 +7,9 @@ set_technology = {
 set_research_slots = 5
 set_convoys = 20
 
+add_ideas = CHT_losers_ambition
+add_ideas = CHT_prewar_economic_system
+add_ideas = CHT_new_bakufu_revolution
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1933.3.5"

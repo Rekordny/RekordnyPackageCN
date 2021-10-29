@@ -1,17 +1,20 @@
 add_namespace = BCFreedom
 
-#第二次奥尔良会议结束了
+#马奇诺宣布独立
 country_event = {
 	id = bcfreedom.1
 	title = bcfreedom.1.t
 	desc = bcfreedom.1.d
 	picture = GFX_report_event_german_speech
-
+	trigger = {
+		date = 1973.10.8
+	}
 	is_triggered_only = yes
 	option = {
 		name = bcfreedom.1.a
-		hidden_effect = {
-			BCF = { set_country_flag = BCF_SEC_ORELANS_END }
+		MGC = {
+			transfer_state = 17
+			transfer_state = 27
 		}
 	}
 }
@@ -26,23 +29,21 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bcfreedom.2.a
-		
+		STG = {
+			country_event = bcfreedom.37
+		}
 	}
 }
 
-#法兰西战车道联赛落下帷幕
+#兄弟阋墙
 country_event = {
 	id = bcfreedom.3
 	title = bcfreedom.3.t
 	desc = bcfreedom.3.d
 	picture = GFX_report_event_german_speech
-
 	is_triggered_only = yes
 	option = {
 		name = bcfreedom.3.a
-		hidden_effect = {
-			BCF = { set_country_flag = BCF_SENSHADO_LEAGUE_MATCH_END }
-		}
 	}
 }
 
@@ -59,7 +60,7 @@ country_event = {
 	}
 }
 
-#组建联合政府
+#MGC：组建联合政府
 country_event = {
 	id = bcfreedom.5
 	title = bcfreedom.5.t
@@ -69,10 +70,15 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bcfreedom.5.a
+		BCF = { country_event = bcfreedom.36 }
+	}
+	option = {
+		name = bcfreedom.5.b
+		BCF = { country_event = bcfreedom.35 }
 	}
 }
 
-#有限自治
+#MGC：有限自治
 country_event = {
 	id = bcfreedom.6
 	title = bcfreedom.6.t
@@ -82,6 +88,11 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bcfreedom.6.a
+		BCF = { country_event = bcfreedom.34 }
+	}
+	option = {
+		name = bcfreedom.6.b
+		BCF = { country_event = bcfreedom.35 }
 	}
 }
 
@@ -266,4 +277,542 @@ country_event = {
 		name = bcfreedom.20.a
 	}
 }
+
+#第二次奥尔良会议
+country_event = {
+	id = bcfreedom.21
+	title = bcfreedom.21.t
+	desc = bcfreedom.21.d
+	picture = GFX_report_event_german_speech
+	trigger = {
+		date = 1972.11.01
+	}
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.21.a
+		add_political_power = 50
+		add_stability = 0.05
+		country_event = { id = bcfreedom.22 days = 2 }
+	}
+}
+
+#玛丽的讲话
+country_event = {
+	id = bcfreedom.22
+	title = bcfreedom.22.t
+	desc = bcfreedom.22.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.22.a
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+		country_event = { id = bcfreedom.23 days = 2 }
+	}
+	option = {
+		name = bcfreedom.22.b
+		add_popularity = {
+			ideology = communism
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.03
+		}
+		country_event = { id = bcfreedom.23 days = 2 }
+	}
+}
+
+#建设项目
+country_event = {
+	id = bcfreedom.23
+	title = bcfreedom.23.t
+	desc = bcfreedom.23.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.23.a
+		21 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+			}
+		}
+		18 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+			}
+		}
+		add_political_power = -40
+		country_event = { id = bcfreedom.24 days = 2 }
+	}
+	option = {
+		name = bcfreedom.23.b
+		21 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+			}
+		}
+		add_political_power = -40
+		add_stability = -0.08
+		country_event = { id = bcfreedom.24 days = 2 }
+	}
+	option = {
+		name = bcfreedom.23.c
+		18 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+			}
+		}
+		add_political_power = -40
+		add_stability = -0.05
+		country_event = { id = bcfreedom.24 days = 2 }
+	}
+	option = {
+		name = bcfreedom.23.d
+		29 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+			}
+		}
+		14= {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+			}
+		}
+		19= {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+			}
+		}
+		add_political_power = -30
+		country_event = { id = bcfreedom.24 days = 2 }
+	}
+	option = {
+		name = bcfreedom.23.e
+		add_political_power = 300
+		add_stability = -0.1
+		country_event = { id = bcfreedom.24 days = 2 }
+	}
+}
+
+#安藤的演讲
+country_event = {
+	id = bcfreedom.24
+	title = bcfreedom.24.t
+	desc = bcfreedom.24.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.24.a
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+		country_event = { id = bcfreedom.25 days = 2 }
+	}
+	option = {
+		name = bcfreedom.24.b
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+		country_event = { id = bcfreedom.25 days = 2 }
+	}
+	option = {
+		name = bcfreedom.24.c
+		add_stability = -0.05
+		country_event = { id = bcfreedom.25 days = 2 }
+	}
+}
+
+#摩泽兰问题
+country_event = {
+	id = bcfreedom.25
+	title = bcfreedom.25.t
+	desc = bcfreedom.25.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.25.a
+		42 = {
+			add_compliance = -10
+		}
+		50 = {
+			add_compliance = -10
+		}
+		add_stability = 0.05
+		country_event = { id = bcfreedom.26 days = 2 }
+	}
+	option = {
+		name = bcfreedom.25.b
+		42 = {
+			add_compliance = 10
+			add_resistance = -5
+		}
+		50 = {
+			add_compliance = 10
+			add_resistance = -5
+		}
+		add_political_power = -100
+		country_event = { id = bcfreedom.26 days = 2 }
+	}
+}
+
+#军队建设
+country_event = {
+	id = bcfreedom.26
+	title = bcfreedom.26.t
+	desc = bcfreedom.26.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.26.a
+		army_experience = 25
+		country_event = { id = bcfreedom.27 days = 2 }
+	}
+	option = {
+		name = bcfreedom.26.b
+		navy_experience = 25
+		country_event = { id = bcfreedom.27 days = 2 }
+	}
+	option = {
+		name = bcfreedom.26.c
+		air_experience = 25
+		country_event = { id = bcfreedom.27 days = 2 }
+	}
+	option = {
+		name = bcfreedom.26.d
+		army_experience = 10
+		navy_experience = 10
+		air_experience = 10
+		country_event = { id = bcfreedom.27 days = 2 }
+	}
+}
+
+#押田的讲话
+country_event = {
+	id = bcfreedom.27
+	title = bcfreedom.27.t
+	desc = bcfreedom.27.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.27.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}
+		country_event = { id = bcfreedom.28 days = 2 }
+	}
+	option = {
+		name = bcfreedom.27.b
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}
+		country_event = { id = bcfreedom.28 days = 2 }
+	}
+}
+
+#谁来执政？
+country_event = {
+	id = bcfreedom.28
+	title = bcfreedom.28.t
+	desc = bcfreedom.28.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.28.a
+		complete_national_focus = BCF_second_orelans_conference
+		complete_national_focus = BCF_maid_of_20th_century
+		add_political_power = 50
+		BCF = { set_country_flag = BCF_SENSHADO_LEAGUE_MATCH_END }
+		country_event = { id = bcfreedom.29 days = 2 }
+	}
+	option = {
+		name = bcfreedom.28.b
+		complete_national_focus = BCF_second_orelans_conference
+		complete_national_focus = BCF_will_of_the_people
+		add_political_power = 50
+		BCF = { set_country_flag = BCF_SENSHADO_LEAGUE_MATCH_END }
+		country_event = { id = bcfreedom.29 days = 2 }
+	}
+	option = {
+		name = bcfreedom.28.c
+		complete_national_focus = BCF_second_orelans_conference
+		complete_national_focus = BCF_country_of_the_noble
+		add_political_power = 50
+		BCF = { set_country_flag = BCF_SENSHADO_LEAGUE_MATCH_END }
+		country_event = { id = bcfreedom.29 days = 2 }
+	}
+}
+
+#就职典礼
+country_event = {
+	id = bcfreedom.29
+	title = bcfreedom.29.t
+	desc = bcfreedom.29.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.29.a
+		add_war_support = 0.05
+	}
+}
+
+#法兰西战车道联赛
+country_event = {
+	id = bcfreedom.30
+	title = bcfreedom.30.t
+	desc = bcfreedom.30.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+		date = 1973.10.1
+	}
+	option = {
+		name = bcfreedom.30.a
+		random_list = {
+			60 = {
+				country_event = bcfreedom.31
+			}
+			40 = {
+				country_event = bcfreedom.32
+			}
+		}
+	}
+}
+
+#BC自由获胜
+country_event = {
+	id = bcfreedom.31
+	title = bcfreedom.31.t
+	desc = bcfreedom.31.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {}
+	option = {
+		name = bcfreedom.31.a
+		add_political_power = 20
+		set_country_flag = BCF_SENSHADO_LEAGUE_MATCH_END
+		hidden_effect = {
+			country_event = { id = bcfreedom.3 days = 3 }
+		}
+	}
+}
+
+#马奇诺获胜
+country_event = {
+	id = bcfreedom.32
+	title = bcfreedom.32.t
+	desc = bcfreedom.32.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {}
+	option = {
+		name = bcfreedom.32.a
+		add_political_power = -25
+		set_country_flag = BCF_SENSHADO_LEAGUE_MATCH_END
+		hidden_effect = {
+			country_event = { id = bcfreedom.3 days = 3 }
+		}
+	}
+}
+
+#马奇诺恢复秩序
+country_event = {
+	id = bcfreedom.33
+	title = bcfreedom.33.t
+	desc = bcfreedom.33.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {}
+	option = {
+		name = bcfreedom.33.a
+		27 = {
+			add_core_of = BCF
+			add_state_modifier = {
+				modifier = {
+					local_manpower = -0.25
+					local_factories = -0.25
+					local_resources_factor = -0.25
+				}
+			}
+		}
+		17 = {
+			add_core_of = BCF
+			add_state_modifier = {
+				modifier = {
+					local_manpower = -0.25
+					local_factories = -0.25
+					local_resources_factor = -0.25
+				}
+			}
+		}
+	}
+}
+
+#马奇诺同意有限自治
+country_event = {
+	id = bcfreedom.34
+	title = bcfreedom.34.t
+	desc = bcfreedom.34.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {}
+	option = {
+		name = bcfreedom.34.a
+		add_political_power = -100
+		puppet = MGC
+	}
+}
+
+#马奇诺拒绝有限自治
+country_event = {
+	id = bcfreedom.35
+	title = bcfreedom.35.t
+	desc = bcfreedom.35.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {}
+	option = {
+		name = bcfreedom.35.a
+		add_stability = 0.1
+		add_war_support = -0.1
+	}
+	option = {
+		name = bcfreedom.35.b
+		add_political_power = -100
+		declare_war_on = {
+			target = MGC
+		}
+	}
+}
+
+#联合政府的组建
+country_event = {
+	id = bcfreedom.36
+	title = bcfreedom.36.t
+	desc = bcfreedom.36.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {}
+	option = {
+		name = bcfreedom.36.a
+		puppet = MGC
+		add_political_power = 50
+		custom_effect_tooltip = bcf_tooltip26
+		MGC = { set_country_flag = MGC_POLITICAL_INFLUENCE }
+	}
+}
+
+#STG：BC自由请求在内战时的支援
+country_event = {
+	id = bcfreedom.37
+	title = bcfreedom.37.t
+	desc = bcfreedom.37.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {}
+	option = {
+		name = bcfreedom.37.a
+		BCF = { country_event = { id = bcfreedom.38 days = 3 } }
+	}
+	option = {
+		name = bcfreedom.37.b
+		BCF = { country_event = { id = bcfreedom.39 days = 3 } }
+	}
+	option = {
+		name = bcfreedom.37.c
+		BCF = { country_event = { id = bcfreedom.40 days = 3 } }
+	}
+}
+
+#圣葛萝莉安娜同意进行全面支援
+country_event = {
+	id = bcfreedom.38
+	title = bcfreedom.38.t
+	desc = bcfreedom.38.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {}
+	option = {
+		name = bcfreedom.38.a
+		add_war_support = 0.1
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}
+	}
+}
+
+#圣葛萝莉安娜同意进行有限支援
+country_event = {
+	id = bcfreedom.39
+	title = bcfreedom.39.t
+	desc = bcfreedom.39.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {}
+	option = {
+		name = bcfreedom.39.a
+		add_war_support = 0.05
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+	}
+}
+
+#圣葛萝莉安娜拒绝援助
+country_event = {
+	id = bcfreedom.40
+	title = bcfreedom.40.t
+	desc = bcfreedom.40.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {}
+	option = {
+		name = bcfreedom.40.a
+		add_political_power = 100
+	}
+}
+
+
 

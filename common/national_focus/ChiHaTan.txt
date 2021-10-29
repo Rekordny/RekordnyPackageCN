@@ -1,0 +1,746 @@
+focus_tree = {
+	id = CHT_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CHT
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 50 y = 2000 }
+
+
+    #经济奇迹的起点
+	focus = {
+		id = CHT_start_of_economy_miracle
+		icon = GFX_focus_CHT_start_of_economy_miracle
+		x = 6
+		y = 0
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = industry
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#日元升值
+	focus = {
+		id = CHT_yen_appreciation
+		icon = GFX_focus_CHT_yen_appreciation
+		relative_position_id = CHT_start_of_economy_miracle
+		x = -2
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_start_of_economy_miracle }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = CHT_yen_appreciation
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#投资家用电器
+	focus = {
+		id = CHT_invest_household_appliances 
+		icon = GFX_focus_CHT_invest_household_appliances
+		relative_position_id = CHT_start_of_economy_miracle
+		x = 2
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_start_of_economy_miracle }
+		available_if_capitulated = yes
+		completion_reward = {
+			random_state = {
+				limit = { is_core_of = CHT is_controlled_by = CHT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_state = {
+				limit = { is_core_of = CHT is_controlled_by = CHT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#投资汽车产业
+	focus = {
+		id = CHT_invest_automotive_industry 
+		icon = GFX_focus_CHT_invest_automotive_industry
+		relative_position_id = CHT_start_of_economy_miracle
+		x = 4
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_start_of_economy_miracle }
+		available_if_capitulated = yes
+		completion_reward = {
+			random_state = {
+				limit = { is_core_of = CHT is_controlled_by = CHT }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+			random_state = {
+				limit = { is_core_of = CHT is_controlled_by = CHT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#工业产品出口政策再调节
+	focus = {
+		id = CHT_readjustment_export_policy
+		icon = GFX_focus_CHT_readjustment_export_policy
+		relative_position_id = CHT_invest_household_appliances
+		x = 1
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_invest_household_appliances }
+		prerequisite = { focus = CHT_invest_automotive_industry }
+		available_if_capitulated = yes
+		completion_reward = {
+			country_event = chihatan.1
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#调整产业结构
+	focus = {
+		id = CHT_industrial_restructuring
+		icon = GFX_focus_CHT_industrial_restructuring
+		relative_position_id = CHT_yen_appreciation
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_yen_appreciation }
+		available_if_capitulated = yes
+		completion_reward = {
+			#开始任务，调整产业结构转型
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#解决贸易摩擦
+	focus = {
+		id = CHT_resolve_trade_frictions 
+		icon = GFX_focus_CHT_resolve_trade_frictions
+		relative_position_id = CHT_readjustment_export_policy
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_readjustment_export_policy }
+		available_if_capitulated = yes
+		completion_reward = {
+			country_event = chihatan.2
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#研究开发密集产业
+	focus = {
+		id = CHT_development_intensive_industry
+		icon = GFX_focus_CHT_development_intensive_industry
+		relative_position_id = CHT_industrial_restructuring
+		x = -3
+		y = 1
+		cost = 8
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_industrial_restructuring }
+		available_if_capitulated = yes
+		completion_reward = {
+			random_state = {
+				limit = { is_core_of = CHT is_controlled_by = CHT }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			add_tech_bonus = {
+				uses = 1
+				bonus = 1
+				category = electronics
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#高级组装型产业
+	focus = {
+		id = CHT_advanced_assembly_industry 
+		icon = GFX_focus_CHT_advanced_assembly_industry
+		relative_position_id = CHT_industrial_restructuring
+		x = -1
+		y = 1
+		cost = 8
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_industrial_restructuring }
+		available_if_capitulated = yes
+		completion_reward = {
+			random_state = {
+				limit = { is_core_of = CHT is_controlled_by = CHT }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			add_tech_bonus = {
+				uses = 1
+				bonus = 1
+				category = industry
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#流行产业
+	focus = {
+		id = CHT_popular_industry
+		icon = GFX_focus_CHT_popular_industry
+		relative_position_id = CHT_industrial_restructuring
+		x = 1
+		y = 1
+		cost = 8
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_industrial_restructuring }
+		available_if_capitulated = yes
+		completion_reward = {
+			random_state = {
+				limit = { is_core_of = CHT is_controlled_by = CHT }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			add_tech_bonus = {
+				uses = 1
+				bonus = 1
+				category = uniform_common
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#知识型产业
+	focus = {
+		id = CHT_knowledge_based_industry 
+		icon = GFX_focus_CHT_knowledge_based_industry
+		relative_position_id = CHT_industrial_restructuring
+		x = 3
+		y = 1
+		cost = 8
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_industrial_restructuring }
+		available_if_capitulated = yes
+		completion_reward = {
+			random_state = {
+				limit = { is_core_of = CHT is_controlled_by = CHT }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = senshado_school
+					level = 2
+				}
+			}
+			custom_effect_tooltip = cht_tooltip1
+			add_to_variable = {
+				ssdp = 80
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#特定产业振兴与临时措置法案
+	focus = {
+		id = CHT_specified_industry_promotion_temporary_measures_bill 
+		icon = GFX_focus_CHT_specified_industry_promotion_temporary_measures_bill
+		relative_position_id = CHT_advanced_assembly_industry
+		x = 1
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_advanced_assembly_industry }
+		prerequisite = { focus = CHT_knowledge_based_industry }
+		prerequisite = { focus = CHT_development_intensive_industry }
+		prerequisite = { focus = CHT_popular_industry }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = CHT_specified_industry_promotion_temporary_measures_bill
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#逆向工程
+	focus = {
+		id = CHT_reverse_process 
+		icon = GFX_focus_CHT_reverse_process
+		relative_position_id = CHT_resolve_trade_frictions
+		x = -1
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_resolve_trade_frictions }
+		mutually_exclusive = { focus = CHT_substantial_imports }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = CHT_reverse_process
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#大幅进口
+	focus = {
+		id = CHT_substantial_imports 
+		icon = GFX_focus_CHT_substantial_imports
+		relative_position_id = CHT_resolve_trade_frictions
+		x = 1
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_resolve_trade_frictions }
+		mutually_exclusive = { focus = CHT_reverse_process }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = CHT_substantial_imports
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#产官学研
+	focus = {
+		id = CHT_industry_government_gakken  
+		icon = GFX_focus_CHT_industry_government_gakken
+		relative_position_id = CHT_reverse_process
+		x = -2
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_substantial_imports focus = CHT_specified_industry_promotion_temporary_measures_bill }
+		prerequisite = { focus = CHT_reverse_process focus = CHT_specified_industry_promotion_temporary_measures_bill }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_research_slot = 1
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#处理政务
+	focus = {
+		id = CHT_handdle_government_affairs 
+		icon = GFX_focus_CHT_handdle_government_affairs 
+		#relative_position_id = CHT_reverse_process
+		x = 18
+		y = 0
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#镇压新幕府运动
+	focus = {
+		id = CHT_suppress_new_bakufu 
+		icon = GFX_focus_CHT_Suppress_new_bakufu
+		relative_position_id = CHT_handdle_government_affairs 
+		x = -3
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_handdle_government_affairs }
+		mutually_exclusive = { focus = CHT_support_new_bakufu }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#支持新幕府运动
+	focus = {
+		id = CHT_support_new_bakufu
+		icon = GFX_focus_CHT_support_new_bakufu
+		relative_position_id = CHT_handdle_government_affairs 
+		x = 3
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_handdle_government_affairs }
+		mutually_exclusive = { focus = CHT_suppress_new_bakufu }
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = CHT_new_bakufu_revolution
+				add_idea = CHT_new_bakufu_revolution_0
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#重建武家
+	focus = {
+		id = CHT_rebuild_bushi
+		icon = GFX_focus_CHT_rebuild_bushi
+		relative_position_id = CHT_support_new_bakufu 
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_support_new_bakufu }
+		mutually_exclusive = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#反对知波单干政	
+	focus = {
+		id = CHT_protest_against_chihatan
+		icon = GFX_focus_CHT_protest_against_chihatan
+		relative_position_id = CHT_rebuild_bushi 
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_rebuild_bushi }
+		mutually_exclusive = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#集结藩士
+	focus = {
+		id = CHT_gather_vassal
+		icon = GFX_focus_CHT_gather_vassal
+		relative_position_id = CHT_rebuild_bushi 
+		x = -2
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_rebuild_bushi }
+		mutually_exclusive = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#重建立无高校
+	focus = {
+		id = CHT_rebuild_tatenashi
+		icon = GFX_focus_CHT_rebuild_tatenashi
+		relative_position_id = CHT_rebuild_bushi 
+		x = 2
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_rebuild_bushi }
+		mutually_exclusive = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#征夷大将军鹤木
+	focus = {
+		id = CHT_shogun_tsuruki
+		icon = GFX_focus_CHT_shogun_tsuruki
+		relative_position_id = CHT_rebuild_tatenashi 
+		x = -2
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_rebuild_tatenashi }
+		prerequisite = { focus = CHT_gather_vassal }
+		prerequisite = { focus = CHT_protest_against_chihatan }
+		mutually_exclusive = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = CHT_losers_ambition
+				add_idea = CHT_shoguns_ambition
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#兰奢待
+	focus = {
+		id = CHT_lanshyatai
+		icon = GFX_focus_CHT_lanshyatai
+		relative_position_id = CHT_shogun_tsuruki 
+		x = 3
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_shogun_tsuruki }
+		mutually_exclusive = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#摄关亲政
+	focus = {
+		id = CHT_regent_kampaku
+		icon = GFX_focus_CHT_regent_kampaku
+		relative_position_id = CHT_shogun_tsuruki 
+		x = -1
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_shogun_tsuruki }
+		mutually_exclusive = { focus = CHT_overthrow_the_emperor }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#重建国立神道教
+	focus = {
+		id = CHT_rebuilding_national_shintoism 
+		icon = GFX_focus_CHT_rebuilding_national_shintoism 
+		relative_position_id = CHT_regent_kampaku 
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_regent_kampaku }
+		mutually_exclusive = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#七生报国-尊皇讨奸
+	focus = {
+		id = CHT_eliminate_opponents 
+		icon = GFX_focus_CHT_eliminate_opponents
+		relative_position_id = CHT_rebuilding_national_shintoism 
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_rebuilding_national_shintoism }
+		mutually_exclusive = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#推翻天皇制
+	focus = {
+		id = CHT_overthrow_the_emperor
+		icon = GFX_focus_CHT_overthrow_the_emperor
+		relative_position_id = CHT_shogun_tsuruki 
+		x = 1
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_shogun_tsuruki }
+		mutually_exclusive = { focus = CHT_regent_kampaku }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#昭和之变
+	focus = {
+		id = CHT_showa_revolution
+		icon = GFX_focus_CHT_showa_revolution
+		relative_position_id = CHT_overthrow_the_emperor 
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_overthrow_the_emperor }
+		mutually_exclusive = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#人民-武士-国家
+	focus = {
+		id = CHT_people_bushi_country
+		icon = GFX_focus_CHT_people_bushi_country
+		relative_position_id = CHT_showa_revolution 
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_showa_revolution }
+		mutually_exclusive = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#战车道就是武士道
+	focus = {
+		id = CHT_senshado_is_bushido
+		icon = GFX_focus_CHT_senshado_is_bushido
+		relative_position_id = CHT_people_bushi_country 
+		x = -1
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_people_bushi_country focus = CHT_eliminate_opponents }
+		mutually_exclusive = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = CHT_senshado_is_bushido
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+}

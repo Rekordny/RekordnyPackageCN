@@ -1610,8 +1610,7 @@ focus_tree = {
 		prerequisite = { focus = BCF_ultimatum }
 		available_if_capitulated = yes
 		completion_reward = {
-			27 = { add_core_of = BCF }
-			17 = { add_core_of = BCF }
+			country_event = bcfreedom.33
 		}
 	}
 	
@@ -1652,8 +1651,10 @@ focus_tree = {
 		mutually_exclusive = { focus = BCF_limited_autonomy }
 		available_if_capitulated = yes
 		completion_reward = {
-			#触发事件 组建联合政府
-			country_event = bcfreedom.5
+			MGC = {
+				country_event = bcfreedom.5
+			}
+			
 		}
 	}
 	
@@ -1673,8 +1674,10 @@ focus_tree = {
 		mutually_exclusive = { focus = BCF_coalition_government }
 		available_if_capitulated = yes
 		completion_reward = {
-			#触发事件 有限自治
-			country_event = bcfreedom.6
+			MGC = {
+				country_event = bcfreedom.6
+			}
+			
 		}
 	}
 	

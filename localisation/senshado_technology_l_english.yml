@@ -24,6 +24,7 @@
  armorpiece_tech:0 "战车装甲"
  chemical_armor_tech:0 "化学装甲"
  physical_armor_tech:0 "物理装甲"
+ excavation_tech_research:0 "资源采掘研究速度"
 
  
  #主要页面
