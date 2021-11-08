@@ -291,14 +291,14 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = kuromorimine.21.a
-		KGA = { 
-			add_ideas = KGA_bellwall_threat 
+		KGA = {
+			add_ideas = KGA_bellwall_threat
 			unlock_decision_tooltip = kga_remove_bellwall_threat
 		}
 	}
 }
 
-#法西斯上台后如果还有内战隐患触发
+#法西斯上台后如果还有内战隐患触发和钟壁主义者的矛盾激化
 country_event = {
 	id = kuromorimine.22
 	title = kuromorimine.22.t
@@ -308,15 +308,12 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = kuromorimine.22.a
-		KGA = { add_stability = -0.2 }
+		trigger = { has_intelligence_agency = yes }
+		add_stability = -0.25
 	}
 	option = {
 		name = kuromorimine.22.b
-		country_event = { id = kuromorimine.28 days = 0 }
-	}
-	option = {
-		name = kuromorimine.22.c
-
+		country_event = { id = kuromorimine.28 days = 1 }
 	}
 }
 
@@ -343,13 +340,13 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = kuromorimine.24.a
-		KGA = { country_event = { id = kuromorimine.25 days = 0 } }
+		KGA = { country_event = { id = kuromorimine.25 days = 2 } }
 		add_political_power = -25
 	}
 	option = {
 		name = kuromorimine.24.b
 		unlock_decision_category_tooltip = kga_civil_war
-		set_country_flag = start_kga_prepare_civil_war_mission
+		set_country_flag = KGA_PREPARE_CIVIL_WAR_START
 	}
 }
 
@@ -363,14 +360,14 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = kuromorimine.25.a
-		add_political_power = -25
+		add_political_power = -50
 		hidden_effect = {
 			random_list = {
 				20 = {
-					KGA = { country_event = kuromorimine.26 }
+					KGA = { country_event = { id = kuromorimine.26 days = 3 } }
 				}
 				80 = {
-					KGA = { country_event = kuromorimine.27 }
+					KGA = { country_event = { id = kuromorimine.27 days = 3 } }
 				}
 			}
 		}
@@ -380,10 +377,27 @@ country_event = {
 		hidden_effect = {
 			random_list = {
 				10 = {
-					KGA = { country_event = kuromorimine.26 }
+					KGA = { country_event = { id = kuromorimine.26 days = 3 } }
 				}
 				90 = {
-					KGA = { country_event = kuromorimine.27 }
+					KGA = { country_event = { id = kuromorimine.27 days = 3 } }
+				}
+			}
+			
+		}
+	}
+	option = {
+		name = kuromorimine.25.c
+		trigger = { check_variable = { gold > 29.9 } }
+		custom_effect_tooltip = kga_tooltip34
+		add_to_variable = { gold = -30 }
+		hidden_effect = {
+			random_list = {
+				30 = {
+					KGA = { country_event = { id = kuromorimine.26 days = 3 } }
+				}
+				70 = {
+					KGA = { country_event = { id = kuromorimine.27 days = 3 } }
 				}
 			}
 			
@@ -428,7 +442,7 @@ country_event = {
 			popularity = 0.2
 		}
 		unlock_decision_category_tooltip = kga_civil_war
-		set_country_flag = start_kga_prepare_civil_war_mission 
+		set_country_flag = KGA_START_INFRASTRUCTURE_MISSION
 	}
 }
 
@@ -444,6 +458,7 @@ country_event = {
 		name = kuromorimine.28.a
 		hidden_effect = {
 			KGA = {
+				remove_ideas = KGA_bellwall_threat
 				set_politics = {
 					ruling_party = communism
 					elections_allowed = no
@@ -492,7 +507,7 @@ country_event = {
 				if = { limit = { has_country_flag = kga_ask_support_from_STG } 
 					STG = { country_event = { id = kuromorimine.35 days = 1 } }				
 				}
-				clr_country_flag = start_kga_prepare_civil_war_mission
+				clr_country_flag = KGA_PREPARE_CIVIL_WAR_START
 			}
 		}
 	}
@@ -885,12 +900,12 @@ country_event = {
 	option = {
 		name = kuromorimine.42.a
 		KGA = { country_event = { id = kuromorimine.43 days = 0 } }
-		ANZ = { add_political_power = 30 }
+		ANZ = { add_political_power = 60 }
 	}
 	option = {
 		name = kuromorimine.42.b
 		KGA = { country_event = { id = kuromorimine.44 days = 0 } }
-		ANZ = { add_political_power = -30 }
+		ANZ = { add_political_power = -60 }
 	}
 }
 
@@ -905,6 +920,7 @@ country_event = {
 	option = {
 		name = kuromorimine.43.a
 		transfer_state = 153
+		set_country_flag = KGA_HAVE_TYROL_BACK
 	}
 }
 
@@ -923,6 +939,7 @@ country_event = {
 			type = annex_everything
 			target = ANZ
 		}
+		set_country_flag = KGA_HAVE_TYROL_BACK_FALSE
 	}
 }
 
@@ -1181,6 +1198,56 @@ country_event = {
 		add_political_power = 120
 	}
 }
+
+#ANZ:来自黑森峰的邀请
+country_event = {
+	id = kuromorimine.56
+	title = kuromorimine.56.t
+	desc = kuromorimine.56.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.56.a
+		add_political_power = -30
+		add_war_support = 0.02
+		KGA = { country_event = { id = kuromorimine.58 days = 2 } }
+	}
+	option = {
+		name = kuromorimine.56.b
+		KGA = { country_event = { id = kuromorimine.57 days = 2 } }
+	}
+}
+
+#安齐奥同意加入战车道轴心
+country_event = {
+	id = kuromorimine.57
+	title = kuromorimine.57.t
+	desc = kuromorimine.57.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.57.a
+		create_faction = "战车道轴心联盟"
+		add_to_faction = ANZ
+	}
+}
+
+#安齐奥拒绝加入战车道轴心
+country_event = {
+	id = kuromorimine.58
+	title = kuromorimine.58.t
+	desc = kuromorimine.58.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.58.a
+		add_political_power = 60
+	}
+}
+
 
 
 

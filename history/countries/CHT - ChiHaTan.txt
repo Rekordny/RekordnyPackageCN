@@ -34,3 +34,14 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Shizuka Tsuruki"
+	desc = ""
+	picture = "Portrait_CHT_Tsuruki.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		
+	}
+}
+

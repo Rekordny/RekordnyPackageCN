@@ -1,0 +1,1954 @@
+focus_tree = {
+	id = generic_focus
+	
+	country = {
+		factor = 1
+	}
+	
+	default = yes
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 100 y = 2000 }
+		
+	#政治改革
+	focus = {
+		id = Political_reform
+		icon = GFX_focus_Political_reform
+		x = 40
+		y = 0
+	
+		available = {  }
+		prerequisite = {  }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 7
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#民主之光
+	focus = {
+		id = Light_democracy
+		icon = GFX_focus_Light_democracy
+		relative_position_id = Political_reform
+		x = -15
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = Political_reform }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = democratic
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.3
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#自由意志
+	focus = {
+		id = free_will
+		icon = GFX_focus_free_will
+		relative_position_id = Light_democracy
+		x = -2
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = Light_democracy }
+		mutually_exclusive = { focus = proceed_orderly_step_step }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#循序渐进
+	focus = {
+		id = proceed_orderly_step_step
+		icon = GFX_focus_proceed_orderly_step_step
+		relative_position_id = Light_democracy
+		x = 2
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = Light_democracy }
+		mutually_exclusive = { focus = free_will }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#修改宪法
+	focus = {
+		id = Amend_Constitution
+		icon = GFX_focus_Civil_rights
+		relative_position_id = Light_democracy
+		x = 0
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = proceed_orderly_step_step focus = free_will }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 100
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#人权宣言
+	focus = {
+		id = Declaration_human_rights
+		icon = GFX_focus_Declaration_human_rights
+		relative_position_id = Light_democracy
+		x = -2
+		y = 3
+	
+		available = {  }
+		prerequisite = { focus = Amend_Constitution }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = Declaration_human_rights_idea
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#公民权利
+	focus = {
+		id = Civil_rights
+		icon = GFX_focus_Civil_rights
+		relative_position_id = Light_democracy
+		x = 2
+		y = 3
+	
+		available = {  }
+		prerequisite = { focus = Amend_Constitution }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = Civil_rights_idea
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#选举权
+	focus = {
+		id = Right_vote
+		icon = GFX_focus_Right_vote
+		relative_position_id = Light_democracy
+		x = 0
+		y = 4
+	
+		available = {  }
+		prerequisite = { focus = Civil_rights }
+		prerequisite = { focus = Declaration_human_rights }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = Declaration_human_rights_idea
+			remove_ideas = Civil_rights_idea
+			add_ideas = Right_vote_idea
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#开源节流
+	focus = {
+		id = broaden_sources_income_reduce_expenditure
+		icon = GFX_focus_broaden_sources_income_reduce_expenditure
+		relative_position_id = Light_democracy
+		x = 3
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = proceed_orderly_step_step }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#市场经济
+	focus = {
+		id = market_economy
+		icon = GFX_focus_market_economy
+		relative_position_id = Light_democracy
+		x = -3
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = free_will }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#普世价值
+	focus = {
+		id = Universal_value
+		icon = GFX_focus_Universal_value
+		relative_position_id = Light_democracy
+		x = 4
+		y = 4
+	
+		available = {  }
+		prerequisite = { focus = broaden_sources_income_reduce_expenditure }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#自由开放
+	focus = {
+		id = Free_open
+		icon = GFX_focus_Free_open
+		relative_position_id = Light_democracy
+		x = -4
+		y = 4
+	
+		available = {  }
+		prerequisite = { focus = market_economy }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.05
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#私有化
+	focus = {
+		id = Privatization
+		icon = GFX_focus_Privatization
+		relative_position_id = Light_democracy
+		x = -2
+		y = 5
+	
+		available = {  }
+		prerequisite = { focus = Free_open }
+		prerequisite = { focus = Right_vote }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#政府干预
+	focus = {
+		id = government_intervention
+		icon = GFX_focus_government_intervention
+		relative_position_id = Light_democracy
+		x = 2
+		y = 5
+	
+		available = {  }
+		prerequisite = { focus = Universal_value }
+		prerequisite = { focus = Right_vote }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#民主灯塔
+	focus = {
+		id = Democratic_Lighthouse
+		icon = GFX_focus_Democratic_Lighthouse
+		relative_position_id = Light_democracy
+		x = 0
+		y = 6
+	
+		available = {  }
+		prerequisite = { focus = government_intervention focus = Privatization }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 100
+			add_research_slot = 1
+			add_ideas = Democratic_Lighthouse_idea
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	
+#共产
+
+	#暴力革命
+	focus = {
+		id = Revolutionary_storm
+		icon = GFX_focus_Revolutionary_storm
+		relative_position_id = Political_reform
+		x = -5
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = Political_reform }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.3
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#阶级民主
+	focus = {
+		id = Class_democracy
+		icon = GFX_focus_Class_democracy
+		relative_position_id = Revolutionary_storm
+		x = -2
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = Revolutionary_storm }
+		mutually_exclusive = { focus = Bureaucracy }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#官僚体制
+	focus = {
+		id = Bureaucracy
+		icon = GFX_focus_Bureaucracy
+		relative_position_id = Revolutionary_storm
+		x = 2
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = Revolutionary_storm }
+		mutually_exclusive = { focus = Class_democracy }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#阶级斗争
+	focus = {
+		id = class_struggle
+		icon = GFX_focus_class_struggle
+		relative_position_id = Revolutionary_storm
+		x = 0
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = Class_democracy focus = Bureaucracy }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 100
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#按劳分配
+	focus = {
+		id = distribution_according_work
+		icon = GFX_focus_distribution_according_work
+		relative_position_id = Revolutionary_storm
+		x = -2
+		y = 3
+	
+		available = {  }
+		prerequisite = { focus = class_struggle }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = distribution_according_work_idea
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#各尽所能
+	focus = {
+		id = let_each_person_best
+		icon = GFX_focus_let_each_person_best
+		relative_position_id = Revolutionary_storm
+		x = 2
+		y = 3
+	
+		available = {  }
+		prerequisite = { focus = class_struggle }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = let_each_person_best_idea
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#共产党宣言
+	focus = {
+		id = Communist_Manifesto
+		icon = GFX_focus_Communist_Manifesto
+		relative_position_id = Revolutionary_storm
+		x = 0
+		y = 4
+	
+		available = {  }
+		prerequisite = { focus = let_each_person_best }
+		prerequisite = { focus = distribution_according_work }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = distribution_according_work_idea
+			remove_ideas = let_each_person_best_idea
+			add_ideas = Communist_Manifesto_idea
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#计划经济
+	focus = {
+		id = planned_economy
+		icon = GFX_focus_planned_economy
+		relative_position_id = Revolutionary_storm
+		x = 3
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = Bureaucracy }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#合作计划
+	focus = {
+		id = cooperative_economy
+		icon = GFX_focus_cooperative_economy
+		relative_position_id = Revolutionary_storm
+		x = -3
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = Class_democracy }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#集体观念
+	focus = {
+		id = collective_spirit
+		icon = GFX_focus_collective_spirit
+		relative_position_id = Revolutionary_storm
+		x = 4
+		y = 4
+	
+		available = {  }
+		prerequisite = { focus = planned_economy }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#跨越边界
+	focus = {
+		id = Cross_border
+		icon = GFX_focus_Cross_border
+		relative_position_id = Revolutionary_storm
+		x = -4
+		y = 4
+	
+		available = {  }
+		prerequisite = { focus = cooperative_economy }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.05
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#公有制
+	focus = {
+		id = Public_ownership
+		icon = GFX_focus_Public_ownership
+		relative_position_id = Revolutionary_storm
+		x = -2
+		y = 5
+	
+		available = {  }
+		prerequisite = { focus = Cross_border }
+		prerequisite = { focus = Communist_Manifesto }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#国有化
+	focus = {
+		id = Nationalization
+		icon = GFX_focus_Nationalization
+		relative_position_id = Revolutionary_storm
+		x = 2
+		y = 5
+	
+		available = {  }
+		prerequisite = { focus = collective_spirit }
+		prerequisite = { focus = Communist_Manifesto }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#解放世界
+	focus = {
+		id = Liberate_world
+		icon = GFX_focus_Liberate_world
+		relative_position_id = Revolutionary_storm
+		x = 0
+		y = 6
+	
+		available = {  }
+		prerequisite = { focus = Nationalization focus = Public_ownership }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 100
+			add_research_slot = 1
+			add_ideas = Liberate_world_idea
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	
+	
+#法西斯
+
+	#民族至上
+	focus = {
+		id = nation_above_all
+		icon = GFX_focus_nation_above_all
+		relative_position_id = Political_reform
+		x = 5
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = Political_reform }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.3
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#阶级合作
+	focus = {
+		id = Class_cooperation
+		icon = GFX_focus_Class_cooperation
+		relative_position_id = nation_above_all
+		x = -2
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = nation_above_all }
+		mutually_exclusive = { focus = centralization }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#中央集权
+	focus = {
+		id = centralization
+		icon = GFX_focus_centralization
+		relative_position_id = nation_above_all
+		x = 2
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = nation_above_all }
+		mutually_exclusive = { focus = Class_cooperation }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#优等民族
+	focus = {
+		id = Superior_nationality
+		icon = GFX_focus_Superior_nationality
+		relative_position_id = nation_above_all
+		x = 0
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = Class_cooperation focus = centralization }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 100
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#民族复兴
+	focus = {
+		id = National_rejuvenation
+		icon = GFX_focus_National_rejuvenation
+		relative_position_id = nation_above_all
+		x = -2
+		y = 3
+	
+		available = {  }
+		prerequisite = { focus = Superior_nationality }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = National_rejuvenation_idea
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#文化复兴
+	focus = {
+		id = cultural_revitalization
+		icon = GFX_focus_cultural_revitalization
+		relative_position_id = nation_above_all
+		x = 2
+		y = 3
+	
+		available = {  }
+		prerequisite = { focus = Superior_nationality }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = cultural_revitalization_idea
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#脱胎换骨
+	focus = {
+		id = thoroughly_remould_oneself
+		icon = GFX_focus_thoroughly_remould_oneself
+		relative_position_id = nation_above_all
+		x = 0
+		y = 4
+	
+		available = {  }
+		prerequisite = { focus = National_rejuvenation }
+		prerequisite = { focus = cultural_revitalization }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = National_rejuvenation_idea
+			remove_ideas = cultural_revitalization_idea
+			add_ideas = thoroughly_remould_oneself_idea
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#混合经济
+	focus = {
+		id = Mixed_economy
+		icon = GFX_focus_Mixed_economy
+		relative_position_id = nation_above_all
+		x = 3
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = centralization }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#自由放任
+	focus = {
+		id = laissez_faire
+		icon = GFX_focus_laissez_faire
+		relative_position_id = nation_above_all
+		x = -3
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = Class_cooperation }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#提高军费
+	focus = {
+		id = Expand_army
+		icon = GFX_focus_Expand_army
+		relative_position_id = nation_above_all
+		x = 4
+		y = 4
+	
+		available = {  }
+		prerequisite = { focus = Mixed_economy }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#经济特权
+	focus = {
+		id = economic_franchise
+		icon = GFX_focus_economic_franchise
+		relative_position_id = nation_above_all
+		x = -4
+		y = 4
+	
+		available = {  }
+		prerequisite = { focus = laissez_faire }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#企业政府
+	focus = {
+		id = Enterprise_government
+		icon = GFX_focus_Enterprise_government
+		relative_position_id = nation_above_all
+		x = -2
+		y = 5
+	
+		available = {  }
+		prerequisite = { focus = economic_franchise }
+		prerequisite = { focus = thoroughly_remould_oneself }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#军事工业复合体
+	focus = {
+		id = military_industrial_complex
+		icon = GFX_focus_military_industrial_complex
+		relative_position_id = nation_above_all
+		x = 2
+		y = 5
+	
+		available = {  }
+		prerequisite = { focus = Expand_army }
+		prerequisite = { focus = thoroughly_remould_oneself }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#再生及复兴
+	focus = {
+		id = Regeneration_revival
+		icon = GFX_focus_Regeneration_revival
+		relative_position_id = nation_above_all
+		x = 0
+		y = 6
+	
+		available = {  }
+		prerequisite = { focus = military_industrial_complex focus = Enterprise_government }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 100
+			add_research_slot = 1
+			add_ideas = Regeneration_revival_idea
+			
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	
+#中立
+
+	#军事政变
+	focus = {
+		id = military_coup
+		icon = GFX_focus_military_coup
+		relative_position_id = Political_reform
+		x = 15
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = Political_reform }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = neutrality
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.3
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#君主专制
+	focus = {
+		id = Restoration_monarchy
+		icon = GFX_focus_Restoration_monarchy
+		relative_position_id = military_coup
+		x = -2
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = military_coup }
+		mutually_exclusive = { focus = military_autarchy }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#军事独裁
+	focus = {
+		id = military_autarchy
+		icon = GFX_focus_military_autarchy
+		relative_position_id = military_coup
+		x = 2
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = military_coup }
+		mutually_exclusive = { focus = Restoration_monarchy }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = fascism  
+				popularity = 0.05 
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#党
+	focus = {
+		id = party
+		icon = GFX_focus_party
+		relative_position_id = military_coup
+		x = 0
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = military_autarchy focus = Restoration_monarchy }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 100
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#军队
+	focus = {
+		id = army
+		icon = GFX_focus_army
+		relative_position_id = military_coup
+		x = -2
+		y = 3
+	
+		available = {  }
+		prerequisite = { focus = party }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = army_idea
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#法院
+	focus = {
+		id = court
+		icon = GFX_focus_court
+		relative_position_id = military_coup
+		x = 2
+		y = 3
+	
+		available = {  }
+		prerequisite = { focus = party }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = court_idea
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#极权独裁
+	focus = {
+		id = totalitarian_dictatorship
+		icon = GFX_focus_totalitarian_dictatorship
+		relative_position_id = military_coup
+		x = 0
+		y = 4
+	
+		available = {  }
+		prerequisite = { focus = court }
+		prerequisite = { focus = army }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = army_idea
+			remove_ideas = court_idea
+			add_ideas = totalitarian_dictatorship_idea
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#邀请外资
+	focus = {
+		id = Invite_foreign_investment
+		icon = GFX_focus_Invite_foreign_investment
+		relative_position_id = military_coup
+		x = 3
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = military_autarchy }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#提高赋税
+	focus = {
+		id = Raise_taxes
+		icon = GFX_focus_Raise_taxes
+		relative_position_id = military_coup
+		x = -3
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = Restoration_monarchy }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = Raise_taxes_idea
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#精英特权
+	focus = {
+		id = Elite_privilege
+		icon = GFX_focus_Elite_privilege
+		relative_position_id = military_coup
+		x = 4
+		y = 4
+	
+		available = {  }
+		prerequisite = { focus = Invite_foreign_investment }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 100
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#贵族特权
+	focus = {
+		id = aristocratic_privilege
+		icon = GFX_focus_aristocratic_privilege
+		relative_position_id = military_coup
+		x = -4
+		y = 4
+	
+		available = {  }
+		prerequisite = { focus = Raise_taxes }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 100
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#对内清洗
+	focus = {
+		id = Internal_cleaning_1
+		icon = GFX_focus_Enterprise_government
+		relative_position_id = military_coup
+		x = -2
+		y = 5
+	
+		available = {  }
+		prerequisite = { focus = aristocratic_privilege }
+		prerequisite = { focus = totalitarian_dictatorship }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#对外扩张
+	focus = {
+		id = External_expansion
+		icon = GFX_focus_External_expansion
+		relative_position_id = military_coup
+		x = 2
+		y = 5
+	
+		available = {  }
+		prerequisite = { focus = Elite_privilege }
+		prerequisite = { focus = totalitarian_dictatorship }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.1
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#永世之国
+	focus = {
+		id = Eternal_country
+		icon = GFX_focus_Eternal_country
+		relative_position_id = military_coup
+		x = 0
+		y = 6
+	
+		available = {  }
+		prerequisite = { focus = External_expansion focus = Internal_cleaning_1 }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 100
+			add_research_slot = 1
+			add_ideas = Eternal_country_idea
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	
+}

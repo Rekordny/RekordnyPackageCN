@@ -22,3 +22,7 @@ kga_establish_puppuet_bon = {
 	icon = GFX_decision_category_senshado
 	allowed = { tag = KGA }
 }
+kga_germanic_kuromorimine = {
+	icon = GFX_decision_category_senshado
+	allowed = { tag = KGA }
+}

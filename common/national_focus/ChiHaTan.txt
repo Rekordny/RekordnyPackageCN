@@ -442,6 +442,300 @@ focus_tree = {
 		}
 	}
 
+	#巩固战后体制
+	focus = {
+		id = CHT_consolidate_postwar_system 
+		icon = GFX_focus_CHT_consolidate_postwar_system
+		relative_position_id = CHT_suppress_new_bakufu 
+		x = 1
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_suppress_new_bakufu }
+		mutually_exclusive = { focus = CHT_postwar_system_second_discussion }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#第二次战后体制研讨
+	focus = {
+		id = CHT_postwar_system_second_discussion
+		icon = GFX_focus_CHT_postwar_system_second_discussion
+		relative_position_id = CHT_suppress_new_bakufu 
+		x = -1
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_suppress_new_bakufu }
+		mutually_exclusive = { focus = CHT_consolidate_postwar_system }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#战后政治总决算
+	focus = {
+		id = CHT_postwar_political_account
+		icon = GFX_focus_CHT_postwar_political_account
+		relative_position_id = CHT_postwar_system_second_discussion 
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_postwar_system_second_discussion }
+		#mutually_exclusive = { focus =  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#修改宪法
+	focus = {
+		id = CHT_amend_the_constitution
+		icon = GFX_focus_CHT_amend_the_constitution
+		relative_position_id = CHT_postwar_political_account 
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_postwar_political_account }
+		#mutually_exclusive = { focus =  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#爱国主义教育
+	focus = {
+		id = CHT_patriotism_education 
+		icon = GFX_focus_CHT_patriotism_education 
+		relative_position_id = CHT_postwar_political_account 
+		x = -2
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_postwar_political_account }
+		#mutually_exclusive = { focus =  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#拜访天皇
+	focus = {
+		id = CHT_visit_the_emperor 
+		icon = GFX_focus_CHT_visit_the_emperor
+		relative_position_id = CHT_amend_the_constitution
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_amend_the_constitution }
+		#mutually_exclusive = { focus =  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#发达国家俱乐部
+	focus = {
+		id = CHT_developed_country_club
+		icon = GFX_focus_CHT_developed_country_club
+		relative_position_id = CHT_consolidate_postwar_system 
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_consolidate_postwar_system }
+		#mutually_exclusive = { focus =  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#经济一流
+	focus = {
+		id = CHT_top_teir_economy
+		icon = GFX_focus_CHT_top_teir_economy
+		relative_position_id = CHT_developed_country_club 
+		x = 2
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_developed_country_club }
+		#mutually_exclusive = { focus =  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#新的战后思维
+	focus = {
+		id = CHT_new_postwar_logic
+		icon = GFX_focus_CHT_new_postwar_logic
+		relative_position_id = CHT_developed_country_club 
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_developed_country_club }
+		#mutually_exclusive = { focus =  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#确立西首相内阁
+	focus = {
+		id = CHT_establish_nishi_cabinet_prime_minister
+		icon = GFX_focus_CHT_establish_nishi_cabinet_prime_minister
+		relative_position_id = CHT_new_postwar_logic 
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_new_postwar_logic }
+		#mutually_exclusive = { focus =  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#清除新幕府思维
+	focus = {
+		id = CHT_clear_out_new_bakufu
+		icon = GFX_focus_CHT_clear_out_new_bakufu
+		relative_position_id = CHT_establish_nishi_cabinet_prime_minister 
+		x = -1
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_establish_nishi_cabinet_prime_minister focus = CHT_visit_the_emperor }
+		#mutually_exclusive = { focus =  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#审视桑达斯-知波单安保条约
+	focus = {
+		id = CHT_examine_SDS_CHT_security_treaty 
+		icon = GFX_focus_CHT_examine_SDS_CHT_security_treaty
+		relative_position_id = CHT_clear_out_new_bakufu 
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_clear_out_new_bakufu }
+		#mutually_exclusive = { focus =  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#重启军备
+	focus = {
+		id = CHT_restart_armaments
+		icon = GFX_focus_CHT_restart_armaments
+		relative_position_id = CHT_clear_out_new_bakufu 
+		x = -2
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_clear_out_new_bakufu }
+		#mutually_exclusive = { focus =  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#独立自强的政府
+	focus = {
+		id = CHT_independent_government
+		icon = GFX_focus_CHT_independent_government
+		relative_position_id = CHT_examine_SDS_CHT_security_treaty 
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_examine_SDS_CHT_security_treaty }
+		#mutually_exclusive = { focus =  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
 	#支持新幕府运动
 	focus = {
 		id = CHT_support_new_bakufu
@@ -580,13 +874,13 @@ focus_tree = {
 	focus = {
 		id = CHT_lanshyatai
 		icon = GFX_focus_CHT_lanshyatai
-		relative_position_id = CHT_shogun_tsuruki 
-		x = 3
+		relative_position_id = CHT_regent_kampaku
+		x = -2
 		y = 1
 		cost = 10
 		available = { }
 		bypass = { }
-		prerequisite = { focus = CHT_shogun_tsuruki }
+		prerequisite = { focus = CHT_regent_kampaku }
 		mutually_exclusive = {  }
 		available_if_capitulated = yes
 		completion_reward = {
@@ -701,6 +995,28 @@ focus_tree = {
 			factor = 25
 		}
 	}
+
+	#武士为尊
+	focus = {
+		id = CHT_samurai_first
+		icon = GFX_focus_CHT_samurai_first
+		relative_position_id = CHT_overthrow_the_emperor 
+		x = 2
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = CHT_overthrow_the_emperor }
+		mutually_exclusive = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
 
 	#人民-武士-国家
 	focus = {

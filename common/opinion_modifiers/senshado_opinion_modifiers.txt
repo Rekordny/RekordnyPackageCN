@@ -106,4 +106,31 @@ opinion_modifiers = {
     BCF_handling_territorial_disputes = {
 		value = +10
 	}
+	BCF_civil_war_support = {
+		value = +20
+	}
+    BCF_civil_war_support_no = {
+		value = -10
+	}
+    BCF_civil_war_support_partial = {
+		value = +10
+	}
+	BCF_piedmont_exchange_for_protection = {
+		value = +60
+		months = 12
+		decay = 3
+	}
+	BCF_PRA_unhonest = {
+		value = -10
+	}
+	BCF_quit_east_europe = {
+		value = 50
+		months = 12
+		decay = 2
+	}
+	BCF_PRA_choose_KGA = {
+		value = 30
+		months = 12
+		decay = 2
+	}
 }

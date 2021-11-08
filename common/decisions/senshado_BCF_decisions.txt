@@ -1,5 +1,16 @@
 
 bcf_missions = {
+
+	#debug
+	bcf_debug = {
+		allowed = { tag = BCF }
+		visible = { is_debug = yes }
+		fire_only_once = no
+		complete_effect = {
+			country_event = bcfreedom.76 }
+		}
+	}
+
 	#兄弟阋墙
 	bcf_internal_strife = {
 		allowed = { tag = BCF }
@@ -29,9 +40,12 @@ bcf_diplomatic = {
 	bcf_new_league = {
 		allowed = { tag = BCF }
 		visible = { OR = { has_completed_focus = BCF_new_league is_debug = yes } }
+		available = { has_war = no }
+		custom_cost_trigger = { has_political_power > 29.9 }
+		custom_cost_text = bcf_tooltip7
 		fire_only_once = yes
 		complete_effect = {
-			
+			country_event = bcfreedom.42
 		}
 	}
 	

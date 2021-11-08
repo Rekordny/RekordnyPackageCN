@@ -116,6 +116,16 @@ ideas = {
 			}
 		}
 
+		KGA_new_kuromorimine_economy = {
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				tax_daily_modifier = 0.25
+				production_speed_buildings_factor = 0.25
+				global_building_slots_factor = 0.2
+			}
+		}
+
 		KGA_kuromorimine_economy = {
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = yes }
@@ -152,7 +162,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.05
 				tax_daily_modifier = -0.1
-				production_speed_infrastructure_factor = 0.3
+				production_speed_infrastructure_factor = 0.25
 				production_speed_arms_factory_factor = 0.25
 			}
 		}
@@ -520,6 +530,11 @@ ideas = {
 			modifier = {
 				supply_consumption_factor = -0.2
 			}
+			equipment_bonus = {
+				support_equipment = {
+					build_cost_ic = -0.2
+				}
+			}
 		}
 
 		#着重于计划
@@ -531,6 +546,11 @@ ideas = {
 				max_planning = 0.1
 				planning_speed = 0.1
 			}
+			research_bonus = {
+				land_doctrine = 0.06
+				air_doctrine = 0.06
+				naval_doctrine = 0.06
+			}
 		}
 
 		#少女们的作战素养
@@ -540,7 +560,7 @@ ideas = {
 			}
 			modifier = {
 				army_org_Factor = 0.1
-				army_org_regain = 0.05
+				army_org_regain = 0.1
 			}
 		}
 
@@ -552,6 +572,36 @@ ideas = {
 			modifier = {
 				command_power_gain_mult = 0.1
 				max_command_power = 40
+			}
+		}
+
+		#国家紧急状态声明
+		KGA_declare_national_emergency_state = {
+			allowed = {
+				tag = KGA
+			}
+			modifier = {
+				war_stability_factor = 0.2
+				war_support_weekly = 0.003
+				tax_daily_modifier = -0.3
+				repair_speed_arms_factory_factor = 0.3
+				production_speed_arms_factory_factor = 0.1
+				stability_weekly_factor = -0.003
+			}
+		}
+
+		#扳倒巨人
+		KGA_down_the_giant = {
+			allowed = {
+				tag = KGA
+			}
+			modifier = {
+				out_of_supply_factor = -0.1
+			}
+			targeted_modifier = {
+				tag = SDS
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
 			}
 		}
     }

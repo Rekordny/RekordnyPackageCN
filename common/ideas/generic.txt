@@ -1,0 +1,303 @@
+ideas = {
+	country = {
+	
+		#人权宣言
+		Declaration_human_rights_idea = {
+		
+			picture = GFX_idea_Declaration_human_rights_idea
+			
+			name = Declaration_human_rights
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		
+		#公民权利
+		Civil_rights_idea = {
+		
+			picture = GFX_idea_Civil_rights_idea
+			
+			name = Civil_rights
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.05
+			}
+		}
+		
+		#选举权
+		Right_vote_idea = {
+		
+			picture = GFX_idea_Right_vote_idea
+			
+			name = Right_vote
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+		
+		#民主灯塔
+		Democratic_Lighthouse_idea = {
+		
+			picture = GFX_idea_Democratic_Lighthouse_idea
+			
+			name = Democratic_Lighthouse
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				research_speed_factor = 0.05
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		
+		#按劳分配
+		distribution_according_work_idea = {
+		
+			picture = GFX_idea_distribution_according_work_idea
+			
+			name = distribution_according_work
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		#各尽所能
+		let_each_person_best_idea = {
+		
+			picture = GFX_idea_let_each_person_best_idea
+			
+			name = let_each_person_best
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		#共产党宣言
+		Communist_Manifesto_idea = {
+		
+			picture = GFX_idea_Communist_Manifesto_idea
+			
+			name = Communist_Manifesto
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.10
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		#解放世界
+		Liberate_world_idea = {
+		
+			picture = GFX_idea_Liberate_world_idea
+			
+			name = Liberate_world
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				war_support_factor = 0.05
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		
+		#民族复兴
+		National_rejuvenation_idea = {
+		
+			picture = GFX_idea_National_rejuvenation_idea
+			
+			name = National_rejuvenation
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.1
+			}
+		}
+		
+		#文化复兴
+		cultural_revitalization_idea = {
+		
+			picture = GFX_idea_cultural_revitalization_idea
+			
+			name = cultural_revitalization
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				mobilization_speed = 0.1
+			}
+		}
+		
+		#文化复兴
+		thoroughly_remould_oneself_idea = {
+		
+			picture = GFX_idea_thoroughly_remould_oneself_idea
+			
+			name = thoroughly_remould_oneself
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				mobilization_speed = 0.1
+				conscription_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+		
+		#再生及复兴
+		Regeneration_revival_idea = {
+		
+			picture = GFX_idea_Regeneration_revival_idea
+			
+			name = Regeneration_revival
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.01
+				local_resources_factor = 0.05
+				war_support_factor = 0.05
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		
+		#军队的力量
+		army_idea = {
+		
+			picture = GFX_idea_army_idea
+			
+			name = army
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.05
+			}
+		}
+		
+		#法院的虚伪
+		court_idea = {
+		
+			picture = GFX_idea_court_idea
+			
+			name = court
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.05
+			}
+		}
+		
+		#极权独裁
+		totalitarian_dictatorship_idea = {
+		
+			picture = GFX_idea_totalitarian_dictatorship_idea
+			
+			name = totalitarian_dictatorship
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.1
+				army_org_factor = 0.05
+				local_resources_factor = 0.05
+			}
+		}
+		
+		#提高赋税
+		Raise_taxes_idea = {
+		
+			picture = GFX_idea_Raise_taxes_idea
+			
+			name = Raise_taxes
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		#永世之国
+		Eternal_country_idea = {
+		
+			picture = GFX_idea_Eternal_country_idea
+			
+			name = Eternal_country
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = 0.005
+				local_resources_factor = 0.1
+				war_support_weekly = -0.005
+			}
+		}
+	
+	}
+}

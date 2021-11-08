@@ -626,6 +626,39 @@ ideas = {
 				naval_invasion_capacity = 5
 			}
 		}
+
+		#黑森峰赔款
+		BCF_KGA_reparations = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			equipment_bonus = {
+			}
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+
+		#PRA：与BC自由的合作
+		BCF_PRA_cooperation_with_BCF = {
+			allowed = { tag = PRA }
+			modifier = {
+				consumer_goods_factor = -0.5
+				communism_drift = 0.01
+			}
+		}
+
+		#与真理的合作
+		BCF_PRA_cooperation = {
+			allowed = { tag = BCF }
+			allowed_civil_war = { always = no }
+			equipment_bonus = {
+			}
+			modifier = {
+				production_speed_bunker_factor = 0.15
+				army_org_Factor = 0.05
+				communism_drift = 0.01
+			}
+		}
     }
 
 	student_union_member = {

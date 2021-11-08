@@ -300,7 +300,7 @@ focus_tree = {
 		completion_reward = {
 			#开始任务：扩大内需，1974年完成将会有额外奖励
 			unlock_decision_tooltip = kga_build_infrastructures
-			set_country_flag = start_kga_infrastructure_mission
+			set_country_flag = KGA_START_INFRASTRUCTURE_MISSION
 		}
 		#AI行动之后具体设计，复制粘贴以下部分即可
 		ai_will_do = {
@@ -506,7 +506,7 @@ focus_tree = {
 		relative_position_id = KGA_koume_suggestion
 		x = -1
 		y = 1
-		available = { }
+		available = { has_idea = KGA_kuromorimine_economy_1 }
 		prerequisite = { focus = KGA_koume_suggestion }
 		#mutually_exclusive = { focus =  }
 		bypass = { }
@@ -537,7 +537,7 @@ focus_tree = {
 		relative_position_id = KGA_erika_reform
 		x = 1
 		y = 1
-		available = { }
+		available = { has_idea = KGA_kuromorimine_economy_1 }
 		prerequisite = { focus = KGA_erika_reform }
 		#mutually_exclusive = { }
 		bypass = { }
@@ -2566,7 +2566,7 @@ focus_tree = {
 		id = KGA_contact_Anzio
 		icon = GFX_focus_KGA_contact_Anzio
 		relative_position_id = KGA_nishizumi_family
-		x = 11
+		x = 2
 		y = 1
 		available = {  }
 		#allow_branch = { has_completed_focus = KGA_nishizumi_family }
@@ -2581,6 +2581,120 @@ focus_tree = {
 		completion_reward = {
 			ANZ = { country_event = kuromorimine.42 }
 		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#旧友
+	focus = {
+		id = KGA_old_friend
+		icon = GFX_focus_KGA_old_friend
+		relative_position_id = KGA_ANZ_europe_tank_project
+		x = 0
+		y = 1
+		available = { has_country_flag = KGA_HAVE_TYROL_BACK ANZ = { has_government = fascism is_in_faction = no } }
+		#allow_branch = { has_completed_focus = KGA_nishizumi_family }
+		prerequisite = {  }
+		mutually_exclusive = {  }
+		bypass = { has_country_flag = KGA_HAVE_TYROL_BACK_FALSE }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			ANZ = { country_event = { id = kuromorimine.56 days = 0 } }
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#进口意面
+	focus = {
+		id = KGA_import_more_pasta
+		icon = GFX_focus_KGA_import_more_pasta
+		relative_position_id = KGA_contact_Anzio
+		x = 0
+		y = 1
+		available = { NOT = { has_war_with = ANZ } }
+		#allow_branch = { has_completed_focus = KGA_nishizumi_family }
+		prerequisite = { focus = KGA_contact_Anzio }
+		#mutually_exclusive = { focus =  }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_state = {
+				limit = { is_controlled_by = KGA is_core_of = KGA }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			custom_effect_tooltip = kga_tooltip30
+			add_to_variable = { gold = 80 }
+		}
+
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#安齐奥欧洲战车合作项目
+	focus = {
+		id = KGA_ANZ_europe_tank_project
+		icon = GFX_focus_KGA_ANZ_europe_tank_project
+		relative_position_id = KGA_import_more_pasta
+		x = 0
+		y = 1
+		available = { NOT = { has_war_with = ANZ } }
+		#allow_branch = { has_completed_focus = KGA_nishizumi_family }
+		prerequisite = { focus = KGA_import_more_pasta }
+		mutually_exclusive = { focus = KGA_prototype_design_communicate }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				category = armor
+				uses = 2
+				bonus = 0.5
+			}
+			add_tech_bonus = {
+				category = uniform_common
+				uses = 1
+				bonus = 1
+			}
+			add_tech_bonus = {
+				category = uniform_winter
+				uses = 1
+				bonus = 1
+			}
+			add_tech_bonus = {
+				category = food
+				uses = 1
+				bonus = 2
+			}
+		}
+
 		#AI行动之后具体设计，复制粘贴以下部分即可
 		ai_will_do = {
 			factor = 1
@@ -2742,18 +2856,50 @@ focus_tree = {
 		}
 	}
 
+	#国家紧急状态声明
+	focus = {
+		id = KGA_declare_national_emergency_state
+		icon = GFX_focus_KGA_declare_national_emergency_state
+		relative_position_id = KGA_nishizumi_family
+		x = 11
+		y = 1
+		available = { has_civil_war = no }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_nishizumi_family }
+		#mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = KGA_declare_national_emergency_state
+				days = 300
+			}
+		}
+
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
 	#要求BC归还领土
 	focus = {
 		id = KGA_demand_BCF
 		icon = GFX_focus_KGA_demand_BCF
-		relative_position_id = KGA_contact_Anzio
+		relative_position_id = KGA_declare_national_emergency_state
 		x = -1
 		y = 1
 		available = { has_civil_war = no }
 		#allow_branch = { has_completed_focus =  }
-		prerequisite = { focus = KGA_contact_Anzio }
+		prerequisite = { focus = KGA_declare_national_emergency_state }
 		#mutually_exclusive = { focus =  }
-		bypass = { }
+		bypass = { controls_state = 42 controls_state = 50 }
 		cost = 10
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2771,18 +2917,53 @@ focus_tree = {
 		}
 	}
 
+	#声明合法旧领土
+	focus = {
+		id = KGA_declare_legal_territory 
+		icon = GFX_focus_KGA_declare_legal_territory
+		relative_position_id = KGA_demand_BCF
+		x = 0
+		y = 1
+		available = {  }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_demand_BCF }
+		#mutually_exclusive = { focus =  }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_state_core = 28
+			if = {
+				limit = { NOT = { has_war_with = BCF } BCF = { exists = yes } }
+				create_wargoal = {
+					target = BCF
+					type = take_core_state
+				}
+			}
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
 	#要求STG归还领土
 	focus = {
 		id = KGA_demand_STG
 		icon = GFX_focus_KGA_demand_STG
-		relative_position_id = KGA_contact_Anzio
+		relative_position_id = KGA_declare_national_emergency_state
 		x = 1
 		y = 1
 		available = { has_civil_war = no }
 		#allow_branch = { has_completed_focus =  }
-		prerequisite = { focus = KGA_contact_Anzio }
+		prerequisite = { focus = KGA_declare_national_emergency_state }
 		#mutually_exclusive = { focus =  }
-		bypass = { }
+		bypass = { controls_state = 51 controls_state = 57 controls_state = 56 controls_state = 59 controls_state = 58 }
 		cost = 10
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2792,6 +2973,36 @@ focus_tree = {
 			STG = { country_event = { id = kuromorimine.48 days = 0 } }
 		}
 
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#铲除威胁
+	focus = {
+		id = KGA_eradicate_threats_across_the_coast 
+		icon = GFX_focus_KGA_eradicate_threats_across_the_coast
+		relative_position_id = KGA_demand_STG
+		x = 0
+		y = 1
+		available = { NOT = { has_war_with = STG } }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_demand_STG }
+		#mutually_exclusive = { focus =  }
+		bypass = { OR = { has_war_with = STG } STG = { exists = no } }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			create_wargoal = {
+				target = STG
+				type = annex_everything
+			}
+		}
 		#AI行动之后具体设计，复制粘贴以下部分即可
 		ai_will_do = {
 			factor = 1
@@ -3791,7 +4002,7 @@ focus_tree = {
 		available = {  }
 		#allow_branch = { has_completed_focus =  }
 		prerequisite = { focus = KGA_deal_with_little_tyrant }
-		#mutually_exclusive = { focus =  }
+		mutually_exclusive = { focus = KGA_ANZ_europe_tank_project }
 		bypass = {  }
 		cost = 10
 		cancel_if_invalid = yes
@@ -3829,10 +4040,10 @@ focus_tree = {
 		relative_position_id = KGA_prototype_design_communicate
 		x = 0
 		y = 1
-		available = {  }
+		available = { is_in_faction = no }
 		#allow_branch = { has_completed_focus =  }
 		prerequisite = { focus = KGA_prototype_design_communicate }
-		#mutually_exclusive = { focus =  }
+		mutually_exclusive = { }
 		bypass = {  }
 		cost = 10
 		cancel_if_invalid = yes
@@ -3847,5 +4058,168 @@ focus_tree = {
 
 		}
 	}
+
+	#清算时间
+	focus = {
+		id = KGA_liquidation_time 
+		icon = GFX_focus_KGA_liquidation_time 
+		relative_position_id = KGA_declare_legal_territory
+		x = 1
+		y = 1
+		available = { NOT = { has_idea = KGA_broken_kuromorimine } }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_declare_legal_territory focus = KGA_eradicate_threats_across_the_coast }
+		mutually_exclusive = {  }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = KGA_huge_debt
+		}
+	}
+
+	#整合欧陆
+	focus = {
+		id = KGA_intergrate_europe
+		icon = GFX_focus_KGA_intergrate_europe
+		relative_position_id = KGA_liquidation_time
+		x = 0
+		y = 1
+		available = {  }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_liquidation_time }
+		mutually_exclusive = {  }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			unlock_decision_category_tooltip = kga_germanic_kuromorimine
+		}
+	}
+
+	#下一个属于黑森峰的时代
+	focus = {
+		id = KGA_next_generation
+		icon = GFX_focus_KGA_next_generation
+		relative_position_id = KGA_intergrate_europe
+		x = -11
+		y = 1
+		available = { date > 1980.6.3 }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_intergrate_europe }
+		prerequisite = { focus = KGA_look_into_the_future }
+		prerequisite = { focus = KGA_nibelungen_knights }
+		mutually_exclusive = {  }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 300
+		}
+	}
+
+	#黑森峰的阿米尼乌斯
+	focus = {
+		id = KGA_kuromorimines_arminius
+		icon = GFX_focus_KGA_kuromorimines_arminius
+		relative_position_id = KGA_next_generation
+		x = -2
+		y = 1
+		available = { }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_next_generation }
+		mutually_exclusive = {  }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			#超级加强西住真穗
+		}
+	}
+
+	#不破不立
+	focus = {
+		id = KGA_no_construction_without_destruction
+		icon = GFX_focus_KGA_no_construction_without_destruction
+		relative_position_id = KGA_next_generation
+		x = 2
+		y = 1
+		available = { }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_next_generation }
+		mutually_exclusive = {  }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = { 
+				limit = { has_idea = KGA_kuromorimine_economy_2 }
+				swap_ideas = {
+					remove_idea = KGA_kuromorimine_economy_2
+					add_idea = KGA_new_kuromorimine_economy
+				}
+			}
+			if = { 
+				limit = { has_idea = KGA_kuromorimine_economy_3 }
+				swap_ideas = {
+					remove_idea = KGA_kuromorimine_economy_3
+					add_idea = KGA_new_kuromorimine_economy
+				}
+			}
+			if = { 
+				limit = { has_idea = KGA_kuromorimine_economy_1 }
+				swap_ideas = {
+					remove_idea = KGA_kuromorimine_economy_1
+					add_idea = KGA_new_kuromorimine_economy
+				}
+			}
+		}
+	}
+
+	#扳倒巨人
+	focus = {
+		id = KGA_down_the_giant
+		icon = GFX_focus_KGA_down_the_giant
+		relative_position_id = KGA_next_generation
+		x = 0
+		y = 1
+		available = { SDS = { exists = yes } }
+		#allow_branch = { has_completed_focus =  }
+		prerequisite = { focus = KGA_next_generation }
+		mutually_exclusive = {  }
+		bypass = {  }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_war_with = SDS } }
+				create_wargoal = {
+					target = SDS
+					type = annex_everything
+				}
+			}
+			add_ideas = KGA_down_the_giant
+		}
+	}
+
+	
 }
 

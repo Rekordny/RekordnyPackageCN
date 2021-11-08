@@ -19,4 +19,9 @@ spriteTypes = {
 		texturefile = "gfx/texticons/bcf_school_factional_strife_oshida.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_kga_germanic_kuromorimine_pic"
+		texturefile = "gfx/texticons/kga_germanic_kuromorimine_pic.dds"
+		legacy_lazy_load = no
+	}
 }

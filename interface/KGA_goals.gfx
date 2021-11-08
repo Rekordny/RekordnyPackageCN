@@ -280,6 +280,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_KGA_contact_Anzio.dds"
 	}
 	SpriteType = {
+		name = "GFX_focus_KGA_old_friend"
+		texturefile = "gfx/interface/goals/focus_KGA_old_friend.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_import_more_pasta"
+		texturefile = "gfx/interface/goals/focus_KGA_import_more_pasta.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_ANZ_europe_tank_project"
+		texturefile = "gfx/interface/goals/focus_KGA_ANZ_europe_tank_project.dds"
+	}
+	SpriteType = {
 		name = "GFX_focus_KGA_resume_military_service"
 		texturefile = "gfx/interface/goals/focus_KGA_resume_military_service.dds"
 	}
@@ -296,12 +308,24 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_KGA_incorporate_bellwall.dds"
 	}
 	SpriteType = {
+		name = "GFX_focus_KGA_declare_national_emergency_state"
+		texturefile = "gfx/interface/goals/focus_KGA_declare_national_emergency_state.dds"
+	}
+	SpriteType = {
 		name = "GFX_focus_KGA_demand_BCF"
 		texturefile = "gfx/interface/goals/focus_KGA_demand_BCF.dds"
 	}
 	SpriteType = {
+		name = "GFX_focus_KGA_declare_legal_territory"
+		texturefile = "gfx/interface/goals/focus_KGA_declare_legal_territory.dds"
+	}
+	SpriteType = {
 		name = "GFX_focus_KGA_demand_STG"
 		texturefile = "gfx/interface/goals/focus_KGA_demand_STG.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_eradicate_threats_across_the_coast"
+		texturefile = "gfx/interface/goals/focus_KGA_eradicate_threats_across_the_coast.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_KGA_nishizumi_style"
@@ -438,6 +462,30 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_KGA_kga_pra_faction"
 		texturefile = "gfx/interface/goals/focus_KGA_kga_pra_faction.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_liquidation_time"
+		texturefile = "gfx/interface/goals/focus_KGA_liquidation_time.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_intergrate_europe"
+		texturefile = "gfx/interface/goals/focus_KGA_intergrate_europe.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_next_generation"
+		texturefile = "gfx/interface/goals/focus_KGA_next_generation.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_kuromorimines_arminius"
+		texturefile = "gfx/interface/goals/focus_KGA_kuromorimines_arminius.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_no_construction_without_destruction"
+		texturefile = "gfx/interface/goals/focus_KGA_no_construction_without_destruction.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_down_the_giant"
+		texturefile = "gfx/interface/goals/focus_KGA_down_the_giant.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_KGA_school_ship_reform_act_shine"
@@ -2470,6 +2518,93 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
+		name = "GFX_focus_KGA_old_friend_shine"
+		texturefile = "gfx/interface/goals/focus_KGA_old_friend.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_KGA_old_friend.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_KGA_old_friend.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_import_more_pasta_shine"
+		texturefile = "gfx/interface/goals/focus_KGA_import_more_pasta.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_KGA_import_more_pasta.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_KGA_import_more_pasta.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_ANZ_europe_tank_project_shine"
+		texturefile = "gfx/interface/goals/focus_KGA_ANZ_europe_tank_project.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_KGA_ANZ_europe_tank_project.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_KGA_ANZ_europe_tank_project.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
 		name = "GFX_focus_KGA_resume_military_service_shine"
 		texturefile = "gfx/interface/goals/focus_KGA_resume_military_service.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
@@ -2586,6 +2721,35 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
+		name = "GFX_focus_KGA_declare_national_emergency_state_shine"
+		texturefile = "gfx/interface/goals/focus_KGA_declare_national_emergency_state.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_KGA_declare_national_emergency_state.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_KGA_declare_national_emergency_state.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
 		name = "GFX_focus_KGA_demand_BCF_shine"
 		texturefile = "gfx/interface/goals/focus_KGA_demand_BCF.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
@@ -2615,6 +2779,35 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
+		name = "GFX_focus_KGA_declare_legal_territory_shine"
+		texturefile = "gfx/interface/goals/focus_KGA_declare_legal_territory.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_KGA_declare_legal_territory.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_KGA_declare_legal_territory.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
 		name = "GFX_focus_KGA_demand_STG_shine"
 		texturefile = "gfx/interface/goals/focus_KGA_demand_STG.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
@@ -2631,6 +2824,35 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}		animation = {
 			animationmaskfile = "gfx/interface/goals/focus_KGA_demand_STG.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_eradicate_threats_across_the_coast_shine"
+		texturefile = "gfx/interface/goals/focus_KGA_eradicate_threats_across_the_coast.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_KGA_eradicate_threats_across_the_coast.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_KGA_eradicate_threats_across_the_coast.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -3617,6 +3839,180 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}		animation = {
 			animationmaskfile = "gfx/interface/goals/focus_KGA_kga_pra_faction.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_liquidation_time_shine"
+		texturefile = "gfx/interface/goals/focus_KGA_liquidation_time.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_KGA_liquidation_time.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_KGA_liquidation_time.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_intergrate_europe_shine"
+		texturefile = "gfx/interface/goals/focus_KGA_intergrate_europe.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_KGA_intergrate_europe.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_KGA_intergrate_europe.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_next_generation_shine"
+		texturefile = "gfx/interface/goals/focus_KGA_next_generation.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_KGA_next_generation.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_KGA_next_generation.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_kuromorimines_arminius_shine"
+		texturefile = "gfx/interface/goals/focus_KGA_kuromorimines_arminius.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_KGA_kuromorimines_arminius.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_KGA_kuromorimines_arminius.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_no_construction_without_destruction_shine"
+		texturefile = "gfx/interface/goals/focus_KGA_no_construction_without_destruction.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_KGA_no_construction_without_destruction.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_KGA_no_construction_without_destruction.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_KGA_down_the_giant_shine"
+		texturefile = "gfx/interface/goals/focus_KGA_down_the_giant.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_KGA_down_the_giant.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_KGA_down_the_giant.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

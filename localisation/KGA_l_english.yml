@@ -230,6 +230,30 @@
  KGA_prototype_design_communicate_desc:0 ""
  KGA_kga_pra_faction:0 "黑森峰-真理阵线"
  KGA_kga_pra_faction_desc:0 ""
+ KGA_old_friend:0 "旧友"
+ KGA_old_friend_desc:0 ""
+ KGA_import_more_pasta:0 "进口意面"
+ KGA_import_more_pasta_desc:0 ""
+ KGA_declare_national_emergency_state:0 "国家紧急状态声明"
+ KGA_declare_national_emergency_state_desc:0 ""
+ KGA_ANZ_europe_tank_project:0 "安齐奥欧洲战车合作项目"
+ KGA_ANZ_europe_tank_project_desc:0 ""
+ KGA_declare_legal_territory:0 "声明合法旧领土"
+ KGA_declare_legal_territory_desc:0 ""
+ KGA_eradicate_threats_across_the_coast:0 "铲除海对面的威胁"
+ KGA_eradicate_threats_across_the_coast_desc:0 ""
+ KGA_liquidation_time:0 "清算时间"
+ KGA_liquidation_time_desc:0 ""
+ KGA_intergrate_europe:0 "整合欧陆"
+ KGA_intergrate_europe_desc:0 ""
+ KGA_next_generation:0 "下一个属于黑森峰的时代"
+ KGA_next_generation_desc:0 ""
+ KGA_kuromorimines_arminius:0 "黑森峰的阿米尼乌斯"
+ KGA_kuromorimines_arminius_desc:0 ""
+ KGA_no_construction_without_destruction:0 "不破不立"
+ KGA_no_construction_without_destruction_desc:0 ""
+ KGA_down_the_giant:0 "扳倒巨人"
+ KGA_down_the_giant_desc:0 ""
 
 #events
  kuromorimine.1.t:0 "黑森峰战车道政府修改生活管制条例"
@@ -284,7 +308,6 @@
  kuromorimine.22.d:0 "战车道军政府的西住真穗派上台后，直接激化了和钟壁分子的矛盾，她们以艾米为领导中心，展开了和我们政府力量的抗议行动，似乎她们之前的友好都是假象。"
  kuromorimine.22.a:0 "展开秘密搜捕"
  kuromorimine.22.b:0 "用军队镇压"
- kuromorimine.22.c:0 "打开政治对话"
  kuromorimine.23.t:0 "西住真穗上台"
  kuromorimine.23.d:0 "西住真穗领导的右派以压倒性的选票获得了下一届政府管辖权，事实证明，真穗的执行能力确实也要比美穗更加果断迅速，这将是新历史篇章的开启！德意志黑森峰的未来一片光明。"
  kuromorimine.23.a:0 "好耶"
@@ -296,6 +319,7 @@
  kuromorimine.25.d:0 "右翼的媒体通过在政府的关系不断扩大其影响力，在舆论战的阵地上我们拔得头筹！"
  kuromorimine.25.a:0 "加大宣传的力度"
  kuromorimine.25.b:0 "适可而止，给人民一些空间"
+ kuromorimine.25.c:0 "用奖励机制来鼓励宣传"
  kuromorimine.26.t:0 "右翼媒体的胜利"
  kuromorimine.26.d:0 "作为一个来自人民群众的党派，我们深切的体会到了肩负国家未来命运的沉重，正是如此，我们才需要狠狠打击与我们理念不符合的，企图颠覆这个国家的敌人，这是人民团结胜利的结果，让德意志人紧紧团结在西住真穗派周围！"
  kuromorimine.26.a:0 "非常完美"
@@ -403,7 +427,16 @@
  kuromorimine.55.d:0 "喀秋莎虽然愿意和黑森峰谈判，但是对于目前态势远差于真理的我们，喀秋莎希望能获得合作的筹码和好处。目前，冯布诺是一个极好的筹码，它就像是一条砧板上肥美但是危险的鱼，需要合作才能将其拿下，虽然真理不会直接参与这场战争，但是她们会承诺以各种方式提供帮助并且承认旧德意志的主权领土，条件就是剩下的其他冯布诺领土。"
  kuromorimine.55.a:0 "冯布诺虽然难以攻克，但有了真理的帮助形势会扭转"
  kuromorimine.55.b:0 "她们根本不是诚心和我们合作，我们会变成马前卒"
- 
+ kuromorimine.56.t:0 "来自黑森峰的邀请"
+ kuromorimine.56.d:0 "今早我们收到了来自西住真穗政府的邀请，她们诚心希望和我们再次联手，建立新的战车道的轴心联盟，佩帕罗尼认为这次的机会是非常珍贵的，我们该如何回复她们？"
+ kuromorimine.56.a:0 "虽然我们曾经是朋友，但情况变了"
+ kuromorimine.56.b:0 "机不可失，我们要抓紧扩大影响力"
+ kuromorimine.57.t:0 "安齐奥同意加入战车道轴心"
+ kuromorimine.57.d:0 "安齐奥方面表达了充分的合作意愿，现在一个新的跨国战车道合作组织横空出世！未来我们在战车的研发和战术研究上将充分合作，共同复兴伟大的战车道联盟。"
+ kuromorimine.57.a:0 "很好"
+ kuromorimine.58.t:0 "安齐奥拒绝加入战车道轴心"
+ kuromorimine.58.d:0 "安齐奥方面拒绝了我门的请求，回应只有简单的几个字，看来黑森峰国家力量的衰弱并不只是表象...."
+ kuromorimine.58.a:0 "她们似乎有点太看不起人了"
 
 
 
@@ -443,7 +476,7 @@
  KGA_steady_cconomic_plan:0 "稳定的经济发展方案"
  KGA_rise_tax_on_consumer_goods:0 "提高消费品税收"
  KGA_minimum_wage:0 "最低工资"
-
+ KGA_new_kuromorimine_economy:0 "新黑森峰经济"
 
 
 #custom_tooltip
@@ -485,6 +518,14 @@
  kga_tooltip27:0 "§Y在未来内战中将尝试向BC自由求助§!"
  kga_tooltip28:0 "§Y在未来内战中将得到萨克森省的帮助§!"
  kga_tooltip29:0 "§Y在未来内战中将有机会摧毁对手的基建§!"
+ kga_tooltip30:0 "黄金储备：§G+80§!"
+ kga_tooltip31:0 "100 £GFX_gold_icon\n150£GFX_pol_power_icon"
+ kga_tooltip31_blocked:0 "100 £GFX_gold_icon\n150£GFX_pol_power_icon"
+ kga_tooltip32:0 "140 £GFX_gold_icon\n250£GFX_pol_power_icon"
+ kga_tooltip32_blocked:0 "140 £GFX_gold_icon\n250£GFX_pol_power_icon"
+ kga_tooltip33:0 "60 £GFX_gold_icon\n100£GFX_pol_power_icon"
+ kga_tooltip33_blocked:0 "60 £GFX_gold_icon\n100£GFX_pol_power_icon"
+ kga_tooltip34:0 "国库§R支出§!§Y30黄金§!"
 
 
 
@@ -519,11 +560,23 @@
  kga_industry:0 "黑森峰-工业"
  kga_rise_tax_on_consumer_goods:0 "提高消费品进口税收"
  kga_agricultural_production_plan:0 "农业增产计划"
+ kga_germanic_kuromorimine:0 "建立日耳曼黑森峰"
+ kga_germanic_kuromorimine_desc:0 "\n\n\n\n\n\n\n\n\n£GFX_kga_germanic_kuromorimine_pic\n\n\n\n\n\n\n\n\n\n\n\n 德意志的黑森峰从支离破碎走到一个完整的国家，离不开功垂不朽的西住真穗元帅，现在，一个伟大的幅员辽阔的旧日耳曼国版图在我们面前缓缓浮现，这将会是全体德意志日耳曼人最高，最强烈，最神圣的意志和伟大目标。\n"
+ kga_restoring_western_empire_frontier:0 "构筑帝国的西边陲"
+ kga_administer_bonple_territory:0 "统辖冯布诺高中主要领土"
+ kga_increase_control_of_baltic:0 "增强波罗的海控制权"
+ kga_administer_gergor_territory:0 "统辖格尔高高中领土"
+ kga_label_eastern_empire_boundary:0 "划分帝国的东部界限"
+ kga_administer_northern_territory:0 "统辖帝国的北疆"
+ kga_label_northern_east_empire_boundary:0 "划分帝国的东北部界限"
+ kga_label_south_eastern_empire_boundary:0 "划分帝国的东南部界限"
 
 
 #flags
  BCF_allow_trade:0 "BC批准了贸易协定"
  KGA_DIVIDE_BON:0 "答应了真理的条件"
+ KGA_HAVE_TYROL_BACK:0 "安齐奥归还了南蒂罗尔"
+ KGA_HAVE_TYROL_BACK_FALSE:0 "安齐奥拒绝归还南蒂罗尔"
 
 #opinion modifier
  financial_support:0 "经济援助"
