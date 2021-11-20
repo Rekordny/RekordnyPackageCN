@@ -34,32 +34,8 @@ different_party_types = {
 
 #STG
 opinion_modifiers = {
-	STG_Arrogant_Englishman = {
-		value = -30 
-	}
-	
-	STG_Friendship_with_high_JHS = {
-		value = +40 
-	}
-	
-	STG_support_BON = {
-		value = +50 
-	}
-	
-	STG_support_ANZ = {
-		value = +30 
-	}
-	
-	STG_support_ANZ_NO = {
-		value = -30 
-	}
-	
-	STG_support_VIG_NO = {
-		value = -20 
-	}
-	
-	STG_support_VIG = {
-		value = +20 
+	STG_reinforce_allies = {
+		value = 25
 	}
 }
 

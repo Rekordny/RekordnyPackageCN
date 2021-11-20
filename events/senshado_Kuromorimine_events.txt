@@ -1274,3 +1274,17 @@ country_event = {
 		}
 	}
 }
+
+
+########################日常事件###############################
+country_event = {
+	id = kuromorimine.300
+	title = kuromorimine.300.t
+	desc = kuromorimine.300.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.300.a
+	}
+}

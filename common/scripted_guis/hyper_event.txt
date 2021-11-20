@@ -1,0 +1,33 @@
+scripted_gui = {
+	hyper_event = {
+		window_name = "hyper_event"
+		context_type = player_context
+		
+		visible = {
+			has_country_flag = open_hyper_event
+		}
+		
+		effects = {
+			hyper_event_option_click = {
+				clr_country_flag = open_hyper_event
+				# play_song = "bgm_0"
+			}
+		}
+
+		triggers = {
+			# <element>_click_enabled = {
+			#     <triggers>
+			# }
+
+		}
+		dynamic_lists = {
+		}
+
+		properties = {
+		}
+
+		ai_enabled = {
+			always = no
+		}
+	}
+}

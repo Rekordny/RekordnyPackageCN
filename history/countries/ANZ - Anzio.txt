@@ -7,6 +7,11 @@ set_technology = {
 set_research_slots = 5
 set_convoys = 20
 
+add_ideas = ANZ_undeveloped_southern
+add_ideas = ANZ_urbanization_trend
+add_ideas = ANZ_catholicism_collude_with_communism
+add_ideas = ANZ_low_birth_rate
+
 set_politics = {
 	ruling_party = fascism
 	last_election = "1933.3.5"
@@ -14,10 +19,10 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 2
-	fascism = 73
-	communism = 3
-	neutrality = 22
+	democratic = 37
+	fascism = 42
+	communism = 28
+	neutrality = 0
 }
 
 

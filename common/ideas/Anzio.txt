@@ -1,0 +1,44 @@
+ideas = {
+	country = {
+		#落后的南部地区
+		ANZ_undeveloped_southern = {
+			allowed = { tag = ANZ }
+			allowed_civil_war = { always = no }
+			modifier = {
+				industrial_capacity_factory = -0.15
+				production_speed_industrial_complex_factor = -0.15
+				repair_speed_factor = -0.15
+			}
+		}
+
+		#城市化趋势
+		ANZ_urbanization_trend = {
+			allowed = { tag = ANZ }
+			allowed_civil_war = { always = no }
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+				conscription_factor = -0.3
+				tax_daily_modifier = 0.05
+			}
+		}
+
+		#和共产主义勾结的天主教
+		ANZ_catholicism_collude_with_communism  = {
+			allowed = { tag = ANZ }
+			allowed_civil_war = { always = no }
+			modifier = {
+				communism_drift = 0.01
+				democratic_drift = 0.01
+			}
+		}
+		
+		#出生率低迷
+		ANZ_low_birth_rate = {
+			allowed = { tag = ANZ }
+			allowed_civil_war = { always = no }
+			modifier = {
+				recruitable_population = -0.3
+			}
+		}
+	}
+}

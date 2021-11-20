@@ -581,4 +581,8 @@
 #opinion modifier
  financial_support:0 "经济援助"
  strengthen_communication:0 "加强政治交流"
- 
+
+#超事件文本
+ hyper_event_1.d:0 "逸见埃莉卡的胜利"
+ hyper_event_1.t:0 "人民对我们今天所做的一无所知。\n她们以忠诚，自我牺牲和勇气进行了战斗，她们也在这场被无端强加于其之上的生死斗争中吃尽苦头。\n-逸见埃莉卡"
+ hyper_event_1.a:0 "战争的齿轮已经开始运作"

@@ -1,0 +1,190 @@
+focus_tree = {
+	id = ANZ_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ANZ
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 50 y = 2000 }
+
+
+    #安齐奥天主教会
+	focus = {
+		id = ANZ_catholic_church
+		icon = GFX_focus_ANZ_catholic_church
+		x = 4
+		y = 0
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+			#触发天主民主党上任事件
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#安齐奥天主教会
+	focus = {
+		id = ANZ_catholic_church
+		icon = GFX_focus_ANZ_catholic_church
+		x = 4
+		y = 0
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+			#触发天主民主党上任事件
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#安齐奥天主教会
+	focus = {
+		id = ANZ_catholic_church
+		icon = GFX_focus_ANZ_catholic_church
+		x = 4
+		y = 0
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+			#触发天主民主党上任事件
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#新文艺复兴
+	focus = {
+		id = ANZ_neo_renaissance 
+		icon = GFX_focus_ANZ_neo_renaissance
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = ANZ_catholic_church
+		available = { }
+		bypass = { }
+		prerequisite = { focus = ANZ_catholic_church }
+		available_if_capitulated = yes
+		completion_reward = {
+			#触发新文艺复兴事件组
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#历史性妥协
+	focus = {
+		id = ANZ_historic_compromise
+		icon = GFX_focus_ANZ_historic_compromise
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = ANZ_neo_renaissance
+		available = { }
+		bypass = { }
+		prerequisite = { focus = ANZ_neo_renaissance }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 15
+			}
+			add_political_power = 100
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#教会卫队
+	focus = {
+		id = ANZ_church_guardians
+		icon = GFX_focus_ANZ_church_guardians
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = ANZ_neo_renaissance
+		available = { democratic > 0.6 }
+		bypass = { }
+		prerequisite = { focus = ANZ_neo_renaissance }
+		available_if_capitulated = yes
+		completion_reward = {
+			#解锁编制
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#安齐奥十字军
+	focus = {
+		id = ANZ_crusader
+		icon = GFX_focus_ANZ_crusader
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = ANZ_church_guardians
+		available = { has_army_manpower = { size > 500000 } }
+		bypass = { }
+		prerequisite = { focus = ANZ_church_guardians }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_state_claim = 731
+			add_state_claim = 184
+			add_state_claim = 797
+			add_state_claim = 341
+			create_wargoal = {
+				target = KEB
+				type = take_claimed_state
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#天主休憩之地
+	focus = {
+		id = ANZ_gods_resting_place
+		icon = GFX_focus_ANZ_gods_resting_place
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = ANZ_crusader
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = ANZ_crusader }
+		available_if_capitulated = yes
+		completion_reward = {
+			454 = { add_core_of = ANZ }
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+
+}

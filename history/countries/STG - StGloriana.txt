@@ -9,21 +9,22 @@ set_convoys = 20
 
 
 add_ideas = {
-	STG_chaotic_Parliament_idea
-	STG_Economic_chaos_idea
+	STG_rise_of_the_labor_party
+	STG_cairns_economy_effect_0
+	STG_decaying_senshado
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 30
-	fascism = 20
-	communism = 20
-	neutrality = 30
+	democratic = 56
+	fascism = 0
+	communism = 28
+	neutrality = 16
 }
 
 create_country_leader = {
@@ -41,7 +42,7 @@ create_country_leader = {
 	desc = "She is the best"
 	picture = "Portrait_STG_Darjeeling.dds"
 	expire = "2000.1.1"
-	ideology = moderatism
+	ideology = conservatism
 	traits = {
 		
 	}
@@ -61,7 +62,7 @@ create_country_leader = {
 	desc = "She is the best"
 	picture = "Portrait_STG_OrangePekoe.dds"
 	expire = "2000.1.1"
-	ideology = conservatism
+	ideology = moderatism
 	traits = {
 		
 	}

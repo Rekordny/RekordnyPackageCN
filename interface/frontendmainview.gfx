@@ -28,12 +28,90 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/pi_icon.dds"
 	}
 
+	# frameAnimatedSpriteType = {
+    #     name = "GFX_loading_ooari_gif"
+    #     texturefile = "gfx/interface/gifs/loading_ooari_gif.dds"
+    #     noOfFrames = 8
+    #     animation_rate_fps = 10
+    #     looping = yes
+    #     play_on_show = yes
+    # }
+
 	frameAnimatedSpriteType = {
-        name = "GFX_loading_ooari_gif"
-        texturefile = "gfx/interface/gifs/loading_ooari_gif.dds"
-        noOfFrames = 8
-        animation_rate_fps = 8
+        name = "GFX_left_bg_gif"
+        texturefile = "gfx/interface/gifs/left_bg_gif.dds"
+        noOfFrames = 12
+        animation_rate_fps = 12
         looping = yes
         play_on_show = yes
     }
+	frameAnimatedSpriteType = {
+        name = "GFX_right_bg_gif"
+        texturefile = "gfx/interface/gifs/right_bg_gif.dds"
+        noOfFrames = 12
+        animation_rate_fps = 12
+        looping = yes
+        play_on_show = yes
+    }
+
+	textSpriteType = {
+		name = "GFX_main_lobby_single"
+		textureFile = "gfx/interface/main_lobby_single.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	textSpriteType = {
+		name = "GFX_main_lobby_multiple"
+		textureFile = "gfx/interface/main_lobby_multiple.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	textSpriteType = {
+		name = "GFX_main_lobby_option"
+		textureFile = "gfx/interface/main_lobby_option.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	textSpriteType = {
+		name = "GFX_main_lobby_credit"
+		textureFile = "gfx/interface/main_lobby_credit.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	textSpriteType = {
+		name = "GFX_main_lobby_quit"
+		textureFile = "gfx/interface/main_lobby_quit.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	textSpriteType = {
+		name = "GFX_main_lobby_load"
+		textureFile = "gfx/interface/main_lobby_load.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	textSpriteType = {
+		name = "GFX_main_lobby_continue"
+		textureFile = "gfx/interface/main_lobby_continue.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	textSpriteType = {
+		name = "GFX_main_lobby_back"
+		textureFile = "gfx/interface/main_lobby_back.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	textSpriteType = {
+		name = "GFX_main_lobby_tutorial"
+		textureFile = "gfx/interface/main_lobby_tutorial.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	textSpriteType = {
+		name = "GFX_main_lobby_newgame"
+		textureFile = "gfx/interface/main_lobby_newgame.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
 }

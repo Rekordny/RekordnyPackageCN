@@ -1,0 +1,31 @@
+spriteTypes = {
+
+	#超事件背景
+	spriteType = {
+		name = "GFX_hyper_event_bg"
+		textureFile = "/gfx/interface/hyper_event_bg.dds"
+	}
+
+	#超事件退出按钮
+	spriteType = {
+		name = "GFX_custom_cancel_btn"
+		textureFile = "/gfx/interface/custom_cancel_btn.dds"
+	}
+
+	#超事件选项
+	spriteType = {
+		name = "GFX_hyper_event_option"
+		textureFile = "/gfx/interface/hyper_event_option.dds"
+	}
+	
+	#超事件1
+	frameAnimatedSpriteType = {
+        name = "GFX_hyper_event_1"
+        texturefile = "gfx/interface/gifs/hyper_event_1.dds"
+        noOfFrames = 24
+        animation_rate_fps = 9
+        looping = yes
+        play_on_show = yes
+    }
+
+}

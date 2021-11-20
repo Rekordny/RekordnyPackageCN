@@ -1,4 +1,25 @@
 senshado_decisions = {
+	debug_hyper_event_active = {
+		available = {
+			is_debug = yes
+		}
+		days_re_enable = 1
+		complete_effect = {
+			set_country_flag = open_hyper_event
+			play_song = "extra_erika"
+		}
+	}
+
+	debug_hyper_event_close = {
+		available = {
+			is_debug = yes
+		}
+		days_re_enable = 1
+		complete_effect = {
+			clr_country_flag = open_hyper_event
+		}
+	}
+
 	debug_free_300_ssdp_points = {
 		available = {
 			is_debug = yes

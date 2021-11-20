@@ -1,0 +1,41 @@
+﻿l_english:
+ 
+#focus
+ ANZ_catholic_church:0 "安齐奥天主教会"
+ ANZ_catholic_church_desc:0 ""
+ ANZ_neo_renaissance:0 "新文艺复兴"
+ ANZ_neo_renaissance_desc:0 ""
+ ANZ_historic_compromise:0 "历史性妥协"
+ ANZ_historic_compromise_desc:0 ""
+ ANZ_church_guardians:0 "教会卫队"
+ ANZ_church_guardians_desc:0 ""
+ ANZ_crusader:0 "安齐奥十字军"
+ ANZ_gods_resting_place：0 "天主休憩之地"
+ ANZ_gods_resting_place_desc:0 ""
+ 
+  
+#custom_tooltip
+ bon_tooltip1:0 "§YAndou§!将成为国家领导人"
+
+#events
+ bonple.1.t:0 "冯布诺经济发展委员会"
+ bonple.1.d:0 ""
+ bonple.1.a:0 ""
+ 
+#ideas
+ ANZ_undeveloped_southern:0 "落后的南部地区"
+ ANZ_urbanization_trend:0 "城市化趋势"
+ ANZ_catholicism_collude_with_communism:0 "和共产主义勾结的天主教"
+ ANZ_low_birth_rate:0 "出生率低迷"
+
+
+#decisions
+ bon_missions:0 "BC自由-任务"
+ bon_government:0 "BC自由-政府"
+ bon_industry:0 "BC自由-工业"
+ 
+#flags
+ BCF_SEC_ORELANS_END:0 "BC自由的第二次奥尔良会议结束"
+
+#opinion modifier
+ 

@@ -7,7 +7,7 @@ bcf_missions = {
 		visible = { is_debug = yes }
 		fire_only_once = no
 		complete_effect = {
-			country_event = bcfreedom.76 }
+			country_event = bcfreedom.76
 		}
 	}
 

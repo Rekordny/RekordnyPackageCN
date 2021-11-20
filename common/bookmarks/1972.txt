@@ -42,9 +42,9 @@ bookmarks = {
 			history = ANZ_1972_DESC
 			ideology = democratic
 			ideas={
-				FRA_victors_of_wwi
-				FRA_disjointed_government
-				FRA_protected_by_the_maginot_line
+				ANZ_undeveloped_southern
+				ANZ_catholicism_collude_with_communism
+				ANZ_urbanization_trend
 			}
 			focuses = {
 				FRA_strengthen_government_support
@@ -57,9 +57,9 @@ bookmarks = {
 			history = STG_1972_DESC
 			ideology = democratic
 			ideas={
-				FRA_victors_of_wwi
-				FRA_disjointed_government
-				FRA_protected_by_the_maginot_line
+				STG_cairns_economy_effect_0
+				STG_rise_of_the_labor_party
+				STG_decaying_senshado
 			}
 			focuses = {
 				FRA_strengthen_government_support

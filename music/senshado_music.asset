@@ -146,3 +146,10 @@ music = {
 	name = "bgm_36"
 	file = "Girls Und Panzer OST Watashitachi, Sei Ippai Ganbarimasu!.ogg"
 }
+
+
+################EXTRA###########
+music = {
+	name = "extra_erika"
+	file = "extra_erika.ogg"
+}

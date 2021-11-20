@@ -36,3 +36,5 @@ music = { song = "bgm_33" chance = { factor = 0 modifier = {factor = 100} } }
 music = { song = "bgm_34" chance = { factor = 0 modifier = {factor = 100} } }
 music = { song = "bgm_35" chance = { factor = 0 modifier = {factor = 100} } }
 music = { song = "bgm_36" chance = { factor = 0 modifier = {factor = 100} } }
+
+music = { song = "extra_erika" chance = { factor = 0 modifier = {factor = 0} } }

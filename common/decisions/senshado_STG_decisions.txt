@@ -1,1044 +1,439 @@
-STG_House_of_Commons = {
-
-	
-	debug_free = {
-		available = {
-			is_debug = yes
-		}
-		days_re_enable = 0
-		remove_effect = {
-			log = "STG_XW: [?XW]"
-			log = "STG_MZ: [?MZ]"
-			log = "STG_GC: [?GC]"
-			log = "STG_FXS: [?FXS]"
-			log = "STG_ZL: [?ZL]"
-			log = "STG_AA: [?A]"
-			
+#工人与工党
+stg_worker_and_labor_party = {
+	#DEBUG
+	stg_debug_begin_great_strike = {
+		allowed = { tag = STG }
+		visible = { is_debug = yes }
+		fire_only_once = no
+		complete_effect = {
+			country_event = StGloriana.8
 		}
 	}
-	debug_free1 = {
-		available = {
-			is_debug = yes
-		}
-		days_re_enable = 0
-		remove_effect = {
-			add_to_variable = { XW = 1 }
-			add_to_variable = { MZ = 1 }
-			add_to_variable = { GC = 1 }
-			add_to_variable = { FXS = 1 }
-			add_to_variable = { ZL = 1 }
-			add_to_variable = { AA = 5 }
+	stg_debug_add_satisfaction = {
+		allowed = { tag = STG }
+		visible = { is_debug = yes }
+		fire_only_once = no
+		complete_effect = {
+			add_to_variable = {
+				stg_satisfaction = 40
+			}
 		}
 	}
-	debug_free2 = {
-		available = {
-			is_debug = yes
+	stg_debug_clear_strike = {
+		allowed = { tag = STG }
+		visible = { is_debug = yes }
+		fire_only_once = no
+		complete_effect = {
+			clear_variable = stg_satisfaction
+			remove_ideas = STG_worker_great_strike_5
+			remove_ideas = STG_worker_great_strike_4
+			remove_ideas = STG_worker_great_strike_3
+			remove_ideas = STG_worker_great_strike_2
+			remove_ideas = STG_worker_great_strike_1
+			remove_ideas = STG_worker_great_strike_0
 		}
-		days_re_enable = 0
-		remove_effect = {
-			if = { 
-				limit = {
-					check_variable = {
-						XW > 18
-					}
+	}
+	stg_debug_create_country = {
+		allowed = { tag = STG }
+		visible = { is_debug = yes }
+		fire_only_once = no
+		complete_effect = {
+			start_civil_war = {
+				ruling_party = democratic
+				ideology = communism
+				size = 0.4
+				only_own_territory = no
+				capital = 119
+				states = { 
+					135 113 119 134 120 136 133 121
 				}
-				log = "XW>18"
-			}
-			else = {
-				log = "XW<18"
-			}
-		}
-	}
-	
-	#起草战时动员法
-	STG_Draft_wartime_mobilization_law = {
-		icon = GFX_STG_Draft_wartime_mobilization_law
-		
-		available = {
-			
-		}
-		visible = {
-			has_completed_focus = STG_Wartime_mobilization_law	
-		}
-		fire_only_once = yes
-		
-		cost = 50
-		days_remove = 30
-		
-		
-		remove_effect = {
-			
-			random_list = {
-				
-				50 = {
-					custom_effect_tooltip = STG_Draft_wartime_mobilization_law_y
-					add_ideas = war_economy
+				keep_unit_leaders = {
 					
 				}
+				keep_political_leader = no
+			}
+			
+		}
+	}
+	#DEBUG结束
+
+	#临时提高工人薪水
+	stg_temporary_increase_workers_salaries = {
+		allowed = { tag = STG }
+		visible = { OR = { is_debug = yes OR = { has_idea = STG_worker_great_strike_0 has_idea = STG_worker_great_strike_1 has_idea = STG_worker_great_strike_2 has_idea = STG_worker_great_strike_3 has_idea = STG_worker_great_strike_4 has_idea = STG_worker_great_strike_5 } } }
+		fire_only_once = no
+		days_remove = 10
+		days_re_enable = 3
+		custom_cost_text = stg_tooltip3
+		custom_cost_trigger = { check_variable = { gold > 6.9 } }
+		complete_effect = {
+			hidden_effect = { add_to_variable = { gold = -7 } }
+		}
+		remove_effect = {
+			custom_effect_tooltip = stg_tooltip2
+			hidden_effect = {
+				random_list = {
+					13 = { add_to_variable = { stg_satisfaction = 5 } }
+					17 = { add_to_variable = { stg_satisfaction = 6 } }
+					20 = { add_to_variable = { stg_satisfaction = 7 } }
+					20 = { add_to_variable = { stg_satisfaction = 8 } }
+					17 = { add_to_variable = { stg_satisfaction = 9 } }
+					13 = { add_to_variable = { stg_satisfaction = 10 } }
+				}
+			}
+		}
+	}
+
+	#减少外务劳工输入
+	stg_reduce_labor_import = {
+		allowed = { tag = STG }
+		visible = { OR = { is_debug = yes OR = { has_idea = STG_worker_great_strike_0 has_idea = STG_worker_great_strike_1 has_idea = STG_worker_great_strike_2 has_idea = STG_worker_great_strike_3 has_idea = STG_worker_great_strike_4 has_idea = STG_worker_great_strike_5 } } }
+		fire_only_once = no
+		days_remove = 12
+		days_re_enable = 3
+		custom_cost_text = stg_tooltip5
+		custom_cost_trigger = { has_political_power > 14.9 }
+		complete_effect = {
+			hidden_effect = { add_political_power = -15 }
+		}
+		remove_effect = {
+			custom_effect_tooltip = stg_tooltip4
+			hidden_effect = {
+				random_list = {
+					20 = { add_to_variable = { stg_satisfaction = 18 } }
+					30 = { add_to_variable = { stg_satisfaction = 17 } }
+					30 = { add_to_variable = { stg_satisfaction = 16 } }
+					20 = { add_to_variable = { stg_satisfaction = 15 } }
+				}
+			}
+		}
+	}
+
+	#出动警察维持秩序
+	stg_dispatch_police_to_maintain_order = {
+		allowed = { tag = STG }
+		visible = { OR = { is_debug = yes OR = { has_idea = STG_worker_great_strike_0 has_idea = STG_worker_great_strike_1 has_idea = STG_worker_great_strike_2 has_idea = STG_worker_great_strike_3 has_idea = STG_worker_great_strike_4 has_idea = STG_worker_great_strike_5 } } }
+		fire_only_once = no
+		days_remove = 6
+		days_re_enable = 4
+		custom_cost_text = stg_tooltip7
+		custom_cost_trigger = { has_army_experience > 4.99 }
+		complete_effect = {
+			hidden_effect = { army_experience = -5 }
+		}
+		remove_effect = {
+			add_stability = -0.015
+			custom_effect_tooltip = stg_tooltip6
+			hidden_effect = {
+				random_list = {
+					20 = { add_to_variable = { stg_satisfaction = 21 } }
+					30 = { add_to_variable = { stg_satisfaction = 20 } }
+					30 = { add_to_variable = { stg_satisfaction = 19 } }
+					20 = { add_to_variable = { stg_satisfaction = 18 } }
+				}
+			}
+		}
+	}
+
+	#举办战车道庆典
+	stg_host_senshado_festival = {
+		allowed = { tag = STG }
+		visible = { OR = { is_debug = yes OR = { has_idea = STG_worker_great_strike_0 has_idea = STG_worker_great_strike_1 has_idea = STG_worker_great_strike_2 has_idea = STG_worker_great_strike_3 has_idea = STG_worker_great_strike_4 has_idea = STG_worker_great_strike_5 } } }
+		fire_only_once = no
+		days_remove = 20
+		days_re_enable = 5
+		custom_cost_text = stg_tooltip8
+		custom_cost_trigger = { check_variable = { ssdp > 39.9 } }
+		complete_effect = {
+			add_to_variable = { ssdp = -40 }
+		}
+		remove_effect = {
+			add_stability = -0.015
+			custom_effect_tooltip = stg_tooltip9
+			hidden_effect = {
+				random_list = {
+					20 = { add_to_variable = { stg_satisfaction = 10 } }
+				}
+			}
+		}
+	}
+
+
+	#罢工正在轰轰烈烈的进行中
+	stg_great_worker_strike_ongoing = {
+		allowed = { tag = STG }
+		available = {
+			custom_trigger_tooltip = { tooltip = stg_tooltip1 }
+			AND = { check_variable = { stg_satisfaction > 30 } }
+		}
+		is_good = no
+		activation = { OR = { has_idea = STG_worker_great_strike_0 has_idea = STG_worker_great_strike_1 has_idea = STG_worker_great_strike_2 has_idea = STG_worker_great_strike_3 has_idea = STG_worker_great_strike_4 has_idea = STG_worker_great_strike_5 } } 
+		days_mission_timeout = 50
+		timeout_effect = {
+			if = { limit = { has_idea = STG_worker_great_strike_0 } swap_ideas = {
+				remove_idea = STG_worker_great_strike_0
+				add_idea = STG_worker_great_strike_1
+			} }
+			else_if = { limit = { has_idea = STG_worker_great_strike_1 } swap_ideas = {
+				remove_idea = STG_worker_great_strike_1
+				add_idea = STG_worker_great_strike_2
+			} }
+			else_if = { limit = { has_idea = STG_worker_great_strike_2 } swap_ideas = {
+				remove_idea = STG_worker_great_strike_2
+				add_idea = STG_worker_great_strike_3
+			} }
+			else_if = { limit = { has_idea = STG_worker_great_strike_3 } swap_ideas = {
+				remove_idea = STG_worker_great_strike_3
+				add_idea = STG_worker_great_strike_4
+			} }
+			else_if = { limit = { has_idea = STG_worker_great_strike_4 } swap_ideas = {
+				remove_idea = STG_worker_great_strike_4
+				add_idea = STG_worker_great_strike_5
+			} }
+			else = {
+				remove_ideas = STG_worker_great_strike_5
+				126 = {
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+				128 = {
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+				129 = {
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+				125 = {
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+			}
+            add_political_power = -50
+        }
+		complete_effect = {
+			if = { limit = { has_idea = STG_worker_great_strike_5 } swap_ideas = {
+				remove_idea = STG_worker_great_strike_5
+				add_idea = STG_worker_great_strike_4
+			} }
+			else_if = { limit = { has_idea = STG_worker_great_strike_4 } swap_ideas = {
+				remove_idea = STG_worker_great_strike_4
+				add_idea = STG_worker_great_strike_3
+			} }
+			else_if = { limit = { has_idea = STG_worker_great_strike_3 } swap_ideas = {
+				remove_idea = STG_worker_great_strike_3
+				add_idea = STG_worker_great_strike_2
+			} }
+			else_if = { limit = { has_idea = STG_worker_great_strike_2 } swap_ideas = {
+				remove_idea = STG_worker_great_strike_2
+				add_idea = STG_worker_great_strike_1
+			} }
+			else_if = { limit = { has_idea = STG_worker_great_strike_1 } swap_ideas = {
+				remove_idea = STG_worker_great_strike_1
+				add_idea = STG_worker_great_strike_0
+			} }
+			else = {
+				remove_ideas = STG_worker_great_strike_0
+			}
+			add_to_variable = { stg_satisfaction = -30 }
+			hidden_effect = {
 				
-				50 = {
-					custom_effect_tooltip = STG_Draft_wartime_mobilization_law_n
-					add_stability = 0.1
-					add_war_support = -0.1
-				}
 			}
 		}
-		
 	}
-	
-	#冷静期
-	STG_Cooling_off_period = {
-		icon = GFX_STG_Cooling_off_period
-		
-		activation = {
-			has_completed_focus = STG_Calm_down	
-		}
-		visible = {
-			has_completed_focus = STG_Calm_down
-		}
-		available = {
-			has_completed_focus = STG_Return_peace
-		}
-		
-		days_mission_timeout = 150
-		
-		remove_effect = {
-			
-		}
-		
-		timeout_effect = {
-			country_event = { id = event_StGloriana.8 days = 1}
-		}
-		
-	}
-	
-	#做出让步
-	STG_Make_concessions = {
-		icon = GFX_STG_Make_concessions
-		
-		visible = {
-			has_completed_focus = STG_Let_take_our_time
-		}
-		available = {
-			STG_House_of_Commons_a = yes
-		}
+}
+
+stg_government = {
+	#维和军队扩大法
+	stg_peacekeeping_force_expansion_act = {
+		allowed = { tag = STG }
+		visible = { OR = { is_debug = yes has_completed_focus = STG_emergency_volunteer_dispatch } }
+		available = { democratic > 0.65 }
 		fire_only_once = yes
-		
-		cost = 50
-		days_remove = 30
-		
+		days_remove = 70
+		custom_cost_text = stg_tooltip11
+		custom_cost_trigger = { has_political_power > 99.9 }
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -100
+			}
+		}
 		remove_effect = {
-			swap_ideas = {
-				remove_idea = STG_rise_extremist_forces_idea 
-				add_idea = STG_rise_extremist_forces_idea_1 
-			}
-			add_days_mission_timeout = {
-				mission = STG_Cooling_off_period 
-				days = 20
-			}
+			add_ideas = STG_peacekeeping_force_expansion_act
 		}
 	}
-	
-	#调和双方
-	STG_become_reconciled = {
-		icon = GFX_STG_become_reconciled
-		
-		visible = {
-			has_completed_focus = STG_become_reconciled
-		}
-		available = {
-			STG_House_of_Commons_c = yes
-		}
+	#战车道巡回演出
+	stg_senshado_tour_show = {
+		allowed = { tag = STG }
+		visible = { OR = { is_debug = yes has_completed_focus = STG_british_concern } }
+		available = { has_stability < 0.6 }
 		fire_only_once = yes
-		
-		cost = 75
-		days_remove = 40
-		
-		remove_effect = {
-			if = {
-				limit = { has_idea = STG_bickering_Parliament_idea }
-				swap_ideas = {
-					remove_idea = STG_bickering_Parliament_idea
-					add_idea = STG_bickering_Parliament_idea_A_1_1
-				}
-			}
-			else_if = {
-				limit = { has_idea = STG_bickering_Parliament_idea_A_1_1 }
-				swap_ideas = {
-					remove_idea = STG_bickering_Parliament_idea_A_1_1
-					add_idea = STG_bickering_Parliament_idea_A_1_2
-				}
-			}
-			else_if = {
-				limit = { has_idea = STG_bickering_Parliament_idea_A_1_2 }
-				swap_ideas = {
-					remove_idea = STG_bickering_Parliament_idea_A_1_2
-					add_idea = STG_bickering_Parliament_idea_A_1_3
-				}
-			}
-			else = {  }
-			add_days_mission_timeout = {
-				mission = STG_Cooling_off_period 
-				days = 20
+		days_remove = 90
+		custom_cost_text = stg_tooltip17
+		custom_cost_trigger = { has_political_power > 79.9 check_variable = {
+			ssdp > 119.9
+		} }
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -80
+				add_to_variable = { ssdp = -120 }
 			}
 		}
-		
-	}
-	
-	#缓和矛盾
-	STG_Ease_contradictions = {
-		icon = GFX_STG_Ease_contradictions
-		
-		visible = {
-			has_completed_focus = STG_piece_cake
-		}
-		available = {
-			STG_House_of_Commons_b = yes
-		}
-		fire_only_once = yes
-		
-		cost = 50
-		days_remove = 20
-		
 		remove_effect = {
-			if = {
-				limit = { has_idea = STG_bickering_Parliament_idea }
-				swap_ideas = {
-					remove_idea = STG_bickering_Parliament_idea
-					add_idea = STG_bickering_Parliament_idea_A_1_1
-				}
-			}
-			else_if = {
-				limit = { has_idea = STG_bickering_Parliament_idea_A_1_1 }
-				swap_ideas = {
-					remove_idea = STG_bickering_Parliament_idea_A_1_1
-					add_idea = STG_bickering_Parliament_idea_A_1_2
-				}
-			}
-			else_if = {
-				limit = { has_idea = STG_bickering_Parliament_idea_A_1_2 }
-				swap_ideas = {
-					remove_idea = STG_bickering_Parliament_idea_A_1_2
-					add_idea = STG_bickering_Parliament_idea_A_1_3
-				}
-			}
-			else = {  }
-			add_days_mission_timeout = {
-				mission = STG_Cooling_off_period 
-				days = 15
-			}
+			add_stability = 0.08
 		}
 	}
-	
-	#平衡极端派
-	STG_Balanced_extremists = {
-		icon = STG_Balanced_extremists
-		
-		visible = {
-			has_completed_focus = STG_Maintain_balance
-		}
-		available = {
-			
-		}
-		
-		cost = 50
-		days_remove = 30
-		
-		remove_effect = {
-			add_popularity = {
-				ideology = fascism  
-				popularity = -0.01
-			}
-			add_popularity = {
-				ideology = communism  
-				popularity = -0.01
-			}
-			custom_effect_tooltip = STG_Balanced_extremists_tt
-			add_to_variable = { FXS = -10 }
-			add_to_variable = { GC = -10 }
-		}
-	}
-	
-	#共产主义者暴动
-	STG_Communist_Uprising = {
-		icon = GFX_STG_Communist_Uprising
-		
-		activation = {
-			has_completed_focus = STG_Shut_fuck_up	
-		}
-		visible = {
-			has_completed_focus = STG_Shut_fuck_up
-		}
-		available = {
-			has_government = communism
-		}
-		
-		days_mission_timeout = 100
-		
-		remove_effect = {
-			
-		}
-		
-		timeout_effect = {
-			
-		}
-		
-	}
-	
-	#法西斯主义者暴动
-	STG_Fascist_riots = {
-		icon = GFX_STG_Fascist_riots
-		
-		activation = {
-			has_completed_focus = STG_Shut_fuck_up	
-		}
-		visible = {
-			has_completed_focus = STG_Shut_fuck_up
-		}
-		available = {
-			has_government = fascism
-		}
-		
-		days_mission_timeout = 100
-		
-		remove_effect = {
-			
-		}
-		
-		timeout_effect = {
-			
-		}
-		
-	}
-	
-	#压制法西斯主义者活动
-	STG_Suppression_fascist_activities = {
-		icon = GFX_STG_Suppression_fascist_activities
-		
-		visible = {
-			has_completed_focus = STG_Night_coming
-		}
-		available = {
-			STG_House_of_Commons_b = yes
-		}
-		
-		cost = 50
-		days_re_enable = 50
-		days_remove = 10
-		
-		
-		remove_effect = {
-			add_stability = -0.05
-			custom_effect_tooltip = STG_Suppression_fascist_activities_tt
-			add_to_variable = { FXSLL = -5 }
-			add_to_variable = { FXSFN = 10 }
-		}
-	}
-	
-	#压制共产主义者活动
-	STG_Suppression_Communist_activities = {
-		icon = GFX_STG_Suppression_Communist_activities
-		
-		visible = {
-			has_completed_focus = STG_Night_coming
-		}
-		available = {
-			STG_House_of_Commons_b = yes
-		}
-		
-		cost = 50
-		days_re_enable = 50
-		days_remove = 10
-		
-		remove_effect = {
-			add_stability = -0.05
-			custom_effect_tooltip = STG_Suppression_Communist_activities_tt
-			add_to_variable = { GCLL = -5 }
-			add_to_variable = { GCFN = 10 }
-		}
-	}
-	
-	#处理共产党的特殊手段
-	STG_GC_Special_means = {
-		icon = GFX_STG_GC_Special_means
-		
-		visible = {
-			has_completed_focus = STG_Dealing_with_Communist_Party
-		}
-		available = {
-			
-		}
-		
-		cost = 50
-		days_re_enable = 50
-		days_remove = 5
-		
-		modifier = {
-			consumer_goods_factor = 0.1
-		}
-		
-		remove_effect = {
-			custom_effect_tooltip = STG_GC_Special_means_tt
-			add_to_variable = { GC = -10 }
-			add_to_variable = { XW = 10 }
-		}
-	}
-	
-	#处理共产党的严酷手段
-	STG_GC_Harsh_means = {
-		icon = GFX_STG_GC_Harsh_means
-		
-		visible = {
-			has_completed_focus = STG_Dealing_with_Communist_Party
-		}
-		available = {
-			
-		}
-		
-		cost = 100
-		days_remove = 20
-		
-		
-		remove_effect = {
-			add_stability = -0.05
-			custom_effect_tooltip = STG_GC_Harsh_means_tt
-			add_to_variable = { GCLL = -10 }
-			add_to_variable = { GCFN = 20 }
-		}
-	}
-	
-	#处理法西斯党的特殊手段
-	STG_FXS_Special_means = {
-		icon = GFX_STG_FXS_Special_means
-		
-		visible = {
-			has_completed_focus = STG_Dealing_with_Communist_Party
-		}
-		available = {
-			
-		}
-		
-		cost = 50
-		days_re_enable = 50
-		days_remove = 5
-		
-		modifier = {
-			consumer_goods_factor = 0.1
-		}
-		
-		remove_effect = {
-			custom_effect_tooltip = STG_FXS_Special_means_tt
-			add_to_variable = { FXS = -10 }
-			add_to_variable = { XW = 10 }
-		}
-	}
-	
-	#处理法西斯党的严酷手段
-	STG_FXS_Harsh_means = {
-		icon = GFX_STG_FXS_Harsh_means
-		
-		visible = {
-			has_completed_focus = STG_Dealing_with_Communist_Party
-		}
-		available = {
-			
-		}
-		
-		cost = 100
-		days_remove = 20
-		
-		
-		remove_effect = {
-			add_stability = -0.05
-			custom_effect_tooltip = STG_FXS_Harsh_means_tt
-			add_to_variable = { FXSLL = -10 }
-			add_to_variable = { FXSFN = 20 }
-		}
-	}
+}
+
+stg_government = {
 	
 }
 
-STG_political_actions = {
-
-	#在法国修建英式战车道学院
-	STG_Building_an_English_College = {
-		icon = GFX_STG_Building_an_English_College
-		
-		visible = {
-			has_country_flag = STG_Building_an_English_College_flag
-		}
-		available = {
-			
-		}
-		
-		cost = 50
-		days_remove = 100
-		
-		modifier = {
-			consumer_goods_factor = 0.05
-		}
-		
-		remove_effect = {
-			add_timed_idea = { idea = STG_Building_an_English_College_idea  days = 200 }
-			BCF = {
-				add_timed_idea = { idea = STG_Building_an_English_College_idea  days = 200 }
-			}
-		}
-	}
-
-	#散布谣言
-	STG_Spread_rumors = {
-		icon = GFX_STG_Spread_rumors
-		
-		visible = {
-			has_completed_focus = STG_Split_BC
-		}
-		available = {
-			
-		}
+stg_industry = {
+	#转移黑森峰工业至本土
+	stg_transfer_kga_industry_mainland = {
+		allowed = { tag = STG }
+		visible = { OR = { is_debug = yes has_country_flag = STG_TRANSFER_KGA_INDUSTRY_0 } }
+		available = { has_equipment = { convoy > 49 } controls_state = 51 controls_state = 57 controls_state = 59 }
 		fire_only_once = yes
-		
-		cost = 50
-		days_remove = 30
-		
-		remove_effect = {
-			BCF = {
-				add_stability = -0.1
-				add_war_support = -0.1
+		days_remove = 150
+		custom_cost_text = stg_tooltip13
+		custom_cost_trigger = { AND = { has_political_power > 99.9 check_variable = { gold > 39.9 } } }
+		cancel_trigger = {
+			NOT = {
+				controls_state = 51
+				controls_state = 57
+				controls_state = 59
 			}
 		}
-	}
-	
-	#整合BC领土
-	STG_Integrated_territory_BC = {
-		icon = GFX_STG_Integrated_territory_BC
-		name = STG_Integrated_territory_BC
-		
-		visible = {
-			has_completed_focus = STG_Receive_BC
-		}
-		available = {
-			28 = {
-				compliance > 70
-				is_core_of = BCF
-				is_owned_and_controlled_by = STG
+		complete_effect = {
+			51 = {
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
 			}
-		}
-		cost = 100
-		days_remove = 60
-		highlight_state_targets = { state = 28 }
-		on_map_mode = map_only
-		remove_effect = {
-			28 = { add_core_of = STG }
-		}
-	}
-	STG_Integrated_territory_BC_1 = {
-		icon = GFX_STG_Integrated_territory_BC
-		name = STG_Integrated_territory_BC
-		
-		visible = {
-			has_completed_focus = STG_Receive_BC
-		}
-		available = {
-			14 = {
-				compliance > 70
-				is_core_of = BCF
-				is_owned_and_controlled_by = STG
+			57 = {
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
 			}
-		}
-		cost = 100
-		days_remove = 60
-		highlight_state_targets = { state = 14 }
-		on_map_mode = map_only
-		remove_effect = {
-			14 = { add_core_of = STG }
-		}
-	}
-	STG_Integrated_territory_BC_2 = {
-		icon = GFX_STG_Integrated_territory_BC
-		name = STG_Integrated_territory_BC
-		visible = {
-			has_completed_focus = STG_Receive_BC
-		}
-		available = {
-			30 = {
-				compliance > 70
-				is_core_of = BCF
-				is_owned_and_controlled_by = STG
+			59 = {
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
 			}
-		}
-		cost = 100
-		days_remove = 60
-		highlight_state_targets = { state = 30 }
-		on_map_mode = map_only
-		remove_effect = {
-			30 = { add_core_of = STG }
-		}
-	}
-	STG_Integrated_territory_BC_3 = {
-		icon = GFX_STG_Integrated_territory_BC
-		name = STG_Integrated_territory_BC
-		visible = {
-			has_completed_focus = STG_Receive_BC
-		}
-		available = {
-			16 = {
-				compliance > 70
-				is_core_of = BCF
-				is_owned_and_controlled_by = STG
-			}
-		}
-		cost = 100
-		days_remove = 60
-		highlight_state_targets = { state = 16 }
-		on_map_mode = map_only
-		remove_effect = {
-			16 = { add_core_of = STG }
-		}
-	}
-	STG_Integrated_territory_BC_4 = {
-		icon = GFX_STG_Integrated_territory_BC
-		name = STG_Integrated_territory_BC
-		visible = {
-			has_completed_focus = STG_Receive_BC
-		}
-		available = {
-			18 = {
-				compliance > 70
-				is_core_of = BCF
-				is_owned_and_controlled_by = STG
-			}
-		}
-		cost = 100
-		days_remove = 60
-		highlight_state_targets = { state = 18 }
-		on_map_mode = map_only
-		remove_effect = {
-			18 = { add_core_of = STG }
-		}
-	}
-	STG_Integrated_territory_BC_5 = {
-		icon = GFX_STG_Integrated_territory_BC
-		name = STG_Integrated_territory_BC
-		visible = {
-			has_completed_focus = STG_Receive_BC
-		}
-		available = {
-			24 = {
-				compliance > 70
-				is_core_of = BCF
-				is_owned_and_controlled_by = STG
-			}
-		}
-		cost = 100
-		days_remove = 60
-		highlight_state_targets = { state = 24 }
-		on_map_mode = map_only
-		remove_effect = {
-			24 = { add_core_of = STG }
-		}
-	}
-	STG_Integrated_territory_BC_6 = {
-		icon = GFX_STG_Integrated_territory_BC
-		name = STG_Integrated_territory_BC
-		visible = {
-			has_completed_focus = STG_Receive_BC
-		}
-		available = {
-			23 = {
-				compliance > 70
-				is_core_of = BCF
-				is_owned_and_controlled_by = STG
-			}
-		}
-		cost = 100
-		days_remove = 60
-		highlight_state_targets = { state = 23 }
-		on_map_mode = map_only
-		remove_effect = {
-			23 = { add_core_of = STG }
-		}
-	}
-	STG_Integrated_territory_BC_7 = {
-		icon = GFX_STG_Integrated_territory_BC
-		name = STG_Integrated_territory_BC
-		visible = {
-			has_completed_focus = STG_Receive_BC
-		}
-		available = {
-			33 = {
-				compliance > 70
-				is_core_of = BCF
-				is_owned_and_controlled_by = STG
-			}
-		}
-		cost = 100
-		days_remove = 60
-		highlight_state_targets = { state = 33 }
-		on_map_mode = map_only
-		remove_effect = {
-			33 = { add_core_of = STG }
-		}
-	}
-	STG_Integrated_territory_BC_8 = {
-		icon = GFX_STG_Integrated_territory_BC
-		name = STG_Integrated_territory_BC
-		visible = {
-			has_completed_focus = STG_Receive_BC
-		}
-		available = {
-			26 = {
-				compliance > 70
-				is_core_of = BCF
-				is_owned_and_controlled_by = STG
-			}
-		}
-		cost = 100
-		days_remove = 60
-		highlight_state_targets = { state = 26 }
-		on_map_mode = map_only
-		remove_effect = {
-			26 = { add_core_of = STG }
-		}
-	}
-	STG_Integrated_territory_BC_9 = {
-		icon = GFX_STG_Integrated_territory_BC
-		name = STG_Integrated_territory_BC
-		visible = {
-			has_completed_focus = STG_Receive_BC
-		}
-		available = {
-			22 = {
-				compliance > 70
-				is_core_of = BCF
-				is_owned_and_controlled_by = STG
-			}
-		}
-		cost = 100
-		days_remove = 60
-		highlight_state_targets = { state = 22 }
-		on_map_mode = map_only
-		remove_effect = {
-			22 = { add_core_of = STG }
-		}
-	}
-	STG_Integrated_territory_BC_10 = {
-		icon = GFX_STG_Integrated_territory_BC
-		name = STG_Integrated_territory_BC
-		visible = {
-			has_completed_focus = STG_Receive_BC
-		}
-		available = {
-			20 = {
-				compliance > 70
-				is_core_of = BCF
-				is_owned_and_controlled_by = STG
-			}
-		}
-		cost = 100
-		days_remove = 60
-		highlight_state_targets = { state = 20 }
-		on_map_mode = map_only
-		remove_effect = {
-			20 = { add_core_of = STG }
-		}
-	}
-	STG_Integrated_territory_BC_11 = {
-		icon = GFX_STG_Integrated_territory_BC
-		name = STG_Integrated_territory_BC
-		visible = {
-			has_completed_focus = STG_Receive_BC
-		}
-		available = {
-			21 = {
-				compliance > 70
-				is_core_of = BCF
-				is_owned_and_controlled_by = STG
-			}
-		}
-		cost = 100
-		days_remove = 60
-		highlight_state_targets = { state = 21 }
-		on_map_mode = map_only
-		remove_effect = {
-			21 = { add_core_of = STG }
-		}
-	}
-	STG_Integrated_territory_BC_12 = {
-		icon = GFX_STG_Integrated_territory_BC
-		name = STG_Integrated_territory_BC
-		visible = {
-			has_completed_focus = STG_Receive_BC
-		}
-		available = {
-			32 = {
-				compliance > 70
-				is_core_of = BCF
-				is_owned_and_controlled_by = STG
-			}
-		}
-		cost = 100
-		days_remove = 60
-		highlight_state_targets = { state = 32 }
-		on_map_mode = map_only
-		remove_effect = {
-			32 = { add_core_of = STG }
-		}
-	}
-	STG_Integrated_territory_BC_13 = {
-		icon = GFX_STG_Integrated_territory_BC
-		name = STG_Integrated_territory_BC
-		visible = {
-			has_completed_focus = STG_Receive_BC
-		}
-		available = {
-			735 = {
-				compliance > 70
-				is_core_of = BCF
-				is_owned_and_controlled_by = STG
-			}
-		}
-		cost = 100
-		days_remove = 60
-		highlight_state_targets = { state = 735 }
-		on_map_mode = map_only
-		remove_effect = {
-			735 = { add_core_of = STG }
-		}
-	}
-	
-	#与都柏林精英协商
-	STG_consult = {
-		icon = GFX_STG_consult
-		
-		activation = {
-			has_country_flag = STG_consult_flag
-		}
-		visible = {
-			has_country_flag = STG_consult_flag
-		}
-		available = {
-			113 = {
-				industrial_complex > 2
-			}
-		}
-		
-		days_mission_timeout = 365
-		
-		remove_effect = {
 			hidden_effect = {
-				clr_country_flag = STG_consult_flag
+				add_to_variable = { gold = -40 }
+			    add_political_power = -100
 			}
 		}
-		
-		timeout_effect = {
+		remove_effect = {
+			125 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			126 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			127 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#转移黑森峰工业至华夫
+	stg_transfer_kga_industry_waf = {
+		allowed = { tag = STG }
+		visible = { OR = { is_debug = yes has_country_flag = STG_TRANSFER_KGA_INDUSTRY_1 } }
+		available = { controls_state = 51 controls_state = 57 controls_state = 59 }
+		fire_only_once = yes
+		days_remove = 60
+		custom_cost_text = stg_tooltip14
+		custom_cost_trigger = { AND = { has_political_power > 49.9 check_variable = { gold > 19.9 } } }
+		cancel_trigger = {
+			OR = {
+				has_war_with = WAF
+				NOT = {
+					controls_state = 51
+					controls_state = 57
+					controls_state = 59
+				}
+			}
+			
+		}
+		complete_effect = {
+			51 = {
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			57 = {
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			59 = {
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+			}
 			hidden_effect = {
-				clr_country_flag = STG_consult_flag
+				add_to_variable = { gold = -20 }
+			    add_political_power = -50
 			}
 		}
-		
-	}
-	
-	#爱尔兰独立
-	STG_Irish_independence = {
-		icon = GFX_STG_Irish_independence
-		
-		activation = {
-			has_completed_focus = STG_hurry_up
-		}
-		visible = {
-			has_completed_focus = STG_hurry_up
-		}
-		available = {
-			country_exists = IRL
-		}
-		
-		fire_only_once = yes
-		days_mission_timeout = 120
-		
 		remove_effect = {
-			IRL = {
-				transfer_state = 113
-				transfer_state = 135
+			35 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
 			}
-			unlock_decision_tooltip = STG_Infiltrate_rebel_groups
-			unlock_decision_tooltip = STG_War_propaganda
-			declare_war_on = {
-				target = IRL
-				type = annex_everything
+			36 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
 			}
-		}
-		
-		timeout_effect = {
-			IRL = {
-				transfer_state = 113
-				transfer_state = 135
-			}
-			unlock_decision_tooltip = STG_Infiltrate_rebel_groups
-			unlock_decision_tooltip = STG_War_propaganda
-			declare_war_on = {
-				target = IRL
-				type = annex_everything
-			}
-		}
-		
-	}
-	
-	#渗透反叛组织
-	STG_Infiltrate_rebel_groups = {
-		icon = GFX_STG_Infiltrate_rebel_groups
-		
-		visible = {
-			has_decision = STG_Irish_independence
-		}
-		available = {
-			
-		}
-		fire_only_once = yes
-		
-		cost = 50
-		
-		remove_effect = {
-			
-		}
-	}
-	
-	#战争宣传
-	STG_War_propaganda = {
-		icon = GFX_STG_Infiltrate_rebel_groups
-		
-		visible = {
-			has_decision = STG_Irish_independence
-		}
-		available = {
-			
-		}
-		fire_only_once = yes
-		
-		cost = 50
-		
-		remove_effect = {
-			add_timed_idea = { 
-				idea = STG_War_unification_idea
-				days = 60
+			7 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
 			}
 		}
 	}
-	
-	
-	#更加紧密的关系
-	STG_Closer_relationship = {
-		icon = GFX_STG_Closer_relationship
-		
-		visible = {
-			has_country_flag = STG_Casamento_Real_flag
-		}
-		available = {
-			
-		}
-		fire_only_once = yes
-		
-		cost = 200
-		days_remove = 200
-		
-		remove_effect = {
-			set_autonomy = { 
-				target = BDH
-				autonomy_state = autonomy_colony
-			}
-		}
-	}
-	
-	#组建呼啸兵
-	STG_Formation_Wuthering_soldiers = {
-		icon = GFX_STG_Formation_Wuthering_soldiers
-		
-		visible = {
-			has_completed_focus = STG_United_Kingdom_Great_Britain_Libya
-		}
-		available = {
-			
-		}
-		fire_only_once = yes
-		
-		cost = 50
-		days_remove = 120
-		
-		remove_effect = {
-			
-		}
-	}
-	
-	#扩充军队
-	STG_Expand_army = {
-		icon = GFX_STG_Expand_army
-		
-		visible = {
-			has_completed_focus = STG_raise_enlarge_army
-		}
-		available = {
-			
-		}
-		
-		cost = 100
-		days_remove = 30
-		days_re_enable = 60
-		
-		modifier = {
-			consumer_goods_factor = 0.05
-		}
-		
-		remove_effect = {
-			add_manpower = 5000
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 500
-				producer = STG
-			}
-		}
-	}
-	
-	#对[VIG.GetName]最后通牒
-	STG_Ultimatum_VIG = {
-		icon = GFX_STG_Ultimatum_VIG
-		
-		visible = {
-			has_completed_focus = STG_Nordic_stability
-		}
-		available = {
-			
-		}
-		fire_only_once = yes
-		
-		cost = 100
-		days_remove = 50
-		
-		remove_effect = {
-			VIG = { country_event = { id = event_StGloriana.85 days = 1 } }
-		}
-	}
-	
-	#对[JHS.GetName]最后通牒
-	STG_Ultimatum_JHS = {
-		icon = GFX_STG_Ultimatum_JHS
-		
-		visible = {
-			has_completed_focus = STG_Nordic_stability
-		}
-		available = {
-			
-		}
-		fire_only_once = yes
-		
-		cost = 100
-		days_remove = 50
-		
-		remove_effect = {
-			JHS = { country_event = { id = event_StGloriana.86 days = 1 } }
-		}
-	}
-	
-	
-	
-
 }

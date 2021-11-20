@@ -1,25 +1,26 @@
-#下议院
-STG_House_of_Commons = {
+stg_worker_and_labor_party = {
 	icon = GFX_decision_category_senshado
-	
-	allowed = {
-		original_tag = STG
-	}
-	allowed = {
-	}
+	allowed = { original_tag = STG }
 	visible = {
 	}
 }
-
-#政治行动
-STG_political_actions = {
+stg_government = {
 	icon = GFX_decision_category_senshado
-	
-	allowed = {
-		original_tag = STG
-	}
-	allowed = {
-	}
-	visible = {
-	}
+	allowed = { original_tag = STG }
+}
+stg_diplomatic = {
+	icon = GFX_decision_category_senshado
+	allowed = { original_tag = STG }
+}
+stg_missions = {
+	icon = GFX_decision_category_senshado
+	allowed = { original_tag = STG }
+}
+stg_industry = {
+	icon = GFX_decision_category_senshado
+	allowed = { original_tag = STG }
+}
+stg_civil_war = {
+	icon = GFX_decision_category_senshado
+	allowed = { original_tag = STG }
 }
