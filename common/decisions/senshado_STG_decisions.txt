@@ -6,7 +6,10 @@ stg_worker_and_labor_party = {
 		visible = { is_debug = yes }
 		fire_only_once = no
 		complete_effect = {
-			country_event = StGloriana.8
+			add_popularity = {
+				ideology = communism
+				popularity = 0.2
+			}
 		}
 	}
 	stg_debug_add_satisfaction = {
@@ -291,9 +294,72 @@ stg_government = {
 			add_stability = 0.08
 		}
 	}
+	#对共产主义的负面报道
+	stg_negative_reports_on_communism = {
+		allowed = { tag = STG }
+		visible = { OR = { is_debug = yes has_completed_focus = STG_control_social_media } }
+		available = { communism > 0.1 }
+		fire_only_once = no
+		days_remove = 60
+		custom_cost_text = stg_tooltip19
+		custom_cost_trigger = { has_political_power > 79.9 }
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -80
+			}
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.07
+			}
+		}
+	}
+	#对法西斯主义的负面报道
+	stg_negative_reports_on_fascism = {
+		allowed = { tag = STG }
+		visible = { OR = { is_debug = yes has_completed_focus = STG_control_social_media } }
+		available = { fascism > 0.1 }
+		fire_only_once = no
+		days_remove = 60
+		custom_cost_text = stg_tooltip19
+		custom_cost_trigger = { has_political_power > 79.9 }
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -80
+			}
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.07
+			}
+		}
+	}
+	#对皇家派系的负面报道
+	stg_negative_reports_on_royal = {
+		allowed = { tag = STG }
+		visible = { OR = { is_debug = yes has_completed_focus = STG_control_social_media } }
+		available = { neutrality > 0.1 }
+		fire_only_once = no
+		days_remove = 60
+		custom_cost_text = stg_tooltip19
+		custom_cost_trigger = { has_political_power > 79.9 }
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -80
+			}
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.07
+			}
+		}
+	}
 }
 
-stg_government = {
+stg_diplomatic = {
 	
 }
 

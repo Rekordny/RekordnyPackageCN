@@ -17,7 +17,7 @@ ideas = {
 			allowed_civil_war = { always = no }
 			modifier = {
 				production_speed_infrastructure_factor = 0.2
-				conscription_factor = -0.3
+				conscription_factor = -0.25
 				tax_daily_modifier = 0.05
 			}
 		}
@@ -40,5 +40,78 @@ ideas = {
 				recruitable_population = -0.3
 			}
 		}
+
+		#扩大意面出口
+		ANZ_export_more_pasta = {
+			allowed = { tag = ANZ }
+			allowed_civil_war = { always = no }
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		#城市化趋势加速1
+		ANZ_urbanization_trend_enlarge_0 = {
+			allowed = { tag = ANZ }
+			allowed_civil_war = { always = no }
+			modifier = {
+				production_speed_infrastructure_factor = 0.4
+				conscription_factor = -0.5
+				tax_daily_modifier = 0.1
+			}
+		}
+
+		#城市化趋势加速2
+		ANZ_urbanization_trend_enlarge_1 = {
+			allowed = { tag = ANZ }
+			allowed_civil_war = { always = no }
+			modifier = {
+				production_speed_infrastructure_factor = 0.4
+				tax_daily_modifier = 0.1
+			}
+		}
+
+		#重农经济
+		ANZ_agricultural_economy = {
+			allowed = { tag = ANZ }
+			allowed_civil_war = { always = no }
+			modifier = {
+				monthly_population = 0.15
+				tax_daily_modifier = 0.15
+				industrial_capacity_factory = -0.05
+			}
+		}
+
+		#安齐奥民族阵线
+		ANZ_national_front = {
+			allowed = { tag = ANZ }
+			allowed_civil_war = { always = no }
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				army_speed_factor = 0.1
+			}
+		}
+
+		#职业工团制度1
+		ANZ_occupational_community_system_0 = {
+			allowed = { tag = ANZ }
+			allowed_civil_war = { always = no }
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+
+		#职业工团制度2
+		ANZ_occupational_community_system_1 = {
+			allowed = { tag = ANZ }
+			allowed_civil_war = { always = no }
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+
 	}
 }

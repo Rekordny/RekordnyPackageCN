@@ -15,7 +15,7 @@
 	focus = {
 		id = STG_winning_party_united_college
 		icon = GFX_focus_STG_winning_party_united_college
-		x = 2
+		x = 15
 		y = 0
 	
 		available = {  }
@@ -271,7 +271,12 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 50
+			add_tech_bonus = {
+				category = industry
+				uses = 2
+				bonus = 0.5
+			}
 		}
 		
 		ai_will_do = {
@@ -740,7 +745,7 @@
 		relative_position_id = STG_attitude
 		x = 0
 		y = 1
-		available = { OR = { has_country_flag = STG_WORKER_ACCEPT_US has_country_flag = STG_LIVE_WITH_COMMINISTS } }
+		available = {  }
 		prerequisite = { focus = STG_attitude }
 		mutually_exclusive = { }
 		bypass = { }
@@ -750,24 +755,37 @@
 		available_if_capitulated = no
 		completion_reward = {
 			if = { limit = { has_country_flag = STG_WORKER_ACCEPT_US } 
-				remove_ideas = STG_rise_of_the_labor_party_0
+				country_event = { id = StGloriana.29 days = 3 }
 			}
 			if = { limit = { has_country_flag = STG_LIVE_WITH_COMMINISTS }
-				start_civil_war = {
-					ruling_party = democratic
-					ideology = communism
-					size = 0.4
-					only_own_territory = no
-					capital = 119
-					states = { 
-						135 113 119 134 120 136 133 121 131
-					}
-					keep_unit_leaders = {
-						
-					}
-					keep_political_leader = no
-				}
+				country_event = { id = StGloriana.28 days = 3 }
 			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#重新建立工会体系
+	focus = {
+		id = STG_rebuild_labour_league
+		icon = GFX_focus_STG_rebuild_labour_league
+		relative_position_id = STG_eliminate_labour_party
+		x = 1
+		y = 1
+		available = { OR = { has_country_flag = STG_WORKER_ACCEPT_US has_country_flag = STG_LIVE_WITH_COMMINISTS } }
+		prerequisite = { focus = STG_eliminate_labour_party }
+		prerequisite = { focus = STG_expand_arms_production }
+		mutually_exclusive = { }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = STG_royal_labour_league
 		}
 		ai_will_do = {
 			factor = 1
@@ -840,7 +858,7 @@
 		id = STG_extend_reserve_training
 		icon = GFX_focus_STG_extend_reserve_training
 		relative_position_id = STG_tension_in_senshado_alliance
-		x = -2
+		x = 2
 		y = 1
 		available = {  }
 		prerequisite = { focus = STG_tension_in_senshado_alliance }
@@ -908,7 +926,7 @@
 		id = STG_expand_arms_production
 		icon = GFX_focus_STG_expand_arms_production
 		relative_position_id = STG_tension_in_senshado_alliance
-		x = 2
+		x = -2
 		y = 1
 		available = {  }
 		prerequisite = { focus = STG_tension_in_senshado_alliance }
@@ -970,7 +988,9 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_research_slot = 1
+			unlock_decision_tooltip = stg_negative_reports_on_communism
+			unlock_decision_tooltip = stg_negative_reports_on_fascism
+			unlock_decision_tooltip = stg_negative_reports_on_royal
 		}
 		ai_will_do = {
 			factor = 1
@@ -986,7 +1006,7 @@
 		relative_position_id = STG_control_social_media
 		x = 0
 		y = 2
-		available = {  }
+		available = { threat > 0.3 }
 		prerequisite = { focus = STG_control_social_media }
 		mutually_exclusive = { }
 		bypass = { }
@@ -995,7 +1015,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_research_slot = 1
+			#格雷上台
 		}
 		ai_will_do = {
 			factor = 1
@@ -1003,6 +1023,32 @@
 			}
 		}
 	}
+
+	#克伦威尔之魔鬼
+	focus = {
+		id = STG_devil_of_cromwell
+		icon = GFX_focus_STG_devil_of_cromwell
+		relative_position_id = STG_crisis_speech
+		x = 0
+		y = 1
+		available = { neutrality > 0.4 }
+		prerequisite = { focus = STG_crisis_speech }
+		mutually_exclusive = { focus = STG_war_and_love_by_fair_means_or_foul }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			#格雷上台
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
 
 	#在欧洲的利益
 	focus = {
@@ -1199,7 +1245,7 @@
 		id = STG_strengthen_allies 
 		icon = GFX_focus_STG_strengthen_allies
 		relative_position_id = STG_british_concern
-		x = -1
+		x = -2
 		y = 1
 		available = { OR = { is_in_faction_with = KFA is_in_faction_with = MAP is_in_faction_with = SDS } }
 		prerequisite = { focus = STG_british_concern }
@@ -1401,11 +1447,11 @@
 		id = STG_war_and_love_by_fair_means_or_foul
 		icon = GFX_focus_STG_war_and_love_by_fair_means_or_foul
 		relative_position_id = STG_british_concern
-		x = 3
+		x = 1
 		y = 1
 		available = {  }
 		prerequisite = { focus = STG_british_concern }
-		mutually_exclusive = { }
+		mutually_exclusive = { focus = STG_devil_of_cromwell }
 		bypass = { }
 		cost = 10
 		cancel_if_invalid = yes
@@ -1421,17 +1467,129 @@
 		}
 	}
 
+	#不失优雅的战争
+	focus = {
+		id = STG_war_with_elegance 
+		icon = GFX_focus_STG_war_with_elegance
+		relative_position_id = STG_war_and_love_by_fair_means_or_foul
+		x = 1
+		y = 1
+		available = {  }
+		prerequisite = { focus = STG_war_and_love_by_fair_means_or_foul focus = STG_devil_of_cromwell }
+		mutually_exclusive = {  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_tech_bonus = {
+				category = land_doctrine
+				uses = 1
+				bonus = 1
+			}
+			add_tech_bonus = {
+				category = naval_doctrine
+				uses = 1
+				bonus = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#强化英吉利海峡
+	focus = {
+		id = STG_strengthen_english_channel 
+		icon = GFX_focus_STG_strengthen_english_channel
+		relative_position_id = STG_beachhead_of_stg
+		x = 0
+		y = 1
+		available = {  }
+		prerequisite = { focus = STG_beachhead_of_stg }
+		mutually_exclusive = {  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			if = {
+				limit = { has_country_flag = STG_SUCEESS_PUPPET_WAF }
+				35 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+					}
+				}
+				7 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+					}
+				}
+				6 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+					}
+				}
+				
+				6 = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+					}
+				}
+			}
+			else = {
+				125 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+					}
+				}
+				123 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+					}
+				}
+				127 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
 	#保持威慑
 	focus = {
 		id = STG_maintain_deterrence 
 		icon = GFX_focus_STG_maintain_deterrence
-		relative_position_id = STG_war_and_love_by_fair_means_or_foul
-		x = 0
+		relative_position_id = STG_war_with_elegance
+		x = 2
 		y = 1
 		available = {  }
-		prerequisite = { focus = STG_war_and_love_by_fair_means_or_foul }
+		prerequisite = { focus = STG_war_with_elegance }
 		mutually_exclusive = { focus = STG_take_the_initiative }
-		prerequisite = { focus = STG_beachhead_of_stg }
+		prerequisite = { focus = STG_strengthen_english_channel }
 		bypass = { }
 		cost = 10
 		cancel_if_invalid = yes
@@ -1451,13 +1609,13 @@
 	focus = {
 		id = STG_take_the_initiative
 		icon = GFX_focus_STG_take_the_initiative
-		relative_position_id = STG_war_and_love_by_fair_means_or_foul
-		x = 2
+		relative_position_id = STG_war_with_elegance
+		x = 4
 		y = 1
 		available = {  }
-		prerequisite = { focus = STG_beachhead_of_stg }
+		prerequisite = { focus = STG_strengthen_english_channel }
 		mutually_exclusive = { focus = STG_maintain_deterrence } 
-		prerequisite = { focus = STG_war_and_love_by_fair_means_or_foul }
+		prerequisite = { focus = STG_war_with_elegance }
 		bypass = { }
 		cost = 10
 		cancel_if_invalid = yes

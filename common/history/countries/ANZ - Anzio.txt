@@ -1,0 +1,128 @@
+﻿capital = 2
+
+set_technology = {
+	senshado_prototype_tank = 1
+	senshado_light_tank_1 = 1
+}
+set_research_slots = 5
+set_convoys = 20
+
+add_ideas = ANZ_undeveloped_southern
+add_ideas = ANZ_urbanization_trend
+add_ideas = ANZ_catholicism_collude_with_communism
+add_ideas = ANZ_low_birth_rate
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 41
+	fascism = 33
+	communism = 26
+	neutrality = 0
+}
+
+
+create_country_leader = {
+	name = "Anchovy"
+	desc = "She is the best"
+	picture = "Portrait_ANZ_Anchovy.dds"
+	expire = "2000.1.1"
+	ideology = nazism
+	traits = {
+		Dictator
+	}
+}
+create_country_leader = {
+	name = "Anchovy"
+	desc = "She is the best"
+	picture = "Portrait_ANZ_Anchovy.dds"
+	expire = "2000.1.1"
+	ideology = moderatism
+	traits = {
+		Dictator
+	}
+}
+create_country_leader = {
+	name = "Pepperoni"
+	desc = "She is the best"
+	picture = "Portrait_ANZ_Pepperoni.dds"
+	expire = "2000.1.1"
+	ideology = leninism
+	traits = {
+		Dealbroker
+	}
+}
+create_country_leader = {
+	name = "Carpaccio"
+	desc = "She is the best"
+	picture = "Portrait_ANZ_Carpaccio.dds"
+	expire = "2000.1.1"
+	ideology = conservatism
+	traits = {
+		Caudillo_1
+	}
+}
+
+create_field_marshal = {
+	name = "Anchovy"
+	picture = "Portrait_ANZ_Anchovy.dds"
+	traits = { Brilliant_Strategist Armor_Officer Panzer_Expert }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 5
+	id = 1077
+}
+
+create_corps_commander = {
+	name = "Pepperoni"
+	picture = "Portrait_ANZ_Pepperoni.dds"
+	traits = { war_hero armor_officer }
+	skill = 4
+	id = 1079
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Carpaccio"
+	picture = "Portrait_ANZ_Carpaccio.dds"
+	traits = { Commando war_hero armor_officer }
+	skill = 4
+	id = 1078
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Saori Takebe"
+	picture = "Portrait_ANZ_Saori.dds"
+	traits = { armor_officer Media_Personality }
+	skill = 3
+	id = 1080
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Amaretto"
+	picture = "Portrait_ANZ_Amaretto.dds"
+	traits = { armor_officer }
+	skill = 3
+	id = 1076
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}

@@ -1,10 +1,10 @@
-version="0.9.0"
+version="0.10.0"
 picture="thumbnail.png"
 tags={
 	"Utilities"
 }
 name="Girls Und Panzer: RP"
-replace_path="history/countries"
+<!-- replace_path="history/countries"
 replace_path="events"
 replace_path="common/ideas"
 replace_path="common/national_focus"
@@ -18,6 +18,6 @@ replace_path="common/scripted_triggers"
 replace_path="common/scripted_localisation"
 replace_path="common/bookmarks"
 replace_path="common/ai_strategy"
-replace_path="common/ai_focuses"
-supported_version="1.10.*"
+replace_path="common/ai_focuses" -->
+supported_version="1.11.*"
 remote_file_id="2355290879"

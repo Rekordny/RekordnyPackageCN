@@ -345,7 +345,7 @@
  bcf_tooltip24_blocked:0 "25£GFX_command_power"
  bcf_tooltip25:0 "10£GFX_command_power"
  bcf_tooltip25_blocked:0 "10£GFX_command_power"
- bcf_tooltip26: "§R未来内战中马奇诺将会更具威胁§！"
+ bcf_tooltip26:0 "§R未来内战中马奇诺将会更具威胁§！"
  bcf_tooltip27:0 "黄金储备：§G+100§!"
  bcf_tooltip28:0 "黄金储备：§R-100§!"
  bcf_tooltip29:0 "与其邻近省份§Y添加1 陆上要塞§!"

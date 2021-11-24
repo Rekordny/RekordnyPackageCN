@@ -73,10 +73,16 @@
  STG_tank_reasearch_cooperation_with_sds_desc:0 ""
  STG_war_and_love_by_fair_means_or_foul:0 "战争和爱情不择手段者"
  STG_war_and_love_by_fair_means_or_foul_desc:0 ""
+ STG_devil_of_cromwell:0 "克伦威尔上的魔鬼"
+ STG_devil_of_cromwell_desc:0 ""
  STG_maintain_deterrence:0 "保持威慑"
  STG_maintain_deterrence_desc:0 ""
  STG_take_the_initiative:0 "主动出击"
  STG_take_the_initiative_desc:0 ""
+ STG_war_with_elegance:0 "不失优雅的战争"
+ STG_war_with_elegance_desc:0 ""
+ STG_strengthen_english_channel:0 "强化英吉利海峡"
+ STG_strengthen_english_channel_desc:0 ""
 
  STG_repeal_the_national_health_service_act:0 "废除国民保健署法"
  STG_repeal_the_national_health_service_act_desc:0 ""
@@ -88,6 +94,8 @@
  STG_attitude_desc:0 ""
  STG_eliminate_labour_party:0 "消灭工党组织"
  STG_eliminate_labour_party_desc:0 ""
+ STG_rebuild_labour_league:0 "重新建立工会体系"
+ STG_rebuild_labour_league_desc:0 ""
 
 
  
@@ -228,20 +236,17 @@
  StGloriana.27.d:0 "我们没能成功和华夫学院进行特别流畅的交流，但是我们至少获得了大部分低地三国人民的信赖。"
  StGloriana.27.a:0 "好的"
  
- StGloriana.28.t:0 "新的盟友"
- StGloriana.28.d:0 "新的盟友"
- StGloriana.28.a:0 "我们应紧密相连"
- StGloriana.28.b:0 "维持现有关系再好不过"
- StGloriana.28.c:0 "放慢节奏，不要激怒真理"
+ StGloriana.28.t:0 "共产主义的抗争"
+ StGloriana.28.d:0 "由于我们没能很到位的解决工党崛起的问题，工人们的不满情况持续上升，共产主义者们似乎嗅到了一丝危险，她们就如同受惊的蝼蚁，抱起团来企图撼动我们的民主合法政权，在爱尔兰以及北英格兰，她们已经吹响了反叛的号角。"
+ StGloriana.28.a:0 "上天赋予圣葛罗莉安娜的权力将制裁这些妄图侵扰国家安定之人"
  
- StGloriana.29.t:0 "圣葛罗莉安娜女子学院寻求地中海安全"
- StGloriana.29.d:0 "圣葛罗莉安娜女子学院寻求地中海安全"
- StGloriana.29.a:0 "好的"
+ StGloriana.29.t:0 "工党和共产主义的威胁退散"
+ StGloriana.29.d:0 "一片硕大的红色乌云，曾经久久徘徊在大本钟的上方，企图扼住这个伟大的日不落之国的咽喉。现在，一众的工团主义和共产党分子已经被永远的从精神层面上消灭，这是属于女王的伟大胜利，更是自由世界的一面鲜明的民主大旗。"
+ StGloriana.29.a:0 "天佑女王"
  
- StGloriana.30.t:0 "安齐奥的开价"
- StGloriana.30.d:0 "安齐奥的开价"
- StGloriana.30.a:0 "答应"
- StGloriana.30.b:0 "不答应"
+ StGloriana.28.t:0 "共产主义的抗争"
+ StGloriana.28.d:0 "由于我们没能及时的解决工党和工人的问题，加上外部压力的增大，共产主义者们似乎嗅到了一丝危险，她们就如同受惊的蝼蚁，抱起团来企图撼动我们的民主合法政权，在爱尔兰以及北英格兰，她们已经吹响了反叛的号角。"
+ StGloriana.28.a:0 "上天赋予圣葛罗莉安娜的权力将制裁这些妄图侵扰国家安定之人"
  
  StGloriana.31:0 "对大洗鲨鱼队的胜利"
  StGloriana.31.t:0 "对大洗鲨鱼队的胜利"
@@ -300,6 +305,7 @@
  STG_transportation_facilities_project:0 "交通设施拨款"
  STG_expand_reserve_training:0 "扩大预备役训练"
  STG_peacekeeping_force_expansion_act:0 "维和军队扩大法"
+ STG_royal_labour_league:0 "皇家工人协会"
 
 #decisions
  stg_worker_and_labor_party:0 "工人与工党"
@@ -318,6 +324,9 @@
  stg_transfer_kga_industry_mainland:0 "将黑森峰工业资产转移到本土"
  stg_transfer_kga_industry_waf:0 "将黑森峰工业资产转移到华夫学院"
  stg_senshado_tour_show:0 "战车道巡回演出"
+ stg_negative_reports_on_communism:0 "对共产主义的负面报道"
+ stg_negative_reports_on_fascism:0 "对法西斯主义的负面报道"
+ stg_negative_reports_on_royal:0 "对皇家派系的负面报道"
 
  #tooltips
  stg_tooltip1:0 "拥有至少§G30点§!秩序"
@@ -348,7 +357,8 @@
  stg_tooltip17:0 "120 £GFX_money  80£GFX_pol_power_icon"
  stg_tooltip17_blocked:0 "120 £GFX_money  80£GFX_pol_power_icon"
  stg_tooltip18:0 "黄金储备: §G+80§!"
-
+ stg_tooltip19:0 "80£GFX_pol_power_icon"
+ stg_tooltip19_blocked:0 "80£GFX_pol_power_icon"
  #flag
  STG_WORKER_ACCEPT_US:0 "工人接受了我们"
  STG_LIVE_WITH_COMMINISTS:0 "与共产主义共存"
