@@ -1,0 +1,50 @@
+characters={
+	BCF_andou={
+		name="Andou"
+		portraits={
+			civilian={
+				large="gfx/leaders/BCF/Portrait_BCF_Andou.dds"
+			}
+		}
+		country_leader={
+			desc="She is the best"
+			ideology=leninism
+			expire="2000.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="She is the best"
+			ideology=nazism
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+	BCF_marie={
+		name="Marie"
+		portraits={
+			civilian={
+				large="gfx/leaders/BCF/Portrait_BCF_Marie.dds"
+			}
+		}
+		country_leader={
+			desc="She is the best"
+			ideology=moderatism
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+	BCF_oshida={
+		name="Oshida"
+		portraits={
+			civilian={
+				large="gfx/leaders/BCF/Portrait_BCF_Oshida.dds"
+			}
+		}
+		country_leader={
+			desc="She is the best"
+			ideology=conservatism
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+}

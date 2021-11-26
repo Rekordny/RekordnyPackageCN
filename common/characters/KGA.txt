@@ -1,0 +1,220 @@
+characters={
+	KGA_maho_nishizumi={
+		name="Maho Nishizumi"
+		portraits={
+			civilian={
+				large="gfx/leaders/KGA/Portrait_KGA_Maho.dds"
+			}
+		}
+		field_marshal={
+			traits={ brilliant_strategist armor_officer panzer_expert }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=1015
+		}
+		country_leader={
+			desc="She is the best"
+			ideology=nazism
+			traits={ autocratic_imperialist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	KGA_miho_nishizumi={
+		name="Miho Nishizumi"
+		portraits={
+			civilian={
+				large="gfx/leaders/KGA/Portrait_KGA_Miho.dds"
+			}
+		}
+		field_marshal={
+			traits={ brilliant_strategist armor_officer panzer_expert }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=4
+			legacy_id=1021
+		}
+		country_leader={
+			desc="She is even better"
+			ideology=moderatism
+			traits={ the_director }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	KGA_emi_nakasuga={
+		name="Emi Nakasuga"
+		portraits={
+			civilian={
+				large="gfx/leaders/KGA/Portrait_KGA_Emi.dds"
+			}
+		}
+		country_leader={
+			desc="Strange...huh"
+			ideology=leninism
+			traits={ revolutionary_general }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	KGA_miho_&_maho={
+		name="Miho & Maho"
+		portraits={
+			civilian={
+				large="gfx/leaders/KGA/Portrait_KGA_Miho&Maho.dds"
+			}
+		}
+		country_leader={
+			desc="THEY ARE THE BEST!!!"
+			ideology=conservatism
+			traits={ nationalist_symbol }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	KGA_erika_itsumi={
+		name="Erika Itsumi"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/KGA/Portrait_KGA_Erika.dds"
+			}
+		}
+		corps_commander={
+			traits={ harsh_leader armor_officer war_hero }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=1016
+		}
+	}
+	KGA_koume_akaboshi={
+		name="Koume Akaboshi"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/KGA/Portrait_KGA_Koume.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer war_hero trickster }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=1017
+		}
+	}
+	KGA_erwin={
+		name="Erwin"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/KGA/Portrait_KGA_Erwin.dds"
+			}
+		}
+		corps_commander={
+			traits={ bearer_of_artillery armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=1024
+		}
+	}
+	KGA_mauko={
+		name="Mauko"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/KGA/Portrait_KGA_Mauko.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer trait_engineer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=1018
+		}
+	}
+	KGA_sangou={
+		name="Sangou"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/KGA/Portrait_KGA_Sangou.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer trickster }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=1019
+		}
+	}
+	KGA_ritaiko={
+		name="Ritaiko"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/KGA/Portrait_KGA_Ritaiko.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer hill_fighter }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=1020
+		}
+	}
+	KGA_geshiko={
+		name="Geshiko"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/KGA/Portrait_KGA_Geshiko.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=1023
+		}
+	}
+}

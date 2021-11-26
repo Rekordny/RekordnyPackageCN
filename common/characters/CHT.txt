@@ -1,0 +1,55 @@
+characters={
+	CHT_kinuyo_nishi={
+		name="Kinuyo Nishi"
+		portraits={
+			civilian={
+				large="gfx/leaders/CHT/Portrait_CHT_Nishi.dds"
+			}
+		}
+		country_leader={
+			ideology=moderatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CHT_shizuka_tsuruki={
+		name="Shizuka Tsuruki"
+		portraits={
+			civilian={
+				large="gfx/leaders/CHT/Portrait_CHT_Tsuruki.dds"
+			}
+		}
+		country_leader={
+			ideology=nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CHT_john_wilson={
+		name="John Wilson"
+		portraits={
+			civilian={
+				large="GFX_portrait_asia_generic_4"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1979.9.6.12"
+			id=-1
+		}
+	}
+	CHT_john_evans={
+		name="John Evans"
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			traits={ retired_officer ideological_crusader }
+			expire="1989.9.6.12"
+			id=-1
+		}
+	}
+}

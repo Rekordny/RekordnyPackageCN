@@ -1,0 +1,44 @@
+﻿capital = 64
+
+add_ideas = {
+	KGA_broken_kuromorimine
+	KGA_nishizumi_family_origin
+	KGA_huge_debt
+}
+oob = "KGA_1972"
+
+set_technology = {
+	senshado_prototype_tank = 1
+	senshado_light_tank_1 = 1
+	senshado_tank_destroyer_1 = 1
+
+	tech_support = 1
+	tech_scope_1 = 1
+}
+set_research_slots = 5
+set_convoys = 20
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 2
+	fascism = 36
+	communism = 3
+	neutrality = 59
+}
+
+recruit_character = KGA_maho_nishizumi
+recruit_character = KGA_miho_nishizumi
+recruit_character = KGA_emi_nakasuga
+recruit_character = KGA_miho_&_maho
+recruit_character = KGA_erika_itsumi
+recruit_character = KGA_koume_akaboshi
+recruit_character = KGA_erwin
+recruit_character = KGA_mauko
+recruit_character = KGA_sangou
+recruit_character = KGA_ritaiko
+recruit_character = KGA_geshiko

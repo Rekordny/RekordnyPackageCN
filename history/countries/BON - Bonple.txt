@@ -1,0 +1,48 @@
+﻿capital = 10
+
+set_technology = {
+	senshado_prototype_tank = 1
+	senshado_light_tank_1 = 1
+}
+set_research_slots = 5
+set_convoys = 20
+
+create_faction = "战车道复兴联盟"
+add_to_faction = GHS
+add_to_faction = COU
+add_to_faction = YOG
+add_to_faction = KEB
+add_to_faction = VIK
+
+add_ideas = BON_weak_leadership
+add_ideas = BON_senshado_revivalism
+add_ideas = BON_great_fresh_future
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 2
+	fascism = 3
+	communism = 45
+	neutrality = 50
+}
+create_country_leader = {
+	name = "Maiko"
+	desc = "A new leader from Girls und Panzar, YES!"
+	picture = "Portrait_BON_Maiko.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		Champion_of_Peace_5
+	}
+}
+recruit_character = BON_maiko
+recruit_character = BON_jajka
+recruit_character = BON_uszka
+recruit_character = BON_john_taylor
+
+

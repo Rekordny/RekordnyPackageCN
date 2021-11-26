@@ -1,0 +1,55 @@
+characters={
+	GHS_={
+		name="Lucas Wilson"
+		portraits={
+			civilian={
+				large="gfx/leaders/GHS/0.dds"
+			}
+		}
+		country_leader={
+			ideology=moderatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	GHS_alexander_williams={
+		name="Alexander Williams"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_5"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			expire="1985.9.6.12"
+			id=-1
+		}
+	}
+	GHS_jim_wilson={
+		name="Jim Wilson"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_6"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={ tenacious_negotiator silent_workhorse }
+			expire="1979.9.6.12"
+			id=-1
+		}
+	}
+	GHS_marcus_white={
+		name="Marcus White"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_6"
+			}
+		}
+		country_leader={
+			ideology=gen_nazism
+			expire="1990.9.6.12"
+			id=-1
+		}
+	}
+}

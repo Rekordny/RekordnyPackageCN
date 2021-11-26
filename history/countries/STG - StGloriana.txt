@@ -1,0 +1,33 @@
+﻿capital = 126
+
+set_technology = {
+	senshado_prototype_tank = 1
+	senshado_light_tank_1 = 1
+}
+set_research_slots = 5
+set_convoys = 20
+
+
+add_ideas = {
+	STG_rise_of_the_labor_party
+	STG_cairns_economy_effect_0
+	STG_decaying_senshado
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 56
+	fascism = 0
+	communism = 28
+	neutrality = 16
+}
+
+recruit_character = STG_assam
+recruit_character = STG_darjeeling
+recruit_character = STG_rukuriri
+recruit_character = STG_orangepekoe

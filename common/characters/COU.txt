@@ -1,0 +1,57 @@
+characters={
+	COU_={
+		name="Alex Jones"
+		portraits={
+			civilian={
+				large="gfx/leaders/COU/0.dds"
+			}
+		}
+		country_leader={
+			ideology=moderatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	COU_lucas_white={
+		name="Lucas White"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_6"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ editor }
+			expire="1991.9.6.12"
+			id=-1
+		}
+	}
+	COU_peter_roberts={
+		name="Peter Roberts"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_6"
+			}
+		}
+		country_leader={
+			ideology=leninism
+			traits={ armaments_organizer financial_expert }
+			expire="1982.9.6.12"
+			id=-1
+		}
+	}
+	COU_lucas_roberts={
+		name="Lucas Roberts"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_6"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ eager_collaborator armaments_organizer }
+			expire="1989.9.6.12"
+			id=-1
+		}
+	}
+}

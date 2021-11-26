@@ -1,0 +1,34 @@
+characters={
+	PRA_katyusha={
+		name="Katyusha"
+		portraits={
+			civilian={
+				large="gfx/leaders/PRA/Portrait_PRA_Katyusha.dds"
+			}
+		}
+		country_leader={
+			desc="She is the best"
+			ideology=conservatism
+			expire="2000.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="She is the best"
+			ideology=leninism
+			expire="2000.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="She is the best"
+			ideology=nazism
+			expire="2000.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="She is the best"
+			ideology=moderatism
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+}

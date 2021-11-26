@@ -1,0 +1,121 @@
+characters={
+	ANZ_anchovy={
+		name="Anchovy"
+		portraits={
+			civilian={
+				large="gfx/leaders/ANZ/Portrait_ANZ_Anchovy.dds"
+			}
+		}
+		field_marshal={
+			traits={ brilliant_strategist armor_officer panzer_expert }
+			skill=4
+			attack_skill=5
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=1077
+		}
+		country_leader={
+			desc="She is the best"
+			ideology=nazism
+			traits={ dictator }
+			expire="2000.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="She is the best"
+			ideology=moderatism
+			traits={ dictator }
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+	ANZ_pepperoni={
+		name="Pepperoni"
+		portraits={
+			civilian={
+				large="gfx/leaders/ANZ/Portrait_ANZ_Pepperoni.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer war_hero }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=1079
+		}
+		country_leader={
+			desc="She is the best"
+			ideology=leninism
+			traits={ dealbroker }
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+	ANZ_carpaccio={
+		name="Carpaccio"
+		portraits={
+			civilian={
+				large="gfx/leaders/ANZ/Portrait_ANZ_Carpaccio.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer war_hero commando }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=1078
+		}
+		country_leader={
+			desc="She is the best"
+			ideology=conservatism
+			traits={ caudillo_1 }
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+	ANZ_saori_takebe={
+		name="Saori Takebe"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/ANZ/Portrait_ANZ_Saori.dds"
+			}
+		}
+		corps_commander={
+			traits={ media_personality armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=1080
+		}
+	}
+	ANZ_amaretto={
+		name="Amaretto"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/ANZ/Portrait_ANZ_Amaretto.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=1076
+		}
+	}
+}

@@ -1,0 +1,56 @@
+characters={
+	THS_={
+		name="Jim Brown"
+		portraits={
+			civilian={
+				large="gfx/leaders/THS/0.dds"
+			}
+		}
+		country_leader={
+			ideology=moderatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	THS_john_walker={
+		name="John Walker"
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ economist tenacious_negotiator }
+			expire="1988.9.6.12"
+			id=-1
+		}
+	}
+	THS_jonas_white={
+		name="Jonas White"
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			traits={ appeaser retired_officer }
+			expire="1977.9.6.12"
+			id=-1
+		}
+	}
+	THS_marcus_jones={
+		name="Marcus Jones"
+		portraits={
+			civilian={
+				large="GFX_portrait_asia_generic_4"
+			}
+		}
+		country_leader={
+			ideology=gen_nazism
+			expire="1981.9.6.12"
+			id=-1
+		}
+	}
+}
