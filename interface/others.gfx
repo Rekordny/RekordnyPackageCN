@@ -24,4 +24,9 @@ spriteTypes = {
 		texturefile = "gfx/texticons/kga_germanic_kuromorimine_pic.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_buildings_strip"
+		textureFile = "gfx/interface/buildings/building_icon_strip.dds"
+		noOfFrames = 17
+	}
 }

@@ -325,15 +325,15 @@ kga_missions = {
 	kga_build_infrastructures = {
 		allowed = { tag = KGA }
 		available = {
-			61 = { infrastructure > 7 }
-			62 = { infrastructure > 7 }
-			60 = { infrastructure > 7 }
-			64 = { infrastructure > 7 }
-			65 = { infrastructure > 7 }
-			54 = { infrastructure > 7 }
-			55 = { infrastructure > 7 }
-			53 = { infrastructure > 7 }
-			52 = { infrastructure > 7 }
+			61 = { infrastructure > 4 }
+			62 = { infrastructure > 4 }
+			60 = { infrastructure > 4 }
+			64 = { infrastructure > 4 }
+			65 = { infrastructure > 4 }
+			54 = { infrastructure > 4 }
+			55 = { infrastructure > 4 }
+			53 = { infrastructure > 4 }
+			52 = { infrastructure > 4 }
 		}
 		is_good = no
 		activation = { has_country_flag  = KGA_START_INFRASTRUCTURE_MISSION } 

@@ -28,6 +28,5 @@ state= {
 	provinces= {
 		923 6862 9794 9904 11751 11846 11882
  	}
-
-	local_supplies=0.0 
+	 local_supplies=0.0 
 }
