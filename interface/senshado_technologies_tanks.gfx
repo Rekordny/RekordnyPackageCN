@@ -1,11 +1,66 @@
 spriteTypes = {	
-
-	#####KGA#####
 	SpriteType = {
-		name = "GFX_KGA_senshado_prototype_tank_medium"
-		texturefile = "gfx/interface/technologies/KGA_senshado_prototype_tank.dds"
+		name = "GFX_senshado_lt_1_chassis_medium"
+		texturefile = "gfx/interface/technologies/senshado_lt_1_chassis.dds"
+	}
+	SpriteType = {
+		name = "GFX_senshado_lt_2_chassis_medium"
+		texturefile = "gfx/interface/technologies/senshado_lt_2_chassis.dds"
+	}
+	SpriteType = {
+		name = "GFX_senshado_lt_3_chassis_medium"
+		texturefile = "gfx/interface/technologies/senshado_lt_3_chassis.dds"
+	}
+	SpriteType = {
+		name = "GFX_senshado_lt_4_chassis_medium"
+		texturefile = "gfx/interface/technologies/senshado_lt_4_chassis.dds"
+	}
+	SpriteType = {
+		name = "GFX_senshado_lt_5_chassis_medium"
+		texturefile = "gfx/interface/technologies/senshado_lt_5_chassis.dds"
+	}
+	SpriteType = {
+		name = "GFX_senshado_lt_6_chassis_medium"
+		texturefile = "gfx/interface/technologies/senshado_lt_6_chassis.dds"
+	}
+	SpriteType = {
+		name = "GFX_senshado_mt_1_chassis_medium"
+		texturefile = "gfx/interface/technologies/senshado_mt_1_chassis.dds"
+	}
+	SpriteType = {
+		name = "GFX_senshado_mt_2_chassis_medium"
+		texturefile = "gfx/interface/technologies/senshado_mt_2_chassis.dds"
+	}
+	SpriteType = {
+		name = "GFX_senshado_mt_3_chassis_medium"
+		texturefile = "gfx/interface/technologies/senshado_mt_3_chassis.dds"
+	}
+	SpriteType = {
+		name = "GFX_senshado_mt_4_chassis_medium"
+		texturefile = "gfx/interface/technologies/senshado_mt_4_chassis.dds"
+	}
+	SpriteType = {
+		name = "GFX_senshado_mt_5_chassis_medium"
+		texturefile = "gfx/interface/technologies/senshado_mt_5_chassis.dds"
+	}
+	SpriteType = {
+		name = "GFX_senshado_ht_1_chassis_medium"
+		texturefile = "gfx/interface/technologies/senshado_ht_1_chassis.dds"
+	}
+	SpriteType = {
+		name = "GFX_senshado_ht_2_chassis_medium"
+		texturefile = "gfx/interface/technologies/senshado_ht_2_chassis.dds"
+	}
+	SpriteType = {
+		name = "GFX_senshado_ht_3_chassis_medium"
+		texturefile = "gfx/interface/technologies/senshado_ht_3_chassis.dds"
+	}
+	SpriteType = {
+		name = "GFX_senshado_ht_4_chassis_medium"
+		texturefile = "gfx/interface/technologies/senshado_ht_4_chassis.dds"
 	}
 
+	#####KGA#####
 	SpriteType = {
 		name = "GFX_KGA_senshado_light_tank_1_medium"
 		texturefile = "gfx/interface/technologies/KGA_senshado_light_tank_1.dds"

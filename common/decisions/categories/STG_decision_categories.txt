@@ -24,3 +24,7 @@ stg_civil_war = {
 	icon = GFX_decision_category_senshado
 	allowed = { original_tag = STG }
 }
+stg_kuromorimine_occupation = {
+	icon = GFX_decision_category_senshado
+	allowed = { original_tag = STG }
+}

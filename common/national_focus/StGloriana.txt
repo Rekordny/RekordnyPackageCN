@@ -27,14 +27,12 @@
 		bypass = { }
 
 		cost = 4
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
 			add_political_power = 100
-			hidden_effect = { country_event = { id = StGloriana.7 days = 400 } }
 		}
 			
 		ai_will_do = {
@@ -1006,16 +1004,21 @@
 		relative_position_id = STG_control_social_media
 		x = 0
 		y = 2
-		available = { threat > 0.3 }
+		available = { threat > 0.3 has_country_leader = { name = "Darjeeling" ruling_only = yes } neutrality > 0.4 }
 		prerequisite = { focus = STG_control_social_media }
 		mutually_exclusive = { }
-		bypass = { }
+		bypass = { has_country_leader = { name = "Earl Grey" ruling_only = yes } }
 		cost = 10
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
 			#格雷上台
+			add_war_support = 0.1
+			add_political_power = 100
+			set_politics = {
+				ruling_party = neutrality
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -1031,7 +1034,7 @@
 		relative_position_id = STG_crisis_speech
 		x = 0
 		y = 1
-		available = { neutrality > 0.4 }
+		available = {  }
 		prerequisite = { focus = STG_crisis_speech }
 		mutually_exclusive = { focus = STG_war_and_love_by_fair_means_or_foul }
 		bypass = { }
@@ -1449,7 +1452,7 @@
 		relative_position_id = STG_british_concern
 		x = 1
 		y = 1
-		available = {  }
+		available = { has_country_leader = { name = "Darjeeling" ruling_only = yes } }
 		prerequisite = { focus = STG_british_concern }
 		mutually_exclusive = { focus = STG_devil_of_cromwell }
 		bypass = { }
@@ -1458,7 +1461,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_research_slot = 1
+			add_country_leader_trait = adventurous_daredevil
 		}
 		ai_will_do = {
 			factor = 1

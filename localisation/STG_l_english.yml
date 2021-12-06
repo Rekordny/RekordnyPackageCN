@@ -315,6 +315,8 @@
  stg_missions:0 "圣葛罗莉安娜-任务"
  stg_industry:0 "圣葛罗莉安娜-工业"
  stg_civil_war:0 "圣葛罗莉安娜-内战"
+ stg_kuromorimine_occupation:0 "黑森峰西部占领事宜"
+ stg_kuromorimine_occupation_desc:0 "为了维持黑森峰走在正确的道路上，我们在上一次大战结束后就与其签订了土地租借合约，但似乎合约就要到期，这片土地上的不满与反抗情绪也越来越强烈。"
  stg_great_worker_strike_ongoing:0 "罢工正在轰轰烈烈的进行中"
  stg_temporary_increase_workers_salaries:0 "临时提高工人薪水"
  stg_reduce_labor_import:0 "减少外务劳工输入"
@@ -327,6 +329,10 @@
  stg_negative_reports_on_communism:0 "对共产主义的负面报道"
  stg_negative_reports_on_fascism:0 "对法西斯主义的负面报道"
  stg_negative_reports_on_royal:0 "对皇家派系的负面报道"
+ stg_occupation_deadline:0 "土地占有期限"
+ stg_extend_occupation_deadline:0 "延长租借期限"
+ stg_return_occupation_region:0 "主动归还占领区"
+ stg_suppress_occupation_zone:0 "镇压反抗情绪"
 
  #tooltips
  stg_tooltip1:0 "拥有至少§G30点§!秩序"
@@ -359,6 +365,11 @@
  stg_tooltip18:0 "黄金储备: §G+80§!"
  stg_tooltip19:0 "80£GFX_pol_power_icon"
  stg_tooltip19_blocked:0 "80£GFX_pol_power_icon"
+ stg_tooltip20:0 "25 £GFX_gold_icon\n50£GFX_pol_power_icon"
+ stg_tooltip20_blocked:0 "25 £GFX_gold_icon\n50£GFX_pol_power_icon"
+ stg_tooltip21:0 "20£GFX_pol_power_icon"
+ stg_tooltip21_blocked:0 "20£GFX_pol_power_icon"
+ 
  #flag
  STG_WORKER_ACCEPT_US:0 "工人接受了我们"
  STG_LIVE_WITH_COMMINISTS:0 "与共产主义共存"

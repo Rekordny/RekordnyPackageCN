@@ -2598,7 +2598,7 @@ focus_tree = {
 		y = 1
 		available = { has_country_flag = KGA_HAVE_TYROL_BACK ANZ = { has_government = fascism is_in_faction = no } }
 		#allow_branch = { has_completed_focus = KGA_nishizumi_family }
-		prerequisite = {  }
+		prerequisite = { focus = KGA_ANZ_europe_tank_project }
 		mutually_exclusive = {  }
 		bypass = { has_country_flag = KGA_HAVE_TYROL_BACK_FALSE }
 		cost = 10

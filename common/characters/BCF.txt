@@ -18,6 +18,15 @@ characters={
 			expire="2000.1.1.1"
 			id=-1
 		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=1042
+		}
 	}
 	BCF_marie={
 		name="Marie"
@@ -32,6 +41,15 @@ characters={
 			expire="2000.1.1.1"
 			id=-1
 		}
+		field_marshal={
+			traits={ armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=1041
+		}
 	}
 	BCF_oshida={
 		name="Oshida"
@@ -45,6 +63,106 @@ characters={
 			ideology=conservatism
 			expire="2000.1.1.1"
 			id=-1
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=1043
+		}
+	}
+	BCF_Asparagus={
+		name="Asparagus"
+		portraits={
+			civilian={
+				large="gfx/leaders/BCF/Portrait_BCF_Asparagus.dds"
+			}
+		}
+		country_leader={
+			desc="She is the best"
+			ideology=nazism
+			expire="2000.1.1.1"
+			id=-1
+		}
+		field_marshal={
+			traits={ armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=1041
+		}
+	}
+	BCF_Bordeaux={
+		name="Bordeaux"
+		portraits={
+			civilian={
+				large="gfx/leaders/BCF/Portrait_BCF_Bordeaux.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=1090
+		}
+	}
+	BCF_Moule={
+		name="Moule"
+		portraits={
+			civilian={
+				large="gfx/leaders/BCF/Portrait_BCF_Moule.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=1091
+		}
+	}
+	BCF_Isabe={
+		name="Isabe"
+		portraits={
+			civilian={
+				large="gfx/leaders/BCF/Portrait_BCF_Isabe.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=1045
+		}
+	}
+	BCF_Sofue={
+		name="Sofue"
+		portraits={
+			civilian={
+				large="gfx/leaders/BCF/Portrait_BCF_Sofue.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=1046
 		}
 	}
 }

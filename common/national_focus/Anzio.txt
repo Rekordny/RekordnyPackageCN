@@ -764,13 +764,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				category = armor
-				uses = 2
+				uses = 1
 				bonus = 0.75
 			}
 			add_tech_bonus = {
 				category = industry
 				uses = 1
-				bonus = 0.5
+				bonus = 0.75
 			}
 		}
 		ai_will_do = {
@@ -793,7 +793,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		completion_reward = {
 			add_tech_bonus = {
-				category = ammunition_tech
+				category = support_tech
 				uses = 1
 				bonus = 1
 			}

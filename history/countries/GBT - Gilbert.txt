@@ -1,0 +1,22 @@
+capital = 608
+
+set_technology = {
+	senshado_prototype_tank = 1
+	senshado_light_tank_1 = 1
+}
+set_research_slots = 3
+set_convoys = 20
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 2
+	fascism = 87
+	communism = 4
+	neutrality = 7
+}
+recruit_character = GBT_Yoshinaga

@@ -1,57 +1,43 @@
 characters={
-	COU_={
-		name="Alex Jones"
+	COU_Constantinescu={
+		name="Marina Constantinescu"
 		portraits={
 			civilian={
-				large="gfx/leaders/COU/0.dds"
+				large="gfx/leaders/COU/Portrait_COU_Constantinescu.dds"
 			}
 		}
 		country_leader={
-			ideology=moderatism
-			expire="1965.1.1.1"
+			desc="She is the best"
+			ideology=conservatism
+			expire="2000.1.1.1"
 			id=-1
 		}
-	}
-	COU_lucas_white={
-		name="Lucas White"
-		portraits={
-			civilian={
-				large="GFX_portrait_europe_generic_6"
-			}
-		}
 		country_leader={
-			ideology=liberalism
-			traits={ editor }
-			expire="1991.9.6.12"
-			id=-1
-		}
-	}
-	COU_peter_roberts={
-		name="Peter Roberts"
-		portraits={
-			civilian={
-				large="GFX_portrait_europe_generic_6"
-			}
-		}
-		country_leader={
+			desc="She is the best"
 			ideology=leninism
-			traits={ armaments_organizer financial_expert }
-			expire="1982.9.6.12"
+			expire="2000.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="She is the best"
+			ideology=nazism
+			expire="2000.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="She is the best"
+			ideology=moderatism
+			expire="2000.1.1.1"
 			id=-1
 		}
 	}
-	COU_lucas_roberts={
-		name="Lucas Roberts"
-		portraits={
-			civilian={
-				large="GFX_portrait_europe_generic_6"
-			}
-		}
-		country_leader={
-			ideology=fascism_ideology
-			traits={ eager_collaborator armaments_organizer }
-			expire="1989.9.6.12"
-			id=-1
-		}
+	corps_commander={
+		traits={ armor_officer }
+		skill=3
+		attack_skill=3
+		defense_skill=3
+		planning_skill=3
+		logistics_skill=3
+		legacy_id=1097
 	}
 }

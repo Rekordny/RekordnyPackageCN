@@ -29,4 +29,14 @@ spriteTypes = {
 		textureFile = "gfx/interface/buildings/building_icon_strip.dds"
 		noOfFrames = 17
 	}
+
+	# traits
+	spriteType = {
+		name = "GFX_trait_excessive_kindness"
+		texturefile = "gfx/interface/traits/personal/trait_excessive_kindness.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_activist"
+		texturefile = "gfx/interface/traits/personal/trait_activist.dds"
+	}
 }

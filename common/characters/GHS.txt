@@ -1,55 +1,43 @@
 characters={
-	GHS_={
-		name="Lucas Wilson"
+	GHS_Kafka={
+		name="Kafka"
 		portraits={
 			civilian={
-				large="gfx/leaders/GHS/0.dds"
+				large="gfx/leaders/GHS/Portrait_GHS_Kafka.dds"
 			}
 		}
 		country_leader={
+			desc="She is the best"
+			ideology=conservatism
+			expire="2000.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="She is the best"
+			ideology=leninism
+			expire="2000.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="She is the best"
+			ideology=nazism
+			expire="2000.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="She is the best"
 			ideology=moderatism
-			expire="1965.1.1.1"
+			expire="2000.1.1.1"
 			id=-1
 		}
 	}
-	GHS_alexander_williams={
-		name="Alexander Williams"
-		portraits={
-			civilian={
-				large="GFX_portrait_europe_generic_5"
-			}
-		}
-		country_leader={
-			ideology=socialism
-			expire="1985.9.6.12"
-			id=-1
-		}
-	}
-	GHS_jim_wilson={
-		name="Jim Wilson"
-		portraits={
-			civilian={
-				large="GFX_portrait_europe_generic_6"
-			}
-		}
-		country_leader={
-			ideology=marxism
-			traits={ tenacious_negotiator silent_workhorse }
-			expire="1979.9.6.12"
-			id=-1
-		}
-	}
-	GHS_marcus_white={
-		name="Marcus White"
-		portraits={
-			civilian={
-				large="GFX_portrait_europe_generic_6"
-			}
-		}
-		country_leader={
-			ideology=gen_nazism
-			expire="1990.9.6.12"
-			id=-1
-		}
+	corps_commander={
+		traits={ armor_officer }
+		skill=3
+		attack_skill=3
+		defense_skill=3
+		planning_skill=3
+		logistics_skill=3
+		legacy_id=1097
 	}
 }

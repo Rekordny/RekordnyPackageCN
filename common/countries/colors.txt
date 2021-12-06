@@ -25,6 +25,11 @@ PRA = {
 	color_ui = rgb { 125 13 24 }
 }
 
+GBT = {
+	color = rgb { 98 0 0 }
+	color_ui = rgb { 98 0 0 }
+}
+
 SDS = {
 	color = rgb { 197 237 67 }
 	color_ui = rgb { 197 237 67 }

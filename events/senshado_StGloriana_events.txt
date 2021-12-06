@@ -826,19 +826,37 @@ country_event = {
 
 	option = {
 		name = StGloriana.28.a
-		start_civil_war = {
-			ruling_party = democratic
-			ideology = communism
-			size = 0.4
-			only_own_territory = no
-			capital = 119
-			states = { 
-				135 113 119 134 120 136 133 121 131
+		if = { limit = { has_country_flag = STG_REDUCE_LABOUR_PARTY_POWER }
+			start_civil_war = {
+				ruling_party = democratic
+				ideology = communism
+				size = 0.35
+				only_own_territory = no
+				capital = 119
+				states = { 
+					135 113 119 134 120 136 133 121
+				}
+				keep_unit_leaders = {
+					
+				}
+				keep_political_leader = no
 			}
-			keep_unit_leaders = {
-				
+		}
+		else = {
+			start_civil_war = {
+				ruling_party = democratic
+				ideology = communism
+				size = 0.5
+				only_own_territory = no
+				capital = 119
+				states = { 
+					135 113 119 134 120 136 133 121 131
+				}
+				keep_unit_leaders = {
+					
+				}
+				keep_political_leader = no
 			}
-			keep_political_leader = no
 		}
 	}
 }

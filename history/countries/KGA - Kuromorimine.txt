@@ -8,7 +8,7 @@ add_ideas = {
 oob = "KGA_1972"
 
 set_technology = {
-	senshado_prototype_tank = 1
+	senshado_lt_1_chassis = 1
 	senshado_light_tank_1 = 1
 	senshado_tank_destroyer_1 = 1
 
@@ -31,12 +31,12 @@ set_popularities = {
 	neutrality = 59
 }
 
-recruit_character = KGA_maho_nishizumi
-recruit_character = KGA_miho_nishizumi
-recruit_character = KGA_emi_nakasuga
-recruit_character = KGA_miho_&_maho
-recruit_character = KGA_erika_itsumi
-recruit_character = KGA_koume_akaboshi
+recruit_character = KGA_maho
+recruit_character = KGA_miho
+#recruit_character = KGA_emi
+recruit_character = KGA_miho_maho
+recruit_character = KGA_erika
+recruit_character = KGA_koume
 recruit_character = KGA_erwin
 recruit_character = KGA_mauko
 recruit_character = KGA_sangou

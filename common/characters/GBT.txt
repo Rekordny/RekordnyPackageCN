@@ -1,0 +1,43 @@
+characters={
+	GBT_Yoshinaga={
+		name="Jinko Yoshinaga"
+		portraits={
+			civilian={
+				large="gfx/leaders/GBT/Portrait_GBT_Yoshinaga.dds"
+			}
+		}
+		country_leader={
+			desc="She is the best"
+			ideology=conservatism
+			expire="2000.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="She is the best"
+			ideology=leninism
+			expire="2000.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="She is the best"
+			ideology=nazism
+			expire="2000.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="She is the best"
+			ideology=moderatism
+			expire="2000.1.1.1"
+			id=-1
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=1092
+		}
+	}
+}

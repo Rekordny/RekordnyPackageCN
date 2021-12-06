@@ -1,0 +1,42 @@
+leader_traits = {
+
+	
+##################################
+# Common Traits
+##################################
+	excessive_kindness = { 
+		type = land
+		trait_type = personality_trait
+		
+		modifier = {
+			cannot_use_abilities = 1
+		}
+
+		non_shared_modifier = {
+			skill_bonus_factor = -0.2
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+
+		attack_skill = -1
+	}
+
+	activist = { 
+		type = land
+		trait_type = personality_trait
+		
+		modifier = {
+			max_planning = 0.1
+		}
+
+		non_shared_modifier = {
+			experience_gain_factor = 0.15
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+}

@@ -12,6 +12,15 @@ characters={
 			expire="2000.1.1.1"
 			id=-1
 		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=1048
+		}
 	}
 	STG_darjeeling={
 		name="Darjeeling"
@@ -25,6 +34,15 @@ characters={
 			ideology=conservatism
 			expire="2000.1.1.1"
 			id=-1
+		}
+		field_marshal={
+			traits={ armor_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=1047
 		}
 	}
 	STG_rukuriri={
@@ -40,6 +58,15 @@ characters={
 			expire="2000.1.1.1"
 			id=-1
 		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=1054
+		}
 	}
 	STG_orangepekoe={
 		name="OrangePekoe"
@@ -48,11 +75,120 @@ characters={
 				large="gfx/leaders/STG/Portrait_STG_OrangePekoe.dds"
 			}
 		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=1053
+		}
+	}
+	STG_EarlGrey={
+		name="Earl Grey"
+		portraits={
+			civilian={
+				large="gfx/leaders/STG/Portrait_STG_EarlGrey.dds"
+			}
+		}
 		country_leader={
 			desc="She is the best"
 			ideology=moderatism
 			expire="2000.1.1.1"
 			id=-1
+		}
+		field_marshal={
+			traits={ armor_officer }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=1049
+		}
+	}
+	STG_Shiratori={
+		name="Shiratori"
+		portraits={
+			civilian={
+				large="gfx/leaders/STG/Portrait_STG_Shiratori.dds"
+			}
+		}
+		country_leader={
+			desc="She is the best"
+			ideology=moderatism
+			expire="2000.1.1.1"
+			id=-1
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=1089
+		}
+	}
+	STG_Hana={
+		name="Hana"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/STG/Portrait_STG_Hana.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=1050
+		}
+	}
+	STG_Nilgiri={
+		name="Nilgiri"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/STG/Portrait_STG_Nilgiri.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=1051
+		}
+	}
+	STG_Rosehip={
+		name="Rosehip"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/STG/Portrait_STG_Rosehip.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=1051
 		}
 	}
 }
