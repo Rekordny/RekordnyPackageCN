@@ -432,6 +432,7 @@ country_event = {
 			}
 		}
 		add_political_power = -40
+		set_country_flag = BCF_balanced_industrial_development
 		hidden_effect = { country_event = { id = bcfreedom.24 days = 2 } }
 	}
 	option = {
@@ -449,6 +450,7 @@ country_event = {
 		}
 		add_political_power = -40
 		add_stability = -0.08
+		set_country_flag = BCF_focus_on_southern_industrial_development
 		hidden_effect = { country_event = { id = bcfreedom.24 days = 2 } }
 	}
 	option = {
@@ -466,6 +468,7 @@ country_event = {
 		}
 		add_political_power = -40
 		add_stability = -0.05
+		set_country_flag = BCF_focus_on_northern_industrial_development
 		hidden_effect = { country_event = { id = bcfreedom.24 days = 2 } }
 	}
 	option = {

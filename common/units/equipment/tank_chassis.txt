@@ -22,7 +22,13 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_small_main_armament
-					tank_flamethrower
+				}
+			}
+
+			rifling_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_rifling_type
 				}
 			}
 
@@ -54,6 +60,20 @@ equipments = {
 				}
 			}
 
+			commander_equipment_slot = {
+				required = no
+				allowed_module_categories = {
+					tank_commander_equipment_type
+				}
+			}
+
+			extra_armor_type_slot = {
+				required = no
+				allowed_module_categories = {
+					tank_extra_armor_type
+				}
+			}
+
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
@@ -82,6 +102,15 @@ equipments = {
 			}
 
 			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_radio_module
+					tank_secondary_turret
+				}
+			}
+
+			special_type_slot_5 = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
@@ -137,6 +166,7 @@ equipments = {
 			count < 2
 		}
 		default_modules = {
+			rifling_type_slot = empty
 			main_armament_slot = empty
 			turret_type_slot = tank_light_one_man_tank_turret
 			suspension_type_slot = tank_bogie_suspension
@@ -169,6 +199,13 @@ equipments = {
 		build_cost_ic = 1
 		reliability = 0.95
 		armor_value = 10
+		resources = {
+			steel = 1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
+		}
 	}
 
 	light_tank_chassis_2 = {
@@ -183,8 +220,9 @@ equipments = {
 		maximum_speed = 6
 		reliability = 1.1
 		armor_value = 15
-		resources = {
-			steel = 1
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
 		}
 	}
 
@@ -203,6 +241,10 @@ equipments = {
 		resources = {
 			steel = 2
 		}
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
+		}
 	}
 
 	light_tank_chassis_4 = {
@@ -219,6 +261,10 @@ equipments = {
 		armor_value = 20
 		resources = {
 			steel = 2
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
 		}
 	}
 
@@ -237,6 +283,10 @@ equipments = {
 		resources = {
 			steel = 2
 		}
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
+		}
 	}
 
 	light_tank_chassis_6 = {
@@ -253,6 +303,10 @@ equipments = {
 		armor_value = 20
 		resources = {
 			steel = 2
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
 		}
 	}
 
@@ -422,6 +476,10 @@ equipments = {
 		module_slots = inherit
 		armor_value = 35
 		build_cost_ic = 2
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
+		}
 	}
 
 	medium_tank_chassis_2 = {
@@ -438,6 +496,10 @@ equipments = {
 		armor_value = 45
 		resources = {
 			steel = 1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
 		}
 	}
 
@@ -456,6 +518,10 @@ equipments = {
 		resources = {
 			steel = 2
 		}
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
+		}
 	}
 
 	medium_tank_chassis_4 = {
@@ -473,6 +539,10 @@ equipments = {
 		resources = {
 			steel = 2
 		}
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
+		}
 	}
 
 	medium_tank_chassis_5 = {
@@ -489,6 +559,10 @@ equipments = {
 		armor_value = 50
 		resources = {
 			steel = 2
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
 		}
 	}
 
@@ -657,6 +731,10 @@ equipments = {
 		module_slots = inherit
 		armor_value = 35
 	}
+	upgrades = {
+		tank_nsb_engine_upgrade
+		tank_nsb_armor_upgrade
+	}
 
 	heavy_tank_chassis_2 = {
 		abbreviation = "hv2"
@@ -672,6 +750,10 @@ equipments = {
 		resources = {
 			steel = 1
 			chromium = 1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
 		}
 	}
 
@@ -690,6 +772,10 @@ equipments = {
 			steel = 2
 			chromium = 1
 		}
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
+		}
 	}
 
 	heavy_tank_chassis_4 = {
@@ -707,5 +793,9 @@ equipments = {
 			steel = 2
 			chromium = 1
 		}
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade
+		tank_nsb_armor_upgrade
 	}
 }

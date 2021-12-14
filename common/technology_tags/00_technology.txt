@@ -2,6 +2,18 @@
 # If adding new technology, make sure they are uniquely named.
 
 technology_categories = {
+	#mod
+	food
+	uniform
+	naval_battery
+	naval_shell
+	naval_dmg_control
+	naval_fire_control
+	naval_torpedo
+	armor_lt
+	armor_mt
+	armor_ht
+	#origin
 	light_air
 	medium_air
 	heavy_air

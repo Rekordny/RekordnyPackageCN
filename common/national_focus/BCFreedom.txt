@@ -11,7 +11,7 @@ focus_tree = {
 	
 	default = no
 	reset_on_civilwar = no
-	continuous_focus_position = { x = 200 y = 900 }
+	continuous_focus_position = { x = 120 y = 800 }
 
 
     #第二次奥尔良会议
@@ -40,7 +40,7 @@ focus_tree = {
 	focus = {
 		id = BCF_industrial_renaissance_project 
 		icon = GFX_focus_BCF_industrial_renaissance_project
-		x = -3
+		x = -5
 		y = 1
 		cost = 5
 		relative_position_id = BCF_second_orelans_conference
@@ -54,7 +54,11 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			add_tech_bonus = {
+				category = industry
+				bonus = 1
+				uses = 2
+			}
 		}
 	}
 
@@ -67,7 +71,12 @@ focus_tree = {
 		cost = 5
 		relative_position_id = BCF_industrial_renaissance_project
 		prerequisite = { focus = BCF_industrial_renaissance_project }
-		available = { }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BCF_selected_southern_industrial_in_orelans_conference
+				has_country_flag = BCF_focus_on_southern_industrial_development
+			}
+		}
 		bypass = { }
 		mutually_exclusive = { focus = BCF_northern_industrial_plan focus = BCF_balanced_development }
 		
@@ -77,7 +86,11 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			add_tech_bonus = {
+				category = industry
+				uses = 3
+				bonus = 1
+			}			
 		}
 	}
 
@@ -99,7 +112,13 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			21 = {
+				add_building_construction = {
+					type = dockyard
+					level = 3
+				}
+				add_extra_state_shared_building_slots = 3
+			}
 		}
 	}
 
@@ -121,7 +140,29 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			21 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = air_base
+					level = 3
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+				}
+			}
 		}
 	}
 
@@ -134,7 +175,13 @@ focus_tree = {
 		cost = 5
 		relative_position_id = BCF_industrial_renaissance_project
 		prerequisite = { focus = BCF_industrial_renaissance_project }
-		available = { }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BCF_selected_balanced_industrial_in_orelans_conference
+				has_country_flag = BCF_balanced_industrial_development
+			}
+			
+		}
 		bypass = { }
 		mutually_exclusive = { focus = BCF_sourthern_industrial_plan focus = BCF_northern_industrial_plan }
 		
@@ -144,7 +191,11 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			add_tech_bonus = {
+				category = industry
+				bonus = 1
+				uses = 2
+			}
 		}
 	}
 
@@ -166,7 +217,15 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			every_owned_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
+			}
 		}
 	}
 
@@ -188,7 +247,87 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			16 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+			785 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			28 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			14 = {
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			18 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			31 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			21 = {
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+				}
+				add_extra_state_shared_building_slots = 3
+			}
 		}
 	}
 
@@ -202,7 +341,13 @@ focus_tree = {
 		relative_position_id = BCF_industrial_renaissance_project
 		prerequisite = { focus = BCF_industrial_renaissance_project }
 		mutually_exclusive = { focus = BCF_sourthern_industrial_plan focus = BCF_balanced_development }
-		available = { }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BCF_selected_northern_industrial_in_orelans_conference
+				has_country_flag = BCF_focus_on_northern_industrial_development
+			}
+			
+		}
 		bypass = { }
 		
 		ai_will_do = {
@@ -211,7 +356,11 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			add_tech_bonus = {
+				category = industry
+				uses = 3
+				bonus = 1
+			}
 		}
 	}
 
@@ -234,10 +383,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			14 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard 
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -262,6 +411,28 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 		completion_reward = {
+			785 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+				}
+			}
 		}
 	}
 
@@ -273,9 +444,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		relative_position_id = BCF_picardy_project
-		prerequisite = { focus = BCF_picardy_project }
-		prerequisite = { focus = BCF_provence_plan }
-		prerequisite = { focus = BCF_industrial_development_committee }
+		prerequisite = { focus = BCF_provence_plan focus = BCF_industrial_development_committee focus = BCF_picardy_project}
 		available = { }
 		bypass = { }
 		
@@ -307,7 +476,7 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			navy_experience = 20
 		}
 	}
 
@@ -330,7 +499,21 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			add_tech_bonus = {
+				category = cv_tech
+				bonus = 1
+				uses = 1
+			}
+			add_tech_bonus = {
+				category = bb_tech
+				bonus = 1
+				uses = 1
+			}
+			add_tech_bonus = {
+				category = ca_tech
+				bonus = 1
+				uses = 1
+			}
 		}
 	}
 
@@ -352,7 +535,37 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			custom_effect_tooltip = add_construct_of_de_gaulle_cv
+			hidden_effect = {
+				set_technology = {
+					improved_ship_hull_carrier = 1
+				}
+				create_equipment_variant = {
+					name = "戴高乐级航空母舰"
+					type = ship_hull_carrier_2
+					name_group = FRA_CV_HISTORICAL
+					modules = {
+						fixed_ship_anti_air_slot = ship_anti_air_3
+						fixed_ship_deck_slot_1 = ship_deck_space
+						fixed_ship_deck_slot_2 = ship_deck_space
+						fixed_ship_radar_slot = ship_radar_3
+						fixed_ship_secondaries_slot = dp_light_battery
+						fixed_ship_engine_slot = sub_ship_engine_3
+						mid_1_custom_slot = ship_deck_space
+						front_1_custom_slot = ship_deck_space
+					}
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_carrier_2
+						version_name = "戴高乐级航空母舰"
+					}
+					name = "夏尔·戴高乐"
+					requested_factories = 1
+					progress = 0.75
+					amount = 1
+				}
+			}
 		}
 	}
 
@@ -374,6 +587,67 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 		completion_reward = {
+			custom_effect_tooltip = add_construct_of_cl_freedom
+			hidden_effect = {
+				set_technology = {
+					improved_ship_hull_cruiser = 1
+				}
+				create_equipment_variant = {
+					name = "自由级巡洋舰"
+					type = ship_hull_cruiser_3
+					name_group = FRA_CL_HISTORICAL
+					modules = {
+						front_1_custom_slot = ship_medium_battery_3
+						mid_1_custom_slot = ship_medium_battery_3
+						mid_2_custom_slot = ship_medium_battery_3
+						rear_1_custom_slot = ship_depth_charge_3
+						rear_2_custom_slot = ship_torpedo_3
+						fixed_ship_battery_slot = ship_medium_battery_3
+						fixed_ship_anti_air_slot = ship_anti_air_3
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+						fixed_ship_radar_slot = ship_radar_3
+						fixed_ship_engine_slot = cruiser_ship_engine_3
+						fixed_ship_secondaries_slot = dp_ship_secondaries
+						fixed_ship_armor_slot = ship_armor_cruiser_3
+					}
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_cruiser_3
+						version_name = "自由级巡洋舰"
+					}
+					requested_factories = 1
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_cruiser_3
+						version_name = "自由级巡洋舰"
+					}
+					requested_factories = 1
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_cruiser_3
+						version_name = "自由级巡洋舰"
+					}
+					requested_factories = 1
+					progress = 0.5
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_cruiser_3
+						version_name = "自由级巡洋舰"
+					}
+					requested_factories = 1
+					progress = 0.5
+					amount = 1
+				}
+			}
 			
 		}
 	}
@@ -397,7 +671,21 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			add_tech_bonus = {
+				category = dd_tech
+				uses = 1
+				bonus = 1
+			}
+			add_tech_bonus = {
+				category = ss_tech
+				uses = 1
+				bonus = 1
+			}
+			add_tech_bonus = {
+				category = cl_tech
+				uses = 1
+				bonus = 1
+			}
 		}
 	}
 
@@ -409,8 +697,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		relative_position_id = BCF_cv_charles_de_gaulle
-		prerequisite = { focus = BCF_cv_charles_de_gaulle }
-		prerequisite = { focus = BCF_BC_freedom_class_cruiser }
+		prerequisite = { focus = BCF_cv_charles_de_gaulle focus = BCF_BC_freedom_class_cruiser }
 		available = { }
 		bypass = { }
 		
@@ -420,7 +707,7 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			add_research_slot = 1
 		}
 	}
 
@@ -442,7 +729,8 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			add_political_power = 20
+			add_stability = 0.05
 		}
 	}
 	
@@ -457,7 +745,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 		}
-		
+		available = {
+			check_variable = {
+				bcf_andou_support > 19
+			}
+		}
 		relative_position_id = BCF_sworn_in
 		prerequisite = { focus = BCF_sworn_in }
 		mutually_exclusive = { focus = BCF_maid_of_20th_century }
@@ -495,12 +787,25 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 		}
-		
+		available = {
+			check_variable = {
+				bcf_andou_support > 29
+			}
+		}
 		relative_position_id = BCF_will_of_the_people
 		prerequisite = { focus = BCF_will_of_the_people }
 		mutually_exclusive = { focus = BCF_memories_of_the_paris_commune }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_popularity = {
+				ideology = facism
+				popularity = 0.2
+			}
+			set_country_leader_ideology = fascism_ideology
+			swap_ideas = {
+				remove_idea = BCF_political_instability_2
+				add_idea = BCF_political_instability_1
+			}
 		}
 	}
 
@@ -515,12 +820,17 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 		}
-		
+		available = {
+			check_variable = {
+				bcf_andou_support > 39 
+			}
+		}
 		relative_position_id = BCF_france_supreme
 		prerequisite = { focus = BCF_france_supreme }
 		mutually_exclusive = { focus = BCF_memories_of_the_paris_commune }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_ideas = BCF_nationalism_1
 		}
 	}
 
@@ -535,7 +845,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 		}
-		
+		available = {
+			check_variable = {
+				bcf_andou_support > 49
+			}
+		}
 		relative_position_id = BCF_nationalism
 		prerequisite = { focus = BCF_nationalism }
 		available_if_capitulated = yes
@@ -562,11 +876,19 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 		}
-		
+		available = {
+			check_variable = {
+				bcf_andou_support > 59
+			}
+		}
 		relative_position_id = BCF_never_surrounder
 		prerequisite = { focus = BCF_never_surrounder }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_ideas = tot_economic_mobilisation
+			add_ideas = extensive_conscription
+			add_war_support = 0.1
+			add_political_power = -100
 		}
 	}
 
@@ -581,11 +903,26 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 		}
-		
+		available = {
+			date > 1973.9.1
+		}
 		relative_position_id = BCF_preemptive
 		prerequisite = { focus = BCF_preemptive }
 		available_if_capitulated = yes
 		completion_reward = {
+			declare_war_on = {
+				target = KGA
+			}
+			if = {
+				limit = {
+					NOT = {
+						is_in_faction_with = BON
+					}
+				}
+				declare_war_on = {
+					target = BON
+				}
+			}
 		}
 	}
 
@@ -600,11 +937,60 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 		}
-		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = bcf_check_if_allie_puppet_control_core_state_facism
+				OR = {
+					BCF = {
+						controls_state = 16
+					}
+					any_allied_country = {
+						controls_state = 16
+					}
+					any_country = {
+						is_puppet_of = root
+						controls_state = 16
+					}
+				}
+				OR = {
+					BCF = {
+						controls_state = 64
+					}
+					any_allied_country = {
+						controls_state = 64
+					}
+					any_country = {
+						is_puppet_of = root
+						controls_state = 64
+					}
+				}
+				OR = {
+					BCF = {
+						controls_state = 10
+					}
+					any_allied_country = {
+						controls_state = 10
+					}
+					any_country = {
+						is_puppet_of = root
+						controls_state = 10
+					}
+				}
+			}
+		}
 		relative_position_id = BCF_destroy_kga
 		prerequisite = { focus = BCF_destroy_kga }
 		available_if_capitulated = yes
 		completion_reward = {
+			declare_war_on = {
+				target = PRA
+			}
+			declare_war_on = {
+				target = STG
+			}
+			declare_war_on = {
+				target = ANZ
+			}
 		}
 	}
 
@@ -619,11 +1005,153 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 		}
-		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = bcf_check_if_allie_puppet_control_land_required_for_third_empire
+				OR = {
+					BCF = {
+						controls_state = 16
+					}
+					any_allied_country = {
+						controls_state = 16
+					}
+					any_country = {
+						is_puppet_of = root
+						controls_state = 16
+					}
+				}
+				OR = {
+					BCF = {
+						controls_state = 64
+					}
+					any_allied_country = {
+						controls_state = 64
+					}
+					any_country = {
+						is_puppet_of = root
+						controls_state = 64
+					}
+				}
+				OR = {
+					BCF = {
+						controls_state = 126
+					}
+					any_allied_country = {
+						controls_state = 126
+					}
+					any_country = {
+						is_puppet_of = root
+						controls_state = 126
+					}
+				}
+				OR = {
+					BCF = {
+						controls_state = 2
+					}
+					any_allied_country = {
+						controls_state = 2
+					}
+					any_country = {
+						is_puppet_of = root
+						controls_state = 2
+					}
+				}
+				OR = {
+					BCF = {
+						controls_state = 10
+					}
+					any_allied_country = {
+						controls_state = 10
+					}
+					any_country = {
+						is_puppet_of = root
+						controls_state = 10
+					}
+				}
+				OR = {
+					BCF = {
+						controls_state = 219
+					}
+					any_allied_country = {
+						controls_state = 219
+					}
+					any_country = {
+						is_puppet_of = root
+						controls_state = 219
+					}
+				}
+			}
+		}
 		relative_position_id = BCF_beyond_napoleon
 		prerequisite = { focus = BCF_beyond_napoleon }
 		available_if_capitulated = yes
 		completion_reward = {
+			set_cosmetic_tag = BCF_the_third_empire
+			add_state_core = 51
+			add_state_core = 42
+			add_state_core = 34
+			add_state_core = 8
+			add_state_core = 158
+			add_state_core = 165
+			126 = {
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+				remove_building = {
+					type = arms_factory
+					level = 2
+				}
+			}
+			64 = {
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+				remove_building = {
+					type = arms_factory
+					level = 2
+				}
+			}
+			2 = {
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+				remove_building = {
+					type = arms_factory
+					level = 2
+				}
+			}
+			10 = {
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+				remove_building = {
+					type = arms_factory
+					level = 2
+				}
+			}
+			219 = {
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+				remove_building = {
+					type = arms_factory
+					level = 2
+				}
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 10
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 10
+			}
+			add_manpower = 500000
 		}
 	}
 
@@ -638,12 +1166,21 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 		}
-		
+		available = {
+			check_variable = {
+				bcf_andou_support > 29
+			}
+		}
 		relative_position_id = BCF_will_of_the_people
 		prerequisite = { focus = BCF_will_of_the_people }
 		mutually_exclusive = { focus = BCF_france_is_supreme }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.2
+			}
+			set_country_leader_ideology = socialism
 		}
 	}
 
@@ -658,11 +1195,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 		}
-		
+		available = {
+			check_variable = {
+				bcf_andou_support > 39
+			}
+		}
 		relative_position_id = BCF_memories_of_the_paris_commune
 		prerequisite = { focus = BCF_memories_of_the_paris_commune }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_ideas = BCF_7_hour_work
 		}
 	}
 
@@ -677,11 +1219,19 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 		}
-		
+		available = {
+			check_variable = {
+				bcf_andou_support > 49
+			}
+		}
 		relative_position_id = BCF_seven_hour_work
 		prerequisite = { focus = BCF_seven_hour_work }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_ideas = BCF_happy_worker_2
+			unlock_decision_tooltip = bcf_increase_the_minimum_wage
+			unlock_decision_tooltip = bcf_lower_the_minimum_wage
+			set_country_flag = BCF_allow_to_change_minimum_wage
 		}
 	}
 
@@ -696,11 +1246,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 		}
-		
+		available = {
+			check_variable = {
+				bcf_andou_support > 59
+			}
+		}
 		relative_position_id = BCF_raise_the_minimum_wage
 		prerequisite = { focus = BCF_raise_the_minimum_wage }
 		available_if_capitulated = yes
 		completion_reward = {
+
 		}
 	}
 
@@ -715,12 +1270,20 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 		}
-		
+		available = {
+			check_variable = {
+				bcf_andou_support > 39
+			}
+		}
 		relative_position_id = BCF_memories_of_the_paris_commune
 		prerequisite = { focus = BCF_memories_of_the_paris_commune }
 		mutually_exclusive = { focus = BCF_maid_of_20th_century }
 		available_if_capitulated = yes
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = BCF_political_instability_2
+				add_idea = BCF_political_instability_1
+			}
 		}
 	}
 
@@ -735,7 +1298,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 		}
-		
+		available = {
+			check_variable = {
+				bcf_andou_support > 49
+			}
+		}
 		relative_position_id = BCF_rebuilding_the_left_alliance
 		prerequisite = { focus = BCF_rebuilding_the_left_alliance }
 		available_if_capitulated = yes
@@ -755,12 +1322,20 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 		}
-		
+		available = {
+			check_variable = {
+				bcf_andou_support > 59
+			}
+		}
 		relative_position_id = BCF_to_arms
 		prerequisite = { focus = BCF_to_arms }
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			add_ideas = war_economy
+			add_ideas = extensive_conscription
+			add_ideas = limited_exports
+			add_stability = -0.1
+			add_political_power = -100
 		}
 	}
 
@@ -780,7 +1355,8 @@ focus_tree = {
 		prerequisite = { focus = BCF_revolution_preparation focus = BCF_encourage_the_labor_movement }
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			remove_ideas = BCF_political_instability_1
+			add_ideas = BCF_communism
 		}
 	}
 
@@ -796,12 +1372,21 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 		}
-		
+		available = {
+			ROOT = {
+				has_government = communism
+			}
+			PRA = {
+				has_government = communism
+			}
+		}
 		relative_position_id = BCF_commune_rebirth
 		prerequisite = { focus = BCF_commune_rebirth }
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			country_event = {
+				id = bcfreedom.62
+			}
 		}
 	}
 	
@@ -811,6 +1396,13 @@ focus_tree = {
 		icon = GFX_focus_BCF_maid_of_20th_century
 		x = 0
 		y = 1
+
+		available = {
+			check_variable = {
+				bcf_marie_support >39
+			}
+		}
+
 		cost = 5
 		
 		ai_will_do = {
@@ -823,8 +1415,8 @@ focus_tree = {
 		mutually_exclusive = { focus = BCF_country_of_the_noble }
 		available_if_capitulated = yes
 		completion_reward = {
-			add_political_power = 100
-			add_stability = 0.05
+			add_political_power = 35
+			add_stability = 0.1
 			add_popularity = {
 				ideology = neutrality
 				popularity = 0.1
@@ -838,6 +1430,13 @@ focus_tree = {
 		icon = GFX_focus_BCF_country_of_the_noble
 		x = -6
 		y = 1
+
+		available = {
+			check_variable = {
+				bcf_oshida_support > 19
+			}
+		}
+
 		cost = 5
 		
 		ai_will_do = {
@@ -862,6 +1461,8 @@ focus_tree = {
 			set_country_leader_name = {
 				name = "Oshida"
 			}
+			add_to_variable = { bcf_oshida_support = 5 }
+			custom_effect_tooltip = bcf_tooltip11
 		}
 	}
 
@@ -871,6 +1472,13 @@ focus_tree = {
 		icon = GFX_focus_BCF_constitution_revision
 		x = 0
 		y = 1
+
+		available = {
+			check_variable = {
+				bcf_oshida_support > 29
+			}
+		}
+		
 		cost = 5
 		
 		ai_will_do = {
@@ -895,6 +1503,13 @@ focus_tree = {
 		icon = GFX_focus_BCF_rebuild_democracy
 		x = 0
 		y = 1
+
+		available = {
+			check_variable = {
+				bcf_oshida_support > 39
+			}
+		}
+
 		cost = 5
 		
 		ai_will_do = {
@@ -918,7 +1533,6 @@ focus_tree = {
 		mutually_exclusive = { focus = BCF_possibility_of_monarchy }
 		available_if_capitulated = yes
 		completion_reward = {
-			add_stability = 0.05
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.1
@@ -951,6 +1565,7 @@ focus_tree = {
 					election_frequency = 48
 				}
 			}
+			remove_ideas = BCF_political_instability_1
 			
 		}
 	}
@@ -961,6 +1576,13 @@ focus_tree = {
 		icon = GFX_focus_BCF_reopen_election
 		x = 0
 		y = 1
+
+		available = {
+			check_variable = {
+				bcf_oshida_support > 49
+			}
+		}
+
 		cost = 5
 		
 		ai_will_do = {
@@ -973,6 +1595,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 100
 			add_stability = 0.1
+			add_war_support = 0.1
 		}
 	}
 
@@ -1057,6 +1680,11 @@ focus_tree = {
 		icon = GFX_focus_BCF_seek_support_from_stg
 		x = 1
 		y = 2
+
+		available = {
+			has_government = STG
+		}
+
 		cost = 5
 		
 		ai_will_do = {
@@ -1077,6 +1705,13 @@ focus_tree = {
 		icon = GFX_focus_BCF_european_light_house
 		x = 0
 		y = 2
+
+		available = {
+			check_variable = {
+				bcf_oshida_support > 59
+			}
+		}
+
 		cost = 5
 		
 		ai_will_do = {
@@ -1087,7 +1722,7 @@ focus_tree = {
 		prerequisite = { focus = BCF_reopen_election }
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			add_ideas = BCF_lighthouse
 		}
 	}
 
@@ -1097,6 +1732,7 @@ focus_tree = {
 		icon = GFX_focus_BCF_speaking_tour
 		x = 0
 		y = 1
+
 		cost = 10
 		
 		ai_will_do = {
@@ -1107,7 +1743,9 @@ focus_tree = {
 		prerequisite = { focus = BCF_maid_of_20th_century }
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			add_war_support = 0.1
+			add_to_variable = { bcf_marie_support = 8 }
+			custom_effect_tooltip = bcf_tooltip34
 		}
 	}
 
@@ -1117,6 +1755,13 @@ focus_tree = {
 		icon = GFX_focus_BCF_no_change
 		x = 0
 		y = 1
+
+		available = {
+			check_variable = {
+				bcf_marie_support > 49
+			}
+		}
+
 		cost = 5
 		
 		ai_will_do = {
@@ -1134,7 +1779,10 @@ focus_tree = {
 		mutually_exclusive = { focus = BCF_possibility_of_monarchy }
 		available_if_capitulated = yes
 		completion_reward = {
-			remove_ideas = BCF_political_instability_1
+			swap_ideas = {
+				remove_idea = BCF_political_instability_2
+				add_idea = BCF_political_instability_1
+			}
 		}
 	}
 
@@ -1144,6 +1792,13 @@ focus_tree = {
 		icon = GFX_focus_BCF_limit_faction
 		x = 0
 		y = 1
+
+		available = {
+			check_variable = {
+				bcf_marie_support >59
+			}
+		}
+
 		cost = 5
 		
 		ai_will_do = {
@@ -1155,6 +1810,22 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_ideas = BCF_restricted_faction
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.15
+			}
 		}
 	}
 
@@ -1164,6 +1835,13 @@ focus_tree = {
 		icon = GFX_focus_BCF_the_great_guardian
 		x = 0
 		y = 1
+
+		available = {
+			check_variable = {
+				bcf_marie_support > 64
+			}
+		}
+
 		cost = 5
 		
 		ai_will_do = {
@@ -1177,6 +1855,7 @@ focus_tree = {
 				ideology = neutrality
 				popularity = 0.2
 			}
+			remove_ideas = BCF_political_instability_1
 		}
 	}
 
@@ -1237,6 +1916,32 @@ focus_tree = {
 				add_idea = BCF_political_instability_2
 			}
 			add_political_power = 50
+			add_timed_idea = {
+				idea = BCF_republicans_oppose_0
+				days = 365
+			}
+			if = {
+				limit = {
+					has_country_leader = {
+						name = "Marie"
+						ruling_only = yes
+					}
+				}
+				add_to_variable = {
+					bcf_oshida_support = -10
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_leader = {
+						name = "Oshida"
+						ruling_only = yes
+					}
+				}
+				add_to_variable = {
+					bcf_maire_support = -10
+				}
+			}
 		}
 	}
 
@@ -1251,7 +1956,20 @@ focus_tree = {
 		ai_will_do = {
 			factor = 25
 		}
-		
+
+		available = {
+			NOT = {
+				has_idea = BCF_republicans_oppose_0
+			}
+			has_country_leader = {
+				name = "Oshida"
+				ruling_only = yes
+			}
+			check_variable = {
+				bcf_oshida_support > 59
+			}
+		}
+
 		relative_position_id = BCF_possibility_of_monarchy
 		prerequisite = { focus = BCF_possibility_of_monarchy }
 		mutually_exclusive = { focus = BCF_letat_cest_moi }
@@ -1280,6 +1998,13 @@ focus_tree = {
 			has_country_leader = {
 				name = "Marie"
 				ruling_only = yes
+			}
+			check_variable = {
+				bcf_marie_support > 69
+			}
+			NOR = {
+				has_idea = BCF_republicans_oppose_0
+				has_idea = BCF_republicans_oppose_1
 			}
 		}
 		relative_position_id = BCF_possibility_of_monarchy
@@ -1312,6 +2037,9 @@ focus_tree = {
 		prerequisite = { focus = BCF_letat_cest_moi focus = BCF_parlimentary_monarchy }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_political_power = -100
+			add_stability = 0.15
+			add_war_support = 0.15
 		}
 	}
 
@@ -1332,6 +2060,10 @@ focus_tree = {
 		prerequisite = { focus = BCF_coronation_ceremony focus = BCF_the_great_guardian focus = BCF_reopen_election }
 		available_if_capitulated = yes
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = BCF_chaotic_army
+				add_idea = BCF_reforming_army
+			}
 		}
 	}
 
@@ -1341,6 +2073,20 @@ focus_tree = {
 		icon = GFX_focus_BCF_research_committee
 		x = 2
 		y = 1
+
+		available = {
+			OR = {
+				has_country_leader = {
+					name = "Marie"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Oshida"
+					ruling_only = yes
+				}
+			}
+		}
+
 		cost = 5
 		
 		ai_will_do = {
@@ -1352,6 +2098,7 @@ focus_tree = {
 		prerequisite = { focus = BCF_country_of_the_noble focus = BCF_maid_of_20th_century }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 
@@ -1361,6 +2108,14 @@ focus_tree = {
 		icon = GFX_focus_BCF_research_committee
 		x = 4
 		y = 1
+
+		available = {
+			has_country_leader = {
+				name = "Marie"
+				ruling_only = yes
+			}
+		}
+		
 		cost = 5
 		
 		ai_will_do = {
@@ -1372,6 +2127,7 @@ focus_tree = {
 		prerequisite = { focus = BCF_country_of_the_noble focus = BCF_maid_of_20th_century }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_ideas = BCF_maries_flag
 		}
 	}
 
@@ -1444,7 +2200,7 @@ focus_tree = {
 		}
 	}
 
-	#军事重组
+	#军事理论革新
 	focus = {
 		id = BCF_land_force_reform
 		icon = GFX_focus_BCF_land_force_reform
@@ -1481,6 +2237,21 @@ focus_tree = {
 		prerequisite = { focus = BCF_land_force_reform }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_tech_bonus = {
+				category = armor
+				bonus = 1
+				uses = 1
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 	}
 
@@ -1499,6 +2270,8 @@ focus_tree = {
 		prerequisite = { focus = BCF_land_force_reform }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_research_slot = 1
+			remove_ideas = BCF_reforming_army
 		}
 	}
 
@@ -1517,6 +2290,44 @@ focus_tree = {
 		prerequisite = { focus = BCF_land_force_reform }
 		available_if_capitulated = yes
 		completion_reward = {
+			16 = {
+				add_building_construction = {
+					type = air_base
+					level = 4
+				}
+			}
+			21 = {
+				add_building_construction = {
+					type = air_base
+					level = 4
+				}
+			}
+			28 = {
+				add_building_construction = {
+					type = air_base
+					level = 4
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 	}
 
@@ -1535,6 +2346,11 @@ focus_tree = {
 		prerequisite = { focus = BCF_embrace_new_logic }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_tech_bonus = {
+				category = armor
+				bonus = 1
+				uses = 3
+			}
 		}
 	}
 
@@ -1565,7 +2381,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		
-		ai_will_do = {
+		ai_will_do = {a
 			factor = 25
 		}
 		mutually_exclusive = { focus = BCF_focus_on_tank_quality }
@@ -1573,6 +2389,7 @@ focus_tree = {
 		prerequisite = { focus = BCF_tank_research_and_development }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_ideas = BCF_quantity
 		}
 	}
 
@@ -1581,7 +2398,7 @@ focus_tree = {
 		id = BCF_senshadao_league_match
 		icon = GFX_focus_BCF_senshadao_league_match
 		x = 0
-		y = 7
+		y = 1
 		cost = 5
 		
 		ai_will_do = {
@@ -1693,7 +2510,7 @@ focus_tree = {
 		icon = GFX_focus_BCF_third_orelans_conference
 		#relative_position_id = BCF_protect_from_pra
 		x = 0
-		y = 3
+		y = 6
 		cost = 0
 		
 		ai_will_do = {
@@ -1713,7 +2530,7 @@ focus_tree = {
 		id = BCF_centrlization_effort
 		icon = GFX_focus_BCF_centrlization_effort
 		relative_position_id = BCF_third_orelans_conference
-		x = -2
+		x = -3
 		y = 1
 		cost = 5
 		
@@ -1728,9 +2545,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = BCF_weak_government_4
-				add_idea = BCF_weak_government_3
+				remove_idea = BCF_weak_government_5
+				add_idea = BCF_weak_government_4
 			}
+			add_stability = -0.05
 		}
 	}
 
@@ -1751,6 +2569,12 @@ focus_tree = {
 		prerequisite = { focus = BCF_centrlization_effort }
 		available_if_capitulated = yes
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = BCF_weak_government_4
+				add_idea = BCF_weak_government_3
+			}
+			add_stability = -0.05
+			army_experience = 50
 		}
 	}
 
@@ -1775,6 +2599,8 @@ focus_tree = {
 				remove_idea = BCF_weak_government_3
 				add_idea = BCF_weak_government_2
 			}
+			add_stability = -0.05
+			add_political_power = 100
 		}
 	}
 
@@ -1795,8 +2621,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = BCF_weak_government_2
-				add_idea = BCF_weak_government_1
+				remove_idea = BCF_weak_government_3
+				add_idea = BCF_weak_government_2
 			}
 		}
 	}
@@ -1836,6 +2662,7 @@ focus_tree = {
 		prerequisite = { focus = BCF_dismiss_local_millita focus = BCF_integrate_local_armed_forces }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_manpower = 100000
 		}
 	}
 
@@ -1856,9 +2683,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = BCF_weak_government_1
-				add_idea = BCF_weak_government_0
+				remove_idea = BCF_weak_government_2
+				add_idea = BCF_weak_government_1
 			}
+			add_stability = -0.05
 		}
 	}
 
@@ -1919,6 +2747,1020 @@ focus_tree = {
 		prerequisite = { focus = BCF_hostess_of_france }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_war_support = 0.2
+			add_threat = 10
+		}
+	}
+
+	#法兰西的天然边界
+	focus = {
+		id = BCF_the_natural_borders_of_France
+		icon = GFX_focus_BCF_the_natural_borders_of_France
+		x = 0
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		relative_position_id = BCF_towards_expansionism_again
+		available = {  }
+		prerequisite = { focus = BCF_towards_expansionism_again }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_state_claim = 34
+			add_state_claim = 6
+			add_state_claim = 158
+			add_state_claim = 165
+		}
+	}
+
+	#向东看
+	focus = {
+		id = BCF_eastern_expand
+		icon = GFX_focus_BCF_eastern_expand
+		x = -2
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		relative_position_id = BCF_the_natural_borders_of_France
+		available = {  }
+		prerequisite = { focus = BCF_the_natural_borders_of_France }
+		available_if_capitulated = yes
+		completion_reward = {
+			declare_war_on = {
+				target = KGA
+			}
+		}
+	}
+
+	#重建莱茵联邦
+	focus = {
+		id = BCF_rebuilding_the_rhine_federation 
+		icon = GFX_focus_BCF_rebuilding_the_rhine_federation
+		x = 0
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		relative_position_id = BCF_eastern_expand
+		available = {
+			KGA = {
+				has_capitulated = yes
+			}
+			BCF = {
+				controls_state = 64
+			}
+		}
+		prerequisite = { focus = BCF_eastern_expand }
+		available_if_capitulated = yes
+		completion_reward = {
+			51 = {
+				add_core_of = BCF
+				remove_core_of = KGA
+			}
+			42 = {
+				add_core_of = BCF
+				remove_core_of = KGA
+			}
+		}
+	}
+
+	#声索皮埃蒙特
+	focus = {
+		id = BCF_piemonte_or_war
+		icon = GFX_focus_BCF_piemonte_or_war
+		relative_position_id = BCF_the_natural_borders_of_France
+		x = 0
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_the_natural_borders_of_France }
+		available_if_capitulated = yes
+		completion_reward = {
+			ANZ = { country_event = bcfreedom.9 }
+		}
+	}
+
+	#夺取低地
+	focus = {
+		id = BCF_capture_the_lowlands 
+		icon = GFX_focus_BCF_capture_the_lowlands
+		relative_position_id = BCF_the_natural_borders_of_France
+		x = 2
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_the_natural_borders_of_France }
+		available_if_capitulated = yes
+		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+						owns_state = 34
+						owns_state = 6
+					}
+				}
+				save_event_target_as = lowland_target_to_declare_war_BCF
+			}
+			declare_war_on = {
+				target = event_target:lowland_target_to_declare_war_BCF
+			}
+		}
+	}
+
+	#击败宿敌
+	focus = {
+		id = BCF_defeat_an_old_enemy 
+		icon = GFX_focus_BCF_defeat_an_old_enemy
+		relative_position_id = BCF_capture_the_lowlands
+		x = 0
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_capture_the_lowlands }
+		available_if_capitulated = yes
+		completion_reward = {
+			declare_war_on = {
+				target = STG
+			}
+		}
+	}
+
+	#法兰西治下的和平
+	focus = {
+		id = BCF_peace_under_france 
+		icon = GFX_focus_BCF_peace_under_france
+		relative_position_id = BCF_defeat_an_old_enemy
+		x = -2
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_defeat_an_old_enemy }
+		prerequisite = { focus = BCF_piemonte_or_war }
+		prerequisite = { focus = BCF_rebuilding_the_rhine_federation }
+		available_if_capitulated = yes
+		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = BCF
+						is_puppet_of = BCF
+					}
+				}
+				add_stability = 0.2
+			}
+		}
+	}
+
+	#旁观者
+	focus = {
+		id = BCF_bystander 
+		icon = GFX_focus_BCF_bystander
+		relative_position_id = BCF_hostess_of_france
+		x = 2
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_hostess_of_france }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = BCF_independenet_1
+		}
+	}
+
+	#解决领土争议问题
+	focus = {
+		id = BCF_disputed_terrtority
+		icon = GFX_focus_BCF_disputed_terrtority
+		relative_position_id = BCF_bystander
+		x = 0
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		available = { has_country_flag = BCF_TERRTORY_ISSUE_SOLVED }
+		prerequisite = { focus = BCF_bystander }
+		available_if_capitulated = yes
+		completion_reward = {
+			country_event = bcfreedom.12
+		}
+	}
+
+	#一代人的和平
+	focus = {
+		id = BCF_a_generation_of_peace
+		icon = GFX_focus_BCF_a_generation_of_peace
+		relative_position_id = BCF_disputed_terrtority
+		x = 0
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		
+		available = {  }
+		prerequisite = { focus = BCF_disputed_terrtority }
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BCF_independenet_1
+				add_idea = BCF_independenet_2
+			}
+		}
+	}
+
+	#交好黑森峰
+	focus = {
+		id = BCF_kga_ally
+		icon = GFX_focus_BCF_kga_ally
+		relative_position_id = BCF_a_generation_of_peace
+		x = 1
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available ={
+			has_country_flag = BCF_TERRTORY_ISSUE_SOLVED
+		}
+		prerequisite = { focus = BCF_a_generation_of_peace }
+		mutually_exclusive = { focus = BCF_befriend_STG }
+		available_if_capitulated = yes
+		completion_reward = {
+			country_event = bcfreedom.15
+			unlock_decision_tooltip = bcf_setup_bcf_kga_federation
+		}
+	}
+	
+	#交好圣葛罗莉安娜
+	focus = {
+		id = BCF_befriend_STG
+		icon = GFX_focus_BCF_befriend_STG
+		relative_position_id = BCF_a_generation_of_peace
+		x = -1
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_a_generation_of_peace }
+		mutually_exclusive = { focus = BCF_kga_ally }
+		available_if_capitulated = yes
+		completion_reward = {
+			unlock_decision_tooltip = bcf_rebuild_allies
+		}
+	}
+
+	#内战的阴霾
+	focus = {
+		id = BCF_The_haze_of_the_civil_war 
+		icon = GFX_focus_BCF_The_haze_of_the_civil_war
+		relative_position_id = BCF_third_orelans_conference
+		x = 3
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {
+			#has_country_flag = BCF_orelans_conference_failed
+		}
+		prerequisite = { focus = BCF_third_orelans_conference }
+		mutually_exclusive = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_manpower = 50000
+		}
+	}
+
+	#巩固巴黎
+	focus = {
+		id = BCF_consolidate_paris
+		icon = GFX_focus_BCF_consolidate_paris
+		relative_position_id = BCF_The_haze_of_the_civil_war
+		x = 1
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_The_haze_of_the_civil_war }
+		mutually_exclusive = { focus = BCF_consolidate_marseille }
+		available_if_capitulated = yes
+		completion_reward = {
+			16 = {
+				set_building_level = {
+					type = bunker
+					level = 1
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+		}
+	}
+
+	#夺取军火库
+	focus = {
+		id = BCF_seize_the_arsenal 
+		icon = GFX_focus_BCF_seize_the_arsenal
+		relative_position_id = BCF_consolidate_paris
+		x = 0
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_consolidate_paris }
+		available_if_capitulated = yes
+		completion_reward = {
+		}
+	}
+
+	#巴黎戒严
+	focus = {
+		id = BCF_martial_law_in_paris 
+		icon = GFX_focus_BCF_martial_law_in_paris
+		relative_position_id = BCF_seize_the_arsenal
+		x = 0
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_seize_the_arsenal }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = 0.1
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.1
+			}
+		}
+	}
+
+	#战时状态
+	focus = {
+		id = BCF_state_of_war 
+		icon = GFX_focus_BCF_state_of_war
+		relative_position_id = BCF_martial_law_in_paris
+		x = 0
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_martial_law_in_paris }
+		available_if_capitulated = yes
+		completion_reward = {
+		}
+	}
+
+	#巩固马赛
+	focus = {
+		id = BCF_consolidate_marseille 
+		icon = GFX_focus_BCF_consolidate_marseille
+		relative_position_id = BCF_The_haze_of_the_civil_war
+		x = -1
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_The_haze_of_the_civil_war }
+		mutually_exclusive = { focus = BCF_consolidate_paris }
+		available_if_capitulated = yes
+		completion_reward = {
+			21 = {
+				set_building_level = {
+					type = bunker
+					level = 6
+					province = {
+						id = 11834
+					}
+				}
+			}
+		}
+	}
+
+	#寻求民主国家支援
+	focus = {
+		id = BCF_seek_support_from_democratic_countries 
+		icon = GFX_focus_BCF_seek_support_from_democratic_countries
+		relative_position_id = BCF_consolidate_marseille
+		x = 0
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_consolidate_marseille }
+		mutually_exclusive = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+			every_country = {
+				limit = {
+					has_government = democratic
+				}
+				#BCF寻求支援
+				#country_event = BCF_seek_for_help
+			}
+		}
+	}
+
+	#拖延时间
+	focus = {
+		id = BCF_delay_time
+		icon = GFX_focus_BCF_delay_time
+		relative_position_id = BCF_seek_support_from_democratic_countries
+		x = 0
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_seek_support_from_democratic_countries }
+		mutually_exclusive = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+		}
+	}
+
+	#确保地中海舰队忠诚
+	focus = {
+		id = BCF_ensuring_the_loyalty_of_the_mediterranean_fleet 
+		icon = GFX_focus_BCF_ensuring_the_loyalty_of_the_mediterranean_fleet
+		relative_position_id = BCF_delay_time
+		x = 0
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_delay_time }
+		mutually_exclusive = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+		}
+	}
+
+	#为法兰西而战
+	focus = {
+		id = BCF_fight_for_france
+		icon = GFX_focus_BCF_fight_for_france
+		relative_position_id = BCF_ensuring_the_loyalty_of_the_mediterranean_fleet
+		x = 1
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {
+			has_country_flag = BCF_CIVIL_WAR_START
+			NOT = {
+				has_country_flag = BCF_CIVIL_WAR_END
+			}
+		}
+		prerequisite = { focus = BCF_ensuring_the_loyalty_of_the_mediterranean_fleet focus = BCF_state_of_war }
+		mutually_exclusive = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_timed_idea = {
+				idea = BCF_train
+				days = 180
+			}
+		}
+	}
+
+	#专注进攻
+	focus = {
+		id = BCF_focus_on_attack
+		icon = GFX_focus_BCF_focus_on_attack
+		relative_position_id = BCF_fight_for_france
+		x = -1
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_fight_for_france }
+		mutually_exclusive = { focus = BCF_focus_on_defend }
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BCF_fight_for_france_idea_1
+				add_idea = BCF_fight_for_france_idea_2
+			}
+		}
+	}
+
+	#专注防御
+	focus = {
+		id = BCF_focus_on_defend
+		icon = GFX_focus_BCF_focus_on_defend
+		relative_position_id = BCF_fight_for_france
+		x = 1
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_fight_for_france }
+		mutually_exclusive = { focus = BCF_focus_on_attack }
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BCF_fight_for_france_idea_1
+				add_idea = BCF_fight_for_france_idea_3
+			}
+		}
+	}
+
+	#叛徒倒下
+	focus = {
+		id = BCF_down_the_traitor
+		icon = GFX_focus_BCF_down_the_traitor
+		relative_position_id = BCF_focus_on_attack
+		x = 1
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_focus_on_attack focus = BCF_focus_on_defend }
+		mutually_exclusive = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+			remove_ideas = BCF_weak_government_5
+		}
+	}
+
+	#民主的胜利
+	focus = {
+		id = BCF_the_victory_of_democracy 
+		icon = GFX_focus_BCF_the_victory_of_democracy
+		relative_position_id = BCF_down_the_traitor
+		x = -1
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_down_the_traitor }
+		mutually_exclusive = { focus = BCF_victory_for_the_people }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.2
+			}
+			add_to_variable = {
+				bcf_oshida_support = 20
+			}
+		}
+	}
+
+	#人民的胜利
+	focus = {
+		id = BCF_victory_for_the_people 
+		icon = GFX_focus_BCF_victory_for_the_people
+		relative_position_id = BCF_down_the_traitor
+		x = 1
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_down_the_traitor }
+		mutually_exclusive = { focus = BCF_the_victory_of_democracy }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.2
+			}
+			add_to_variable = {
+				bcf_andou_support = 20
+			}
+		}
+	}
+
+	#重建国家
+	focus = {
+		id = BCF_rebuild_the_country 
+		icon = GFX_focus_BCF_rebuild_the_country
+		relative_position_id = BCF_the_victory_of_democracy
+		x = 1
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_the_victory_of_democracy focus = BCF_victory_for_the_people }
+		mutually_exclusive = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = civilian_economy
+			add_ideas = export_focus
+			add_ideas = limited_conscription
+		}
+	}
+
+	#民主守护者
+	focus = {
+		id = BCF_guardian_of_democracy 
+		icon = GFX_focus_BCF_guardian_of_democracy
+		relative_position_id = BCF_rebuild_the_country
+		x = -2
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_rebuild_the_country }
+		mutually_exclusive = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+			every_country = {
+				limit = {
+					has_government = democratic
+				}
+				save_event_target_as = BCF_democratic_country_guarantee
+			}
+			give_guarantee = event_target:BCF_democratic_country_guarantee
+		}
+	}
+
+	#坚不可摧的堡垒
+	focus = {
+		id = BCF_indestructible_fortress 
+		icon = GFX_focus_BCF_indestructible_fortress
+		relative_position_id = BCF_guardian_of_democracy
+		x = 0
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_guardian_of_democracy }
+		mutually_exclusive = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+			every_owned_state = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						limit_to_victory_point > 0
+					}
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#清除威胁
+	focus = {
+		id = BCF_eliminate_threats 
+		icon = GFX_focus_BCF_indestructible_fortress
+		relative_position_id = BCF_indestructible_fortress
+		x = 0
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_indestructible_fortress }
+		mutually_exclusive = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+			every_country = {
+				limit = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+				save_event_target_as = BCF_non_democratic_to_declare_war
+			}
+			create_wargoal = {
+				target = event_target:BCF_non_democratic_to_declare_war
+				type = annex_everything
+			}
+		}
+	}
+
+	#真正的民主兵工厂
+	focus = {
+		id = BCF_true_democratic_arsenal 
+		icon = GFX_focus_BCF_true_democratic_arsenal
+		relative_position_id = BCF_guardian_of_democracy
+		x = -2
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {  }
+		prerequisite = { focus = BCF_guardian_of_democracy }
+		mutually_exclusive = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+
+	#斩断铁链
+	focus = {
+		id = BCF_cut_the_chain 
+		icon = GFX_focus_BCF_cut_the_chain
+		relative_position_id = BCF_rebuild_the_country
+		x = 2
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {
+		}
+		prerequisite = { focus = BCF_rebuild_the_country }
+		mutually_exclusive = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_war_support = 0.2
+		}
+	}
+
+	#解放不列颠
+	focus = {
+		id = BCF_liberate_britain 
+		icon = GFX_focus_BCF_liberate_britain
+		relative_position_id = BCF_cut_the_chain
+		x = -2
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {
+			has_country_flag = BCF_CIVIL_WAR_END
+		}
+		prerequisite = { focus = BCF_cut_the_chain }
+		mutually_exclusive = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+			declare_war_on = {
+				target = STG
+			}
+		}
+	}
+
+	#解放德意志
+	focus = {
+		id = BCF_liberate_deutsch
+		icon = GFX_focus_BCF_liberate_deutsch
+		relative_position_id = BCF_cut_the_chain
+		x = 0
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {
+			has_country_flag = BCF_CIVIL_WAR_END
+		}
+		prerequisite = { focus = BCF_cut_the_chain }
+		mutually_exclusive = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+			declare_war_on = {
+				target = KGA
+			}
+		}
+	}
+
+	#解放意大利
+	focus = {
+		id = BCF_liberate_italy
+		icon = GFX_focus_BCF_liberate_italy
+		relative_position_id = BCF_cut_the_chain
+		x = 2
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {
+			has_country_flag = BCF_CIVIL_WAR_END
+		}
+		prerequisite = { focus = BCF_cut_the_chain }
+		mutually_exclusive = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+			declare_war_on = {
+				target = ANZ
+			}
+		}
+	}
+
+	#世界革命
+	focus = {
+		id = BCF_world_revolution 
+		icon = GFX_focus_BCF_world_revolution
+		relative_position_id = BCF_liberate_deutsch
+		x = 0
+		y = 1
+		cost = 5
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = bcf_check_if_allie_puppet_control_core_state
+				OR = {
+					BCF = {
+						controls_state = 16
+					}
+					any_allied_country = {
+						controls_state = 16
+					}
+					any_country = {
+						is_puppet_of = root
+						controls_state = 16
+					}
+				}
+				OR = {
+					BCF = {
+						controls_state = 64
+					}
+					any_allied_country = {
+						controls_state = 64
+					}
+					any_country = {
+						is_puppet_of = root
+						controls_state = 64
+					}
+				}
+				OR = {
+					BCF = {
+						controls_state = 126
+					}
+					any_allied_country = {
+						controls_state = 126
+					}
+					any_country = {
+						is_puppet_of = root
+						controls_state = 126
+					}
+				}
+				OR = {
+					BCF = {
+						controls_state = 2
+					}
+					any_allied_country = {
+						controls_state = 2
+					}
+					any_country = {
+						is_puppet_of = root
+						controls_state = 2
+					}
+				}
+			}
+		}
+		prerequisite = { focus = BCF_liberate_deutsch focus = BCF_liberate_italy focus = BCF_liberate_britain }
+		mutually_exclusive = {  }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 200
+			add_popularity = {
+				ideology = communism
+				popularity = 0.3
+			}
+			add_stability = 0.3
 		}
 	}
 }

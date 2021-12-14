@@ -25,7 +25,7 @@ characters={
 		country_leader={
 			desc="She is the best"
 			ideology=moderatism
-			traits={ dictator }
+			traits={  }
 			expire="2000.1.1.1"
 			id=-1
 		}
@@ -70,13 +70,6 @@ characters={
 			logistics_skill=3
 			legacy_id=1078
 		}
-		country_leader={
-			desc="She is the best"
-			ideology=conservatism
-			traits={ caudillo_1 }
-			expire="2000.1.1.1"
-			id=-1
-		}
 	}
 	ANZ_saori_takebe={
 		name="Saori Takebe"
@@ -107,6 +100,13 @@ characters={
 			army={
 				large="gfx/leaders/ANZ/Portrait_ANZ_Amaretto.dds"
 			}
+		}
+		country_leader={
+			desc="She is the best"
+			ideology=conservatism
+			traits={ caudillo_1 }
+			expire="2000.1.1.1"
+			id=-1
 		}
 		corps_commander={
 			traits={ armor_officer }

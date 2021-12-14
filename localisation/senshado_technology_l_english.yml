@@ -1,30 +1,13 @@
 ﻿l_english:
  #新增科技分类
- naval_ss_snorkel:0 "潜艇通气管"
  naval_fire_control:0 "火炮管制系统"
  naval_dmg_control:0 "损害管制系统"
- naval_advance_torpedo:0 "高级鱼雷"
- naval_torpedo_launcher:0 "鱼雷发射装置"
+ naval_torpedo:0 "鱼雷"
  naval_battery:0 "海军炮组"
  naval_shell:0 "海军炮弹"
- naval_bb_armor:0 "战列舰防护方案"
  armor_lt:0 "轻型坦克"
  armor_mt:0 "中型坦克"
  armor_ht:0 "重型坦克"
- armor_td:0 "坦克歼击车"
- armor_atd:0 "突击坦克歼击车"
- support_tech:0 "支援科技"
- scope_tech:0 "战车观察装置"
- amphibious_tech:0 "战车两栖改装"
- repairkit_tech:0 "修理箱"
- firstaid_tech:0 "急救箱"
- ammunition_tech:0 "战车弹药"
- HE_tech:0 "高爆弹"
- AP_tech:0 "穿甲弹"
- armorpiece_tech:0 "战车装甲"
- chemical_armor_tech:0 "化学装甲"
- physical_armor_tech:0 "物理装甲"
- excavation_tech_research:0 "资源采掘研究速度"
 
  
  #主要页面
@@ -34,7 +17,7 @@
  SUPPORT_TITLE_ARMORPIECE:0 "战车额外装甲"
  
  #步兵页面
- food:0 "食物补给I"
+ food:0 "食物补给"
  food_desc:0 "食物补给是每个学生身体茁壮成长的重要保障，即使在坦克里也不例外，在随时都能吃饱的情况下，才能更好的进行战车道修行。"
  food_1:0 "食物补给II"
  food_1_desc:0 "食物补给是每个学生身体茁壮成长的重要保障，即使在坦克里也不例外，在随时都能吃饱的情况下，才能更好的进行战车道修行。"
@@ -55,8 +38,8 @@
  uniform_winter_3:0 "冬季校服IV" 
  uniform_winter_4:0 "冬季校服V" 
 
- KGA_food:0 "无酒精啤酒"
- KGA_food_desc:0 "无酒精啤酒是黑森峰传统饮料，喝了之后伸腿瞪眼，车组成员技能发挥提高10%"
+#  KGA_food:0 "无酒精啤酒"
+#  KGA_food_desc:0 "无酒精啤酒是黑森峰传统饮料，喝了之后伸腿瞪眼，车组成员技能发挥提高10%"
  
  #支援连页面
  tech_support:0 "战车道支援装备"
@@ -128,6 +111,17 @@
  tech_physical_armor_3:0 "轧压均质装甲"
  tech_physical_armor_3_desc:0 ""
  
+ #战车页面升级
+ engine_tech_1_tt:0 "启用4-7级引擎升级"
+ engine_tech_2_tt:0 "启用8-11级引擎升级"
+ engine_tech_3_tt:0 "启用12-14级引擎升级"
+ engine_tech_4_tt:0 "启用15-17级引擎升级"
+ engine_tech_5_tt:0 "启用18-20级引擎升级"
+ armor_tech_1_tt:0 "启用4-7级装甲升级"
+ armor_tech_2_tt:0 "启用8-11级装甲升级"
+ armor_tech_3_tt:0 "启用12-14级装甲升级"
+ armor_tech_4_tt:0 "启用15-17级装甲升级"
+ armor_tech_5_tt:0 "启用18-20级装甲升级"
  
  
  
@@ -140,7 +134,7 @@
  senshado_light_tank_1:0 "一级轻型坦克"
  senshado_light_tank_1_desc:0 ""
  KGA_senshado_light_tank_1:0 "§OPZ.I.AUSF.C"
- KGA_senshado_light_tank_1_desc:0 "一号坦克C型（VK601/Pz.kpfw.Ⅰ Ausf.C）在1938年由德国陆军兵器局与Krauss-Maffei、MAN和Daimler-Benz三个厂签约，着手开发新型的一号坦克。新型的一号坦克重量设定为6吨，代号VK601，要求轻量与高速， 做为空降与侦察坦克。原型车在1939年秋天与冬天完成组装与测试，正面装甲为30mm，侧装甲14.5mm，与当时的四号坦克相当，可以抵挡20mm炮的攻击。从1942年7月至12月共有40辆C型出厂并在东西部战线作战。"
+ KGA_senshado_light_tank_1_desc:0 "一号坦克C型（VK601/Pz.kpfw.I Ausf.C）在1938年由德国陆军兵器局与Krauss-Maffei、MAN和Daimler-Benz三个厂签约，着手开发新型的一号坦克。新型的一号坦克重量设定为6吨，代号VK601，要求轻量与高速， 做为空降与侦察坦克。原型车在1939年秋天与冬天完成组装与测试，正面装甲为30mm，侧装甲14.5mm，与当时的四号坦克相当，可以抵挡20mm炮的攻击。从1942年7月至12月共有40辆C型出厂并在东西部战线作战。"
  
  senshado_light_tank_2:0 "二级轻型坦克"
  senshado_light_tank_2_desc:0 ""

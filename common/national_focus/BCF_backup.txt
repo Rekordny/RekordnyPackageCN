@@ -1,4 +1,5 @@
 
+	
 	#第一个五年计划
 	focus = {
 		id = BCF_first_five_year_plan

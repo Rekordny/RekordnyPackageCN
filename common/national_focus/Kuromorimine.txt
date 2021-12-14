@@ -1081,7 +1081,7 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 2
 				uses = 1
-				category = naval_ss_snorkel 
+				category = ss_tech
 				ahead_reduction = 1
 			}
 			random_state = {
@@ -1194,7 +1194,7 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 1.5
 				uses = 1
-				category = naval_advance_torpedo 
+				category = naval_torpedo
 				ahead_reduction = 1
 			}
 			navy_experience = 5
@@ -1417,7 +1417,7 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 1.5
 				uses = 1
-				category = naval_torpedo_launcher 
+				category = naval_torpedo
 				ahead_reduction = 1
 			}
 		}
@@ -1658,7 +1658,7 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 2
 				uses = 1
-				category = naval_bb_armor
+				category = bb_tech
 				ahead_reduction = 1
 			}
 			random_state = {
@@ -2679,14 +2679,9 @@ focus_tree = {
 				bonus = 0.5
 			}
 			add_tech_bonus = {
-				category = uniform_common
-				uses = 1
-				bonus = 1
-			}
-			add_tech_bonus = {
-				category = uniform_winter
-				uses = 1
-				bonus = 1
+				category = uniform
+				uses = 2
+				bonus = 0.75
 			}
 			add_tech_bonus = {
 				category = food
@@ -3062,14 +3057,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 1
+				ahead_reduction = 1
+				bonus = 1.5
 				uses = 1
 				category = armor_ht
-			}
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 1
-				category = armor_atd
 			}
 		}
 
@@ -3675,17 +3666,12 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 1
 				uses = 1
-				category = armorpiece_tech
+				category = armor
 			}
 			add_tech_bonus = {
 				bonus = 1
 				uses = 1
-				category = ammunition_tech
-			}
-			add_tech_bonus = {
-				bonus = 1
-				uses = 1
-				category = support_tech
+				category = artillery
 			}
 		}
 	}
@@ -3714,14 +3700,9 @@ focus_tree = {
 				category = food
 			}
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 1
 				uses = 1
-				category = uniform_common
-			}
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 1
-				category = uniform_winter
+				category = uniform
 			}
 		}
 	}
@@ -4014,16 +3995,6 @@ focus_tree = {
 				category = armor
 				uses = 2
 				bonus = 0.75
-			}
-			add_tech_bonus = {
-				category = armorpiece_tech
-				uses = 1
-				bonus = 0.5
-			}
-			add_tech_bonus = {
-				category = ammunition_tech
-				uses = 1
-				bonus = 0.5
 			}
 			add_tech_bonus = {
 				category = support_tech

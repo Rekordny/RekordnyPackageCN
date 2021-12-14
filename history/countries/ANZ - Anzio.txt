@@ -1,8 +1,8 @@
 ﻿capital = 2
 
 set_technology = {
-	senshado_prototype_tank = 1
-	senshado_light_tank_1 = 1
+	senshado_lt_1_chassis = 1
+	basic_machine_gun = 1
 }
 set_research_slots = 5
 set_convoys = 20
@@ -15,15 +15,15 @@ add_ideas = {
 }
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = democratic
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 41
-	fascism = 33
-	communism = 26
+	democratic = 44
+	fascism = 42
+	communism = 14
 	neutrality = 0
 }
 

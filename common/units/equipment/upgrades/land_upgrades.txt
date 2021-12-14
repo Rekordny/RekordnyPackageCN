@@ -11,17 +11,20 @@ upgrades = {
 		}
 
 		level_requirements = {
-			5 = {
+			4 = {
 				has_tech = engine_tech_1
 			}
-			10 = {
+			8 = {
 				has_tech = engine_tech_2
 			}
-			15 = {
+			12 = {
 				has_tech = engine_tech_3
 			}
-			18 = { 
+			15 = { 
 				has_tech = engine_tech_4
+			}
+			18 = { 
+				has_tech = engine_tech_5
 			}
 		}
 
@@ -50,17 +53,20 @@ upgrades = {
 		}
 
 		level_requirements = {
-			5 = {
+			4 = {
 				has_tech = armor_tech_1
 			}
-			10 = {
+			8 = {
 				has_tech = armor_tech_2
 			}
-			15 = {
+			12 = {
 				has_tech = armor_tech_3
 			}
-			18 = {
+			15 = {
 				has_tech = armor_tech_4
+			}
+			18 = {
+				has_tech = armor_tech_5
 			}
 		}
 

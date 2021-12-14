@@ -8,15 +8,12 @@ add_ideas = {
 oob = "KGA_1972"
 
 set_technology = {
-	senshado_lt_1_chassis = 1
-	senshado_light_tank_1 = 1
-	senshado_tank_destroyer_1 = 1
-
 	tech_support = 1
-	tech_scope_1 = 1
+	engine_tech_1 = 1
 }
 set_research_slots = 5
 set_convoys = 20
+army_experience = 10
 
 set_politics = {
 	ruling_party = neutrality

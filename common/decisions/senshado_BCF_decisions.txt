@@ -180,6 +180,70 @@ bcf_diplomatic = {
 			
 		}
 	}
+	bcf_setup_bcf_kga_federation = {
+		allowed = {
+			tag = BCF
+		}
+		visible = {
+			OR = {
+				has_completed_focus = BCF_kga_ally
+				is_debug = yes
+			}
+		}
+		available = {
+			NOT = {
+				has_war_with = KGA
+			}
+			OR = {
+				has_war_with = STG
+				has_war_with = ANZ
+				has_war_with = PRA
+			}
+		}
+		fire_only_once = yes
+		
+		remove_effect = {
+			create_faction = "法德同盟"
+			#KGA = {
+			#	country_event = BCF_ask_for_ally
+			#}
+		}
+
+		days_remove = 15
+		cost = 25
+	}
+	bcf_rebuild_allies = {
+		allowed = {
+			tag = BCF
+		}
+		visible = {
+			OR = {
+				has_completed_focus = BCF_befriend_STG
+				is_debug = yes
+			}
+		}
+		available = {
+			NOT = {
+				has_war_with = STG
+			}
+			OR = {
+				has_war_with = KGA
+				has_war_with = ANZ
+				has_war_with = PRA
+			}
+		}
+		fire_only_once = yes
+		
+		remove_effect = {
+			create_faction = "协约国"
+			#KGA = {
+			#	country_event = BCF_requestion_of_help
+			#}
+		}
+
+		days_remove = 15
+		cost = 25
+	}
 }
 
 bcf_government = {
@@ -316,6 +380,79 @@ bcf_government = {
 			add_timed_idea = {
 				idea = BCF_fight_to_last_one
 				days = 180
+			}
+		}
+	}
+
+	
+	#降低最低工资
+	BCF_lower_the_minimum_wage = {
+		allowed = {
+			tag = BCF
+		}
+		visible = {
+			OR = {
+				has_country_flag = BCF_allow_to_change_minimum_wage
+				is_debug = yes
+			}
+		}
+		available = {
+			OR = {
+				has_idea = BCF_happy_worker_2
+				has_idea = BCF_happy_worker_3
+			}
+		}
+		days_remove = 0
+		complete_effect = {
+			add_stability = -0.05
+			if = {
+				limit = { has_idea = BCF_happy_worker_2 }
+				swap_ideas = {
+					remove_idea = BCF_happy_worker_2
+					add_idea = BCF_happy_worker_1
+				}
+				else = {
+					swap_ideas = {
+						remove_idea = BCF_happy_worker_3
+						add_idea = BCF_happy_worker_2
+					}
+				}
+			}
+		}
+	}
+
+	#提高最低工资
+	BCF_increase_the_minimum_wage = {
+		allowed = {
+			tag = BCF
+		}
+		visible = {
+			OR = {
+				has_country_flag = BCF_allow_to_change_minimum_wage
+				is_debug = yes
+			}
+		}
+		available = {
+			OR = {
+				has_idea = BCF_happy_worker_1
+				has_idea = BCF_happy_worker_2
+			}
+		}
+		days_remove = 0
+		complete_effect = {
+			add_stability = -0.05
+			if = {
+				limit = { has_idea = BCF_happy_worker_1 }
+				swap_ideas = {
+					remove_idea = BCF_happy_worker_1
+					add_idea = BCF_happy_worker_2
+				}
+				else = {
+					swap_ideas = {
+						remove_idea = BCF_happy_worker_2
+						add_idea = BCF_happy_worker_3
+					}
+				}
 			}
 		}
 	}
@@ -581,5 +718,6 @@ bcf_school_factional_strife = {
 			}
 		}
 	}
+
 
 } 
