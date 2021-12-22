@@ -270,7 +270,7 @@
  kuromorimine.3.b:0 "为工人阶级谋取福利"
  kuromorimine.3.c:0 "不不不，我们不想要这些人的支持"
  kuromorimine.4.t:0 "西住美穗带头的中立派表现出不满"
- kuromorimine.4.d:0 "中立派表现出了一些不满，作为目前执政党，她们也认为管制条例并不能照顾到社会的各个方面，反而让多方的矛盾加强了，我们应该如何和她们周旋？"
+ kuromorimine.4.d:0 "中立派表现出了一些不满，作为目前执政党，她们也认为管制条例并不能照顾到社会的各个方面，反而让多方的矛盾加强了，我们应该如何和她们交涉？"
  kuromorimine.4.a:0 "用黄金稳定政府控制力"
  kuromorimine.4.b:0 "不能让美穗一派总是肆意妄为"
  kuromorimine.4.c:0 "民主更加适合这个国家"
@@ -491,8 +491,8 @@
  kga_tooltip6_blocked:0 "20£GFX_pol_power_icon"
  kga_tooltip7:0 "40 £GFX_gold_icon"
  kga_tooltip7_blocked:0 "40 £GFX_gold_icon"
- kga_tooltip8:0 "学生会启用§YKoume§!"
- kga_tooltip9:0 "学生会启用§YErika§!"
+ kga_tooltip8:0 "内阁已启用§YKoume§!"
+ kga_tooltip9:0 "内阁已启用§YErika§!"
  kga_tooltip10:0 "国库§R支出§!§Y120黄金§!"
  kga_tooltip11:0 "国库§R支出§!§Y50黄金§!"
  kga_tooltip12:0 "增加一条由§Y桑达斯§!建造至§Y30%的航母生产线§!"
@@ -577,6 +577,7 @@
  KGA_DIVIDE_BON:0 "答应了真理的条件"
  KGA_HAVE_TYROL_BACK:0 "安齐奥归还了南蒂罗尔"
  KGA_HAVE_TYROL_BACK_FALSE:0 "安齐奥拒绝归还南蒂罗尔"
+ KGA_ACTIVE_KOUME_ADVISOR:0 "事件中选择了民主更加适合黑森峰"
 
 #opinion modifier
  financial_support:0 "经济援助"

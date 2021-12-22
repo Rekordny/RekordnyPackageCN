@@ -200,7 +200,8 @@ ideas = {
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = no }
 			modifier = {
-				stability_weekly_factor = -0.02
+				stability_weekly_factor = -0.01
+				communism_drift = 0.07
 			}
 		}
 

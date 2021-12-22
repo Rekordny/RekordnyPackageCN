@@ -1,11 +1,24 @@
 leader_traits = {
 	#KGA
+	ture_nishizumi_style = {
+		random = no
+		neutrality_drift = 0.05
+		justify_war_goal_time = -0.3
+		political_power_factor = 0.1
+	}
+	kuromorimine_old_guard = {
+		random = no
+		fascism_drift = 0.05
+		political_power_factor = 0.05
+		defensive_war_stability_factor = 0.1
+	}
     hidden_tenderness = {
 		random = no
 		offensive_war_stability_factor = 0.1
-		army_intel_factor = 0.1
 		production_speed_arms_factory_factor = 0.05
-		conversion_cost_civ_to_mil_factor = -0.3
+		production_speed_synthetic_refinery_factor = 0.05
+		production_speed_rocket_site_factor = 0.05
+		conversion_cost_civ_to_mil_factor = -0.5
 	}
 	top_ruling_bottom = {
 		random = no
@@ -21,13 +34,15 @@ leader_traits = {
 	}
 	the_most_kind = {
 		random = no
+		democratic_drift = 0.05
 		production_speed_industrial_complex_factor = 0.05
-		global_building_slots_factor = 0.15
+		global_building_slots_factor = 0.1
 		conversion_cost_mil_to_civ_factor = -0.3
 	}
     the_most_kind_0 = {
 		random = no
-		production_speed_industrial_complex_factor = 0.15
+		democratic_drift = 0.05
+		production_speed_industrial_complex_factor = 0.12
 		global_building_slots_factor = 0.15
 		conversion_cost_mil_to_civ_factor = -0.3
 	}
@@ -40,7 +55,7 @@ leader_traits = {
 	savior_of_the_bell_wall = {
 		political_power_factor = 0.05
 		production_speed_arms_factory_factor = 0.05
-		production_speed_industrial_complex_factor = 0.05
+		communism_drift = 0.05
 	}
 	
 	#JHS

@@ -4,6 +4,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/KGA/Portrait_KGA_Maho.dds"
+				small="gfx/interface/advisors/idea_Maho.dds"
 			}
 		}
 		field_marshal={
@@ -22,12 +23,25 @@ characters={
 			expire="2000.1.1.1"
 			id=-1
 		}
+		advisor = {
+			slot = political_advisor
+			idea_token = KGA_maho
+			removal_cost = -1
+			allowed = {
+				original_tag = KGA
+			}
+			visible = { }
+			traits = { hidden_tenderness }
+			on_add = {}
+			on_remove = {}
+		}
 	}
 	KGA_miho={
 		name="Miho Nishizumi"
 		portraits={
 			civilian={
 				large="gfx/leaders/KGA/Portrait_KGA_Miho.dds"
+				small="gfx/interface/advisors/idea_Miho.dds"
 			}
 		}
 		field_marshal={
@@ -46,12 +60,25 @@ characters={
 			expire="2000.1.1.1"
 			id=-1
 		}
+		advisor = {
+			slot = political_advisor
+			idea_token = KGA_miho
+			removal_cost = -1
+			allowed = {
+				original_tag = KGA
+			}
+			visible = { }
+			traits = { ture_nishizumi_style }
+			on_add = {}
+			on_remove = {}
+		}
 	}
 	KGA_emi={
 		name="Emi Nakasuga"
 		portraits={
 			civilian={
 				large="gfx/leaders/KGA/Portrait_KGA_Emi.dds"
+				small="gfx/interface/advisors/idea_Emi.dds"
 			}
 		}
 		country_leader={
@@ -69,6 +96,19 @@ characters={
 			planning_skill=2
 			logistics_skill=3
 			legacy_id=1063
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = KGA_emi
+			removal_cost = -1
+			available = { has_completed_focus = KGA_admit_bell_wall }
+			allowed = {
+				original_tag = KGA
+			}
+			visible = { }
+			traits = { savior_of_the_bell_wall }
+			on_add = {}
+			on_remove = {}
 		}
 	}
 	KGA_miho_maho={
@@ -89,11 +129,9 @@ characters={
 	KGA_erika={
 		name="Erika Itsumi"
 		portraits={
-			army={
-				small=""
-			}
-			army={
+			civilian={
 				large="gfx/leaders/KGA/Portrait_KGA_Erika.dds"
+				small="gfx/interface/advisors/idea_Erika.dds"
 			}
 		}
 		corps_commander={
@@ -105,15 +143,26 @@ characters={
 			logistics_skill=2
 			legacy_id=1016
 		}
+		advisor = {
+			slot = political_advisor
+			idea_token = KGA_erika
+			removal_cost = -1
+			available = {  }
+			allowed = {
+				original_tag = KGA
+			}
+			visible = { }
+			traits = { top_ruling_bottom }
+			on_add = {}
+			on_remove = {}
+		}
 	}
 	KGA_koume={
 		name="Koume Akaboshi"
 		portraits={
-			army={
-				small=""
-			}
-			army={
+			civilian={
 				large="gfx/leaders/KGA/Portrait_KGA_Koume.dds"
+				small="gfx/interface/advisors/idea_Koume.dds"
 			}
 		}
 		corps_commander={
@@ -124,6 +173,19 @@ characters={
 			planning_skill=2
 			logistics_skill=3
 			legacy_id=1017
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = KGA_koume
+			removal_cost = -1
+			available = { has_country_flag = KGA_ACTIVE_KOUME_ADVISOR }
+			allowed = {
+				original_tag = KGA
+			}
+			visible = { }
+			traits = { the_most_kind }
+			on_add = {}
+			on_remove = {}
 		}
 	}
 	KGA_erwin={
@@ -189,11 +251,11 @@ characters={
 	KGA_ritaiko={
 		name="Ritaiko"
 		portraits={
-			army={
-				small=""
+			civilian={
+				large="gfx/leaders/KGA/Portrait_KGA_Ritaiko.dds"
+				small="gfx/interface/advisors/idea_Ritaiko.dds"
 			}
 			army={
-				large="gfx/leaders/KGA/Portrait_KGA_Ritaiko.dds"
 			}
 		}
 		corps_commander={
@@ -204,6 +266,19 @@ characters={
 			planning_skill=1
 			logistics_skill=2
 			legacy_id=1020
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = KGA_ritaiko
+			removal_cost = -1
+			available = {  }
+			allowed = {
+				original_tag = KGA
+			}
+			visible = { }
+			traits = { girls_have_heavy_track }
+			on_add = {}
+			on_remove = {}
 		}
 	}
 	KGA_geshiko={
@@ -224,6 +299,24 @@ characters={
 			planning_skill=2
 			logistics_skill=1
 			legacy_id=1023
+		}
+	}
+	KGA_sheska={
+		name="Sheska"
+		portraits={
+			army={
+				large="gfx/leaders/KGA/Portrait_KGA_Sheska.dds"
+			}
+		}
+		corps_commander={
+			available = { has_completed_focus = KGA_recruit_students }
+			traits={ armor_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=1011
 		}
 	}
 }

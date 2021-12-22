@@ -7,13 +7,13 @@ focus_tree = {
 	
 	default = yes
 	reset_on_civilwar = no
-	continuous_focus_position = { x = 100 y = 2000 }
+	continuous_focus_position = { x = 100 y = 1500 }
 		
 	#政治改革
 	focus = {
 		id = Political_reform
 		icon = GFX_focus_Political_reform
-		x = 40
+		x = 20
 		y = 0
 	
 		available = {  }
@@ -48,7 +48,11 @@ focus_tree = {
 	
 		available = {  }
 		prerequisite = { focus = Political_reform }
-		mutually_exclusive = {  }
+		mutually_exclusive = { 
+			focus = Revolutionary_storm 
+			focus = nation_above_all 
+			focus = military_coup 
+		}
 		bypass = { }
 
 		cost = 6
@@ -491,7 +495,9 @@ focus_tree = {
 		x = 0
 		y = 6
 	
-		available = {  }
+		available = {
+			num_of_factories > 40
+		}
 		prerequisite = { focus = government_intervention focus = Privatization }
 		mutually_exclusive = {  }
 		bypass = { }
@@ -528,7 +534,11 @@ focus_tree = {
 	
 		available = {  }
 		prerequisite = { focus = Political_reform }
-		mutually_exclusive = {  }
+		mutually_exclusive = { 
+			focus = Light_democracy 
+			focus = nation_above_all 
+			focus = military_coup 
+		}
 		bypass = { }
 
 		cost = 6
@@ -973,7 +983,9 @@ focus_tree = {
 		x = 0
 		y = 6
 	
-		available = {  }
+		available = {
+			num_of_factories > 40
+		}
 		prerequisite = { focus = Nationalization focus = Public_ownership }
 		mutually_exclusive = {  }
 		bypass = { }
@@ -1011,7 +1023,11 @@ focus_tree = {
 	
 		available = {  }
 		prerequisite = { focus = Political_reform }
-		mutually_exclusive = {  }
+		mutually_exclusive = { 
+			focus = Light_democracy 
+			focus = Revolutionary_storm 
+			focus = military_coup 
+		}
 		bypass = { }
 
 		cost = 6
@@ -1471,7 +1487,9 @@ focus_tree = {
 		x = 0
 		y = 6
 	
-		available = {  }
+		available = {
+			num_of_factories > 40
+		}
 		prerequisite = { focus = military_industrial_complex focus = Enterprise_government }
 		mutually_exclusive = {  }
 		bypass = { }
@@ -1509,7 +1527,11 @@ focus_tree = {
 	
 		available = {  }
 		prerequisite = { focus = Political_reform }
-		mutually_exclusive = {  }
+		mutually_exclusive = { 
+			focus = Light_democracy 
+			focus = Revolutionary_storm 
+			focus = nation_above_all 
+		}
 		bypass = { }
 
 		cost = 6
@@ -1926,7 +1948,9 @@ focus_tree = {
 		x = 0
 		y = 6
 	
-		available = {  }
+		available = {
+			num_of_factories > 40
+		}
 		prerequisite = { focus = External_expansion focus = Internal_cleaning_1 }
 		mutually_exclusive = {  }
 		bypass = { }
@@ -1950,5 +1974,3335 @@ focus_tree = {
 		}
 	}
 	
+	
+	#工业改革
+	focus = {
+		id = Industrial_reform
+		icon = GFX_focus_Industrial_reform
+		x = 47
+		y = 0
+	
+		available = {  }
+		prerequisite = {  }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industry_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#提高基建
+	focus = {
+		id = Improve_infrastructure
+		icon = GFX_focus_Improve_infrastructure
+		relative_position_id = Industrial_reform
+		x = -3
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = Industrial_reform }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#扩大高速
+	focus = {
+		id = Expand_high_speed
+		icon = GFX_focus_Expand_high_speed
+		relative_position_id = Industrial_reform
+		x = -3
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = Improve_infrastructure }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#开垦土地
+	focus = {
+		id = Reclaimed_land
+		icon = GFX_focus_Reclaimed_land
+		relative_position_id = Industrial_reform
+		x = 3
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = Industrial_reform }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#植树造林
+	focus = {
+		id = Afforestation
+		icon = GFX_focus_Afforestation
+		relative_position_id = Industrial_reform
+		x = 3
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = Reclaimed_land }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#工业开发
+	focus = {
+		id = Industrial_Development
+		icon = GFX_focus_Industrial_Development
+		relative_position_id = Industrial_reform
+		x = 0
+		y = 3
+	
+		available = {  }
+		prerequisite = { focus = Expand_high_speed focus = Afforestation  }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industry_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#农业
+	focus = {
+		id = Agriculture
+		icon = GFX_focus_Agriculture
+		relative_position_id = Industrial_reform
+		x = -2
+		y = 4
+	
+		available = {  }
+		prerequisite = { focus = Industrial_Development }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#制造业
+	focus = {
+		id = manufacturing
+		icon = GFX_focus_manufacturing
+		relative_position_id = Industrial_reform
+		x = 2
+		y = 4
+	
+		available = {  }
+		prerequisite = { focus = Industrial_Development }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#针对性科研
+	focus = {
+		id = Targeted_scientific_research
+		icon = GFX_focus_Targeted_scientific_research
+		relative_position_id = Industrial_reform
+		x = 0
+		y = 5
+	
+		available = {  }
+		prerequisite = { focus = manufacturing focus = Agriculture }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industry_bonus
+				bonus = 1
+				uses = 1
+				category = construction_tech
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#建造标准化
+	focus = {
+		id = Construction_Standardization
+		icon = GFX_focus_Construction_Standardization
+		relative_position_id = Industrial_reform
+		x = 0
+		y = 6
+	
+		available = {  }
+		prerequisite = { focus = Targeted_scientific_research }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = Construction_Standardization
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#轻工业
+	focus = {
+		id = light_industry
+		icon = GFX_focus_light_industry
+		relative_position_id = Industrial_reform
+		x = -3
+		y = 5
+	
+		available = {  }
+		prerequisite = { focus = Agriculture }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#生产化肥
+	focus = {
+		id = Production_chemical_fertilizer
+		icon = GFX_focus_Production_chemical_fertilizer
+		relative_position_id = Industrial_reform
+		x = -3
+		y = 6
+	
+		available = {  }
+		prerequisite = { focus = light_industry }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#提高生产力
+	focus = {
+		id = raise_productivity
+		icon = GFX_focus_raise_productivity
+		relative_position_id = Industrial_reform
+		x = -3
+		y = 7
+	
+		available = {  }
+		prerequisite = { focus = Production_chemical_fertilizer }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = raise_productivity
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#扩建民用工厂
+	focus = {
+		id = Expansion_civil_factories
+		icon = GFX_focus_raise_productivity
+		relative_position_id = Industrial_reform
+		x = -4
+		y = 8
+	
+		available = {  }
+		prerequisite = { focus = raise_productivity }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#外部投资
+	focus = {
+		id = External_investment
+		icon = GFX_focus_raise_productivity
+		relative_position_id = Industrial_reform
+		x = -2
+		y = 8
+	
+		available = {  }
+		prerequisite = { focus = raise_productivity }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = External_investment
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#民营企业
+	focus = {
+		id = private_enterprise_1
+		icon = GFX_focus_private_enterprise
+		relative_position_id = Industrial_reform
+		x = -3
+		y = 9
+	
+		available = {  }
+		prerequisite = { focus = External_investment focus = Expansion_civil_factories }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#重工业
+	focus = {
+		id = heavy_industry
+		icon = GFX_focus_heavy_industry
+		relative_position_id = Industrial_reform
+		x = 3
+		y = 5
+	
+		available = {  }
+		prerequisite = { focus = manufacturing }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#划分工业区
+	focus = {
+		id = Division_industrial_areas
+		icon = GFX_focus_Division_industrial_areas
+		relative_position_id = Industrial_reform
+		x = 3
+		y = 6
+	
+		available = {  }
+		prerequisite = { focus = manufacturing }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#城市工业区
+	focus = {
+		id = Urban_industrial_zone
+		icon = GFX_focus_Urban_industrial_zone
+		relative_position_id = Industrial_reform
+		x = 2
+		y = 7
+	
+		available = {  }
+		prerequisite = { focus = Division_industrial_areas }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#农村工业区
+	focus = {
+		id = Rural_industrial_zone
+		icon = GFX_focus_Rural_industrial_zone
+		relative_position_id = Industrial_reform
+		x = 4
+		y = 7
+	
+		available = {  }
+		prerequisite = { focus = Division_industrial_areas }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#扩建军用工业
+	focus = {
+		id = Expansion_military_industry
+		icon = GFX_focus_Expansion_military_industry
+		relative_position_id = Industrial_reform
+		x = 3
+		y = 8
+	
+		available = {  }
+		prerequisite = { focus = Rural_industrial_zone focus = Urban_industrial_zone }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#扩大生产
+	focus = {
+		id = Expand_production
+		icon = GFX_focus_Expand_production
+		relative_position_id = Industrial_reform
+		x = 3
+		y = 9
+	
+		available = {  }
+		prerequisite = { focus = Expansion_military_industry }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_ideas = Expand_production
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	
+	#现代化工业
+	focus = {
+		id = Modern_industry
+		icon = GFX_focus_Modern_industry
+		relative_position_id = Industrial_reform
+		x = 0
+		y = 10
+	
+		available = {  }
+		prerequisite = { focus = Expand_production }
+		prerequisite = { focus = private_enterprise_1 }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			add_ideas = Modern_industry
+			add_research_slot = 1
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = { 
+			}
+		}
+	}
+	
+	
+	#军事改革
+	focus = {
+		id = military_streamline
+		icon = GFX_focus_military_streamline
+		x = 73
+		y = 0
+	
+		available = {  }
+		prerequisite = {  }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#海军
+	focus = {
+		id = navy
+		icon = GFX_focus_navy
+		relative_position_id = military_streamline
+		x = 5
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = military_streamline }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			navy_experience = 30
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#重视潜艇
+	focus = {
+		id = Pay_attention_submarine
+		icon = GFX_focus_submarine
+		relative_position_id = navy
+		x = -3
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = navy }
+		mutually_exclusive = { 
+			focus = Pay_attention_destroyer
+			focus = Pay_attention_Cruiser
+			focus = Pay_attention_battleship
+		}
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_tech
+				bonus = 1
+				uses = 1
+				category = ss_tech
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#重视驱逐舰
+	focus = {
+		id = Pay_attention_destroyer
+		icon = GFX_focus_destroyer
+		relative_position_id = navy
+		x = -1
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = navy }
+		mutually_exclusive = { 
+			focus = Pay_attention_submarine
+			focus = Pay_attention_Cruiser
+			focus = Pay_attention_battleship
+		}
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_tech
+				bonus = 1
+				uses = 1
+				category = dd_tech
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#重视巡洋舰
+	focus = {
+		id = Pay_attention_Cruiser
+		icon = GFX_focus_Cruiser
+		relative_position_id = navy
+		x = 1
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = navy }
+		mutually_exclusive = { 
+			focus = Pay_attention_submarine
+			focus = Pay_attention_destroyer
+			focus = Pay_attention_battleship
+		}
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_equipment
+				bonus = 1
+				uses = 1
+				category = ca_tech
+				category = cl_tech
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#重视战列舰
+	focus = {
+		id = Pay_attention_battleship
+		icon = GFX_focus_battleship
+		relative_position_id = navy
+		x = 3
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = navy }
+		mutually_exclusive = { 
+			focus = Pay_attention_submarine
+			focus = Pay_attention_destroyer
+			focus = Pay_attention_Cruiser
+		}
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_equipment
+				bonus = 1
+				uses = 1
+				category = bb_tech
+				category = bc_tech
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#改进船体
+	focus = {
+		id = Improved_hull
+		icon = GFX_focus_Improved_hull
+		relative_position_id = navy
+		x = -2
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = Pay_attention_submarine focus = Pay_attention_destroyer }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_equipment
+				bonus = 1
+				uses = 1
+				category = naval_equipment
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#改进引擎
+	focus = {
+		id = Improved_engine
+		icon = GFX_focus_Improved_engine
+		relative_position_id = navy
+		x = 0
+		y = 2
+	
+		available = {  }
+		prerequisite = { 
+			focus = Pay_attention_submarine
+			focus = Pay_attention_destroyer
+			focus = Pay_attention_Cruiser
+			focus = Pay_attention_battleship
+		}
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_equipment
+				bonus = 1
+				uses = 1
+				category = naval_equipment
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#改进火炮
+	focus = {
+		id = Improved_artillery
+		icon = GFX_focus_Improved_artillery
+		relative_position_id = navy
+		x = 2
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = Pay_attention_Cruiser focus = Pay_attention_battleship }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_equipment
+				bonus = 1
+				uses = 1
+				category = naval_equipment
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#护航为主
+	focus = {
+		id = Escort_oriented
+		icon = GFX_focus_Escort_oriented
+		relative_position_id = navy
+		x = -3
+		y = 3
+	
+		available = {  }
+		prerequisite = { focus = Pay_attention_submarine focus = Pay_attention_destroyer }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			navy_experience = 100
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#打击为主
+	focus = {
+		id = Strike1_mainly
+		icon = GFX_focus_Strike1_mainly
+		relative_position_id = navy
+		x = 3
+		y = 3
+	
+		available = {  }
+		prerequisite = { focus = Pay_attention_Cruiser focus = Pay_attention_battleship }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			navy_experience = 100
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#海军学校
+	focus = {
+		id = naval_school
+		icon = GFX_focus_naval_school
+		relative_position_id = navy
+		x = 0
+		y = 4
+	
+		available = {  }
+		prerequisite = { focus = Strike1_mainly focus = Escort_oriented }
+		prerequisite = { focus = Improved_hull }
+		prerequisite = { focus = Improved_artillery }
+		prerequisite = { focus = Improved_engine }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = senshado_school
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = naval_doctrine
+				bonus = 1
+				uses = 2
+				category = naval_doctrine
+			}
+			add_research_slot = 1
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#购买运输船
+	focus = {
+		id = Purchase_transport_ship
+		icon = GFX_focus_Purchase_transport_ship
+		relative_position_id = navy
+		x = -3
+		y = 4
+	
+		available = {  }
+		prerequisite = { focus = Escort_oriented }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 30
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#建造船坞
+	focus = {
+		id = Build_dock
+		icon = GFX_focus_Build_dock
+		relative_position_id = navy
+		x = 3
+		y = 4
+	
+		available = {  }
+		prerequisite = { focus = Strike1_mainly focus = Escort_oriented }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	
+	#空军
+	focus = {
+		id = air_force
+		icon = GFX_air_force
+		relative_position_id = military_streamline
+		x = -10
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = military_streamline }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			air_experience = 30
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#侧重战斗机
+	focus = {
+		id = Focus_fighter
+		icon = GFX_Focus_fighter
+		relative_position_id = air_force
+		x = -6
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = air_force }
+		mutually_exclusive = { focus = Focus_attack_aircraft focus = Heavy_bomber }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			air_experience = 20
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#轻型战斗机
+	focus = {
+		id = Light_fighter
+		icon = GFX_Light_fighter
+		relative_position_id = Focus_fighter
+		x = -1
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = Focus_fighter }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			air_experience = 10
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#歼击机
+	focus = {
+		id = The_fighter
+		icon = GFX_The_fighter
+		relative_position_id = Light_fighter
+		x = 0
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = Light_fighter }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = light_fighter_bonus
+				bonus = 1
+				uses = 1
+				category = light_fighter
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#提高机动性
+	focus = {
+		id = Improve_mobility
+		icon = GFX_Improve_mobility
+		relative_position_id = Light_fighter
+		x = -1
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = Light_fighter }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = Improve_mobility
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#夺取空优
+	focus = {
+		id = Capture_kongyou
+		icon = GFX_Capture_kongyou
+		relative_position_id = Light_fighter
+		x = 0
+		y = 3
+	
+		available = {  }
+		prerequisite = { focus = The_fighter }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = Capture_kongyou
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#护航机
+	focus = {
+		id = Escort_fighter
+		icon = GFX_Escort_fighter
+		relative_position_id = Focus_fighter
+		x = 0
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = Light_fighter focus = heavy_fighter_1 }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = cat_heavy_fighter_bonus
+				bonus = 1
+				uses = 1
+				category = cat_heavy_fighter
+				category = light_fighter
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#重型战斗机
+	focus = {
+		id = heavy_fighter_1
+		icon = GFX_heavy_fighter_1
+		relative_position_id = Focus_fighter
+		x = 1
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = Focus_fighter }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			air_experience = 10
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#截击机
+	focus = {
+		id = Interceptor
+		icon = GFX_Interceptor
+		relative_position_id = heavy_fighter_1
+		x = 0
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = heavy_fighter_1 }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = cat_heavy_fighter_bonus
+				bonus = 1
+				uses = 1
+				category = cat_heavy_fighter
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#增加携弹量
+	focus = {
+		id = Increase_ammunition_carrying_capacity
+		icon = GFX_Increase_ammunition_carrying_capacity
+		relative_position_id = heavy_fighter_1
+		x = 2
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = heavy_fighter_1 focus = Naval_attack_aircraft }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				limit = { has_completed_focus = heavy_fighter_1 }
+				add_ideas = Increase_ammunition_carrying_capacity_a
+			}
+			if = {
+				limit = { has_completed_focus = Naval_attack_aircraft }
+				add_ideas = Increase_ammunition_carrying_capacity_b
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#拦截敌机
+	focus = {
+		id = Intercept_enemy_aircraft_1
+		icon = GFX_Intercept_enemy_aircraft_1
+		relative_position_id = heavy_fighter_1
+		x = 0
+		y = 3
+	
+		available = {  }
+		prerequisite = { focus = Interceptor }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = Intercept_enemy_aircraft_1
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#连续作战学说
+	focus = {
+		id = Continuous_operation_theory
+		icon = GFX_Continuous_operation_theory
+		relative_position_id = Focus_fighter
+		x = 0
+		y = 5
+	
+		available = {  }
+		prerequisite = { focus = Capture_kongyou focus = Intercept_enemy_aircraft_1 }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			air_experience = 200
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#侧重攻击机
+	focus = {
+		id = Focus_attack_aircraft
+		icon = GFX_Focus_attack_aircraft
+		relative_position_id = air_force
+		x = 0
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = air_force }
+		mutually_exclusive = { focus = Focus_fighter focus = Heavy_bomber }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			air_experience = 20
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#海上攻击机
+	focus = {
+		id = Naval_attack_aircraft
+		icon = GFX_Naval_attack_aircraft
+		relative_position_id = Focus_attack_aircraft
+		x = -1
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = Focus_attack_aircraft }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			air_experience = 10
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#海军轰炸机
+	focus = {
+		id = Naval_Bomber
+		icon = GFX_Naval_Bomber
+		relative_position_id = Naval_attack_aircraft
+		x = 0
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = Naval_attack_aircraft }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_bomber_bonus
+				bonus = 1
+				uses = 1
+				category = naval_bomber
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#鱼雷攻击
+	focus = {
+		id = Torpedo_attack
+		icon = GFX_Torpedo_attack
+		relative_position_id = Naval_attack_aircraft
+		x = 0
+		y = 3
+	
+		available = {  }
+		prerequisite = { focus = Naval_Bomber }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = Torpedo_attack
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#舰载机
+	focus = {
+		id = Carrier_borne_machine
+		icon = GFX_Carrier_borne_machine
+		relative_position_id = Focus_attack_aircraft
+		x = 0
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = Naval_attack_aircraft focus = Army_attack_aircraft }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_air_bonus
+				bonus = 1
+				uses = 1
+				category = naval_air
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#陆上攻击机
+	focus = {
+		id = Army_attack_aircraft
+		icon = GFX_Army_attack_aircraft
+		relative_position_id = Focus_attack_aircraft
+		x = 1
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = Focus_attack_aircraft }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			air_experience = 10
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#增加杀伤
+	focus = {
+		id = Increased_kill
+		icon = GFX_Increased_kill
+		relative_position_id = Army_attack_aircraft
+		x = 2
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = Army_attack_aircraft focus = medium_bomber }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				limit = { has_completed_focus = Army_attack_aircraft }
+				add_ideas = Increased_kill_a
+			}
+			if = {
+				limit = { has_completed_focus = medium_bomber }
+				add_ideas = Increased_kill_b
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#近距支援机
+	focus = {
+		id = Close_support_aircraft_1
+		icon = GFX_Close_support_aircraft_1
+		relative_position_id = Army_attack_aircraft
+		x = 0
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = Army_attack_aircraft }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = cas_bomber_bonus
+				bonus = 1
+				uses = 1
+				category = cas_bomber
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#对地支援
+	focus = {
+		id = Ground_support_1
+		icon = GFX_Ground_support_1
+		relative_position_id = Army_attack_aircraft
+		x = 0
+		y = 3
+	
+		available = {  }
+		prerequisite = { focus = Close_support_aircraft_1 }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = Ground_support_1
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#战场支援学说
+	focus = {
+		id = Battlefield_support_theory
+		icon = GFX_Battlefield_support_theory
+		relative_position_id = Focus_attack_aircraft
+		x = 0
+		y = 5
+	
+		available = {  }
+		prerequisite = { focus = Torpedo_attack focus = Ground_support_1 }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			air_experience = 200
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#侧重轰炸机
+	focus = {
+		id = Heavy_bomber
+		icon = GFX_Heavy_bomber
+		relative_position_id = air_force
+		x = 6
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = air_force }
+		mutually_exclusive = { focus = Focus_fighter focus = Focus_attack_aircraft }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			air_experience = 20
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#中型轰炸机
+	focus = {
+		id = medium_bomber
+		icon = GFX_medium_bomber
+		relative_position_id = Heavy_bomber
+		x = -1
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = Heavy_bomber }
+		mutually_exclusive = { }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			air_experience = 10
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	} 
+	
+	#重型轰炸机
+	focus = {
+		id = heavy_bombera
+		icon = GFX_heavy_bombera
+		relative_position_id = Heavy_bomber
+		x = 1
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = Heavy_bomber }
+		mutually_exclusive = { }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			air_experience = 10
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#扩大航程
+	focus = {
+		id = Extended_rangea
+		icon = GFX_Extended_rangea
+		relative_position_id = heavy_bombera
+		x = 1
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = heavy_bombera }
+		mutually_exclusive = { }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = Extended_rangea
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#战术轰炸机
+	focus = {
+		id = Tactical_bomber
+		icon = GFX_Tactical_bomber
+		relative_position_id = medium_bomber
+		x = 0
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = medium_bomber }
+		mutually_exclusive = { }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = tactical_bomber_being
+				bonus = 1
+				uses = 1
+				category = tactical_bomber
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#精确轰炸
+	focus = {
+		id = Precision_bombing
+		icon = GFX_Precision_bombing
+		relative_position_id = medium_bomber
+		x = 0
+		y = 3
+	
+		available = {  }
+		prerequisite = { focus = Tactical_bomber }
+		mutually_exclusive = { }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = Precision_bombing
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#高空侦察机
+	focus = {
+		id = Reconnaissance_aircraft
+		icon = GFX_Reconnaissance_aircraft
+		relative_position_id = Heavy_bomber
+		x = 0
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = medium_bomber focus = heavy_bombera }
+		mutually_exclusive = { }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_equipment_being
+				bonus = 1
+				uses = 1
+				category = air_equipment
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#战略轰炸机
+	focus = {
+		id = strategic_bomber
+		icon = GFX_strategic_bomber
+		relative_position_id = heavy_bombera
+		x = 0
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = heavy_bombera }
+		mutually_exclusive = { }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = cat_strategic_bomber_being
+				bonus = 1
+				uses = 1
+				category = cat_strategic_bomber
+			}
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#战略轰炸
+	focus = {
+		id = Strategic_bombing
+		icon = GFX_Strategic_bombing
+		relative_position_id = heavy_bombera
+		x = 0
+		y = 3
+	
+		available = {  }
+		prerequisite = { focus = strategic_bomber }
+		mutually_exclusive = { }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = Strategic_bombing
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#战略破坏学说
+	focus = {
+		id = Strategic_destruction_theory
+		icon = GFX_Strategic_destruction_theory
+		relative_position_id = Heavy_bomber
+		x = 0
+		y = 5
+	
+		available = {  }
+		prerequisite = { focus = Precision_bombing focus = Strategic_bombing }
+		mutually_exclusive = { }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			air_experience = 200
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#陆军
+	focus = {
+		id = land_force
+		icon = GFX_focus_land_force
+		relative_position_id = military_streamline
+		x = 15
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = military_streamline }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 10
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#战略
+	focus = {
+		id = strategy
+		icon = GFX_focus_strategy
+		relative_position_id = land_force
+		x = 0
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = land_force }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 20
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#积极防御
+	focus = {
+		id = Active_defense
+		icon = GFX_focus_Active_defense
+		relative_position_id = strategy
+		x = -2
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = strategy }
+		mutually_exclusive = { focus = Active_attack }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#人海攻势
+	focus = {
+		id = Human_sea_offensive
+		icon = GFX_focus_Human_sea_offensive
+		relative_position_id = Active_defense
+		x = -1
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = Active_defense }
+		mutually_exclusive = { focus = Planned_offensive }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+			add_ideas = Human_sea_offensive
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#民兵组织
+	focus = {
+		id = Militia
+		icon = GFX_focus_Militia
+		relative_position_id = Human_sea_offensive
+		x = 0
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = Human_sea_offensive }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+			add_ideas = Militia
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#游击战
+	focus = {
+		id = guerrilla_warfare
+		icon = GFX_focus_guerrilla_warfare
+		relative_position_id = Human_sea_offensive
+		x = 0
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = Militia }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+			add_ideas = guerrilla_warfare
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#短兵相接
+	focus = {
+		id = fight_hand_with
+		icon = GFX_focus_guerrilla_warfare
+		relative_position_id = Human_sea_offensive
+		x = 0
+		y = 3
+	
+		available = {  }
+		prerequisite = { focus = guerrilla_warfare }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+			add_ideas = fight_hand_with
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#延长战线
+	focus = {
+		id = Extended_front
+		icon = GFX_focus_Extended_front
+		relative_position_id = Human_sea_offensive
+		x = 0
+		y = 4
+	
+		available = {  }
+		prerequisite = { focus = fight_hand_with }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+			add_ideas = Extended_front
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#扩大征兵
+	focus = {
+		id = Expand_conscription
+		icon = GFX_focus_Expand_conscription
+		relative_position_id = Human_sea_offensive
+		x = 0
+		y = 5
+	
+		available = {  }
+		prerequisite = { focus = Extended_front }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+			add_ideas = extensive_conscription
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#计划攻势
+	focus = {
+		id = Planned_offensive
+		icon = GFX_focus_Planned_offensive
+		relative_position_id = Active_defense
+		x = 1
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = Active_defense }
+		mutually_exclusive = { focus = Human_sea_offensive }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+			add_ideas = Planned_offensive
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#工兵团
+	focus = {
+		id = Engineering_regiment
+		icon = GFX_focus_Engineering_regiment
+		relative_position_id = Planned_offensive
+		x = 0
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = Planned_offensive }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+			add_ideas = Engineering_regiment
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#堑壕战
+	focus = {
+		id = Trench_warfare
+		icon = GFX_focus_Trench_warfare
+		relative_position_id = Planned_offensive
+		x = 0
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = Engineering_regiment }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+			add_ideas = Trench_warfare
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#渗透策略
+	focus = {
+		id = Penetration_strategy
+		icon = GFX_focus_Penetration_strategy
+		relative_position_id = Planned_offensive
+		x = 0
+		y = 3
+	
+		available = {  }
+		prerequisite = { focus = Trench_warfare }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+			add_ideas = Penetration_strategy
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#保障后勤
+	focus = {
+		id = Support_Logistics
+		icon = GFX_focus_Support_Logistics
+		relative_position_id = Planned_offensive
+		x = 0
+		y = 4
+	
+		available = {  }
+		prerequisite = { focus = Penetration_strategy }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+			add_ideas = Support_Logistics
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#加固战壕
+	focus = {
+		id = Reinforce_trench
+		icon = GFX_focus_Reinforce_trench
+		relative_position_id = Planned_offensive
+		x = 0
+		y = 5
+	
+		available = {  }
+		prerequisite = { focus = Support_Logistics }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+			add_ideas = Reinforce_trench
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#防御反击
+	focus = {
+		id = guard_cancel
+		icon = GFX_focus_guard_cancel
+		relative_position_id = Active_defense
+		x = 0
+		y = 7
+	
+		available = {  }
+		prerequisite = { focus = Reinforce_trench focus =  Expand_conscription }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+			add_ideas = guard_cancel
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#主动进攻
+	focus = {
+		id = Active_attack
+		icon = GFX_focus_Active_attack
+		relative_position_id = strategy
+		x = 2
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = strategy }
+		mutually_exclusive = { focus = Active_defense }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#火炮攻势
+	focus = {
+		id = Artillery_offensive
+		icon = GFX_focus_Artillery_offensive
+		relative_position_id = Active_attack
+		x = -1
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = Active_attack }
+		mutually_exclusive = { focus = Assault }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+			add_ideas = Artillery_offensive
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#火炮基地
+	focus = {
+		id = Artillery_base
+		icon = GFX_focus_Artillery_base
+		relative_position_id = Artillery_offensive
+		x = 0
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = Artillery_offensive }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+			add_ideas = Artillery_base
+			
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#快速反应
+	focus = {
+		id = Rapid_response
+		icon = GFX_focus_Rapid_response
+		relative_position_id = Artillery_offensive
+		x = 0
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = Artillery_base }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+			add_ideas = Rapid_response
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#火力反准备
+	focus = {
+		id = Fire_counter_preparation
+		icon = GFX_focus_Fire_counter_preparation
+		relative_position_id = Artillery_offensive
+		x = 0
+		y = 3
+	
+		available = {  }
+		prerequisite = { focus = Rapid_response }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+			add_ideas = Fire_counter_preparation
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#通信设备
+	focus = {
+		id = Communication_equipment
+		icon = GFX_focus_Communication_equipment
+		relative_position_id = Artillery_offensive
+		x = 0
+		y = 4
+	
+		available = {  }
+		prerequisite = { focus = Fire_counter_preparation }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+			add_ideas = Communication_equipment
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#增加弹药量
+	focus = {
+		id = Increase_ammunition
+		icon = GFX_focus_Increase_ammunition
+		relative_position_id = Artillery_offensive
+		x = 0
+		y = 5
+	
+		available = {  }
+		prerequisite = { focus = Communication_equipment }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+			add_ideas = Increase_ammunition
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#突击攻势
+	focus = {
+		id = Assault
+		icon = GFX_focus_Assault
+		relative_position_id = Active_attack
+		x = 1
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = Active_attack }
+		mutually_exclusive = { focus = Artillery_offensive }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+			add_ideas = Assault
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#特殊训练
+	focus = {
+		id = Special_training
+		icon = GFX_focus_Special_training
+		relative_position_id = Assault
+		x = 0
+		y = 1
+	
+		available = {  }
+		prerequisite = { focus = Assault }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+			add_ideas = Special_training
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#集中突破
+	focus = {
+		id = Concentrated_breakthrough
+		icon = GFX_focus_Concentrated_breakthrough
+		relative_position_id = Assault
+		x = 0
+		y = 2
+	
+		available = {  }
+		prerequisite = { focus = Special_training }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+			add_ideas = Concentrated_breakthrough
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#深入敌后
+	focus = {
+		id = Go_deep_behind_enemy
+		icon = GFX_focus_Go_deep_behind_enemy
+		relative_position_id = Assault
+		x = 0
+		y = 3
+	
+		available = {  }
+		prerequisite = { focus = Concentrated_breakthrough }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+			add_ideas = Go_deep_behind_enemy
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#快速补给
+	focus = {
+		id = Rapid_replenishment
+		icon = GFX_focus_Rapid_replenishment
+		relative_position_id = Assault
+		x = 0
+		y = 4
+	
+		available = {  }
+		prerequisite = { focus = Go_deep_behind_enemy }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+			add_ideas = Rapid_replenishment
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#侦察敌情
+	focus = {
+		id = gather_information_about_enemy
+		icon = GFX_focus_gather_information_about_enemy
+		relative_position_id = Assault
+		x = 0
+		y = 5
+	
+		available = {  }
+		prerequisite = { focus = Rapid_replenishment }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = { 
+			army_experience = 30
+			add_ideas = gather_information_about_enemy
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#全面进攻
+	focus = {
+		id = all_out_assault
+		icon = GFX_focus_gather_information_about_enemy
+		relative_position_id = Active_attack
+		x = 0
+		y = 7
+	
+		available = {  }
+		prerequisite = { focus = gather_information_about_enemy focus = Increase_ammunition }
+		mutually_exclusive = {  }
+		bypass = { }
+
+		cost = 6
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 30
+			add_ideas = all_out_assault
+		}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
 	
 }

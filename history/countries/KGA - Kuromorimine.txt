@@ -30,7 +30,7 @@ set_popularities = {
 
 recruit_character = KGA_maho
 recruit_character = KGA_miho
-#recruit_character = KGA_emi
+recruit_character = KGA_emi
 recruit_character = KGA_miho_maho
 recruit_character = KGA_erika
 recruit_character = KGA_koume
@@ -39,3 +39,4 @@ recruit_character = KGA_mauko
 recruit_character = KGA_sangou
 recruit_character = KGA_ritaiko
 recruit_character = KGA_geshiko
+recruit_character = KGA_sheska

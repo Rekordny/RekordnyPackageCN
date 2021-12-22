@@ -23,7 +23,7 @@ focus_tree = {
 		#prerequisite = { focus = 国家缩写_国策名字小写 }
 		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -50,7 +50,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_school_ship_reform_act }
 		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -77,12 +77,13 @@ focus_tree = {
 		prerequisite = { focus = KGA_livelihood_recovery }
 		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = KGA_schoolship_onboard_regulation
 			#触发事件：管制条例修改
 			country_event = { id = kuromorimine.1 days = 0 }
 		}
@@ -107,7 +108,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_livelihood_recovery }
 		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -135,7 +136,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_schoolship_onboard_regulation }
 		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -180,7 +181,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_schoolship_onboard_regulation }
 		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -209,7 +210,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_quantitative_senshado_training }
 		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -237,7 +238,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_school_ship_reform_act }
 		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -264,7 +265,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_economic_recovery }
 		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -292,7 +293,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_economic_recovery }
 		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -321,7 +322,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_industrial_land_tax_adjustment }
 		mutually_exclusive = { focus = KGA_monopolistic_competitiveness }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -366,7 +367,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_industrial_land_tax_adjustment }
 		mutually_exclusive = { focus = KGA_support_small_industries }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -418,11 +419,11 @@ focus_tree = {
 		x = 0
 		y = 1
 		#内阁启用了赤星小梅
-		available = { custom_trigger_tooltip = { tooltip = kga_tooltip8 has_idea = koume } }
+		available = { custom_trigger_tooltip = { tooltip = kga_tooltip8 has_idea_with_trait = the_most_kind } }
 		prerequisite = { focus = KGA_support_small_industries }
 		#mutually_exclusive = { focus =  }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -470,11 +471,11 @@ focus_tree = {
 		x = 0
 		y = 1
 		#内阁启用了艾丽卡
-		available = { custom_trigger_tooltip = { tooltip = kga_tooltip9 has_idea = erika } }
+		available = { custom_trigger_tooltip = { tooltip = kga_tooltip9 has_idea_with_trait = top_ruling_bottom } }
 		prerequisite = { focus = KGA_monopolistic_competitiveness }
 		#mutually_exclusive = { focus =  }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -510,7 +511,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_koume_suggestion }
 		#mutually_exclusive = { focus =  }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -541,7 +542,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_erika_reform }
 		#mutually_exclusive = { }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -574,7 +575,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_koume_suggestion focus = KGA_erika_reform }
 		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -605,7 +606,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_school_ship_reform_act }
 		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -634,7 +635,7 @@ focus_tree = {
 		mutually_exclusive = { focus = KGA_deal_with_BC }
 		mutually_exclusive = { focus = KGA_government_capital_intergration }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -665,7 +666,7 @@ focus_tree = {
 		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
 		#旧战车道联盟不复存在
 		bypass = { NOT = { SDS = { is_faction_leader = yes } } }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -694,7 +695,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_industrial_land_tax_adjustment }
 		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -722,7 +723,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_industry_repayment_bonds }
 		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -748,13 +749,13 @@ focus_tree = {
 		x = 3
 		y = 1
 		#BCF存在
-		available = { }
+		available = { neutrality > 0.65 }
 		prerequisite = { focus = KGA_sovereignty_recovery }
 		mutually_exclusive = { focus = KGA_atonement }
 		mutually_exclusive = { focus = KGA_government_capital_intergration }
 		#BCF不存在，拥有符腾堡
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -783,7 +784,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_deal_with_BC }
 		#mutually_exclusive = { }
 		bypass = { NOT = { has_country_flag = BCF_allow_trade } }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -840,7 +841,7 @@ focus_tree = {
 		#mutually_exclusive = { focus =  }
 		#跳过：BC不复存在，拥有莫泽兰
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -871,7 +872,7 @@ focus_tree = {
 		mutually_exclusive = { focus = KGA_atonement }
 		mutually_exclusive = { focus = KGA_deal_with_BC }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -899,14 +900,14 @@ focus_tree = {
 	focus = {
 		id = KGA_stablize_senshado_military_government
 		icon = GFX_focus_KGA_stablize_senshado_military_government
-		relative_position_id = KGA_government_capital_intergration
-		x = -1
-		y = 1
+		relative_position_id = KGA_nishizumi_family
+		x = 0
+		y = 2
 		available = {  }
-		prerequisite = { focus = KGA_government_capital_intergration }
-		mutually_exclusive = { focus = KGA_admit_bell_wall }
+		prerequisite = { focus = KGA_nishizumi_family }
+		#mutually_exclusive = { focus = KGA_admit_bell_wall }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -928,14 +929,14 @@ focus_tree = {
 	focus = {
 		id = KGA_nishizumi_family
 		icon = GFX_focus_KGA_nishizumi_family
-		relative_position_id = KGA_stablize_senshado_military_government
-		x = 0
-		y = 2
-		#available = { fascism > 0.6 }
-		prerequisite = { focus = KGA_stablize_senshado_military_government }
-		#mutually_exclusive = { focus =  }
+		relative_position_id = KGA_government_capital_intergration
+		x = -1
+		y = 1
+		available = { fascism > 0.6 }
+		prerequisite = { focus = KGA_government_capital_intergration }
+		mutually_exclusive = { focus = KGA_admit_bell_wall }
 		bypass = { has_government = fascism }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -951,9 +952,6 @@ focus_tree = {
 				}
 			}
 			KGA = { country_event = { id = kuromorimine.23 days = 0 } }
-			hidden_effect = {
-				if = { limit = { has_idea = KGA_bellwall_threat } KGA = { country_event = { id = kuromorimine.22 days = 3 } } }
-			}
 		}
 		#AI行动之后具体设计，复制粘贴以下部分即可
 		ai_will_do = {
@@ -975,13 +973,14 @@ focus_tree = {
 		prerequisite = { focus = KGA_government_capital_intergration }
 		mutually_exclusive = { focus = KGA_stablize_senshado_military_government }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			#获得精神，钟壁的影响
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = KGA_emi
 		}
 		#AI行动之后具体设计，复制粘贴以下部分即可
 		ai_will_do = {
@@ -1002,7 +1001,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_admit_bell_wall }
 		#mutually_exclusive = { focus =  }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2515,10 +2514,10 @@ focus_tree = {
 		available = {  }
 		#allow_branch = { has_completed_focus = KGA_nishizumi_family }
 		prerequisite = { focus = KGA_kuromorimine_industry_class }
-		prerequisite = { focus = KGA_nishizumi_family }
+		prerequisite = { focus = KGA_stablize_senshado_military_government }
 		#mutually_exclusive = { focus =  }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2565,15 +2564,15 @@ focus_tree = {
 	focus = {
 		id = KGA_contact_Anzio
 		icon = GFX_focus_KGA_contact_Anzio
-		relative_position_id = KGA_nishizumi_family
+		relative_position_id = KGA_stablize_senshado_military_government
 		x = 2
 		y = 1
 		available = {  }
 		#allow_branch = { has_completed_focus = KGA_nishizumi_family }
-		prerequisite = { focus = KGA_nishizumi_family }
+		prerequisite = { focus = KGA_stablize_senshado_military_government }
 		#mutually_exclusive = { focus =  }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2601,7 +2600,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_ANZ_europe_tank_project }
 		mutually_exclusive = {  }
 		bypass = { has_country_flag = KGA_HAVE_TYROL_BACK_FALSE }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2629,7 +2628,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_contact_Anzio }
 		#mutually_exclusive = { focus =  }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2667,7 +2666,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_import_more_pasta }
 		mutually_exclusive = { focus = KGA_prototype_design_communicate }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2710,7 +2709,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_sovereignty_recovery }
 		#mutually_exclusive = { focus =  }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2739,7 +2738,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_arbeitsfront }
 		#mutually_exclusive = { focus =  }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2767,7 +2766,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_reconstruction_law }
 		#mutually_exclusive = { focus =  }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2795,7 +2794,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_Ermachtigungsgesetz }
 		#mutually_exclusive = { focus =  }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2855,15 +2854,15 @@ focus_tree = {
 	focus = {
 		id = KGA_declare_national_emergency_state
 		icon = GFX_focus_KGA_declare_national_emergency_state
-		relative_position_id = KGA_nishizumi_family
+		relative_position_id = KGA_stablize_senshado_military_government
 		x = 11
 		y = 1
 		available = { has_civil_war = no }
 		#allow_branch = { has_completed_focus =  }
-		prerequisite = { focus = KGA_nishizumi_family }
+		prerequisite = { focus = KGA_stablize_senshado_military_government }
 		#mutually_exclusive = { focus =  }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2895,7 +2894,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_declare_national_emergency_state }
 		#mutually_exclusive = { focus =  }
 		bypass = { controls_state = 42 controls_state = 50 }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2924,7 +2923,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_demand_BCF }
 		#mutually_exclusive = { focus =  }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2959,7 +2958,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_declare_national_emergency_state }
 		#mutually_exclusive = { focus =  }
 		bypass = { controls_state = 51 controls_state = 57 controls_state = 56 controls_state = 59 controls_state = 58 }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -2988,7 +2987,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_demand_STG }
 		#mutually_exclusive = { focus =  }
 		bypass = { OR = { has_war_with = STG } STG = { exists = no } }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3018,7 +3017,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_set_up_senshado_fund }
 		#mutually_exclusive = { focus =  }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3050,7 +3049,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_nishizumi_style }
 		mutually_exclusive = { focus = KGA_mobility_first }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3084,7 +3083,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_nishizumi_style }
 		mutually_exclusive = { focus = KGA_armor_first }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3122,7 +3121,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_kuromorimine_industry_class }
 		#mutually_exclusive = { focus = }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3152,15 +3151,15 @@ focus_tree = {
 	focus = {
 		id = KGA_approch_new_senshado_union
 		icon = GFX_focus_KGA_approch_new_senshado_union
-		relative_position_id = KGA_nishizumi_family
+		relative_position_id = KGA_stablize_senshado_military_government
 		x = 7
 		y = 1
 		available = { BON = { is_faction_leader = yes } }
 		#allow_branch = { has_completed_focus = KGA_nishizumi_family }
-		prerequisite = { focus = KGA_nishizumi_family }
+		prerequisite = { focus = KGA_stablize_senshado_military_government }
 		#mutually_exclusive = { focus = }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3194,7 +3193,7 @@ focus_tree = {
 		mutually_exclusive = { focus = KGA_support_puppet_faction }
 		mutually_exclusive = { focus = KGA_deal_with_little_tyrant }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3224,7 +3223,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_promote_develope_senshado_union }
 		#mutually_exclusive = { focus = }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3258,7 +3257,7 @@ focus_tree = {
 		mutually_exclusive = { focus = KGA_promote_develope_senshado_union }
 		mutually_exclusive = { focus = KGA_deal_with_little_tyrant }
 		bypass = { has_war_with = BON }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3288,7 +3287,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_support_puppet_faction }
 		mutually_exclusive = { focus = KGA_promote_develope_senshado_union }
 		bypass = { has_war_with = BON }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3318,7 +3317,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_expand_ruhr_steel }
 		#mutually_exclusive = { focus =  }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3347,7 +3346,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_expand_ruhr_steel }
 		#mutually_exclusive = { focus =  }
 		bypass = { }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3376,7 +3375,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_great_covenant focus = KGA_glory_home_land }
 		#mutually_exclusive = { focus =  }
 		bypass = { NOT = { country_exists = VIG } VIG = { OR =  { is_in_faction_with = KGA has_war_with = KGA } }  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3408,22 +3407,13 @@ focus_tree = {
 		prerequisite = { focus = KGA_incorporate_bellwall }
 		#mutually_exclusive = { focus =  }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			create_corps_commander = {
-				name = "Sheska"
-				picture = "Portrait_KGA_Sheska.dds"
-				traits = { Panzer_Leader }
-				skill = 2
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 2
-			}
+			recruit_character = KGA_sheska
 			add_manpower = 200000
 		}
 
@@ -3447,7 +3437,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_recruit_students }
 		#mutually_exclusive = { focus =  }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3476,7 +3466,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_government_with_more_efficiency }
 		#mutually_exclusive = { focus =  }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3502,15 +3492,15 @@ focus_tree = {
 	focus = {
 		id = KGA_Ermachtigungsgesetz
 		icon = GFX_focus_KGA_Ermachtigungsgesetz
-		relative_position_id = KGA_nishizumi_family
+		relative_position_id = KGA_stablize_senshado_military_government
 		x = 0
 		y = 1
 		available = { has_civil_war = no }
 		#allow_branch = { has_completed_focus =  }
-		prerequisite = { focus = KGA_nishizumi_family }
+		prerequisite = { focus = KGA_stablize_senshado_military_government }
 		#mutually_exclusive = { focus =  }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3541,7 +3531,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_arbeitsfront }
 		#mutually_exclusive = { focus =  }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3564,7 +3554,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_defining_northern_resources_mining_rights }
 		#mutually_exclusive = { focus =  }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3612,7 +3602,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_defining_northern_resources_mining_rights }
 		#mutually_exclusive = { focus =  }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3652,7 +3642,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_increase_heavy_industry_ratio }
 		#mutually_exclusive = { focus =  }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3688,7 +3678,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_kuromorimine_industry_class }
 		#mutually_exclusive = { focus =  }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3719,7 +3709,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_improve_environment }
 		#mutually_exclusive = { focus =  }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3741,7 +3731,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_agricultural_production_plan }
 		#mutually_exclusive = { focus =  }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3763,7 +3753,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_popularize_senshado_education }
 		#mutually_exclusive = { focus =  }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3785,7 +3775,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_kuromorimine_industry_class }
 		#mutually_exclusive = { focus =  }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3812,7 +3802,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_update_tactics }
 		mutually_exclusive = { focus = KGA_focus_on_battle_plan }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3834,7 +3824,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_update_tactics }
 		mutually_exclusive = { focus = KGA_focus_on_deployment_supply }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3856,7 +3846,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_focus_on_deployment_supply focus = KGA_focus_on_battle_plan }
 		#mutually_exclusive = { focus =  }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3878,7 +3868,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_combat_literacy_of_girls }
 		#mutually_exclusive = { focus =  }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3903,7 +3893,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_tank_command_center }
 		#mutually_exclusive = { focus =  }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3917,15 +3907,15 @@ focus_tree = {
 	focus = {
 		id = KGA_strengthen_communication_with_pravda
 		icon = GFX_focus_KGA_strengthen_communication_with_pravda
-		relative_position_id = KGA_nishizumi_family
+		relative_position_id = KGA_stablize_senshado_military_government
 		x = 4
 		y = 1
 		available = {  }
 		#allow_branch = { has_completed_focus =  }
-		prerequisite = { focus = KGA_nishizumi_family }
+		prerequisite = { focus = KGA_stablize_senshado_military_government }
 		#mutually_exclusive = { focus =  }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3960,7 +3950,7 @@ focus_tree = {
 		mutually_exclusive = { focus = KGA_promote_develope_senshado_union }
 		mutually_exclusive = { focus = KGA_support_puppet_faction }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -3985,7 +3975,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_deal_with_little_tyrant }
 		mutually_exclusive = { focus = KGA_ANZ_europe_tank_project }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -4016,7 +4006,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_prototype_design_communicate }
 		mutually_exclusive = { }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -4042,7 +4032,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_declare_legal_territory focus = KGA_eradicate_threats_across_the_coast }
 		mutually_exclusive = {  }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -4064,7 +4054,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_liquidation_time }
 		mutually_exclusive = {  }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -4088,7 +4078,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_nibelungen_knights }
 		mutually_exclusive = {  }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -4110,7 +4100,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_next_generation }
 		mutually_exclusive = {  }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -4132,7 +4122,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_next_generation }
 		mutually_exclusive = {  }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
@@ -4174,7 +4164,7 @@ focus_tree = {
 		prerequisite = { focus = KGA_next_generation }
 		mutually_exclusive = {  }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
