@@ -73,4 +73,19 @@ leader_traits = {
             factor = 1
         }
     }
+
+	#STG
+	lord_protector = {
+		random = no
+		political_power_factor = 0.1
+		army_core_attack_factor = 0.1
+		army_core_defence_factor = 0.1
+		justify_war_goal_time = 1
+	}
+	the_first_lady = {
+		random = no
+		political_power_factor = 0.1
+		send_volunteer_factor = 0.1
+		army_org_Factor = 0.1
+	}
 }

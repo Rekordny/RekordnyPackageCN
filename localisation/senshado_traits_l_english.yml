@@ -1,22 +1,24 @@
 ﻿l_english:
 
 #country leader
- maho:0 "西住真穗"
- erika:0 "逸见艾丽卡"
- koume:0 "赤星小梅"
- ritaiko:0 "小岛绘美"
- emi:0 "中须贺艾米"
+ maho:0 "maho"
+ erika:0 "erika"
+ koume:0 "koume"
+ ritaiko:0 "ritaiko"
+ emi:0 "emi"
 
 #country leader trait
- hidden_tenderness:0 "深藏不露的温柔"
- top_ruling_bottom:0 "唯上知与下愚不移"
- top_ruling_bottom_0:0 "唯上知与下愚不移"
- the_most_kind:0 "最温柔的智者"
- the_most_kind_0:0 "最温柔的智者"
- girls_have_heavy_track:0 "少女的履带很沉重"
- savior_of_the_bell_wall:0 "钟壁的救星"
- kuromorimine_old_guard:0 "黑森峰护卫者"
- ture_nishizumi_style:0 "真正的西住流"
-  
+ hidden_tenderness:0 "hidden tenderness"
+ top_ruling_bottom:0 "top ruling bottom"
+ top_ruling_bottom_0:0 "top ruling bottom"
+ the_most_kind:0 "the most kind"
+ the_most_kind_0:0 "the most kind"
+ girls_have_heavy_track:0 "girls have heavy track"
+ savior_of_the_bell_wall:0 "savior of the bell wall"
+ kuromorimine_old_guard:0 "kuromorimine old guard"
+ ture_nishizumi_style:0 "ture nishizumi style"
+ lord_protector:0 "lord protector"
+ the_first_lady:0 "the first lady" 
+
 #unit_leader
  

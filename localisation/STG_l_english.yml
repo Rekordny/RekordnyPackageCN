@@ -369,6 +369,7 @@
  stg_tooltip20_blocked:0 "25 £GFX_gold_icon\n50£GFX_pol_power_icon"
  stg_tooltip21:0 "20£GFX_pol_power_icon"
  stg_tooltip21_blocked:0 "20£GFX_pol_power_icon"
+ stg_tooltip22:0 "§YEarl Grey§!获得:\n§Y    圣葛罗莉安娜大护国公§!\n    - 政治点数:§G +10%§!\n    - 核心领土单位攻击:§G +10%§!\n    - 核心领土单位防御:§G +10%§!\n    - 正当化战争目标所需时间:§R +100%§!"
  
  #flag
  STG_WORKER_ACCEPT_US:0 "工人接受了我们"

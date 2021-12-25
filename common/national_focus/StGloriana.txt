@@ -1043,7 +1043,10 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			#格雷上台
+			custom_effect_tooltip = stg_tooltip22
+			hidden_effect = {
+				add_country_leader_trait = lord_protector
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -1461,7 +1464,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_country_leader_trait = adventurous_daredevil
+			add_country_leader_trait = the_first_lady
 		}
 		ai_will_do = {
 			factor = 1
