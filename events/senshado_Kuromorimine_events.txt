@@ -565,7 +565,7 @@ country_event = {
 	option = {
 		name = kuromorimine.30.a
 		add_equipment_to_stockpile = {
-			type = senshado_light_tank_equipment_2
+			type = light_tank_equipment_1
 			amount = 300
 		}
 	}
@@ -583,7 +583,7 @@ country_event = {
 		name = kuromorimine.31.a
 		#暂且用装备代替三个师
 		add_equipment_to_stockpile = {
-			type = senshado_light_tank_equipment_2
+			type = light_tank_equipment_1
 			amount = 230
 		}
 	}

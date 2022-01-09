@@ -52,3 +52,10 @@ gold_standard_modifier = {
     postfix = none
 }
 
+wage_modifier = {
+    color_type = bad
+    value_type = percentage
+    precision = 2
+    postfix = none
+}
+

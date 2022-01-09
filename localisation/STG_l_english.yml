@@ -244,49 +244,13 @@
  StGloriana.29.d:0 "一片硕大的红色乌云，曾经久久徘徊在大本钟的上方，企图扼住这个伟大的日不落之国的咽喉。现在，一众的工团主义和共产党分子已经被永远的从精神层面上消灭，这是属于女王的伟大胜利，更是自由世界的一面鲜明的民主大旗。"
  StGloriana.29.a:0 "天佑女王"
  
- StGloriana.28.t:0 "共产主义的抗争"
- StGloriana.28.d:0 "由于我们没能及时的解决工党和工人的问题，加上外部压力的增大，共产主义者们似乎嗅到了一丝危险，她们就如同受惊的蝼蚁，抱起团来企图撼动我们的民主合法政权，在爱尔兰以及北英格兰，她们已经吹响了反叛的号角。"
- StGloriana.28.a:0 "上天赋予圣葛罗莉安娜的权力将制裁这些妄图侵扰国家安定之人"
- 
- StGloriana.31:0 "对大洗鲨鱼队的胜利"
- StGloriana.31.t:0 "对大洗鲨鱼队的胜利"
- StGloriana.31.d:0 "对大洗鲨鱼队的胜利"
- StGloriana.31.a:0 "答应"
- StGloriana.31.b:0 "不答应"
- 
- StGloriana.32:0 "新的盟友"
- StGloriana.32.t:0 "新的盟友"
- StGloriana.32.d:0 "新的盟友"
- StGloriana.32.a:0 "我们共同控制地中海"
- StGloriana.32.b:0 "维持现有关系再好不过"
- StGloriana.32.c:0 "我们的利益相冲突"
- 
- StGloriana.33:0 "新的盟友"
- StGloriana.33.t:0 "新的盟友"
- StGloriana.33.d:0 "新的盟友"
- StGloriana.33.a:0 "我们应携手面对新局面"
- StGloriana.33.b:0 "维持现有关系再好不过"
- StGloriana.33.c:0 "放慢节奏，不要激怒真理与黑森峰"
- 
- StGloriana.34:0 "往日荣光"
- StGloriana.34.t:0 "往日荣光"
- StGloriana.34.d:0 "往日荣光"
- StGloriana.34.a:0 "好的"
- 
- StGloriana.35:0 "英国声索王位"
- StGloriana.35.t:0 "英国声索王位"
- StGloriana.35.d:0 "英国声索王位"
- StGloriana.35.a:0 "好的"
- 
- StGloriana.36:0 "多佛协定"
- StGloriana.36.t:0 "多佛协定"
- StGloriana.36.d:0 "多佛协定"
- StGloriana.36.a:0 "好的"
- 
- StGloriana.37:0 "对BC的胜利"
- StGloriana.37.t:0 "对BC的胜利"
- StGloriana.37.d:0 "对BC的胜利"
- StGloriana.37.a:0 "执行条约"
+ StGloriana.30.t:0 "黑森峰租借领土逾期归还"
+ StGloriana.30.d:0 "我们在之前的大战中租借到的黑森峰领土已经到期，现在我们需要归还给她们了，虽然有些不舍，但是希望我们已经获取到了足够抚平一代人伤痕的应得赔偿。"
+ StGloriana.30.a:0 "这块土地也将受到我们的祝福"
+
+ StGloriana.31.t:0 "圣葛罗莉安娜归还租借领土"
+ StGloriana.31.d:0 "在这么长时间对我们的领土侵占之后，圣葛罗莉安娜终于迫于条约到期而归还我们的领土，在此期间我们的人民备受压迫，我们的资源被掠夺一空，这是德意志耻辱的一笔，但是今天他将成为历史。"
+ StGloriana.31.a:0 "我们绝对不会忘记"
  
  #idea
  STG_rise_of_the_labor_party:0 "工党崛起"

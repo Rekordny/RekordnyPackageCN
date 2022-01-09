@@ -1173,7 +1173,6 @@ focus_tree = {
 		}
 		relative_position_id = BCF_will_of_the_people
 		prerequisite = { focus = BCF_will_of_the_people }
-		mutually_exclusive = { focus = BCF_france_is_supreme }
 		available_if_capitulated = yes
 		completion_reward = {
 			add_popularity = {

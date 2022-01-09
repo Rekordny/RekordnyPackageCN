@@ -89,6 +89,8 @@ characters={
 			id=-1
 		}
 		field_marshal={
+			visible = { OR = {
+				has_completed_focus = KGA_incorporate_bellwall has_completed_focus = KGA_admit_bell_wall } }
 			traits={ armor_officer }
 			skill=3
 			attack_skill=3
@@ -309,7 +311,7 @@ characters={
 			}
 		}
 		corps_commander={
-			available = { has_completed_focus = KGA_recruit_students }
+			visible = { has_completed_focus = KGA_recruit_students }
 			traits={ armor_officer }
 			skill = 2
 			attack_skill = 2
@@ -317,6 +319,60 @@ characters={
 			planning_skill = 2
 			logistics_skill = 2
 			legacy_id=1011
+		}
+	}
+	KGA_hitomi={
+		name="Hitomi"
+		portraits={
+			army={
+				large="gfx/leaders/KGA/Portrait_KGA_Hitomi.dds"
+			}
+		}
+		corps_commander={
+			visible = { has_completed_focus = KGA_incorporate_bellwall }
+			traits={ armor_officer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id=1065
+		}
+	}
+	KGA_kita={
+		name="Kita"
+		portraits={
+			army={
+				large="gfx/leaders/KGA/Portrait_KGA_Kita.dds"
+			}
+		}
+		corps_commander={
+			visible = { has_completed_focus = KGA_incorporate_bellwall }
+			traits={ armor_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=1064
+		}
+	}
+	KGA_takami={
+		name="Takami"
+		portraits={
+			army={
+				large="gfx/leaders/KGA/Portrait_KGA_Takami.dds"
+			}
+		}
+		corps_commander={
+			visible = { has_completed_focus = KGA_incorporate_bellwall }
+			traits={ armor_officer }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=1066
 		}
 	}
 }

@@ -51,6 +51,7 @@ ideas = {
             modifier = {
                 stability_factor = 0.3
                 war_support_factor = -0.15
+                wage_modifier = 0.15
             }
         }
         gold_storage_great = {
@@ -68,6 +69,7 @@ ideas = {
             modifier = {
                 stability_factor = 0.2
                 war_support_factor = -0.1
+                wage_modifier = 0.1
             }
         }
         gold_storage_good = {
@@ -85,6 +87,7 @@ ideas = {
             modifier = {
                 stability_factor = 0.1
                 war_support_factor = -0.05
+                wage_modifier = 0.05
             }
         }
         gold_storage_average = {
@@ -118,6 +121,7 @@ ideas = {
             modifier = {
                 stability_factor = -0.1
                 war_support_factor = 0.05
+                wage_modifier = -0.05
             }
         }
         gold_storage_poor = {
@@ -135,6 +139,7 @@ ideas = {
             modifier = {
                 stability_factor = -0.2
                 war_support_factor = 0.1
+                wage_modifier = -0.1
             }
         }
         gold_storage_bad = {
@@ -152,6 +157,7 @@ ideas = {
             modifier = {
                 stability_factor = -0.3
                 war_support_factor = 0.15
+                wage_modifier = -0.15
             }
         }
     }

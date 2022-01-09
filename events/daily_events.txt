@@ -1,0 +1,73 @@
+add_namespace = daily
+#这里独立设置所有国家的日常事件！
+#COUNTRY_EVENT Type
+
+#KGA黑森峰
+#艾丽卡与鳄鱼I
+country_event = {
+	id = daily.1
+	title = daily.1.t
+	desc = daily.1.d
+	picture = GFX_event_kga_daily_1
+	fire_only_once = yes
+	trigger = { original_tag = KGA date > 1972.11.01 }
+	mean_time_to_happen = { days = 3 }
+	option = {
+		name = daily.1.a
+		custom_effect_tooltip = add_ssdp_20
+		add_to_variable = {
+			ssdp = 20
+		}
+		hidden_effect = { country_event = { id = daily.2 days = 80 } }
+	}
+}
+#艾丽卡与鳄鱼II
+country_event = {
+	id = daily.2
+	title = daily.2.t
+	desc = daily.2.d
+	picture = GFX_event_kga_daily_2
+	is_triggered_only = yes
+	option = {
+		name = daily.1.a
+		custom_effect_tooltip = add_ssdp_20
+		add_to_variable = {
+			ssdp = 20
+		}
+	}
+}
+#心血来潮
+country_event = {
+	id = daily.3
+	title = daily.3.t
+	desc = daily.3.d
+	picture = GFX_event_kga_daily_3
+	fire_only_once = yes
+	trigger = { original_tag = KGA date > 1973.01.01 }
+	mean_time_to_happen = { days = 4 }
+	option = {
+		name = daily.3.a
+		custom_effect_tooltip = add_ssdp_20
+		add_to_variable = {
+			ssdp = 20
+		}
+	}
+}
+#吉他时间
+country_event = {
+	id = daily.4
+	title = daily.4.t
+	desc = daily.4.d
+	picture = GFX_event_kga_daily_4
+	fire_only_once = yes
+	trigger = { original_tag = KGA date > 1973.01.01 }
+	mean_time_to_happen = { days = 4 }
+	option = {
+		name = daily.4.a
+		#播放莉莉马莲
+		custom_effect_tooltip = add_ssdp_20
+		add_to_variable = {
+			ssdp = 20
+		}
+	}
+}

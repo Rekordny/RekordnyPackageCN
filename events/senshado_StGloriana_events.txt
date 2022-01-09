@@ -874,3 +874,29 @@ country_event = {
 		remove_ideas = STG_rise_of_the_labor_party_0
 	}
 }
+
+#到期归还KGA领土
+country_event = {
+	id = StGloriana.30
+	title = StGloriana.30.t
+	desc = StGloriana.30.d
+	picture = GFX_StGloriana_30
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana.30.a
+	}
+}
+
+#KGA:圣葛罗莉安娜归还租借领土
+country_event = {
+	id = StGloriana.31
+	title = StGloriana.31.t
+	desc = StGloriana.31.d
+	picture = GFX_StGloriana_31
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana.31.a
+	}
+}

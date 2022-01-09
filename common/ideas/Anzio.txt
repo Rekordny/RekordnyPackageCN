@@ -87,12 +87,11 @@ ideas = {
 			allowed = { tag = ANZ }
 			allowed_civil_war = { always = no }
 			modifier = {
-				army_core_attack_factor = 0.1
-				army_core_defence_factor = 0.1
-				army_speed_factor = 0.1
+			    fascism_drift = 0.05
+				war_support_factor = 0.05
 			}
 		}
-
+		
 		#职业工团制度1
 		ANZ_occupational_community_system_0 = {
 			allowed = { tag = ANZ }
@@ -108,10 +107,23 @@ ideas = {
 			allowed_civil_war = { always = no }
 			modifier = {
 				production_speed_industrial_complex_factor = 0.1
-				production_factory_max_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
+				stability_factor = -0.1
+				communism_drift = -0.03
 			}
 		}
 
-	}
-}
+       #新文艺复兴
+        ANZ_occupational_community_asytam_0 ={
+			allowed = { tag = ANZ }
+			allowed_civil_war = { always = no }
+			modifier = {
+				war_support_factor = -0.2
+				stability_weekly_factor = 0.003
+				consumer_goods_factor = 0.05
+			}
+
+		}
+	}	
+}	#

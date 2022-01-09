@@ -1,20 +1,307 @@
 add_namespace = Anzio
 
-#马奇诺宣布独立
+#待定
 country_event = {
 	id = Anzio.1
 	title = Anzio.1.t
 	desc = Anzio.1.d
 	picture = GFX_report_event_german_speech
-	trigger = {
-		date = 1973.10.8
-	}
+	trigger = { }
 	is_triggered_only = yes
 	option = {
 		name = Anzio.1.a
-		MGC = {
-			transfer_state = 17
-			transfer_state = 27
+		
+	}
+}
+#天主教的整顿
+country_event = {
+	 id = Anzio.2
+	 title = Anzio.2.t
+	 desc = Anzio.2.d
+	 picture = GFX_report_event_german_speech
+	 is_triggered_only = yes
+	 option = {
+		name = Anzio.2.a
+		ANZ = { add_political_power = 100 }
+	 }
+}
+#新文艺复兴
+country_event = {
+	id = Anzio.3
+	title = Anzio.3.t
+	desc = Anzio.3.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = Anzio.3.a
+		add_timed_idea = {
+			days = 365
+			add_ideas = ANZ_occupational_community_asytam_0
+		}
+		hidden_effect = {
+			ANZ = { country_event = { id = Anzio.5 days = 40 random = 10 } }
+			ANZ = { country_event = { id = Anzio.6 days = 80 random = 10 } }
+			ANZ = { country_event = { id = Anzio.7 days = 120 random = 10 } }
+			ANZ = { country_event = { id = Anzio.8 days = 160 random = 10 } }
+			ANZ = { country_event = { id = Anzio.9 days = 200 random = 10 } }
+		}	  	
+	}
+}
+
+#学兴挑战教会和共产党
+country_event = {
+	id = Anzio.4
+	title = Anzio.4.t
+	desc = Anzio.4.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = Anzio.4.a
+        add_popularity = { ideology = democratic popularity = -0.05 }
+		add_popularity = { ideology = communism popularity = -0.05 }
+		add_popularity = { ideology = fascism popularity = 0.1 }
+		add_stability = -0.1
+	}
+	option = {
+		name = Anzio.4.b
+		add_stability = 0.03
+	}
+}
+
+#新文艺复兴下的性开放
+country_event = {
+	id = Anzio.5
+	title = Anzio.5.t
+	desc = Anzio.5.d
+    picture = GFX_report_event_german_speech
+    is_triggered_only = yes
+	option = {
+		name = Anzio.5.a
+		add_popularity = { ideology = democratic popularity = -0.05 }
+        hidden_effect = {
+			ANZ = { add_to_variable = { GFS  = 2 } }
+		}
+	}
+	option = {
+		name = Anzio.5.b
+		add_political_power = -50
+		hidden_effect = {
+			ANZ = { add_to_variable = { GFS  = 1 } }
+		}
+	}
+	option={
+		name = Anzio.5.c
+        add_stability = 0.03
+	}
+}
+
+#新文艺复兴下的电视节日
+country_event = {
+	id = Anzio.6
+	title = Anzio.6.t
+    desc = Anzio.6.d
+    picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = Anzio.6.a
+		add_stability = 0.05
+	}
+	option = {
+	    name = Anzio.6.b
+		add_stability = 0.1
+		add_war_support = -0.05
+	}
+	option = {
+        name = Anzio.6.c
+		add_stability = 0.05
+		hidden_effect = {
+			ANZ = { add_to_variable = { GFS  = 1 } }
 		}
 	}
 }
+
+#新文艺复兴下的政治化音乐
+country_event = {
+	id = Anzio.7
+	title = Anzio.7.t
+	desc = Anzio.7.d
+	picture = GFX_report_event_german_speech
+    is_triggered_only = yes
+	option = {
+		name = Anzio.7.a
+		add_political_power = 30
+        add_popularity = { ideology = fascism popularity =0.05 }
+		add_popularity = { ideology = communism popularity =0.05 }
+		hidden_effect = {
+			ANZ = { add_to_variable = { GFS = 1 } }
+		}
+	}
+	option ={
+		name = Anzio.7.b
+		add_political_power = -50
+	}
+	option = {
+		name = Anzio.7.c
+		add_popularity = { ideology = democratic popularity = 0.05 }
+	}
+}
+
+#共产主义恐怖袭击
+country_event = {
+	id = Anzio.8
+	title = Anzio.8.t
+	desc = Anzio.8.c
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = Anzio.8.a
+		add_stability = -0.05
+		add_political_power = 50
+		hidden_effect = {
+			ANZ = { add_to_variable = { GFS = 1 } }
+		}
+	}
+	option ={
+		name = Anzio.8.b
+        add_stability = -0.05
+		add_political_power = 50
+	}
+}
+
+#文艺复兴对于天主教的影响?
+country_event = {
+	id = Anzio.9
+	title = Anzio.9.t
+	desc = Anzio.9.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = Anzio.9.a
+		add_political_power = -100
+		add_popularity = { ideology = democratic popularity = 0.1 }
+		if = { 
+			limit = { check_variable = { GFS > 4 } }
+			set_country_flag = ANZ_BYPASS_HISTORY_COMPROMISE
+		}
+		else = {
+			set_country_flag = ANZ_UNLOCK_HISTORY_COMPROMISE
+		}
+	}
+	option = {
+		name = Anzio.9.b
+		add_stability = -0.05
+		add_political_power = 50
+		hidden_effect = {
+			ANZ={ add_to_variable= { GFS = 1 } }
+		}
+		if = { 
+			limit = { check_variable = { GFS > 4 } }
+			set_country_flag = ANZ_BYPASS_HISTORY_COMPROMISE
+		}
+		else = {
+			set_country_flag = ANZ_UNLOCK_HISTORY_COMPROMISE
+		}
+	}
+	option = {
+		name = Anzio.9.c
+		add_popularity = { ideology = fascism popularity =0.05 }
+		add_political_power = 50
+		hidden_effect = {
+			ANZ={add_to_variable= { GFS = 1 } }
+		}
+		if = { 
+			limit = { check_variable = { GFS > 4 } }
+			set_country_flag = ANZ_BYPASS_HISTORY_COMPROMISE
+		}
+		else = {
+			set_country_flag = ANZ_UNLOCK_HISTORY_COMPROMISE
+		}
+	}
+}
+#笫二个火热之秋
+country_event = {
+	id = Anzio.10
+	title = Anzio.10.t
+	desc = Anzio.10.c
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = Anzio.10.a
+	}
+	option ={
+		name = Anzio.10.b
+		country_event = { id = Anzio.11 days = 0 }
+	}
+}
+#天主教的极限
+country_event = {
+	id = Anzio.11
+	title = Anzio.11.t
+	desc = Anzio.11.d
+    picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = Anzio.11.a
+	}
+}
+#加速的城市化
+country_event = {
+	id = Anzio.12
+	title = Anzio.12.t
+	desc = Anzio.12.d
+    picture = GFX_report_event_german_speech
+     is_triggered_only = yes
+	 option = {
+		 name = Anzio.12.a
+	 }
+}
+#揭竿而起
+country_event = {
+	id = Anzio.13
+	title = Anzio.13.t
+	desc = Anzio.13.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = Anzio.13.a
+	}
+	
+}
+# 自治歌剧
+country_event = {
+	id = Anzio.14
+	title = Anzio.14.t
+	desc = Anzio.14.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option={
+		name = Anzio.14.a
+		add_popularity = { ideology = fascism popularity = 0.05 }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,17 +1,34 @@
 ﻿l_english:
- student_union_member:0 "学生会成员"
- school_carrier:0 "学院舰"
- flag_tank:0 "旗车"
- ssdp_daily_modifier:0 "每日战车道点数"
- tax_daily_modifier:0 "每日税收"
- gold_standard_modifier:0 "黄金储备标准"
- 
-#科研分享命名
- bcf_pra_research_name:0 "真理-BC科研合作项目"
+ student_union_member:0 "student union member"
+ school_carrier:0 "school carrier"
+ flag_tank:0 "flag tank"
+ ssdp_daily_modifier:0 "senshado point daily modifier"
+ tax_daily_modifier:0 "daily tax modifier"
+ gold_standard_modifier:0 "gold standard modifier"
+ wage_modifier:0 "army expenditure"
 
-#将领特质
+#通用决议GenericDecisions
+ senshado_decisions:0 "Sensha-do Decisions"
+ buy_political_points:0 "Trade political point"
+ generic_decision_tooltip_1:0 "300 £GFX_money "
+ generic_decision_tooltip_1_blocked:0 "300 £GFX_money "
+ recruit_army_character:0 "Recruit army character"
+ generic_decision_tooltip_2:0 "40 £GFX_gold_icon 3 £civ_factory"
+ generic_decision_tooltip_2_blocked:0 "40 £GFX_gold_icon 3 £civ_factory"
+ invest_gold_ore_mining:0 "Invest gold ore mining"
+ generic_decision_tooltip_3:0 "excavation LV5: output §Y150 gold§!£GFX_gold_icon"
+ generic_decision_tooltip_4:0 "excavation LV4: output§Y140 gold§!£GFX_gold_icon"
+ generic_decision_tooltip_5:0 "excavation LV3: output§Y130 gold§!£GFX_gold_icon"
+ generic_decision_tooltip_6:0 "excavation LV2: acquire§Y120 gold§!£GFX_gold_icon"
+ generic_decision_tooltip_7:0 "excavation LV1: output§Y110 gold§!£GFX_gold_icon"
+ generic_decision_tooltip_8:0 "excavation LV0: output§Y100 gold§!£GFX_gold_icon"
+
+#科研分享命名ResearchGroup
+ bcf_pra_research_name:0 "Pravda-BCFreedom cooperate research"
+
+#将领特质GeneralNature
  activist:0 "activist"
  excessive_kindness:0 "excessive kindness"
 
- #领导人特质
+ #领导人特质LeaderNature
  

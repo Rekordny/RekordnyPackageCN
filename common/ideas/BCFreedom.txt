@@ -11,7 +11,7 @@ ideas = {
 			modifier = {
 				conscription = -0.25
 				consumer_goods_factor = 0.1
-				production_speed_buildings_factor = -0.5
+				production_speed_buildings_factor = -0.15
 				industrial_capacity_factory = -0.10
 			}
 		}
@@ -84,6 +84,20 @@ ideas = {
 				industrial_capacity_factory = -0.05
 			}
 		}
+		#派系斗争5
+		BCF_faction_struggle_5 = {
+			allowed = {
+				tag = BCF
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.5
+				political_power_factor = -0.3
+				experience_gain_army_factor = -0.3
+			}
+		}
 		#派系斗争4
 		BCF_faction_struggle_4 = {
 			allowed = {
@@ -93,8 +107,9 @@ ideas = {
 				always = no
 			}
 			modifier = {
-				stability_factor = -0.5
-				political_power_cost = 0.25
+				stability_factor = -0.4
+				political_power_factor = -0.24
+				experience_gain_army_factor = -0.24
 			}
 		}
 		#派系斗争3
@@ -106,8 +121,9 @@ ideas = {
 				always = no
 			}
 			modifier = {
-				stability_factor = -0.4
-				political_power_cost = 0.2
+				stability_factor = -0.3
+				political_power_factor = -0.18
+				experience_gain_army_factor = -0.18
 			}
 		}
 		#派系斗争2
@@ -119,8 +135,9 @@ ideas = {
 				always = no
 			}
 			modifier = {
-				stability_factor = -0.3
-				political_power_cost = 0.15
+				stability_factor = -0.12
+				political_power_factor = -0.12
+				experience_gain_army_factor = -0.12
 			}
 		}
 		#派系斗争1
@@ -132,21 +149,9 @@ ideas = {
 				always = no
 			}
 			modifier = {
-				stability_factor = -0.2
-				political_power_cost = 0.1
-			}
-		}
-		#派系斗争0
-		BCF_faction_struggle_0 = {
-			allowed = {
-				tag = BCF
-			}
-			allowed_civil_war = {
-				always = no
-			}
-			modifier = {
 				stability_factor = -0.1
-				political_power_cost = 0.05
+				political_power_factor = -0.06
+				experience_gain_army_factor = -0.06
 			}
 		}
 		#政局动荡2
@@ -158,9 +163,9 @@ ideas = {
 				always = no
 			}
 			modifier = {
-				political_power_factor = -0.4
-				surrender_limit = -0.3
-				war_support_factor = 0.3
+				political_power_gain = -0.3
+				surrender_limit = -0.25
+				war_support_factor = -0.30
 			}
 		}
 		#政局动荡1
@@ -172,23 +177,9 @@ ideas = {
 				always = no
 			}
 			modifier = {
-				political_power_factor = -0.3
-				surrender_limit = -0.25
-				war_support_factor = 0.2
-			}
-		}
-		#政局动荡0
-		BCF_political_instability_0 = {
-			allowed = {
-				tag = BCF
-			}
-			allowed_civil_war = {
-				always = no
-			}
-			modifier = {
-				political_power_factor = -0.15
-				surrender_limit = -0.125
-				war_support_factor = 0.1
+				political_power_factor = -0.1
+				surrender_limit = -0.10
+				war_support_factor = 0.15
 			}
 		}
 		#混乱的军队
@@ -199,11 +190,8 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			research_bonus = {
-				land_doctrine = -0.75
-			}
 			modifier = {
-				experience_gain_army_factor = -0.5
+				experience_gain_army_factor = -0.25
 				army_org_Factor = -0.15
 			}
 		}
@@ -214,9 +202,6 @@ ideas = {
 			}
 			allowed_civil_war = {
 				always = yes
-			}
-			research_bonus = {
-				land_doctrine = -0.1
 			}
 			modifier = {
 				army_org_Factor = -0.05
@@ -403,7 +388,7 @@ ideas = {
 			}
 			modifier = {
 				stability_weekly = 0.005
-				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
 			}
 		}
 		#对君主制的疑虑
@@ -428,9 +413,8 @@ ideas = {
 				always = no
 			}
 			modifier = {
-				political_power_gain = 0.3
-				conscription = 0.02
-				army_org_regain = 0.1
+				political_power_gain = 0.4
+				conscription = 0.25
 			}
 		}
 		#共和派的不满2
@@ -469,7 +453,7 @@ ideas = {
 				always = no
 			}
 			modifier = {
-				stability_factor = 0.5
+				stability_factor = 0.6
 			}
 		}
 		#民族主义1
@@ -481,7 +465,7 @@ ideas = {
 				always = no
 			}
 			modifier = {
-				war_support_factor = 0.1
+				war_support_factor = 0.25
 			}
 		}
 		#民族主义2
@@ -493,8 +477,8 @@ ideas = {
 				always = no
 			}
 			modifier = {
-				war_support_factor = 0.2
-				justify_war_goal_time = -0.2
+				war_support_factor = 0.25
+				justify_war_goal_time = -0.5
 			}
 		}
 		#民族主义3
@@ -718,7 +702,6 @@ ideas = {
 			}
 			modifier = {
 				political_power_gain = 0.3
-				stability_factor = 0.1
 			}
 		}
 		#受保护的资产阶级
@@ -802,6 +785,11 @@ ideas = {
 			allowed = {
 				tag = BCF
 			}
+			available = {
+				NOT = {
+					has_war_with = KGA
+				}
+			}
 			allowed_civil_war = {
 				always = no
 			}
@@ -876,7 +864,7 @@ ideas = {
 			}
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.05
+					build_cost_ic = 0.05
 					reliability = 0.1
 				}
 			}
@@ -1048,19 +1036,115 @@ ideas = {
 				army_core_defence_factor = 0.3
 			}
 		}
-	}
-	student_union_member = {
-		emi = {
-			picture = GFX_idea_KGA_emi
+		#真理援助
+		BCF_pravada_aid = {
 			allowed = {
-				original_tag = KGA
-				OR = {
-					has_government = communism
-					has_country_flag = KGA_EMI_JOINED_ADVISOR
-				}
+				tag = BCF
 			}
-			traits = {
-				savior_of_the_bell_wall
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				production_speed_bunker_factor = 0.15
+				army_org_Factor = 0.025
+				communism_drift = 0.05
+			}
+		}
+		#受欢迎的学生会长
+		BCF_marie = {
+			allowed = {
+				tag = BCF
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = 0.1
+			}
+		}
+		#中间派的不满
+		BCF_unrest_1 = {
+			allowed = {
+				tag = BCF
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				stability_weekly = -0.0025
+				war_support_weekly = 0.02
+			}
+		}
+		#安抚中间派
+		BCF_unrest_2 = {
+			allowed ={
+				tag = BCF
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				political_power_gain = -0.15
+			}
+		}
+		#不可靠的军队
+		BCF_unreliable_army = {
+			allowed = {
+				tag = BCF
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			on_add = {
+				country_lock_all_division_template = yes
+			}
+			on_remove = {
+				country_lock_all_division_template = no
+			}
+			modifier = {
+				custom_modifier_tooltip = SPR_military_disloyalty_tt
+				disabled_ideas = 1
+			}
+		}
+		#战后重建
+		BCF_rebuild_1 = {
+			allowed = {
+				tag = BCF
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.25
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				conscription = -0.25
+				war_support_factor = -0.3
+				justify_war_goal_time = 5
+			}
+		}
+		#紧急动员
+		BCF_rebuild_2 = {
+			allowed = {
+				tag = BCF
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			available = {
+				has_war = yes
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.25
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard  = -0.05
+				conscription = -0.1
+				war_support_factor = 0.2
 			}
 		}
 	}

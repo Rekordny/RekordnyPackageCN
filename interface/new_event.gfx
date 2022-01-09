@@ -2,7 +2,7 @@ spriteTypes = {
 	#genric
 	spriteType = {
 		name = "GFX_event_senshado_welcome"
-		texturefile = "gfx/event_pictures/event_generic_welcome_to_senshado.dds"
+		texturefile = "gfx/event_pictures/event_generic_1.dds"
 		legacy_lazy_load = no
 	}
 
@@ -18,20 +18,45 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/event_senshado_recruitsuccess.dds"
 		legacy_lazy_load = no
 	}
-
-	#POL
+	#daily
 	spriteType = {
-		name = "GFX_event_POL_rebuildbonple"
-		texturefile = "gfx/event_pictures/event_POL_rebuildbonple.dds"
+		name = "GFX_event_kga_daily_1"
+		texturefile = "gfx/event_pictures/daily/kga_daily_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_daily_2"
+		texturefile = "gfx/event_pictures/daily/kga_daily_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_daily_3"
+		texturefile = "gfx/event_pictures/daily/kga_daily_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_daily_4"
+		texturefile = "gfx/event_pictures/daily/kga_daily_4.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_daily_5"
+		texturefile = "gfx/event_pictures/daily/kga_daily_5.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_daily_6"
+		texturefile = "gfx/event_pictures/daily/kga_daily_6.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_daily_7"
+		texturefile = "gfx/event_pictures/daily/kga_daily_7.dds"
 		legacy_lazy_load = no
 	}
 
-	spriteType = {
-		name = "GFX_event_POL_askBurma"
-		texturefile = "gfx/event_pictures/event_POL_askBurma.dds"
-		legacy_lazy_load = no
-	}
+	#BON
 
-	#GER
+	#KGA
 
 }

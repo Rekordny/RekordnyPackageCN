@@ -381,12 +381,14 @@ stg_kuromorimine_occupation = {
 		activation = { has_country_flag = STG_START_OCCUPATION } 
 		days_mission_timeout = 365
 		timeout_effect = {
+			country_event = { id = StGloriana.30 days = 1 }
 			KGA = {
 				transfer_state = 51
 				transfer_state = 56
 				transfer_state = 57
 				transfer_state = 58
 				transfer_state = 59
+				country_event = { id = StGloriana.31 days = 1 }
 			}
 			clr_country_flag = STG_START_OCCUPATION
         }

@@ -17,7 +17,7 @@ ideas = {
 				max_command_power = 20
                 army_core_attack_factor = 0.05
                 army_core_defence_factor = 0.05
-				
+				wage_modifier = -0.1
 			}
 		}
 
@@ -164,6 +164,7 @@ ideas = {
 				tax_daily_modifier = -0.1
 				production_speed_infrastructure_factor = 0.25
 				production_speed_arms_factory_factor = 0.25
+				wage_modifier = -0.1
 			}
 		}
 
@@ -485,7 +486,7 @@ ideas = {
 			modifier = {
 				tax_daily_modifier = 0.1
 				consumer_goods_factor = 0.02
-				stability_weekly = -0.01
+				stability_weekly = -0.003
 				trade_opinion_factor = -0.1
 			}
 		}
@@ -518,8 +519,9 @@ ideas = {
 				tag = KGA
 			}
 			modifier = {
-				stability_factor = 0.1
+				stability_factor = 0.15
 				industrial_capacity_factory = 0.1
+				wage_modifier = 0.05
 			}
 		}
 
@@ -588,6 +590,7 @@ ideas = {
 				repair_speed_arms_factory_factor = 0.3
 				production_speed_arms_factory_factor = 0.1
 				stability_weekly_factor = -0.003
+				wage_modifier = -0.15
 			}
 		}
 
@@ -606,42 +609,4 @@ ideas = {
 			}
 		}
     }
-
-	student_union_member = {
-		maho = {
-			picture = GFX_idea_KGA_maho
-			allowed = { original_tag = KGA }
-			traits = { hidden_tenderness }
-		}
-		erika = {
-			picture = GFX_idea_KGA_erika
-			allowed = { original_tag = KGA NOT = { has_country_flag = KGA_UPGRADE_ADVISOR_ERIKA } }
-			traits = { top_ruling_bottom }
-		}
-		erika_0 = {
-			picture = GFX_idea_KGA_erika
-			allowed = { original_tag = KGA has_country_flag = KGA_UPGRADE_ADVISOR_ERIKA }
-			traits = { top_ruling_bottom_0 }
-		}
-		koume = {
-			picture = GFX_idea_KGA_koume
-			allowed = { original_tag = KGA NOT = { has_country_flag = KGA_UPGRADE_ADVISOR_KOUME } }
-			traits = { the_most_kind }
-		}
-		koume_0 = {
-			picture = GFX_idea_KGA_koume
-			allowed = { original_tag = KGA has_country_flag = KGA_UPGRADE_ADVISOR_KOUME }
-			traits = { the_most_kind_0 }
-		}
-		ritaiko = {
-			picture = GFX_idea_KGA_ritaiko
-			allowed = { original_tag = KGA }
-			traits = { girls_have_heavy_track }
-		}
-		emi = {
-			picture = GFX_idea_KGA_emi
-			allowed = { original_tag = KGA OR = { has_government = communism has_country_flag = KGA_EMI_JOINED_ADVISOR } }
-			traits = { savior_of_the_bell_wall }
-		}
-	}
 }
