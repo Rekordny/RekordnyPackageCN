@@ -36,22 +36,6 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Division Schnelle Kräfte"		# Infantry Division - Reserve division called to full strength in time of war
-	division_names_group = KGA_2
-
-	regiments = {
-		paratrooper = { x = 0 y = 0 }
-		paratrooper = { x = 0 y = 1 }
-        paratrooper = { x = 0 y = 2 }
-		paratrooper = { x = 1 y = 0 }
-		paratrooper = { x = 1 y = 1 }
-        paratrooper = { x = 1 y = 2 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
-}
-division_template = {
 	name = "Eurocorps"		# Infantry Division - Reserve division called to full strength in time of war
 	division_names_group = KGA_3
 

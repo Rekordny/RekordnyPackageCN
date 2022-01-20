@@ -1,0 +1,125 @@
+KGA_1 = 
+{
+	name = "Panzerdivision"
+
+	for_countries = { KGA }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. Kuromorimine Panzerdivision"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Kuromorimine Panzerdivision" }
+		2 = { "%d. Kuromorimine Panzerdivision" }
+		3 = { "%d. Kuromorimine Panzerdivision" }
+		4 = { "%d. Kuromorimine Panzerdivision" }
+		5 = { "%d. Kuromorimine Panzerdivision" }
+		6 = { "%d. Kuromorimine Panzerdivision" }
+		7 = { "%d. Kuromorimine Panzerdivision" }
+		8 = { "%d. Kuromorimine Panzerdivision" }
+		9 = { "%d. Kuromorimine Panzerdivision" }
+		10 = { "%d. Kuromorimine Panzerdivision" }
+		11 = { "%d. Kuromorimine Panzerdivision" }
+		12 = { "%d. Kuromorimine Panzerdivision" }
+		13 = { "%d. Kuromorimine Panzerdivision" }
+		14 = { "%d. Kuromorimine Panzerdivision" }
+		15 = { "%d. Kuromorimine Panzerdivision" }
+		16 = { "%d. Kuromorimine Panzerdivision" }
+		17 = { "%d. Kuromorimine Panzerdivision" }
+		18 = { "%d. Kuromorimine Panzerdivision" }
+		19 = { "%d. Kuromorimine Panzerdivision" }
+
+	}
+}
+
+KGA_2 = 
+{
+	name = "Division Schnelle Kräfte"
+
+	for_countries = { KGA }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. Division Schnelle Kräfte"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Division Schnelle Kräfte" }
+		2 = { "%d. Division Schnelle Kräfte" }
+		3 = { "%d. Division Schnelle Kräfte" }
+		4 = { "%d. Division Schnelle Kräfte" }
+		5 = { "%d. Division Schnelle Kräfte" }
+		6 = { "%d. Division Schnelle Kräfte" }
+		7 = { "%d. Division Schnelle Kräfte" }
+		8 = { "%d. Division Schnelle Kräfte" }
+		9 = { "%d. Division Schnelle Kräfte" }
+		10 = { "%d. Division Schnelle Kräfte" }
+		11 = { "%d. Division Schnelle Kräfte" }
+		12 = { "%d. Division Schnelle Kräfte" }
+		13 = { "%d. Division Schnelle Kräfte" }
+		14 = { "%d. Division Schnelle Kräfte" }
+		15 = { "%d. Division Schnelle Kräfte" }
+		16 = { "%d. Division Schnelle Kräfte" }
+		17 = { "%d. Division Schnelle Kräfte" }
+		18 = { "%d. Division Schnelle Kräfte" }
+		19 = { "%d. Division Schnelle Kräfte" }
+
+	}
+}
+
+KGA_3 = 
+{
+	name = "Eurocorps"
+
+	for_countries = { KGA }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. Kuromorimine Eurocorps"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Kuromorimine Eurocorps" }
+		2 = { "%d. Kuromorimine Eurocorps" }
+		3 = { "%d. Kuromorimine Eurocorps" }
+		4 = { "%d. Kuromorimine Eurocorps" }
+		5 = { "%d. Kuromorimine Eurocorps" }
+		6 = { "%d. Kuromorimine Eurocorps" }
+		7 = { "%d. Kuromorimine Eurocorps" }
+		8 = { "%d. Kuromorimine Eurocorps" }
+		9 = { "%d. Kuromorimine Eurocorps" }
+		10 = { "%d. Kuromorimine Eurocorps" }
+		11 = { "%d. Kuromorimine Eurocorps" }
+		12 = { "%d. Kuromorimine Eurocorps" }
+		13 = { "%d. Kuromorimine Eurocorps" }
+		14 = { "%d. Kuromorimine Eurocorps" }
+		15 = { "%d. Kuromorimine Eurocorps" }
+		16 = { "%d. Kuromorimine Eurocorps" }
+		17 = { "%d. Kuromorimine Eurocorps" }
+		18 = { "%d. Kuromorimine Eurocorps" }
+		19 = { "%d. Kuromorimine Eurocorps" }
+
+	}
+}

@@ -1,0 +1,41 @@
+add_namespace = Saunders
+
+#待定
+country_event = {
+	id = Anzio.1
+	title = Anzio.1.t
+	desc = Anzio.1.d
+	picture = GFX_report_event_german_speech
+	trigger = { }
+	is_triggered_only = yes
+	option = {
+		name = Anzio.1.a
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

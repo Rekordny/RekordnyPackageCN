@@ -8,6 +8,38 @@ white_peace_with_every_enemy = {
 	}
 }
 
+#!!!!!!!!!!!!!对AI的黄金变量的暂时调整!!!!!!!!!!!!!!!!
+adjust_ai_gold = {
+	if = { limit = { is_ai = yes }
+		if = { 
+			limit = { check_variable = { gold < 0 } } 
+			add_to_variable = {
+				gold = 100
+			}
+		}
+		if = { 
+			limit = { check_variable = { gold < -100 } } 
+			add_to_variable = {
+				gold = 200
+			}
+		}
+		if = { 
+			limit = { check_variable = { gold > 200 } } 
+			add_to_variable = {
+				gold = -100
+			}
+		}
+		else = {
+			if = { 
+				limit = { check_variable = { gold > 100 } } 
+				add_to_variable = {
+					gold = -50
+				}
+			}
+		}
+	}
+}
+
 ######################################################
 #####################战车道点数相关####################
 ######################################################

@@ -1,0 +1,1591 @@
+focus_tree = {
+	id = SDS_focus
+	country = {
+			factor = 0
+				modifier = {
+					add = 10
+					tag = SDS
+			}
+	}
+	#通用持续国策位置
+	continuous_focus_position = { x = 10 y = 0 }
+	default = no
+
+	#国内的紧张局势
+	focus = {
+		id = SDS_internal_tension
+		icon = GFX_focus_SDS_internal_tension
+		#relative_position_id = 国家缩写_国策名字小写
+		x = 8
+		y = 0
+		available = { has_country_flag = SDS_CURRENT_SITUATION }
+		#prerequisite = { focus = 国家缩写_国策名字小写 }
+		#mutually_exclusive = { focus = 国家缩写_国策名字小写 }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#准备好应对第二次美国内战
+	focus = {
+		id = SDS_prepare_second_civil_war
+		icon = GFX_focus_SDS_prepare_second_civil_war
+		relative_position_id = SDS_internal_tension
+		x = 0
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_internal_tension }
+		# mutually_exclusive = { focus = 国家缩写_国策名字小写 }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#内战爆发
+	focus = {
+		id = SDS_civil_war_start
+		icon = GFX_focus_SDS_civil_war_start
+		relative_position_id = SDS_prepare_second_civil_war
+		x = 0
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_prepare_second_civil_war }
+		# mutually_exclusive = { focus = 国家缩写_国策名字小写 }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#进行全国总动员
+	focus = {
+		id = SDS_national_mobilization
+		icon = GFX_focus_SDS_national_mobilization
+		relative_position_id = SDS_civil_war_start
+		x = -4
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_civil_war_start }
+		# mutually_exclusive = { focus = 国家缩写_国策名字小写 }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#陆军紧急改革草案
+	focus = {
+		id = SDS_army_emergency_reform_bill
+		icon = GFX_focus_SDS_army_emergency_reform_bill
+		relative_position_id = SDS_national_mobilization
+		x = -2
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_national_mobilization }
+		# mutually_exclusive = { focus = 国家缩写_国策名字小写 }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#扩建军用设施
+	focus = {
+		id = SDS_expand_military_facilities
+		icon = GFX_focus_SDS_expand_military_facilities
+		relative_position_id = SDS_national_mobilization
+		x = 0
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_national_mobilization }
+		# mutually_exclusive = { focus = 国家缩写_国策名字小写 }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#实行战时经济制度
+	focus = {
+		id = SDS_implement_wartime_economy
+		icon = GFX_focus_SDS_implement_wartime_economy
+		relative_position_id = SDS_national_mobilization
+		x = 2
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_national_mobilization }
+		# mutually_exclusive = { focus = 国家缩写_国策名字小写 }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#心理战
+	focus = {
+		id = SDS_psychological_warfare  
+		icon = GFX_focus_SDS_psychological_warfare
+		relative_position_id = SDS_army_emergency_reform_bill
+		x = 1
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_army_emergency_reform_bill }
+		prerequisite = { focus = SDS_expand_military_facilities }
+		#mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#夺取学园舰
+	focus = {
+		id = SDS_seize_school_ship  
+		icon = GFX_focus_SDS_seize_school_ship
+		relative_position_id = SDS_expand_military_facilities
+		x = 1
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_implement_wartime_economy }
+		prerequisite = { focus = SDS_expand_military_facilities }
+		#mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#组建临时民兵
+	focus = {
+		id = SDS_temporary_militia
+		icon = GFX_focus_SDS_temporary_militia
+		relative_position_id = SDS_civil_war_start
+		x = 0
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_civil_war_start }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#招募前成员
+	focus = {
+		id = SDS_recruit_former_senshado_member
+		icon = GFX_focus_SDS_recruit_former_senshado_member
+		relative_position_id = SDS_temporary_militia
+		x = 0
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_temporary_militia }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#增大战车产量
+	focus = {
+		id = SDS_increase_tank_production
+		icon = GFX_focus_SDS_increase_tank_production
+		relative_position_id = SDS_recruit_former_senshado_member
+		x = 0
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_recruit_former_senshado_member }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#号召人民
+	focus = {
+		id = SDS_call_on_the_people
+		icon = GFX_focus_SDS_call_on_the_people
+		relative_position_id = SDS_civil_war_start
+		x = 4
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_civil_war_start }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#缓解粮食短缺问题
+	focus = {
+		id = SDS_alleviate_food_shortage
+		icon = GFX_focus_SDS_alleviate_food_shortage
+		relative_position_id = SDS_call_on_the_people
+		x = -2
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_call_on_the_people }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#扩建基础设施
+	focus = {
+		id = SDS_expand_infrastructure
+		icon = GFX_focus_SDS_expand_infrastructure
+		relative_position_id = SDS_call_on_the_people
+		x = 0
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_call_on_the_people }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#申请国际援助
+	focus = {
+		id = SDS_apply_for_international_aid
+		icon = GFX_focus_SDS_apply_for_international_aid
+		relative_position_id = SDS_call_on_the_people
+		x = 2
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_call_on_the_people }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#扩编地方警察
+	focus = {
+		id = SDS_expand_local_police
+		icon = GFX_focus_SDS_expand_local_police
+		relative_position_id = SDS_alleviate_food_shortage
+		x = 1
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_alleviate_food_shortage }
+		prerequisite = { focus = SDS_expand_infrastructure }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#舆论战
+	focus = {
+		id = SDS_public_opinion_warfare
+		icon = GFX_focus_SDS_public_opinion_warfare
+		relative_position_id = SDS_expand_infrastructure
+		x = 1
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_apply_for_international_aid }
+		prerequisite = { focus = SDS_expand_infrastructure }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#内战的胜利者
+	focus = {
+		id = SDS_winner_of_civil_war
+		icon = GFX_focus_SDS_winner_of_civil_war
+		#relative_position_id = SDS_expand_infrastructure
+		x = 28
+		y = 0
+		available = {  }
+		#prerequisite = { focus =  }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#清点现状
+	focus = {
+		id = SDS_current_situation
+		icon = GFX_focus_SDS_current_situation
+		relative_position_id = SDS_winner_of_civil_war
+		x = 0
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_winner_of_civil_war }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#经济改革
+	focus = {
+		id = SDS_economic_revolution
+		icon = GFX_focus_SDS_economic_revolution
+		relative_position_id = SDS_current_situation
+		x = -8
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_current_situation }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#着手处理石油危机
+	focus = {
+		id = SDS_handle_fuel_crisis
+		icon = GFX_focus_SDS_handle_fuel_crisis
+		relative_position_id = SDS_economic_revolution
+		x = -2
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_economic_revolution }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#着手处理经济危机
+	focus = {
+		id = SDS_handle_economic_crisis
+		icon = GFX_focus_SDS_handle_economic_crisis
+		relative_position_id = SDS_economic_revolution
+		x = 2
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_economic_revolution }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#进口石油
+	focus = {
+		id = SDS_import_oil
+		icon = GFX_focus_SDS_import_oil
+		relative_position_id = SDS_handle_fuel_crisis
+		x = -1
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_handle_fuel_crisis }
+		mutually_exclusive = { focus = SDS_extract_more_oil }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#开采更多石油
+	focus = {
+		id = SDS_extract_more_oil
+		icon = GFX_focus_SDS_extract_more_oil
+		relative_position_id = SDS_handle_fuel_crisis
+		x = 1
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_handle_fuel_crisis }
+		mutually_exclusive = { focus = SDS_import_oil }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#战略石油储备
+	focus = {
+		id = SDS_strategic_petroleum_reserve
+		icon = GFX_focus_SDS_strategic_petroleum_reserve
+		relative_position_id = SDS_import_oil
+		x = 0
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_import_oil }
+		#mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#加强合成油研究
+	focus = {
+		id = SDS_strengthening_synthetic_oil_research 
+		icon = GFX_focus_SDS_strengthening_synthetic_oil_research
+		relative_position_id = SDS_extract_more_oil
+		x = 0
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_extract_more_oil }
+		#mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#缓解石油危机
+	focus = {
+		id = SDS_alleviate_the_oil_crisis 
+		icon = GFX_focus_SDS_alleviate_the_oil_crisis
+		relative_position_id = SDS_strategic_petroleum_reserve
+		x = 1
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_strategic_petroleum_reserve focus = SDS_strengthening_synthetic_oil_research }
+		#mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#禁止黄金出口
+	focus = {
+		id = SDS_ban_on_gold_exports
+		icon = GFX_focus_SDS_ban_on_gold_exports
+		relative_position_id = SDS_handle_economic_crisis
+		x = -1
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_handle_economic_crisis }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#恢复工厂运作
+	focus = {
+		id = SDS_restore_factory_operations
+		icon = GFX_focus_SDS_restore_factory_operations
+		relative_position_id = SDS_handle_economic_crisis
+		x = 1
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_handle_economic_crisis }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#重新签署联邦储备法案
+	focus = {
+		id = SDS_re_sign_the_federal_reserve_act
+		icon = GFX_focus_SDS_re_sign_the_federal_reserve_act
+		relative_position_id = SDS_ban_on_gold_exports
+		x = 0
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_ban_on_gold_exports }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#整顿金融体系
+	focus = {
+		id = SDS_overhaul_the_financial_system 
+		icon = GFX_focus_SDS_overhaul_the_financial_system
+		relative_position_id = SDS_restore_factory_operations
+		x = 0
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_restore_factory_operations }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#偿还贷款
+	focus = {
+		id = SDS_repayment_of_loans
+		icon = GFX_focus_SDS_repayment_of_loans
+		relative_position_id = SDS_re_sign_the_federal_reserve_act
+		x = 1
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_re_sign_the_federal_reserve_act focus = SDS_overhaul_the_financial_system }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#暂时稳定的经济
+	focus = {
+		id = SDS_temporarily_relieved_economy
+		icon = GFX_focus_SDS_temporarily_relieved_economy
+		relative_position_id = SDS_repayment_of_loans
+		x = -2
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_repayment_of_loans focus = SDS_alleviate_the_oil_crisis }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#党内分裂
+	focus = {
+		id = SDS_split_party
+		icon = GFX_focus_SDS_split_party
+		relative_position_id = SDS_current_situation
+		x = 0
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_current_situation }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#和共产党调解
+	focus = {
+		id = SDS_mediation_with_communist_party 
+		icon = GFX_focus_SDS_mediation_with_communist_party
+		relative_position_id = SDS_split_party
+		x = -1
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_split_party }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#调整财阀地位
+	focus = {
+		id = SDS_negotiate_with_chaebols
+		icon = GFX_focus_SDS_negotiate_with_chaebols
+		relative_position_id = SDS_split_party
+		x = 1
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_split_party }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#恢复共产党合法地位
+	focus = {
+		id = SDS_restoring_the_legitimacy_of_the_communist_party 
+		icon = GFX_focus_SDS_restoring_the_legitimacy_of_the_communist_party
+		relative_position_id = SDS_mediation_with_communist_party
+		x = -2
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_mediation_with_communist_party }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#允许自由工会
+	focus = {
+		id = SDS_allow_labor_union
+		icon = GFX_focus_SDS_allow_labor_union
+		relative_position_id = SDS_mediation_with_communist_party
+		x = 0
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_mediation_with_communist_party }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#要求监督政府
+	focus = {
+		id = SDS_demand_oversight_of_government
+		icon = GFX_focus_SDS_demand_oversight_of_government
+		relative_position_id = SDS_allow_labor_union
+		x = 0
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_allow_labor_union }
+		prerequisite = { focus = SDS_restoring_the_legitimacy_of_the_communist_party }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#给予国内企业减税
+	focus = {
+		id = SDS_cut_tax_for_domestic_companies
+		icon = GFX_focus_SDS_cut_tax_for_domestic_companies
+		relative_position_id = SDS_negotiate_with_chaebols
+		x = 0
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_negotiate_with_chaebols }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#向私人银行贷款
+	focus = {
+		id = SDS_loans_from_private_banks 
+		icon = GFX_focus_SDS_cut_tax_for_domestic_companies
+		relative_position_id = SDS_negotiate_with_chaebols
+		x = 2
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_negotiate_with_chaebols }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#禁止垄断
+	focus = {
+		id = SDS_monopoly_prohibited
+		icon = GFX_focus_SDS_monopoly_prohibited
+		relative_position_id = SDS_cut_tax_for_domestic_companies
+		x = 0
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_cut_tax_for_domestic_companies }
+		prerequisite = { focus = SDS_loans_from_private_banks }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#扩大战车道影响力
+	focus = {
+		id = SDS_expand_influence_of_senshado
+		icon = GFX_focus_SDS_expand_influence_of_senshado
+		relative_position_id = SDS_demand_oversight_of_government
+		x = 1
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_demand_oversight_of_government }
+		prerequisite = { focus = SDS_monopoly_prohibited }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#达成妥协
+	focus = {
+		id = SDS_reach_a_compromise 
+		icon = GFX_focus_SDS_reach_a_compromise
+		relative_position_id = SDS_expand_influence_of_senshado
+		x = 0
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_expand_influence_of_senshado }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#政治改革
+	focus = {
+		id = SDS_political_reform
+		icon = GFX_focus_SDS_political_reform
+		relative_position_id = SDS_current_situation
+		x = 8
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_current_situation }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#签署1974人权法案
+	focus = {
+		id = SDS_the_civil_right_act_of_1974
+		icon = GFX_focus_SDS_the_civil_right_act_of_1974
+		relative_position_id = SDS_political_reform
+		x = -2
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_political_reform }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#普及宪法
+	focus = {
+		id = SDS_popularize_the_constitution 
+		icon = GFX_focus_SDS_popularize_the_constitution
+		relative_position_id = SDS_the_civil_right_act_of_1974
+		x = -1
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_the_civil_right_act_of_1974 }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#重视人民的声音
+	focus = {
+		id = SDS_the_voice_of_people
+		icon = GFX_focus_SDS_the_voice_of_people
+		relative_position_id = SDS_the_civil_right_act_of_1974
+		x = 1
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_the_civil_right_act_of_1974 }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#宣布3k党非法
+	focus = {
+		id = SDS_outlaw_the_KKK 
+		icon = GFX_focus_SDS_outlaw_the_KKK
+		relative_position_id = SDS_popularize_the_constitution
+		x = 1
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_popularize_the_constitution }
+		prerequisite = { focus = SDS_the_voice_of_people }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#恢复地方选举权利
+	focus = {
+		id = SDS_restoring_local_suffrage 
+		icon = GFX_focus_SDS_restoring_local_suffrage
+		relative_position_id = SDS_outlaw_the_KKK
+		x = 0
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_outlaw_the_KKK }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#保卫民主
+	focus = {
+		id = SDS_defend_democracy
+		icon = GFX_focus_SDS_defend_democracy
+		relative_position_id = SDS_political_reform
+		x = 2
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_political_reform }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#恢复政府合法性
+	focus = {
+		id = SDS_restore_government_legitimacy 
+		icon = GFX_focus_SDS_restore_government_legitimacy
+		relative_position_id = SDS_defend_democracy
+		x = -1
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_defend_democracy }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#确保政局稳定
+	focus = {
+		id = SDS_ensure_political_stability
+		icon = GFX_focus_SDS_ensure_political_stability
+		relative_position_id = SDS_defend_democracy
+		x = 1
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_defend_democracy }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#清剿叛军
+	focus = {
+		id = SDS_suppress_the_rebels 
+		icon = GFX_focus_SDS_suppress_the_rebels
+		relative_position_id = SDS_ensure_political_stability
+		x = -1
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_ensure_political_stability }
+		prerequisite = { focus = SDS_restore_government_legitimacy }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#自由民主的最后堡垒
+	focus = {
+		id = SDS_the_last_bastion_of_liberty
+		icon = GFX_focus_SDS_the_last_bastion_of_liberty
+		relative_position_id = SDS_suppress_the_rebels
+		x = 0
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_suppress_the_rebels }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#暂时缓解的政治危机
+	focus = {
+		id = SDS_temporarily_relieved_political_crisis 
+		icon = GFX_focus_SDS_temporarily_relieved_political_crisis
+		relative_position_id = SDS_the_last_bastion_of_liberty
+		x = -2
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_the_last_bastion_of_liberty }
+		prerequisite = { focus = SDS_restoring_local_suffrage }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#让桑达斯再次伟大
+	focus = {
+		id = SDS_make_saunders_great_again 
+		icon = GFX_focus_SDS_make_saunders_great_again
+		relative_position_id = SDS_reach_a_compromise
+		x = 0
+		y = 1
+		available = {  }
+		prerequisite = { focus = SDS_reach_a_compromise }
+		prerequisite = { focus = SDS_temporarily_relieved_political_crisis }
+		prerequisite = { focus = SDS_temporarily_relieved_economy }
+		# mutually_exclusive = { focus =  }
+		bypass = { }
+		cost = 10
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		#AI行动之后具体设计，复制粘贴以下部分即可
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+}

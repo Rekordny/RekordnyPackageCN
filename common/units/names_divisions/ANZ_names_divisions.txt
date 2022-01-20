@@ -1,0 +1,246 @@
+ANZ_1 = 
+{
+	name = "Granatieri di Sardegna"
+
+	for_countries = { ANZ }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. Anzio Granatieri di Sardegna"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Anzio Granatieri di Sardegna" }
+		2 = { "%d. Anzio Granatieri di Sardegna" }
+		3 = { "%d. Anzio Granatieri di Sardegna" }
+		4 = { "%d. Anzio Granatieri di Sardegna" }
+		5 = { "%d. Anzio Granatieri di Sardegna" }
+		6 = { "%d. Anzio Granatieri di Sardegna" }
+		7 = { "%d. Anzio Granatieri di Sardegna" }
+		8 = { "%d. Anzio Granatieri di Sardegna" }
+		9 = { "%d. Anzio Granatieri di Sardegna" }
+		10 = { "%d. Anzio Granatieri di Sardegna" }
+		11 = { "%d. Anzio Granatieri di Sardegna" }
+		12 = { "%d. Anzio Granatieri di Sardegna" }
+		13 = { "%d. Anzio Granatieri di Sardegna" }
+		14 = { "%d. Anzio Granatieri di Sardegna" }
+		15 = { "%d. Anzio Granatieri di Sardegna" }
+		16 = { "%d. Anzio Granatieri di Sardegna" }
+		17 = { "%d. Anzio Granatieri di Sardegna" }
+		18 = { "%d. Anzio Granatieri di Sardegna" }
+		19 = { "%d. Anzio Granatieri di Sardegna" }
+
+	}
+}
+ANZ_2 = 
+{
+	name = "Division Légère Blindée Ecole"
+
+	for_countries = { ANZ }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. Anzio Fanteria"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Anzio Fanteria" }
+		2 = { "%d. Anzio Fanteria" }
+		3 = { "%d. Anzio Fanteria" }
+		4 = { "%d. Anzio Fanteria" }
+		5 = { "%d. Anzio Fanteria" }
+		6 = { "%d. Anzio Fanteria" }
+		7 = { "%d. Anzio Fanteria" }
+		8 = { "%d. Anzio Fanteria" }
+		9 = { "%d. Anzio Fanteria" }
+		10 = { "%d. Anzio Fanteria" }
+		11 = { "%d. Anzio Fanteria" }
+		12 = { "%d. Anzio Fanteria" }
+		13 = { "%d. Anzio Fanteria" }
+		14 = { "%d. Anzio Fanteria" }
+		15 = { "%d. Anzio Fanteria" }
+		16 = { "%d. Anzio Fanteria" }
+		17 = { "%d. Anzio Fanteria" }
+		18 = { "%d. Anzio Fanteria" }
+		19 = { "%d. Anzio Fanteria" }
+
+	}
+}
+ANZ_3 = 
+{
+	name = "Bersaglieri"
+
+	for_countries = { ANZ }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. Anzio Bersaglieri"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Anzio Bersaglieri" }
+		2 = { "%d. Anzio Bersaglieri" }
+		3 = { "%d. Anzio Bersaglieri" }
+		4 = { "%d. Anzio Bersaglieri" }
+		5 = { "%d. Anzio Bersaglieri" }
+		6 = { "%d. Anzio Bersaglieri" }
+		7 = { "%d. Anzio Bersaglieri" }
+		8 = { "%d. Anzio Bersaglieri" }
+		9 = { "%d. Anzio Bersaglieri" }
+		10 = { "%d. Anzio Bersaglieri" }
+		11 = { "%d. Anzio Bersaglieri" }
+		12 = { "%d. Anzio Bersaglieri" }
+		13 = { "%d. Anzio Bersaglieri" }
+		14 = { "%d. Anzio Bersaglieri" }
+		15 = { "%d. Anzio Bersaglieri" }
+		16 = { "%d. Anzio Bersaglieri" }
+		17 = { "%d. Anzio Bersaglieri" }
+		18 = { "%d. Anzio Bersaglieri" }
+		19 = { "%d. Anzio Bersaglieri" }
+
+	}
+}
+ANZ_4 = 
+{
+	name = "Alpini"
+
+	for_countries = { ANZ }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. Anzio Alpini"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Anzio Alpini" }
+		2 = { "%d. Anzio Alpini" }
+		3 = { "%d. Anzio Alpini" }
+		4 = { "%d. Anzio Alpini" }
+		5 = { "%d. Anzio Alpini" }
+		6 = { "%d. Anzio Alpini" }
+		7 = { "%d. Anzio Alpini" }
+		8 = { "%d. Anzio Alpini" }
+		9 = { "%d. Anzio Alpini" }
+		10 = { "%d. Anzio Alpini" }
+		11 = { "%d. Anzio Alpini" }
+		12 = { "%d. Anzio Alpini" }
+		13 = { "%d. Anzio Alpini" }
+		14 = { "%d. Anzio Alpini" }
+		15 = { "%d. Anzio Alpini" }
+		16 = { "%d. Anzio Alpini" }
+		17 = { "%d. Anzio Alpini" }
+		18 = { "%d. Anzio Alpini" }
+		19 = { "%d. Anzio Alpini" }
+
+	}
+}
+ANZ_5 = 
+{
+	name = "Paracadutisti"
+
+	for_countries = { ANZ }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. Anzio Paracadutisti"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Anzio Paracadutisti" }
+		2 = { "%d. Anzio Paracadutisti" }
+		3 = { "%d. Anzio Paracadutisti" }
+		4 = { "%d. Anzio Paracadutisti" }
+		5 = { "%d. Anzio Paracadutisti" }
+		6 = { "%d. Anzio Paracadutisti" }
+		7 = { "%d. Anzio Paracadutisti" }
+		8 = { "%d. Anzio Paracadutisti" }
+		9 = { "%d. Anzio Paracadutisti" }
+		10 = { "%d. Anzio Paracadutisti" }
+		11 = { "%d. Anzio Paracadutisti" }
+		12 = { "%d. Anzio Paracadutisti" }
+		13 = { "%d. Anzio Paracadutisti" }
+		14 = { "%d. Anzio Paracadutisti" }
+		15 = { "%d. Anzio Paracadutisti" }
+		16 = { "%d. Anzio Paracadutisti" }
+		17 = { "%d. Anzio Paracadutisti" }
+		18 = { "%d. Anzio Paracadutisti" }
+		19 = { "%d. Anzio Paracadutisti" }
+
+	}
+}
+ANZ_6 = 
+{
+	name = "Lagunari"
+
+	for_countries = { ANZ }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. Anzio Lagunari"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Anzio Lagunari" }
+		2 = { "%d. Anzio Lagunari" }
+		3 = { "%d. Anzio Lagunari" }
+		4 = { "%d. Anzio Lagunari" }
+		5 = { "%d. Anzio Lagunari" }
+		6 = { "%d. Anzio Lagunari" }
+		7 = { "%d. Anzio Lagunari" }
+		8 = { "%d. Anzio Lagunari" }
+		9 = { "%d. Anzio Lagunari" }
+		10 = { "%d. Anzio Lagunari" }
+		11 = { "%d. Anzio Lagunari" }
+		12 = { "%d. Anzio Lagunari" }
+		13 = { "%d. Anzio Lagunari" }
+		14 = { "%d. Anzio Lagunari" }
+		15 = { "%d. Anzio Lagunari" }
+		16 = { "%d. Anzio Lagunari" }
+		17 = { "%d. Anzio Lagunari" }
+		18 = { "%d. Anzio Lagunari" }
+		19 = { "%d. Anzio Lagunari" }
+
+	}
+}

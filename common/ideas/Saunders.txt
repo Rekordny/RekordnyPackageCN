@@ -1,0 +1,65 @@
+ideas = {
+	country = {
+		#民主自由的坚实堡垒?
+		SDS_solid_bulwark_of_democratic_questionmark = {
+			allowed = { tag = SDS }
+			allowed_civil_war = { always = no }
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = -0.15
+				political_power_cost = -0.1
+			}
+		}
+
+		#隔离法案
+		SDS_quarantine_act = {
+			allowed = { tag = SDS }
+			allowed_civil_war = { always = no }
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.3
+				conscription_factor = -0.2
+			}
+		}
+
+		#割裂的政坛
+		SDS_fragmented_SDS_politics = {
+			allowed = { tag = SDS }
+			allowed_civil_war = { always = no }
+			modifier = {
+				stability_factor = -0.1
+				political_power_cost = -0.15
+				conscription_factor = -0.2
+			}
+		}
+
+		#战斗力严重低下的军队
+		SDS_severely_underpowered_army = {
+			allowed = { tag = SDS }
+			allowed_civil_war = { always = no }
+			modifier = {
+				experience_gain_air = -0.1
+				experience_gain_army = -0.1
+				experience_gain_navy = -0.1
+				experience_loss_factor = 0.2
+				training_time_factor = 0.1
+				air_accidents_factor = 0.15
+				air_ace_generation_chance_factor = -0.45
+				air_night_penalty = 0.3
+			}
+		}
+
+		#严重的经济危机
+		SDS_severe_economic_crisis  = {
+			allowed = { tag = SDS }
+			allowed_civil_war = { always = no }
+			modifier = {
+				consumer_goods_factor = 0.15
+				repair_speed_factor = -0.3
+				production_speed_buildings_factor = -0.3
+				production_factory_efficiency_gain_factor = -0.2
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+	}
+}	

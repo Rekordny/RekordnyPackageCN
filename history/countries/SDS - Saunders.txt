@@ -7,6 +7,12 @@ set_technology = {
 set_research_slots = 5
 set_convoys = 20
 
+add_ideas = SDS_solid_bulwark_of_democratic_questionmark
+add_ideas = SDS_quarantine_act
+add_ideas = SDS_fragmented_SDS_politics
+add_ideas = SDS_severely_underpowered_army
+add_ideas = SDS_severe_economic_crisis
+
 create_faction = "战车道协会互助联盟"
 add_to_faction = STG
 add_to_faction = KFA

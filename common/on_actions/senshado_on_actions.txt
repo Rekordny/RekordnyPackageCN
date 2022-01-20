@@ -95,6 +95,7 @@ on_actions = {
 	on_weekly = {
 		effect = {
 			#刷新每周黄金储备精神
+			adjust_ai_gold = yes
 			refresh_gold_standard_and_ideas = yes
 			#刷新计算税收的国家产值
 			get_industry_weights = yes

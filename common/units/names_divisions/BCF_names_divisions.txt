@@ -1,0 +1,246 @@
+BCF_1 = 
+{
+	name = "Division Blindée"
+
+	for_countries = { BCF }
+
+	can_use = { always = yes }
+
+	division_types = { "medium_armor" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. BCFreedom Division Blindée"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. BCFreedom Division Blindée" }
+		2 = { "%d. BCFreedom Division Blindée" }
+		3 = { "%d. BCFreedom Division Blindée" }
+		4 = { "%d. BCFreedom Division Blindée" }
+		5 = { "%d. BCFreedom Division Blindée" }
+		6 = { "%d. BCFreedom Division Blindée" }
+		7 = { "%d. BCFreedom Division Blindée" }
+		8 = { "%d. BCFreedom Division Blindée" }
+		9 = { "%d. BCFreedom Division Blindée" }
+		10 = { "%d. BCFreedom Division Blindée" }
+		11 = { "%d. BCFreedom Division Blindée" }
+		12 = { "%d. BCFreedom Division Blindée" }
+		13 = { "%d. BCFreedom Division Blindée" }
+		14 = { "%d. BCFreedom Division Blindée" }
+		15 = { "%d. BCFreedom Division Blindée" }
+		16 = { "%d. BCFreedom Division Blindée" }
+		17 = { "%d. BCFreedom Division Blindée" }
+		18 = { "%d. BCFreedom Division Blindée" }
+		19 = { "%d. BCFreedom Division Blindée" }
+
+	}
+}
+BCF_2 = 
+{
+	name = "Division Légère Blindée Ecole"
+
+	for_countries = { BCF }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. BCFreedom Division Légère Blindée Ecole"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. BCFreedom Division Légère Blindée Ecole" }
+		2 = { "%d. BCFreedom Division Légère Blindée Ecole" }
+		3 = { "%d. BCFreedom Division Légère Blindée Ecole" }
+		4 = { "%d. BCFreedom Division Légère Blindée Ecole" }
+		5 = { "%d. BCFreedom Division Légère Blindée Ecole" }
+		6 = { "%d. BCFreedom Division Légère Blindée Ecole" }
+		7 = { "%d. BCFreedom Division Légère Blindée Ecole" }
+		8 = { "%d. BCFreedom Division Légère Blindée Ecole" }
+		9 = { "%d. BCFreedom Division Légère Blindée Ecole" }
+		10 = { "%d. BCFreedom Division Légère Blindée Ecole" }
+		11 = { "%d. BCFreedom Division Légère Blindée Ecole" }
+		12 = { "%d. BCFreedom Division Légère Blindée Ecole" }
+		13 = { "%d. BCFreedom Division Légère Blindée Ecole" }
+		14 = { "%d. BCFreedom Division Légère Blindée Ecole" }
+		15 = { "%d. BCFreedom Division Légère Blindée Ecole" }
+		16 = { "%d. BCFreedom Division Légère Blindée Ecole" }
+		17 = { "%d. BCFreedom Division Légère Blindée Ecole" }
+		18 = { "%d. BCFreedom Division Légère Blindée Ecole" }
+		19 = { "%d. BCFreedom Division Légère Blindée Ecole" }
+
+	}
+}
+BCF_3 = 
+{
+	name = "Division d'Infanterie"
+
+	for_countries = { BCF }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. BCFreedom Division d'Infanterie"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. BCFreedom Division d'Infanterie" }
+		2 = { "%d. BCFreedom Division d'Infanterie" }
+		3 = { "%d. BCFreedom Division d'Infanterie" }
+		4 = { "%d. BCFreedom Division d'Infanterie" }
+		5 = { "%d. BCFreedom Division d'Infanterie" }
+		6 = { "%d. BCFreedom Division d'Infanterie" }
+		7 = { "%d. BCFreedom Division d'Infanterie" }
+		8 = { "%d. BCFreedom Division d'Infanterie" }
+		9 = { "%d. BCFreedom Division d'Infanterie" }
+		10 = { "%d. BCFreedom Division d'Infanterie" }
+		11 = { "%d. BCFreedom Division d'Infanterie" }
+		12 = { "%d. BCFreedom Division d'Infanterie" }
+		13 = { "%d. BCFreedom Division d'Infanterie" }
+		14 = { "%d. BCFreedom Division d'Infanterie" }
+		15 = { "%d. BCFreedom Division d'Infanterie" }
+		16 = { "%d. BCFreedom Division d'Infanterie" }
+		17 = { "%d. BCFreedom Division d'Infanterie" }
+		18 = { "%d. BCFreedom Division d'Infanterie" }
+		19 = { "%d. BCFreedom Division d'Infanterie" }
+
+	}
+}
+BCF_4 = 
+{
+	name = "Division d'Infanterie de Marine"
+
+	for_countries = { BCF }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. BCFreedom Division d'Infanterie de Marine"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. BCFreedom Division d'Infanterie de Marine" }
+		2 = { "%d. BCFreedom Division d'Infanterie de Marine" }
+		3 = { "%d. BCFreedom Division d'Infanterie de Marine" }
+		4 = { "%d. BCFreedom Division d'Infanterie de Marine" }
+		5 = { "%d. BCFreedom Division d'Infanterie de Marine" }
+		6 = { "%d. BCFreedom Division d'Infanterie de Marine" }
+		7 = { "%d. BCFreedom Division d'Infanterie de Marine" }
+		8 = { "%d. BCFreedom Division d'Infanterie de Marine" }
+		9 = { "%d. BCFreedom Division d'Infanterie de Marine" }
+		10 = { "%d. BCFreedom Division d'Infanterie de Marine" }
+		11 = { "%d. BCFreedom Division d'Infanterie de Marine" }
+		12 = { "%d. BCFreedom Division d'Infanterie de Marine" }
+		13 = { "%d. BCFreedom Division d'Infanterie de Marine" }
+		14 = { "%d. BCFreedom Division d'Infanterie de Marine" }
+		15 = { "%d. BCFreedom Division d'Infanterie de Marine" }
+		16 = { "%d. BCFreedom Division d'Infanterie de Marine" }
+		17 = { "%d. BCFreedom Division d'Infanterie de Marine" }
+		18 = { "%d. BCFreedom Division d'Infanterie de Marine" }
+		19 = { "%d. BCFreedom Division d'Infanterie de Marine" }
+
+	}
+}
+BCF_5 = 
+{
+	name = "Division Parachutiste"
+
+	for_countries = { BCF }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. BCFreedom Division Parachutiste"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. BCFreedom Division Parachutiste" }
+		2 = { "%d. BCFreedom Division Parachutiste" }
+		3 = { "%d. BCFreedom Division Parachutiste" }
+		4 = { "%d. BCFreedom Division Parachutiste" }
+		5 = { "%d. BCFreedom Division Parachutiste" }
+		6 = { "%d. BCFreedom Division Parachutiste" }
+		7 = { "%d. BCFreedom Division Parachutiste" }
+		8 = { "%d. BCFreedom Division Parachutiste" }
+		9 = { "%d. BCFreedom Division Parachutiste" }
+		10 = { "%d. BCFreedom Division Parachutiste" }
+		11 = { "%d. BCFreedom Division Parachutiste" }
+		12 = { "%d. BCFreedom Division Parachutiste" }
+		13 = { "%d. BCFreedom Division Parachutiste" }
+		14 = { "%d. BCFreedom Division Parachutiste" }
+		15 = { "%d. BCFreedom Division Parachutiste" }
+		16 = { "%d. BCFreedom Division Parachutiste" }
+		17 = { "%d. BCFreedom Division Parachutiste" }
+		18 = { "%d. BCFreedom Division Parachutiste" }
+		19 = { "%d. BCFreedom Division Parachutiste" }
+
+	}
+}
+BCF_6 = 
+{
+	name = "Division Alpine"
+
+	for_countries = { BCF }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. BCFreedom Division Alpine"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. BCFreedom Division Alpine" }
+		2 = { "%d. BCFreedom Division Alpine" }
+		3 = { "%d. BCFreedom Division Alpine" }
+		4 = { "%d. BCFreedom Division Alpine" }
+		5 = { "%d. BCFreedom Division Alpine" }
+		6 = { "%d. BCFreedom Division Alpine" }
+		7 = { "%d. BCFreedom Division Alpine" }
+		8 = { "%d. BCFreedom Division Alpine" }
+		9 = { "%d. BCFreedom Division Alpine" }
+		10 = { "%d. BCFreedom Division Alpine" }
+		11 = { "%d. BCFreedom Division Alpine" }
+		12 = { "%d. BCFreedom Division Alpine" }
+		13 = { "%d. BCFreedom Division Alpine" }
+		14 = { "%d. BCFreedom Division Alpine" }
+		15 = { "%d. BCFreedom Division Alpine" }
+		16 = { "%d. BCFreedom Division Alpine" }
+		17 = { "%d. BCFreedom Division Alpine" }
+		18 = { "%d. BCFreedom Division Alpine" }
+		19 = { "%d. BCFreedom Division Alpine" }
+
+	}
+}

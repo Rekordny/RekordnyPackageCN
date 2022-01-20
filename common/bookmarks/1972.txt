@@ -87,9 +87,9 @@ bookmarks = {
 			history = SDS_1972_DESC
 			ideology = democratic
 			ideas={
-				FRA_victors_of_wwi
-				FRA_disjointed_government
-				FRA_protected_by_the_maginot_line
+				SDS_solid_bulwark_of_democratic_questionmark
+				SDS_severely_underpowered_army
+				SDS_quarantine_act
 			}
 			focuses = {
 				FRA_strengthen_government_support

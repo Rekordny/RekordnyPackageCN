@@ -35,8 +35,8 @@ country_event = {
 	option = {
 		name = Anzio.3.a
 		add_timed_idea = {
+			idea = ANZ_neo_renaissance
 			days = 365
-			add_ideas = ANZ_occupational_community_asytam_0
 		}
 		hidden_effect = {
 			ANZ = { country_event = { id = Anzio.5 days = 40 random = 10 } }
@@ -227,6 +227,10 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = Anzio.10.a
+		activate_targeted_decision = { target = ANZ decision = anz_strip_off_ccp }
+		hidden_effect ={
+			set_country_flag = ANZ_SEC_FIREY_AUTUMN
+		}
 	}
 	option ={
 		name = Anzio.10.b
@@ -242,6 +246,34 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = Anzio.11.a
+		hidden_effect = {
+			ANZ = {
+                set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					last_election = "1972.12.17"
+					election_frequency = 48
+				}
+				start_civil_war = {
+					ruling_party = democratic
+					ideology = ROOT
+					size = 0.4
+					only_own_territory = no
+					capital = 159
+					states = { 
+						2 157 162 117 
+					}
+					keep_unit_leaders = {
+						1076 1077 1078 1079
+					}
+					keep_political_leader = no
+					
+				}
+			}
+			set_popularities = { communism = 0 }
+			
+		}
+		
 	}
 }
 #加速的城市化
@@ -252,7 +284,10 @@ country_event = {
     picture = GFX_report_event_german_speech
      is_triggered_only = yes
 	 option = {
-		 name = Anzio.12.a
+		name = Anzio.12.a
+		remove_ideas = ANZ_urbanization_trend
+		add_ideas = ANZ_urbanization_trend_enlarge_0
+		
 	 }
 }
 #揭竿而起
@@ -264,8 +299,36 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = Anzio.13.a
-	}
-	
+		hidden_effect ={
+			ANZ = {
+                set_politics = {
+					ruling_party = democratic
+					elections_allowed = no
+					last_election = "1972.12.17"
+					election_frequency = 48
+				}
+				start_civil_war = {
+					ruling_party = communism
+					ideology = ROOT
+					size = 0.4
+					only_own_territory = no
+					capital = 2
+					states = { 
+						2 157 162 117 
+					}
+					keep_unit_leaders = {
+						1076 1077 1078 1079
+					}
+					keep_political_leader = no
+					
+				}
+			}
+			clr_country_flag = ANZ_SEC_FIREY_AUTUMN
+			set_popularities = {
+				democratic = 0
+			}
+	    }	
+    }
 }
 # 自治歌剧
 country_event = {

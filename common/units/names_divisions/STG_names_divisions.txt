@@ -1,0 +1,164 @@
+STG_1 = 
+{
+	name = "Infantry Division"
+
+	for_countries = { STG }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. St.Gloriana Infantry Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. St.Gloriana Infantry Division" }
+		2 = { "%d. St.Gloriana Infantry Division" }
+		3 = { "%d. St.Gloriana Infantry Division" }
+		4 = { "%d. St.Gloriana Infantry Division" }
+		5 = { "%d. St.Gloriana Infantry Division" }
+		6 = { "%d. St.Gloriana Infantry Division" }
+		7 = { "%d. St.Gloriana Infantry Division" }
+		8 = { "%d. St.Gloriana Infantry Division" }
+		9 = { "%d. St.Gloriana Infantry Division" }
+		10 = { "%d. St.Gloriana Infantry Division" }
+		11 = { "%d. St.Gloriana Infantry Division" }
+		12 = { "%d. St.Gloriana Infantry Division" }
+		13 = { "%d. St.Gloriana Infantry Division" }
+		14 = { "%d. St.Gloriana Infantry Division" }
+		15 = { "%d. St.Gloriana Infantry Division" }
+		16 = { "%d. St.Gloriana Infantry Division" }
+		17 = { "%d. St.Gloriana Infantry Division" }
+		18 = { "%d. St.Gloriana Infantry Division" }
+		19 = { "%d. St.Gloriana Infantry Division" }
+
+	}
+}
+STG_2 = 
+{
+	name = "Artillery Division"
+
+	for_countries = { STG }
+
+	can_use = { always = yes }
+
+	division_types = { "artillery" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. St.Gloriana Artillery Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. St.Gloriana Artillery Division" }
+		2 = { "%d. St.Gloriana Artillery Division" }
+		3 = { "%d. St.Gloriana Artillery Division" }
+		4 = { "%d. St.Gloriana Artillery Division" }
+		5 = { "%d. St.Gloriana Artillery Division" }
+		6 = { "%d. St.Gloriana Artillery Division" }
+		7 = { "%d. St.Gloriana Artillery Division" }
+		8 = { "%d. St.Gloriana Artillery Division" }
+		9 = { "%d. St.Gloriana Artillery Division" }
+		10 = { "%d. St.Gloriana Artillery Division" }
+		11 = { "%d. St.Gloriana Artillery Division" }
+		12 = { "%d. St.Gloriana Artillery Division" }
+		13 = { "%d. St.Gloriana Artillery Division" }
+		14 = { "%d. St.Gloriana Artillery Division" }
+		15 = { "%d. St.Gloriana Artillery Division" }
+		16 = { "%d. St.Gloriana Artillery Division" }
+		17 = { "%d. St.Gloriana Artillery Division" }
+		18 = { "%d. St.Gloriana Artillery Division" }
+		19 = { "%d. St.Gloriana Artillery Division" }
+
+	}
+}
+STG_3 = 
+{
+	name = "Air Assault Brigade Combat Team"
+
+	for_countries = { STG }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. St.Gloriana Air Assault Brigade Combat Team"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. St.Gloriana Air Assault Brigade Combat Team" }
+		2 = { "%d. St.Gloriana Air Assault Brigade Combat Team" }
+		3 = { "%d. St.Gloriana Air Assault Brigade Combat Team" }
+		4 = { "%d. St.Gloriana Air Assault Brigade Combat Team" }
+		5 = { "%d. St.Gloriana Air Assault Brigade Combat Team" }
+		6 = { "%d. St.Gloriana Air Assault Brigade Combat Team" }
+		7 = { "%d. St.Gloriana Air Assault Brigade Combat Team" }
+		8 = { "%d. St.Gloriana Air Assault Brigade Combat Team" }
+		9 = { "%d. St.Gloriana Air Assault Brigade Combat Team" }
+		10 = { "%d. St.Gloriana Air Assault Brigade Combat Team" }
+		11 = { "%d. St.Gloriana Air Assault Brigade Combat Team" }
+		12 = { "%d. St.Gloriana Air Assault Brigade Combat Team" }
+		13 = { "%d. St.Gloriana Air Assault Brigade Combat Team" }
+		14 = { "%d. St.Gloriana Air Assault Brigade Combat Team" }
+		15 = { "%d. St.Gloriana Air Assault Brigade Combat Team" }
+		16 = { "%d. St.Gloriana Air Assault Brigade Combat Team" }
+		17 = { "%d. St.Gloriana Air Assault Brigade Combat Team" }
+		18 = { "%d. St.Gloriana Air Assault Brigade Combat Team" }
+		19 = { "%d. St.Gloriana Air Assault Brigade Combat Team" }
+
+	}
+}
+STG_4 = 
+{
+	name = "Land Warfare Centre"
+
+	for_countries = { STG }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. St.Gloriana Land Warfare Centre"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. St.Gloriana Land Warfare Centre" }
+		2 = { "%d. St.Gloriana Land Warfare Centre" }
+		3 = { "%d. St.Gloriana Land Warfare Centre" }
+		4 = { "%d. St.Gloriana Land Warfare Centre" }
+		5 = { "%d. St.Gloriana Land Warfare Centre" }
+		6 = { "%d. St.Gloriana Land Warfare Centre" }
+		7 = { "%d. St.Gloriana Land Warfare Centre" }
+		8 = { "%d. St.Gloriana Land Warfare Centre" }
+		9 = { "%d. St.Gloriana Land Warfare Centre" }
+		10 = { "%d. St.Gloriana Land Warfare Centre" }
+		11 = { "%d. St.Gloriana Land Warfare Centre" }
+		12 = { "%d. St.Gloriana Land Warfare Centre" }
+		13 = { "%d. St.Gloriana Land Warfare Centre" }
+		14 = { "%d. St.Gloriana Land Warfare Centre" }
+		15 = { "%d. St.Gloriana Land Warfare Centre" }
+		16 = { "%d. St.Gloriana Land Warfare Centre" }
+		17 = { "%d. St.Gloriana Land Warfare Centre" }
+		18 = { "%d. St.Gloriana Land Warfare Centre" }
+		19 = { "%d. St.Gloriana Land Warfare Centre" }
+
+	}
+}

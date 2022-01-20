@@ -15,8 +15,9 @@ scripted_gui = {
 					amount = 5
 				}
 				ROOT = { 
-					add_timed_idea = { idea = adding_resources_generic days = 90 } 
+					add_timed_idea = { idea = adding_resources_generic days = 50 } 
 					add_to_variable = { ROOT.ssdp = -80 }
+					add_to_variable = { ROOT.gold = -20 }
 				}
 			}
 			province_governor_add_aluminum_click = {
@@ -25,8 +26,9 @@ scripted_gui = {
 					amount = 4
 				}
 				ROOT = { 
-					add_timed_idea = { idea = adding_resources_generic days = 90 } 
+					add_timed_idea = { idea = adding_resources_generic days = 50 } 
 					add_to_variable = { ROOT.ssdp = -80 }
+					add_to_variable = { ROOT.gold = -20 }
 				}
 			}
 			province_governor_add_tungsten_click = {
@@ -35,8 +37,9 @@ scripted_gui = {
 					amount = 4
 				}
 				ROOT = { 
-					add_timed_idea = { idea = adding_resources_generic days = 90 } 
+					add_timed_idea = { idea = adding_resources_generic days = 50 } 
 					add_to_variable = { ROOT.ssdp = -80 }
+					add_to_variable = { ROOT.gold = -20 }
 				}
 			}
 			province_governor_add_chromium_click = {
@@ -45,8 +48,9 @@ scripted_gui = {
 					amount = 3
 				}
 				ROOT = { 
-					add_timed_idea = { idea = adding_resources_generic days = 90 } 
+					add_timed_idea = { idea = adding_resources_generic days = 50 } 
 					add_to_variable = { ROOT.ssdp = -80 }
+					add_to_variable = { ROOT.gold = -20 }
 				}
 			}
 			province_governor_senshado_click = {
@@ -73,18 +77,22 @@ scripted_gui = {
 		triggers = {
 			province_governor_add_steel_click_enabled = {
 				check_variable = { ROOT.ssdp > 79.999 }
+				check_variable = { ROOT.gold > 19.999 }
 				ROOT = { NOT = { has_idea = adding_resources_generic } }
 			}
 			province_governor_add_tungsten_click_enabled = {
 				check_variable = { ROOT.ssdp > 79.999 }
+				check_variable = { ROOT.gold > 19.999 }
 				ROOT = { NOT = { has_idea = adding_resources_generic } }
 			}
 			province_governor_add_aluminum_click_enabled = {
 				check_variable = { ROOT.ssdp > 79.999 }
+				check_variable = { ROOT.gold > 19.999 }
 				ROOT = { NOT = { has_idea = adding_resources_generic } }
 			}
 			province_governor_add_chromium_click_enabled = {
 				check_variable = { ROOT.ssdp > 79.999 }
+				check_variable = { ROOT.gold > 19.999 }
 				ROOT = { NOT = { has_idea = adding_resources_generic } }
 			}
 			province_governor_senshado_click_enabled = {

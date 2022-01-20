@@ -109,4 +109,10 @@ opinion_modifiers = {
 		months = 12
 		decay = 2
 	}
+	ANZ_approach_yogurt = {
+		value = +25
+	}
+	ANZ_approach_blue_division = {
+		value = +25
+	}
 }

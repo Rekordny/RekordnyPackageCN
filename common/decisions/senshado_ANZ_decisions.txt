@@ -1,0 +1,116 @@
+anz_deadline = {
+
+	anz_debug_civil_war = {
+		allowed = { tag = ANZ }
+		visible = { is_debug = yes }
+		complete_effect = {
+			country_event = { id = Anzio.11 days = 0 }
+		}
+		
+	}
+
+    anz_strip_off_ccp = {
+		allowed = { tag = ANZ }
+		available = {
+			has_government = communism 
+		}
+		fire_only_once = no
+		is_good = yes
+		activation = { has_country_flag = ANZ_SEC_FIREY_AUTUMN  } 
+		days_mission_timeout = 365
+		timeout_effect = {
+			country_event = { id = Anzio.13 days = 0 }
+        }
+		complete_effect = {
+			ANZ = {
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					last_election = "1973.4.20"
+					election_frequency = 48
+				}
+			}
+		}
+    }
+ 
+	#加速的城市化
+    anz_accelerated_urbanization  = {
+        activation = {                         
+			industrial_complex > 0
+			industrial_complex < 80
+		}                                    
+		available = {                           
+			industrial_complex > 79
+		}
+		is_good = no
+		days_mission_timeout =730
+		timeout_effect = {                      
+			
+		}
+		complete_effect = {                    
+            country_event = { id = Anzio.12 days = 0 }
+			add_ideas = ANZ_urbanization_trend_enlarge_0
+			159 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			158 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			2 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			117 = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+}
+
+anz_immigration_policy  = {
+	#移民到意大利北部
+	anz_Immigrate_to_northern_italy  = {
+		visible = {
+			OR = { has_completed_focus = ANZ_immigration_policy is_debug = yes }
+		}                          
+		available = { 
+			has_idea =  ANZ_undeveloped_southern
+			has_railway_level ={
+				state = 159
+				level = 3
+			}
+			has_railway_level ={
+				state = 161
+				level = 3
+		   	}
+			has_railway_level ={
+				state = 162
+				level = 3
+		   	}
+			has_railway_level ={
+				state = 2
+				level = 3
+		   	}
+			has_railway_level ={
+				state = 117
+				level = 3
+		   	}
+			has_railway_level ={
+				state = 156
+				level = 3
+		   	}
+		   	has_equipment = {
+				train_equipment > 24
+			}
+		}
+                     
+		days_remove = 300
+		complete_effect = {               
+		}
+		remove_effect = {                    
+            remove_ideas = ANZ_undeveloped_southern
+			add_political_power = 100
+		}
+	}
+}	
+
+

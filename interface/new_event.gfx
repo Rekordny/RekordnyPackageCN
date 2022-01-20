@@ -8,16 +8,11 @@ spriteTypes = {
 
 	
 	spriteType = {
-		name = "GFX_event_senshado_repeatrecruit"
-		texturefile = "gfx/event_pictures/event_senshado_repeatrecruit.dds"
+		name = "GFX_event_senshado_recruit"
+		texturefile = "gfx/event_pictures/event_generic_1.dds"
 		legacy_lazy_load = no
 	}
-	
-	spriteType = {
-		name = "GFX_event_senshado_recruitsuccess"
-		texturefile = "gfx/event_pictures/event_senshado_recruitsuccess.dds"
-		legacy_lazy_load = no
-	}
+
 	#daily
 	spriteType = {
 		name = "GFX_event_kga_daily_1"

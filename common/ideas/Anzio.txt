@@ -55,8 +55,8 @@ ideas = {
 			allowed = { tag = ANZ }
 			allowed_civil_war = { always = no }
 			modifier = {
-				production_speed_infrastructure_factor = 0.4
-				conscription_factor = -0.5
+				production_speed_infrastructure_factor = 0.3
+				conscription_factor = -0.2
 				tax_daily_modifier = 0.1
 			}
 		}
@@ -67,7 +67,9 @@ ideas = {
 			allowed_civil_war = { always = no }
 			modifier = {
 				production_speed_infrastructure_factor = 0.4
-				tax_daily_modifier = 0.1
+				conscription_factor = -0.3
+				tax_daily_modifier = 0.15
+				stability_factor = -0.05
 			}
 		}
 
@@ -115,7 +117,7 @@ ideas = {
 		}
 
        #新文艺复兴
-        ANZ_occupational_community_asytam_0 ={
+	    ANZ_neo_renaissance ={
 			allowed = { tag = ANZ }
 			allowed_civil_war = { always = no }
 			modifier = {
@@ -126,4 +128,4 @@ ideas = {
 
 		}
 	}	
-}	#
+}	

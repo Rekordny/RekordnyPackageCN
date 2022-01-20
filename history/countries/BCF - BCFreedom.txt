@@ -20,9 +20,11 @@ set_technology = {
 	marines = 1
 	gwtank_chassis = 1
 	basic_light_tank_chassis = 1
+	basic_medium_tank_chassis = 1
+	armor_tech_1 = 1
+	mechanised_infantry = 1
 	gw_artillery = 1
 	interwar_artillery = 1
-
 	early_fighter = 1
 	naval_bomber1 = 1
 	cv_early_fighter = 1
@@ -36,7 +38,6 @@ set_technology = {
 	fuel_refining = 1
 	basic_train = 1
 	basic_naval_mines = 1
-
 	submarine_mine_laying = 1
 	early_ship_hull_light = 1
 	basic_ship_hull_light = 1
@@ -57,11 +58,11 @@ set_technology = {
 	basic_heavy_armor_scheme = 1
 	mtg_transport = 1
 }
+
 set_research_slots = 5
 army_experience = 20
 set_convoys = 20
 oob = "BCF_1972"
-
 recruit_character = BCF_andou
 recruit_character = BCF_marie
 recruit_character = BCF_oshida
@@ -70,13 +71,13 @@ recruit_character = BCF_Isabe
 recruit_character = BCF_Asparagus
 recruit_character = BCF_Bordeaux
 recruit_character = BCF_Moule
-
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
+
 set_popularities = {
 	democratic = 30
 	fascism = 10
@@ -85,92 +86,185 @@ set_popularities = {
 }
 
 create_equipment_variant = {
-		name = "FT mod. 31"
-		type = light_tank_chassis_0
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_heavy_machine_gun
-			turret_type_slot = tank_light_one_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 1
-			tank_nsb_armor_upgrade = 2
-		}
-		obsolete = yes
+	name = "FT mod. 31"
+	type = light_tank_chassis_0
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_heavy_machine_gun
+		turret_type_slot = tank_light_one_man_tank_turret
+		suspension_type_slot = tank_bogie_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
 	}
-	create_equipment_variant = {
-		name = "FT Char Cannon"
-		type = light_tank_chassis_0
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_small_cannon
-			turret_type_slot = tank_light_one_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 1
-			tank_nsb_armor_upgrade = 2
-		}
-		obsolete = yes
+	upgrades = {
+		tank_nsb_engine_upgrade = 1
+		tank_nsb_armor_upgrade = 2
 	}
-	create_equipment_variant = {
-		name = "H-35" #due to similar design this also covers R-35
-		type = light_tank_chassis_1
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_small_cannon
-			turret_type_slot = tank_light_one_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_cast_armor
-			engine_type_slot = tank_gasoline_engine
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 2
-			tank_nsb_armor_upgrade = 4
-		}
-		icon = "gfx/interface/technologies/FRA_basic_light_tank.dds"
-	}
-	create_equipment_variant = {
-		name = "Char B1" 
-		type = heavy_tank_chassis_0
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_medium_howitzer
-			turret_type_slot = tank_heavy_fixed_superstructure_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = tank_radio_1
-			special_type_slot_2 = secondary_turret_small_cannon
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 6
-			tank_nsb_armor_upgrade = 4
-		}
-		icon = "gfx/interface/technologies/FRA_basic_heavy_tank.dds"
-	}
+	obsolete = yes
+}
 
-	create_equipment_variant = {
-		name = "SOUMUA S35" 
-		type = medium_tank_chassis_0
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_small_cannon_2
-			turret_type_slot = tank_medium_one_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_welded_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = tank_radio_1
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 4
-			tank_nsb_armor_upgrade = 5
-		}
-		icon = "gfx/interface/technologies/FRA_imp_main_tank.dds"
+create_equipment_variant = {
+	name = "FT Char Cannon"
+	type = light_tank_chassis_0
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_small_cannon
+		turret_type_slot = tank_light_one_man_tank_turret
+		suspension_type_slot = tank_bogie_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
 	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 1
+		tank_nsb_armor_upgrade = 2
+	}
+	obsolete = yes
+}
 
+create_equipment_variant = {
+	name = "H-35"	#due to similar design this also covers R-35
+	type = light_tank_chassis_1
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_small_cannon
+		turret_type_slot = tank_light_one_man_tank_turret
+		suspension_type_slot = tank_bogie_suspension
+		armor_type_slot = tank_cast_armor
+		engine_type_slot = tank_gasoline_engine
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 2
+		tank_nsb_armor_upgrade = 4
+	}
+	icon = "gfx/interface/technologies/FRA_basic_light_tank.dds"
+}
+create_equipment_variant = {
+	name = "H-35-SPG"	#轻型自行火炮，记得改个名字
+	type = light_tank_artillery_chassis_1
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_close_support_gun
+		turret_type_slot = tank_light_one_man_tank_turret
+		suspension_type_slot = tank_bogie_suspension
+		armor_type_slot = tank_cast_armor
+		engine_type_slot = tank_gasoline_engine
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 0
+		tank_nsb_armor_upgrade = 0
+	}
+	icon = "gfx/interface/technologies/FRA_basic_light_tank.dds"
+}
+
+create_equipment_variant = {
+	name = "Char B1"
+	type = heavy_tank_chassis_0
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_medium_howitzer
+		turret_type_slot = tank_heavy_fixed_superstructure_turret
+		suspension_type_slot = tank_bogie_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
+		special_type_slot_1 = tank_radio_1
+		special_type_slot_2 = secondary_turret_small_cannon
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 6
+		tank_nsb_armor_upgrade = 4
+	}
+	icon = "gfx/interface/technologies/FRA_basic_heavy_tank.dds"
+}
+
+create_equipment_variant = {
+	name = "SOUMUA S35"
+	type = medium_tank_chassis_0
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_small_cannon_2
+		turret_type_slot = tank_medium_one_man_tank_turret
+		suspension_type_slot = tank_bogie_suspension
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
+		special_type_slot_1 = tank_radio_1
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 4
+		tank_nsb_armor_upgrade = 5
+	}
+	icon = "gfx/interface/technologies/FRA_imp_main_tank.dds"
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "SOUMUA S36" #额，不确定该怎么命名，就在S35基础上+1了
+	type = medium_tank_chassis_1
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_small_cannon_2
+		turret_type_slot = tank_medium_three_man_tank_turret
+		suspension_type_slot = tank_bogie_suspension
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
+		special_type_slot_1 = tank_radio_1
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 8
+		tank_nsb_armor_upgrade = 0
+	}
+	icon = "gfx/interface/technologies/FRA_imp_main_tank.dds"
+}
+create_equipment_variant = {
+	name = "SOUMUA S37-SPG" #自行火炮型号，记得改个名字
+	type = medium_tank_artillery_chassis_1
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_close_support_gun
+		turret_type_slot = tank_light_one_man_tank_turret
+		suspension_type_slot = tank_bogie_suspension
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
+		special_type_slot_1 = additional_machine_guns
+		special_type_slot_2 = additional_machine_guns
+		special_type_slot_3 = additional_machine_guns
+		special_type_slot_4 = additional_machine_guns
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 8
+		tank_nsb_armor_upgrade = 0
+	}
+	icon = "gfx/interface/technologies/FRA_imp_main_tank.dds"
+}
+
+#ADD EQUIPMENT TO STOCK AT START
+add_equipment_to_stockpile = {
+	type = medium_tank_artillery_chassis_1
+	amount = 100
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment
+	amount = 15000
+}
+add_equipment_to_stockpile = {
+	type = fighter_equipment_0
+	amount = 100
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment
+	amount = 1000
+}
+add_equipment_to_stockpile = {
+	type = support_equipment
+	amount = 1000
+}
+add_equipment_to_stockpile = {
+	type = medium_tank_chassis_0
+	amount = 400
+}
+add_equipment_to_stockpile = {
+	type = light_tank_chassis_0
+	amount = 700
+}
+add_equipment_to_stockpile = {
+	type = motorized_equipment
+	amount = 1000
+}

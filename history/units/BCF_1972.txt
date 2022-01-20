@@ -1,302 +1,452 @@
 division_template = {
-	name = "Division Blindée"		# Infantry Division - Reserve division called to full strength in time of war
+	name = "Division Blindée"	# Infantry Division - Reserve division called to full strength in time of war
 	division_names_group = BCF_1
-
 	regiments = {
-		medium_armor = { x = 0 y = 0 }
-		medium_armor = { x = 0 y = 1 }
-		medium_armor = { x = 1 y = 0 }
-		medium_armor = { x = 1 y = 1 }
-        motorized = { x = 2 y = 0 }
-        motorized = { x = 2 y = 1 }
-        medium_sp_artillery_brigade = { x = 2 y = 2 }
-	}
-	support = {
-        engineer = {
-            x = 0
+		medium_armor = {
+			x = 0
+			y = 0
+		}
+		medium_armor = {
+			x = 0
+			y = 1
+		}
+		medium_armor = {
+			x = 1
+			y = 0
+		}
+		medium_armor = {
+			x = 1
+			y = 1
+		}
+		mechanized = {
+            x = 2
             y = 0
         }
-        logistics_company = {
-            x = 0
+		mechanized = {
+            x = 2
             y = 1
         }
-        maintenance_company = {
-            x = 0
-            y = 2
-        }
+		medium_sp_artillery_brigade = {
+			x = 3
+			y = 0
+		}
+	}
+	support = {
+		engineer = {
+			x = 0
+			y = 0
+		}
+		logistics_company = {
+			x = 0
+			y = 1
+		}
+		maintenance_company = {
+			x = 0
+			y = 2
+		}
 	}
 }
+
 division_template = {
-	name = "Division Légère Blindée Ecole"		# Infantry Division - Reserve division called to full strength in time of war
+	name = "Division Légère Blindée Ecole"	# Infantry Division - Reserve division called to full strength in time of war
 	division_names_group = BCF_2
-
 	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-        motorized = { x = 0 y = 2 }
-		light_armor = { x = 1 y = 0 }
-		light_armor = { x = 1 y = 1 }
-        light_sp_artillery_brigade = { x = 1 y = 2 }
-    }
-	support = {
-        engineer = {
+		infantry = {
             x = 0
             y = 0
         }
-        artillery = {
-            x = 0
-            y = 1
+		infantry = {
+			x = 0
+			y = 1
+		}
+		infantry = {
+			x = 0
+			y = 2
+		}
+		medium_armor = {
+            x = 1
+            y = 0
         }
-        maintenance_company = {
-            x = 0
-            y = 2
+		medium_armor = {
+			x = 1
+			y = 1
+		}
+		light_sp_artillery_brigade = {
+			x = 1
+			y = 2
+		}
+        mechanized = {
+            x = 2
+            y = 0
         }
 	}
+	support = {
+		engineer = {
+			x = 0
+			y = 0
+		}
+		maintenance_company = {
+			x = 0
+			y = 2
+		}
+	}
 }
+
 division_template = {
-	name = "Division d'Infanterie"		# Infantry Division - Reserve division called to full strength in time of war
+	name = "Division d'Infanterie"	# Infantry Division - Reserve division called to full strength in time of war
 	division_names_group = BCF_3
-
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-        infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-        infantry = { x = 1 y = 2 }
-        infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-        infantry = { x = 2 y = 2 }
-    }
-	support = {
-        engineer = {
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
+		infantry = {
+			x = 0
+			y = 2
+		}
+		infantry = {
+			x = 1
+			y = 0
+		}
+		infantry = {
+			x = 1
+			y = 1
+		}
+		infantry = {
+			x = 1
+			y = 2
+		}
+		infantry = {
+			x = 2
+			y = 0
+		}
+		infantry = {
+			x = 2
+			y = 1
+		}
+		infantry = {
+			x = 2
+			y = 2
+		}
+        artillery_brigade = {
             x = 0
+            y = 3
+        }
+        light_sp_artillery_brigade = {
+            x = 3
             y = 0
         }
-        artillery = {
-            x = 0
-            y = 1
-        }
+	}
+	support = {
+		engineer = {
+			x = 0
+			y = 0
+		}
+		artillery = {
+			x = 0
+			y = 1
+		}
 	}
 }
+
 division_template = {
-	name = "Division d'Infanterie de Marine"		# Infantry Division - Reserve division called to full strength in time of war
+	name = "Division d'Infanterie de Marine"	# Infantry Division - Reserve division called to full strength in time of war
 	division_names_group = BCF_4
-
 	regiments = {
-		marine = { x = 0 y = 0 }
-		marine = { x = 0 y = 1 }
-        marine = { x = 0 y = 2 } 
-		marine = { x = 1 y = 0 }
-		marine = { x = 1 y = 1 }
-        marine = { x = 1 y = 2 } 
-        light_sp_artillery_brigade = { x = 2 y = 0 }
-        light_sp_artillery_brigade = { x = 2 y = 1 }
-    }
-	support = {
-        engineer = {
+		marine = {
+			x = 0
+			y = 0
+		}
+		marine = {
+			x = 0
+			y = 1
+		}
+		marine = {
+			x = 0
+			y = 2
+		}
+		marine = {
+			x = 1
+			y = 0
+		}
+		marine = {
+			x = 1
+			y = 1
+		}
+		marine = {
+			x = 1
+			y = 2
+		}
+		light_sp_artillery_brigade = {
+			x = 2
+			y = 0
+		}
+		light_sp_artillery_brigade = {
+			x = 2
+			y = 1
+		}
+        artillery_brigade = {
             x = 0
-            y = 0
-        }
-        artillery = {
-            x = 0
-            y = 1
-        }
-        maintenance_company = {
-            x = 0
-            y = 2
+            y = 3
         }
 	}
+	support = {
+		engineer = {
+			x = 0
+			y = 0
+		}
+		recon = {
+			x = 0
+			y = 1
+		}
+		maintenance_company = {
+			x = 0
+			y = 2
+		}
+	}
 }
+
 division_template = {
-	name = "Division Parachutiste"		# Infantry Division - Reserve division called to full strength in time of war
+	name = "Division Parachutiste"	# Infantry Division - Reserve division called to full strength in time of war
 	division_names_group = BCF_5
-
 	regiments = {
-		paratrooper = { x = 0 y = 0 }
-		paratrooper = { x = 0 y = 1 }
-        paratrooper = { x = 0 y = 2 } 
-		paratrooper = { x = 0 y = 3 }
-		paratrooper = { x = 1 y = 0 }
-        paratrooper = { x = 1 y = 1 } 
-        paratrooper = { x = 1 y = 2 }
-        paratrooper = { x = 1 y = 3 }
-    }
+		paratrooper = {
+			x = 0
+			y = 0
+		}
+		paratrooper = {
+			x = 0
+			y = 1
+		}
+		paratrooper = {
+			x = 0
+			y = 2
+		}
+		paratrooper = {
+			x = 0
+			y = 3
+		}
+		paratrooper = {
+			x = 1
+			y = 0
+		}
+		paratrooper = {
+			x = 1
+			y = 1
+		}
+		paratrooper = {
+			x = 1
+			y = 2
+		}
+		paratrooper = {
+			x = 1
+			y = 3
+		}
+	}
 	support = {
-        engineer = {
-            x = 0
-            y = 0
-        }
-        artillery = {
-            x = 0
-            y = 1
-        }
+		engineer = {
+			x = 0
+			y = 0
+		}
+		artillery = {
+			x = 0
+			y = 1
+		}
 	}
 }
-division_template = {
-	name = "Division Alpine"		# Infantry Division - Reserve division called to full strength in time of war
-	division_names_group = BCF_6
 
+division_template = {
+	name = "Division Alpine"	# Infantry Division - Reserve division called to full strength in time of war
+	division_names_group = BCF_6
 	regiments = {
-		mountaineers = { x = 0 y = 0 }
-		mountaineers = { x = 0 y = 1 }
-        mountaineers = { x = 0 y = 2 } 
-		mountaineers = { x = 1 y = 0 }
-		mountaineers = { x = 1 y = 1 }
-        mountaineers = { x = 1 y = 2 } 
-        light_sp_artillery_brigade = { x = 0 y = 3 }
-    }
+		mountaineers = {
+			x = 0
+			y = 0
+		}
+		mountaineers = {
+			x = 0
+			y = 1
+		}
+		mountaineers = {
+			x = 0
+			y = 2
+		}
+		mountaineers = {
+			x = 1
+			y = 0
+		}
+		mountaineers = {
+			x = 1
+			y = 1
+		}
+		mountaineers = {
+			x = 1
+			y = 2
+		}
+		light_sp_artillery_brigade = {
+			x = 0
+			y = 3
+		}
+        artillery_brigade = {
+            x = 0
+            y = 3
+        }
+	}
 	support = {
-        engineer = {
-            x = 0
-            y = 0
-        }
-        artillery = {
-            x = 0
-            y = 1
-        }
+		engineer = {
+			x = 0
+			y = 0
+		}
+		maintenance_company = {
+			x = 0
+			y = 1
+		}
 	}
 }
 
 units = {
-    division = {
-        division_name = {
-            is_name_ordered = yes
-            name_order = 1
-        }
-        location = 11531
-        division_template = "Division Blindée"
-        # start_experience_factor = 0.1
-        # start_equipment_factor = 0.5
-    }
 	division = {
-        division_name = {
-            is_name_ordered = yes
-            name_order = 7
-        }
-        location = 9642
-        division_template = "Division Blindée"
-        # start_experience_factor = 0.1
-        # start_equipment_factor = 0.5
-    }
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11531
+		division_template = "Division Blindée"
+		# start_experience_factor = 0.1
+		# start_equipment_factor = 0.5
+	}
 	division = {
-        division_name = {
-            is_name_ordered = yes
-            name_order = 3
-        }
-        location = 9517
-        division_template = "Division Blindée"
-        # start_experience_factor = 0.1
-        # start_equipment_factor = 0.5
-    }
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 9642
+		division_template = "Division Blindée"
+		# start_experience_factor = 0.1
+		# start_equipment_factor = 0.5
+	}
 	division = {
-        division_name = {
-            is_name_ordered = yes
-            name_order = 5
-        }
-        location = 9517
-        division_template = "Division Blindée"
-        # start_experience_factor = 0.1
-        # start_equipment_factor = 0.5
-    }
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9517
+		division_template = "Division Blindée"
+		# start_experience_factor = 0.1
+		# start_equipment_factor = 0.5
+	}
 	division = {
-        division_name = {
-            is_name_ordered = yes
-            name_order = 2
-        }
-        location = 11506
-        division_template = "Division Blindée"
-        # start_experience_factor = 0.1
-        # start_equipment_factor = 0.5
-    }
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 9517
+		division_template = "Division Blindée"
+		# start_experience_factor = 0.1
+		# start_equipment_factor = 0.5
+	}
 	division = {
-        division_name = {
-            is_name_ordered = yes
-            name_order = 10
-        }
-        location = 9490
-        division_template = "Division Blindée"
-        # start_experience_factor = 0.1
-        # start_equipment_factor = 0.5
-    }
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 11506
+		division_template = "Division Blindée"
+		# start_experience_factor = 0.1
+		# start_equipment_factor = 0.5
+	}
 	division = {
-        division_name = {
-            is_name_ordered = yes
-            name_order = 14
-        }
-        location = 9898
-        division_template = "Division Légère Blindée Ecole"
-        # start_experience_factor = 0.1
-        # start_equipment_factor = 0.5
-    }
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 9490
+		division_template = "Division Blindée"
+		# start_experience_factor = 0.1
+		# start_equipment_factor = 0.5
+	}
 	division = {
-        division_name = {
-            is_name_ordered = yes
-            name_order = 12
-        }
-        location = 3671
-        division_template = "Division Légère Blindée Ecole"
-        # start_experience_factor = 0.1
-        # start_equipment_factor = 0.5
-    }
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 9898
+		division_template = "Division Légère Blindée Ecole"
+		# start_experience_factor = 0.1
+		# start_equipment_factor = 0.5
+	}
 	division = {
-        division_name = {
-            is_name_ordered = yes
-            name_order = 6
-        }
-        location = 9737
-        division_template = "Division Légère Blindée Ecole"
-        # start_experience_factor = 0.1
-        # start_equipment_factor = 0.5
-    }
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 3671
+		division_template = "Division Légère Blindée Ecole"
+		# start_experience_factor = 0.1
+		# start_equipment_factor = 0.5
+	}
 	division = {
-        division_name = {
-            is_name_ordered = yes
-            name_order = 15
-        }
-        location = 620
-        division_template = "Division d'Infanterie"
-        # start_experience_factor = 0.1
-        # start_equipment_factor = 0.5
-    }
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 9737
+		division_template = "Division Légère Blindée Ecole"
+		# start_experience_factor = 0.1
+		# start_equipment_factor = 0.5
+	}
 	division = {
-        division_name = {
-            is_name_ordered = yes
-            name_order = 8
-        }
-        location = 11420
-        division_template = "Division d'Infanterie"
-        # start_experience_factor = 0.1
-        # start_equipment_factor = 0.5
-    }
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 620
+		division_template = "Division d'Infanterie"
+		# start_experience_factor = 0.1
+		# start_equipment_factor = 0.5
+	}
 	division = {
-        division_name = {
-            is_name_ordered = yes
-            name_order = 9
-        }
-        location = 11465
-        division_template = "Division d'Infanterie de Marine"
-        # start_experience_factor = 0.1
-        # start_equipment_factor = 0.5
-    }
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 11420
+		division_template = "Division d'Infanterie"
+		# start_experience_factor = 0.1
+		# start_equipment_factor = 0.5
+	}
 	division = {
-        division_name = {
-            is_name_ordered = yes
-            name_order = 11
-        }
-        location = 6766
-        division_template = "Division Parachutiste"
-        # start_experience_factor = 0.1
-        # start_equipment_factor = 0.5
-    }
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 11465
+		division_template = "Division d'Infanterie de Marine"
+		# start_experience_factor = 0.1
+		# start_equipment_factor = 0.5
+	}
 	division = {
-        division_name = {
-            is_name_ordered = yes
-            name_order = 27
-        }
-        location = 3768
-        division_template = "Division Alpine"
-        # start_experience_factor = 0.1
-        # start_equipment_factor = 0.5
-    }
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 6766
+		division_template = "Division Parachutiste"
+		# start_experience_factor = 0.1
+		# start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		}
+		location = 3768
+		division_template = "Division Alpine"
+		# start_experience_factor = 0.1
+		# start_equipment_factor = 0.5
+	}
 }

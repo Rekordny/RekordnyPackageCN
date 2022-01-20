@@ -76,7 +76,6 @@ focus_tree = {
 			add_popularity = { ideology = communism popularity = 0.2 }
 			add_stability = 0.1
 			if = { limit = { communism > 0.5 } country_event = { id = Anzio.9 days = 0 } }
-
 		}
 		ai_will_do = {
 			factor = 25
@@ -104,17 +103,17 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-			}                                          
-				random_state = {
-					limit = { is_core_of = ANZ is_controlled_by = ANZ }
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
+			}
+			random_state = {
+				limit = { is_core_of = ANZ is_controlled_by = ANZ }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
 				}
-			    add_stability = 0.05
+			}
+			add_stability = 0.05
 		}
 		ai_will_do = {
 			factor = 25
@@ -233,6 +232,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		completion_reward = {
 			#解锁决议地中海代表大会
+			create_faction = "地中海规则"
 		}
 		ai_will_do = {
 			factor = 25
@@ -279,7 +279,20 @@ focus_tree = {
 		available_if_capitulated = yes
 		mutually_exclusive = {  }
 		completion_reward = {
+			ANZ = {
+				add_opinion_modifier = {
+					target = BDH
+					modifier = ANZ_approach_blue_division
+				}
+			}
+			BDH = {
+				add_opinion_modifier = {
+					target = ANZ
+					modifier = ANZ_approach_blue_division
+				}
+			}
 		}
+
 		ai_will_do = {
 			factor = 25
 		}
@@ -299,7 +312,20 @@ focus_tree = {
 		available_if_capitulated = yes
 		mutually_exclusive = { focus = ANZ_declare_eastern_balkans }
 		completion_reward = {
+			ANZ = {
+				add_opinion_modifier = {
+					target = YOG
+					modifier = ANZ_approach_yogurt
+				}
+			}
+			YOG = {
+				add_opinion_modifier = {
+					target = ANZ
+					modifier = ANZ_approach_yogurt
+				}
+			}
 		}
+
 		ai_will_do = {
 			factor = 25
 		}
@@ -319,6 +345,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		mutually_exclusive = {  }
 		completion_reward = {
+			unlock_decision_tooltip = anz_Immigrate_to_northern_italy
 		}
 		ai_will_do = {
 			factor = 25
@@ -674,7 +701,30 @@ focus_tree = {
 		available_if_capitulated = yes
 		mutually_exclusive = {  }
 		completion_reward = {
-             
+			3 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+				}
+			}
+			158 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -744,9 +794,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		mutually_exclusive = {  }
 		completion_reward = {
+			set_party_name = { ideology = fascism long_name = "安齐奥民族阵线" name = "安齐奥民族阵线"  }
 			add_ideas = ANZ_national_front
-
-		}
+            hidden_effect = {
+				ANZ = { country_event = { id = Anzio.14 days = 40 random = 10 } }
+		    }
+	    }
 		ai_will_do = {
 			factor = 25   
 		}
@@ -867,12 +920,18 @@ focus_tree = {
 				uses = 1
 				bonus = 1
 			}
+			add_tech_bonus = {
+				category = artillery
+				uses = 1
+				bonus = 1
+			}
+
 			random_state = {
 				limit = { is_core_of = ANZ is_controlled_by = ANZ }
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -890,7 +949,7 @@ focus_tree = {
 		y = 0
 		cost = 10
 		#relative_position_id = ANZ_invest_tank_research
-		available = { }
+		available = { has_country_flag = ANZ_SEC_FIREY_AUTUMN  }
 		bypass = {  }
 		#prerequisite = { focus = ANZ_invest_tank_research }
 		available_if_capitulated = yes
@@ -981,6 +1040,7 @@ focus_tree = {
 					election_frequency = 48
 				}
 			}
+			if = { limit = { democratic > 0.35 } country_event = { id = Anzio.13 days = 0 } }
 		}
 		ai_will_do = {
 			factor = 25
@@ -1045,7 +1105,8 @@ focus_tree = {
 			factor = 25
 		}
 	}
-       #引进英式战车
+
+    #引进英式战车
 	focus = {
 		id = ANZ_introduce_british_equipments 
 		icon = GFX_focus_ANZ_introduce_british_equipments
@@ -1069,10 +1130,4 @@ focus_tree = {
 			}
 		} 
 	}
-
-    #
-
-
-
-
-}       
+}
