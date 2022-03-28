@@ -1,0 +1,28 @@
+sds_missions = {
+	icon = GFX_decision_category_senshado
+	allowed = { tag = SDS }
+}
+sds_government = {
+	icon = GFX_decision_category_senshado
+	allowed = { tag = SDS }
+}
+sds_industry = {
+	icon = GFX_decision_category_senshado
+	allowed = { tag = SDS }
+}
+sds_civil_war = {
+	icon = GFX_decision_category_senshado
+	allowed = { tag = SDS }
+}
+sds_diplomatic = {
+	icon = GFX_decision_category_senshado
+	allowed = { tag = SDS }
+}
+sds_control_zone = {
+	icon = GFX_decision_category_senshado
+	allowed = { tag = SDS }
+}
+sds_legitimacy = {
+	icon = GFX_decision_category_senshado
+	allowed = { tag = SDS }
+}

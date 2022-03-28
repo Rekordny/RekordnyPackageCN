@@ -1,37 +1,250 @@
-anz_deadline = {
+anz_military_investment_proposal = {
+	anz_land_combat_vehicles_proposal = {
+		allowed = { tag = ANZ }
+		visible = { OR = { has_completed_focus = ANZ_military_investment_planning is_debug = yes } }
+		custom_cost_trigger = {
+			check_variable = { gold > 9.9 }
+			has_army_experience > 14.9
+	   	}
+		fire_only_once = yes
+		custom_cost_text = anz_tooltip4
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = ANZ_MILITARY_COMPLEX_1
+			hidden_effect = { add_to_variable = { gold = -10 } army_experience = -15 }
+		}
+		remove_effect = {
+			add_tech_bonus = {
+				category = motorized_equipment
+				bonus = 1
+				uses = 1
+				ahead_reduction = 0.5
+			}
+		}
+	}
+	anz_land_combat_armor_proposal = {
+		allowed = { tag = ANZ }
+		visible = { OR = { has_completed_focus = ANZ_military_investment_planning is_debug = yes } }
+		fire_only_once = yes
+		custom_cost_trigger = {
+			check_variable = { gold > 9.9 }
+			has_army_experience > 14.9
+	   	}
+		custom_cost_text = anz_tooltip4
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = ANZ_MILITARY_COMPLEX_2
+			hidden_effect = { add_to_variable = { gold = -10 } army_experience = -15 }
+		}
+		remove_effect = {
+			add_tech_bonus = {
+				category = armor
+				bonus = 1
+				uses = 1
+				ahead_reduction = 0.5
+			}
+		}
+	}
+	anz_basic_equipments_proposal = {
+		allowed = { tag = ANZ }
+		visible = { OR = { has_completed_focus = ANZ_military_investment_planning is_debug = yes } }
+		fire_only_once = yes
+		custom_cost_trigger = {
+			check_variable = { gold > 9.9 }
+			has_army_experience > 14.9
+	   	}
+		custom_cost_text = anz_tooltip4
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = ANZ_MILITARY_COMPLEX_3
+			hidden_effect = { add_to_variable = { gold = -10 } army_experience = -15 }
+		}
+		remove_effect = {
+			add_tech_bonus = {
+				category = infantry_weapons
+				bonus = 1
+				uses = 1
+				ahead_reduction = 0.5
+			}
+		}
+	}
+	anz_supportive_equipments_proposal = {
+		allowed = { tag = ANZ }
+		visible = { OR = { has_completed_focus = ANZ_military_investment_planning is_debug = yes } }
+		fire_only_once = yes
+		custom_cost_trigger = {
+			check_variable = { gold > 9.9 }
+			has_army_experience > 14.9
+	   	}
+		custom_cost_text = anz_tooltip4
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = ANZ_MILITARY_COMPLEX_4
+			hidden_effect = { add_to_variable = { gold = -10 } army_experience = -15 }
+		}
+		remove_effect = {
+			add_tech_bonus = {
+				category = support_tech
+				bonus = 1
+				uses = 1
+				ahead_reduction = 0.5
+			}
+		}
+	}
+	anz_navy_heavyship_design_proposal = {
+		allowed = { tag = ANZ }
+		visible = { OR = { has_completed_focus = ANZ_military_investment_planning is_debug = yes } }
+		fire_only_once = yes
+		custom_cost_trigger = {
+			check_variable = { gold > 9.9 }
+			has_navy_experience > 14.9
+	   	}
+		custom_cost_text = anz_tooltip5
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = ANZ_MILITARY_COMPLEX_5
+			hidden_effect = { add_to_variable = { gold = -10 } navy_experience = -15 }
+		}
+		remove_effect = {
+			add_tech_bonus = {
+				category = cv_tech
+				category = bb_tech
+				bonus = 0.5
+				uses = 1
+				ahead_reduction = 0.25
+			}
+		}
+	}
+	anz_navy_lightship_design_proposal = {
+		allowed = { tag = ANZ }
+		visible = { OR = { has_completed_focus = ANZ_military_investment_planning is_debug = yes } }
+		fire_only_once = yes
+		custom_cost_trigger = {
+			check_variable = { gold > 9.9 }
+			has_navy_experience > 14.9
+	   	}
+		custom_cost_text = anz_tooltip5
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = ANZ_MILITARY_COMPLEX_6
+			hidden_effect = { add_to_variable = { gold = -10 } navy_experience = -15 }
+		}
+		remove_effect = {
+			add_tech_bonus = {
+				category = dd_tech
+				category = cl_tech
+				bonus = 0.7
+				uses = 1
+				ahead_reduction = 0.35
+			}
+		}
+	}
+	anz_airforce_bomber_proposal = {
+		allowed = { tag = ANZ }
+		visible = { OR = { has_completed_focus = ANZ_military_investment_planning is_debug = yes } }
+		fire_only_once = yes
+		custom_cost_trigger = {
+			check_variable = { gold > 9.9 }
+			has_air_experience > 14.9
+	   	}
+		custom_cost_text = anz_tooltip6
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = ANZ_MILITARY_COMPLEX_7
+			hidden_effect = { add_to_variable = { gold = -10 } air_experience = -15 }
+		}
+		remove_effect = {
+			add_tech_bonus = {
+				category = tactical_bomber
+				category = cas_bomber
+				bonus = 0.5
+				uses = 1
+				ahead_reduction = 0.25
+			}
+		}
+	}
+	anz_airforce_fighter_proposal = {
+		allowed = { tag = ANZ }
+		visible = { OR = { has_completed_focus = ANZ_military_investment_planning is_debug = yes } }
+		fire_only_once = yes
+		custom_cost_trigger = {
+			check_variable = { gold > 9.9 }
+			has_air_experience > 14.9
+	   	}
+		custom_cost_text = anz_tooltip6
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = ANZ_MILITARY_COMPLEX_8
+			hidden_effect = { add_to_variable = { gold = -10 } air_experience = -15 }
+		}
+		remove_effect = {
+			add_tech_bonus = {
+				category = light_fighter
+				category = cat_heavy_fighter
+				bonus = 0.5
+				uses = 1
+				ahead_reduction = 0.25
+			}
+		}
+	}
+	anz_create_military_industrial_complex = {
+		allowed = { tag = ANZ }
+		visible = { OR = { has_completed_focus = ANZ_military_investment_planning is_debug = yes } }
+		fire_only_once = yes
+		available = {
+			has_country_flag = ANZ_MILITARY_COMPLEX_1
+			has_country_flag = ANZ_MILITARY_COMPLEX_2
+			has_country_flag = ANZ_MILITARY_COMPLEX_3
+			has_country_flag = ANZ_MILITARY_COMPLEX_4
+			has_country_flag = ANZ_MILITARY_COMPLEX_5
+			has_country_flag = ANZ_MILITARY_COMPLEX_6
+			has_country_flag = ANZ_MILITARY_COMPLEX_7
+			has_country_flag = ANZ_MILITARY_COMPLEX_8
+		}
+		custom_cost_trigger = {
+			check_variable = { gold > 99.9 }
+	   	}
+		custom_cost_text = anz_tooltip3
+		days_remove = 300
+		complete_effect = {
+			hidden_effect = {
+				add_to_variable = {
+					gold = -100
+				}
+			}
+		}
+		remove_effect = {
+			add_ideas = ANZ_military_industrial_complex
+			clr_country_flag = ANZ_MILITARY_COMPLEX_1
+			clr_country_flag = ANZ_MILITARY_COMPLEX_2
+			clr_country_flag = ANZ_MILITARY_COMPLEX_3
+			clr_country_flag = ANZ_MILITARY_COMPLEX_4
+			clr_country_flag = ANZ_MILITARY_COMPLEX_5
+			clr_country_flag = ANZ_MILITARY_COMPLEX_6
+			clr_country_flag = ANZ_MILITARY_COMPLEX_7
+			clr_country_flag = ANZ_MILITARY_COMPLEX_8
+		}
+	}
+}
+
+anz_industry = {
 
 	anz_debug_civil_war = {
 		allowed = { tag = ANZ }
 		visible = { is_debug = yes }
 		complete_effect = {
-			country_event = { id = Anzio.11 days = 0 }
+			country_event = { id = Anzio.26 days = 0 }
 		}
 		
 	}
-
-    anz_strip_off_ccp = {
+	anz_debug_1 = {
 		allowed = { tag = ANZ }
-		available = {
-			has_government = communism 
-		}
-		fire_only_once = no
-		is_good = yes
-		activation = { has_country_flag = ANZ_SEC_FIREY_AUTUMN  } 
-		days_mission_timeout = 365
-		timeout_effect = {
-			country_event = { id = Anzio.13 days = 0 }
-        }
+		visible = { is_debug = yes }
 		complete_effect = {
-			ANZ = {
-				set_politics = {
-					ruling_party = communism
-					elections_allowed = no
-					last_election = "1973.4.20"
-					election_frequency = 48
-				}
-			}
+			set_cosmetic_tag = APQR
 		}
-    }
+		
+	}
  
 	#加速的城市化
     anz_accelerated_urbanization  = {
@@ -66,9 +279,314 @@ anz_deadline = {
 	}
 }
 
-anz_immigration_policy  = {
-	#移民到意大利北部
-	anz_Immigrate_to_northern_italy  = {
+#尼禄综合征
+#visible为在categories定义
+anz_nero_syndrome = {
+
+	anz_debug_show = {
+		allowed = { tag = ANZ }
+		visible = { is_debug = yes }
+		complete_effect = {
+			set_country_flag = ANZ_START_NERO_SYNDROME
+			country_event = { id = Anzio.15 }
+			country_event = { id = Anzio.16 }
+			country_event = { id = Anzio.17 }
+			country_event = { id = Anzio.18 }
+			country_event = { id = Anzio.19 }
+			country_event = { id = Anzio.20 }
+			country_event = { id = Anzio.21 }
+		}
+	}
+
+	anz_nero_syndrome_countdown = {
+		activation = { has_country_flag = ANZ_START_NERO_SYNDROME }
+		visible = { has_country_flag = ANZ_START_NERO_SYNDROME }
+		available = {              
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = anz_tooltip1
+				# Some Dutch states
+				controls_state = 7
+				controls_state = 35
+				# Some Luxemburgian states
+				controls_state = 8
+				# Some Austrian states
+				controls_state = 153
+				# Some Hungarian states
+				controls_state = 154
+				# Some Romanian states
+				controls_state = 82
+				controls_state = 83
+				controls_state = 76
+				controls_state = 84
+				controls_state = 81
+				controls_state = 46
+				controls_state = 77
+				# Some Albanian states
+				controls_state = 44
+				controls_state = 805
+				controls_state = 102
+				controls_state = 103
+				controls_state = 109
+				controls_state = 104
+				controls_state = 45
+				controls_state = 107
+				controls_state = 105
+				controls_state = 108
+				controls_state = 106
+				controls_state = 764
+				controls_state = 185
+				controls_state = 731
+				controls_state = 47
+				controls_state = 186
+				controls_state = 184
+				controls_state = 187
+				controls_state = 182
+				controls_state = 48
+				controls_state = 212
+				controls_state = 211
+				controls_state = 801
+				controls_state = 797
+				controls_state = 341
+				controls_state = 340
+				controls_state = 339
+				controls_state = 342
+				controls_state = 343
+				controls_state = 347
+				controls_state = 49
+				controls_state = 798
+				controls_state = 346
+				controls_state = 345
+				controls_state = 356
+				controls_state = 348
+				controls_state = 344
+				controls_state = 355
+				controls_state = 349
+				controls_state = 350
+				controls_state = 354
+				controls_state = 353
+				controls_state = 352
+				controls_state = 800
+				controls_state = 799
+				controls_state = 676
+				controls_state = 675
+				controls_state = 291
+				controls_state = 3
+				controls_state = 151
+				controls_state = 180
+				controls_state = 181
+				controls_state = 112
+				controls_state = 179
+				controls_state = 795
+				controls_state = 6
+				controls_state = 34
+				controls_state = 158
+				controls_state = 159
+				controls_state = 39
+				controls_state = 160
+				controls_state = 161
+				controls_state = 162
+				controls_state = 157
+				controls_state = 2
+				controls_state = 117
+				controls_state = 156
+				controls_state = 115
+				controls_state = 114
+				controls_state = 736
+				controls_state = 163
+				controls_state = 164
+				# North Africa / Dodecanese
+				controls_state = 164
+				controls_state = 448
+				controls_state = 661
+				controls_state = 449
+				controls_state = 662
+				controls_state = 450
+				controls_state = 451
+				controls_state = 663
+				controls_state = 165
+				controls_state = 166
+				controls_state = 167
+				controls_state = 177
+				controls_state = 171
+				controls_state = 174
+				controls_state = 172
+				controls_state = 176
+				controls_state = 170
+				controls_state = 41
+				controls_state = 175
+				controls_state = 169
+				controls_state = 173
+				controls_state = 168
+				controls_state = 788
+				controls_state = 789
+				controls_state = 790
+				controls_state = 791
+				controls_state = 792
+				controls_state = 793
+				controls_state = 794
+				# North Africa
+				controls_state = 290
+				controls_state = 29
+				controls_state = 18
+				controls_state = 17
+				controls_state = 28
+				controls_state = 15
+				controls_state = 16
+				controls_state = 27
+				controls_state = 14
+				controls_state = 30
+				controls_state = 24
+				controls_state = 23
+				controls_state = 33
+				controls_state = 26
+				controls_state = 20
+				controls_state = 32
+				controls_state = 735
+				controls_state = 25
+				controls_state = 22
+				controls_state = 21
+				controls_state = 19
+				controls_state = 20
+				controls_state = 1
+				controls_state = 785
+				controls_state = 31
+				# North Africa
+				controls_state = 458
+				controls_state = 665
+				controls_state = 460
+				controls_state = 513
+				controls_state = 459
+				controls_state = 461
+				# Syria
+				controls_state = 677
+				controls_state = 680
+				controls_state = 553
+				controls_state = 554
+				controls_state = 452
+				controls_state = 447
+				controls_state = 446
+				controls_state = 456
+				controls_state = 457
+				controls_state = 453
+				controls_state = 454
+				controls_state = 455
+				controls_state = 183
+				controls_state = 656
+				controls_state = 118
+				controls_state = 116
+			}
+		}
+		is_good = no
+		days_mission_timeout =400
+		timeout_effect = {                      
+			country_event = { id = Anzio.17 days = 0 }
+		}
+		complete_effect = {                    
+            country_event = { id = Anzio.16 days = 0 }
+		}
+	}
+
+	anz_take_medicine = {
+		allowed = { tag = ANZ }
+		visible = { has_country_flag = ANZ_START_NERO_SYNDROME }
+		available = {}
+		days_re_enable = 1
+		custom_cost_trigger = {
+			check_variable = { gold > 19.9 }
+	   	}
+		custom_cost_text = anz_tooltip2
+		complete_effect = {
+			if = { limit = { has_country_flag = ANZ_TAKE_MEDICINE_SECOND } 
+				set_country_flag = ANZ_TAKE_MEDICINE_THIRD
+				clr_country_flag = ANZ_TAKE_MEDICINE_SECOND
+			}
+			else = {
+				if = { limit = { has_country_flag = ANZ_TAKE_MEDICINE_ONCE } 
+					set_country_flag = ANZ_TAKE_MEDICINE_SECOND
+					clr_country_flag = ANZ_TAKE_MEDICINE_ONCE
+				}
+				else = {
+					set_country_flag = ANZ_TAKE_MEDICINE_ONCE
+					if = {	limit = { has_country_flag = ANZ_TAKE_MEDICINE_THIRD } 
+						country_event = { id = Anzio.18 days = 1 }
+						clr_country_flag = ANZ_TAKE_MEDICINE_THIRD
+					}
+				}
+			}
+			add_days_mission_timeout = {
+				mission = anz_nero_syndrome_countdown
+				days = 60
+			}
+			add_to_variable = { gold = -20 }
+			hidden_effect = { country_event = { id = Anzio.21 days = 1 } }
+		}
+	}
+
+	anz_nothern_empire_travel = {
+		allowed = { tag = ANZ }
+		visible = { has_country_flag = ANZ_START_NERO_SYNDROME }
+		available = { controls_state = 7 controls_state = 35 controls_state = 8 controls_state = 153 controls_state = 154 }
+		fire_only_once = yes
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = anz_nero_syndrome_countdown
+				days = 90
+			}
+			add_political_power = 150
+			hidden_effect = { country_event = { id = Anzio.19 days = 1 } }
+		}
+	}
+
+	anz_southern_empire_travel = {
+		allowed = { tag = ANZ }
+		visible = { has_country_flag = ANZ_START_NERO_SYNDROME }
+		available = { controls_state = 447 controls_state = 448 controls_state = 290 controls_state = 458 }
+		fire_only_once = yes
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = anz_nero_syndrome_countdown
+				days = 90
+			}
+			add_political_power = 150
+			hidden_effect = { country_event = { id = Anzio.19 days = 1 } }
+		}
+	}
+
+	anz_western_empire_travel = {
+		allowed = { tag = ANZ }
+		visible = { has_country_flag = ANZ_START_NERO_SYNDROME }
+		available = { controls_state = 112 controls_state = 19 controls_state = 14 controls_state = 16 controls_state = 171 }
+		fire_only_once = yes
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = anz_nero_syndrome_countdown
+				days = 90
+			}
+			add_political_power = 150
+			hidden_effect = { country_event = { id = Anzio.19 days = 1 } }
+		}
+	}
+
+	anz_eastern_empire_travel = {
+		allowed = { tag = ANZ }
+		visible = { has_country_flag = ANZ_START_NERO_SYNDROME }
+		available = { controls_state = 454 controls_state = 799 controls_state = 797 controls_state = 46 }
+		fire_only_once = yes
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = anz_nero_syndrome_countdown
+				days = 90
+			}
+			add_political_power = 150
+			hidden_effect = { country_event = { id = Anzio.19 days = 1 } }
+		}
+	}
+}
+
+anz_government = {
+
+	anz_immigration_policy  = {
 		visible = {
 			OR = { has_completed_focus = ANZ_immigration_policy is_debug = yes }
 		}                          
@@ -111,6 +629,31 @@ anz_immigration_policy  = {
 			add_political_power = 100
 		}
 	}
-}	
+
+	anz_strip_off_ccp = {
+		allowed = { tag = ANZ }
+		available = {
+			has_government = communism 
+		}
+		fire_only_once = no
+		is_good = yes
+		activation = { has_country_flag = ANZ_SEC_FIREY_AUTUMN  } 
+		days_mission_timeout = 365
+		timeout_effect = {
+			country_event = { id = Anzio.13 days = 0 }
+        }
+		complete_effect = {
+			ANZ = {
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					last_election = "1973.4.20"
+					election_frequency = 48
+				}
+			}
+		}
+    }
+
+}
 
 

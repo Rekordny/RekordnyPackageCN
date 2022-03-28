@@ -1,0 +1,9 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            SDS = {
+                country_event = { id = bcfreedom.1 days = 55 }
+            }
+        }
+    }
+}

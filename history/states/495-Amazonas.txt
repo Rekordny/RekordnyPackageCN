@@ -11,12 +11,12 @@ state={
 	}
 
 	history={
-		owner = SDS
+		owner = USP
 		buildings = {
 			infrastructure = 0
 
 		}
-		add_core_of = SDS
+		add_core_of = USP
 	}
 
 	provinces={

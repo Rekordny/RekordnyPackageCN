@@ -269,6 +269,7 @@ country_event = {
 					keep_political_leader = no
 					
 				}
+				news_event = { id = senshado_news.9 }
 			}
 			set_popularities = { communism = 0 }
 			
@@ -342,6 +343,488 @@ country_event = {
 		add_popularity = { ideology = fascism popularity = 0.05 }
 	}
 }
+
+#尼禄综合症开始
+country_event = {
+	id = Anzio.15
+	title = Anzio.15.t
+	desc = Anzio.15.d
+	picture = GFX_event_anz_country_15
+	is_triggered_only = yes
+	option={
+		name = Anzio.15.a
+		ANZ_anchovy = { add_country_leader_trait = ANZ_nero_syndrome_0 }
+		ANZ_anchovy = { add_unit_leader_trait = sick }
+		unlock_decision_category_tooltip = anz_nero_syndrome
+	}
+}
+
+#尼禄综合症治愈
+country_event = {
+	id = Anzio.16
+	title = Anzio.16.t
+	desc = Anzio.16.d
+	picture = GFX_event_anz_country_16
+	is_triggered_only = yes
+	option={
+		name = Anzio.16.a
+		7 = { add_core_of = ROOT }
+		35 = { add_core_of = ROOT }
+		8 = { add_core_of = ROOT }
+		153 = { add_core_of = ROOT }
+		154 = { add_core_of = ROOT }
+		82 = { add_core_of = ROOT }
+		83 = { add_core_of = ROOT }
+		76 = { add_core_of = ROOT }
+		84 = { add_core_of = ROOT }
+		81 = { add_core_of = ROOT }
+		46 = { add_core_of = ROOT }
+		77 = { add_core_of = ROOT }
+		44 = { add_core_of = ROOT }
+		805 = { add_core_of = ROOT }
+		102 = { add_core_of = ROOT }
+		103 = { add_core_of = ROOT }
+		109 = { add_core_of = ROOT }
+		104 = { add_core_of = ROOT }
+		45 = { add_core_of = ROOT }
+		107 = { add_core_of = ROOT }
+		105 = { add_core_of = ROOT }
+		108 = { add_core_of = ROOT }
+		106 = { add_core_of = ROOT }
+		764 = { add_core_of = ROOT }
+		185 = { add_core_of = ROOT }
+		731 = { add_core_of = ROOT }
+		47 = { add_core_of = ROOT }
+		186 = { add_core_of = ROOT }
+		184 = { add_core_of = ROOT }
+		187 = { add_core_of = ROOT }
+		182 = { add_core_of = ROOT }
+		164 = { add_core_of = ROOT }
+		48 = { add_core_of = ROOT }
+		212 = { add_core_of = ROOT }
+		211 = { add_core_of = ROOT }
+		801 = { add_core_of = ROOT }
+		341 = { add_core_of = ROOT }
+		340 = { add_core_of = ROOT }
+		339 = { add_core_of = ROOT }
+		342 = { add_core_of = ROOT }
+		343 = { add_core_of = ROOT }
+		347 = { add_core_of = ROOT }
+		49 = { add_core_of = ROOT }
+		346 = { add_core_of = ROOT }
+		345 = { add_core_of = ROOT }
+		356 = { add_core_of = ROOT }
+		348 = { add_core_of = ROOT }
+		344 = { add_core_of = ROOT }
+		355 = { add_core_of = ROOT }
+		349 = { add_core_of = ROOT }
+		350 = { add_core_of = ROOT }
+		354 = { add_core_of = ROOT }
+		353 = { add_core_of = ROOT }
+		352 = { add_core_of = ROOT }
+		676 = { add_core_of = ROOT }
+		675 = { add_core_of = ROOT }
+		291 = { add_core_of = ROOT }
+		3 = { add_core_of = ROOT }
+		151 = { add_core_of = ROOT }
+		180 = { add_core_of = ROOT }
+		181 = { add_core_of = ROOT }
+		112 = { add_core_of = ROOT }
+		179 = { add_core_of = ROOT }
+		795 = { add_core_of = ROOT }
+		6 = { add_core_of = ROOT }
+		34 = { add_core_of = ROOT }
+		448 = { add_core_of = ROOT }
+		661 = { add_core_of = ROOT }
+		449 = { add_core_of = ROOT }
+		662 = { add_core_of = ROOT }
+		450 = { add_core_of = ROOT }
+		451 = { add_core_of = ROOT }
+		663 = { add_core_of = ROOT }
+		165 = { add_core_of = ROOT }
+		166 = { add_core_of = ROOT }
+		167 = { add_core_of = ROOT }
+		177 = { add_core_of = ROOT }
+		171 = { add_core_of = ROOT }
+		174 = { add_core_of = ROOT }
+		172 = { add_core_of = ROOT }
+		176 = { add_core_of = ROOT }
+		170 = { add_core_of = ROOT }
+		41 = { add_core_of = ROOT }
+		175 = { add_core_of = ROOT }
+		169 = { add_core_of = ROOT }
+		173 = { add_core_of = ROOT }
+		168 = { add_core_of = ROOT }
+		290 = { add_core_of = ROOT }
+		788 = { add_core_of = ROOT }
+		789 = { add_core_of = ROOT }
+		790 = { add_core_of = ROOT }
+		791 = { add_core_of = ROOT }
+		792 = { add_core_of = ROOT }
+		793 = { add_core_of = ROOT }
+		794 = { add_core_of = ROOT }
+		29 = { add_core_of = ROOT }
+		18 = { add_core_of = ROOT }
+		17 = { add_core_of = ROOT }
+		28 = { add_core_of = ROOT }
+		15 = { add_core_of = ROOT }
+		16 = { add_core_of = ROOT }
+		27 = { add_core_of = ROOT }
+		14 = { add_core_of = ROOT }
+		30 = { add_core_of = ROOT }
+		24 = { add_core_of = ROOT }
+		23 = { add_core_of = ROOT }
+		33 = { add_core_of = ROOT }
+		26 = { add_core_of = ROOT }
+		20 = { add_core_of = ROOT }
+		32 = { add_core_of = ROOT }
+		735 = { add_core_of = ROOT }
+		25 = { add_core_of = ROOT }
+		22 = { add_core_of = ROOT }
+		21 = { add_core_of = ROOT }
+		19 = { add_core_of = ROOT }
+		20 = { add_core_of = ROOT }
+		1 = { add_core_of = ROOT }
+		785 = { add_core_of = ROOT }
+		31 = { add_core_of = ROOT }
+		458 = { add_core_of = ROOT }
+		665 = { add_core_of = ROOT }
+		460 = { add_core_of = ROOT }
+		513 = { add_core_of = ROOT }
+		459 = { add_core_of = ROOT }
+		461 = { add_core_of = ROOT }
+		677 = { add_core_of = ROOT }
+		680 = { add_core_of = ROOT }
+		553 = { add_core_of = ROOT }
+		554 = { add_core_of = ROOT }
+		127 = { add_core_of = ROOT }
+		123 = { add_core_of = ROOT }
+		338 = { add_core_of = ROOT }
+		126 = { add_core_of = ROOT }
+		125 = { add_core_of = ROOT }
+		129 = { add_core_of = ROOT }
+		128 = { add_core_of = ROOT }
+		122 = { add_core_of = ROOT }
+		132 = { add_core_of = ROOT }
+		130 = { add_core_of = ROOT }
+		131 = { add_core_of = ROOT }
+		452 = { add_core_of = ROOT }
+		447 = { add_core_of = ROOT }
+		446 = { add_core_of = ROOT }
+		456 = { add_core_of = ROOT }
+		457 = { add_core_of = ROOT }
+		453 = { add_core_of = ROOT }
+		454 = { add_core_of = ROOT }
+		455 = { add_core_of = ROOT }
+		183 = { add_core_of = ROOT }
+		656 = { add_core_of = ROOT }
+		118 = { add_core_of = ROOT }
+		116 = { add_core_of = ROOT }
+		clr_country_flag = ANZ_START_NERO_SYNDROME
+		ANZ_anchovy = { remove_country_leader_trait = ANZ_nero_syndrome_0 }
+		ANZ_anchovy = { remove_country_leader_trait = ANZ_nero_syndrome_1 }
+		ANZ_anchovy = { add_country_leader_trait = ANZ_nero_syndrome_3 }
+		ANZ_anchovy = { remove_unit_leader_trait = sick }
+	}
+}
+
+#尼禄综合症爆发
+country_event = {
+	id = Anzio.17
+	title = Anzio.17.t
+	desc = Anzio.17.d
+	picture = GFX_event_anz_country_17
+	is_triggered_only = yes
+	option={
+		name = Anzio.17.a
+		ANZ_anchovy = { remove_country_leader_trait = ANZ_nero_syndrome_0 }
+		ANZ_anchovy = { remove_country_leader_trait = ANZ_nero_syndrome_1 }
+		ANZ_anchovy = { add_country_leader_trait = ANZ_nero_syndrome_2 }
+		ANZ_anchovy = { remove_unit_leader_trait = sick }
+		clr_country_flag = ANZ_START_NERO_SYNDROME
+		hidden_effect = { country_event = { id = Anzio.20 days = 2 } }
+	}
+}
+
+#药物滥用
+country_event = {
+	id = Anzio.18
+	title = Anzio.18.t
+	desc = Anzio.18.d
+	picture = GFX_event_anz_country_18
+	is_triggered_only = yes
+	option={
+		name = Anzio.18.a
+		ANZ_anchovy = { remove_country_leader_trait = ANZ_nero_syndrome_0 }
+		ANZ_anchovy = { add_country_leader_trait = ANZ_nero_syndrome_1 }
+	}
+}
+
+#少许的慰藉
+country_event = {
+	id = Anzio.19
+	title = Anzio.19.t
+	desc = Anzio.19.d
+	picture = GFX_event_anz_country_19
+	is_triggered_only = yes
+	option={
+		name = Anzio.19.a
+	}
+}
+
+#药物治疗手段
+country_event = {
+	id = Anzio.20
+	title = Anzio.20.t
+	desc = Anzio.20.d
+	picture = GFX_event_anz_country_20
+	is_triggered_only = yes
+	option={
+		name = Anzio.20.a
+	}
+}
+
+#症状被缓解了
+country_event = {
+	id = Anzio.21
+	title = Anzio.21.t
+	desc = Anzio.21.d
+	picture = GFX_event_anz_country_21
+	is_triggered_only = yes
+	option={
+		name = Anzio.21.a
+	}
+}
+
+#瑞士地区电力出口事项
+country_event = {
+	id = Anzio.22
+	title = Anzio.22.t
+	desc = Anzio.22.d
+	picture = GFX_event_anz_country_22
+	is_triggered_only = yes
+	option={
+		trigger = { NOT = { has_war_with = KGA } }
+		name = Anzio.22.a
+		KGA = { country_event = { id = Anzio.23 days = 3 } }
+	}
+	option={
+		trigger = { NOT = { has_war_with = BCF } }
+		name = Anzio.22.b
+		BCF = { country_event = { id = Anzio.23 days = 3 } }
+	}
+	option={
+		trigger = { NOT = { has_war_with = BON } }
+		name = Anzio.22.c
+		BON = { country_event = { id = Anzio.23 days = 3 } }
+	}
+}
+
+#发送至别国:来自安齐奥的输电项目提案
+country_event = {
+	id = Anzio.23
+	title = Anzio.23.t
+	desc = Anzio.23.d
+	picture = GFX_event_anz_country_23
+	is_triggered_only = yes
+	option={
+		name = Anzio.23.a
+		add_ideas = ANZ_power_contract
+		add_opinion_modifier = {
+			target = ANZ
+			modifier = ANZ_power_contract
+		}
+		ANZ = {
+			add_opinion_modifier = {
+				target = this
+				modifier = ANZ_power_contract
+			}
+		}
+		ANZ = { country_event = { id = Anzio.24 days = 1 } }
+	}
+	option={
+		name = Anzio.23.b
+		ANZ = { country_event = { id = Anzio.25 days = 1 } }
+	}
+}
+
+#输电项目提案通过
+country_event = {
+	id = Anzio.24
+	title = Anzio.24.t
+	desc = Anzio.24.d
+	picture = GFX_event_anz_country_24
+	is_triggered_only = yes
+	option={
+		name = Anzio.24.a
+		add_ideas = ANZ_power_contract_income
+	}
+}
+
+#输电项目提案被拒绝
+country_event = {
+	id = Anzio.25
+	title = Anzio.25.t
+	desc = Anzio.25.d
+	picture = GFX_event_anz_country_25
+	is_triggered_only = yes
+	option={
+		name = Anzio.25.a
+		add_ideas = ANZ_power_surplus
+	}
+}
+
+#修改宪法开始
+country_event = {
+	id = Anzio.26
+	title = Anzio.26.t
+	desc = Anzio.26.d
+	picture = GFX_event_anz_country_26
+	is_triggered_only = yes
+	option={
+		name = Anzio.26.a
+		country_event = { id = Anzio.27 days = 1 }
+	}
+}
+#修改宪法1
+country_event = {
+	id = Anzio.27
+	title = Anzio.27.t
+	desc = Anzio.27.d
+	picture = GFX_event_anz_country_27
+	is_triggered_only = yes
+	option={
+		name = Anzio.27.a
+		set_country_flag = ANZ_CONSTITUTION_1
+		country_event = { id = Anzio.28 days = 1 }
+	}
+	option={
+		name = Anzio.27.b
+		set_country_flag = ANZ_CONSTITUTION_2
+		country_event = { id = Anzio.28 days = 1 }
+	}
+	option={
+		name = Anzio.27.c
+		set_country_flag = ANZ_CONSTITUTION_3
+		country_event = { id = Anzio.28 days = 1 }
+	}
+}
+#修改宪法2
+country_event = {
+	id = Anzio.28
+	title = Anzio.28.t
+	desc = Anzio.28.d
+	picture = GFX_event_anz_country_28
+	is_triggered_only = yes
+	option={
+		name = Anzio.28.a
+		set_country_flag = ANZ_CONSTITUTION_4
+		country_event = { id = Anzio.29 days = 1 }
+	}
+	option={
+		name = Anzio.28.b
+		set_country_flag = ANZ_CONSTITUTION_5
+		country_event = { id = Anzio.29 days = 1 }
+	}
+	option={
+		name = Anzio.28.c
+		set_country_flag = ANZ_CONSTITUTION_6
+		country_event = { id = Anzio.29 days = 1 }
+	}
+}
+#修改宪法3
+country_event = {
+	id = Anzio.29
+	title = Anzio.29.t
+	desc = Anzio.29.d
+	picture = GFX_event_anz_country_29
+	is_triggered_only = yes
+	option={
+		name = Anzio.29.a
+		set_country_flag = ANZ_CONSTITUTION_7
+		country_event = { id = Anzio.30 days = 1 }
+	}
+	option={
+		name = Anzio.29.b
+		set_country_flag = ANZ_CONSTITUTION_8
+		country_event = { id = Anzio.30 days = 1 }
+	}
+	option={
+		name = Anzio.29.c
+		set_country_flag = ANZ_CONSTITUTION_9
+		country_event = { id = Anzio.30 days = 1 }
+	}
+}
+#修改宪法结束
+country_event = {
+	id = Anzio.30
+	title = Anzio.30.t
+	desc = Anzio.30.d
+	picture = GFX_event_anz_country_30
+	is_triggered_only = yes
+	option={
+		name = Anzio.30.a
+		if = {
+			limit = { has_country_flag = ANZ_CONSTITUTION_1 }
+			add_stability = 0.2
+		}
+		if = {
+			limit = { has_country_flag = ANZ_CONSTITUTION_2 }
+			add_political_power = 300
+		}
+		if = {
+			limit = { has_country_flag = ANZ_CONSTITUTION_3 }
+			add_war_support = 0.2
+		}
+		if = {
+			limit = { AND = { has_country_flag = ANZ_CONSTITUTION_4 has_country_flag = ANZ_CONSTITUTION_7 } }
+			add_ideas = ANZ_constitution_1
+		}
+		if = {
+			limit = { AND = { has_country_flag = ANZ_CONSTITUTION_4 has_country_flag = ANZ_CONSTITUTION_8 } }
+			add_ideas = ANZ_constitution_2
+		}
+		if = {
+			limit = { AND = { has_country_flag = ANZ_CONSTITUTION_4 has_country_flag = ANZ_CONSTITUTION_9 } }
+			add_ideas = ANZ_constitution_3
+		}
+		if = {
+			limit = { AND = { has_country_flag = ANZ_CONSTITUTION_5 has_country_flag = ANZ_CONSTITUTION_7 } }
+			add_ideas = ANZ_constitution_4
+		}
+		if = {
+			limit = { AND = { has_country_flag = ANZ_CONSTITUTION_5 has_country_flag = ANZ_CONSTITUTION_8 } }
+			add_ideas = ANZ_constitution_5
+		}
+		if = {
+			limit = { AND = { has_country_flag = ANZ_CONSTITUTION_5 has_country_flag = ANZ_CONSTITUTION_9 } }
+			add_ideas = ANZ_constitution_6
+		}
+		if = {
+			limit = { AND = { has_country_flag = ANZ_CONSTITUTION_6 has_country_flag = ANZ_CONSTITUTION_7 } }
+			add_ideas = ANZ_constitution_7
+		}
+		if = {
+			limit = { AND = { has_country_flag = ANZ_CONSTITUTION_6 has_country_flag = ANZ_CONSTITUTION_8 } }
+			add_ideas = ANZ_constitution_8
+		}
+		if = {
+			limit = { AND = { has_country_flag = ANZ_CONSTITUTION_6 has_country_flag = ANZ_CONSTITUTION_9 } }
+			add_ideas = ANZ_constitution_9
+		}
+		clr_country_flag = ANZ_constitution_1
+		clr_country_flag = ANZ_constitution_2
+		clr_country_flag = ANZ_constitution_3
+		clr_country_flag = ANZ_constitution_4
+		clr_country_flag = ANZ_constitution_5
+		clr_country_flag = ANZ_constitution_6
+		clr_country_flag = ANZ_constitution_7
+		clr_country_flag = ANZ_constitution_8
+		clr_country_flag = ANZ_constitution_9
+	}
+}
+
+
 
 
 

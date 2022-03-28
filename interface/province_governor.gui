@@ -52,20 +52,6 @@ guiTypes = {
 			pdx_tooltip = "PROVINCE_GOVERNOR_ADD_CHROMIUM"
 			scale = 1
    		}
-		buttonType = {
-			name = "province_governor_senshado" 
-			position = {x=130 y=34}	
-			spriteType = "GFX_decision_category_senshado"
-			pdx_tooltip = "PROVINCE_GOVERNOR_SENSHADO"
-			scale = 0.7
-		}
-		buttonType = {
-			name = "province_governor_add_manpower" 
-			position = {x=165 y=34}	
-			spriteType = "GFX_add_manpower"
-			pdx_tooltip = "PROVINCE_GOVERNOR_ADD_MANPOWER"
-			scale = 0.5
-		}
 	}
 
 

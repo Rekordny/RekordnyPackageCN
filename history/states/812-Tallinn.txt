@@ -4,7 +4,7 @@ state={
 	name="STATE_812"
 
 	history={
-		owner = BON
+		controller = BON
 		victory_points = {
 			3152 5 
 		}
@@ -19,8 +19,6 @@ state={
 			}
 
 		}
-		add_core_of = BON
-
 	}
 
 	provinces={

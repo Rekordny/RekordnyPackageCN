@@ -11,7 +11,7 @@ state=
 	
 	history=
 	{
-		owner = SDS
+		owner = ONM
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -21,7 +21,7 @@ state=
 				naval_base = 1
 			}
 		}
-		add_core_of = SDS
+		add_core_of = ONM
 		victory_points = {
 			12823 3
 		}

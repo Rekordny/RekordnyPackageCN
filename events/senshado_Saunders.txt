@@ -1,41 +1,674 @@
 add_namespace = Saunders
 
-#待定
+#桑达斯的现状（开局触发）
 country_event = {
-	id = Anzio.1
-	title = Anzio.1.t
-	desc = Anzio.1.d
-	picture = GFX_report_event_german_speech
+	id = Saunders.1
+	title = Saunders.1.t
+	desc = Saunders.1.d
+	picture = GFX_event_sds_country_1
 	trigger = { }
 	is_triggered_only = yes
 	option = {
-		name = Anzio.1.a
-		
+		name = Saunders.1.a
+		 
 	}
 }
 
+#加剧的经济危机1972.10.12
+country_event = {
+	id = Saunders.2
+	title = Saunders.2.t
+	desc = Saunders.2.d
+	picture = GFX_event_sds_country_2
+	trigger = { }
+	is_triggered_only = yes
+	option = {
+		name = Saunders.2.a
+		add_ideas = SDS_severe_economic_crisis
+	}
+}
 
+#美国战车联盟党1972.10.15
+country_event = {
+	id = Saunders.3
+	title = Saunders.3.t
+	desc = Saunders.3.d
+	picture = GFX_event_sds_country_3
+	trigger = { }
+	is_triggered_only = yes
+	option = {
+		name = Saunders.3.a
+	}
+}
 
+#我有一个梦想1972.11.9
+country_event = {
+	id = Saunders.4
+	title = Saunders.4.t
+	desc = Saunders.4.d
+	picture = GFX_event_sds_country_4
+	trigger = { }
+	is_triggered_only = yes
+	option = {
+		name = Saunders.4.a
+		set_country_flag = SDS_STARTED_HUMAN_RIGHT_CRISIS
+	}
+}
 
+#罢工1973.1.1
+country_event = {
+	id = Saunders.5
+	title = Saunders.5.t
+	desc = Saunders.5.d
+	picture = GFX_event_sds_country_5
+	trigger = { }
+	is_triggered_only = yes
+	option = {
+		name = Saunders.5.a
+		add_timed_idea = {
+			idea = SDS_workstrike
+			days = 120
+		}
+	}
+}
 
+#秘密消息1974.1.3
+country_event = {
+	id = Saunders.6
+	title = Saunders.6.t
+	desc = Saunders.6.d
+	picture = GFX_event_sds_country_6
+	trigger = { }
+	is_triggered_only = yes
+	option = {
+		name = Saunders.6.a
+		add_stability = 0.05
+		hidden_effect = {
+			country_event = { id = Saunders.7 days = 4 }
+		}
+	}
+	option = {
+		name = Saunders.6.b
+		add_stability = 0.05
+		add_political_power = 300
+		hidden_effect = {
+			country_event = { id = Saunders.8 days = 4 }
+		}
+	}
+}
 
+#被成功避免了的惨剧
+country_event = {
+	id = Saunders.7
+	title = Saunders.7.t
+	desc = Saunders.7.d
+	picture = GFX_event_sds_country_7
+	trigger = { }
+	is_triggered_only = yes
+	option = {
+		name = Saunders.7.a
+		add_stability = -0.05
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		add_war_support = 0.05
+		add_manpower = -3
+		custom_effect_tooltip = sds_tooltip1
+		hidden_effect = {
+			country_event = { id = Saunders.9 days = 3 }
+		}
+	}
+}
 
+#难以想象的惨剧
+country_event = {
+	id = Saunders.8
+	title = Saunders.8.t
+	desc = Saunders.8.d
+	picture = GFX_event_sds_country_8
+	trigger = { }
+	is_triggered_only = yes
+	option = {
+		name = Saunders.8.a
+		add_stability = 0.1
+		add_war_support = -0.05
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+		custom_effect_tooltip = sds_tooltip2
+		hidden_effect = {
+			country_event = { id = Saunders.9 days = 3 }
+		}
+	}
+}
 
+#紧张的凯伊
+country_event = {
+	id = Saunders.9
+	title = Saunders.9.t
+	desc = Saunders.9.d
+	picture = GFX_event_sds_country_9
+	trigger = { }
+	is_triggered_only = yes
+	option = {
+		name = Saunders.9.a
+		add_political_power = 25
+	}
+}
 
+#新闻发布会1974.1.9
+country_event = {
+	id = Saunders.10
+	title = Saunders.10.t
+	desc = Saunders.10.d
+	picture = GFX_event_sds_country_10
+	trigger = { }
+	is_triggered_only = yes
+	option = {
+		name = Saunders.10.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		add_political_power = 100
+		add_war_support = 0.05
+		unlock_decision_category_tooltip = sds_control_zone
+	}
+}
 
+#统一战线1974.1.10
+country_event = {
+	id = Saunders.11
+	title = Saunders.11.t
+	desc = Saunders.11.d
+	picture = GFX_event_sds_country_11
+	trigger = { }
+	is_triggered_only = yes
+	option = {
+		name = Saunders.11.a
+		add_political_power = 30
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		hidden_effect = {
+			country_event = { id = Saunders.12 days = 1 }
+		}
+	}
+}
 
+#对左派人士的看法
+country_event = {
+	id = Saunders.12
+	title = Saunders.12.t
+	desc = Saunders.12.d
+	picture = GFX_event_sds_country_12
+	trigger = { }
+	is_triggered_only = yes
+	option = {
+		name = Saunders.12.a
+		add_political_power = 25
+		add_stability = 0.05
+		custom_effect_tooltip = sds_tooltip4
+		hidden_effect = {
+			country_event = { id = Saunders.13 days = 5 }
+		}
+	}
+	option = {
+		name = Saunders.12.b
+		add_political_power = 100
+		add_stability = -0.1
+		custom_effect_tooltip = sds_tooltip5
+		set_country_flag = SDS_FULL_COOP_WITH_COMMUNISM
+		add_popularity = {
+			ideology = communism
+			popularity = 0.4
+		}
+		393 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+		393 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		custom_effect_tooltip = sds_tooltip20
+		add_to_variable = { variable_SDS_legitimacy = 20 }
+		hidden_effect = {
+			country_event = { id = Saunders.13 days = 5 }
+		}
+	}
+}
 
+#对财阀的看法
+country_event = {
+	id = Saunders.13
+	title = Saunders.13.t
+	desc = Saunders.13.d
+	picture = GFX_event_sds_country_13
+	trigger = { }
+	is_triggered_only = yes
+	option = {
+		name = Saunders.13.a
+		
+		custom_effect_tooltip = sds_tooltip5
+		hidden_effect = {
+			country_event = { id = Saunders.14 days = 5 }
+		}
+	}
+	option = {
+		name = Saunders.13.b
+		set_country_flag = SDS_FULL_COOP_WITH_PLUTOCRATS
+		custom_effect_tooltip = sds_tooltip6
+		hidden_effect = {
+			country_event = { id = Saunders.14 days = 5 }
+		}
+	}
+}
 
+#对前战车道联盟成员的看法
+country_event = {
+	id = Saunders.14
+	title = Saunders.14.t
+	desc = Saunders.14.d
+	picture = GFX_event_sds_country_14
+	trigger = { }
+	is_triggered_only = yes
+	option = {
+		name = Saunders.14.a
+		custom_effect_tooltip = sds_tooltip9
+		add_to_variable = {
+			variable_SDS_legitimacy = 5
+		}
+	}
+	option = {
+		name = Saunders.14.b
+		set_country_flag = SDS_GRANT_SUPPORT_MEMBER_1
+		custom_effect_tooltip = sds_tooltip8
+		add_to_variable = {
+			variable_SDS_legitimacy = -15
+		}
+	}
+}
 
+#选举日1974.3.1
+country_event = {
+	id = Saunders.15
+	title = Saunders.15.t
+	desc = Saunders.15.d
+	picture = GFX_event_sds_country_15
+	trigger = { }
+	is_triggered_only = yes
+	option = {
+		name = Saunders.15.a
+		hidden_effect = {
+			country_event = { id = Saunders.16 days = 5 }
+		}
+	}
+}
 
+#结果是...
+country_event = {
+	id = Saunders.16
+	title = Saunders.16.t
+	desc = Saunders.16.d
+	picture = GFX_event_sds_country_16
+	trigger = { }
+	is_triggered_only = yes
+	option = {
+		name = Saunders.16.a
+		retire_country_leader = SDS_yoshinaga
+		hidden_effect = {
+			country_event = { id = Saunders.17 days = 2 }
+			set_country_flag = SDS_LEGITIMACY_ENABLE
+		}
+	}
+}
 
+#密电1974.3.20
+country_event = {
+	id = Saunders.17
+	title = Saunders.17.t
+	desc = Saunders.17.d
+	picture = GFX_event_sds_country_17
+	trigger = { }
+	is_triggered_only = yes
+	option = {
+		name = Saunders.17.a
+		hidden_effect = {
+			country_event = { id = Saunders.18 days = 27 }
+		}
+	}
+}
 
+#奇怪的事情
+country_event = {
+	id = Saunders.18
+	title = Saunders.18.t
+	desc = Saunders.18.d
+	picture = GFX_event_sds_country_18
+	trigger = { }
+	is_triggered_only = yes
+	option = {
+		name = Saunders.18.a
+		hidden_effect = {
+			country_event = { id = Saunders.19 days = 6 }
+		}
+		371 = { set_demilitarized_zone = yes }
+		372 = { set_demilitarized_zone = yes }
+		373 = { set_demilitarized_zone = yes }
+		374 = { set_demilitarized_zone = yes }
+		375 = { set_demilitarized_zone = yes }
+		376 = { set_demilitarized_zone = yes }
+		377 = { set_demilitarized_zone = yes }
+		378 = { set_demilitarized_zone = yes }
+		379 = { set_demilitarized_zone = yes }
+		380 = { set_demilitarized_zone = yes }
+		381 = { set_demilitarized_zone = yes }
+		382 = { set_demilitarized_zone = yes }
+		383 = { set_demilitarized_zone = yes }
+		384 = { set_demilitarized_zone = yes }
+		385 = { set_demilitarized_zone = yes }
+		386 = { set_demilitarized_zone = yes }
+		387 = { set_demilitarized_zone = yes }
+		388 = { set_demilitarized_zone = yes }
+		389 = { set_demilitarized_zone = yes }
+		390 = { set_demilitarized_zone = yes }
+		391 = { set_demilitarized_zone = yes }
+		392 = { set_demilitarized_zone = yes }
+		393 = { set_demilitarized_zone = yes }
+		394 = { set_demilitarized_zone = yes }
+		395 = { set_demilitarized_zone = yes }
+	}
+}
 
+#阴云笼罩着美利坚
+country_event = {
+	id = Saunders.19
+	title = Saunders.19.t
+	desc = Saunders.19.d
+	picture = GFX_event_sds_country_19
+	trigger = { }
+	is_triggered_only = yes
+	option = {
+		name = Saunders.19.a
+		
+		hidden_effect = {
+			GBT = {
+				transfer_state = 371
+				transfer_state = 372
+				transfer_state = 373
+				transfer_state = 374
+				transfer_state = 375
+				transfer_state = 376
+				transfer_state = 377
+				transfer_state = 378
+				transfer_state = 379
+				transfer_state = 380
+				transfer_state = 381
+				transfer_state = 382
+				transfer_state = 383
+				transfer_state = 384
+				transfer_state = 385
+				transfer_state = 386
+				transfer_state = 387
+				transfer_state = 388
+				transfer_state = 389
+				transfer_state = 390
+				transfer_state = 391
+				transfer_state = 392
+				transfer_state = 393
+				transfer_state = 394
+				transfer_state = 395
+				add_state_core = 371
+				add_state_core = 372
+				add_state_core = 373
+				add_state_core = 374
+				add_state_core = 375
+				add_state_core = 376
+				add_state_core = 377
+				add_state_core = 378
+				add_state_core = 379
+				add_state_core = 380
+				add_state_core = 381
+				add_state_core = 382
+				add_state_core = 383
+				add_state_core = 384
+				add_state_core = 385
+				add_state_core = 386
+				add_state_core = 387
+				add_state_core = 388
+				add_state_core = 389
+				add_state_core = 390
+				add_state_core = 391
+				add_state_core = 392
+				add_state_core = 393
+				add_state_core = 394
+				add_state_core = 395
+				add_state_core = 396
+				add_state_core = 357
+				add_state_core = 358
+				add_state_core = 359
+				add_state_core = 360
+				add_state_core = 361
+				add_state_core = 362
+				add_state_core = 363
+				add_state_core = 364
+				add_state_core = 365
+				add_state_core = 366
+				add_state_core = 367
+				add_state_core = 368
+				add_state_core = 369
+				add_state_core = 370
+				add_state_core = 261
+				add_state_core = 816
+				add_state_core = 690
+				add_state_core = 693
+				add_state_core = 629
+				add_state_core = 630
+				add_state_core = 632
+				add_state_core = 642
+			}
+			371 = { set_demilitarized_zone = no }
+			372 = { set_demilitarized_zone = no }
+			373 = { set_demilitarized_zone = no }
+			374 = { set_demilitarized_zone = no }
+			375 = { set_demilitarized_zone = no }
+			376 = { set_demilitarized_zone = no }
+			377 = { set_demilitarized_zone = no }
+			378 = { set_demilitarized_zone = no }
+			379 = { set_demilitarized_zone = no }
+			380 = { set_demilitarized_zone = no }
+			381 = { set_demilitarized_zone = no }
+			382 = { set_demilitarized_zone = no }
+			383 = { set_demilitarized_zone = no }
+			384 = { set_demilitarized_zone = no }
+			385 = { set_demilitarized_zone = no }
+			386 = { set_demilitarized_zone = no }
+			387 = { set_demilitarized_zone = no }
+			388 = { set_demilitarized_zone = no }
+			389 = { set_demilitarized_zone = no }
+			390 = { set_demilitarized_zone = no }
+			391 = { set_demilitarized_zone = no }
+			392 = { set_demilitarized_zone = no }
+			393 = { set_demilitarized_zone = no }
+			394 = { set_demilitarized_zone = no }
+			395 = { set_demilitarized_zone = no }
+			country_event = { id = Saunders.20 days = 3 }
+			country_event = { id = Saunders.22 days = 120 }
+		}
+	}
+}
 
+#知波单独立
+country_event = {
+	id = Saunders.20
+	title = Saunders.20.t
+	desc = Saunders.20.d
+	picture = GFX_event_sds_country_20
+	trigger = { }
+	is_triggered_only = yes
+	option = {
+		name = Saunders.20.a
+		SDS = {
+			release = CHT
+		}
+		CHT = {
+			transfer_state = 530
+		}
+		hidden_effect = {
+			CHT = {
+				country_event = { id = Saunders.23 days = 0 }
+			}
+		}
+	}
+}
 
+#内战爆发1974.4.12
+country_event = {
+	id = Saunders.22
+	title = Saunders.22.t
+	desc = Saunders.22.d
+	picture = GFX_event_sds_country_22
+	trigger = { }
+	is_triggered_only = yes
+	option = {
+		name = Saunders.22.a
+		set_country_flag = SDS_CIVIL_WAR_BEGAN
+		add_civil_war_target = GBT
+		declare_war_on = {
+			target = GBT
+			type = civil_war
+		}
+		news_event = { id = senshado_news.8 }
+		if = {
+			limit = { has_country_flag = SDS_GRANT_SUPPORT_SOUTHERN_1 }
+			#添加南方民兵单位
+		}
+		if = {
+			limit = { has_country_flag = SDS_GRANT_SUPPORT_SOUTHERN_2 }
+			transfer_state = 372
+			transfer_state = 371
+		}
+		if = {
+			limit = { OR = { has_country_flag = SDS_GRANT_SUPPORT_NORTHERN_1 has_country_flag = SDS_FULL_COOP_WITH_COMMUNISM } }
+			transfer_state = 393
+			#添加北方民兵单位
+			
+		}
+		if = {
+			limit = { has_country_flag = SDS_GRANT_SUPPORT_PLUTOCRATS_2 }
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 3000
+				producer = SDS
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 500
+				producer = SDS
+			}
+		}
+		if = {
+			limit = { has_country_flag = SDS_GRANT_SUPPORT_PLUTOCRATS_3 }
+			add_timed_idea = {
+				idea = SDS_sympathizers_of_the_plutocracy
+				days = 180
+			}
+			random_state = { 
+				limit = { is_core_of = SDS is_controlled_by = SDS }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = { has_country_flag = SDS_GRANT_SUPPORT_PLUTOCRATS_4 }
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = SDS
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 1000
+				producer = SDS
+			}
+			random_state = { 
+				limit = { is_core_of = SDS is_controlled_by = SDS }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = { 
+				limit = { is_core_of = SDS is_controlled_by = SDS }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = { has_country_flag = SDS_GRANT_SUPPORT_MEMBER_1 }
+			#解锁组编战车道装甲师决议
+			unlock_decision_tooltip = sds_senshado_division_wartime
+			set_country_flag = SDS_ENABLE_SENSHADO_DIVISION_RECRUIT
+		}
+		if = {
+			limit = { has_country_flag = SDS_GRANT_SUPPORT_MEMBER_2 }
+			#添加火星石油精神
+			add_timed_idea = {
+				idea = SDS_senshado_grand_assistance
+				days = 300
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_equipment_1
+				amount = 500
+				producer = SDS
+			}
+		}
+		if = {
+			limit = { has_country_flag = SDS_GRANT_SUPPORT_MEMBER_3 }
+			#添加对方debuff
+			GBT = {
+				add_timed_idea = {
+					idea = GBT_oil_shortage
+					days = 120
+				}
+			}
+			
+		}
+	}
+}
 
-
-
-
-
-
+#CHT:知波单独立
+country_event = {
+	id = Saunders.23
+	title = Saunders.23.t
+	desc = Saunders.23.d
+	picture = GFX_event_sds_country_23
+	trigger = { }
+	is_triggered_only = yes
+	option = {
+		name = Saunders.23.a
+		add_stability = 0.1
+	}
+}

@@ -1,0 +1,9 @@
+APQR = {
+    color = rgb { 201 56 93 }
+    color_ui = rgb { 255 73 121 }
+}
+
+GGK = {
+    color = rgb { 39 12 12 }
+    color_ui = rgb { 39 12 12 }
+}

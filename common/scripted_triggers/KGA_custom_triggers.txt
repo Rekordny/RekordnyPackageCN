@@ -1,0 +1,4 @@
+#日耳曼黑森峰完成 隐藏检查不需要tooltip
+KGA_has_complete_germanic_kuromorimine = {
+	AND = { has_country_flag = KGA_GERMANIC_KUROMORIMINE_1 has_country_flag = KGA_GERMANIC_KUROMORIMINE_2 has_country_flag = KGA_GERMANIC_KUROMORIMINE_3 has_country_flag = KGA_GERMANIC_KUROMORIMINE_4 has_country_flag = KGA_GERMANIC_KUROMORIMINE_5 has_country_flag = KGA_GERMANIC_KUROMORIMINE_6 has_country_flag = KGA_GERMANIC_KUROMORIMINE_7 has_country_flag = KGA_GERMANIC_KUROMORIMINE_8 }
+}

@@ -159,3 +159,23 @@ BKC = {
 	color = rgb { 212 212 212 }
 	color_ui = rgb { 212 212 212 }
 }
+
+KRR = {
+	color = rgb { 189 255 34 }
+	color_ui = rgb { 189 255 34 }
+}
+
+FCM = {
+	color = rgb { 6 150 184 }
+	color_ui = rgb { 6 150 184 }
+}
+
+USP = {
+	color = rgb { 99 86 50 }
+	color_ui = rgb { 99 86 50 }
+}
+
+ONM = {
+	color = rgb { 25 156 116 }
+	color_ui = rgb { 25 156 116 }
+}

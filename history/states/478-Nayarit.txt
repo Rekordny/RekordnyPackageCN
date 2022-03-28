@@ -11,12 +11,12 @@ state={
 	}
 
 	history={
-		owner = SDS
+		owner = ONM
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
-		add_core_of = SDS
+		add_core_of = ONM
 		victory_points = {
 			13089 10
 		}

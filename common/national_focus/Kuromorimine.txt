@@ -630,7 +630,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		#BCF和STG存在
-		available = {  }
+		available = { always = no }
 		prerequisite = { focus = KGA_sovereignty_recovery }
 		mutually_exclusive = { focus = KGA_deal_with_BC }
 		mutually_exclusive = { focus = KGA_government_capital_intergration }
@@ -749,7 +749,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		#BCF存在
-		available = { neutrality > 0.65 }
+		available = {  OR = { always = no neutrality > 0.65 } }
 		prerequisite = { focus = KGA_sovereignty_recovery }
 		mutually_exclusive = { focus = KGA_atonement }
 		mutually_exclusive = { focus = KGA_government_capital_intergration }
@@ -932,7 +932,7 @@ focus_tree = {
 		relative_position_id = KGA_government_capital_intergration
 		x = -1
 		y = 1
-		available = { fascism > 0.6 }
+		available = { fascism > 0.5 }
 		prerequisite = { focus = KGA_government_capital_intergration }
 		mutually_exclusive = { focus = KGA_admit_bell_wall }
 		bypass = { has_government = fascism }
@@ -952,6 +952,10 @@ focus_tree = {
 				}
 			}
 			KGA = { country_event = { id = kuromorimine.23 days = 0 } }
+			if = {
+				limit = { has_idea = KGA_bellwall_threat }
+				KGA = { country_event = { id = kuromorimine.25 days = 18 } }
+			}
 		}
 		#AI行动之后具体设计，复制粘贴以下部分即可
 		ai_will_do = {
@@ -983,7 +987,7 @@ focus_tree = {
 		}
 		#AI行动之后具体设计，复制粘贴以下部分即可
 		ai_will_do = {
-			factor = 1
+			factor = 0
 			modifier = {
 			}
 		}
@@ -4030,14 +4034,14 @@ focus_tree = {
 		relative_position_id = KGA_intergrate_europe
 		x = -11
 		y = 1
-		available = { date > 1980.6.3 }
+		available = { has_country_flag = KGA_GERMANIC_KUROMORIMINE_BUILT }
 		#allow_branch = { has_completed_focus =  }
 		prerequisite = { focus = KGA_intergrate_europe }
 		prerequisite = { focus = KGA_look_into_the_future }
 		prerequisite = { focus = KGA_nibelungen_knights }
 		mutually_exclusive = {  }
 		bypass = {  }
-		cost = 10
+		cost = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no

@@ -1,0 +1,18 @@
+on_actions = {
+    on_startup = {
+        effect = {
+			#必须要一个国家来为全球触发新闻
+			ORA = {
+				news_event ={ id = senshado_news.1 days = 1 }
+				news_event ={ id = senshado_news.2 days = 38 }
+				news_event ={ id = senshado_news.3 days = 107 }
+				news_event ={ id = senshado_news.4 days = 62 }
+				news_event ={ id = senshado_news.5 days = 31 }
+				news_event ={ id = senshado_news.6 days = 86 }
+
+				news_event ={ id = senshado_news.11 days = 183 }
+			}
+            
+        }
+    }
+}

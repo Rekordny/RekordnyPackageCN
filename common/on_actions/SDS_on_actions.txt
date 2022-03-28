@@ -1,0 +1,23 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            SDS = {
+				set_variable = { variable_SDS_legitimacy = 30 }
+                country_event = { id = Saunders.1 days = 1 }
+				country_event = { id = Saunders.2 days = 29 }
+				country_event = { id = Saunders.3 days = 31 }
+				country_event = { id = Saunders.4 days = 92 }
+				country_event = { id = Saunders.5 days = 117 }
+				country_event = { id = Saunders.6 days = 119 }
+				country_event = { id = Saunders.10 days = 125 }
+				country_event = { id = Saunders.11 days = 126 }
+				country_event = { id = Saunders.15 days = 176 }
+            }
+        }
+    }
+	on_daily_SDS = {
+		effect = {
+			edit_legitimacy_daily = yes
+		}
+	}
+}

@@ -30,7 +30,6 @@ state={
 			}
 			air_base = 3
 		}
-		add_core_of = BON
 		add_core_of = KGA
 	}
 

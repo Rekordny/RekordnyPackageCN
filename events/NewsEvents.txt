@@ -1,35 +1,406 @@
 ###########################
-# News Events
+# senshado_news Events
 ###########################
 
-add_namespace = news
+add_namespace = senshado_news
 
+#慕尼黑惨案1972.9.6
 news_event = {
 	id = senshado_news.1
-    title = news.1.t
-	desc = news.1.d
-	picture = GFX_news_event_001
-	
+    title = senshado_news.1.t
+	desc = senshado_news.1.d
+	picture = GFX_senshado_news_event_1
+	is_triggered_only = yes
 	major = yes
-	
-    fire_only_once = yes
-
-	trigger = {
-        NOT = { has_global_flag = news1fired }
-		date > 1972.09.12
-	}
-
 	immediate = {
-		set_global_flag = news1fired
-    }
+		
+	}
 
 	option = {
-		name = news.1.a
+		name = senshado_news.1.a
 	}
-	option = {
-		name = news.1.b
+}
+
+#安第斯空难1972.10.14
+news_event = {
+	id = senshado_news.2
+    title = senshado_news.2.t
+	desc = senshado_news.2.d
+	picture = GFX_senshado_news_event_2
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+		
 	}
+
 	option = {
-		name = news.1.c
+		name = senshado_news.2.a
+	}
+}
+
+
+#安第斯空难后续1972.12.22
+news_event = {
+	id = senshado_news.3
+    title = senshado_news.3.t
+	desc = senshado_news.3.d
+	picture = GFX_senshado_news_event_3
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+		
+	}
+
+	option = {
+		name = senshado_news.3.a
+	}
+}
+
+#知波单国有铁路北陆隧道列车火灾1972.11.7
+news_event = {
+	id = senshado_news.4
+    title = senshado_news.4.t
+	desc = senshado_news.4.d
+	picture = GFX_senshado_news_event_4
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+		
+	}
+
+	option = {
+		name = senshado_news.4.a
+	}
+}
+
+#第一届战车道国际联合大会1972.10.7
+news_event = {
+	id = senshado_news.5
+    title = senshado_news.5.t
+	desc = senshado_news.5.d
+	picture = GFX_senshado_news_event_5
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+		hidden_effect = {
+			SDS = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			if = { limit = { KGA = { is_in_faction_with = SDS } } 
+				KGA = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { STG = { is_in_faction_with = SDS } } 
+				STG = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { BCF = { is_in_faction_with = SDS } } 
+				BCF = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { WAF = { is_in_faction_with = SDS } } 
+				WAF = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { VIG = { is_in_faction_with = SDS } } 
+				VIG = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { VIK = { is_in_faction_with = SDS } } 
+				VIK = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { JHS = { is_in_faction_with = SDS } } 
+				JHS = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { KFA = { is_in_faction_with = SDS } } 
+				KFA = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { MAP = { is_in_faction_with = SDS } } 
+				MAP = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { BDH = { is_in_faction_with = SDS } } 
+				BDH = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { ANZ = { is_in_faction_with = SDS } } 
+				ANZ = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { CHT = { is_in_faction_with = SDS } } 
+				CHT = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { THS = { is_in_faction_with = SDS } } 
+				THS = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { ASU = { is_in_faction_with = SDS } } 
+				ASU = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { PRA = { is_in_faction_with = SDS } } 
+				PRA = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { KEB = { is_in_faction_with = SDS } } 
+				KEB = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { COU = { is_in_faction_with = SDS } } 
+				COU = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { YOG = { is_in_faction_with = SDS } } 
+				YOG = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { GHS = { is_in_faction_with = SDS } } 
+				GHS = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			BON = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			if = { limit = { KGA = { is_in_faction_with = BON } } 
+				KGA = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { STG = { is_in_faction_with = BON } } 
+				STG = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { BCF = { is_in_faction_with = BON } } 
+				BCF = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { WAF = { is_in_faction_with = BON } } 
+				WAF = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { VIG = { is_in_faction_with = BON } } 
+				VIG = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { VIK = { is_in_faction_with = BON } } 
+				VIK = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { JHS = { is_in_faction_with = BON } } 
+				JHS = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { KFA = { is_in_faction_with = BON } } 
+				KFA = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { MAP = { is_in_faction_with = BON } } 
+				MAP = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { BDH = { is_in_faction_with = BON } } 
+				BDH = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { ANZ = { is_in_faction_with = BON } } 
+				ANZ = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { CHT = { is_in_faction_with = BON } } 
+				CHT = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { THS = { is_in_faction_with = BON } } 
+				THS = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { ASU = { is_in_faction_with = BON } } 
+				ASU = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { PRA = { is_in_faction_with = BON } } 
+				PRA = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { KEB = { is_in_faction_with = BON } } 
+				KEB = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { COU = { is_in_faction_with = BON } } 
+				COU = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { YOG = { is_in_faction_with = BON } } 
+				YOG = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+			if = { limit = { GHS = { is_in_faction_with = BON } } 
+				GHS = { add_timed_idea = { days = 700 idea = senshado_peace_compact } }
+			}
+		}
+		
+	}
+
+	option = {
+		name = senshado_news.5.a
+	}
+
+	
+}
+#罗曼诺夫大罗斯共和国与克里米亚少数民族联邦脱离真理共和国联盟1972.12.1
+#Kingdom of Romanov Rus's   KRR
+#Federation of Crimean Minorities  FCM
+news_event = {
+	id = senshado_news.6
+	title = senshado_news.6.t
+	desc = senshado_news.6.d
+	picture = GFX_senshado_news_event_6
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+		hidden_effect = {
+			KRR = {
+				transfer_state = 192
+				add_state_core = 192
+				transfer_state = 193
+				add_state_core = 193
+				transfer_state = 194
+				add_state_core = 194
+				transfer_state = 196
+				add_state_core = 196
+				transfer_state = 197
+				add_state_core = 197
+				transfer_state = 198
+				add_state_core = 198
+				transfer_state = 199
+				add_state_core = 199
+				transfer_state = 241
+				add_state_core = 241
+				transfer_state = 243
+				add_state_core = 243
+				transfer_state = 242
+				add_state_core = 242
+				transfer_state = 207
+				add_state_core = 207
+				transfer_state = 204
+				add_state_core = 204
+				transfer_state = 201
+				add_state_core = 201
+				transfer_state = 202
+				add_state_core = 202
+				transfer_state = 203
+				add_state_core = 203
+				transfer_state = 206
+				add_state_core = 206
+				transfer_state = 221
+				add_state_core = 221
+				transfer_state = 226
+				add_state_core = 226
+				transfer_state = 259
+				add_state_core = 259
+				transfer_state = 225
+				add_state_core = 225
+				transfer_state = 205
+				add_state_core = 205
+				transfer_state = 224
+				add_state_core = 224
+				transfer_state = 227
+				add_state_core = 227
+				transfer_state = 200
+				add_state_core = 200
+				transfer_state = 228
+				add_state_core = 228
+				transfer_state = 834
+				add_state_core = 834
+			}
+			FCM = {
+				transfer_state = 137
+				add_state_core = 137
+				transfer_state = 234
+				add_state_core = 234
+				transfer_state = 238
+				add_state_core = 238
+				transfer_state = 235
+				add_state_core = 235
+				transfer_state = 218
+				add_state_core = 218
+				transfer_state = 233
+				add_state_core = 233
+				transfer_state = 826
+				add_state_core = 826
+				transfer_state = 230
+				add_state_core = 230
+				transfer_state = 231
+				add_state_core = 231
+				transfer_state = 232
+				add_state_core = 232
+				transfer_state = 229
+				add_state_core = 229
+				transfer_state = 828
+				add_state_core = 828
+				transfer_state = 821
+				add_state_core = 821
+				transfer_state = 827
+				add_state_core = 827
+				transfer_state = 237
+				add_state_core = 237
+			}
+		}
+	}
+
+	option = {
+		name = senshado_news.6.a
+	}
+}
+
+#黑森峰法西斯共产内战
+news_event = {
+	id = senshado_news.7
+    title = senshado_news.7.t
+	desc = senshado_news.7.d
+	picture = GFX_senshado_news_event_7
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+		
+	}
+
+	option = {
+		name = senshado_news.7.a
+	}
+}
+
+#桑达斯内战
+news_event = {
+	id = senshado_news.8
+    title = senshado_news.8.t
+	desc = senshado_news.8.d
+	picture = GFX_senshado_news_event_8
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+		
+	}
+
+	option = {
+		name = senshado_news.8.a
+	}
+}
+
+#安齐奥内战
+news_event = {
+	id = senshado_news.9
+    title = senshado_news.9.t
+	desc = senshado_news.9.d
+	picture = GFX_senshado_news_event_9
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+		
+	}
+
+	option = {
+		name = senshado_news.9.a
+	}
+}
+
+#圣戈罗莉安娜共产民主内战
+news_event = {
+	id = senshado_news.10
+    title = senshado_news.10.t
+	desc = senshado_news.10.d
+	picture = GFX_senshado_news_event_10
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+		
+	}
+
+	option = {
+		name = senshado_news.10.a
+	}
+}
+
+#罗曼诺夫对克里米亚内战
+news_event = {
+	id = senshado_news.11
+    title = senshado_news.11.t
+	desc = senshado_news.11.d
+	picture = GFX_senshado_news_event_11
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+		KRR = {
+			add_civil_war_target = FCM
+			declare_war_on = {
+				target = FCM
+			}
+		}
+	}
+
+	option = {
+		name = senshado_news.11.a
 	}
 }

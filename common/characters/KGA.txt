@@ -35,6 +35,16 @@ characters={
 			on_add = {}
 			on_remove = {}
 		}
+		advisor={
+			cost = 180
+			slot = theorist
+			allowed = {
+				original_tag = KGA
+			}
+			idea_token = KGA_maho
+			ledger = army
+			traits = { blitzkrieg_theorist }
+		}
 	}
 	KGA_miho={
 		name="Miho Nishizumi"
@@ -72,13 +82,23 @@ characters={
 			on_add = {}
 			on_remove = {}
 		}
+		advisor={
+			cost = 75
+			slot = theorist
+			idea_token = generic_miho
+			ledger = army
+			allowed = {
+				original_tag = KGA
+			}
+			traits = { mobile_warfare_expert }
+		}
 	}
 	KGA_emi={
 		name="Emi Nakasuga"
 		portraits={
 			civilian={
 				large="gfx/leaders/KGA/Portrait_KGA_Emi.dds"
-				small="gfx/interface/advisors/idea_Emi.dds"
+				small="gfx/interface/advisors/idea_emi.dds"
 			}
 		}
 		country_leader={
@@ -113,21 +133,6 @@ characters={
 			on_remove = {}
 		}
 	}
-	KGA_miho_maho={
-		name="Miho & Maho"
-		portraits={
-			civilian={
-				large="gfx/leaders/KGA/Portrait_KGA_Miho&Maho.dds"
-			}
-		}
-		country_leader={
-			desc="THEY ARE THE BEST!!!"
-			ideology=conservatism
-			traits={ nationalist_symbol }
-			expire="2000.1.1.1"
-			id=-1
-		}
-	}
 	KGA_erika={
 		name="Erika Itsumi"
 		portraits={
@@ -157,6 +162,14 @@ characters={
 			traits = { top_ruling_bottom }
 			on_add = {}
 			on_remove = {}
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_erwin
+			allowed = { origin_tag = KGA }
+			ledger = army
+			traits = { army_commando_2 }
+			cost = 100
 		}
 	}
 	KGA_koume={
@@ -194,20 +207,27 @@ characters={
 		name="Erwin"
 		portraits={
 			army={
-				small=""
+				small="gfx/interface/advisors/idea_erwin.dds"
 			}
 			army={
 				large="gfx/leaders/KGA/Portrait_KGA_Erwin.dds"
 			}
 		}
 		corps_commander={
-			traits={ armor_officer }
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=2
+			traits = { Armor_Officer Desert_Fox }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
 			legacy_id=1024
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_erwin
+			ledger = army
+			traits = { army_armored_2 }
+			cost = 100
 		}
 	}
 	KGA_mauko={

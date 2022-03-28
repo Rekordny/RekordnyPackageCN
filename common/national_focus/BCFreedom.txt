@@ -20,9 +20,9 @@ focus_tree = {
 		icon = GFX_focus_BCF_second_orleans_conference
 		x = 12
 		y = 0
-		cost = 0
+		cost = 1
 		available = {
-			has_country_flag = BCF_SEC_ORELANS_END
+			#has_country_flag = BCF_SEC_ORELANS_END
 		}
 		bypass = { has_country_flag = BCF_SEC_ORELANS_END }
 		
@@ -32,7 +32,7 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 		completion_reward = {
-			
+			add_political_power = 100
 		}
 	}
 
@@ -2380,7 +2380,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		
-		ai_will_do = {a
+		ai_will_do = {
 			factor = 25
 		}
 		mutually_exclusive = { focus = BCF_focus_on_tank_quality }

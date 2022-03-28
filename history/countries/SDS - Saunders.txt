@@ -11,7 +11,6 @@ add_ideas = SDS_solid_bulwark_of_democratic_questionmark
 add_ideas = SDS_quarantine_act
 add_ideas = SDS_fragmented_SDS_politics
 add_ideas = SDS_severely_underpowered_army
-add_ideas = SDS_severe_economic_crisis
 
 create_faction = "战车道协会互助联盟"
 add_to_faction = STG
@@ -19,26 +18,17 @@ add_to_faction = KFA
 add_to_faction = MAP
 
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1933.3.5"
+	ruling_party = democratic
+	last_election = "1972.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 25
-	fascism = 25
-	communism = 25
-	neutrality = 25
+	democratic = 66
+	fascism = 3
+	communism = 2
+	neutrality = 29
 }
-
-create_country_leader = {
-	name = "Key"
-	desc = ""
-	picture = "Portrait_SDS_Kay.dds"
-	expire = "1965.1.1"
-	ideology = moderatism
-	traits = {
-		
-	}
-}
+recruit_character = SDS_yoshinaga
+recruit_character = SDS_key
 

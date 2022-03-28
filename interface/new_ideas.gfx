@@ -15,8 +15,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_gold_storage_good.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_gold_storage_avergae"
-		texturefile = "gfx/interface/ideas/idea_gold_storage_avergae.dds"
+		name = "GFX_idea_gold_storage_average"
+		texturefile = "gfx/interface/ideas/idea_gold_storage_average.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_gold_storage_low"

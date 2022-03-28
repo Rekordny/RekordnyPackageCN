@@ -4,6 +4,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/ANZ/Portrait_ANZ_Anchovy.dds"
+				small="gfx/interface/advisors/idea_anchovy.dds"
 			}
 		}
 		field_marshal={
@@ -15,10 +16,20 @@ characters={
 			logistics_skill=5
 			legacy_id=1077
 		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ANZ_anchovy
+			removal_cost = -1
+			allowed = { original_tag = ANZ }
+			visible = { }
+			traits = { most_popular_big_sister  }
+			on_add = { }
+			on_remove = { }
+		}
 		country_leader={
 			desc="She is the best"
 			ideology=nazism
-			traits={ dictator }
+			traits={ anzio_duce }
 			expire="2000.1.1.1"
 			id=-1
 		}
@@ -35,7 +46,18 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/ANZ/Portrait_ANZ_Pepperoni.dds"
+				small="gfx/interface/advisors/idea_pepperoni.dds"
 			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ANZ_pepperoni
+			removal_cost = -1
+			allowed = { original_tag = ANZ }
+			visible = { }
+			traits = { foodies_named_after_food }
+			on_add = { }
+			on_remove = { }
 		}
 		corps_commander={
 			traits={ armor_officer war_hero }
@@ -59,10 +81,21 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/ANZ/Portrait_ANZ_Carpaccio.dds"
+				small="gfx/interface/advisors/idea_carpaccio.dds"
 			}
 		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ANZ_carpaccio
+			removal_cost = -1
+			allowed = { original_tag = ANZ }
+			visible = { }
+			traits = { economy_painter }
+			on_add = { }
+			on_remove = { }
+		}
 		corps_commander={
-			traits={ armor_officer war_hero commando }
+			traits={ armor_officer war_hero }
 			skill=4
 			attack_skill=4
 			defense_skill=4
@@ -74,8 +107,8 @@ characters={
 	ANZ_saori_takebe={
 		name="Saori Takebe"
 		portraits={
-			army={
-				small=""
+			civilian={
+				small="gfx/interface/advisors/idea_saori.dds"
 			}
 			army={
 				large="gfx/leaders/ANZ/Portrait_ANZ_Saori.dds"
@@ -90,12 +123,19 @@ characters={
 			logistics_skill=3
 			legacy_id=1080
 		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = ANZ_saori_takebe
+			ledger = army
+			traits = { military_theorist }
+		}
 	}
 	ANZ_amaretto={
 		name="Amaretto"
 		portraits={
-			army={
-				small=""
+			civilian={
+				small="gfx/interface/advisors/idea_amaretto.dds"
 			}
 			army={
 				large="gfx/leaders/ANZ/Portrait_ANZ_Amaretto.dds"
@@ -104,12 +144,22 @@ characters={
 		country_leader={
 			desc="She is the best"
 			ideology=conservatism
-			traits={ caudillo_1 }
+			traits={ catholic_democracy }
 			expire="2000.1.1.1"
 			id=-1
 		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ANZ_amaretto
+			removal_cost = -1
+			allowed = { original_tag = ANZ }
+			visible = { }
+			traits = { the_poison_hidden_in_the_liqueur }
+			on_add = { }
+			on_remove = { }
+		}
 		corps_commander={
-			traits={ armor_officer }
+			traits={ armor_officer Engineer Officer }
 			skill=3
 			attack_skill=3
 			defense_skill=3

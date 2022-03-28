@@ -1,4 +1,11 @@
 senshado_decisions = {
+	debug_decryption_tech = {
+		days_remove = 1000
+		modifier = {
+			decryption = 3
+		}
+	}
+
 	debug_hyper_event_active = {
 		visible = {
 			is_debug = yes
@@ -37,7 +44,7 @@ senshado_decisions = {
 		}
 		days_re_enable = 1
 		complete_effect = {
-			clear_ssdp = yes
+			
 		}
 	}
 	
@@ -153,6 +160,17 @@ senshado_decisions = {
 				gold = 100
 			}
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				num_of_available_civilian_factories > 19
+				factor = 10
+			}
+			modifier = {
+				num_of_available_civilian_factories < 20
+				factor = 0.1
+			}
+		}
 	}
 
 	recruit_army_character = {
@@ -161,340 +179,93 @@ senshado_decisions = {
 		custom_cost_text = generic_decision_tooltip_1
 		complete_effect = {
 			random_list = {
-				2 = {
+				8 = {
 					if = { 
 						limit = { OR = { has_unit_leader = 1021 has_unit_leader = 1000 } }
 						hidden_effect = { country_event = senshado_events.3 }
 					}
-					if = {
-						limit = { NOT = { OR = { has_unit_leader = 1021 has_unit_leader = 1000 }} }
-						create_field_marshal = {
-							name = "Miho Nishizumi"
-							id = 1000
-							picture = "Portrait_generic_Miho.dds"
-							traits = { Brilliant_Strategist Armor_Officer Panzer_Expert	}
-							skill = 4
-							attack_skill = 3
-							defense_skill = 3
-							planning_skill = 5
-							logistics_skill = 4
-						}
+					else = {
+						recruit_character = generic_miho
 						hidden_effect = { country_event = senshado_events.2 }
 					}
 				}
-				2 = {
+				8 = {
 					if = { 
 						limit = { has_unit_leader = 1001 }
 						hidden_effect = { country_event = senshado_events.3 }
 					}
-					if = {
-						limit = { NOT = { has_unit_leader = 1001 } }
-						create_field_marshal = {
-							name = "Alice Shimada"
-							id = 1001
-							picture = "Portrait_generic_Alice.dds"
-							traits = { Offensive_Doctrine Armor_Officer Panzer_Expert}
-							skill = 4
-							attack_skill = 5
-							defense_skill = 4
-							planning_skill = 3
-							logistics_skill = 3
-						}
+					else = {
+						recruit_character = generic_alice
 						hidden_effect = { country_event = senshado_events.2 }
 					}
 				}
-				4 = {
+				10 = {
 					if = { 
 						limit = { has_unit_leader = 1002 }
 						hidden_effect = { country_event = senshado_events.3 }
 					}
-					if = {
-						limit = { NOT = { has_unit_leader = 1002 } }
-						create_corps_commander = {
-							name = "Yukari Akiyama"
-							id = 1002
-							picture = "Portrait_generic_Yukari.dds"
-							traits = { Armor_Officer Bearer_of_Artillery }
-							skill = 3
-							attack_skill = 4
-							defense_skill = 3
-							planning_skill = 4
-							logistics_skill = 2
-						}
+					else = {
+						recruit_character = generic_yukari
 						hidden_effect = { country_event = senshado_events.2 }
 					}
 				}
-				4 = {
+				10 = {
 					if = { 
-						limit = { has_unit_leader = 1003 }
+						limit = { OR = { has_unit_leader = 1003 has_unit_leader =1080 } }
 						hidden_effect = { country_event = senshado_events.3 }
 					}
-					if = {
-						limit = { NOT = { has_unit_leader = 1003 } }
-						create_corps_commander = {
-							name = "Saori Takebe"
-							id = 1003
-							picture = "Portrait_generic_Saori.dds"
-							traits = { Armor_Officer Media_Personality }
-							skill = 3
-							attack_skill = 3
-							defense_skill = 3
-							planning_skill = 4
-							logistics_skill = 3
-						}
+					else = {
+						recruit_character = generic_saori
 						hidden_effect = { country_event = senshado_events.2 }
 					}
 				}
-				4 = {
+				10 = {
 					if = { 
 						limit = { has_unit_leader = 1004 }
 						hidden_effect = { country_event = senshado_events.3 }
 					}
-					if = {
-						limit = { NOT = { has_unit_leader = 1004 } }
-						create_corps_commander = {
-							name = "Hana Isuzu"
-							id = 1004
-							picture = "Portrait_generic_Hana.dds"
-							traits = { Armor_Officer }
-							skill = 3
-							attack_skill = 4
-							defense_skill = 3
-							planning_skill = 3
-							logistics_skill = 3
-						}
+					else = {
+						recruit_character = generic_hana
 						hidden_effect = { country_event = senshado_events.2 }
 					}
 				}
-				4 = {
+				10 = {
 					if = { 
 						limit = { has_unit_leader = 1005 }
 						hidden_effect = { country_event = senshado_events.3 }
 					}
-					if = {
-						limit = { NOT = { has_unit_leader = 1005 } }
-						create_corps_commander = {
-							name = "Mako Reizei"
-							id = 1005
-							picture = "Portrait_generic_Mako.dds"
-							traits = { Armor_Officer }
-							skill = 3
-							attack_skill = 2
-							defense_skill = 4
-							planning_skill = 3
-							logistics_skill = 4
-						}
+					else = {
+						recruit_character = generic_mako
 						hidden_effect = { country_event = senshado_events.2 }
 					}
 				}
-				8 = {
+				10 = {
 					if = { 
 						limit = { has_unit_leader = 1028 }
 						hidden_effect = { country_event = senshado_events.3 }
 					}
-					if = {
-						limit = { NOT = { has_unit_leader = 1028 } }
-						create_corps_commander = {
-							name = "Azumi"
-							id = 1028
-							picture = "Portrait_generic_Azumi.dds"
-							traits = { Armor_Officer War_Hero}
-							skill = 3
-							attack_skill = 3
-							defense_skill = 3
-							planning_skill = 4
-							logistics_skill = 3
-						}
+					else = {
+						recruit_character = generic_azumi
 						hidden_effect = { country_event = senshado_events.2 }
 					}
 				}
-				8 = {
+				10 = {
 					if = { 
 						limit = { has_unit_leader = 1029 }
 						hidden_effect = { country_event = senshado_events.3 }
 					}
-					if = {
-						limit = { NOT = { has_unit_leader = 1029 } }
-						create_corps_commander = {
-							name = "Megumi"
-							id = 1029
-							picture = "Portrait_generic_Megumi.dds"
-							traits = { Armor_Officer War_Hero}
-							skill = 3
-							attack_skill = 4
-							defense_skill = 3
-							planning_skill = 3
-							logistics_skill = 3
-						}
+					else = {
+						recruit_character = generic_megumi
 						hidden_effect = { country_event = senshado_events.2 }
 					}
 				}
-				8 = {
+				10 = {
 					if = { 
 						limit = { has_unit_leader = 1030 }
 						hidden_effect = { country_event = senshado_events.3 }
 					}
-					if = {
-						limit = { NOT = { has_unit_leader = 1030 } }
-						create_corps_commander = {
-							name = "Rumi"
-							id = 1030
-							picture = "Portrait_generic_Rumi.dds"
-							traits = { Armor_Officer War_Hero}
-							skill = 3
-							attack_skill = 3
-							defense_skill = 3
-							planning_skill = 3
-							logistics_skill = 4
-						}
-						hidden_effect = { country_event = senshado_events.2 }
-					}
-				}
-				8 = {
-					if = { 
-						limit = { has_unit_leader = 1025 }
-						hidden_effect = { country_event = senshado_events.3 }
-					}
-					if = {
-						limit = { NOT = { has_unit_leader = 1025 } }
-						create_corps_commander = {
-							name = "Anzu Kadotani"
-							id = 1025
-							picture = "Portrait_generic_Anzu.dds"
-							traits = { Armor_Officer Organizer}
-							skill = 3
-							attack_skill = 3
-							defense_skill = 3
-							planning_skill = 4
-							logistics_skill = 3
-						}
-						hidden_effect = { country_event = senshado_events.2 }
-					}
-				}
-				8 = {
-					if = { 
-						limit = { has_unit_leader = 1026 }
-						hidden_effect = { country_event = senshado_events.3 }
-					}
-					if = {
-						limit = { NOT = { has_unit_leader = 1026 } }
-						create_corps_commander = {
-							name = "Momo Kawashima"
-							id = 1026
-							picture = "Portrait_generic_Momo.dds"
-							traits = { Armor_Officer Organizer}
-							skill = 3
-							attack_skill = 4
-							defense_skill = 4
-							planning_skill = 3
-							logistics_skill = 2
-						}
-						hidden_effect = { country_event = senshado_events.2 }
-					}
-				}
-				8 = {
-					if = { 
-						limit = { has_unit_leader = 1027 }
-						hidden_effect = { country_event = senshado_events.3 }
-					}
-					if = {
-						limit = { NOT = { has_unit_leader = 1027 } }
-						create_corps_commander = {
-							name = "Yuzu Koyama"
-							id = 1027
-							picture = "Portrait_generic_Yuzu.dds"
-							traits = { Armor_Officer Organizer}
-							skill = 3
-							attack_skill = 2
-							defense_skill = 4
-							planning_skill = 3
-							logistics_skill = 4
-						}
-						hidden_effect = { country_event = senshado_events.2 }
-					}
-				}
-				
-				8 = {
-					if = { 
-						limit = { has_unit_leader = 1031 }
-						hidden_effect = { country_event = senshado_events.3 }
-					}
-					if = {
-						limit = { NOT = { has_unit_leader = 1031 } }
-						create_corps_commander = {
-							name = "Reira Nakajima"
-							id = 1031
-							picture = "Portrait_generic_Reira.dds"
-							traits = { Armor_Officer }
-							skill = 3
-							attack_skill = 4
-							defense_skill = 3
-							planning_skill = 3
-							logistics_skill = 3
-						}
-						hidden_effect = { country_event = senshado_events.2 }
-					}
-				}
-				8 = {
-					if = { 
-						limit = { has_unit_leader = 1032 }
-						hidden_effect = { country_event = senshado_events.3 }
-					}
-					if = {
-						limit = { NOT = { has_unit_leader = 1032 } }
-						create_corps_commander = {
-							name = "Keiko Hoshino"
-							id = 1032
-							picture = "Portrait_generic_Keiko.dds"
-							traits = { Armor_Officer }
-							skill = 3
-							attack_skill = 3
-							defense_skill = 4
-							planning_skill = 3
-							logistics_skill = 3
-						}
-						hidden_effect = { country_event = senshado_events.2 }
-					}
-				}
-				8 = {
-					if = { 
-						limit = { has_unit_leader = 1033 }
-						hidden_effect = { country_event = senshado_events.3 }
-					}
-					if = {
-						limit = { NOT = { has_unit_leader = 1033 } }
-						create_corps_commander = {
-							name = "Maria Suzuki"
-							id = 1033
-							picture = "Portrait_generic_Maria.dds"
-							traits = { Armor_Officer }
-							skill = 3
-							attack_skill = 3
-							defense_skill = 3
-							planning_skill = 4
-							logistics_skill = 3
-						}
-						hidden_effect = { country_event = senshado_events.2 }
-					}
-				}
-				8 = {
-					if = { 
-						limit = { has_unit_leader = 1034 }
-						hidden_effect = { country_event = senshado_events.3 }
-					}
-					if = {
-						limit = { NOT = { has_unit_leader = 1034 } }
-						create_corps_commander = {
-							name = "Muuton Tsuchiya"
-							id = 1034
-							picture = "Portrait_generic_Muuton.dds"
-							traits = { Armor_Officer }
-							skill = 3
-							attack_skill = 3
-							defense_skill = 3
-							planning_skill = 3
-							logistics_skill = 4
-						}
+					else = {
+						recruit_character = generic_rumi
 						hidden_effect = { country_event = senshado_events.2 }
 					}
 				}
@@ -503,7 +274,366 @@ senshado_decisions = {
 				var = ssdp
 				value = -300
 			}
-			
+		}
+		ai_will_do = {
+			factor = 0.1
+		}
+	}
+
+	recruit_army_character_2 = {
+		days_re_enable = 30
+		custom_cost_trigger = { check_variable = { gold > 14.9 } check_variable = { political_power > 49.9 }  }
+		custom_cost_text = generic_decision_tooltip_3
+		complete_effect = {
+			random_list = {
+				8 = {
+					if = { 
+						limit = { OR = { has_unit_leader = 1098 has_unit_leader = 1024 OHI = { exists = yes } } }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_erwin
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+				8 = {
+					if = { 
+						limit = { has_unit_leader = 1099 }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_caesar
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+				8 = {
+					if = { 
+						limit = { has_unit_leader = 1100 }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_saemonza
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+				8 = {
+					if = { 
+						limit = { has_unit_leader = 1101 }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_oryou
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+				8 = {
+					if = { 
+						limit = { OR = { has_unit_leader = 1031 OLE = { exists = yes } } }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_reira
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+				8 = {
+					if = { 
+						limit = { has_unit_leader = 1032 }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_keiko
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+				8 = {
+					if = { 
+						limit = { has_unit_leader = 1033 }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_maria
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+				8 = {
+					if = { 
+						limit = { has_unit_leader = 1102 }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_muuton
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+				8 = {
+					if = { 
+						limit = { OR = { has_unit_leader = 1106 ORA = { exists = yes } } }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_azusa
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+				8 = {
+					if = { 
+						limit = { has_unit_leader = 1107 }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_ayumi
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+				8 = {
+					if = { 
+						limit = { has_unit_leader = 1108 }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_aya
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+				8 = {
+					if = { 
+						limit = { has_unit_leader = 1109 }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_karina
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+				8 = {
+					if = { 
+						limit = { has_unit_leader = 1110 }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_yuuki
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+				8 = {
+					if = { 
+						limit = { has_unit_leader = 1111 }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_saki
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+			}
+			add_to_variable = { var = political_power value = -50 }
+			add_to_variable = { var = gold value = -15 }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_army_size = {
+					size < 7
+				}
+				factor = 0.1
+			}
+			modifier = {
+				has_army_size = {
+					size > 10
+				}
+				factor = 3
+			}
+			modifier = {
+				has_army_size = {
+					size > 40
+				}
+				factor = 6
+			}
+		}
+	}
+
+	recruit_army_character_3 = {
+		days_re_enable = 30
+		custom_cost_trigger = { check_variable = { gold > 14.9 } check_variable = { political_power > 49.9 }  }
+		custom_cost_text = generic_decision_tooltip_3
+		complete_effect = {
+			random_list = {
+				8 = {
+					if = { 
+						limit = { OR = { has_unit_leader = 1006 OSH = { exists = yes } } }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_ogin
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+				8 = {
+					if = { 
+						limit = { has_unit_leader = 1007 }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_rum
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+				8 = {
+					if = { 
+						limit = { has_unit_leader = 1008 }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_murakami
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+				
+				8 = {
+					if = { 
+						limit = { OR = { has_unit_leader = 1009 } }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_flint
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+				8 = {
+					if = { 
+						limit = { has_unit_leader = 1010 }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_cutlass
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+				8 = {
+					if = { 
+						limit = { OR = { has_unit_leader = 1022 ODU = { exists = yes } } }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_noriko
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+				8 = {
+					if = { 
+						limit = { has_unit_leader = 1103 }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_taeko
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+				8 = {
+					if = { 
+						limit = { has_unit_leader = 1104 }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_shinobu
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+				8 = {
+					if = { 
+						limit = { has_unit_leader = 1105 }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_akebi
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+				8 = {
+					if = { 
+						limit = { OR = { has_unit_leader = 1025 OTU = { exists = yes } } }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_anzu
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+				8 = {
+					if = { 
+						limit = { has_unit_leader = 1026 }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_momo
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+				8 = {
+					if = { 
+						limit = { has_unit_leader = 1027 }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_yuzu
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+				8 = {
+					if = { 
+						limit = { OR = { has_unit_leader = 1115 OAN = { exists = yes } } }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_mai
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+				8 = {
+					if = { 
+						limit = { has_unit_leader = 1116 }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_aoi
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+				8 = {
+					if = { 
+						limit = { has_unit_leader = 1117 }
+						hidden_effect = { country_event = senshado_events.3 }
+					}
+					else = {
+						recruit_character = generic_taki
+						hidden_effect = { country_event = senshado_events.2 }
+					}
+				}
+			}
+			add_to_variable = { var = political_power value = -50 }
+			add_to_variable = { var = gold value = -15 }
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			has_army_size = {
+				size < 7
+			}
+			factor = 0.1
+		}
+		modifier = {
+			has_army_size = {
+				size > 10
+			}
+			factor = 3
+		}
+		modifier = {
+			has_army_size = {
+				size > 40
+			}
+			factor = 6
 		}
 	}
 }

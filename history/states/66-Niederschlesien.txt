@@ -26,7 +26,6 @@ state={
 			industrial_complex = 1
 			air_base = 6
 		}
-		add_core_of = BON
 		add_core_of = KGA
 	}
 

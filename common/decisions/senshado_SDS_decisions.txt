@@ -1,0 +1,339 @@
+sds_civil_war = {
+	sds_senshado_division_wartime = {
+		allowed = { tag = SDS }
+		visible = { OR = { AND = { has_country_flag = SDS_ENABLE_SENSHADO_DIVISION_RECRUIT has_civil_war = yes } is_debug = yes } }
+	}
+}
+
+sds_control_zone = {
+	#获取南方前共和党人的支持
+	sds_grant_support_southern_republicans = {
+		allowed = { tag = SDS }
+		visible = { OR = { AND = { has_country_flag = SDS_LEGITIMACY_ENABLE NOT = { has_country_flag = SDS_CIVIL_WAR_BEGAN } } is_debug = yes } }
+		days_remove = 20
+		fire_only_once = yes
+		custom_cost_trigger = { check_variable = { political_power > 19.9 } }
+		custom_cost_text = sds_tooltip17
+		complete_effect = { hidden_effect = { add_political_power = -20 } }
+		remove_effect = {
+			set_country_flag = SDS_GRANT_SUPPORT_SOUTHERN_1
+			custom_effect_tooltip = sds_tooltip18
+			add_to_variable = { variable_SDS_legitimacy = 3 }
+		}
+	}
+	#获取南方前共和党人的支持2
+	sds_grant_support_southern_republicans_2 = {
+		allowed = { tag = SDS }
+		visible = { OR = { AND = { has_country_flag = SDS_LEGITIMACY_ENABLE has_country_flag = SDS_GRANT_SUPPORT_SOUTHERN_1 NOT = { has_country_flag = SDS_CIVIL_WAR_BEGAN } } is_debug = yes } }
+		days_remove = 20
+		fire_only_once = yes
+		custom_cost_trigger = { check_variable = { political_power > 19.9 } }
+		custom_cost_text = sds_tooltip17
+		complete_effect = { hidden_effect = { add_political_power = -20 } }
+		remove_effect = {
+			set_country_flag = SDS_GRANT_SUPPORT_SOUTHERN_2
+			custom_effect_tooltip = sds_tooltip19
+		}
+	}
+	#获取五大湖区的支持
+	sds_grant_support_great_lake = {
+		allowed = { tag = SDS }
+		visible = { OR = { AND = { has_country_flag = SDS_LEGITIMACY_ENABLE NOT = { has_country_flag = SDS_CIVIL_WAR_BEGAN } NOT = { has_country_flag = SDS_FULL_COOP_WITH_COMMUNISM } } is_debug = yes } }
+		days_remove = 20
+		fire_only_once = yes
+		custom_cost_trigger = { check_variable = { political_power > 19.9 } }
+		custom_cost_text = sds_tooltip17
+		complete_effect = { hidden_effect = { add_political_power = -20 } }
+		remove_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			set_country_flag = SDS_GRANT_SUPPORT_NORTHERN_1
+			custom_effect_tooltip = sds_tooltip19
+		}
+	}
+	#获取五大湖区的支持2
+	sds_grant_support_great_lake_2 = {
+		allowed = { tag = SDS }
+		visible = { OR = { AND = { has_country_flag = SDS_GRANT_SUPPORT_NORTHERN_1 has_country_flag = SDS_LEGITIMACY_ENABLE NOT = { has_country_flag = SDS_CIVIL_WAR_BEGAN } NOT = { has_country_flag = SDS_FULL_COOP_WITH_COMMUNISM } } is_debug = yes } }
+		days_remove = 20
+		fire_only_once = yes
+		custom_cost_trigger = { check_variable = { political_power > 19.9 } }
+		custom_cost_text = sds_tooltip17
+		complete_effect = { hidden_effect = { add_political_power = -20 } }
+		remove_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+			set_country_flag = SDS_GRANT_SUPPORT_NORTHERN_2
+			393 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			393 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#获取五大湖区的支持3
+	sds_grant_support_great_lake_3 = {
+		allowed = { tag = SDS }
+		visible = { OR = { AND = { has_country_flag = SDS_GRANT_SUPPORT_NORTHERN_2 has_country_flag = SDS_LEGITIMACY_ENABLE NOT = { has_country_flag = SDS_CIVIL_WAR_BEGAN } NOT = { has_country_flag = SDS_FULL_COOP_WITH_COMMUNISM } } is_debug = yes } }
+		days_remove = 20
+		fire_only_once = yes
+		custom_cost_trigger = { check_variable = { political_power > 19.9 } }
+		custom_cost_text = sds_tooltip17
+		complete_effect = { hidden_effect = { add_political_power = -20 } }
+		remove_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
+			custom_effect_tooltip = sds_tooltip20
+			add_to_variable = { variable_SDS_legitimacy = 20 }
+		}
+	}
+	#获取美国财阀的资金支持
+	sds_grant_support_plutocrats = {
+		allowed = { tag = SDS }
+		visible = { OR = { AND = { has_country_flag = SDS_LEGITIMACY_ENABLE NOT = { has_country_flag = SDS_CIVIL_WAR_BEGAN } } is_debug = yes } }
+		days_remove = 20
+		fire_only_once = yes
+		custom_cost_trigger = { check_variable = { political_power > 19.9 } }
+		custom_cost_text = sds_tooltip17
+		complete_effect = { hidden_effect = { add_political_power = -20 } }
+		remove_effect = {
+			set_country_flag = SDS_GRANT_SUPPORT_PLUTOCRATS_1
+			366 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			365 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#获取美国财阀的资金支持2
+	sds_grant_support_plutocrats_2 = {
+		allowed = { tag = SDS }
+		visible = { OR = { AND = { has_country_flag = SDS_GRANT_SUPPORT_PLUTOCRATS_1 has_country_flag = SDS_LEGITIMACY_ENABLE NOT = { has_country_flag = SDS_CIVIL_WAR_BEGAN } } is_debug = yes } }
+		days_remove = 20
+		fire_only_once = yes
+		custom_cost_trigger = { check_variable = { political_power > 19.9 } }
+		custom_cost_text = sds_tooltip17
+		complete_effect = { hidden_effect = { add_political_power = -20 } }
+		remove_effect = {
+			set_country_flag = SDS_GRANT_SUPPORT_PLUTOCRATS_2
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+			custom_effect_tooltip = sds_tooltip21
+		}
+	}
+	#获取美国财阀的资金支持3
+	sds_grant_support_plutocrats_3 = {
+		allowed = { tag = SDS }
+		visible = { OR = { AND = { has_country_flag = SDS_GRANT_SUPPORT_PLUTOCRATS_2 has_country_flag = SDS_LEGITIMACY_ENABLE NOT = { has_country_flag = SDS_CIVIL_WAR_BEGAN } } is_debug = yes } }
+		days_remove = 20
+		fire_only_once = yes
+		custom_cost_trigger = { check_variable = { political_power > 19.9 } }
+		custom_cost_text = sds_tooltip17
+		complete_effect = { hidden_effect = { add_political_power = -20 } }
+		remove_effect = {
+			set_country_flag = SDS_GRANT_SUPPORT_PLUTOCRATS_3
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			custom_effect_tooltip = sds_tooltip22
+		}
+	}
+	#获取美国财阀的资金支持4
+	sds_grant_support_plutocrats_4 = {
+		allowed = { tag = SDS }
+		visible = { OR = { AND = { has_country_flag = SDS_GRANT_SUPPORT_PLUTOCRATS_3 has_country_flag = SDS_FULL_COOP_WITH_PLUTOCRATS has_country_flag = SDS_LEGITIMACY_ENABLE NOT = { has_country_flag = SDS_CIVIL_WAR_BEGAN } } is_debug = yes } }
+		days_remove = 20
+		fire_only_once = yes
+		custom_cost_trigger = { check_variable = { political_power > 19.9 } }
+		custom_cost_text = sds_tooltip17
+		complete_effect = { hidden_effect = { add_political_power = -20 } }
+		remove_effect = {
+			set_country_flag = SDS_GRANT_SUPPORT_PLUTOCRATS_4
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.25
+			}
+			custom_effect_tooltip = sds_tooltip23
+			add_to_variable = {
+				variable_SDS_legitimacy = -35
+			}
+		}
+	}
+	#征求前战车联盟人员的支持
+	sds_grant_support_senshado = {
+		allowed = { tag = SDS }
+		visible = { OR = { AND = { has_country_flag = SDS_LEGITIMACY_ENABLE NOT = { has_country_flag = SDS_CIVIL_WAR_BEGAN NOT = { has_country_flag = SDS_GRANT_SUPPORT_MEMBER_1 } } } is_debug = yes } }
+		days_remove = 20
+		fire_only_once = yes
+		custom_cost_trigger = { check_variable = { political_power > 19.9 } }
+		custom_cost_text = sds_tooltip17
+		complete_effect = { hidden_effect = { add_political_power = -20 } }
+		remove_effect = {
+			set_country_flag = SDS_GRANT_SUPPORT_MEMBER_1
+			add_stability = -0.1
+			custom_effect_tooltip = sds_tooltip24
+		}
+	}
+	#征求前战车联盟人员的支持2
+	sds_grant_support_senshado_2 = {
+		allowed = { tag = SDS }
+		visible = { OR = { AND = { has_country_flag = SDS_LEGITIMACY_ENABLE NOT = { has_country_flag = SDS_CIVIL_WAR_BEGAN NOT = { has_country_flag = SDS_GRANT_SUPPORT_MEMBER_1 } } } is_debug = yes } }
+		days_remove = 20
+		fire_only_once = yes
+		custom_cost_trigger = { check_variable = { political_power > 19.9 } }
+		custom_cost_text = sds_tooltip17
+		complete_effect = { hidden_effect = { add_political_power = -20 } }
+		remove_effect = {
+			set_country_flag = SDS_GRANT_SUPPORT_MEMBER_2
+			add_stability = -0.1
+			custom_effect_tooltip = sds_tooltip25
+		}
+	}
+	#征求前战车联盟人员的支持3
+	sds_grant_support_senshado_3 = {
+		allowed = { tag = SDS }
+		visible = { OR = { AND = { has_country_flag = SDS_LEGITIMACY_ENABLE NOT = { has_country_flag = SDS_CIVIL_WAR_BEGAN NOT = { has_country_flag = SDS_GRANT_SUPPORT_MEMBER_2 } } } is_debug = yes } }
+		days_remove = 20
+		fire_only_once = yes
+		custom_cost_trigger = { check_variable = { political_power > 19.9 } }
+		custom_cost_text = sds_tooltip17
+		complete_effect = { hidden_effect = { add_political_power = -20 } }
+		remove_effect = {
+			set_country_flag = SDS_GRANT_SUPPORT_MEMBER_3
+			add_stability = -0.1
+			custom_effect_tooltip = sds_tooltip26
+		}
+	}
+}
+sds_government = {
+	sds_debug = {
+		allowed = { tag = SDS }
+		visible = { is_debug = yes }
+		complete_effect = {
+			country_event = { id = Saunders.22 }
+		}
+	}
+}
+
+sds_government = {
+	#民权危机
+	sds_human_right_crisis  = {
+		allowed = { tag = SDS }
+		visible = { OR = { is_debug = yes has_country_flag = SDS_STARTED_HUMAN_RIGHT_CRISIS } }
+		activation = { has_country_flag = SDS_STARTED_HUMAN_RIGHT_CRISIS }                        
+		available = {
+			has_civil_war = no
+			custom_trigger_tooltip = {
+				tooltip = sds_tooltip3
+			}
+		}
+		is_good = no
+		days_mission_timeout = 365
+		complete_effect = {
+			add_stability = 0.3
+		}
+		timeout_effect = {                    
+            add_stability = -0.3
+		}
+	}
+}	
+
+sds_legitimacy = {
+	sds_debug_add_legitimacy = {
+		allowed = { tag = SDS }
+		visible = { is_debug = yes }
+		complete_effect = {
+			add_to_variable = { variable_SDS_legitimacy = 20 }
+		}
+	}
+
+	#争取其他国家支持
+	sds_legitimacy_earn_support = {
+		allowed = { tag = SDS }
+		visible = { OR = { is_debug = yes has_country_flag = SDS_LEGITIMACY_ENABLE } }
+		days_re_enable = 90
+		days_remove = 10
+		custom_cost_trigger = {
+			check_variable = { political_power > 9.9 }
+	   	}
+		custom_cost_text = sds_tooltip11
+		complete_effect = {
+			hidden_effect = { add_political_power = -10 }
+		}
+		remove_effect = {
+			custom_effect_tooltip = sds_tooltip16
+			add_to_variable = { variable_SDS_legitimacy = 3 }
+		}
+	}
+
+	#电视与广播的宣传
+	sds_legitimacy_propaganda = {
+		allowed = { tag = SDS }
+		visible = { OR = { is_debug = yes has_country_flag = SDS_LEGITIMACY_ENABLE } }
+		days_re_enable = 180
+		days_remove = 20
+		custom_cost_trigger = {
+			check_variable = { political_power > 29.9 }
+	   	}
+		custom_cost_text = sds_tooltip12
+		complete_effect = {
+			hidden_effect = { add_political_power = -30 }
+		}
+		remove_effect = {
+			custom_effect_tooltip = sds_tooltip15
+			add_to_variable = { variable_SDS_legitimacy = 7 }
+		}
+	}
+
+	#邀请战斗英雄电视演讲
+	sds_legitimacy_hero_speech = {
+		allowed = { tag = SDS }
+		visible = { OR = { is_debug = yes has_country_flag = SDS_LEGITIMACY_ENABLE } }
+		days_re_enable = 270
+		days_remove = 30
+		custom_cost_trigger = {
+			check_variable = { political_power > 59.9 }
+	   	}
+		custom_cost_text = sds_tooltip13
+		complete_effect = {
+			hidden_effect = { add_political_power = -60 }
+		}
+		remove_effect = {
+			custom_effect_tooltip = sds_tooltip14
+			add_to_variable = { variable_SDS_legitimacy = 15 }
+		}
+	}
+}
+
+

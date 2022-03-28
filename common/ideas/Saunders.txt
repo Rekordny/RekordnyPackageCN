@@ -5,9 +5,8 @@ ideas = {
 			allowed = { tag = SDS }
 			allowed_civil_war = { always = no }
 			modifier = {
-				stability_factor = -0.25
-				war_support_factor = -0.15
-				political_power_cost = -0.1
+				stability_factor = -0.15
+				political_power_cost = 0.15
 			}
 		}
 
@@ -16,9 +15,8 @@ ideas = {
 			allowed = { tag = SDS }
 			allowed_civil_war = { always = no }
 			modifier = {
-				stability_factor = -0.1
-				war_support_factor = -0.3
-				conscription_factor = -0.2
+				war_support_factor = -0.25
+				conscription = -0.003
 			}
 		}
 
@@ -27,30 +25,27 @@ ideas = {
 			allowed = { tag = SDS }
 			allowed_civil_war = { always = no }
 			modifier = {
-				stability_factor = -0.1
-				political_power_cost = -0.15
-				conscription_factor = -0.2
+				stability_weekly_factor = -0.0025
+				political_power_cost = 0.3
 			}
 		}
 
-		#战斗力严重低下的军队
+		#被遗忘的军队
 		SDS_severely_underpowered_army = {
 			allowed = { tag = SDS }
 			allowed_civil_war = { always = no }
 			modifier = {
-				experience_gain_air = -0.1
-				experience_gain_army = -0.1
-				experience_gain_navy = -0.1
-				experience_loss_factor = 0.2
+				experience_gain_factor = -0.2
+				experience_gain_army_unit_factor = -0.2
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
 				training_time_factor = 0.1
-				air_accidents_factor = 0.15
-				air_ace_generation_chance_factor = -0.45
-				air_night_penalty = 0.3
+				land_doctrine_cost_factor = 1
 			}
 		}
 
 		#严重的经济危机
-		SDS_severe_economic_crisis  = {
+		SDS_severe_economic_crisis = {
 			allowed = { tag = SDS }
 			allowed_civil_war = { always = no }
 			modifier = {
@@ -59,6 +54,79 @@ ideas = {
 				production_speed_buildings_factor = -0.3
 				production_factory_efficiency_gain_factor = -0.2
 				production_factory_max_efficiency_factor = -0.1
+				fascism_drift = 0.003
+				communism_drift = 0.003
+			}
+		}
+
+		#罢工
+		SDS_workstrike = {
+			allowed = { tag = SDS }
+			allowed_civil_war = { always = no }
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.2
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+			}
+		}
+
+		#战时经济制度
+		SDS_war_time_economy = {
+			allowed = { tag = SDS }
+			allowed_civil_war = { always = no }
+			cancel = { has_civil_war = no }
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = -0.1
+			}
+		}
+
+		#心理战
+		SDS_psychological_warfare = {
+			allowed = { tag = SDS }
+			allowed_civil_war = { always = no }
+			cancel = { has_civil_war = no }
+			modifier = {
+				army_org = 0.1
+				army_org_regain = 0.1
+			}
+		}
+
+		#财阀的同情者
+		SDS_sympathizers_of_the_plutocracy = {
+			allowed = { tag = SDS }
+			allowed_civil_war = { always = no }
+			cancel = { has_civil_war = no }
+			modifier = {
+			}
+			targeted_modifier = {
+				tag = GBT
+				attack_bonus_against = -0.1
+			}
+		}
+
+		#战车道大援助
+		SDS_senshado_grand_assistance = {
+			allowed = { tag = SDS }
+			allowed_civil_war = { always = no }
+			cancel = { has_civil_war = no }
+			modifier = {
+				country_resource_oil = 20
+			}
+		}
+
+		#GBT：石油短缺
+		GBT_oil_shortage = {
+			allowed = { tag = GBT }
+			allowed_civil_war = { always = no }
+			cancel = { has_civil_war = no }
+			modifier = {
+				country_resource_cost_oil = 40
+				army_speed_factor = -0.1
+				production_speed_buildings_factor = -0.1
 			}
 		}
 	}

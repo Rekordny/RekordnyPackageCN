@@ -1,4 +1,179 @@
 spriteTypes = {	
+	SpriteType = {
+		name = "GFX_radar_identify_medium"
+		texturefile = "gfx/interface/technologies/radar_identify.dds"
+	}
+	SpriteType = {
+		name = "GFX_radar_imaging_medium"
+		texturefile = "gfx/interface/technologies/radar_imaging.dds"
+	}
+	SpriteType = {
+		name = "GFX_mordern_weapon_control_system_medium"
+		texturefile = "gfx/interface/technologies/mordern_weapon_control_system.dds"
+	}
+	SpriteType = {
+		name = "GFX_radar_network_medium"
+		texturefile = "gfx/interface/technologies/radar_network.dds"
+	}
+	SpriteType = {
+		name = "GFX_PAR_tech_medium"
+		texturefile = "gfx/interface/technologies/PAR_tech.dds"
+	}
+	SpriteType = {
+		name = "GFX_ground_penetrating_radar_medium"
+		texturefile = "gfx/interface/technologies/ground_penetrating_radar.dds"
+	}
+	SpriteType = {
+		name = "GFX_pulse_radar_medium"
+		texturefile = "gfx/interface/technologies/pulse_radar.dds"
+	}	
+	SpriteType = {
+		name = "GFX_radar_system_medium"
+		texturefile = "gfx/interface/technologies/centimetric_radar.dds"
+	}	
+	SpriteType = {
+		name = "GFX_radar_system_2_medium"
+		texturefile = "gfx/interface/technologies/improved_centimetric_radar.dds"
+	}
+	SpriteType = {
+		name = "GFX_radar_system_3_medium"
+		texturefile = "gfx/interface/technologies/advanced_centimetric_radar.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_encryption_medium"
+		texturefile = "gfx/interface/technologies/encryption.dds"
+	}
+	SpriteType = {
+		name = "GFX_encryption_2_medium"
+		texturefile = "gfx/interface/technologies/encryption_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_network_medium"
+		texturefile = "gfx/interface/technologies/network.dds"
+	}
+	SpriteType = {
+		name = "GFX_network_2_medium"
+		texturefile = "gfx/interface/technologies/network_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_network_3_medium"
+		texturefile = "gfx/interface/technologies/network_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_network_4_medium"
+		texturefile = "gfx/interface/technologies/network_4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_micro_processor_medium"
+		texturefile = "gfx/interface/technologies/micro_processor.dds"
+	}
+	SpriteType = {
+		name = "GFX_micro_processor_2_medium"
+		texturefile = "gfx/interface/technologies/micro_processor_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_micro_processor_3_medium"
+		texturefile = "gfx/interface/technologies/micro_processor_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_micro_processor_4_medium"
+		texturefile = "gfx/interface/technologies/micro_processor_4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_infantry_at3_medium"
+		texturefile = "gfx/interface/technologies/infantry_at3.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_at4_medium"
+		texturefile = "gfx/interface/technologies/infantry_at4.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_aa_medium"
+		texturefile = "gfx/interface/technologies/infantry_aa.dds"
+	}	
+	SpriteType = {
+		name = "GFX_infantry_aa2_medium"
+		texturefile = "gfx/interface/technologies/infantry_aa2.dds"
+	}
+	SpriteType = {
+		name = "GFX_support_weapons5_medium"
+		texturefile = "gfx/interface/technologies/support_weapons5.dds"
+	}
+	SpriteType = {
+		name = "GFX_support_weapons6_medium"
+		texturefile = "gfx/interface/technologies/support_weapons6.dds"
+	}
+	SpriteType = {
+		name = "GFX_uniform_medium"
+		texturefile = "gfx/interface/technologies/uniform.dds"
+	}
+	SpriteType = {
+		name = "GFX_uniform_2_medium"
+		texturefile = "gfx/interface/technologies/uniform_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_uniform_3_medium"
+		texturefile = "gfx/interface/technologies/uniform_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_uniform_4_medium"
+		texturefile = "gfx/interface/technologies/uniform_4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KGA_mordern_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/kga_mordern_infantry_weapons.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KGA_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/kga_advanced_infantry_weapons.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KGA_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/kga_improved_infantry_weapons.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_KGA_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/kga_basic_equipment.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KGA_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/kga_infantry_weapons1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SDS_mordern_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/sds_mordern_infantry_weapons.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SDS_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/sds_advanced_infantry_weapons.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SDS_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/sds_improved_infantry_weapons.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SDS_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/sds_basic_equipment.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SDS_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/sds_infantry_weapons1.dds"
+	}
+	
 	spriteType = {
 		name = "GFX_food_medium"
 		texturefile = "gfx/interface/technologies/food.dds"

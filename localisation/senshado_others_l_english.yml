@@ -8,21 +8,23 @@
  wage_modifier:0 "army expenditure"
 
 #省份指令GUI
- PROVINCE_GOVERNOR_ADD_STEEL:0 "使用§G80 §!£GFX_moeny §G20 §!£GFX_gold_icon在当前省份采掘 §Y5 钢铁§! \n 获得为期§Y50§!日的 §Y发掘国土资源§! ，其效果为 (每日政治点数增长: §R-0.3§!, 消费品工厂: §Y5%§!)。"
- PROVINCE_GOVERNOR_ADD_ALUMINUM:0 "使用 §G80 §!£GFX_moeny §G20 §!£GFX_gold_icon在当前省份采掘 §Y4 铝§! \n 获得为期§Y50§!日的 §Y发掘国土资源§! ，其效果为 (每日政治点数增长: §R-0.3§!, 消费品工厂: §Y5%§!)。"
- PROVINCE_GOVERNOR_ADD_TUNGSTEN:0 "使用§G80 §!£GFX_moeny §G20 §!£GFX_gold_icon在当前省份采掘 §Y4 钨§! \n 获得为期§Y50§!日的 §Y发掘国土资源§! ，其效果为 (每日政治点数增长: §R-0.3§!, 消费品工厂: §Y5%§!)。"
- PROVINCE_GOVERNOR_ADD_CHROMIUM:0 "使用§G80 §!£GFX_moeny §G20 §!£GFX_gold_icon在当前省份采掘 §Y3 铬§! \n 获得为期§Y50§!日的 §Y发掘国土资源§! ，其效果为 (每日政治点数增长: §R-0.3§!, 消费品工厂: §Y5%§!)。"
- PROVINCE_GOVERNOR_SENSHADO:0 "在国内为战车道学院招生 \n§G获得点数为目前拥有的战车道学院的10倍§! \n 获得为期§R学院数量20倍§!天数的 §Y战车道学院招生期§! ，其效果为 (每日政治点数增长: §R-0.1§!)。"
- PROVINCE_GOVERNOR_ADD_MANPOWER:0 "使用£GFX_moeny在当前省份根据人口招募战车道志愿者 \n§R花费点数和获得人力与省份人口成正比§! \n 获得为期§Y120§!日的 §Y招募战车道志愿者§! ，其效果为 (每日政治点数增长: §R-0.3§!)。"
+ PROVINCE_GOVERNOR_ADD_STEEL:0 "Consume §G80 §!£GFX_moeny §G20 §!£GFX_gold_icon to extract §Y5 steel in current province§! \n acheive §Y50§!days §YDiscovering Resources§! (daily political point: §R-0.3§!, consumer factory: §Y5%§!)"
+ PROVINCE_GOVERNOR_ADD_ALUMINUM:0 "Consume §G80 §!£GFX_moeny §G20 §!£GFX_gold_icon to extract §Y4 aluminum in current province§! \n acheive §Y50§!days §YDiscovering Resources§! (daily political point: §R-0.3§!, consumer factory: §Y5%§!)"
+ PROVINCE_GOVERNOR_ADD_TUNGSTEN:0 "Consume §G80 §!£GFX_moeny §G20 §!£GFX_gold_icon to extract §Y4 tungsten in current province§! \n acheive §Y50§!days §YDiscovering Resources§! (daily political point: §R-0.3§!, consumer factory: §Y5%§!)"
+ PROVINCE_GOVERNOR_ADD_CHROMIUM:0 "Consume §G80 §!£GFX_moeny §G20 §!£GFX_gold_icon to extract §Y3 chromium in current province§! \n acheive §Y50§!days §YDiscovering Resources§! (daily political point: §R-0.3§!, consumer factory: §Y5%§!)"
 
 #通用决议GenericDecisions
  senshado_decisions:0 "Sensha-do Decisions"
  buy_political_points:0 "Trade political point"
  generic_decision_tooltip_1:0 "300 £GFX_money "
- generic_decision_tooltip_1_blocked:0 "300 £GFX_money "
- recruit_army_character:0 "Recruit army character"
+ generic_decision_tooltip_1_blocked:0 "§R300§! £GFX_money "
+ recruit_army_character:0 "Recruit army character and theorist"
+ recruit_army_character_2:0 "Recruit army character and high command"
+ recruit_army_character_3:0 "Recruit army character and high command"
  generic_decision_tooltip_2:0 "40 £GFX_gold_icon 3 £civ_factory"
- generic_decision_tooltip_2_blocked:0 "40 £GFX_gold_icon 3 £civ_factory"
+ generic_decision_tooltip_2_blocked:0 "§R40§! £GFX_gold_icon 3 £civ_factory"
+ generic_decision_tooltip_3:0 "15 £GFX_gold_icon 50 £GFX_pol_power_icon"
+ generic_decision_tooltip_3_blocked:0 "§R15§! £GFX_gold_icon §R50§! £GFX_pol_power_icon"
  invest_gold_ore_mining:0 "Invest gold ore mining"
  generic_decision_tooltip_3:0 "excavation LV5: output §Y150 gold§!£GFX_gold_icon"
  generic_decision_tooltip_4:0 "excavation LV4: output§Y140 gold§!£GFX_gold_icon"
@@ -34,9 +36,6 @@
 #科研分享命名ResearchGroup
  bcf_pra_research_name:0 "Pravda-BCFreedom cooperate research"
 
-#将领特质GeneralNature
- activist:0 "activist"
- excessive_kindness:0 "excessive kindness"
-
-#领导人特质LeaderNature
+#全局关系modifier
+old_senshado_allies:0 "Old Senshado allies"
  

@@ -1,0 +1,58 @@
+#统计并更新合法度，并更新效果
+edit_legitimacy_daily = {
+	set_variable = { sds_legacy_increase_base = modifier@SDS_legitimacy_daily_increase_modifier }
+	add_to_variable = {
+		variable_SDS_legitimacy = sds_legacy_increase_base
+	}
+	if = { 
+		limit = { check_variable = { variable_SDS_legitimacy < 0 } } 
+		set_variable = { variable_SDS_legitimacy = 0 }
+	}
+	if = { 
+		limit = { check_variable = { variable_SDS_legitimacy > 100 } } 
+		set_variable = { variable_SDS_legitimacy = 100 }
+	}
+	set_variable = {
+		sds_legitimacy_daily_pp = variable_SDS_legitimacy
+	}
+	add_to_variable = {
+		sds_legitimacy_daily_pp = -65
+	}
+	divide_variable = {
+		sds_legitimacy_daily_pp = 100
+	}
+	add_political_power = sds_legitimacy_daily_pp
+	#因为战争支持度和稳定度一样变化所以用一个值
+	set_variable = {
+		sds_legitimacy_daily_stability = sds_legitimacy_daily_pp
+	}
+	multiply_variable = {
+		sds_legitimacy_daily_stability = 2
+	}
+	if = {
+		limit = { check_variable = { sds_legitimacy_daily_stability > 0 } }
+		divide_variable = {
+			sds_legitimacy_daily_stability = 2
+		}
+	}
+	add_stability = sds_legitimacy_daily_stability
+	add_war_support = sds_legitimacy_daily_stability
+	set_variable = {
+		sds_legitimacy_daily_tax = sds_legitimacy_daily_pp
+	}
+	if = {
+		limit = { check_variable = { sds_legitimacy_daily_tax < 0 } }
+		set_variable = {
+			sds_legitimacy_daily_tax = 0
+		}
+	}
+	if = {
+		limit = { check_variable = { sds_legitimacy_daily_tax > 0 } }
+		divide_variable = {
+			sds_legitimacy_daily_tax = 2
+		}
+		add_to_variable = {
+			gold = sds_legitimacy_daily_tax
+		}
+	}
+}

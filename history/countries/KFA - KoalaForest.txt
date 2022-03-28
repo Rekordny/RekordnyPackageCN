@@ -8,18 +8,17 @@ set_research_slots = 5
 set_convoys = 20
 
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1933.3.5"
+	ruling_party = democratic
+	last_election = "1972.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
-set_popularities = {
-	democratic = 25
-	fascism = 25
-	communism = 25
-	neutrality = 25
-}
-
 recruit_character = KFA_Wallaby
+set_popularities = {
+	democratic = 49
+	fascism = 6
+	communism = 22
+	neutrality = 23
+}
 
 

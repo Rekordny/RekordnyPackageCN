@@ -1,55 +1,33 @@
 characters={
-	WAF_={
-		name="Lucas Taylor"
+	WAF_commission={
+		name="Waffle Commission"
 		portraits={
 			civilian={
-				large="gfx/leaders/WAF/0.dds"
+				large="gfx/leaders/WAF/Portrait_WAF_Commission.dds"
 			}
 		}
 		country_leader={
-			ideology=moderatism
-			expire="1965.1.1.1"
+			desc="She is the best"
+			ideology=conservatism
+			expire="2000.1.1.1"
 			id=-1
 		}
-	}
-	WAF_jim_taylor={
-		name="Jim Taylor"
-		portraits={
-			civilian={
-				large="GFX_portrait_europe_generic_6"
-			}
-		}
 		country_leader={
-			ideology=liberalism
-			traits={ captain_of_industry }
-			expire="1977.9.6.12"
-			id=-1
-		}
-	}
-	WAF_marcus_walker={
-		name="Marcus Walker"
-		portraits={
-			civilian={
-				large="GFX_portrait_europe_generic_5"
-			}
-		}
-		country_leader={
+			desc="She is the best"
 			ideology=leninism
-			expire="1991.9.6.12"
+			expire="2000.1.1.1"
 			id=-1
 		}
-	}
-	WAF_peter_brown={
-		name="Peter Brown"
-		portraits={
-			civilian={
-				large="GFX_Portrait_europe_generic_7"
-			}
+		country_leader={
+			desc="She is the best"
+			ideology=nazism
+			expire="2000.1.1.1"
+			id=-1
 		}
 		country_leader={
-			ideology=falangism
-			traits={ eager_collaborator war_industrialist }
-			expire="1989.9.6.12"
+			desc="She is the best"
+			ideology=moderatism
+			expire="2000.1.1.1"
 			id=-1
 		}
 	}

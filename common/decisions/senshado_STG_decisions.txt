@@ -85,6 +85,13 @@ stg_worker_and_labor_party = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				check_variable = { stg_satisfaction > 35 }
+				factor = 0
+			}
+		}
 	}
 
 	#减少外务劳工输入
@@ -108,6 +115,13 @@ stg_worker_and_labor_party = {
 					30 = { add_to_variable = { stg_satisfaction = 16 } }
 					20 = { add_to_variable = { stg_satisfaction = 15 } }
 				}
+			}
+		}
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				check_variable = { stg_satisfaction > 35 }
+				factor = 0
 			}
 		}
 	}
@@ -136,6 +150,14 @@ stg_worker_and_labor_party = {
 				}
 			}
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				check_variable = { stg_satisfaction > 35 }
+				factor = 0
+			}
+		}
+		
 	}
 
 	#举办战车道庆典
@@ -151,12 +173,22 @@ stg_worker_and_labor_party = {
 			add_to_variable = { ssdp = -40 }
 		}
 		remove_effect = {
-			add_stability = -0.015
 			custom_effect_tooltip = stg_tooltip9
 			hidden_effect = {
 				random_list = {
 					20 = { add_to_variable = { stg_satisfaction = 10 } }
 				}
+			}
+		}
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				has_stability < 0.45
+				factor = 0.1
+			}
+			modifier = {
+				check_variable = { stg_satisfaction > 35 }
+				factor = 0
 			}
 		}
 	}
@@ -220,7 +252,6 @@ stg_worker_and_labor_party = {
 					}
 				}
 			}
-            add_political_power = -50
         }
 		complete_effect = {
 			if = { limit = { has_idea = STG_worker_great_strike_5 } swap_ideas = {
@@ -292,6 +323,13 @@ stg_government = {
 		}
 		remove_effect = {
 			add_stability = 0.08
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_stability < 45
+				factor = 10
+			}
 		}
 	}
 	#对共产主义的负面报道

@@ -1,0 +1,16 @@
+
+ai_historical_focus_list_KGA = {
+	ai_national_focuses = {
+		# grab as fast as you can if available
+		KGA_sovereignty_recovery
+		KGA_government_capital_intergration
+		KGA_livelihood_recovery
+		KGA_school_ship_reform_act
+		KGA_monopolistic_competitiveness
+		KGA_nishizumi_family
+		KGA_stablize_senshado_military_government
+		KGA_Ermachtigungsgesetz
+		KGA_kuromorimine_industry_class
+		KGA_arbeitsfront
+	}
+}

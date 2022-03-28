@@ -25,6 +25,16 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_anz_nero_syndrome_pic"
+		texturefile = "gfx/texticons/anz_nero_syndrome_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_sds_legitimacy_pic"
+		texturefile = "gfx/texticons/sds_legitimacy_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_buildings_strip"
 		textureFile = "gfx/interface/buildings/building_icon_strip.dds"
 		noOfFrames = 17

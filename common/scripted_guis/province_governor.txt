@@ -53,23 +53,6 @@ scripted_gui = {
 					add_to_variable = { ROOT.gold = -20 }
 				}
 			}
-			province_governor_senshado_click = {
-				
-			}
-			province_governor_add_manpower_click = {
-				# set_temp_variable = { temp1 = state_population_k }
-				# multiply_temp_variable = { temp1 = 0.1 }
-				# set_temp_variable = { temp2 = temp1 }
-				# multiply_temp_variable = { temp2 = -1 }
-				# set_temp_variable = { temp3 = temp1 }
-				# multiply_temp_variable = { temp1 = 1000 }
-				# ROOT = { 
-				# 	add_timed_idea = { idea = Adding_manpower_generic days = 120 } 
-				# 	add_to_variable = { ROOT.ssdp = temp2 }
-				# 	round_variable = ROOT.ssdp
-				# 	add_manpower = temp1 
-				# }
-			}
 		}
 
 		
@@ -94,14 +77,6 @@ scripted_gui = {
 				check_variable = { ROOT.ssdp > 79.999 }
 				check_variable = { ROOT.gold > 19.999 }
 				ROOT = { NOT = { has_idea = adding_resources_generic } }
-			}
-			province_governor_senshado_click_enabled = {
-				owner = { senshado_school > 0 }
-				ROOT = { NOT = { has_idea = senshado_school_recruiting } }
-			}
-			province_governor_add_manpower_click_enabled = {
-				check_variable = { ROOT.ssdp > temp3 }
-				ROOT = { NOT = { has_idea = Adding_manpower_generic } }
 			}
 		}
 		

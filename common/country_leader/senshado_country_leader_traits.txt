@@ -76,17 +76,178 @@ leader_traits = {
     }
 
 	#STG
+	#高调的模仿者
+	high_profile_imitators = {
+		random = no
+		political_advisor_cost_factor = -0.2
+		max_command_power = 20
+		command_power_gain = 0.2
+	}
+	#大护国公
 	lord_protector = {
 		random = no
-		political_power_factor = 0.1
+		drift_defence_factor = 0.25
 		army_core_attack_factor = 0.1
 		army_core_defence_factor = 0.1
-		justify_war_goal_time = 1
 	}
+	#第一女士
 	the_first_lady = {
 		random = no
 		political_power_factor = 0.1
 		send_volunteer_factor = 0.1
 		army_org_Factor = 0.1
+	}
+	#禁止老派笑话(阿萨姆经济)
+	banning_old_school_jokes = {
+		random = no
+		production_speed_industrial_complex_factor = 0.1
+		production_speed_infrastructure_factor = 0.1
+		production_speed_synthetic_refinery_factor = 0.1
+		repair_speed_factor = 0.1
+		production_factory_start_efficiency_factor = 0.1
+	}
+	#禁止老派笑话(阿萨姆国防)
+	banning_old_school_jokes_2 = {
+		random = no
+		army_core_attack_factor = 0.05
+		army_core_defence_factor = 0.05
+		equipment_conversion_speed = 0.1
+		production_speed_arms_factory_factor = 0.1
+	}
+	#绝对忠诚的捧哏者(橙黄白毫内务)
+	absolutely_loyal_comedian = {
+		random = no
+		compliance_growth_on_our_occupied_states = 0.1
+		intelligence_agency_defense = 0.1
+		wage_modifier = -0.03
+		drift_defence_factor = 0.15
+	}
+	#绝对忠诚的捧哏者(橙黄白毫外交)
+	absolutely_loyal_comedian_2 = {
+		random = no
+		opinion_gain_monthly_factor = 0.05
+		trade_opinion_factor = 0.1
+		drift_defence_factor = 0.15
+	}
+	#挑战最高速(蔷薇果外交)
+	challenge_the_fastest = {
+		random = no
+		war_support_factor = 0.15
+		operation_risk = -0.1
+		opinion_gain_monthly_same_ideology_factor = 0.1
+	}
+	#挑战最高速(蔷薇果国防)
+	challenge_the_fastest_2 = {
+		random = no
+		production_speed_arms_factory_factor = 0.12
+		production_speed_rail_way_factor = 0.12
+		production_speed_dockyard_factor = 0.12
+	}
+	#双面魔鬼(格林内务)
+	two_faced_devil = {
+		random = no
+		compliance_gain = 0.15
+		non_core_manpower = 0.02
+		resistance_growth = -0.1
+	}
+	#双面魔鬼(格林经济)
+	two_faced_devil_2 = {
+		random = no
+		gold_standard_modifier = -0.15
+		global_building_slots_factor = 0.1
+		tax_daily_modifier = 0.05
+	}
+	#爱情和战争不择手段(大吉岭)默认
+	love_war_by_any_means = {
+		random = no
+		war_support_factor = 0.1
+		stability_factor = 0.1
+	}
+	#可爱的倒霉蛋(Nilgiri经济)
+	unlucky_but_cute = {
+		random = no
+		production_factory_max_efficiency_factor = 0.08
+		production_speed_buildings_factor = 0.05
+	}
+	#可爱的倒霉蛋(Nilgiri内务)
+	unlucky_but_cute_2 = {
+		random = no
+		political_power_gain = 0.1
+		tax_daily_modifier = 0.05
+		ssdp_daily_modifier = 0.05
+	}
+	#假装很冷静(Rukuriri国防)
+	pretend_to_be_calm = {
+		random = no
+		production_speed_arms_factory_factor = 0.1
+		production_speed_dockyard_factor = 0.1
+		production_speed_rocket_site_factor = 0.1
+		wage_modifier = -0.03
+	}
+	#假装很冷静(Rukuriri外交)
+	pretend_to_be_calm_2 = {
+		random = no
+		opinion_gain_monthly_same_ideology_factor = 0.1
+		intel_network_gain_factor = 0.1
+		stability_factor = 0.1
+	}
+
+	#ANZ
+	#尼禄综合征默认
+	ANZ_nero_syndrome_0 = {
+		political_power_factor = 0.1
+		stability_factor = -0.2
+		justify_war_goal_time = -0.5
+		war_support_factor = 0.1
+	}
+	#尼禄综合征用药过度
+	ANZ_nero_syndrome_1 = {
+		stability_factor = -0.3
+		justify_war_goal_time = -0.75
+		war_support_factor = 0.15
+	}
+	#尼禄综合征晚期
+	ANZ_nero_syndrome_2 = {
+		stability_factor = -0.1
+		justify_war_goal_time = -0.5
+		war_support_factor = -0.1
+	}
+	#第二个尼禄
+	ANZ_nero_syndrome_3 = {
+		stability_factor = 0.2
+		war_support_factor = 0.2
+	}
+	#DUCE!
+	anzio_duce = {
+		justify_war_goal_time = -0.2
+		political_power_factor = 0.1
+	}
+	#经济绘师
+	economy_painter = {
+		production_speed_industrial_complex_factor = 0.15
+		production_speed_infrastructure_factor = 0.15
+		production_speed_synthetic_refinery_factor = 0.15
+		conversion_cost_mil_to_civ_factor = -0.2
+	}
+	#以美食的名义
+	foodies_named_after_food = {
+		production_speed_arms_factory_factor = 0.1
+		production_speed_rocket_site_factor = 0.1
+		conversion_cost_civ_to_mil_factor = -0.5
+	}
+	#最受欢迎的姐姐
+	most_popular_big_sister = {
+		stability_factor = 0.1
+		political_power_factor = 0.05
+	}
+	#藏在利口酒中的剧毒
+	the_poison_hidden_in_the_liqueur = {
+		resistance_growth = -0.5
+		training_time_factor = -0.05
+	}
+	#天民主义
+	catholic_democracy = {
+		democratic_drift = 0.05
+		stability_factor = 0.1
 	}
 }

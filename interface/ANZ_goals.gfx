@@ -100,8 +100,28 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_ANZ_ride_the_climbing_cable.dds"
 	}
 	SpriteType = {
+		name = "GFX_focus_ANZ_anzio_national_defense_university"
+		texturefile = "gfx/interface/goals/focus_ANZ_anzio_national_defense_university.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ANZ_military_investment_planning"
+		texturefile = "gfx/interface/goals/focus_ANZ_military_investment_planning.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ANZ_switzerland_energy_construction"
+		texturefile = "gfx/interface/goals/focus_ANZ_switzerland_energy_construction.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ANZ_laying_export_power_transmission_lines"
+		texturefile = "gfx/interface/goals/focus_ANZ_laying_export_power_transmission_lines.dds"
+	}
+	SpriteType = {
 		name = "GFX_focus_ANZ_extend_defense_to_the_coast"
 		texturefile = "gfx/interface/goals/focus_ANZ_extend_defense_to_the_coast.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ANZ_beware_of_the_north"
+		texturefile = "gfx/interface/goals/focus_ANZ_beware_of_the_north.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_ANZ_decwlare_eastern_balkans"
@@ -162,6 +182,42 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_ANZ_introduce_british_equipments"
 		texturefile = "gfx/interface/goals/focus_ANZ_introduce_british_equipments.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ANZ_creamy_macaroni_plan"
+		texturefile = "gfx/interface/goals/focus_ANZ_creamy_macaroni_plan.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ANZ_four_seasons_pizza_plan"
+		texturefile = "gfx/interface/goals/focus_ANZ_four_seasons_pizza_plan.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ANZ_support_gilbert"
+		texturefile = "gfx/interface/goals/focus_ANZ_support_gilbert.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ANZ_creamy_macaroni_operations"
+		texturefile = "gfx/interface/goals/focus_ANZ_creamy_macaroni_operations.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ANZ_rebuild_new_rome"
+		texturefile = "gfx/interface/goals/focus_ANZ_rebuild_new_rome.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ANZ_the_new_great_roman_constitution"
+		texturefile = "gfx/interface/goals/focus_ANZ_the_new_great_roman_constitution.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ANZ_public_power_wealth_equalization"
+		texturefile = "gfx/interface/goals/focus_ANZ_public_power_wealth_equalization.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ANZ_fascism_without_racism"
+		texturefile = "gfx/interface/goals/focus_ANZ_fascism_without_racism.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ANZ_bringing_the_social_revolution_to_the_end"
+		texturefile = "gfx/interface/goals/focus_ANZ_bringing_the_social_revolution_to_the_end.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_ANZ_catholic_church_shine"
@@ -889,6 +945,122 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
+		name = "GFX_focus_ANZ_anzio_national_defense_university_shine"
+		texturefile = "gfx/interface/goals/focus_ANZ_anzio_national_defense_university.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_ANZ_anzio_national_defense_university.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_ANZ_anzio_national_defense_university.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_ANZ_military_investment_planning_shine"
+		texturefile = "gfx/interface/goals/focus_ANZ_military_investment_planning.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_ANZ_military_investment_planning.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_ANZ_military_investment_planning.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_ANZ_switzerland_energy_construction_shine"
+		texturefile = "gfx/interface/goals/focus_ANZ_switzerland_energy_construction.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_ANZ_switzerland_energy_construction.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_ANZ_switzerland_energy_construction.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_ANZ_laying_export_power_transmission_lines_shine"
+		texturefile = "gfx/interface/goals/focus_ANZ_laying_export_power_transmission_lines.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_ANZ_laying_export_power_transmission_lines.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_ANZ_laying_export_power_transmission_lines.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
 		name = "GFX_focus_ANZ_extend_defense_to_the_coast_shine"
 		texturefile = "gfx/interface/goals/focus_ANZ_extend_defense_to_the_coast.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
@@ -905,6 +1077,35 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}		animation = {
 			animationmaskfile = "gfx/interface/goals/focus_ANZ_extend_defense_to_the_coast.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_ANZ_beware_of_the_north_shine"
+		texturefile = "gfx/interface/goals/focus_ANZ_beware_of_the_north.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_ANZ_beware_of_the_north.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_ANZ_beware_of_the_north.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -1340,6 +1541,267 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}		animation = {
 			animationmaskfile = "gfx/interface/goals/focus_ANZ_introduce_british_equipments.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_ANZ_creamy_macaroni_plan_shine"
+		texturefile = "gfx/interface/goals/focus_ANZ_creamy_macaroni_plan.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_ANZ_creamy_macaroni_plan.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_ANZ_creamy_macaroni_plan.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_ANZ_four_seasons_pizza_plan_shine"
+		texturefile = "gfx/interface/goals/focus_ANZ_four_seasons_pizza_plan.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_ANZ_four_seasons_pizza_plan.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_ANZ_four_seasons_pizza_plan.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_ANZ_support_gilbert_shine"
+		texturefile = "gfx/interface/goals/focus_ANZ_support_gilbert.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_ANZ_support_gilbert.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_ANZ_support_gilbert.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_ANZ_creamy_macaroni_operations_shine"
+		texturefile = "gfx/interface/goals/focus_ANZ_creamy_macaroni_operations.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_ANZ_creamy_macaroni_operations.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_ANZ_creamy_macaroni_operations.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_ANZ_rebuild_new_rome_shine"
+		texturefile = "gfx/interface/goals/focus_ANZ_rebuild_new_rome.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_ANZ_rebuild_new_rome.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_ANZ_rebuild_new_rome.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_ANZ_the_new_great_roman_constitution_shine"
+		texturefile = "gfx/interface/goals/focus_ANZ_the_new_great_roman_constitution.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_ANZ_the_new_great_roman_constitution.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_ANZ_the_new_great_roman_constitution.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_ANZ_public_power_wealth_equalization_shine"
+		texturefile = "gfx/interface/goals/focus_ANZ_public_power_wealth_equalization.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_ANZ_public_power_wealth_equalization.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_ANZ_public_power_wealth_equalization.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_ANZ_fascism_without_racism_shine"
+		texturefile = "gfx/interface/goals/focus_ANZ_fascism_without_racism.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_ANZ_fascism_without_racism.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_ANZ_fascism_without_racism.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_ANZ_bringing_the_social_revolution_to_the_end_shine"
+		texturefile = "gfx/interface/goals/focus_ANZ_bringing_the_social_revolution_to_the_end.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_ANZ_bringing_the_social_revolution_to_the_end.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_ANZ_bringing_the_social_revolution_to_the_end.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

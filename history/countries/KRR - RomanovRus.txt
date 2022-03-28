@@ -1,0 +1,21 @@
+capital = 219
+
+set_technology = {
+	
+}
+set_research_slots = 4
+set_convoys = 20
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1972.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+recruit_character = KRR_nonna
+set_popularities = {
+	democratic = 0
+	fascism = 2
+	communism = 22
+	neutrality = 76
+}

@@ -70,6 +70,10 @@ on_actions = {
 					var = gold
 					value = temp
 				}
+				add_opinion_modifier = {
+					target = SDS
+					modifier = old_senshado_allies
+				}
 			}
 			SDS = {
 				set_temp_variable = { temp = gold_standard }
@@ -77,6 +81,10 @@ on_actions = {
 				set_variable = {
 					var = gold
 					value = temp
+				}
+				add_opinion_modifier = {
+					target = SDS
+					modifier = old_senshado_allies
 				}
 			}
 			ANZ = {

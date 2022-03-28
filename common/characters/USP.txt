@@ -1,0 +1,39 @@
+characters={
+	USP_bell={
+		name="Bell"
+		portraits={
+			civilian={
+				large="gfx/leaders/USP/Portrait_USP_Bell.dds"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="2000.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=leninism
+			expire="2000.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=nazism
+			expire="2000.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=moderatism
+			expire="2000.1.1.1"
+			id=-1
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=1119
+		}
+	}
+}

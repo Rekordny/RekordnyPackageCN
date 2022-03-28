@@ -7,50 +7,21 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=moderatism
-			expire="1965.1.1.1"
+			ideology=conservatism
+			expire="2000.1.1.1"
 			id=-1
 		}
 	}
-	SDS_marcus_williams={
-		name="Marcus Williams"
+	SDS_yoshinaga={
+		name="Yoshinaga"
 		portraits={
 			civilian={
-				large="GFX_portrait_europe_generic_4"
+				large="gfx/leaders/GBT/Portrait_GBT_Yoshinaga.dds"
 			}
 		}
 		country_leader={
 			ideology=conservatism
-			traits={ armaments_organizer economist }
-			expire="1983.9.6.12"
-			id=-1
-		}
-	}
-	SDS_jonas_roberts={
-		name="Jonas Roberts"
-		portraits={
-			civilian={
-				large="GFX_portrait_europe_generic_4"
-			}
-		}
-		country_leader={
-			ideology=anti_revisionism
-			traits={ economist }
-			expire="1987.9.6.12"
-			id=-1
-		}
-	}
-	SDS_jonas_smith={
-		name="Jonas Smith"
-		portraits={
-			civilian={
-				large="GFX_portrait_europe_generic_5"
-			}
-		}
-		country_leader={
-			ideology=falangism
-			traits={ ideological_crusader reluctant_interventionist }
-			expire="1990.9.6.12"
+			expire="1974.1.1.1"
 			id=-1
 		}
 	}

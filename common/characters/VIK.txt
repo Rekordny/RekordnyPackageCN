@@ -1,54 +1,33 @@
 characters={
-	VIK_={
-		name="Jonas Taylor"
+	VIK_semla={
+		name="Semla"
 		portraits={
 			civilian={
-				large="gfx/leaders/VIK/0.dds"
+				large="gfx/leaders/VIK/Portrait_VIK_Semla.dds"
 			}
 		}
 		country_leader={
-			ideology=moderatism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-	VIK_jim_smith={
-		name="Jim Smith"
-		portraits={
-			civilian={
-				large="GFX_portrait_europe_generic_8"
-			}
-		}
-		country_leader={
+			desc="She is the best"
 			ideology=conservatism
-			expire="1977.9.6.12"
+			expire="2000.1.1.1"
 			id=-1
 		}
-	}
-	VIK_john_roberts={
-		name="John Roberts"
-		portraits={
-			civilian={
-				large="gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-			}
-		}
 		country_leader={
-			ideology=marxism
-			traits={ silent_workhorse }
-			expire="1988.9.6.12"
+			desc="She is the best"
+			ideology=leninism
+			expire="2000.1.1.1"
 			id=-1
 		}
-	}
-	VIK_peter_jones={
-		name="Peter Jones"
-		portraits={
-			civilian={
-				large="GFX_Portrait_europe_generic_7"
-			}
+		country_leader={
+			desc="She is the best"
+			ideology=nazism
+			expire="2000.1.1.1"
+			id=-1
 		}
 		country_leader={
-			ideology=falangism
-			expire="1982.9.6.12"
+			desc="She is the best"
+			ideology=moderatism
+			expire="2000.1.1.1"
 			id=-1
 		}
 	}

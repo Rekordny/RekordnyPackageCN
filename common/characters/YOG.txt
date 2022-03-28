@@ -1,54 +1,33 @@
 characters={
-	YOG_={
-		name="Alex Evans"
+	YOG_commission={
+		name="Yogurt Commission"
 		portraits={
 			civilian={
-				large="gfx/leaders/YOG/0.dds"
+				large="gfx/leaders/YOG/Portrait_YOG_Commission.dds"
 			}
 		}
 		country_leader={
+			desc="She is the best"
+			ideology=conservatism
+			expire="2000.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="She is the best"
+			ideology=leninism
+			expire="2000.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="She is the best"
+			ideology=nazism
+			expire="2000.1.1.1"
+			id=-1
+		}
+		country_leader={
+			desc="She is the best"
 			ideology=moderatism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-	YOG_bob_jones={
-		name="Bob Jones"
-		portraits={
-			civilian={
-				large="GFX_portrait_europe_generic_6"
-			}
-		}
-		country_leader={
-			ideology=socialism
-			expire="1980.9.6.12"
-			id=-1
-		}
-	}
-	YOG_jonas_roberts={
-		name="Jonas Roberts"
-		portraits={
-			civilian={
-				large="GFX_portrait_europe_generic_4"
-			}
-		}
-		country_leader={
-			ideology=marxism
-			traits={ tenacious_negotiator war_industrialist }
-			expire="1981.9.6.12"
-			id=-1
-		}
-	}
-	YOG_alex_smith={
-		name="Alex Smith"
-		portraits={
-			civilian={
-				large="gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-			}
-		}
-		country_leader={
-			ideology=fascism_ideology
-			expire="1982.9.6.12"
+			expire="2000.1.1.1"
 			id=-1
 		}
 	}

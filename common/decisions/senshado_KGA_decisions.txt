@@ -30,6 +30,15 @@ kga_government = {
 		}
 		
 	}
+	test_events = {
+		allowed = { tag = KGA }
+		visible = { is_debug = yes }
+		days_re_enable = 1
+		complete_effect = {
+			activate_advisor = KGA_maho
+		}
+		
+	}
 	##########以上为测试
 
     kga_pay_gold = {
@@ -66,11 +75,18 @@ kga_government = {
 	}
 	kga_remove_bellwall_threat = {
 		allowed = { tag = KGA }
-		visible = { OR = { AND = { has_completed_focus = KGA_stablize_senshado_military_government NOT = { has_country_flag = KGA_PREPARE_CIVIL_WAR_START } } is_debug = yes } }
+		visible = { OR = { AND = { has_completed_focus = KGA_stablize_senshado_military_government NOT = { has_country_flag = KGA_PREPARE_CIVIL_WAR_START } has_idea = KGA_bellwall_threat } is_debug = yes } }
 		fire_only_once = yes
 		complete_effect = {
 			KGA = {
 				country_event = { id = kuromorimine.24 days = 0 }
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_stability < 0.4
+				factor = 10
 			}
 		}
 	}
@@ -355,7 +371,7 @@ kga_missions = {
 kga_civil_war = {
 	#获得萨克森支持
 	kga_add_support_65 = {
-		visible = { OR = { has_country_flag = KGA_PREPARE_CIVIL_WAR_START is_debug = yes } }
+		visible = { OR = { AND = { has_country_flag = KGA_PREPARE_CIVIL_WAR_START has_idea = KGA_bellwall_threat } is_debug = yes } }
 		allowed = { tag = KGA }
 		available = { fascism > 0.55 }
 		custom_cost_trigger = {
@@ -368,25 +384,31 @@ kga_civil_war = {
 				add_political_power = -80
 			}
 			custom_effect_tooltip = kga_tooltip28
-			set_country_flag = kga_has_65_support_civil_war
+			set_country_flag = KGA_HAS_65_SUPPORT_CIVIL_WAR
 		}
 		fire_only_once = yes
+		ai_will_do = {
+			factor = 3
+		}
 	}
 	#炸毁对手基建
 	kga_deploy_bomb = {
-		visible = { OR = { has_country_flag = KGA_PREPARE_CIVIL_WAR_START is_debug = yes } }
+		visible = { OR = { AND = { has_country_flag = KGA_PREPARE_CIVIL_WAR_START has_idea = KGA_bellwall_threat } is_debug = yes } }
 		available = { has_intelligence_agency = yes }
 		allowed = { tag = KGA }
 		days_remove = 30
 		remove_effect = {
 			custom_effect_tooltip = kga_tooltip29
-			set_country_flag = kga_has_deployed_bomb_civil_war
+			set_country_flag = KGA_HAS_DEPLOYED_BOMB_CIVIL_WAR
 		}
 		fire_only_once = yes
+		ai_will_do = {
+			factor = 2
+		}
 	}
 	#获得FRA支持内战
 	kga_ask_support_from_BCF = {
-		visible = { OR = { has_country_flag = KGA_PREPARE_CIVIL_WAR_START is_debug = yes } }
+		visible = { OR = { AND = { has_country_flag = KGA_PREPARE_CIVIL_WAR_START has_idea = KGA_bellwall_threat } is_debug = yes } }
 		allowed = { tag = KGA }
 		available = { OR = { BCF = { has_government = fascism } BCF = { has_government = neutrality } } }
 		custom_cost_trigger = {
@@ -401,10 +423,13 @@ kga_civil_war = {
 			set_country_flag = kga_ask_support_from_BCF
 		}
 		fire_only_once = yes
+		ai_will_do = {
+			factor = 2
+		}
 	}
 	#获得STG支持内战
 	kga_ask_support_from_STG = {
-		visible = { OR = { has_country_flag = KGA_PREPARE_CIVIL_WAR_START is_debug = yes } }
+		visible = { OR = { AND = { has_country_flag = KGA_PREPARE_CIVIL_WAR_START has_idea = KGA_bellwall_threat } is_debug = yes } }
 		allowed = { tag = KGA }
 		available = { OR = { STG = { has_government = fascism } STG = { has_government = neutrality } } }
 		custom_cost_trigger = {
@@ -419,10 +444,13 @@ kga_civil_war = {
 			set_country_flag = kga_ask_support_from_STG
 		}
 		fire_only_once = yes
+		ai_will_do = {
+			factor = 2
+		}
 	}
 	#秘密扩充军备
 	kga_gather_equipments = {
-		visible = { OR = { has_country_flag = KGA_PREPARE_CIVIL_WAR_START is_debug = yes } }
+		visible = { OR = { AND = { has_country_flag = KGA_PREPARE_CIVIL_WAR_START has_idea = KGA_bellwall_threat } is_debug = yes } }
 		allowed = { tag = KGA }
 		custom_cost_trigger = {
 			check_variable = { gold > 39.9 }
@@ -432,19 +460,29 @@ kga_civil_war = {
 		remove_effect = {
 			custom_effect_tooltip = kga_tooltip25
 			KGA = { add_to_variable = { gold = -40 } }
-			set_country_flag = kga_has_gathered_equipments
+			set_country_flag = KGA_HAS_ARMED_CIVIL_WAR
 		}
 		fire_only_once = yes
+		ai_will_do = {
+			factor = 2
+		}
 	}
 	#发起法西斯对钟壁内战
 	kga_start_civil_war = {
-		visible = { OR = { has_country_flag = KGA_PREPARE_CIVIL_WAR_START is_debug = yes } }
+		visible = { OR = { AND = { has_country_flag = KGA_PREPARE_CIVIL_WAR_START has_idea = KGA_bellwall_threat } is_debug = yes } }
 		allowed = { tag = KGA }
-		available = { fascism > 0.3 communism > 0.3 has_civil_war = no }
+		available = { fascism > 0.3 has_civil_war = no }
 		complete_effect = {
 			country_event = { id = kuromorimine.28 days = 0 }
 		}
 		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_stability < 0.37
+				factor = 5
+			}
+		}
 	}
 }
 
@@ -459,6 +497,10 @@ kga_germanic_kuromorimine = {
 		custom_cost_trigger = { has_political_power > 149.9 check_variable = { gold > 99.9 } }
 		custom_cost_text = kga_tooltip31
 		remove_effect = {
+			if = {
+				limit = { AND = { has_country_flag = KGA_GERMANIC_KUROMORIMINE_1 has_country_flag = KGA_GERMANIC_KUROMORIMINE_2 has_country_flag = KGA_GERMANIC_KUROMORIMINE_3 has_country_flag = KGA_GERMANIC_KUROMORIMINE_4 has_country_flag = KGA_GERMANIC_KUROMORIMINE_5 has_country_flag = KGA_GERMANIC_KUROMORIMINE_6 has_country_flag = KGA_GERMANIC_KUROMORIMINE_7 has_country_flag = KGA_GERMANIC_KUROMORIMINE_8 } }
+				KGA = { country_event = { id = kuromorimine.11 } }
+			}
 			17 = { add_core_of = KGA }
 			28 = { add_core_of = KGA }
 			6 = { add_core_of = KGA }
@@ -470,6 +512,7 @@ kga_germanic_kuromorimine = {
 		}
 		complete_effect = {
 			hidden_effect = { add_to_variable = { gold = -100 } add_political_power = -150 }
+			set_country_flag = KGA_GERMANIC_KUROMORIMINE_1
 		}
 		fire_only_once = yes
 	}
@@ -482,6 +525,10 @@ kga_germanic_kuromorimine = {
 		custom_cost_trigger = { has_political_power > 249.9 check_variable = { gold > 139.9 } }
 		custom_cost_text = kga_tooltip32
 		remove_effect = {
+			if = {
+				limit = { AND = { has_country_flag = KGA_GERMANIC_KUROMORIMINE_1 has_country_flag = KGA_GERMANIC_KUROMORIMINE_2 has_country_flag = KGA_GERMANIC_KUROMORIMINE_3 has_country_flag = KGA_GERMANIC_KUROMORIMINE_4 has_country_flag = KGA_GERMANIC_KUROMORIMINE_5 has_country_flag = KGA_GERMANIC_KUROMORIMINE_6 has_country_flag = KGA_GERMANIC_KUROMORIMINE_7 has_country_flag = KGA_GERMANIC_KUROMORIMINE_8 } }
+				KGA = { country_event = { id = kuromorimine.11 } }
+			}
 			85 = { add_core_of = KGA }
 			86 = { add_core_of = KGA }
 			87 = { add_core_of = KGA }
@@ -501,6 +548,7 @@ kga_germanic_kuromorimine = {
 		}
 		complete_effect = {
 			hidden_effect = { add_to_variable = { gold = -140 } add_political_power = -250 }
+			set_country_flag = KGA_GERMANIC_KUROMORIMINE_2
 		}
 		fire_only_once = yes
 	}
@@ -513,6 +561,10 @@ kga_germanic_kuromorimine = {
 		custom_cost_trigger = { has_political_power > 149.9 check_variable = { gold > 99.9 } }
 		custom_cost_text = kga_tooltip31
 		remove_effect = {
+			if = {
+				limit = { AND = { has_country_flag = KGA_GERMANIC_KUROMORIMINE_1 has_country_flag = KGA_GERMANIC_KUROMORIMINE_2 has_country_flag = KGA_GERMANIC_KUROMORIMINE_3 has_country_flag = KGA_GERMANIC_KUROMORIMINE_4 has_country_flag = KGA_GERMANIC_KUROMORIMINE_5 has_country_flag = KGA_GERMANIC_KUROMORIMINE_6 has_country_flag = KGA_GERMANIC_KUROMORIMINE_7 has_country_flag = KGA_GERMANIC_KUROMORIMINE_8 } }
+				KGA = { country_event = { id = kuromorimine.11 } }
+			}
 			9 = { add_core_of = KGA }
 			69 = { add_core_of = KGA }
 			74 = { add_core_of = KGA }
@@ -524,6 +576,7 @@ kga_germanic_kuromorimine = {
 		}
 		complete_effect = {
 			hidden_effect = { add_to_variable = { gold = -100 } add_political_power = -150 }
+			set_country_flag = KGA_GERMANIC_KUROMORIMINE_3
 		}
 		fire_only_once = yes
 	}
@@ -536,6 +589,10 @@ kga_germanic_kuromorimine = {
 		custom_cost_trigger = { has_political_power > 99.9 check_variable = { gold > 59.9 } }
 		custom_cost_text = kga_tooltip33
 		remove_effect = {
+			if = {
+				limit = { AND = { has_country_flag = KGA_GERMANIC_KUROMORIMINE_1 has_country_flag = KGA_GERMANIC_KUROMORIMINE_2 has_country_flag = KGA_GERMANIC_KUROMORIMINE_3 has_country_flag = KGA_GERMANIC_KUROMORIMINE_4 has_country_flag = KGA_GERMANIC_KUROMORIMINE_5 has_country_flag = KGA_GERMANIC_KUROMORIMINE_6 has_country_flag = KGA_GERMANIC_KUROMORIMINE_7 has_country_flag = KGA_GERMANIC_KUROMORIMINE_8 } }
+				KGA = { country_event = { id = kuromorimine.11 } }
+			}
 			189 = { add_core_of = KGA }
 			190 = { add_core_of = KGA }
 			11 = { add_core_of = KGA }
@@ -545,6 +602,7 @@ kga_germanic_kuromorimine = {
 		}
 		complete_effect = {
 			hidden_effect = { add_to_variable = { gold = -60 } add_political_power = -100 }
+			set_country_flag = KGA_GERMANIC_KUROMORIMINE_4
 		}
 		fire_only_once = yes
 	}
@@ -557,6 +615,10 @@ kga_germanic_kuromorimine = {
 		custom_cost_trigger = { has_political_power > 249.9 check_variable = { gold > 139.9 } }
 		custom_cost_text = kga_tooltip32
 		remove_effect = {
+			if = {
+				limit = { AND = { has_country_flag = KGA_GERMANIC_KUROMORIMINE_1 has_country_flag = KGA_GERMANIC_KUROMORIMINE_2 has_country_flag = KGA_GERMANIC_KUROMORIMINE_3 has_country_flag = KGA_GERMANIC_KUROMORIMINE_4 has_country_flag = KGA_GERMANIC_KUROMORIMINE_5 has_country_flag = KGA_GERMANIC_KUROMORIMINE_6 has_country_flag = KGA_GERMANIC_KUROMORIMINE_7 has_country_flag = KGA_GERMANIC_KUROMORIMINE_8 } }
+				KGA = { country_event = { id = kuromorimine.11 } }
+			}
 			213 = { add_core_of = KGA }
 			215 = { add_core_of = KGA }
 			216 = { add_core_of = KGA }
@@ -583,6 +645,7 @@ kga_germanic_kuromorimine = {
 		}
 		complete_effect = {
 			hidden_effect = { add_to_variable = { gold = -140 } add_political_power = -250 }
+			set_country_flag = KGA_GERMANIC_KUROMORIMINE_5
 		}
 		fire_only_once = yes
 	}
@@ -595,6 +658,10 @@ kga_germanic_kuromorimine = {
 		custom_cost_trigger = { has_political_power > 249.9 check_variable = { gold > 139.9 } }
 		custom_cost_text = kga_tooltip32
 		remove_effect = {
+			if = {
+				limit = { AND = { has_country_flag = KGA_GERMANIC_KUROMORIMINE_1 has_country_flag = KGA_GERMANIC_KUROMORIMINE_2 has_country_flag = KGA_GERMANIC_KUROMORIMINE_3 has_country_flag = KGA_GERMANIC_KUROMORIMINE_4 has_country_flag = KGA_GERMANIC_KUROMORIMINE_5 has_country_flag = KGA_GERMANIC_KUROMORIMINE_6 has_country_flag = KGA_GERMANIC_KUROMORIMINE_7 has_country_flag = KGA_GERMANIC_KUROMORIMINE_8 } }
+				KGA = { country_event = { id = kuromorimine.11 } }
+			}
 			199 = { add_core_of = KGA }
 			198 = { add_core_of = KGA }
 			201 = { add_core_of = KGA }
@@ -622,6 +689,7 @@ kga_germanic_kuromorimine = {
 		}
 		complete_effect = {
 			hidden_effect = { add_to_variable = { gold = -140 } add_political_power = -250 }
+			set_country_flag = KGA_GERMANIC_KUROMORIMINE_6
 		}
 		fire_only_once = yes
 	}
@@ -634,6 +702,10 @@ kga_germanic_kuromorimine = {
 		custom_cost_trigger = { has_political_power > 149.9 check_variable = { gold > 99.9 } }
 		custom_cost_text = kga_tooltip31
 		remove_effect = {
+			if = {
+				limit = { AND = { has_country_flag = KGA_GERMANIC_KUROMORIMINE_1 has_country_flag = KGA_GERMANIC_KUROMORIMINE_2 has_country_flag = KGA_GERMANIC_KUROMORIMINE_3 has_country_flag = KGA_GERMANIC_KUROMORIMINE_4 has_country_flag = KGA_GERMANIC_KUROMORIMINE_5 has_country_flag = KGA_GERMANIC_KUROMORIMINE_6 has_country_flag = KGA_GERMANIC_KUROMORIMINE_7 has_country_flag = KGA_GERMANIC_KUROMORIMINE_8 } }
+				KGA = { country_event = { id = kuromorimine.11 } }
+			}
 			218 = { add_core_of = KGA }
 			265 = { add_core_of = KGA }
 			245 = { add_core_of = KGA }
@@ -652,6 +724,7 @@ kga_germanic_kuromorimine = {
 		}
 		complete_effect = {
 			hidden_effect = { add_to_variable = { gold = -100 } add_political_power = -150 }
+			set_country_flag = KGA_GERMANIC_KUROMORIMINE_7
 		}
 		fire_only_once = yes
 	}
@@ -664,6 +737,10 @@ kga_germanic_kuromorimine = {
 		custom_cost_trigger = { has_political_power > 149.9 check_variable = { gold > 99.9 } }
 		custom_cost_text = kga_tooltip31
 		remove_effect = {
+			if = {
+				limit = { AND = { has_country_flag = KGA_GERMANIC_KUROMORIMINE_1 has_country_flag = KGA_GERMANIC_KUROMORIMINE_2 has_country_flag = KGA_GERMANIC_KUROMORIMINE_3 has_country_flag = KGA_GERMANIC_KUROMORIMINE_4 has_country_flag = KGA_GERMANIC_KUROMORIMINE_5 has_country_flag = KGA_GERMANIC_KUROMORIMINE_6 has_country_flag = KGA_GERMANIC_KUROMORIMINE_7 has_country_flag = KGA_GERMANIC_KUROMORIMINE_8 } }
+				KGA = { country_event = { id = kuromorimine.11 } }
+			}
 			37 = { add_core_of = KGA }
 			99 = { add_core_of = KGA }
 			138 = { add_core_of = KGA }
@@ -680,6 +757,7 @@ kga_germanic_kuromorimine = {
 		}
 		complete_effect = {
 			hidden_effect = { add_to_variable = { gold = -100 } add_political_power = -150 }
+			set_country_flag = KGA_GERMANIC_KUROMORIMINE_8
 		}
 		fire_only_once = yes
 	}

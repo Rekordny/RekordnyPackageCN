@@ -7,6 +7,14 @@
 # decay
 # months/years/days = timer
 # trade = yes/no
+
+#WORLD
+opinion_modifiers = {
+	old_senshado_allies = {
+		value = 30
+	}
+}
+
 #KGA
 opinion_modifiers = {
 	financial_support = {
@@ -20,20 +28,9 @@ opinion_modifiers = {
 	}
 }
 
-same_ruling_party = {
-	value = 30
-}
-	
-similar_ruling_party = {
-	value = 20
-}
-	
-different_party_types = {
-	value = -20
-}
-
 #STG
 opinion_modifiers = {
+
 	STG_reinforce_allies = {
 		value = 25
 	}
@@ -47,6 +44,13 @@ opinion_modifiers = {
 
 	JHS_Traitor = {
 		value = -50
+	}
+}
+
+#ANZ
+opinion_modifiers = {
+    ANZ_power_contract = {
+		value = 20
 	}
 }
 

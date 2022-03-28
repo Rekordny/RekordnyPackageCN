@@ -7,7 +7,7 @@ state={
 	state_category = rural
 	
 	history={
-		owner = SDS
+		owner = ONM
 		buildings = {
 			infrastructure = 2
 			dockyard = 1
@@ -15,7 +15,7 @@ state={
 				naval_base = 3
 			}
 		}
-		add_core_of = SDS
+		add_core_of = ONM
 		victory_points = {
 			7921 10
 		}

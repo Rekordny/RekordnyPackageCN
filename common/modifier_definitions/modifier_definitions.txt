@@ -59,3 +59,9 @@ wage_modifier = {
     postfix = none
 }
 
+SDS_legitimacy_daily_increase_modifier = {
+    color_type = good
+    value_type = number
+    precision = 2
+    postfix = none
+}

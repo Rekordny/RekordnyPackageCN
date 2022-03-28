@@ -1,0 +1,1089 @@
+characters={
+	generic_miho = {
+		name="Miho Nishizumi"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Miho.dds"
+				small="gfx/interface/advisors/idea_miho.dds"
+			}
+		}
+		field_marshal={
+			traits={ brilliant_strategist armor_officer activist }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=1000
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = generic_miho
+			ledger = army
+			traits = { mobile_warfare_expert }
+		}
+	}
+	generic_alice = {
+		name="Alice Shimada"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Alice.dds"
+				small="gfx/interface/advisors/idea_alice.dds"
+			}
+		}
+		field_marshal={
+			traits = { Offensive_Doctrine Armor_Officer Panzer_Expert }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id=1001
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = generic_alice
+			ledger = army
+			traits = { grand_battle_plan_expert }
+		}
+	}
+	generic_yukari = {
+		name="Yukari Akiyama"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Yukari.dds"
+				small="gfx/interface/advisors/idea_yukari.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Bearer_of_Artillery }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id=1002
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = generic_yukari
+			ledger = army
+			traits = { military_theorist }
+		}
+	}
+	generic_saori = {
+		name="Saori Takebe"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Saori.dds"
+				small="gfx/interface/advisors/idea_saori.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Media_Personality }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 5
+			legacy_id=1003
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = generic_saori
+			ledger = army
+			traits = { military_theorist }
+		}
+	}
+	generic_hana = {
+		name="Hana Isuzu"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Hana.dds"
+				small="gfx/interface/advisors/idea_hana.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Cautious }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id=1004
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = generic_saori
+			ledger = army
+			traits = { military_theorist }
+		}
+	}
+
+	generic_hana = {
+		name="Hana Isuzu"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Hana.dds"
+				small="gfx/interface/advisors/idea_hana.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Cautious }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id=1004
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = generic_hana
+			ledger = army
+			traits = { military_theorist }
+		}
+	}
+
+	generic_mako = {
+		name="Mako Reizei"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Mako.dds"
+				small="gfx/interface/advisors/idea_mako.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Reckless }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id=1005
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = generic_mako
+			ledger = army
+			traits = { military_theorist }
+		}
+	}
+
+	generic_azumi = {
+		name="Azumi"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Azumi.dds"
+				small="gfx/interface/advisors/idea_azumi.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer career_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=1028
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = generic_azumi
+			ledger = army
+			traits = { military_theorist }
+		}
+	}
+
+	generic_megumi = {
+		name="Megumi"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Megumi.dds"
+				small="gfx/interface/advisors/idea_megumi.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer career_officer }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+			legacy_id=1029
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = generic_megumi
+			ledger = army
+			traits = { military_theorist }
+		}
+	}
+
+	generic_rumi = {
+		name="Rumi"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Rumi.dds"
+				small="gfx/interface/advisors/idea_rumi.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 3
+			legacy_id=1030
+		}
+		advisor={
+			cost = 150
+			slot = theorist
+			idea_token = generic_rumi
+			ledger = army
+			traits = { military_theorist }
+		}
+	}
+
+	generic_anzu = {
+		name="Anzu Kadotani"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Anzu.dds"
+				small="gfx/interface/advisors/idea_anzu.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Organizer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id=1025
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_anzu
+			ledger = army
+			traits = { army_regrouping_3 }
+			cost = 100
+		}
+	}
+	
+	generic_momo = {
+		name="Momo Kawashima"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Momo.dds"
+				small="gfx/interface/advisors/idea_momo.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer harsh_leader }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id=1026
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_momo
+			ledger = army
+			traits = { army_armored_2 }
+			cost = 100
+		}
+	}
+
+	generic_yuzu = {
+		name="Yuzu Koyama"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Yuzu.dds"
+				small="gfx/interface/advisors/idea_yuzu.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Organizer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id=1027
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_yuzu
+			ledger = army
+			traits = { army_infantry_2 }
+			cost = 100
+		}
+	}
+
+	generic_reira = {
+		name="Reira Nakajima"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Reira.dds"
+				small="gfx/interface/advisors/idea_reira.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer engineer_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id=1031
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_reira
+			ledger = army
+			traits = { army_logistics_3 }
+			cost = 100
+		}
+	}
+
+	generic_keiko = {
+		name="Keiko Hoshino"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Keiko.dds"
+				small="gfx/interface/advisors/idea_keiko.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer engineer_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id=1032
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_keiko
+			ledger = army
+			traits = { army_entrenchment_2 }
+			cost = 100
+		}
+	}
+
+	generic_maria = {
+		name="Maria Suzuki"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Maria.dds"
+				small="gfx/interface/advisors/idea_maria.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer engineer_officer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=1033
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_maria
+			ledger = army
+			traits = { army_regrouping_2 }
+			cost = 100
+		}
+	}
+
+	generic_muuton = {
+		name="Muuton Tsuchiya"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Muuton.dds"
+				small="gfx/interface/advisors/idea_muuton.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer engineer_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=1102
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_muuton
+			ledger = air
+			traits = { air_close_air_support_2 }
+			cost = 100
+		}
+	}
+
+	generic_erwin = {
+		name="Erwin"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Erwin.dds"
+				small="gfx/interface/advisors/idea_erwin.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Desert_Fox }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=1098
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_erwin
+			ledger = army
+			traits = { army_armored_3 }
+			cost = 100
+		}
+	}
+
+	generic_caesar = {
+		name="Caesar"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Caesar.dds"
+				small="gfx/interface/advisors/idea_caesar.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Bearer_of_Artillery }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=1099
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_caesar
+			ledger = army
+			traits = { army_artillery_2 }
+			cost = 100
+		}
+	}
+
+	generic_saemonza = {
+		name="Saemonza"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Saemonza.dds"
+				small="gfx/interface/advisors/idea_saemonza.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Cavalry_Officer }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id=1100
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_saemonza
+			ledger = army
+			traits = { army_cavalry_2 }
+			cost = 100
+		}
+	}
+
+	generic_oryou = {
+		name="Oryou"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Oryou.dds"
+				small="gfx/interface/advisors/idea_oryou.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Cavalry_Officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id=1101
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_oryou
+			ledger = army
+			traits = { army_commando_2 }
+			cost = 100
+		}
+	}
+
+	generic_ogin = {
+		name="Ogin"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Ogin.dds"
+				small="gfx/interface/advisors/idea_ogin.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Invader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=1006
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_ogin
+			ledger = navy
+			traits = { navy_capital_ship_3 }
+			cost = 100
+		}
+	}
+
+	generic_rum = {
+		name="Rum"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Rum.dds"
+				small="gfx/interface/advisors/idea_rum.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Invader }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=1007
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_rum
+			ledger = navy
+			traits = { navy_chief_maneuver_2 }
+			cost = 100
+		}
+	}
+
+	generic_murakami = {
+		name="Murakami"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Murakami.dds"
+				small="gfx/interface/advisors/idea_murakami.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Invader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id=1008
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_murakami
+			ledger = navy
+			traits = { navy_anti_submarine_2 }
+			cost = 100
+		}
+	}
+
+	generic_flint = {
+		name="Flint"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Flint.dds"
+				small="gfx/interface/advisors/idea_flint.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Invader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id=1009
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_flint
+			ledger = navy
+			traits = { air_naval_strike_2 }
+			cost = 100
+		}
+	}
+
+	generic_cutlass = {
+		name="Cutlass"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Cutlass.dds"
+				small="gfx/interface/advisors/idea_cutlass.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Invader }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id=1010
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_cutlass
+			ledger = navy
+			traits = { navy_amphibious_assault_2 }
+			cost = 100
+		}
+	}
+
+	generic_noriko = {
+		name="Noriko Isobe"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Noriko.dds"
+				small="gfx/interface/advisors/idea_noriko.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Skilled_Staffer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id=1022
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_noriko
+			ledger = army
+			traits = { army_infantry_3 }
+			cost = 100
+		}
+	}
+
+	generic_taeko = {
+		name="Taeko Kondou"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Taeko.dds"
+				small="gfx/interface/advisors/idea_taeko.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Skilled_Staffer }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id=1103
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_taeko
+			ledger = army
+			traits = { army_entrenchment_2 }
+			cost = 100
+		}
+	}
+
+	generic_shinobu = {
+		name="Shinobu Kawanishi"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Shinobu.dds"
+				small="gfx/interface/advisors/idea_shinobu.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Infantry_Officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=1104
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_shinobu
+			ledger = army
+			traits = { army_infantry_2 }
+			cost = 100
+		}
+	}
+
+	generic_akebi = {
+		name="Akebi Sasaki"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Akebi.dds"
+				small="gfx/interface/advisors/idea_akebi.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Reckless }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id=1105
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_shinobu
+			ledger = army
+			traits = { army_logistics_2 }
+			cost = 100
+		}
+	}
+
+	generic_azusa = {
+		name="Azusa Sawa"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Azusa.dds"
+				small="gfx/interface/advisors/idea_azusa.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer War_Hero }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id=1106
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_azusa
+			ledger = army
+			traits = { army_armored_3 }
+			cost = 100
+		}
+	}
+
+	generic_ayumi = {
+		name="Ayumi Yamagou"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Ayumi.dds"
+				small="gfx/interface/advisors/idea_ayumi.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Mountaineer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id=1107
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_ayumi
+			ledger = army
+			traits = { army_entrenchment_2 }
+			cost = 100
+		}
+	}
+
+	generic_aya = {
+		name="Aya Oono"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Aya.dds"
+				small="gfx/interface/advisors/idea_aya.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Media_Personality }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=1108
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_aya
+			ledger = army
+			traits = { army_commando_2 }
+			cost = 100
+		}
+	}
+
+	generic_karina = {
+		name="Karina Sakaguchi"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Karina.dds"
+				small="gfx/interface/advisors/idea_karina.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Infantry_Officer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id=1109
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_karina
+			ledger = air
+			traits = { air_airborne_2 }
+			cost = 100
+		}
+	}
+
+	generic_yuuki = {
+		name="Yuuki Utsugi"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Yuuki.dds"
+				small="gfx/interface/advisors/idea_yuuki.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer trickster }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id=1110
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_yuuki
+			ledger = army
+			traits = { army_logistics_2 }
+			cost = 100
+		}
+	}
+
+	generic_saki = {
+		name="Saki Maruyama"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Saki.dds"
+				small="gfx/interface/advisors/idea_saki.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer trickster }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id=1111
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_saki
+			ledger = army
+			traits = { army_concealment_2 }
+			cost = 100
+		}
+	}
+
+	generic_midoriko = {
+		name="Midoriko Sono"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Midoriko.dds"
+				small="gfx/interface/advisors/idea_midoriko.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Harsh_Leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id=1112
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_midoriko
+			ledger = air
+			traits = { air_close_air_support_3 }
+			cost = 100
+		}
+	}
+
+	generic_nozomi = {
+		name="Nozomi Konparu"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Nozomi.dds"
+				small="gfx/interface/advisors/idea_nozomi.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Career_Officer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=1113
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_nozomi
+			ledger = air
+			traits = { air_air_combat_training_2 }
+			cost = 100
+		}
+	}
+
+	generic_moyoko = {
+		name="Moyoko Gotou"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Moyoko.dds"
+				small="gfx/interface/advisors/idea_moyoko.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Career_Officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id=1114
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_moyoko
+			ledger = air
+			traits = { air_bomber_interception_2 }
+			cost = 100
+		}
+	}
+
+	generic_mai = {
+		name="Mai Nekota"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Mai.dds"
+				small="gfx/interface/advisors/idea_mai.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Cavalry_Officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=1115
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_mai
+			ledger = army
+			traits = { army_cavalry_3 }
+			cost = 100
+		}
+	}
+
+	generic_aoi = {
+		name="Aoi Hiyoshi"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Aoi.dds"
+				small="gfx/interface/advisors/idea_aoi.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Organizer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+			legacy_id=1116
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_aoi
+			ledger = army
+			traits = { army_regrouping_2 }
+			cost = 100
+		}
+	}
+
+	generic_taki = {
+		name="Taki Momose"
+		portraits={
+			civilian={
+				large="gfx/leaders/generic/Portrait_generic_Taki.dds"
+				small="gfx/interface/advisors/idea_taki.dds"
+			}
+		}
+		corps_commander={
+			traits = { Armor_Officer Jungle_Rat }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id=1117
+		}
+		advisor={
+			slot = high_command
+			idea_token = generic_taki
+			ledger = army
+			traits = { army_commando_2 }
+			cost = 100
+		}
+	}
+}

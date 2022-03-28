@@ -80,13 +80,14 @@ set_popularities = {
 }
 
 recruit_character = STG_assam
+recruit_character = STG_orangepekoe
 recruit_character = STG_darjeeling
 recruit_character = STG_rukuriri
-recruit_character = STG_Rosehip
-recruit_character = STG_Nilgiri
-recruit_character = STG_Hana
-recruit_character = STG_Shiratori
-recruit_character = STG_EarlGrey
+recruit_character = STG_rosehip
+recruit_character = STG_nilgiri
+recruit_character = STG_hana
+recruit_character = STG_shiratori
+recruit_character = STG_earlGrey
 
 create_equipment_variant = {
 	name = "Cruiser Mk. I"

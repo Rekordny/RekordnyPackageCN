@@ -6,10 +6,66 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	
 	spriteType = {
 		name = "GFX_event_senshado_recruit"
 		texturefile = "gfx/event_pictures/event_generic_1.dds"
+		legacy_lazy_load = no
+	}
+
+	#news
+	spriteType = {
+		name = "GFX_senshado_news_event_1"
+		texturefile = "gfx/event_pictures/news/event_news_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_senshado_news_event_2"
+		texturefile = "gfx/event_pictures/news/event_news_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_senshado_news_event_3"
+		texturefile = "gfx/event_pictures/news/event_news_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_senshado_news_event_4"
+		texturefile = "gfx/event_pictures/news/event_news_4.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_senshado_news_event_5"
+		texturefile = "gfx/event_pictures/news/event_news_5.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_senshado_news_event_6"
+		texturefile = "gfx/event_pictures/news/event_news_6.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_senshado_news_event_7"
+		texturefile = "gfx/event_pictures/news/event_news_7.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_senshado_news_event_8"
+		texturefile = "gfx/event_pictures/news/event_news_8.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_senshado_news_event_9"
+		texturefile = "gfx/event_pictures/news/event_news_9.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_senshado_news_event_10"
+		texturefile = "gfx/event_pictures/news/event_news_10.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_senshado_news_event_11"
+		texturefile = "gfx/event_pictures/news/event_news_11.dds"
 		legacy_lazy_load = no
 	}
 
@@ -53,5 +109,443 @@ spriteTypes = {
 	#BON
 
 	#KGA
+	spriteType = {
+		name = "GFX_event_kga_country_1"
+		texturefile = "gfx/event_pictures/KGA/kga_country_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_2"
+		texturefile = "gfx/event_pictures/KGA/kga_country_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_3"
+		texturefile = "gfx/event_pictures/KGA/kga_country_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_3"
+		texturefile = "gfx/event_pictures/KGA/kga_country_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_4"
+		texturefile = "gfx/event_pictures/KGA/kga_country_4.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_5"
+		texturefile = "gfx/event_pictures/KGA/kga_country_5.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_6"
+		texturefile = "gfx/event_pictures/KGA/kga_country_6.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_7"
+		texturefile = "gfx/event_pictures/KGA/kga_country_7.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_8"
+		texturefile = "gfx/event_pictures/KGA/kga_country_8.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_9"
+		texturefile = "gfx/event_pictures/KGA/kga_country_9.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_10"
+		texturefile = "gfx/event_pictures/KGA/kga_country_10.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_11"
+		texturefile = "gfx/event_pictures/KGA/kga_country_11.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_12"
+		texturefile = "gfx/event_pictures/KGA/kga_country_12.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_13"
+		texturefile = "gfx/event_pictures/KGA/kga_country_13.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_14"
+		texturefile = "gfx/event_pictures/KGA/kga_country_14.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_15"
+		texturefile = "gfx/event_pictures/KGA/kga_country_15.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_16"
+		texturefile = "gfx/event_pictures/KGA/kga_country_16.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_17"
+		texturefile = "gfx/event_pictures/KGA/kga_country_17.dds"
+		legacy_lazy_load = no
+	}
 
+	spriteType = {
+		name = "GFX_event_kga_country_18"
+		texturefile = "gfx/event_pictures/KGA/kga_country_18.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_19"
+		texturefile = "gfx/event_pictures/KGA/kga_country_19.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_20"
+		texturefile = "gfx/event_pictures/KGA/kga_country_20.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_21"
+		texturefile = "gfx/event_pictures/KGA/kga_country_21.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_22"
+		texturefile = "gfx/event_pictures/KGA/kga_country_22.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_23"
+		texturefile = "gfx/event_pictures/KGA/kga_country_23.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_24"
+		texturefile = "gfx/event_pictures/KGA/kga_country_24.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_25"
+		texturefile = "gfx/event_pictures/KGA/kga_country_25.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_26"
+		texturefile = "gfx/event_pictures/KGA/kga_country_26.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_27"
+		texturefile = "gfx/event_pictures/KGA/kga_country_27.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_28"
+		texturefile = "gfx/event_pictures/KGA/kga_country_28.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_29"
+		texturefile = "gfx/event_pictures/KGA/kga_country_29.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_30"
+		texturefile = "gfx/event_pictures/KGA/kga_country_30.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_31"
+		texturefile = "gfx/event_pictures/KGA/kga_country_31.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_32"
+		texturefile = "gfx/event_pictures/KGA/kga_country_32.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_33"
+		texturefile = "gfx/event_pictures/KGA/kga_country_33.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_34"
+		texturefile = "gfx/event_pictures/KGA/kga_country_34.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_35"
+		texturefile = "gfx/event_pictures/KGA/kga_country_35.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_36"
+		texturefile = "gfx/event_pictures/KGA/kga_country_36.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_37"
+		texturefile = "gfx/event_pictures/KGA/kga_country_37.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_38"
+		texturefile = "gfx/event_pictures/KGA/kga_country_38.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_39"
+		texturefile = "gfx/event_pictures/KGA/kga_country_39.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_40"
+		texturefile = "gfx/event_pictures/KGA/kga_country_40.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_41"
+		texturefile = "gfx/event_pictures/KGA/kga_country_41.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_42"
+		texturefile = "gfx/event_pictures/KGA/kga_country_42.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_43"
+		texturefile = "gfx/event_pictures/KGA/kga_country_43.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_44"
+		texturefile = "gfx/event_pictures/KGA/kga_country_44.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_45"
+		texturefile = "gfx/event_pictures/KGA/kga_country_45.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_46"
+		texturefile = "gfx/event_pictures/KGA/kga_country_46.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_47"
+		texturefile = "gfx/event_pictures/KGA/kga_country_47.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_48"
+		texturefile = "gfx/event_pictures/KGA/kga_country_48.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_49"
+		texturefile = "gfx/event_pictures/KGA/kga_country_49.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_50"
+		texturefile = "gfx/event_pictures/KGA/kga_country_50.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_51"
+		texturefile = "gfx/event_pictures/KGA/kga_country_51.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_52"
+		texturefile = "gfx/event_pictures/KGA/kga_country_52.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_53"
+		texturefile = "gfx/event_pictures/KGA/kga_country_53.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_54"
+		texturefile = "gfx/event_pictures/KGA/kga_country_54.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_55"
+		texturefile = "gfx/event_pictures/KGA/kga_country_55.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_56"
+		texturefile = "gfx/event_pictures/KGA/kga_country_56.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_57"
+		texturefile = "gfx/event_pictures/KGA/kga_country_57.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_58"
+		texturefile = "gfx/event_pictures/KGA/kga_country_58.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_59"
+		texturefile = "gfx/event_pictures/KGA/kga_country_59.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_60"
+		texturefile = "gfx/event_pictures/KGA/kga_country_60.dds"
+		legacy_lazy_load = no
+	}
+
+	#ANZ
+	spriteType = {
+		name = "GFX_event_anz_country_1"
+		texturefile = "gfx/event_pictures/ANZ/anz_country_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_anz_country_2"
+		texturefile = "gfx/event_pictures/ANZ/anz_country_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_anz_country_3"
+		texturefile = "gfx/event_pictures/ANZ/anz_country_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_anz_country_3"
+		texturefile = "gfx/event_pictures/ANZ/anz_country_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_anz_country_4"
+		texturefile = "gfx/event_pictures/ANZ/anz_country_4.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_anz_country_5"
+		texturefile = "gfx/event_pictures/ANZ/anz_country_5.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_anz_country_6"
+		texturefile = "gfx/event_pictures/ANZ/anz_country_6.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_anz_country_7"
+		texturefile = "gfx/event_pictures/ANZ/anz_country_7.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_anz_country_8"
+		texturefile = "gfx/event_pictures/ANZ/anz_country_8.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_anz_country_9"
+		texturefile = "gfx/event_pictures/ANZ/anz_country_9.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_anz_country_10"
+		texturefile = "gfx/event_pictures/ANZ/anz_country_10.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_anz_country_11"
+		texturefile = "gfx/event_pictures/ANZ/anz_country_11.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_anz_country_12"
+		texturefile = "gfx/event_pictures/ANZ/anz_country_12.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_anz_country_13"
+		texturefile = "gfx/event_pictures/ANZ/anz_country_13.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_anz_country_14"
+		texturefile = "gfx/event_pictures/ANZ/anz_country_14.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_anz_country_15"
+		texturefile = "gfx/event_pictures/ANZ/anz_country_15.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_anz_country_16"
+		texturefile = "gfx/event_pictures/ANZ/anz_country_16.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_anz_country_17"
+		texturefile = "gfx/event_pictures/ANZ/anz_country_17.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_event_anz_country_18"
+		texturefile = "gfx/event_pictures/ANZ/anz_country_18.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_anz_country_19"
+		texturefile = "gfx/event_pictures/ANZ/anz_country_19.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_anz_country_20"
+		texturefile = "gfx/event_pictures/ANZ/anz_country_20.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_anz_country_21"
+		texturefile = "gfx/event_pictures/ANZ/anz_country_21.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_anz_country_22"
+		texturefile = "gfx/event_pictures/ANZ/anz_country_22.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_anz_country_23"
+		texturefile = "gfx/event_pictures/ANZ/anz_country_23.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_anz_country_24"
+		texturefile = "gfx/event_pictures/ANZ/anz_country_24.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_anz_country_25"
+		texturefile = "gfx/event_pictures/ANZ/anz_country_25.dds"
+		legacy_lazy_load = no
+	}
 }

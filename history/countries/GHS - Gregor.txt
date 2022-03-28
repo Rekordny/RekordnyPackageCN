@@ -14,10 +14,10 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 25
-	fascism = 25
-	communism = 25
-	neutrality = 25
+	democratic = 12
+	fascism = 2
+	communism = 33
+	neutrality = 53
 }
 
 recruit_character = GHS_Kafka

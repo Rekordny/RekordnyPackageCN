@@ -1,0 +1,1 @@
+#This file should remain empty to replace vanilla file

@@ -96,8 +96,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			random_state = { 
-			limit = { is_core_of = ANZ is_controlled_by = ANZ }
-			    add_extra_state_shared_building_slots = 2
+				limit = { is_core_of = ANZ is_controlled_by = ANZ }
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -345,7 +345,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		mutually_exclusive = {  }
 		completion_reward = {
-			unlock_decision_tooltip = anz_Immigrate_to_northern_italy
+			unlock_decision_tooltip = anz_immigration_policy
 		}
 		ai_will_do = {
 			factor = 25
@@ -665,22 +665,143 @@ focus_tree = {
 		relative_position_id = ANZ_scientific_research_enterprise 
 		available = {  }
 		bypass = {  }
-		prerequisite = { focus = ANZ_scientific_research_enterprise  }
+		prerequisite = { focus = ANZ_duce }
+		prerequisite = { focus = ANZ_scientific_research_enterprise }
+		available_if_capitulated = yes
+		mutually_exclusive = {  }
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 22
+				state = 3
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#安齐奥国防大学
+	focus = {
+		id = ANZ_anzio_national_defense_university
+		icon = GFX_focus_ANZ_anzio_national_defense_university
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = ANZ_ride_the_climbing_cable 
+		available = {  }
+		bypass = {  }
+		prerequisite = { focus = ANZ_ride_the_climbing_cable }
+		available_if_capitulated = yes
+		mutually_exclusive = {  }
+		completion_reward = {
+			random_state = {
+				limit = { is_core_of = ANZ is_controlled_by = ANZ }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = senshado_school
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = { is_core_of = ANZ is_controlled_by = ANZ }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = senshado_school
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_ideas = ANZ_anzio_national_defense_university
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#军用投资企划
+	focus = {
+		id = ANZ_military_investment_planning
+		icon = GFX_focus_ANZ_military_investment_planning
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = ANZ_anzio_national_defense_university 
+		available = {  }
+		bypass = {  }
+		prerequisite = { focus = ANZ_anzio_national_defense_university }
+		available_if_capitulated = yes
+		mutually_exclusive = {  }
+		completion_reward = {
+			unlock_decision_category_tooltip = anz_military_investment_proposal
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#瑞士地区能源建设
+	focus = {
+		id = ANZ_switzerland_energy_construction
+		icon = GFX_focus_ANZ_switzerland_energy_construction
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = ANZ_ride_the_climbing_cable 
+		available = { controls_state = 3 controls_state = 151 }
+		bypass = {  }
+		prerequisite = { focus = ANZ_ride_the_climbing_cable }
 		available_if_capitulated = yes
 		mutually_exclusive = {  }
 		completion_reward = {
 			3 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
-					type = bunker
+					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
 			}
+			151 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#铺设出口电力线路
+	focus = {
+		id = ANZ_laying_export_power_transmission_lines
+		icon = GFX_focus_ANZ_laying_export_power_transmission_lines
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = ANZ_switzerland_energy_construction 
+		available = { has_railway_level = { state = 151 level = 3 } has_railway_level = { state = 3 level = 3 } industrial_complex > 59 OR = { NOT = { has_war_with = KGA } NOT = { has_war_with = BCF } NOT = { has_war_with = BON } } }
+		bypass = {  }
+		prerequisite = { focus = ANZ_switzerland_energy_construction }
+		available_if_capitulated = yes
+		mutually_exclusive = {  }
+		completion_reward = {
+			country_event = Anzio.22
 		}
 		ai_will_do = {
 			factor = 25
@@ -703,25 +824,15 @@ focus_tree = {
 		completion_reward = {
 			3 = {
 				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
 					type = bunker
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 			158 = {
 				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
 					type = bunker
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -730,6 +841,32 @@ focus_tree = {
 			factor = 25
 		}
 	}
+
+	#提防北部
+	focus = {
+		id = ANZ_beware_of_the_north
+		icon = GFX_focus_ANZ_beware_of_the_north
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = ANZ_extend_defense_to_the_coast 
+		available = { AND = { NOT = { has_war_with = PRA } NOT = { is_in_faction_with = PRA } } }
+		bypass = { OR = { has_war_with = PRA is_in_faction_with = PRA } }
+		prerequisite = { focus = ANZ_extend_defense_to_the_coast }
+		available_if_capitulated = yes
+		mutually_exclusive = {  }
+		completion_reward = {
+			add_war_support = 0.1
+			create_wargoal = {
+				target = PRA
+				type = annex_everything
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
 	#宣称东巴尔干
 	focus = {
 		id = ANZ_declare_eastern_balkans 
@@ -810,7 +947,7 @@ focus_tree = {
 		id = ANZ_duce
 		icon = GFX_focus_ANZ_duce
 		x = 0
-		y = 1
+		y = 3
 		cost = 10
 		relative_position_id = ANZ_national_front
 		available = {  }
@@ -819,7 +956,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		mutually_exclusive = {  }
 		completion_reward = {
-			#加强安丘比
+			set_country_flag = ANZ_START_NERO_SYNDROME
+			country_event = { id = Anzio.15 }
 		}
 		ai_will_do = {
 			factor = 25
@@ -1128,6 +1266,276 @@ focus_tree = {
 				amount = 500
 				producer = STG
 			}
+		} 
+	}
+
+	#奶油意面计划
+	focus = {
+		id = ANZ_creamy_macaroni_plan
+		icon = GFX_focus_ANZ_creamy_macaroni_plan
+        x = -1
+		y = 1
+		cost = 5
+		available = {  }
+		bypass = {  }
+		relative_position_id = ANZ_social_ideological_liberation
+		prerequisite = { focus = ANZ_social_ideological_liberation }
+		completion_reward = {
+			add_tech_bonus = {
+				category = light_fighter
+				uses = 1
+				bonus = 1
+			}
+			add_equipment_to_stockpile = {
+		        type = CAS_equipment
+				amount = 100
+				producer = ANZ
+			}
+			add_equipment_to_stockpile = {
+		        type = fighter_equipment
+				amount = 100
+				producer = ANZ
+			}
+		} 
+	}
+
+	#四喜披萨计划
+	focus = {
+		id = ANZ_four_seasons_pizza_plan
+		icon = GFX_focus_ANZ_four_seasons_pizza_plan
+        x = 1
+		y = 1
+		cost = 5
+		available = {  }
+		bypass = {  }
+		relative_position_id = ANZ_social_ideological_liberation
+		prerequisite = { focus = ANZ_social_ideological_liberation }
+		completion_reward = {
+			add_tech_bonus = {
+				category = support_tech
+				uses = 1
+				bonus = 1
+			}
+			add_equipment_to_stockpile = {
+		        type = support_equipment
+				amount = 300
+				producer = ANZ
+			}
+			add_equipment_to_stockpile = {
+		        type = artillery_equipment
+				amount = 500
+				producer = ANZ
+			}
+		} 
+	}
+
+	#支援吉尔伯特
+	focus = {
+		id = ANZ_support_gilbert
+		icon = GFX_focus_ANZ_support_gilbert
+        x = -1
+		y = 1
+		cost = 10
+		available = { SDS = { has_country_flag = SDS_CIVIL_WAR_BEGAN } }
+		bypass = {  }
+		relative_position_id = ANZ_four_seasons_pizza_plan
+		prerequisite = { focus = ANZ_four_seasons_pizza_plan }
+		prerequisite = { focus = ANZ_creamy_macaroni_plan }
+		completion_reward = {
+			
+		} 
+	}
+
+	#吞食神罗遗产
+	focus = {
+		id = ANZ_devour_the_legacy_of_the_empire
+		icon = GFX_focus_ANZ_creamy_macaroni_operations
+        x = 0
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = {  }
+		relative_position_id = ANZ_duce
+		prerequisite = { focus = ANZ_duce }
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = KGA
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = BCF
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = WAF
+			}
+		} 
+	}
+
+	#重建新罗马
+	focus = {
+		id = ANZ_rebuild_new_rome
+		icon = GFX_focus_ANZ_rebuild_new_rome
+        x = 0
+		y = 1
+		cost = 10
+		available = { ANZ_Anchovy = { NOT = { has_trait = ANZ_nero_syndrome_0 } } }
+		bypass = {  }
+		relative_position_id = ANZ_devour_the_legacy_of_the_empire
+		prerequisite = { focus = ANZ_devour_the_legacy_of_the_empire }
+		completion_reward = {
+			ANZ = {
+				set_capital = {
+					state = 158 
+					remember_old_capital = no
+				}
+			}
+			add_stability = 0.2
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.2
+			}
+			set_cosmetic_tag = APQR
+		} 
+	}
+
+	#新罗马大宪法
+	focus = {
+		id = ANZ_the_new_great_roman_constitution
+		icon = GFX_focus_ANZ_the_new_great_roman_constitution
+        x = 0
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = {  }
+		relative_position_id = ANZ_rebuild_new_rome
+		prerequisite = { focus = ANZ_rebuild_new_rome }
+		completion_reward = {
+			country_event = Anzio.26
+		} 
+	}
+
+	#公权力财富分摊
+	focus = {
+		id = ANZ_public_power_wealth_equalization
+		icon = GFX_focus_ANZ_public_power_wealth_equalization
+        x = -1
+		y = 1
+		cost = 10
+		available = { fascism > 0.99 }
+		bypass = {  }
+		relative_position_id = ANZ_the_new_great_roman_constitution
+		prerequisite = { focus = ANZ_the_new_great_roman_constitution }
+		completion_reward = {
+			random_state = {
+				limit = { is_core_of = ANZ is_controlled_by = ANZ industrial_complex > 1 }
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+				add_state_modifier = {
+					modifier = { local_building_slots_factor = 0.8 state_resources_factor = 0.1 }
+				}
+			}random_state = {
+				limit = { is_core_of = ANZ is_controlled_by = ANZ industrial_complex > 1 }
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+				add_state_modifier = {
+					modifier = { local_building_slots_factor = 0.8 state_resources_factor = 0.1 }
+				}
+			}random_state = {
+				limit = { is_core_of = ANZ is_controlled_by = ANZ industrial_complex > 1 }
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+				add_state_modifier = {
+					modifier = { local_building_slots_factor = 0.8 state_resources_factor = 0.1 }
+				}
+			}random_state = {
+				limit = { is_core_of = ANZ is_controlled_by = ANZ industrial_complex > 1 }
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+				add_state_modifier = {
+					modifier = { local_building_slots_factor = 0.8 state_resources_factor = 0.1 }
+				}
+			}
+			add_war_support = 0.1
+			custom_effect_tooltip = anz_tooltip7
+			add_to_variable = { gold = 500 }
+		} 
+	}
+
+	#去种族论的法西斯
+	focus = {
+		id = ANZ_fascism_without_racism
+		icon = GFX_focus_ANZ_fascism_without_racism
+        x = 1
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = {  }
+		relative_position_id = ANZ_the_new_great_roman_constitution
+		prerequisite = { focus = ANZ_the_new_great_roman_constitution }
+		completion_reward = {
+			PRA = { add_timed_idea = {
+				idea = fascist_influence
+				days = 365
+			} }
+			KGA = { add_timed_idea = {
+				idea = fascist_influence
+				days = 365
+			} }
+			BCF = { add_timed_idea = {
+				idea = fascist_influence
+				days = 365
+			} }
+			BDH = { add_timed_idea = {
+				idea = fascist_influence
+				days = 365
+			} }
+			BON = { add_timed_idea = {
+				idea = fascist_influence
+				days = 365
+			} }
+			COU = { add_timed_idea = {
+				idea = fascist_influence
+				days = 365
+			} }
+			YOG = { add_timed_idea = {
+				idea = fascist_influence
+				days = 365
+			} }
+			GHS = { add_timed_idea = {
+				idea = fascist_influence
+				days = 365
+			} }
+			KEB = { add_timed_idea = {
+				idea = fascist_influence
+				days = 365
+			} }
+		} 
+	}
+
+	#将社会革命进行到底
+	focus = {
+		id = ANZ_bringing_the_social_revolution_to_the_end
+		icon = GFX_focus_ANZ_bringing_the_social_revolution_to_the_end
+        x = -1
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = {  }
+		relative_position_id = ANZ_fascism_without_racism
+		prerequisite = { focus = ANZ_fascism_without_racism }
+		prerequisite = { focus = ANZ_public_power_wealth_equalization }
+		completion_reward = {
+			add_ideas = ANZ_bringing_the_social_revolution_to_the_end
 		} 
 	}
 }
