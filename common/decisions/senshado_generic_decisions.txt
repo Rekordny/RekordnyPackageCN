@@ -11,7 +11,7 @@ senshado_decisions = {
 
 	debug_character_recurit = {
 		visible = {
-			is_testing = yes
+			AND = { is_ai = no is_debug = yes }
 		}
 		days_re_enable = 0
 		complete_effect = {
@@ -23,7 +23,7 @@ senshado_decisions = {
 
 	debug_hyper_event_active = {
 		visible = {
-			is_testing = yes
+			AND = { is_ai = no is_debug = yes }
 		}
 		days_re_enable = 1
 		complete_effect = {
@@ -34,7 +34,7 @@ senshado_decisions = {
 
 	debug_hyper_event_close = {
 		visible = {
-			is_testing = yes
+			AND = { is_ai = no is_debug = yes }
 		}
 		days_re_enable = 1
 		complete_effect = {
@@ -44,7 +44,7 @@ senshado_decisions = {
 
 	debug_free_300_ssdp_points = {
 		visible = {
-			is_testing = yes
+			AND = { is_ai = no is_debug = yes }
 		}
 		days_re_enable = 1
 		complete_effect = {
@@ -55,7 +55,7 @@ senshado_decisions = {
 
 	debug_clear_ssdp_points = {
 		visible = {
-			is_testing = yes
+			AND = { is_ai = no is_debug = yes }
 		}
 		days_re_enable = 1
 		complete_effect = {
@@ -65,7 +65,7 @@ senshado_decisions = {
 	
 	debug_clear_affinity = {
 		visible = {
-			is_testing = yes
+			AND = { is_ai = no is_debug = yes }
 		}
 		days_re_enable = 1
 		complete_effect = {
@@ -77,7 +77,7 @@ senshado_decisions = {
 
 	debug_senshado_test = {
 		visible = {
-			is_testing = yes
+			AND = { is_ai = no is_debug = yes }
 		}
 		complete_effect = {
 			add_goods = yes
@@ -86,7 +86,7 @@ senshado_decisions = {
 
 	debug_add_senshado_school = {
 		visible = {
-			is_testing = yes
+			AND = { is_ai = no is_debug = yes }
 		}
 		complete_effect = {
 			random_state = {

@@ -3,7 +3,7 @@ stg_worker_and_labor_party = {
 	#DEBUG
 	stg_debug_begin_great_strike = {
 		allowed = { tag = STG }
-		visible = { is_testing = yes }
+		visible = { AND = { is_ai = no is_debug = yes } }
 		fire_only_once = no
 		complete_effect = {
 			add_popularity = {
@@ -14,7 +14,7 @@ stg_worker_and_labor_party = {
 	}
 	stg_debug_add_satisfaction = {
 		allowed = { tag = STG }
-		visible = { is_testing = yes }
+		visible = { AND = { is_ai = no is_debug = yes } }
 		fire_only_once = no
 		complete_effect = {
 			add_to_variable = {
@@ -24,7 +24,7 @@ stg_worker_and_labor_party = {
 	}
 	stg_debug_clear_strike = {
 		allowed = { tag = STG }
-		visible = { is_testing = yes }
+		visible = { AND = { is_ai = no is_debug = yes } }
 		fire_only_once = no
 		complete_effect = {
 			clear_variable = stg_satisfaction
@@ -38,7 +38,7 @@ stg_worker_and_labor_party = {
 	}
 	stg_debug_create_country = {
 		allowed = { tag = STG }
-		visible = { is_testing = yes }
+		visible = { AND = { is_ai = no is_debug = yes } }
 		fire_only_once = no
 		complete_effect = {
 			start_civil_war = {
@@ -63,7 +63,7 @@ stg_worker_and_labor_party = {
 	#临时提高工人薪水
 	stg_temporary_increase_workers_salaries = {
 		allowed = { tag = STG }
-		visible = { OR = { is_testing = yes OR = { has_idea = STG_worker_great_strike_0 has_idea = STG_worker_great_strike_1 has_idea = STG_worker_great_strike_2 has_idea = STG_worker_great_strike_3 has_idea = STG_worker_great_strike_4 has_idea = STG_worker_great_strike_5 } } }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } OR = { has_idea = STG_worker_great_strike_0 has_idea = STG_worker_great_strike_1 has_idea = STG_worker_great_strike_2 has_idea = STG_worker_great_strike_3 has_idea = STG_worker_great_strike_4 has_idea = STG_worker_great_strike_5 } } }
 		fire_only_once = no
 		days_remove = 10
 		days_re_enable = 10
@@ -94,7 +94,7 @@ stg_worker_and_labor_party = {
 	#减少外务劳工输入
 	stg_reduce_labor_import = {
 		allowed = { tag = STG }
-		visible = { OR = { is_testing = yes OR = { has_idea = STG_worker_great_strike_0 has_idea = STG_worker_great_strike_1 has_idea = STG_worker_great_strike_2 has_idea = STG_worker_great_strike_3 has_idea = STG_worker_great_strike_4 has_idea = STG_worker_great_strike_5 } } }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } OR = { has_idea = STG_worker_great_strike_0 has_idea = STG_worker_great_strike_1 has_idea = STG_worker_great_strike_2 has_idea = STG_worker_great_strike_3 has_idea = STG_worker_great_strike_4 has_idea = STG_worker_great_strike_5 } } }
 		fire_only_once = no
 		days_remove = 15
 		days_re_enable = 10
@@ -126,7 +126,7 @@ stg_worker_and_labor_party = {
 	#出动警察维持秩序
 	stg_dispatch_police_to_maintain_order = {
 		allowed = { tag = STG }
-		visible = { OR = { is_testing = yes OR = { has_idea = STG_worker_great_strike_0 has_idea = STG_worker_great_strike_1 has_idea = STG_worker_great_strike_2 has_idea = STG_worker_great_strike_3 has_idea = STG_worker_great_strike_4 has_idea = STG_worker_great_strike_5 } } }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } OR = { has_idea = STG_worker_great_strike_0 has_idea = STG_worker_great_strike_1 has_idea = STG_worker_great_strike_2 has_idea = STG_worker_great_strike_3 has_idea = STG_worker_great_strike_4 has_idea = STG_worker_great_strike_5 } } }
 		fire_only_once = no
 		days_remove = 10
 		days_re_enable = 10
@@ -159,7 +159,7 @@ stg_worker_and_labor_party = {
 	#举办战车道庆典
 	stg_host_senshado_festival = {
 		allowed = { tag = STG }
-		visible = { OR = { is_testing = yes OR = { has_idea = STG_worker_great_strike_0 has_idea = STG_worker_great_strike_1 has_idea = STG_worker_great_strike_2 has_idea = STG_worker_great_strike_3 has_idea = STG_worker_great_strike_4 has_idea = STG_worker_great_strike_5 } } }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } OR = { has_idea = STG_worker_great_strike_0 has_idea = STG_worker_great_strike_1 has_idea = STG_worker_great_strike_2 has_idea = STG_worker_great_strike_3 has_idea = STG_worker_great_strike_4 has_idea = STG_worker_great_strike_5 } } }
 		fire_only_once = no
 		days_remove = 20
 		days_re_enable = 10
@@ -287,7 +287,7 @@ stg_government = {
 	#维和军队扩大法
 	stg_peacekeeping_force_expansion_act = {
 		allowed = { tag = STG }
-		visible = { OR = { is_testing = yes has_completed_focus = STG_emergency_volunteer_dispatch } }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } has_completed_focus = STG_emergency_volunteer_dispatch } }
 		available = { democratic > 0.65 }
 		fire_only_once = yes
 		days_remove = 70
@@ -305,7 +305,7 @@ stg_government = {
 	#战车道巡回演出
 	stg_senshado_tour_show = {
 		allowed = { tag = STG }
-		visible = { OR = { is_testing = yes has_completed_focus = STG_british_concern } }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } has_completed_focus = STG_british_concern } }
 		available = { has_stability < 0.6 }
 		fire_only_once = yes
 		days_remove = 90
@@ -333,7 +333,7 @@ stg_government = {
 	#对共产主义的负面报道
 	stg_negative_reports_on_communism = {
 		allowed = { tag = STG }
-		visible = { OR = { is_testing = yes has_completed_focus = STG_control_social_media } }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } has_completed_focus = STG_control_social_media } }
 		available = { communism > 0.1 }
 		fire_only_once = no
 		days_remove = 60
@@ -354,7 +354,7 @@ stg_government = {
 	#对法西斯主义的负面报道
 	stg_negative_reports_on_fascism = {
 		allowed = { tag = STG }
-		visible = { OR = { is_testing = yes has_completed_focus = STG_control_social_media } }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } has_completed_focus = STG_control_social_media } }
 		available = { fascism > 0.1 }
 		fire_only_once = no
 		days_remove = 60
@@ -375,7 +375,7 @@ stg_government = {
 	#对皇家派系的负面报道
 	stg_negative_reports_on_royal = {
 		allowed = { tag = STG }
-		visible = { OR = { is_testing = yes has_completed_focus = STG_control_social_media } }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } has_completed_focus = STG_control_social_media } }
 		available = { neutrality > 0.1 }
 		fire_only_once = no
 		days_remove = 60
@@ -412,7 +412,7 @@ stg_kuromorimine_occupation = {
 				controls_state = 59
 			}
 		}
-		visible = { OR = { is_testing = yes has_country_flag = STG_START_OCCUPATION } }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } has_country_flag = STG_START_OCCUPATION } }
 		is_good = yes
 		activation = { has_country_flag = STG_START_OCCUPATION } 
 		days_mission_timeout = 365
@@ -433,7 +433,7 @@ stg_kuromorimine_occupation = {
 	}
 	stg_extend_occupation_deadline = {
 		allowed = { tag = STG }
-		visible = { OR = { is_testing = yes has_country_flag = STG_START_OCCUPATION } }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } has_country_flag = STG_START_OCCUPATION } }
 		fire_only_once = no
 		days_remove = 10
 		days_re_enable = 90
@@ -452,7 +452,7 @@ stg_kuromorimine_occupation = {
 	}
 	stg_return_occupation_region = {
 		allowed = { tag = STG }
-		visible = { OR = { is_testing = yes has_country_flag = STG_START_OCCUPATION } }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } has_country_flag = STG_START_OCCUPATION } }
 		fire_only_once = yes
 		days_remove = 30
 		complete_effect = {
@@ -471,7 +471,7 @@ stg_kuromorimine_occupation = {
 	}
 	stg_suppress_occupation_zone = {
 		allowed = { tag = STG }
-		visible = { OR = { is_testing = yes has_country_flag = STG_START_OCCUPATION } }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } has_country_flag = STG_START_OCCUPATION } }
 		fire_only_once = no
 		days_re_enable = 30
 		days_remove = 10
@@ -510,7 +510,7 @@ stg_industry = {
 	#转移黑森峰工业至本土
 	stg_transfer_kga_industry_mainland = {
 		allowed = { tag = STG }
-		visible = { OR = { is_testing = yes has_country_flag = STG_TRANSFER_KGA_INDUSTRY_0 } }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } has_country_flag = STG_TRANSFER_KGA_INDUSTRY_0 } }
 		available = { has_equipment = { convoy > 49 } controls_state = 51 controls_state = 57 controls_state = 59 }
 		fire_only_once = yes
 		days_remove = 150
@@ -577,7 +577,7 @@ stg_industry = {
 	#转移黑森峰工业至华夫
 	stg_transfer_kga_industry_waf = {
 		allowed = { tag = STG }
-		visible = { OR = { is_testing = yes has_country_flag = STG_TRANSFER_KGA_INDUSTRY_1 } }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } has_country_flag = STG_TRANSFER_KGA_INDUSTRY_1 } }
 		available = { controls_state = 51 controls_state = 57 controls_state = 59 }
 		fire_only_once = yes
 		days_remove = 60

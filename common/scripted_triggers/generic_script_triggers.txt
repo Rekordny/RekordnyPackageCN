@@ -14,5 +14,5 @@ generic_hist_neutraily = {
 
 #玩家使用debug模式
 is_testing = {
-	is_testing = yes
+	AND = { is_ai = no is_debug = yes }
 }
