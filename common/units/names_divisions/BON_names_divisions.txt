@@ -1,0 +1,203 @@
+BON_1 = 
+{
+	name = "Dywizja Zmotoryzowana"
+
+	for_countries = { BON }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. Bonple Dywizja Zmotoryzowana"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Bonple Dywizja Zmotoryzowana" }
+		2 = { "%d. Bonple Dywizja Zmotoryzowana" }
+		3 = { "%d. Bonple Dywizja Zmotoryzowana" }
+		4 = { "%d. Bonple Dywizja Zmotoryzowana" }
+		5 = { "%d. Bonple Dywizja Zmotoryzowana" }
+		6 = { "%d. Bonple Dywizja Zmotoryzowana" }
+		7 = { "%d. Bonple Dywizja Zmotoryzowana" }
+		8 = { "%d. Bonple Dywizja Zmotoryzowana" }
+		9 = { "%d. Bonple Dywizja Zmotoryzowana" }
+		10 = { "%d. Bonple Dywizja Zmotoryzowana" }
+		11 = { "%d. Bonple Dywizja Zmotoryzowana" }
+		12 = { "%d. Bonple Dywizja Zmotoryzowana" }
+		13 = { "%d. Bonple Dywizja Zmotoryzowana" }
+		14 = { "%d. Bonple Dywizja Zmotoryzowana" }
+		15 = { "%d. Bonple Dywizja Zmotoryzowana" }
+		16 = { "%d. Bonple Dywizja Zmotoryzowana" }
+		17 = { "%d. Bonple Dywizja Zmotoryzowana" }
+		18 = { "%d. Bonple Dywizja Zmotoryzowana" }
+		19 = { "%d. Bonple Dywizja Zmotoryzowana" }
+
+	}
+}
+BON_2 = 
+{
+	name = "Oddział piechoty"
+
+	for_countries = { BON }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. Bonple Oddział piechoty"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Bonple Oddział piechoty" }
+		2 = { "%d. Bonple Oddział piechoty" }
+		3 = { "%d. Bonple Oddział piechoty" }
+		4 = { "%d. Bonple Oddział piechoty" }
+		5 = { "%d. Bonple Oddział piechoty" }
+		6 = { "%d. Bonple Oddział piechoty" }
+		7 = { "%d. Bonple Oddział piechoty" }
+		8 = { "%d. Bonple Oddział piechoty" }
+		9 = { "%d. Bonple Oddział piechoty" }
+		10 = { "%d. Bonple Oddział piechoty" }
+		11 = { "%d. Bonple Oddział piechoty" }
+		12 = { "%d. Bonple Oddział piechoty" }
+		13 = { "%d. Bonple Oddział piechoty" }
+		14 = { "%d. Bonple Oddział piechoty" }
+		15 = { "%d. Bonple Oddział piechoty" }
+		16 = { "%d. Bonple Oddział piechoty" }
+		17 = { "%d. Bonple Oddział piechoty" }
+		18 = { "%d. Bonple Oddział piechoty" }
+		19 = { "%d. Bonple Oddział piechoty" }
+
+	}
+}
+BON_3 = 
+{
+	name = "Brygada Artylerii"
+
+	for_countries = { BON }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. Bonple Brygada Artylerii"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Bonple Brygada Artylerii" }
+		2 = { "%d. Bonple Brygada Artylerii" }
+		3 = { "%d. Bonple Brygada Artylerii" }
+		4 = { "%d. Bonple Brygada Artylerii" }
+		5 = { "%d. Bonple Brygada Artylerii" }
+		6 = { "%d. Bonple Brygada Artylerii" }
+		7 = { "%d. Bonple Brygada Artylerii" }
+		8 = { "%d. Bonple Brygada Artylerii" }
+		9 = { "%d. Bonple Brygada Artylerii" }
+		10 = { "%d. Bonple Brygada Artylerii" }
+		11 = { "%d. Bonple Brygada Artylerii" }
+		12 = { "%d. Bonple Brygada Artylerii" }
+		13 = { "%d. Bonple Brygada Artylerii" }
+		14 = { "%d. Bonple Brygada Artylerii" }
+		15 = { "%d. Bonple Brygada Artylerii" }
+		16 = { "%d. Bonple Brygada Artylerii" }
+		17 = { "%d. Bonple Brygada Artylerii" }
+		18 = { "%d. Bonple Brygada Artylerii" }
+		19 = { "%d. Bonple Brygada Artylerii" }
+
+	}
+}
+BON_4 = 
+{
+	name = "Brygada Obrony Powietrznej Rakiet"
+
+	for_countries = { BON }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. Bonple Brygada Obrony Powietrznej Rakiet"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Bonple Brygada Obrony Powietrznej Rakiet" }
+		2 = { "%d. Bonple Brygada Obrony Powietrznej Rakiet" }
+		3 = { "%d. Bonple Brygada Obrony Powietrznej Rakiet" }
+		4 = { "%d. Bonple Brygada Obrony Powietrznej Rakiet" }
+		5 = { "%d. Bonple Brygada Obrony Powietrznej Rakiet" }
+		6 = { "%d. Bonple Brygada Obrony Powietrznej Rakiet" }
+		7 = { "%d. Bonple Brygada Obrony Powietrznej Rakiet" }
+		8 = { "%d. Bonple Brygada Obrony Powietrznej Rakiet" }
+		9 = { "%d. Bonple Brygada Obrony Powietrznej Rakiet" }
+		10 = { "%d. Bonple Brygada Obrony Powietrznej Rakiet" }
+		11 = { "%d. Bonple Brygada Obrony Powietrznej Rakiet" }
+		12 = { "%d. Bonple Brygada Obrony Powietrznej Rakiet" }
+		13 = { "%d. Bonple Brygada Obrony Powietrznej Rakiet" }
+		14 = { "%d. Bonple Brygada Obrony Powietrznej Rakiet" }
+		15 = { "%d. Bonple Brygada Obrony Powietrznej Rakiet" }
+		16 = { "%d. Bonple Brygada Obrony Powietrznej Rakiet" }
+		17 = { "%d. Bonple Brygada Obrony Powietrznej Rakiet" }
+		18 = { "%d. Bonple Brygada Obrony Powietrznej Rakiet" }
+		19 = { "%d. Bonple Brygada Obrony Powietrznej Rakiet" }
+	}
+}
+BON_5 = 
+{
+	name = "Dywizja Czołgów"
+
+	for_countries = { BON }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. Bonple Dywizja Czołgów"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Bonple Dywizja Czołgów" }
+		2 = { "%d. Bonple Dywizja Czołgów" }
+		3 = { "%d. Bonple Dywizja Czołgów" }
+		4 = { "%d. Bonple Dywizja Czołgów" }
+		5 = { "%d. Bonple Dywizja Czołgów" }
+		6 = { "%d. Bonple Dywizja Czołgów" }
+		7 = { "%d. Bonple Dywizja Czołgów" }
+		8 = { "%d. Bonple Dywizja Czołgów" }
+		9 = { "%d. Bonple Dywizja Czołgów" }
+		10 = { "%d. Bonple Dywizja Czołgów" }
+		11 = { "%d. Bonple Dywizja Czołgów" }
+		12 = { "%d. Bonple Dywizja Czołgów" }
+		13 = { "%d. Bonple Dywizja Czołgów" }
+		14 = { "%d. Bonple Dywizja Czołgów" }
+		15 = { "%d. Bonple Dywizja Czołgów" }
+		16 = { "%d. Bonple Dywizja Czołgów" }
+		17 = { "%d. Bonple Dywizja Czołgów" }
+		18 = { "%d. Bonple Dywizja Czołgów" }
+		19 = { "%d. Bonple Dywizja Czołgów" }
+	}
+}

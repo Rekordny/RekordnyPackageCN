@@ -74,18 +74,4 @@ characters={
 			legacy_id=1014
 		}
 	}
-	BON_john_taylor={
-		name="John Taylor"
-		portraits={
-			civilian={
-				large="GFX_portrait_europe_generic_4"
-			}
-		}
-		country_leader={
-			ideology=socialism
-			traits={ smooth_talking_charmer captain_of_industry }
-			expire="1985.9.6.12"
-			id=-1
-		}
-	}
 }

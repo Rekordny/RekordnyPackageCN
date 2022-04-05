@@ -322,6 +322,7 @@ country_event = {
 	desc = bcfreedom_diplo.4.d
 	picture = GFX_report_event_german_speech
 	trigger = {
+		tag = ORL
 		has_war_with = ANZ
 		has_full_control_of_state = 158
 		has_full_control_of_state = 159

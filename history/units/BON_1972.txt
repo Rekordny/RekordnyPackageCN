@@ -1,0 +1,248 @@
+division_template = {
+	name = "Dywizja Zmotoryzowana"		# Infantry Division - Reserve division called to full strength in time of war
+	division_names_group = BON_1
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+        motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+        mechanized = { x = 2 y = 0 }
+		medium_armor = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+        maintenance_company = { x = 0 y = 1 }
+		light_sp_anti_air_brigade = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Oddział piechoty"
+	division_names_group = BON_2
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Brygada Artylerii"
+	division_names_group = BON_3
+
+	regiments = {
+		artillery_brigade = { x = 0 y = 0 }
+		artillery_brigade = { x = 0 y = 1 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		light_sp_artillery_brigade = { x = 0 y = 0 }
+	}
+}
+# division_template = {
+# 	name = "Brygada Obrony Powietrznej Rakiet"
+# 	division_names_group = BON_4
+
+# 	regiments = {
+# 		anti_air = { x = 0 y = 0 }
+# 		anti_air = { x = 0 y = 1 }
+#         anti_air = { x = 0 y = 2 }
+# 		motorized = { x = 1 y = 0 }
+# 		motorized = { x = 1 y = 1 }
+# 		motorized = { x = 1 y = 2 }
+# 	}
+# 	support = {
+# 		anti_air_brigade = { x = 0 y = 0 }
+# 	}
+# }
+division_template = {
+	name = "Dywizja Czołgów"
+	division_names_group = BON_5
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+    	medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+	}
+	support = {
+		mot_anti_air_brigade = { x = 0 y = 0 }
+		rocket_artillery_brigade = { x = 0 y = 1 }
+	}
+}
+
+units = {
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        location = 3230
+        division_template = "Dywizja Zmotoryzowana"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 3
+        }
+        location = 6296
+        division_template = "Dywizja Zmotoryzowana"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 9
+        }
+        location = 9340
+        division_template = "Dywizja Zmotoryzowana"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 12
+        }
+        location = 3152
+        division_template = "Dywizja Zmotoryzowana"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 15
+        }
+        location = 3544
+        division_template = "Dywizja Zmotoryzowana"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 2
+        }
+        location = 11301
+        division_template = "Dywizja Zmotoryzowana"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 4
+        }
+        location = 3544
+        division_template = "Dywizja Zmotoryzowana"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        location = 9427
+        division_template = "Brygada Artylerii"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 2
+        }
+        location = 11467
+        division_template = "Brygada Artylerii"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 6
+        }
+        location = 9340
+        division_template = "Brygada Artylerii"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 7
+        }
+        location = 10493
+        division_template = "Brygada Artylerii"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 5
+        }
+        location = 3320
+        division_template = "Brygada Artylerii"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 16
+        }
+        location = 9483
+        division_template = "Dywizja Czołgów"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 5
+        }
+        location = 6558
+        division_template = "Dywizja Czołgów"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 11
+        }
+        location = 3392
+        division_template = "Dywizja Czołgów"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 20
+        }
+        location = 11479
+        division_template = "Dywizja Czołgów"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+}

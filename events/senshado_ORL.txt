@@ -556,6 +556,7 @@ country_event = {
 	picture = GFX_report_event_german_speech
 	fire_only_once = yes
 	trigger = {
+		tag = ORL
 		has_idea = ORL_mind_over_matter_2
 		NOT = {
 			has_country_flag = ORL_price_1

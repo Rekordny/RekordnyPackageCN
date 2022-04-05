@@ -26,3 +26,11 @@ bon_ensure_military_loyalty = {
 	icon = GFX_decision_category_senshado
 	allowed = { tag = BON }
 }
+bon_ethnic_assimilation = {
+	icon = GFX_decision_category_senshado
+	allowed = { tag = BON }
+}
+bon_industrial_modernization = {
+	icon = GFX_decision_category_senshado
+	allowed = { tag = BON }
+}

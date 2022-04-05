@@ -4,7 +4,7 @@ kga_government = {
 	##########以下为KGA测试
 	test_war = {
 		allowed = { tag = KGA }
-		visible = { AND = { is_debug = yes is_ai = no } }
+		visible = { is_testing = yes }
 		days_re_enable = 1
 		complete_effect = {
 			declare_war_on = {
@@ -23,7 +23,7 @@ kga_government = {
 	}
 	test_peace = {
 		allowed = { tag = KGA }
-		visible = { AND = { is_debug = yes is_ai = no } }
+		visible = { is_testing = yes }
 		days_re_enable = 1
 		complete_effect = {
 			white_peace_with_every_enemy = yes
@@ -32,7 +32,7 @@ kga_government = {
 	}
 	test_events = {
 		allowed = { tag = KGA }
-		visible = { AND = { is_debug = yes is_ai = no } }
+		visible = { is_testing = yes }
 		days_re_enable = 1
 		complete_effect = {
 			activate_advisor = KGA_maho
@@ -43,7 +43,7 @@ kga_government = {
 
     kga_pay_gold = {
 		allowed = { tag = KGA }
-		visible = { OR = { AND = { has_completed_focus = KGA_atonement NOT = { has_country_flag = kga_paid_debt } } AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { AND = { has_completed_focus = KGA_atonement NOT = { has_country_flag = kga_paid_debt } } is_testing = yes } }
 		
 		days_re_enable = 80
 		custom_cost_trigger = {
@@ -75,7 +75,7 @@ kga_government = {
 	}
 	kga_remove_bellwall_threat = {
 		allowed = { tag = KGA }
-		visible = { OR = { AND = { has_completed_focus = KGA_stablize_senshado_military_government NOT = { has_country_flag = KGA_PREPARE_CIVIL_WAR_START } has_idea = KGA_bellwall_threat } AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { AND = { has_completed_focus = KGA_stablize_senshado_military_government NOT = { has_country_flag = KGA_PREPARE_CIVIL_WAR_START } has_idea = KGA_bellwall_threat } is_testing = yes } }
 		fire_only_once = yes
 		complete_effect = {
 			KGA = {
@@ -190,7 +190,7 @@ kga_diplomatic = {
 kga_industry = {
 	kga_plan_industrial_land = {
 		allowed = { tag = KGA }
-		visible = { OR = { AND = { has_completed_focus = KGA_reconstruction_law } AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { AND = { has_completed_focus = KGA_reconstruction_law } is_testing = yes } }
 		days_remove = 10
 		custom_cost_trigger = {
 			check_variable = { political_power > 24.9 }
@@ -208,7 +208,7 @@ kga_industry = {
 	}
 	kga_agricultural_production_plan = {
 		allowed = { tag = KGA }
-		visible = { OR = { AND = { has_completed_focus = KGA_agricultural_production_plan } AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { AND = { has_completed_focus = KGA_agricultural_production_plan } is_testing = yes } }
 		days_re_enable = 361
 		custom_cost_trigger = {
 			check_variable = { gold > 49.9 }
@@ -226,7 +226,7 @@ kga_industry = {
 	}
 	kga_rise_tax_on_consumer_goods = {
 		allowed = { tag = KGA }
-		visible = { OR = { AND = { has_completed_focus = KGA_reconstruction_law } AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { AND = { has_completed_focus = KGA_reconstruction_law } is_testing = yes } }
 		days_re_enable = 121
 		custom_cost_trigger = {
 			check_variable = { political_power > 49.9 }
@@ -249,7 +249,7 @@ kga_establish_puppuet_bon = {
 	kga_start_infiltration = {
 		allowed = { tag = KGA }
 		days_re_enable = 61
-		visible = { OR = { AND = { has_completed_focus = KGA_support_puppet_faction country_exists = BON } AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { AND = { has_completed_focus = KGA_support_puppet_faction country_exists = BON } is_testing = yes } }
 		available = { AND = { NOT = { has_war_with = BON } BON = { fascism < 0.31 } } }
 		custom_cost_trigger = {
 			check_variable = { gold > 49.9 }
@@ -263,7 +263,7 @@ kga_establish_puppuet_bon = {
 
 	kga_control_congressional_seats = {
 		allowed = { tag = KGA }
-		visible = { OR = { AND = { has_completed_focus = KGA_support_puppet_faction country_exists = BON } AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { AND = { has_completed_focus = KGA_support_puppet_faction country_exists = BON } is_testing = yes } }
 		available = { AND = { NOT = { has_war_with = BON } fascism > 0.3 } }
 		custom_cost_trigger = {
 			has_political_power > 199.9
@@ -279,7 +279,7 @@ kga_establish_puppuet_bon = {
 	}
 
 	kga_support_bkc = {
-		visible = { OR = { country_exists = BKC AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { country_exists = BKC is_testing = yes } }
 		allowed = { tag = KGA }
 		available = { NOT = { has_war_with = BON } country_exists = BKC }
 		custom_cost_trigger = {
@@ -371,7 +371,7 @@ kga_missions = {
 kga_civil_war = {
 	#获得萨克森支持
 	kga_add_support_65 = {
-		visible = { OR = { AND = { has_country_flag = KGA_PREPARE_CIVIL_WAR_START has_idea = KGA_bellwall_threat } AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { AND = { has_country_flag = KGA_PREPARE_CIVIL_WAR_START has_idea = KGA_bellwall_threat } is_testing = yes } }
 		allowed = { tag = KGA }
 		available = { fascism > 0.55 }
 		custom_cost_trigger = {
@@ -393,7 +393,7 @@ kga_civil_war = {
 	}
 	#炸毁对手基建
 	kga_deploy_bomb = {
-		visible = { OR = { AND = { has_country_flag = KGA_PREPARE_CIVIL_WAR_START has_idea = KGA_bellwall_threat } AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { AND = { has_country_flag = KGA_PREPARE_CIVIL_WAR_START has_idea = KGA_bellwall_threat } is_testing = yes } }
 		available = { has_intelligence_agency = yes }
 		allowed = { tag = KGA }
 		days_remove = 30
@@ -408,7 +408,7 @@ kga_civil_war = {
 	}
 	#获得FRA支持内战
 	kga_ask_support_from_BCF = {
-		visible = { OR = { AND = { has_country_flag = KGA_PREPARE_CIVIL_WAR_START has_idea = KGA_bellwall_threat } AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { AND = { has_country_flag = KGA_PREPARE_CIVIL_WAR_START has_idea = KGA_bellwall_threat } is_testing = yes } }
 		allowed = { tag = KGA }
 		available = { OR = { BCF = { has_government = fascism } BCF = { has_government = neutrality } } }
 		custom_cost_trigger = {
@@ -429,7 +429,7 @@ kga_civil_war = {
 	}
 	#获得STG支持内战
 	kga_ask_support_from_STG = {
-		visible = { OR = { AND = { has_country_flag = KGA_PREPARE_CIVIL_WAR_START has_idea = KGA_bellwall_threat } AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { AND = { has_country_flag = KGA_PREPARE_CIVIL_WAR_START has_idea = KGA_bellwall_threat } is_testing = yes } }
 		allowed = { tag = KGA }
 		available = { OR = { STG = { has_government = fascism } STG = { has_government = neutrality } } }
 		custom_cost_trigger = {
@@ -450,7 +450,7 @@ kga_civil_war = {
 	}
 	#秘密扩充军备
 	kga_gather_equipments = {
-		visible = { OR = { AND = { has_country_flag = KGA_PREPARE_CIVIL_WAR_START has_idea = KGA_bellwall_threat } AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { AND = { has_country_flag = KGA_PREPARE_CIVIL_WAR_START has_idea = KGA_bellwall_threat } is_testing = yes } }
 		allowed = { tag = KGA }
 		custom_cost_trigger = {
 			check_variable = { gold > 39.9 }
@@ -469,7 +469,7 @@ kga_civil_war = {
 	}
 	#发起法西斯对钟壁内战
 	kga_start_civil_war = {
-		visible = { OR = { AND = { has_country_flag = KGA_PREPARE_CIVIL_WAR_START has_idea = KGA_bellwall_threat } AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { AND = { has_country_flag = KGA_PREPARE_CIVIL_WAR_START has_idea = KGA_bellwall_threat } is_testing = yes } }
 		allowed = { tag = KGA }
 		available = { fascism > 0.3 has_civil_war = no }
 		complete_effect = {
@@ -490,7 +490,7 @@ kga_civil_war = {
 kga_germanic_kuromorimine = {
 	#构筑帝国的西边陲
 	kga_restoring_western_empire_frontier = {
-		visible = { OR = { has_completed_focus = KGA_intergrate_europe AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { has_completed_focus = KGA_intergrate_europe is_testing = yes } }
 		allowed = { tag = KGA }
 		available = { AND = { controls_state = 17 controls_state = 28 controls_state = 6 controls_state = 34 controls_state = 35 controls_state = 7 controls_state = 36 } }
 		days_remove = 50
@@ -518,7 +518,7 @@ kga_germanic_kuromorimine = {
 	}
 	#统辖冯布诺高中主要领土
 	kga_administer_bonple_territory = {
-		visible = { OR = { has_completed_focus = KGA_intergrate_europe AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { has_completed_focus = KGA_intergrate_europe is_testing = yes } }
 		allowed = { tag = KGA }
 		available = { AND = { controls_state = 85 controls_state = 86 controls_state = 87 controls_state = 98 controls_state = 10 controls_state = 90 controls_state = 762 controls_state = 72 controls_state = 88 controls_state = 92 controls_state = 91 controls_state = 89 controls_state = 93 controls_state = 94 controls_state = 95 controls_state = 96 controls_state = 784 controls_state = 97 } }
 		days_remove = 80
@@ -554,7 +554,7 @@ kga_germanic_kuromorimine = {
 	}
 	#统辖格尔高高中领土
 	kga_administer_gergor_territory = {
-		visible = { OR = { has_completed_focus = KGA_intergrate_europe AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { has_completed_focus = KGA_intergrate_europe is_testing = yes } }
 		allowed = { tag = KGA }
 		available = { AND = { controls_state = 9 controls_state = 69 controls_state = 74 controls_state = 75 controls_state = 70 controls_state = 71 controls_state = 73 controls_state = 664 } }
 		days_remove = 50
@@ -582,7 +582,7 @@ kga_germanic_kuromorimine = {
 	}
 	#增强波罗的海控制权
 	kga_increase_control_of_baltic = {
-		visible = { OR = { has_completed_focus = KGA_intergrate_europe AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { has_completed_focus = KGA_intergrate_europe is_testing = yes } }
 		allowed = { tag = KGA }
 		available = { AND = { controls_state = 189 controls_state = 190 controls_state = 11 controls_state = 12 controls_state = 13 controls_state = 191 } }
 		days_remove = 30
@@ -608,7 +608,7 @@ kga_germanic_kuromorimine = {
 	}
 	#划分帝国的东北部界限
 	kga_label_northern_east_empire_boundary = {
-		visible = { OR = { has_completed_focus = KGA_intergrate_europe AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { has_completed_focus = KGA_intergrate_europe is_testing = yes } }
 		allowed = { tag = KGA }
 		available = { AND = { controls_state = 213 controls_state = 215 controls_state = 216 controls_state = 195 controls_state = 208 controls_state = 244 controls_state = 264 controls_state = 209 controls_state = 263 controls_state = 210 controls_state = 246 controls_state = 247 controls_state = 207 controls_state = 242 controls_state = 219 controls_state = 216 controls_state = 206 controls_state = 241 controls_state = 243 controls_state = 205 controls_state = 194 controls_state = 224 controls_state = 204  } }
 		days_remove = 100
@@ -651,7 +651,7 @@ kga_germanic_kuromorimine = {
 	}
 	#划分帝国的东部界限
 	kga_label_eastern_empire_boundary = {
-		visible = { OR = { has_completed_focus = KGA_intergrate_europe AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { has_completed_focus = KGA_intergrate_europe is_testing = yes } }
 		allowed = { tag = KGA }
 		available = { AND = { controls_state = 199 controls_state = 198 controls_state = 201 controls_state = 192 controls_state = 197 controls_state = 202 controls_state = 203 controls_state = 193 controls_state = 259 controls_state = 196 controls_state = 226 controls_state = 200 controls_state = 225 controls_state = 222 controls_state = 223 controls_state = 254 controls_state = 257 controls_state = 258 controls_state = 240 controls_state = 221 controls_state = 200 controls_state = 227 controls_state = 228 controls_state = 260 } }
 		days_remove = 100
@@ -695,7 +695,7 @@ kga_germanic_kuromorimine = {
 	}
 	#划分帝国的东南部界限
 	kga_label_south_eastern_empire_boundary = {
-		visible = { OR = { has_completed_focus = KGA_intergrate_europe AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { has_completed_focus = KGA_intergrate_europe is_testing = yes } }
 		allowed = { tag = KGA }
 		available = { AND = { controls_state = 218 controls_state = 265 controls_state = 245 controls_state = 137 controls_state = 217 controls_state = 238 controls_state = 234 controls_state = 236 controls_state = 237 controls_state = 232 controls_state = 235 controls_state = 233 controls_state = 231 controls_state = 229 controls_state = 230 } }
 		days_remove = 100
@@ -730,7 +730,7 @@ kga_germanic_kuromorimine = {
 	}
 	#统辖帝国的北疆
 	kga_administer_northern_territory = {
-		visible = { OR = { has_completed_focus = KGA_intergrate_europe AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { has_completed_focus = KGA_intergrate_europe is_testing = yes } }
 		allowed = { tag = KGA }
 		available = { AND = { controls_state = 37 controls_state = 99 controls_state = 138 controls_state = 139 controls_state = 124 controls_state = 140 controls_state = 141 controls_state = 38 controls_state = 666 controls_state = 110 controls_state = 142 controls_state = 143 controls_state = 144 } }
 		days_remove = 100

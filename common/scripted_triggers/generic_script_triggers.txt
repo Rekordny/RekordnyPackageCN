@@ -11,3 +11,8 @@ generic_hist_fascism = {
 generic_hist_neutraily = {
 	is_historical_focus_on = yes OR = { tag = VIK tag = GHS tag = YOG tag = COU }
 }
+
+#玩家使用debug模式
+is_testing = {
+	is_testing = yes
+}

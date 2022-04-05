@@ -43,11 +43,11 @@
  BON_expand_krakov_factories_desc:0 "克拉科夫工业区是我国腹地的重要地带，该地区与捷克斯洛伐克地区毗邻，来自巴尔干半岛和安纳托利亚的丰富资源源源不断的流入该地，在当地建设更多的工厂，可以更加有效的利用这些资源。"
  BON_construct_warsaw_industrial_zone:0 "建设华沙工业区"
  BON_construct_warsaw_industrial_zone_desc:0 "进一步发展华沙，为我们的祖国提供更多的工业支持。"
- BON_krakov_industrial_agency:0 "组建克拉科夫工业局"
- BON_krakov_industrial_agency_desc:0 "有人提议在克拉科夫地区专门设立一个负责统筹当地工业力量和资源的工业局，一旦这个设想实现，克拉科夫工业区将会为冯布诺提供更加有力的工业支持。"
+ BON_build_krakov_industrial_agency:0 "组建克拉科夫工业局"
+ BON_build_krakov_industrial_agency_desc:0 "有人提议在克拉科夫地区专门设立一个负责统筹当地工业力量和资源的工业局，一旦这个设想实现，克拉科夫工业区将会为冯布诺提供更加有力的工业支持。"
  BON_invest_in_gdynia:0 "投资格丁尼亚"
  BON_invest_in_gdynia_desc:0 "格丁尼亚作为我们祖国母亲最年轻的一个工业区，一直以来其实并没有受到太多重视，不过我们当中的一些人也看到了该地区的潜力所在，与之毗邻的格但斯克作为我国最繁华的港口，可以为格丁尼亚源源不断的提供进口工业原料，开发此地会在将来为我们带来巨大的利益。"
- BON_industrial_modernization:0 "波兰工业现代化"
+ BON_industrial_modernization:0 "冯布诺工业现代化"
  BON_industrial_modernization_desc:0 "波兰的工业能力在欧洲数一数二，这是我们得以立足于东欧的重要保障，但如今我国许多工业已经过时，有人提议为这些落后的工业提供一笔贷款，鼓励他们进行产业升级，以此提高冯布诺工业体系在欧洲的竞争力。"
  BON_coal_liquefaction_technology:0 "发展煤液化技术"
  BON_coal_liquefaction_technology_desc:0 "石油作为“工业的血液”，其重要性不言而喻，而对于波兰来说，石油资源一直是卡在我们喉咙中的尖刺，虽然依靠从盟国罗马尼亚进口石油资源，我们不会出现石油短缺的状况，但我们必须考虑到这条石油生命线被切断的可能性，所有我们当中一些人提议投资由华沙大学研究院提出的有关煤液化技术的研究。"
@@ -142,6 +142,10 @@
  bon_tooltip3_blocked:0 "§R50§!£GFX_pol_power_icon §R10§!£GFX_army_experience"
  bon_tooltip4:0 "100£GFX_pol_power_icon 20£GFX_army_experience"
  bon_tooltip4_blocked:0 "§R100§!£GFX_pol_power_icon §R20§!£GFX_army_experience"
+ bon_tooltip5:0 "100£GFX_pol_power_icon"
+ bon_tooltip5_blocked:0 "§R100§!£GFX_pol_power_icon"
+ bon_tooltip6:0 "50 £GFX_gold_icon 3 £civ_factory"
+ bon_tooltip6_blocked:0 "§R50§! £GFX_gold_icon 3 £civ_factory"
  
 #events
  bonple.1.t:0 "九月会议召开"
@@ -184,6 +188,11 @@
  BON_volatile_situayion_1_desc:0 "形形色色的政治势力正在等待合适的时机挑战政府当局的权威，德意志东部和波罗的海地区的民族主义者也在积极争取独立，冯布诺的局势已经岌岌可危。"
  BON_senshado_alliance:0 "战车道复兴同盟"
  BON_high_industrial_velocity_1:0 "东欧诸国已经与圣葛罗莉安娜女子学院主导的战车道协会互助联盟分道扬镳，作为该同盟的领导者，冯布诺将会主导东欧地区的局势。"
+ BON_the_standing_one_between:0 "平独镇露"
+ BON_the_standing_one_between_desc:0 "冯布诺处在一个非常危险的地理位置，西边是黑森峰，东边是真理，两个国家都是我们祖国必须直接面对的巨大威胁，所以在国民心中培养强烈的保家卫国的精神以建立一支强大的军队是很有必要的。"
+ BON_warsaw_research_institute:0 "华沙大学研究院"
+ BON_krakov_industrial_agency:0 "克拉科夫工业局"
+ BON_highest_strategic_command:0 "冯布诺最高战略指挥部"
 
 #decisions
  bon_solve_the_holodomor:0 "解决大饥荒问题"
@@ -199,6 +208,20 @@
  bon_replace_communism_officer:0 "替换共产军官"
  bon_replace_fascism_officer:0 "替换法西斯军官"
  bon_promote_officer:0 "提拔忠诚军官"
+ bon_ethnic_assimilation:0 "民族同化"
+ bon_ethnic_assimilation_eastern:0 "同化波罗的海三国"
+ bon_ethnic_assimilation_western:0 "同化西部德意志民族"
+ bon_industrial_modernization:0 "冯布诺工业现代化"
+ bon_industrial_modernization_88:0 "克拉科夫工业设施升级"
+ bon_industrial_modernization_10:0 "华沙工业设施升级"
+ bon_industrial_modernization_90:0 "凯尔采工业设施升级"
+ bon_industrial_modernization_86:0 "波兹南工业设施升级"
+ bon_industrial_modernization_807:0 "格丁尼亚工业设施升级"
+ bon_industrial_modernization_87:0 "罗兹工业设施升级"
+ bon_industrial_modernization_5:0 "瓦尔米亚-马祖里工业设施升级"
+ bon_industrial_modernization_763:0 "柯尼斯堡工业设施升级"
+ bon_industrial_modernization_98:0 "普茨沃克工业设施升级"
+ 
  
 #flags
  BON_MAIKO_LEAD:0 "九月会议的MAIKO政府"

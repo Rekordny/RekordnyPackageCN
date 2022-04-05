@@ -12,7 +12,9 @@ country_event = {
 	title = bcfreedom.1.t
 	desc = bcfreedom.1.d
 	picture = GFX_report_event_german_speech
+	fire_only_one = yes
 	trigger = {
+		tag = BCF
 		date = 1972.10.01
 	}
 	option = {
@@ -452,6 +454,7 @@ country_event = {
 	picture = GFX_report_event_german_speech
 	is_triggered_only = yes
 	trigger = {
+		tag = BCF
 		date = 1973.10.1
 	}
 	option = {
@@ -540,6 +543,7 @@ country_event = {
 	desc = bcfreedom.14.d
 	picture = GFX_report_event_german_speech
 	trigger = {
+		tag = BCF
 		date = 1973.10.8
 	}
 	is_triggered_only = yes
@@ -715,7 +719,9 @@ country_event = {
 	title = bcfreedom.20.t
 	desc = bcfreedom.20.d
 	picture = GFX_report_event_german_speech
+	fire_only_one = yes
 	trigger = {
+		tag = BCF
 		date = 1974.09.01
 	}
 	option = {
@@ -815,6 +821,7 @@ country_event = {
 	desc = bcfreedom_andou.1.d
 	picture = GFX_report_event_german_speech
 	trigger = {
+		tag = BCF
 		OR = {
 			has_country_leader = {
 				character = BCF_marie
@@ -959,6 +966,7 @@ country_event = {
 		days = 60
 	}
 	trigger = {
+		tag = BCF
 		OR = {
 			has_country_leader = {
 				character = BCF_marie
@@ -1011,6 +1019,7 @@ country_event = {
 		days = 60
 	}
 	trigger = {
+		tag = BCF
 		OR = {
 			has_country_leader = {
 				character = BCF_marie
@@ -1069,6 +1078,7 @@ country_event = {
 		days = 150
 	}
 	trigger = {
+		tag = BCF
 		OR = {
 			has_country_leader = {
 				character = BCF_marie
@@ -1134,6 +1144,7 @@ country_event = {
 		days = 120
 	}
 	trigger = {
+		tag = BCF
 		NOT = {
 			has_country_flag = BCF_ANDOU_SUPPORT_US
 		}
@@ -1321,6 +1332,7 @@ country_event = {
 		days = 10
 	}
 	trigger = {
+		tag = BCF
 		has_country_flag = BCF_MARY_GAVE_UP_STUDENT_PRESIDENT
 		NOT = {
 			has_country_flag = BCF_CONTROL_STUDENT_GOV
@@ -1355,6 +1367,7 @@ country_event = {
 		days = 90
 	}
 	trigger = {
+		tag = BCF
 		has_country_flag = BCF_MARY_GAVE_UP_STUDENT_PRESIDENT
 		OR = {
 			has_country_leader = {
@@ -1408,6 +1421,7 @@ country_event = {
 		days = 90
 	}
 	trigger = {
+		tag = BCF
 		NOT = {
 			has_country_flag = BCF_MARY_GAVE_UP_STUDENT_PRESIDENT
 		}
@@ -1463,6 +1477,7 @@ country_event = {
 		days = 150
 	}
 	trigger = {
+		tag = BCF
 		NOT = {
 			has_country_flag = BCF_MARY_GAVE_UP_STUDENT_PRESIDENT
 		}
@@ -1531,6 +1546,7 @@ country_event = {
 		days = 150
 	}
 	trigger = {
+		tag = BCF
 		NOT = {
 			has_country_flag = BCF_MARY_GAVE_UP_STUDENT_PRESIDENT
 		}
@@ -1618,6 +1634,7 @@ country_event = {
 		days = 60
 	}
 	trigger = {
+		tag = BCF
 		OR = {
 			has_country_leader = {
 				character = BCF_andou
@@ -1669,6 +1686,7 @@ country_event = {
 		days = 90
 	}
 	trigger = {
+		tag = BCF
 		NOT = {
 			has_country_flag = BCF_OSHIDA_SUPPORT_US
 		}
@@ -1724,6 +1742,7 @@ country_event = {
 		days = 120
 	}
 	trigger = {
+		tag = BCF
 		OR = {
 			has_country_leader = {
 				character = BCF_andou
@@ -1760,6 +1779,7 @@ country_event = {
 		days = 150
 	}
 	trigger = {
+		tag = BCF
 		OR = {
 			has_country_leader = {
 				character = BCF_andou
@@ -1821,6 +1841,7 @@ country_event = {
 		days = 120
 	}
 	trigger = {
+		tag = BCF
 		has_country_leader = {
 			character = BCF_marie
 			ruling_only = yes
@@ -1857,6 +1878,7 @@ country_event = {
 	desc = bcfreedom_civil_war.1.d
 	picture = GFX_report_event_german_speech
 	trigger = {
+		tag = BCF
 		date > 1973.5.1
 		OR = {
 			has_country_leader = {
@@ -1882,6 +1904,7 @@ country_event = {
 	desc = bcfreedom_civil_war.2.d
 	picture = GFX_report_event_german_speech
 	trigger = {
+		tag = BCF
 		date > 1973.5.1
 		OR = {
 			has_country_leader = {

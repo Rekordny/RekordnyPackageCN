@@ -1,5 +1,56 @@
 ideas = {
 	country = {
+		#波兰最高战略指挥部
+		BON_highest_strategic_command = {
+			allowed = { tag = BON }
+			allowed_civil_war = { always = no }
+			modifier = {
+				planning_speed = 0.1
+				max_planning_factor = 0.1
+			}
+		}
+
+		#克拉科夫工业局
+		BON_krakov_industrial_agency = {
+			allowed = { tag = BON }
+			allowed_civil_war = { always = no }
+			modifier = {
+				local_resources_factor = 0.1
+				trade_cost_for_target_factor = 0.1
+			}
+		}
+
+		#三年计划
+		BON_three_year_plan = {
+			allowed = { tag = BON }
+			allowed_civil_war = { always = no }
+			modifier = {
+				production_speed_infrastructure_factor = 0.05
+				production_speed_rail_way_factor = 0.05
+			}
+		}
+
+		#平独镇露
+		BON_the_standing_one_between = {
+			allowed = { tag = BON }
+			allowed_civil_war = { always = no }
+			modifier = {
+				army_core_attack_factor = 0.075
+				army_core_defence_factor = 0.075
+				conscription_factor = 0.1
+				wage_modifier = -0.1
+			}
+		}
+
+		#华沙大学研究院
+		BON_warsaw_research_institute = {
+			allowed = { tag = BON }
+			allowed_civil_war = { always = no }
+			modifier = {
+				research_speed_factor = 0.12
+			}
+		}
+
 		#大资产阶级的支持
 		BON_support_from_nbourgeoisie = {
 			allowed = { tag = BON }

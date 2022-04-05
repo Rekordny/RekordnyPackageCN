@@ -4,7 +4,7 @@ bcf_missions = {
 	#debug
 	bcf_debug = {
 		allowed = { tag = BCF }
-		visible = { AND = { is_debug = yes is_ai = no } }
+		visible = { is_testing = yes }
 		fire_only_once = no
 		complete_effect = {
 			country_event = bcfreedom.76
@@ -14,7 +14,7 @@ bcf_missions = {
 	#兄弟阋墙
 	bcf_internal_strife = {
 		allowed = { tag = BCF }
-		visible = { OR = { has_completed_focus = BCF_senshadao_league_match AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { has_completed_focus = BCF_senshadao_league_match is_testing = yes } }
 		fire_only_once = yes
 		complete_effect = {
 			
@@ -25,7 +25,7 @@ bcf_missions = {
 bcf_diplomatic = {
 	bcf_seek_support_from_stg = {
 		allowed = { tag = BCF }
-		visible = { OR = { AND = { has_country_flag = BCF_CIVIL_WAR_START NOT = { has_country_flag = BCF_CIVIL_WAR_END } has_country_flag = STG_WILL_HELP } AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { AND = { has_country_flag = BCF_CIVIL_WAR_START NOT = { has_country_flag = BCF_CIVIL_WAR_END } has_country_flag = STG_WILL_HELP } is_testing = yes } }
 		available = { surrender_progress > 0.5 STG = { has_government = ROOT } }
 		fire_only_once = yes
 		custom_cost_trigger = { has_political_power > 49.9 }
@@ -39,7 +39,7 @@ bcf_diplomatic = {
 
 	bcf_new_league = {
 		allowed = { tag = BCF }
-		visible = { OR = { has_completed_focus = BCF_new_league AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { has_completed_focus = BCF_new_league is_testing = yes } }
 		available = { has_war = no }
 		custom_cost_trigger = { has_political_power > 29.9 }
 		custom_cost_text = bcf_tooltip7
@@ -51,7 +51,7 @@ bcf_diplomatic = {
 	
 	bcf_provide_help_ooari = {
 		allowed = { tag = BCF }
-		visible = { OR = { has_completed_focus = BCF_new_member AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { has_completed_focus = BCF_new_member is_testing = yes } }
 		fire_only_once = yes
 		complete_effect = {
 			
@@ -60,7 +60,7 @@ bcf_diplomatic = {
 
 	bcf_strengthen_control_over_kga = {
 		allowed = { tag = BCF }
-		visible = { OR = { AND = { 42 = { is_controlled_by = BCF } 50 = { is_controlled_by = BCF NOT = { has_global_flag = BCF_TERRTORY_ISSUE_SOLVED } } } } AND = { is_debug = yes is_ai = no } }
+		visible = { OR = { AND = { 42 = { is_controlled_by = BCF } 50 = { is_controlled_by = BCF NOT = { has_global_flag = BCF_TERRTORY_ISSUE_SOLVED } } } } is_testing = yes }
 		custom_cost_trigger = { has_political_power > 59.9 }
 		custom_cost_text = bcf_tooltip22
 		fire_only_once = yes
@@ -106,7 +106,7 @@ bcf_diplomatic = {
 
 	bcf_handling_territorial_disputes = {
 		allowed = { tag = BCF }
-		visible = { OR = { AND = { has_completed_focus = BCF_diplomatic_affairs NOT = { has_country_flag = BCF_STRENGHTEN_CONTROL_KGA } } AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { AND = { has_completed_focus = BCF_diplomatic_affairs NOT = { has_country_flag = BCF_STRENGHTEN_CONTROL_KGA } } is_testing = yes } }
 		available = { 42 = { is_controlled_by = BCF } 50 = { is_controlled_by = BCF } }
 		custom_cost_trigger = { has_political_power > 74.9 }
 		custom_cost_text = bcf_tooltip23
@@ -129,7 +129,7 @@ bcf_diplomatic = {
 
 	bcf_build_anzio_vassal = {
 		allowed = { tag = BCF }
-		visible = { OR = { has_completed_focus = BCF_italian_vassal AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { has_completed_focus = BCF_italian_vassal is_testing = yes } }
 		fire_only_once = yes
 		complete_effect = {
 			
@@ -138,7 +138,7 @@ bcf_diplomatic = {
 
 	bcf_rebuild_ally = {
 		allowed = { tag = BCF }
-		visible = { OR = { has_completed_focus = BCF_old_ally AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { has_completed_focus = BCF_old_ally is_testing = yes } }
 		available = { AND = { NOT = { has_war_with = STG } OR = { has_war_with = ANZ has_war_with = KGA } } }
 		days_remove = 30
 		custom_cost_trigger = { has_political_power > 29.9 }
@@ -156,7 +156,7 @@ bcf_diplomatic = {
 
 	bcf_join_pravda = {
 		allowed = { tag = BCF }
-		visible = { OR = { has_completed_focus = BCF_european_revolution AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { has_completed_focus = BCF_european_revolution is_testing = yes } }
 		fire_only_once = yes
 		complete_effect = {
 			
@@ -165,7 +165,7 @@ bcf_diplomatic = {
 
 	bcf_pomerania_issue = {
 		allowed = { tag = BCF }
-		visible = { OR = { has_completed_focus = BCF_pomerania_issue AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { has_completed_focus = BCF_pomerania_issue is_testing = yes } }
 		fire_only_once = yes
 		complete_effect = {
 			
@@ -174,7 +174,7 @@ bcf_diplomatic = {
 
 	bcf_allow_pravda_expansion = {
 		allowed = { tag = BCF }
-		visible = { OR = { has_completed_focus = BCF_allow_pravda_expansion AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { has_completed_focus = BCF_allow_pravda_expansion is_testing = yes } }
 		fire_only_once = yes
 		complete_effect = {
 			
@@ -187,7 +187,7 @@ bcf_diplomatic = {
 		visible = {
 			OR = {
 				has_completed_focus = BCF_kga_ally
-				AND = { is_debug = yes is_ai = no }
+				is_testing = yes
 			}
 		}
 		available = {
@@ -219,7 +219,7 @@ bcf_diplomatic = {
 		visible = {
 			OR = {
 				has_completed_focus = BCF_befriend_STG
-				AND = { is_debug = yes is_ai = no }
+				is_testing = yes
 			}
 		}
 		available = {
@@ -249,7 +249,7 @@ bcf_diplomatic = {
 bcf_government = {
 	bcf_landing_exercise = {
 		allowed = { tag = BCF }
-		visible = { OR = { has_completed_focus = BCF_landing_exercise AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { has_completed_focus = BCF_landing_exercise is_testing = yes } }
 		custom_cost_trigger = { command_power > 9.9 }
 		custom_cost_text = bcf_tooltip25
 		available = { has_war_with = STG }
@@ -270,7 +270,7 @@ bcf_government = {
 
 	bcf_prepare_war_stg = {
 		allowed = { tag = BCF }
-		visible = { OR = { has_completed_focus = BCF_destory_stg AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { has_completed_focus = BCF_destory_stg is_testing = yes } }
 		available = { has_war_with = STG }
 		custom_cost_trigger = { command_power > 24.9 }
 		custom_cost_text = bcf_tooltip24
@@ -291,7 +291,7 @@ bcf_government = {
 
 	bcf_the_natural_borders_of_France = {
 		allowed = { tag = BCF }
-		visible = { OR = { has_completed_focus = BCF_diplomatic_affairs AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { has_completed_focus = BCF_diplomatic_affairs is_testing = yes } }
 		fire_only_once = yes
 		custom_cost_trigger = { has_political_power > 24.9 }
 		custom_cost_text = bcf_tooltip9
@@ -310,7 +310,7 @@ bcf_government = {
 	bcf_integrate_piedmont = {
 		allowed = { tag = BCF }
 		visible = { OR = { AND = { has_country_flag = BCF_FINISH_NATURAL_BORDERS_DECISION has_completed_focus = BCF_claim_north_italy 158 = { is_controlled_by = BCF }
-		} AND = { is_debug = yes is_ai = no } } }
+		} is_testing = yes } }
 		available = { 158 = { compliance > 40 } }
 		fire_only_once = yes
 		custom_cost_trigger = { has_political_power > 49.9 }
@@ -331,7 +331,7 @@ bcf_government = {
 
 	bcf_claim_lowland_french_quarter = {
 		allowed = { tag = BCF }
-		visible = { OR = { has_country_flag = BCF_FINISH_NATURAL_BORDERS_DECISION  AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { has_country_flag = BCF_FINISH_NATURAL_BORDERS_DECISION  is_testing = yes } }
 		fire_only_once = yes
 		custom_cost_trigger = { has_political_power > 29.9 }
 		custom_cost_text = bcf_tooltip7
@@ -348,7 +348,7 @@ bcf_government = {
 
 	bcf_integrate_walloon = {
 		allowed = { tag = BCF }
-		visible = { OR = { AND = { has_country_flag = BCF_FINISH_NATURAL_BORDERS_DECISION 34 = { is_controlled_by = BCF } } AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { AND = { has_country_flag = BCF_FINISH_NATURAL_BORDERS_DECISION 34 = { is_controlled_by = BCF } } is_testing = yes } }
 		available = { 34 = { compliance > 40 } }
 		fire_only_once = yes
 		custom_cost_trigger = { has_political_power > 49.9 }
@@ -370,7 +370,7 @@ bcf_government = {
 
 	fight_for_france = {
 		allowed = { tag = BCF }
-		visible = { OR = { AND = { has_civil_war = no has_war = yes OR = { surrender_progress > 0.5 NOT = { controls_state = 16 } } } AND = { is_debug = yes is_ai = no } } }
+		visible = { OR = { AND = { has_civil_war = no has_war = yes OR = { surrender_progress > 0.5 NOT = { controls_state = 16 } } } is_testing = yes } }
 		fire_only_once = yes
 		available = { }
 		custom_cost_trigger = { has_political_power > 49.9 }
@@ -393,7 +393,7 @@ bcf_government = {
 		visible = {
 			OR = {
 				has_country_flag = BCF_allow_to_change_minimum_wage
-				AND = { is_debug = yes is_ai = no }
+				is_testing = yes
 			}
 		}
 		available = {
@@ -429,7 +429,7 @@ bcf_government = {
 		visible = {
 			OR = {
 				has_country_flag = BCF_allow_to_change_minimum_wage
-				AND = { is_debug = yes is_ai = no }
+				is_testing = yes
 			}
 		}
 		available = {
@@ -462,7 +462,7 @@ bcf_government = {
 bcf_school_factional_strife = {
 	bcf_add_marie_influence = {
 		allowed = { tag = BCF }
-		visible = { OR = { AND = { is_debug = yes is_ai = no } has_country_leader = { name = "Marie" ruling_only = yes } } }
+		visible = { OR = { is_testing = yes has_country_leader = { name = "Marie" ruling_only = yes } } }
 		custom_cost_trigger = { has_political_power > 29.9 }
 		custom_cost_text = bcf_tooltip7
 		days_remove = 30
@@ -479,7 +479,7 @@ bcf_school_factional_strife = {
 	}
 	bcf_add_andou_influence = {
 		allowed = { tag = BCF }
-		visible = { OR = { AND = { is_debug = yes is_ai = no } has_country_leader = { name = "Andou" ruling_only = yes } } }
+		visible = { OR = { is_testing = yes has_country_leader = { name = "Andou" ruling_only = yes } } }
 		custom_cost_trigger = { has_political_power > 24.9 }
 		custom_cost_text = bcf_tooltip9
 		days_remove = 30
@@ -496,7 +496,7 @@ bcf_school_factional_strife = {
 	}
 	bcf_add_oshida_influence = {
 		allowed = { tag = BCF }
-		visible = { OR = { AND = { is_debug = yes is_ai = no } has_country_leader = { name = "Oshida" ruling_only = yes } } }
+		visible = { OR = { is_testing = yes has_country_leader = { name = "Oshida" ruling_only = yes } } }
 		custom_cost_trigger = { has_political_power > 24.9 }
 		custom_cost_text = bcf_tooltip9
 		days_remove = 30
@@ -616,7 +616,7 @@ bcf_school_factional_strife = {
 
 	bcf_improve_school_unity = {
 		allowed = { tag = BCF }
-		visible = { OR = { AND = { is_debug = yes is_ai = no } AND = { has_country_leader = { name = "Marie" ruling_only = yes } has_completed_focus = BCF_streghten_unity } } }
+		visible = { OR = { is_testing = yes AND = { has_country_leader = { name = "Marie" ruling_only = yes } has_completed_focus = BCF_streghten_unity } } }
 		custom_cost_trigger = {
 			has_political_power > 14.9
 		}
@@ -637,7 +637,7 @@ bcf_school_factional_strife = {
 
 	bcf_oshida_special_meeting = {
 		allowed = { tag = BCF }
-		visible = { OR = { AND = { is_debug = yes is_ai = no } AND = { has_country_leader = { name = "Oshida" ruling_only = yes } OR = { has_country_flag = BCF_CIVIL_WAR_END NOT = { has_country_flag = BCF_CIVIL_WAR_START } } } } }
+		visible = { OR = { is_testing = yes AND = { has_country_leader = { name = "Oshida" ruling_only = yes } OR = { has_country_flag = BCF_CIVIL_WAR_END NOT = { has_country_flag = BCF_CIVIL_WAR_START } } } } }
 		days_remove = 7
 		days_re_enable = 83
 		remove_effect = {
@@ -647,7 +647,7 @@ bcf_school_factional_strife = {
 
 	bcf_fight_for_equality = {
 		allowed = { tag = BCF }
-		visible = { OR = { AND = { is_debug = yes is_ai = no } AND = { has_country_leader = { name = "Andou" ruling_only = yes } NOT = { has_country_flag = BCF_CIVIL_WAR_START } } } }
+		visible = { OR = { is_testing = yes AND = { has_country_leader = { name = "Andou" ruling_only = yes } NOT = { has_country_flag = BCF_CIVIL_WAR_START } } } }
 		custom_cost_trigger = {
 			has_political_power > 14.9
 		}
@@ -668,7 +668,7 @@ bcf_school_factional_strife = {
 
 	bcf_equal_education = {
 		allowed = { tag = BCF }
-		visible = { OR = { AND = { is_debug = yes is_ai = no } AND = { has_country_leader = { name = "Andou" ruling_only = yes } has_country_flag = BCF_CIVIL_WAR_END } } }
+		visible = { OR = { is_testing = yes AND = { has_country_leader = { name = "Andou" ruling_only = yes } has_country_flag = BCF_CIVIL_WAR_END } } }
 		custom_cost_trigger = {
 			has_political_power > 14.9
 		}
@@ -690,7 +690,7 @@ bcf_school_factional_strife = {
 
 	drive_out_rival_factions = {
 		allowed = { tag = BCF }
-		visible = { OR = { AND = { is_debug = yes is_ai = no } AND = { OR = { has_country_leader = { name = "Andou" ruling_only = yes } has_country_leader = { name = "Oshida" ruling_only = yes } } has_country_flag = BCF_CIVIL_WAR_START } } }
+		visible = { OR = { is_testing = yes AND = { OR = { has_country_leader = { name = "Andou" ruling_only = yes } has_country_leader = { name = "Oshida" ruling_only = yes } } has_country_flag = BCF_CIVIL_WAR_START } } }
 		custom_cost_trigger = {
 			has_political_power > 49.9
 			command_power > 14.9

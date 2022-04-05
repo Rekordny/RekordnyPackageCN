@@ -1,3 +1,330 @@
+#冯布诺工业现代化
+bon_industrial_modernization = {
+	bon_industrial_modernization_88 = {
+		visible = { OR = { has_completed_focus = BON_industrial_modernization AND = { is_ai = no is_debug = yes } } }
+		available = { controls_state = 88 88 = { industrial_complex > 2 } }
+		custom_cost_trigger = { check_variable = { gold > 49.9 } industrial_complex > 2 }
+		custom_cost_text = bon_tooltip6
+		fire_only_once = yes
+		days_remove = 35
+		modifier = {
+			civilian_factory_use = 3
+		}
+		complete_effect = {
+			add_to_variable = { gold = -50 }
+		}
+		remove_effect = {
+			88 = { 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	bon_industrial_modernization_10 = {
+		visible = { OR = { has_completed_focus = BON_industrial_modernization AND = { is_ai = no is_debug = yes } } }
+		available = { controls_state = 10 10 = { industrial_complex > 2 } }
+		custom_cost_trigger = { check_variable = { gold > 49.9 } industrial_complex > 2 }
+		custom_cost_text = bon_tooltip6
+		fire_only_once = yes
+		days_remove = 35
+		modifier = {
+			civilian_factory_use = 3
+		}
+		complete_effect = {
+			add_to_variable = { gold = -50 }
+		}
+		remove_effect = {
+			10 = { 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	bon_industrial_modernization_90 = {
+		visible = { OR = { has_completed_focus = BON_industrial_modernization AND = { is_ai = no is_debug = yes } } }
+		available = { controls_state = 90 90 = { industrial_complex > 2 } }
+		custom_cost_trigger = { check_variable = { gold > 49.9 } industrial_complex > 2 }
+		custom_cost_text = bon_tooltip6
+		fire_only_once = yes
+		days_remove = 35
+		modifier = {
+			civilian_factory_use = 3
+		}
+		complete_effect = {
+			add_to_variable = { gold = -50 }
+		}
+		remove_effect = {
+			90 = { 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	bon_industrial_modernization_86 = {
+		visible = { OR = { has_completed_focus = BON_industrial_modernization AND = { is_ai = no is_debug = yes } } }
+		available = { controls_state = 86 86 = { industrial_complex > 2 } }
+		custom_cost_trigger = { check_variable = { gold > 49.9 } industrial_complex > 2 }
+		custom_cost_text = bon_tooltip6
+		fire_only_once = yes
+		days_remove = 35
+		modifier = {
+			civilian_factory_use = 3
+		}
+		complete_effect = {
+			add_to_variable = { gold = -50 }
+		}
+		remove_effect = {
+			86 = { 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	bon_industrial_modernization_807 = {
+		visible = { OR = { has_completed_focus = BON_industrial_modernization AND = { is_ai = no is_debug = yes } } }
+		available = { controls_state = 807 807 = { industrial_complex > 2 } }
+		custom_cost_trigger = { check_variable = { gold > 49.9 } industrial_complex > 2 }
+		custom_cost_text = bon_tooltip6
+		fire_only_once = yes
+		days_remove = 35
+		modifier = {
+			civilian_factory_use = 3
+		}
+		complete_effect = {
+			add_to_variable = { gold = -50 }
+		}
+		remove_effect = {
+			807 = { 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	bon_industrial_modernization_87 = {
+		visible = { OR = { has_completed_focus = BON_industrial_modernization AND = { is_ai = no is_debug = yes } } }
+		available = { controls_state = 87 87 = { industrial_complex > 2 } }
+		custom_cost_trigger = { check_variable = { gold > 49.9 } industrial_complex > 2 }
+		custom_cost_text = bon_tooltip6
+		fire_only_once = yes
+		days_remove = 35
+		modifier = {
+			civilian_factory_use = 3
+		}
+		complete_effect = {
+			add_to_variable = { gold = -50 }
+		}
+		remove_effect = {
+			87 = { 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	bon_industrial_modernization_5 = {
+		visible = { OR = { has_completed_focus = BON_industrial_modernization AND = { is_ai = no is_debug = yes } } }
+		available = { controls_state = 5 5 = { industrial_complex > 2 } }
+		custom_cost_trigger = { check_variable = { gold > 49.9 } industrial_complex > 2 }
+		custom_cost_text = bon_tooltip6
+		fire_only_once = yes
+		days_remove = 35
+		modifier = {
+			civilian_factory_use = 3
+		}
+		complete_effect = {
+			add_to_variable = { gold = -50 }
+		}
+		remove_effect = {
+			5 = { 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	bon_industrial_modernization_763 = {
+		visible = { OR = { has_completed_focus = BON_industrial_modernization AND = { is_ai = no is_debug = yes } } }
+		available = { controls_state = 763 763 = { industrial_complex > 2 } }
+		custom_cost_trigger = { check_variable = { gold > 49.9 } industrial_complex > 2 }
+		custom_cost_text = bon_tooltip6
+		fire_only_once = yes
+		days_remove = 35
+		modifier = {
+			civilian_factory_use = 3
+		}
+		complete_effect = {
+			add_to_variable = { gold = -50 }
+		}
+		remove_effect = {
+			763 = { 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	bon_industrial_modernization_98 = {
+		visible = { OR = { has_completed_focus = BON_industrial_modernization AND = { is_ai = no is_debug = yes } } }
+		available = { controls_state = 98 98 = { industrial_complex > 2 } }
+		custom_cost_trigger = { check_variable = { gold > 49.9 } industrial_complex > 2 }
+		custom_cost_text = bon_tooltip6
+		fire_only_once = yes
+		days_remove = 35
+		modifier = {
+			civilian_factory_use = 3
+		}
+		complete_effect = {
+			add_to_variable = { gold = -50 }
+		}
+		remove_effect = {
+			98 = { 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+#民族同化
+bon_ethnic_assimilation = {
+	bon_ethnic_assimilation_eastern = {
+		allowed = { tag = BON }
+		visible = { OR = { has_completed_focus = BON_reconstruct_Polish_Lithuanian AND = { is_ai = no is_debug = yes } } }
+		available = { controls_state = 11 controls_state = 189 controls_state = 190 controls_state = 815 controls_state = 809 controls_state = 808 controls_state = 810 controls_state = 12 controls_state = 191 controls_state = 13 controls_state = 812 controls_state = 813 controls_state = 811 11 = { resistance < 25 } 12 = { resistance < 25 } 13 = { resistance < 25 } }
+		custom_cost_trigger = { has_political_power > 99.9 }
+		custom_cost_text = bon_tooltip5
+		fire_only_once = yes
+		days_remove = 70
+		complete_effect = {
+			add_political_power = -100
+		}
+		remove_effect = {
+			add_state_core = 11
+			add_state_core = 12
+			add_state_core = 13
+			add_state_core = 189
+			add_state_core = 190
+			add_state_core = 191
+			add_state_core = 808
+			add_state_core = 809
+			add_state_core = 810
+			add_state_core = 811
+			add_state_core = 812
+			add_state_core = 813
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	bon_ethnic_assimilation_western = {
+		allowed = { tag = BON }
+		visible = { OR = { has_completed_focus = BON_reconstruct_Polish_Lithuanian AND = { is_ai = no is_debug = yes } } }
+		available = { controls_state = 63 controls_state = 68 controls_state = 67 controls_state = 66 63 = { resistance < 25 } 66 = { resistance < 25 } 68 = { resistance < 25 } 67 = { resistance < 25 } }
+		custom_cost_trigger = { has_political_power > 99.9 }
+		custom_cost_text = bon_tooltip5
+		fire_only_once = yes
+		days_remove = 70
+		complete_effect = {
+			add_political_power = -100
+		}
+		remove_effect = {
+			add_state_core = 63
+			add_state_core = 66
+			add_state_core = 67
+			add_state_core = 68
+		}
+		ai_will_do = {
+			factor = 2
+		}
+	}
+}
 
 #解决大饥荒
 bon_solve_the_holodomor = {
@@ -92,6 +419,7 @@ bon_solve_the_holodomor = {
 }
 #确保军队忠诚
 bon_ensure_military_loyalty = {
+	#移除共产主义军官
 	bon_replace_communism_officer = {
 		allowed = { tag = BON }
 		visible = { OR = { AND = { has_completed_focus = BON_replace_young_officers OR = { has_idea = BON_military_disloyalty_2 has_idea = BON_military_disloyalty_3 } } AND = { is_ai = no is_debug = yes } } }
@@ -124,6 +452,7 @@ bon_ensure_military_loyalty = {
 			factor = 5
 		}
 	}
+	#移除法西斯军官
 	bon_replace_fascism_officer = {
 		allowed = { tag = BON }
 		visible = { OR = { AND = { has_completed_focus = BON_replace_young_officers OR = { has_idea = BON_military_disloyalty_2 has_idea = BON_military_disloyalty_3 } } AND = { is_ai = no is_debug = yes } } }
@@ -156,6 +485,7 @@ bon_ensure_military_loyalty = {
 			factor = 5
 		}
 	}
+	#晋升军官
 	bon_promote_officer = {
 		allowed = { tag = BON }
 		visible = { OR = { AND = { has_completed_focus = BON_replace_young_officers NOT = { has_idea = BON_military_loyal } } AND = { is_ai = no is_debug = yes } } }
