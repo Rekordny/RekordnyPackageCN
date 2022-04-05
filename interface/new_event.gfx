@@ -105,6 +105,12 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/daily/kga_daily_7.dds"
 		legacy_lazy_load = no
 	}
+	#OGA
+	spriteType = {
+		name = "GFX_event_oga_country_1"
+		texturefile = "gfx/event_pictures/OGA/oga_country_1.dds"
+		legacy_lazy_load = no
+	}
 
 	#BON
 

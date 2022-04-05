@@ -1,0 +1,14 @@
+leader_traits = {
+	BCF_marie_faction = {
+		type = land
+		trait_type = personality_trait
+	}
+	BCF_andou_faction = {
+		type = land
+		trait_type = personality_trait
+	}
+	BCF_oshida_faction = {
+		type = land
+		trait_type = personality_trait
+	}
+}

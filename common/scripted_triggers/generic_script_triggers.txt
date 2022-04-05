@@ -1,0 +1,13 @@
+#史实民主国家
+generic_hist_democratic = {
+	is_historical_focus_on = yes OR = { tag = WAF tag = VIG tag = HCA tag = MAP tag = KFA }
+}
+generic_hist_communism = {
+	is_historical_focus_on = yes OR = { tag = KEB tag = THS }
+}
+generic_hist_fascism = {
+	is_historical_focus_on = yes OR = { tag = USP tag = BDH }
+}
+generic_hist_neutraily = {
+	is_historical_focus_on = yes OR = { tag = VIK tag = GHS tag = YOG tag = COU }
+}

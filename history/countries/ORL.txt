@@ -1,0 +1,136 @@
+captial = 16
+division_template = {
+	name = "Légion d'Orléans"
+	is_locked = yes
+	regiments = {
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
+		infantry = {
+			x = 0
+			y = 2
+		}
+		infantry = {
+			x = 1
+			y = 0
+		}
+		infantry = {
+			x = 1
+			y = 1
+		}
+		infantry = {
+			x = 1
+			y = 2
+		}
+		infantry = {
+			x = 2
+			y = 0
+		}
+		infantry = {
+			x = 2
+			y = 1
+		}
+		infantry = {
+			x = 2
+			y = 2
+		}
+		artillery_brigade = {
+			x = 3
+			y = 0
+		}
+	}
+	support = {
+		engineer = {
+			x = 0
+			y = 0
+		}
+	}
+}
+division_template = {
+	name = "Milice d'Orléans"
+	is_locked = yes
+	regiments = {
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
+		infantry = {
+			x = 0
+			y = 2
+		}
+		infantry = {
+			x = 1
+			y = 0
+		}
+		infantry = {
+			x = 1
+			y = 1
+		}
+		infantry = {
+			x = 1
+			y = 2
+		}
+	}
+}
+division_template = {
+	name = "Division Blindée"
+	is_locked = yes
+	regiments = {
+		medium_armor = {
+			x = 0
+			y = 0
+		}
+		medium_armor = {
+			x = 0
+			y = 1
+		}
+		medium_armor = {
+			x = 1
+			y = 0
+		}
+		medium_armor = {
+			x = 1
+			y = 1
+		}
+		mechanized = {
+			x = 2
+			y = 0
+		}
+		mechanized = {
+			x = 2
+			y = 1
+		}
+		medium_sp_artillery_brigade = {
+			x = 0
+			y = 2
+		}
+	}
+	support = {
+		engineer = {
+			x = 0
+			y = 0
+		}
+		logistics_company = {
+			x = 0
+			y = 1
+		}
+		maintenance_company = {
+			x = 0
+			y = 2
+		}
+	}
+}
+add_ideas = {
+	ORL_church_1
+	ORL_knight
+	ORL_conscroption
+}

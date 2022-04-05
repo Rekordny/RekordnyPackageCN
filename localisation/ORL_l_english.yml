@@ -1,0 +1,9 @@
+﻿l_english:
+
+
+#decisions
+call_of_crusade_cost_text:"£command_power §W25§!"
+call_of_crusade_cost_text_blocked:"£command_power §R25§!"
+request_claim_cost_text:"£command_power §W15§!"
+request_claim_cost_text_desc:"£command_power §R15§!"
+ORL_tooltip.1:"§B在我们控制了萨伏依，都灵和日内瓦后就可以与安齐奥达成和平"

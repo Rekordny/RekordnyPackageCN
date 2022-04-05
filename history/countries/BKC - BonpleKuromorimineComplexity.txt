@@ -4,7 +4,7 @@ set_technology = {
 	senshado_prototype_tank = 1
 	senshado_light_tank_1 = 1
 }
-set_research_slots = 5
+set_research_slots = 4
 set_convoys = 20
 
 

@@ -1,0 +1,889 @@
+add_namespace = bcfreedom_stg
+add_namespace = bcfreedom_rebuild_senshado
+add_namespace = bcfreedom_diplo
+add_namespace = bcfreedom_kga_issue
+add_namespace = bcfreedom_pra_issue
+#STG：BC自由请求在内战时的支援
+country_event = {
+	id = bcfreedom_stg.1
+	title = bcfreedom_stg.1.t
+	desc = bcfreedom_stg.1.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = bcfreedom_stg.1.a
+		BCF = {
+			country_event = {
+				id = bcfreedom_stg.2
+				days = 3
+			}
+			add_opinion_modifier = {
+				target = STG
+				modifier = BCF_civil_war_support
+			}
+		}
+	}
+	option = {
+		name = bcfreedom_stg.1.b
+		BCF = {
+			country_event = {
+				id = bcfreedom_stg.3
+				days = 3
+			}
+			add_opinion_modifier = {
+				target = STG
+				modifier = BCF_civil_war_support_partial
+			}
+		}
+	}
+	option = {
+		name = bcfreedom_stg.1.c
+		BCF = {
+			country_event = {
+				id = bcfreedom_stg.4
+				days = 3
+			}
+			add_opinion_modifier = {
+				target = STG
+				modifier = BCF_civil_war_support_no
+			}
+		}
+	}
+}
+
+#圣葛萝莉安娜同意进行全面支援
+country_event = {
+	id = bcfreedom_stg.2
+	title = bcfreedom_stg.2.t
+	desc = bcfreedom_stg.2.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = bcfreedom_stg.2.a
+		add_war_support = 0.1
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}
+		#要求STG干涉内战
+		#unlock_decision_tooltip = 
+	}
+}
+
+#圣葛萝莉安娜同意进行有限支援
+country_event = {
+	id = bcfreedom_stg.3
+	title = bcfreedom_stg.3.t
+	desc = bcfreedom_stg.3.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = bcfreedom_stg.3.a
+		add_war_support = 0.05
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+	}
+}
+
+#圣葛萝莉安娜拒绝援助
+country_event = {
+	id = bcfreedom_stg.4
+	title = bcfreedom_stg.4.t
+	desc = bcfreedom_stg.4.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = bcfreedom_stg.4.a
+	}
+}
+
+#--------------------------------------------------------------------------------------------
+#重建战车道联盟事件
+#--------------------------------------------------------------------------------------------
+#重建战车道联盟
+country_event = {
+	id = bcfreedom_rebuild_senshado.1
+	title = bcfreedom_rebuild_senshado.1.t
+	desc = bcfreedom_rebuild_senshado.1.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+		#has_global_flag = 战车道联盟已经解散 
+	}
+	option = {
+		name = bcfreedom_rebuild_senshado.1.a
+		add_to_tech_sharing_group = BCF_new_senshado_tech
+		every_country = {
+			limit = {
+				OR = {
+					tag = STG
+					tag = ANZ
+					tag = KGA
+					tag = BON
+					tag = SDS
+					tag = PRA
+				}
+				has_opinion = {
+					target = BCF
+					value > -100
+				}
+			}
+			country_event = {
+				id = bcfreedom_rebuild_senshado.2
+			}
+		}
+	}
+}
+
+#是否同意加入战车道联盟
+country_event = {
+	id = bcfreedom_rebuild_senshado.2
+	title = bcfreedom_rebuild_senshado.2.t
+	desc = bcfreedom_rebuild_senshado.2.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = bcfreedom_rebuild_senshado.2.a
+		add_tech_bonus = {
+			bonus = 0.5
+			category = armor
+			uses = 1
+		}
+		add_to_tech_sharing_group = BCF_new_senshado_tech
+		BCF = {
+			country_event = {
+				id = bcfreedom_rebuild_senshado.3
+			}
+		}
+	}
+	option = {
+		name = bcfreedom_rebuild_senshado.2.b
+		BCF = {
+			country_event = {
+				id = bcfreedom_rebuild_senshado.4
+			}
+		}
+	}
+}
+
+#[FROM]同意加入
+country_event = {
+	id = bcfreedom_rebuild_senshado.3
+	title = bcfreedom_rebuild_senshado.3.t
+	desc = bcfreedom_rebuild_senshado.3.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = bcfreedom_rebuild_senshado.3.a
+		if = {
+			limit = {
+				FROM = {
+					tag = KGA
+				}
+			}
+			add_political_power = 20
+			add_war_support = 0.05
+		}
+		else = {
+			add_political_power = 10
+			add_war_support = 0.02
+		}
+	}
+}
+
+#[FROM]拒绝加入
+country_event = {
+	id = bcfreedom_rebuild_senshado.4
+	title = bcfreedom_rebuild_senshado.4.t
+	desc = bcfreedom_rebuild_senshado.4.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = bcfreedom_rebuild_senshado.4.a
+	}
+}
+
+#--------------------------------------------------------------------------------------------
+#外交事件-安齐奥
+#--------------------------------------------------------------------------------------------
+#ANZ:皮埃蒙特或战争
+country_event = {
+	id = bcfreedom_diplo.1
+	title = bcfreedom_diplo.1.t
+	desc = bcfreedom_diplo.1.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom_diplo.1.a
+		BCF = {
+			country_event = {
+				id = bcfreedom_diplo.2
+				days = 3
+			}
+		}
+		add_stability = -0.2
+		add_political_power = -100
+	}
+	option = {
+		name = bcfreedom_diplo.1.b
+		BCF = {
+			country_event = {
+				id = bcfreedom_diplo.3
+				days = 3
+			}
+		}
+		add_war_support = 0.1
+		custom_effect_tooltip = bcf_tooltip29
+		every_owned_state = {
+			limit = {
+				is_controlled_by = ANZ
+				any_neighbor_state = {
+					controller = {
+						tag = BCF
+					}
+				}
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				province = {
+					all_provinces = yes
+					limit_to_border = yes
+				}
+				instant_build = yes
+			}
+		}
+	}
+}
+
+#安齐奥同意了
+country_event = {
+	id = bcfreedom_diplo.2
+	title = bcfreedom_diplo.2.t
+	desc = bcfreedom_diplo.2.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = bcfreedom_diplo.2.a
+		transfer_state = 158
+		give_guarantee = ANZ
+		add_opinion_modifier = {
+			target = ANZ
+			modifier = BCF_piedmont_exchange_for_protection
+		}
+	}
+}
+
+#安齐奥拒绝了
+country_event = {
+	id = bcfreedom_diplo.3
+	title = bcfreedom_diplo.3.t
+	desc = bcfreedom_diplo.3.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = bcfreedom_diplo.3.a
+		create_wargoal = {
+			target = ANZ
+			type = annex_everything
+		}
+		add_political_power = -50
+	}
+	option = {
+		name = bcfreedom_diplo.3.b
+		add_political_power = -100
+		add_stability = -0.1
+		add_war_support = -0.2
+	}
+}
+
+#在北意大利的胜利
+country_event = {
+	id = bcfreedom_diplo.4
+	title = bcfreedom_diplo.4.t
+	desc = bcfreedom_diplo.4.d
+	picture = GFX_report_event_german_speech
+	trigger = {
+		has_war_with = ANZ
+		has_full_control_of_state = 158
+		has_full_control_of_state = 159
+		has_full_control_of_state = 3
+		has_full_control_of_state = 151
+	}
+	fire_only_once = yes
+	option = {
+		white_peace = ANZ
+		transfer_state = 158
+		transfer_state = 159
+		transfer_state = 3
+		transfer_state = 151
+	}
+	option = {
+		name = bcfreedom_diplo.4.b
+		add_political_power = -50
+		add_war_support = 0.05
+		#安齐奥触发事件：全面动员
+	}
+}
+
+#--------------------------------------------------------------------------------------------
+#外交事件-黑森峰
+#--------------------------------------------------------------------------------------------
+#解决摩泽兰问题
+country_event = {
+	id = bcfreedom_kga_issue.1
+	title = bcfreedom_kga_issue.1.t
+	desc = bcfreedom_kga_issue.1.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom_kga_issue.1.a
+		add_political_power = -20
+		BCF = {
+			country_event = {
+				id = bcfreedom_kga_issue.4
+			}
+		}
+		KGA = {
+			country_event = {
+				id = bcfreedom_kga_issue.4
+			}
+		}
+	}
+	option = {
+		name = bcfreedom_kga_issue.1.b
+		custom_effect_tooltip = BCF_tooltip36
+		KGA = {
+			country_event = {
+				id = bcfreedom_kga_issue.2
+			}
+		}
+	}
+	option = {
+		name = bcfreedom_kga_issue.1.c
+		custom_effect_tooltip = bcf_tooltip37
+		set_global_flag = FLAG_REINLAND_SOLVED
+		KGA = {
+			country_event = {
+				id = bcfreedom_kga_issue.8
+			}
+			add_opinion_modifier = {
+				target = BCF
+				modifier = BCF_kga_ally
+			}
+		}
+	}
+}
+
+#BC自由希望谈判
+country_event = {
+	id = bcfreedom_kga_issue.2
+	title = bcfreedom_kga_issue.2.t
+	desc = bcfreedom_kga_issue.2.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom_kga_issue.2.a
+		add_political_power = 10
+		add_opinion_modifier = {
+			target = BCF
+			modifier = BCF_conference_with_kga
+		}
+		BCF = {
+			country_event = {
+				id = bcfreedom_kga_issue.3
+			}
+		}
+	}
+}
+
+#谈判开始
+country_event = {
+	id = bcfreedom_kga_issue.3
+	title = bcfreedom_kga_issue.3.t
+	desc = bcfreedom_kga_issue.3.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom_kga_issue.3.a
+		KGA = {
+			country_event = {
+				id = bcfreedom_kga_issue.5
+			}
+		}
+	}
+	option = {
+		name = bcfreedom_kga_issue.3.b
+		BCF = {
+			country_event = {
+				id = bcfreedom_kga_issue.4
+			}
+		}
+		KGA = {
+			country_event = {
+				id = bcfreedom_kga_issue.4
+			}
+		}
+	}
+}
+
+#谈判破裂
+country_event = {
+	id = bcfreedom_kga_issue.4
+	title = bcfreedom_kga_issue.4.t
+	desc = bcfreedom_kga_issue.4.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom_kga_issue.4.a
+	}
+}
+
+#BC自由要求追加赔款
+country_event = {
+	id = bcfreedom_kga_issue.5
+	title = bcfreedom_kga_issue.5.t
+	desc = bcfreedom_kga_issue.5.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	#同意赔款
+	option = {
+		name = bcfreedom_kga_issue.5.a
+		custom_effect_tooltip = bcf_tooltip38
+		add_timed_idea = {
+			idea = BCF_KGA_war_reparations
+			days = 365
+		}
+		BCF = {
+			country_event = {
+				id = bcfreedom_kga_issue.6
+			}
+		}
+	}
+	#拒绝赔款
+	option = {
+		name = bcfreedom_kga_issue.5.b
+		BCF = {
+			country_event = {
+				id = bcfreedom_kga_issue.7
+			}
+		}
+	}
+}
+
+#KGA同意支付赔款
+country_event = {
+	id = bcfreedom_kga_issue.6
+	title = bcfreedom_kga_issue.6.t
+	desc = bcfreedom_kga_issue.6.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom_kga_issue.6.a
+		custom_effect_tooltip = bcf_tooltip39
+		add_timed_idea = {
+			idea = BCF_get_reparations_from_KGA
+			days = 365
+		}
+		set_global_flag = FLAG_REINLAND_SOLVED
+	}
+}
+
+#KGA拒绝支付赔款
+country_event = {
+	id = bcfreedom_kga_issue.7
+	title = bcfreedom_kga_issue.7.t
+	desc = bcfreedom_kga_issue.7.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom_kga_issue.7.a
+		BCF = {
+			country_event = {
+				id = bcfreedom_kga_issue.4
+			}
+		}
+		KGA = {
+			country_event = {
+				id = bcfreedom_kga_issue.4
+			}
+		}
+	}
+}
+
+#BC自由愿意无条件撤军
+country_event = {
+	id = bcfreedom_kga_issue.8
+	title = bcfreedom_kga_issue.8.t
+	desc = bcfreedom_kga_issue.8.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom_kga_issue.8.a
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_political_power = 10
+	}
+}
+
+#卢森堡条约
+country_event = {
+	id = bcfreedom_kga_issue.9
+	title = bcfreedom_kga_issue.9.t
+	desc = bcfreedom_kga_issue.9.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = bcfreedom.9.a
+		diplomatic_relation = {
+			country = KGA
+			relation = non_aggression_pact
+			active = yes
+		}
+		KGA = {
+			country_event = {
+				id = bcfreedom_kga_issue.10
+				days = 1
+			}
+		}
+	}
+}
+
+#KGA: 领土回归
+country_event = {
+	id = bcfreedom_kga_issue.10
+	title = bcfreedom_kga_issue.10.t
+	desc = bcfreedom_kga_issue.10.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = bcfreedom_kga_issue.10.a
+		KGA = {
+			transfer_state = 50
+		}
+		KGA = {
+			transfer_state = 42
+		}
+	}
+}
+
+#--------------------------------------------------------------------------------------------
+#外交事件-茶会
+#--------------------------------------------------------------------------------------------
+#国策触发
+country_event = {
+	id = bcfreedom_pra_issue.1
+	title = bcfreedom_pra_issue.1.t
+	desc = bcfreedom_pra_issue.1.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = bcfreedom_pra_issue.1.a
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		PRA = {
+			country_event = {
+				id = bcfreedom_pra_issue.2
+				days = 2
+			}
+		}
+	}
+}
+
+#茶会
+country_event = {
+	id = bcfreedom_pra_issue.2
+	title = bcfreedom_pra_issue.2.t
+	desc = bcfreedom_pra_issue.2.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = bcfreedom_pra_issue.2.a
+		add_political_power = 10
+		BCF = {
+			country_event = {
+				id = bcfreedom_pra_issue.3
+				days = 2
+			}
+		}
+	}
+}
+
+#革命形势
+country_event = {
+	id = bcfreedom_pra_issue.3
+	title = bcfreedom_pra_issue.3.t
+	desc = bcfreedom_pra_issue.3.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = bcfreedom_pra_issue.3.a
+		add_war_support = 0.05
+		add_tech_bonus = {
+			bonus = 0.5
+			category = armor
+			uses = 1
+		}
+		country_event = {
+			id = bcfreedom_pra_issue.4
+			days = 2
+		}
+	}
+}
+
+#东欧问题
+country_event = {
+	id = bcfreedom_pra_issue.4
+	title = bcfreedom_pra_issue.4.t
+	desc = bcfreedom_pra_issue.4.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = bcfreedom_pra_issue.4.a
+		diplomatic_relation = {
+			country = BON
+			relation = guarantee
+			active = no
+		}
+		add_political_power = 10
+		country_event = {
+			id = bcfreedom_pra_issue.7 days = 2
+		}
+		BON = {
+			add_opinion_modifier = {
+				target = BCF
+				modifier = BCF_sell_bon
+			}
+		}
+		PRA = {
+			country_event = {
+				id = bcfreedom_pra_issue.5
+			}
+		}
+	}
+	option = {
+		name = bcfreedom_pra_issue.4.b
+		country_event = {
+			id = bcfreedom_pra_issue.6
+		}
+		PRA = {
+			country_event = {
+				id = bcfreedom_pra_issue.6
+			}
+		}
+		#完成国策：茶会（目前没找到这个国策）
+	}
+	option = {
+		name = bcfreedom_pra_issue.4.c
+		add_political_power = -20
+		PRA = {
+			add_opinion_modifier = {
+				target = BCF
+				modifier = BCF_PRA_unhonest
+			}
+		}
+		country_event = {
+			id = bcfreedom_pra_issue.7 days = 2
+		}
+	}
+}
+
+#BC自由退出东欧
+country_event = {
+	id = bcfreedom_pra_issue.5
+	title = bcfreedom_pra_issue.5.t
+	desc = bcfreedom_pra_issue.5.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = bcfreedom_pra_issue.5.a
+		add_war_support = 0.05
+		PRA = {
+			add_opinion_modifier = {
+				target = BCF
+				modifier = BCF_deal_with_pra
+			}
+		}
+	}
+}
+
+#茶会结束
+country_event = {
+	id = bcfreedom_pra_issue.6
+	title = bcfreedom_pra_issue.6.t
+	desc = bcfreedom_pra_issue.6.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = bcfreedom_pra_issue.6.a
+	}
+}
+
+#黑森峰问题
+country_event = {
+	id = bcfreedom_pra_issue.7
+	title = bcfreedom_pra_issue.7.t
+	desc = bcfreedom_pra_issue.7.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	#要求合作
+	option = {
+		name = bcfreedom_pra_issue.7.a
+	}
+	#要求中立
+	option = {
+		name = bcfreedom_pra_issue.7.b
+	}
+}
+
+#BC寻求合作对抗黑森峰
+country_event = {
+	id = bcfreedom_pra_issue.8
+	title = bcfreedom_pra_issue.8.t
+	desc = bcfreedom_pra_issue.8.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = bcfreedom_pra_issue.8.a
+		add_ideas = BCF_PRA_cooperate_with_BCF
+		BCF = {
+			country_event = bcfreedom_pra_issue.10
+		}
+	}
+	option = {
+		name = bcfreedom_pra_issue.8.b
+		country_event = {
+			id = bcfreedom_pra_issue.6
+		}
+		BCF = {
+			country_event = {
+				id = bcfreedom_pra_issue.6
+			}
+		}
+		KGA = {
+			add_opinion_modifier = {
+				target = PRA
+				modifier = BCF_PRA_choose_KGA
+			}
+		}
+	}
+}
+
+#BC寻求真理保持中立
+country_event = {
+	id = bcfreedom_pra_issue.9
+	title = bcfreedom_pra_issue.9.t
+	desc = bcfreedom_pra_issue.9.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = bcfreedom_pra_issue.9.a
+		BCF = {
+			country_event = {
+				id = bcfreedom_pra_issue.11
+			}
+		}
+	}
+	option = {
+		name = bcfreedom_pra_issue.9.b
+		country_event = {
+			id = bcfreedom_pra_issue.6
+		}
+		BCF = {
+			country_event = {
+				id = bcfreedom_pra_issue.6
+			}
+		}
+		KGA = {
+			add_opinion_modifier = {
+				target = PRA
+				modifier = BCF_PRA_choose_KGA
+			}
+		}
+	}
+}
+
+#真理同意孤立黑森峰
+country_event = {
+	id = bcfreedom_pra_issue.10
+	title = bcfreedom_pra_issue.10.t
+	desc = bcfreedom_pra_issue.10.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = bcfreedom_pra_issue.10.a
+		add_ideas = BCF_pravada_aid
+		country_event = {
+			id = bcfreedom_pra_issue.6
+		}
+		PRA = {
+			country_event = {
+				id = bcfreedom_pra_issue.6
+			}
+		}
+		KGA = {
+			add_opinion_modifier = {
+				target = PRA
+				modifier = BCF_isolate_kga
+			}
+			#触发事件：BC和PRA合作孤立我们
+		}
+	}
+}
+
+#真理同意保持中立
+country_event = {
+	id = bcfreedom_pra_issue.11
+	title = bcfreedom_pra_issue.11.t
+	desc = bcfreedom_pra_issue.11.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = bcfreedom_pra_issue.11.a
+		country_event = {
+			id = bcfreedom_pra_issue.6
+		}
+		PRA = {
+			country_event = {
+				id = bcfreedom_pra_issue.6
+			}
+		}
+		diplomatic_relation = {
+			country = PRA
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+}

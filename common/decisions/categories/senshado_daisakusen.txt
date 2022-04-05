@@ -1,12 +1,12 @@
 senshado_daisakusen_decisions = {
 	icon = GFX_decision_category_senshado
 	allowed = {
-		is_debug = yes
+		AND = { is_debug = yes is_ai = no }
 	}
 }
 test_senshado_daisakusen = {
 	icon = GFX_decision_category_senshado
 	allowed = {
-		is_debug = yes
+		AND = { is_debug = yes is_ai = no }
 	}
 }

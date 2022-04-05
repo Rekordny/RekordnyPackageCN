@@ -22,6 +22,6 @@ bcf_school_factional_strife = {
 	icon = GFX_decision_category_senshado
 	allowed = {
 		tag = BCF
-		OR = { has_completed_focus = BCF_school_reform is_debug = yes }
+		OR = { has_completed_focus = BCF_school_reform AND = { is_debug = yes is_ai = no } }
 	}
 } 

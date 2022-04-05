@@ -1,0 +1,504 @@
+#着手重建大洗事宜
+shared_focus = {
+	id = OGA_shared_one
+	icon = GFX_focus_OGA_shared_one
+	x = 60
+	y = 0
+	cost = 1
+	available = { date > 1972.1.1 }
+	bypass = { }
+	#prerequisite = { focus = }
+	#mutually_exclusive = { focus =  }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		country_event = ooari.1
+	}
+}
+
+#汽车部，发动引擎
+shared_focus = {
+	id = OGA_shared_two
+	icon = GFX_focus_OGA_shared_two
+	relative_position_id = OGA_shared_one
+	x = -7
+	y = 1
+	cost = 10
+	available = { }
+	bypass = { }
+	prerequisite = { focus = OGA_shared_one }
+	#mutually_exclusive = { focus =  }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		army_experience = 10
+	}
+}
+
+#排球部，永不放弃
+shared_focus = {
+	id = OGA_shared_three
+	icon = GFX_focus_OGA_shared_three
+	relative_position_id = OGA_shared_one
+	x = -5
+	y = 1
+	cost = 10
+	available = { }
+	bypass = { }
+	prerequisite = { focus = OGA_shared_one }
+	#mutually_exclusive = { focus =  }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		army_experience = 10
+	}
+}
+
+#游戏宅，锻炼时间
+shared_focus = {
+	id = OGA_shared_four
+	icon = GFX_focus_OGA_shared_four
+	relative_position_id = OGA_shared_one
+	x = -3
+	y = 1
+	cost = 10
+	available = { }
+	bypass = { }
+	prerequisite = { focus = OGA_shared_one }
+	#mutually_exclusive = { focus =  }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		army_experience = 10
+	}
+}
+
+#燃烧吧，历女魂
+shared_focus = {
+	id = OGA_shared_five
+	icon = GFX_focus_OGA_shared_five
+	relative_position_id = OGA_shared_one
+	x = -1
+	y = 1
+	cost = 10
+	available = { }
+	bypass = { }
+	prerequisite = { focus = OGA_shared_one }
+	#mutually_exclusive = { focus =  }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		army_experience = 10
+	}
+}
+
+#学生会，再次集结
+shared_focus = {
+	id = OGA_shared_six
+	icon = GFX_focus_OGA_shared_six
+	relative_position_id = OGA_shared_one
+	x = 1
+	y = 1
+	cost = 10
+	available = { }
+	bypass = { }
+	prerequisite = { focus = OGA_shared_one }
+	#mutually_exclusive = { focus =  }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		army_experience = 10
+	}
+}
+
+#水手们，扬帆起航
+shared_focus = {
+	id = OGA_shared_seven
+	icon = GFX_focus_OGA_shared_seven
+	relative_position_id = OGA_shared_one
+	x = 3
+	y = 1
+	cost = 10
+	available = { }
+	bypass = { }
+	prerequisite = { focus = OGA_shared_one }
+	#mutually_exclusive = { focus =  }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		army_experience = 10
+	}
+}
+
+#风纪部，报道
+shared_focus = {
+	id = OGA_shared_eight
+	icon = GFX_focus_OGA_shared_eight
+	relative_position_id = OGA_shared_one
+	x = 5
+	y = 1
+	cost = 10
+	available = { }
+	bypass = { }
+	prerequisite = { focus = OGA_shared_one }
+	#mutually_exclusive = { focus =  }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		army_experience = 10
+	}
+}
+
+#一年级生的大家，又见面了
+shared_focus = {
+	id = OGA_shared_nine
+	icon = GFX_focus_OGA_shared_nine
+	relative_position_id = OGA_shared_one
+	x = 7
+	y = 1
+	cost = 10
+	available = { }
+	bypass = { }
+	prerequisite = { focus = OGA_shared_one }
+	#mutually_exclusive = { focus =  }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		army_experience = 10
+	}
+}
+
+#重建大家的学园舰
+shared_focus = {
+	id = OGA_shared_ten
+	icon = GFX_focus_OGA_shared_ten
+	relative_position_id = OGA_shared_one
+	x = 0
+	y = 2
+	cost = 10
+	available = { }
+	bypass = { }
+	prerequisite = { focus = OGA_shared_two focus = OGA_shared_three focus = OGA_shared_four focus = OGA_shared_five focus = OGA_shared_six focus = OGA_shared_seven focus = OGA_shared_eight focus = OGA_shared_nine }
+	#mutually_exclusive = { focus =  }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		army_experience = 10
+	}
+}
+
+#重启大洗工业与生活运作
+shared_focus = {
+	id = OGA_shared_eleven
+	icon = GFX_focus_OGA_shared_eleven
+	relative_position_id = OGA_shared_ten
+	x = -2
+	y = 1
+	cost = 10
+	available = { arms_factory > 49 industrial_complex > 49 }
+	bypass = { }
+	prerequisite = { focus = OGA_shared_ten }
+	#mutually_exclusive = { focus =  }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		army_experience = 10
+	}
+}
+
+#重新开放招生
+shared_focus = {
+	id = OGA_shared_twelve
+	icon = GFX_focus_OGA_shared_twelve
+	relative_position_id = OGA_shared_ten
+	x = 0
+	y = 1
+	cost = 10
+	available = { has_army_manpower = {
+		size > 1500000
+	} }
+	bypass = { }
+	prerequisite = { focus = OGA_shared_ten }
+	#mutually_exclusive = { focus =  }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		army_experience = 10
+	}
+}
+
+#重新开设战车道
+shared_focus = {
+	id = OGA_shared_thirteen
+	icon = GFX_focus_OGA_shared_thirteen
+	relative_position_id = OGA_shared_ten
+	x = 2
+	y = 1
+	cost = 10
+	available = { senshado_school > 14 }
+	bypass = { }
+	prerequisite = { focus = OGA_shared_ten }
+	#mutually_exclusive = { focus =  }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		army_experience = 10
+	}
+}
+
+#大洗。再次复活
+shared_focus = {
+	id = OGA_shared_fourteen
+	icon = GFX_focus_OGA_shared_fourteen
+	relative_position_id = OGA_shared_thirteen
+	x = -2
+	y = 1
+	cost = 10
+	available = { }
+	bypass = { }
+	prerequisite = { focus = OGA_shared_thirteen }
+	prerequisite = { focus = OGA_shared_eleven }
+	prerequisite = { focus = OGA_shared_twelve }
+	#mutually_exclusive = { focus =  }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		army_experience = 10
+	}
+}
+
+#上吧，超音速贵公子
+shared_focus = {
+	id = OGA_shared_fifteen
+	icon = GFX_focus_OGA_shared_fifteen
+	relative_position_id = OGA_shared_twentyfour
+	x = -8
+	y = 1
+	cost = 10
+	available = { }
+	bypass = { }
+	prerequisite = { focus = OGA_shared_twentyfour }
+	#mutually_exclusive = { focus =  }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		army_experience = 10
+	}
+}
+
+#只要有信念，哪里都是我们的主场
+shared_focus = {
+	id = OGA_shared_sixteen
+	icon = GFX_focus_OGA_shared_sixteen
+	relative_position_id = OGA_shared_twentyfour
+	x = -6
+	y = 1
+	cost = 10
+	available = { }
+	bypass = { }
+	prerequisite = { focus = OGA_shared_twentyfour }
+	#mutually_exclusive = { focus =  }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		army_experience = 10
+	}
+}
+#桃子再也不会拉断换挡器了喵
+shared_focus = {
+	id = OGA_shared_seventeen
+	icon = GFX_focus_OGA_shared_seventeen
+	relative_position_id = OGA_shared_twentyfour
+	x = -4
+	y = 1
+	cost = 10
+	available = { }
+	bypass = { }
+	prerequisite = { focus = OGA_shared_twentyfour }
+	#mutually_exclusive = { focus =  }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		army_experience = 10
+	}
+}
+#伟人之魂，当吾手所铸
+shared_focus = {
+	id = OGA_shared_eighteen
+	icon = GFX_focus_OGA_shared_eighteen
+	relative_position_id = OGA_shared_twentyfour
+	x = -2
+	y = 1
+	cost = 10
+	available = { }
+	bypass = { }
+	prerequisite = { focus = OGA_shared_twentyfour }
+	#mutually_exclusive = { focus =  }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		army_experience = 10
+	}
+}
+#友情是瞬间开放的花,而时间会使它结果。
+shared_focus = {
+	id = OGA_shared_ninteen
+	icon = GFX_focus_OGA_shared_ninteen
+	relative_position_id = OGA_shared_twentyfour
+	x = 0
+	y = 1
+	cost = 10
+	available = { }
+	bypass = { }
+	prerequisite = { focus = OGA_shared_twentyfour }
+	#mutually_exclusive = { focus =  }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		army_experience = 10
+	}
+}
+
+#振作起来，小柚子，小桃桃
+shared_focus = {
+	id = OGA_shared_twenty
+	icon = GFX_focus_OGA_shared_twenty
+	relative_position_id = OGA_shared_twentyfour
+	x = 2
+	y = 1
+	cost = 10
+	available = { }
+	bypass = { }
+	prerequisite = { focus = OGA_shared_twentyfour }
+	#mutually_exclusive = { focus =  }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		army_experience = 10
+	}
+}
+
+#你们几个，和基德船长有的一比啊
+shared_focus = {
+	id = OGA_shared_twentyone
+	icon = GFX_focus_OGA_shared_twentyone
+	relative_position_id = OGA_shared_twentyfour
+	x = 4
+	y = 1
+	cost = 10
+	available = { }
+	bypass = { }
+	prerequisite = { focus = OGA_shared_twentyfour }
+	#mutually_exclusive = { focus =  }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		army_experience = 10
+	}
+}
+
+#可不要小看风纪委员啊
+shared_focus = {
+	id = OGA_shared_twentytwo
+	icon = GFX_focus_OGA_shared_twentytwo
+	relative_position_id = OGA_shared_twentyfour
+	x = 6
+	y = 1
+	cost = 10
+	available = { }
+	bypass = { }
+	prerequisite = { focus = OGA_shared_twentyfour }
+	#mutually_exclusive = { focus =  }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		army_experience = 10
+	}
+}
+#和大家一同的泪水和成长
+shared_focus = {
+	id = OGA_shared_twentythree
+	icon = GFX_focus_OGA_shared_twentythree
+	relative_position_id = OGA_shared_twentyfour
+	x = 8
+	y = 1
+	cost = 10
+	available = { }
+	bypass = { }
+	prerequisite = { focus = OGA_shared_twentyfour }
+	#mutually_exclusive = { focus =  }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		army_experience = 10
+	}
+}
+
+#迎回西住美穗
+shared_focus = {
+	id = OGA_shared_twentyfour
+	icon = GFX_focus_OGA_shared_twentyfour
+	relative_position_id = OGA_shared_fourteen
+	x = 0
+	y = 1
+	cost = 10
+	available = { }
+	bypass = { }
+	prerequisite = { focus = OGA_shared_fourteen }
+	#mutually_exclusive = { focus =  }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		army_experience = 10
+	}
+}
+
+

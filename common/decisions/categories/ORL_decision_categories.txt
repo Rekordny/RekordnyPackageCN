@@ -1,0 +1,4 @@
+orl_government = {
+	icon = GFX_decision_category_senshado
+	allowed = { tag = ORL }
+}

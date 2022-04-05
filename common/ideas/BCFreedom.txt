@@ -1147,5 +1147,60 @@ ideas = {
 				war_support_factor = 0.2
 			}
 		}
+
+		#追加战争赔款
+		BCF_KGA_war_reparations = {
+			allowed = {
+				tag = KGA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			available = {
+				NOT = {
+					has_war_with = BCF
+				}
+			}
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		#黑森锋赔款
+		BCF_get_reparations_from_KGA = {
+			allowed = {
+				tag = BCF
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			available = {
+				NOT = {
+					has_war_with = KGA
+				}
+			}
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+
+		#与BC自由的合作
+		BCF_PRA_cooperate_with_BCF = {
+			allowed = {
+				tag = PRA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			available = {
+				NOT = {
+					has_war_with = BCF
+				}
+			}
+			modifier = {
+				consumer_goods_factor = -0.03
+				communism_drift = 0.05
+			}
+		}
 	}
 }

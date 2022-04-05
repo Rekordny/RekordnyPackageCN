@@ -1,0 +1,123 @@
+GGG_1 = 
+{
+	name = "Infantry Troops"
+
+	for_countries = { WAF VIK VIG GHS COU YOG BDH ONM USP MAP THS KFA KEB KRR HCA OAN ORA ODU OHI OTU OML OLE OSH BKC }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. Infantry Troops"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Infantry Troops" }
+		2 = { "%d. Infantry Troops" }
+		3 = { "%d. Infantry Troops" }
+		4 = { "%d. Infantry Troops" }
+		5 = { "%d. Infantry Troops" }
+		6 = { "%d. Infantry Troops" }
+		7 = { "%d. Infantry Troops" }
+		8 = { "%d. Infantry Troops" }
+		9 = { "%d. Infantry Troops" }
+		10 = { "%d. Infantry Troops" }
+		11 = { "%d. Infantry Troops" }
+		12 = { "%d. Infantry Troops" }
+		13 = { "%d. Infantry Troops" }
+		14 = { "%d. Infantry Troops" }
+		15 = { "%d. Infantry Troops" }
+		16 = { "%d. Infantry Troops" }
+		17 = { "%d. Infantry Troops" }
+		18 = { "%d. Infantry Troops" }
+		19 = { "%d. Infantry Troops" }
+
+	}
+}
+GGG_2 = 
+{
+	name = "Motorized Troop"
+
+	for_countries = { WAF VIK VIG GHS COU YOG BDH ONM USP MAP THS KFA KEB KRR HCA OAN ORA ODU OHI OTU OML OLE OSH BKC }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. Motorized Troops"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Motorized Troops" }
+		2 = { "%d. Motorized Troops" }
+		3 = { "%d. Motorized Troops" }
+		4 = { "%d. Motorized Troops" }
+		5 = { "%d. Motorized Troops" }
+		6 = { "%d. Motorized Troops" }
+		7 = { "%d. Motorized Troops" }
+		8 = { "%d. Motorized Troops" }
+		9 = { "%d. Motorized Troops" }
+		10 = { "%d. Motorized Troops" }
+		11 = { "%d. Motorized Troops" }
+		12 = { "%d. Motorized Troops" }
+		13 = { "%d. Motorized Troops" }
+		14 = { "%d. Motorized Troops" }
+		15 = { "%d. Motorized Troops" }
+		16 = { "%d. Motorized Troops" }
+		17 = { "%d. Motorized Troops" }
+		18 = { "%d. Motorized Troops" }
+		19 = { "%d. Motorized Troops" }
+
+	}
+}
+GGG_3 = 
+{
+	name = "Armor Troop"
+
+	for_countries = { WAF VIK VIG GHS COU YOG BDH ONM USP MAP THS KFA KEB KRR HCA OAN ORA ODU OHI OTU OML OLE OSH BKC }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. Armor Troop"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Armor Troop" }
+		2 = { "%d. Armor Troop" }
+		3 = { "%d. Armor Troop" }
+		4 = { "%d. Armor Troop" }
+		5 = { "%d. Armor Troop" }
+		6 = { "%d. Armor Troop" }
+		7 = { "%d. Armor Troop" }
+		8 = { "%d. Armor Troop" }
+		9 = { "%d. Armor Troop" }
+		10 = { "%d. Armor Troop" }
+		11 = { "%d. Armor Troop" }
+		12 = { "%d. Armor Troop" }
+		13 = { "%d. Armor Troop" }
+		14 = { "%d. Armor Troop" }
+		15 = { "%d. Armor Troop" }
+		16 = { "%d. Armor Troop" }
+		17 = { "%d. Armor Troop" }
+		18 = { "%d. Armor Troop" }
+		19 = { "%d. Armor Troop" }
+
+	}
+}

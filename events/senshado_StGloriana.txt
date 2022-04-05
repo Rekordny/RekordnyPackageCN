@@ -368,6 +368,7 @@ country_event = {
 		name = StGloriana.8.a
 		if = { limit = { has_country_flag = STG_REDUCE_WORKER_POWER } add_ideas = STG_worker_great_strike_2 }
 		else = { add_ideas = STG_worker_great_strike_3 }
+		unlock_decision_category_tooltip = stg_worker_and_labor_party
 	}
 }
 
@@ -440,7 +441,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = StGloriana.10.d
+		name = StGloriana.10.e
 		add_political_power = -50
 		hidden_effect = { 
 			add_to_variable = { stg_attitude_value = 1 } 
@@ -473,7 +474,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = StGloriana.11.background
+		name = StGloriana.11.b
 		129 = {
 			remove_building = {
 				type = infrastructure
@@ -494,7 +495,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = StGloriana.11.d
+		name = StGloriana.11.e
 		hidden_effect = { 
 			random_list = {
 				50 = { add_to_variable = { stg_attitude_value = 2 } }
@@ -522,7 +523,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = StGloriana.12.background
+		name = StGloriana.12.b
 		hidden_effect = { 
 			set_country_flag = STG_STRONG_LABOUR_PARTY
 			add_to_variable = { stg_attitude_value = 2 }  
@@ -553,7 +554,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = StGloriana.13.background
+		name = StGloriana.13.b
 		add_political_power = 100
 		hidden_effect = { 
 			add_to_variable = { stg_attitude_value = -1 }  
@@ -594,7 +595,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = StGloriana.14.background
+		name = StGloriana.14.b
 		add_political_power = 100
 		hidden_effect = { 
 			add_to_variable = { stg_attitude_value = 1 }  
@@ -879,6 +880,7 @@ country_event = {
 		}
 		set_country_flag = STG_SUCEESS_PUPPET_WAF
 		hidden_effect = {
+			news_event = senshado_news.12
 		}
 	}
 }
@@ -896,6 +898,7 @@ country_event = {
 		puppet = WAF
 		set_country_flag = STG_SUCEESS_PUPPET_WAF
 		hidden_effect = {
+			news_event = senshado_news.12
 		}
 	}
 }

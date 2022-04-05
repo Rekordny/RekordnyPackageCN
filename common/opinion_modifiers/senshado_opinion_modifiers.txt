@@ -78,19 +78,19 @@ opinion_modifiers = {
 		value = +30
 	}
 	BCF_sell_bon = {
-		value = -30
+		value = -50
 	}
 	BCF_deal_with_pra = {
-		value = +30
+		value = +50
 	}
     BCF_handling_territorial_disputes = {
 		value = +10
 	}
 	BCF_civil_war_support = {
-		value = +20
+		value = +30
 	}
     BCF_civil_war_support_no = {
-		value = -10
+		value = -30
 	}
     BCF_civil_war_support_partial = {
 		value = +10
@@ -113,6 +113,10 @@ opinion_modifiers = {
 		months = 12
 		decay = 2
 	}
+}
+
+#ANZ
+opinion_modifiers = {
 	ANZ_approach_yogurt = {
 		value = +25
 	}

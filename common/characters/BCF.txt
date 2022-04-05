@@ -1,168 +1,545 @@
-characters={
-	BCF_andou={
-		name="Andou"
-		portraits={
-			civilian={
-				large="gfx/leaders/BCF/Portrait_BCF_Andou.dds"
+characters = {
+	BCF_andou = {
+		name = BCF_andou
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BCF/Portrait_BCF_Andou.dds"
 			}
 		}
-		country_leader={
-			desc="She is the best"
-			ideology=leninism
-			expire="2000.1.1.1"
-			id=-1
+		country_leader = {
+			desc = "She is the best"
+			ideology = leninism
+			expire = "2000.1.1.1"
+			id = -1
+			traits = {
+				BCF_radical
+			}
 		}
-		country_leader={
-			desc="She is the best"
-			ideology=nazism
-			expire="2000.1.1.1"
-			id=-1
+		country_leader = {
+			desc = "She is the best"
+			ideology = nazism
+			expire = "2000.1.1.1"
+			id = -1
+			traits = {
+				BCF_radical
+			}
 		}
-		corps_commander={
-			traits={ armor_officer }
-			skill=3
-			attack_skill=4
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
-			legacy_id=1042
+		advisor = {
+			cost = 200
+			slot = army_chief
+			idea_token = BCF_andou_chief
+			allowed = {
+				original_tag = BCF
+			}
+			available = {
+				OR = {
+					has_country_leader = {
+						character = BCF_marie
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = BCF_andou
+						ruling_only = yes
+					}
+				}
+			}
+			traits = {
+				BCF_speed_first
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = BCF_andou_political
+			allowed = {
+				original_tag = BCF
+			}
+			available = {
+				OR = {
+					has_country_leader = {
+						character = BCF_marie
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = BCF_andou
+						ruling_only = yes
+					}
+				}
+			}
+			traits = {
+				BCF_war_fanatic
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = BCF_andou_theorist
+			allowed = {
+				original_tag = BCF
+			}
+			available = {
+				OR = {
+					has_country_leader = {
+						character = BCF_marie
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = BCF_andou
+						ruling_only = yes
+					}
+				}
+			}
+			traits = {
+				BCF_mobile_theorist
+			}
+		}
+		corps_commander = {
+			traits = {
+				armor_officer
+				BCF_andou_faction
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = 1042
 		}
 	}
-	BCF_marie={
-		name="Marie"
-		portraits={
-			civilian={
-				large="gfx/leaders/BCF/Portrait_BCF_Marie.dds"
+	BCF_marie = {
+		name = BCF_marie
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BCF/Portrait_BCF_Marie.dds"
 			}
 		}
-		country_leader={
-			desc="She is the best"
-			ideology=moderatism
-			expire="2000.1.1.1"
-			id=-1
+		country_leader = {
+			desc = "She is the best"
+			ideology = moderatism
+			traits = {
+				BCF_princess_of_lle_de_france
+			}
+			expire = "2000.1.1.1"
+			id = -1
 		}
-		field_marshal={
-			traits={ armor_officer }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=4
-			legacy_id=1041
+		advisor = {
+			cost = 200
+			slot = army_chief
+			idea_token = BCF_marie_chief
+			allowed = {
+				original_tag = BCF
+			}
+			available = {
+				OR = {
+					has_country_leader = {
+						character = BCF_marie
+						ruling_only = yes
+					}
+					NOT = {
+						has_country_flag = BCF_MARY_GAVE_UP_STUDENT_PRESIDENT
+					}
+				}
+			}
+			traits = {
+				BCF_joint_operations
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = BCF_marie_political
+			allowed = {
+				original_tag = BCF
+			}
+			available = {
+				OR = {
+					has_country_leader = {
+						character = BCF_marie
+						ruling_only = yes
+					}
+					NOT = {
+						has_country_flag = BCF_MARY_GAVE_UP_STUDENT_PRESIDENT
+					}
+				}
+			}
+			traits = {
+				BCF_defender_of_france
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = BCF_marie_theorist
+			allowed = {
+				original_tag = BCF
+			}
+			available = {
+				OR = {
+					has_country_leader = {
+						character = BCF_marie
+						ruling_only = yes
+					}
+					NOT = {
+						has_country_flag = BCF_MARY_GAVE_UP_STUDENT_PRESIDENT
+					}
+				}
+			}
+			traits = {
+				BCF_military_theorist
+			}
+		}
+		field_marshal = {
+			traits = {
+				BCF_marie_faction
+				unyielding_defender
+				defensive_doctrine
+			}
+			skill = 5
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 6
+			logistics_skill = 2
+			legacy_id = 1041
 		}
 	}
-	BCF_oshida={
-		name="Oshida"
-		portraits={
-			civilian={
-				large="gfx/leaders/BCF/Portrait_BCF_Oshida.dds"
+	BCF_oshida = {
+		name = BCF_oshida
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BCF/Portrait_BCF_Oshida.dds"
 			}
 		}
-		country_leader={
-			desc="She is the best"
-			ideology=conservatism
-			expire="2000.1.1.1"
-			id=-1
+		country_leader = {
+			desc = "She is the best"
+			ideology = conservatism
+			expire = "2000.1.1.1"
+			id = -1
+			traits = {
+				BCF_conservative
+			}
 		}
-		corps_commander={
-			traits={ armor_officer }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=1043
+		advisor = {
+			cost = 150
+			slot = army_chief
+			idea_token = BCF_oshida_chief
+			allowed = {
+				original_tag = BCF
+			}
+			available = {
+				OR = {
+					has_country_leader = {
+						character = BCF_oshida
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = BCF_marie
+						ruling_only = yes
+					}
+				}
+			}
+			traits = {
+				BCF_defence_first
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = BCF_oshida_political
+			allowed = {
+				original_tag = BCF
+			}
+			available = {
+				OR = {
+					has_country_leader = {
+						character = BCF_oshida
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = BCF_marie
+						ruling_only = yes
+					}
+				}
+			}
+			traits = {
+				BCF_diplomat
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = theorist
+			idea_token = BCF_oshida_theorist
+			allowed = {
+				original_tag = BCF
+			}
+			available = {
+				OR = {
+					has_country_leader = {
+						character = BCF_oshida
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = BCF_marie
+						ruling_only = yes
+					}
+				}
+			}
+			traits = {
+				BCF_battleplan_theorist
+			}
+		}
+		corps_commander = {
+			traits = {
+				infantry_officer
+				BCF_oshida_faction
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 1
+			legacy_id = 1043
 		}
 	}
-	BCF_Asparagus={
-		name="Asparagus"
-		portraits={
-			civilian={
-				large="gfx/leaders/BCF/Portrait_BCF_Asparagus.dds"
+	BCF_azumi = {
+		name = BCF_azumi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BCF/Portrait_BCF_Azumi.dds"
 			}
 		}
-		country_leader={
-			desc="She is the best"
-			ideology=nazism
-			expire="2000.1.1.1"
-			id=-1
-		}
-		field_marshal={
-			traits={ armor_officer }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=4
-			legacy_id=1041
+		corps_commander = {
+			traits = {
+				armor_officer
+				career_officer
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = 1041
 		}
 	}
-	BCF_Bordeaux={
-		name="Bordeaux"
-		portraits={
-			civilian={
-				large="gfx/leaders/BCF/Portrait_BCF_Bordeaux.dds"
+	BCF_Asparagus = {
+		name = BCF_Asparagus
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BCF/Portrait_BCF_Asparagus.dds"
 			}
 		}
-		corps_commander={
-			traits={ armor_officer }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
-			legacy_id=1090
+		country_leader = {
+			desc = "She is the best"
+			ideology = nazism
+			expire = "2000.1.1.1"
+			id = -1
+		}
+		advisor = {
+			cost = 150
+			slot = high_command
+			idea_token = BCF_Asparagus_command
+			allowed = {
+				original_tag = BCF
+			}
+			available = {
+				NOT = {
+					has_country_flag = BCF_civilwar_happened
+				}
+			}
+			traits = {
+				BCF_armor_commander
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = BCF_Asparagus_political
+			allowed = {
+				original_tag = BCF
+			}
+			available = {
+				NOT = {
+					has_country_flag = BCF_civilwar_happened
+				}
+			}
+			traits = {
+				BCF_great_unite
+			}
+		}
+		field_marshal = {
+			traits = {
+				offensive_doctrine
+				thorough_planner
+			}
+			skill = 4
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = 1041
 		}
 	}
-	BCF_Moule={
-		name="Moule"
-		portraits={
-			civilian={
-				large="gfx/leaders/BCF/Portrait_BCF_Moule.dds"
+	BCF_Bordeaux = {
+		name = BCF_Bordeaux
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BCF/Portrait_BCF_Bordeaux.dds"
 			}
 		}
-		corps_commander={
-			traits={ armor_officer }
-			skill=3
-			attack_skill=2
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=3
-			legacy_id=1091
+		advisor = {
+			cost = 125
+			slot = political_advisor
+			idea_token = BCF_Bordeaux_political
+			allowed = {
+				original_tag = BCF
+			}
+			available = {
+				NOT = {
+					has_country_flag = BCF_civilwar_happened
+				}
+			}
+			traits = {
+				BCF_BC_party
+			}
+		}
+		corps_commander = {
+			traits = {
+				armor_officer
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+			legacy_id = 1090
 		}
 	}
-	BCF_Isabe={
-		name="Isabe"
-		portraits={
-			civilian={
-				large="gfx/leaders/BCF/Portrait_BCF_Isabe.dds"
+	BCF_Moule = {
+		name = BCF_Moule
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BCF/Portrait_BCF_Moule.dds"
 			}
 		}
-		corps_commander={
-			traits={ armor_officer }
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=1045
+		advisor = {
+			cost = 125
+			slot = political_advisor
+			idea_token = BCF_Moule_political
+			allowed = {
+				original_tag = BCF
+			}
+			available = {
+				OR = {
+					has_country_leader = {
+						character = BCF_marie
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = BCF_oshida
+						ruling_only = yes
+					}
+				}
+			}
+			traits = {
+				BCF_freedom_party
+			}
+		}
+		corps_commander = {
+			traits = {
+				BCF_oshida_faction
+			}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 1091
 		}
 	}
-	BCF_Sofue={
-		name="Sofue"
-		portraits={
-			civilian={
-				large="gfx/leaders/BCF/Portrait_BCF_Sofue.dds"
+	BCF_Isabe = {
+		name = BCF_Isabe
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BCF/Portrait_BCF_Isabe.dds"
 			}
 		}
-		corps_commander={
-			traits={ armor_officer }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=2
-			legacy_id=1046
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = BCF_Isabe_command
+			allowed = {
+				original_tag = BCF
+			}
+			available = {
+				has_country_leader = {
+					character = BCF_marie
+				}
+			}
+			traits = {
+				BCF_artillery_commander
+			}
+		}
+		corps_commander = {
+			traits = {
+				bearer_of_artillery
+				BCF_marie_faction
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = 1045
+		}
+	}
+	BCF_Sofue = {
+		name = BCF_Sofue
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BCF/Portrait_BCF_Sofue.dds"
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = high_command
+			idea_token = BCF_Sofue_command
+			allowed = {
+				original_tag = BCF
+			}
+			available = {
+				has_country_leader = {
+					character = BCF_marie
+				}
+			}
+			traits = {
+				BCF_LT_commander
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = political_advisor
+			idea_token = BCF_Sofue_political
+			allowed = {
+				original_tag = BCF
+			}
+			available = {
+				has_country_leader = {
+					character = BCF_marie
+				}
+			}
+			traits = {
+				BCF_marie_assistant
+			}
+		}
+		corps_commander = {
+			traits = {
+				BCF_marie_faction
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 1046
 		}
 	}
 }

@@ -61,11 +61,10 @@ set_technology = {
 	basic_heavy_battery = 1
 	basic_secondary_battery = 1
 	improved_secondary_battery = 1
-	basic_depth_charges = 1
 	sonar = 1
 	basic_cruiser_armor_scheme = 1
 }
-set_research_slots = 5
+set_research_slots = 4
 set_convoys = 20
 army_experience = 10
 navy_experience = 10

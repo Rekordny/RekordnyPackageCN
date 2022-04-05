@@ -37,5 +37,39 @@
  bcf_pra_research_name:0 "Pravda-BCFreedom cooperate research"
 
 #全局关系modifier
-old_senshado_allies:0 "Old Senshado allies"
+ old_senshado_allies:0 "Old Senshado allies"
  
+################大洗国策树################
+ #focus
+ OGA_shared_one:0 "着手重建大洗"
+ OGA_shared_two:0 "汽车部，发动引擎"
+ OGA_shared_three:0 "排球部，永不放弃"
+ OGA_shared_four:0 "游戏宅，锻炼时间"
+ OGA_shared_five:0 "燃烧吧，历女魂"
+ OGA_shared_six:0 "学生会，再次集结"
+ OGA_shared_seven:0 "水手们，扬帆起航"
+ OGA_shared_eight:0 "风纪部，报道"
+ OGA_shared_nine:0 "一年级生的大家，又见面了"
+ OGA_shared_ten:0 "重建大家的学园舰"
+ OGA_shared_eleven:0 "重启大洗工业与生活运作"
+ OGA_shared_twelve:0 "重新开放招生"
+ OGA_shared_thirteen:0 "重新开设战车道"
+ OGA_shared_fourteen:0 "大洗。再次复活"
+ OGA_shared_fifteen:0 "上吧，超音速贵公子"
+ OGA_shared_sixteen:0 "只要有信念，哪里都是我们的主场"
+ OGA_shared_seventeen:0 "桃子再也不会拉断换挡器了喵"
+ OGA_shared_eighteen:0 "伟人之魂，当吾手所铸"
+ OGA_shared_ninteen:0 "友情是瞬间开放的花,而时间会使它结果。"
+ OGA_shared_twenty:0 "振作起来，小柚子，小桃桃"
+ OGA_shared_twentyone:0 "你们几个，和基德船长有的一比啊"
+ OGA_shared_twentytwo:0 "可不要小看风纪委员啊"
+ OGA_shared_twentythree:0 "和大家一同的泪水和成长"
+ OGA_shared_twentyfour:0 "迎回西住美穗"
+
+ #event
+ ooari.1.t:0 "远方的信件"
+ ooari.1.d:0 "就在你今早还在焦头烂额的忙碌着国家政务时，一封印着大洗的校徽的信封从门缝下塞了进来。跳过前面几行草率的问候语后，你发现来信的是旧大洗的领军人物西住美穗。\n“我希望我能代表早已被废除的大洗向你问好，如果这封信件顺利到达了你的手中，那就代表着大家的大洗的复兴还有一丝希望，也代表着我还留在黑森峰。\n如果德高望重的你可以重新以大洗的名义把战车道的大家重新集结起来，相信世界上的所有战车道政府都不会质疑大洗重建的合法性。\n如果我有幸见到那一天的来临，那么我也会尽快动身返回大洗和大家重聚。\n祝你好运，指挥官，期待和新大洗重逢以及看到战争结束的那一天尽快来临。”(信尾用铅笔草草的画着博科熊的标志)"
+ ooari.1.a:0 "如果这是你唯一愿望的话"
+
+ #tooltips
+ oga_tooltip1:0 "完成以上决策中的四个即可解锁"

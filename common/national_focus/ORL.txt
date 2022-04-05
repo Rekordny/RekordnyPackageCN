@@ -1,0 +1,1466 @@
+focus_tree = {
+	id = ORL_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ORL
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = {
+		x = 120
+		y = 2000
+	}
+
+	#奥尔良的圣女
+	focus = {
+		id = ORL_marie
+		icon = GFX_focus_ORL_marie
+		x = 2
+		y = 0
+		cost = 5
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.1
+		}
+	}
+
+	#四面环敌
+	focus = {
+		id = ORL_war_support
+		icon = GFX_focus_ORL_war_support
+		x = 0
+		y = 1
+		cost = 2
+		relative_position_id = ORL_marie
+		prerequisite = {
+			focus = ORL_marie
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_war_support = 0.2
+		}
+	}
+
+	#动员信徒
+	focus = {
+		id = ORL_manpower
+		icon = GFX_focus_ORL_manpower
+		x = -1
+		y = 1
+		cost = 2
+		relative_position_id = ORL_war_support
+		prerequisite = {
+			focus = ORL_war_support
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_manpower = 50000
+		}
+	}
+
+	#骑士的荣耀
+	focus = {
+		id = ORL_knight
+		icon = GFX_focus_ORL_knight
+		x = 1
+		y = 1
+		cost = 2
+		relative_position_id = ORL_war_support
+		prerequisite = {
+			focus = ORL_war_support
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			division_template = {
+				name = "Knights"
+				is_locked = yes
+				regiments = {
+					infantry = {
+						x = 0
+						y = 0
+					}
+					infantry = {
+						x = 0
+						y = 1
+					}
+					infantry = {
+						x = 0
+						y = 2
+					}
+					infantry = {
+						x = 1
+						y = 0
+					}
+					infantry = {
+						x = 1
+						y = 1
+					}
+					infantry = {
+						x = 1
+						y = 2
+					}
+					infantry = {
+						x = 2
+						y = 0
+					}
+					infantry = {
+						x = 2
+						y = 1
+					}
+					infantry = {
+						x = 2
+						y = 2
+					}
+					artillery_brigade = {
+						x = 3
+						y = 0
+					}
+					artillery_brigade = {
+						x = 3
+						y = 1
+					}
+					artillery_brigade = {
+						x = 3
+						y = 1
+					}
+				}
+				support = {
+					mot_recon = {
+						x = 0
+						y = 0
+					}
+					engineer = {
+						x = 0
+						y = 1
+					}
+				}
+			}
+			24 = {
+				create_unit = {
+					division = "division_template = \"Knights\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+					owner = ORL
+					prioritize_location = 512
+				}
+				create_unit = {
+					division = "division_template = \"Knights\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+					owner = ORL
+					prioritize_location = 512
+				}
+				create_unit = {
+					division = "division_template = \"Knights\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+					owner = ORL
+					prioritize_location = 512
+				}
+				create_unit = {
+					division = "division_template = \"Knights\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+					owner = ORL
+					prioritize_location = 512
+				}
+				create_unit = {
+					division = "division_template = \"Knights\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+					owner = ORL
+					prioritize_location = 512
+				}
+				create_unit = {
+					division = "division_template = \"Knights\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+					owner = ORL
+					prioritize_location = 512
+				}
+				create_unit = {
+					division = "division_template = \"Knights\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+					owner = ORL
+					prioritize_location = 512
+				}
+				create_unit = {
+					division = "division_template = \"Knights\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+					owner = ORL
+					prioritize_location = 512
+				}
+			}
+		}
+	}
+
+	#神的旨意
+	focus = {
+		id = ORL_deus_vult
+		icon = GFX_focus_ORL_deus_vult
+		x = 1
+		y = 1
+		cost = 5
+		relative_position_id = ORL_manpower
+		prerequisite = {
+			focus = ORL_manpower
+			focus = ORL_knight
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			army_experience = 50
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 15000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 1000
+			}
+			add_equipment_to_stockpile = {
+				type = medium_tank_chassis
+				amount = 500
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 500
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 500
+			}
+		}
+	}
+
+	#南进
+	focus = {
+		id = ORL_south
+		icon = GFX_focus_ORL_south
+		x = -2
+		y = 1
+		cost = 4
+		relative_position_id = ORL_deus_vult
+		prerequisite = {
+			focus = ORL_deus_vult
+		}
+		available = {
+		}
+		bypass = {
+			#BC自由南方政府不存在
+			#BC共和国不存在
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = ORL_south
+		}
+	}
+
+	#奔向大海
+	focus = {
+		id = ORL_north
+		icon = GFX_focus_ORL_north
+		x = 0
+		y = 1
+		cost = 4
+		relative_position_id = ORL_deus_vult
+		prerequisite = {
+			focus = ORL_deus_vult
+		}
+		available = {
+		}
+		bypass = {
+			#BC自由巴黎政府不存在
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = ORL_north
+		}
+	}
+
+	#终结马奇诺
+	focus = {
+		id = ORL_east
+		icon = GFX_focus_ORL_east
+		x = 2
+		y = 1
+		cost = 4
+		relative_position_id = ORL_deus_vult
+		prerequisite = {
+			focus = ORL_deus_vult
+		}
+		available = {
+		}
+		bypass = {
+			NOT = {
+				country_exists = MGC
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = ORL_east
+		}
+	}
+
+	#地上天国
+	focus = {
+		id = ORL_god
+		icon = GFX_focus_ORL_god
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = ORL_north
+		prerequisite = {
+			focus = ORL_east
+			focus = ORL_north
+			focus = ORL_south
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = 0.15
+			every_state = {
+				limit = {
+					is_core_of = ORL
+				}
+				remove_core_of = B01
+				remove_core_of = B02
+				remove_core_of = BRE
+				remove_core_of = AQU
+				remove_core_of = MGC
+			}
+		}
+	}
+
+	#重建国家
+	focus = {
+		id = ORL_rebuild
+		icon = GFX_focus_ORL_rebuild
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = ORL_god
+		prerequisite = {
+			focus = ORL_god
+		}
+		available = {
+		}
+		bypass = {
+			has_global_flag = BCF_CIVIL_WAR_END
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = civilian_economy
+			add_ideas = limited_conscription
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+
+	#有限教权
+	focus = {
+		id = ORL_limit_power
+		icon = GFX_focus_ORL_limit_power
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = ORL_rebuild
+		prerequisite = {
+			focus = ORL_rebuild
+		}
+		mutually_exclusive = {
+			focus = ORL_caesaropapism
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ORL_church_1
+				add_idea = ORL_limit_power
+			}
+		}
+	}
+
+	#政教合一
+	focus = {
+		id = ORL_caesaropapism
+		icon = GFX_focus_ORL_caesaropapism
+		x = 4
+		y = 1
+		cost = 10
+		relative_position_id = ORL_rebuild
+		prerequisite = {
+			focus = ORL_rebuild
+		}
+		mutually_exclusive = {
+			focus = ORL_limit_power
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ORL_church_1
+				add_idea = ORL_caesaropapism
+			}
+		}
+	}
+
+	#部分世俗化
+	focus = {
+		id = ORL_secular
+		icon = GFX_focus_ORL_secular
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = ORL_limit_power
+		prerequisite = {
+			focus = ORL_limit_power
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ORL_limit_power
+				add_idea = ORL_secualr
+			}
+		}
+	}
+
+	#国立骑士团
+	focus = {
+		id = ORL_national_knight
+		icon = GFX_focus_ORL_national_knight
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = ORL_secular
+		prerequisite = {
+			focus = ORL_secular
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			set_division_template_lock = {
+				division_template = "Knights"
+				is_locked = no
+			}
+		}
+	}
+
+	#教会法
+	focus = {
+		id = ORL_church_law
+		icon = GFX_focus_ORL_church_law
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = ORL_secular
+		prerequisite = {
+			focus = ORL_secular
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			country_event = {
+				id = ORL.10
+			}
+		}
+	}
+
+	#尊重科学
+	focus = {
+		id = ORL_science
+		icon = GFX_focus_ORL_science
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = ORL_church_law
+		prerequisite = {
+			focus = ORL_church_law
+		}
+		prerequisite = {
+			focus = ORL_national_knight
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	#解放神学合法化
+	focus = {
+		id = ORL_liberation
+		icon = GFX_focus_ORL_liberation
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = ORL_science
+		prerequisite = {
+			focus = ORL_science
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+			add_ideas = ORL_liberation
+		}
+	}
+
+	#与圣座的联系
+	focus = {
+		id = ORL_pap
+		icon = GFX_focus_ORL_pap
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = ORL_limit_power
+		prerequisite = {
+			focus = ORL_limit_power
+			focus = ORL_caesaropapism
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_political_power = 150
+		}
+	}
+
+	#重建教宗国
+	focus = {
+		id = ORL_pap_state
+		icon = GFX_focus_ORL_pap_state
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = ORL_pap
+		prerequisite = {
+			focus = ORL_pap
+		}
+		available = {
+			ANZ = {
+				exists = no
+			}
+			owns_state = 2
+			has_war = no
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			2 = {
+				remove_core_of = ANZ
+			}
+			VAT = {
+				set_state_owner = 2
+				add_state_core = 2
+			}
+		}
+	}
+
+	#赎罪券
+	focus = {
+		id = ORL_indulgency
+		icon = GFX_focus_ORL_indulgency
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = ORL_caesaropapism
+		prerequisite = {
+			focus = ORL_caesaropapism
+		}
+		mutually_exclusive = {
+			focus = ORL_edict
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = ORL_indulgency
+		}
+	}
+
+	#重申南特赦令
+	focus = {
+		id = ORL_edict
+		icon = GFX_focus_ORL_edict
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = ORL_caesaropapism
+		prerequisite = {
+			focus = ORL_caesaropapism
+		}
+		mutually_exclusive = {
+			focus = ORL_indulgency
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = ORL_nante_1
+		}
+	}
+
+	#驱逐异端
+	focus = {
+		id = ORL_heathen
+		icon = GFX_focus_ORL_heathen
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = ORL_indulgency
+		prerequisite = {
+			focus = ORL_indulgency
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_manpower = -40000
+			add_stability = 0.2
+		}
+	}
+
+	#平等与博爱
+	focus = {
+		id = ORL_equality_and_fraternity
+		icon = GFX_focus_ORL_equality_and_fraternity
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = ORL_edict
+		prerequisite = {
+			focus = ORL_edict
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ORL_nante_1
+				add_idea = ORL_nante_2
+			}
+		}
+	}
+
+	#心胜于物
+	focus = {
+		id = ORL_mind_over_matter
+		icon = GFX_focus_ORL_mind_over_matter
+		x = -2
+		y = 1
+		cost = 8
+		relative_position_id = ORL_equality_and_fraternity
+		prerequisite = {
+			focus = ORL_equality_and_fraternity
+			focus = ORL_heathen
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ORL_caesaropapism
+				add_idea = ORL_mind_over_matter
+			}
+		}
+	}
+
+	#超凡入圣
+	focus = {
+		id = ORL_mind_over_matter_2
+		icon = GFX_focus_ORL_mind_over_matter_2
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = ORL_mind_over_matter
+		prerequisite = {
+			focus = ORL_mind_over_matter
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ORL_mind_over_matter
+				add_idea = ORL_mind_over_matter_2
+			}
+		}
+	}
+
+	#第十次十字军东征
+	focus = {
+		id = ORL_crusade
+		icon = GFX_focus_ORL_crusade
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = ORL_mind_over_matter_2
+		prerequisite = {
+			focus = ORL_mind_over_matter_2
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			unlock_decision_tooltip = call_of_crusades
+		}
+	}
+
+	#十字军改革
+	focus = {
+		id = ORL_knight_reform
+		icon = GFX_focus_ORL_knight_reform
+		x = 30
+		y = 0
+		cost = 5
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+
+	#建立海军
+	focus = {
+		id = ORL_navy
+		icon = GFX_focus_ORL_navy
+		x = -3
+		y = 1
+		cost = 10
+		relative_position_id = ORL_knight_reform
+		prerequisite = {
+			focus = ORL_knight_reform
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 200
+			}
+			navy_experience = 50
+		}
+	}
+
+	#海上骑士
+	focus = {
+		id = ORL_naval_knight
+		icon = GFX_focus_ORL_naval_knight
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = ORL_navy
+		prerequisite = {
+			focus = ORL_navy
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = cat_fleet_in_being
+			}
+		}
+	}
+
+	#古老传承
+	focus = {
+		id = ORL_tradition
+		icon = GFX_focus_ORL_tradition
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id = ORL_knight_reform
+		prerequisite = {
+			focus = ORL_knight_reform
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			BCF_marie = {
+				add_attack = 1
+				add_defense = 1
+				add_planning = 1
+				add_logistics = 1
+				add_unit_leader_trait = brilliant_strategist
+			}
+		}
+	}
+
+	#重建三大骑士团
+	focus = {
+		id = ORL_rebuild_knights
+		icon = GFX_focus_ORL_rebuild_knights
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = ORL_tradition
+		prerequisite = {
+			focus = ORL_tradition
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			unlock_decision_tooltip = call_of_knights_templar
+			unlock_decision_tooltip = call_of_knights_hosp
+			unlock_decision_tooltip = call_of_knights_teut
+		}
+	}
+
+	#现代战术
+	focus = {
+		id = ORL_modern_tactics
+		icon = GFX_focus_ORL_modern_tactics
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = ORL_knight_reform
+		prerequisite = {
+			focus = ORL_knight_reform
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = cat_mobile_warfare
+			}
+		}
+	}
+
+	#骑枪与坦克
+	focus = {
+		id = ORL_panzer
+		icon = GFX_focus_ORL_panzer
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = ORL_modern_tactics
+		prerequisite = {
+			focus = ORL_modern_tactics
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				ahead_reduction = 2
+				uses = 1
+				category = armor
+			}
+		}
+	}
+
+	#飞行骑士
+	focus = {
+		id = ORL_air_force
+		icon = GFX_focus_ORL_air_force
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = ORL_panzer
+		prerequisite = {
+			focus = ORL_panzer
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = air_doctrine
+			}
+		}
+	}
+
+	#天神裁决
+	focus = {
+		id = ORL_nuclear
+		icon = GFX_focus_ORL_nuclear
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = ORL_air_force
+		prerequisite = {
+			focus = ORL_air_force
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 3
+				uses = 3
+				category = nuclear
+			}
+		}
+	}
+
+	#招募标准
+	focus = {
+		id = ORL_conscroption
+		icon = GFX_focus_ORL_conscroption
+		x = 4
+		y = 1
+		cost = 5
+		relative_position_id = ORL_knight_reform
+		prerequisite = {
+			focus = ORL_knight_reform
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			remove_ideas = ORL_conscroption
+		}
+	}
+
+	#严格选拔
+	focus = {
+		id = ORL_conscroption_2
+		icon = GFX_focus_ORL_conscroption_2
+		x = -1
+		y = 1
+		cost = 8
+		relative_position_id = ORL_conscroption
+		prerequisite = {
+			focus = ORL_conscroption
+		}
+		mutually_exclusive = {
+			focus = ORL_conscroption_4
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = ORL_conscroption_2
+		}
+	}
+
+	#精益求精
+	focus = {
+		id = ORL_conscroption_3
+		icon = GFX_focus_ORL_conscroption_3
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = ORL_conscroption_2
+		prerequisite = {
+			focus = ORL_conscroption_2
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ORL_conscroption_2
+				add_idea = ORL_conscroption_3
+			}
+		}
+	}
+
+	#放宽标准
+	focus = {
+		id = ORL_conscroption_4
+		icon = GFX_focus_ORL_conscroption_4
+		x = 1
+		y = 1
+		cost = 8
+		relative_position_id = ORL_conscroption
+		prerequisite = {
+			focus = ORL_conscroption
+		}
+		mutually_exclusive = {
+			focus = ORL_conscroption_2
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = ORL_conscroption_4
+		}
+	}
+
+	#人人皆骑士
+	focus = {
+		id = ORL_conscroption_5
+		icon = GFX_focus_ORL_conscroption_5
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = ORL_conscroption_4
+		prerequisite = {
+			focus = ORL_conscroption_4
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ORL_conscroption_4
+				add_idea = ORL_conscroption_5
+			}
+		}
+	}
+	
+	#军备重整
+	focus = {
+		id = ORL_military
+		icon = GFX_focus_ORL_military
+		x = 20
+		y = 0
+		cost = 8
+		available = {
+			#NOT = {
+			#	has_idea = 战后重建
+			#}
+		}
+		bypass = {
+			OR = {
+				has_idea = low_economic_mobilisation
+				has_idea = war_economy
+				has_idea = tot_economic_mobilisation
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = low_economic_mobilisation
+		}
+	}
+
+	#收复诺曼底
+	focus = {
+		id = ORL_normandy
+		icon = GFX_focus_ORL_normandy
+		relative_position_id = ORL_military
+		prerequisite = {
+			focus = ORL_military
+		}
+
+		x = -4
+		y = 1
+		cost = 5
+		available = {
+		}
+		bypass = {
+			owns_state = 15
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			STG = {
+				country_event = {
+					id = ORL_STG_NORMAND.1
+				}
+			}
+		}
+	}
+
+	#重夺萨伏依
+	focus = {
+		id = ORL_savoy
+		icon = GFX_focus_ORL_savoy
+		relative_position_id = ORL_military
+		prerequisite = {
+			focus = ORL_military
+		}
+
+		x = -2
+		y = 1
+		cost = 5
+		available = {
+		}
+		bypass = {
+			owns_state = 1
+			owns_state = 735
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			ANZ = {
+				country_event = {
+					id = ORL_ANZ_SAVOY.1
+				}
+			}
+		}
+	}
+
+	#进军莱茵河
+	focus = {
+		id = ORL_kga
+		icon = GFX_focus_ORL_kga
+		relative_position_id = ORL_normandy
+		prerequisite = {
+			focus = ORL_normandy
+		}
+		prerequisite = {
+			focus = ORL_savoy
+		}
+
+		x = 1
+		y = 1
+		cost = 5
+		available = {
+		}
+		bypass = {
+			NOT = {
+				country_exists = KGA
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			create_wargoal = {
+				target = KGA
+				type = annex_everything
+			}
+		}
+	}
+
+	#与西班牙教会的联系
+	focus = {
+		id = ORL_spain
+		icon = GFX_focus_ORL_spain
+		relative_position_id = ORL_military
+		prerequisite = {
+			focus = ORL_military
+		}
+
+		x = 2
+		y = 1
+		cost = 5
+		available = {
+		}
+		bypass = {
+			is_in_faction_with = BDH
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			BDH = {
+				country_event = {
+					id = ORL_FACTION.1
+				}
+			}
+		}
+	}
+
+	#与波兰教会的联系
+	focus = {
+		id = ORL_pol
+		icon = GFX_focus_ORL_pol
+		relative_position_id = ORL_military
+		prerequisite = {
+			focus = ORL_military
+		}
+
+		x = 4
+		y = 1
+		cost = 5
+		available = {
+		}
+		bypass = {
+			is_in_faction_with = BON
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			BON = {
+				country_event = {
+					id = ORL_FACTION.1
+				}
+			}
+		}
+	}
+
+	#神圣同盟
+	focus = {
+		id = ORL_faction
+		icon = GFX_focus_ORL_faction
+		relative_position_id = ORL_spain
+		prerequisite = {
+			focus = ORL_spain
+		}
+		prerequisite = {
+			focus = ORL_pol
+		}
+
+		x = 1
+		y = 1
+		cost = 5
+		available = {
+			OR = {
+				has_country_flag = ORL_BDH_ACCEPT
+				has_country_flag = ORL_BON_ACCEPT
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			create_faction = HOLY_ALLIANCE
+			if = {
+				limit = {
+					has_country_flag = ORL_BDH_ACCEPT
+				}
+				add_to_faction = BDH
+			}
+			else_if = {
+				limit = { has_country_flag = ORL_BON_ACCEPT}
+			}
+				add_to_faction = BON
+		}
+	}
+}

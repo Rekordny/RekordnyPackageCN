@@ -1,0 +1,756 @@
+orl_government = {
+	#测试用决议
+	bcf_ORL_setup = {
+		allowed = {
+			tag = ORL
+		}
+		visible = {
+		}
+		complete_effect = {
+			inherit_technology = BCF
+			set_capital = {
+				state = 16
+			}
+		}
+	}
+
+	#召集十字军
+	call_of_crusades = {
+		allowed = {
+		}
+		visible = {
+			tag = ORL
+			has_completed_focus = ORL_crusade
+		}
+
+		custom_cost_text = call_of_crusade_cost_text
+		custom_cost_trigger = {
+			command_power > 24.9
+		}
+		days_remove = 60
+		complete_effect = {
+			add_command_power = -25
+			capital_scope = {
+				create_unit = {
+					division = "division_template = \"Knights\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+					owner = ORL
+				}
+			}
+			capital_scope = {
+				create_unit = {
+					division = "division_template = \"Knights\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+					owner = ORL
+				}
+			}
+			capital_scope = {
+				create_unit = {
+					division = "division_template = \"Knights\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+					owner = ORL
+				}
+			}
+			capital_scope = {
+				create_unit = {
+					division = "division_template = \"Knights\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+					owner = ORL
+				}
+			}
+		}
+	}
+
+	#重建圣殿骑士团
+	call_of_knights_templar = {
+		allowed = {
+		}
+		visible = {
+			tag = ORL
+		}
+		available = {
+			has_completed_focus = ORL_rebuild_knights
+		}
+		fire_only_once = yes
+		cost = 150
+		days_remove = 0
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_template = "Ordre du temple"
+					}
+				}
+				division_template = {
+					name = "Ordre du temple"
+					regiments = {
+						mechanized = {
+							x = 0
+							y = 0
+						}
+						mechanized = {
+							x = 0
+							y = 1
+						}
+						mechanized = {
+							x = 0
+							y = 2
+						}
+						mechanized = {
+							x = 1
+							y = 0
+						}
+						mechanized = {
+							x = 1
+							y = 1
+						}
+						mechanized = {
+							x = 1
+							y = 2
+						}
+						mechanized = {
+							x = 2
+							y = 0
+						}
+						mechanized = {
+							x = 2
+							y = 1
+						}
+						mechanized = {
+							x = 2
+							y = 2
+						}
+						medium_sp_artillery_brigade = {
+							x = 3
+							y = 0
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						light_tank_recon = {
+							x = 0
+							y = 1
+						}
+					}
+				}
+			}
+			add_stability = -0.1
+			add_ideas = ORL_holy_knight_1
+			capital_scope = {
+				create_unit = {
+					division = "division_template = \"Ordre du temple\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+					owner = ORL
+				}
+				create_unit = {
+					division = "division_template = \"Ordre du temple\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+					owner = ORL
+				}
+			}
+		}
+	}
+
+	#重建医院骑士团
+	call_of_knights_hosp = {
+		allowed = {
+		}
+		available = {
+			OR = {
+				owns_state = 164
+				owns_state = 116
+			}
+		}
+		visible = {
+			tag = ORL
+		}
+		available = {
+			has_completed_focus = ORL_rebuild_knights
+		}
+		fire_only_once = yes
+		cost = 100
+		days_remove = 0
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_template = "Ordre hospitalier"
+					}
+				}
+				division_template = {
+					name = "Ordre hospitalier"
+					regiments = {
+						marine = {
+							x = 0
+							y = 0
+						}
+						marine = {
+							x = 0
+							y = 1
+						}
+						marine = {
+							x = 0
+							y = 2
+						}
+						marine = {
+							x = 1
+							y = 0
+						}
+						marine = {
+							x = 1
+							y = 1
+						}
+						marine = {
+							x = 1
+							y = 2
+						}
+						marine = {
+							x = 2
+							y = 0
+						}
+						marine = {
+							x = 2
+							y = 1
+						}
+						marine = {
+							x = 2
+							y = 2
+						}
+						marine = {
+							x = 3
+							y = 0
+						}
+						marine = {
+							x = 3
+							y = 1
+						}
+						marine = {
+							x = 3
+							y = 2
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						artillery = {
+							x = 0
+							y = 1
+						}
+						field_hospital = {
+							x = 0
+							y = 2
+						}
+						logistics_company = {
+							x = 0
+							y = 3
+						}
+					}
+				}
+			}
+			add_ideas = ORL_holy_knight_2
+			capital_scope = {
+				create_unit = {
+					division = "division_template = \"Ordre hospitalier\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+					owner = ORL
+				}
+				create_unit = {
+					division = "division_template = \"Ordre hospitalier\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+					owner = ORL
+				}
+			}
+		}
+	}
+
+	#重建条顿骑士团
+	call_of_knights_teut = {
+		allowed = {
+		}
+		available = {
+			OR = {
+				owns_state = 763
+			}
+		}
+		visible = {
+			tag = ORL
+		}
+		available = {
+			has_completed_focus = ORL_rebuild_knights
+		}
+		fire_only_once = yes
+		cost = 100
+		days_remove = 0
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_template = "Ordre Teutonique"
+					}
+				}
+				division_template = {
+					name = "Ordre Teutonique"
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 0
+							y = 2
+						}
+						infantry = {
+							x = 0
+							y = 3
+						}
+						infantry = {
+							x = 0
+							y = 4
+						}
+						heavy_armor = {
+							x = 1
+							y = 0
+						}
+						heavy_armor = {
+							x = 1
+							y = 1
+						}
+						heavy_armor = {
+							x = 1
+							y = 2
+						}
+						heavy_armor = {
+							x = 1
+							y = 3
+						}
+						heavy_armor = {
+							x = 1
+							y = 4
+						}
+						anti_air_brigade = {
+							x = 2
+							y = 0
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						maintenance_company = {
+							x = 0
+							y = 1
+						}
+					}
+				}
+			}
+			add_ideas = ORL_holy_knight_3
+			capital_scope = {
+				create_unit = {
+					division = "division_template = \"Ordre Teutonique\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+					owner = ORL
+				}
+				create_unit = {
+					division = "division_template = \"Ordre Teutonique\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+					owner = ORL
+				}
+			}
+		}
+	}
+
+	#与“上帝”的交流
+	communication_with_god = {
+		allowed = {
+		}
+		available = {
+			has_idea = ORL_mind_over_matter_2
+		}
+		visible = {
+			tag = ORL
+		}
+		days_remove = 5
+		cost = 50
+		days_re_enable = 60
+		remove_effect = {
+			random_list = {
+				33 = {
+					country_event = {
+						id = ORL_decision.1
+					}
+				}
+				33 = {
+					country_event = {
+						id = ORL_decision.2
+					}
+				}
+				33 = {
+					country_event = {
+						id = ORL_decision.3
+					}
+				}
+			}
+		}
+	}
+
+	#册封“圣人”
+	canonization = {
+		allowed = {
+		}
+		available = {
+		}
+		visible = {
+			tag = ORL
+		}
+		days_remove = 0
+		cost = 50
+		days_re_enable = 90
+		remove_effect = {
+			add_stability = 0.1
+		}
+	}
+
+	#增加教会预算
+	Increase_budget = {
+		allowed = {
+		}
+		available = {
+		}
+		visible = {
+			tag = ORL
+		}
+		days_remove = 30
+		cost = 0
+		days_re_enable = 120
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+		remove_effect = {
+			add_political_power = 75
+		}
+	}
+
+	#重建阿维尼翁教廷
+	Reconstruction_of_Avignon_church = {
+		allowed = {
+		}
+		available = {
+			has_completed_focus = ORL_pap
+		}
+		visible = {
+			tag = ORL
+		}
+		fire_only_once = yes
+		days_remove = 120
+		cost = 0
+		days_re_enable = 120
+		modifier = {
+			command_power_gain = -0.2
+		}
+		remove_effect = {
+			add_ideas = ORL_pope
+		}
+	}
+
+	#请求宣称-德意志
+	Request_claim_of_Deutsch = {
+		allowed = {
+		}
+		available = {
+			NOT = {
+				has_wargoal_against = KGA
+				has_war_with = KGA
+			}
+		}
+		visible = {
+			has_completed_focus = ORL_pap_state
+		}
+		custom_cost_text = request_claim_cost_text
+		custom_cost_trigger = {
+			command_power > 14.9
+		}
+		complete_effect = {
+			create_wargoal = {
+				target = KGA
+				type = annex_everything
+			}
+		}
+	}
+
+	#请求宣称-低地
+	Request_claim_of_Netherland = {
+		allowed = {
+		}
+		available = {
+			NOT = {
+				has_wargoal_against = WAF
+				has_war_with = WAF
+			}
+		}
+		visible = {
+			has_completed_focus = ORL_pap_state
+		}
+		custom_cost_text = request_claim_cost_text
+		custom_cost_trigger = {
+			command_power > 14.9
+		}
+		complete_effect = {
+			create_wargoal = {
+				target = WAF
+				type = annex_everything
+			}
+		}
+	}
+
+	#请求宣称-不列颠
+	Request_claim_of_Britain = {
+		allowed = {
+		}
+		available = {
+			NOT = {
+				has_wargoal_against = STG
+				has_war_with = STG
+			}
+		}
+		visible = {
+			has_completed_focus = ORL_pap_state
+		}
+		custom_cost_text = request_claim_cost_text
+		custom_cost_trigger = {
+			command_power > 14.9
+		}
+		complete_effect = {
+			create_wargoal = {
+				target = STG
+				type = annex_everything
+			}
+		}
+	}
+
+	#请求宣称-巴尔干
+	Request_claim_of_Balkan = {
+		allowed = {
+		}
+		available = {
+			NOT = {
+				AND = {
+					OR = {
+						has_wargoal_against = YOG
+						has_war_with = YOG
+					}
+					OR = {
+						has_wargoal_against = KEB
+						has_war_with = KEB
+					}
+					OR = {
+						has_wargoal_against = COU
+						has_war_with = COU
+					}
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = ORL_pap_state
+		}
+		custom_cost_text = request_claim_cost_text
+		custom_cost_trigger = {
+			command_power > 14.9
+		}
+		complete_effect = {
+			create_wargoal = {
+				target = YOG
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = KEB
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = COU
+				type = annex_everything
+			}
+		}
+	}
+
+	#请求宣称-波兰
+	Request_claim_of_Poland = {
+		allowed = {
+		}
+		available = {
+			NOT = {
+				has_wargoal_against = BON
+				has_war_with = BON
+			}
+		}
+		visible = {
+			has_completed_focus = ORL_pap_state
+		}
+		custom_cost_text = request_claim_cost_text
+		custom_cost_trigger = {
+			command_power > 14.9
+		}
+		complete_effect = {
+			create_wargoal = {
+				target = BON
+				type = annex_everything
+			}
+		}
+	}
+
+	#请求宣称-斯堪的纳维亚
+	Request_claim_of_Skandinavien = {
+		allowed = {
+		}
+		available = {
+			NOT = {
+				AND = {
+					OR = {
+						has_wargoal_against = VIG
+						has_war_with = VIG
+					}
+					OR = {
+						has_wargoal_against = VIK
+						has_war_with = VIK
+					}
+					OR = {
+						has_wargoal_against = JHS
+						has_war_with = JHS
+					}
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = ORL_pap_state
+		}
+		custom_cost_text = request_claim_cost_text
+		custom_cost_trigger = {
+			command_power > 14.9
+		}
+		complete_effect = {
+			create_wargoal = {
+				target = VIG
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = VIK
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = JHS
+				type = annex_everything
+			}
+		}
+	}
+
+	#请求宣称-罗斯
+	Request_claim_of_Russia = {
+		allowed = {
+		}
+		available = {
+			NOT = {
+				has_wargoal_against = PRA
+				has_war_with = PRA
+			}
+		}
+		visible = {
+			has_completed_focus = ORL_pap_state
+		}
+		custom_cost_text = request_claim_cost_text
+		custom_cost_trigger = {
+			command_power > 14.9
+		}
+		complete_effect = {
+			create_wargoal = {
+				target = PRA
+				type = annex_everything
+			}
+		}
+	}
+
+	#请求宣称-新大陆
+	Request_claim_of_New_World = {
+		allowed = {
+		}
+		available = {
+			NOT = {
+				AND = {
+					OR = {
+						has_wargoal_against = SDS
+						has_war_with = SDS
+					}
+					OR = {
+						has_wargoal_against = MAP
+						has_war_with = MAP
+					}
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = ORL_pap_state
+		}
+		custom_cost_text = request_claim_cost_text
+		custom_cost_trigger = {
+			command_power > 14.9
+		}
+		complete_effect = {
+			create_wargoal = {
+				target = SDS
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = MAP
+				type = annex_everything
+			}
+		}
+	}
+
+	#请求宣称-波西米亚
+	Request_claim_of_Bohemian = {
+		allowed = {
+		}
+		available = {
+			NOT = {
+				has_wargoal_against = GHS
+				has_war_with = GHS
+			}
+		}
+		visible = {
+			has_completed_focus = ORL_pap_state
+		}
+		custom_cost_text = request_claim_cost_text
+		custom_cost_trigger = {
+			command_power > 14.9
+		}
+		complete_effect = {
+			create_wargoal = {
+				target = GHS
+				type = annex_everything
+			}
+		}
+	}
+
+	#请求宣称-伊比利亚
+	Request_claim_of_Iberian = {
+		allowed = {
+		}
+		available = {
+			NOT = {
+				has_wargoal_against = BDH
+				has_war_with = BDH
+			}
+		}
+		visible = {
+			has_completed_focus = ORL_pap_state
+		}
+		custom_cost_text = request_claim_cost_text
+		custom_cost_trigger = {
+			command_power > 14.9
+		}
+		complete_effect = {
+			create_wargoal = {
+				target = BDH
+				type = annex_everything
+			}
+		}
+	}
+}

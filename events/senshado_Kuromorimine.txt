@@ -474,9 +474,8 @@ country_event = {
 				if = {
 					limit = { NOT = { has_country_flag = KGA_HAS_65_SUPPORT_CIVIL_WAR } }
 					start_civil_war = {
-						ruling_party = fascism
 						ideology = communism
-						size = 0.5
+						size = 0.45
 						only_own_territory = no
 						capital = 55
 						states = { 
@@ -490,9 +489,8 @@ country_event = {
 				}
 				else = {
 					start_civil_war = {
-						ruling_party = fascism
 						ideology = communism
-						size = 0.5
+						size = 0.45
 						only_own_territory = no
 						capital = 55
 						states = {

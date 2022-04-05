@@ -1,0 +1,295 @@
+division_template = {
+	name = "Infantry Troop"
+	division_names_group = GGG_1
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+        infantry = { x = 1 y = 2 }
+        artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Motorized Troop"
+	division_names_group = GGG_2
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+        motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Armor Troop"	
+	division_names_group = GGG_3
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+        light_armor = { x = 0 y = 2 }
+        light_armor = { x = 1 y = 2 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+        maintenance_company = { x = 0 y = 1 }
+	}
+}
+units = {
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        location = 10087
+        division_template = "Infantry Troop"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 2
+        }
+        location = 10087
+        division_template = "Infantry Troop"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 3
+        }
+        location = 10087
+        division_template = "Infantry Troop"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 4
+        }
+        location = 10087
+        division_template = "Infantry Troop"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 5
+        }
+        location = 10087
+        division_template = "Infantry Troop"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 6
+        }
+        location = 10087
+        division_template = "Infantry Troop"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 7
+        }
+        location = 10087
+        division_template = "Infantry Troop"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 8
+        }
+        location = 10087
+        division_template = "Infantry Troop"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 9
+        }
+        location = 10087
+        division_template = "Infantry Troop"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 10
+        }
+        location = 10087
+        division_template = "Infantry Troop"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 11
+        }
+        location = 10087
+        division_template = "Infantry Troop"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 12
+        }
+        location = 10087
+        division_template = "Infantry Troop"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	######MOTORIZED#######
+	######################
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        location = 10087
+        division_template = "Motorized Troop"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 2
+        }
+        location = 10087
+        division_template = "Motorized Troop"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 3
+        }
+        location = 10087
+        division_template = "Motorized Troop"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 4
+        }
+        location = 10087
+        division_template = "Motorized Troop"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 5
+        }
+        location = 10087
+        division_template = "Motorized Troop"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 6
+        }
+        location = 10087
+        division_template = "Motorized Troop"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 7
+        }
+        location = 10087
+        division_template = "Motorized Troop"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	########ARMOR#########
+	######################
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        location = 10087
+        division_template = "Armor Troop"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 1
+        }
+        location = 10087
+        division_template = "Armor Troop"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 2
+        }
+        location = 10087
+        division_template = "Armor Troop"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 3
+        }
+        location = 10087
+        division_template = "Armor Troop"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 4
+        }
+        location = 10087
+        division_template = "Armor Troop"
+        # start_experience_factor = 0.1
+        start_equipment_factor = 1
+    }
+}

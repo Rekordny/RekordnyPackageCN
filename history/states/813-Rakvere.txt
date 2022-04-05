@@ -11,6 +11,7 @@ state={
 		victory_points = {
 			11127 1 #Rakvere
 		}
+		add_core_of = LCP
 		buildings = {
 			infrastructure = 3 #was: 5
 			4640 = {

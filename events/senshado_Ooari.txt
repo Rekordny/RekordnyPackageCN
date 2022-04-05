@@ -1,0 +1,16 @@
+add_namespace = ooari
+
+#修改管制条例
+country_event = {
+	id = ooari.1
+	title = ooari.1.t
+	desc = ooari.1.d
+	picture = GFX_event_oga_country_1
+
+	is_triggered_only = yes
+	option = {
+		name = ooari.1.a
+		hidden_effect = {
+		}
+	}
+}

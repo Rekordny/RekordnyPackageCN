@@ -179,3 +179,38 @@ ONM = {
 	color = rgb { 25 156 116 }
 	color_ui = rgb { 25 156 116 }
 }
+
+HCA = {
+	color = rgb { 113 255 176 }
+	color_ui = rgb { 113 255 176 }
+}
+
+LCP = {
+	color = rgb { 71 90 120 }
+	color_ui = rgb { 71 90 120 }
+}
+
+B01 = {
+	color = rgb { 100 149 237 }
+	color_ui = rgb { 100 149 237 }
+}
+
+B02 = {
+	color = rgb { 100 149 237 }
+	color_ui = rgb { 100 149 237 }
+}
+
+BRE = {
+	color = rgb { 100 149 237 }
+	color_ui = rgb { 100 149 237 }
+}
+
+AQU = {
+	color = rgb { 100 149 237 }
+	color_ui = rgb { 100 149 237 }
+}
+
+VAT = {
+	color = rgb { 100 149 237 }
+	color_ui = rgb { 100 149 237 }
+}

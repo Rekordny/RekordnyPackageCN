@@ -250,4 +250,106 @@ leader_traits = {
 		democratic_drift = 0.05
 		stability_factor = 0.1
 	}
+
+	#BCF
+	BCF_princess_of_lle_de_france = {
+		stability_factor = 0.1
+		justify_war_goal_time = 0.15
+		ai_focus_defense_factor = 0.5
+	}
+	BCF_defender_of_france = {
+		political_power_factor = -0.05
+		stability_factor = 0.2
+	}
+	BCF_joint_operations = {
+		experience_gain_army = 0.1
+		army_org_factor = 0.05
+		breakthrough_factor = 0.05
+		army_attack_factor = 0.1
+		army_defence_factor = 0.1
+		supply_consumption_factor = -0.1
+	}
+	BCF_military_theorist = {
+		experience_gain_army = 0.1
+		land_doctrine_cost_factor = -0.1
+	}
+	BCF_mobile_theorist = {
+		experience_gain_army = 0.1
+		cat_mobile_warfare_cost_factor = -0.1
+	}
+	BCF_battleplan_theorist = {
+		experience_gain_army = 0.08
+		cat_grand_battle_plan_cost_factor = -0.15
+	}
+	BCF_radical = {
+		stability_factor = -0.1
+		war_support_factor = 0.25
+		political_power_factor = -0.1
+	}
+	BCF_war_fanatic = {
+		training_time_factor = -0.05
+		production_speed_arms_factory_factor = 0.15
+		offensive_war_stability_factor = 0.2
+	}
+	BCF_speed_first = {
+		experience_gain_army = 0.12
+		army_speed_factor = 0.2
+		breakthrough_factor = 0.075
+		army_org_Factor = -0.1
+	}
+	BCF_defence_first = {
+		experience_gain_army = 0.1
+		army_defence_factor = 0.2
+		max_dig_in = 5
+	}
+	BCF_diplomat = {
+		opinion_gain_monthly_factor = 0.33
+		trade_laws_cost_factor = -0.5
+	}
+	BCF_conservative = {
+		consumer_goods_factor = 0.03
+		production_speed_industrial_complex_factor = 0.1
+		political_power_factor = 0.15
+	}
+	BCF_LT_commander = {
+		experience_gain_army = 0.06
+		army_armor_speed_factor = 0.05
+		equipment_bonus = {
+			armor = {
+				soft_attack = 0.1
+				hard_attack = -0.05
+				armor_value = -0.05
+				instant = yes
+			}
+		}
+	}
+	BCF_marie_assistant = {
+		economy_cost_factor = -0.25
+		production_speed_buildings_factor = 0.1
+	}
+	BCF_artillery_commander = {
+		experience_gain_army = 0.06
+		army_artillery_attack_factor = 0.1
+		army_artillery_defence_factor = 0.1
+	}
+	BCF_great_unite = {
+		political_power_factor = 0.05
+		industrial_capacity_factory = 0.1
+		conscription_factor = 0.1
+	}
+	BCF_armor_commander = {
+		experience_gain_army = 0.08
+		army_armor_attack_factor = 0.15
+		army_armor_defence_factor = 0.1
+	}
+	BCF_BC_party = {
+		fascism_drift = -0.05
+		democratic_drift = -0.05
+		war_support_factor = 0.05
+	}
+	BCF_freedom_party = {
+		fascism_drift = -0.05
+		communism_drift = -0.05
+		stability_factor = 0.05
+	}
 }

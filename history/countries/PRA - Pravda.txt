@@ -12,7 +12,7 @@ add_ideas = {
     PRA_GLZYZF_1
 }
 
-set_research_slots = 5
+set_research_slots = 4
 set_convoys = 20
 
 set_politics = {

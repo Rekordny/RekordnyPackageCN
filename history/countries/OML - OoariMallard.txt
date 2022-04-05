@@ -1,18 +1,27 @@
 capital = 553
 
 set_technology = {
-	senshado_prototype_tank = 1
-	senshado_light_tank_1 = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	motorised_infantry = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_maintenance_company = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+	gw_artillery = 1
+	early_fighter = 1
 }
-set_research_slots = 5
+set_research_slots = 4
 set_convoys = 20
-
+load_oob = OML_1972
 add_ideas = Ooarai_remnant
 add_ideas = Ooari_Mallard
-
+recruit_character = OML_midoriko
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1933.3.5"
+	last_election = "1972.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -22,45 +31,34 @@ set_popularities = {
 	communism = 0
 	neutrality = 100
 }
-
-
-create_country_leader = {
+#NPC国家不需要设定character和ID
+create_field_marshal = {
 	name = "Midoriko"
-	desc = ""
 	picture = "Portrait_generic_Midoriko.dds"
-	expire = "2000.1.1"
-	ideology = nazism
-	traits = {
-		
-	}
+	traits = { }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
 }
-create_country_leader = {
-	name = "Midoriko"
-	desc = ""
-	picture = "Portrait_generic_Midoriko.dds"
-	expire = "2000.1.1"
-	ideology = moderatism
-	traits = {
-		
-	}
+create_corps_commander = {
+	name = "Nozomi"
+	picture = "Portrait_generic_Nozomi.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }
-create_country_leader = {
-	name = "Midoriko"
-	desc = ""
-	picture = "Portrait_generic_Midoriko.dds"
-	expire = "2000.1.1"
-	ideology = leninism
-	traits = {
-		
-	}
-}
-create_country_leader = {
-	name = "Midoriko"
-	desc = ""
-	picture = "Portrait_generic_Midoriko.dds"
-	expire = "2000.1.1"
-	ideology = conservatism
-	traits = {
-		
-	}
+create_corps_commander = {
+	name = "Moyoko"
+	picture = "Portrait_generic_Moyoko.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }

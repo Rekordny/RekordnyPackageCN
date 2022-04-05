@@ -11,6 +11,15 @@ characters={
 			expire="2000.1.1.1"
 			id=-1
 		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=1071
+		}
 	}
 	SDS_yoshinaga={
 		name="Yoshinaga"
@@ -23,6 +32,75 @@ characters={
 			ideology=conservatism
 			expire="1974.1.1.1"
 			id=-1
+		}
+	}
+	SDS_alisa={
+		name="Alisa"
+		portraits={
+			civilian={
+				large="gfx/leaders/SDS/Portrait_SDS_Alisa.dds"
+			}
+		}
+		visible = { NOT = { has_country_flag = SDS_ALISA_ESCAPE } }
+		corps_commander={
+			traits={ armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=1071
+		}
+	}
+	SDS_yukari={
+		name="Yukari"
+		portraits={
+			civilian={
+				large="gfx/leaders/SDS/Portrait_SDS_Yukari.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=1074
+		}
+	}
+	SDS_naomi={
+		name="Naomi"
+		portraits={
+			civilian={
+				large="gfx/leaders/SDS/Portrait_SDS_Naomi.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=1073
+		}
+	}
+	SDS_helmet={
+		name="Helmet"
+		portraits={
+			civilian={
+				large="gfx/leaders/SDS/Portrait_SDS_Helmet.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=1075
 		}
 	}
 }

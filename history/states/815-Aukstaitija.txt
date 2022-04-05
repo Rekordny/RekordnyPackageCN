@@ -12,8 +12,7 @@ state={
 			infrastructure = 2
 
 		}
-		add_core_of = BON
-
+		add_core_of = LCP
 	}
 
 	provinces={

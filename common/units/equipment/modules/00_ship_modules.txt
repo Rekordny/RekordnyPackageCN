@@ -5,9 +5,7 @@ equipment_modules = {
 #    #  #    #  #  #      #  # #  #  #   #  #   #  #  # #  
 #    #  # ## ####  #      ###  ####  #   #  ##  ###    #   
 #    #  #  # #  #  #      #  # #  #  #   #  #   #  #   #   
-### ###  ##  #  #  #      ###  #  #  #   #  ### #  #   #   
-
-
+### ###  ##  #  #  #      ###  #  #  #   #  ### #  #   #  
 
 	ship_light_battery_1 = {
 		abbreviation = "saa"
@@ -662,6 +660,90 @@ equipment_modules = {
 			convert_cost_ic = 150
 		}
 		critical_parts = { damaged_secondaries }
+	}
+
+	#######################################################
+	###################MOD新加入近迫防卫系统#################
+	ship_CIWS_1 = {
+		abbreviation = "sia"
+		category = ship_secondaries
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 1
+			build_cost_ic = 100
+			armor_value = 2
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.06
+			anti_air_attack = 0.05
+		}
+		dismantle_cost_ic = 1800
+	}
+
+	ship_CIWS_2 = {
+		abbreviation = "sib"
+		category = ship_secondaries
+		parent = ship_CIWS_1
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 1.6
+			build_cost_ic = 140
+			armor_value = 3
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.06
+			anti_air_attack = 0.05
+		}
+		
+		dismantle_cost_ic = 2100
+	}
+
+	ship_CIWS_3 = {
+		abbreviation = "sic"
+		category = ship_secondaries
+		parent = ship_CIWS_2
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 2.2
+			build_cost_ic = 180
+			armor_value = 4
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.06
+			anti_air_attack = 0.05
+		}
+		
+		dismantle_cost_ic = 2400
+	}
+
+	ship_CIWS_4 = {
+		abbreviation = "sid"
+		category = ship_secondaries
+		parent = ship_CIWS_3
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			anti_air_attack = 3
+			build_cost_ic = 240
+			armor_value = 5
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.06
+			anti_air_attack = 0.05
+		}
+		
+		dismantle_cost_ic = 2700
 	}
 
 

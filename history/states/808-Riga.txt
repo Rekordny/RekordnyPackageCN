@@ -11,6 +11,7 @@ state={
 		victory_points = {
 			9340 5 
 		}
+		add_core_of = LCP
 		buildings = {
 			infrastructure = 3 #was: 5
 			arms_factory = 1

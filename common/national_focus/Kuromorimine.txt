@@ -11,6 +11,8 @@ focus_tree = {
 	continuous_focus_position = { x = 100 y = 100 }
 	default = no
 
+	shared_focus = OGA_shared_one
+
 	#所有意识形态通用国策
 	#学院舰改革方案
 	focus = {
@@ -400,6 +402,12 @@ focus_tree = {
 					type = industrial_complex 
 					level = 1
 					instant_build = yes
+				}
+			}
+			hidden_effect = {
+				if = { limit = { is_ai = yes } 
+					activate_advisor = KGA_erika
+					add_political_power = -100
 				}
 			}
 		}

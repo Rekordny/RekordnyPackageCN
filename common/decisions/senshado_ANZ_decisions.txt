@@ -1,7 +1,7 @@
 anz_military_investment_proposal = {
 	anz_land_combat_vehicles_proposal = {
 		allowed = { tag = ANZ }
-		visible = { OR = { has_completed_focus = ANZ_military_investment_planning is_debug = yes } }
+		visible = { OR = { has_completed_focus = ANZ_military_investment_planning AND = { is_debug = yes is_ai = no } } }
 		custom_cost_trigger = {
 			check_variable = { gold > 9.9 }
 			has_army_experience > 14.9
@@ -24,7 +24,7 @@ anz_military_investment_proposal = {
 	}
 	anz_land_combat_armor_proposal = {
 		allowed = { tag = ANZ }
-		visible = { OR = { has_completed_focus = ANZ_military_investment_planning is_debug = yes } }
+		visible = { OR = { has_completed_focus = ANZ_military_investment_planning AND = { is_debug = yes is_ai = no } } }
 		fire_only_once = yes
 		custom_cost_trigger = {
 			check_variable = { gold > 9.9 }
@@ -47,7 +47,7 @@ anz_military_investment_proposal = {
 	}
 	anz_basic_equipments_proposal = {
 		allowed = { tag = ANZ }
-		visible = { OR = { has_completed_focus = ANZ_military_investment_planning is_debug = yes } }
+		visible = { OR = { has_completed_focus = ANZ_military_investment_planning AND = { is_debug = yes is_ai = no } } }
 		fire_only_once = yes
 		custom_cost_trigger = {
 			check_variable = { gold > 9.9 }
@@ -70,7 +70,7 @@ anz_military_investment_proposal = {
 	}
 	anz_supportive_equipments_proposal = {
 		allowed = { tag = ANZ }
-		visible = { OR = { has_completed_focus = ANZ_military_investment_planning is_debug = yes } }
+		visible = { OR = { has_completed_focus = ANZ_military_investment_planning AND = { is_debug = yes is_ai = no } } }
 		fire_only_once = yes
 		custom_cost_trigger = {
 			check_variable = { gold > 9.9 }
@@ -93,7 +93,7 @@ anz_military_investment_proposal = {
 	}
 	anz_navy_heavyship_design_proposal = {
 		allowed = { tag = ANZ }
-		visible = { OR = { has_completed_focus = ANZ_military_investment_planning is_debug = yes } }
+		visible = { OR = { has_completed_focus = ANZ_military_investment_planning AND = { is_debug = yes is_ai = no } } }
 		fire_only_once = yes
 		custom_cost_trigger = {
 			check_variable = { gold > 9.9 }
@@ -117,7 +117,7 @@ anz_military_investment_proposal = {
 	}
 	anz_navy_lightship_design_proposal = {
 		allowed = { tag = ANZ }
-		visible = { OR = { has_completed_focus = ANZ_military_investment_planning is_debug = yes } }
+		visible = { OR = { has_completed_focus = ANZ_military_investment_planning AND = { is_debug = yes is_ai = no } } }
 		fire_only_once = yes
 		custom_cost_trigger = {
 			check_variable = { gold > 9.9 }
@@ -141,7 +141,7 @@ anz_military_investment_proposal = {
 	}
 	anz_airforce_bomber_proposal = {
 		allowed = { tag = ANZ }
-		visible = { OR = { has_completed_focus = ANZ_military_investment_planning is_debug = yes } }
+		visible = { OR = { has_completed_focus = ANZ_military_investment_planning AND = { is_debug = yes is_ai = no } } }
 		fire_only_once = yes
 		custom_cost_trigger = {
 			check_variable = { gold > 9.9 }
@@ -165,7 +165,7 @@ anz_military_investment_proposal = {
 	}
 	anz_airforce_fighter_proposal = {
 		allowed = { tag = ANZ }
-		visible = { OR = { has_completed_focus = ANZ_military_investment_planning is_debug = yes } }
+		visible = { OR = { has_completed_focus = ANZ_military_investment_planning AND = { is_debug = yes is_ai = no } } }
 		fire_only_once = yes
 		custom_cost_trigger = {
 			check_variable = { gold > 9.9 }
@@ -189,7 +189,7 @@ anz_military_investment_proposal = {
 	}
 	anz_create_military_industrial_complex = {
 		allowed = { tag = ANZ }
-		visible = { OR = { has_completed_focus = ANZ_military_investment_planning is_debug = yes } }
+		visible = { OR = { has_completed_focus = ANZ_military_investment_planning AND = { is_debug = yes is_ai = no } } }
 		fire_only_once = yes
 		available = {
 			has_country_flag = ANZ_MILITARY_COMPLEX_1
@@ -231,7 +231,7 @@ anz_industry = {
 
 	anz_debug_civil_war = {
 		allowed = { tag = ANZ }
-		visible = { is_debug = yes }
+		visible = { AND = { is_debug = yes is_ai = no } }
 		complete_effect = {
 			country_event = { id = Anzio.26 days = 0 }
 		}
@@ -239,7 +239,7 @@ anz_industry = {
 	}
 	anz_debug_1 = {
 		allowed = { tag = ANZ }
-		visible = { is_debug = yes }
+		visible = { AND = { is_debug = yes is_ai = no } }
 		complete_effect = {
 			set_cosmetic_tag = APQR
 		}
@@ -285,7 +285,7 @@ anz_nero_syndrome = {
 
 	anz_debug_show = {
 		allowed = { tag = ANZ }
-		visible = { is_debug = yes }
+		visible = { AND = { is_debug = yes is_ai = no } }
 		complete_effect = {
 			set_country_flag = ANZ_START_NERO_SYNDROME
 			country_event = { id = Anzio.15 }
@@ -588,7 +588,7 @@ anz_government = {
 
 	anz_immigration_policy  = {
 		visible = {
-			OR = { has_completed_focus = ANZ_immigration_policy is_debug = yes }
+			OR = { has_completed_focus = ANZ_immigration_policy AND = { is_debug = yes is_ai = no } }
 		}                          
 		available = { 
 			has_idea =  ANZ_undeveloped_southern

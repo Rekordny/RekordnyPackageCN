@@ -221,7 +221,13 @@ news_event = {
 	major = yes
 	immediate = {
 		hidden_effect = {
+			PRA = {
+				retire = PRA_nonna
+				retire = PRA_kurara
+			}
 			KRR = {
+				recruit_character = KRR_nonna
+				retire_country_leader = yes
 				transfer_state = 192
 				add_state_core = 192
 				transfer_state = 193
@@ -274,8 +280,11 @@ news_event = {
 				add_state_core = 228
 				transfer_state = 834
 				add_state_core = 834
+				load_oob = KRR_1972
 			}
 			FCM = {
+				recruit_character = FCM_kurara
+				retire_country_leader = yes
 				transfer_state = 137
 				add_state_core = 137
 				transfer_state = 234
@@ -306,6 +315,7 @@ news_event = {
 				add_state_core = 827
 				transfer_state = 237
 				add_state_core = 237
+				load_oob = FCM_1972
 			}
 		}
 	}
@@ -396,11 +406,38 @@ news_event = {
 			add_civil_war_target = FCM
 			declare_war_on = {
 				target = FCM
+				type = annex_everything
 			}
 		}
 	}
 
 	option = {
 		name = senshado_news.11.a
+	}
+}
+
+#华夫学院被傀儡/吞并
+news_event = {
+	id = senshado_news.12
+    title = senshado_news.12.t
+	desc = senshado_news.12.d
+	picture = GFX_senshado_news_event_12
+	is_triggered_only = yes
+	major = yes
+	immediate = { }
+	desc = {
+		text = senshado_news.12.d1
+		trigger = {
+			WAF = { is_puppet_of = STG }
+		}
+	}
+	desc = {
+		text = senshado_news.12.d2
+		trigger = {
+			WAF = { NOT = { is_puppet_of = STG } }
+		}
+	}
+	option = {
+		name = senshado_news.12.a
 	}
 }

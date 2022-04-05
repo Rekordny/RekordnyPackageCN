@@ -1013,5 +1013,442 @@ ideas = {
 		}
 		
 		
+		#葡萄酒产业
+		Wine_industry_idea = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			name = Wine_industry
+	
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = -0.025
+			}
+		}
+		
+		#发展旅游业
+		Developing_tourism_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			name = Developing_tourism
+	
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = -0.025
+			}
+		}
+		
+		#提高国民待遇
+		Improve_national_treatment_idea = {
+		
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			name = Improve_national_treatment
+	
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = 0.03
+				stability_factor = 0.05
+			}
+		}
+		
+		#补贴工业企业
+		Subsidizing_Industrial_Enterprises_idea = {
+		
+			name = Subsidizing_Industrial_Enterprises
+	
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+				
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+		
+		#出售军火
+		Sale_arms_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			name = Sale_arms
+	
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = -0.025
+			}
+		}
+		
+		#提高工资水平
+		Raise_wages_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			name = Raise_wages
+	
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = 0.02
+				stability_factor = 0.05
+			}
+		}
+		
+		#补贴农业
+		Subsidized_agriculture_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			name = Subsidized_agriculture
+	
+			removal_cost = -1
+				
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		
+		#建筑安全规定
+		Building_safety_regulations_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			name = Building_safety_regulations
+	
+			removal_cost = -1
+				
+			modifier = {
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		
+		#征兵宣传
+		Propaganda_conscription_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			name = Propaganda_conscription
+	
+			removal_cost = -1
+				
+			modifier = {
+				conscription = 0.003
+			}
+		}
+		
+		#土地税
+		Land_tax_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			name = Land_tax
+	
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = -0.025
+			}
+		}
+		
+		#新兴工业
+		Emerging_industries_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			name = Emerging_industries
+	
+			removal_cost = -1
+				
+			modifier = {
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		
+		#出售军火
+		Sale_arms_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			name = Sale_arms
+	
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = -0.025
+			}
+		}
+		
+		#快速增长
+		Rapid_growth_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			name = Rapid_growth
+	
+			removal_cost = -1
+				
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		
+		
+		#选拔士兵
+		Selecting_soldiers_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			name = Selecting_soldiers
+	
+			removal_cost = -1
+				
+			modifier = {
+				conscription_factor = -0.08
+				army_attack_factor = 0.05
+			}
+		}
+		
+		#扩建军营
+		Expansion_barracks_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			name = Expansion_barracks
+	
+			removal_cost = -1
+				
+			modifier = {
+				training_time_factor = -0.05
+				army_org_factor = 0.05
+			}
+		}
+		
+		
+		#作战意识
+		Operational_awareness_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			name = Operational_awareness
+	
+			removal_cost = -1
+				
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		
+		#标准工事
+		Standard_fortification_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			name = Standard_fortification
+	
+			removal_cost = -1
+				
+			modifier = {
+				army_core_defence_factor = 0.05
+			}
+		}
+		
+		#军队素质
+		Military_quality_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			name = Military_quality
+	
+			removal_cost = -1
+				
+			modifier = {
+				army_org_factor = 0.05
+				army_infantry_attack_factor = 0.05
+			}
+		}
+		
+		#后备部队
+		Reserve_forces_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			name = Reserve_forces
+	
+			removal_cost = -1
+				
+			modifier = {
+				conscription_factor = 0.1
+			}
+		}
+		
+		#参谋部
+		General_staff_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			name = General_staff
+	
+			removal_cost = -1
+				
+			modifier = {
+				planning_speed = 0.1
+			}
+		}
+		
+		#新军队
+		New_army_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			name = New_army
+	
+			removal_cost = -1
+				
+			modifier = {
+				training_time_factor = -0.05
+				no_supply_grace = 24
+				army_org_factor = 0.05
+			}
+		}
+		
+		
 	}
 }

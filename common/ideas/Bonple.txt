@@ -1,72 +1,163 @@
 ideas = {
 	country = {
-		#虚弱的领头羊
-		BON_weak_leadership = {
+		#大资产阶级的支持
+		BON_support_from_nbourgeoisie = {
 			allowed = { tag = BON }
 			allowed_civil_war = { always = no }
 			modifier = {
-				political_power_factor = -0.3
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.05
+				tax_daily_modifier = 0.05
 			}
-		}
 
-		#战车道和平复兴主义
-		BON_senshado_revivalism = {
+		}
+		#大饥荒
+		BON_holodomor = {
 			allowed = { tag = BON }
 			allowed_civil_war = { always = no }
 			modifier = {
-				ssdp_daily_modifier = 0.3
-				offensive_war_stability_factor = -0.8
-				war_support_factor = -0.3
+				consumer_goods_factor = 0.12
+				production_factory_max_efficiency_factor = -0.2
+				stability_factor = -0.2
+				conscription_factor = -0.3
+				tax_daily_modifier = -0.3
 			}
 		}
-
-		#崭新国家的愿景
-		BON_great_fresh_future = {
+		#大饥荒
+		BON_holodomor_1 = {
 			allowed = { tag = BON }
 			allowed_civil_war = { always = no }
 			modifier = {
-				research_speed_factor = 0.1
-				stability_factor = 0.2
+				consumer_goods_factor = 0.08
+				production_factory_max_efficiency_factor = -0.1
+				stability_factor = -0.2
+				conscription_factor = -0.2
+				tax_daily_modifier = -0.2
 			}
 		}
-
-		#高速度
-		BON_high_industrial_velocity_0 = {
+		#大饥荒
+		BON_holodomor_2 = {
 			allowed = { tag = BON }
 			allowed_civil_war = { always = no }
 			modifier = {
-				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = 0.04
+				production_factory_max_efficiency_factor = -0.1
+				stability_factor = -0.1
+				conscription_factor = -0.1
+				tax_daily_modifier = -0.1
 			}
 		}
-
-		#高积累
-		BON_high_accumulation = {
+		#军队不忠
+		BON_military_disloyalty = {
 			allowed = { tag = BON }
 			allowed_civil_war = { always = no }
 			modifier = {
-				local_resources_factor = 0.15
+				army_org_Factor = -0.2
+				army_morale_factor = -0.1
+				command_power_gain = -0.3
+			}
+			rule = {
+				
 			}
 		}
-
-		#高消费
-		BON_high_consuming = {
+		#军队不忠
+		BON_military_disloyalty_1 = {
 			allowed = { tag = BON }
 			allowed_civil_war = { always = no }
 			modifier = {
-				trade_opinion_factor = 0.2
-				consumer_goods_factor = 0.05
+				army_org_Factor = -0.15
+				army_morale_factor = -0.1
+				command_power_gain = -0.2
+			}
+			rule = {
+				
 			}
 		}
-
-		#高速度2
-		BON_high_industrial_velocity_1 = {
+		#军队不忠
+		BON_military_disloyalty_2 = {
 			allowed = { tag = BON }
 			allowed_civil_war = { always = no }
 			modifier = {
-				production_speed_buildings_factor = 0.1
-				production_factory_max_efficiency_factor = 0.1
+				army_org_Factor = -0.1
+				army_morale_factor = -0.1
+				command_power_gain = -0.1
+			}
+			rule = {
+				
 			}
 		}
-
+		#军队不忠
+		BON_military_disloyalty_3 = {
+			allowed = { tag = BON }
+			allowed_civil_war = { always = no }
+			modifier = {
+				army_org_Factor = -0.05
+				army_morale_factor = -0.1
+			}
+			rule = {
+				
+			}
+		}
+		#忠诚的军队
+		BON_military_loyal = {
+			allowed = { tag = BON }
+			allowed_civil_war = { always = no }
+			modifier = {
+				army_org_Factor = 0.05
+				army_morale_factor = 0.05
+				wage_modifier = -0.1
+			}
+		}
+		#动荡的局势
+		BON_volatile_situayion = {
+			allowed = { tag = BON }
+			allowed_civil_war = { always = no }
+			modifier = {
+				stability_factor = -0.15
+				political_power_cost = 0.25
+			}
+		}
+		#动荡的局势
+		BON_volatile_situayion_1 = {
+			allowed = { tag = BON }
+			allowed_civil_war = { always = no }
+			modifier = {
+				stability_factor = -0.1
+				political_power_cost = 0.15
+			}
+		}
+		#冯布诺永不灭
+		BON_never_die = {
+			allowed = { tag = BON }
+			allowed_civil_war = { always = no }
+			modifier = {
+				compliance_growth = 0.1
+				resistance_growth = -0.1
+			}
+		}
+		#战车道复兴同盟
+		BON_senshado_alliance = {
+			allowed = { tag = BON }
+			allowed_civil_war = { always = no }
+			modifier = {
+				war_support_factor = 0.1
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		#紧急事务处理委员会
+		BON_emergency_management_committee = {
+			allowed = { tag = BON }
+			allowed_civil_war = { always = no }
+			modifier = {
+				war_support_factor = 0.1
+				stability_factor = 0.1
+				max_command_power = 25
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
 	}
 }

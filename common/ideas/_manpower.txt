@@ -89,6 +89,9 @@ ideas = {
 						#		ratio > 0.5
 						#	}
 						#}
+					}
+					NOT = {
+						has_idea = ORL_conscroption
 					}					
 				}
 				has_war_support > 0.2
@@ -140,6 +143,9 @@ ideas = {
 						#		ratio > 0.6
 						#	}
 						#}
+					}
+					NOT = {
+						has_idea = ORL_conscroption
 					}
 				}
 				OR = {
@@ -222,6 +228,9 @@ ideas = {
 				#		ratio > 0.75
 				#	}
 				#}
+				NOT = {
+					has_idea = ORL_conscroption
+				}
 
 			}
 
@@ -262,6 +271,9 @@ ideas = {
 				#		ratio > 1
 				#	}
 				#}
+				NOT = {
+					has_idea = ORL_conscroption
+				}
 			}
 
 			ai_will_do = {

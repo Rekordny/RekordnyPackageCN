@@ -4,7 +4,7 @@ set_technology = {
 	senshado_prototype_tank = 1
 	senshado_light_tank_1 = 1
 }
-set_research_slots = 5
+set_research_slots = 4
 set_convoys = 20
 
 add_ideas = SDS_solid_bulwark_of_democratic_questionmark
@@ -31,4 +31,8 @@ set_popularities = {
 }
 recruit_character = SDS_yoshinaga
 recruit_character = SDS_key
+recruit_character = SDS_yukari
+recruit_character = SDS_alisa
+recruit_character = SDS_naomi
+recruit_character = SDS_helmet
 

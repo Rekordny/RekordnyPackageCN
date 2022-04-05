@@ -1,0 +1,14 @@
+
+ technology_sharing_group = {
+
+	id = BCF_new_senshado_tech
+	name = BCF_new_senshado_tech_name
+	desc = BCF_new_senshado_tech_desc
+	picture = GFX_commonwealth_research
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+    }
+
+}

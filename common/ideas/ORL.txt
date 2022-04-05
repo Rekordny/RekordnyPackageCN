@@ -1,0 +1,345 @@
+ideas = {
+	country = {
+		#法兰西教会
+		ORL_church_1 = {
+			allowed = {
+				tag = ORL
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+		#圣贞德骑士团
+		ORL_knight = {
+			allowed = {
+				tag = ORL
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_org_Factor = 0.1
+				army_org_regain = 0.15
+				max_dig_in_factor = 0.25
+				no_supply_grace = 48
+			}
+		}
+		#传统的招募标准
+		ORL_conscroption = {
+			allowed = {
+				tag = ORL
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				training_time_factor = 0.25
+			}
+		}
+		#南进
+		ORL_south = {
+			allowed = {
+				tag = ORL
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			#targeted_modifier = {
+			#	tag = BC共和国
+			#	attack_bonus_against = 0.2
+			#	defense_bonus_against = 0.2
+			#}
+			#targeted_modifier = {
+			#	tag = BC自由南方政府（尚不清楚TAG）
+			#	attack_bonus_against = 0.2
+			#	defense_bonus_against = 0.2
+			#}
+		}
+		#奔向大海
+		ORL_north = {
+			allowed = {
+				tag = ORL
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			#targeted_modifier = {
+			#	tag = BC自由巴黎政府
+			#	attack_bonus_against = 0.2
+			#	defense_bonus_against = 0.2
+			#}
+		}
+		#终结马奇诺
+		ORL_east = {
+			allowed = {
+				tag = ORL
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			#targeted_modifier = {
+			#	tag = 马奇诺
+			#	attack_bonus_against = 0.2
+			#	defense_bonus_against = 0.2
+			#}
+		}
+		#有限教权
+		ORL_limit_power = {
+			allowed = {
+				tag = ORL
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.1
+				research_speed_factor = 0.03
+				war_support_factor = 0.1
+			}
+		}
+		#部分世俗化
+		ORL_secualr = {
+			allowed = {
+				tag = ORL
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.15
+				research_speed_factor = 0.06
+				war_support_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		#合法化解放神学
+		ORL_liberation = {
+			allowed = {
+				tag = ORL
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				communism_acceptance = 30
+				research_speed_factor = 0.04
+				custom_modifier_tooltip = unlock_liberation_occupytion
+			}
+		}
+		#政教合一
+		ORL_caesaropapism = {
+			allowed = {
+				tag = ORL
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.25
+				research_speed_factor = -0.05
+			}
+		}
+		#赎罪券
+		ORL_indulgency = {
+			allowed = {
+				tag = ORL
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.1
+				war_support_factor = -0.15
+			}
+		}
+		#南特赦令1
+		ORL_nante_1 = {
+			allowed = {
+				tag = ORL
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				conscription_factor = 0.1
+			}
+		}
+		#南特赦令2
+		ORL_nante_2 = {
+			allowed = {
+				tag = ORL
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				conscription_factor = 0.1
+				stability_factor = 0.1
+			}
+		}
+		#心胜于物
+		ORL_mind_over_matter = {
+			allowed = {
+				tag = ORL
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.35
+				stability_factor = -0.2
+				research_speed_factor = -0.1
+				army_org_Factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		#超凡入圣
+		ORL_mind_over_matter_2 = {
+			allowed = {
+				tag = ORL
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.5
+				stability_factor = -1
+				research_speed_factor = -0.5
+				army_org_Factor = 0.25
+				industrial_capacity_factory = 0.75
+				industrial_capacity_dockyard = 0.5
+				custom_modifier_tooltip = cost_is_unavoidable
+			}
+		}
+		#严格招募
+		ORL_conscroption_2 = {
+			allowed = {
+				tag = ORL
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				conscription_factor = -0.25
+				army_attack_factor = 0.1
+				army_org_regain = 0.1
+			}
+		}
+		#严格征募2
+		ORL_conscroption_3 = {
+			allowed = {
+				tag = ORL
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				conscription_factor = -0.4
+				army_attack_factor = 0.5
+				army_org_regain = 0.2
+				breakthrough_factor = 0.1
+				invasion_preparation = -0.25
+			}
+		}
+		#放宽征募标准
+		ORL_conscroption_4 = {
+			allowed = {
+				tag = ORL
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				conscription_factor = 0.1
+				war_support_factor = 0.05
+			}
+		}
+		#放宽征募标准2
+		ORL_conscroption_5 = {
+			allowed = {
+				tag = ORL
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				conscription_factor = 0.15
+				war_support_factor = 0.05
+				training_time_factor = -0.15
+			}
+		}
+		#圣殿骑士团
+		ORL_holy_knight_1 = {
+			allowed = {
+				tag = ORL
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = -0.025
+				army_attack_factor = 0.05
+			}
+		}
+		#医院骑士团
+		ORL_holy_knight_2 = {
+			allowed = {
+				tag = ORL
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				naval_damage_factor = 0.05
+				positioning = 0.15
+			}
+		}
+		#条顿骑士团
+		ORL_holy_knight_3 = {
+			allowed = {
+				tag = ORL
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_defence_factor = 0.1
+			}
+			equipment_bonus = {
+				armor = {
+					armor_value = 0.15
+				}
+			}
+		}
+		#与教廷的紧密联系
+		ORL_pope = {
+			allowed = {
+				tag = ORL
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_weekly = 0.0025
+			}
+		}
+		#生活消费品-5%，用于祈祷
+		ORL_consume_reduce = {
+			allowed = {
+				tag = ORL
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+
+	}
+}

@@ -530,6 +530,44 @@ country_event = {
 			CHT = {
 				country_event = { id = Saunders.23 days = 0 }
 			}
+			country_event = { id = Saunders.21 days = 3 }
+		}
+	}
+}
+
+#夏威夷与中美独立
+country_event = {
+	id = Saunders.21
+	title = Saunders.21.t
+	desc = Saunders.21.d
+	picture = GFX_event_sds_country_21
+	trigger = { }
+	is_triggered_only = yes
+	option = {
+		name = Saunders.21.a
+		custom_effect_tooltip = sds_tooltip27
+		set_country_flag = SDS_ALISA_ESCAPE
+		add_to_variable = {
+			gold = -150
+		}
+		hidden_effect = {
+			HCA = {
+				transfer_state = 629
+				transfer_state = 630
+				transfer_state = 631
+				transfer_state = 632
+				transfer_state = 727
+				transfer_state = 642
+				transfer_state = 638
+				transfer_state = 313
+				transfer_state = 311
+				transfer_state = 312
+				transfer_state = 314
+				transfer_state = 317
+				transfer_state = 316
+				transfer_state = 685
+				transfer_state = 304
+			}
 		}
 	}
 }

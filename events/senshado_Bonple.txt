@@ -1,6 +1,6 @@
 add_namespace = Bonple
 
-#冯布诺经济委员会
+#九月会议
 country_event = {
 	id = bonple.1
 	title = bonple.1.t
@@ -10,21 +10,27 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bonple.1.a
-		hidden_effect = {
-			
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.10
 		}
+		hidden_effect = { }
 	}
 	option = {
 		name = bonple.1.b
-		hidden_effect = {
-			
+		add_popularity = {
+			ideology = communism
+			popularity = 0.10
 		}
+		hidden_effect = { }
 	}
 	option = {
 		name = bonple.1.c
-		hidden_effect = {
-			
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.10
 		}
+		hidden_effect = { }
 	}
 }
 
@@ -37,19 +43,64 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bonple.2.a
-		add_tech_bonus = {
-			category = excavation_tech
-			uses = 2
-			bonus = 0.75
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.10
 		}
+		hidden_effect = { }
 	}
 	option = {
 		name = bonple.2.b
-		91 = {
-			add_resource = {
-				type = tungsten
-				amount = 25
-			}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.10
 		}
+		add_stability = -0.1
+		hidden_effect = { }
+	}
+	option = {
+		name = bonple.2.c
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.10
+		}
+		hidden_effect = { }
+	}
+}
+
+country_event = {
+	id = bonple.3
+	title = bonple.3.t
+	desc = bonple.3.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	option = {
+		name = bonple.3.a
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.10
+		}
+		hidden_effect = { set_country_flag = BON_MAIKO_LEAD }
+		ai_chance = { base = 1 }
+	}
+	option = {
+		name = bonple.3.b
+		add_popularity = {
+			ideology = communism
+			popularity = 0.10
+		}
+		add_stability = -0.05
+		hidden_effect = { }
+		ai_chance = { base = 0 }
+	}
+	option = {
+		name = bonple.3.c
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.10
+		}
+		add_stability = -0.1
+		ai_chance = { base = 0 }
 	}
 }
