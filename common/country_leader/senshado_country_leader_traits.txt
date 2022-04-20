@@ -61,19 +61,34 @@ leader_traits = {
 	
 	#JHS
 	KMBD = {
-        random = no
-        equipment_bonus = {
-            armor = {
-                maximum_speed = 0.05
-                reliability = 0.1
-                breakthrough = 0.1
-            }
-        }
+		random = no
+		equipment_bonus = {
+			armor = {
+				maximum_speed = 0.05
+				reliability = 0.1
+				breakthrough = 0.1
+			}
+		}
 
-        ai_will_do = {
-            factor = 1
-        }
-    }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#懒散的性格
+	JHS_mika_lazy = {
+		random = no
+		stability_factor = -0.2
+		war_support_factor = -0.2
+		conscription_factor = -0.04
+	}
+	#领航之风
+	JHS_mika_pilot_wind = {
+		random = no
+		stability_weekly = 0.1
+		war_support_factor = 0.2
+		political_power_factor = 0.3
+		conscription_factor = 0.02
+	}
 
 	#STG
 	#高调的模仿者
@@ -252,15 +267,18 @@ leader_traits = {
 	}
 
 	#BCF
+	#法兰西岛的公主
 	BCF_princess_of_lle_de_france = {
 		stability_factor = 0.1
 		justify_war_goal_time = 0.15
 		ai_focus_defense_factor = 0.5
 	}
+	#法兰西的捍卫者
 	BCF_defender_of_france = {
 		political_power_factor = -0.05
 		stability_factor = 0.2
 	}
+	#联合作战
 	BCF_joint_operations = {
 		experience_gain_army = 0.1
 		army_org_factor = 0.05
@@ -269,48 +287,58 @@ leader_traits = {
 		army_defence_factor = 0.1
 		supply_consumption_factor = -0.1
 	}
+	#军事理论家
 	BCF_military_theorist = {
 		experience_gain_army = 0.1
 		land_doctrine_cost_factor = -0.1
 	}
+	#机动作战学说专家
 	BCF_mobile_theorist = {
 		experience_gain_army = 0.1
 		cat_mobile_warfare_cost_factor = -0.1
 	}
+	#决战计划学说专家
 	BCF_battleplan_theorist = {
 		experience_gain_army = 0.08
 		cat_grand_battle_plan_cost_factor = -0.15
 	}
+	#激进派
 	BCF_radical = {
 		stability_factor = -0.1
 		war_support_factor = 0.25
 		political_power_factor = -0.1
 	}
+	#战争狂人
 	BCF_war_fanatic = {
 		training_time_factor = -0.05
 		production_speed_arms_factory_factor = 0.15
 		offensive_war_stability_factor = 0.2
 	}
+	#速度至上
 	BCF_speed_first = {
 		experience_gain_army = 0.12
 		army_speed_factor = 0.2
 		breakthrough_factor = 0.075
 		army_org_Factor = -0.1
 	}
+	#专注防御
 	BCF_defence_first = {
 		experience_gain_army = 0.1
 		army_defence_factor = 0.2
 		max_dig_in = 5
 	}
+	#外交家
 	BCF_diplomat = {
 		opinion_gain_monthly_factor = 0.33
 		trade_laws_cost_factor = -0.5
 	}
+	#保守派
 	BCF_conservative = {
 		consumer_goods_factor = 0.03
 		production_speed_industrial_complex_factor = 0.1
 		political_power_factor = 0.15
 	}
+	#轻型坦克指挥官
 	BCF_LT_commander = {
 		experience_gain_army = 0.06
 		army_armor_speed_factor = 0.05
@@ -323,30 +351,36 @@ leader_traits = {
 			}
 		}
 	}
+	#玛丽的助手
 	BCF_marie_assistant = {
 		economy_cost_factor = -0.25
 		production_speed_buildings_factor = 0.1
 	}
+	#炮兵指挥官
 	BCF_artillery_commander = {
 		experience_gain_army = 0.06
 		army_artillery_attack_factor = 0.1
 		army_artillery_defence_factor = 0.1
 	}
+	#伟大的团结者
 	BCF_great_unite = {
 		political_power_factor = 0.05
 		industrial_capacity_factory = 0.1
 		conscription_factor = 0.1
 	}
+	#装甲指挥官
 	BCF_armor_commander = {
 		experience_gain_army = 0.08
 		army_armor_attack_factor = 0.15
 		army_armor_defence_factor = 0.1
 	}
+	#BC派
 	BCF_BC_party = {
 		fascism_drift = -0.05
 		democratic_drift = -0.05
 		war_support_factor = 0.05
 	}
+	#自由派
 	BCF_freedom_party = {
 		fascism_drift = -0.05
 		communism_drift = -0.05

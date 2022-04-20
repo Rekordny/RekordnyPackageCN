@@ -442,7 +442,7 @@ country_event = {
 	}
 	option = {
 		name = StGloriana.10.e
-		add_political_power = -50
+		add_political_power = -30
 		hidden_effect = { 
 			add_to_variable = { stg_attitude_value = 1 } 
 			country_event = { id = StGloriana.11 days = 15 } 
@@ -467,8 +467,8 @@ country_event = {
 		}
 		hidden_effect = {
 			random_list = {
-				40 = { add_to_variable = { stg_attitude_value = 0 } }
-				60 = { add_to_variable = { stg_attitude_value = -1 } }
+				30 = { add_to_variable = { stg_attitude_value = 0 } }
+				70 = { add_to_variable = { stg_attitude_value = -1 } }
 			}
 			country_event = { id = StGloriana.12 days = 15 }
 		}
@@ -488,7 +488,7 @@ country_event = {
 	}
 	option = {
 		name = StGloriana.11.c
-		add_political_power = -40
+		add_political_power = -30
 		hidden_effect = { 
 			add_to_variable = { stg_attitude_value = 1 }
 			country_event = { id = StGloriana.12 days = 15 } 
@@ -517,7 +517,11 @@ country_event = {
 	option = {
 		name = StGloriana.12.a
 		hidden_effect = {
-			set_country_flag = STG_STRONGER_LABOUR_PARTY
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+			add_stability = 0.05
 			add_to_variable = { stg_attitude_value = 4 }
 			country_event = { id = StGloriana.13 days = 15 }
 		}
@@ -525,9 +529,12 @@ country_event = {
 	option = {
 		name = StGloriana.12.b
 		hidden_effect = { 
-			set_country_flag = STG_STRONG_LABOUR_PARTY
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
 			add_to_variable = { stg_attitude_value = 2 }  
-			country_event = { id = StGloriana.13 days = 15 } 
+			country_event = { id = StGloriana.13 days = 15 }
 		}
 	}
 	option = {
@@ -549,13 +556,17 @@ country_event = {
 	option = {
 		name = StGloriana.13.a
 		hidden_effect = {
-			add_to_variable = { stg_attitude_value = 2 }
+			add_to_variable = { stg_attitude_value = 3 }
+			add_timed_idea = {
+				idea = STG_worker_holidays
+				days = 90
+			}
 			country_event = { id = StGloriana.14 days = 15 }
 		}
 	}
 	option = {
 		name = StGloriana.13.b
-		add_political_power = 100
+		add_political_power = 50
 		hidden_effect = { 
 			add_to_variable = { stg_attitude_value = -1 }  
 			country_event = { id = StGloriana.14 days = 15 } 
@@ -583,7 +594,10 @@ country_event = {
 	option = {
 		name = StGloriana.14.a
 		hidden_effect = {
-			add_ideas = STG_dissatisfaction_from_nobility 
+			add_timed_idea = {
+				idea = STG_dissatisfaction_from_nobility
+				days = 365
+			}
 			add_to_variable = { stg_attitude_value = 4 }
 			if = {
 				limit = { check_variable = { stg_attitude_value > 10 } }
@@ -598,8 +612,12 @@ country_event = {
 		name = StGloriana.14.b
 		add_political_power = 100
 		hidden_effect = { 
-			add_to_variable = { stg_attitude_value = 1 }  
+			add_to_variable = { stg_attitude_value = 1 }
 			if = {
+				limit = { communism > 0.6 }
+				country_event = { id = StGloriana.16 days = 5 }
+			}
+			else_if = {
 				limit = { check_variable = { stg_attitude_value > 10 } }
 				country_event = { id = StGloriana.15 days = 5 }
 			}
@@ -642,7 +660,7 @@ country_event = {
 	}
 }
 
-#战车道联盟的剑拔弩张
+#桑达斯局势的剑拔弩张
 country_event = {
 	id = StGloriana.17
 	title = StGloriana.17.t
@@ -935,7 +953,7 @@ country_event = {
 		if = { limit = { has_country_flag = STG_REDUCE_LABOUR_PARTY_POWER }
 			start_civil_war = {
 				ideology = communism
-				size = 0.35
+				size = 0.45
 				only_own_territory = no
 				capital = 119
 				states = { 

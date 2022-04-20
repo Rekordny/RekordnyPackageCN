@@ -45,6 +45,12 @@ opinion_modifiers = {
 	JHS_Traitor = {
 		value = -50
 	}
+	JHS_gift_accept = {
+		value = 20
+	}
+	JHS_gift_refuse = {
+		value = -10
+	}
 }
 
 #ANZ
@@ -122,5 +128,12 @@ opinion_modifiers = {
 	}
 	ANZ_approach_blue_division = {
 		value = +25
+	}
+}
+
+#BON
+opinion_modifiers = {
+	BON_approach_VIG = {
+		value = +30
 	}
 }

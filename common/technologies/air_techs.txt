@@ -158,12 +158,12 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = SDS
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
+				tag = CHT
 			}
 
 			modifier = {
@@ -203,10 +203,10 @@ technologies = {
 			name = air_techs_folder
 			position = { x = 0 y = 6 }
 		}
-		folder = {
-			name = secret_weapons_folder
-			position = { x = 6 y = 8 }
-		}
+		# folder = {
+		# 	name = secret_weapons_folder
+		# 	position = { x = 6 y = 8 }
+		# }
 		
 		categories = {
 			light_air
@@ -228,7 +228,7 @@ technologies = {
 
 			modifier = {
 				factor = 0
-				original_tag = GER
+				original_tag = SDS
 				date < "1977.1.1"
 			}
 
@@ -273,19 +273,19 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = SDS
 			}
 			
 			modifier = {
 				factor = 2.5
-				tag = JAP
+				tag = CHT
 			}
 
 			modifier = {
 				factor = 10
 				AND = {
 					is_historical_focus_on = yes
-					tag = JAP
+					tag = CHT
 				}
 			}
 			modifier = {
@@ -317,10 +317,10 @@ technologies = {
 			fighter_equipment_3
 		}
 		
-		path = {
-			leads_to_tech = jet_fighter1
-			research_cost_coeff = 1
-		}
+		# path = {
+		# 	leads_to_tech = jet_fighter1
+		# 	research_cost_coeff = 1
+		# }
 		
 		research_cost = 2
 		start_year = 1980
@@ -389,12 +389,12 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = SDS
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
+				tag = CHT
 			}
 			modifier = {
 				factor = 1.5
@@ -411,70 +411,70 @@ technologies = {
 		}
 	}
 	
-	jet_fighter1 = {
+	# jet_fighter1 = {
 
-		enable_equipments = {
-				jet_fighter_equipment_1
-		}
+	# 	enable_equipments = {
+	# 			jet_fighter_equipment_1
+	# 	}
 			
-		path = {
-			leads_to_tech = jet_fighter2
-			research_cost_coeff = 1
-		}
+	# 	path = {
+	# 		leads_to_tech = jet_fighter2
+	# 		research_cost_coeff = 1
+	# 	}
 
-		dependencies = {
-			jet_engines = 1
-		}
+	# 	dependencies = {
+	# 		jet_STGines = 1
+	# 	}
 		
-		research_cost = 2
-		start_year = 1981
+	# 	research_cost = 2
+	# 	start_year = 1981
 
-		folder = {
-			name = air_techs_folder
-			position = { x = 0 y = 12 }
-		}
+	# 	folder = {
+	# 		name = air_techs_folder
+	# 		position = { x = 0 y = 12 }
+	# 	}
 		
-		categories = {
-			light_air
-			jet_technology
-		}
+	# 	categories = {
+	# 		light_air
+	# 		jet_technology
+	# 	}
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				is_major = yes
-				factor = 2
-			}
-			modifier = {
-				tag = GER
-				factor = 2
-			}
-		}
-	}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 		modifier = {
+	# 			is_major = yes
+	# 			factor = 2
+	# 		}
+	# 		modifier = {
+	# 			tag = SDS
+	# 			factor = 2
+	# 		}
+	# 	}
+	# }
 	
-	jet_fighter2 = {
+	# jet_fighter2 = {
 
-		enable_equipments = {
-			jet_fighter_equipment_2
-		}
+	# 	enable_equipments = {
+	# 		jet_fighter_equipment_2
+	# 	}
 		
-		research_cost = 2
-		start_year = 1986
+	# 	research_cost = 2
+	# 	start_year = 1986
 
-		folder = {
-			name = air_techs_folder
-			position = { x = 0 y = 14 }
-		}
+	# 	folder = {
+	# 		name = air_techs_folder
+	# 		position = { x = 0 y = 14 }
+	# 	}
 		
-		categories = {
-			light_air
-			jet_technology
-		}
+	# 	categories = {
+	# 		light_air
+	# 		jet_technology
+	# 	}
 		
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
 	
 	
 	CAS1 = {
@@ -511,16 +511,16 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = GER
+				tag = SDS
 			}
 			
 			modifier = {
 				factor = 100
-				tag = SOV
+				tag = PRA
 			}
 			modifier = {
-				has_war_with = GER
-				tag = SOV
+				has_war_with = SDS
+				tag = PRA
 				factor = 2
 			}
 
@@ -554,15 +554,15 @@ technologies = {
 			modifier = {
 				factor = 2
 				OR = {
-					tag = USA
-					tag = JAP
+					tag = SDS
+					tag = CHT
 				}
 			}
 			modifier = {
 				factor = 1.5
 				OR = {
-					has_war_with = USA
-					has_war_with = JAP
+					has_war_with = SDS
+					has_war_with = CHT
 				}
 			}
 			modifier = {
@@ -610,7 +610,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = GER
+				tag = SDS
 			}
 			modifier = {
 				has_deployed_air_force_size = {
@@ -623,14 +623,14 @@ technologies = {
 			modifier = {
 				factor = 2
 				OR = {
-					has_war_with = GER
-					has_war_with = SOV
+					has_war_with = SDS
+					has_war_with = PRA
 				}
 			}
 			
 			modifier = {
 				factor = 3
-				tag = SOV
+				tag = PRA
 			}
 		}
 	}
@@ -662,15 +662,15 @@ technologies = {
 			modifier = {
 				factor = 2
 				OR = {
-					tag = USA
-					tag = JAP
+					tag = SDS
+					tag = CHT
 				}
 			}
 			modifier = {
 				factor = 1.5
 				OR = {
-					has_war_with = USA
-					has_war_with = JAP
+					has_war_with = SDS
+					has_war_with = CHT
 				}
 			}
 			modifier = {
@@ -690,10 +690,10 @@ technologies = {
 			CAS_equipment_3
 		}
 		
-		path = {
-			leads_to_tech = jet_fighter1
-			research_cost_coeff = 1
-		}
+		# path = {
+		# 	leads_to_tech = jet_fighter1
+		# 	research_cost_coeff = 1
+		# }
 		
 		research_cost = 2
 		start_year = 1980
@@ -717,7 +717,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = GER
+				tag = SDS
 			}
 			modifier = {
 				has_deployed_air_force_size = {
@@ -729,13 +729,13 @@ technologies = {
 			modifier = {
 				factor = 2
 				OR = {
-					has_war_with = GER
-					has_war_with = SOV
+					has_war_with = SDS
+					has_war_with = PRA
 				}
 			}
 			modifier = {
 				factor = 2
-				tag = SOV
+				tag = PRA
 			}
 		}
 	}
@@ -760,15 +760,15 @@ technologies = {
 			modifier = {
 				factor = 2
 				OR = {
-					tag = USA
-					tag = JAP
+					tag = SDS
+					tag = CHT
 				}
 			}
 			modifier = {
 				factor = 1.5
 				OR = {
-					has_war_with = USA
-					has_war_with = JAP
+					has_war_with = SDS
+					has_war_with = CHT
 				}
 			}
 			modifier = {
@@ -814,20 +814,20 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					has_war_with = ENG
-					has_war_with = USA
-					has_war_with = JAP
+					has_war_with = STG
+					has_war_with = SDS
+					has_war_with = CHT
 				}
 				factor = 3
 			}
 			modifier = {
 				factor = 5
-				tag = USA
+				tag = SDS
 			}
 			
 			modifier = {
 				factor = 5
-				tag = JAP
+				tag = CHT
 			}
 		}
 	}
@@ -859,15 +859,15 @@ technologies = {
 			modifier = {
 				factor = 2.5
 				OR = {
-					tag = USA
-					tag = JAP
+					tag = SDS
+					tag = CHT
 				}
 			}
 			modifier = {
 				factor = 1.5
 				OR = {
-					has_war_with = USA
-					has_war_with = JAP
+					has_war_with = SDS
+					has_war_with = CHT
 				}
 			}
 			modifier = {
@@ -913,9 +913,9 @@ technologies = {
 			factor = 1.5
 			modifier = {
 				OR = {
-					has_war_with = ENG
-					has_war_with = USA
-					has_war_with = JAP
+					has_war_with = STG
+					has_war_with = SDS
+					has_war_with = CHT
 				}
 				factor = 3
 			}
@@ -928,12 +928,12 @@ technologies = {
 			}
 			modifier = {
 				factor = 5
-				tag = USA
+				tag = SDS
 			}
 			
 			modifier = {
 				factor = 5
-				tag = JAP
+				tag = CHT
 			}
 		}
 	}
@@ -965,16 +965,16 @@ technologies = {
 			modifier = {
 				factor = 2.5
 				OR = {
-					tag = USA
-					tag = JAP
+					tag = SDS
+					tag = CHT
 				}
 			}
 			modifier = {
 				factor = 1.5
 				OR = {
-					has_war_with = USA
-					has_war_with = JAP
-					has_war_with = ENG
+					has_war_with = SDS
+					has_war_with = CHT
+					has_war_with = STG
 				}
 			}
 			modifier = {
@@ -994,10 +994,10 @@ technologies = {
 			nav_bomber_equipment_3
 		}
 		
-		path = {
-			leads_to_tech = jet_fighter1
-			research_cost_coeff = 1
-		}
+		# path = {
+		# 	leads_to_tech = jet_fighter1
+		# 	research_cost_coeff = 1
+		# }
 		
 		research_cost = 2
 		start_year = 1980
@@ -1020,9 +1020,9 @@ technologies = {
 			factor = 1.5
 			modifier = {
 				OR = {
-					has_war_with = ENG
-					has_war_with = USA
-					has_war_with = JAP
+					has_war_with = STG
+					has_war_with = SDS
+					has_war_with = CHT
 				}
 				factor = 3
 			}
@@ -1035,12 +1035,12 @@ technologies = {
 			}
 			modifier = {
 				factor = 5
-				tag = USA
+				tag = SDS
 			}
 			
 			modifier = {
 				factor = 5
-				tag = JAP
+				tag = CHT
 			}
 		}
 	}
@@ -1064,15 +1064,15 @@ technologies = {
 			modifier = {
 				factor = 2.5
 				OR = {
-					tag = USA
-					tag = JAP
+					tag = SDS
+					tag = CHT
 				}
 			}
 			modifier = {
 				factor = 1.5
 				OR = {
-					has_war_with = USA
-					has_war_with = JAP
+					has_war_with = SDS
+					has_war_with = CHT
 				}
 			}
 			modifier = {
@@ -1253,7 +1253,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 4
-				original_tag = GER
+				original_tag = SDS
 			}
 		}
 	}
@@ -1409,10 +1409,10 @@ technologies = {
 			tac_bomber_equipment_3
 		}
 		
-		path = {
-			leads_to_tech = jet_tactical_bomber1
-			research_cost_coeff = 1
-		}
+		# path = {
+		# 	leads_to_tech = jet_tactical_bomber1
+		# 	research_cost_coeff = 1
+		# }
 
 		research_cost = 2
 		start_year = 1980
@@ -1450,67 +1450,67 @@ technologies = {
 		}
 	}
 	
-	jet_tactical_bomber1 = {
+	# jet_tactical_bomber1 = {
 
-		enable_equipments = {
-			jet_tac_bomber_equipment_1
-		}
+	# 	enable_equipments = {
+	# 		jet_tac_bomber_equipment_1
+	# 	}
 		
-		path = {
-			leads_to_tech = jet_tactical_bomber2
-			research_cost_coeff = 1
-		}
+	# 	path = {
+	# 		leads_to_tech = jet_tactical_bomber2
+	# 		research_cost_coeff = 1
+	# 	}
 		
-		dependencies = {
-			jet_engines = 1
-		}
+	# 	dependencies = {
+	# 		jet_STGines = 1
+	# 	}
 
-		research_cost = 2
-		start_year = 1981
+	# 	research_cost = 2
+	# 	start_year = 1981
 		
-		folder = {
-			name = air_techs_folder
-			position = { x = 2 y = 12 }
-		}
+	# 	folder = {
+	# 		name = air_techs_folder
+	# 		position = { x = 2 y = 12 }
+	# 	}
 		
-		categories = {
-			medium_air
-			jet_technology
-			tactical_bomber
-		}
+	# 	categories = {
+	# 		medium_air
+	# 		jet_technology
+	# 		tactical_bomber
+	# 	}
 		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				is_major = yes
-				factor = 4
-			}
-		}
-	}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 		modifier = {
+	# 			is_major = yes
+	# 			factor = 4
+	# 		}
+	# 	}
+	# }
 	
-	jet_tactical_bomber2 = {
+	# jet_tactical_bomber2 = {
 
-		enable_equipments = {
-			jet_tac_bomber_equipment_2
-		}
+	# 	enable_equipments = {
+	# 		jet_tac_bomber_equipment_2
+	# 	}
 		
-		research_cost = 2
-		start_year = 1986
-		folder = {
-			name = air_techs_folder
-			position = { x = 2 y = 14 }
-		}
+	# 	research_cost = 2
+	# 	start_year = 1986
+	# 	folder = {
+	# 		name = air_techs_folder
+	# 		position = { x = 2 y = 14 }
+	# 	}
 		
-		categories = {
-			medium_air
-			jet_technology
-			tactical_bomber
-		}
+	# 	categories = {
+	# 		medium_air
+	# 		jet_technology
+	# 		tactical_bomber
+	# 	}
 		
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
 	
 	
 	strategic_bomber1 = {
@@ -1542,12 +1542,12 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = ENG
+				tag = STG
 			}
 			
 			modifier = {
 				factor = 5
-				tag = USA
+				tag = SDS
 			}
 		}
 	}
@@ -1581,12 +1581,12 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = ENG
+				tag = STG
 			}
 			
 			modifier = {
 				factor = 5
-				tag = USA
+				tag = SDS
 			}
 		}
 	}
@@ -1597,10 +1597,10 @@ technologies = {
 			strat_bomber_equipment_3
 		}
 		
-		path = {
-			leads_to_tech = jet_strategic_bomber1
-			research_cost_coeff = 1
-		}
+		# path = {
+		# 	leads_to_tech = jet_strategic_bomber1
+		# 	research_cost_coeff = 1
+		# }
 
 		research_cost = 2
 		start_year = 1980
@@ -1620,74 +1620,491 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = ENG
+				tag = STG
 			}
 			
 			modifier = {
 				factor = 5
-				tag = USA
+				tag = SDS
 			}
 		}
 	}
-	
-	jet_strategic_bomber1 = {
 
-		enable_equipments = {
-			jet_strat_bomber_equipment_1
+	air_gun = {
+		modifier = {
+			air_attack_factor = 0.05
+			air_air_superiority_attack_factor = 0.05
+			air_interception_attack_factor = 0.05
 		}
-		
-		research_cost = 2
-		start_year = 1986
-
-		dependencies = {
-			jet_engines = 1
+		research_cost = 1
+		start_year = 1972
+		path = {
+			leads_to_tech = air_gun2
+			research_cost_coeff = 1
 		}
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = 12 }
+		}
+		categories = {
+			air_weapon
+			air_equipment
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 3
+				date > 1973.1.1
+			}
+		}
+	}
 
+	air_gun2 = {
+		modifier = {
+			air_attack_factor = 0.05
+			air_air_superiority_attack_factor = 0.05
+			air_interception_attack_factor = 0.05
+		}
+		research_cost = 1
+		start_year = 1976
+		path = {
+			leads_to_tech = air_gun3
+			research_cost_coeff = 1
+		}
 		folder = {
 			name = air_techs_folder
 			position = { x = 0 y = 14 }
 		}
-		
 		categories = {
-			heavy_air
-			jet_technology
-			cat_strategic_bomber
+			air_weapon
+			air_equipment
 		}
-		
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				has_deployed_air_force_size = {
-					size > 500
-					type = strategic_bomber
-				}
-				factor = 4.5
+				factor = 3
+				date > 1977.1.1
+			}
+		}
+	}
+	
+	air_gun3 = {
+		modifier = {
+			air_attack_factor = 0.05
+			air_air_superiority_attack_factor = 0.05
+			air_interception_attack_factor = 0.05
+		}
+		research_cost = 1
+		start_year = 1980
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = 16 }
+		}
+		categories = {
+			air_weapon
+			air_equipment
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				date > 1981.1.1
 			}
 		}
 	}
 
-	suicide_craft = {
-
-		enable_equipments = {
-			rocket_suicide_equipment_1
+	air_missile = {
+		category_fighter = {
+			air_superiority = 0.1
 		}
-				
-		research_cost = 1.5 #Carrier Variant
-		start_year = 1980
-
-		# only from focus!!! #####
-		allow = {
-			always = no
+		category_cas = {
+			air_superiority = 0.05
 		}
-
-		#folder = {
-		#	name = air_techs_folder
-		#	position = { x = -2 y = 8 }
-		#}
-		
+		category_heavy_fighter = {
+			air_superiority = 0.15
+		}
+		modifier = {
+			
+		}
+		research_cost = 1.2
+		start_year = 1972
+		path = {
+			leads_to_tech = air_missile2
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = 12 }
+		}
+		categories = {
+			air_weapon
+			air_equipment
+		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			modifier = {
+				factor = 3
+				date > 1973.1.1
+			}
 		}
-		################
 	}
+
+	air_missile2 = {
+		category_fighter = {
+			air_superiority = 0.1
+		}
+		category_cas = {
+			air_superiority = 0.05
+		}
+		category_heavy_fighter = {
+			air_superiority = 0.15
+		}
+		modifier = {
+			
+		}
+		research_cost = 1.2
+		start_year = 1976
+		path = {
+			leads_to_tech = air_missile3
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = 14 }
+		}
+		categories = {
+			air_weapon
+			air_equipment
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				date > 1977.1.1
+			}
+		}
+	}
+
+	air_missile3 = {
+		category_fighter = {
+			air_superiority = 0.1
+		}
+		category_cas = {
+			air_superiority = 0.05
+		}
+		category_heavy_fighter = {
+			air_superiority = 0.15
+		}
+		modifier = {
+			
+		}
+		research_cost = 1.2
+		start_year = 1980
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = 16 }
+		}
+		categories = {
+			air_weapon
+			air_equipment
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				date > 1981.1.1
+			}
+		}
+	}
+
+	air_maneuverability = {
+		modifier = {
+			air_agility_factor = 0.1
+		}
+		research_cost = 1.5
+		start_year = 1972
+		path = {
+			leads_to_tech = air_maneuverability2
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = air_techs_folder
+			position = { x = 1 y = 12 }
+		}
+		categories = {
+			air_addons
+			air_equipment
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				date > 1973.1.1
+			}
+		}
+	}
+
+	air_maneuverability2 = {
+		modifier = {
+			air_bombing_targetting = 0.1
+			naval_strike_targetting_factor = 0.1
+		}
+		research_cost = 1.5
+		start_year = 1976
+		path = {
+			leads_to_tech = air_maneuverability3
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = air_techs_folder
+			position = { x = 1 y = 14 }
+		}
+		categories = {
+			air_addons
+			air_equipment
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				date > 1977.1.1
+			}
+		}
+	}
+
+	air_maneuverability3 = {
+		modifier = {
+			air_agility_factor = 0.1
+		}
+		research_cost = 1.5
+		start_year = 1980
+		folder = {
+			name = air_techs_folder
+			position = { x = 1 y = 16 }
+		}
+		categories = {
+			air_addons
+			air_equipment
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				date > 1981.1.1
+			}
+		}
+	}
+
+	air_engine = {
+		modifier = {
+			air_maximum_speed_factor = 0.1
+		}
+		research_cost = 1
+		start_year = 1972
+		path = {
+			leads_to_tech = air_engine2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = air_weapon_rack
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = air_techs_folder
+			position = { x = 7 y = 12 }
+		}
+		categories = {
+			air_addons
+			air_equipment
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				date > 1973.1.1
+			}
+		}
+	}
+
+	air_engine2 = {
+		category_heavy_fighter = {
+			air_agility = 0.15
+			maximum_speed = 0.15
+		}
+		research_cost = 1.2
+		start_year = 1976
+		path = {
+			leads_to_tech = air_engine3
+			research_cost_coeff = 1
+		}
+		XOR = {
+			air_weapon_rack
+		}
+		folder = {
+			name = air_techs_folder
+			position = { x = 5 y = 14 }
+		}
+		categories = {
+			air_addons
+			air_equipment
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				date > 1977.1.1
+			}
+		}
+	}
+
+	air_engine3 = {
+		category_heavy_fighter = {
+			air_agility = 0.15
+			maximum_speed = 0.15
+		}
+		research_cost = 1.2
+		start_year = 1980
+		folder = {
+			name = air_techs_folder
+			position = { x = 5 y = 16 }
+		}
+		categories = {
+			air_addons
+			air_equipment
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				date > 1981.1.1
+			}
+		}
+	}
+
+	air_weapon_rack = {
+		category_heavy_fighter = {
+			naval_strike_attack = 0.15
+		}
+		category_fighter = {
+			naval_strike_attack = 0.15
+		}
+		XOR = {
+			air_engine2
+		}
+		research_cost = 1.2
+		start_year = 1976
+		path = {
+			leads_to_tech = air_ccv
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = air_techs_folder
+			position = { x = 9 y = 14 }
+		}
+		categories = {
+			air_addons
+			air_equipment
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				date > 1977.1.1
+			}
+		}
+	}
+
+	air_ccv = {
+		category_strat_bomber = {
+			air_agility = 0.15
+		}
+		category_tac_bomber = {
+			air_agility = 0.15
+		}
+		category_cas = {
+			air_agility = 0.15
+		}
+		category_nav_bomber = {
+			air_agility = 0.15
+		}
+		research_cost = 1.2
+		start_year = 1980
+		folder = {
+			name = air_techs_folder
+			position = { x = 9 y = 16 }
+		}
+		categories = {
+			air_addons
+			air_equipment
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				date > 1981.1.1
+			}
+		}
+	}
+
+	# jet_strategic_bomber1 = {
+
+	# 	enable_equipments = {
+	# 		jet_strat_bomber_equipment_1
+	# 	}
+		
+	# 	research_cost = 2
+	# 	start_year = 1986
+
+	# 	dependencies = {
+	# 		jet_STGines = 1
+	# 	}
+
+	# 	folder = {
+	# 		name = air_techs_folder
+	# 		position = { x = 0 y = 14 }
+	# 	}
+		
+	# 	categories = {
+	# 		heavy_air
+	# 		jet_technology
+	# 		cat_strategic_bomber
+	# 	}
+		
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 		modifier = {
+	# 			has_deployed_air_force_size = {
+	# 				size > 500
+	# 				type = strategic_bomber
+	# 			}
+	# 			factor = 4.5
+	# 		}
+	# 	}
+	# }
+
+	# suicide_craft = {
+
+	# 	enable_equipments = {
+	# 		rocket_suicide_equipment_1
+	# 	}
+				
+	# 	research_cost = 1.5 #Carrier Variant
+	# 	start_year = 1980
+
+	# 	# only from focus!!! #####
+	# 	allow = {
+	# 		always = no
+	# 	}
+
+	# 	#folder = {
+	# 	#	name = air_techs_folder
+	# 	#	position = { x = -2 y = 8 }
+	# 	#}
+		
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
+	# 	################
+	# }
 }

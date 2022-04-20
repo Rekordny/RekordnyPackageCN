@@ -1,0 +1,437 @@
+jhs_government = {
+	JHS_infiltrate_target = {
+		allowed = {
+			tag = JHS
+		}
+		visible = {
+			has_completed_focus = JHS_tradition_huaji
+			FROM = {
+				NOT = {
+					has_country_flag = JHS_got_infiltrated
+				}
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_major = yes
+			}
+		}
+		available = {
+			network_strength = {
+				target = FROM
+				value > 0.49
+			}
+		}
+		complete_effect = {
+			FROM = {
+				set_country_flag = JHS_got_infiltrated
+			}
+		}
+		cost = 50
+	}
+	JHS_tradition_food = {
+		allowed = {
+			tag = JHS
+		}
+		visible = {
+			has_completed_focus = JHS_tradition_huaji
+			NOT = {
+				check_variable = {
+					JHS_unstable_society_consumer = 0
+				}
+			}
+			FROM = {
+				has_country_flag = JHS_got_infiltrated
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_major = yes
+			}
+		}
+		available = {
+			network_strength = {
+				target = FROM
+				value > 0.49
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				JHS_unstable_society_consumer = -0.1
+			}
+		}
+		cost = 50
+		days_re_enable = 30
+	}
+	JHS_tradition_factory_output = {
+		allowed = {
+			tag = JHS
+		}
+		visible = {
+			has_completed_focus = JHS_tradition_huaji
+			NOT = {
+				check_variable = {
+					JHS_unstable_society_factory_output = 0
+				}
+			}
+			FROM = {
+				has_country_flag = JHS_got_infiltrated
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_major = yes
+			}
+		}
+		available = {
+			network_strength = {
+				target = FROM
+				value > 0.49
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				JHS_unstable_society_factory_output = 0.1
+			}
+		}
+		cost = 50
+		days_re_enable = 30
+	}
+	JHS_tradition_efficiency = {
+		allowed = {
+			tag = JHS
+		}
+		visible = {
+			has_completed_focus = JHS_tradition_huaji
+			NOT = {
+				check_variable = {
+					JHS_unstable_society_efficiency = 0
+				}
+			}
+			FROM = {
+				has_country_flag = JHS_got_infiltrated
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_major = yes
+			}
+		}
+		available = {
+			network_strength = {
+				target = FROM
+				value > 0.49
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				JHS_unstable_society_efficiency = 0.1
+			}
+		}
+		cost = 50
+		days_re_enable = 30
+	}
+	JHS_tradition_build_speed = {
+		allowed = {
+			tag = JHS
+		}
+		visible = {
+			has_completed_focus = JHS_tradition_huaji
+			NOT = {
+				check_variable = {
+					JHS_unstable_society_build_speed = 0
+				}
+			}
+			FROM = {
+				has_country_flag = JHS_got_infiltrated
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_major = yes
+			}
+		}
+		available = {
+			network_strength = {
+				target = FROM
+				value > 0.49
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				JHS_unstable_society_build_speed = 0.1
+			}
+		}
+		cost = 50
+		days_re_enable = 30
+	}
+
+	JHS_take_land_army_intel = {
+		allowed = {
+			tag = JHS
+		}
+		visible = {
+			has_completed_focus = JHS_snow_thief
+			FROM = {
+				has_country_flag = JHS_got_infiltrated
+			}
+			NOT = {
+				has_operation_token = {
+					tag = FROM
+					token = token_JHS_army
+				}
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_major = yes
+			}
+		}
+		available = {
+			network_strength = {
+				target = FROM
+				value > 0.49
+			}
+		}
+		complete_effect = {
+			add_operation_token = {
+				tag = FROM
+				token = token_JHS_army
+			}
+		}
+		cost = 0
+		#未写明花费
+	}
+	JHS_get_war_goal = {
+		allowed = {
+			tag = JHS
+		}
+		visible = {
+			has_completed_focus = JHS_snow_thief
+			FROM = {
+				has_country_flag = JHS_got_infiltrated
+			}
+			NOT = {
+				has_wargoal_against = FROM
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_major = yes
+			}
+		}
+		available = {
+			network_strength = {
+				target = FROM
+				value > 0.49
+			}
+		}
+		complete_effect = {
+			create_wargoal = {
+				target = FROM
+				type = annex_everything
+			}
+		}
+		cost = 150
+	}
+	JHS_steal_guns_from_target = {
+		allowed = {
+			tag = JHS
+		}
+		visible = {
+			has_completed_focus = JHS_snow_thief
+			FROM = {
+				has_country_flag = JHS_got_infiltrated
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_major = yes
+			}
+		}
+		available = {
+			network_strength = {
+				target = FROM
+				value > 0.49
+			}
+		}
+		complete_effect = {
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 2000
+				target = ROOT
+			}
+		}
+		cost = 50
+		days_re_enable = 30
+	}
+	JHS_steal_artillery_from_target = {
+		allowed = {
+			tag = JHS
+		}
+		visible = {
+			has_completed_focus = JHS_snow_thief
+			FROM = {
+				has_country_flag = JHS_got_infiltrated
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_major = yes
+			}
+		}
+		available = {
+			network_strength = {
+				target = FROM
+				value > 0.49
+			}
+		}
+		complete_effect = {
+			send_equipment = {
+				equipment = artillery_equipment
+				amount = 500
+				target = ROOT
+			}
+		}
+		cost = 50
+		days_re_enable = 30
+	}
+	JHS_steal_supply_from_target = {
+		allowed = {
+			tag = JHS
+		}
+		visible = {
+			has_completed_focus = JHS_snow_thief
+			FROM = {
+				has_country_flag = JHS_got_infiltrated
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_major = yes
+			}
+		}
+		available = {
+			network_strength = {
+				target = FROM
+				value > 0.49
+			}
+		}
+		complete_effect = {
+			send_equipment = {
+				equipment = train_equipment
+				amount = 20
+				target = ROOT
+			}
+			send_equipment = {
+				equipment = motorized_equipment
+				amount = 50
+				target = ROOT
+			}
+		}
+		cost = 100
+		days_re_enable = 30
+	}
+	JHS_steal_support_from_target = {
+		allowed = {
+			tag = JHS
+		}
+		visible = {
+			has_completed_focus = JHS_snow_thief
+			FROM = {
+				has_country_flag = JHS_got_infiltrated
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_major = yes
+			}
+		}
+		available = {
+			network_strength = {
+				target = FROM
+				value > 0.49
+			}
+		}
+		complete_effect = {
+			send_equipment = {
+				equipment = support_equipment
+				amount = 200
+				target = ROOT
+			}
+		}
+		cost = 50
+		days_re_enable = 30
+	}
+
+	JHS_snow_canteen_consumer_reduce = {
+		allowed = {
+			tag = JHS
+		}
+		visible = {
+			has_completed_focus = JHS_characteristic_of_JHS
+			check_variable = {
+				JHS_snow_canteen_consumer > -0.05
+			}
+		}
+		available = {
+		}
+		complete_effect = {
+			add_to_variable = {
+				JHS_snow_canteen_consumer = -0.01
+			}
+		}
+		cost = 20
+	}
+	JHS_snow_canteen_output_increase = {
+		allowed = {
+			tag = JHS
+		}
+		visible = {
+			has_completed_focus = JHS_characteristic_of_JHS
+		}
+		available = {
+		}
+		fire_only_once = yes
+		complete_effect = {
+			add_to_variable = {
+				JHS_snow_canteen_output = 0.1
+			}
+		}
+		cost = 50
+	}
+	JHS_snow_canteen_efficiency_gain_increase = {
+		allowed = {
+			tag = JHS
+		}
+		visible = {
+			has_completed_focus = JHS_characteristic_of_JHS
+		}
+		available = {
+		}
+		fire_only_once = yes
+		complete_effect = {
+			add_to_variable = {
+				JHS_snow_canteen_efficiency_gain = 0.1
+			}
+		}
+		cost = 50
+	}
+	JHS_snow_canteen_max_eff_increase = {
+		allowed = {
+			tag = JHS
+		}
+		visible = {
+			has_completed_focus = JHS_characteristic_of_JHS
+		}
+		available = {
+		}
+		fire_only_once = yes
+		complete_effect = {
+			add_to_variable = {
+				JHS_snow_canteen_max_effciency = 0.1
+			}
+		}
+		cost = 50
+	}
+}

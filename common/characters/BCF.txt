@@ -1,6 +1,6 @@
 characters = {
 	BCF_andou = {
-		name = BCF_andou
+		name = "Andou"
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/BCF/Portrait_BCF_Andou.dds"
@@ -107,7 +107,7 @@ characters = {
 		}
 	}
 	BCF_marie = {
-		name = BCF_marie
+		name = "Marie"
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/BCF/Portrait_BCF_Marie.dds"
@@ -203,7 +203,7 @@ characters = {
 		}
 	}
 	BCF_oshida = {
-		name = BCF_oshida
+		name = "Oshida"
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/BCF/Portrait_BCF_Oshida.dds"
@@ -301,7 +301,7 @@ characters = {
 		}
 	}
 	BCF_azumi = {
-		name = BCF_azumi
+		name = "Azumi"
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/BCF/Portrait_BCF_Azumi.dds"
@@ -320,11 +320,11 @@ characters = {
 			legacy_id = 1041
 		}
 	}
-	BCF_Asparagus = {
-		name = BCF_Asparagus
+	BCF_asparagus = {
+		name = "Asparagus"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/BCF/Portrait_BCF_Asparagus.dds"
+				large = "gfx/leaders/BCF/Portrait_BCF_asparagus.dds"
 			}
 		}
 		country_leader = {
@@ -336,7 +336,7 @@ characters = {
 		advisor = {
 			cost = 150
 			slot = high_command
-			idea_token = BCF_Asparagus_command
+			idea_token = BCF_asparagus_command
 			allowed = {
 				original_tag = BCF
 			}
@@ -352,7 +352,7 @@ characters = {
 		advisor = {
 			cost = 150
 			slot = political_advisor
-			idea_token = BCF_Asparagus_political
+			idea_token = BCF_asparagus_political
 			allowed = {
 				original_tag = BCF
 			}
@@ -378,17 +378,17 @@ characters = {
 			legacy_id = 1041
 		}
 	}
-	BCF_Bordeaux = {
-		name = BCF_Bordeaux
+	BCF_bordeaux = {
+		name = "Bordeaux"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/BCF/Portrait_BCF_Bordeaux.dds"
+				large = "gfx/leaders/BCF/Portrait_BCF_bordeaux.dds"
 			}
 		}
 		advisor = {
 			cost = 125
 			slot = political_advisor
-			idea_token = BCF_Bordeaux_political
+			idea_token = BCF_bordeaux_political
 			allowed = {
 				original_tag = BCF
 			}
@@ -414,7 +414,7 @@ characters = {
 		}
 	}
 	BCF_Moule = {
-		name = BCF_Moule
+		name = "Moule"
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/BCF/Portrait_BCF_Moule.dds"
@@ -455,17 +455,17 @@ characters = {
 			legacy_id = 1091
 		}
 	}
-	BCF_Isabe = {
-		name = BCF_Isabe
+	BCF_isabe = {
+		name = "Isabe"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/BCF/Portrait_BCF_Isabe.dds"
+				large = "gfx/leaders/BCF/Portrait_BCF_isabe.dds"
 			}
 		}
 		advisor = {
 			cost = 100
 			slot = high_command
-			idea_token = BCF_Isabe_command
+			idea_token = BCF_isabe_command
 			allowed = {
 				original_tag = BCF
 			}
@@ -491,17 +491,17 @@ characters = {
 			legacy_id = 1045
 		}
 	}
-	BCF_Sofue = {
-		name = BCF_Sofue
+	BCF_sofue = {
+		name = "Sofue"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/BCF/Portrait_BCF_Sofue.dds"
+				large = "gfx/leaders/BCF/Portrait_BCF_sofue.dds"
 			}
 		}
 		advisor = {
 			cost = 100
 			slot = high_command
-			idea_token = BCF_Sofue_command
+			idea_token = BCF_sofue_command
 			allowed = {
 				original_tag = BCF
 			}
@@ -517,7 +517,7 @@ characters = {
 		advisor = {
 			cost = 100
 			slot = political_advisor
-			idea_token = BCF_Sofue_political
+			idea_token = BCF_sofue_political
 			allowed = {
 				original_tag = BCF
 			}

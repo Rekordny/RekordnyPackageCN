@@ -1,5 +1,5 @@
 ﻿l_english:
- #新增科技分类
+ #新增科技分类(english translate goes to replace folder please)
  naval_fire_control:0 "naval fire control"
  naval_dmg_control:0 "naval damage control"
  naval_torpedo:0 "torpedo"
@@ -8,6 +8,24 @@
  armor_lt:0 "light armor"
  armor_mt:0 "medium armor"
  armor_ht:0 "heavy armor"
+ air_weapon:0 "空军武器"
+ air_addons:0 "空军设备"
+
+ #空军页面(english translate goes to replace folder please)
+ air_gun:0 "改良型机炮"
+ air_gun2:0 "先进型机炮"
+ air_gun3:0 "现代型机炮"
+ air_missile:0 "改良型导弹"
+ air_missile2:0 "先进型导弹"
+ air_missile3:0 "现代型导弹"
+ air_maneuverability:0 "电传操控"
+ air_maneuverability2:0 "数位电脑"
+ air_maneuverability3:0 "静不稳定设计"
+ air_engine:0 "涡轮扇发动机"
+ air_engine2:0 "双发稳定"
+ air_engine3:0 "重型推进改良"
+ air_weapon_rack:0 "战机航空炸弹架"
+ air_ccv:0 "随控布局设计"
 
  #海军页面(english translate goes to replace folder please)
  early_ship_hull_light:0 "战后驱逐舰船体"

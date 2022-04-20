@@ -675,7 +675,18 @@ focus_tree = {
 		prerequisite = { focus = BON_reviving_the_alliance }
 		available_if_capitulated = yes
 		completion_reward = {
-			add_political_power = 150
+			JHS = { add_timed_idea = {
+				idea = neutrality_influence
+				days = 300
+			} }
+			VIG = { add_timed_idea = {
+				idea = neutrality_influence
+				days = 300
+			} }
+			VIK = { add_timed_idea = {
+				idea = neutrality_influence
+				days = 300
+			} }
 		}
 		ai_will_do = {
 			factor = 25
@@ -694,7 +705,29 @@ focus_tree = {
 		prerequisite = { focus = BON_awakening_the_nordic_lions }
 		available_if_capitulated = yes
 		completion_reward = {
-			add_political_power = 150
+			VIG = { 
+				remove_ideas = neutrality_influence
+				random_state = {
+					limit = { is_core_of = VIG is_controlled_by = VIG }
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+					}
+				}
+				add_timed_idea = {
+					idea = BON_influence_bonple
+					days = 300
+				}
+				add_opinion_modifier = {
+					target = BON
+					modifier = BON_approach_VIG
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -708,12 +741,12 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 10
-		available = { }
-		bypass = { }
+		available = { VIG = { has_government = neutrality } }
+		bypass = { VIG = { exists = no } }
 		prerequisite = { focus = BON_impact_on_vig }
 		available_if_capitulated = yes
 		completion_reward = {
-			add_political_power = 150
+			add_to_faction = VIG
 		}
 		ai_will_do = {
 			factor = 25
@@ -728,11 +761,14 @@ focus_tree = {
 		y = 1
 		cost = 10
 		available = { }
-		bypass = { }
+		bypass = { has_war_with = JHS }
 		prerequisite = { focus = BON_invite_vig }
 		available_if_capitulated = yes
 		completion_reward = {
-			add_political_power = 150
+			create_wargoal = {
+				target = JHS
+				type = annex_everything
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -747,14 +783,21 @@ focus_tree = {
 		y = 1
 		cost = 10
 		available = { }
-		bypass = { }
+		bypass = { has_war_with = STG }
 		prerequisite = { focus = BON_nordic_security_strategy }
 		available_if_capitulated = yes
 		completion_reward = {
-			add_political_power = 150
+			create_wargoal = {
+				target = STG
+				type = annex_everything
+			}
 		}
 		ai_will_do = {
 			factor = 25
+			modifier = {
+				has_war_with = ANZ
+				factor = 0.1
+			}
 		}
 	}
 

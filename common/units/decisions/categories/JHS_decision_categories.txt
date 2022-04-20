@@ -1,0 +1,20 @@
+jhs_missions = {
+	icon = GFX_decision_category_senshado
+	allowed = { tag = JHS }
+}
+jhs_government = {
+	icon = GFX_decision_category_senshado
+	allowed = { tag = JHS }
+}
+jhs_industry = {
+	icon = GFX_decision_category_senshado
+	allowed = { tag = JHS }
+}
+jhs_civil_war = {
+	icon = GFX_decision_category_senshado
+	allowed = { tag = JHS }
+}
+jhs_diplomatic = {
+	icon = GFX_decision_category_senshado
+	allowed = { tag = JHS }
+}

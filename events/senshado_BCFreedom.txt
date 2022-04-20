@@ -12,7 +12,7 @@ country_event = {
 	title = bcfreedom.1.t
 	desc = bcfreedom.1.d
 	picture = GFX_report_event_german_speech
-	fire_only_one = yes
+	fire_only_once = yes
 	trigger = {
 		tag = BCF
 		date = 1972.10.01
@@ -719,7 +719,7 @@ country_event = {
 	title = bcfreedom.20.t
 	desc = bcfreedom.20.d
 	picture = GFX_report_event_german_speech
-	fire_only_one = yes
+	fire_only_once = yes
 	trigger = {
 		tag = BCF
 		date = 1974.09.01
@@ -1940,14 +1940,14 @@ country_event = {
 	}
 }
 
-#BC自由的崩溃&何去何从
 country_event = {
 	id = bcfreedom_civil_war.3
 	title = bcfreedom_civil_war.3.t
 	desc = bcfreedom_civil_war.3.d
 	picture = GFX_report_event_german_speech
 	is_triggered_only = yes
-	immediate = {
+	option = {
+		name = bcfreedom_civil_war.3.a
 		KGA = {
 			set_state_owner = 42
 			set_state_owner = 50
@@ -1957,6 +1957,7 @@ country_event = {
 			set_state_owner = 16
 			set_state_owner = 18
 			set_state_owner = 29
+			change_tag_from = root
 		}
 		B02 = {
 			set_state_owner = 26
@@ -1991,20 +1992,32 @@ country_event = {
 			days = 5
 		}
 	}
+}
+
+#何去何从
+country_event = {
+	id = bcfreedom_civil_war.4
+	title = bcfreedom_civil_war.4.t
+	desc = bcfreedom_civil_war.4.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	immediate = {
+		country_event = {
+			id = bcfreedom_civil_war.5
+			days = 5
+		}
+	}
 	option = {
-		name = bcfreedom_civil_war.3.a
+		name = bcfreedom_civil_war.4.a
 		trigger = {
 			NOT = {
 				has_completed_focus = BCF_country_of_the_noble
 			}
 		}
-		B01 = {
-			change_tag_from = root
-		}
 		unlock_national_focus = BCF_third_orelans_conference
 	}
 	option = {
-		name = bcfreedom_civil_war.3.b
+		name = bcfreedom_civil_war.4.b
 		trigger = {
 			NOT = {
 				has_completed_focus = BCF_will_of_the_people
@@ -2016,25 +2029,25 @@ country_event = {
 		unlock_national_focus = BCF_third_orelans_conference
 	}
 	option = {
-		name = bcfreedom_civil_war.3.c
+		name = bcfreedom_civil_war.4.c
 		ORL = {
 			change_tag_from = root
 		}
 	}
 	option = {
-		name = bcfreedom_civil_war.3.d
+		name = bcfreedom_civil_war.4.e
 		MGC = {
 			change_tag_from = root
 		}
 	}
 	option = {
-		name = bcfreedom_civil_war.3.e
+		name = bcfreedom_civil_war.4.f
 		BRE = {
 			change_tag_from = root
 		}
 	}
 	option = {
-		name = bcfreedom_civil_war.3.f
+		name = bcfreedom_civil_war.4.g
 		AQU = {
 			change_tag_from = root
 		}
@@ -2043,13 +2056,13 @@ country_event = {
 
 #不可避免的内战
 country_event = {
-	id = bcfreedom_civil_war.4
-	title = bcfreedom_civil_war.4.t
-	desc = bcfreedom_civil_war.4.d
+	id = bcfreedom_civil_war.5
+	title = bcfreedom_civil_war.5.t
+	desc = bcfreedom_civil_war.5.d
 	picture = GFX_report_event_german_speech
 	is_triggered_only = yes
 	option = {
-		name = bcfreedom_civil_war.4.a
+		name = bcfreedom_civil_war.5.a
 		set_global_flag = BCF_CIVIL_WAR_START
 		B01 = {
 			declare_war_on = {
@@ -2126,9 +2139,9 @@ country_event = {
 
 #安藤重新统一
 country_event = {
-	id = bcfreedom_civil_war.5
-	title = bcfreedom_civil_war.5.t
-	desc = bcfreedom_civil_war.5.d
+	id = bcfreedom_civil_war.6
+	title = bcfreedom_civil_war.6.t
+	desc = bcfreedom_civil_war.6.d
 	picture = GFX_report_event_german_speech
 	trigger = {
 		has_global_flag = BCF_CIVIL_WAR_START
@@ -2147,7 +2160,7 @@ country_event = {
 		clr_global_flag = NO_BCF
 	}
 	option = {
-		name = bcfreedom_civil_war.5.a
+		name = bcfreedom_civil_war.6.a
 		BCF = {
 			change_tag_from = root
 			annex_country = {
@@ -2162,9 +2175,9 @@ country_event = {
 
 #押田重新统一
 country_event = {
-	id = bcfreedom_civil_war.6
-	title = bcfreedom_civil_war.6.t
-	desc = bcfreedom_civil_war.6.d
+	id = bcfreedom_civil_war.7
+	title = bcfreedom_civil_war.7.t
+	desc = bcfreedom_civil_war.7.d
 	picture = GFX_report_event_german_speech
 	trigger = {
 		has_global_flag = BCF_CIVIL_WAR_START
@@ -2183,11 +2196,11 @@ country_event = {
 		clr_global_flag = NO_BCF
 	}
 	option = {
-		name = bcfreedom_civil_war.6.a
+		name = bcfreedom_civil_war.7.a
 		add_stability = 0.1
 	}
 	option = {
-		name = bcfreedom_civil_war.6.b
+		name = bcfreedom_civil_war.7.b
 		BCF = {
 			change_tag_from = root
 			annex_country = {
@@ -2208,9 +2221,9 @@ country_event = {
 
 #玛丽重新统一
 country_event = {
-	id = bcfreedom_civil_war.7
-	title = bcfreedom_civil_war.7.t
-	desc = bcfreedom_civil_war.7.d
+	id = bcfreedom_civil_war.8
+	title = bcfreedom_civil_war.8.t
+	desc = bcfreedom_civil_war.8.d
 	picture = GFX_report_event_german_speech
 	trigger = {
 		has_global_flag = BCF_CIVIL_WAR_START
@@ -2222,42 +2235,6 @@ country_event = {
 			country_exists = B01
 			country_exists = MGC
 			country_exists = AQU
-		}
-	}
-	immediate = {
-		set_global_flag = BCF_CIVIL_WAR_END
-		clr_global_flag = NO_BCF
-	}
-	option = {
-		name = bcfreedom_civil_war.7.a
-		BCF = {
-			change_tag_from = root
-			annex_country = {
-				target = ROOT
-			}
-			set_politics = {
-				ruling_party = neutrality
-			}
-		}
-	}
-}
-
-#阿斯帕拉格斯重新统一
-country_event = {
-	id = bcfreedom_civil_war.8
-	title = bcfreedom_civil_war.8.t
-	desc = bcfreedom_civil_war.8.d
-	picture = GFX_report_event_german_speech
-	trigger = {
-		has_global_flag = BCF_CIVIL_WAR_START
-		has_global_flag = NO_BCF
-		tag = AQU
-		NOT = {
-			country_exists = B02
-			country_exists = ORL
-			country_exists = BRE
-			country_exists = MGC
-			country_exists = B01
 		}
 	}
 	immediate = {
@@ -2278,7 +2255,7 @@ country_event = {
 	}
 }
 
-#波尔多重新统一
+#阿斯帕拉格斯重新统一
 country_event = {
 	id = bcfreedom_civil_war.9
 	title = bcfreedom_civil_war.9.t
@@ -2287,13 +2264,13 @@ country_event = {
 	trigger = {
 		has_global_flag = BCF_CIVIL_WAR_START
 		has_global_flag = NO_BCF
-		tag = MGC
+		tag = AQU
 		NOT = {
 			country_exists = B02
 			country_exists = ORL
 			country_exists = BRE
+			country_exists = MGC
 			country_exists = B01
-			country_exists = AQU
 		}
 	}
 	immediate = {
@@ -2314,11 +2291,47 @@ country_event = {
 	}
 }
 
-#马奇诺重新统一
+#波尔多重新统一
 country_event = {
 	id = bcfreedom_civil_war.10
 	title = bcfreedom_civil_war.10.t
 	desc = bcfreedom_civil_war.10.d
+	picture = GFX_report_event_german_speech
+	trigger = {
+		has_global_flag = BCF_CIVIL_WAR_START
+		has_global_flag = NO_BCF
+		tag = MGC
+		NOT = {
+			country_exists = B02
+			country_exists = ORL
+			country_exists = BRE
+			country_exists = B01
+			country_exists = AQU
+		}
+	}
+	immediate = {
+		set_global_flag = BCF_CIVIL_WAR_END
+		clr_global_flag = NO_BCF
+	}
+	option = {
+		name = bcfreedom_civil_war.10.a
+		BCF = {
+			change_tag_from = root
+			annex_country = {
+				target = ROOT
+			}
+			set_politics = {
+				ruling_party = neutrality
+			}
+		}
+	}
+}
+
+#马奇诺重新统一
+country_event = {
+	id = bcfreedom_civil_war.11
+	title = bcfreedom_civil_war.11.t
+	desc = bcfreedom_civil_war.11.d
 	picture = GFX_report_event_german_speech
 	trigger = {
 		has_global_flag = BCF_CIVIL_WAR_START
@@ -2337,7 +2350,7 @@ country_event = {
 		clr_global_flag = NO_BCF
 	}
 	option = {
-		name = bcfreedom_civil_war.10.a
+		name = bcfreedom_civil_war.11.a
 		BCF = {
 			change_tag_from = root
 			annex_country = {

@@ -1,5 +1,14 @@
 ideas = {
 	country = {
+		#VIG冯步诺外交影响
+		BON_influence_bonple = {
+			allowed = { tag = VIG }
+			allowed_civil_war = { always = no }
+			modifier = {
+				neutrality_drift = 0.05
+			}
+		}
+
 		#波兰最高战略指挥部
 		BON_highest_strategic_command = {
 			allowed = { tag = BON }

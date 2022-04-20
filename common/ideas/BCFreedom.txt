@@ -85,7 +85,7 @@ ideas = {
 			}
 		}
 		#派系斗争5
-		BCF_faction_struggle_5 = {
+		BCF_faction_struggle_4 = {
 			allowed = {
 				tag = BCF
 			}
@@ -99,7 +99,7 @@ ideas = {
 			}
 		}
 		#派系斗争4
-		BCF_faction_struggle_4 = {
+		BCF_faction_struggle_3 = {
 			allowed = {
 				tag = BCF
 			}
@@ -113,7 +113,7 @@ ideas = {
 			}
 		}
 		#派系斗争3
-		BCF_faction_struggle_3 = {
+		BCF_faction_struggle_2 = {
 			allowed = {
 				tag = BCF
 			}
@@ -127,7 +127,7 @@ ideas = {
 			}
 		}
 		#派系斗争2
-		BCF_faction_struggle_2 = {
+		BCF_faction_struggle_1 = {
 			allowed = {
 				tag = BCF
 			}
@@ -141,7 +141,7 @@ ideas = {
 			}
 		}
 		#派系斗争1
-		BCF_faction_struggle_1 = {
+		BCF_faction_struggle_0 = {
 			allowed = {
 				tag = BCF
 			}

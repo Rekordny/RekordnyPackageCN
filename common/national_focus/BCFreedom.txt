@@ -858,10 +858,7 @@ focus_tree = {
 				remove_idea = BCF_nationalism_1
 				add_idea = BCF_nationalism_2
 			}
-			swap_ideas = {
-				remove_idea = BCF_political_instability_1
-				add_idea = BCF_political_instability_0
-			}
+			remove_ideas = BCF_political_instability_1
 		}
 	}
 
@@ -1768,7 +1765,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "Marie"
+				character = BCF_marie
 				ruling_only = yes
 			}
 		}

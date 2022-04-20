@@ -28,8 +28,7 @@ division_template = {
 		motorized = { x = 1 y = 1 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 2 }
+		engineer = { x = 0 y = 0 } 		artillery = { x = 0 y = 1 }
 	}
 }
 division_template = {
@@ -39,8 +38,8 @@ division_template = {
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
-        light_armor = { x = 0 y = 2 }
-        light_armor = { x = 1 y = 2 }
+        light_armor = { x = 1 y = 0 }
+        light_armor = { x = 1 y = 1 }
 	}
 	support = {
         engineer = { x = 0 y = 0 }

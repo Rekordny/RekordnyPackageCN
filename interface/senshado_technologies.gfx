@@ -1,5 +1,95 @@
 spriteTypes = {	
 	SpriteType = {
+		name = "GFX_air_gun_medium"
+		texturefile = "gfx/interface/technologies/air_gun.dds"
+	}
+	SpriteType = {
+		name = "GFX_air_gun2_medium"
+		texturefile = "gfx/interface/technologies/air_gun2.dds"
+	}
+	SpriteType = {
+		name = "GFX_air_gun3_medium"
+		texturefile = "gfx/interface/technologies/air_gun3.dds"
+	}
+	SpriteType = {
+		name = "GFX_air_missile_medium"
+		texturefile = "gfx/interface/technologies/air_missile.dds"
+	}
+	SpriteType = {
+		name = "GFX_air_missile2_medium"
+		texturefile = "gfx/interface/technologies/air_missile2.dds"
+	}
+	SpriteType = {
+		name = "GFX_air_missile3_medium"
+		texturefile = "gfx/interface/technologies/air_missile3.dds"
+	}
+	SpriteType = {
+		name = "GFX_air_maneuverability_medium"
+		texturefile = "gfx/interface/technologies/air_maneuverability.dds"
+	}
+	SpriteType = {
+		name = "GFX_air_maneuverability2_medium"
+		texturefile = "gfx/interface/technologies/air_maneuverability2.dds"
+	}
+	SpriteType = {
+		name = "GFX_air_maneuverability3_medium"
+		texturefile = "gfx/interface/technologies/air_maneuverability3.dds"
+	}
+	SpriteType = {
+		name = "GFX_air_engine_medium"
+		texturefile = "gfx/interface/technologies/air_engine.dds"
+	}
+	SpriteType = {
+		name = "GFX_air_engine2_medium"
+		texturefile = "gfx/interface/technologies/air_engine2.dds"
+	}
+	SpriteType = {
+		name = "GFX_air_engine3_medium"
+		texturefile = "gfx/interface/technologies/air_engine3.dds"
+	}
+	SpriteType = {
+		name = "GFX_air_weapon_rack_medium"
+		texturefile = "gfx/interface/technologies/air_weapon_rack.dds"
+	}
+	SpriteType = {
+		name = "GFX_air_ccv_medium"
+		texturefile = "gfx/interface/technologies/air_ccv.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_early_CIWS_medium"
+		texturefile = "gfx/interface/technologies/early_CIWS.dds"
+	}
+	SpriteType = {
+		name = "GFX_basic_CIWS_medium"
+		texturefile = "gfx/interface/technologies/basic_CIWS.dds"
+	}
+	SpriteType = {
+		name = "GFX_improved_CIWS_medium"
+		texturefile = "gfx/interface/technologies/improved_CIWS.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_CIWS_medium"
+		texturefile = "gfx/interface/technologies/advanced_CIWS.dds"
+	}
+	SpriteType = {
+		name = "GFX_early_VLS_medium"
+		texturefile = "gfx/interface/technologies/early_VLS.dds"
+	}
+	SpriteType = {
+		name = "GFX_basic_VLS_medium"
+		texturefile = "gfx/interface/technologies/basic_VLS.dds"
+	}
+	SpriteType = {
+		name = "GFX_improved_VLS_medium"
+		texturefile = "gfx/interface/technologies/improved_VLS.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_VLS_medium"
+		texturefile = "gfx/interface/technologies/advanced_VLS.dds"
+	}
+	SpriteType = {
 		name = "GFX_radar_identify_medium"
 		texturefile = "gfx/interface/technologies/radar_identify.dds"
 	}

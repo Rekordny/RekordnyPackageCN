@@ -1,0 +1,123 @@
+SDS_1 = 
+{
+	name = "Infantry Division"
+
+	for_countries = { SDS GBT }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. Infantry Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Infantry Division" }
+		2 = { "%d. Infantry Division" }
+		3 = { "%d. Infantry Division" }
+		4 = { "%d. Infantry Division" }
+		5 = { "%d. Infantry Division" }
+		6 = { "%d. Infantry Division" }
+		7 = { "%d. Infantry Division" }
+		8 = { "%d. Infantry Division" }
+		9 = { "%d. Infantry Division" }
+		10 = { "%d. Infantry Division" }
+		11 = { "%d. Infantry Division" }
+		12 = { "%d. Infantry Division" }
+		13 = { "%d. Infantry Division" }
+		14 = { "%d. Infantry Division" }
+		15 = { "%d. Infantry Division" }
+		16 = { "%d. Infantry Division" }
+		17 = { "%d. Infantry Division" }
+		18 = { "%d. Infantry Division" }
+		19 = { "%d. Infantry Division" }
+
+	}
+}
+SDS_2 = 
+{
+	name = "Motorized Division"
+
+	for_countries = { SDS GBT }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. Motorized Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Motorized Division" }
+		2 = { "%d. Motorized Division" }
+		3 = { "%d. Motorized Division" }
+		4 = { "%d. Motorized Division" }
+		5 = { "%d. Motorized Division" }
+		6 = { "%d. Motorized Division" }
+		7 = { "%d. Motorized Division" }
+		8 = { "%d. Motorized Division" }
+		9 = { "%d. Motorized Division" }
+		10 = { "%d. Motorized Division" }
+		11 = { "%d. Motorized Division" }
+		12 = { "%d. Motorized Division" }
+		13 = { "%d. Motorized Division" }
+		14 = { "%d. Motorized Division" }
+		15 = { "%d. Motorized Division" }
+		16 = { "%d. Motorized Division" }
+		17 = { "%d. Motorized Division" }
+		18 = { "%d. Motorized Division" }
+		19 = { "%d. Motorized Division" }
+
+	}
+}
+SDS_3 = 
+{
+	name = "Armor Division"
+
+	for_countries = { SDS GBT }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. Armor Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Armor Division" }
+		2 = { "%d. Armor Division" }
+		3 = { "%d. Armor Division" }
+		4 = { "%d. Armor Division" }
+		5 = { "%d. Armor Division" }
+		6 = { "%d. Armor Division" }
+		7 = { "%d. Armor Division" }
+		8 = { "%d. Armor Division" }
+		9 = { "%d. Armor Division" }
+		10 = { "%d. Armor Division" }
+		11 = { "%d. Armor Division" }
+		12 = { "%d. Armor Division" }
+		13 = { "%d. Armor Division" }
+		14 = { "%d. Armor Division" }
+		15 = { "%d. Armor Division" }
+		16 = { "%d. Armor Division" }
+		17 = { "%d. Armor Division" }
+		18 = { "%d. Armor Division" }
+		19 = { "%d. Armor Division" }
+
+	}
+}

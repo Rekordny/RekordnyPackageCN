@@ -41,7 +41,7 @@ country_event = {
 	}
 }
 
-#我有一个梦想1972.11.9
+#民权危机1972.11.9
 country_event = {
 	id = Saunders.4
 	title = Saunders.4.t
@@ -168,10 +168,6 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = Saunders.10.a
-		add_popularity = {
-			ideology = democratic
-			popularity = 0.05
-		}
 		add_political_power = 100
 		add_war_support = 0.05
 		unlock_decision_category_tooltip = sds_control_zone
@@ -188,6 +184,8 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = Saunders.11.a
+		set_country_flag = SDS_LEGITIMACY_ENABLE
+		unlock_decision_category_tooltip = sds_control_zone
 		add_political_power = 30
 		add_popularity = {
 			ideology = democratic
@@ -245,7 +243,109 @@ country_event = {
 		custom_effect_tooltip = sds_tooltip20
 		add_to_variable = { variable_SDS_legitimacy = 20 }
 		hidden_effect = {
-			country_event = { id = Saunders.13 days = 5 }
+			country_event = { id = Saunders.24 days = 5 }
+		}
+	}
+}
+
+#舆论的转向
+country_event = {
+	id = Saunders.24
+	title = Saunders.24.t
+	desc = Saunders.24.d
+	picture = GFX_event_sds_country_24
+	trigger = { }
+	is_triggered_only = yes
+	option = {
+		name = Saunders.24.a
+		
+		add_political_power = -100
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.05
+		}
+		add_stability = -0.05
+		hidden_effect = {
+			country_event = { id = Saunders.25 days = 5 }
+		}
+	}
+}
+
+#失败的刺杀
+country_event = {
+	id = Saunders.25
+	title = Saunders.25.t
+	desc = Saunders.25.d
+	picture = GFX_event_sds_country_25
+	trigger = { }
+	is_triggered_only = yes
+	option = {
+		name = Saunders.25.a
+		
+		add_political_power = -25
+		add_stability = -0.05
+		hidden_effect = {
+			country_event = { id = Saunders.26 days = 5 }
+		}
+	}
+}
+
+#灾难
+country_event = {
+	id = Saunders.26
+	title = Saunders.26.t
+	desc = Saunders.26.d
+	picture = GFX_event_sds_country_26
+	trigger = { }
+	is_triggered_only = yes
+	option = {
+		name = Saunders.26.a
+		371 = { set_demilitarized_zone = yes }
+		372 = { set_demilitarized_zone = yes }
+		373 = { set_demilitarized_zone = yes }
+		374 = { set_demilitarized_zone = yes }
+		375 = { set_demilitarized_zone = yes }
+		376 = { set_demilitarized_zone = yes }
+		377 = { set_demilitarized_zone = yes }
+		378 = { set_demilitarized_zone = yes }
+		379 = { set_demilitarized_zone = yes }
+		380 = { set_demilitarized_zone = yes }
+		381 = { set_demilitarized_zone = yes }
+		382 = { set_demilitarized_zone = yes }
+		383 = { set_demilitarized_zone = yes }
+		384 = { set_demilitarized_zone = yes }
+		385 = { set_demilitarized_zone = yes }
+		386 = { set_demilitarized_zone = yes }
+		387 = { set_demilitarized_zone = yes }
+		388 = { set_demilitarized_zone = yes }
+		389 = { set_demilitarized_zone = yes }
+		390 = { set_demilitarized_zone = yes }
+		391 = { set_demilitarized_zone = yes }
+		392 = { set_demilitarized_zone = yes }
+		393 = { set_demilitarized_zone = yes }
+		394 = { set_demilitarized_zone = yes }
+		395 = { set_demilitarized_zone = yes }
+		
+		hidden_effect = {
+			country_event = { id = Saunders.27 days = 3 }
+		}
+	}
+}
+
+#财阀拒绝支援
+country_event = {
+	id = Saunders.27
+	title = Saunders.27.t
+	desc = Saunders.27.d
+	picture = GFX_event_sds_country_26
+	trigger = { }
+	is_triggered_only = yes
+	option = {
+		name = Saunders.27.a
+
+		set_country_flag = SDS_NO_SUPPORT_FROM_PLUTOCRATS
+		hidden_effect = {
+			country_event = { id = Saunders.27 days = 3 }
 		}
 	}
 }
@@ -267,11 +367,14 @@ country_event = {
 		}
 	}
 	option = {
+		trigger = {
+			NOT = { has_country_flag = SDS_FULL_COOP_WITH_COMMUNISM }
+		}
 		name = Saunders.13.b
 		set_country_flag = SDS_FULL_COOP_WITH_PLUTOCRATS
 		custom_effect_tooltip = sds_tooltip6
 		hidden_effect = {
-			country_event = { id = Saunders.14 days = 5 }
+			country_event = { id = Saunders.19 days = 5 }
 		}
 	}
 }
@@ -330,7 +433,6 @@ country_event = {
 		retire_country_leader = SDS_yoshinaga
 		hidden_effect = {
 			country_event = { id = Saunders.17 days = 2 }
-			set_country_flag = SDS_LEGITIMACY_ENABLE
 		}
 	}
 }
@@ -506,6 +608,7 @@ country_event = {
 			395 = { set_demilitarized_zone = no }
 			country_event = { id = Saunders.20 days = 3 }
 			country_event = { id = Saunders.22 days = 120 }
+			GBT = { load_oob = GBT_1972 }
 		}
 	}
 }

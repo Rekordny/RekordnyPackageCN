@@ -9,1532 +9,511 @@ focus_tree = {
 	}
 	default = no
 
+	#继续之风
 	focus = {
-		id = JHS_Rule_JHS
+		id = JHS_JHS_cloud
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 10
 		x = 14
 		y = 0
 		completion_reward = {
-			add_political_power = 120
-			country_event = { id = JHS.001 }
+			add_political_power = 100
 		}
 	}
 
+	#"桥梁"的丧失
 	focus = {
-		id = JHS_Financial_Report
+		id = JHS_lost_of_the_bridge
 		icon = GFX_goal_unknown
-		cost = 2.00
 		prerequisite = {
-			focus = JHS_Rule_JHS
+			focus = JHS_JHS_cloud
 		}
-		x = 8
+		relative_position_id = JHS_JHS_cloud
+		cost = 10
+		x = 0
+		y = 1
+		completion_reward = {
+			add_stability = -0.1
+		}
+	}
+	#财政亏空
+	focus = {
+		id = JHS_une_eco
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JHS_lost_of_the_bridge
+		}
+		relative_position_id = JHS_lost_of_the_bridge
+		cost = 10
+		x = 0
 		y = 1
 		completion_reward = {
 			country_event = {
-				id = JHS.002
+				id = JHS_event.1
 			}
 		}
 	}
-
+	#物资匮乏
 	focus = {
-		id = JHS_Industrial_plan
+		id = JHS_lack_resources
 		icon = GFX_goal_unknown
-		cost = 2.00
 		prerequisite = {
-			focus = JHS_Financial_Report
+			focus = JHS_une_eco
 		}
-		x = 5
-		y = 2
-		completion_reward = {
-			country_event = { id = JHS.003 }
-		}
-	}
-
-	focus = {
-		id = JHS_Infrastructure_engineering
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Industrial_plan
-		}
-		x = 5
-		y = 3
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1
-				uses = 1
-				category = industry
-			}
-		}
-	}
-
-	focus = {
-		id = JHS_Defense_zone
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Infrastructure_engineering
-		}
-		x = 1
-		y = 4
-		completion_reward = {
-			111 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					custom_effect_tooltip = JHS_Defense_Zone_set
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 6186
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 6082
-							instant_build = yes
-						}
-					    add_building_construction = {
-					    	type = bunker
-					    	level = 2
-					    	province = 52
-					    	instant_build = yes
-					    }
-					}
-				}
-			}
-
-			150 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					custom_effect_tooltip = JHS_Defense_Zone_set
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 139
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 3030
-							instant_build = yes
-						}
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = JHS_Finnish_highway
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Infrastructure_engineering
-		}
-		x = 4
-		y = 4
-		completion_reward = {
-			150 = {
-				if = {
-					limit = {is_controlled_by = ROOT }
-					hidden_effect = {
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-			}
-			111 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					hidden_effect = {
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-			}
-			149 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					hidden_effect = {
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = JHS_Adjust_military_budget
-		icon = GFX_goal_unknown
-		cost = 4.00
-		prerequisite = {
-			focus = JHS_Financial_Report
-		}
-		x = 11
-		y = 2
-		completion_reward = {
-			add_timed_idea = {
-				idea = JHS_Adjust_Budget
-				days = 30
-			}
-		}
-
-	}
-
-	focus = {
-		id = JHS_Military_investment
-		icon = GFX_goal_unknown
-		cost = 2.00
-		prerequisite = {
-			focus = JHS_Adjust_military_budget
-		}
-		x = 11
-		y = 3
-		completion_reward = {
-			country_event = { id = JHS.005 }
-			add_timed_idea = {
-				idea = JHS_Investing
-				days = 30
-			}
-		}
-	}
-
-	focus = {
-		id = JHS_Adjust_budget
-		icon = GFX_goal_unknown
-		cost = 2.00
-		prerequisite = {
-			focus = JHS_Infrastructure_engineering
-		}
-		prerequisite = {
-			focus = JHS_Military_investment
-		}
-		x = 6
-		y = 4
-		completion_reward = {
-			add_timed_idea = {
-				idea = JHS_Adjust_Budget
-				days = 30
-			}
-		}
-
-	}
-
-	focus = {
-		id = JHS_Enterprise_bidding
-		icon = GFX_goal_unknown
-		cost = 2.00
-		prerequisite = {
-			focus = JHS_Military_investment
-		}
-		x = 11
-		y = 4
-		completion_reward = {
-			country_event = { id = JHS.018 }
-			add_timed_idea = {
-				idea = JHS_Adjust_Budget
-				days = 30
-			}
-		}
-	}
-
-	focus = {
-		id = JHS_KMDB
-		icon = GFX_goal_unknown
-		cost = 3.60
-		prerequisite = {
-			focus = JHS_Enterprise_bidding
-		}
-		mutually_exclusive = {
-			focus = JHS_SAKO_Oy
-			focus = JHS_NYSE_GD
-		}
-		x = 9
-		y = 5
-		completion_reward = {
-			country_event = { id = JHS.007 }
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = KMDB
-		}
-	}
-	
-	focus = {
-		id = JHS_SAKO_Oy
-		icon = GFX_goal_unknown
-		cost = 3.60
-		prerequisite = {
-			focus = JHS_Enterprise_bidding
-		}
-		mutually_exclusive = {
-			focus = JHS_KMDB
-			focus = JHS_NYSE_GD
-		}
-		x = 11
-		y = 5
-		completion_reward = {
-			country_event = { id = JHS.008 }
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = SAKO_Oy
-		}
-	}
-
-	focus = {
-		id = JHS_NYSE_GD
-		icon = GFX_goal_unknown
-		cost = 3.60
-		prerequisite = {
-			focus = JHS_Enterprise_bidding
-		}
-		mutually_exclusive = {
-			focus = JHS_SAKO_Oy
-			focus = JHS_KMDB
-		}
-		x = 13
-		y = 5
-		completion_reward = {
-			country_event = { id = JHS.009 }
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = NYSE_GD
-		}
-	}
-
-	focus = {
-		id = JHS_Tank_research
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_KMDB
-			focus = JHS_SAKO_Oy
-			focus = JHS_NYSE_GD
-		}
-		x = 11
-		y = 6
-		completion_reward = {
-			add_ideas = JHS_Tank_Research_0
-		}
-	}
-	
-	focus = {
-		id = JHS_Independent_research
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Tank_research
-		}
-		mutually_exclusive = {
-			focus = JHS_Technology_introduction
-		}
-		x = 10
-		y = 7
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = JHS_Tank_Research_0
-				add_idea = JHS_Tank_Research_1
-			}
-			add_tech_bonus = {
-				bonus = 1
-				uses = 2
-				category = armor
-			}
-		}
-
-	}
-
-	focus = {
-		id = JHS_Technology_introduction
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Tank_research
-		}
-		mutually_exclusive = {
-			focus = JHS_Independent_research
-		}
-		x = 12
-		y = 7
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = JHS_Tank_Research_0
-				add_idea = JHS_Tank_Research_2
-			}
-		}
-	}
-
-	focus = {
-		id = JHS_Firepower_and_armor
-		icon = GFX_goal_unknown
-		cost = 4.30
-		prerequisite = {
-			focus = JHS_Technology_introduction
-		}
-		x = 12
-		y = 8
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = JHS_Tank_Research_2
-				add_idea = JHS_Tank_Research_4
-			}
-		}
-	}
-
-	focus = {
-		id = JHS_Student_Union_Meeting
-		icon = GFX_goal_unknown
-		cost = 2.00
-		prerequisite = {
-			focus = JHS_Rule_JHS
-		}
-		x = 19
+		relative_position_id = JHS_une_eco
+		cost = 10
+		x = 0
 		y = 1
 		completion_reward = {
-			country_event = { id = JHS.003 }
-		}
-	}
-
-	focus = {
-		id = JHS_Internal_affairs
-		icon = GFX_goal_unknown
-		cost = 2.00
-		prerequisite = {
-			focus = JHS_Student_Union_Meeting
-		}
-		x = 16
-		y = 2
-		completion_reward = {
-			country_event = { id = JHS.010 }
-			add_ideas = JHS_Emergency_Act
-		}
-	}
-
-	focus = {
-		id = JHS_Emergency_council
-		icon = GFX_goal_unknown
-		cost = 2.00
-		prerequisite = {
-			focus = JHS_Internal_affairs
-		}
-		mutually_exclusive = {
-			focus = JHS_PCC
-		}
-		x = 15
-		y = 3
-		completion_reward = {
-			country_event = { id = JHS.012 }
-		}
-	}
-	focus = {
-		id = JHS_PCC
-		icon = GFX_goal_unknown
-		cost = 2.00
-		prerequisite = {
-			focus = JHS_Internal_affairs
-		}
-		mutually_exclusive = {
-			focus = JHS_Emergency_council
-		}
-		x = 17
-		y = 3
-		completion_reward = {
-			country_event = { id = JHS.030 }
-			swap_ideas = {
-				remove_idea = JHS_Political_Instability_0
-				add_idea = JHS_Political_Consultation
+			country_event = {
+				id = JHS_event.2
 			}
 		}
 	}
+	#米卡的决心
 	focus = {
-		id = JHS_Great_Debate
+		id = JHS_mika_determination
 		icon = GFX_goal_unknown
-		cost = 8.60
 		prerequisite = {
-			focus = JHS_PCC
+			focus = JHS_lack_resources
 		}
-		x = 17
-		y = 4
-
+		relative_position_id = JHS_lack_resources
+		cost = 10
+		x = 0
+		y = 1
 		completion_reward = {
-			custom_effect_tooltip = JHS_Debate_Tooltip
-			country_event = { id = JHS.033 }
+			country_event = {
+				id = JHS_event.3
+			}
+		}
+	}
+	#优良传统
+	focus = {
+		id = JHS_tradition_huaji
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JHS_mika_determination
+		}
+		relative_position_id = JHS_mika_determination
+		available = {
+			has_intelligence_agency = yes
+			num_of_operatives > 0
+			has_country_flag = JHS_MIKA_DETERMINATION_FINISHED
+		}
+		cost = 10
+		x = 0
+		y = 1
+		completion_reward = {
+			unlock_decision_tooltip = JHS_infiltrate_target
+			unlock_decision_tooltip = JHS_tradition_food
+			unlock_decision_tooltip = JHS_tradition_factory_output
+			unlock_decision_tooltip = JHS_tradition_efficiency
+			unlock_decision_tooltip = JHS_tradition_build_speed
 		}
 	}
 
+	#给各国的小礼物
 	focus = {
-		id = JHS_Temporary_Agreement
+		id = JHS_gift_for_countries
 		icon = GFX_goal_unknown
-		cost = 5.00
 		prerequisite = {
-			focus = JHS_Great_Debate
+			focus = JHS_tradition_huaji
 		}
-		x = 17
-		y = 5
+		relative_position_id = JHS_tradition_huaji
+		available = {
+		}
+		cost = 10
+		x = 0
+		y = 1
 		completion_reward = {
-			country_event = { id = JHS.038 } 
-			add_political_power = 120
+			every_country = {
+				country_event = {
+					id = JHS_event.6
+				}
+			}
 		}
 	}
 
+	#风的方向
 	focus = {
-		id = JHS_Foreign_policy
+		id = JHS_direction_of_the_wind
 		icon = GFX_goal_unknown
-		cost = 0.00
 		prerequisite = {
-			focus = JHS_Student_Union_Meeting
+			focus = JHS_gift_for_countries
 		}
-		x = 22
-		y = 2
-	
+		relative_position_id = JHS_gift_for_countries
+		available = {
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = JHS_unstable_society
+				}
+			}
+		}
+		cost = 10
+		x = 0
+		y = 1
 		completion_reward = {
-			custom_effect_tooltip = JHS_Foreign_policy
-			country_event = { id = JHS.011 } 
+			JHS_mika = {
+				swap_country_leader_traits = {
+					remove = JHS_mika_lazy
+					add = JHS_mika_pilot_wind
+				}
+			}
 		}
 	}
-
+	#人民的支持
 	focus = {
-		id = JHS_Independent_diplomacy
+		id = JHS_people_support
 		icon = GFX_goal_unknown
-		cost = 5.00
 		prerequisite = {
-			focus = JHS_Foreign_policy
+			focus = JHS_direction_of_the_wind
 		}
-		mutually_exclusive = {
-			focus = JHS_Dependency_Theory
+		relative_position_id = JHS_direction_of_the_wind
+		available = {
 		}
-		x = 20
-		y = 3
+		cost = 10
+		x = 0
+		y = 1
 		completion_reward = {
-			country_event = { id = JHS.031 }
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.4
+			}
 		}
 	}
-
+	#雪中大盗
 	focus = {
-		id = JHS_Scandinavian_Diplomacy
+		id = JHS_snow_thief
 		icon = GFX_goal_unknown
-		cost = 2.00
 		prerequisite = {
-			focus = JHS_Independent_diplomacy
+			focus = JHS_people_support
 		}
-		x = 20
-		y = 4
+		relative_position_id = JHS_people_support
+		available = {
+		}
+		cost = 10
+		x = 0
+		y = 1
+		completion_reward = {
+			unlock_decision_tooltip = JHS_take_land_army_intel
+			unlock_decision_tooltip = JHS_get_war_goal
+			unlock_decision_tooltip = JHS_steal_guns_from_target
+			unlock_decision_tooltip = JHS_steal_artillery_from_target
+			unlock_decision_tooltip = JHS_steal_supply_from_target
+			unlock_decision_tooltip = JHS_steal_support_from_target
+		}
+	}
+	#波尔卡的复仇
+	focus = {
+		id = JHS_polka_revenge
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JHS_snow_thief
+		}
+		relative_position_id = JHS_snow_thief
+		available = {
+		}
+		cost = 10
+		x = 0
+		y = 1
+		completion_reward = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 146
+					num_provinces = 1
+					on_win = JHS_border_war.1
+					on_lose = JHS_border_war.2
+				}
+				defender = {
+					state = 195
+					num_provinces = 1
+					on_win = JHS_border_war.3
+					on_lose = JHS_border_war.3
+				}
+			}
+		}
+	}
+	#分离维京水产
+	focus = {
+		id = JHS_separate_VIK
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JHS_polka_revenge
+		}
+		relative_position_id = JHS_polka_revenge
+		available = {
+		}
+		cost = 10
+		x = -2
+		y = 1
 		completion_reward = {
 			VIK = {
-				add_opinion_modifier = {
-					target = JHS
-					modifier = JHS_BFF
+				leave_faction = yes
+				set_rule = {
+					can_join_factions = no
+				}
+			}
+		}
+	}
+	#团结一致
+	focus = {
+		id = JHS_solidarity_to_VIK_VIG
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JHS_separate_VIK
+		}
+		relative_position_id = JHS_separate_VIK
+		available = {
+		}
+		cost = 10
+		x = 0
+		y = 1
+		completion_reward = {
+			VIK = {
+				country_event = {
+					id = JHS_event.7
 				}
 			}
 			VIG = {
-				add_opinion_modifier = {
-					target = JHS
-					modifier = JHS_BFF
+				country_event = {
+					id = JHS_event.7
 				}
 			}
 		}
 	}
-
+	#谁是真正的圣诞老人
 	focus = {
-		id = JHS_Dependency_Theory
+		id = JHS_santa_claus
 		icon = GFX_goal_unknown
-		cost = 5.00
 		prerequisite = {
-			focus = JHS_Foreign_policy
+			focus = JHS_polka_revenge
 		}
-		mutually_exclusive = {
-			focus = JHS_Independent_diplomacy
+		relative_position_id = JHS_polka_revenge
+		available = {
 		}
-		x = 25
-		y = 3
+		cost = 10
+		x = 0
+		y = 1
 		completion_reward = {
-			country_event = { id = JHS.032 }
+			add_state_claim = 195
 		}
 	}
-
+	#我们的荣光
 	focus = {
-		id = JHS_Western_Diplomacy
+		id = JHS_our_glory
 		icon = GFX_goal_unknown
-		cost = 2.00
 		prerequisite = {
-			focus = JHS_Dependency_Theory
+			focus = JHS_santa_claus
 		}
-		mutually_exclusive = {
-			focus = JHS_Turn_left
-		}
-		x = 24
-		y = 4
-		completion_reward = {
-			country_event = { id = JHS.036 }
-			PRA = {
-				add_opinion_modifier = {
-					target= JHS
-					modifier = JHS_BFF
-				}
-			}
-
-			SDS = {
-				add_opinion_modifier = {
-					target = JHS
-					modifier = JHS_Traitor
-				}
-			}
-
-			STG = {
-				add_opinion_modifier = {
-					target = JHS
-					modifier = JHS_Traitor
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = JHS_Extension_of_defense
-		icon = GFX_goal_unknown
-		cost = 5.00
 		prerequisite = {
-			focus = JHS_Defense_zone
+			focus = JHS_solidarity_to_VIK_VIG
 		}
-		x = 1
-		y = 5
+		relative_position_id = JHS_santa_claus
+		available = {
+		}
+		cost = 10
+		x = -1
+		y = 1
 		completion_reward = {
-			150 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					custom_effect_tooltip = JHS_Extension_Defense
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 6210
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = 3185
-							instant_build = yes
-						}
-					    add_building_construction = {
-					    	type = bunker
-					    	level = 2
-					    	province = 9181
-					    	instant_build = yes
-					    }
-						add_building_construction = {
-					    	type = bunker
-					    	level = 2
-					    	province = 7
-					    	instant_build = yes
-					    }
+			add_state_core = 195
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = VIK
+						is_core_of = VIG
 					}
 				}
+				JHS = {
+					add_core_of = PREV
+				}
 			}
+			create_faction = NORTHERN_EUROPEAN_JHS_FEDERATION
 		}
 	}
 
+	#自给自足
 	focus = {
-		id = JHS_Snowpiercer
+		id = JHS_self_sufficient
 		icon = GFX_goal_unknown
-		cost = 4.30
-		prerequisite = {
-			focus = JHS_Finnish_highway
-		}
-		x = 4
-		y = 5
+		cost = 10
+		x = 7
+		y = 0
 		completion_reward = {
-			country_event = { id = JHS.004 }
-			148 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					hidden_effect = {
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
+			146 = {
+				add_resource = {
+					type = steel
+					amount = 10
+					state = THIS
 				}
-			}
-			722 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					hidden_effect = {
-						add_building_construction = {
-							type = infrastructure
-							level = 2
-							instant_build = yes
-						}
-					}
+				add_resource = {
+					type = tungsten
+					amount = 10
+					state = THIS
 				}
 			}
 		}
 	}
-
+	#改善基建
 	focus = {
-		id = JHS_Improved_production_standards
+		id = JHS_improve_infrastructure
 		icon = GFX_goal_unknown
-		cost = 4.30
 		prerequisite = {
-			focus = JHS_Adjust_budget
+			focus = JHS_self_sufficient
 		}
-		x = 6
-		y = 5
+		relative_position_id = JHS_self_sufficient
+		cost = 10
+		x = 0
+		y = 1
 		completion_reward = {
-			custom_effect_tooltip = JHS_Industry_Strength_Tooltip
-			JHS_Industry_Strength = yes
-		}
-	}
-
-	focus = {
-		id = JHS_Construct_transportation_system
-		icon = GFX_goal_unknown
-		cost = 4.30
-		prerequisite = {
-			focus = JHS_Snowpiercer
-		}
-		x = 4
-		y = 6
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1
-				uses = 2
-				category = industry
+			every_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
 			}
 		}
 	}
 
+	#改善继续学院
 	focus = {
-		id = Jhs_Improved_working_environment
+		id = JHS_improve_school
 		icon = GFX_goal_unknown
-		cost = 4.30
 		prerequisite = {
-			focus = JHS_Improved_production_standards
+			focus = JHS_improve_infrastructure
 		}
-		x = 6
-		y = 6
+		relative_position_id = JHS_improve_infrastructure
+		cost = 10
+		x = 0
+		y = 1
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1.5
-				uses = 2
-				category = excavation_tech
-			}
-		}
-	}
-	focus = {
-		id = JHS_Production_standard_delineation
-		icon = GFX_goal_unknown
-		cost = 4.30
-		prerequisite = {
-			focus = JHS_Construct_transportation_system
-		}
-		prerequisite = {
-			focus = JHS_Improved_working_environment
-		}
-		x = 5
-		y = 7
-		
-		completion_reward = {
-			custom_effect_tooltip = JHS_Industry_Strength_Tooltip
-			JHS_Industry_Strength = yes
+			add_ideas = JHS_school_improve
 		}
 	}
 
+	#设立战车道研究部
 	focus = {
-		id = JHS_Quality_first
+		id = JHS_setup_senshado_research_bureau
 		icon = GFX_goal_unknown
-		cost = 5.00
 		prerequisite = {
-			focus = JHS_Production_standard_delineation
+			focus = JHS_improve_school
 		}
-		x = 4
-		y = 8
-		
-		completion_reward = {
-			custom_effect_tooltip = JHS_Industry_Strength_Tooltip
-			JHS_Industry_Strength = yes
-		}
-	}
-	focus = {
-		id = JHS_Quantity_advantage
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Production_standard_delineation
-		}
-		x = 6
-		y = 8
-		
-		completion_reward = {
-			custom_effect_tooltip = JHS_Industry_Strength_Tooltip
-			JHS_Industry_Strength = yes
-		}
-	}
-
-	focus = {
-		id = JHS_Tekes
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Improved_working_environment
-		}
-		x = 8
-		y = 7
+		relative_position_id = JHS_improve_school
+		cost = 10
+		x = 0
+		y = 1
 		completion_reward = {
 			add_research_slot = 1
-			country_event = { id = JHS.021 }
 		}
 	}
+
+	#建设民生机构
 	focus = {
-		id = JHS_Technology_leads_production
+		id = JHS_build_industrial_complex
 		icon = GFX_goal_unknown
-		cost = 5.00
 		prerequisite = {
-			focus = JHS_Tekes
+			focus = JHS_setup_senshado_research_bureau
 		}
-		x = 8
-		y = 8
+		relative_position_id = JHS_setup_senshado_research_bureau
+		cost = 10
+		x = 0
+		y = 1
 		completion_reward = {
-			country_event = { id = JHS.021 }
-			add_tech_bonus = {
-				bonus = 1
-				uses = 3
-				category = electronics
+			add_offsite_building = {
+				type = industrial_complex
+				level = 5
 			}
 		}
 	}
 
+	#战争的压迫
 	focus = {
-		id = JHS_Construct_the_industrial_chain
+		id = JHS_build_industrial_complex
 		icon = GFX_goal_unknown
-		cost = 8.60
 		prerequisite = {
-			focus = JHS_Quality_first
+			focus = JHS_setup_senshado_research_bureau
 		}
-		prerequisite = {
-			focus = JHS_Quantity_advantage
-		}
-		prerequisite = {
-			focus = JHS_Technology_leads_production
-		}
-		x = 6
-		y = 9
-		
+		relative_position_id = JHS_setup_senshado_research_bureau
+		cost = 10
+		x = 0
+		y = 1
 		completion_reward = {
-			custom_effect_tooltip = JHS_Industry_Strength_Tooltip
-			country_event = { id = JHS.014 }
-			JHS_Industry_Strength = yes
-		}
-	}
-	focus = {
-		id = JHS_IDA
-		icon = GFX_goal_unknown
-		cost = 8.60
-		prerequisite = {
-			focus = JHS_Construct_the_industrial_chain
-		}
-		x = 6
-		y = 10
-		
-		completion_reward = {
-			custom_effect_tooltip = JHS_Industry_Strength_Tooltip
-			country_event = { id = JHS.015 }
-			JHS_Industry_Strength = yes
-		}
-	}
-	focus = {
-		id = JHS_Enhance_breakthrough_and_performance
-		icon = GFX_goal_unknown
-		cost = 4.30
-		prerequisite = {
-			focus = JHS_Independent_research
-		}
-		x = 10
-		y = 8
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = JHS_Tank_Research_1
-				add_idea = JHS_Tank_Research_3
+			add_offsite_building = {
+				type = arms_factory
+				level = 5
 			}
 		}
 	}
 
+	#继续特色市场经济
 	focus = {
-		id = JHS_Modern_Chasseur
+		id = JHS_characteristic_market_economy
 		icon = GFX_goal_unknown
-		cost = 5.00
 		prerequisite = {
-			focus = JHS_Enhance_breakthrough_and_performance
-			focus = JHS_Firepower_and_armor
+			focus = JHS_improve_infrastructure
 		}
-		x = 11
-		y = 9
+		relative_position_id = JHS_improve_infrastructure
+		cost = 5
+		x = 3
+		y = 1
 		completion_reward = {
-			every_army_leader = {
-				add_attack = 1
-				add_defense = 1
-				add_planning = 1
-				add_logistics = 1
+			add_ideas = JHS_financial_deficit
+		}
+	}
+
+	#继续的特色
+	focus = {
+		id = JHS_characteristic_of_JHS
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JHS_characteristic_market_economy
+		}
+		relative_position_id = JHS_characteristic_market_economy
+		cost = 10
+		x = 0
+		y = 1
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = JHS_snow_canteen
 			}
-			add_ideas = JHS_Modern_Chasseur
+			unlock_decision_tooltip = JHS_snow_canteen_consumer_reduce
+			unlock_decision_tooltip = JHS_snow_canteen_output_increase
+			unlock_decision_tooltip = JHS_snow_canteen_efficiency_gain_increase
+			unlock_decision_tooltip = JHS_snow_canteen_max_eff_increase
 		}
 	}
 
+	#形成国内市场
 	focus = {
-		id = JHS_Military_intervention
+		id = JHS_form_internal_market
 		icon = GFX_goal_unknown
-		cost = 2.00
 		prerequisite = {
-			focus = JHS_Emergency_council
+			focus = JHS_characteristic_of_JHS
 		}
-		x = 15
-		y = 4
+		relative_position_id = JHS_characteristic_of_JHS
+		cost = 10
+		x = 0
+		y = 1
 		completion_reward = {
-			country_event = { id = JHS.028 }
-			swap_ideas = {
-				remove_idea = JHS_Political_Instability_0
-				add_idea = JHS_Military_Intervention
-			}
+			remove_ideas = JHS_financial_deficit
 		}
 	}
 
+	#继续新经济
 	focus = {
-		id = JHS_Regent_Conference
+		id = JHS_new_economic
 		icon = GFX_goal_unknown
-		cost = 5.00
 		prerequisite = {
-			focus = JHS_Military_intervention
+			focus = JHS_form_internal_market
 		}
-		x = 15
-		y = 5
+		relative_position_id = JHS_form_internal_market
+		cost = 10
+		x = 0
+		y = 1
 		completion_reward = {
-			country_event = { id = JHS.029 }
-			swap_ideas = {
-				remove_idea = JHS_Military_Intervention
-				add_idea = JHS_Regent_Conference
-			}
+			add_ideas = JHS_new_economic
 		}
 	}
 
-	focus = {
-		id = JHS_Stabilize_the_situation
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Regent_Conference
-			focus = JHS_Temporary_Agreement
-		}
-		x = 16
-		y = 6
-		
-		completion_reward = {
-			custom_effect_tooltip = JHS_Stabilize_the_Situation_Tooltip
-			add_political_power = 100
-			JHS_Stabilize_the_Situation = yes
-		}
-	}
-
-	focus = {
-		id = JHS_Constitutional_conference 
-		icon = GFX_goal_unknown
-		cost = 8.60
-		prerequisite = {
-			focus = JHS_Stabilize_the_situation
-		}
-		x = 16
-		y = 8
-		completion_reward = {
-			country_event = { id = JHS.041 }
-		}
-	}
-
-	focus = {
-		id = JHS_Turn_left
-		icon = GFX_goal_unknown
-		cost = 2.00
-		prerequisite = {
-			focus = JHS_Dependency_Theory
-		}
-		mutually_exclusive = {
-			focus = JHS_Western_Diplomacy
-		}
-		x = 26
-		y = 4
-		completion_reward = {
-			country_event = { id = JHS.037 }
-			SDS = {
-				add_opinion_modifier = {
-					target = JHS
-					modifier = JHS_BFF
-				}
-			}
-			STG = {
-				add_opinion_modifier = {
-					target = JHS
-					modifier = JHS_BFF
-				}
-			}
-			PRA = {
-				add_opinion_modifier = {
-					target = JHS
-					modifier = JHS_Traitor
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = JHS_Paris_Peace_Treaties
-		icon = GFX_goal_unknown
-		cost = 3.00
-		prerequisite = {
-			focus = JHS_Scandinavian_Diplomacy
-			focus = JHS_Western_Diplomacy
-			focus = JHS_Turn_left
-		}
-		x = 22
-		y = 5
-		completion_reward = {
-			country_event = { id = JHS.017 }
-			remove_ideas = JHS_Paris_Treaty
-		}
-	}
-	focus = {
-		id = JHS_Scandinavian_countries
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Paris_Peace_Treaties
-		}
-		mutually_exclusive = {
-			focus = JHS_Noord_Zee_Multi-School_Alliance
-		}
-		x = 24
-		y = 6
-
-	}
-	focus = {
-		id = JHS_State_Council
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Constitutional_conference 
-		}
-		x = 16
-		y = 9
-
-	}
-	focus = {
-		id = JHS_Military_council
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Constitutional_conference 
-		}
-		x = 13
-		y = 9
-
-	}
-	focus = {
-		id = JHS_Foreign_office
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Constitutional_conference 
-		}
-		x = 19
-		y = 9
-
-	}
-	focus = {
-		id = JHS_International_assistance
-		icon = GFX_goal_unknown
-		cost = 2.00
-		prerequisite = {
-			focus = JHS_Scandinavian_countries
-		}
-		x = 24
-		y = 7
-
-	}
-	focus = {
-		id = JHS_Scandinavian_Union
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_International_assistance
-		}
-		x = 24
-		y = 8
-
-	}
-	focus = {
-		id = JHS_Nordic_Outpost
-		icon = GFX_goal_unknown
-		cost = 8.60
-		prerequisite = {
-			focus = JHS_Scandinavian_Union
-		}
-		x = 24
-		y = 9
-
-	}
-	focus = {
-		id = JHS_Noord_Zee_Multi-School_Alliance
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Paris_Peace_Treaties
-		}
-		mutually_exclusive = {
-			focus = JHS_Scandinavian_countries
-		}
-		x = 20
-		y = 6
-
-	}
-	focus = {
-		id = JHS_Integration_process
-		icon = GFX_goal_unknown
-		cost = 6.00
-		prerequisite = {
-			focus = JHS_Noord_Zee_Multi-School_Alliance
-		}
-		x = 20
-		y = 7
-
-	}
-	focus = {
-		id = JHS_Scandinavian_unity
-		icon = GFX_goal_unknown
-		cost = 4.30
-		prerequisite = {
-			focus = JHS_Integration_process
-		}
-		x = 20
-		y = 8
-
-	}
-	focus = {
-		id = JHS_Claim_sovereignty
-		icon = GFX_goal_unknown
-		cost = 2.00
-		prerequisite = {
-			focus = JHS_Scandinavian_unity
-		}
-		prerequisite = {
-			focus = JHS_Foreign_office
-		}
-		x = 19
-		y = 10
-
-	}
-	focus = {
-		id = JHS_Rectify_military_discipline
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Military_council
-		}
-		x = 13
-		y = 11
-
-	}
-	focus = {
-		id = JHS_JHS'S_Military_lectures
-		icon = GFX_goal_unknown
-		cost = 3.60
-		prerequisite = {
-			focus = JHS_Military_council
-		}
-		x = 10
-		y = 11
-
-	}
-	focus = {
-		id = JHS_Expand_enrollment
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_State_Council
-		}
-		x = 15
-		y = 10
-
-	}
-	focus = {
-		id = JHS_Surrounding_the_Baltic_Sea
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Claim_sovereignty
-		}
-		x = 21
-		y = 11
-
-	}
-	focus = {
-		id = JHS_Fleet_escort
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Surrounding_the_Baltic_Sea
-		}
-		x = 21
-		y = 12
-
-	}
-	focus = {
-		id = JHS_Naval_Academy
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Fleet_escort
-		}
-		x = 21
-		y = 13
-
-	}
-	focus = {
-		id = JHS_End_political_violence
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_State_Council
-		}
-		x = 17
-		y = 10
-
-	}
-	focus = {
-		id = JHS_Restore_order
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_End_political_violence
-		}
-		x = 17
-		y = 11
-
-	}
-	focus = {
-		id = JHS_Presidentia_election
-		icon = GFX_goal_unknown
-		cost = 8.60
-		prerequisite = {
-			focus = JHS_Restore_order
-		}
-		x = 17
-		y = 12
-
-	}
-	focus = {
-		id = JHS_Finlandia_Finlandia
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Presidentia_election
-		}
-		prerequisite = {
-			focus = JHS_Claim_sovereignty
-		}
-		x = 19
-		y = 13
-
-	}
-	focus = {
-		id = JHS_Tanker_training
-		icon = GFX_goal_unknown
-		cost = 2.00
-		prerequisite = {
-			focus = JHS_Expand_enrollment
-		}
-		x = 15
-		y = 11
-
-	}
-	focus = {
-		id = JHS_Military_reform
-		icon = GFX_goal_unknown
-		cost = 8.60
-		prerequisite = {
-			focus = JHS_Rectify_military_discipline
-		}
-		prerequisite = {
-			focus = JHS_Tanker_training
-		}
-		x = 14
-		y = 12
-
-	}
-	focus = {
-		id = JHS_JHS's_Maneuver_tactics
-		icon = GFX_goal_unknown
-		cost = 2.00
-		prerequisite = {
-			focus = JHS_JHS'S_Military_lectures
-		}
-		x = 10
-		y = 12
-
-	}
-	focus = {
-		id = JHS_Military_exercises
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Finlandia_Finlandia
-		}
-		x = 19
-		y = 14
-
-	}
-	focus = {
-		id = JHS_Säkkijärven_polkka
-		icon = GFX_goal_unknown
-		cost = 2.00
-		prerequisite = {
-			focus = JHS_Military_exercises
-		}
-		x = 19
-		y = 15
-
-	}
-	focus = {
-		id = JHS_Continuation_War
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Säkkijärven_polkka
-		}
-		x = 19
-		y = 16
-
-	}
-	focus = {
-		id = JHS_The_sky_of_Lapland
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Continuation_War
-		}
-		x = 19
-		y = 17
-
-	}
-	focus = {
-		id = JHS_District_governor
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Continuation_War
-		}
-		x = 21
-		y = 17
-
-	}
-	focus = {
-		id = JHS_Southward_policy
-		icon = GFX_goal_unknown
-		cost = 8.60
-		prerequisite = {
-			focus = JHS_The_sky_of_Lapland
-		}
-		x = 19
-		y = 18
-
-	}
-	focus = {
-		id = JHS_Shake_the_order
-		icon = GFX_goal_unknown
-		cost = 8.60
-		prerequisite = {
-			focus = JHS_The_sky_of_Lapland
-		}
-		x = 21
-		y = 18
-
-	}
-	focus = {
-		id = JHS_March_to_Europe
-		icon = GFX_goal_unknown
-		cost = 8.60
-		prerequisite = {
-			focus = JHS_The_sky_of_Lapland
-		}
-		x = 17
-		y = 18
-
-	}
-	focus = {
-		id = JHS_Tenka_fubu
-		icon = GFX_goal_unknown
-		cost = 8.60
-		prerequisite = {
-			focus = JHS_March_to_Europe
-			focus = JHS_Southward_policy
-			focus = JHS_Shake_the_order
-		}
-		x = 19
-		y = 19
-
-	}
-	focus = {
-		id = JHS_Anti-Nepotism
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Military_reform
-		}
-		x = 13
-		y = 13
-
-	}
-	focus = {
-		id = JHS_Expand_the_conscription
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Military_reform
-		}
-		x = 15
-		y = 13
-
-	}
-	focus = {
-		id = JHS_Professional_army
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Anti-Nepotism
-		}
-		x = 13
-		y = 14
-
-	}
-	focus = {
-		id = JHS_Military_tradition
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Expand_the_conscription
-		}
-		x = 15
-		y = 14
-
-	}
-	focus = {
-		id = JHS_Helsinki_Military_Academy
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Professional_army
-		}
-		prerequisite = {
-			focus = JHS_Military_tradition
-		}
-		x = 14
-		y = 15
-
-	}
-	focus = {
-		id = JHS_Breakthroug_hand_mobility
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_JHS's_Maneuver_tactics
-		}
-		mutually_exclusive = {
-			focus = JHS_Ready_offense
-		}
-		x = 9
-		y = 13
-
-	}
-	focus = {
-		id = JHS_Ready_offense
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_JHS's_Maneuver_tactics
-		}
-		mutually_exclusive = {
-			focus = JHS_Breakthroug_hand_mobility
-		}
-		x = 11
-		y = 13
-
-	}
-	focus = {
-		id =  JHS_Asymmetric_Warfare
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Breakthroug_hand_mobility
-			focus = JHS_Ready_offense
-		}
-		x = 10
-		y = 14
-
-	}
-	focus = {
-		id = JHS_Guerrilla_warfare
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus =  JHS_Asymmetric_Warfare
-		}
-		x = 10
-		y = 15
-
-	}
-	focus = {
-		id = JHS_White_Death
-		icon = GFX_goal_unknown
-		cost = 8.60
-		prerequisite = {
-			focus = JHS_Guerrilla_warfare
-		}
-		prerequisite = {
-			focus = JHS_Helsinki_Military_Academy
-		}
-		x = 12
-		y = 16
-
-	}
-	focus = {
-		id = JHS_Support_weapons
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus =  JHS_Asymmetric_Warfare
-		}
-		x = 8
-		y = 15
-
-	}
-	focus = {
-		id = JHS_Field_ambulance
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JHS_Support_weapons
-		}
-		x = 8
-		y = 16
-
-	}
 
 }

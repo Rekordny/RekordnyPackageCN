@@ -1,34 +1,46 @@
 characters={
 	JHS_mika={
-		name="Mika"
+		name=JHS_mika
 		portraits={
 			civilian={
 				large="gfx/leaders/JHS/Portrait_JHS_Mika.dds"
 			}
 		}
-		country_leader={
-			desc="She is the best"
-			ideology=conservatism
-			expire="2000.1.1.1"
-			id=-1
+		country_leader = {
+			desc = "She is the best"
+			ideology = conservatism
+			expire = "2000.1.1.1"
+			id = -1
+			traits = {
+				JHS_mika_lazy
+			}
 		}
-		country_leader={
-			desc="She is the best"
-			ideology=leninism
-			expire="2000.1.1.1"
-			id=-1
+		country_leader = {
+			desc = "She is the best"
+			ideology = leninism
+			expire = "2000.1.1.1"
+			id = -1
+			traits = {
+				JHS_mika_lazy
+			}
 		}
-		country_leader={
-			desc="She is the best"
-			ideology=nazism
-			expire="2000.1.1.1"
-			id=-1
+		country_leader = {
+			desc = "She is the best"
+			ideology = nazism
+			expire = "2000.1.1.1"
+			id = -1
+			traits = {
+				JHS_mika_lazy
+			}
 		}
-		country_leader={
-			desc="She is the best"
-			ideology=moderatism
-			expire="2000.1.1.1"
-			id=-1
+		country_leader = {
+			desc = "She is the best"
+			ideology = moderatism
+			expire = "2000.1.1.1"
+			id = -1
+			traits = {
+				JHS_mika_lazy
+			}
 		}
 	}
 }

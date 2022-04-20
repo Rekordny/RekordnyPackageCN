@@ -59,7 +59,10 @@ set_technology = {
 set_research_slots = 4
 set_convoys = 20
 oob = STG_1972
-
+declare_war_on = {
+	target = ORA
+	type = annex_everything
+}
 add_ideas = {
 	STG_rise_of_the_labor_party
 	STG_cairns_economy_effect_0
@@ -78,6 +81,9 @@ set_popularities = {
 	communism = 28
 	neutrality = 16
 }
+create_faction = "战车道协会互助联盟"
+add_to_faction = KFA
+add_to_faction = MAP
 
 recruit_character = STG_assam
 recruit_character = STG_orangepekoe

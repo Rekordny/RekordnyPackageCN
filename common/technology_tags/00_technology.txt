@@ -3,6 +3,8 @@
 
 technology_categories = {
 	#mod
+	air_weapon
+	air_addons
 	naval_battery
 	naval_shell
 	naval_dmg_control

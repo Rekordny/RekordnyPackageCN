@@ -14,7 +14,7 @@ state={
 		}
 
 		add_core_of = STG
-
+		add_core_of = ORA
 	}
 
 	provinces={

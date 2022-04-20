@@ -19,44 +19,36 @@ set_popularities = {
 	communism = 25
 	neutrality = 25
 }
-
-create_country_leader = {
-	name = "Mika"
-	desc = "She is the best"
-	picture = "Portrait_JHS_Mika.dds"
-	expire = "2000.1.1"
-	ideology = nazism
-	traits = {
-		
-	}
+set_variable = {
+	var = JHS_unstable_society_consumer
+	value = 0.2
 }
-create_country_leader = {
-	name = "Mika"
-	desc = "She is the best"
-	picture = "Portrait_JHS_Mika.dds"
-	expire = "2000.1.1"
-	ideology = moderatism
-	traits = {
-		
-	}
+set_variable = {
+	var = JHS_unstable_society_factory_output
+	value = -0.2
 }
-create_country_leader = {
-	name = "Mika"
-	desc = "She is the best"
-	picture = "Portrait_JHS_Mika.dds"
-	expire = "2000.1.1"
-	ideology = leninism
-	traits = {
-		
-	}
+set_variable = {
+	var = JHS_unstable_society_efficiency
+	value = -0.2
 }
-create_country_leader = {
-	name = "Mika"
-	desc = "She is the best"
-	picture = "Portrait_JHS_Mika.dds"
-	expire = "2000.1.1"
-	ideology = conservatism
-	traits = {
-		
-	}
+set_variable = {
+	var = JHS_unstable_society_build_speed
+	value = -0.2
 }
+set_variable = {
+	var = JHS_snow_canteen_consumer
+	value = 0
+}
+set_variable = {
+	var = JHS_snow_canteen_output
+	value = 0
+}
+set_variable = {
+	var = JHS_snow_canteen_efficiency_gain
+	value = 0
+}
+set_variable = {
+	var = JHS_snow_canteen_max_effciency
+	value = 0
+}
+recruit_character = JHS_mika

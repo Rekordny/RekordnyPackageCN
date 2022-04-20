@@ -193,6 +193,7 @@
  BON_warsaw_research_institute:0 "华沙大学研究院"
  BON_krakov_industrial_agency:0 "克拉科夫工业局"
  BON_highest_strategic_command:0 "冯布诺最高战略指挥部"
+ BON_influence_bonple:0 "冯步诺外交影响"
 
 #decisions
  bon_solve_the_holodomor:0 "解决大饥荒问题"
@@ -228,4 +229,5 @@
  BON_REMOVE_FASCISM_COMMUNISM_OFFICER:0 "军队中的法西斯与共产主义派系被清理"
 
 #opinion modifier
+ BON_approach_VIG:0 "冯步诺的好意"
  

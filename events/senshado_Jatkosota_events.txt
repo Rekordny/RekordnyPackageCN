@@ -1,0 +1,217 @@
+add_namespace = JHS_event
+add_namespace = JHS_border_war
+#税收锐减
+country_event = {
+	id = JHS_event.1
+	title = JHS_event.1.t
+	desc = JHS_event.1.d
+	picture = GFX_report_event_german_speech
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = JHS_event.1.a
+		set_variable = {
+			gold = 0
+		}
+	}
+	option = {
+		name = JHS_event.1.b
+		add_ideas = JHS_uneffecient_eco
+	}
+}
+
+#民众的不安
+country_event = {
+	id = JHS_event.2
+	title = JHS_event.2.t
+	desc = JHS_event.2.d
+	picture = GFX_report_event_german_speech
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = JHS_event.2.a
+		add_dynamic_modifier = {
+			modifier = JHS_unstable_society
+		}
+	}
+}
+#米卡的决心1
+country_event = {
+	id = JHS_event.3
+	title = JHS_event.3.t
+	desc = JHS_event.3.d
+	picture = GFX_report_event_german_speech
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		country_event = {
+			id = JHS_event.4
+			days = 7
+		}
+	}
+	option = {
+		name = JHS_event.3.a
+		add_war_support = 0.05
+	}
+	option = {
+		name = JHS_event.3.b
+		add_political_power = 50
+	}
+}
+#米卡的决心2
+country_event = {
+	id = JHS_event.4
+	title = JHS_event.4.t
+	desc = JHS_event.4.d
+	picture = GFX_report_event_german_speech
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		country_event = {
+			id = JHS_event.5
+			days = 7
+		}
+	}
+	option = {
+		name = JHS_event.4.a
+		add_stability = 0.05
+	}
+	option = {
+		name = JHS_event.4.b
+		add_political_power = 50
+	}
+}
+#米卡的决心3
+country_event = {
+	id = JHS_event.5
+	title = JHS_event.5.t
+	desc = JHS_event.5.d
+	picture = GFX_report_event_german_speech
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		set_country_flag = JHS_MIKA_DETERMINATION_FINISHED
+		#设置flag：米卡的决心事件链完成
+	}
+	option = {
+		name = JHS_event.5.a
+		add_stability = 0.1
+		add_war_support = 0.1
+	}
+	option = {
+		name = JHS_event.5.b
+		add_political_power = 50
+	}
+}
+#继续的请求-由别国触发
+country_event = {
+	id = JHS_event.6
+	title = JHS_event.6.t
+	desc = JHS_event.6.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = JHS_event.6.a
+		JHS = {
+			add_political_power = 20
+			add_opinion_modifier = {
+				target = PREV
+				modifier = JHS_gift_accept
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = JHS_event.6.b
+		JHS = {
+			add_opinion_modifier = {
+				target = PREV
+				modifier = JHS_gift_refuse
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = JHS_event.7
+	title = JHS_event.7.t
+	desc = JHS_event.7.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = JHS_event.7.a
+		JHS = {
+			annex_country = {
+				target = PREV
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = JHS_event.7.b
+		JHS = {
+			create_wargoal = {
+				target = PREV
+				type = annex_everything
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+
+
+country_event = {
+	id = JHS_border_war.1
+	title = JHS_border_war.1.t
+	desc = JHS_border_war.1.d
+	picture = GFX_report_event_german_speech
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = JHS_border_war.1.a
+		set_state_owner = 213
+		set_state_owner = 215
+		set_state_owner = 216
+		add_state_core = 213
+		add_state_core = 215
+		add_state_core = 216
+		remove_ideas = JHS_polka_ballad
+	}
+}
+country_event = {
+	id = JHS_border_war.2
+	title = JHS_border_war.2.t
+	desc = JHS_border_war.2.d
+	picture = GFX_report_event_german_speech
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = JHS_border_war.2.a
+		remove_ideas = JHS_polka_ballad
+	}
+}
+country_event = {
+	id = JHS_border_war.3
+	title = JHS_border_war.3.t
+	desc = JHS_border_war.3.d
+	picture = GFX_report_event_german_speech
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = JHS_border_war.3.a
+	}
+}

@@ -1,3 +1,44 @@
+#政府
+stg_government = {
+	#售卖国有企业与股权
+	stg_sell_state_owned = {
+		allowed = { tag = STG }
+		visible = { OR = { has_completed_focus = STG_privatized_state_owned AND = { is_ai = no is_debug = yes } } }
+		fire_only_once = no
+		complete_effect = {
+		}
+		days_re_enable = 100
+		days_remove = 180
+		modifier = {
+			consumer_goods_factor = 0.1
+			tax_daily_modifier = 0.25
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.03
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				industrial_complex > 80
+				check_variable = {
+					gold < 200
+				}
+				factor = 10	
+			}
+			modifier = {
+				industrial_complex > 50
+				check_variable = {
+					gold < 120
+				}
+				factor = 7
+			}
+		}
+	}
+}
+
 #工人与工党
 stg_worker_and_labor_party = {
 	#DEBUG
@@ -507,6 +548,52 @@ stg_kuromorimine_occupation = {
 }
 
 stg_industry = {
+	#投资外来企业
+	stg_purchase_factory = {
+		allowed = { tag = STG }
+		visible = { OR = { has_completed_focus = STG_foreign_investment_absorption AND = { is_ai = no is_debug = yes } } }
+		fire_only_once = no
+		complete_effect = {
+		}
+		days_re_enable = 50
+		days_remove = 100
+		custom_cost_text = stg_tooltip25
+		custom_cost_trigger = {
+			check_variable = { gold > 59.9 }
+		}
+		complete_effect = {
+			add_to_variable = {
+				gold = -60
+			}
+		}
+		remove_effect = {
+			random_state = {
+				limit = { is_controlled_by = STG is_core_of = STG }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				check_variable = {
+					gold > 180
+				}
+				industrial_complex < 60
+				factor = 10
+			}
+			modifier = {
+				check_variable = {
+					gold > 200
+				}
+				industrial_complex < 70
+				factor = 5
+			}
+		}
+	}
 	#转移黑森峰工业至本土
 	stg_transfer_kga_industry_mainland = {
 		allowed = { tag = STG }

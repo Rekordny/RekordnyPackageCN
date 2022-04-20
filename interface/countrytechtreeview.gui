@@ -2191,7 +2191,7 @@ guiTypes = {
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
-				text = "1981"
+				text = "1972"
 				maxWidth = 170
 				maxHeight = 32
 				format = left
@@ -2204,12 +2204,25 @@ guiTypes = {
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
-				text = "1950"
+				text = "1976"
 				maxWidth = 170
 				maxHeight = 32
 				format = left
 				Orientation = "UPPER_LEFT"
-			}			
+			}		
+			
+			instantTextBoxType = {
+				name = "airtech_year8"
+				position = { x = 30 y = 1138 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "1980"
+				maxWidth = 170
+				maxHeight = 32
+				format = left
+				Orientation = "UPPER_LEFT"
+			}
 
 			containerWindowType = {
 				name = "airtech_year_left"
@@ -2275,7 +2288,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1981"
+					text = "1972"
 					maxWidth = 170
 					maxHeight = 32
 					format = right
@@ -2288,7 +2301,20 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1950"
+					text = "1976"
+					maxWidth = 170
+					maxHeight = 32
+					format = right
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "airtech_year8"
+					position = { x = 60 y = 1138 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1980"
 					maxWidth = 170
 					maxHeight = 32
 					format = right
@@ -2395,18 +2421,18 @@ guiTypes = {
 				pdx_tooltip = "scout_plane_equipment_1_desc"
 			}			
 			
-			
-			containerWindowType = {
-				name = "tiled_research_bg"
-				position = { x=250 y=807 }
-				size = { width = 1475 height = 350 }
-				clipping = no
+			# #金色的依赖科技框
+			# containerWindowType = {
+			# 	name = "tiled_research_bg"
+			# 	position = { x=1250 y=957 }
+			# 	size = { width = 175 height = 330 }
+			# 	clipping = no
 	
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_tiled_research_bg"
-				}			
-			}
+			# 	background = {
+			# 		name = "Background"
+			# 		quadTextureSprite ="GFX_tiled_research_bg"
+			# 	}			
+			# }
 				
 			gridboxtype = {
 				name = "early_fighter_tree"
@@ -2441,12 +2467,44 @@ guiTypes = {
 			}
 
 			gridboxtype = {
-				name = "experimental_rockets_tree"
-				position = { x = 540 y = 0 }
-				size = { width = 400 height = 400 }
-				slotsize = { width = 70 height = 70 }
+				name = "air_gun_tree"
+				position = { x=380 y=28 }
+				size = { width = 300 height = 1000 }
+				slotsize = { width=70 height= 70 }
 				format = "UP"
 			}
+
+			gridboxtype = {
+				name = "air_missile_tree"
+				position = { x=580 y=28 }
+				size = { width = 400 height = 1000 }
+				slotsize = { width=70 height= 70 }
+				format = "UP"
+			}
+
+			gridboxtype = {
+				name = "air_maneuverability_tree"
+				position = { x=760 y=28 }
+				size = { width = 400 height = 1000 }
+				slotsize = { width=70 height= 70 }
+				format = "UP"
+			}
+
+			gridboxtype = {
+				name = "air_engine_tree"
+				position = { x=760 y=28 }
+				size = { width = 400 height = 1000 }
+				slotsize = { width=70 height= 70 }
+				format = "UP"
+			}
+
+			# gridboxtype = {
+			# 	name = "experimental_rockets_tree"
+			# 	position = { x = 540 y = 0 }
+			# 	size = { width = 400 height = 400 }
+			# 	slotsize = { width = 70 height = 70 }
+			# 	format = "UP"
+			# }
 		}
 
 		containerWindowType = {
@@ -3138,9 +3196,6 @@ guiTypes = {
 				size = { width = 480 height = 650 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"
-
-			
-				
 			}
 			
 			gridboxtype = {
