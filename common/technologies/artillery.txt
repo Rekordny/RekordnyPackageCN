@@ -30,7 +30,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 0 }
+			position = { x = -3 y = 0 }
 		}
 
 		categories = {
@@ -101,7 +101,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 2 }
+			position = { x = -3 y = 2 }
 		}
 
 		categories = {
@@ -136,7 +136,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			tank_medium_howitzer
-			tank_medium_cannon
+			tank_light_art_turrent
 		}
 
 		path = {
@@ -150,7 +150,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 4 }
+			position = { x = -3 y = 4 }
 		}
 
 		categories = {
@@ -220,7 +220,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 6 }
+			position = { x = -3 y = 6 }
 		}
 
 		categories = {
@@ -288,7 +288,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 8 }
+			position = { x = -3 y = 8 }
 		}
 
 		categories = {
@@ -316,7 +316,6 @@ technologies = {
 			artillery_equipment_3
 		}
 		enable_equipment_modules = {
-			tank_medium_cannon_2
 		}
 
 		path = {
@@ -330,7 +329,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 10 }
+			position = { x = -3 y = 10 }
 		}
 
 		categories = {
@@ -385,8 +384,7 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			auto_loader
-			tank_heavy_howitzer
+			tank_medium_howitzer_3
 		}
 
 		research_cost = 1
@@ -395,7 +393,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 12 }
+			position = { x = -3 y = 12 }
 		}
 
 		categories = {
@@ -444,166 +442,6 @@ technologies = {
 		}
 	}
 
-	rocket_artillery = {
-
-		enable_equipments = {
-			rocket_artillery_equipment_1
-		}
-#		enable_subunits = {
-#			rocket_artillery_brigade
-#		}
-
-		enable_equipment_modules = {
-			tank_rocket_launcher
-		}
-
-		path = {
-			leads_to_tech = rocket_artillery2
-			research_cost_coeff = 1
-		}
-
-		research_cost = 2
-
-		start_year = 1976
-
-		folder = {
-			name = artillery_folder
-			position = { x = 3 y = 6 }
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				tag = SOV
-			}
-		}
-
-		categories = {
-			rocketry
-		}
-	}
-
-	rocket_artillery2 = {
-
-		rocket_artillery = {
-			soft_attack = 0.15
-		}
-		rocket_artillery_brigade = {
-			soft_attack = 0.15
-		}
-		mot_rocket_artillery_brigade = {
-			soft_attack = 0.15
-		}
-		motorized_rocket_brigade = {
-			soft_attack = 0.15
-		}
-
-		path = {
-			leads_to_tech = rocket_artillery3
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1
-
-		start_year = 1977
-
-		folder = {
-			name = artillery_folder
-			position = { x = 3 y = 8 }
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				tag = SOV
-			}
-		}
-
-		categories = {
-			rocketry
-		}
-	}
-
-	rocket_artillery3 = {
-
-		rocket_artillery = {
-			soft_attack = 0.15
-		}
-		rocket_artillery_brigade = {
-			soft_attack = 0.15
-		}
-		mot_rocket_artillery_brigade = {
-			soft_attack = 0.15
-		}
-		motorized_rocket_brigade = {
-			soft_attack = 0.15
-		}
-
-		path = {
-			leads_to_tech = rocket_artillery4
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1
-
-		start_year = 1978
-
-		folder = {
-			name = artillery_folder
-			position = { x = 3 y = 10 }
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				tag = SOV
-			}
-		}
-
-		categories = {
-			rocketry
-		}
-	}
-
-	rocket_artillery4 = {
-
-		enable_equipments = {
-			rocket_artillery_equipment_2
-		}
-		motorized_rocket_brigade = {
-			soft_attack = 0.3
-		}
-		enable_equipment_modules = {
-			tank_rocket_launcher_2
-		}
-		research_cost = 1
-
-		start_year = 1979
-
-		folder = {
-			name = artillery_folder
-			position = { x = 3 y = 12 }
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				tag = SOV
-			}
-		}
-
-		categories = {
-			rocketry
-		}
-	}
 
 	interwar_antiair = {
 
@@ -612,10 +450,9 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
+			tank_anti_air_turrent
 			ship_anti_air_2
 			tank_auto_cannon
-			tank_anti_air_cannon
-			tank_heavy_cannon
 		}
 
 		enable_building = {
@@ -634,7 +471,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = 2 }
+			position = { x = 0 y = 2 }
 		}
 
 		ai_will_do = {
@@ -677,6 +514,9 @@ technologies = {
 
 	antiair1 = {
 
+		enable_equipment_modules = {
+			tank_auto_cannon_2
+		}
 		anti_air = {
 			air_attack = 0.1
 		}
@@ -690,6 +530,10 @@ technologies = {
 		tech_air_damage_factor = -0.02
 
 		path = {
+			leads_to_tech = guided_missle_artillery
+			research_cost_coeff = 1
+		}
+		path = {
 			leads_to_tech = antiair2
 			research_cost_coeff = 1
 		}
@@ -700,7 +544,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = 4 }
+			position = { x = 0 y = 4 }
 		}
 
 		ai_will_do = {
@@ -736,7 +580,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			ship_anti_air_3
-			tank_auto_cannon_2
+			tank_auto_cannon_3
 			tank_anti_air_cannon_2
 		}
 
@@ -751,7 +595,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = 6 }
+			position = { x = 0 y = 6 }
 		}
 
 		ai_will_do = {
@@ -778,7 +622,9 @@ technologies = {
 	}
 
 	antiair3 = {
-
+		enable_equipment_modules = {
+			tank_anti_air_turrent_radar
+		}
 		anti_air = {
 			air_attack = 0.1
 		}
@@ -787,10 +633,6 @@ technologies = {
 		}
 		mot_anti_air_brigade = {
 			air_attack = 0.1
-		}
-
-		enable_equipment_modules = {
-			tank_heavy_cannon_2
 		}
 
 		tech_air_damage_factor = -0.02
@@ -806,7 +648,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = 8 }
+			position = { x = 0 y = 8 }
 		}
 
 		ai_will_do = {
@@ -833,7 +675,9 @@ technologies = {
 	}
 
 	antiair4 = {
-
+		enable_equipment_modules = {
+			tank_auto_cannon_4
+		}
 		anti_air = {
 			air_attack = 0.1
 		}
@@ -847,6 +691,10 @@ technologies = {
 		tech_air_damage_factor = -0.02
 
 		path = {
+			leads_to_tech = guided_missle_artillery_anti_air
+			research_cost_coeff = 1
+		}
+		path = {
 			leads_to_tech = antiair5
 			research_cost_coeff = 1
 		}
@@ -857,7 +705,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = 10 }
+			position = { x = 0 y = 10 }
 		}
 
 		ai_will_do = {
@@ -893,9 +741,6 @@ technologies = {
 
 		enable_equipment_modules = {
 			ship_anti_air_4
-			tank_heavy_cannon_3
-			tank_anti_air_cannon_3
-			auto_loader
 		}
 
 		research_cost = 1
@@ -904,7 +749,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = 12 }
+			position = { x = 0 y = 12 }
 		}
 
 		ai_will_do = {
@@ -936,8 +781,9 @@ technologies = {
 			anti_tank_equipment_1
 		}
 		enable_equipment_modules = {
-			tank_high_velocity_cannon
-			tank_heavy_cannon
+			tank_light_ap_cannon
+			tank_medium_cannon
+			tank_light_td_turrent
 		}
 		path = {
 			leads_to_tech = antitank1
@@ -950,7 +796,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 7 y = 2 }
+			position = { x = 8 y = 2 }
 		}
 
 		ai_will_do = {
@@ -1048,8 +894,10 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			tank_medium_cannon
-			squeezebore_adaptor
+		}
+		path = {
+			leads_to_tech = guided_missle_artillery
+			research_cost_coeff = 1
 		}
 		path = {
 			leads_to_tech = antitank2
@@ -1062,7 +910,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 7 y = 4 }
+			position = { x = 8 y = 4 }
 		}
 
 		ai_will_do = {
@@ -1111,15 +959,54 @@ technologies = {
 			hard_attack = 0.2
 			ap_attack = 0.2
 		}
-
+		anti_tank = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		mot_anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		light_tank_destroyer_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		medium_tank_destroyer_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		heavy_tank_destroyer_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		super_heavy_tank_destroyer_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		modern_tank_destroyer_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
 		enable_equipments = {
 			anti_tank_equipment_2
 		}
 		enable_equipment_modules = {
-			tank_heavy_cannon_2
+			tank_heavy_cannon
 		}
 		path = {
 			leads_to_tech = antitank3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = antitank3_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = guided_missle_artillery_anti_tank
 			research_cost_coeff = 1
 		}
 
@@ -1129,7 +1016,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 7 y = 6 }
+			position = { x = 8 y = 6 }
 		}
 
 		ai_will_do = {
@@ -1185,38 +1072,7 @@ technologies = {
 		enable_equipment_modules = {
 			tank_medium_cannon_2
 		}
-		anti_tank = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		anti_tank_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		mot_anti_tank_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		light_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		medium_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		heavy_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		super_heavy_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		modern_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
+
 
 		path = {
 			leads_to_tech = antitank4
@@ -1279,39 +1135,7 @@ technologies = {
 
 	antitank4 = {
 		enable_equipment_modules = {
-			tank_high_velocity_cannon_2
-		}
-		anti_tank = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		anti_tank_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		mot_anti_tank_brigade = {
-			hard_attack = 0.05
-			ap_attack = 0.1
-		}
-		light_tank_destroyer_brigade = {
-			hard_attack = 0.05
-			ap_attack = 0.1
-		}
-		medium_tank_destroyer_brigade = {
-			hard_attack = 0.05
-			ap_attack = 0.1
-		}
-		heavy_tank_destroyer_brigade = {
-			hard_attack = 0.05
-			ap_attack = 0.1
-		}
-		super_heavy_tank_destroyer_brigade = {
-			hard_attack = 0.05
-			ap_attack = 0.1
-		}
-		modern_tank_destroyer_brigade = {
-			hard_attack = 0.05
-			ap_attack = 0.1
+			tank_medium_cannon_3
 		}
 
 		path = {
@@ -1368,15 +1192,169 @@ technologies = {
 		}
 	}
 
-	antitank5 = {
+	antitank3_1 = {
+		enable_equipment_modules = {
+			tank_heavy_cannon_2
+		}
 
+		path = {
+			leads_to_tech = antitank4_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+
+		start_year = 1977
+
+		folder = {
+			name = artillery_folder
+			position = { x = 9 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > "1977.1.6"
+			}
+			modifier = {
+				tag = JAP
+				not = {
+					OR = {
+						has_War_with = SOV
+						has_war_with = USA
+					}
+				}
+				factor = 0.5
+			}
+			modifier = {
+				factor = 2
+				date > "1978.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1979.1.1"
+			}
+			modifier = {
+				factor = 10
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 32
+						}
+					}
+				}
+			}
+		}
+
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+
+	antitank4_1 = {
+		enable_equipment_modules = {
+			tank_heavy_cannon_3
+		}
+
+
+		path = {
+			leads_to_tech = antitank5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+
+		start_year = 1978
+
+		folder = {
+			name = artillery_folder
+			position = { x = 9 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > "1978.1.6"
+			}
+			modifier = {
+				tag = JAP
+				not = {
+					OR = {
+						has_War_with = SOV
+						has_war_with = USA
+					}
+				}
+				factor = 0.5
+			}
+			modifier = {
+				factor = 5
+				date > "1979.1.1"
+			}
+			modifier = {
+				factor = 10
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 35
+						}
+					}
+				}
+			}
+		}
+
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+
+	antitank5 = {
+		anti_tank = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		mot_anti_tank_brigade = {
+			hard_attack = 0.05
+			ap_attack = 0.1
+		}
+		light_tank_destroyer_brigade = {
+			hard_attack = 0.05
+			ap_attack = 0.1
+		}
+		medium_tank_destroyer_brigade = {
+			hard_attack = 0.05
+			ap_attack = 0.1
+		}
+		heavy_tank_destroyer_brigade = {
+			hard_attack = 0.05
+			ap_attack = 0.1
+		}
+		super_heavy_tank_destroyer_brigade = {
+			hard_attack = 0.05
+			ap_attack = 0.1
+		}
+		modern_tank_destroyer_brigade = {
+			hard_attack = 0.05
+			ap_attack = 0.1
+		}
 		enable_equipments = {
 			anti_tank_equipment_3
 		}
 		enable_equipment_modules = {
-			tank_high_velocity_cannon_3
-			tank_heavy_cannon_3
-			auto_loader
+			tank_medium_cannon_4
+			tank_heavy_cannon_4
 		}
 		research_cost = 1
 
@@ -1384,7 +1362,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 7 y = 12 }
+			position = { x = 8 y = 12 }
 		}
 
 		ai_will_do = {
@@ -1432,4 +1410,2596 @@ technologies = {
 		}
 	}
 
+	guided_missle_artillery = {
+
+
+
+		enable_equipments = {
+		}
+		enable_equipment_modules = {
+			tank_missile_launcher
+		}
+		path = {
+			leads_to_tech = guided_missle_artillery_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+
+		start_year = 1976
+
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = 6 }
+		}
+
+
+
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+	guided_missle_artillery_2 = {
+
+
+
+		enable_equipments = {
+		}
+		enable_equipment_modules = {
+			tank_missile_launcher_2
+		}
+		path = {
+			leads_to_tech = guided_missle_artillery_anti_air
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = guided_missle_artillery_anti_tank
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+
+		start_year = 1977
+
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = 8 }
+		}
+
+
+
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+	guided_missle_artillery_anti_air = {
+
+
+
+		enable_equipments = {
+		}
+		enable_equipment_modules = {
+			tank_missile_launcher_VT
+		}
+		
+		dependencies = {
+			guided_missle_artillery_2 = 1
+			antiair4 = 1
+		}
+
+		research_cost = 1
+
+		start_year = 1978
+
+		folder = {
+			name = artillery_folder
+			position = { x = 3 y = 12 }
+		}
+
+
+
+		categories = {
+			artillery
+		}
+	}
+	guided_missle_artillery_anti_tank = {
+
+
+
+		enable_equipments = {
+		}
+		enable_equipment_modules = {
+			tank_missile_launcher_3
+		}
+		
+		dependencies = {
+			guided_missle_artillery_2 = 1
+			antitank2 = 1
+		}
+
+		research_cost = 1
+
+		start_year = 1978
+
+		folder = {
+			name = artillery_folder
+			position = { x = 5 y = 12 }
+		}
+
+
+
+		categories = {
+			artillery
+		}
+	}
+
+
+	tank_stabilizer = {
+		light_armor = {
+			forest = {
+				attack = 0.05
+				defense = 0.05
+			}
+			jungle = {
+				attack = 0.05
+				defense = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defense = 0.05
+			}
+			mountain = {
+				attack = 0.05
+				defense = 0.05
+			}
+			plains = {
+				attack = 0.05
+				defense = 0.05
+			}
+			urban = {
+				attack = 0.05
+				defense = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defense = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defense = 0.05
+			}
+		}
+		medium_armor = {
+			forest = {
+				attack = 0.05
+				defense = 0.05
+			}
+			jungle = {
+				attack = 0.05
+				defense = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defense = 0.05
+			}
+			mountain = {
+				attack = 0.05
+				defense = 0.05
+			}
+			plains = {
+				attack = 0.05
+				defense = 0.05
+			}
+			urban = {
+				attack = 0.05
+				defense = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defense = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defense = 0.05
+			}
+		}
+		heavy_armor = {
+			forest = {
+				attack = 0.05
+				defense = 0.05
+			}
+			jungle = {
+				attack = 0.05
+				defense = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defense = 0.05
+			}
+			mountain = {
+				attack = 0.05
+				defense = 0.05
+			}
+			plains = {
+				attack = 0.05
+				defense = 0.05
+			}
+			urban = {
+				attack = 0.05
+				defense = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defense = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defense = 0.05
+			}
+		}
+		modern_armor = {
+			forest = {
+				attack = 0.05
+				defense = 0.05
+			}
+			jungle = {
+				attack = 0.05
+				defense = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defense = 0.05
+			}
+			mountain = {
+				attack = 0.05
+				defense = 0.05
+			}
+			plains = {
+				attack = 0.05
+				defense = 0.05
+			}
+			urban = {
+				attack = 0.05
+				defense = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defense = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defense = 0.05
+			}
+		}
+		light_sp_artillery_brigade = {
+			forest = {
+				attack = 0.05
+				defense = 0.05
+			}
+			jungle = {
+				attack = 0.05
+				defense = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defense = 0.05
+			}
+			mountain = {
+				attack = 0.05
+				defense = 0.05
+			}
+			plains = {
+				attack = 0.05
+				defense = 0.05
+			}
+			urban = {
+				attack = 0.05
+				defense = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defense = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defense = 0.05
+			}
+		}
+		medium_sp_artillery_brigade = {
+			forest = {
+				attack = 0.05
+				defense = 0.05
+			}
+			jungle = {
+				attack = 0.05
+				defense = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defense = 0.05
+			}
+			mountain = {
+				attack = 0.05
+				defense = 0.05
+			}
+			plains = {
+				attack = 0.05
+				defense = 0.05
+			}
+			urban = {
+				attack = 0.05
+				defense = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defense = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defense = 0.05
+			}
+		}
+		heavy_sp_artillery_brigade = {
+			forest = {
+				attack = 0.05
+				defense = 0.05
+			}
+			jungle = {
+				attack = 0.05
+				defense = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defense = 0.05
+			}
+			mountain = {
+				attack = 0.05
+				defense = 0.05
+			}
+			plains = {
+				attack = 0.05
+				defense = 0.05
+			}
+			urban = {
+				attack = 0.05
+				defense = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defense = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defense = 0.05
+			}
+		}
+		modern_sp_artillery_brigade = {
+			forest = {
+				attack = 0.05
+				defense = 0.05
+			}
+			jungle = {
+				attack = 0.05
+				defense = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defense = 0.05
+			}
+			mountain = {
+				attack = 0.05
+				defense = 0.05
+			}
+			plains = {
+				attack = 0.05
+				defense = 0.05
+			}
+			urban = {
+				attack = 0.05
+				defense = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defense = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defense = 0.05
+			}
+		}
+		light_sp_anti_air_brigade = {
+			forest = {
+				attack = 0.05
+				defense = 0.05
+			}
+			jungle = {
+				attack = 0.05
+				defense = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defense = 0.05
+			}
+			mountain = {
+				attack = 0.05
+				defense = 0.05
+			}
+			plains = {
+				attack = 0.05
+				defense = 0.05
+			}
+			urban = {
+				attack = 0.05
+				defense = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defense = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defense = 0.05
+			}
+		}
+		medium_sp_anti_air_brigade = {
+			forest = {
+				attack = 0.05
+				defense = 0.05
+			}
+			jungle = {
+				attack = 0.05
+				defense = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defense = 0.05
+			}
+			mountain = {
+				attack = 0.05
+				defense = 0.05
+			}
+			plains = {
+				attack = 0.05
+				defense = 0.05
+			}
+			urban = {
+				attack = 0.05
+				defense = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defense = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defense = 0.05
+			}
+		}
+		heavy_sp_anti_air_brigade = {
+			forest = {
+				attack = 0.05
+				defense = 0.05
+			}
+			jungle = {
+				attack = 0.05
+				defense = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defense = 0.05
+			}
+			mountain = {
+				attack = 0.05
+				defense = 0.05
+			}
+			plains = {
+				attack = 0.05
+				defense = 0.05
+			}
+			urban = {
+				attack = 0.05
+				defense = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defense = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defense = 0.05
+			}
+		}
+		modern_sp_anti_air_brigade = {
+			forest = {
+				attack = 0.05
+				defense = 0.05
+			}
+			jungle = {
+				attack = 0.05
+				defense = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defense = 0.05
+			}
+			mountain = {
+				attack = 0.05
+				defense = 0.05
+			}
+			plains = {
+				attack = 0.05
+				defense = 0.05
+			}
+			urban = {
+				attack = 0.05
+				defense = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defense = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defense = 0.05
+			}
+		}
+		light_tank_destroyer_brigade = {
+			forest = {
+				attack = 0.05
+				defense = 0.05
+			}
+			jungle = {
+				attack = 0.05
+				defense = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defense = 0.05
+			}
+			mountain = {
+				attack = 0.05
+				defense = 0.05
+			}
+			plains = {
+				attack = 0.05
+				defense = 0.05
+			}
+			urban = {
+				attack = 0.05
+				defense = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defense = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defense = 0.05
+			}
+		}
+		medium_tank_destroyer_brigade = {
+			forest = {
+				attack = 0.05
+				defense = 0.05
+			}
+			jungle = {
+				attack = 0.05
+				defense = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defense = 0.05
+			}
+			mountain = {
+				attack = 0.05
+				defense = 0.05
+			}
+			plains = {
+				attack = 0.05
+				defense = 0.05
+			}
+			urban = {
+				attack = 0.05
+				defense = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defense = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defense = 0.05
+			}
+		}
+		heavy_tank_destroyer_brigade = {
+			forest = {
+				attack = 0.05
+				defense = 0.05
+			}
+			jungle = {
+				attack = 0.05
+				defense = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defense = 0.05
+			}
+			mountain = {
+				attack = 0.05
+				defense = 0.05
+			}
+			plains = {
+				attack = 0.05
+				defense = 0.05
+			}
+			urban = {
+				attack = 0.05
+				defense = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defense = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defense = 0.05
+			}
+		}
+		modern_tank_destroyer_brigade = {
+			forest = {
+				attack = 0.05
+				defense = 0.05
+			}
+			jungle = {
+				attack = 0.05
+				defense = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defense = 0.05
+			}
+			mountain = {
+				attack = 0.05
+				defense = 0.05
+			}
+			plains = {
+				attack = 0.05
+				defense = 0.05
+			}
+			urban = {
+				attack = 0.05
+				defense = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defense = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defense = 0.05
+			}
+		}
+		light_flame_tank = {
+			forest = {
+				attack = 0.05
+				defense = 0.05
+			}
+			jungle = {
+				attack = 0.05
+				defense = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defense = 0.05
+			}
+			mountain = {
+				attack = 0.05
+				defense = 0.05
+			}
+			plains = {
+				attack = 0.05
+				defense = 0.05
+			}
+			urban = {
+				attack = 0.05
+				defense = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defense = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defense = 0.05
+			}
+		}
+		medium_flame_tank = {
+			forest = {
+				attack = 0.05
+				defense = 0.05
+			}
+			jungle = {
+				attack = 0.05
+				defense = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defense = 0.05
+			}
+			mountain = {
+				attack = 0.05
+				defense = 0.05
+			}
+			plains = {
+				attack = 0.05
+				defense = 0.05
+			}
+			urban = {
+				attack = 0.05
+				defense = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defense = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defense = 0.05
+			}
+		}
+		heavy_flame_tank = {
+			forest = {
+				attack = 0.05
+				defense = 0.05
+			}
+			jungle = {
+				attack = 0.05
+				defense = 0.05
+			}
+			hills = {
+				attack = 0.05
+				defense = 0.05
+			}
+			mountain = {
+				attack = 0.05
+				defense = 0.05
+			}
+			plains = {
+				attack = 0.05
+				defense = 0.05
+			}
+			urban = {
+				attack = 0.05
+				defense = 0.05
+			}
+			marsh = {
+				attack = 0.05
+				defense = 0.05
+			}
+			desert = {
+				attack = 0.05
+				defense = 0.05
+			}
+		}
+
+		force_use_small_tech_layout = yes
+		enable_equipments = {
+		}
+		enable_equipment_modules = {
+		}
+		on_research_complete = {
+			custom_effect_tooltip = artillery_stabilizer_0
+		}
+		XOR = {
+			tank_muzzle_brake
+			tank_pressure_valve
+		}
+		path = {
+			leads_to_tech = tank_stabilizer_1
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+
+		start_year = 1972
+
+		folder = {
+			name = artillery_folder
+			position = { x = -10 y = 2 }
+		}
+
+
+
+		categories = {
+			artillery
+		}
+	}
+	tank_stabilizer_1 = {
+
+		light_armor = {
+			forest = {
+				attack = 0.1
+				defense = 0.1
+			}
+			jungle = {
+				attack = 0.1
+				defense = 0.1
+			}
+			hills = {
+				attack = 0.1
+				defense = 0.1
+			}
+			mountain = {
+				attack = 0.1
+				defense = 0.1
+			}
+			plains = {
+				attack = 0.1
+				defense = 0.1
+			}
+			urban = {
+				attack = 0.1
+				defense = 0.1
+			}
+			marsh = {
+				attack = 0.1
+				defense = 0.1
+			}
+			desert = {
+				attack = 0.1
+				defense = 0.1
+			}
+		}
+		medium_armor = {
+			forest = {
+				attack = 0.1
+				defense = 0.1
+			}
+			jungle = {
+				attack = 0.1
+				defense = 0.1
+			}
+			hills = {
+				attack = 0.1
+				defense = 0.1
+			}
+			mountain = {
+				attack = 0.1
+				defense = 0.1
+			}
+			plains = {
+				attack = 0.1
+				defense = 0.1
+			}
+			urban = {
+				attack = 0.1
+				defense = 0.1
+			}
+			marsh = {
+				attack = 0.1
+				defense = 0.1
+			}
+			desert = {
+				attack = 0.1
+				defense = 0.1
+			}
+		}
+		heavy_armor = {
+			forest = {
+				attack = 0.1
+				defense = 0.1
+			}
+			jungle = {
+				attack = 0.1
+				defense = 0.1
+			}
+			hills = {
+				attack = 0.1
+				defense = 0.1
+			}
+			mountain = {
+				attack = 0.1
+				defense = 0.1
+			}
+			plains = {
+				attack = 0.1
+				defense = 0.1
+			}
+			urban = {
+				attack = 0.1
+				defense = 0.1
+			}
+			marsh = {
+				attack = 0.1
+				defense = 0.1
+			}
+			desert = {
+				attack = 0.1
+				defense = 0.1
+			}
+		}
+		modern_armor = {
+			forest = {
+				attack = 0.1
+				defense = 0.1
+			}
+			jungle = {
+				attack = 0.1
+				defense = 0.1
+			}
+			hills = {
+				attack = 0.1
+				defense = 0.1
+			}
+			mountain = {
+				attack = 0.1
+				defense = 0.1
+			}
+			plains = {
+				attack = 0.1
+				defense = 0.1
+			}
+			urban = {
+				attack = 0.1
+				defense = 0.1
+			}
+			marsh = {
+				attack = 0.1
+				defense = 0.1
+			}
+			desert = {
+				attack = 0.1
+				defense = 0.1
+			}
+		}
+		light_sp_artillery_brigade = {
+			forest = {
+				attack = 0.1
+				defense = 0.1
+			}
+			jungle = {
+				attack = 0.1
+				defense = 0.1
+			}
+			hills = {
+				attack = 0.1
+				defense = 0.1
+			}
+			mountain = {
+				attack = 0.1
+				defense = 0.1
+			}
+			plains = {
+				attack = 0.1
+				defense = 0.1
+			}
+			urban = {
+				attack = 0.1
+				defense = 0.1
+			}
+			marsh = {
+				attack = 0.1
+				defense = 0.1
+			}
+			desert = {
+				attack = 0.1
+				defense = 0.1
+			}
+		}
+		medium_sp_artillery_brigade = {
+			forest = {
+				attack = 0.1
+				defense = 0.1
+			}
+			jungle = {
+				attack = 0.1
+				defense = 0.1
+			}
+			hills = {
+				attack = 0.1
+				defense = 0.1
+			}
+			mountain = {
+				attack = 0.1
+				defense = 0.1
+			}
+			plains = {
+				attack = 0.1
+				defense = 0.1
+			}
+			urban = {
+				attack = 0.1
+				defense = 0.1
+			}
+			marsh = {
+				attack = 0.1
+				defense = 0.1
+			}
+			desert = {
+				attack = 0.1
+				defense = 0.1
+			}
+		}
+		heavy_sp_artillery_brigade = {
+			forest = {
+				attack = 0.1
+				defense = 0.1
+			}
+			jungle = {
+				attack = 0.1
+				defense = 0.1
+			}
+			hills = {
+				attack = 0.1
+				defense = 0.1
+			}
+			mountain = {
+				attack = 0.1
+				defense = 0.1
+			}
+			plains = {
+				attack = 0.1
+				defense = 0.1
+			}
+			urban = {
+				attack = 0.1
+				defense = 0.1
+			}
+			marsh = {
+				attack = 0.1
+				defense = 0.1
+			}
+			desert = {
+				attack = 0.1
+				defense = 0.1
+			}
+		}
+		modern_sp_artillery_brigade = {
+			forest = {
+				attack = 0.1
+				defense = 0.1
+			}
+			jungle = {
+				attack = 0.1
+				defense = 0.1
+			}
+			hills = {
+				attack = 0.1
+				defense = 0.1
+			}
+			mountain = {
+				attack = 0.1
+				defense = 0.1
+			}
+			plains = {
+				attack = 0.1
+				defense = 0.1
+			}
+			urban = {
+				attack = 0.1
+				defense = 0.1
+			}
+			marsh = {
+				attack = 0.1
+				defense = 0.1
+			}
+			desert = {
+				attack = 0.1
+				defense = 0.1
+			}
+		}
+		light_sp_anti_air_brigade = {
+			forest = {
+				attack = 0.1
+				defense = 0.1
+			}
+			jungle = {
+				attack = 0.1
+				defense = 0.1
+			}
+			hills = {
+				attack = 0.1
+				defense = 0.1
+			}
+			mountain = {
+				attack = 0.1
+				defense = 0.1
+			}
+			plains = {
+				attack = 0.1
+				defense = 0.1
+			}
+			urban = {
+				attack = 0.1
+				defense = 0.1
+			}
+			marsh = {
+				attack = 0.1
+				defense = 0.1
+			}
+			desert = {
+				attack = 0.1
+				defense = 0.1
+			}
+		}
+		medium_sp_anti_air_brigade = {
+			forest = {
+				attack = 0.1
+				defense = 0.1
+			}
+			jungle = {
+				attack = 0.1
+				defense = 0.1
+			}
+			hills = {
+				attack = 0.1
+				defense = 0.1
+			}
+			mountain = {
+				attack = 0.1
+				defense = 0.1
+			}
+			plains = {
+				attack = 0.1
+				defense = 0.1
+			}
+			urban = {
+				attack = 0.1
+				defense = 0.1
+			}
+			marsh = {
+				attack = 0.1
+				defense = 0.1
+			}
+			desert = {
+				attack = 0.1
+				defense = 0.1
+			}
+		}
+		heavy_sp_anti_air_brigade = {
+			forest = {
+				attack = 0.1
+				defense = 0.1
+			}
+			jungle = {
+				attack = 0.1
+				defense = 0.1
+			}
+			hills = {
+				attack = 0.1
+				defense = 0.1
+			}
+			mountain = {
+				attack = 0.1
+				defense = 0.1
+			}
+			plains = {
+				attack = 0.1
+				defense = 0.1
+			}
+			urban = {
+				attack = 0.1
+				defense = 0.1
+			}
+			marsh = {
+				attack = 0.1
+				defense = 0.1
+			}
+			desert = {
+				attack = 0.1
+				defense = 0.1
+			}
+		}
+		modern_sp_anti_air_brigade = {
+			forest = {
+				attack = 0.1
+				defense = 0.1
+			}
+			jungle = {
+				attack = 0.1
+				defense = 0.1
+			}
+			hills = {
+				attack = 0.1
+				defense = 0.1
+			}
+			mountain = {
+				attack = 0.1
+				defense = 0.1
+			}
+			plains = {
+				attack = 0.1
+				defense = 0.1
+			}
+			urban = {
+				attack = 0.1
+				defense = 0.1
+			}
+			marsh = {
+				attack = 0.1
+				defense = 0.1
+			}
+			desert = {
+				attack = 0.1
+				defense = 0.1
+			}
+		}
+		light_tank_destroyer_brigade = {
+			forest = {
+				attack = 0.1
+				defense = 0.1
+			}
+			jungle = {
+				attack = 0.1
+				defense = 0.1
+			}
+			hills = {
+				attack = 0.1
+				defense = 0.1
+			}
+			mountain = {
+				attack = 0.1
+				defense = 0.1
+			}
+			plains = {
+				attack = 0.1
+				defense = 0.1
+			}
+			urban = {
+				attack = 0.1
+				defense = 0.1
+			}
+			marsh = {
+				attack = 0.1
+				defense = 0.1
+			}
+			desert = {
+				attack = 0.1
+				defense = 0.1
+			}
+		}
+		medium_tank_destroyer_brigade = {
+			forest = {
+				attack = 0.1
+				defense = 0.1
+			}
+			jungle = {
+				attack = 0.1
+				defense = 0.1
+			}
+			hills = {
+				attack = 0.1
+				defense = 0.1
+			}
+			mountain = {
+				attack = 0.1
+				defense = 0.1
+			}
+			plains = {
+				attack = 0.1
+				defense = 0.1
+			}
+			urban = {
+				attack = 0.1
+				defense = 0.1
+			}
+			marsh = {
+				attack = 0.1
+				defense = 0.1
+			}
+			desert = {
+				attack = 0.1
+				defense = 0.1
+			}
+		}
+		heavy_tank_destroyer_brigade = {
+			forest = {
+				attack = 0.1
+				defense = 0.1
+			}
+			jungle = {
+				attack = 0.1
+				defense = 0.1
+			}
+			hills = {
+				attack = 0.1
+				defense = 0.1
+			}
+			mountain = {
+				attack = 0.1
+				defense = 0.1
+			}
+			plains = {
+				attack = 0.1
+				defense = 0.1
+			}
+			urban = {
+				attack = 0.1
+				defense = 0.1
+			}
+			marsh = {
+				attack = 0.1
+				defense = 0.1
+			}
+			desert = {
+				attack = 0.1
+				defense = 0.1
+			}
+		}
+		modern_tank_destroyer_brigade = {
+			forest = {
+				attack = 0.1
+				defense = 0.1
+			}
+			jungle = {
+				attack = 0.1
+				defense = 0.1
+			}
+			hills = {
+				attack = 0.1
+				defense = 0.1
+			}
+			mountain = {
+				attack = 0.1
+				defense = 0.1
+			}
+			plains = {
+				attack = 0.1
+				defense = 0.1
+			}
+			urban = {
+				attack = 0.1
+				defense = 0.1
+			}
+			marsh = {
+				attack = 0.1
+				defense = 0.1
+			}
+			desert = {
+				attack = 0.1
+				defense = 0.1
+			}
+		}
+		light_flame_tank = {
+			forest = {
+				attack = 0.1
+				defense = 0.1
+			}
+			jungle = {
+				attack = 0.1
+				defense = 0.1
+			}
+			hills = {
+				attack = 0.1
+				defense = 0.1
+			}
+			mountain = {
+				attack = 0.1
+				defense = 0.1
+			}
+			plains = {
+				attack = 0.1
+				defense = 0.1
+			}
+			urban = {
+				attack = 0.1
+				defense = 0.1
+			}
+			marsh = {
+				attack = 0.1
+				defense = 0.1
+			}
+			desert = {
+				attack = 0.1
+				defense = 0.1
+			}
+		}
+		medium_flame_tank = {
+			forest = {
+				attack = 0.1
+				defense = 0.1
+			}
+			jungle = {
+				attack = 0.1
+				defense = 0.1
+			}
+			hills = {
+				attack = 0.1
+				defense = 0.1
+			}
+			mountain = {
+				attack = 0.1
+				defense = 0.1
+			}
+			plains = {
+				attack = 0.1
+				defense = 0.1
+			}
+			urban = {
+				attack = 0.1
+				defense = 0.1
+			}
+			marsh = {
+				attack = 0.1
+				defense = 0.1
+			}
+			desert = {
+				attack = 0.1
+				defense = 0.1
+			}
+		}
+		heavy_flame_tank = {
+			forest = {
+				attack = 0.1
+				defense = 0.1
+			}
+			jungle = {
+				attack = 0.1
+				defense = 0.1
+			}
+			hills = {
+				attack = 0.1
+				defense = 0.1
+			}
+			mountain = {
+				attack = 0.1
+				defense = 0.1
+			}
+			plains = {
+				attack = 0.1
+				defense = 0.1
+			}
+			urban = {
+				attack = 0.1
+				defense = 0.1
+			}
+			marsh = {
+				attack = 0.1
+				defense = 0.1
+			}
+			desert = {
+				attack = 0.1
+				defense = 0.1
+			}
+		}
+
+		enable_equipments = {
+		}
+		enable_equipment_modules = {
+		}
+		on_research_complete = {
+			custom_effect_tooltip = artillery_stabilizer_1
+		}
+		research_cost = 1
+
+		start_year = 1977
+
+		folder = {
+			name = artillery_folder
+			position = { x = -10 y = 8 }
+		}
+
+
+
+		categories = {
+			artillery
+		}
+	}
+	tank_muzzle_brake = {
+		light_armor = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		medium_armor = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		heavy_armor = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		modern_armor = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		light_sp_artillery_brigade = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		medium_sp_artillery_brigade = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		heavy_sp_artillery_brigade = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		modern_sp_artillery_brigade = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		light_sp_anti_air_brigade = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		medium_sp_anti_air_brigade = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		heavy_sp_anti_air_brigade = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		modern_sp_anti_air_brigade = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		light_tank_destroyer_brigade = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		medium_tank_destroyer_brigade = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		heavy_tank_destroyer_brigade = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		modern_tank_destroyer_brigade = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		light_flame_tank = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		medium_flame_tank = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		heavy_flame_tank = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		category_all_armor = {
+			maximum_speed = 0.05
+		}
+		XOR = {
+			tank_stabilizer
+			tank_pressure_valve
+		}
+		path = {
+			leads_to_tech = tank_muzzle_brake_1
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+		}
+		enable_equipment_modules = {
+		}
+		
+		on_research_complete = {
+			custom_effect_tooltip = artillery_muzzle_brake_0
+		}
+
+		research_cost = 1
+
+		start_year = 1972
+
+		folder = {
+			name = artillery_folder
+			position = { x = -8 y = 2 }
+		}
+
+
+
+		categories = {
+			artillery
+		}
+	}
+	tank_muzzle_brake_1 = {
+
+		light_armor = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		medium_armor = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		heavy_armor = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		modern_armor = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		light_sp_artillery_brigade = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		medium_sp_artillery_brigade = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		heavy_sp_artillery_brigade = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		modern_sp_artillery_brigade = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		light_sp_anti_air_brigade = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		medium_sp_anti_air_brigade = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		heavy_sp_anti_air_brigade = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		modern_sp_anti_air_brigade = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		light_tank_destroyer_brigade = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		medium_tank_destroyer_brigade = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		heavy_tank_destroyer_brigade = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		modern_tank_destroyer_brigade = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		light_flame_tank = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		medium_flame_tank = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		heavy_flame_tank = {
+			forest = {
+				movement = 0.05
+			}
+			jungle = {
+				movement = 0.05
+			}
+			hills = {
+				movement = 0.05
+			}
+			mountain = {
+				movement = 0.05
+			}
+			plains = {
+				movement = 0.05
+			}
+			urban = {
+				movement = 0.05
+			}
+			marsh = {
+				movement = 0.05
+			}
+			desert = {
+				movement = 0.05
+			}
+		}
+		category_all_armor = {
+			maximum_speed = 0.10
+		}
+
+		enable_equipments = {
+		}
+		enable_equipment_modules = {
+		}
+		
+		on_research_complete = {
+			custom_effect_tooltip = artillery_muzzle_brake_1
+		}
+
+		research_cost = 1
+
+		start_year = 1977
+
+		folder = {
+			name = artillery_folder
+			position = { x = -8 y = 8 }
+		}
+
+
+
+		categories = {
+			artillery
+		}
+	}
+	tank_pressure_valve = {
+
+		category_all_armor = {
+			reliability = 0.1
+			defense = 0.1
+		}
+
+		enable_equipments = {
+		}
+		enable_equipment_modules = {
+		}
+		XOR = {
+			tank_stabilizer
+			tank_muzzle_brake
+		}
+		path = {
+			leads_to_tech = tank_pressure_valve_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+
+		start_year = 1972
+
+		folder = {
+			name = artillery_folder
+			position = { x = -6 y = 2 }
+		}
+
+
+
+		categories = {
+			artillery
+		}
+	}
+	tank_pressure_valve_1 = {
+
+		category_all_armor = {
+			reliability = 0.15
+			defense = 0.15
+		}
+
+		enable_equipments = {
+		}
+		enable_equipment_modules = {
+		}
+		
+
+		research_cost = 1
+
+		start_year = 1977
+
+		folder = {
+			name = artillery_folder
+			position = { x = -6 y = 8 }
+		}
+
+
+
+		categories = {
+			artillery
+		}
+	}
 }

@@ -1,4 +1,5 @@
-spriteTypes = {	
+spriteTypes = {
+	# 决议使用的大图片
 	spriteType = {
 		name = "GFX_bcf_school_factional_strife_picture"
 		texturefile = "gfx/texticons/bcf_school_factional_strife_picture.dds"
@@ -48,5 +49,48 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_trait_activist"
 		texturefile = "gfx/interface/traits/personal/trait_activist.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_ooari_unit_leader"
+		texturefile = "gfx/interface/traits/personal/trait_ooari_unit_leader.dds"
+	}
+
+	# 军官团精神图标
+	spriteType = {
+		name = "GFX_idea_senshado_team_anglerfish_spirit"
+		texturefile = "gfx/interface/officer_corp/spirits/spirit_idea_senshado_team_anglerfish.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_senshado_team_leopon_spirit"
+		texturefile = "gfx/interface/officer_corp/spirits/spirit_idea_senshado_team_leopon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_senshado_team_mallard_spirit"
+		texturefile = "gfx/interface/officer_corp/spirits/spirit_idea_senshado_team_mallard.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_senshado_team_hippon_spirit"
+		texturefile = "gfx/interface/officer_corp/spirits/spirit_idea_senshado_team_hippon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_senshado_team_turtle_spirit"
+		texturefile = "gfx/interface/officer_corp/spirits/spirit_idea_senshado_team_turtle.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_senshado_team_anteater_spirit"
+		texturefile = "gfx/interface/officer_corp/spirits/spirit_idea_senshado_team_anteater.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_senshado_team_duck_spirit"
+		texturefile = "gfx/interface/officer_corp/spirits/spirit_idea_senshado_team_duck.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_senshado_team_shark_spirit"
+		texturefile = "gfx/interface/officer_corp/spirits/spirit_idea_senshado_team_shark.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_senshado_team_rabbit_spirit"
+		texturefile = "gfx/interface/officer_corp/spirits/spirit_idea_senshado_team_rabbit.dds"
 	}
 }

@@ -8,7 +8,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ brilliant_strategist armor_officer activist }
+			traits={ ooari_unit_leader brilliant_strategist armor_officer activist }
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -58,7 +58,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer Bearer_of_Artillery }
+			traits = { ooari_unit_leader Armor_Officer Bearer_of_Artillery }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 2
@@ -83,7 +83,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer Media_Personality }
+			traits = { ooari_unit_leader Armor_Officer Media_Personality }
 			skill = 3
 			attack_skill = 1
 			defense_skill = 2
@@ -108,7 +108,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer Cautious }
+			traits = { ooari_unit_leader Armor_Officer Cautious }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 2
@@ -124,33 +124,6 @@ characters={
 			traits = { military_theorist }
 		}
 	}
-
-	generic_hana = {
-		name="Hana Isuzu"
-		portraits={
-			civilian={
-				large="gfx/leaders/generic/Portrait_generic_Hana.dds"
-				small="gfx/interface/advisors/idea_hana.dds"
-			}
-		}
-		corps_commander={
-			traits = { Armor_Officer Cautious }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 2
-			legacy_id=1004
-		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = generic_hana
-			ledger = army
-			traits = { military_theorist }
-		}
-	}
-
 	generic_mako = {
 		name="Mako Reizei"
 		portraits={
@@ -160,7 +133,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer Reckless }
+			traits = { ooari_unit_leader Armor_Officer Reckless }
 			skill = 3
 			attack_skill = 2
 			defense_skill = 3
@@ -264,7 +237,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer Organizer }
+			traits = { ooari_unit_leader Armor_Officer Organizer }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 2
@@ -290,7 +263,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer harsh_leader }
+			traits = { ooari_unit_leader Armor_Officer harsh_leader }
 			skill = 2
 			attack_skill = 3
 			defense_skill = 1
@@ -316,7 +289,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer Organizer }
+			traits = { ooari_unit_leader Armor_Officer Organizer }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -342,7 +315,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer engineer_officer }
+			traits = { ooari_unit_leader Armor_Officer engineer_officer }
 			skill = 3
 			attack_skill = 2
 			defense_skill = 2
@@ -368,7 +341,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer engineer_officer }
+			traits = { ooari_unit_leader Armor_Officer engineer_officer }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -394,7 +367,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer engineer_officer }
+			traits = { ooari_unit_leader Armor_Officer engineer_officer }
 			skill = 2
 			attack_skill = 1
 			defense_skill = 2
@@ -420,7 +393,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer engineer_officer }
+			traits = { ooari_unit_leader Armor_Officer engineer_officer }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 1
@@ -446,7 +419,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer Desert_Fox }
+			traits = { ooari_unit_leader Armor_Officer Desert_Fox }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 3
@@ -472,7 +445,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer Bearer_of_Artillery }
+			traits = { ooari_unit_leader Armor_Officer Bearer_of_Artillery }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 3
@@ -498,7 +471,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer Cavalry_Officer }
+			traits = { ooari_unit_leader Armor_Officer Cavalry_Officer }
 			skill = 2
 			attack_skill = 3
 			defense_skill = 1
@@ -524,7 +497,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer Cavalry_Officer }
+			traits = { ooari_unit_leader Armor_Officer Cavalry_Officer }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -550,7 +523,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer Invader }
+			traits = { ooari_unit_leader Armor_Officer Invader }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 3
@@ -576,7 +549,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer Invader }
+			traits = { ooari_unit_leader Armor_Officer Invader }
 			skill = 2
 			attack_skill = 1
 			defense_skill = 2
@@ -602,7 +575,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer Invader }
+			traits = { ooari_unit_leader Armor_Officer Invader }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -628,7 +601,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer Invader }
+			traits = { ooari_unit_leader Armor_Officer Invader }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -654,7 +627,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer Invader }
+			traits = { ooari_unit_leader Armor_Officer Invader }
 			skill = 2
 			attack_skill = 1
 			defense_skill = 1
@@ -680,7 +653,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer Skilled_Staffer }
+			traits = { ooari_unit_leader Armor_Officer Skilled_Staffer }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 4
@@ -706,7 +679,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer Skilled_Staffer }
+			traits = { ooari_unit_leader Armor_Officer Skilled_Staffer }
 			skill = 2
 			attack_skill = 3
 			defense_skill = 1
@@ -732,7 +705,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer Infantry_Officer }
+			traits = { ooari_unit_leader Armor_Officer Infantry_Officer }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 1
@@ -758,7 +731,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer Reckless }
+			traits = { ooari_unit_leader Armor_Officer Reckless }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -784,7 +757,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer War_Hero }
+			traits = { ooari_unit_leader Armor_Officer War_Hero }
 			skill = 3
 			attack_skill = 2
 			defense_skill = 2
@@ -810,7 +783,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer Mountaineer }
+			traits = { ooari_unit_leader Armor_Officer Mountaineer }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -836,7 +809,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer Media_Personality }
+			traits = { ooari_unit_leader Armor_Officer Media_Personality }
 			skill = 2
 			attack_skill = 1
 			defense_skill = 2
@@ -862,7 +835,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer Infantry_Officer }
+			traits = { ooari_unit_leader Armor_Officer Infantry_Officer }
 			skill = 2
 			attack_skill = 1
 			defense_skill = 1
@@ -888,7 +861,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer trickster }
+			traits = { ooari_unit_leader Armor_Officer trickster }
 			skill = 2
 			attack_skill = 1
 			defense_skill = 1
@@ -914,7 +887,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer trickster }
+			traits = { ooari_unit_leader Armor_Officer trickster }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -940,7 +913,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer Harsh_Leader }
+			traits = { ooari_unit_leader Armor_Officer Harsh_Leader }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 2
@@ -966,7 +939,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer Career_Officer }
+			traits = { ooari_unit_leader Armor_Officer Career_Officer }
 			skill = 2
 			attack_skill = 1
 			defense_skill = 2
@@ -992,7 +965,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer Career_Officer }
+			traits = { ooari_unit_leader Armor_Officer Career_Officer }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -1018,7 +991,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer Cavalry_Officer }
+			traits = { ooari_unit_leader Armor_Officer Cavalry_Officer }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 3
@@ -1044,7 +1017,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer Organizer }
+			traits = { ooari_unit_leader Armor_Officer Organizer }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 1
@@ -1070,7 +1043,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { Armor_Officer Jungle_Rat }
+			traits = { ooari_unit_leader Armor_Officer Jungle_Rat }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2

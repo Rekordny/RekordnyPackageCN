@@ -52,3 +52,7 @@ set_variable = {
 	value = 0
 }
 recruit_character = JHS_mika
+
+add_ideas = JHS_polka_ballad
+add_ideas = JHS_outdatad_senshado
+add_ideas = JHS_sisu_idea

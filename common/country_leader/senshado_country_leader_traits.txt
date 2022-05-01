@@ -1,4 +1,5 @@
 leader_traits = {
+
 	#KGA
 	ture_nishizumi_style = {
 		random = no

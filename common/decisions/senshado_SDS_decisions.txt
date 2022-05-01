@@ -335,5 +335,3 @@ sds_legitimacy = {
 		}
 	}
 }
-
-

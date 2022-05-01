@@ -1,5 +1,75 @@
 ideas = {
     country = {
+        #重新建立的大洗
+        generic_ooari_revived = {
+            picture = GFX_idea_generic_ooari_revived
+            allowed = {
+            }
+            available = { }
+            cancel = { }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+            modifier = {
+                tax_daily_modifier = 0.1
+                industrial_capacity_factory = 0.1
+                production_speed_buildings_factor = 0.1
+                recruitable_population_factor = 0.05
+                conscription_factor = 0.15
+                research_speed_factor = 0.1
+                training_time_factor = -0.1
+            }
+        }
+        #大洗工业课
+        generic_ooari_industry = {
+            picture = GFX_idea_generic_ooari_industry
+            allowed = {
+            }
+            available = { }
+            cancel = { }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+            modifier = {
+                tax_daily_modifier = 0.1
+                industrial_capacity_factory = 0.1
+                production_speed_buildings_factor = 0.1
+            }
+        }
+        #大洗招生处
+        generic_ooari_school_enrollment = {
+            picture = GFX_idea_generic_ooari_school_enrollment
+            allowed = {
+            }
+            available = { }
+            cancel = { }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+            modifier = {
+                recruitable_population_factor = 0.05
+                conscription_factor = 0.15
+            }
+        }
+        #大洗战车道部
+        generic_ooari_senshado = {
+            picture = GFX_idea_generic_ooari_senshado
+            allowed = {
+            }
+            available = { }
+            cancel = { }
+            allowed_civil_war = {
+                always = no
+            }
+            removal_cost = -1
+            modifier = {
+                research_speed_factor = 0.1
+                training_time_factor = -0.1
+            }
+        }
         #战车道和平协议
         senshado_peace_compact = {
             picture = GFX_idea_senshado_peace_compact

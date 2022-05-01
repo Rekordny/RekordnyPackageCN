@@ -157,6 +157,7 @@ focus_tree = {
 				swap_country_leader_traits = {
 					remove = JHS_mika_lazy
 					add = JHS_mika_pilot_wind
+					ideology = conservatism
 				}
 			}
 		}
@@ -313,8 +314,8 @@ focus_tree = {
 		available = {
 		}
 		cost = 10
-		x = -1
-		y = 1
+		x = 0
+		y = 2
 		completion_reward = {
 			add_state_core = 195
 			every_state = {
@@ -428,12 +429,12 @@ focus_tree = {
 
 	#战争的压迫
 	focus = {
-		id = JHS_build_industrial_complex
+		id = JHS_build_arms_factory
 		icon = GFX_goal_unknown
 		prerequisite = {
-			focus = JHS_setup_senshado_research_bureau
+			focus = JHS_build_industrial_complex
 		}
-		relative_position_id = JHS_setup_senshado_research_bureau
+		relative_position_id = JHS_build_industrial_complex
 		cost = 10
 		x = 0
 		y = 1

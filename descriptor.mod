@@ -4,5 +4,5 @@ tags={
 	"Utilities"
 }
 name="Girls Und Panzer: RP"
-supported_version="1.11.9"
+supported_version="1.11.10"
 remote_file_id="2355290879"

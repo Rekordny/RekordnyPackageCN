@@ -1,11 +1,5 @@
 technologies = {
 
-#   ###  ##  #  # ###      ## #  # ### ###   ##
-#    #  #    #  #  #      #   #  #  #  #  # #
-#    #  # ## ####  #       #  ####  #  ###   #
-#    #  #  # #  #  #        # #  #  #  #      #
-### ###  ##  #  #  #      ##  #  # ### #    ##
-
 
 	early_ship_hull_light = {
 
@@ -176,198 +170,6 @@ technologies = {
 		}
 	}
 
-	# smoke_generator = {
-
-	# 	naval_retreat_speed = 0.2
-
-	# 	research_cost = 0.75
-
-	# 	start_year = 1958
-
-	# 	folder = {
-	# 		name = mtgnavalfolder
-	# 		position = { x = 1 y = 2 }
-	# 	}
-
-	# 	ai_will_do = {
-	# 		factor = 8
-
-	# 		modifier = {
-	# 			factor = 2
-	# 			tag = STG
-	# 		}
-	# 	}
-
-	# 	categories = {
-	# 		naval_equipment
-	# 		dd_tech
-	# 		ship_modules_tech
-	# 	}
-	# }
-
- ##  #  # ### ###      ## #  # ###  #   #  ##  ###  ### #  # ###
-#  # ## #  #   #      #   #  # #  # ## ## #  # #  #  #  ## # #
-#### # ##  #   #       #  #  # ###  # # # #### ###   #  # ## ##
-#  # #  #  #   #        # #  # #  # #   # #  # #  #  #  #  # #
-#  # #  #  #  ###     ##   ##  ###  #   # #  # #  # ### #  # ###
-
-
-	# basic_depth_charges = {
-
-	# 	enable_equipment_modules = {
-	# 		ship_depth_charge_1
-	# 	}
-
-	# 	on_research_complete = {
-	# 		custom_effect_tooltip = depth_charges_advice_tt
-	# 	}
-
-	# 	path = {
-	# 		leads_to_tech = improved_depth_charges
-	# 		research_cost_coeff = 1
-	# 	}
-
-	# 	xp_research_type = navy
-	# 	xp_boost_cost = 50
-	# 	xp_research_bonus = 1.50
-	# 	research_cost = 1.5
-
-	# 	start_year = 1958
-
-	# 	folder = {
-	# 		name = mtgnavalfolder
-	# 		position = { x = 1 y = 4 }
-	# 	}
-
-	# 	ai_will_do = {
-	# 		factor = 4
-	# 	}
-
-	# 	categories = {
-	# 		naval_equipment
-	# 		dd_tech
-	# 		asw_tech
-	# 		ship_modules_tech
-	# 	}
-	# }
-	# improved_depth_charges = {
-
-	# 	enable_equipment_modules = {
-	# 		ship_depth_charge_2
-	# 	}
-	# 	on_research_complete = {
-	# 		custom_effect_tooltip = depth_charges_advice_tt
-	# 	}
-	# 	path = {
-	# 		leads_to_tech = advanced_depth_charges
-	# 		research_cost_coeff = 1
-	# 	}
-
-	# 	xp_research_type = navy
-	# 	xp_boost_cost = 50
-	# 	xp_research_bonus = 1.50
-	# 	research_cost = 1.5
-
-	# 	start_year = 1972
-
-	# 	folder = {
-	# 		name = mtgnavalfolder
-	# 		position = { x = 1 y = 7 }
-	# 	}
-
-	# 	ai_will_do = {
-	# 		factor = 4
-
-	# 		modifier = {
-	# 			factor = 2
-	# 			has_war_with = KGA
-	# 		}
-	# 	}
-
-	# 	categories = {
-	# 		naval_equipment
-	# 		dd_tech
-	# 		asw_tech
-	# 		ship_modules_tech
-	# 	}
-	# }
-	# advanced_depth_charges = {
-
-	# 	enable_equipment_modules = {
-	# 		ship_depth_charge_3
-	# 	}
-	# 	on_research_complete = {
-	# 		custom_effect_tooltip = depth_charges_advice_tt
-	# 	}
-	# 	path = {
-	# 		leads_to_tech = modern_depth_charges
-	# 		research_cost_coeff = 1
-	# 	}
-	# 	xp_research_type = navy
-	# 	xp_boost_cost = 50
-	# 	xp_research_bonus = 1.50
-	# 	research_cost = 1.5
-
-	# 	start_year = 1976
-
-	# 	folder = {
-	# 		name = mtgnavalfolder
-	# 		position = { x = 1 y = 13 }
-	# 	}
-
-	# 	ai_will_do = {
-	# 		factor = 2
-
-	# 		modifier = {
-	# 			factor = 4
-	# 			has_war_with = KGA
-	# 		}
-	# 	}
-
-	# 	categories = {
-	# 		naval_equipment
-	# 		dd_tech
-	# 		asw_tech
-	# 		ship_modules_tech
-	# 	}
-	# }
-	# modern_depth_charges = {
-
-	# 	enable_equipment_modules = {
-	# 		ship_depth_charge_4
-	# 	}
-	# 	on_research_complete = {
-	# 		custom_effect_tooltip = depth_charges_advice_tt
-	# 	}
-
-	# 	xp_research_type = navy
-	# 	xp_boost_cost = 50
-	# 	xp_research_bonus = 1.50
-	# 	research_cost = 1.5
-
-	# 	start_year = 1980
-
-	# 	folder = {
-	# 		name = mtgnavalfolder
-	# 		position = { x = 1 y = 19 }
-	# 	}
-
-	# 	ai_will_do = {
-	# 		factor = 2
-
-	# 		modifier = {
-	# 			factor = 4
-	# 			has_war_with = KGA
-	# 		}
-	# 	}
-
-	# 	categories = {
-	# 		naval_equipment
-	# 		dd_tech
-	# 		asw_tech
-	# 		ship_modules_tech
-	# 	}
-	# }
 	sonar = {
 		enable_equipment_modules = {
 			ship_sonar_1
@@ -438,11 +240,6 @@ technologies = {
 		}
 	}
 
- ##  ###  #  # ###  ## ### ###   ##
-#  # #  # #  #  #  #   #   #  # #
-#    ###  #  #  #   #  ##  ###   #
-#  # #  # #  #  #    # #   #  #   #
- ##  #  #  ##  ### ##  ### #  # ##
 
 	early_ship_hull_cruiser = {
 
@@ -805,12 +602,6 @@ technologies = {
 		}
 	}
 
-#  # ###  ##  #   # #   #      ## #  # ### ###   ##
-#  # #   #  # #   #  # #      #   #  #  #  #  # #
-#### ##  ####  # #    #        #  ####  #  ###   #
-#  # #   #  #  # #    #         # #  #  #  #      #
-#  # ### #  #   #     #       ##  #  # ### #    ##
-
 
 	early_ship_hull_heavy = {
 
@@ -923,35 +714,6 @@ technologies = {
 			bc_tech
 		}
 	}
-	# ship_hull_super_heavy = {
-
-	# 	enable_equipments = {
-	# 		ship_hull_super_heavy_1
-	# 	}
-
-	# 	enable_equipment_modules = {
-	# 		ship_armor_shbb
-	# 	}
-
-	# 	research_cost = 1.5
-
-	# 	start_year = 1972
-
-	# 	ai_will_do = {
-	# 		factor = 1
-
-	# 		modifier = {
-	# 			factor = 25
-	# 			tag = CHT
-	# 		}
-	# 	}
-
-	# 	categories = {
-	# 		naval_equipment
-	# 		bb_tech
-	# 		bc_tech
-	# 	}
-	# }
 
 	improved_ship_hull_heavy = {
 
@@ -1130,13 +892,9 @@ technologies = {
 		}
 	}
 
- ##   ##  ###  ###  ### ### ###   ##
-#  # #  # #  # #  #  #  #   #  # #
-#    #### ###  ###   #  ##  ###   #
-#  # #  # #  # #  #  #  #   #  #   #
- ##  #  # #  # #  # ### ### #  # ##
 
-early_ship_hull_carrier = {
+
+	early_ship_hull_carrier = {
 
 		enable_equipments = {
 			ship_hull_carrier_conversion_bb
@@ -1299,12 +1057,6 @@ early_ship_hull_carrier = {
 			cv_tech
 		}
 	}
-
-###  ##  ###  ###  ### ###   ##      #   #  ##  ###   ##  ### ###  ###                  ## #  # ###  #   #  ##  ###  ### #  # ###  ##
- #  #  # #  # #  # #   #  # #  #     #   # #  # #  # #  # #   #  # #       {~._.~}     #   #  # #  # ## ## #  # #  #  #  ## # #   #
- #  #  # ###  ###  ##  #  # #  #     # # # #### ###  #### ##  ###  ##       ( Y )       #  #  # ###  # # # #### ###   #  # ## ##   #
- #  #  # #  # #    #   #  # #  #     # # # #  # #  # #  # #   #  # #       ()~*~()       # #  # #  # #   # #  # #  #  #  #  # #     #
- #   ##  #  # #    ### ###   ##       # #  #  # #  # #  # #   #  # ###     (_)-(_)     ##   ##  ###  #   # #  # #  # ### #  # ### ##
 
 	basic_torpedo = {
 
@@ -1897,11 +1649,6 @@ early_ship_hull_carrier = {
 		}
 	}
 
- ##  ###  #   #  ##  #   # ### #  # ###  ##
-#  # #  # ## ## #  # ## ## #   ## #  #  #
-#### ###  # # # #### # # # ##  # ##  #   #
-#  # #  # #   # #  # #   # #   #  #  #    #
-#  # #  # #   # #  # #   # ### #  #  #  ##
 
 	early_CIWS = {
 
@@ -2100,7 +1847,8 @@ early_ship_hull_carrier = {
 		}
 
 		enable_equipment_modules = {
-			
+			ship_VLS_1_light
+			ship_VLS_1_heavy
 		}
 
 
@@ -2146,7 +1894,8 @@ early_ship_hull_carrier = {
 		}
 
 		enable_equipment_modules = {
-			
+			ship_VLS_2_light
+			ship_VLS_2_heavy
 		}
 
 
@@ -2192,7 +1941,8 @@ early_ship_hull_carrier = {
 		}
 
 		enable_equipment_modules = {
-			
+			ship_VLS_3_light
+			ship_VLS_3_heavy
 		}
 
 
@@ -2234,7 +1984,8 @@ early_ship_hull_carrier = {
 		}
 
 		enable_equipment_modules = {
-			
+			ship_VLS_4_light
+			ship_VLS_4_heavy
 		}
 
 
@@ -3089,11 +2840,6 @@ early_ship_hull_carrier = {
 	}
 
 
-###   ##  #   #  ##   ##  ###      ##   ##  #  # ### ###   ##  #
-#  # #  # ## ## #  # #    #       #  # #  # ## #  #  #  # #  # #
-#  # #### # # # #### # ## ##      #    #  # # ##  #  ###  #  # #
-#  # #  # #   # #  # #  # #       #  # #  # #  #  #  #  # #  # #
-###  #  # #   # #  #  ##  ###      ##   ##  #  #  #  #  #  ##  ###
 
 	damage_control_1 = {
 
@@ -3214,13 +2960,6 @@ early_ship_hull_carrier = {
 		}
 	}
 
-### ### ###  ###      ##   ##  #  # ### ###   ##  #       #   # ### ### #  #  ##  ###   ##
-#    #  #  # #       #  # #  # ## #  #  #  # #  # #       ## ## #    #  #  # #  # #  # #
-##   #  ###  ##      #    #  # # ##  #  ###  #  # #       # # # ##   #  #### #  # #  #  #
-#    #  #  # #       #  # #  # #  #  #  #  # #  # #       #   # #    #  #  # #  # #  #   #
-#   ### #  # ###      ##   ##  #  #  #  #  #  ##  ###     #   # ###  #  #  #  ##  ###  ##
-
-#NOTE: FIRE CONTROL SYSTEMS ARE IN ELECTROMECHANICAL engineERING FOLDER!
 
 	fire_control_methods_1 = {
 
@@ -3361,11 +3100,6 @@ early_ship_hull_carrier = {
 	}
 
 
-#   # ### #  # ###  ##
-## ##  #  ## # #   #
-# # #  #  # ## ##   #
-#   #  #  #  # #     #
-#   # ### #  # ### ##
 
 	basic_naval_mines = {
 

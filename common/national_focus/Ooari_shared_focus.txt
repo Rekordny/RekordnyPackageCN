@@ -25,8 +25,8 @@ shared_focus = {
 	relative_position_id = OGA_shared_one
 	x = -7
 	y = 1
-	cost = 10
-	available = { }
+	cost = 5
+	available = { has_character = generic_reira has_character = generic_keiko has_character = generic_maria has_character = generic_muuton }
 	bypass = { }
 	prerequisite = { focus = OGA_shared_one }
 	#mutually_exclusive = { focus =  }
@@ -36,6 +36,7 @@ shared_focus = {
 
 	completion_reward = {
 		army_experience = 10
+		custom_effect_tooltip = oga_tooltip2
 	}
 }
 
@@ -46,8 +47,8 @@ shared_focus = {
 	relative_position_id = OGA_shared_one
 	x = -5
 	y = 1
-	cost = 10
-	available = { }
+	cost = 5
+	available = { has_character = generic_noriko has_character = generic_taeko has_character = generic_shinobu has_character = generic_akebi }
 	bypass = { }
 	prerequisite = { focus = OGA_shared_one }
 	#mutually_exclusive = { focus =  }
@@ -57,6 +58,7 @@ shared_focus = {
 
 	completion_reward = {
 		army_experience = 10
+		custom_effect_tooltip = oga_tooltip7
 	}
 }
 
@@ -67,8 +69,8 @@ shared_focus = {
 	relative_position_id = OGA_shared_one
 	x = -3
 	y = 1
-	cost = 10
-	available = { }
+	cost = 5
+	available = { has_character = generic_aoi has_character = generic_taki has_character = generic_mai }
 	bypass = { }
 	prerequisite = { focus = OGA_shared_one }
 	#mutually_exclusive = { focus =  }
@@ -78,6 +80,7 @@ shared_focus = {
 
 	completion_reward = {
 		army_experience = 10
+		custom_effect_tooltip = oga_tooltip6
 	}
 }
 
@@ -88,8 +91,8 @@ shared_focus = {
 	relative_position_id = OGA_shared_one
 	x = -1
 	y = 1
-	cost = 10
-	available = { }
+	cost = 5
+	available = { has_character = generic_erwin has_character = generic_caesar has_character = generic_saemonza has_character = generic_oryou }
 	bypass = { }
 	prerequisite = { focus = OGA_shared_one }
 	#mutually_exclusive = { focus =  }
@@ -99,6 +102,7 @@ shared_focus = {
 
 	completion_reward = {
 		army_experience = 10
+		custom_effect_tooltip = oga_tooltip4
 	}
 }
 
@@ -109,8 +113,8 @@ shared_focus = {
 	relative_position_id = OGA_shared_one
 	x = 1
 	y = 1
-	cost = 10
-	available = { }
+	cost = 5
+	available = { has_character = generic_momo has_character = generic_yuzu has_character = generic_anzu }
 	bypass = { }
 	prerequisite = { focus = OGA_shared_one }
 	#mutually_exclusive = { focus =  }
@@ -120,6 +124,7 @@ shared_focus = {
 
 	completion_reward = {
 		army_experience = 10
+		custom_effect_tooltip = oga_tooltip5
 	}
 }
 
@@ -130,8 +135,8 @@ shared_focus = {
 	relative_position_id = OGA_shared_one
 	x = 3
 	y = 1
-	cost = 10
-	available = { }
+	cost = 5
+	available = { has_character = generic_ogin has_character = generic_rum has_character = generic_murakami has_character = generic_flint has_character = generic_cutlass }
 	bypass = { }
 	prerequisite = { focus = OGA_shared_one }
 	#mutually_exclusive = { focus =  }
@@ -141,6 +146,7 @@ shared_focus = {
 
 	completion_reward = {
 		army_experience = 10
+		custom_effect_tooltip = oga_tooltip8
 	}
 }
 
@@ -151,8 +157,8 @@ shared_focus = {
 	relative_position_id = OGA_shared_one
 	x = 5
 	y = 1
-	cost = 10
-	available = { }
+	cost = 5
+	available = { has_character = generic_midoriko has_character = generic_nozomi has_character = generic_moyoko }
 	bypass = { }
 	prerequisite = { focus = OGA_shared_one }
 	#mutually_exclusive = { focus =  }
@@ -162,6 +168,7 @@ shared_focus = {
 
 	completion_reward = {
 		army_experience = 10
+		custom_effect_tooltip = oga_tooltip3
 	}
 }
 
@@ -172,8 +179,8 @@ shared_focus = {
 	relative_position_id = OGA_shared_one
 	x = 7
 	y = 1
-	cost = 10
-	available = { }
+	cost = 5
+	available = { has_character = generic_azusa has_character = generic_ayumi has_character = generic_aya has_character = generic_karina has_character = generic_yuuki has_character = generic_saki }
 	bypass = { }
 	prerequisite = { focus = OGA_shared_one }
 	#mutually_exclusive = { focus =  }
@@ -183,6 +190,7 @@ shared_focus = {
 
 	completion_reward = {
 		army_experience = 10
+		custom_effect_tooltip = oga_tooltip9
 	}
 }
 
@@ -193,7 +201,7 @@ shared_focus = {
 	relative_position_id = OGA_shared_one
 	x = 0
 	y = 2
-	cost = 10
+	cost = 5
 	available = { }
 	bypass = { }
 	prerequisite = { focus = OGA_shared_two focus = OGA_shared_three focus = OGA_shared_four focus = OGA_shared_five focus = OGA_shared_six focus = OGA_shared_seven focus = OGA_shared_eight focus = OGA_shared_nine }
@@ -203,7 +211,7 @@ shared_focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		army_experience = 10
+		add_political_power = 150
 	}
 }
 
@@ -224,7 +232,7 @@ shared_focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		army_experience = 10
+		add_ideas = generic_ooari_industry
 	}
 }
 
@@ -247,7 +255,7 @@ shared_focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		army_experience = 10
+		add_ideas = generic_ooari_school_enrollment
 	}
 }
 
@@ -268,7 +276,7 @@ shared_focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		army_experience = 10
+		add_ideas = generic_ooari_senshado
 	}
 }
 
@@ -291,7 +299,11 @@ shared_focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		army_experience = 10
+		set_cosmetic_tag = OGA
+		remove_ideas = generic_ooari_industry
+		remove_ideas = generic_ooari_school_enrollment
+		remove_ideas = generic_ooari_senshado
+		add_ideas = generic_ooari_revived
 	}
 }
 
@@ -303,7 +315,7 @@ shared_focus = {
 	x = -8
 	y = 1
 	cost = 10
-	available = { }
+	available = { has_character = generic_reira has_character = generic_keiko has_character = generic_maria has_character = generic_muuton }
 	bypass = { }
 	prerequisite = { focus = OGA_shared_twentyfour }
 	#mutually_exclusive = { focus =  }
@@ -324,7 +336,7 @@ shared_focus = {
 	x = -6
 	y = 1
 	cost = 10
-	available = { }
+	available = { has_character = generic_noriko has_character = generic_taeko has_character = generic_shinobu has_character = generic_akebi }
 	bypass = { }
 	prerequisite = { focus = OGA_shared_twentyfour }
 	#mutually_exclusive = { focus =  }
@@ -344,7 +356,7 @@ shared_focus = {
 	x = -4
 	y = 1
 	cost = 10
-	available = { }
+	available = { has_character = generic_aoi has_character = generic_taki has_character = generic_mai }
 	bypass = { }
 	prerequisite = { focus = OGA_shared_twentyfour }
 	#mutually_exclusive = { focus =  }
@@ -364,7 +376,7 @@ shared_focus = {
 	x = -2
 	y = 1
 	cost = 10
-	available = { }
+	available = { has_character = generic_erwin has_character = generic_caesar has_character = generic_saemonza has_character = generic_oryou }
 	bypass = { }
 	prerequisite = { focus = OGA_shared_twentyfour }
 	#mutually_exclusive = { focus =  }
@@ -384,7 +396,7 @@ shared_focus = {
 	x = 0
 	y = 1
 	cost = 10
-	available = { }
+	available = { has_character = generic_miho has_character = generic_yukari has_character = generic_hana has_character = generic_saori has_character = generic_mako }
 	bypass = { }
 	prerequisite = { focus = OGA_shared_twentyfour }
 	#mutually_exclusive = { focus =  }
@@ -405,7 +417,7 @@ shared_focus = {
 	x = 2
 	y = 1
 	cost = 10
-	available = { }
+	available = { has_character = generic_momo has_character = generic_yuzu has_character = generic_anzu }
 	bypass = { }
 	prerequisite = { focus = OGA_shared_twentyfour }
 	#mutually_exclusive = { focus =  }
@@ -426,7 +438,7 @@ shared_focus = {
 	x = 4
 	y = 1
 	cost = 10
-	available = { }
+	available = { has_character = generic_ogin has_character = generic_rum has_character = generic_murakami has_character = generic_flint has_character = generic_cutlass }
 	bypass = { }
 	prerequisite = { focus = OGA_shared_twentyfour }
 	#mutually_exclusive = { focus =  }
@@ -447,7 +459,7 @@ shared_focus = {
 	x = 6
 	y = 1
 	cost = 10
-	available = { }
+	available = { has_character = generic_midoriko has_character = generic_nozomi has_character = generic_moyoko }
 	bypass = { }
 	prerequisite = { focus = OGA_shared_twentyfour }
 	#mutually_exclusive = { focus =  }
@@ -467,7 +479,7 @@ shared_focus = {
 	x = 8
 	y = 1
 	cost = 10
-	available = { }
+	available = { has_character = generic_azusa has_character = generic_ayumi has_character = generic_aya has_character = generic_karina has_character = generic_yuuki has_character = generic_saki }
 	bypass = { }
 	prerequisite = { focus = OGA_shared_twentyfour }
 	#mutually_exclusive = { focus =  }
@@ -488,7 +500,7 @@ shared_focus = {
 	x = 0
 	y = 1
 	cost = 10
-	available = { }
+	available = { has_character = generic_miho }
 	bypass = { }
 	prerequisite = { focus = OGA_shared_fourteen }
 	#mutually_exclusive = { focus =  }

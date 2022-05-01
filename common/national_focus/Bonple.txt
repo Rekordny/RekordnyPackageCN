@@ -10,14 +10,14 @@ focus_tree = {
 	
 	default = no
 	reset_on_civilwar = no
-	continuous_focus_position = { x = 50 y = 1200 }
+	continuous_focus_position = { x = 1500 y = 0 }
 
 
     #召开九月会议
 	focus = {
 		id = BON_held_september_meeting
 		icon = GFX_focus_BON_held_september_meeting
-		x = 3
+		x = 8
 		y = 0
 		cost = 15
 		available = { }
@@ -61,7 +61,7 @@ focus_tree = {
 		id = BON_reinforce_maiko_lead
 		icon = GFX_focus_BON_reinforce_maiko_lead
 		relative_position_id = BON_extend_bill_of_may
-		x = -2
+		x = -5
 		y = 1
 		cost = 10
 		available = { }
@@ -94,12 +94,116 @@ focus_tree = {
 			factor = 25
 		}
 	}
+	#维持波罗的海地区稳定
+	focus = {
+		id = BON_maintaining_stability_in_baltic_region
+		icon = GFX_focus_BON_maintaining_stability_in_baltic_region
+		relative_position_id = BON_emergency_management_committee
+		x = 2
+		y = 1
+		cost = 5
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_emergency_management_committee }
+		available_if_capitulated = yes
+		completion_reward = {
+			11 = {
+				add_resistance = -5
+				add_compliance = 10
+			}	
+			815 = {
+				add_resistance = -5
+				add_compliance = 10
+			}
+			189 = {
+				add_resistance = -5
+				add_compliance = 10
+			}
+			190 = {
+				add_resistance = -5
+				add_compliance = 10
+			}
+			808 = {
+				add_resistance = -5
+				add_compliance = 10
+			}
+			810 = {
+				add_resistance = -5
+				add_compliance = 10
+			}
+			265 = {
+				add_resistance = -5
+				add_compliance = 10
+			}
+			191 = {
+				add_resistance = -5
+				add_compliance = 10
+			}
+			12 = {
+				add_resistance = -5
+				add_compliance = 10
+			}
+			13 = {
+				add_resistance = -5
+				add_compliance = 10
+			}
+			811 = {
+				add_resistance = -5
+				add_compliance = 10
+			}
+			812 = {
+				add_resistance = -5
+				add_compliance = 10
+			}
+			813 = {
+				add_resistance = -5
+				add_compliance = 10
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+	#维持德意志东部地区稳定
+	focus = {
+		id = BON_maintaining_stability_in_east_german
+		icon = GFX_focus_BON_maintaining_stability_in_east_german
+		relative_position_id = BON_maintaining_stability_in_baltic_region
+		x = 0
+		y = 1
+		cost = 5
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_maintaining_stability_in_baltic_region }
+		available_if_capitulated = yes
+		completion_reward = {
+			68 = {
+				add_resistance = -10
+				add_compliance = 15
+			}	
+			63 = {
+				add_resistance = -10
+				add_compliance = 15
+			}
+			66 = {
+				add_resistance = -10
+				add_compliance = 15
+			}
+			67 = {
+				add_resistance = -10
+				add_compliance = 15
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
 	#与大资产阶级达成共识
 	focus = {
 		id = BON_reaching_consensus_with_bourgeoisie
 		icon = GFX_focus_BON_reaching_consensus_with_bourgeoisie
 		relative_position_id = BON_emergency_management_committee
-		x = -1
+		x = -2
 		y = 1
 		cost = 10
 		available = { }
@@ -138,7 +242,7 @@ focus_tree = {
 		id = BON_bringing_senior_officers
 		icon = GFX_focus_BON_bringing_senior_officers
 		relative_position_id = BON_emergency_management_committee
-		x = 1
+		x = 0
 		y = 1
 		cost = 5
 		available = { }
@@ -183,13 +287,14 @@ focus_tree = {
 		id = BON_heavy_duty_strike
 		icon = GFX_focus_BON_heavy_duty_strike
 		relative_position_id = BON_replace_young_officers
-		x = -1
+		x = 0
 		y = 1
 		cost = 5
 		available = { has_army_manpower = { size > 500000 } }
 		bypass = { }
 		prerequisite = { focus = BON_replace_young_officers }
 		prerequisite = { focus = BON_solve_the_holodomor }
+		prerequisite = { focus = BON_maintaining_stability_in_east_german }
 		available_if_capitulated = yes
 		completion_reward = {
 			swap_ideas = {
@@ -222,11 +327,52 @@ focus_tree = {
 			factor = 25
 		}
 	}
+	#重建翼骑兵
+	focus = {
+		id = BON_rebuild_wing_cavalry
+		icon = GFX_focus_BON_rebuild_wing_cavalry
+		relative_position_id = BON_reconstruct_Polish_Lithuanian
+		x = 0
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BON_reconstruct_Polish_Lithuanian }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 1500
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+	#发扬翼骑兵精神
+	focus = {
+		id = BON_promoting_wing_cavalry_spirit
+		icon = GFX_focus_BON_promoting_wing_cavalry_spirit
+		relative_position_id = BON_rebuild_wing_cavalry
+		x = 0
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BON_rebuild_wing_cavalry }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = BON_wing_cavalry
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
 	#波兰军国主义
 	focus = {
 		id = BON_polish_militarism
 		icon = GFX_focus_BON_polish_militarism
-		relative_position_id = BON_reconstruct_Polish_Lithuanian
+		relative_position_id = BON_promoting_wing_cavalry_spirit
 		x = 0
 		y = 1
 		cost = 10
@@ -234,10 +380,174 @@ focus_tree = {
 			size > 750000
 		} }
 		bypass = { }
-		prerequisite = { focus = BON_reconstruct_Polish_Lithuanian }
+		prerequisite = { focus = BON_promoting_wing_cavalry_spirit }
 		available_if_capitulated = yes
 		completion_reward = {
 			add_ideas = BON_the_standing_one_between
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+	#冯步诺情报委员会
+	focus = {
+		id = BON_intelligence_committee
+		icon = GFX_focus_BON_intelligence_committee
+		relative_position_id = BON_reconstruct_Polish_Lithuanian
+		x = 2
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BON_reconstruct_Polish_Lithuanian }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+	#设立反间谍部门
+	focus = {
+		id = BON_establish_counter_intelligence_department
+		icon = GFX_focus_BON_establish_counter_intelligence_department
+		relative_position_id = BON_intelligence_committee
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_intelligence_committee }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = BON_counter_intelligence_department_0
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+	#加强密码研究
+	focus = {
+		id = BON_strengthen_cryptographic_research
+		icon = GFX_focus_BON_strengthen_cryptographic_research
+		relative_position_id = BON_establish_counter_intelligence_department
+		x = 0
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BON_establish_counter_intelligence_department }
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BON_counter_intelligence_department_0
+				add_idea = BON_counter_intelligence_department_1
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+	#北欧安全战略
+	focus = {
+		id = BON_nordic_security_strategy
+		icon = GFX_focus_BON_nordic_security_strategy
+		relative_position_id = BON_reconstruct_Polish_Lithuanian
+		x = -2
+		y = 1
+		cost = 10
+		available = { }
+		bypass = {  }
+		prerequisite = { focus = BON_reconstruct_Polish_Lithuanian }
+		available_if_capitulated = yes
+		completion_reward = {
+			VIG = {
+				add_timed_idea = {
+					idea = neutrality_influence
+					days = 450
+				}
+			}
+			VIK = {
+				add_timed_idea = {
+					idea = neutrality_influence
+					days = 450
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+	#投资维京水产
+	focus = {
+		id = BON_invest_VIK
+		icon = GFX_focus_BON_invest_VIK
+		relative_position_id = BON_nordic_security_strategy
+		x = 0
+		y = 1
+		cost = 10
+		available = { 110 = { is_controlled_by = VIK } VIK = { has_same_ideology = yes } NOT = { has_war_with = VIK } }
+		bypass = {  }
+		prerequisite = { focus = BON_nordic_security_strategy }
+		available_if_capitulated = yes
+		completion_reward = {
+			110 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+			add_opinion_modifier = {
+				target = VIK
+				modifier = BON_approach_VIG
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+	#邀请霹雳大公国
+	focus = {
+		id = BON_invite_vig
+		icon = GFX_focus_BON_invite_vig
+		relative_position_id = BON_invest_VIK
+		x = 0
+		y = 1
+		cost = 10
+		available = { VIG = { has_government = neutrality } }
+		bypass = { VIG = { exists = no } }
+		prerequisite = { focus = BON_invest_VIK }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_to_faction = VIG
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+	#水星计划
+	focus = {
+		id = BON_plan_mercury
+		icon = GFX_focus_BON_plan_mercury
+		relative_position_id = BON_invite_vig
+		x = 0
+		y = 1
+		cost = 10
+		available = { has_added_tension_amount > 20 }
+		bypass = { JHS = { exists = no } }
+		prerequisite = { focus = BON_invite_vig }
+		available_if_capitulated = yes
+		completion_reward = {
+			create_wargoal = {
+				target = JHS
+				type = annex_everything
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -249,7 +559,7 @@ focus_tree = {
 		id = BON_three_year_plan
 		icon = GFX_focus_BON_three_year_plan
 		relative_position_id = BON_extend_bill_of_may
-		x = 3
+		x = 5
 		y = 1
 		cost = 10
 		available = { }
@@ -268,12 +578,12 @@ focus_tree = {
 			factor = 25
 		}
 	}
-	#扩建雅盖隆大学
+	#重视科研项目
 	focus = {
-		id = BON_expand_jagiellonian_university
-		icon = GFX_focus_BON_expand_jagiellonian_university
+		id = BON_focus_on_research
+		icon = GFX_focus_BON_focus_on_research
 		relative_position_id = BON_three_year_plan
-		x = -2
+		x = -4
 		y = 1
 		cost = 10
 		available = { }
@@ -281,7 +591,125 @@ focus_tree = {
 		prerequisite = { focus = BON_three_year_plan }
 		available_if_capitulated = yes
 		completion_reward = {
+			if = {
+				limit = { has_idea = BON_three_year_plan_4 }
+				swap_ideas = {
+					remove_idea = BON_three_year_plan_4
+					add_idea = BON_three_year_plan_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = BON_three_year_plan_5 }
+				swap_ideas = {
+					remove_idea = BON_three_year_plan_5
+					add_idea = BON_three_year_plan_7
+				}
+			}
+			else_if = {
+				limit = { has_idea = BON_three_year_plan }
+				swap_ideas = {
+					remove_idea = BON_three_year_plan
+					add_idea = BON_three_year_plan_1
+				}
+			}
+			else_if = {
+				limit = { has_idea = BON_three_year_plan_6 }
+				swap_ideas = {
+					remove_idea = BON_three_year_plan_6
+					add_idea = BON_three_year_plan_2
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+	#扩建雅盖隆大学
+	focus = {
+		id = BON_expand_jagiellonian_university
+		icon = GFX_focus_BON_expand_jagiellonian_university
+		relative_position_id = BON_focus_on_research
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_focus_on_research }
+		available_if_capitulated = yes
+		completion_reward = {
 			add_research_slot = 1
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+	#电子工程项目研究
+	focus = {
+		id = BON_electronic_research
+		icon = GFX_focus_BON_electronic_research
+		relative_position_id = BON_expand_jagiellonian_university
+		x = -2
+		y = 1
+		cost = 7
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_expand_jagiellonian_university }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				category = electronics
+				bonus = 1
+				uses = 1
+				ahead_reduction = 0.5
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+	#雷达技术研究项目
+	focus = {
+		id = BON_radar_research
+		icon = GFX_focus_BON_radar_research
+		relative_position_id = BON_expand_jagiellonian_university
+		x = 0
+		y = 1
+		cost = 7
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_expand_jagiellonian_university }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				category = radar_tech
+				bonus = 1
+				uses = 1
+				ahead_reduction = 0.5
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+	#火箭技术研究项目
+	focus = {
+		id = BON_rocket_research
+		icon = GFX_focus_BON_rocket_research
+		relative_position_id = BON_expand_jagiellonian_university
+		x = 2
+		y = 1
+		cost = 7
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_expand_jagiellonian_university }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				category = rocketry
+				bonus = 1
+				uses = 1
+				ahead_reduction = 0.5
+			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -291,59 +719,18 @@ focus_tree = {
 	focus = {
 		id = BON_expand_warsaw_university
 		icon = GFX_focus_BON_expand_warsaw_university
-		relative_position_id = BON_expand_jagiellonian_university
+		relative_position_id = BON_radar_research
 		x = 0
 		y = 1
 		cost = 10
-		available = { num_of_factories > 100 }
+		available = { num_of_factories > 90 }
 		bypass = { }
-		prerequisite = { focus = BON_expand_jagiellonian_university }
+		prerequisite = { focus = BON_radar_research }
+		prerequisite = { focus = BON_rocket_research }
+		prerequisite = { focus = BON_electronic_research }
 		available_if_capitulated = yes
 		completion_reward = {
 			add_research_slot = 1
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-	#组建华沙大学研究院
-	focus = {
-		id = BON_warsaw_university_research_institute
-		icon = GFX_focus_BON_warsaw_university_research_institute
-		relative_position_id = BON_expand_warsaw_university
-		x = 0
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_expand_warsaw_university }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_ideas = BON_warsaw_research_institute
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-	#冯步诺的太空
-	focus = {
-		id = BON_head_into_space
-		icon = GFX_focus_BON_head_into_space
-		relative_position_id = BON_warsaw_university_research_institute
-		x = -1
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_warsaw_university_research_institute }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_tech_bonus = {
-				category = rocketry
-				bonus = 0.7
-				uses = 2
-				ahead_reduction = 0.5
-			}
 		}
 		ai_will_do = {
 			factor = 25
@@ -353,13 +740,13 @@ focus_tree = {
 	focus = {
 		id = BON_nuclear_physics_research
 		icon = GFX_focus_BON_nuclear_physics_research
-		relative_position_id = BON_warsaw_university_research_institute
-		x = 1
+		relative_position_id = BON_expand_warsaw_university
+		x = 0
 		y = 1
 		cost = 10
 		available = { }
 		bypass = { }
-		prerequisite = { focus = BON_warsaw_university_research_institute }
+		prerequisite = { focus = BON_expand_warsaw_university }
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
@@ -373,17 +760,65 @@ focus_tree = {
 			factor = 25
 		}
 	}
+
+	#投资工业建设
+	focus = {
+		id = BON_invest_industry
+		icon = GFX_focus_BON_invest_industry
+		relative_position_id = BON_three_year_plan
+		x = 4
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BON_three_year_plan }
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_idea = BON_three_year_plan_1 }
+				swap_ideas = {
+					remove_idea = BON_three_year_plan_1
+					add_idea = BON_three_year_plan_2
+				}
+			} 
+			else_if = {
+				limit = { has_idea = BON_three_year_plan_3 }
+				swap_ideas = {
+					remove_idea = BON_three_year_plan_3
+					add_idea = BON_three_year_plan_7
+				}
+			}
+			else_if = {
+				limit = { has_idea = BON_three_year_plan_4 }
+				swap_ideas = {
+					remove_idea = BON_three_year_plan_4
+					add_idea = BON_three_year_plan_5
+				}
+			}
+			else_if = {
+				limit = { has_idea = BON_three_year_plan }
+				swap_ideas = {
+					remove_idea = BON_three_year_plan
+					add_idea = BON_three_year_plan_6
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
 	#中部国家高速公路计划
 	focus = {
 		id = BON_central_highway_program
 		icon = GFX_focus_BON_central_highway_program
-		relative_position_id = BON_three_year_plan
-		x = 2
+		relative_position_id = BON_invest_industry
+		x = 0
 		y = 1
 		cost = 10
 		available = { controls_state = 807 controls_state = 10 controls_state = 88 }
 		bypass = { }
-		prerequisite = { focus = BON_three_year_plan }
+		prerequisite = { focus = BON_invest_industry }
 		available_if_capitulated = yes
 		completion_reward = {
 			807 = {
@@ -426,9 +861,9 @@ focus_tree = {
 		id = BON_expand_warsaw_factories
 		icon = GFX_focus_BON_expand_warsaw_factories
 		relative_position_id = BON_central_highway_program
-		x = -1
+		x = -2
 		y = 1
-		cost = 10
+		cost = 8
 		available = { controls_state = 10 }
 		bypass = { }
 		prerequisite = { focus = BON_central_highway_program }
@@ -476,7 +911,7 @@ focus_tree = {
 		id = BON_expand_krakov_factories
 		icon = GFX_focus_BON_expand_krakov_factories
 		relative_position_id = BON_central_highway_program
-		x = 1
+		x = 0
 		y = 1
 		cost = 8
 		available = { controls_state = 88 }
@@ -503,7 +938,7 @@ focus_tree = {
 		relative_position_id = BON_expand_krakov_factories
 		x = 0
 		y = 1
-		cost = 10
+		cost = 8
 		available = { controls_state = 88 }
 		bypass = { }
 		prerequisite = { focus = BON_expand_krakov_factories }
@@ -516,7 +951,6 @@ focus_tree = {
 					level = 2
 				}
 			}
-			add_ideas = BON_krakov_industrial_agency
 		}
 		ai_will_do = {
 			factor = 25
@@ -526,14 +960,13 @@ focus_tree = {
 	focus = {
 		id = BON_invest_in_gdynia
 		icon = GFX_focus_BON_invest_in_gdynia
-		relative_position_id = BON_build_krakov_industrial_agency
-		x = -1
+		relative_position_id = BON_central_highway_program
+		x = 2
 		y = 1
 		cost = 8
 		available = { controls_state = 807 }
 		bypass = { }
-		prerequisite = { focus = BON_build_krakov_industrial_agency }
-		prerequisite = { focus = BON_construct_warsaw_industrial_zone }
+		prerequisite = { focus = BON_central_highway_program }
 		available_if_capitulated = yes
 		completion_reward = {
 			807 = {
@@ -552,17 +985,45 @@ focus_tree = {
 			factor = 25
 		}
 	}
+	#建设格丁尼亚工业区
+	focus = {
+		id = BON_construct_gdynia_industrial_zone
+		icon = GFX_focus_BON_construct_gdynia_industrial_zone
+		relative_position_id = BON_invest_in_gdynia
+		x = 0
+		y = 1
+		cost = 8
+		available = { controls_state = 807 }
+		bypass = { }
+		prerequisite = { focus = BON_invest_in_gdynia }
+		available_if_capitulated = yes
+		completion_reward = {
+			807 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
 	#冯步诺工业现代化
 	focus = {
 		id = BON_industrial_modernization
 		icon = GFX_focus_BON_industrial_modernization
-		relative_position_id = BON_invest_in_gdynia
+		relative_position_id = BON_build_krakov_industrial_agency
 		x = 0
 		y = 1
 		cost = 20
 		available = { }
 		bypass = { }
-		prerequisite = { focus = BON_invest_in_gdynia }
+		prerequisite = { focus = BON_build_krakov_industrial_agency }
+		prerequisite = { focus = BON_construct_warsaw_industrial_zone }
+		prerequisite = { focus = BON_construct_gdynia_industrial_zone }
+		
 		available_if_capitulated = yes
 		completion_reward = {
 			unlock_decision_category_tooltip = bon_industrial_modernization
@@ -571,17 +1032,136 @@ focus_tree = {
 			factor = 25
 		}
 	}
-	#发展煤液化技术
+	#加强资源开采
 	focus = {
-		id = BON_coal_liquefaction_technology
-		icon = GFX_focus_BON_coal_liquefaction_technology
-		relative_position_id = BON_industrial_modernization
+		id = BON_focus_on_resources
+		icon = GFX_focus_BON_focus_on_resources
+		relative_position_id = BON_three_year_plan
 		x = 0
 		y = 1
 		cost = 10
 		available = { }
 		bypass = { }
-		prerequisite = { focus = BON_industrial_modernization }
+		prerequisite = { focus = BON_three_year_plan }
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_idea = BON_three_year_plan }
+				swap_ideas = {
+					remove_idea = BON_three_year_plan
+					add_idea = BON_three_year_plan_4
+				}
+			} 
+			else_if = {
+				limit = { has_idea = BON_three_year_plan_6 }
+				swap_ideas = {
+					remove_idea = BON_three_year_plan_6
+					add_idea = BON_three_year_plan_5
+				}
+			}
+			else_if = {
+				limit = { has_idea = BON_three_year_plan_1 }
+				swap_ideas = {
+					remove_idea = BON_three_year_plan_1
+					add_idea = BON_three_year_plan_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = BON_three_year_plan_2 }
+				swap_ideas = {
+					remove_idea = BON_three_year_plan_2
+					add_idea = BON_three_year_plan_7
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#凯尔采钢业增产
+	focus = {
+		id = BON_kielce_steel_increases_production
+		icon = GFX_focus_BON_kielce_steel_increases_production
+		relative_position_id = BON_focus_on_resources
+		x = -2
+		y = 1
+		cost = 8
+		available = { controls_state = 90 }
+		bypass = { }
+		prerequisite = { focus = BON_focus_on_resources }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 17
+				state = 90
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+	#开发比亚韦斯托克铬矿
+	focus = {
+		id = BON_develop_bialystok_chrome
+		icon = GFX_focus_BON_develop_bialystok_chrome
+		relative_position_id = BON_focus_on_resources
+		x = 0
+		y = 1
+		cost = 10
+		available = { controls_state = 97 }
+		bypass = { }
+		prerequisite = { focus = BON_focus_on_resources }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_resource = {
+				type = chromium
+				amount = 10
+				state = 97
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+	#开发卢布林钨矿
+	focus = {
+		id = BON_develop_lublin_tungsten
+		icon = GFX_focus_BON_develop_lublin_tungsten
+		relative_position_id = BON_focus_on_resources
+		x = 2
+		y = 1
+		cost = 10
+		available = { controls_state = 92 }
+		bypass = { }
+		prerequisite = { focus = BON_focus_on_resources }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_resource = {
+				type = tungsten
+				amount = 12
+				state = 92
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	#发展煤液化技术
+	focus = {
+		id = BON_coal_liquefaction_technology
+		icon = GFX_focus_BON_coal_liquefaction_technology
+		relative_position_id = BON_develop_bialystok_chrome
+		x = 0
+		y = 1
+		cost = 10
+		available = { }
+		bypass = { }
+		prerequisite = { focus = BON_develop_bialystok_chrome }
+		prerequisite = { focus = BON_kielce_steel_increases_production }
+		prerequisite = { focus = BON_develop_lublin_tungsten }
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
@@ -608,15 +1188,37 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			90 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = fuel_silo
 					level = 2
 				}
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+				}
 			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+	}
+	#开发克拉科夫油气
+	focus = {
+		id = BON_develop_krakow_oil
+		icon = GFX_focus_BON_develop_krakow_oil
+		relative_position_id = BON_self_refinery_program
+		x = 0
+		y = 1
+		cost = 8
+		available = { controls_state = 90 }
+		bypass = { }
+		prerequisite = { focus = BON_self_refinery_program }
+		available_if_capitulated = yes
+		completion_reward = {
 			add_resource = {
 				type = oil
-				amount = 30
+				amount = 22
 				state = 90
 			}
 		}
@@ -624,856 +1226,5 @@ focus_tree = {
 			factor = 25
 		}
 	}
-	#重组波兰最高战略指挥部
-	focus = {
-		id = BON_high_strategic_command
-		icon = GFX_focus_BON_high_strategic_command
-		#relative_position_id = BON_high_strategic_command
-		x = 18
-		y = 0
-		cost = 10
-		available = { has_country_flag = BON_MAIKO_LEAD has_army_manpower = { size > 500000 } }
-		bypass = { }
-		#prerequisite = { focus = BON_high_strategic_command }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_ideas = BON_highest_strategic_command
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-	#重视复兴同盟理念
-	focus = {
-		id = BON_reviving_the_alliance
-		icon = GFX_focus_BON_high_strategic_command
-		relative_position_id = BON_high_strategic_command
-		x = -5
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_high_strategic_command }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-	#唤醒北欧雄狮
-	focus = {
-		id = BON_awakening_the_nordic_lions
-		icon = GFX_focus_BON_awakening_the_nordic_lions
-		relative_position_id = BON_reviving_the_alliance
-		x = -2
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_reviving_the_alliance }
-		available_if_capitulated = yes
-		completion_reward = {
-			JHS = { add_timed_idea = {
-				idea = neutrality_influence
-				days = 300
-			} }
-			VIG = { add_timed_idea = {
-				idea = neutrality_influence
-				days = 300
-			} }
-			VIK = { add_timed_idea = {
-				idea = neutrality_influence
-				days = 300
-			} }
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-	#影响霹雳大公国
-	focus = {
-		id = BON_impact_on_vig
-		icon = GFX_focus_BON_impact_on_vig
-		relative_position_id = BON_awakening_the_nordic_lions
-		x = 0
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_awakening_the_nordic_lions }
-		available_if_capitulated = yes
-		completion_reward = {
-			VIG = { 
-				remove_ideas = neutrality_influence
-				random_state = {
-					limit = { is_core_of = VIG is_controlled_by = VIG }
-					add_extra_state_shared_building_slots = 4
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-					}
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-					}
-				}
-				add_timed_idea = {
-					idea = BON_influence_bonple
-					days = 300
-				}
-				add_opinion_modifier = {
-					target = BON
-					modifier = BON_approach_VIG
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-	#邀请霹雳大公国
-	focus = {
-		id = BON_invite_vig
-		icon = GFX_focus_BON_invite_vig
-		relative_position_id = BON_impact_on_vig
-		x = 0
-		y = 1
-		cost = 10
-		available = { VIG = { has_government = neutrality } }
-		bypass = { VIG = { exists = no } }
-		prerequisite = { focus = BON_impact_on_vig }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_to_faction = VIG
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-	#北欧安全战略
-	focus = {
-		id = BON_nordic_security_strategy
-		icon = GFX_focus_BON_nordic_security_strategy
-		relative_position_id = BON_invite_vig
-		x = 0
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { has_war_with = JHS }
-		prerequisite = { focus = BON_invite_vig }
-		available_if_capitulated = yes
-		completion_reward = {
-			create_wargoal = {
-				target = JHS
-				type = annex_everything
-			}
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-	#挑战旧同盟
-	focus = {
-		id = BON_challenge_old_alliance
-		icon = GFX_focus_BON_challenge_old_alliance
-		relative_position_id = BON_nordic_security_strategy
-		x = 0
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { has_war_with = STG }
-		prerequisite = { focus = BON_nordic_security_strategy }
-		available_if_capitulated = yes
-		completion_reward = {
-			create_wargoal = {
-				target = STG
-				type = annex_everything
-			}
-		}
-		ai_will_do = {
-			factor = 25
-			modifier = {
-				has_war_with = ANZ
-				factor = 0.1
-			}
-		}
-	}
-
-	#重视同盟关系
-	focus = {
-		id = BON_focus_on_alliances
-		icon = GFX_focus_BON_focus_on_alliances
-		relative_position_id = BON_reviving_the_alliance
-		x = 2
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_reviving_the_alliance }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-
-	#投资伯爵联合王国
-	focus = {
-		id = BON_invest_COU
-		icon = GFX_focus_BON_invest_COU
-		relative_position_id = BON_focus_on_alliances
-		x = -2
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_focus_on_alliances }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-	#投资优格共和国
-	focus = {
-		id = BON_invest_YOG
-		icon = GFX_focus_BON_invest_YOG
-		relative_position_id = BON_focus_on_alliances
-		x = 0
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_focus_on_alliances }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-	#投资塞浦路斯刻巴
-	focus = {
-		id = BON_invest_KEB
-		icon = GFX_focus_BON_invest_KEB
-		relative_position_id = BON_focus_on_alliances
-		x = 2
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_focus_on_alliances }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-	#投资格雷戈尔
-	focus = {
-		id = BON_invest_GHS
-		icon = GFX_focus_BON_invest_GHS
-		relative_position_id = BON_invest_KEB
-		x = -2
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_invest_KEB }
-		prerequisite = { focus = BON_invest_COU }
-		prerequisite = { focus = BON_invest_YOG }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-	#组建苏台德山地军
-	focus = {
-		id = BON_sudetenland_mountain_army
-		icon = GFX_focus_BON_sudetenland_mountain_army
-		relative_position_id = BON_invest_GHS
-		x = 0
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_invest_GHS }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-	#平独
-	focus = {
-		id = BON_attack_kuromorimine
-		icon = GFX_focus_BON_attack_kuromorimine
-		relative_position_id = BON_sudetenland_mountain_army
-		x = -1
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_sudetenland_mountain_army }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-	#镇露
-	focus = {
-		id = BON_attack_pravda
-		icon = GFX_focus_BON_attack_pravda
-		relative_position_id = BON_sudetenland_mountain_army
-		x = 1
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_sudetenland_mountain_army }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-
-	#军备重整计划
-	focus = {
-		id = BON_armament_rearmament_program
-		icon = GFX_focus_BON_attack_pravda
-		relative_position_id = BON_high_strategic_command
-		x = 5
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_high_strategic_command }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-
-	#冯步诺军队在前进
-	focus = {
-		id = BON_army_is_marching
-		icon = GFX_focus_BON_army_is_marching
-		relative_position_id = BON_armament_rearmament_program
-		x = -2
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_armament_rearmament_program }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
 	
-	#兴建战车道学院
-	focus = {
-		id = BON_build_senshado_school
-		icon = GFX_focus_BON_build_senshado_school
-		relative_position_id = BON_army_is_marching
-		x = -2
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_army_is_marching }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-
-	#统合冯布诺战车道学园
-	focus = {
-		id = BON_unite_senshado_school
-		icon = GFX_focus_BON_unite_senshado_school
-		relative_position_id = BON_build_senshado_school
-		x = 0
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_build_senshado_school }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-
-	#设立克拉科夫坦克设计局
-	focus = {
-		id = BON_krakow_tank_design_bureau
-		icon = GFX_focus_BON_krakow_tank_design_bureau
-		relative_position_id = BON_unite_senshado_school
-		x = 0
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_unite_senshado_school }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-
-	#新型火炮研究
-	focus = {
-		id = BON_new_artillery_research
-		icon = GFX_focus_BON_new_artillery_research
-		relative_position_id = BON_krakow_tank_design_bureau
-		x = -1
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_krakow_tank_design_bureau }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-
-	#装甲布局革新
-	focus = {
-		id = BON_new_armor_layout
-		icon = GFX_focus_BON_new_armor_layout
-		relative_position_id = BON_krakow_tank_design_bureau
-		x = 1
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_krakow_tank_design_bureau }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-
-	#优化坦克设计与制造
-	focus = {
-		id = BON_improve_tank_production_design
-		icon = GFX_focus_BON_improve_tank_production_design
-		relative_position_id = BON_new_armor_layout
-		x = -1
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_new_armor_layout }
-		prerequisite = { focus = BON_new_artillery_research }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-
-	#兴建华沙航空学院
-	focus = {
-		id = BON_warsaw_aviation_school
-		icon = GFX_focus_BON_warsaw_aviation_school
-		relative_position_id = BON_army_is_marching
-		x = 1
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_army_is_marching }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-
-	#捍卫我们的天空
-	focus = {
-		id = BON_guard_our_sky
-		icon = GFX_focus_BON_guard_our_sky
-		relative_position_id = BON_warsaw_aviation_school
-		x = 0
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_warsaw_aviation_school }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-
-	#打击我们的敌人
-	focus = {
-		id = BON_strike_the_land
-		icon = GFX_focus_BON_strike_the_land
-		relative_position_id = BON_guard_our_sky
-		x = 0
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_guard_our_sky }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-
-	#打击我们的敌人
-	focus = {
-		id = BON_strike_the_land
-		icon = GFX_focus_BON_strike_the_land
-		relative_position_id = BON_guard_our_sky
-		x = 0
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_guard_our_sky }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-
-	#守望我们的海洋
-	focus = {
-		id = BON_watch_over_our_ocean
-		icon = GFX_focus_BON_watch_over_our_ocean
-		relative_position_id = BON_strike_the_land
-		x = 0
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_strike_the_land }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-	#向现代化空军迈进
-	focus = {
-		id = BON_mordernizing_air_force
-		icon = GFX_focus_BON_mordernizing_air_force
-		relative_position_id = BON_watch_over_our_ocean
-		x = 0
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_watch_over_our_ocean }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-	#兴建格但斯克海军学院
-	focus = {
-		id = BON_gdansk_naval_academy
-		icon = GFX_focus_BON_gdansk_naval_academy
-		relative_position_id = BON_army_is_marching
-		x = 3
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_army_is_marching }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-	#发展格但斯克造船业
-	focus = {
-		id = BON_gdansk_shipbuild_industry
-		icon = GFX_focus_BON_gdansk_shipbuild_industry
-		relative_position_id = BON_gdansk_naval_academy
-		x = 0
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_gdansk_naval_academy }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-	#近海屏卫计划
-	focus = {
-		id = BON_offshore_screening_program
-		icon = GFX_focus_BON_offshore_screening_program
-		relative_position_id = BON_gdansk_shipbuild_industry
-		x = 0
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_gdansk_shipbuild_industry }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-
-	#航线封锁计划
-	focus = {
-		id = BON_route_blocking_program
-		icon = GFX_focus_BON_route_blocking_program
-		relative_position_id = BON_offshore_screening_program
-		x = 0
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_offshore_screening_program }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-
-	#远程打击计划
-	focus = {
-		id = BON_long_range_strike_program
-		icon = GFX_focus_BON_long_range_strike_program
-		relative_position_id = BON_route_blocking_program
-		x = 0
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_route_blocking_program }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-
-	#大规模防线修筑计划
-	focus = {
-		id = BON_defense_line_construction_plan
-		icon = GFX_focus_BON_long_range_strike_program
-		relative_position_id = BON_armament_rearmament_program
-		x = 4
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_armament_rearmament_program }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-
-	#修建后波美拉尼亚-下西里西亚防线
-	focus = {
-		id = BON_post_pomeranian_lower_silesian_line
-		icon = GFX_focus_BON_post_pomeranian_lower_silesian_line
-		relative_position_id = BON_defense_line_construction_plan
-		x = -1
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_defense_line_construction_plan }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-
-	#巩固后波美拉尼亚-下西里西亚防线
-	focus = {
-		id = BON_reinforce_post_pomeranian_lower_silesian_line
-		icon = GFX_focus_BON_post_pomeranian_lower_silesian_line
-		relative_position_id = BON_post_pomeranian_lower_silesian_line
-		x = 0
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_post_pomeranian_lower_silesian_line }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-
-	#完成西部防御
-	focus = {
-		id = BON_complete_western_defense
-		icon = GFX_focus_BON_complete_western_defense
-		relative_position_id = BON_reinforce_post_pomeranian_lower_silesian_line
-		x = 0
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_reinforce_post_pomeranian_lower_silesian_line }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-
-	#修建维鲁玛-维列伊卡防线
-	focus = {
-		id = BON_veruma_vileika_line
-		icon = GFX_focus_BON_veruma_vileika_line
-		relative_position_id = BON_defense_line_construction_plan
-		x = 1
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_defense_line_construction_plan }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-
-	#修建维鲁玛-维列伊卡防线
-	focus = {
-		id = BON_new_grudok_lvov_line
-		icon = GFX_focus_BON_new_grudok_lvov_line
-		relative_position_id = BON_veruma_vileika_line
-		x = 0
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_veruma_vileika_line }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-
-	#完成东部防御
-	focus = {
-		id = BON_complete_eastern_defense
-		icon = GFX_focus_BON_complete_eastern_defense
-		relative_position_id = BON_new_grudok_lvov_line
-		x = 0
-		y = 1
-		cost = 10
-		available = { }
-		bypass = { }
-		prerequisite = { focus = BON_new_grudok_lvov_line }
-		available_if_capitulated = yes
-		completion_reward = {
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 25
-		}
-	}
-	###########################################################
-	########################中立线路结束########################
-	###########################################################
 }

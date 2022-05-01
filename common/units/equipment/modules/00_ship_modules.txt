@@ -1,11 +1,7 @@
 equipment_modules = {
 
 
-#   ###  ##  #  # ###     ###   ##  ### ### ### ###  #   # 
-#    #  #    #  #  #      #  # #  #  #   #  #   #  #  # #  
-#    #  # ## ####  #      ###  ####  #   #  ##  ###    #   
-#    #  #  # #  #  #      #  # #  #  #   #  #   #  #   #   
-### ###  ##  #  #  #      ###  #  #  #   #  ### #  #   #  
+
 
 	ship_light_battery_1 = {
 		abbreviation = "saa"
@@ -148,15 +144,6 @@ equipment_modules = {
 		}
 		critical_parts = { damaged_light_guns }
 	}
-
-
-#  # ###  ##  #   # #   #     ###   ##  ### ### ### ###  #   # 
-#  # #   #  # #   #  # #      #  # #  #  #   #  #   #  #  # #  
-#### ##  ####  # #    #       ###  ####  #   #  ##  ###    #   
-#  # #   #  #  # #    #       #  # #  #  #   #  #   #  #   #   
-#  # ### #  #   #     #       ###  #  #  #   #  ### #  #   #   
-
-
 
 	ship_heavy_battery_1 = {
 		abbreviation = "saf"
@@ -309,11 +296,6 @@ equipment_modules = {
 	}
 
 
-#   # ### ###  ### #  # #   #     ###   ##  ### ### ### ###  #   # 
-## ## #   #  #  #  #  # ## ##     #  # #  #  #   #  #   #  #  # #  
-# # # ##  #  #  #  #  # # # #     ###  ####  #   #  ##  ###    #   
-#   # #   #  #  #  #  # #   #     #  # #  #  #   #  #   #  #   #   
-#   # ### ###  ###  ##  #   #     ###  #  #  #   #  ### #  #   #   
 
 
 	ship_medium_battery_1 = {
@@ -577,11 +559,7 @@ equipment_modules = {
 		critical_parts = { damaged_light_guns }
 	}
 
- ## ###  ##   ##  #  # ###   ##  ###  ### ###  ## 
-#   #   #  # #  # ## # #  # #  # #  #  #  #   #   
- #  ##  #    #  # # ## #  # #### ###   #  ##   #  
-  # #   #  # #  # #  # #  # #  # #  #  #  #     # 
-##  ###  ##   ##  #  # ###  #  # #  # ### ### ##  
+
 
 
 
@@ -747,12 +725,223 @@ equipment_modules = {
 	}
 
 
- ##  #  # ### ###      ##  ### ###  
-#  # ## #  #   #      #  #  #  #  # 
-#### # ##  #   #      ####  #  ###  
-#  # #  #  #   #      #  #  #  #  # 
-#  # #  #  #  ###     #  # ### #  # 
+	ship_VLS_1_light = {
+		abbreviation = "vls1l"
+		category = ship_light_battery
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			lg_attack = 1
+			hg_attack = 1
+			build_cost_ic = 250
+		}
 
+		add_average_stats = {
+			lg_armor_piercing = 11
+			hg_armor_piercing = 11
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.02
+		}
+		dismantle_cost_ic = 1800
+	}
+
+	ship_VLS_2_light = {
+		abbreviation = "vls2l"
+		category = ship_light_battery
+		parent = ship_VLS_1_light
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			lg_attack = 1
+			hg_attack = 1
+			build_cost_ic = 300
+		}
+		
+		add_average_stats = {
+			lg_armor_piercing = 16
+			hg_armor_piercing = 16
+		}
+
+		multiply_stats = {
+			naval_speed = -0.03
+		}
+		
+		dismantle_cost_ic = 2100
+	}
+
+	ship_VLS_3_light = {
+		abbreviation = "vls3l"
+		category = ship_light_battery
+		parent = ship_VLS_2_light
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			lg_attack = 1.25
+			hg_attack = 1.25
+			build_cost_ic = 325
+		}
+
+		add_average_stats = {
+			lg_armor_piercing = 19
+			hg_armor_piercing = 19
+		}
+		
+		multiply_stats = {
+			naval_speed = -0.03
+		}
+		
+		dismantle_cost_ic = 2400
+	}
+
+	ship_VLS_4_light = {
+		abbreviation = "vls4l"
+		category = ship_light_battery
+		parent = ship_VLS_3_light
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			lg_attack = 1.5
+			hg_attack = 1.5
+			build_cost_ic = 375
+		}
+		
+		add_average_stats = {
+			lg_armor_piercing = 22
+			hg_armor_piercing = 22
+		}
+
+		multiply_stats = {
+			naval_speed = -0.04
+		}
+
+		build_cost_resources = {
+			steel = 1
+		}
+
+		dismantle_cost_ic = 2700
+	}
+
+
+	ship_VLS_1_heavy = {
+		abbreviation = "vls1h"
+		category = ship_medium_battery
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			lg_attack = 4
+			hg_attack = 2
+			build_cost_ic = 1500
+		}
+
+		add_average_stats = {
+			lg_armor_piercing = 16
+			hg_armor_piercing = 34
+		}
+
+		multiply_stats = {
+			naval_speed = -0.04
+		}
+
+		build_cost_resources = {
+			steel = 1
+		}
+
+		dismantle_cost_ic = 1800
+	}
+
+	ship_VLS_2_heavy = {
+		abbreviation = "vls2h"
+		category = ship_medium_battery
+		parent = ship_VLS_1_heavy
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			lg_attack = 5
+			hg_attack = 2.5
+			build_cost_ic = 1650
+		}
+		
+		add_average_stats = {
+			lg_armor_piercing = 19
+			hg_armor_piercing = 42
+		}
+
+		multiply_stats = {
+			naval_speed = -0.05
+		}
+		
+		build_cost_resources = {
+			steel = 1
+		}
+		
+		dismantle_cost_ic = 2100
+	}
+
+	ship_VLS_3_heavy = {
+		abbreviation = "vls3h"
+		category = ship_medium_battery
+		parent = ship_VLS_2_heavy
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			lg_attack = 6
+			hg_attack = 2.75
+			build_cost_ic = 1775
+		}
+		
+		add_average_stats = {
+			lg_armor_piercing = 22
+			hg_armor_piercing = 53
+		}
+
+		multiply_stats = {
+			naval_speed = -0.05
+		}
+		
+		build_cost_resources = {
+			steel = 1
+		}
+		
+		dismantle_cost_ic = 2400
+	}
+
+	ship_VLS_4_heavy = {
+		abbreviation = "vls4h"
+		category = ship_medium_battery
+		parent = ship_VLS_3_heavy
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = anti_air
+		
+		add_stats = {
+			lg_attack = 8
+			hg_attack = 3
+			build_cost_ic = 1900
+		}
+		
+		add_average_stats = {
+			lg_armor_piercing = 26
+			hg_armor_piercing = 57
+		}
+
+		multiply_stats = {
+			naval_speed = -0.06
+		}
+		
+		build_cost_resources = {
+			steel = 2
+		}
+		
+		dismantle_cost_ic = 2700
+	}
 
 
 	ship_anti_air_1 = {
@@ -863,13 +1052,6 @@ equipment_modules = {
 	}
 
 
-### ### ###  ###      ##   ##  #  # ### ###   ##  #        ## #   #  ## ### ### #   # 
-#    #  #  # #       #  # #  # ## #  #  #  # #  # #       #    # #  #    #  #   ## ## 
-##   #  ###  ##      #    #  # # ##  #  ###  #  # #        #    #    #   #  ##  # # # 
-#    #  #  # #       #  # #  # #  #  #  #  # #  # #         #   #     #  #  #   #   # 
-#   ### #  # ###      ##   ##  #  #  #  #  #  ##  ###     ##    #   ##   #  ### #   # 
-
-
 
 	ship_fire_control_system_0 = {
 		abbreviation = "saz"
@@ -960,15 +1142,6 @@ equipment_modules = {
 		}
 	}
 
-
-###   ##  ###   ##  ###  
-#  # #  # #  # #  # #  # 
-###  #### #  # #### ###  
-#  # #  # #  # #  # #  # 
-#  # #  # ###  #  # #  # 
-
-
-
 	ship_radar_1 = {
 		abbreviation = "sbd"
 		category = ship_radar
@@ -1045,15 +1218,6 @@ equipment_modules = {
 			convert_cost_ic = 90
 		}
 	}
-
-
-### #  #  ##  ### #  # ### 
-#   ## # #     #  ## # #   
-##  # ## # ##  #  # ## ##  
-#   #  # #  #  #  #  # #   
-### #  #  ##  ### #  # ### 
-
-
 
 	light_ship_engine_1 = {
 		abbreviation = "sbh"
@@ -1604,16 +1768,6 @@ equipment_modules = {
 		}
 	}
 
-	
-
-
-###  ##  ###  ###  ### ###   ##  
- #  #  # #  # #  # #   #  # #  # 
- #  #  # ###  ###  ##  #  # #  # 
- #  #  # #  # #    #   #  # #  # 
- #   ##  #  # #    ### ###   ##  
-
-
 
 	ship_torpedo_1 = {
 		abbreviation = "scb"
@@ -1789,14 +1943,6 @@ equipment_modules = {
 	}
 
 
-#   # ### #  # ###     #    ##  #   # ### ###  
-## ##  #  ## # #       #   #  #  # #  #   #  # 
-# # #  #  # ## ##      #   ####   #   ##  ###  
-#   #  #  #  # #       #   #  #   #   #   #  # 
-#   # ### #  # ###     ### #  #   #   ### #  # 
-
-
-
 	ship_mine_layer_1 = {
 		abbreviation = "scj"
 		category = ship_mine_layer
@@ -1824,14 +1970,6 @@ equipment_modules = {
 	}
 
 
-#   # ### #  # ###      ## #   # ### ### ###  ### ###  
-## ##  #  ## # #       #   #   # #   #   #  # #   #  # 
-# # #  #  # ## ##       #  # # # ##  ##  ###  ##  ###  
-#   #  #  #  # #         # # # # #   #   #    #   #  # 
-#   # ### #  # ###     ##   # #  ### ### #    ### #  # 
-
-
-
 	ship_mine_sweeper_1 = {
 		abbreviation = "scl"
 		category = ship_mine_warfare
@@ -1846,14 +1984,6 @@ equipment_modules = {
 			naval_speed = -0.02
 		}
 	}
-
-
-###  ### ###  ### #  #      ##  #  #  ##  ###   ##  ### 
-#  # #   #  #  #  #  #     #  # #  # #  # #  # #    #   
-#  # ##  ###   #  ####     #    #### #### ###  # ## ##  
-#  # #   #     #  #  #     #  # #  # #  # #  # #  # #   
-###  ### #     #  #  #      ##  #  # #  # #  #  ##  ### 
-
 
 
 	ship_depth_charge_1 = {
@@ -1941,14 +2071,6 @@ equipment_modules = {
 	}
 
 
- ## #  #  ##  ###  # # ### #   
-#   ## # #  # #  # # # #   #   
- #  # ## #  # ###  ##  ##  #   
-  # #  # #  # #  # # # #   #   
-##  #  #  ##  #  # # # ### ### 
-
-
-
 	ship_sub_snorkel_1 = {
 		abbreviation = "scq"
 		category = ship_sub_snorkel
@@ -1981,11 +2103,7 @@ equipment_modules = {
 		}
 	}
 
- ##  ### ###   ##  ###   ##  ### ###     #    ##  #  # #  #  ##  #  # ### ###  
-#  #  #  #  # #  # #  # #  # #    #      #   #  # #  # ## # #  # #  # #   #  # 
-####  #  ###  #    ###  #### ##   #      #   #### #  # # ## #    #### ##  ###  
-#  #  #  #  # #  # #  # #  # #    #      #   #  # #  # #  # #  # #  # #   #  # 
-#  # ### #  #  ##  #  # #  # #    #      ### #  #  ##  #  #  ##  #  # ### #  # 
+
 	ship_airplane_launcher_1 = {
 		abbreviation = "scs"
 		category = ship_airplane_launcher
@@ -2019,11 +2137,7 @@ equipment_modules = {
 		}
 	}
 
-###  ###  ##  # #      ## ###   ##   ##  ### 
-#  # #   #  # # #     #   #  # #  # #  # #   
-#  # ##  #    ##       #  ###  #### #    ##  
-#  # #   #  # # #       # #    #  # #  # #   
-###  ###  ##  # #     ##  #    #  #  ##  ### 
+
 	ship_deck_space = {
 		abbreviation = "scu"
 		category = ship_deck_space
@@ -2044,11 +2158,6 @@ equipment_modules = {
 		dismantle_cost_ic = 700
 	}
 
-### #  # ### #       ###  ##  #  # # #  ## 
-#   #  # #   #        #  #  # ## # # # #   
-##  #  # ##  #        #  #### # ## ##   #  
-#   #  # #   #        #  #  # #  # # #   # 
-#    ##  ### ###      #  #  # #  # # # ##  
 
 	ship_extra_fuel_tank = {
 		abbreviation = "scv"
@@ -2063,11 +2172,6 @@ equipment_modules = {
 		}
 		dismantle_cost_ic = 700
 	}
- ##  ##  #  #  ##  ###  
-#   #  # ## # #  # #  # 
- #  #  # # ## #### ###  
-  # #  # #  # #  # #  # 
-##   ##  #  # #  # #  # 
 
 
 	ship_sonar_1 = {
@@ -2097,11 +2201,7 @@ equipment_modules = {
 			convert_cost_ic = 25
 		}
 	}
- ##  ###  #   #  ##  ###       ##  ##  #  # ### #   # ###  ## 
-#  # #  # ## ## #  # #  #     #   #  # #  # #   ## ## #   #   
-#### ###  # # # #  # ###       #  #    #### ##  # # # ##   #  
-#  # #  # #   # #  # #  #       # #  # #  # #   #   # #     # 
-#  # #  # #   #  ##  #  #     ##   ##  #  # ### #   # ### ##  
+
 
 	ship_armor_bb_1 = {
 		abbreviation = "scy"

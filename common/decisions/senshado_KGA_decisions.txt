@@ -7,18 +7,8 @@ kga_government = {
 		visible = { AND = { is_ai = no is_debug = yes } }
 		days_re_enable = 1
 		complete_effect = {
-			declare_war_on = {
-				target = STG
-				type = annex_everything
-			}
-			declare_war_on = {
-				target = SDS
-				type = annex_everything
-			}
-			declare_war_on = {
-				target = BCF
-				type = annex_everything
-			}
+			
+			country_event = kuromorimine.28
 		}
 	}
 	test_peace = {

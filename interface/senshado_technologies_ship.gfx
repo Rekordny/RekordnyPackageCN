@@ -1,0 +1,69 @@
+spriteTypes = {
+	#鱼雷加成科技
+	SpriteType = {
+		name = "GFX_pendulum_engine_medium"
+		texturefile = "gfx/interface/technologies/torpedo_boost_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_rocket_assist_flight_medium"
+		texturefile = "gfx/interface/technologies/torpedo_boost_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_electronic_microprocessor_medium"
+		texturefile = "gfx/interface/technologies/torpedo_boost_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_chemical_cells_medium"
+		texturefile = "gfx/interface/technologies/torpedo_boost_4.dds"
+	}
+	#近防炮
+	spriteType = {
+		name = "GFX_SMI_ship_CIWS_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/CWIS1.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_CIWS_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/CWIS2.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_CIWS_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/CWIS3.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_CIWS_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/CWIS4.dds"
+	}
+	#垂发
+	spriteType = {
+		name = "GFX_SMI_ship_VLS_1_light"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/VLS1.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_VLS_2_light"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/VLS2.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_VLS_3_light"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/VLS3.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_VLS_4_light"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/VLS4.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_VLS_1_heavy"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/VLS1.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_VLS_2_heavy"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/VLS2.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_VLS_3_heavy"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/VLS3.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_VLS_4_heavy"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/VLS4.dds"
+	}
+}

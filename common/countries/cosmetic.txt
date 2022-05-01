@@ -7,3 +7,8 @@ GGK = {
     color = rgb { 39 12 12 }
     color_ui = rgb { 39 12 12 }
 }
+
+OGA = {
+    color = rgb { 31 158 255 }
+    color_ui = rgb { 31 158 255 }
+}

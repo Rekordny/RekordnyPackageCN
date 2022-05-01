@@ -1,0 +1,19 @@
+leader_traits = {
+	ooari_unit_leader = { 
+		type = land
+		trait_type = personality_trait
+		modifier = {}
+		non_shared_modifier = {
+			
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+		attack_skill_factor = 1
+		defense_skill_factor = 1
+		logistics_skill_factor = 1
+		planning_skill_factor = 1
+		maneuvering_skill_factor = 1
+		coordination_skill_factor = 1
+	}
+}

@@ -347,6 +347,9 @@ technologies = {
 			building = radar_station
 			level = 1
 		}
+		enable_equipment_modules = {
+			tank_radio_1
+		}
 		coordination_bonus = 0.01
 		air_detection = 0.02
 		path = {
@@ -424,6 +427,7 @@ technologies = {
 		coordination_bonus = 0.01
 		enable_equipment_modules = { 
 			ship_radar_2
+			tank_radio_3
 		}
 		research_cost = 1.25
 		start_year = 1976
@@ -755,39 +759,7 @@ technologies = {
 			rocketry
 		}
 	}
-	
-	jet_engines = {
-	
-		folder = {
-			name = electronics_folder
-			position = { x = 2 y = 2 }
-		}
-		
-		start_year = 1944
-		research_cost = 2
-		enable_equipment_modules = {
-			tank_gas_turbine_engine
-		}
-		folder = {
-			name = air_techs_folder
-			position = { x = 2 y = 11 }
-		}
-		
-		desc = "JET_ENGINES_SPECIAL"
 
-		on_research_complete = {
-			custom_effect_tooltip = JET_ENGINES_RESEARCHED
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			rocketry
-			jet_technology
-		}
-	}
 	
 	atomic_research = {
 
