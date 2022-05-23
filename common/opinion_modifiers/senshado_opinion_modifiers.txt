@@ -26,6 +26,10 @@ opinion_modifiers = {
 	strengthen_communication = {
 		value = +25
 	}
+
+	hallsteinism_policy = {
+		value = -30
+	}
 }
 
 #STG

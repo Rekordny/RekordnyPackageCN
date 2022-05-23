@@ -1,0 +1,93 @@
+characters={
+	BWA_emi={
+		name="Emi Nakasuga"
+		portraits={
+			civilian={
+				large="gfx/leaders/KGA/Portrait_KGA_Emi.dds"
+				small="gfx/interface/advisors/idea_emi.dds"
+			}
+		}
+		country_leader={
+			desc="Strange...huh"
+			ideology=leninism
+			traits={ revolutionary_general }
+			expire="2000.1.1.1"
+			id=-1
+		}
+		field_marshal={
+			visible = {  }
+			traits={ armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=1063
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BWA_emi
+			removal_cost = 0
+			available = {  }
+			allowed = { tag = BWA }
+			visible = { }
+			traits = { savior_of_the_bell_wall }
+			on_add = {}
+			on_remove = {}
+		}
+	}
+	BWA_hitomi={
+		name="Hitomi"
+		portraits={
+			army={
+				large="gfx/leaders/KGA/Portrait_KGA_Hitomi.dds"
+			}
+		}
+		corps_commander={
+			visible = {  }
+			traits={ armor_officer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id=1065
+		}
+	}
+	BWA_kita={
+		name="Kita"
+		portraits={
+			army={
+				large="gfx/leaders/KGA/Portrait_KGA_Kita.dds"
+			}
+		}
+		corps_commander={
+			visible = {  }
+			traits={ armor_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=1064
+		}
+	}
+	BWA_takami={
+		name="Takami"
+		portraits={
+			army={
+				large="gfx/leaders/KGA/Portrait_KGA_Takami.dds"
+			}
+		}
+		corps_commander={
+			visible = {  }
+			traits={ armor_officer }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=1066
+		}
+	}
+}

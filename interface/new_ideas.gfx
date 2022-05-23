@@ -148,8 +148,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/advisors/idea_emi.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_KGA_ritaiko"
-		texturefile = "gfx/interface/advisors/idea_ritaiko.dds"
+		name = "GFX_idea_KGA_kojima"
+		texturefile = "gfx/interface/advisors/idea_kojima.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_KGA_geshiko"

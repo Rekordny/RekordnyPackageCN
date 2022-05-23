@@ -12,3 +12,8 @@ OGA = {
     color = rgb { 31 158 255 }
     color_ui = rgb { 31 158 255 }
 }
+
+KDR = {
+    color = rgb { 161 161 161 }
+    color_ui = rgb { 161 161 161 }
+}

@@ -5336,11 +5336,11 @@ spriteTypes = {
 		}
 		SpriteType = {
 			name = "GFX_guided_missle_artillery_anti_air_medium"
-			texturefile = "gfx/interface/equipmentdesigner/tanks/modules/tech/missile_anti_tank_missile_2.dds"
+			texturefile = "gfx/interface/equipmentdesigner/tanks/modules/tech/missile_VT_missile.dds"
 		}
 		SpriteType = {
 			name = "GFX_guided_missle_artillery_anti_tank_medium"
-			texturefile = "gfx/interface/equipmentdesigner/tanks/modules/tech/missile_VT_missile.dds"
+			texturefile = "gfx/interface/equipmentdesigner/tanks/modules/tech/missile_anti_tank_missile_2.dds"
 		}
 		spriteType = {
 			name = "GFX_EMI_tank_missile_launcher"

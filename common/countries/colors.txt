@@ -214,3 +214,8 @@ VAT = {
 	color = rgb { 100 149 237 }
 	color_ui = rgb { 100 149 237 }
 }
+
+BWA = {
+	color = rgb { 161 103 28 }
+	color_ui = rgb { 161 103 28 }
+}

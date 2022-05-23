@@ -68,6 +68,52 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/news/event_news_11.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_senshado_news_event_12"
+		texturefile = "gfx/event_pictures/news/event_news_12.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_senshado_news_event_13"
+		texturefile = "gfx/event_pictures/news/event_news_13.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_senshado_news_event_14"
+		texturefile = "gfx/event_pictures/news/event_news_14.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_senshado_news_event_15"
+		texturefile = "gfx/event_pictures/news/event_news_15.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_senshado_news_event_16"
+		texturefile = "gfx/event_pictures/news/event_news_16.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_senshado_news_event_17"
+		texturefile = "gfx/event_pictures/news/event_news_17.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_senshado_news_event_18"
+		texturefile = "gfx/event_pictures/news/event_news_18.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_senshado_news_event_19"
+		texturefile = "gfx/event_pictures/news/event_news_19.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_senshado_news_event_20"
+		texturefile = "gfx/event_pictures/news/event_news_20.dds"
+		legacy_lazy_load = no
+	}
 
 	#daily
 	spriteType = {
@@ -419,6 +465,106 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_event_kga_country_60"
 		texturefile = "gfx/event_pictures/KGA/kga_country_60.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_61"
+		texturefile = "gfx/event_pictures/KGA/kga_country_61.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_62"
+		texturefile = "gfx/event_pictures/KGA/kga_country_62.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_63"
+		texturefile = "gfx/event_pictures/KGA/kga_country_63.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_64"
+		texturefile = "gfx/event_pictures/KGA/kga_country_64.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_65"
+		texturefile = "gfx/event_pictures/KGA/kga_country_65.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_66"
+		texturefile = "gfx/event_pictures/KGA/kga_country_66.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_67"
+		texturefile = "gfx/event_pictures/KGA/kga_country_67.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_68"
+		texturefile = "gfx/event_pictures/KGA/kga_country_68.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_69"
+		texturefile = "gfx/event_pictures/KGA/kga_country_69.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_70"
+		texturefile = "gfx/event_pictures/KGA/kga_country_70.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_71"
+		texturefile = "gfx/event_pictures/KGA/kga_country_71.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_72"
+		texturefile = "gfx/event_pictures/KGA/kga_country_72.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_73"
+		texturefile = "gfx/event_pictures/KGA/kga_country_73.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_74"
+		texturefile = "gfx/event_pictures/KGA/kga_country_74.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_75"
+		texturefile = "gfx/event_pictures/KGA/kga_country_75.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_76"
+		texturefile = "gfx/event_pictures/KGA/kga_country_76.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_77"
+		texturefile = "gfx/event_pictures/KGA/kga_country_77.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_78"
+		texturefile = "gfx/event_pictures/KGA/kga_country_78.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_79"
+		texturefile = "gfx/event_pictures/KGA/kga_country_79.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_event_kga_country_80"
+		texturefile = "gfx/event_pictures/KGA/kga_country_80.dds"
 		legacy_lazy_load = no
 	}
 

@@ -686,11 +686,11 @@ country_event = {
 	option = {
 		name = Saunders.22.a
 		set_country_flag = SDS_CIVIL_WAR_BEGAN
-		add_civil_war_target = GBT
 		declare_war_on = {
 			target = GBT
 			type = civil_war
 		}
+		add_civil_war_target = GBT
 		news_event = { id = senshado_news.8 }
 		if = {
 			limit = { has_country_flag = SDS_GRANT_SUPPORT_SOUTHERN_1 }

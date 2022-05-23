@@ -1,0 +1,176 @@
+division_template = {
+	name = "Panzerdivision"		# Infantry Division - Reserve division called to full strength in time of war
+	division_names_group = KGA_1
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+        light_armor = { x = 0 y = 2 }
+		heavy_armor = { x = 1 y = 0 }
+		heavy_armor = { x = 1 y = 1 }
+        heavy_armor = { x = 1 y = 2 }
+        motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+        motorized = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+        maintenance_company = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Division Schnelle Kräfte"		# Infantry Division - Reserve division called to full strength in time of war
+	division_names_group = KGA_2
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+        paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+        paratrooper = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Eurocorps"		# Infantry Division - Reserve division called to full strength in time of war
+	division_names_group = KGA_3
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+        artillery_brigade = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+    division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 14
+        }
+        location = 6488
+        division_template = "Panzerdivision"
+        # start_experience_factor = 0.1
+        # start_equipment_factor = 0.5
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 12
+        }
+        location = 6488
+        division_template = "Panzerdivision"
+        # start_experience_factor = 0.1
+        # start_equipment_factor = 0.5
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 13
+        }
+        location = 6488
+        division_template = "Panzerdivision"
+        # start_experience_factor = 0.1
+        # start_equipment_factor = 0.5
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 14
+        }
+        location = 692
+        division_template = "Eurocorps"
+        # start_experience_factor = 0.1
+        # start_equipment_factor = 0.5
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 15
+        }
+        location = 692
+        division_template = "Eurocorps"
+        # start_experience_factor = 0.1
+        # start_equipment_factor = 0.5
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 16
+        }
+        location = 692
+        division_template = "Eurocorps"
+        # start_experience_factor = 0.1
+        # start_equipment_factor = 0.5
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 17
+        }
+        location = 692
+        division_template = "Eurocorps"
+        # start_experience_factor = 0.1
+        # start_equipment_factor = 0.5
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 18
+        }
+        location = 11544
+        division_template = "Eurocorps"
+        # start_experience_factor = 0.1
+        # start_equipment_factor = 0.5
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 19
+        }
+        location = 11544
+        division_template = "Eurocorps"
+        # start_experience_factor = 0.1
+        # start_equipment_factor = 0.5
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 20
+        }
+        location = 11544
+        division_template = "Eurocorps"
+        # start_experience_factor = 0.1
+        # start_equipment_factor = 0.5
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 22
+        }
+        location = 11544
+        division_template = "Eurocorps"
+        # start_experience_factor = 0.1
+        # start_equipment_factor = 0.5
+    }
+	division = {
+        division_name = {
+            is_name_ordered = yes
+            name_order = 21
+        }
+        location = 11544
+        division_template = "Eurocorps"
+        # start_experience_factor = 0.1
+        # start_equipment_factor = 0.5
+    }
+}

@@ -5,6 +5,17 @@ on_actions = {
                 if = { limit = { is_ai = yes } 
                     activate_advisor = KGA_maho
                 }
+                country_event = { id = kuromorimine.60 days = 50 }
+            }
+        }
+    }
+    #检查共产主义程度
+    on_weekly = {
+        effect = {
+            KGA = {
+                if = { limit = { communism > 0.6 }
+                    country_event = kuromorimine.28
+                }
             }
         }
     }

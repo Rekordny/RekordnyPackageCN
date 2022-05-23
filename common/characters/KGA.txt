@@ -66,7 +66,7 @@ characters={
 		country_leader={
 			desc="She is even better"
 			ideology=moderatism
-			traits={ the_director }
+			traits={ depressed_and_cheerless }
 			expire="2000.1.1.1"
 			id=-1
 		}
@@ -93,46 +93,6 @@ characters={
 			traits = { mobile_warfare_expert }
 		}
 	}
-	KGA_emi={
-		name="Emi Nakasuga"
-		portraits={
-			civilian={
-				large="gfx/leaders/KGA/Portrait_KGA_Emi.dds"
-				small="gfx/interface/advisors/idea_emi.dds"
-			}
-		}
-		country_leader={
-			desc="Strange...huh"
-			ideology=leninism
-			traits={ revolutionary_general }
-			expire="2000.1.1.1"
-			id=-1
-		}
-		field_marshal={
-			visible = { OR = {
-				has_completed_focus = KGA_incorporate_bellwall has_completed_focus = KGA_admit_bell_wall } }
-			traits={ armor_officer }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=3
-			legacy_id=1063
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = KGA_emi
-			removal_cost = 0
-			available = { has_completed_focus = KGA_admit_bell_wall }
-			allowed = {
-				original_tag = KGA
-			}
-			visible = { }
-			traits = { savior_of_the_bell_wall }
-			on_add = {}
-			on_remove = {}
-		}
-	}
 	KGA_erika={
 		name="Erika Itsumi"
 		portraits={
@@ -149,6 +109,13 @@ characters={
 			planning_skill=2
 			logistics_skill=2
 			legacy_id=1016
+		}
+		country_leader={
+			desc="hmm"
+			ideology=moderatism
+			traits={ a_single_bet }
+			expire="2000.1.1.1"
+			id=-1
 		}
 		advisor = {
 			slot = political_advisor
@@ -193,7 +160,7 @@ characters={
 			slot = political_advisor
 			idea_token = KGA_koume
 			removal_cost = 0
-			available = { has_country_flag = KGA_ACTIVE_KOUME_ADVISOR }
+			available = { }
 			allowed = {
 				original_tag = KGA
 			}
@@ -270,12 +237,12 @@ characters={
 			legacy_id=1019
 		}
 	}
-	KGA_ritaiko={
-		name="Ritaiko"
+	KGA_kojima={
+		name="Kojima"
 		portraits={
 			civilian={
-				large="gfx/leaders/KGA/Portrait_KGA_Ritaiko.dds"
-				small="gfx/interface/advisors/idea_Ritaiko.dds"
+				large="gfx/leaders/KGA/Portrait_KGA_Kojima.dds"
+				small="gfx/interface/advisors/idea_Kojima.dds"
 			}
 			army={
 			}
@@ -291,7 +258,7 @@ characters={
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = KGA_ritaiko
+			idea_token = KGA_kojima
 			removal_cost = 0
 			available = {  }
 			allowed = {
@@ -341,58 +308,104 @@ characters={
 			legacy_id=1011
 		}
 	}
-	KGA_hitomi={
-		name="Hitomi"
+	KGA_maaru={
+		name="Maaru"
 		portraits={
-			army={
-				large="gfx/leaders/KGA/Portrait_KGA_Hitomi.dds"
+			civilian={
+				large="gfx/leaders/KGA/Portrait_KGA_Maaru.dds"
+				small="gfx/interface/advisors/idea_Maaru.dds"
 			}
 		}
-		corps_commander={
-			visible = { has_completed_focus = KGA_incorporate_bellwall }
+		field_marshal={
+			visible = { has_completed_focus = KGA_army_establishment_reform }
 			traits={ armor_officer }
-			skill = 2
-			attack_skill = 1
-			defense_skill = 3
-			planning_skill = 2
-			logistics_skill = 1
-			legacy_id=1065
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id=1122
 		}
+		# advisor={
+		# 	cost = 150
+		# 	slot = theorist
+		# 	allowed = {
+		# 		original_tag = KGA
+		# 	}
+		# 	visible = { has_completed_focus = KGA_army_establishment_reform }
+		# 	idea_token = KGA_maaru
+		# 	ledger = army
+		# 	traits = { synergy_theorist }
+		# }
 	}
-	KGA_kita={
-		name="Kita"
+	KGA_natsumi={
+		name="Natsumi"
 		portraits={
-			army={
-				large="gfx/leaders/KGA/Portrait_KGA_Kita.dds"
+			civilian={
+				large="gfx/leaders/KGA/Portrait_KGA_Natsumi.dds"
+				small="gfx/interface/advisors/idea_Natsumi.dds"
 			}
 		}
 		corps_commander={
-			visible = { has_completed_focus = KGA_incorporate_bellwall }
+			visible = { has_completed_focus = KGA_popularize_senshado_education }
 			traits={ armor_officer }
 			skill = 2
 			attack_skill = 2
-			defense_skill = 1
-			planning_skill = 2
+			defense_skill = 2
+			planning_skill = 1
 			logistics_skill = 2
-			legacy_id=1064
+			legacy_id=1123
 		}
 	}
-	KGA_takami={
-		name="Takami"
+	KGA_bauer={
+		name="Bauer"
 		portraits={
-			army={
-				large="gfx/leaders/KGA/Portrait_KGA_Takami.dds"
+			civilian={
+				large="gfx/leaders/KGA/Portrait_KGA_Bauer.dds"
+				small="gfx/interface/advisors/idea_Bauer.dds"
 			}
 		}
 		corps_commander={
-			visible = { has_completed_focus = KGA_incorporate_bellwall }
+			visible = { has_completed_focus = KGA_popularize_senshado_education }
 			traits={ armor_officer }
 			skill = 2
 			attack_skill = 3
-			defense_skill = 1
+			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 1
-			legacy_id=1066
+			legacy_id=1124
+		}
+	}
+	KGA_reila={
+		name="Reila"
+		portraits={
+			civilian={
+				large="gfx/leaders/KGA/Portrait_KGA_Reila.dds"
+				small="gfx/interface/advisors/idea_Reila.dds"
+			}
+		}
+		# advisor = {
+		# 	slot = political_advisor
+		# 	idea_token = KGA_reila
+		# 	removal_cost = 0
+		# 	available = {  }
+		# 	allowed = {
+		# 		original_tag = KGA
+		# 	}
+		# 	visible = { has_completed_focus = KGA_industrial_miracle }
+		# 	traits = { erikas_right_hand }
+		# 	on_add = {}
+		# 	on_remove = {}
+		# }
+		corps_commander={
+			visible = { has_completed_focus = KGA_industrial_miracle }
+			traits={ armor_officer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=1125
 		}
 	}
 }

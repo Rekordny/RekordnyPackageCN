@@ -25,8 +25,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/advisors/idea_geshiko.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_ritaiko"
-		texturefile = "gfx/interface/advisors/idea_ritaiko.dds"
+		name = "GFX_idea_kojima"
+		texturefile = "gfx/interface/advisors/idea_kojima.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_sangou"

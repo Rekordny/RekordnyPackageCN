@@ -4,16 +4,16 @@ kga_government = {
 	##########以下为KGA测试
 	test_war = {
 		allowed = { tag = KGA }
-		visible = { AND = { is_ai = no is_debug = yes } }
+		visible = { is_ai = no is_debug = yes }
 		days_re_enable = 1
 		complete_effect = {
-			
-			country_event = kuromorimine.28
+			create_faction = "XXX"
+			complete_national_focus = KGA_stand_with_independent_liveland
 		}
 	}
 	test_peace = {
 		allowed = { tag = KGA }
-		visible = { AND = { is_ai = no is_debug = yes } }
+		visible = { is_ai = no is_debug = yes }
 		days_re_enable = 1
 		complete_effect = {
 			white_peace_with_every_enemy = yes
@@ -22,7 +22,7 @@ kga_government = {
 	}
 	test_events = {
 		allowed = { tag = KGA }
-		visible = { AND = { is_ai = no is_debug = yes } }
+		visible = { is_ai = no is_debug = yes }
 		days_re_enable = 1
 		complete_effect = {
 			activate_advisor = KGA_maho
@@ -30,20 +30,44 @@ kga_government = {
 		
 	}
 	##########以上为测试
+	#将纳粹从军队中清除
+	kga_remove_nazi_from_army = {
+		allowed = { tag = KGA }
+		visible = { OR = { NOT = { has_completed_focus = KGA_return_to_politics } AND = { is_ai = no is_debug = yes } } }
+		days_re_enable = 100
+		days_remove = 30
+		custom_cost_trigger = {
+			has_army_experience > 9.9
+			has_political_power > 29.9
+	   	}
+		custom_cost_text = kga_tooltip35
+		complete_effect = {
+			hidden_effect = {
+				army_experience = -10
+				add_political_power = -30
+			}
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.07
+			}
+		}
+	}
 
     kga_pay_gold = {
 		allowed = { tag = KGA }
-		visible = { OR = { AND = { has_completed_focus = KGA_atonement NOT = { has_country_flag = kga_paid_debt } } AND = { is_ai = no is_debug = yes } } }
+		visible = { OR = { NOT = { has_country_flag = kga_paid_debt } AND = { is_ai = no is_debug = yes } } }
 		
 		days_re_enable = 80
 		custom_cost_trigger = {
-			check_variable = { gold > 69.9 }
+			check_variable = { gold > 49.9 }
 	   	}
 		custom_cost_text = kga_tooltip3
 		complete_effect = {
-			KGA = { add_to_variable = { gold = -70 } }
-			STG = { add_to_variable = { gold = 30 } }
-			BCF = { add_to_variable = { gold = 30 } }
+			KGA = { add_to_variable = { gold = -50 } }
+			STG = { add_to_variable = { gold = 20 } }
+			BCF = { add_to_variable = { gold = 20 } }
 			if = { limit = { has_idea = KGA_huge_debt } swap_ideas = { remove_idea = KGA_huge_debt  add_idea = KGA_huge_debt_1 } }
 			else_if = { limit = { has_idea = KGA_huge_debt_1 } swap_ideas = { remove_idea = KGA_huge_debt_1  add_idea = KGA_huge_debt_2 } }
 			else_if = { limit = { has_idea = KGA_huge_debt_2 } swap_ideas = { remove_idea = KGA_huge_debt_2  add_idea = KGA_huge_debt_3 } }
@@ -288,7 +312,7 @@ kga_establish_puppuet_bon = {
 				hostility_reason = asked_to_join
 			}
 			BKC = { add_equipment_to_stockpile = {
-				type = senshado_light_tank_equipment_2
+				type = light_tank_chassis_2
 				amount = 100
 				producer = KGA
 			} }
@@ -354,7 +378,99 @@ kga_missions = {
 			
 		}
 	}
-	
+	#艾丽卡线与法西斯切割任务
+	kga_cut_relationship_with_fascism = {
+		allowed = { tag = KGA }
+		available = {
+			fascism < 0.02
+		}
+		is_good = no
+		activation = { has_country_flag  = KGA_START_CUT_RELATION_FASCISM } 
+		days_mission_timeout = 300
+		timeout_effect = {
+			add_stability = -0.25
+			add_political_power = -300
+			add_war_support = -0.25
+		}
+		complete_effect = {
+			add_stability = 0.1
+			remove_ideas = KGA_white_terror
+			hidden_effect = {
+				
+				clr_country_flag  = KGA_START_CUT_RELATION_FASCISM
+			}
+		}
+	}
+	#帮助利夫兰王冠领独立
+	kga_support_LCP = {
+		allowed = { tag = KGA }
+		available = {
+			has_war_support > 0.6
+		}
+		selectable_mission = yes
+		custom_cost_trigger = {
+			has_army_experience = 20
+			has_political_power = 100
+			has_equipment = {
+				infantry_equipment > 119999
+			}
+	   	}
+		custom_cost_text = kga_tooltip37
+		is_good = yes
+		activation = { has_completed_focus = KGA_stand_with_independent_liveland } 
+		days_mission_timeout = 125
+		timeout_effect = {
+			LCP = {
+				transfer_state = 808
+				transfer_state = 810
+				transfer_state = 811
+				transfer_state = 812
+				transfer_state = 813
+				transfer_state = 12
+				transfer_state = 13
+				transfer_state = 191
+				hidden_effect = { load_oob = LCP_onRebal }
+				
+				declare_war_on = {
+					target = BON
+					type = take_core_state
+				}
+			}
+			add_to_faction = LCP
+			hidden_effect = { news_event = senshado_news.15 }
+		}
+		complete_effect = {
+			LCP = {
+				transfer_state = 808
+				transfer_state = 809
+				transfer_state = 810
+				transfer_state = 811
+				transfer_state = 812
+				transfer_state = 813
+				transfer_state = 12
+				transfer_state = 13
+				transfer_state = 190
+				transfer_state = 191
+				add_manpower = 120000
+				hidden_effect = { load_oob = LCP_onRebal }
+				declare_war_on = {
+					target = BON
+					type = take_core_state
+				}
+				add_timed_idea = {
+					idea = LCP_support_from_kuromorimine
+					days = 180
+				}
+			}
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 120000
+				target = LCP
+			}
+			puppet = LCP
+			hidden_effect = { news_event = senshado_news.15 add_political_power = -100 army_experience = -20 }
+		}
+	}
 }
 
 #黑森峰-备战内战
@@ -471,6 +587,150 @@ kga_civil_war = {
 			modifier = {
 				has_stability < 0.37
 				factor = 5
+			}
+		}
+	}
+}
+
+#政治平衡
+kga_political_balance = {
+	kga_promote_maho = {
+		visible = { OR = { has_completed_focus = KGA_political_balance AND = { is_ai = no is_debug = yes } } }
+		allowed = { tag = KGA }
+		custom_cost_trigger = { has_political_power > 29.9 check_variable = { ssdp > 199.9 } }
+		custom_cost_text = kga_tooltip38
+		fire_only_once = yes
+		available = { has_character = kga_maho }
+		complete_effect = {
+			kga_maho = {
+				hidden_effect = {
+					add_to_variable = { ssdp = -200 }
+					add_political_power = -30
+					remove_advisor_role = {
+						character = kga_maho
+						slot = advisor
+					}
+				}
+				add_advisor_role = {
+					character = kga_maho
+					advisor = {
+						slot = political_advisor
+						idea_token = KGA_maho
+						removal_cost = 0
+						available = {  }
+						allowed = {
+							original_tag = KGA
+						}
+						visible = { }
+						traits = { hidden_tenderness_0 }
+						on_add = {}
+						on_remove = {}
+					}
+				}
+			}
+		}
+	}
+	kga_promote_erika = {
+		visible = { OR = { has_completed_focus = KGA_political_balance AND = { is_ai = no is_debug = yes } } }
+		allowed = { tag = KGA }
+		custom_cost_trigger = { has_political_power > 29.9 check_variable = { ssdp > 199.9 } }
+		custom_cost_text = kga_tooltip38
+		fire_only_once = yes
+		available = { has_character = kga_erika }
+		complete_effect = {
+			kga_erika = {
+				hidden_effect = {
+					add_to_variable = { ssdp = -200 }
+					add_political_power = -30
+					remove_advisor_role = {
+						character = kga_erika
+						slot = advisor
+					}
+				}
+				add_advisor_role = {
+					character = kga_erika
+					advisor = {
+						slot = political_advisor
+						idea_token = KGA_erika
+						removal_cost = 0
+						available = {  }
+						allowed = {
+							original_tag = KGA
+						}
+						visible = { }
+						traits = { top_ruling_bottom_0 }
+						on_add = {}
+						on_remove = {}
+					}
+				}
+			}
+		}
+	}
+	kga_promote_koume = {
+		visible = { OR = { has_completed_focus = KGA_political_balance AND = { is_ai = no is_debug = yes } } }
+		allowed = { tag = KGA }
+		custom_cost_trigger = { has_political_power > 29.9 check_variable = { ssdp > 199.9 } }
+		custom_cost_text = kga_tooltip38
+		fire_only_once = yes
+		available = { has_character = kga_koume }
+		complete_effect = {
+			kga_koume = {
+				hidden_effect = {
+					add_to_variable = { ssdp = -200 }
+					add_political_power = -30
+					remove_advisor_role = {
+						character = KGA_koume
+						slot = advisor
+					}
+				}
+				add_advisor_role = {
+					character = kga_koume
+					advisor = {
+						slot = political_advisor
+						idea_token = KGA_koume
+						removal_cost = 0
+						available = {  }
+						allowed = {
+							original_tag = KGA
+						}
+						visible = { }
+						traits = { the_most_kind_0 }
+						on_add = {}
+						on_remove = {}
+					}
+				}
+			}
+		}
+	}
+	kga_promote_kojima = {
+		visible = { OR = { has_completed_focus = KGA_political_balance AND = { is_ai = no is_debug = yes } } }
+		allowed = { tag = KGA }
+		custom_cost_trigger = { has_political_power > 29.9 check_variable = { ssdp > 199.9 } }
+		custom_cost_text = kga_tooltip38
+		fire_only_once = yes
+		available = { has_character = kga_kojima }
+		complete_effect = {
+			hidden_effect = {
+				add_to_variable = { ssdp = -200 }
+				add_political_power = -30
+			}
+			kga_kojima = {
+				add_advisor_role = {
+					character = kga_kojima
+					advisor = {
+						slot = high_command
+						idea_token = kga_kojima
+						removal_cost = 0
+						available = {  }
+						allowed = {
+							original_tag = KGA
+						}
+						visible = { }
+						traits = { army_CombinedArms_2 }
+						on_add = {}
+						on_remove = {}
+					}
+				}
 			}
 		}
 	}

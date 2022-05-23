@@ -6,6 +6,7 @@
  tax_daily_modifier:0 "daily tax modifier"
  gold_standard_modifier:0 "gold standard modifier"
  wage_modifier:0 "army expenditure"
+ modifier_production_speed_senshado_school_factor:0 "§Ysenshado school§! production speed"
 
 #省份指令GUI
  PROVINCE_GOVERNOR_ADD_STEEL:0 "Consume §G80 §!£GFX_moeny §G20 §!£GFX_gold_icon to extract §Y5 steel in current province§! \n acheive §Y50§!days §YDiscovering Resources§! (daily political point: §R-0.3§!, consumer factory: §Y5%§!)"

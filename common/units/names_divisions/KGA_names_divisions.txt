@@ -2,7 +2,7 @@ KGA_1 =
 {
 	name = "Panzerdivision"
 
-	for_countries = { KGA }
+	for_countries = { KGA BWA }
 
 	can_use = { always = yes }
 

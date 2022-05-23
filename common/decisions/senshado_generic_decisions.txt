@@ -1,8 +1,6 @@
 senshado_decisions = {
 	debug_decryption_tech = {
-		visible = {
-			is_debug = yes is_ai = no
-		}
+		visible = { is_debug = yes is_ai = no }
 		days_remove = 1000
 		modifier = {
 			decryption = 10
@@ -10,21 +8,16 @@ senshado_decisions = {
 	}
 
 	debug_character_recurit = {
-		visible = {
-			AND = { is_ai = no is_debug = yes }
-		}
+		visible = { is_ai = no is_debug = yes }
 		days_re_enable = 0
 		complete_effect = {
-			if = { limit = { OAN = { exists = no } } 
-				recruit_character = generic_mai
-			}
+			set_country_flag = KGA_NAZI_IN_ARMY
+			complete_national_focus = KGA_return_to_politics
 		}
 	}
 
 	debug_hyper_event_active = {
-		visible = {
-			AND = { is_ai = no is_debug = yes }
-		}
+		visible = { is_ai = no is_debug = yes }
 		days_re_enable = 1
 		complete_effect = {
 			set_country_flag = open_hyper_event
@@ -33,9 +26,7 @@ senshado_decisions = {
 	}
 
 	debug_hyper_event_close = {
-		visible = {
-			AND = { is_ai = no is_debug = yes }
-		}
+		visible = { is_ai = no is_debug = yes }
 		days_re_enable = 1
 		complete_effect = {
 			clr_country_flag = open_hyper_event
@@ -43,19 +34,17 @@ senshado_decisions = {
 	}
 
 	debug_free_300_ssdp_points = {
-		visible = {
-			AND = { is_ai = no is_debug = yes }
-		}
+		visible = { is_ai = no is_debug = yes }
 		days_re_enable = 1
 		complete_effect = {
-			country_event = Anzio.10
+			set_politics = {
+				ruling_party = fascism
+			}
 		}
 	}
 
 	debug_clear_ssdp_points = {
-		visible = {
-			AND = { is_ai = no is_debug = yes }
-		}
+		visible = { is_ai = no is_debug = yes }
 		days_re_enable = 1
 		complete_effect = {
 			
@@ -63,9 +52,7 @@ senshado_decisions = {
 	}
 	
 	debug_clear_affinity = {
-		visible = {
-			AND = { is_ai = no is_debug = yes }
-		}
+		visible = { is_ai = no is_debug = yes }
 		days_re_enable = 1
 		complete_effect = {
 			clear_variable = affinity_1
@@ -75,18 +62,14 @@ senshado_decisions = {
 	}
 
 	debug_senshado_test = {
-		visible = {
-			AND = { is_ai = no is_debug = yes }
-		}
+		visible = { is_ai = no is_debug = yes }
 		complete_effect = {
 			add_goods = yes
 		}
 	}
 
 	debug_add_senshado_school = {
-		visible = {
-			AND = { is_ai = no is_debug = yes }
-		}
+		visible = { is_ai = no is_debug = yes }
 		complete_effect = {
 			random_state = {
 				limit = { is_controlled_by = ROOT }
@@ -101,9 +84,7 @@ senshado_decisions = {
 	}
 
 	debug_add_senshado_leader = {
-		visible = {
-			AND = { is_ai = no is_debug = yes }
-		}
+		visible = { is_ai = no is_debug = yes }
 		complete_effect = {
 			random_list = {
 				8 = {
@@ -214,6 +195,9 @@ senshado_decisions = {
 		}
 		remove_effect = {
 			add_political_power = 100
+		}
+		ai_will_do = {
+			factor = 1
 		}
 	}
 

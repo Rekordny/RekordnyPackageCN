@@ -1,5 +1,88 @@
 ideas = {
     country = {
+		LCP_support_from_kuromorimine = {
+			allowed = { tag = LCP }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				army_org_regain = 0.1
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = BON
+				defense_bonus_against = 0.2
+			}
+		}
+		KGA_ooari_style_education = {
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				training_time_army_factor = -0.15
+				conscription = 0.025
+			}
+		}
+		KGA_the_cost_of_absolute_neutral = {
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				war_stability_factor = -0.3
+				war_support_weekly = -0.01
+				justify_war_goal_time = 1
+				enemy_justify_war_goal_time = 1
+			}
+			targeted_modifier = {
+				tag = STG
+				attack_bonus_against = -0.25
+				defense_bonus_against = -0.25
+			}
+		}
+		KGA_hallsteinism = {
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = yes }
+			targeted_modifier = {
+				tag = KRR
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = PRA
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = FCM
+				attack_bonus_against = 0.1
+			}
+		}
+		KGA_tightening_of_rights = {
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_factor = 0.15
+				resistance_activity = -0.15
+				compliance_growth = 0.15
+				political_power_factor = 0.15
+			}
+		}
+
+		KGA_great_sorting = {
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				tax_daily_modifier = -0.1
+			}
+		}
+
+		KGA_white_terror = {
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				political_power_cost = 0.15
+                stability_factor = -0.15
+			}
+		}
+
         KGA_broken_kuromorimine = {
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = yes }
@@ -14,7 +97,7 @@ ideas = {
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = yes }
 			modifier = {
-				max_command_power = 20
+				max_command_power = 10
                 army_core_attack_factor = 0.05
                 army_core_defence_factor = 0.05
 				wage_modifier = -0.1
@@ -29,7 +112,25 @@ ideas = {
                 army_core_attack_factor = 0.1
                 army_core_defence_factor = 0.1
 				army_speed_factor = 0.05
-				army_defence_factor = 0.05
+			}
+		}
+
+		KGA_dying_nishizumi_style = {
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = no }
+			modifier = {
+                army_core_attack_factor = 0.025
+                army_core_defence_factor = 0.025
+				wage_modifier = -0.05
+			}
+		}
+
+		KGA_dying_nishizumi_style_1 = {
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = no }
+			modifier = {
+                stability_factor = 0.05
+				wage_modifier = -0.05
 			}
 		}
 

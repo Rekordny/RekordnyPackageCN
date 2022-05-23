@@ -26,3 +26,7 @@ kga_germanic_kuromorimine = {
 	icon = GFX_decision_category_senshado
 	allowed = { tag = KGA }
 }
+kga_political_balance = {
+	icon = GFX_decision_category_senshado
+	allowed = { tag = KGA }
+}

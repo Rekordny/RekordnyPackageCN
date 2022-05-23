@@ -115,7 +115,6 @@ country_event = {
 		KGA = {
 			add_popularity = { ideology = democratic  popularity = 0.04 }
 			add_war_support = -0.05
-			set_country_flag = KGA_ACTIVE_KOUME_ADVISOR
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = KGA_koume
 		}
@@ -473,40 +472,97 @@ country_event = {
 				}
 				if = {
 					limit = { NOT = { has_country_flag = KGA_HAS_65_SUPPORT_CIVIL_WAR } }
-					start_civil_war = {
-						ideology = communism
-						size = 0.45
-						only_own_territory = no
-						capital = 55
-						states = { 
-							52 53 54 55 60 65
-						}
-						keep_unit_leaders = {
-							1021 1015 1016 1017 1024 1018 1019 1020 1023
-						}
-						keep_political_leader = no
+					BWA = {
+						transfer_state = 52
+						transfer_state = 53
+						transfer_state = 54
+						transfer_state = 55
+						transfer_state = 60
+						transfer_state = 65
+						add_state_core = 52
+						add_state_core = 53
+						add_state_core = 54
+						add_state_core = 55
+						add_state_core = 60
+						add_state_core = 65
+						add_state_core = 61
+						add_state_core = 62
+						add_state_core = 64
+						add_state_core = 56
+						add_state_core = 57
+						add_state_core = 58
+						add_state_core = 59
+						add_state_core = 51
+						add_state_core = 42
+						add_state_core = 50
+						add_state_core = 68
+						add_state_core = 66
+						add_state_core = 67
+						add_state_core = 63
+						load_oob = "BWA_1972"
 					}
+					# start_civil_war = {
+					# 	ideology = communism
+					# 	size = 0.45
+					# 	only_own_territory = no
+					# 	capital = 55
+					# 	states = { 
+					# 		52 53 54 55 60 65
+					# 	}
+					# 	keep_unit_leaders = {
+					# 		1021 1015 1016 1017 1024 1018 1019 1020 1023
+					# 	}
+					# 	keep_political_leader = no
+					# }
 				}
 				else = {
-					start_civil_war = {
-						ideology = communism
-						size = 0.45
-						only_own_territory = no
-						capital = 55
-						states = {
-							52 53 54 55 60
-						}
-						keep_unit_leaders = {
-							1021 1015 1016 1017 1024 1018 1019 1020 1023
-						}
-						keep_political_leader = no
+					BWA = {
+						transfer_state = 52
+						transfer_state = 53
+						transfer_state = 54
+						transfer_state = 55
+						transfer_state = 60
+						add_state_core = 52
+						add_state_core = 53
+						add_state_core = 54
+						add_state_core = 55
+						add_state_core = 60
+						add_state_core = 65
+						add_state_core = 61
+						add_state_core = 62
+						add_state_core = 64
+						add_state_core = 56
+						add_state_core = 57
+						add_state_core = 58
+						add_state_core = 59
+						add_state_core = 51
+						add_state_core = 42
+						add_state_core = 50
+						add_state_core = 68
+						add_state_core = 66
+						add_state_core = 67
+						add_state_core = 63
+						load_oob = "BWA_1972"
 					}
+					# start_civil_war = {
+					# 	ideology = communism
+					# 	size = 0.45
+					# 	only_own_territory = no
+					# 	capital = 55
+					# 	states = {
+					# 		52 53 54 55 60
+					# 	}
+					# 	keep_unit_leaders = {
+					# 		1021 1015 1016 1017 1024 1018 1019 1020 1023
+					# 	}
+					# 	keep_political_leader = no
+					# }
 				}
 				if = { limit = { has_country_flag = KGA_HAS_DEPLOYED_BOMB_CIVIL_WAR } 
 					country_event = { id = kuromorimine.29 days = 0 }				
 				}
 				if = { limit = { has_country_flag = kga_ask_support_from_BCF } 
-					BCF = { country_event = { id = kuromorimine.36 days = 1 } }			
+					BCF = { country_event = { id = kuromorimine.36 days = 1 } }
 				}
 				if = { limit = { has_country_flag = kga_ask_support_from_STG } 
 					STG = { country_event = { id = kuromorimine.35 days = 1 } }				
@@ -522,7 +578,7 @@ country_event = {
 					}
 				}
 				clr_country_flag = KGA_PREPARE_CIVIL_WAR_START
-				news_event = { id = senshado_news.7 }
+				country_event = { id = kuromorimine.59 days = 3 }
 			}
 		}
 	}
@@ -570,7 +626,7 @@ country_event = {
 	option = {
 		name = kuromorimine.30.a
 		add_equipment_to_stockpile = {
-			type = light_tank_equipment_1
+			type = light_tank_chassis_1
 			amount = 300
 		}
 	}
@@ -588,7 +644,7 @@ country_event = {
 		name = kuromorimine.31.a
 		#暂且用装备代替三个师
 		add_equipment_to_stockpile = {
-			type = light_tank_equipment_1
+			type = light_tank_chassis_1
 			amount = 230
 		}
 	}
@@ -711,6 +767,30 @@ country_event = {
 	option = {
 		name = kuromorimine.38.b
 		#修改学生会赤星小梅
+		kga_koume = {
+			hidden_effect = {
+				remove_advisor_role = {
+					character = KGA_koume
+					slot = advisor
+				}
+			}
+			add_advisor_role = {
+				character = kga_koume
+				advisor = {
+					slot = political_advisor
+					idea_token = KGA_koume
+					removal_cost = 0
+					available = {  }
+					allowed = {
+						original_tag = KGA
+					}
+					visible = { }
+					traits = { the_most_kind_0 }
+					on_add = {}
+					on_remove = {}
+				}
+			}
+		}
 		custom_effect_tooltip = kga_tooltip20
 		set_country_flag = KGA_UPGRADE_ADVISOR_KOUME
 		#触发下个议程
@@ -721,6 +801,30 @@ country_event = {
 	option = {
 		name = kuromorimine.38.c
 		#修改学生会艾丽卡
+		kga_erika = {
+			hidden_effect = {
+				remove_advisor_role = {
+					character = kga_erika
+					slot = advisor
+				}
+			}
+			add_advisor_role = {
+				character = kga_erika
+				advisor = {
+					slot = political_advisor
+					idea_token = KGA_erika
+					removal_cost = 0
+					available = {  }
+					allowed = {
+						original_tag = KGA
+					}
+					visible = { }
+					traits = { top_ruling_bottom_0 }
+					on_add = {}
+					on_remove = {}
+				}
+			}
+		}
 		custom_effect_tooltip = kga_tooltip21
 		set_country_flag = KGA_UPGRADE_ADVISOR_ERIKA
 		#触发下个议程
@@ -1262,43 +1366,433 @@ country_event = {
 	}
 }
 
-
-
-
-#重新邀请西住美穗
+#和钟壁的内战爆发
 country_event = {
-	id = kuromorimine.521
-	title = kuromorimine.521.t
-	desc = kuromorimine.521.d
-	picture = GFX_report_event_german_speech
+	id = kuromorimine.59
+	title = kuromorimine.59.t
+	desc = kuromorimine.59.d
+	picture = GFX_event_kga_country_59
 
 	is_triggered_only = yes
 	option = {
-		name = kuromorimine.521.a
-		create_field_marshal = {
-			name = "Miho Nishizumi"
-			picture = "Portrait_KGA_Miho.dds"
-			traits = { Brilliant_Strategist Armor_Officer Panzer_Expert }
-			skill = 5
-			attack_skill = 4
-			defense_skill = 3
-			planning_skill = 6
-			logistics_skill = 4
-			id = 1021
+		name = kuromorimine.59.a
+		declare_war_on = {
+			target = BWA
+			type = civil_war
+		}
+		hidden_effect = {
+			add_civil_war_target = BWA
+			news_event = { id = senshado_news.7 }
 		}
 	}
 }
 
-
-########################日常事件###############################
+#不稳固的派系1972.9.30
 country_event = {
-	id = kuromorimine.300
-	title = kuromorimine.300.t
-	desc = kuromorimine.300.d
-	picture = GFX_report_event_german_speech
+	id = kuromorimine.60
+	title = kuromorimine.60.t
+	desc = kuromorimine.60.d
+	picture = GFX_event_kga_country_60
 
 	is_triggered_only = yes
 	option = {
-		name = kuromorimine.300.a
+		name = kuromorimine.60.a
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.1
+		}
+		hidden_effect = {
+			country_event = { id = kuromorimine.61 days = 80 }
+			country_event = { id = kuromorimine.62 days = 150 }
+		}
+	}
+}
+
+#武装党卫队互助会的下场
+country_event = {
+	id = kuromorimine.61
+	title = kuromorimine.61.t
+	desc = kuromorimine.61.d
+	picture = GFX_event_kga_country_61
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.61.a
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.1
+		}
+		add_political_power = 75
+	}
+	option = {
+		name = kuromorimine.61.b
+		add_manpower = 30000
+		add_political_power = -25
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.03
+		}
+		set_country_flag = KGA_NAZI_IN_ARMY
+	}
+	option = {
+		name = kuromorimine.61.c
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+	}
+}
+
+#黑森峰战车道学校的教科书
+country_event = {
+	id = kuromorimine.62
+	title = kuromorimine.62.t
+	desc = kuromorimine.62.d
+	picture = GFX_event_kga_country_62
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.62.a
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = -0.05
+		}
+		add_stability = 0.03
+	}
+	option = {
+		name = kuromorimine.62.b
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		add_war_support = 0.05
+	}
+}
+
+#柏林事变
+country_event = {
+	id = kuromorimine.63
+	title = kuromorimine.63.t
+	desc = kuromorimine.63.d
+	picture = GFX_event_kga_country_63
+
+	fire_only_once = yes
+	trigger = { original_tag = KGA has_completed_focus = KGA_return_to_politics has_country_flag = KGA_NAZI_IN_ARMY fascism > 0.15 fascism < 0.35 NOT = { has_completed_focus = KGA_awakening_dream } }
+	mean_time_to_happen = { months = 3 }
+	option = {
+		name = kuromorimine.63.a
+		swap_ideas = {
+			remove_idea = KGA_nishizumi_family_origin
+			add_idea = KGA_dying_nishizumi_style
+		}
+		retire_character = KGA_miho
+		hidden_effect = {
+			set_country_flag = KGA_BERLIN_INCIDENTS
+			complete_national_focus = KGA_the_third_path
+			country_event = { id = kuromorimine.64 days = 5 }
+		}
+	}
+}
+
+#质疑者
+country_event = {
+	id = kuromorimine.64
+	title = kuromorimine.64.t
+	desc = kuromorimine.64.d
+	picture = GFX_event_kga_country_64
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.64.a
+		add_ideas = KGA_white_terror
+		activate_mission = kga_cut_relationship_with_fascism
+		set_country_flag = KGA_START_CUT_RELATION_FASCISM
+	}
+}
+
+#打扫屋子
+country_event = {
+	id = kuromorimine.65
+	title = kuromorimine.65.t
+	desc = kuromorimine.65.d
+	picture = GFX_event_kga_country_65
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.65.a
+	}
+}
+
+#对西住真穗的秘密审判
+country_event = {
+	id = kuromorimine.66
+	title = kuromorimine.66.t
+	desc = kuromorimine.66.d
+	picture = GFX_event_kga_country_66
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.66.a
+		news_event = senshado_news.13
+	}
+	option = {
+		name = kuromorimine.66.b
+		
+	}
+}
+
+#西住流的黄昏
+country_event = {
+	id = kuromorimine.67
+	title = kuromorimine.67.t
+	desc = kuromorimine.67.d
+	picture = GFX_event_kga_country_67
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.67.a
+		swap_ideas = {
+			remove_idea = KGA_dying_nishizumi_style
+			add_idea = KGA_dying_nishizumi_style_1
+		}
+	}
+}
+
+#对真穗余党的审判：Mauko
+country_event = {
+	id = kuromorimine.68
+	title = kuromorimine.68.t
+	desc = kuromorimine.68.d
+	picture = GFX_event_kga_country_68
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.68.a
+		add_war_support = 0.1
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.05
+		}
+		retire_character = KGA_mauko
+	}
+	option = {
+		name = kuromorimine.68.b
+		add_war_support = -0.1
+	}
+}
+
+#对真穗余党的审判：Sanko
+country_event = {
+	id = kuromorimine.69
+	title = kuromorimine.69.t
+	desc = kuromorimine.69.d
+	picture = GFX_event_kga_country_69
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.69.a
+		add_ssdp_200 = yes
+		retire_character = KGA_sanko
+	}
+	option = {
+		name = kuromorimine.69.b
+		add_stability = -0.05
+	}
+}
+
+#对真穗余党的审判：Geshiko
+country_event = {
+	id = kuromorimine.70
+	title = kuromorimine.70.t
+	desc = kuromorimine.70.d
+	picture = GFX_event_kga_country_70
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.70.a
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.05
+		}
+		add_political_power = 100
+		retire_character = KGA_sanko
+	}
+	option = {
+		name = kuromorimine.70.b
+		add_political_power = -100
+	}
+}
+
+#对真穗余党的审判：小岛
+country_event = {
+	id = kuromorimine.71
+	title = kuromorimine.71.t
+	desc = kuromorimine.71.d
+	picture = GFX_event_kga_country_71
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.71.a
+		add_stability = 0.1
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.05
+		}
+		retire_character = KGA_kojima
+	}
+	option = {
+		name = kuromorimine.71.b
+		add_stability = -0.1
+	}
+}
+
+#西住流被彻底清除
+country_event = {
+	id = kuromorimine.72
+	title = kuromorimine.72.t
+	desc = kuromorimine.72.d
+	picture = GFX_event_kga_country_72
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.72.a
+		add_timed_idea = {
+			idea = KGA_great_sorting
+			days = 365
+		}
+	}
+}
+
+#ANZ:向安琪奥发出的警告
+country_event = {
+	id = kuromorimine.73
+	title = kuromorimine.73.t
+	desc = kuromorimine.73.d
+	picture = GFX_event_kga_country_73
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.73.a
+		KGA = { country_event = { days = 5 id = kuromorimine.74 } }
+	}
+	option = {
+		name = kuromorimine.73.b
+		KGA = { country_event = { days = 5 id = kuromorimine.75 } }
+	}
+}
+
+#向安琪奥要求蒂罗尔:同意归还
+country_event = {
+	id = kuromorimine.74
+	title = kuromorimine.74.t
+	desc = kuromorimine.74.d
+	picture = GFX_event_kga_country_74
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.74.a
+		transfer_state = 153
+	}
+}
+
+#向安琪奥要求蒂罗尔:拒绝归还
+country_event = {
+	id = kuromorimine.75
+	title = kuromorimine.75.t
+	desc = kuromorimine.75.d
+	picture = GFX_event_kga_country_75
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.75.a
+		create_wargoal = {
+			target = ANZ
+			type = take_core_state
+		}
+	}
+}
+
+#在日德兰的合法黑森峰公民的待遇问题
+country_event = {
+	id = kuromorimine.79
+	title = kuromorimine.79.t
+	desc = kuromorimine.79.d
+	picture = GFX_event_kga_country_79
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.79.a
+		VIG = { country_event = kuromorimine.76 }
+	}
+}
+
+#VIG：黑森峰要求建立保护领
+country_event = {
+	id = kuromorimine.76
+	title = kuromorimine.76.t
+	desc = kuromorimine.76.d
+	picture = GFX_event_kga_country_76
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.76.a
+		KGA = { country_event = { days = 5 id = kuromorimine.77 } }
+	}
+	option = {
+		name = kuromorimine.76.b
+		KGA = { country_event = { days = 5 id = kuromorimine.78 } }
+	}
+}
+
+#要求被拒绝
+country_event = {
+	id = kuromorimine.77
+	title = kuromorimine.77.t
+	desc = kuromorimine.77.d
+	picture = GFX_event_kga_country_77
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.77.a
+		create_wargoal = {
+			target = VIG
+			type = annex_everything
+		}
+	}
+}
+
+#霹雳大公国让步
+country_event = {
+	id = kuromorimine.78
+	title = kuromorimine.78.t
+	desc = kuromorimine.78.d
+	picture = GFX_event_kga_country_78
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.78.a
+		add_manpower = 100000
+		99 = {
+			set_demilitarized_zone = yes
+		}
+		
+	}
+}
+
+#利夫兰王冠领的独立策略
+country_event = {
+	id = kuromorimine.80
+	title = kuromorimine.80.t
+	desc = kuromorimine.80.d
+	picture = GFX_event_kga_country_80
+
+	is_triggered_only = yes
+	option = {
+		name = kuromorimine.80.a
+		activate_mission = kga_support_LCP
 	}
 }

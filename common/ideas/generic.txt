@@ -1,5 +1,159 @@
 ideas = {
 	country = {
+
+		#############################
+		#####主要国家空军通用精神######
+		#############################
+		generic_increase_survivability = {
+			picture = GFX_idea_generic_increase_survivability
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+			equipment_bonus = {
+				heavy_fighter = {
+					reliability_factor = 0.15
+					air_agility = 0.15
+					air_defence = 0.15
+				}
+				fighter = {
+					air_defence = 0.1
+					reliability_factor = 0.1
+				}
+			}
+		}
+
+		generic_optimize_material = {
+			picture = GFX_idea_generic_optimize_material
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+			equipment_bonus = {
+				heavy_fighter = {
+					build_cost_ic = -0.1
+				}
+				fighter = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+
+		generic_more_weapon_carriage = {
+			picture = GFX_idea_generic_more_weapon_carriage
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+			equipment_bonus = {
+				cas = {
+					air_attack = 0.15
+					air_ground_attack = 0.1
+					air_superiority = 0.1
+				}
+				tac_bomber = {
+					air_attack = 0.15
+					air_superiority = 0.1
+				}
+				nav_bomber = {
+					air_attack = 0.15
+					air_superiority = 0.1
+				}
+			}
+		}
+
+		generic_increase_bomb_range = {
+			picture = GFX_idea_generic_increase_bomb_range
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+			equipment_bonus = {
+				tac_bomber = {
+					air_range = 0.2
+					air_mission_efficiency = 0.1
+				}
+				strat_bomber = {
+					air_range = 0.2
+					air_mission_efficiency = 0.1
+				}
+			}
+		}
+
+		generic_multipurpose = {
+			picture = GFX_idea_generic_multipurpose
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+			equipment_bonus = {
+				fighter = {
+					naval_strike_attack = 0.1
+					naval_strike_targetting = 0.1
+				}
+				heavy_fighter = {
+					naval_strike_attack = 0.1
+					naval_strike_targetting = 0.1
+				}
+				cas = {
+					air_attack = 0.1
+					air_agility = 0.1
+				}
+				tac_bomber = {
+					air_attack = 0.2
+					air_agility = 0.2
+				}
+				strat_bomber = {
+					air_attack = 0.2
+					air_agility = 0.2
+				}
+			}
+		}
+
+		generic_functional_requirement = {
+			picture = GFX_idea_generic_functional_requirement
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+			equipment_bonus = {
+				fighter = {
+					air_attack = 0.05
+				}
+				heavy_fighter = {
+					air_attack = 0.05
+					air_agility = 0.1
+				}
+				cas = {
+					air_ground_attack = 0.05
+				}
+			}
+		}
+		#############################
 	
 		#人权宣言
 		Declaration_human_rights_idea = {

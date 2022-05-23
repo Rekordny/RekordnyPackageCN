@@ -1,18 +1,82 @@
 leader_traits = {
 
 	#KGA
+	#郁郁寡欢
+	depressed_and_cheerless = {
+		ssdp_daily_modifier = -0.1
+		political_power_cost = 0.1
+	}
+	#梦醒时分
+	awakening_dream = {
+		stability_factor = 0.05
+		political_power_gain = 0.1
+	}
+	#孤注一掷者
+	a_single_bet = {
+		justify_war_goal_time = -0.3
+		stability_factor = -0.2
+		political_power_cost = 0.2
+		tax_daily_modifier = 0.2
+		resistance_growth = -0.2
+	}
+	#紫红色石楠花盛开之时
+	wenn_das_heidenkraut_rotlila_bluht = {
+		justify_war_goal_time = -0.3
+		army_attack_factor = 0.1
+		war_support_factor = 0.1
+		tax_daily_modifier = 0.2
+		resistance_growth = -0.2
+	}
+	#新西住流家元
+	new_nishizumi_style_leader = {
+		stability_factor = 0.15
+		political_power_gain = 0.1
+		army_armor_attack_factor = 0.05
+		army_armor_defence_factor = 0.05
+		army_armor_speed_factor = 0.1
+		army_org_regain = 0.1
+	}
+		#advisor
+	#Maaru:空地协同理论
+	synergy_theorist = {
+		sprite = 14
+		equipment_bonus = {
+			armor = {
+				instant = yes
+				maximum_speed = 0.05
+			}
+			cas = {
+				instant = yes
+				air_ground_attack = 0.1
+			}
+		}
+		cat_mobile_warfare_cost_factor = -0.15
+		ai_will_do = {
+			factor = 500
+		}
+	}
+	#Reila：艾丽卡的助力者
+	erikas_right_hand = {
+		random = no
+		production_speed_industrial_complex_factor = 0.12
+		production_speed_arms_factory_factor = 0.12
+		production_speed_dockyard_factor = 0.12
+	}
+	#真正的西住流
 	ture_nishizumi_style = {
 		random = no
 		neutrality_drift = 0.05
 		justify_war_goal_time = -0.3
 		political_power_factor = 0.1
 	}
+
 	kuromorimine_old_guard = {
 		random = no
 		fascism_drift = 0.05
 		political_power_factor = 0.05
 		defensive_war_stability_factor = 0.1
 	}
+	#深藏不露的温柔
     hidden_tenderness = {
 		random = no
 		fascism_drift = 0.05
@@ -20,40 +84,56 @@ leader_traits = {
 		production_speed_arms_factory_factor = 0.05
 		production_speed_synthetic_refinery_factor = 0.05
 		production_speed_rocket_site_factor = 0.05
+		conversion_cost_civ_to_mil_factor = -0.3
+	}
+	#深藏不露的温柔
+    hidden_tenderness_0 = {
+		random = no
+		war_support_factor = 0.1
+		offensive_war_stability_factor = 0.1
+		production_speed_arms_factory_factor = 0.1
+		production_speed_synthetic_refinery_factor = 0.1
+		production_speed_rocket_site_factor = 0.1
 		conversion_cost_civ_to_mil_factor = -0.5
 	}
+	#唯上知与下愚不移
 	top_ruling_bottom = {
 		random = no
 		resistance_growth = -0.25
 		stability_factor = 0.05
 		required_garrison_factor = -0.25
 	}
+	#唯上知与下愚不移
 	top_ruling_bottom_0 = {
 		random = no
 		resistance_growth = -0.5
 		stability_factor = 0.1
-		required_garrison_factor = -0.25
+		required_garrison_factor = -0.3
 	}
+	#最温柔的智者
 	the_most_kind = {
 		random = no
-		democratic_drift = 0.05
-		production_speed_industrial_complex_factor = 0.05
+		production_speed_industrial_complex_factor = 0.075
+		production_speed_senshado_school_factor = 0.075
 		global_building_slots_factor = 0.1
-		conversion_cost_mil_to_civ_factor = -0.3
+		conversion_cost_mil_to_civ_factor = -0.2
 	}
+	#最温柔的智者
     the_most_kind_0 = {
 		random = no
-		democratic_drift = 0.05
-		production_speed_industrial_complex_factor = 0.12
+		production_speed_industrial_complex_factor = 0.15
+		production_speed_senshado_school_factor = 0.15
 		global_building_slots_factor = 0.15
 		conversion_cost_mil_to_civ_factor = -0.3
 	}
+	#少女的履带很沉重
 	girls_have_heavy_track = {
 		tax_daily_modifier = 0.05
 		production_speed_synthetic_refinery_factor = 0.05
 		production_speed_infrastructure_factor = 0.05
 		industry_repair_factor = 0.2
 	}
+	#钟壁的救世主
 	savior_of_the_bell_wall = {
 		political_power_factor = 0.05
 		production_speed_arms_factory_factor = 0.05

@@ -222,8 +222,8 @@ news_event = {
 	immediate = {
 		hidden_effect = {
 			PRA = {
-				retire = PRA_nonna
-				retire = PRA_kurara
+				retire_character = PRA_nonna
+				retire_character = PRA_kurara
 			}
 			KRR = {
 				recruit_character = KRR_nonna
@@ -403,11 +403,11 @@ news_event = {
 	major = yes
 	immediate = {
 		KRR = {
-			add_civil_war_target = FCM
 			declare_war_on = {
 				target = FCM
 				type = annex_everything
 			}
+			add_civil_war_target = FCM
 		}
 	}
 
@@ -439,5 +439,80 @@ news_event = {
 	}
 	option = {
 		name = senshado_news.12.a
+	}
+}
+
+#西住流离开黑森峰
+news_event = {
+	id = senshado_news.13
+    title = senshado_news.13.t
+	desc = senshado_news.13.d
+	picture = GFX_senshado_news_event_13
+	is_triggered_only = yes
+	major = yes
+	immediate = { }
+	option = {
+		trigger = {
+			OR = { tag = KDR tag = KGA }
+		}
+		name = senshado_news.13.a
+	}
+	option = {
+		trigger = {
+			NOT = { OR = { tag = KDR tag = KGA } }
+		}
+		name = senshado_news.13.b
+	}
+}
+
+#黑森峰艾丽卡恢复旧制
+news_event = {
+	id = senshado_news.14
+    title = senshado_news.14.t
+	desc = senshado_news.14.d
+	picture = GFX_senshado_news_event_14
+	is_triggered_only = yes
+	major = yes
+	immediate = { }
+	option = {
+		trigger = {
+			OR = { tag = KDR tag = KGA }
+		}
+		name = senshado_news.14.a
+	}
+	option = {
+		trigger = {
+			NOT = { OR = { tag = KDR tag = KGA } }
+		}
+		name = senshado_news.14.b
+	}
+}
+
+#利夫兰王冠领向冯布诺宣战
+news_event = {
+	id = senshado_news.15
+    title = senshado_news.15.t
+	desc = senshado_news.15.d
+	picture = GFX_senshado_news_event_15
+	is_triggered_only = yes
+	major = yes
+	immediate = { }
+	desc = {
+		text = senshado_news.15.d1
+		trigger = {
+			KGA = { has_completed_focus = KGA_stand_with_independent_liveland }
+		}
+	}
+	option = {
+		trigger = {
+			tag = BON
+		}
+		name = senshado_news.15.a
+	}
+	option = {
+		trigger = {
+			NOT = { tag = BON }
+		}
+		name = senshado_news.15.b
 	}
 }

@@ -1809,8 +1809,8 @@
 			add_tech_bonus = {
 				category = light_fighter
 				uses = 1
-				bonus = 2
-				ahead_reduction = 1
+				bonus = 1.5
+				ahead_reduction = 0.5
 			}
 		}
 		ai_will_do = {
@@ -1837,40 +1837,10 @@
 		available_if_capitulated = no
 		completion_reward = {
 			add_tech_bonus = {
-				category = medium_air
+				category = air_addons
 				uses = 1
-				bonus = 2
-				ahead_reduction = 1
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-			}
-		}
-	}
-
-	#新型航电
-	focus = {
-		id = generic_new_avionics
-		icon = GFX_focus_generic_new_avionics
-		relative_position_id = generic_electronic_warfare_upgrade
-		x = 0
-		y = 2
-		available = {  }
-		prerequisite = { focus = generic_electronic_warfare_upgrade }
-		#mutually_exclusive = { focus = STG_machanized_coordinated_operations }
-		bypass = { }
-		cost = 8
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-			add_tech_bonus = {
-				category = medium_air
-				uses = 1
-				bonus = 2
-				ahead_reduction = 1
+				bonus = 1.5
+				ahead_reduction = 0.5
 			}
 		}
 		ai_will_do = {
@@ -1900,7 +1870,7 @@
 				category = medium_air
 				uses = 1
 				bonus = 2
-				ahead_reduction = 1
+				ahead_reduction = 0.5
 			}
 		}
 		ai_will_do = {
@@ -1919,7 +1889,7 @@
 		y = 1
 		available = {  }
 		prerequisite = { focus = generic_redesign_layout }
-		#mutually_exclusive = { focus = STG_machanized_coordinated_operations }
+		mutually_exclusive = { focus = generic_light_fighter }
 		bypass = { }
 		cost = 8
 		cancel_if_invalid = yes
@@ -1927,7 +1897,7 @@
 		available_if_capitulated = no
 		completion_reward = {
 			add_tech_bonus = {
-				category = medium_air
+				category = cat_heavy_fighter
 				uses = 1
 				bonus = 2
 				ahead_reduction = 1
@@ -1956,12 +1926,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_tech_bonus = {
-				category = medium_air
-				uses = 1
-				bonus = 2
-				ahead_reduction = 1
-			}
+			add_ideas = generic_increase_survivability
 		}
 		ai_will_do = {
 			factor = 1
@@ -1979,7 +1944,7 @@
 		y = 1
 		available = {  }
 		prerequisite = { focus = generic_redesign_layout }
-		#mutually_exclusive = { focus = STG_machanized_coordinated_operations }
+		mutually_exclusive = { focus = generic_heavy_fighter }
 		bypass = { }
 		cost = 8
 		cancel_if_invalid = yes
@@ -1987,7 +1952,7 @@
 		available_if_capitulated = no
 		completion_reward = {
 			add_tech_bonus = {
-				category = medium_air
+				category = light_fighter
 				uses = 1
 				bonus = 2
 				ahead_reduction = 1
@@ -2016,12 +1981,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_tech_bonus = {
-				category = medium_air
-				uses = 1
-				bonus = 2
-				ahead_reduction = 1
-			}
+			add_ideas = generic_optimize_material
 		}
 		ai_will_do = {
 			factor = 1
@@ -2049,8 +2009,8 @@
 			add_tech_bonus = {
 				category = medium_air
 				uses = 1
-				bonus = 2
-				ahead_reduction = 1
+				bonus = 1.5
+				ahead_reduction = 0.5
 			}
 		}
 		ai_will_do = {
@@ -2080,7 +2040,7 @@
 				category = medium_air
 				uses = 1
 				bonus = 2
-				ahead_reduction = 1
+				ahead_reduction = 0.5
 			}
 		}
 		ai_will_do = {
@@ -2099,7 +2059,7 @@
 		y = 1
 		available = {  }
 		prerequisite = { focus = generic_air_ground_communication }
-		#mutually_exclusive = { focus = STG_machanized_coordinated_operations }
+		mutually_exclusive = { focus = generic_bomber_aircraft }
 		bypass = { }
 		cost = 8
 		cancel_if_invalid = yes
@@ -2107,7 +2067,7 @@
 		available_if_capitulated = no
 		completion_reward = {
 			add_tech_bonus = {
-				category = medium_air
+				category = cas_bomber
 				uses = 1
 				bonus = 2
 				ahead_reduction = 1
@@ -2136,12 +2096,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_tech_bonus = {
-				category = medium_air
-				uses = 1
-				bonus = 2
-				ahead_reduction = 1
-			}
+			add_ideas = generic_more_weapon_carriage
 		}
 		ai_will_do = {
 			factor = 1
@@ -2159,7 +2114,7 @@
 		y = 1
 		available = {  }
 		prerequisite = { focus = generic_air_ground_communication }
-		#mutually_exclusive = { focus = STG_machanized_coordinated_operations }
+		mutually_exclusive = { focus = generic_strike_aircraft }
 		bypass = { }
 		cost = 8
 		cancel_if_invalid = yes
@@ -2167,7 +2122,7 @@
 		available_if_capitulated = no
 		completion_reward = {
 			add_tech_bonus = {
-				category = medium_air
+				category = tactical_bomber
 				uses = 1
 				bonus = 2
 				ahead_reduction = 1
@@ -2196,12 +2151,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_tech_bonus = {
-				category = medium_air
-				uses = 1
-				bonus = 2
-				ahead_reduction = 1
-			}
+			add_ideas = generic_increase_bomb_range
 		}
 		ai_will_do = {
 			factor = 1
@@ -2227,9 +2177,39 @@
 		available_if_capitulated = no
 		completion_reward = {
 			add_tech_bonus = {
-				category = medium_air
+				category = air_addons
 				uses = 1
 				bonus = 2
+				ahead_reduction = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+
+	#新型航电
+	focus = {
+		id = generic_new_avionics
+		icon = GFX_focus_generic_new_avionics
+		relative_position_id = generic_military_aircraft_investment
+		x = 0
+		y = 2
+		available = {  }
+		prerequisite = { focus = generic_military_aircraft_investment }
+		#mutually_exclusive = { focus = STG_machanized_coordinated_operations }
+		bypass = { }
+		cost = 8
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_tech_bonus = {
+				category = air_weapon
+				uses = 1
+				bonus = 1.5
 				ahead_reduction = 1
 			}
 		}
@@ -2244,11 +2224,11 @@
 	focus = {
 		id = generic_aa_capability
 		icon = GFX_focus_generic_aa_capability
-		relative_position_id = generic_guided_bomb
+		relative_position_id = generic_new_avionics
 		x = 0
 		y = 2
 		available = {  }
-		prerequisite = { focus = generic_guided_bomb }
+		prerequisite = { focus = generic_new_avionics }
 		#mutually_exclusive = { focus = STG_machanized_coordinated_operations }
 		bypass = { }
 		cost = 8
@@ -2257,10 +2237,9 @@
 		available_if_capitulated = no
 		completion_reward = {
 			add_tech_bonus = {
-				category = medium_air
-				uses = 1
-				bonus = 2
-				ahead_reduction = 1
+				category = air_weapon
+				uses = 2
+				bonus = 1.2
 			}
 		}
 		ai_will_do = {
@@ -2270,98 +2249,6 @@
 		}
 	}
 	
-
-	#升级引擎
-	focus = {
-		id = generic_upgrade_engine
-		icon = GFX_focus_generic_upgrade_engine
-		relative_position_id = generic_fourth_generation_research
-		x = 2
-		y = 1
-		available = {  }
-		prerequisite = { focus = generic_fourth_generation_research }
-		prerequisite = { focus = generic_supportive_aircraft_research }
-		#mutually_exclusive = { focus = STG_machanized_coordinated_operations }
-		bypass = { }
-		cost = 8
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-			add_tech_bonus = {
-				category = medium_air
-				uses = 1
-				bonus = 2
-				ahead_reduction = 1
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-			}
-		}
-	}
-
-	#提升续航性
-	focus = {
-		id = generic_improve_range
-		icon = GFX_focus_generic_improve_range
-		relative_position_id = generic_upgrade_engine
-		x = 0
-		y = 2
-		available = {  }
-		prerequisite = { focus = generic_upgrade_engine }
-		#mutually_exclusive = { focus = STG_machanized_coordinated_operations }
-		bypass = { }
-		cost = 8
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-			add_tech_bonus = {
-				category = medium_air
-				uses = 1
-				bonus = 2
-				ahead_reduction = 1
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-			}
-		}
-	}
-
-	#现代化隐身
-	focus = {
-		id = generic_mordern_stealth
-		icon = GFX_focus_generic_mordern_stealth
-		relative_position_id = generic_improve_range
-		x = 0
-		y = 2
-		available = {  }
-		prerequisite = { focus = generic_improve_range }
-		#mutually_exclusive = { focus = STG_machanized_coordinated_operations }
-		bypass = { }
-		cost = 8
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-			add_tech_bonus = {
-				category = medium_air
-				uses = 1
-				bonus = 2
-				ahead_reduction = 1
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-			}
-		}
-	}
-
 	
 	#战术动作训练
 	focus = {
@@ -2380,7 +2267,7 @@
 		available_if_capitulated = no
 		completion_reward = {
 			add_tech_bonus = {
-				category = medium_air
+				category = air_doctrine
 				uses = 1
 				bonus = 2
 				ahead_reduction = 1
@@ -2399,22 +2286,17 @@
 		icon = GFX_focus_generic_tactical_movement_training
 		relative_position_id = generic_tactical_movement_training
 		x = 0
-		y = 3
-		available = {  }
+		y = 2
+		available = { has_air_experience = 30 }
 		prerequisite = { focus = generic_tactical_movement_training }
-		#mutually_exclusive = { focus = STG_machanized_coordinated_operations }
+		mutually_exclusive = { focus = generic_functional_requirement }
 		bypass = { }
 		cost = 8
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_tech_bonus = {
-				category = medium_air
-				uses = 1
-				bonus = 2
-				ahead_reduction = 1
-			}
+			add_ideas = generic_multipurpose
 		}
 		ai_will_do = {
 			factor = 1
@@ -2431,7 +2313,7 @@
 		x = 0
 		y = 2
 		available = {  }
-		prerequisite = { focus = generic_air_ground_communication }
+		prerequisite = { focus = generic_strike_aircraft focus = generic_bomber_aircraft }
 		#mutually_exclusive = { focus = STG_machanized_coordinated_operations }
 		bypass = { }
 		cost = 8
@@ -2440,7 +2322,7 @@
 		available_if_capitulated = no
 		completion_reward = {
 			add_tech_bonus = {
-				category = medium_air
+				category = air_doctrine
 				uses = 1
 				bonus = 2
 				ahead_reduction = 1
@@ -2459,22 +2341,17 @@
 		icon = GFX_focus_generic_functional_requirement
 		relative_position_id = generic_mission_formation_training
 		x = 0
-		y = 3
-		available = {  }
+		y = 2
+		available = { has_air_experience = 30 }
 		prerequisite = { focus = generic_mission_formation_training }
-		#mutually_exclusive = { focus = STG_machanized_coordinated_operations }
+		mutually_exclusive = { focus = generic_multipurpose }
 		bypass = { }
 		cost = 8
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_tech_bonus = {
-				category = medium_air
-				uses = 1
-				bonus = 2
-				ahead_reduction = 1
-			}
+			add_ideas = generic_functional_requirement
 		}
 		ai_will_do = {
 			factor = 1

@@ -5,7 +5,7 @@ shared_focus = {
 	x = 60
 	y = 0
 	cost = 1
-	available = { date > 1972.1.1 }
+	available = { date > 1975.1.1 }
 	bypass = { }
 	#prerequisite = { focus = }
 	#mutually_exclusive = { focus =  }
@@ -396,7 +396,7 @@ shared_focus = {
 	x = 0
 	y = 1
 	cost = 10
-	available = { has_character = generic_miho has_character = generic_yukari has_character = generic_hana has_character = generic_saori has_character = generic_mako }
+	available = { OR = { has_character = generic_miho has_character = KGA_miho } has_character = generic_yukari has_character = generic_hana has_character = generic_saori has_character = generic_mako }
 	bypass = { }
 	prerequisite = { focus = OGA_shared_twentyfour }
 	#mutually_exclusive = { focus =  }
@@ -500,7 +500,7 @@ shared_focus = {
 	x = 0
 	y = 1
 	cost = 10
-	available = { has_character = generic_miho }
+	available = { OR = { has_character = generic_miho has_character = KGA_miho } }
 	bypass = { }
 	prerequisite = { focus = OGA_shared_fourteen }
 	#mutually_exclusive = { focus =  }

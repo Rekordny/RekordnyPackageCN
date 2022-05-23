@@ -3,7 +3,7 @@ characters={
 		name="Momo"
 		portraits={
 			civilian={
-				large="gfx/leaders/SDS/Portrait_LCP_Momo.dds"
+				large="gfx/leaders/LCP/Portrait_LCP_Momo.dds"
 			}
 		}
 		country_leader={
