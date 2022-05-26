@@ -61,10 +61,10 @@ set_research_slots = 4
 set_convoys = 20
 army_experience = 10
 navy_experience = 10
-recruit_character = BWA_emi
-recruit_character = BWA_hitomi
-recruit_character = BWA_kita
-recruit_character = BWA_takami
+recruit_character = bwa_emi
+recruit_character = bwa_hitomi
+recruit_character = bwa_kita
+recruit_character = bwa_takami
 
 set_politics = {
 	ruling_party = communism

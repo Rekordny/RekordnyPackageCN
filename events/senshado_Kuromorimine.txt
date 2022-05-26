@@ -756,6 +756,9 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = kuromorimine.38.a
+		trigger = {
+			has_character = bwa_emi
+		}
 		#学生会启用艾米
 		custom_effect_tooltip = kga_tooltip19
 		set_country_flag = KGA_EMI_JOINED_ADVISOR
@@ -771,7 +774,7 @@ country_event = {
 			hidden_effect = {
 				remove_advisor_role = {
 					character = KGA_koume
-					slot = advisor
+					slot = political_advisor
 				}
 			}
 			add_advisor_role = {
@@ -805,7 +808,7 @@ country_event = {
 			hidden_effect = {
 				remove_advisor_role = {
 					character = kga_erika
-					slot = advisor
+					slot = political_advisor
 				}
 			}
 			add_advisor_role = {

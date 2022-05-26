@@ -3377,10 +3377,10 @@ focus_tree = {
 
 		completion_reward = {
 			#解锁以下将领
-			recruit_character = BWA_emi
-			recruit_character = BWA_hitomi
-			recruit_character = BWA_kita
-			recruit_character = BWA_takami
+			recruit_character = bwa_emi
+			recruit_character = bwa_hitomi
+			recruit_character = bwa_kita
+			recruit_character = bwa_takami
 		}
 
 		#AI行动之后具体设计，复制粘贴以下部分即可

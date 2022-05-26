@@ -136,8 +136,10 @@ leader_traits = {
 	#钟壁的救世主
 	savior_of_the_bell_wall = {
 		political_power_factor = 0.05
-		production_speed_arms_factory_factor = 0.05
-		communism_drift = 0.05
+		production_speed_arms_factory_factor = 0.1
+		production_speed_dockyard_factor  = 0.1
+		repair_speed_arms_factory_factor = 0.1
+		repair_speed_dockyard_factor = 0.1
 	}
 	
 	#JHS

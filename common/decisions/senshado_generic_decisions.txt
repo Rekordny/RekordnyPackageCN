@@ -11,8 +11,7 @@ senshado_decisions = {
 		visible = { is_ai = no is_debug = yes }
 		days_re_enable = 0
 		complete_effect = {
-			set_country_flag = KGA_NAZI_IN_ARMY
-			complete_national_focus = KGA_return_to_politics
+			country_event = kuromorimine.38
 		}
 	}
 
