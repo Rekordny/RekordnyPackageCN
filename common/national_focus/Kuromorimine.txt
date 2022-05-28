@@ -697,7 +697,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		#BCF存在
-		available = {  OR = { always = no neutrality > 0.65 } }
+		available = { neutrality > 0.65 }
 		prerequisite = { focus = KGA_sovereignty_recovery }
 		mutually_exclusive = { focus = KGA_government_capital_intergration }
 		#BCF不存在，拥有符腾堡
@@ -794,6 +794,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 100
 			unlock_decision_tooltip = kga_remove_nazi_from_army
+			mark_focus_tree_layout_dirty = yes
 		}
 		#AI行动之后具体设计，复制粘贴以下部分即可
 		ai_will_do = {
@@ -1846,6 +1847,7 @@ focus_tree = {
 				limit = { has_idea = KGA_bellwall_threat }
 				KGA = { country_event = { id = kuromorimine.25 days = 18 } }
 			}
+			mark_focus_tree_layout_dirty = yes
 		}
 		#AI行动之后具体设计，复制粘贴以下部分即可
 		ai_will_do = {

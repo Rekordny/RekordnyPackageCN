@@ -242,7 +242,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/KGA/Portrait_KGA_Kojima.dds"
-				small="gfx/interface/advisors/idea_Kojima.dds"
+				small="gfx/interface/advisors/idea_kojima.dds"
 			}
 			army={
 			}
@@ -313,7 +313,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/KGA/Portrait_KGA_Maaru.dds"
-				small="gfx/interface/advisors/idea_Maaru.dds"
+				small="gfx/interface/advisors/idea_maaru.dds"
 			}
 		}
 		field_marshal={
@@ -343,7 +343,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/KGA/Portrait_KGA_Natsumi.dds"
-				small="gfx/interface/advisors/idea_Natsumi.dds"
+				small="gfx/interface/advisors/idea_natsumi.dds"
 			}
 		}
 		corps_commander={
@@ -362,7 +362,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/KGA/Portrait_KGA_Bauer.dds"
-				small="gfx/interface/advisors/idea_Bauer.dds"
+				small="gfx/interface/advisors/idea_bauer.dds"
 			}
 		}
 		corps_commander={
@@ -381,7 +381,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/KGA/Portrait_KGA_Reila.dds"
-				small="gfx/interface/advisors/idea_Reila.dds"
+				small="gfx/interface/advisors/idea_reila.dds"
 			}
 		}
 		# advisor = {

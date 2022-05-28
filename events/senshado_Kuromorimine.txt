@@ -1484,8 +1484,8 @@ country_event = {
 	picture = GFX_event_kga_country_63
 
 	fire_only_once = yes
-	trigger = { original_tag = KGA has_completed_focus = KGA_return_to_politics has_country_flag = KGA_NAZI_IN_ARMY fascism > 0.15 fascism < 0.35 NOT = { has_completed_focus = KGA_awakening_dream } }
-	mean_time_to_happen = { months = 3 }
+	trigger = { original_tag = KGA has_completed_focus = KGA_return_to_politics has_country_flag = KGA_NAZI_IN_ARMY fascism > 0.1 fascism < 0.4 NOT = { has_completed_focus = KGA_awakening_dream } }
+	mean_time_to_happen = { months = 2 }
 	option = {
 		name = kuromorimine.63.a
 		swap_ideas = {

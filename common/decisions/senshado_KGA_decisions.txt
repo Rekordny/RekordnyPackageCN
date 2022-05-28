@@ -8,7 +8,7 @@ kga_government = {
 		days_re_enable = 1
 		complete_effect = {
 			create_faction = "XXX"
-			complete_national_focus = KGA_stand_with_independent_liveland
+			complete_national_focus = KGA_nishizumi_family
 		}
 	}
 	test_peace = {
