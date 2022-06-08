@@ -114,3 +114,23 @@ units = {
         # start_equipment_factor = 0.5
     }
 }
+units = {
+    fleet = {
+        name = "Kuromorimine fleet" # Name 1
+        naval_base = 321
+        task_force = {
+            name = "Fleet No.1" # Name 2
+            location = 321
+            ship = { name = "U27"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KGA version_name = "T206 Class" } } }
+            ship = { name = "Z-1"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KGA version_name = "Zerstörer Class" } } }
+            ship = { name = "Z-2"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KGA version_name = "Zerstörer Class" } } }
+            ship = { name = "Z-3"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KGA version_name = "Zerstörer Class" } } }
+            ship = { name = "Z-4"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KGA version_name = "Zerstörer Class" } } }
+            ship = { name = "Z-5"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KGA version_name = "Zerstörer Class" } } }
+            ship = { name = "Z-6"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KGA version_name = "Zerstörer Class" } } }
+            ship = { name = "Lütjens"  definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KGA version_name = "Lütjens Class" } } }
+            ship = { name = "Mölders"  definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KGA version_name = "Lütjens Class" } } }
+            ship = { name = "Rommel"  definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KGA version_name = "Lütjens Class" } } }
+        }
+    }
+}

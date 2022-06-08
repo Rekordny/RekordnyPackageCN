@@ -25,6 +25,9 @@ country_event = {
 					traits = { banning_old_school_jokes }
 					on_add = { }
 					on_remove = { }
+					ai_will_do = {
+						factor = 1.000
+					}
 				}
 			}
 		}
@@ -48,6 +51,9 @@ country_event = {
 					traits = { two_faced_devil_2 }
 					on_add = { }
 					on_remove = { }
+					ai_will_do = {
+						factor = 1.000
+					}
 				}
 			}
 		}
@@ -71,6 +77,9 @@ country_event = {
 					traits = { unlucky_but_cute }
 					on_add = { }
 					on_remove = { }
+					ai_will_do = {
+						factor = 1.000
+					}
 				}
 			}
 		}
@@ -105,6 +114,9 @@ country_event = {
 					traits = { absolutely_loyal_comedian_2 }
 					on_add = { }
 					on_remove = { }
+					ai_will_do = {
+						factor = 1.000
+					}
 				}
 			}
 		}
@@ -128,6 +140,9 @@ country_event = {
 					traits = { challenge_the_fastest }
 					on_add = { }
 					on_remove = { }
+					ai_will_do = {
+						factor = 1.000
+					}
 				}
 			}
 		}
@@ -151,6 +166,9 @@ country_event = {
 					traits = { pretend_to_be_calm_2 }
 					on_add = { }
 					on_remove = { }
+					ai_will_do = {
+						factor = 1.000
+					}
 				}
 			}
 		}
@@ -185,6 +203,9 @@ country_event = {
 					traits = { banning_old_school_jokes_2 }
 					on_add = { }
 					on_remove = { }
+					ai_will_do = {
+						factor = 1.000
+					}
 				}
 			}
 		}
@@ -208,6 +229,9 @@ country_event = {
 					traits = { challenge_the_fastest_2 }
 					on_add = { }
 					on_remove = { }
+					ai_will_do = {
+						factor = 1.000
+					}
 				}
 			}
 		}
@@ -231,6 +255,9 @@ country_event = {
 					traits = { pretend_to_be_calm }
 					on_add = { }
 					on_remove = { }
+					ai_will_do = {
+						factor = 1.000
+					}
 				}
 			}
 		}
@@ -265,6 +292,9 @@ country_event = {
 					traits = { absolutely_loyal_comedian }
 					on_add = { }
 					on_remove = { }
+					ai_will_do = {
+						factor = 1.000
+					}
 				}
 			}
 		}
@@ -288,6 +318,9 @@ country_event = {
 					traits = { two_faced_devil }
 					on_add = { }
 					on_remove = { }
+					ai_will_do = {
+						factor = 1.000
+					}
 				}
 			}
 		}
@@ -311,6 +344,9 @@ country_event = {
 					traits = { unlucky_but_cute_2 }
 					on_add = { }
 					on_remove = { }
+					ai_will_do = {
+						factor = 1.000
+					}
 				}
 			}
 		}

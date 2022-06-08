@@ -3,10 +3,6 @@ spriteTypes = {
 	###############GENERIC################
 	######################################
 	spriteType = {
-		name = "GFX_idea_gold_storage_epic"
-		texturefile = "gfx/interface/ideas/idea_gold_storage_epic.dds"
-	}
-	spriteType = {
 		name = "GFX_idea_gold_storage_great"
 		texturefile = "gfx/interface/ideas/idea_gold_storage_great.dds"
 	}
@@ -19,10 +15,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_gold_storage_average.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_gold_storage_low"
-		texturefile = "gfx/interface/ideas/idea_gold_storage_low.dds"
-	}
-	spriteType = {
 		name = "GFX_idea_gold_storage_poor"
 		texturefile = "gfx/interface/ideas/idea_gold_storage_poor.dds"
 	}
@@ -30,7 +22,10 @@ spriteTypes = {
 		name = "GFX_idea_gold_storage_bad"
 		texturefile = "gfx/interface/ideas/idea_gold_storage_bad.dds"
 	}
-
+	spriteType = {
+		name = "GFX_idea_gold_storage_empty"
+		texturefile = "gfx/interface/ideas/idea_gold_storage_empty.dds"
+	}
 	######################################
 	###############Ooarai#################
 	######################################

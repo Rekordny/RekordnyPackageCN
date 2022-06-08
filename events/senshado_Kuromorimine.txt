@@ -791,6 +791,9 @@ country_event = {
 					traits = { the_most_kind_0 }
 					on_add = {}
 					on_remove = {}
+					ai_will_do = {
+						factor = 1.000
+					}
 				}
 			}
 		}
@@ -825,6 +828,9 @@ country_event = {
 					traits = { top_ruling_bottom_0 }
 					on_add = {}
 					on_remove = {}
+					ai_will_do = {
+						factor = 1.000
+					}
 				}
 			}
 		}

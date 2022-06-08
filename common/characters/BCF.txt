@@ -29,7 +29,6 @@ characters = {
 			slot = army_chief
 			idea_token = BCF_andou_chief
 			allowed = {
-				original_tag = BCF
 			}
 			available = {
 				OR = {
@@ -52,7 +51,6 @@ characters = {
 			slot = political_advisor
 			idea_token = BCF_andou_political
 			allowed = {
-				original_tag = BCF
 			}
 			available = {
 				OR = {
@@ -75,7 +73,6 @@ characters = {
 			slot = theorist
 			idea_token = BCF_andou_theorist
 			allowed = {
-				original_tag = BCF
 			}
 			available = {
 				OR = {
@@ -127,7 +124,6 @@ characters = {
 			slot = army_chief
 			idea_token = BCF_marie_chief
 			allowed = {
-				original_tag = BCF
 			}
 			available = {
 				OR = {
@@ -149,7 +145,6 @@ characters = {
 			slot = political_advisor
 			idea_token = BCF_marie_political
 			allowed = {
-				original_tag = BCF
 			}
 			available = {
 				OR = {
@@ -171,7 +166,7 @@ characters = {
 			slot = theorist
 			idea_token = BCF_marie_theorist
 			allowed = {
-				original_tag = BCF
+				 
 			}
 			available = {
 				OR = {
@@ -223,7 +218,7 @@ characters = {
 			slot = army_chief
 			idea_token = BCF_oshida_chief
 			allowed = {
-				original_tag = BCF
+				 
 			}
 			available = {
 				OR = {
@@ -246,7 +241,7 @@ characters = {
 			slot = political_advisor
 			idea_token = BCF_oshida_political
 			allowed = {
-				original_tag = BCF
+				 
 			}
 			available = {
 				OR = {
@@ -269,7 +264,7 @@ characters = {
 			slot = theorist
 			idea_token = BCF_oshida_theorist
 			allowed = {
-				original_tag = BCF
+				 
 			}
 			available = {
 				OR = {
@@ -338,7 +333,7 @@ characters = {
 			slot = high_command
 			idea_token = BCF_asparagus_command
 			allowed = {
-				original_tag = BCF
+				 
 			}
 			available = {
 				NOT = {
@@ -354,7 +349,7 @@ characters = {
 			slot = political_advisor
 			idea_token = BCF_asparagus_political
 			allowed = {
-				original_tag = BCF
+				 
 			}
 			available = {
 				NOT = {
@@ -385,12 +380,18 @@ characters = {
 				large = "gfx/leaders/BCF/Portrait_BCF_bordeaux.dds"
 			}
 		}
+		country_leader = {
+			desc = "She is the best"
+			ideology = nazism
+			expire = "2000.1.1.1"
+			id = -1
+		}
 		advisor = {
 			cost = 125
 			slot = political_advisor
 			idea_token = BCF_bordeaux_political
 			allowed = {
-				original_tag = BCF
+				 
 			}
 			available = {
 				NOT = {
@@ -425,7 +426,7 @@ characters = {
 			slot = political_advisor
 			idea_token = BCF_Moule_political
 			allowed = {
-				original_tag = BCF
+				 
 			}
 			available = {
 				OR = {
@@ -467,7 +468,7 @@ characters = {
 			slot = high_command
 			idea_token = BCF_isabe_command
 			allowed = {
-				original_tag = BCF
+				 
 			}
 			available = {
 				has_country_leader = {
@@ -503,7 +504,7 @@ characters = {
 			slot = high_command
 			idea_token = BCF_sofue_command
 			allowed = {
-				original_tag = BCF
+				 
 			}
 			available = {
 				has_country_leader = {
@@ -519,7 +520,7 @@ characters = {
 			slot = political_advisor
 			idea_token = BCF_sofue_political
 			allowed = {
-				original_tag = BCF
+				 
 			}
 			available = {
 				has_country_leader = {
@@ -542,4 +543,20 @@ characters = {
 			legacy_id = 1046
 		}
 	}
+	BCF_marie_backup = {
+		name = "Marie"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BCF/Portrait_BCF_Marie.dds"
+			}
+		}
+		country_leader = {
+			desc = "She is the best"
+			ideology = moderatism
+			traits = {
+				BCF_princess_of_lle_de_france
+			}
+			expire = "2000.1.1.1"
+			id = -1
+		}
 }

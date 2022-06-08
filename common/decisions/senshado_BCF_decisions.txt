@@ -462,7 +462,7 @@ bcf_government = {
 bcf_school_factional_strife = {
 	bcf_add_marie_influence = {
 		allowed = { tag = BCF }
-		visible = { OR = { AND = { is_ai = no is_debug = yes } has_country_leader = { name = "Marie" ruling_only = yes } } }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } has_country_leader = { character = BCF_marie ruling_only = yes } } }
 		custom_cost_trigger = { has_political_power > 29.9 }
 		custom_cost_text = bcf_tooltip7
 		days_remove = 30
@@ -479,7 +479,7 @@ bcf_school_factional_strife = {
 	}
 	bcf_add_andou_influence = {
 		allowed = { tag = BCF }
-		visible = { OR = { AND = { is_ai = no is_debug = yes } has_country_leader = { name = "Andou" ruling_only = yes } } }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } has_country_leader = { character = BCF_andou ruling_only = yes } } }
 		custom_cost_trigger = { has_political_power > 24.9 }
 		custom_cost_text = bcf_tooltip9
 		days_remove = 30
@@ -496,7 +496,7 @@ bcf_school_factional_strife = {
 	}
 	bcf_add_oshida_influence = {
 		allowed = { tag = BCF }
-		visible = { OR = { AND = { is_ai = no is_debug = yes } has_country_leader = { name = "Oshida" ruling_only = yes } } }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } has_country_leader = { character = BCF_marie ruling_only = yes } } }
 		custom_cost_trigger = { has_political_power > 24.9 }
 		custom_cost_text = bcf_tooltip9
 		days_remove = 30
@@ -520,57 +520,57 @@ bcf_school_factional_strife = {
 				random_list = {
 					20 = { 
 						if = {
-							limit = { has_country_leader = { name = "Oshida" ruling_only = yes } }
+							limit = { has_country_leader = { character = BCF_marie ruling_only = yes } }
 							add_to_variable = { bcf_oshida_support = 4 }
 						}
 						if = {
-							limit = { has_country_leader = { name = "Marie" ruling_only = yes } }
+							limit = { has_country_leader = { character = BCF_marie ruling_only = yes } }
 							add_to_variable = { bcf_marie_support = 4 }
 						}
 						if = {
-							limit = { has_country_leader = { name = "Andou" ruling_only = yes } }
+							limit = { has_country_leader = { character = BCF_andou ruling_only = yes } }
 							add_to_variable = { bcf_andou_support = 4 }
 						}
 					}
 					50 = { 
 						if = {
-							limit = { has_country_leader = { name = "Oshida" ruling_only = yes } }
+							limit = { has_country_leader = { character = BCF_marie ruling_only = yes } }
 							add_to_variable = { bcf_oshida_support = 2 }
 						}
 						if = {
-							limit = { has_country_leader = { name = "Marie" ruling_only = yes } }
+							limit = { has_country_leader = { character = BCF_marie ruling_only = yes } }
 							add_to_variable = { bcf_marie_support = 2 }
 						}
 						if = {
-							limit = { has_country_leader = { name = "Andou" ruling_only = yes } }
+							limit = { has_country_leader = { character = BCF_andou ruling_only = yes } }
 							add_to_variable = { bcf_andou_support = 2 }
 						}
 					}
 					20 = { 
 						if = {
-							limit = { has_country_leader = { name = "Oshida" ruling_only = yes } }
+							limit = { has_country_leader = { character = BCF_marie ruling_only = yes } }
 							add_to_variable = { bcf_oshida_support = -1 }
 						}
 						if = {
-							limit = { has_country_leader = { name = "Marie" ruling_only = yes } }
+							limit = { has_country_leader = { character = BCF_marie ruling_only = yes } }
 							add_to_variable = { bcf_marie_support = -1 }
 						}
 						if = {
-							limit = { has_country_leader = { name = "Andou" ruling_only = yes } }
+							limit = { has_country_leader = { character = BCF_andou ruling_only = yes } }
 							add_to_variable = { bcf_andou_support = -1 }
 						}
 					}
 					10 = { 
 						if = {
-							limit = { has_country_leader = { name = "Oshida" ruling_only = yes } }
+							limit = { has_country_leader = { character = BCF_marie ruling_only = yes } }
 							add_to_variable = { bcf_oshida_support = -3 }
 						}
 						if = {
-							limit = { has_country_leader = { name = "Marie" ruling_only = yes } }
+							limit = { has_country_leader = { character = BCF_marie ruling_only = yes } }
 							add_to_variable = { bcf_marie_support = -3 }
 						}
 						if = {
-							limit = { has_country_leader = { name = "Andou" ruling_only = yes } }
+							limit = { has_country_leader = { character = BCF_andou ruling_only = yes } }
 							add_to_variable = { bcf_andou_support = -3 }
 						} 
 					}
@@ -594,19 +594,19 @@ bcf_school_factional_strife = {
 			add_stability = 0.02
 			custom_effect_tooltip = bcf_tooltip13
 			if = {
-				limit = { has_country_leader = { name = "Oshida" ruling_only = yes } }
+				limit = { has_country_leader = { character = BCF_marie ruling_only = yes } }
 				add_to_variable = { bcf_oshida_support = 3 }
 				add_to_variable = { bcf_marie_support = -3 }
 				add_to_variable = { bcf_andou_support = -3 }
 			}
 			if = {
-				limit = { has_country_leader = { name = "Marie" ruling_only = yes } }
+				limit = { has_country_leader = { character = BCF_marie ruling_only = yes } }
 				add_to_variable = { bcf_marie_support = 3 }
 				add_to_variable = { bcf_oshida_support = -3 }
 				add_to_variable = { bcf_andou_support = -3 }
 			}
 			if = {
-				limit = { has_country_leader = { name = "Andou" ruling_only = yes } }
+				limit = { has_country_leader = { character = BCF_andou ruling_only = yes } }
 				add_to_variable = { bcf_andou_support = 3 }
 				add_to_variable = { bcf_oshida_support = -3 }
 				add_to_variable = { bcf_maire_support = -3 }
@@ -616,7 +616,7 @@ bcf_school_factional_strife = {
 
 	bcf_improve_school_unity = {
 		allowed = { tag = BCF }
-		visible = { OR = { AND = { is_ai = no is_debug = yes } AND = { has_country_leader = { name = "Marie" ruling_only = yes } has_completed_focus = BCF_streghten_unity } } }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } AND = { has_country_leader = { character = BCF_marie ruling_only = yes } has_completed_focus = BCF_streghten_unity } } }
 		custom_cost_trigger = {
 			has_political_power > 14.9
 		}
@@ -637,7 +637,7 @@ bcf_school_factional_strife = {
 
 	bcf_oshida_special_meeting = {
 		allowed = { tag = BCF }
-		visible = { OR = { AND = { is_ai = no is_debug = yes } AND = { has_country_leader = { name = "Oshida" ruling_only = yes } OR = { has_country_flag = BCF_CIVIL_WAR_END NOT = { has_country_flag = BCF_CIVIL_WAR_START } } } } }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } AND = { has_country_leader = { character = BCF_marie ruling_only = yes } OR = { has_country_flag = BCF_CIVIL_WAR_END NOT = { has_country_flag = BCF_CIVIL_WAR_START } } } } }
 		days_remove = 7
 		days_re_enable = 83
 		remove_effect = {
@@ -647,7 +647,7 @@ bcf_school_factional_strife = {
 
 	bcf_fight_for_equality = {
 		allowed = { tag = BCF }
-		visible = { OR = { AND = { is_ai = no is_debug = yes } AND = { has_country_leader = { name = "Andou" ruling_only = yes } NOT = { has_country_flag = BCF_CIVIL_WAR_START } } } }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } AND = { has_country_leader = { character = BCF_andou ruling_only = yes } NOT = { has_country_flag = BCF_CIVIL_WAR_START } } } }
 		custom_cost_trigger = {
 			has_political_power > 14.9
 		}
@@ -668,7 +668,7 @@ bcf_school_factional_strife = {
 
 	bcf_equal_education = {
 		allowed = { tag = BCF }
-		visible = { OR = { AND = { is_ai = no is_debug = yes } AND = { has_country_leader = { name = "Andou" ruling_only = yes } has_country_flag = BCF_CIVIL_WAR_END } } }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } AND = { has_country_leader = { character = BCF_andou ruling_only = yes } has_country_flag = BCF_CIVIL_WAR_END } } }
 		custom_cost_trigger = {
 			has_political_power > 14.9
 		}
@@ -690,7 +690,7 @@ bcf_school_factional_strife = {
 
 	drive_out_rival_factions = {
 		allowed = { tag = BCF }
-		visible = { OR = { AND = { is_ai = no is_debug = yes } AND = { OR = { has_country_leader = { name = "Andou" ruling_only = yes } has_country_leader = { name = "Oshida" ruling_only = yes } } has_country_flag = BCF_CIVIL_WAR_START } } }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } AND = { OR = { has_country_leader = { character = BCF_andou ruling_only = yes } has_country_leader = { character = BCF_marie ruling_only = yes } } has_country_flag = BCF_CIVIL_WAR_START } } }
 		custom_cost_trigger = {
 			has_political_power > 49.9
 			command_power > 14.9
@@ -701,12 +701,12 @@ bcf_school_factional_strife = {
 		remove_effect = {
 			add_stability = -0.1
 			if = {
-				limit = { has_country_leader = { name = "Andou" ruling_only = yes } }
+				limit = { has_country_leader = { character = BCF_andou ruling_only = yes } }
 				add_to_variable = { bcf_oshida_support = 20 }
 				custom_effect_tooltip = bcf_tooltip19
 			}
 			if = {
-				limit = { has_country_leader = { name = "Oshida" ruling_only = yes } }
+				limit = { has_country_leader = { character = BCF_marie ruling_only = yes } }
 				add_to_variable = { bcf_oshida_support = 20 }
 				custom_effect_tooltip = bcf_tooltip20
 			}

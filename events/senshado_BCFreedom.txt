@@ -161,7 +161,7 @@ country_event = {
 	}
 	option = {
 		name = bcfreedom.3.d
-		9 = {
+		29 = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = dockyard
@@ -387,6 +387,7 @@ country_event = {
 		name = bcfreedom.8.a
 		complete_national_focus = BCF_second_orelans_conference
 		complete_national_focus = BCF_maid_of_20th_century
+		complete_national_focus = BCF_sworn_in
 		add_political_power = 50
 		BCF = {
 			set_country_flag = BCF_SEC_ORELANS_END
@@ -402,6 +403,7 @@ country_event = {
 		name = bcfreedom.8.b
 		complete_national_focus = BCF_second_orelans_conference
 		complete_national_focus = BCF_will_of_the_people
+		complete_national_focus = BCF_sworn_in
 		add_political_power = 50
 		BCF = {
 			set_country_flag = BCF_SEC_ORELANS_END
@@ -417,6 +419,7 @@ country_event = {
 		name = bcfreedom.8.c
 		complete_national_focus = BCF_second_orelans_conference
 		complete_national_focus = BCF_country_of_the_noble
+		complete_national_focus = BCF_sworn_in
 		add_political_power = 50
 		BCF = {
 			set_country_flag = BCF_SEC_ORELANS_END
@@ -821,7 +824,16 @@ country_event = {
 	desc = bcfreedom_andou.1.d
 	picture = GFX_report_event_german_speech
 	trigger = {
+		NOT = {
+			has_country_flag = BCF_ANDOU_SUPPORT_US
+		}
 		tag = BCF
+		NOT = {
+			has_country_leader = {
+				character = BCF_andou
+				ruling_only = yes
+			}
+		}
 		OR = {
 			has_country_leader = {
 				character = BCF_marie
@@ -834,7 +846,7 @@ country_event = {
 		}
 	}
 	mean_time_to_happen = {
-		days = 60
+		days = 120
 	}
 	option = {
 		name = bcfreedom_andou.1.a
@@ -877,11 +889,17 @@ country_event = {
 	desc = bcfreedom_andou.2.d
 	picture = GFX_report_event_german_speech
 	mean_time_to_happen = {
-		days = 120
+		days = 240
 	}
 	trigger = {
 		NOT = {
 			has_country_flag = BCF_ANDOU_SUPPORT_US
+		}
+		NOT = {
+			has_country_leader = {
+				character = BCF_andou
+				ruling_only = yes
+			}
 		}
 		tag = BCF
 		OR = {
@@ -963,10 +981,19 @@ country_event = {
 	desc = bcfreedom_andou.3.d
 	picture = GFX_report_event_german_speech
 	mean_time_to_happen = {
-		days = 60
+		days = 120
 	}
 	trigger = {
+		NOT = {
+			has_country_flag = BCF_ANDOU_SUPPORT_US
+		}
 		tag = BCF
+		NOT = {
+			has_country_leader = {
+				character = BCF_andou
+				ruling_only = yes
+			}
+		}
 		OR = {
 			has_country_leader = {
 				character = BCF_marie
@@ -1016,10 +1043,19 @@ country_event = {
 	desc = bcfreedom_andou.4.d
 	picture = GFX_report_event_german_speech
 	mean_time_to_happen = {
-		days = 60
+		days = 120
 	}
 	trigger = {
+		NOT = {
+			has_country_flag = BCF_ANDOU_SUPPORT_US
+		}
 		tag = BCF
+		NOT = {
+			has_country_leader = {
+				character = BCF_andou
+				ruling_only = yes
+			}
+		}
 		OR = {
 			has_country_leader = {
 				character = BCF_marie
@@ -1075,10 +1111,19 @@ country_event = {
 	desc = bcfreedom_andou.5.d
 	picture = GFX_report_event_german_speech
 	mean_time_to_happen = {
-		days = 150
+		days = 300
 	}
 	trigger = {
+		NOT = {
+			has_country_flag = BCF_ANDOU_SUPPORT_US
+		}
 		tag = BCF
+		NOT = {
+			has_country_leader = {
+				character = BCF_andou
+				ruling_only = yes
+			}
+		}
 		OR = {
 			has_country_leader = {
 				character = BCF_marie
@@ -1146,6 +1191,12 @@ country_event = {
 	trigger = {
 		tag = BCF
 		NOT = {
+			has_country_leader = {
+				character = BCF_andou
+				ruling_only = yes
+			}
+		}
+		NOT = {
 			has_country_flag = BCF_ANDOU_SUPPORT_US
 		}
 		has_country_leader = {
@@ -1180,11 +1231,20 @@ country_event = {
 	desc = bcfreedom_marie.1.d
 	picture = GFX_report_event_german_speech
 	mean_time_to_happen = {
-		days = 60
+		days = 120
 	}
 	trigger = {
 		NOT = {
 			has_country_flag = BCF_MARY_GAVE_UP_STUDENT_PRESIDENT
+		}
+		NOT = {
+			has_country_flag = BCF_MARY_SUPPORT_US
+		}
+		NOT = {
+			has_country_leader = {
+				character = BCF_marie
+				ruling_only = yes
+			}
 		}
 		tag = BCF
 		OR = {
@@ -1244,6 +1304,13 @@ country_event = {
 	trigger = {
 		NOT = {
 			has_country_flag = BCF_MARY_GAVE_UP_STUDENT_PRESIDENT
+		}
+		
+		NOT = {
+			has_country_leader = {
+				character = BCF_marie
+				ruling_only = yes
+			}
 		}
 		tag = BCF
 		OR = {
@@ -1364,11 +1431,20 @@ country_event = {
 	desc = bcfreedom_marie.5.d
 	picture = GFX_report_event_german_speech
 	mean_time_to_happen = {
-		days = 90
+		days = 180
 	}
 	trigger = {
 		tag = BCF
 		has_country_flag = BCF_MARY_GAVE_UP_STUDENT_PRESIDENT
+		NOT = {
+			has_country_leader = {
+				character = BCF_marie
+				ruling_only = yes
+			}
+		}
+		NOT = {
+			has_country_flag = BCF_MARY_SUPPORT_US
+		}
 		OR = {
 			has_country_leader = {
 				character = BCF_andou
@@ -1418,12 +1494,21 @@ country_event = {
 	desc = bcfreedom_marie.6.d
 	picture = GFX_report_event_german_speech
 	mean_time_to_happen = {
-		days = 90
+		days = 180
 	}
 	trigger = {
 		tag = BCF
 		NOT = {
 			has_country_flag = BCF_MARY_GAVE_UP_STUDENT_PRESIDENT
+		}
+		NOT = {
+			has_country_flag = BCF_MARY_SUPPORT_US
+		}
+		NOT = {
+			has_country_leader = {
+				character = BCF_marie
+				ruling_only = yes
+			}
 		}
 		OR = {
 			has_country_leader = {
@@ -1474,12 +1559,18 @@ country_event = {
 	desc = bcfreedom_marie.7.d
 	picture = GFX_report_event_german_speech
 	mean_time_to_happen = {
-		days = 150
+		days = 120
 	}
 	trigger = {
 		tag = BCF
 		NOT = {
 			has_country_flag = BCF_MARY_GAVE_UP_STUDENT_PRESIDENT
+		}
+		NOT = {
+			has_country_leader = {
+				character = BCF_marie
+				ruling_only = yes
+			}
 		}
 		OR = {
 			AND = {
@@ -1543,12 +1634,21 @@ country_event = {
 	desc = bcfreedom_marie.8.d
 	picture = GFX_report_event_german_speech
 	mean_time_to_happen = {
-		days = 150
+		days = 300
 	}
 	trigger = {
 		tag = BCF
 		NOT = {
 			has_country_flag = BCF_MARY_GAVE_UP_STUDENT_PRESIDENT
+		}
+		NOT = {
+			has_country_flag = BCF_MARY_SUPPORT_US
+		}
+		NOT = {
+			has_country_leader = {
+				character = BCF_marie
+				ruling_only = yes
+			}
 		}
 		OR = {
 			has_country_leader = {
@@ -1631,10 +1731,19 @@ country_event = {
 	desc = bcfreedom_oshida.1.d
 	picture = GFX_report_event_german_speech
 	mean_time_to_happen = {
-		days = 60
+		days = 120
 	}
 	trigger = {
+		NOT = {
+			has_country_flag = BCF_OSHIDA_SUPPORT_US
+		}
 		tag = BCF
+		NOT = {
+			has_country_leader = {
+				character = BCF_oshida
+				ruling_only = yes
+			}
+		}
 		OR = {
 			has_country_leader = {
 				character = BCF_andou
@@ -1683,10 +1792,19 @@ country_event = {
 	desc = bcfreedom_oshida.2.d
 	picture = GFX_report_event_german_speech
 	mean_time_to_happen = {
-		days = 90
+		days = 180
 	}
 	trigger = {
+		NOT = {
+			has_country_flag = BCF_OSHIDA_SUPPORT_US
+		}
 		tag = BCF
+		NOT = {
+			has_country_leader = {
+				character = BCF_oshida
+				ruling_only = yes
+			}
+		}
 		NOT = {
 			has_country_flag = BCF_OSHIDA_SUPPORT_US
 		}
@@ -1739,9 +1857,18 @@ country_event = {
 	desc = bcfreedom_oshida.3.d
 	picture = GFX_report_event_german_speech
 	mean_time_to_happen = {
-		days = 120
+		days = 240
 	}
 	trigger = {
+		NOT = {
+			has_country_flag = BCF_OSHIDA_SUPPORT_US
+		}
+		NOT = {
+			has_country_leader = {
+				character = BCF_oshida
+				ruling_only = yes
+			}
+		}
 		tag = BCF
 		OR = {
 			has_country_leader = {
@@ -1776,9 +1903,18 @@ country_event = {
 	desc = bcfreedom_oshida.4.d
 	picture = GFX_report_event_german_speech
 	mean_time_to_happen = {
-		days = 150
+		days = 300
 	}
 	trigger = {
+		NOT = {
+			has_country_flag = BCF_OSHIDA_SUPPORT_US
+		}
+		NOT = {
+			has_country_leader = {
+				character = BCF_oshida
+				ruling_only = yes
+			}
+		}
 		tag = BCF
 		OR = {
 			has_country_leader = {
@@ -1841,6 +1977,12 @@ country_event = {
 		days = 120
 	}
 	trigger = {
+		NOT = {
+			has_country_leader = {
+				character = BCF_oshida
+				ruling_only = yes
+			}
+		}
 		tag = BCF
 		has_country_leader = {
 			character = BCF_marie
@@ -1877,9 +2019,10 @@ country_event = {
 	title = bcfreedom_civil_war.1.t
 	desc = bcfreedom_civil_war.1.d
 	picture = GFX_report_event_german_speech
+	fire_only_once = yes
 	trigger = {
 		tag = BCF
-		date > 1973.5.1
+		date > 1972.11.1
 		OR = {
 			has_country_leader = {
 				character = BCF_andou
@@ -1903,9 +2046,10 @@ country_event = {
 	title = bcfreedom_civil_war.2.t
 	desc = bcfreedom_civil_war.2.d
 	picture = GFX_report_event_german_speech
+	fire_only_once = yes
 	trigger = {
 		tag = BCF
-		date > 1973.5.1
+		date > 1972.11.1
 		OR = {
 			has_country_leader = {
 				character = BCF_andou
@@ -1920,18 +2064,15 @@ country_event = {
 	option = {
 		name = bcfreedom_civil_war.2.a
 		STG = {
-			set_state_owner = 15
+			transfer_state = 15
 		}
 		ANZ = {
-			set_state_owner = 735
-			set_state_owner = 1
+			transfer_state = 735
+			transfer_state = 1
 		}
 		every_owned_state = {
 			set_demilitarized_zone = yes
-			add_to_array = {
-				array = BCF_owned_state
-				value = THIS
-			}
+			set_state_flag = BCF_demilitarized_states
 		}
 		country_event = {
 			id = bcfreedom_civil_war.3
@@ -1948,49 +2089,444 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bcfreedom_civil_war.3.a
-		KGA = {
-			set_state_owner = 42
-			set_state_owner = 50
+		hidden_effect = {
+			BCF = {
+				recruit_character = BCF_marie_backup
+				retire_ideology_leader = fascism
+				retire_ideology_leader = communism
+				retire_ideology_leader = democratic
+				retire_ideology_leader = neutrality
+				add_country_leader_role = {
+					character = BCF_marie_backup
+					promote_leader = yes
+					country_leader = {
+						ideology = moderatism
+						expire = "2000.1.1.1"
+						traits = {
+							BCF_princess_of_lle_de_france
+						}
+					}
+				}
+				add_country_leader_role = {
+					character = BCF_marie_backup
+					promote_leader = yes
+					country_leader = {
+						ideology = nazism
+						expire = "2000.1.1.1"
+						traits = {
+							BCF_princess_of_lle_de_france
+						}
+					}
+				}
+				add_country_leader_role = {
+					character = BCF_marie_backup
+					promote_leader = yes
+					country_leader = {
+						ideology = leninism
+						expire = "2000.1.1.1"
+						traits = {
+							BCF_princess_of_lle_de_france
+						}
+					}
+				}
+				add_country_leader_role = {
+					character = BCF_marie_backup
+					promote_leader = yes
+					country_leader = {
+						ideology = conservatism
+						expire = "2000.1.1.1"
+						traits = {
+							BCF_princess_of_lle_de_france
+						}
+					}
+				}
+				BCF_andou = {
+					retire = yes
+				}
+				BCF_marie = {
+					retire = yes
+				}
+				BCF_oshida = {
+					retire = yes
+				}
+				BCF_azumi = {
+					retire = yes
+				}
+				BCF_asparagus = {
+					retire = yes
+				}
+				BCF_bordeaux = {
+					retire = yes
+				}
+				BCF_Moule = {
+					retire = yes
+				}
+				BCF_isabe = {
+					retire = yes
+				}
+				BCF_sofue = {
+					retire = yes
+				}
+			}
 		}
 		B01 = {
-			set_state_owner = 785
-			set_state_owner = 16
-			set_state_owner = 18
-			set_state_owner = 29
-			change_tag_from = root
+				set_country_flag = BCF_civil_war_lorder
+				transfer_state = 785
+				transfer_state = 16
+				transfer_state = 18
+				transfer_state = 29
+				transfer_state = 458
+				transfer_state = 459
+				transfer_state = 460
+				transfer_state = 309
+				transfer_state = 310
+				transfer_state = 687
+				transfer_state = 679
+				transfer_state = 678
+				transfer_state = 292
+				transfer_state = 658
+				transfer_state = 765
+				transfer_state = 670
+				transfer_state = 671
+				transfer_state = 289
+				transfer_state = 286
+				transfer_state = 741
+				transfer_state = 694
+				hidden_effect = {
+					recruit_character = BCF_andou
+					retire_ideology_leader = fascism
+					retire_ideology_leader = communism
+					retire_ideology_leader = democratic
+					retire_ideology_leader = neutrality
+					add_country_leader_role = {
+						character = BCF_andou
+						promote_leader = yes
+						country_leader = {
+							ideology = moderatism
+							expire = "2000.1.1.1"
+							traits = {
+								BCF_radical
+							}
+						}
+					}
+					add_country_leader_role = {
+						character = BCF_andou
+						promote_leader = yes
+						country_leader = {
+							ideology = nazism
+							expire = "2000.1.1.1"
+							traits = {
+								BCF_radical
+							}
+						}
+					}
+					add_country_leader_role = {
+						character = BCF_andou
+						promote_leader = yes
+						country_leader = {
+							ideology = leninism
+							expire = "2000.1.1.1"
+							traits = {
+								BCF_radical
+							}
+						}
+					}
+					add_country_leader_role = {
+						character = BCF_andou
+						promote_leader = yes
+						country_leader = {
+							ideology = conservatism
+							expire = "2000.1.1.1"
+							traits = {
+								BCF_radical
+							}
+						}
+					}
+				}
 		}
 		B02 = {
-			set_state_owner = 26
-			set_state_owner = 20
-			set_state_owner = 22
-			set_state_owner = 21
-			set_state_owner = 32
+				set_country_flag = BCF_civil_war_lorder
+				transfer_state = 26
+				transfer_state = 20
+				transfer_state = 22
+				transfer_state = 21
+				transfer_state = 32
+				hidden_effect = {
+					recruit_character = BCF_oshida
+					retire_ideology_leader = fascism
+					retire_ideology_leader = communism
+					retire_ideology_leader = democratic
+					retire_ideology_leader = neutrality
+					add_country_leader_role = {
+						character = BCF_oshida
+						promote_leader = yes
+						country_leader = {
+							ideology = moderatism
+							expire = "2000.1.1.1"
+							traits = {
+								BCF_conservative
+							}
+						}
+					}
+					add_country_leader_role = {
+						character = BCF_oshida
+						promote_leader = yes
+						country_leader = {
+							ideology = nazism
+							expire = "2000.1.1.1"
+							traits = {
+								BCF_conservative
+							}
+						}
+					}
+					add_country_leader_role = {
+						character = BCF_oshida
+						promote_leader = yes
+						country_leader = {
+							ideology = leninism
+							expire = "2000.1.1.1"
+							traits = {
+								BCF_conservative
+							}
+						}
+					}
+					add_country_leader_role = {
+						character = BCF_oshida
+						promote_leader = yes
+						country_leader = {
+							ideology = conservatism
+							expire = "2000.1.1.1"
+							traits = {
+								BCF_conservative
+							}
+						}
+					}
+				}
+		}
+		if = {
+				limit = {
+					has_completed_focus = BCF_will_of_the_people
+				}
+				B01 = {
+					change_tag_from = root
+				}
+				B02 = {
+					complete_national_focus = BCF_second_orelans_conference
+					complete_national_focus = BCF_sworn_in
+					complete_national_focus = BCF_country_of_the_noble
+				}
+				B01 = {
+					country_event = {
+						id = bcfreedom_civil_war.4
+						days = 5
+					}
+					complete_national_focus = BCF_second_orelans_conference
+					complete_national_focus = BCF_sworn_in
+					BCF_check_if_focus_completed_in_civil_war_andou_line = yes
+				}
+		}
+		else_if = {
+				limit = {
+					has_completed_focus = BCF_country_of_the_noble
+				}
+				B02 = {
+					change_tag_from = root
+				}
+				B01 = {
+					complete_national_focus = BCF_second_orelans_conference
+					complete_national_focus = BCF_sworn_in
+					complete_national_focus = BCF_will_of_the_people
+				}
+				B02 = {
+					country_event = {
+						id = bcfreedom_civil_war.4
+						days = 5
+					}
+					complete_national_focus = BCF_second_orelans_conference
+					complete_national_focus = BCF_sworn_in
+					BCF_check_if_focus_completed_in_civil_war_oshida = yes
+				}
 		}
 		BRE = {
-			set_state_owner = 30
-			set_state_owner = 14
+				set_country_flag = BCF_civil_war_lorder
+				transfer_state = 30
+				transfer_state = 14
+				hidden_effect = {
+					recruit_character = BCF_asparagus
+					retire_ideology_leader = fascism
+					retire_ideology_leader = communism
+					retire_ideology_leader = democratic
+					retire_ideology_leader = neutrality
+					add_country_leader_role = {
+						character = BCF_asparagus
+						promote_leader = yes
+						country_leader = {
+							ideology = moderatism
+							expire = "2000.1.1.1"
+							traits = {
+								
+							}
+						}
+					}
+					add_country_leader_role = {
+						character = BCF_asparagus
+						promote_leader = yes
+						country_leader = {
+							ideology = nazism
+							expire = "2000.1.1.1"
+							traits = {
+								
+							}
+						}
+					}
+					add_country_leader_role = {
+						character = BCF_asparagus
+						promote_leader = yes
+						country_leader = {
+							ideology = leninism
+							expire = "2000.1.1.1"
+							traits = {
+								
+							}
+						}
+					}
+					add_country_leader_role = {
+						character = BCF_asparagus
+						promote_leader = yes
+						country_leader = {
+							ideology = conservatism
+							expire = "2000.1.1.1"
+							traits = {
+								
+							}
+						}
+					}
+				}
 		}
 		AQU = {
-			set_state_owner = 19
-			set_state_owner = 23
-			set_state_owner = 25
-			set_state_owner = 806
-			set_state_owner = 31
+				set_country_flag = BCF_civil_war_lorder
+				transfer_state = 19
+				transfer_state = 23
+				transfer_state = 25
+				transfer_state = 806
+				transfer_state = 31
+				hidden_effect = {
+					recruit_character = BCF_bordeaux
+					retire_ideology_leader = fascism
+					retire_ideology_leader = communism
+					retire_ideology_leader = democratic
+					retire_ideology_leader = neutrality
+					add_country_leader_role = {
+						character = BCF_bordeaux
+						promote_leader = yes
+						country_leader = {
+							ideology = moderatism
+							expire = "2000.1.1.1"
+							traits = {
+								
+							}
+						}
+					}
+					add_country_leader_role = {
+						character = BCF_bordeaux
+						promote_leader = yes
+						country_leader = {
+							ideology = nazism
+							expire = "2000.1.1.1"
+							traits = {
+								
+							}
+						}
+					}
+					add_country_leader_role = {
+						character = BCF_bordeaux
+						promote_leader = yes
+						country_leader = {
+							ideology = leninism
+							expire = "2000.1.1.1"
+							traits = {
+								
+							}
+						}
+					}
+					add_country_leader_role = {
+						character = BCF_bordeaux
+						promote_leader = yes
+						country_leader = {
+							ideology = conservatism
+							expire = "2000.1.1.1"
+							traits = {
+								
+							}
+						}
+					}
+				}
 		}
 		ORL = {
-			set_state_owner = 24
-			set_state_owner = 33
-			set_state_owner = 27
+				set_country_flag = BCF_civil_war_lorder
+				transfer_state = 24
+				transfer_state = 33
+				hidden_effect = {
+					recruit_character = BCF_marie
+					retire_ideology_leader = fascism
+					retire_ideology_leader = communism
+					retire_ideology_leader = democratic
+					retire_ideology_leader = neutrality
+					add_country_leader_role = {
+						character = BCF_marie
+						promote_leader = yes
+						country_leader = {
+							ideology = moderatism
+							expire = "2000.1.1.1"
+							traits = {
+								BCF_princess_of_lle_de_france
+							}
+						}
+					}
+					add_country_leader_role = {
+						character = BCF_marie
+						promote_leader = yes
+						country_leader = {
+							ideology = nazism
+							expire = "2000.1.1.1"
+							traits = {
+								BCF_princess_of_lle_de_france
+							}
+						}
+					}
+					add_country_leader_role = {
+						character = BCF_marie
+						promote_leader = yes
+						country_leader = {
+							ideology = leninism
+							expire = "2000.1.1.1"
+							traits = {
+								BCF_princess_of_lle_de_france
+							}
+						}
+					}
+					add_country_leader_role = {
+						character = BCF_marie
+						promote_leader = yes
+						country_leader = {
+							ideology = conservatism
+							expire = "2000.1.1.1"
+							traits = {
+								BCF_princess_of_lle_de_france
+							}
+						}
+					}
+				}
 		}
 		MGC = {
-			set_state_owner = 17
-			set_state_owner = 28
+				set_country_flag = BCF_civil_war_lorder
+				transfer_state = 17
+				transfer_state = 28
+				transfer_state = 42
+				transfer_state = 50
+				transfer_state = 27
 		}
 		set_global_flag = NO_BCF
-		country_event = {
-			id = bcfreedom_civil_war.4
-			days = 5
-		}
 	}
 }
 
@@ -2002,6 +2538,9 @@ country_event = {
 	picture = GFX_report_event_german_speech
 	is_triggered_only = yes
 	immediate = {
+		hidden_effect = {
+			BCF_add_civil_warloard_core = yes
+		}
 		country_event = {
 			id = bcfreedom_civil_war.5
 			days = 5
@@ -2022,9 +2561,6 @@ country_event = {
 			NOT = {
 				has_completed_focus = BCF_will_of_the_people
 			}
-		}
-		B02 = {
-			change_tag_from = root
 		}
 		unlock_national_focus = BCF_third_orelans_conference
 	}
@@ -2064,6 +2600,26 @@ country_event = {
 	option = {
 		name = bcfreedom_civil_war.5.a
 		set_global_flag = BCF_CIVIL_WAR_START
+		hidden_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = BCF_civil_war_lorder
+				}
+				random_owned_state = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		every_state = {
+			limit = {
+				has_state_flag = BCF_demilitarized_states
+			}
+			set_demilitarized_zone = no
+		}
 		B01 = {
 			declare_war_on = {
 				target = B02
@@ -2161,19 +2717,96 @@ country_event = {
 	}
 	option = {
 		name = bcfreedom_civil_war.6.a
+		hidden_effect = {
+			BCF_put_all_character_back_to_BCF = yes
+			BCF_remove_civil_warloard_core = yes
+		}
 		BCF = {
-			change_tag_from = root
 			annex_country = {
-				target = ROOT
+				target = B01
+			}
+			change_tag_from = B01
+		}
+
+		BCF = {
+			add_country_leader_role = {
+				character = BCF_andou
+				promote_leader = yes
+				country_leader = {
+					ideology = moderatism
+					expire = "2000.1.1.1"
+					traits = {
+						BCF_radical
+					}
+				}
 			}
 			set_politics = {
 				ruling_party = communism
 			}
+			BCF_check_if_focus_completed_in_civil_war_andou_line = yes
+			BCF_check_if_focus_completed_in_civil_war_military = yes
+			BCF_check_if_focus_completed_in_civil_war_line = yes
 		}
 	}
 }
 
 #押田重新统一
+country_event = {
+	id = bcfreedom_civil_war.11
+	title = bcfreedom_civil_war.11.t
+	desc = bcfreedom_civil_war.11.d
+	picture = GFX_report_event_german_speech
+	trigger = {
+		has_global_flag = BCF_CIVIL_WAR_START
+		has_global_flag = NO_BCF
+		tag = B02
+		NOT = {
+			country_exists = B01
+			country_exists = ORL
+			country_exists = BRE
+			country_exists = MGC
+			country_exists = AQU
+		}
+	}
+	immediate = {
+		set_global_flag = BCF_CIVIL_WAR_END
+		clr_global_flag = NO_BCF
+	}
+	option = {
+		name = bcfreedom_civil_war.11.a
+		hidden_effect = {
+			BCF_put_all_character_back_to_BCF = yes
+			BCF_remove_civil_warloard_core = yes
+		}
+		BCF = {
+			annex_country = {
+				target = ROOT
+			}
+			change_tag_from = root
+		}
+		BCF = {
+			add_country_leader_role = {
+				character = BCF_oshida
+				promote_leader = yes
+				country_leader = {
+					ideology = moderatism
+					expire = "2000.1.1.1"
+					traits = {
+						BCF_conservative
+					}
+				}
+			}
+			set_politics = {
+				ruling_party = democratic
+			}
+			BCF_check_if_focus_completed_in_civil_war_oshida = yes
+			BCF_check_if_focus_completed_in_civil_war_military = yes
+			BCF_check_if_focus_completed_in_civil_war_line = yes
+		}
+	}
+}
+
+#玛丽重新统一
 country_event = {
 	id = bcfreedom_civil_war.7
 	title = bcfreedom_civil_war.7.t
@@ -2201,25 +2834,35 @@ country_event = {
 	}
 	option = {
 		name = bcfreedom_civil_war.7.b
+		hidden_effect = {
+			BCF_put_all_character_back_to_BCF = yes
+			BCF_remove_civil_warloard_core = yes
+		}
 		BCF = {
-			change_tag_from = root
+			change_tag_from = B02
+
 			annex_country = {
 				target = ROOT
 			}
-			set_politics = {
-				ruling_party = communism
+			add_country_leader_role = {
+				character = BCF_marie
+				promote_leader = yes
+				country_leader = {
+					ideology = moderatism
+					expire = "2000.1.1.1"
+					traits = {
+						BCF_princess_of_lle_de_france
+					}
+				}
 			}
-			mark_focus_tree_layout_dirty = yes
-			unlock_national_focus = BCF_second_orelans_conference
-			unlock_national_focus = BCF_third_orelans_conference
-			unlock_national_focus = BCF_senshadao_league_match
-			complete_national_focus = BCF_sworn_in
-			complete_national_focus = BCF_maid_of_20th_century
+			set_politics = {
+				ruling_party = neutrality
+			}
 		}
 	}
 }
 
-#玛丽重新统一
+#阿斯帕拉斯重新统一
 country_event = {
 	id = bcfreedom_civil_war.8
 	title = bcfreedom_civil_war.8.t
@@ -2243,7 +2886,22 @@ country_event = {
 	}
 	option = {
 		name = bcfreedom_civil_war.8.a
+		hidden_effect = {
+			BCF_put_all_character_back_to_BCF = yes
+			BCF_remove_civil_warloard_core = yes
+		}
 		BCF = {
+			add_country_leader_role = {
+				character = BCF_asparagus
+				promote_leader = yes
+				country_leader = {
+					ideology = moderatism
+					expire = "2000.1.1.1"
+					traits = {
+						BCF_princess_of_lle_de_france
+					}
+				}
+			}
 			change_tag_from = root
 			annex_country = {
 				target = ROOT
@@ -2255,7 +2913,7 @@ country_event = {
 	}
 }
 
-#阿斯帕拉格斯重新统一
+#波尔多重新统一
 country_event = {
 	id = bcfreedom_civil_war.9
 	title = bcfreedom_civil_war.9.t
@@ -2279,7 +2937,22 @@ country_event = {
 	}
 	option = {
 		name = bcfreedom_civil_war.9.a
+		hidden_effect = {
+			BCF_put_all_character_back_to_BCF = yes
+			BCF_remove_civil_warloard_core = yes
+		}
 		BCF = {
+			add_country_leader_role = {
+				character = BCF_bordeaux
+				promote_leader = yes
+				country_leader = {
+					ideology = moderatism
+					expire = "2000.1.1.1"
+					traits = {
+						BCF_princess_of_lle_de_france
+					}
+				}
+			}
 			change_tag_from = root
 			annex_country = {
 				target = ROOT
@@ -2291,7 +2964,7 @@ country_event = {
 	}
 }
 
-#波尔多重新统一
+#马奇诺重新统一
 country_event = {
 	id = bcfreedom_civil_war.10
 	title = bcfreedom_civil_war.10.t
@@ -2315,7 +2988,22 @@ country_event = {
 	}
 	option = {
 		name = bcfreedom_civil_war.10.a
+		hidden_effect = {
+			BCF_put_all_character_back_to_BCF = yes
+			BCF_remove_civil_warloard_core = yes
+		}
 		BCF = {
+			add_country_leader_role = {
+				character = BCF_marie
+				promote_leader = yes
+				country_leader = {
+					ideology = moderatism
+					expire = "2000.1.1.1"
+					traits = {
+						BCF_princess_of_lle_de_france
+					}
+				}
+			}
 			change_tag_from = root
 			annex_country = {
 				target = ROOT
@@ -2327,38 +3015,3 @@ country_event = {
 	}
 }
 
-#马奇诺重新统一
-country_event = {
-	id = bcfreedom_civil_war.11
-	title = bcfreedom_civil_war.11.t
-	desc = bcfreedom_civil_war.11.d
-	picture = GFX_report_event_german_speech
-	trigger = {
-		has_global_flag = BCF_CIVIL_WAR_START
-		has_global_flag = NO_BCF
-		tag = B01
-		NOT = {
-			country_exists = B02
-			country_exists = ORL
-			country_exists = BRE
-			country_exists = MGC
-			country_exists = AQU
-		}
-	}
-	immediate = {
-		set_global_flag = BCF_CIVIL_WAR_END
-		clr_global_flag = NO_BCF
-	}
-	option = {
-		name = bcfreedom_civil_war.11.a
-		BCF = {
-			change_tag_from = root
-			annex_country = {
-				target = ROOT
-			}
-			set_politics = {
-				ruling_party = democratic
-			}
-		}
-	}
-}

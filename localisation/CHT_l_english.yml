@@ -57,7 +57,7 @@
  CHT_establish_nishi_cabinet_prime_minister_desc:0 ""
  CHT_clear_out_new_bakufu:0 "清除新幕府思维"
  CHT_clear_out_new_bakufu_desc:0 ""
- CHT_examine_SDS_CHT_security_treaty:0 "审视桑达斯-知波单安保条约"
+ CHT_examine_SDS_CHT_security_treaty:0 "审视Saunders-Chihatan安保条约"
  CHT_examine_SDS_CHT_security_treaty_desc:0 ""
  CHT_restart_armaments:0 "重启军备"
  CHT_restart_armaments_desc:0 ""
@@ -67,7 +67,7 @@
  CHT_support_new_bakufu_desc:0 ""
  CHT_rebuild_bushi:0 "重建武家"
  CHT_rebuild_bushi_desc:0 ""
- CHT_protest_against_chihatan:0 "反对知波单干政"
+ CHT_protest_against_chihatan:0 "反对Chihatan干政"
  CHT_protest_against_chihatan_desc:0 ""
  CHT_gather_vassal:0 "集结藩士"
  CHT_gather_vassal_desc:0 ""
@@ -91,14 +91,14 @@
  CHT_people_bushi_country_desc:0 ""
  CHT_eliminate_opponents:0 "七生报国，尊皇讨奸"
  CHT_eliminate_opponents_desc:0 ""
- CHT_senshado_is_bushido:0 "战车道就是武士道"
+ CHT_senshado_is_bushido:0 "Senshado就是武士道"
  CHT_senshado_is_bushido_desc:0 ""
 
 #events
  chihatan.1.t:0 "工业产品出口政策再调节"
  chihatan.1.d:0 ""
  chihatan.1.a:0 ""
- chihatan.2.t:0 "解决和桑达斯的贸易摩擦"
+ chihatan.2.t:0 "解决和Saunders的贸易摩擦"
  chihatan.2.d:0 ""
  chihatan.2.a:0 ""
 
@@ -113,8 +113,8 @@
  CHT_new_bakufu_revolution_0:0 "扩大的新幕府运动"
 
 #custom_tooltip
- cht_tooltip1:0 "战车道点数: §G+80§! "
- cht_tooltip2:0 "奖励§Y300§!战车道点数\n在§Y1974年7月§!前完成:奖励§Y50§!战车道点数和§Y10%§!稳定度"
+ cht_tooltip1:0 "Senshado点数: §G+80§! "
+ cht_tooltip2:0 "奖励§Y300§!Senshado点数\n在§Y1974年7月§!前完成:奖励§Y50§!Senshado点数和§Y10%§!稳定度"
  cht_tooltip3:0 "70 £GFX_gold_icon"
  cht_tooltip3_blocked:0 "70 £GFX_gold_icon"
  cht_tooltip4:0 "增加一条由§YBC自由学院§!建造至§Y70%的航母生产线§!"
@@ -126,9 +126,9 @@
  cht_tooltip7_blocked:0 "40 £GFX_gold_icon"
 
 #decisions
- cht_missions:0 "黑森峰-任务"
- cht_build_infrastructures:0 "黑森峰基建计划"
- cht_government:0 "黑森峰-政府"
+ cht_missions:0 "Kuromorimine-任务"
+ cht_build_infrastructures:0 "Kuromorimine基建计划"
+ cht_government:0 "Kuromorimine-政府"
  
 #flags
  BCF_allow_trade:0 "BC批准了贸易协定"

@@ -1,4 +1,23 @@
-captial = 16
+set_technology = {
+	senshado_prototype_tank = 1
+	senshado_light_tank_1 = 1
+}
+set_research_slots = 4
+set_convoys = 20
+
+recruit_character = BCF_marie
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 100
+}
+
+
 division_template = {
 	name = "Légion d'Orléans"
 	is_locked = yes

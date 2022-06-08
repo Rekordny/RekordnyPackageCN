@@ -10,8 +10,8 @@ state={
 	}
 
 	history={
-		owner = BCF
-		add_core_of = BCF
+		owner = ANZ
+		add_core_of = ANZ
 
 		victory_points = {
 			1145 5 

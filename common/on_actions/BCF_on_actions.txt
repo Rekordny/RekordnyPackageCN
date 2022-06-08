@@ -6,4 +6,41 @@ on_actions = {
             }
         }
     }
+    on_peaceconference_ended = {
+        effect = {
+            if = {
+                limit = {
+                    has_country_flag = BCF_civil_war_lorder
+                    FROM = {
+                        has_country_flag = BCF_civil_war_lorder
+                    }
+                }
+                FROM = {
+                    every_character = {
+                        set_nationality = ROOT
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        has_country_flag = BCF_civil_war_lorder
+                    }
+                    FROM = {
+                        has_country_flag = BCF_civil_war_lorder
+                    }
+                }
+                random_country = {
+                    limit = {
+                        has_country_flag = BCF_civil_war_lorder
+                    }
+                    FROM = {
+                        every_character = {
+                            set_nationality = PREVPREV
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

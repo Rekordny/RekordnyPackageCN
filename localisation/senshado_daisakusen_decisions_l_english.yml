@@ -1,7 +1,7 @@
 ﻿l_english:
- senshado_daisakusen_decisions:0 "战车道大赛"
- senshado_daisakusen_decisions_desc:0"\n\n\n\n\n\n\n\n\n£senshado_daisakusen_picture\n\n\n\n\n\n\n\n\n\n\n\n 战车道大赛由战车道联盟负责举办，通过比赛获得胜利数来取得冠军。比赛分为多轮，每一轮的分数都将会被重置，初始值为50，在回合结束时获得最高分的学院将会取得本轮比赛的胜利。\n目前大赛中的领先者：§Y[?global.senshado_daisakusen_leader.GetName]§!       其胜利数为为 §B[?global.highest_victory_count]§!\n目前§Y[ROOT.GetAdjective]§!的胜利数为§B[?ROOT.victory_count]§!\n\n  本轮目前的领先者为§Y[?global.round_senshado_daisakusen_leader.GetName]§!,其拥有的分数为§B[?global.round_highest_point]§!\n§Y[ROOT.GetAdjective]§!目前拥有的战车道分数： §B[?ROOT.senshado_point]§!"
- join_senshado_daisakusen:0"加入战车道大赛"
+ senshado_daisakusen_decisions:0 "Senshado大赛"
+ senshado_daisakusen_decisions_desc:0"\n\n\n\n\n\n\n\n\n£senshado_daisakusen_picture\n\n\n\n\n\n\n\n\n\n\n\n Senshado大赛由Senshado联盟负责举办，通过比赛获得胜利数来取得冠军。比赛分为多轮，每一轮的分数都将会被重置，初始值为50，在回合结束时获得最高分的学院将会取得本轮比赛的胜利。\n目前大赛中的领先者：§Y[?global.senshado_daisakusen_leader.GetName]§!       其胜利数为为 §B[?global.highest_victory_count]§!\n目前§Y[ROOT.GetAdjective]§!的胜利数为§B[?ROOT.victory_count]§!\n\n  本轮目前的领先者为§Y[?global.round_senshado_daisakusen_leader.GetName]§!,其拥有的分数为§B[?global.round_highest_point]§!\n§Y[ROOT.GetAdjective]§!目前拥有的Senshado分数： §B[?ROOT.senshado_point]§!"
+ join_senshado_daisakusen:0"加入Senshado大赛"
  input_army_xp:0 "投入陆军经验" 
  input_navy_xp:0 "投入海军经验" 
  input_air_xp:0 "投入空军经验" 
@@ -19,4 +19,4 @@
  senshado_daisakusen_decision_effect_4:0"获得§G 40 §!分数"
  senshado_daisakusen_decision_effect_5:0"获得§G 50 §!分数"
  senshado_daisakusen_decision_effect_6:0"获得§G 60 §!分数"
- test_1:0"测试战车道大赛"
+ test_1:0"测试Senshado大赛"

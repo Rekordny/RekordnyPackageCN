@@ -516,3 +516,43 @@ news_event = {
 		name = senshado_news.15.b
 	}
 }
+
+#圣葛罗莉安娜的大护国公
+news_event = {
+	id = senshado_news.16
+    title = senshado_news.16.t
+	desc = senshado_news.16.d
+	picture = GFX_senshado_news_event_16
+	is_triggered_only = yes
+	major = yes
+	immediate = { }
+	desc = {
+		text = senshado_news.16.d1
+		trigger = {
+			
+		}
+	}
+	option = {
+		name = senshado_news.16.a
+	}
+}
+
+#黑森峰被无限期占领激怒
+news_event = {
+	id = senshado_news.17
+    title = senshado_news.17.t
+	desc = senshado_news.17.d
+	picture = GFX_senshado_news_event_17
+	is_triggered_only = yes
+	major = yes
+	immediate = { }
+	desc = {
+		text = senshado_news.17.d1
+		trigger = {
+			
+		}
+	}
+	option = {
+		name = senshado_news.17.a
+	}
+}

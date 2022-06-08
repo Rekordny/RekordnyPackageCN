@@ -179,7 +179,7 @@ refresh_gold_standard = {
 #移除黄金储备国家精神
 remove_gold_storage_ideas = {
 	remove_ideas = {
-		gold_storage_epic gold_storage_great gold_storage_good gold_storage_average gold_storage_low gold_storage_poor gold_storage_bad
+		gold_storage_great gold_storage_good gold_storage_average gold_storage_poor gold_storage_bad gold_storage_empty
 	}
 }
 
@@ -188,56 +188,35 @@ refresh_gold_storage_ideas = {
 	
 	set_temp_variable = { temp0 = gold }
 	set_temp_variable = { temp1 = gold_standard }
-	multiply_temp_variable = { temp1 = 1.399 }
+	multiply_temp_variable = { temp1 = 1.999 }
+	set_temp_variable = { temp2 = gold_standard }
+	multiply_temp_variable = { temp2 = 1.249 }
+	set_temp_variable = { temp3 = gold_standard }
+	multiply_temp_variable = { temp3 = 0.749 }
+	set_temp_variable = { temp4 = gold_standard }
+	multiply_temp_variable = { temp4 = 0.299 }
 	if = { 
 		limit = { check_variable = { temp0 > temp1 } } 
-		add_ideas = gold_storage_epic
-	}
-	set_temp_variable = { temp1 = gold_standard }
-	set_temp_variable = { temp2 = gold_standard }
-	multiply_temp_variable = { temp1 = 1.399 }
-	multiply_temp_variable = { temp2 = 1.149 }
-	if = { 
-		limit = { check_variable = { temp0 > temp2 } check_variable = { temp0 < temp1 }} 
 		add_ideas = gold_storage_great
 	}
-	set_temp_variable = { temp1 = gold_standard }
-	set_temp_variable = { temp2 = gold_standard }
-	multiply_temp_variable = { temp1 = 1.149 }
-	multiply_temp_variable = { temp2 = 1.049 }
-	if = { 
-		limit = { check_variable = { temp0 > temp2 } check_variable = { temp0 < temp1 }} 
+	else_if = {
+		limit = { check_variable = { temp0 > temp2 } }
 		add_ideas = gold_storage_good
 	}
-	set_temp_variable = { temp1 = gold_standard }
-	set_temp_variable = { temp2 = gold_standard }
-	multiply_temp_variable = { temp1 = 1.049 }
-	multiply_temp_variable = { temp2 = 0.949 }
-	if = { 
-		limit = { check_variable = { temp0 > temp2 } check_variable = { temp0 < temp1 }} 
+	else_if = {
+		limit = { check_variable = { temp0 > temp3 } }
 		add_ideas = gold_storage_average
 	}
-	set_temp_variable = { temp1 = gold_standard }
-	set_temp_variable = { temp2 = gold_standard }
-	multiply_temp_variable = { temp1 = 0.949 }
-	multiply_temp_variable = { temp2 = 0.849 }
-	if = { 
-		limit = { check_variable = { temp0 > temp2 } check_variable = { temp0 < temp1 }} 
-		add_ideas = gold_storage_low
-	}
-	set_temp_variable = { temp1 = gold_standard }
-	set_temp_variable = { temp2 = gold_standard }
-	multiply_temp_variable = { temp1 = 0.849 }
-	multiply_temp_variable = { temp2 = 0.599 }
-	if = { 
-		limit = { check_variable = { temp0 > temp2 } check_variable = { temp0 < temp1 }} 
+	else_if = {
+		limit = { check_variable = { temp0 > temp4 } }
 		add_ideas = gold_storage_poor
 	}
-	set_temp_variable = { temp1 = gold_standard }
-	multiply_temp_variable = { temp1 = 0.599 }
-	if = { 
-		limit = { check_variable = { temp0 <temp1 }} 
-		add_ideas = gold_storage_bad
+	else_if = {
+		limit = { check_variable = { temp0 > 0 } }
+		add_ideas = gold_storage_poor
+	}
+	else = {
+		add_ideas = gold_storage_empty
 	}
 }
 

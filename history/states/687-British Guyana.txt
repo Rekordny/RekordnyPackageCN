@@ -10,8 +10,8 @@ state={
 	}
 
 	history={
-		add_core_of = BCF
-		owner = BCF
+		add_core_of = OTU
+		owner = OTU
 		victory_points = {
 			4982 1
 		}

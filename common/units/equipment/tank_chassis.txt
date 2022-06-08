@@ -62,6 +62,10 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_module_auto_loader
+					tank_dozer_blade
+					tank_extra_armor
+					tank_smoke_launcher
 				}
 			}
 
@@ -71,6 +75,10 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_module_auto_loader
+					tank_dozer_blade
+					tank_extra_armor
+					tank_smoke_launcher
 				}
 			}
 
@@ -80,6 +88,10 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_module_auto_loader
+					tank_dozer_blade
+					tank_extra_armor
+					tank_smoke_launcher
 				}
 			}
 
@@ -89,9 +101,21 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_module_auto_loader
+					tank_dozer_blade
+					tank_extra_armor
+					tank_smoke_launcher
 				}
 			}
 			
+		}
+		module_count_limit = {
+			category = tank_smoke_launcher
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_module_auto_loader
+			count < 2
 		}
 		module_count_limit = {
 			module = sloped_armor
@@ -121,12 +145,12 @@ equipments = {
 		}
 
 		module_count_limit = {
-			module = armor_skirts
+			category = tank_extra_armor
 			count < 2
 		}
 
 		module_count_limit = {
-			module = dozer_blade
+			category = tank_dozer_blade
 			count < 2
 		}
 
@@ -324,6 +348,10 @@ equipments = {
 					tank_radio_module
 					tank_special_module
 					tank_secondary_turret
+					tank_module_auto_loader
+					tank_dozer_blade
+					tank_extra_armor
+					tank_smoke_launcher
 				}
 			}
 
@@ -333,6 +361,10 @@ equipments = {
 					tank_special_module
 					tank_secondary_turret
 					tank_radio_module
+					tank_module_auto_loader
+					tank_dozer_blade
+					tank_extra_armor
+					tank_smoke_launcher
 				}
 			}
 
@@ -342,6 +374,10 @@ equipments = {
 					tank_special_module
 					tank_secondary_turret
 					tank_radio_module
+					tank_module_auto_loader
+					tank_dozer_blade
+					tank_extra_armor
+					tank_smoke_launcher
 				}
 			}
 
@@ -351,9 +387,21 @@ equipments = {
 					tank_special_module
 					tank_secondary_turret
 					tank_radio_module
+					tank_module_auto_loader
+					tank_dozer_blade
+					tank_extra_armor
+					tank_smoke_launcher
 				}
 			}
 			
+		}
+		module_count_limit = {
+			category = tank_smoke_launcher
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_module_auto_loader
+			count < 2
 		}
 		module_count_limit = {
 			module = sloped_armor
@@ -382,12 +430,12 @@ equipments = {
 		}
 
 		module_count_limit = {
-			module = armor_skirts
+			category = tank_extra_armor
 			count < 2
 		}
 
 		module_count_limit = {
-			module = dozer_blade
+			category = tank_dozer_blade
 			count < 2
 		}
 
@@ -565,6 +613,10 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					tank_module_auto_loader
+					tank_dozer_blade
+					tank_extra_armor
+					tank_smoke_launcher
 				}
 			}
 
@@ -574,6 +626,10 @@ equipments = {
 					tank_special_module
 					tank_secondary_turret
 					tank_radio_module
+					tank_module_auto_loader
+					tank_dozer_blade
+					tank_extra_armor
+					tank_smoke_launcher
 				}
 			}
 
@@ -583,6 +639,10 @@ equipments = {
 					tank_special_module
 					tank_secondary_turret
 					tank_radio_module
+					tank_module_auto_loader
+					tank_dozer_blade
+					tank_extra_armor
+					tank_smoke_launcher
 				}
 			}
 
@@ -592,9 +652,21 @@ equipments = {
 					tank_special_module
 					tank_secondary_turret
 					tank_radio_module
+					tank_module_auto_loader
+					tank_dozer_blade
+					tank_extra_armor
+					tank_smoke_launcher
 				}
 			}
 
+		}
+		module_count_limit = {
+			category = tank_smoke_launcher
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_module_auto_loader
+			count < 2
 		}
 		module_count_limit = {
 			module = sloped_armor
@@ -620,12 +692,12 @@ equipments = {
 		}
 
 		module_count_limit = {
-			module = armor_skirts
+			category = tank_extra_armor
 			count < 2
 		}
 
 		module_count_limit = {
-			module = dozer_blade
+			category = tank_dozer_blade
 			count < 2
 		}
 
@@ -804,6 +876,10 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_module_auto_loader
+					tank_dozer_blade
+					tank_extra_armor
+					tank_smoke_launcher
 				}
 			}
 
@@ -812,6 +888,10 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_module_auto_loader
+					tank_dozer_blade
+					tank_extra_armor
+					tank_smoke_launcher
 				}
 			}
 
@@ -820,6 +900,10 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_module_auto_loader
+					tank_dozer_blade
+					tank_extra_armor
+					tank_smoke_launcher
 				}
 			}
 
@@ -828,9 +912,21 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
+					tank_module_auto_loader
+					tank_dozer_blade
+					tank_extra_armor
+					tank_smoke_launcher
 				}
 			}
 
+		}
+		module_count_limit = {
+			category = tank_smoke_launcher
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_module_auto_loader
+			count < 2
 		}
 		module_count_limit = {
 			module = sloped_armor
@@ -856,12 +952,12 @@ equipments = {
 		}
 
 		module_count_limit = {
-			module = armor_skirts
+			category = tank_extra_armor
 			count < 2
 		}
 
 		module_count_limit = {
-			module = dozer_blade
+			category = tank_dozer_blade
 			count < 2
 		}
 

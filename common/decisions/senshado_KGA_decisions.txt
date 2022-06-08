@@ -33,7 +33,7 @@ kga_government = {
 	#将纳粹从军队中清除
 	kga_remove_nazi_from_army = {
 		allowed = { tag = KGA }
-		visible = { OR = { NOT = { has_completed_focus = KGA_return_to_politics } AND = { is_ai = no is_debug = yes } } }
+		visible = { OR = { has_completed_focus = KGA_return_to_politics AND = { is_ai = no is_debug = yes } } }
 		days_re_enable = 100
 		days_remove = 30
 		custom_cost_trigger = {
@@ -625,6 +625,9 @@ kga_political_balance = {
 						traits = { hidden_tenderness_0 }
 						on_add = {}
 						on_remove = {}
+						ai_will_do = {
+							factor = 1.000
+						}
 					}
 				}
 			}
@@ -661,6 +664,9 @@ kga_political_balance = {
 						traits = { top_ruling_bottom_0 }
 						on_add = {}
 						on_remove = {}
+						ai_will_do = {
+							factor = 1.000
+						}
 					}
 				}
 			}
@@ -697,6 +703,9 @@ kga_political_balance = {
 						traits = { the_most_kind_0 }
 						on_add = {}
 						on_remove = {}
+						ai_will_do = {
+							factor = 1.000
+						}
 					}
 				}
 			}
@@ -729,6 +738,9 @@ kga_political_balance = {
 						traits = { army_CombinedArms_2 }
 						on_add = {}
 						on_remove = {}
+						ai_will_do = {
+							factor = 1.000
+						}
 					}
 				}
 			}

@@ -4,7 +4,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/KGA/Portrait_KGA_Maho.dds"
-				small="gfx/interface/advisors/idea_Maho.dds"
+				small="gfx/interface/advisors/idea_maho.dds"
 			}
 		}
 		field_marshal={
@@ -34,6 +34,9 @@ characters={
 			traits = { hidden_tenderness }
 			on_add = {}
 			on_remove = {}
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 		advisor={
 			cost = 180
@@ -44,6 +47,9 @@ characters={
 			idea_token = KGA_maho
 			ledger = army
 			traits = { blitzkrieg_theorist }
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 	KGA_miho={
@@ -51,7 +57,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/KGA/Portrait_KGA_Miho.dds"
-				small="gfx/interface/advisors/idea_Miho.dds"
+				small="gfx/interface/advisors/idea_miho.dds"
 			}
 		}
 		field_marshal={
@@ -81,6 +87,9 @@ characters={
 			traits = { ture_nishizumi_style }
 			on_add = {}
 			on_remove = {}
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 		advisor={
 			cost = 75
@@ -91,6 +100,9 @@ characters={
 				original_tag = KGA
 			}
 			traits = { mobile_warfare_expert }
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 	KGA_erika={
@@ -98,7 +110,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/KGA/Portrait_KGA_Erika.dds"
-				small="gfx/interface/advisors/idea_Erika.dds"
+				small="gfx/interface/advisors/idea_erika.dds"
 			}
 		}
 		corps_commander={
@@ -129,6 +141,9 @@ characters={
 			traits = { top_ruling_bottom }
 			on_add = {}
 			on_remove = {}
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 		advisor={
 			slot = high_command
@@ -137,6 +152,9 @@ characters={
 			ledger = army
 			traits = { army_commando_2 }
 			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 	KGA_koume={
@@ -144,7 +162,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/KGA/Portrait_KGA_Koume.dds"
-				small="gfx/interface/advisors/idea_Koume.dds"
+				small="gfx/interface/advisors/idea_koume.dds"
 			}
 		}
 		corps_commander={
@@ -168,16 +186,17 @@ characters={
 			traits = { the_most_kind }
 			on_add = {}
 			on_remove = {}
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 	KGA_erwin={
 		name="Erwin"
 		portraits={
 			army={
-				small="gfx/interface/advisors/idea_erwin.dds"
-			}
-			army={
 				large="gfx/leaders/KGA/Portrait_KGA_Erwin.dds"
+				small="gfx/interface/advisors/idea_erwin.dds"
 			}
 		}
 		corps_commander={
@@ -195,16 +214,17 @@ characters={
 			ledger = army
 			traits = { army_armored_2 }
 			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 	KGA_mauko={
 		name="Mauko"
 		portraits={
 			army={
-				small=""
-			}
-			army={
 				large="gfx/leaders/KGA/Portrait_KGA_Mauko.dds"
+				small="gfx/interface/advisors/idea_mauko.dds"
 			}
 		}
 		corps_commander={
@@ -221,10 +241,8 @@ characters={
 		name="Sangou"
 		portraits={
 			army={
-				small=""
-			}
-			army={
 				large="gfx/leaders/KGA/Portrait_KGA_Sangou.dds"
+				small="gfx/interface/advisors/idea_sangou.dds"
 			}
 		}
 		corps_commander={
@@ -268,16 +286,17 @@ characters={
 			traits = { girls_have_heavy_track }
 			on_add = {}
 			on_remove = {}
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 	KGA_geshiko={
 		name="Geshiko"
 		portraits={
 			army={
-				small=""
-			}
-			army={
 				large="gfx/leaders/KGA/Portrait_KGA_Geshiko.dds"
+				small="gfx/interface/advisors/idea_geshiko.dds"
 			}
 		}
 		corps_commander={
@@ -295,6 +314,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/KGA/Portrait_KGA_Sheska.dds"
+				small="gfx/interface/advisors/idea_sheska.dds"
 			}
 		}
 		corps_commander={
@@ -407,5 +427,77 @@ characters={
 			logistics_skill = 2
 			legacy_id=1125
 		}
+	}
+	KGA_bismark={
+		name="Bismark"
+		portraits={
+			civilian={
+				large="gfx/leaders/KGA/Portrait_KGA_Bismark.dds"
+				small="gfx/interface/advisors/idea_bismark.dds"
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy fleet_protector superior_tactician }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=2
+			coordination_skill=2
+			legacy_id=0
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = KGA_bismark
+			removal_cost = 0
+			available = {  }
+			allowed = {
+				original_tag = KGA
+			}
+			visible = {  }
+			traits = { navy_chief_reform_2 }
+			on_add = {}
+			on_remove = {}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	KGA_eugen={
+		name="Prinz Eugen"
+		portraits={
+			civilian={
+				large="gfx/leaders/KGA/Portrait_KGA_Eugen.dds"
+				small="gfx/interface/advisors/idea_eugen.dds"
+			}
+		}
+		navy_leader={
+			visible = { has_completed_focus = KGA_organize_navy }
+			traits={ old_guard_navy naval_lineage superior_tactician }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			maneuvering_skill=1
+			coordination_skill=4
+			legacy_id=0
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = KGA_eugen
+			removal_cost = 0
+			available = {  }
+			allowed = {
+				original_tag = KGA
+			}
+			visible = { has_completed_focus = KGA_organize_navy }
+			traits = { navy_chief_commerce_raiding_2 }
+			on_add = {}
+			on_remove = {}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
 	}
 }

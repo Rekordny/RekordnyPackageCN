@@ -727,10 +727,10 @@ focus_tree = {
 		x = -2
 		y = 1
 		#BCF不存在
-		available = {  }
+		available = { has_country_flag = BCF_allow_trade }
 		prerequisite = { focus = KGA_deal_with_BC }
 		#mutually_exclusive = { }
-		bypass = { NOT = { has_country_flag = BCF_allow_trade } }
+		bypass = {  }
 		cost = 8
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -999,6 +999,9 @@ focus_tree = {
 				idea_token = KGA_maaru
 				ledger = army
 				traits = { synergy_theorist }
+				ai_will_do = {
+					factor = 1.000
+				}
 			} activate = no }
 		}
 		#AI行动之后具体设计，复制粘贴以下部分即可
@@ -1039,6 +1042,9 @@ focus_tree = {
 				traits = { erikas_right_hand }
 				on_add = {}
 				on_remove = {}
+				ai_will_do = {
+					factor = 1.000
+				}
 			} activate = no }
 		}
 		#AI行动之后具体设计，复制粘贴以下部分即可
@@ -1581,7 +1587,7 @@ focus_tree = {
 
 		completion_reward = {
 			if = {
-				limit = { BCF = { is_in_faction = no } }
+				limit = { NOT = { BCF = { is_in_faction = yes } } }
 				add_to_faction = BCF
 			}
 		}
@@ -1640,7 +1646,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			country_event = kuromorimine.76
+			country_event = kuromorimine.79
 		}
 		#AI行动之后具体设计，复制粘贴以下部分即可
 		ai_will_do = {
@@ -1897,7 +1903,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 8
+		cost = 5
 		prerequisite = { }
 
 		cancel_if_invalid = yes
@@ -1911,6 +1917,8 @@ focus_tree = {
 				uses = 1
 				bonus = 1
 			}
+			show_ideas_tooltip = KGA_eugen
+			show_unit_leaders_tooltip = KGA_eugen
 		}
 
 		ai_will_do = {
@@ -2834,9 +2842,9 @@ focus_tree = {
 			custom_effect_tooltip = kga_tooltip12
 			hidden_effect = {
 				create_equipment_variant = {
-					name = "De Grasse"
+					name = "Enterprisy"
 					type = ship_hull_carrier_1
-					name_group = FRA_CV_HISTORICAL
+					name_group = USA_CV_HISTORICAL
 					parent_version = 0
 					modules = {
 						fixed_ship_deck_slot_1 = ship_deck_space
@@ -2967,7 +2975,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = senshado_school
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2977,6 +2985,15 @@ focus_tree = {
 				add_building_construction = {
 					type = dockyard
 					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = { is_core_of = KGA is_controlled_by = KGA }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -3076,6 +3093,15 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = KGA_kriegsmarine
+			random_state = {
+				limit = { is_core_of = KGA is_controlled_by = KGA }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 
 		ai_will_do = {

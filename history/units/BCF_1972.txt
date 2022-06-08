@@ -450,3 +450,39 @@ units = {
 		# start_equipment_factor = 0.5
 	}
 }
+
+units = {
+    fleet = {
+        name = "BCFreedom fleet" # Name 1
+        naval_base = 3552
+        task_force = {
+            name = "Fleet No.1" # Name 2
+            location = 3552
+            ship = { name = "Jauréguiberry"  definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BCF version_name = "T53 Class" } } }
+			ship = { name = "FS Duperre"  definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BCF version_name = "T53 Class" } } }
+			ship = { name = "La Bourdonnais"  definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BCF version_name = "T53 Class" } } }
+			ship = { name = "FS Forbin"  definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BCF version_name = "T53 Class" } } }
+			
+            
+            ship = { name = "Clemenceau"  definition = carrier equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = BCF version_name = "Clemenceau Class" } } air_wings = { cv_fighter_equipment_0 =  { owner = "BCF" amount = 12 } cv_nav_bomber_equipment_1 =  { owner = "BCF" amount = 12 } cv_CAS_equipment_1 =  { owner = "BCF" amount = 12 } } }
+			ship = { name = "Foch"  definition = carrier equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = BCF version_name = "Clemenceau Class" } } air_wings = { cv_fighter_equipment_0 =  { owner = "BCF" amount = 12 } cv_nav_bomber_equipment_1 =  { owner = "BCF" amount = 12 } cv_CAS_equipment_1 =  { owner = "BCF" amount = 12 } } }
+			ship = { name = "Jeanne d'Arc"  definition = carrier equipment = { ship_hull_carrier_conversion_ca = { amount = 1 owner = BCF version_name = "Andrea Doria Class" } } air_wings = { cv_fighter_equipment_0 =  { owner = "BCF" amount = 12 } cv_nav_bomber_equipment_1 =  { owner = "BCF" amount = 12 } cv_CAS_equipment_1 =  { owner = "BCF" amount = 12 } } }
+        }
+        task_force = {
+            name = "Fleet No.2" # Name 2
+            location = 911
+            ship = { name = "Argonaute"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BCF version_name = "Aréthuse Class" } } }
+            ship = { name = "Espadon"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BCF version_name = "Narval Class" } } }
+			ship = { name = "Indomptable"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BCF version_name = "Narval Class" } } }
+			ship = { name = "Gymnote"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BCF version_name = "Redoutable Class" } } }
+			ship = { name = "Redoutable"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BCF version_name = "Redoutable Class" } } }
+			ship = { name = "Terrible"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BCF version_name = "Redoutable Class" } } }
+			ship = { name = "Foudroyant"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = BCF version_name = "Redoutable Class" } } }
+			ship = { name = "FS Tartu"  definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BCF version_name = "T53 Class" } } }
+			ship = { name = "La Galissonnière"  definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = BCF version_name = "T53 Class" } } }
+			ship = { name = "Maillé-Brézé"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BCF version_name = "T47 Class" } } }
+			ship = { name = "De Grasse"  definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = BCF version_name = "De Grasse Class" } } }
+            ship = { name = "Colbert"  definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = BCF version_name = "De Grasse Class" } } }
+        }
+    }
+}

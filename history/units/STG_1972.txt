@@ -330,3 +330,55 @@ units = {
         # start_equipment_factor = 0.5
     }
 }
+units = {
+    fleet = {
+        name = "StGloriana fleet" # Name 1
+        naval_base = 9458
+        task_force = {
+            name = "Fleet No.1" # Name 2
+            location = 9458
+            ship = { name = "Agincourt"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = STG version_name = "A/B/C/D Class" } } }
+            ship = { name = "Cavalier"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = STG version_name = "A/B/C/D Class" } } }
+            ship = { name = "Fife"  definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = STG version_name = "County Class" } } }
+            ship = { name = "Glamorgan"  definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = STG version_name = "County Class" } } }
+            ship = { name = "Kent"  definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = STG version_name = "County Class" } } }
+            ship = { name = "London"  definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = STG version_name = "County Class" } } }
+            ship = { name = "Matapan"  definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = STG version_name = "County Class" } } }
+            ship = { name = "Norfolk"  definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = STG version_name = "County Class" } } }
+            ship = { name = "Ulster"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = STG version_name = "U/W Class" } } }
+            ship = { name = "Whirlwind"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = STG version_name = "U/W Class" } } }
+            ship = { name = "Blake"  definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = STG version_name = "Tiger Class" } } }
+            ship = { name = "Lion"  definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = STG version_name = "Tiger Class" } } }
+            ship = { name = "Tiger"  definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = STG version_name = "Tiger Class" } } }
+            ship = { name = "Albion"  definition = carrier equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = STG version_name = "Centaur Class" } } air_wings = { cv_fighter_equipment_0 =  { owner = "STG" amount = 22 } cv_nav_bomber_equipment_1 =  { owner = "STG" amount = 12 } cv_CAS_equipment_1 =  { owner = "STG" amount = 12 } } }
+            ship = { name = "Bulwark"  definition = carrier equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = STG version_name = "Centaur Class" } } air_wings = { cv_fighter_equipment_0 =  { owner = "STG" amount = 22 } cv_nav_bomber_equipment_1 =  { owner = "STG" amount = 12 } cv_CAS_equipment_1 =  { owner = "STG" amount = 12 } } }
+            ship = { name = "Hermes"  definition = carrier equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = STG version_name = "Centaur Class" } } air_wings = { cv_fighter_equipment_0 =  { owner = "STG" amount = 22 } cv_nav_bomber_equipment_1 =  { owner = "STG" amount = 12 } cv_CAS_equipment_1 =  { owner = "STG" amount = 12 } } }
+            ship = { name = "Ark Royal"  definition = carrier equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = STG version_name = "Audacious Class" } } air_wings = { cv_fighter_equipment_0 =  { owner = "STG" amount = 12 } cv_nav_bomber_equipment_1 =  { owner = "STG" amount = 12 } cv_CAS_equipment_1 =  { owner = "STG" amount = 12 } } }
+        }
+        task_force = {
+            name = "Fleet No.2" # Name 2
+            location = 4076
+            ship = { name = "Aeneas"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = STG version_name = "Amphion Class" } } }
+            ship = { name = "Alliance"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = STG version_name = "Amphion Class" } } }
+            ship = { name = "Andrew"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = STG version_name = "Amphion Class" } } }
+            ship = { name = "Odin"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = STG version_name = "Oberon Class" } } }
+            ship = { name = "Olympus"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = STG version_name = "Oberon Class" } } }
+            ship = { name = "Onslaught"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = STG version_name = "Oberon Class" } } }
+            ship = { name = "Onyx"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = STG version_name = "Oberon Class" } } }
+            ship = { name = "Opossum"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = STG version_name = "Oberon Class" } } }
+            ship = { name = "Opportune"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = STG version_name = "Oberon Class" } } }
+            ship = { name = "Oracle"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = STG version_name = "Oberon Class" } } }
+            ship = { name = "Orpheus"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = STG version_name = "Oberon Class" } } }
+            ship = { name = "Osiris"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = STG version_name = "Oberon Class" } } }
+            ship = { name = "Otter"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = STG version_name = "Oberon Class" } } }
+            ship = { name = "Otus"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = STG version_name = "Oberon Class" } } }
+            ship = { name = "Renown"  definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = STG version_name = "Resolution Class" } } }
+            ship = { name = "Repulse"  definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = STG version_name = "Resolution Class" } } }
+            ship = { name = "Resolution"  definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = STG version_name = "Resolution Class" } } }
+            ship = { name = "Revenge"  definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = STG version_name = "Resolution Class" } } }
+            ship = { name = "Valiant"  definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = STG version_name = "Valiant Class" } } }
+            ship = { name = "Warspite"  definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = STG version_name = "Valiant Class" } } }
+            
+        }
+    }
+}

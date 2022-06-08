@@ -1,0 +1,615 @@
+#用于在B01和BCF来回切换时同步双方已经完成的国策
+BCF_check_if_focus_completed_in_civil_war_andou_line = {
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_will_of_the_people
+			}
+		}
+		complete_national_focus = BCF_will_of_the_people
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_france_supreme
+			}
+		}
+		complete_national_focus = BCF_france_supreme
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_nationalism
+			}
+		}
+		complete_national_focus = BCF_nationalism
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_never_surrounder
+			}
+		}
+		complete_national_focus = BCF_never_surrounder
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_preemptive
+			}
+		}
+		complete_national_focus = BCF_preemptive
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_destroy_kga
+			}
+		}
+		complete_national_focus = BCF_destroy_kga
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_beyond_napoleon
+			}
+		}
+		complete_national_focus = BCF_beyond_napoleon
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_third_reich
+			}
+		}
+		complete_national_focus = BCF_third_reich
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_memories_of_the_paris_commune
+			}
+		}
+		complete_national_focus = BCF_memories_of_the_paris_commune
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_seven_hour_work
+			}
+		}
+		complete_national_focus = BCF_seven_hour_work
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_raise_the_minimum_wage
+			}
+		}
+		complete_national_focus = BCF_raise_the_minimum_wage
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_raise_the_minimum_wage
+			}
+		}
+		complete_national_focus = BCF_raise_the_minimum_wage
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_encourage_the_labor_movement
+			}
+		}
+		complete_national_focus = BCF_encourage_the_labor_movement
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_rebuilding_the_left_alliance
+			}
+		}
+		complete_national_focus = BCF_rebuilding_the_left_alliance
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_to_arms
+			}
+		}
+		complete_national_focus = BCF_to_arms
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_revolution_preparation
+			}
+		}
+		complete_national_focus = BCF_revolution_preparation
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_commune_rebirth
+			}
+		}
+		complete_national_focus = BCF_commune_rebirth
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_state_owned_factories
+			}
+		}
+		complete_national_focus = BCF_state_owned_factories
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_first_five_year_plan
+			}
+		}
+		complete_national_focus = BCF_first_five_year_plan
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_comradeship
+			}
+		}
+		complete_national_focus = BCF_comradeship
+	}
+}
+#用于在B02和BCF来回切换时同步双方已经完成的国策
+BCF_check_if_focus_completed_in_civil_war_oshida = {
+
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_country_of_the_noble
+			}
+		}
+		complete_national_focus = BCF_country_of_the_noble
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_constitution_revision
+			}
+		}
+		complete_national_focus = BCF_constitution_revision
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_rebuild_democracy
+			}
+		}
+		complete_national_focus = BCF_rebuild_democracy
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_reopen_election
+			}
+		}
+		complete_national_focus = BCF_reopen_election
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_encourage_investment
+			}
+		}
+		complete_national_focus = BCF_encourage_investment
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_focus_on_construction
+			}
+		}
+		complete_national_focus = BCF_focus_on_construction
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_seek_support_from_stg
+			}
+		}
+		complete_national_focus = BCF_seek_support_from_stg
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_european_light_house
+			}
+		}
+		complete_national_focus = BCF_european_light_house
+	}
+
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_possibility_of_monarchy
+			}
+		}
+		complete_national_focus = BCF_possibility_of_monarchy
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_parlimentary_monarchy
+			}
+		}
+		complete_national_focus = BCF_parlimentary_monarchy
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_letat_cest_moi
+			}
+		}
+		complete_national_focus = BCF_letat_cest_moi
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_banner_of_the_saintess
+			}
+		}
+		complete_national_focus = BCF_banner_of_the_saintess
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_rebuilding_the_guards
+			}
+		}
+		complete_national_focus = BCF_rebuilding_the_guards
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_research_committee
+			}
+		}
+		complete_national_focus = BCF_research_committee
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_coronation_ceremony
+			}
+		}
+		complete_national_focus = BCF_coronation_ceremony
+	}
+}
+#用于在B01或B02,和BCF来回切换时同步双方已经完成的军事国策
+BCF_check_if_focus_completed_in_civil_war_military = {
+
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_land_force_reform
+			}
+		}
+		complete_national_focus = BCF_land_force_reform
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_tank_industry_construction
+			}
+		}
+		complete_national_focus = BCF_tank_industry_construction
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_embrace_new_logic
+			}
+		}
+		complete_national_focus = BCF_embrace_new_logic
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_aviation_industry_construction
+			}
+		}
+		complete_national_focus = BCF_aviation_industry_construction
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_tank_research_and_development
+			}
+		}
+		complete_national_focus = BCF_tank_research_and_development
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_focus_on_tank_quality
+			}
+		}
+		complete_national_focus = BCF_focus_on_tank_quality
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_quantity_over_quality
+			}
+		}
+		complete_national_focus = BCF_quantity_over_quality
+	}
+}
+#用于在B01或B02,和BCF来回切换时同步双方已经完成的内战国策
+BCF_check_if_focus_completed_in_civil_war_line = {
+
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_third_orelans_conference
+			}
+		}
+		complete_national_focus = BCF_third_orelans_conference
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_The_haze_of_the_civil_war
+			}
+		}
+		complete_national_focus = BCF_The_haze_of_the_civil_war
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_consolidate_paris
+			}
+		}
+		complete_national_focus = BCF_consolidate_paris
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_seize_the_arsenal
+			}
+		}
+		complete_national_focus = BCF_seize_the_arsenal
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_martial_law_in_paris
+			}
+		}
+		complete_national_focus = BCF_martial_law_in_paris
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_state_of_war
+			}
+		}
+		complete_national_focus = BCF_state_of_war
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_consolidate_marseille
+			}
+		}
+		complete_national_focus = BCF_consolidate_marseille
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_seek_support_from_democratic_countries
+			}
+		}
+		complete_national_focus = BCF_seek_support_from_democratic_countries
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_delay_time
+			}
+		}
+		complete_national_focus = BCF_delay_time
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_ensuring_the_loyalty_of_the_mediterranean_fleet
+			}
+		}
+		complete_national_focus = BCF_ensuring_the_loyalty_of_the_mediterranean_fleet
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_fight_for_france
+			}
+		}
+		complete_national_focus = BCF_fight_for_france
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_focus_on_attack
+			}
+		}
+		complete_national_focus = BCF_focus_on_attack
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_completed_focus = BCF_focus_on_defend
+			}
+		}
+		complete_national_focus = BCF_focus_on_defend
+	}
+}
+#更新党派支持度修正
+Update_BCF_party_support = {
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					marie_support_change = 0
+				}
+			}
+		}
+		custom_effect_tooltip = Marie_support_scripted_effect_change
+		add_to_variable = {
+			bcf_marie_support = marie_support_change
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					oshida_support_change = 0
+				}
+			}
+		}
+		custom_effect_tooltip = Oshida_support_scripted_effect_change
+		add_to_variable = {
+			bcf_oshida_support = oshida_support_change
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					andou_support_change = 0
+				}
+			}
+		}
+		custom_effect_tooltip = Andou_support_scripted_effect_change
+		add_to_variable = {
+			bcf_andou_support = andou_support_change
+		}
+	}
+
+}
+#添加所有BCF内战国家的BCF核心
+BCF_add_civil_warloard_core = {
+	every_country = {
+		limit = {
+			OR = {
+				tag = B01
+				tag = B02
+				tag = BRE
+				tag = AQU
+				tag = MGC
+				tag = ORL
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = BCF
+			}
+			add_core_of = PREV
+		}
+	}
+}
+#移除所有BCF内战国家的BCF核心
+BCF_remove_civil_warloard_core = {
+	every_country = {
+		limit = {
+			OR = {
+				tag = B01
+				tag = B02
+				tag = BRE
+				tag = AQU
+				tag = MGC
+				tag = ORL
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = BCF
+			}
+			remove_core_of = PREV
+		}
+	}
+}
+#将所有character放回BCF
+BCF_put_all_character_back_to_BCF = {
+	B01 = {
+		every_character = {
+			set_nationality = BCF
+		}
+	}
+	B02 = {
+		every_character = {
+			set_nationality = BCF
+		}
+	}
+	ORL = {
+		every_character = {
+			set_nationality = BCF
+		}
+	}
+	BRE = {
+		every_character = {
+			set_nationality = BCF
+		}
+	}
+	AQU = {
+		every_character = {
+			set_nationality = BCF
+		}
+	}
+	MGC = {
+		every_character = {
+			set_nationality = BCF
+		}
+	}
+	BCF = {
+		retire_ideology_leader = fascism
+		retire_ideology_leader = communism
+		retire_ideology_leader = democratic
+		retire_ideology_leader = neutrality
+	}
+	BCF = {
+		add_country_leader_role = {
+			character = BCF_andou
+			promote_leader = yes
+			country_leader = {
+				ideology = nazism
+				expire = "2000.1.1.1"
+				traits = {
+					BCF_radical
+				}
+			}
+		}
+		add_country_leader_role = {
+			character = BCF_andou
+			promote_leader = yes
+			country_leader = {
+				ideology = leninism
+				expire = "2000.1.1.1"
+				traits = {
+					BCF_radical
+				}
+			}
+		}
+		add_country_leader_role = {
+			character = BCF_oshida
+			promote_leader = yes
+			country_leader = {
+				ideology = conservatism
+				expire = "2000.1.1.1"
+				traits = {
+					BCF_conservative
+				}
+			}
+		}
+	}
+}

@@ -16,9 +16,9 @@ bookmarks = {
 				KGA_huge_debt
 			}
 			focuses = {
-				KGA_government_capital_intergration
-				KGA_deal_with_BC
-				KGA_atonement
+				KGA_awakening_dream
+				KGA_next_generation
+				KGA_the_third_path
 			}
 		}
 
@@ -62,9 +62,9 @@ bookmarks = {
 				STG_decaying_senshado
 			}
 			focuses = {
-				FRA_strengthen_government_support
-				FRA_arms_purchases_in_the_us
-				FRA_french_union
+				STG_Restoration_the_kingdom_of_Great_Britain
+				STG_war_and_love_by_fair_means_or_foul
+				STG_commision_officer_academy
 			}
 		}
 

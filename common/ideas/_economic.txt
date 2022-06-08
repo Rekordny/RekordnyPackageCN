@@ -31,10 +31,6 @@ ideas = {
 					factor = 15
 					has_idea = gold_storage_poor
 				}
-                modifier = {
-					factor = 5
-					has_idea = gold_storage_low
-				}
    			}
 
 		}
@@ -67,7 +63,7 @@ ideas = {
 				}
                 modifier = {
 					factor = 25
-					has_idea = gold_storage_low
+					has_idea = gold_storage_poor
 				}
    			}
 		}
@@ -135,11 +131,11 @@ ideas = {
 
 				modifier = {
 					factor = 25
-					has_idea = gold_storage_epic
+					has_idea = gold_storage_great
 				}
                 modifier = {
 					factor = 15
-					has_idea = gold_storage_great
+					has_idea = gold_storage_good
 				}
 
    			}

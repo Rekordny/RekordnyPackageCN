@@ -11,14 +11,29 @@ set_technology = {
 	tech_military_police = 1
 	tech_mountaineers = 1
 	paratroopers = 1
-	gwtank_chassis = 1
-	basic_light_tank_chassis = 1
+	senshado_lt_1_chassis = 1
+	senshado_lt_1_chassis_turrent = 1
+	senshado_lt_2_chassis = 1
+	senshado_lt_2_chassis_turrent = 1
+	senshado_lt_3_chassis = 1
+	senshado_mt_1_chassis = 1
+	senshado_mt_1_chassis_turrent = 1
+	senshado_ht_1_chassis = 1
+	senshado_ht_1_chassis_turrent = 1
+	tank_customize_1 = 1
+	armor_tech_casting_1 = 1
+	interwar_antitank = 1
+	engine_tech_1 = 1
+	engine_tech_2 = 1
+	armor_tech_1 = 1
 	gw_artillery = 1
 	interwar_artillery = 1
 
 	early_fighter = 1
-	fighter1 = 1
+	cv_early_fighter = 1
 	early_bomber = 1
+	cv_CAS1 = 1
+	cv_naval_bomber1 = 1
 	tactical_bomber1 = 1
 	strategic_bomber1 = 1
 	CAS1 = 1
@@ -31,17 +46,17 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 
+	early_VLS = 1
 	basic_naval_mines = 1
 	submarine_mine_laying = 1
 	early_ship_hull_light = 1
 	basic_ship_hull_light = 1
 	early_ship_hull_cruiser = 1
-	basic_ship_hull_cruiser = 1
 	early_ship_hull_heavy = 1
-	basic_ship_hull_heavy = 1
 	panzerschiffe = 1
 	pre_dreadnoughts = 1
 	early_ship_hull_submarine = 1
+	early_ship_hull_carrier = 1
 	basic_ship_hull_submarine = 1
 	mtg_transport = 1
 	basic_torpedo = 1
@@ -96,48 +111,318 @@ recruit_character = STG_shiratori
 recruit_character = STG_earlGrey
 
 create_equipment_variant = {
-	name = "Cruiser Mk. I"
-	type = medium_tank_chassis_1
+	name = "FV101 Scorpion"
+	type = light_tank_chassis_1
 	parent_version = 0
 	modules = {
-		main_armament_slot = tank_small_cannon_2
-		turret_type_slot = tank_medium_three_man_tank_turret
+		main_armament_slot = tank_light_ap_cannon
+		turret_type_slot = tank_lt_turrent_1
 		suspension_type_slot = tank_bogie_suspension
 		armor_type_slot = tank_riveted_armor
 		engine_type_slot = tank_gasoline_engine
 		special_type_slot_1 = tank_radio_1
-		special_type_slot_2 = secondary_turret_hmg
-		special_type_slot_3 = secondary_turret_hmg
+		special_type_slot_2 = empty
+		special_type_slot_3 = empty
 	}
 	upgrades = {
-		tank_nsb_engine_upgrade = 3
+		tank_nsb_engine_upgrade = 2
 		tank_nsb_armor_upgrade = 1
 	}
 	obsolete = yes
 	icon = "gfx/interface/equipmentdesigner/tanks/designer/ENG/ENG_light_CCA_camo.dds"
 }
-
-add_equipment_to_stockpile = {
+create_equipment_variant = {
+	name = "FV4011 Centurion Mk. 5/1"
 	type = medium_tank_chassis_1
-	amount = 700
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_medium_cannon
+		turret_type_slot = tank_mt_turrent_1
+		suspension_type_slot = tank_bogie_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
+		special_type_slot_1 = tank_radio_1
+		special_type_slot_2 = secondary_turret_hmg
+		special_type_slot_3 = empty
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 2
+		tank_nsb_armor_upgrade = 2
+	}
+	obsolete = yes
+	icon = "gfx/interface/equipmentdesigner/tanks/designer/ENG/ENG_light_CCA_camo.dds"
 }
-add_equipment_to_stockpile = {
-	type = infantry_equipment
-	amount = 14000
-}
-add_equipment_to_stockpile = {
-	type = fighter_equipment_0
-	amount = 200
-}
-add_equipment_to_stockpile = {
-	type = artillery_equipment
-	amount = 300
-}
-add_equipment_to_stockpile = {
-	type = support_equipment
-	amount = 500
-}
-add_equipment_to_stockpile = {
-	type = motorized_equipment
-	amount = 500
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	### Variants ###
+	# Submarines #
+	create_equipment_variant = {
+		name = "Amphion Class"
+		type = ship_hull_submarine_1
+		name_group = ENG_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Oberon Class"
+		type = ship_hull_submarine_1
+		name_group = ENG_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Resolution Class"
+		type = ship_hull_submarine_2
+		name_group = ENG_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Valiant Class"
+		type = ship_hull_submarine_2
+		name_group = ENG_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_radar_1
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "A/B/C/D Class"
+		type = ship_hull_light_1
+		name_group = ENG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "U/W Class"
+		type = ship_hull_light_1
+		name_group = ENG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "County Class"
+		type = ship_hull_light_2
+		name_group = ENG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_VLS_1_light
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	# Light Cruisers #
+	create_equipment_variant = {
+		name = "Tiger Class"
+		type = ship_hull_cruiser_1
+		name_group = ENG_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	
+	# Heavy Cruisers #
+	create_equipment_variant = {
+		name = "Hawkins Class"
+		type = ship_hull_cruiser_1
+		name_group = ENG_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	# Battleships #
+	create_equipment_variant = {
+		name = "Revenge Class"
+		type = ship_hull_heavy_1
+		name_group = ENG_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+		obsolete = yes
+	}
+	# Carriers #
+	create_equipment_variant = {
+		name = "Centaur Class"
+		type = ship_hull_carrier_conversion_bb
+		name_group = ENG_CV_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = empty
+			mid_1_custom_slot = ship_deck_space
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Audacious Class"
+		type = ship_hull_carrier_conversion_bb
+		name_group = ENG_CV_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = empty
+			mid_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_1
+			creator = "STG" 
+			version_name = "Tiger Class"
+		}
+		requested_factories = 3
+		progress = 0.80
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "STG" 
+			version_name = "County Class"
+		}
+		requested_factories = 1
+		progress = 0.40
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "STG" 
+			version_name = "County Class"
+		}
+		requested_factories = 1
+		progress = 0.30
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "STG" 
+			version_name = "County Class"
+		}
+		requested_factories = 1
+		progress = 0.50
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "STG" 
+			version_name = "County Class"
+		}
+		requested_factories = 1
+		progress = 0.20
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "STG" 
+			version_name = "Resolution Class"
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "STG" 
+			version_name = "Resolution Class"
+		}
+		requested_factories = 1
+		progress = 0.70
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "STG" 
+			version_name = "Valiant Class"
+		}
+		requested_factories = 1
+		progress = 0.30
+		amount = 1
+	}
 }

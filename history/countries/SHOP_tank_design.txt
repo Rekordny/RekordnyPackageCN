@@ -1,0 +1,504 @@
+#开局70年坦克
+	create_equipment_variant = {
+		name = "1970轻型坦克"
+		type = light_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_light_ap_cannon
+			turret_type_slot = tank_lt_turrent_1
+			suspension_type_slot = tank_wheeled_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 0
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+	create_equipment_variant = {
+		name = "1970轻型自行火炮"
+		type = light_tank_artillery_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_close_support_gun
+			turret_type_slot = tank_lt_turrent_1
+			suspension_type_slot = tank_wheeled_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = additional_machine_guns
+			special_type_slot_2 = additional_machine_guns
+
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 0
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+	create_equipment_variant = {
+		name = "1970中型坦克"
+		type = medium_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_medium_cannon
+			turret_type_slot = tank_mt_turrent_1
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = sloped_armor
+
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 0
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+	create_equipment_variant = {
+		name = "1970中型自行火炮"
+		type = medium_tank_artillery_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_medium_howitzer
+			turret_type_slot = tank_mt_turrent_1
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = additional_machine_guns
+			special_type_slot_2 = additional_machine_guns
+
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 0
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+
+
+
+#1975轻坦
+	create_equipment_variant = {
+		name = "1975轻型坦克"
+		type = light_tank_chassis_3
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_auto_cannon_2
+			turret_type_slot = tank_lt_turrent_2
+			suspension_type_slot = tank_wheeled_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = extra_ammo_storage
+			special_type_slot_3 = armor_skirts
+			special_type_slot_4 = smoke_launchers
+
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 9
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+	create_equipment_variant = {
+		name = "1975轻型自行反坦克炮"
+		type = light_tank_destroyer_chassis_3
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_light_ap_cannon
+			turret_type_slot = tank_lt_turrent_1
+			suspension_type_slot = tank_wheeled_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = sloped_armor
+			special_type_slot_2 = extra_ammo_storage
+			special_type_slot_3 = armor_skirts
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 10
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+	create_equipment_variant = {
+		name = "1975轻型自行火炮"
+		type = light_tank_artillery_chassis_3
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_close_support_gun
+			turret_type_slot = tank_lt_turrent_1
+			suspension_type_slot = tank_wheeled_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = secondary_turret_small_cannon
+			special_type_slot_2 = extra_ammo_storage
+			special_type_slot_3 = additional_machine_guns
+			special_type_slot_4 = additional_machine_guns
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 11
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+
+#1975中坦
+	create_equipment_variant = {
+		name = "1975中型坦克"
+		type = medium_tank_chassis_2
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_medium_cannon
+			turret_type_slot = tank_mt_turrent_2
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = tank_radio_2
+			special_type_slot_2 = armor_skirts
+			special_type_slot_3 = assist_loader
+			special_type_slot_4 = additional_machine_guns
+
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 8
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+	create_equipment_variant = {
+		name = "1975中型自行反坦克炮"
+		type = medium_tank_destroyer_chassis_2
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_medium_cannon
+			turret_type_slot = tank_mt_turrent_1
+			suspension_type_slot = tank_christie_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = sloped_armor
+			special_type_slot_2 = assist_loader
+			special_type_slot_3 = armor_skirts
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 11
+			tank_nsb_armor_upgrade = 10
+		}
+	}
+	create_equipment_variant = {
+		name = "1975中型自行火炮"
+		type = medium_tank_artillery_chassis_2
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_medium_howitzer
+			turret_type_slot = tank_mt_turrent_1
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = secondary_turret_small_cannon
+			special_type_slot_2 = secondary_turret_small_cannon
+			special_type_slot_3 = additional_machine_guns
+			special_type_slot_4 = additional_machine_guns
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 11
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+
+#1977轻坦
+	create_equipment_variant = {
+		name = "1977轻型坦克"
+		type = light_tank_chassis_4
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_auto_cannon_3
+			turret_type_slot = tank_lt_turrent_2
+			suspension_type_slot = tank_wheeled_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine_2
+			special_type_slot_1 = tank_radio_2
+			special_type_slot_2 = additional_machine_guns
+			special_type_slot_3 = auto_loader_1
+			special_type_slot_4 = smoke_launchers
+
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 7
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+	create_equipment_variant = {
+		name = "1977轻型自行反坦克炮"
+		type = light_tank_destroyer_chassis_4
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_medium_cannon_2
+			turret_type_slot = tank_light_td_turrent
+			suspension_type_slot = tank_wheeled_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine_2
+			special_type_slot_1 = auto_loader_2
+			special_type_slot_2 = dozer_blade
+			special_type_slot_3 = smoke_launchers_2
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 8
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+	create_equipment_variant = {
+		name = "1977轻型自行火炮"
+		type = light_tank_artillery_chassis_4
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_medium_howitzer
+			turret_type_slot = tank_light_art_turrent
+			suspension_type_slot = tank_wheeled_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine_2
+			special_type_slot_1 = auto_loader_2
+			special_type_slot_2 = additional_machine_guns
+			special_type_slot_3 = extra_ammo_storage
+			special_type_slot_4 = secondary_turret_small_cannon
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 8
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+
+
+
+#1977中坦
+	create_equipment_variant = {
+		name = "1977中型坦克"
+		type = medium_tank_chassis_3
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_medium_cannon_2
+			turret_type_slot = tank_mt_turrent_2
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_diesel_engine_2
+			special_type_slot_1 = tank_radio_2
+			special_type_slot_2 = auto_loader_1
+			special_type_slot_3 = smoke_launchers_2
+			special_type_slot_4 = armor_skirts
+
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 8
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+	create_equipment_variant = {
+		name = "1977中型自行反坦克炮"
+		type = medium_tank_destroyer_chassis_3
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_missile_launcher
+			turret_type_slot = tank_mt_turrent_1
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = auto_loader_2
+			special_type_slot_2 = armor_skirts
+			special_type_slot_3 = sloped_armor
+			special_type_slot_4 = additional_machine_guns
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 11
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+	create_equipment_variant = {
+		name = "1977中型自行火炮"
+		type = medium_tank_artillery_chassis_3
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_medium_howitzer_2
+			turret_type_slot = tank_mt_turrent_1
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = auto_loader_2
+			special_type_slot_2 = additional_machine_guns
+			special_type_slot_3 = additional_machine_guns
+			special_type_slot_4 = secondary_turret_small_cannon
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 12
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+
+#1977重坦
+	create_equipment_variant = {
+		name = "1977重型坦克"
+		type = heavy_tank_chassis_3
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_cannon_2
+			turret_type_slot = tank_ht_turrent_2
+			suspension_type_slot = tank_interleaved_suspension
+			armor_type_slot = tank_composite_armor
+			engine_type_slot = tank_diesel_engine_2
+			special_type_slot_1 = tank_radio_3
+			special_type_slot_2 = auto_loader_1
+			special_type_slot_3 = extra_welded_armor
+			special_type_slot_4 = smoke_launchers_2
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 6
+			tank_nsb_armor_upgrade = 9
+		}
+	}
+
+#1979轻坦
+	create_equipment_variant = {
+		name = "1979轻型坦克"
+		type = light_tank_chassis_5
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_auto_cannon_4
+			turret_type_slot = tank_lt_turrent_3
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine_2
+			special_type_slot_1 = tank_radio_2
+			special_type_slot_2 = additional_machine_guns
+			special_type_slot_3 = auto_loader_1
+			special_type_slot_4 = dozer_blade
+
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 7
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+	create_equipment_variant = {
+		name = "1979轻型自行反坦克炮"
+		type = light_tank_destroyer_chassis_5
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_missile_launcher_2
+			turret_type_slot = tank_light_td_turrent
+			suspension_type_slot = tank_wheeled_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine_2
+			special_type_slot_1 = auto_loader_2
+			special_type_slot_2 = dozer_blade_2
+			special_type_slot_3 = smoke_launchers_2
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 6
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+	create_equipment_variant = {
+		name = "1979轻型自行火炮"
+		type = light_tank_artillery_chassis_5
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_medium_howitzer_3
+			turret_type_slot = tank_light_art_turrent
+			suspension_type_slot = tank_wheeled_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine_2
+			special_type_slot_1 = auto_loader_2
+			special_type_slot_2 = additional_machine_guns
+			special_type_slot_3 = dozer_blade_2
+			special_type_slot_4 = additional_machine_guns
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 7
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+
+
+
+
+#1979中坦
+	create_equipment_variant = {
+		name = "1979中型坦克"
+		type = medium_tank_chassis_4
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_medium_cannon_4
+			turret_type_slot = tank_mt_turrent_3
+			suspension_type_slot = tank_christie_suspension
+			armor_type_slot = tank_composite_armor
+			engine_type_slot = tank_diesel_engine_2
+			special_type_slot_1 = tank_radio_3
+			special_type_slot_2 = auto_loader_1
+			special_type_slot_3 = explosive_reactive_armor
+			special_type_slot_4 = smoke_launchers_2
+
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 10
+			tank_nsb_armor_upgrade = 13
+		}
+	}
+	create_equipment_variant = {
+		name = "1979中型自行反坦克炮"
+		type = medium_tank_destroyer_chassis_4
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_missile_launcher_3
+			turret_type_slot = tank_mt_turrent_1
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = auto_loader_2
+			special_type_slot_2 = smoke_launchers_2
+			special_type_slot_3 = sloped_armor
+			special_type_slot_4 = extra_welded_armor
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 8
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+	create_equipment_variant = {
+		name = "1979中型自行火炮"
+		type = medium_tank_artillery_chassis_4
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_medium_howitzer_3
+			turret_type_slot = tank_mt_turrent_1
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = auto_loader_2
+			special_type_slot_2 = additional_machine_guns
+			special_type_slot_3 = additional_machine_guns
+			special_type_slot_4 = dozer_blade_2
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 9
+			tank_nsb_armor_upgrade = 0
+		}
+	}
+
+#1979重坦
+	create_equipment_variant = {
+		name = "1979重型坦克"
+		type = heavy_tank_chassis_4
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_cannon_4
+			turret_type_slot = tank_ht_turrent_3
+			suspension_type_slot = tank_interleaved_suspension
+			armor_type_slot = tank_composite_armor
+			engine_type_slot = tank_diesel_engine_2
+			special_type_slot_1 = tank_radio_3
+			special_type_slot_2 = explosive_reactive_armor
+			special_type_slot_3 = auto_loader_1
+			special_type_slot_4 = secondary_turret_small_cannon
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 6
+			tank_nsb_armor_upgrade = 9
+		}
+	}
+
+
+
