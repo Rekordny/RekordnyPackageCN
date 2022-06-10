@@ -4,6 +4,7 @@ characters = {
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/BCF/Portrait_BCF_Andou.dds"
+				small="gfx/interface/advisors/idea_andou.dds"
 			}
 		}
 		country_leader = {
@@ -108,6 +109,7 @@ characters = {
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/BCF/Portrait_BCF_Marie.dds"
+				small="gfx/interface/advisors/idea_marie.dds"
 			}
 		}
 		country_leader = {
@@ -202,6 +204,7 @@ characters = {
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/BCF/Portrait_BCF_Oshida.dds"
+				small="gfx/interface/advisors/idea_oshida.dds"
 			}
 		}
 		country_leader = {
@@ -300,6 +303,7 @@ characters = {
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/BCF/Portrait_BCF_Azumi.dds"
+				small="gfx/interface/advisors/idea_azumi.dds"
 			}
 		}
 		corps_commander = {
@@ -319,7 +323,8 @@ characters = {
 		name = "Asparagus"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/BCF/Portrait_BCF_asparagus.dds"
+				large = "gfx/leaders/BCF/Portrait_BCF_Asparagus.dds"
+				small="gfx/interface/advisors/idea_asparagus.dds"
 			}
 		}
 		country_leader = {
@@ -377,7 +382,8 @@ characters = {
 		name = "Bordeaux"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/BCF/Portrait_BCF_bordeaux.dds"
+				large = "gfx/leaders/BCF/Portrait_BCF_Bordeaux.dds"
+				small="gfx/interface/advisors/idea_bordeaux.dds"
 			}
 		}
 		country_leader = {
@@ -414,11 +420,12 @@ characters = {
 			legacy_id = 1090
 		}
 	}
-	BCF_Moule = {
+	BCF_moule = {
 		name = "Moule"
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/BCF/Portrait_BCF_Moule.dds"
+				small="gfx/interface/advisors/idea_moule.dds"
 			}
 		}
 		advisor = {
@@ -460,7 +467,8 @@ characters = {
 		name = "Isabe"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/BCF/Portrait_BCF_isabe.dds"
+				large = "gfx/leaders/BCF/Portrait_BCF_Isabe.dds"
+				small="gfx/interface/advisors/idea_isabe.dds"
 			}
 		}
 		advisor = {
@@ -496,7 +504,8 @@ characters = {
 		name = "Sofue"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/BCF/Portrait_BCF_sofue.dds"
+				large = "gfx/leaders/BCF/Portrait_BCF_Sofue.dds"
+				small="gfx/interface/advisors/idea_sofue.dds"
 			}
 		}
 		advisor = {
@@ -559,4 +568,77 @@ characters = {
 			expire = "2000.1.1.1"
 			id = -1
 		}
+	}
+	BCF_richelieu = {
+        name = "Richelieu"
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/BCF/Portrait_BCF_Richelieu.dds"
+				small="gfx/interface/advisors/idea_richelieu.dds"
+            }
+        }
+        navy_leader={
+            visible = {  }
+            traits={ naval_lineage gunnery_expert media_personality }
+            skill=3
+            attack_skill=3
+            defense_skill=3
+            maneuvering_skill=1
+            coordination_skill=3
+            legacy_id=0
+        }
+        advisor = {
+            slot = navy_chief
+            idea_token = BCF_richelieu
+            removal_cost = 0
+            available = {  }
+            allowed = {
+                original_tag = BCF
+            }
+            visible = {  }
+            traits = { navy_chief_reform_2 }
+            on_add = {}
+            on_remove = {}
+            cost = 100
+            ai_will_do = {
+                factor = 1.000
+            }
+        }
+    }
+    BCF_teste = {
+        name = "Teste"
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/BCF/Portrait_BCF_Teste.dds"
+				small="gfx/interface/advisors/idea_teste.dds"
+            }
+        }
+        navy_leader={
+            visible = {  }
+            traits={ aviation_enthusiast gentlemanly media_personality }
+            skill=3
+            attack_skill=3
+            defense_skill=3
+            maneuvering_skill=1
+            coordination_skill=3
+            legacy_id=0
+        }
+        advisor = {
+            slot = navy_chief
+            idea_token = BCF_teste
+            removal_cost = 0
+            available = {  }
+            allowed = {
+                original_tag = BCF
+            }
+            visible = {  }
+            traits = { navy_carrier_2 }
+            on_add = {}
+            on_remove = {}
+            cost = 100
+            ai_will_do = {
+                factor = 1.000
+            }
+        }
+    }
 }

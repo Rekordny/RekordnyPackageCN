@@ -103,4 +103,152 @@ characters={
 			legacy_id=1075
 		}
 	}
+	SDS_iowa={
+		name="Iowa"
+		portraits={
+			civilian={
+				large="gfx/leaders/SDS/Portrait_SDS_Iowa.dds"
+				small="gfx/interface/advisors/idea_iowa.dds"
+			}
+		}
+		navy_leader={
+			visible = {  }
+			traits={ battleship_adherent cuts_corners media_personality }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=3
+			legacy_id=0
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = SDS_iowa
+			removal_cost = 0
+			available = {  }
+			allowed = {
+				original_tag = SDS
+			}
+			visible = {  }
+			traits = { navy_capital_ship_2 }
+			on_add = {}
+			on_remove = {}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SDS_saratoga={
+		name="Saratoga"
+		portraits={
+			civilian={
+				large="gfx/leaders/SDS/Portrait_SDS_Saratoga.dds"
+				small="gfx/interface/advisors/idea_saratoga.dds"
+			}
+		}
+		navy_leader={
+			visible = {  }
+			traits={ aviation_enthusiast career_officer dive_bomber }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=3
+			legacy_id=0
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = SDS_iowa
+			removal_cost = 0
+			available = {  }
+			allowed = {
+				original_tag = SDS
+			}
+			visible = {  }
+			traits = { navy_carrier_2 }
+			on_add = {}
+			on_remove = {}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	SDS_washington={
+		name="Washington"
+		portraits={
+			civilian={
+				large="gfx/leaders/SDS/Portrait_SDS_Washington.dds"
+				small="gfx/interface/advisors/idea_washington.dds"
+			}
+		}
+		navy_leader={
+			visible = {  }
+			traits={ gunnery_expert naval_lineage bold }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=2
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+	SDS_johnston={
+		name="Johnston"
+		portraits={
+			civilian={
+				large="gfx/leaders/SDS/Portrait_SDS_Johnston.dds"
+				small="gfx/interface/advisors/idea_johnston.dds"
+			}
+		}
+		navy_leader={
+			visible = {  }
+			traits={ craven mine_sweeper }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+	SDS_fletcher={
+		name="Fletcher"
+		portraits={
+			civilian={
+				large="gfx/leaders/SDS/Portrait_SDS_Fletcher.dds"
+				small="gfx/interface/advisors/idea_fletcher.dds"
+			}
+		}
+		navy_leader={
+			visible = {  }
+			traits={ gentlemanly mine_layer }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=3
+			legacy_id=0
+		}
+	}
+	SDS_northampton={
+		name="Northampton"
+		portraits={
+			civilian={
+				large="gfx/leaders/SDS/Portrait_SDS_Northampton.dds"
+				small="gfx/interface/advisors/idea_northampton.dds"
+			}
+		}
+		navy_leader={
+			visible = {  }
+			traits={ chief_engineer career_officer }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=1
+			legacy_id=0
+		}
+	}
 }

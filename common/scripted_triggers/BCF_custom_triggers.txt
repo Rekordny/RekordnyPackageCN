@@ -1,0 +1,92 @@
+check_BCF_party_support_amount = {
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					BCF_marie_required_support  = 0
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = BCF_custom_trigger_check_marie_support
+			check_variable = {
+				bcf_marie_support > BCF_marie_required_support
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					BCF_andou_required_support  = 0
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = BCF_custom_trigger_check_andou_support
+			check_variable = {
+				bcf_andou_support > BCF_andou_required_support
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					BCF_oshida_required_support  = 0
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = BCF_custom_trigger_check_oshida_support
+			check_variable = {
+				bcf_oshida_support > BCF_oshida_required_support
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					current_party_support_require = 0
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = BCF_custom_trigger_check_current_party_support
+			if = {
+				limit = {
+					has_country_leader = {
+						character = BCF_marie
+						ruling_only = yes
+					}
+				}
+				check_variable = {
+					bcf_marie_support > current_party_support_require
+				}
+			}
+			if = {
+				limit = {
+					has_country_leader = {
+						character = BCF_andou
+						ruling_only = yes
+					}
+				}
+				check_variable = {
+					bcf_andou_support > current_party_support_require
+				}
+			}
+			if = {
+				limit = {
+					has_country_leader = {
+						character = BCF_oshida
+						ruling_only = yes
+					}
+				}
+				check_variable = {
+					bcf_oshida_support > current_party_support_require
+				}
+			}
+		}
+	}
+}

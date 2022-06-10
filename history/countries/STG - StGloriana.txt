@@ -1,5 +1,6 @@
 ﻿capital = 126
 
+puppet = WKG
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -79,9 +80,8 @@ declare_war_on = {
 	type = annex_everything
 }
 add_ideas = {
-	STG_rise_of_the_labor_party
-	STG_cairns_economy_effect_0
 	STG_decaying_senshado
+	STG_Speeding_government
 }
 
 set_politics = {
@@ -91,10 +91,10 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 56
-	fascism = 0
-	communism = 28
-	neutrality = 16
+	democratic = 49
+	fascism = 27
+	communism = 5
+	neutrality = 19
 }
 create_faction = "战车道协会互助联盟"
 add_to_faction = KFA
@@ -109,6 +109,11 @@ recruit_character = STG_nilgiri
 recruit_character = STG_hana
 recruit_character = STG_shiratori
 recruit_character = STG_earlGrey
+recruit_character = STG_warspite
+recruit_character = STG_arkRoyal
+recruit_character = STG_janus
+recruit_character = STG_jervis
+recruit_character = STG_sheffield
 
 create_equipment_variant = {
 	name = "FV101 Scorpion"
@@ -117,16 +122,14 @@ create_equipment_variant = {
 	modules = {
 		main_armament_slot = tank_light_ap_cannon
 		turret_type_slot = tank_lt_turrent_1
-		suspension_type_slot = tank_bogie_suspension
+		suspension_type_slot = tank_wheeled_suspension
 		armor_type_slot = tank_riveted_armor
 		engine_type_slot = tank_gasoline_engine
 		special_type_slot_1 = tank_radio_1
-		special_type_slot_2 = empty
-		special_type_slot_3 = empty
 	}
 	upgrades = {
 		tank_nsb_engine_upgrade = 2
-		tank_nsb_armor_upgrade = 1
+		tank_nsb_armor_upgrade = 2
 	}
 	obsolete = yes
 	icon = "gfx/interface/equipmentdesigner/tanks/designer/ENG/ENG_light_CCA_camo.dds"
@@ -142,12 +145,11 @@ create_equipment_variant = {
 		armor_type_slot = tank_riveted_armor
 		engine_type_slot = tank_gasoline_engine
 		special_type_slot_1 = tank_radio_1
-		special_type_slot_2 = secondary_turret_hmg
-		special_type_slot_3 = empty
+		special_type_slot_2 = sloped_armor
 	}
 	upgrades = {
-		tank_nsb_engine_upgrade = 2
-		tank_nsb_armor_upgrade = 2
+		tank_nsb_engine_upgrade = 1
+		tank_nsb_armor_upgrade = 1
 	}
 	obsolete = yes
 	icon = "gfx/interface/equipmentdesigner/tanks/designer/ENG/ENG_light_CCA_camo.dds"

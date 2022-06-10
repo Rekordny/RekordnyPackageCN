@@ -10,6 +10,11 @@
 
 	continuous_focus_position = { x = 200 y = 2000 }
 	default = no
+	
+	initial_show_position = {
+		x = 15
+		y = 2
+	}
 		
 	#学院联合党胜选
 	focus = {
@@ -17,24 +22,10 @@
 		icon = GFX_focus_STG_winning_party_united_college
 		x = 15
 		y = 0
-	
-		available = {  }
-
-		prerequisite = {  }
-
-		mutually_exclusive = {  }
-			
-		bypass = { }
-
-		cost = 4
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
+		cost = 0
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 50
 		}
-			
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -50,25 +41,17 @@
 		relative_position_id = STG_winning_party_united_college
 		x = -3
 		y = 1
-	
-		available = {  }
-
+		available = { }
 		prerequisite = { focus = STG_winning_party_united_college }
-
 		mutually_exclusive = {  }
-			
 		bypass = { }
-
-		cost = 4
-
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
-			country_event = { id = StGloriana.1 days = 1}
+			country_event = { id = StGloriana_focus.1 days = 1 }
 		}
-			
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -83,25 +66,17 @@
 		relative_position_id = STG_winning_party_united_college
 		x = -1
 		y = 1
-	
-		available = {  }
-
+		available = { }
 		prerequisite = { focus = STG_winning_party_united_college }
-
-		#mutually_exclusive = { focus =  }
-			
+		mutually_exclusive = { }
 		bypass = { }
-
-		cost = 4
-
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
-			country_event = { id = StGloriana.5 days = 1 }
+			country_event = { id = StGloriana_focus.2 days = 1 }
 		}
-			
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -116,25 +91,17 @@
 		relative_position_id = STG_winning_party_united_college
 		x = 1
 		y = 1
-	
-		available = {  }
-
+		available = { }
 		prerequisite = { focus = STG_winning_party_united_college }
-
-		#mutually_exclusive = { focus =  }
-			
+		mutually_exclusive = { }
 		bypass = { }
-
 		cost = 4
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
-			country_event = { id = StGloriana.2 days = 1}
+			country_event = { id = StGloriana_focus.3 days = 1 }
 		}
-			
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -149,25 +116,17 @@
 		relative_position_id = STG_winning_party_united_college
 		x = 3
 		y = 1
-	
-		available = {  }
-
+		available = { }
 		prerequisite = { focus = STG_winning_party_united_college }
-
-		#mutually_exclusive = { focus =  }
-			
+		mutually_exclusive = { }
 		bypass = { }
-
-		cost = 4
-
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
-			country_event = { id = StGloriana.3 days = 1}
-		}
-			
+			country_event = { id = StGloriana_focus.4 days = 1 }
+		}	
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -182,29 +141,21 @@
 		relative_position_id = STG_winning_party_united_college
 		x = 0
 		y = 2
-	
-		available = {  }
-
+		available = { }
 		prerequisite = { focus = STG_appointment_finance_minister }
 		prerequisite = { focus = STG_appointment_minister_interior }
 		prerequisite = { focus = STG_appointment_foreign_minister }
 		prerequisite = { focus = STG_appointment_secretary_defense }
-
-		#mutually_exclusive = { focus =  }
-		
+		mutually_exclusive = { }
 		bypass = { }
-
-		cost = 4
-
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		completion_reward = {
 			add_political_power = 100
 			add_stability = 0.05
 		}
-		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -220,7 +171,7 @@
 		relative_position_id = STG_first_darjeeling_cabinet
 		x = -6
 		y = 1
-		available = {  }
+		available = { }
 		prerequisite = { focus = STG_first_darjeeling_cabinet }
 		mutually_exclusive = { focus = STG_Further_increase_individual_income_tax }
 		bypass = { }
@@ -229,7 +180,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			country_event = { id = StGloriana_focus.5 days = 1 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -237,53 +188,51 @@
 			}
 		}
 	}
+
 	
-
-
-
-
-	#停止输血
-	focus = {
-		id = STG_Stop_transfusion
-		icon = GFX_focus_STG_Stop_transfusion
-		relative_position_id = STG_repeal_the_national_health_service_act
-		x = -5
-		y = 1
-		available = {  }
-		prerequisite = { focus = STG_repeal_the_national_health_service_act }
-		mutually_exclusive = { }
-		bypass = { }
-		cost = 8
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-		
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-			}
-		}
-	}
 	
 	#投资自由市场
 	focus = {
 		id = STG_Investment_free_market
 		icon = GFX_focus_STG_Investment_free_market
-		relative_position_id = STG_Stop_transfusion
-		x = 0
+		relative_position_id = STG_repeal_the_national_health_service_act
+		x = -5
 		y = 1
-		available = {  }
-		prerequisite = { focus = STG_Stop_transfusion }
+		available = { }
+		prerequisite = { focus = STG_repeal_the_national_health_service_act }
 		mutually_exclusive = { }
 		bypass = { }
-		cost = 8
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-		
+			add_ideas = free_trade
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
+	#停止输血
+	focus = {
+		id = STG_Stop_transfusion
+		icon = GFX_focus_STG_Stop_transfusion
+		relative_position_id = STG_Investment_free_market
+		x = 0
+		y = 1
+		available = { }
+		prerequisite = { focus = STG_Investment_free_market }
+		mutually_exclusive = { }
+		bypass = { }
+		cost = 5
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			country_event = { id = StGloriana_focus.6 days = 180 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -296,19 +245,46 @@
 	focus = {
 		id = STG_privatized_state_owned
 		icon = GFX_focus_STG_privatized_state_owned
-		relative_position_id = STG_Investment_free_market
+		relative_position_id = STG_Stop_transfusion
 		x = -1
 		y = 1
-		available = {  }
-		prerequisite = { focus = STG_Investment_free_market }
+		available = { }
+		prerequisite = { focus = STG_Stop_transfusion }
 		mutually_exclusive = { }
 		bypass = { }
-		cost = 10
+		cost = 8
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -321,19 +297,22 @@
 	focus = {
 		id = STG_foreign_investment_absorption
 		icon = GFX_focus_STG_foreign_investment_absorption
-		relative_position_id = STG_Investment_free_market
+		relative_position_id = STG_Stop_transfusion
 		x = 1
 		y = 1
-		available = {  }
-		prerequisite = { focus = STG_Investment_free_market }
+		available = { }
+		prerequisite = { focus = STG_Stop_transfusion }
 		mutually_exclusive = { }
 		bypass = { }
-		cost = 10
+		cost = 8
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_offsite_building = { 
+				type = industrial_complex
+				level = 3
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -346,10 +325,13 @@
 	focus = {
 		id = STG_abandon_keynesianism
 		icon = GFX_focus_STG_abandon_keynesianism
-		relative_position_id = STG_Investment_free_market
+		relative_position_id = STG_Stop_transfusion
 		x = 0
 		y = 2
-		available = {  }
+		available = {  
+			NOT = { has_dynamic_modifier = { modifier = STG_cairns_economy_effect } }
+			custom_effect_tooltip = NOT_STG_cairns_economy_effect
+		}
 		prerequisite = { focus = STG_privatized_state_owned focus = STG_foreign_investment_absorption }
 		mutually_exclusive = { }
 		bypass = { }
@@ -358,7 +340,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_ideas = STG_Monetary_theory
 		}
 		ai_will_do = {
 			factor = 1
@@ -1078,7 +1060,7 @@
 	focus = {
 		id = STG_Tea_and_leaves
 		icon = GFX_focus_STG_Tea_and_leaves
-		relative_position_id  = STG_Destructive_diplomacy
+		relative_position_id = STG_Destructive_diplomacy
 		x = 1
 		y = 1
 		available = { }
@@ -1129,11 +1111,11 @@
 	focus = {
 		id = STG_Pointing_Paris
 		icon = GFX_focus_STG_Pointing_Paris
-		relative_position_id = STG_commonwealth_alliance
+		relative_position_id = STG_Communist_Alliance
 		x = -2
 		y = 1
 		available = { }
-		prerequisite = { focus = STG_commonwealth_alliance focus = STG_stand_firm }
+		prerequisite = { focus = STG_Communist_Alliance focus = STG_stand_firm }
 		mutually_exclusive = { }
 		bypass = { }
 		cost = 10
@@ -1154,11 +1136,11 @@
 	focus = {
 		id = STG_Restoration_dual_constitutional_monarchy
 		icon = GFX_focus_STG_Restoration_dual_constitutional_monarchy
-		relative_position_id = STG_commonwealth_alliance
+		relative_position_id = STG_Communist_Alliance
 		x = 0
 		y = 1
 		available = { }
-		prerequisite = { focus = STG_commonwealth_alliance }
+		prerequisite = { focus = STG_Communist_Alliance }
 		mutually_exclusive = { }
 		bypass = { }
 		cost = 10
@@ -2532,6 +2514,36 @@
 			}
 		}
 	}
+
+	#超视距对空能力
+	focus = {
+		id = generic_aa_capability
+		icon = GFX_focus_generic_aa_capability
+		relative_position_id = generic_new_avionics
+		x = 0
+		y = 2
+		available = {  }
+		prerequisite = { focus = generic_new_avionics }
+		#mutually_exclusive = { focus = STG_machanized_coordinated_operations }
+		bypass = { }
+		cost = 8
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_tech_bonus = {
+				category = air_weapon
+				uses = 2
+				bonus = 1.2
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			}
+		}
+	}
+	
 	
 	#战术动作训练
 	focus = {
@@ -2566,7 +2578,7 @@
 	#多用途化
 	focus = {
 		id = generic_multipurpose
-		icon = GFX_focus_generic_multipurpose
+		icon = GFX_focus_generic_tactical_movement_training
 		relative_position_id = generic_tactical_movement_training
 		x = 0
 		y = 2

@@ -743,10 +743,18 @@ ideas = {
 			}
 			equipment_bonus = {
 			}
+			cancel = {
+				NOT = {
+					any_enemy_country = {
+						is_major = yes
+					}
+				}
+			}
 			modifier = {
 				surrender_limit = 0.2
 				army_core_defence_factor = 0.2
 				political_power_gain = -0.4
+				war_support_factor = 0.5
 			}
 		}
 		#对圣葛罗莉安娜作战

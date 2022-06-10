@@ -73,10 +73,8 @@ set_technology = {
 	sonar = 1
 	basic_cruiser_armor_scheme = 1
 }
-set_research_slots = 4
+set_research_slots = 3
 set_convoys = 20
-army_experience = 10
-navy_experience = 10
 recruit_character = KGA_maho
 recruit_character = KGA_miho
 recruit_character = KGA_miho_maho
@@ -94,6 +92,9 @@ recruit_character = KGA_bauer
 recruit_character = KGA_maaru
 recruit_character = KGA_bismark
 recruit_character = KGA_eugen
+recruit_character = KGA_Z1
+recruit_character = KGA_Z3
+recruit_character = KGA_Zeppelin
 
 set_politics = {
 	ruling_party = neutrality

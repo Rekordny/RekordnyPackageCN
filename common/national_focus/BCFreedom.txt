@@ -54,7 +54,15 @@ focus_tree = {
 		relative_position_id = BCF_second_orelans_conference
 		prerequisite = { focus = BCF_second_orelans_conference }
 		available = {
-			has_global_flag = BCF_CIVIL_WAR_END
+			OR = {
+				NOT = {
+					has_global_flag = BCF_CIVIL_WAR_START
+				}
+				AND = {
+					has_global_flag = BCF_CIVIL_WAR_START
+					has_global_flag = BCF_CIVIL_WAR_END
+				}
+			}
 		}
 		bypass = { }
 		

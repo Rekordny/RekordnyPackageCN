@@ -97,7 +97,11 @@ recruit_character = ANZ_pepperoni
 recruit_character = ANZ_carpaccio
 recruit_character = ANZ_saori_takebe
 recruit_character = ANZ_amaretto
-
+recruit_character = ANZ_zara
+recruit_character = ANZ_pola
+recruit_character = ANZ_abruzzi
+recruit_character = ANZ_garibaldi
+recruit_character = ANZ_aquila
 create_equipment_variant = {
 	name = "LA35"	#due to similar design this also covers R-35
 	type = light_tank_chassis_1

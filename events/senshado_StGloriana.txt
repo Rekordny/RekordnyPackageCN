@@ -1,18 +1,103 @@
-add_namespace = StGloriana
+add_namespace = StGloriana_event
+add_namespace = StGloriana_focus
+add_namespace = StGloriana_new
 
+
+#一场遗留的战争
+country_event = {
+	id = StGloriana_new.1
+	title = StGloriana_new.1.t
+	desc = StGloriana_new.1.d
+	picture = GFX_StGloriana_new_1
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_new.1.a
+		set_country_flag = STG_Legacy_war_flag
+	}
+}
+
+#避其锋芒
+country_event = {
+	id = StGloriana_new.2
+	title = StGloriana_new.2.t
+	desc = StGloriana_new.2.d
+	picture = GFX_StGloriana_new_2
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		original_tag = STG
+		has_war_with = ORA
+		has_completed_focus = STG_control_social_media
+		has_country_flag = {
+			flag = STG_Legacy_war_flag 
+			days > 365
+		}
+	}
+	
+	option = {
+		name = StGloriana_new.2.a
+		unlock_national_focus = STG_victocry_in_egypt
+		add_timed_idea = {
+			idea = STG_Failure_Egypt
+			days = 365
+		}
+		white_peace = {
+			tag = ORA
+			message = STG_WP_ORA
+		}
+	}
+}
+
+#爱尔兰西吴王子的白鸟
+country_event = {
+	id = StGloriana_new.3
+	title = StGloriana_new.3.t
+	desc = StGloriana_new.3.d
+	picture = GFX_StGloriana_new_3
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_new.3.a
+		add_ideas = STG_Irish_independence_rebellion
+		WKG = { add_ideas = STG_Chengdu_Berlin_flesh_blood }
+	}
+}
+
+#血腥礼拜(暂无触发)
+country_event = {
+	id = StGloriana_new.4
+	title = StGloriana_new.4.t
+	desc = StGloriana_new.4.d
+	picture = GFX_StGloriana_new_4
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+		name = StGloriana_new.4.a
+		release = WKG
+		declare_war_on = {
+			target = WKG
+			type = civil_war
+		}
+	}
+}
+
+##########################################################################################################################
+#国策事件
 
 #任命财务大臣
 country_event = {
-	id = StGloriana.1
-	title = StGloriana.1.t
-	desc = StGloriana.1.d
+	id = StGloriana_focus.1
+	title = StGloriana_focus.1.t
+	desc = StGloriana_focus.1.d
 
-	picture = GFX_StGloriana_1
+	picture = GFX_StGloriana_focus_1
 
 	is_triggered_only = yes
 
 	option = {
-		name = StGloriana.1.a
+		name = StGloriana_focus.1.a
 		trigger = { STG_assam = { is_advisor = no } }
 		STG_assam = {
 			add_advisor_role = {
@@ -25,9 +110,6 @@ country_event = {
 					traits = { banning_old_school_jokes }
 					on_add = { }
 					on_remove = { }
-					ai_will_do = {
-						factor = 1.000
-					}
 				}
 			}
 		}
@@ -38,7 +120,7 @@ country_event = {
 	}
 	
 	option = {
-		name = StGloriana.1.b
+		name = StGloriana_focus.1.b
 		trigger = { STG_earlGrey = { is_advisor = no } }
 		STG_earlGrey = {
 			add_advisor_role = {
@@ -51,9 +133,6 @@ country_event = {
 					traits = { two_faced_devil_2 }
 					on_add = { }
 					on_remove = { }
-					ai_will_do = {
-						factor = 1.000
-					}
 				}
 			}
 		}
@@ -64,7 +143,7 @@ country_event = {
 	}
 	
 	option = {
-		name = StGloriana.1.c
+		name = StGloriana_focus.1.c
 		trigger = { STG_nilgiri = { is_advisor = no } }
 		STG_nilgiri = {
 			add_advisor_role = {
@@ -77,9 +156,6 @@ country_event = {
 					traits = { unlucky_but_cute }
 					on_add = { }
 					on_remove = { }
-					ai_will_do = {
-						factor = 1.000
-					}
 				}
 			}
 		}
@@ -92,16 +168,16 @@ country_event = {
 
 #任命外交大臣
 country_event = {
-	id = StGloriana.2
-	title = StGloriana.2.t
-	desc = StGloriana.2.d
+	id = StGloriana_focus.2
+	title = StGloriana_focus.2.t
+	desc = StGloriana_focus.2.d
 
-	picture = GFX_StGloriana_2
+	picture = GFX_StGloriana_focus_2
 
 	is_triggered_only = yes
 
 	option = {
-		name = StGloriana.2.a
+		name = StGloriana_focus.2.a
 		trigger = { STG_orangepekoe = { is_advisor = no } }
 		STG_orangepekoe = {
 			add_advisor_role = {
@@ -114,9 +190,6 @@ country_event = {
 					traits = { absolutely_loyal_comedian_2 }
 					on_add = { }
 					on_remove = { }
-					ai_will_do = {
-						factor = 1.000
-					}
 				}
 			}
 		}
@@ -127,7 +200,7 @@ country_event = {
 	}
 	
 	option = {
-		name = StGloriana.2.b
+		name = StGloriana_focus.2.b
 		trigger = { STG_rosehip = { is_advisor = no } }
 		STG_rosehip = {
 			add_advisor_role = {
@@ -140,9 +213,6 @@ country_event = {
 					traits = { challenge_the_fastest }
 					on_add = { }
 					on_remove = { }
-					ai_will_do = {
-						factor = 1.000
-					}
 				}
 			}
 		}
@@ -153,7 +223,7 @@ country_event = {
 	}
 	
 	option = {
-		name = StGloriana.2.c
+		name = StGloriana_focus.2.c
 		trigger = { STG_rukuriri = { is_advisor = no } }
 		STG_rukuriri = {
 			add_advisor_role = {
@@ -166,9 +236,6 @@ country_event = {
 					traits = { pretend_to_be_calm_2 }
 					on_add = { }
 					on_remove = { }
-					ai_will_do = {
-						factor = 1.000
-					}
 				}
 			}
 		}
@@ -181,16 +248,16 @@ country_event = {
 
 #任命国防大臣
 country_event = {
-	id = StGloriana.3
-	title = StGloriana.3.t
-	desc = StGloriana.3.d
+	id = StGloriana_focus.3
+	title = StGloriana_focus.3.t
+	desc = StGloriana_focus.3.d
 
-	picture = GFX_StGloriana_3
+	picture = GFX_StGloriana_focus_focus_3
 
 	is_triggered_only = yes
 
 	option = {
-		name = StGloriana.3.a
+		name = StGloriana_focus.3.a
 		trigger = { STG_assam = { is_advisor = no } }
 		STG_assam = {
 			add_advisor_role = {
@@ -203,9 +270,6 @@ country_event = {
 					traits = { banning_old_school_jokes_2 }
 					on_add = { }
 					on_remove = { }
-					ai_will_do = {
-						factor = 1.000
-					}
 				}
 			}
 		}
@@ -216,7 +280,7 @@ country_event = {
 	}
 	
 	option = {
-		name = StGloriana.3.b
+		name = StGloriana_focus.3.b
 		trigger = { STG_rosehip = { is_advisor = no } }
 		STG_rosehip = {
 			add_advisor_role = {
@@ -229,9 +293,6 @@ country_event = {
 					traits = { challenge_the_fastest_2 }
 					on_add = { }
 					on_remove = { }
-					ai_will_do = {
-						factor = 1.000
-					}
 				}
 			}
 		}
@@ -242,7 +303,7 @@ country_event = {
 	}
 	
 	option = {
-		name = StGloriana.3.c
+		name = StGloriana_focus.3.c
 		trigger = { STG_rukuriri = { is_advisor = no } }
 		STG_rukuriri = {
 			add_advisor_role = {
@@ -255,9 +316,6 @@ country_event = {
 					traits = { pretend_to_be_calm }
 					on_add = { }
 					on_remove = { }
-					ai_will_do = {
-						factor = 1.000
-					}
 				}
 			}
 		}
@@ -270,16 +328,16 @@ country_event = {
 
 #任命内务大臣
 country_event = {
-	id = StGloriana.5
-	title = StGloriana.5.t
-	desc = StGloriana.5.d
+	id = StGloriana_focus.4
+	title = StGloriana_focus.4.t
+	desc = StGloriana_focus.4.d
 
-	picture = GFX_StGloriana_5
+	picture = GFX_StGloriana_focus_4
 
 	is_triggered_only = yes
 
 	option = {
-		name = StGloriana.5.a
+		name = StGloriana_focus.4.a
 		trigger = { STG_orangepekoe = { is_advisor = no } }
 		STG_orangepekoe = {
 			add_advisor_role = {
@@ -292,9 +350,6 @@ country_event = {
 					traits = { absolutely_loyal_comedian }
 					on_add = { }
 					on_remove = { }
-					ai_will_do = {
-						factor = 1.000
-					}
 				}
 			}
 		}
@@ -305,7 +360,7 @@ country_event = {
 	}
 	
 	option = {
-		name = StGloriana.5.b
+		name = StGloriana_focus.4.b
 		trigger = { STG_earlGrey = { is_advisor = no } }
 		STG_earlGrey = {
 			add_advisor_role = {
@@ -318,9 +373,6 @@ country_event = {
 					traits = { two_faced_devil }
 					on_add = { }
 					on_remove = { }
-					ai_will_do = {
-						factor = 1.000
-					}
 				}
 			}
 		}
@@ -331,7 +383,7 @@ country_event = {
 	}
 	
 	option = {
-		name = StGloriana.5.c
+		name = StGloriana_focus.4.c
 		trigger = { STG_nilgiri = { is_advisor = no } }
 		STG_nilgiri = {
 			add_advisor_role = {
@@ -344,9 +396,6 @@ country_event = {
 					traits = { unlucky_but_cute_2 }
 					on_add = { }
 					on_remove = { }
-					ai_will_do = {
-						factor = 1.000
-					}
 				}
 			}
 		}
@@ -357,706 +406,137 @@ country_event = {
 	}
 }
 
-#国民保健法被废除
+#国民保健署法被废除
 country_event = {
-	id = StGloriana.6
-	title = StGloriana.6.t
-	desc = StGloriana.6.d
-	picture = GFX_StGloriana_6
+	id = StGloriana_focus.5
+	title = StGloriana_focus.5.t
+	desc = StGloriana_focus.5.d
+	picture = GFX_StGloriana_focus_5
 	is_triggered_only = yes
 
 	option = {
-		name = StGloriana.6.a
-		hidden_effect = { country_event = { id = StGloriana.7 days = 5 } }
-	}
-}
-
-#工党的不满
-country_event = {
-	id = StGloriana.7
-	title = StGloriana.7.t
-	desc = StGloriana.7.d
-	picture = GFX_StGloriana_7
-	is_triggered_only = yes
-
-	option = {
-		name = StGloriana.7.a
-		set_country_flag = STG_REDUCE_LABOUR_PARTY_POWER
-		hidden_effect = { country_event = { id = StGloriana.8 days = 1 } }
-	}
-
-	option = {
-		name = StGloriana.7.b
-		set_country_flag = STG_REDUCE_WORKER_POWER
-		hidden_effect = { country_event = { id = StGloriana.8 days = 1 } }
+		name = StGloriana_focus.5.a
+		add_to_variable = { var = STG_cairns_economy_effect_var_tax_daily_modifier value = 0.2 }
+		add_to_variable = { var = STG_cairns_economy_effect_var_production_factory_max_efficiency_factor value = -0.1 }
+		add_to_variable = { var = STG_cairns_economy_effect_var_production_factory_efficiency_gain_factor value = -0.1 }
+		custom_effect_tooltip = STG_StGloriana_focus_5_tt
+		hidden_effect = { country_event = { id = StGloriana_event.1 days = 3 } }
 	}
 }
 
 #大罢工
 country_event = {
-	id = StGloriana.8
-	title = StGloriana.8.t
-	desc = StGloriana.8.d
-	picture = GFX_StGloriana_8
+	id = StGloriana_event.1
+	title = StGloriana_event.1.t
+	desc = StGloriana_event.1.d
+	picture = GFX_StGloriana_event_1
 	is_triggered_only = yes
 
 	option = {
-		name = StGloriana.8.a
-		if = { limit = { has_country_flag = STG_REDUCE_WORKER_POWER } add_ideas = STG_worker_great_strike_2 }
-		else = { add_ideas = STG_worker_great_strike_3 }
-		unlock_decision_category_tooltip = stg_worker_and_labor_party
+		name = StGloriana_event.1.a
+		set_country_flag = STG_General_strike_flag
+		activate_mission = STG_General_strike
+		add_ideas = STG_General_strike_1
 	}
 }
 
-#态度:交通设施拨款案
+#罢工结束
 country_event = {
-	id = StGloriana.9
-	title = StGloriana.9.t
-	desc = StGloriana.9.d
-	picture = GFX_StGloriana_9
-	is_triggered_only = yes
+	id = StGloriana_event.2
+	title = StGloriana_event.2.t
+	desc = StGloriana_event.2.d
+	picture = GFX_StGloriana_event_2
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		original_tag = STG
+		has_idea = STG_General_strike_5
+	}
 
 	option = {
-		name = StGloriana.9.a
-		hidden_effect = {
-			random_list = {
-				30 = { add_to_variable = { stg_attitude_value = 3 } }
-				40 = { add_to_variable = { stg_attitude_value = 4 } }
-				30 = { add_to_variable = { stg_attitude_value = 5 } }
-			}
-			country_event = { id = StGloriana.10 days = 15 }
-		}
-		add_timed_idea = {
-			idea = STG_transportation_facilities_project 
-			days = 360
-		}
-		
-	}
-	option = {
-		name = StGloriana.9.b
-		add_political_power = 20
-		hidden_effect = { country_event = { id = StGloriana.10 days = 15 } }
-	}
-}
-
-#态度:广场上的民意领袖
-country_event = {
-	id = StGloriana.10
-	title = StGloriana.10.t
-	desc = StGloriana.10.d
-	picture = GFX_StGloriana_10
-	is_triggered_only = yes
-
-	option = {
-		name = StGloriana.10.a
-		hidden_effect = {
-			random_list = {
-				40 = { add_to_variable = { stg_attitude_value = 1 } }
-				60 = { add_to_variable = { stg_attitude_value = 2 } }
-			}
-			country_event = { id = StGloriana.11 days = 15 }
-		}
-	}
-	option = {
-		name = StGloriana.10.b
-		add_political_power = 30
-		hidden_effect = { country_event = { id = StGloriana.11 days = 15 } }
-	}
-	option = {
-		name = StGloriana.10.c
-		custom_effect_tooltip = stg_tooltip10
-		add_to_variable = { gold = -20 }
-		hidden_effect = { 
-			random_list = {
-				30 = { add_to_variable = { stg_attitude_value = 2 } }
-				25 = { add_to_variable = { stg_attitude_value = 1 } }
-				25 = { add_to_variable = { stg_attitude_value = 0 } }
-				20 = { add_to_variable = { stg_attitude_value = -1 } }
-			}
-			country_event = { id = StGloriana.11 days = 15 } 
-		}
-	}
-	option = {
-		name = StGloriana.10.e
-		add_political_power = -30
-		hidden_effect = { 
-			add_to_variable = { stg_attitude_value = 1 } 
-			country_event = { id = StGloriana.11 days = 15 } 
-		}
-	}
-}
-
-#态度:激进共产主义分子的破坏
-country_event = {
-	id = StGloriana.11
-	title = StGloriana.11.t
-	desc = StGloriana.11.d
-	picture = GFX_StGloriana_11
-	is_triggered_only = yes
-
-	option = {
-		name = StGloriana.11.a
-		add_tech_bonus = {
-			category = industry
-			bonus = 1
-			uses = 1
-		}
-		hidden_effect = {
-			random_list = {
-				30 = { add_to_variable = { stg_attitude_value = 0 } }
-				70 = { add_to_variable = { stg_attitude_value = -1 } }
-			}
-			country_event = { id = StGloriana.12 days = 15 }
-		}
-	}
-	option = {
-		name = StGloriana.11.b
-		129 = {
+		name = StGloriana_event.2.a
+		random_owned_state = {
 			remove_building = {
-				type = infrastructure
-				level = 2
+				type = industrial_complex
+				level = 1
 			}
 		}
-		hidden_effect = { 
-			add_to_variable = { stg_attitude_value = 2 }  
-			country_event = { id = StGloriana.12 days = 15 } 
-		}
-	}
-	option = {
-		name = StGloriana.11.c
-		add_political_power = -30
-		hidden_effect = { 
-			add_to_variable = { stg_attitude_value = 1 }
-			country_event = { id = StGloriana.12 days = 15 } 
-		}
-	}
-	option = {
-		name = StGloriana.11.e
-		hidden_effect = { 
-			random_list = {
-				50 = { add_to_variable = { stg_attitude_value = 2 } }
-				50 = { add_to_variable = { stg_attitude_value = -2 } }
-			}
-			country_event = { id = StGloriana.12 days = 15 } 
-		}
-	}
-}
-
-#态度:增加下议院的工党席位
-country_event = {
-	id = StGloriana.12
-	title = StGloriana.12.t
-	desc = StGloriana.12.d
-	picture = GFX_StGloriana_12
-	is_triggered_only = yes
-
-	option = {
-		name = StGloriana.12.a
-		hidden_effect = {
-			add_popularity = {
-				ideology = communism
-				popularity = 0.1
-			}
-			add_stability = 0.05
-			add_to_variable = { stg_attitude_value = 4 }
-			country_event = { id = StGloriana.13 days = 15 }
-		}
-	}
-	option = {
-		name = StGloriana.12.b
-		hidden_effect = { 
-			add_popularity = {
-				ideology = communism
-				popularity = 0.05
-			}
-			add_to_variable = { stg_attitude_value = 2 }  
-			country_event = { id = StGloriana.13 days = 15 }
-		}
-	}
-	option = {
-		name = StGloriana.12.c
-		hidden_effect = { 
-			country_event = { id = StGloriana.13 days = 15 } 
-		}
-	}
-}
-
-#态度:工人对假期的向往
-country_event = {
-	id = StGloriana.13
-	title = StGloriana.13.t
-	desc = StGloriana.13.d
-	picture = GFX_StGloriana_13
-	is_triggered_only = yes
-
-	option = {
-		name = StGloriana.13.a
-		hidden_effect = {
-			add_to_variable = { stg_attitude_value = 3 }
-			add_timed_idea = {
-				idea = STG_worker_holidays
-				days = 90
-			}
-			country_event = { id = StGloriana.14 days = 15 }
-		}
-	}
-	option = {
-		name = StGloriana.13.b
-		add_political_power = 50
-		hidden_effect = { 
-			add_to_variable = { stg_attitude_value = -1 }  
-			country_event = { id = StGloriana.14 days = 15 } 
-		}
-	}
-	option = {
-		name = StGloriana.13.c
-		custom_effect_tooltip = stg_tooltip10 
-		add_to_variable = { gold = -20 }
-		hidden_effect = { 
-			add_to_variable = { stg_attitude_value = 1 }  
-			country_event = { id = StGloriana.14 days = 15 } 
-		}
-	}
-}
-
-#态度:新的骑士勋章
-country_event = {
-	id = StGloriana.14
-	title = StGloriana.14.t
-	desc = StGloriana.14.d
-	picture = GFX_StGloriana_14
-	is_triggered_only = yes
-
-	option = {
-		name = StGloriana.14.a
-		hidden_effect = {
-			add_timed_idea = {
-				idea = STG_dissatisfaction_from_nobility
-				days = 365
-			}
-			add_to_variable = { stg_attitude_value = 4 }
-			if = {
-				limit = { check_variable = { stg_attitude_value > 10 } }
-				country_event = { id = StGloriana.15 days = 5 }
-			}
-			else = {
-				country_event = { id = StGloriana.16 days = 5 }
+		random_owned_state = {
+			remove_building = {
+				type = industrial_complex
+				level = 1
 			}
 		}
-	}
-	option = {
-		name = StGloriana.14.b
-		add_political_power = 100
-		hidden_effect = { 
-			add_to_variable = { stg_attitude_value = 1 }
-			if = {
-				limit = { communism > 0.6 }
-				country_event = { id = StGloriana.16 days = 5 }
-			}
-			else_if = {
-				limit = { check_variable = { stg_attitude_value > 10 } }
-				country_event = { id = StGloriana.15 days = 5 }
-			}
-			else = {
-				country_event = { id = StGloriana.16 days = 5 }
+		random_owned_state = {
+			remove_building = {
+				type = industrial_complex
+				level = 1
 			}
 		}
-	}
-}
-
-#态度：工人接受了我们
-country_event = {
-	id = StGloriana.15
-	title = StGloriana.15.t
-	desc = StGloriana.15.d
-	picture = GFX_StGloriana_15
-	is_triggered_only = yes
-
-	option = {
-		name = StGloriana.15.a
-		hidden_effect = {
-			set_country_flag = STG_WORKER_ACCEPT_US
-		}
-	}
-}
-
-#态度：与共产主义共存
-country_event = {
-	id = StGloriana.16
-	title = StGloriana.16.t
-	desc = StGloriana.16.d
-	picture = GFX_StGloriana_16
-	is_triggered_only = yes
-
-	option = {
-		name = StGloriana.16.a
-		hidden_effect = {
-			set_country_flag = STG_LIVE_WITH_COMMINISTS
-		}
-	}
-}
-
-#桑达斯局势的剑拔弩张
-country_event = {
-	id = StGloriana.17
-	title = StGloriana.17.t
-	desc = StGloriana.17.d
-	picture = GFX_StGloriana_17
-	is_triggered_only = yes
-
-	option = {
-		name = StGloriana.17.a
-		
-		hidden_effect = {
-			
-		}
-	}
-}
-
-#圣葛罗莉安娜在欧陆的国家利益
-country_event = {
-	id = StGloriana.18
-	title = StGloriana.18.t
-	desc = StGloriana.18.d
-	picture = GFX_StGloriana_18
-	is_triggered_only = yes
-
-	option = {
-		name = StGloriana.18.a
-		KGA = { country_event = { id = StGloriana.19 days = 1 } }
-		BCF = { country_event = { id = StGloriana.19 days = 1 } }
-		WAF = { country_event = { id = StGloriana.19 days = 1 } }
-		hidden_effect = {
-			
-		}
-	}
-}
-
-#KGA，BCF，WAF:圣葛罗莉安娜重返欧陆
-country_event = {
-	id = StGloriana.19
-	title = StGloriana.19.t
-	desc = StGloriana.19.d
-	picture = GFX_StGloriana_19
-	is_triggered_only = yes
-
-	option = {
-		name = StGloriana.19.a
-		hidden_effect = {
-			
-		}
-	}
-	option = {
-		name = StGloriana.19.b
-		hidden_effect = {
-			
-		}
-	}
-	option = {
-		name = StGloriana.19.c
-		hidden_effect = {
-			
-		}
-	}
-}
-
-#黑森峰占领区工业转移事宜
-country_event = {
-	id = StGloriana.20
-	title = StGloriana.20.t
-	desc = StGloriana.20.d
-	picture = GFX_StGloriana_20
-	is_triggered_only = yes
-
-	option = {
-		name = StGloriana.20.a
-		unlock_decision_tooltip = stg_transfer_kga_industry_mainland
-		hidden_effect = {
-			set_country_flag = STG_TRANSFER_KGA_INDUSTRY_0
-		}
-	}
-	option = {
-		name = StGloriana.20.b
-		unlock_decision_tooltip = stg_transfer_kga_industry_waf
-		hidden_effect = {
-			set_country_flag = STG_TRANSFER_KGA_INDUSTRY_1
-		}
-	}
-	option = {
-		name = StGloriana.20.c
-		hidden_effect = {
-			
-		}
-	}
-}
-
-#站稳脚跟
-country_event = {
-	id = StGloriana.21
-	title = StGloriana.21.t
-	desc = StGloriana.21.d
-	picture = GFX_StGloriana_21
-	is_triggered_only = yes
-
-	option = {
-		name = StGloriana.21.a
-		hidden_effect = {
-			country_event = { id = StGloriana.22 days = 22 }
-		}
-	}
-}
-
-#站稳脚跟：经济帮扶
-country_event = {
-	id = StGloriana.22
-	title = StGloriana.22.t
-	desc = StGloriana.22.d
-	picture = GFX_StGloriana_22
-	is_triggered_only = yes
-
-	option = {
-		name = StGloriana.22.a
-		custom_effect_tooltip = stg_tooltip15
-		add_to_variable = { gold = -50 }
-		trigger = { check_variable = { gold > 49.9 } }
-		hidden_effect = {
-			country_event = { id = StGloriana.23 days = 25 }
-		}
-	}
-	option = {
-		name = StGloriana.22.b
-		add_political_power = -100
-		hidden_effect = {
-			random_list = {
-				75 = { country_event = { id = StGloriana.23 days = 20 } }
-				25 = { country_event = { id = StGloriana.27 days = 100 } }
-			}
-			
-		}
-	}
-	option = {
-		name = StGloriana.22.c
-		hidden_effect = {
-			random_list = {
-				50 = { country_event = { id = StGloriana.23 days = 20 } }
-				50 = { country_event = { id = StGloriana.27 days = 100 } }
+		random_owned_state = {
+			remove_building = {
+				type = industrial_complex
+				level = 1
 			}
 		}
-	}
-}
-
-#站稳脚跟：政府
-country_event = {
-	id = StGloriana.23
-	title = StGloriana.23.t
-	desc = StGloriana.23.d
-	picture = GFX_StGloriana_23
-	is_triggered_only = yes
-
-	option = {
-		name = StGloriana.23.a
-		add_political_power = 60
-		hidden_effect = {
-			random_list = {
-				40 = { country_event = { id = StGloriana.24 days = 20 } }
-				60 = { country_event = { id = StGloriana.26 days = 70 } }
+		random_owned_state = {
+			remove_building = {
+				type = industrial_complex
+				level = 1
 			}
 		}
-	}
-	option = {
-		name = StGloriana.23.b
-		add_political_power = -60
-		hidden_effect = {
-			random_list = {
-				75 = { country_event = { id = StGloriana.24 days = 20 } }
-				25 = { country_event = { id = StGloriana.26 days = 70 } }
+		random_owned_state = {
+			remove_building = {
+				type = industrial_complex
+				level = 1
 			}
 		}
-	}
-	option = {
-		name = StGloriana.23.c
-		add_political_power = 20
-		hidden_effect = {
-			country_event = { id = StGloriana.26 days = 70 }
-		}
+		add_to_variable = { var = STG_cairns_economy_effect_var_tax_daily_modifier value = 0.15 }
+		add_to_variable = { var = STG_cairns_economy_effect_var_production_factory_max_efficiency_factor value = -0.05 }
+		add_to_variable = { var = STG_cairns_economy_effect_var_production_factory_efficiency_gain_factor value = -0.05 }
+		custom_effect_tooltip = STG_StGloriana_event_2_tt
 	}
 }
 
-#站稳脚跟：军事
+#罢工结束
 country_event = {
-	id = StGloriana.24
-	title = StGloriana.24.t
-	desc = StGloriana.24.d
-	picture = GFX_StGloriana_24
+	id = StGloriana_event.3
+	title = StGloriana_event.3.t
+	desc = StGloriana_event.3.d
+	picture = GFX_StGloriana_event_3
 	is_triggered_only = yes
 
 	option = {
-		name = StGloriana.24.a
-		hidden_effect = {
-			country_event = { id = StGloriana.25 days = 30 }
-		}
-	}
-	option = {
-		name = StGloriana.24.b
-		army_experience = 20
-		hidden_effect = {
-			country_event = { id = StGloriana.26 days = 30 }
-		}
-	}
-	option = {
-		name = StGloriana.24.c
-		add_to_variable = { gold = 45 }
-		add_stability = -0.03
-        custom_effect_tooltip = stg_tooltip16
-		hidden_effect = {
-			country_event = { id = StGloriana.26 days = 30 }
-		}
+		name = StGloriana_event.3.a
+		add_stability = 0.05
 	}
 }
 
-#站稳脚跟：成功吞并
+#圣葛罗莉安娜的红茶加工厂倒闭
 country_event = {
-	id = StGloriana.25
-	title = StGloriana.25.t
-	desc = StGloriana.25.d
-	picture = GFX_StGloriana_25
+	id = StGloriana_focus.6
+	title = StGloriana_focus.6.t
+	desc = StGloriana_focus.6.d
+	picture = GFX_StGloriana_focus_6
 	is_triggered_only = yes
 
 	option = {
-		name = StGloriana.25.a
-		WAF = {
-			transfer_state = 6
-			transfer_state = 7
-			transfer_state = 8
-			transfer_state = 34
-			transfer_state = 34
-			transfer_state = 36
-		}
-		set_country_flag = STG_SUCEESS_PUPPET_WAF
-		hidden_effect = {
-			news_event = senshado_news.12
-		}
-	}
-}
-
-#站稳脚跟：成功傀儡
-country_event = {
-	id = StGloriana.26
-	title = StGloriana.26.t
-	desc = StGloriana.26.d
-	picture = GFX_StGloriana_26
-	is_triggered_only = yes
-
-	option = {
-		name = StGloriana.26.a
-		puppet = WAF
-		set_country_flag = STG_SUCEESS_PUPPET_WAF
-		hidden_effect = {
-			news_event = senshado_news.12
-		}
-	}
-}
-
-#站稳脚跟：失败
-country_event = {
-	id = StGloriana.27
-	title = StGloriana.27.t
-	desc = StGloriana.27.d
-	picture = GFX_StGloriana_27
-	is_triggered_only = yes
-
-	option = {
-		name = StGloriana.27.a
-		create_wargoal = {
-			target = WAF
-			type = annex_everything
-		}
-		hidden_effect = {
-		}
-	}
-}
-
-#共产主义者的反抗内战
-country_event = {
-	id = StGloriana.28
-	title = StGloriana.28.t
-	desc = StGloriana.28.d
-	picture = GFX_StGloriana_28
-	is_triggered_only = yes
-
-	option = {
-		name = StGloriana.28.a
-		if = { limit = { has_country_flag = STG_REDUCE_LABOUR_PARTY_POWER }
-			start_civil_war = {
-				ideology = communism
-				size = 0.45
-				only_own_territory = no
-				capital = 119
-				states = { 
-					135 113 119 134 120 136 133 121
-				}
-				keep_unit_leaders = {
-					1047 1048 1049 1050 1052 1053
-				}
-				keep_political_leader = no
+		name = StGloriana_focus.6.a
+		random_owned_state = {
+			remove_building = {
+				type = industrial_complex
+				level = 1
 			}
-			news_event = { id = senshado_news.10 }
 		}
-		else = {
-			start_civil_war = {
-				ideology = communism
-				size = 0.55
-				only_own_territory = no
-				capital = 119
-				states = { 
-					135 113 119 134 120 136 133 121 131
-				}
-				keep_unit_leaders = {
-					1047 1048 1049 1050 1052 1053
-				}
-				keep_political_leader = no
+		random_owned_state = {
+			remove_building = {
+				type = industrial_complex
+				level = 1
 			}
-			news_event = { id = senshado_news.10 }
 		}
-	}
-}
-
-#工党的威胁已经消散
-country_event = {
-	id = StGloriana.29
-	title = StGloriana.29.t
-	desc = StGloriana.29.d
-	picture = GFX_StGloriana_29
-	is_triggered_only = yes
-
-	option = {
-		name = StGloriana.29.a
-		remove_ideas = STG_rise_of_the_labor_party_0
-	}
-}
-
-#到期归还KGA领土
-country_event = {
-	id = StGloriana.30
-	title = StGloriana.30.t
-	desc = StGloriana.30.d
-	picture = GFX_StGloriana_30
-	is_triggered_only = yes
-
-	option = {
-		name = StGloriana.30.a
-	}
-}
-
-#KGA:圣葛罗莉安娜归还租借领土
-country_event = {
-	id = StGloriana.31
-	title = StGloriana.31.t
-	desc = StGloriana.31.d
-	picture = GFX_StGloriana_31
-	is_triggered_only = yes
-
-	option = {
-		name = StGloriana.31.a
+		add_to_variable = { var = STG_cairns_economy_effect_var_consumer_goods_factor value = -0.05 }
+		add_to_variable = { var = STG_cairns_economy_effect_var_stability_factor value = -0.05 }
+		custom_effect_tooltip = STG_StGloriana_focus_6_tt
+		hidden_effect = { country_event = { id = StGloriana_event.4 days = 180 } }
 	}
 }

@@ -1,0 +1,14 @@
+#凯恩斯经济后效
+STG_cairns_economy_effect = {
+	icon = GFX_idea_STG_cairns_economy_effect
+	enable = { always = yes }
+	
+	production_speed_rail_way_factor = STG_cairns_economy_effect_var_production_speed_rail_way_factor
+	production_speed_infrastructure_factor = STG_cairns_economy_effect_var_production_speed_infrastructure_factor
+	production_factory_max_efficiency_factor = STG_cairns_economy_effect_var_production_factory_max_efficiency_factor 
+	production_factory_efficiency_gain_factor = STG_cairns_economy_effect_var_production_factory_efficiency_gain_factor 
+	tax_daily_modifier = STG_cairns_economy_effect_var_tax_daily_modifier
+	consumer_goods_factor = STG_cairns_economy_effect_var_consumer_goods_factor 
+		
+	stability_factor = STG_cairns_economy_effect_var_stability_factor
+}

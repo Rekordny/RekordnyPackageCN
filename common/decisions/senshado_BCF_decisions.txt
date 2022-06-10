@@ -23,6 +23,78 @@ bcf_missions = {
 }
 
 bcf_diplomatic = {
+	BCF_core_Piemonte = {
+		allowed = { 
+			tag = BCF 
+		}
+		visible = { 
+			tag = BCF
+			owns_state = 158
+			controls_state = 158
+		}
+		cost = 50
+		days_remove = 90
+		available = {
+			158 = {
+				compliance = 40
+			}
+		}
+		complete_effect = {
+			158 = {
+				remove_claim_by = BCF
+				add_core_of = BCF
+			}
+		}
+	}
+	BCF_core_Avalon = {
+		allowed = { 
+			tag = BCF 
+		}
+		visible = { 
+			tag = BCF
+			owns_state = 158
+			controls_state = 158
+		}
+		cost = 50
+		days_remove = 90
+		available = {
+			158 = {
+				compliance = 40
+			}
+		}
+		complete_effect = {
+			158 = {
+				remove_claim_by = BCF
+				add_core_of = BCF
+			}
+		}
+	}
+	BCF_reinforce_rheinland= {
+		allowed = { 
+			tag = BCF 
+		}
+		visible = { 
+			tag = BCF
+			owns_state = 42
+			controls_state = 42
+		}
+		cost = 60
+		days_remove = 60
+		available = {
+		}
+		complete_effect = {
+			42 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = {
+						limit_to_victory_point > 0
+					}
+				}
+				add_compliance = 0.3
+			}
+		}
+	}
 	bcf_seek_support_from_stg = {
 		allowed = { tag = BCF }
 		visible = { OR = { AND = { has_country_flag = BCF_CIVIL_WAR_START NOT = { has_country_flag = BCF_CIVIL_WAR_END } has_country_flag = STG_WILL_HELP } AND = { is_ai = no is_debug = yes } } }
@@ -247,6 +319,82 @@ bcf_diplomatic = {
 }
 
 bcf_government = {
+	BCF_lower_minimum_wage = {
+		allowed = { 
+			tag = BCF 
+		}
+		visible = { 
+			tag = BCF
+			OR = {
+				has_idea = BCF_happy_worker_3
+				has_idea = BCF_happy_worker_2
+			}
+		}
+		cost = 25
+		days_remove = 0
+		available = {
+
+		}
+		complete_effect = {
+			add_stability = -0.05
+			if = {
+				limit = {
+					has_idea = BCF_happy_worker_3
+				}
+				swap_ideas = {
+					remove_idea = BCF_happy_worker_3
+					add_idea = BCF_happy_worker_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = BCF_happy_worker_2
+				}
+				swap_ideas = {
+					remove_idea = BCF_happy_worker_2
+					add_idea = BCF_happy_worker_1
+				}
+			}
+		}
+	}
+	BCF_increase_minimum_wage = {
+		allowed = { 
+			tag = BCF 
+		}
+		visible = { 
+			tag = BCF
+			OR = {
+				has_idea = BCF_happy_worker_1
+				has_idea = BCF_happy_worker_2
+			}
+		}
+		cost = 25
+		days_remove = 0
+		available = {
+
+		}
+		complete_effect = {
+			add_stability = -0.05
+			if = {
+				limit = {
+					has_idea = BCF_happy_worker_1
+				}
+				swap_ideas = {
+					remove_idea = BCF_happy_worker_1
+					add_idea = BCF_happy_worker_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = BCF_happy_worker_2
+				}
+				swap_ideas = {
+					remove_idea = BCF_happy_worker_2
+					add_idea = BCF_happy_worker_3
+				}
+			}
+		}
+	}
 	bcf_landing_exercise = {
 		allowed = { tag = BCF }
 		visible = { OR = { has_completed_focus = BCF_landing_exercise AND = { is_ai = no is_debug = yes } } }
@@ -721,3 +869,365 @@ bcf_school_factional_strife = {
 
 
 } 
+
+BCF_support_factions = {
+	BCF_consolidate_marie_authority = {
+		allowed = { 
+			tag = BCF 
+		}
+		visible = { 
+			tag = BCF
+		}
+		cost = 30
+		available = { 
+			has_country_leader = {
+				character = BCF_marie
+				ruling_only = yes
+			}
+		}
+		days_remove = 30
+		complete_effect = {
+			set_temp_variable = {
+				marie_support_change = 5
+			}
+			Update_BCF_party_support = yes
+		}
+	}
+	BCF_consolidate_andou_authority = {
+		allowed = { 
+			tag = BCF 
+		}
+		visible = { 
+			tag = BCF
+		}
+		cost = 30
+		available = { 
+			has_country_leader = {
+				character = BCF_andou
+				ruling_only = yes
+			}
+		}
+		days_remove = 30
+		complete_effect = {
+			set_temp_variable = {
+				andou_support_change = 5
+			}
+			Update_BCF_party_support = yes
+		}
+	}
+	BCF_consolidate_oshida_authority = {
+		allowed = { 
+			tag = BCF 
+		}
+		visible = { 
+			tag = BCF
+		}
+		cost = 30
+		available = { 
+			has_country_leader = {
+				character = BCF_oshida
+				ruling_only = yes
+			}
+		}
+		days_remove = 30
+		complete_effect = {
+			set_temp_variable = {
+				oshida_support_change = 5
+			}
+			Update_BCF_party_support = yes
+		}
+	}
+	BCF_faction_debate = {
+		allowed = { 
+			tag = BCF 
+		}
+		visible = { 
+			tag = BCF
+		}
+		cost = 0
+		days_re_enable = 30
+		available = {
+		}
+		complete_effect = {
+			random_list = {
+				20 = {
+					set_temp_variable = {
+						current_party_support_change = 4
+					}
+					Update_BCF_party_support = yes
+				}
+				50 = {
+					set_temp_variable = {
+						current_party_support_change = 2
+					}
+					Update_BCF_party_support = yes
+				}
+				20 = {
+					set_temp_variable = {
+						current_party_support_change = -1
+					}
+					Update_BCF_party_support = yes
+				}
+				10 = {
+					set_temp_variable = {
+						current_party_support_change = -3
+					}
+					Update_BCF_party_support = yes
+				}
+			}
+		}
+	}
+	BCF_student_union_speech = {
+		allowed = { 
+			tag = BCF 
+		}
+		visible = { 
+			tag = BCF
+		}
+		cost = 30
+		days_re_enable = 120
+		available = {
+		}
+		complete_effect = {
+			add_stability = 0.02
+			set_temp_variable = {
+				current_party_support_change = 3
+			}
+			set_temp_variable = {
+				other_party_support_change = -3
+			}
+			Update_BCF_party_support = yes
+		}
+	}
+	BCF_improve_school_together = {
+		allowed = { 
+			tag = BCF 
+		}
+		visible = { 
+			tag = BCF
+		}
+		cost = 15
+		days_re_enable = 60
+		days_remove = 10
+		available = {
+			has_country_leader = {
+				character = BCF_marie
+				ruling_only = yes
+			}
+		}
+		complete_effect = {
+			add_war_support = 0.02
+			set_temp_variable = {
+				marie_support_change = 3
+			}
+			Update_BCF_party_support = yes
+		}
+	}
+	BCF_protest_for_unfair_education = {
+		allowed = { 
+			tag = BCF 
+		}
+		visible = { 
+			tag = BCF
+		}
+		cost = 15
+		days_re_enable = 60
+		days_remove = 3
+		available = {
+			has_country_leader = {
+				character = BCF_andou
+				ruling_only = yes
+			}
+			NOT = {
+				has_global_flag = BCF_CIVIL_WAR_START
+			}
+		}
+		complete_effect = {
+			add_stability = -0.03
+			set_temp_variable = {
+				current_party_support_change = 6
+			}
+			Update_BCF_party_support = yes
+		}
+	}
+	BCF_encourage_fair_education = {
+		allowed = { 
+			tag = BCF 
+		}
+		visible = { 
+			tag = BCF
+		}
+		cost = 15
+		days_re_enable = 90
+		days_remove = 30
+		available = {
+			has_country_leader = {
+				character = BCF_andou
+				ruling_only = yes
+			}
+			has_global_flag = BCF_CIVIL_WAR_END
+		}
+		complete_effect = {
+			add_command_power = 7
+			add_war_support = 0.02
+			set_temp_variable = {
+				current_party_support_change = 4
+			}
+			Update_BCF_party_support = yes
+		}
+	}
+	BCF_expel_enemy_party = {
+		allowed = { 
+			tag = BCF 
+		}
+		visible = { 
+			tag = BCF
+		}
+		cost = 50
+		days_remove = 15
+		available = {
+			OR = {
+				has_country_leader = {
+					character = BCF_andou
+					ruling_only = yes
+				}
+				has_country_leader = {
+					character = BCF_oshida
+					ruling_only = yes
+				}
+			}
+			has_global_flag = BCF_CIVIL_WAR_START
+		}
+		complete_effect = {
+			add_stability = -0.1
+			set_temp_variable = {
+				current_party_support_change = 20
+			}
+			Update_BCF_party_support = yes
+		}
+	}
+	BCF_weaken_faction_struggle = {
+		allowed = { 
+			tag = BCF 
+		}
+		visible = { 
+			tag = BCF
+			OR = {
+				has_idea = BCF_faction_struggle_4
+				has_idea = BCF_faction_struggle_3
+				has_idea = BCF_faction_struggle_2
+				has_idea = BCF_faction_struggle_1
+				has_idea = BCF_faction_struggle_0
+			}
+		}
+		cost = 0
+		custom_cost_trigger = {
+			set_temp_variable = {
+				current_party_support_require = 10
+			}
+			check_BCF_party_support_amount = yes
+		}
+		custom_cost_text = BCF_weaken_faction_struggle_cost_text
+		days_remove = 100
+		available = {
+
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_idea = BCF_faction_struggle_4
+				}
+				swap_ideas = {
+					remove_idea = BCF_faction_struggle_4
+					add_idea = BCF_faction_struggle_3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = BCF_faction_struggle_3
+				}
+				swap_ideas = {
+					remove_idea = BCF_faction_struggle_3
+					add_idea = BCF_faction_struggle_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = BCF_faction_struggle_2
+				}
+				swap_ideas = {
+					remove_idea = BCF_faction_struggle_2
+					add_idea = BCF_faction_struggle_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = BCF_faction_struggle_1
+				}
+				swap_ideas = {
+					remove_idea = BCF_faction_struggle_1
+					add_idea = BCF_faction_struggle_0
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = BCF_faction_struggle_0
+				}
+				remove_ideas = BCF_faction_struggle_0
+			}
+		}
+	}
+
+
+}
+
+bcf_warfare = {
+	BCF_fight_for_france = {
+		allowed = { 
+			tag = BCF 
+		}
+		visible = { 
+			tag = BCF
+			any_enemy_country = {
+				is_major = yes
+			}
+		}
+		cost = 50
+		days_remove = 0
+		available = {
+			OR = {
+				surrender_progress > 0.5
+				NOT = {
+					controls_state = 16
+				}
+			}
+		}
+		complete_effect = {
+			add_ideas = BCF_fight_to_last_one
+		}
+	}
+	BCF_war_with_STG = {
+		allowed = { 
+			tag = BCF 
+		}
+		visible = { 
+			tag = BCF
+			has_war_with = STG
+		}
+		cost = 50
+		days_remove = 7
+		available = {
+			OR = {
+				has_completed_focus = BCF_beyond_napoleon
+				has_completed_focus = BCF_liberate_britain
+				has_completed_focus = BCF_defeat_an_old_enemy
+			}
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = BCF_war_with_STG
+				days = 120
+			}
+		}
+	}
+}

@@ -219,3 +219,8 @@ BWA = {
 	color = rgb { 161 103 28 }
 	color_ui = rgb { 161 103 28 }
 }
+
+WKG = {
+	color = rgb { 10 100 70 }
+	color_ui = rgb { 10 100 70 }
+}

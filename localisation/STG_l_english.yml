@@ -1,21 +1,16 @@
-﻿l_english:
-
- #####MOD#####
-#focus
-
- #政治
+﻿l_english: 
  STG_winning_party_united_college:0 "The United College Party won the election"
- STG_winning_party_united_college_desc:0 "The continued inaction of the old parties in the face of Labour and national discontent has led to the defeat of the parties in the new general election. With the Campus United Party, represented by St. Gloriana's School, winning the general election, where will Darjeeling lead us as the leader of the Senshado political party?"
- STG_appointment_finance_minister:0 "Appointment of the Finance Minister"
- STG_appointment_finance_minister_desc:0 "With the current decline in Keynesian efficacy and the imbalance in government revenues and expenditures, the appointment of a new finance minister is a necessary choice."
+ STG_winning_party_united_college_desc:0 "The continued inaction of the old parties in the face of Labour and national discontent has led to the defeat of the parties in the new general election. With the Campus United Party, represented by St. Gloriana's School, winning the general election, where will Darjeeling lead us as the leader of the Chariot Road party?"
+ STG_appointment_finance_minister:0 "Appointment of Finance Minister"
+ STG_appointment_finance_minister_desc:0 "The appointment of a new finance minister is a necessary choice given the current decline in Keynesian efficacy and the government's imbalance of revenues and expenditures."
  STG_appointment_foreign_minister:0 "Appointing a foreign minister"
- STG_appointment_foreign_minister_desc:0 "The appointment of a new foreign minister is a necessary choice in the face of the fractured Senshado coalition, and Pravda High School's control of Central Asia, and the rise of Kuromorimine."
- STG_appointment_secretary_defense:0 "Appointment of a defense minister"
+ STG_appointment_foreign_minister_desc:0 "The appointment of a new foreign minister is a necessary choice in the face of the fragmentation of the Chariot Road Alliance, and Truth High School's control of Central Asia, and the rise of Hessian Peak."
+ STG_appointment_secretary_defense:0 "Appoint a Minister of Defense"
  STG_appointment_secretary_defense_desc:0 "As the world situation tends to destabilize, the demands of St. Gloriana's defense are growing by the day."
  STG_appointment_minister_interior:0 "Appointment of the Minister of the Interior"
  STG_appointment_minister_interior_desc:0 "The Campus United Party, a new political party with extremely unstable political roots, is a necessary choice to select a new interior minister."
  STG_first_darjeeling_cabinet:0 "The first Darjeeling cabinet"
- STG_first_darjeeling_cabinet_desc:0 "At last our new cabinet has been formed successfully, and I believe that our current government can lead Anglo-Jewish to a bright future."
+ STG_first_darjeeling_cabinet_desc:0 "At last our new cabinet has been formed successfully, and I believe that our present government can lead Anglia to sail to a bright future."
  
  
  STG_repeal_the_national_health_service_act:0 "Repeal the NHS Act"
@@ -27,9 +22,9 @@
  STG_privatized_state_owned:0 "Privatized state-owned enterprises"
  STG_privatized_state_owned_desc:0 "Selling the rights to operate the business assets we have on hand to capitalists and entrepreneurs could alleviate the current pressure on government operations while covering some of the fiscal deficit."
  STG_foreign_investment_absorption:0 "Absorb foreign investment"
- STG_foreign_investment_absorption_desc:0 "Absorbing foreign investment to make up for the hollowing out of our market would help SaintGloriana get back to being the factory of the world."
+ STG_foreign_investment_absorption_desc:0 "Absorbing foreign investment to make up for the hollowing out of our market would help Santa Gloriana get back to being the factory of the world."
  STG_abandon_keynesianism:0 "Abandon Keynesianism"
- STG_abandon_keynesianism_desc:0 "Only by abandoning Keynesianism can the current gradual hollowing out of industry be solved once and for all, a far-sighted decision that will solve an invisible but devastating economic disease in the long run."
+ STG_abandon_keynesianism_desc:0 "Only the abandonment of Keynesianism can completely solve the current problem of the gradual hollowing out of industry, a far-sighted decision that will solve an invisible but devastating economic disease in the long run."
  
  STG_control_social_media:0 "Further control of the media"
  STG_control_social_media_desc:0 "The news media has always been a good tool for controlling public opinion, and by controlling the media, you can control public opinion."
@@ -41,7 +36,7 @@
  STG_eliminate_labour_party_desc:0 "It is time to sweep the Labour Party into the dustbin of history as the most unstable piece of rust in the social system."
  
  STG_Strengthen_allies:0 "Strengthen the allies"
- STG_Strengthen_allies_desc:0 "In the face of pressure from the world now we need to further unite the Senshado alliance instead of going our separate ways as we have done before."
+ STG_Strengthen_allies_desc:0 "In the face of pressure from the world now we need to further unite the Chariot Road Alliance instead of going our separate ways as before."
  STG_Strengthen_MAP:0 "Strengthen [MAP.GetName]"
  STG_Strengthen_MAP_desc:0 ""
  STG_Strengthen_KFA:0 "Strengthen[KFA.GetName]"
@@ -63,17 +58,17 @@
  STG_interests_in_europe:0 "Return to Europe"
  STG_interests_in_europe_desc:0 "Europa's current turmoil is the best opportunity for us to return to Europa, it's time to do something about it."
  STG_protect_waffle_academy:0 "Protect the waffle academy"
- STG_protect_waffle_academy_desc:0 "In the face of the growing power of Germany under Kuromorimine and France under BC, who have their eyes on the Waffle Academy, it is urgent to protect our allies, and it is imperative to compress the expansion space of Kuromorimine and France to preserve our interests in Europe interests."
- STG_transfer_kga_industry:0 "Transfer Kuromorimine industry"
- STG_transfer_kga_industry_desc:0 "Kuromorimine is currently insolvent and whether intentionally or not, they are unlikely to give us a single pound and we must transfer their industry to fill the gap."
+ STG_protect_waffle_academy_desc:0 "In the face of the growing power of Germany under Hessefon and France under BC, their eyes are on the Waffle Academy, it is urgent to protect our allies, and it is imperative to compress the expansion space of Hessefon and France to preserve our interests in Europe."
+ STG_transfer_kga_industry:0 "Transfer Hessian Peak Industries"
+ STG_transfer_kga_industry_desc:0 "Hessian Peak is currently insolvent and whether intentionally or not, they are unlikely to give us a single pound and we must transfer their industry to fill this void."
  STG_stand_firm:0 "Stand firm"
  STG_stand_firm_desc:0 "In order to better withstand the dual pressure of Germany and France, we propose to merge Waffle High School with St. Gloriana."
  
  STG_Get_rid_shadow:0 "Get rid of the shadow"
  STG_Get_rid_shadow_desc:0 ""
  STG_war_and_love_by_fair_means_or_foul:0 "War and love by unscrupulous people"
- STG_war_and_love_by_fair_means_or_foul_desc:0 "St. Gloriana had a famous saying love and war by any means, today Darjeeling practiced it perfectly and I believe we will win again under her leadership."
- STG_senshado_and_chivalry:0 "Senshado and the Chivalric Way"
+ STG_war_and_love_by_fair_means_or_foul_desc:0 "St. Gloriana had a famous saying love and war by any means, today Darjeeling practiced it perfectly, I believe we will win again under her leadership."
+ STG_senshado_and_chivalry:0 "The Chariot Path and the Knight Path"
  STG_senshado_and_chivalry_desc:0 ""
  STG_Spectators_and_spectators:0 "spectators and spectators"
  STG_Spectators_and_spectators_desc:0 ""
@@ -91,31 +86,31 @@
  STG_Independent_province_Hanover_desc:0 ""
  STG_Tea_and_leaves:0 "Tea and Leaves"
  STG_Tea_and_leaves_desc:0 ""
- STG_commonwealth_alliance:0 "Commonwealth Alliance"
+ STG_commonwealth_alliance:0 "Commonwealth alliance"
  STG_commonwealth_alliance_desc:0 ""
  
  STG_Pointing_Paris:0 "Pointing the sword at Paris"
  STG_Pointing_Paris_desc:0 ""
  
- STG_Restoration_dual_constitutional_monarchy:0 "Restoration Dual Constitutional Monarchy"
+ STG_Restoration_dual_constitutional_monarchy:0 "Restoration of the constitutional binary monarchy"
  STG_Restoration_dual_constitutional_monarchys_desc:0 ""
  STG_Restoration_the_kingdom_of_Great_Britain:0 "Restoration of the Kingdom of Great Britain"
- STG_Restoration_the_kingdom_of_Great_Britain_desc:0 ""
+ STG_Restoration_of_the_kingdom_of_Great_Britain_desc:0 ""
  STG_Marquis_Brunswick:0 "Marquis of Brunswick"
  STG_Marquis_Brunswick_desc:0 ""
  STG_Marquis_Burgundy:0 "Marquis of Burgundy"
  STG_Marquis_Burgundy_desc:0 ""
- STG_Archduke_shirachita:0 "Archduke Shirachita"
+ STG_Archduke_shirachita:0 "Grand Duke of Shirachita"
  STG_Archduke_shirachita_desc:0 ""
  
  STG_Selective_Parliament:0 "Selective Parliament"
  STG_Selective_Parliament_desc:0 ""
- STG_Dispel_shadow_cabinet:0 "Dispel Shadow Cabinet"
+ STG_Dispel_shadow_cabinet:0 "Dispel the shadow cabinet"
  STG_Dispel_shadow_cabinet_desc:0 ""
- STG_Strengthening_government:0 "Strengthening Government"
+ STG_Strengthening_government:0 "Strengthen the government"
  STG_Strengthening_government_desc:0 ""
- STG_Specialized_sensado_Education:0 "Specialized Tank Education"
- STG_Specialized_sensado_Education_desc:0 ""
+ STG_Specialized_senshado_Education:0 "Specialized Chariot Education"
+ STG_Specialized_senshado_Education_desc:0 ""
  
  STG_Restricted_stock_investment:0 "Restricted Stock Investment"
  STG_Restricted_stock_investment_desc:0 ""
@@ -135,7 +130,7 @@
  #army
  STG_organize_army_system:0 "Organize Army System"
  STG_organize_army_system_desc:0 ""
- STG_focus_on_senshado:0 "Focus on Senshado"
+ STG_focus_on_sensado:0 "Focus on Battle Lanes"
  STG_focus_on_sensado_desc:0 ""
  STG_new_generation_assult_tank_plan:0 "Next Generation Assault Tank Plan"
  STG_new_generation_assult_tank_plan_desc:0 ""
@@ -147,8 +142,8 @@
  STG_tank_tea_boiler_desc:0 ""
  STG_scones_and_snack_supply:0 "Scones and Snacks Logistics"
  STG_scones_and_snack_supply_desc:0 ""
- STG_sensado_training_facilities:0 "sensado training facility"
- STG_sensado_training_facilities_desc:0 ""
+ STG_senshado_training_facilities:0 "Senshado Training Facility"
+ STG_senshado_training_facilities_desc:0 ""
  STG_upgrade_infantry_equipment:0 "Upgrade Soldier Equipment"
  STG_upgrade_infantry_equipment_desc:0 ""
  STG_royal_force_RnD:0 "Royal Arms Research and Development Agency"
@@ -171,14 +166,14 @@
  STG_special_force_recruit_desc:0 ""
  STG_reconstruct_the_royal_arsenal:0 "Reconstruct the Royal Arsenal"
  STG_reconstruct_the_royal_arsenal_desc:0 ""
- STG_Commision_officer_academy:0 "SaintGloriana Sergeant Academy"
- STG_Commision_officer_academy_desc:0 ""
+ STG_commision_officer_academy:0 "St. Gloriana's Academy"
+ STG_commision_officer_academy_desc:0 ""
  
  #navy
  STG_Reorganization_Royal_Navy:0 "Reorganize the Royal Navy"
  STG_Reorganization_Royal_Navy_desc:0 ""
  
- STG_Continue_improve_submarines:0 "Continue Improve Submarines"
+ STG_Continue_improve_submarines:0 "Continue to improve submarines"
  STG_Continue_improve_submarines_desc:0 ""
  STG_Upgrade_sonar_enclosure:0 "Upgrade Sonar and Enclosure"
  STG_Upgrade_sonar_enclosure_desc:0 ""
@@ -206,7 +201,7 @@
  STG_Shipborne_weapon_upgrade:0 "Shipborne Weapons Update"
  STG_Shipborne_weapon_upgrade_desc:0 ""
  
- STG_Expansion_harandwolf_shipyard:0 "Expansion Harandwolf Shipyard"
+ STG_Expansion_harandwolf_shipyard:0 "Expand Harandwolf Shipyard"
  STG_Expansion_harandwolf_shipyard_desc:0 ""
  STG_St_grolena_National_Shipbuilding_program:0 "St. Grolena National Shipbuilding Program"
  STG_St_grolena_National_Shipbuilding_program_desc:0 ""
@@ -218,8 +213,7 @@
  STG_Rule_Britannia:0 "Rule! Britannia!"
  STG_Rule_Britannia_desc:0 ""
  
- 
- #通用军用飞机国策
+ #general military aircraft national policy
  generic_military_aircraft_investment:0 "Military Aircraft Investment"
  generic_military_aircraft_investment_desc:0 ""
  generic_fourth_generation_research:0 "Fourth Generation Fighter Project"
@@ -244,7 +238,7 @@
  generic_improve_range_desc:0 ""
  generic_mordern_stealth:0 "Modern Stealth"
  generic_mordern_stealth_desc:0 ""
- generic_air_ground_communication:0 "Air Ground Cooperative Communication"
+ generic_air_ground_communication:0 "Air-Ground Cooperative Communication"
  generic_air_ground_communication_desc:0 ""
  generic_aa_capability:0 "Over-the-horizon Air Capability"
  generic_aa_capability_desc:0 ""
@@ -254,7 +248,7 @@
  generic_bomber_aircraft_desc:0 ""
  generic_more_weapon_carriage:0 "Increase Weapon Carry"
  generic_more_weapon_carriage_desc:0 ""
- generic_increase_bomb_range:0 "Increase bomb mission radius"
+ generic_increase_bomb_range:0 "Increases bomb range
  generic_increase_bomb_range_desc:0 ""
  generic_tactical_movement_training:0 "Tactical Movement Training"
  generic_tactical_movement_training_desc:0 ""
@@ -265,17 +259,140 @@
  generic_functional_requirement:0 "Functional Requirement"
  generic_functional_requirement_desc:0 ""
  
-#event
- 
 #idea
- STG_cairns_economy_effect_0:0 "Cairns Economic After Effects"
- STG_decaying_senshado:0 "Senshado at Sunset"
+ #start spirit
+ STG_cairns_economy_effect:0 "Cairns Economic After Effects"
+ STG_decaying_sensado:0 "Sunset Battle Lane"
  STG_Speeding_government:0 "Speeding Government"
+ 
+ #event spirit
+ STG_Failure_Egypt:0 "Avoid its edge"
+ 
+ #resolution spirit
+ STG_General_strike_1:0 "Strike"
+ STG_General_strike_2:0 "General Strike"
+ STG_General_strike_3:0 "Minor General Strike"
+ STG_General_strike_4:0 "Moderate General Strike"
+ STG_General_strike_5:0 "Strike General Strike"
+ 
+ #national policy spirit
+ STG_Monetary_theory:0 "Monetary Theory"
+ 
+ #WKG
+ STG_Chengdu_Berlin_flesh_blood:0 "Flesh Forged Chengdu Berlin"
+ STG_Irish_independence_rebellion:0 "Irish Independence Rebellion"
+ 
+ 
+ 
+ 
+ 
+#event
+ StGloriana_new.1:0 "A Legacy of War"
+ StGloriana_new.1.t:0 "A Legacy of War"
+ StGloriana_new.1.d:0 "After coming to power in Darjeeling, her first problem is a war left over from the previous government, and in this Middle East war, we seem to be playing a fearful clown, a shallow The fact that the shallow Suez Canal could pinch St. Gloriana's lifeline is a little ridiculous.\n It also seems to have made us injustice in international issues, and in any case, an early end to this war will certainly make The burden becomes lighter."
+ StGloriana_new.1.a:0 "The Day of Atonement does not redeem conscience"
+ 
+ StGloriana_new.2:0 "Avoid its edge"
+ StGloriana_new.2.t:0 "Avoid its edge"
+ StGloriana_new.2.d:0 "This war has made us ugly, a nation with a tradition of elegance and nobility will not continue to fight a war like a headless fly, although the Suez Canal is important to our global economic strategy, But continuing with the status quo will only bring shame to the battle lane."
+ StGloriana_new.2.a:0 "Reconcile with the Great Washing Rabbit"
+ 
+ StGloriana_new.3:0 "The White Bird of the Irish West Kureoji Grona "
+ StGloriana_new.3.t:0 "The White Bird of the Irish West Kureoji Grona"
+ StGloriana_new.3.d:0 "Major demonstrations have broken out in the Free State of West Kureoji Grona , Ireland, but the White Birds of the Irish authorities seem to have been allowing the situation to go badly.\nThe West Kureoji Grona  regime has always been politically Continuing to plague us, and while not consuming St. Gloriana's manpower and resources as it did at the beginning of the century, it's time to address their problems."
+ StGloriana_new.3.a:0 "The House of Masters in Darjeeling"
+ 
+ StGloriana_new.4:0 "Bloody Thursday"
+ StGloriana_new.4.t:0 "Bloody Thursday"
+ StGloriana_new.4.d:0 "The last thing we wanted to see happened, the insurgents detonated several bombs at Trinity College in Dublin, killing more than thirty locals and a dozen of the fifty dead. St. Gloriana student, this is more than a simple political incident, our military police arrived at the scene surrounded by angry residents and clashed with the temporary.\nUnfortunately, they have rifles and grenades, an armed uprising is spreading from Dublin and we must hurry."
+ StGloriana_new.4.a:0 "Worst case scenario"
+ #national policy
+ StGloriana_focus.1:0 "Appoint Chancellor of the Exchequer"
+ StGloriana_focus.1.t:0 "Appoint Chancellor of Finance"
+ StGloriana_focus.1.d:0 "Following the formation of St. Gloriana's First Battleway Conquest, we urgently need to appoint a Chancellor of Finance to be responsible for future taxation or industrial work (the Chancellor will not be able to reappoint for other positions)."
+ StGloriana_focus.1.a:0 "Appointed Assam"
+ StGloriana_focus.1.b:0 "Appointed Grimm"
+ StGloriana_focus.1.c:0 "Appoint Nilgiri"
+ 
+ StGloriana_focus.2:0 "Appoint Foreign Secretary"
+ StGloriana_focus.2.t:0 "Appointed Foreign Secretary"
+ StGloriana_focus.2.d:0 "Following the formation of St. Gloriana's First Battle Lane Conquest, we urgently need to appoint a Foreign Secretary to be responsible for diplomatic speech and foreign negotiation operations (the Foreign Secretary will not be able to reappoint to other positions) )."
+ StGloriana_focus.2.a:0 "Appointed Orange Pekoe"
+ StGloriana_focus.2.b:0 "Appointed Rosehip"
+ StGloriana_focus.2.c:0 "Appoint Ruklily"
+ 
+ StGloriana_focus.3:0 "Appoint the Minister of Defense"
+ StGloriana_focus.3.t:0 "Appoint Minister of Defense"
+ StGloriana_focus.3.d:0 "Following the formation of St. Gloriana's First Battle Lane Conquest, we urgently need to appoint a Minister of Defense to be responsible for the deployment of military resources and the ordering of parts of the army (The Minister of Defense will not be able to reappoint for other positions)."
+ StGloriana_focus.3.a:0 "Appointed Assam"
+ StGloriana_focus.3.b:0 "Appointed Rose Hips"
+ StGloriana_focus.3.c:0 "Appoint Ruklily"
+ 
+ StGloriana_focus.4:0 "Appoint the Secretary of the Interior"
+ StGloriana_focus.4.t:0 "Appointed Home Secretary"
+ StGloriana_focus.4.d:0 "After the formation of St. Gloriana's First Battleway Conquest, we urgently need to appoint a Home Secretary to take care of the ins and outs (the Home Secretary will not be able to reappoint other Position)."
+ StGloriana_focus.4.a:0 "Appointed Orange Pekoe"
+ StGloriana_focus.4.b:0 "Appointed Grimm"
+ StGloriana_focus.4.c:0 "Appoint Nilgiri"
+ 
+ StGloriana_focus.5:0 "NHS Act repealed"
+ StGloriana_focus.5.t:0 "NHS Act repealed"
+ StGloriana_focus.5.d:0 "With the government's large deficit, we found that simply raising taxes to alleviate the British disease is already a drop in the bucket. Darjeeling's conservative faction has proposed a proposal to repeal the Labour Party Health Service Act. The government saves the budget, and it can effectively combat the Labour Party's right to speak in the House of Representatives, after all, public health insurance is dumb in the eyes of state capitalists."
+ StGloriana_focus.5.a:0 "Let's see how they react"
+ STG_StGloriana_focus_5_tt:0 "§YKeynesian Economic After Effects§! Additional Effects:\nProductivity Cap: §R-10.00%§!\nProduction Efficiency Increase: §R-10.00%§!\nDaily Tax: §G+ 20.00%§!"
+ 
+ StGloriana_event.1:0 "The Great Strike"
+ StGloriana_event.1.t:0 "The Great Strike"
+ StGloriana_event.1.d:0 "With the backlash against repealing the NHS law, workers' motivation to work has taken a hit, which could only do more harm to the bottom of society, led by unions Next, an organized strike is going on."
+ StGloriana_event.1.a:0 "Not so good"
+ 
+ StGloriana_event.2:0 "Strike ends"
+ StGloriana_event.2.t:0 "Strike ends"
+ StGloriana_event.2.d:0 "The workers are very satisfied with their masterpiece, the strike has led to the closure of many businesses, but in fact, this has relieved a lot of the government's deficit burden, anyway, our productivity has received considerable strike."
+ StGloriana_event.2.a:0 "What is this"
+ STG_StGloriana_event_2_tt:0 "\n§YKeynesian Economic After Effects§! Additional Effect:\nProductivity Cap: §R-5.00%§!\nProduction Efficiency Increase: §R-5.00%§!\nDaily Tax: § G+15.00%§!"
+ 
+ StGloriana_event.3:0 "Strike ends"
+ StGloriana_event.3.t:0 "Strike ends"
+ StGloriana_event.3.d:0 "Darjeeling's administrative measures succeeded in stopping the strike, but this is only the first episode of her political career. St. Gloriana's economic ills are still quite serious."
+ StGloriana_event.3.a:0 "At least no one is waving the red flag outside the window now"
+ 
+ StGloriana_focus.6:0 "St. Gloriana's black tea factory closes down"
+ StGloriana_focus.6.t:0 "St. Gloriana's black tea factory closed down"
+ StGloriana_focus.6.d:0 "Tea taken from the East, blended with the fruity aroma of Darjeeling and the strong malt aroma of Assam, with the essential oil and peel of bergamot, fermented and roasted, jars of Earl Grey tea from St. Gloriana's tea factory has entered every teapot.\n But it may be difficult for people to drink authentic flavored tea from Santa Gloriana in the future, due to the government's reduction of subsidies for non-essential industries, as many as stars of black tea processing plants are closing down rapidly."
+ StGloriana_focus.6.a:0 "Do you think Darjeeling doesn't like tea?"
+ STG_StGloriana_focus_6_tt:0 "\n§YKeynesian Economic After Effects§! Additional Effects:\nConsumer Goods: §G-5.00%§!\nStability: §R-5.00%§!"
+
+ 
+#decision
+ STG_Special_action:0 "Special Action"
+ 
+ STG_suppress_WKG:0 "Suppress West Kureoji Grona "
+ STG_suppress_WKG_tt:0 "15£GFX_pol_power_icon 15£GFX_command_power"
+ STG_suppress_WKG_tt_blocked:0 "§R15§!£GFX_pol_power_icon §R15§!£GFX_command_power"
+ 
+ STG_General_strike:0 "General Strike"
+ STG_General_strike_tt:0 "150£GFX_pol_power_icon 100£GFX_gold_icon"
+ STG_General_strike_tt_blocked:0 "§R150§!£GFX_pol_power_icon §R100§!£GFX_gold_icon"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 #tooltips
+
+ STG_WP_ORA:0 "§Y\nHypocrisy encourages us to cover up our sins with the cloak of virtue,\n to avoid the censure of others.\n§!"
+ NOT_STG_cairns_economy_effect:0 "Have National Spirit: §YCairns Economic After Effects§!"
  
 #flag
-
-
+ STG_Legacy_war_flag:0 "Legacy War"
+ STG_General_strike_flag:0 "General Strike (Resolution) Trigger"
+ 
 #opinion
 
-#额外的通用国策！这个国策树只适用于主要国家，不是给通用国家的
+#Additional general focus! This focus tree is only for major countries, not for generic countries

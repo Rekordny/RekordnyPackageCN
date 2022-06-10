@@ -495,6 +495,95 @@ Update_BCF_party_support = {
 			bcf_andou_support = andou_support_change
 		}
 	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					current_party_support_change = 0
+				}
+			}
+		}
+		custom_effect_tooltip = Current_party_support_scripted_effect_change
+		if = {
+			limit = {
+				has_country_leader = {
+					character = BCF_marie
+					ruling_only = yes
+				}
+			}
+			add_to_variable = {
+				bcf_marie_support = current_party_support_change
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_leader = {
+					character = BCF_andou
+					ruling_only = yes
+				}
+			}
+			add_to_variable = {
+				bcf_andou_support = current_party_support_change
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_leader = {
+					character = BCF_oshida
+					ruling_only = yes
+				}
+			}
+			add_to_variable = {
+				bcf_oshida_support = current_party_support_change
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					other_party_support_change = 0
+				}
+			}
+		}
+		custom_effect_tooltip = Other_party_support_scripted_effect_change
+		if = {
+			limit = {
+				has_country_leader = {
+					character = BCF_marie
+					ruling_only = yes
+				}
+			}
+			add_to_variable = {
+				bcf_andou_support = other_party_support_change
+				bcf_oshida_support = other_party_support_change
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_leader = {
+					character = BCF_andou
+					ruling_only = yes
+				}
+			}
+			add_to_variable = {
+				bcf_marie_support = other_party_support_change
+				bcf_oshida_support = other_party_support_change
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_leader = {
+					character = BCF_oshida
+					ruling_only = yes
+				}
+			}
+			add_to_variable = {
+				bcf_marie_support = other_party_support_change
+				bcf_andou_support = other_party_support_change
+			}
+		}
+	}
 
 }
 #添加所有BCF内战国家的BCF核心

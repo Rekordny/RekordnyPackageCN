@@ -187,9 +187,6 @@ characters={
 		name="Rosehip"
 		portraits={
 			army={
-				small=""
-			}
-			army={
 				large="gfx/leaders/STG/Portrait_STG_Rosehip.dds"
 				small="gfx/interface/advisors/idea_rosehip.dds"
 			}
@@ -204,4 +201,133 @@ characters={
 			legacy_id=1052
 		}
 	}
+	STG_warspite = {
+        name = "Warspite"
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/STG/Portrait_STG_Warspite.dds"
+				small="gfx/interface/advisors/idea_warspite.dds"
+            }
+        }
+        navy_leader={
+            visible = {  }
+            traits={ naval_lineage gunnery_expert gentlemanly }
+            skill=3
+            attack_skill=2
+            defense_skill=3
+            maneuvering_skill=2
+            coordination_skill=3
+            legacy_id=0
+        }
+        advisor = {
+            slot = navy_chief
+            idea_token = STG_warspite
+            removal_cost = 0
+            available = {  }
+            allowed = {
+                original_tag = STG
+            }
+            visible = {  }
+            traits = { navy_chief_reform_2 }
+            on_add = {}
+            on_remove = {}
+            cost = 100
+            ai_will_do = {
+                factor = 1.000
+            }
+        }
+    }
+	STG_arkRoyal = {
+        name = "ArkRoyal"
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/STG/Portrait_STG_ArkRoyal.dds"
+				small="gfx/interface/advisors/idea_arkRoyal.dds"
+            }
+        }
+        navy_leader={
+            visible = {  }
+            traits={ naval_lineage gunnery_expert gentlemanly }
+            skill=3
+            attack_skill=2
+            defense_skill=2
+            maneuvering_skill=4
+            coordination_skill=2
+            legacy_id=0
+        }
+        advisor = {
+            slot = navy_chief
+            idea_token = STG_arkRoyal
+            removal_cost = 0
+            available = {  }
+            allowed = {
+                original_tag = STG
+            }
+            visible = {  }
+            traits = { navy_carrier_2 }
+            on_add = {}
+            on_remove = {}
+            cost = 100
+            ai_will_do = {
+                factor = 1.000
+            }
+        }
+    }
+	STG_janus = {
+        name = "Janus"
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/STG/Portrait_STG_Janus.dds"
+				small="gfx/interface/advisors/idea_janus.dds"
+            }
+        }
+        navy_leader={
+            visible = {  }
+            traits={ career_officer loading_drill_master }
+            skill=2
+            attack_skill=2
+            defense_skill=2
+            maneuvering_skill=1
+            coordination_skill=2
+            legacy_id=0
+        }
+    }
+	STG_jervis = {
+        name = "Jervis"
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/STG/Portrait_STG_Jervis.dds"
+				small="gfx/interface/advisors/idea_jervis.dds"
+            }
+        }
+        navy_leader={
+            visible = {  }
+            traits={ career_officer lone_wolf }
+            skill=2
+            attack_skill=2
+            defense_skill=2
+            maneuvering_skill=2
+            coordination_skill=1
+            legacy_id=0
+        }
+    }
+	STG_sheffield = {
+        name = "Sheffield"
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/STG/Portrait_STG_Sheffield.dds"
+				small="gfx/interface/advisors/idea_sheffield.dds"
+            }
+        }
+        navy_leader={
+            visible = {  }
+            traits={ career_officer cruiser_captain }
+            skill=2
+            attack_skill=1
+            defense_skill=2
+            maneuvering_skill=1
+            coordination_skill=3
+            legacy_id=0
+        }
+    }
 }

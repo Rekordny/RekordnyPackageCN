@@ -1,735 +1,124 @@
-#政府
-stg_government = {
-	#售卖国有企业与股权
-	stg_sell_state_owned = {
-		allowed = { tag = STG }
-		visible = { OR = { has_completed_focus = STG_privatized_state_owned AND = { is_ai = no is_debug = yes } } }
-		fire_only_once = yes
-		complete_effect = {
-		}
-		#days_re_enable = 100
-		days_remove = 240
-		modifier = {
-			consumer_goods_factor = 0.1
-			tax_daily_modifier = 0.25
-		}
-		remove_effect = {
-			# add_popularity = {
-			# 	ideology = communism
-			# 	popularity = -0.03
-			# }
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				industrial_complex > 80
-				check_variable = {
-					gold < 200
-				}
-				factor = 10	
-			}
-			modifier = {
-				industrial_complex > 50
-				check_variable = {
-					gold < 120
-				}
-				factor = 7
-			}
-		}
-	}
-}
+#特殊行动
+STG_Special_action = {
 
-#工人与工党
-stg_worker_and_labor_party = {
-	#DEBUG
-	stg_debug_begin_great_strike = {
+	#镇压西吴王子
+	STG_suppress_WKG = {
 		allowed = { tag = STG }
-		visible = { AND = { is_ai = no is_debug = yes } }
-		fire_only_once = no
-		complete_effect = {
-			add_popularity = {
-				ideology = communism
-				popularity = 0.2
-			}
-		}
-	}
-	stg_debug_add_satisfaction = {
-		allowed = { tag = STG }
-		visible = { AND = { is_ai = no is_debug = yes } }
-		fire_only_once = no
-		complete_effect = {
-			add_to_variable = {
-				stg_satisfaction = 40
-			}
-		}
-	}
-	stg_debug_clear_strike = {
-		allowed = { tag = STG }
-		visible = { AND = { is_ai = no is_debug = yes } }
-		fire_only_once = no
-		complete_effect = {
-			clear_variable = stg_satisfaction
-			remove_ideas = STG_worker_great_strike_5
-			remove_ideas = STG_worker_great_strike_4
-			remove_ideas = STG_worker_great_strike_3
-			remove_ideas = STG_worker_great_strike_2
-			remove_ideas = STG_worker_great_strike_1
-			remove_ideas = STG_worker_great_strike_0
-		}
-	}
-	stg_debug_create_country = {
-		allowed = { tag = STG }
-		visible = { AND = { is_ai = no is_debug = yes } }
-		fire_only_once = no
-		complete_effect = {
-			start_civil_war = {
-				ruling_party = democratic
-				ideology = communism
-				size = 0.4
-				only_own_territory = no
-				capital = 119
-				states = { 
-					135 113 119 134 120 136 133 121
-				}
-				keep_unit_leaders = {
-					
-				}
-				keep_political_leader = no
-			}
-			
-		}
-	}
-	#DEBUG结束
-
-	#临时提高工人薪水
-	stg_temporary_increase_workers_salaries = {
-		allowed = { tag = STG }
-		visible = { OR = { AND = { is_ai = no is_debug = yes } OR = { has_idea = STG_worker_great_strike_0 has_idea = STG_worker_great_strike_1 has_idea = STG_worker_great_strike_2 has_idea = STG_worker_great_strike_3 has_idea = STG_worker_great_strike_4 has_idea = STG_worker_great_strike_5 } } }
-		fire_only_once = no
-		days_remove = 10
-		days_re_enable = 10
-		custom_cost_text = stg_tooltip3
-		custom_cost_trigger = { check_variable = { gold > 9.9 } }
-		complete_effect = {
-			hidden_effect = { add_to_variable = { gold = -10 } }
-		}
-		remove_effect = {
-			custom_effect_tooltip = stg_tooltip2
-			hidden_effect = {
-				random_list = {
-					30 = { add_to_variable = { stg_satisfaction = 8 } }
-					40 = { add_to_variable = { stg_satisfaction = 9 } }
-					30 = { add_to_variable = { stg_satisfaction = 10 } }
+		visible = { 
+			OR = {
+				country_exists = KWG
+				has_completed_focus = STG_privatized_state_owned 
+				AND = { 
+					is_ai = no 
+					is_debug = yes
 				}
 			}
 		}
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				check_variable = { stg_satisfaction > 35 }
-				factor = 0
-			}
-		}
-	}
-
-	#减少外务劳工输入
-	stg_reduce_labor_import = {
-		allowed = { tag = STG }
-		visible = { OR = { AND = { is_ai = no is_debug = yes } OR = { has_idea = STG_worker_great_strike_0 has_idea = STG_worker_great_strike_1 has_idea = STG_worker_great_strike_2 has_idea = STG_worker_great_strike_3 has_idea = STG_worker_great_strike_4 has_idea = STG_worker_great_strike_5 } } }
 		fire_only_once = no
+		days_re_enable = 60
 		days_remove = 15
-		days_re_enable = 10
-		custom_cost_text = stg_tooltip5
-		custom_cost_trigger = { has_political_power > 19.9 }
-		complete_effect = {
-			hidden_effect = { add_political_power = -20 }
+		custom_cost_trigger = {
+			command_power > 14.9
+			has_political_power > 14.9
+	   	}
+		custom_cost_text = STG_suppress_WKG_tt
+		modifier = {
+			subjects_autonomy_gain = -1.2
 		}
-		remove_effect = {
-			custom_effect_tooltip = stg_tooltip4
+		complete_effect = {
 			hidden_effect = {
-				random_list = {
-					20 = { add_to_variable = { stg_satisfaction = 8 } }
-					30 = { add_to_variable = { stg_satisfaction = 7 } }
-					30 = { add_to_variable = { stg_satisfaction = 6 } }
-					20 = { add_to_variable = { stg_satisfaction = 5 } }
+				add_political_power = -15
+				add_command_power = -15
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	#大罢工
+	STG_General_strike = {
+		available = { 
+			check_variable = { gold > 99.9 }
+			check_variable = { political_power > 149.9 } 
+		}
+		activation = { has_country_flag = STG_General_strike_flag }
+		visible = {
+			OR = {
+				has_country_flag = STG_General_strike_flag
+				AND = { 
+					is_ai = no
+					is_debug = yes
 				}
 			}
 		}
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				check_variable = { stg_satisfaction > 35 }
-				factor = 0
-			}
-		}
-	}
-
-	#出动警察维持秩序
-	stg_dispatch_police_to_maintain_order = {
-		allowed = { tag = STG }
-		visible = { OR = { AND = { is_ai = no is_debug = yes } OR = { has_idea = STG_worker_great_strike_0 has_idea = STG_worker_great_strike_1 has_idea = STG_worker_great_strike_2 has_idea = STG_worker_great_strike_3 has_idea = STG_worker_great_strike_4 has_idea = STG_worker_great_strike_5 } } }
 		fire_only_once = no
-		days_remove = 10
-		days_re_enable = 10
-		custom_cost_text = stg_tooltip7
-		custom_cost_trigger = { has_army_experience > 4.99 }
+		day_re_enable = 0
+		days_re_enable = 0
+		days_mission_timeout = 5
+		selectable_mission = yes
+		custom_cost_trigger = {
+			check_variable = { gold > 99.9 }
+			check_variable = { political_power > 149.9 }
+		}
+		custom_cost_text = STG_General_strike_tt
 		complete_effect = {
-			hidden_effect = { army_experience = -5 }
-		}
-		remove_effect = {
-			add_stability = -0.015
-			custom_effect_tooltip = stg_tooltip2
-			hidden_effect = {
-				random_list = {
-					30 = { add_to_variable = { stg_satisfaction = 10 } }
-					40 = { add_to_variable = { stg_satisfaction = 9 } }
-					30 = { add_to_variable = { stg_satisfaction = 8 } }
-				}
+			clr_country_flag = STG_General_strike_flag
+			if = {
+				limit = { has_idea = STG_General_strike_1 }
+				remove_ideas = STG_General_strike_1
 			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				check_variable = { stg_satisfaction > 35 }
-				factor = 0
+			else_if = {
+				limit = { has_idea = STG_General_strike_2 }
+				remove_ideas = STG_General_strike_2
 			}
-		}
-		
-	}
-
-	#举办战车道庆典
-	stg_host_senshado_festival = {
-		allowed = { tag = STG }
-		visible = { OR = { AND = { is_ai = no is_debug = yes } OR = { has_idea = STG_worker_great_strike_0 has_idea = STG_worker_great_strike_1 has_idea = STG_worker_great_strike_2 has_idea = STG_worker_great_strike_3 has_idea = STG_worker_great_strike_4 has_idea = STG_worker_great_strike_5 } } }
-		fire_only_once = no
-		days_remove = 20
-		days_re_enable = 10
-		custom_cost_text = stg_tooltip8
-		custom_cost_trigger = { check_variable = { ssdp > 49.9 } }
-		complete_effect = {
-			add_to_variable = { ssdp = -50 }
-		}
-		remove_effect = {
-			custom_effect_tooltip = stg_tooltip2
-			hidden_effect = {
-				random_list = {
-					30 = { add_to_variable = { stg_satisfaction = 10 } }
-					35 = { add_to_variable = { stg_satisfaction = 9 } }
-					45 = { add_to_variable = { stg_satisfaction = 8 } }
-				}
+			else_if = {
+				limit = { has_idea = STG_General_strike_3 }
+				remove_ideas = STG_General_strike_3
 			}
-		}
-		ai_will_do = {
-			factor = 4
-			modifier = {
-				has_stability < 0.45
-				factor = 0.1
+			else_if = {
+				limit = { has_idea = STG_General_strike_4 }
+				remove_ideas = STG_General_strike_4
 			}
-			modifier = {
-				check_variable = { stg_satisfaction > 35 }
-				factor = 0
+			else_if = {
+				limit = { has_idea = STG_General_strike_5 }
+				remove_ideas = STG_General_strike_5
 			}
-		}
-	}
-
-
-	#罢工正在轰轰烈烈的进行中
-	stg_great_worker_strike_ongoing = {
-		allowed = { tag = STG }
-		available = {
-			custom_trigger_tooltip = { tooltip = stg_tooltip1 }
-			AND = { check_variable = { stg_satisfaction > 30 } }
-		}
-		is_good = no
-		activation = { OR = { has_idea = STG_worker_great_strike_0 has_idea = STG_worker_great_strike_1 has_idea = STG_worker_great_strike_2 has_idea = STG_worker_great_strike_3 has_idea = STG_worker_great_strike_4 has_idea = STG_worker_great_strike_5 } } 
-		days_mission_timeout = 50
-		timeout_effect = {
-			if = { limit = { has_idea = STG_worker_great_strike_0 } swap_ideas = {
-				remove_idea = STG_worker_great_strike_0
-				add_idea = STG_worker_great_strike_1
-			} }
-			else_if = { limit = { has_idea = STG_worker_great_strike_1 } swap_ideas = {
-				remove_idea = STG_worker_great_strike_1
-				add_idea = STG_worker_great_strike_2
-			} }
-			else_if = { limit = { has_idea = STG_worker_great_strike_2 } swap_ideas = {
-				remove_idea = STG_worker_great_strike_2
-				add_idea = STG_worker_great_strike_3
-			} }
-			else_if = { limit = { has_idea = STG_worker_great_strike_3 } swap_ideas = {
-				remove_idea = STG_worker_great_strike_3
-				add_idea = STG_worker_great_strike_4
-			} }
-			else_if = { limit = { has_idea = STG_worker_great_strike_4 } swap_ideas = {
-				remove_idea = STG_worker_great_strike_4
-				add_idea = STG_worker_great_strike_5
-			} }
-			else = {
-				remove_ideas = STG_worker_great_strike_5
-				126 = {
-					remove_building = {
-						type = industrial_complex
-						level = 2
-					}
-				}
-				128 = {
-					remove_building = {
-						type = industrial_complex
-						level = 2
-					}
-				}
-				129 = {
-					remove_building = {
-						type = industrial_complex
-						level = 2
-					}
-				}
-				125 = {
-					remove_building = {
-						type = industrial_complex
-						level = 2
-					}
-				}
-			}
-        }
-		complete_effect = {
-			if = { limit = { has_idea = STG_worker_great_strike_5 } swap_ideas = {
-				remove_idea = STG_worker_great_strike_5
-				add_idea = STG_worker_great_strike_4
-			} }
-			else_if = { limit = { has_idea = STG_worker_great_strike_4 } swap_ideas = {
-				remove_idea = STG_worker_great_strike_4
-				add_idea = STG_worker_great_strike_3
-			} }
-			else_if = { limit = { has_idea = STG_worker_great_strike_3 } swap_ideas = {
-				remove_idea = STG_worker_great_strike_3
-				add_idea = STG_worker_great_strike_2
-			} }
-			else_if = { limit = { has_idea = STG_worker_great_strike_2 } swap_ideas = {
-				remove_idea = STG_worker_great_strike_2
-				add_idea = STG_worker_great_strike_1
-			} }
-			else_if = { limit = { has_idea = STG_worker_great_strike_1 } swap_ideas = {
-				remove_idea = STG_worker_great_strike_1
-				add_idea = STG_worker_great_strike_0
-			} }
-			else = {
-				remove_ideas = STG_worker_great_strike_0
-			}
-			add_to_variable = { stg_satisfaction = -30 }
-			hidden_effect = {
-				
-			}
-		}
-	}
-}
-
-stg_government = {
-	#维和军队扩大法
-	stg_peacekeeping_force_expansion_act = {
-		allowed = { tag = STG }
-		visible = { OR = { AND = { is_ai = no is_debug = yes } has_completed_focus = STG_emergency_volunteer_dispatch } }
-		available = { democratic > 0.65 }
-		fire_only_once = yes
-		days_remove = 70
-		custom_cost_text = stg_tooltip11
-		custom_cost_trigger = { has_political_power > 99.9 }
-		complete_effect = {
 			hidden_effect = {
 				add_political_power = -100
+				add_to_variable = { gold = -150 }
+				country_event = { id = StGloriana_event.3 days = 1 }
 			}
 		}
-		remove_effect = {
-			add_ideas = STG_peacekeeping_force_expansion_act
-		}
-	}
-	#战车道巡回演出
-	stg_senshado_tour_show = {
-		allowed = { tag = STG }
-		visible = { OR = { AND = { is_ai = no is_debug = yes } has_completed_focus = STG_british_concern } }
-		available = { has_stability < 0.6 }
-		fire_only_once = yes
-		days_remove = 90
-		custom_cost_text = stg_tooltip17
-		custom_cost_trigger = { has_political_power > 79.9 check_variable = {
-			ssdp > 119.9
-		} }
-		complete_effect = {
-			hidden_effect = {
-				add_political_power = -80
-				add_to_variable = { ssdp = -120 }
-			}
-		}
-		remove_effect = {
-			add_stability = 0.08
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				has_stability < 45
-				factor = 10
-			}
-		}
-	}
-	#对共产主义的负面报道
-	stg_negative_reports_on_communism = {
-		allowed = { tag = STG }
-		visible = { OR = { AND = { is_ai = no is_debug = yes } has_completed_focus = STG_control_social_media } }
-		available = { communism > 0.1 }
-		fire_only_once = no
-		days_remove = 60
-		custom_cost_text = stg_tooltip19
-		custom_cost_trigger = { has_political_power > 79.9 }
-		complete_effect = {
-			hidden_effect = {
-				add_political_power = -80
-			}
-		}
-		remove_effect = {
-			add_popularity = {
-				ideology = communism
-				popularity = -0.07
-			}
-		}
-	}
-	#对法西斯主义的负面报道
-	stg_negative_reports_on_fascism = {
-		allowed = { tag = STG }
-		visible = { OR = { AND = { is_ai = no is_debug = yes } has_completed_focus = STG_control_social_media } }
-		available = { fascism > 0.1 }
-		fire_only_once = no
-		days_remove = 60
-		custom_cost_text = stg_tooltip19
-		custom_cost_trigger = { has_political_power > 79.9 }
-		complete_effect = {
-			hidden_effect = {
-				add_political_power = -80
-			}
-		}
-		remove_effect = {
-			add_popularity = {
-				ideology = fascism
-				popularity = -0.07
-			}
-		}
-	}
-	#对皇家派系的负面报道
-	stg_negative_reports_on_royal = {
-		allowed = { tag = STG }
-		visible = { OR = { AND = { is_ai = no is_debug = yes } has_completed_focus = STG_control_social_media } }
-		available = { neutrality > 0.1 }
-		fire_only_once = no
-		days_remove = 60
-		custom_cost_text = stg_tooltip19
-		custom_cost_trigger = { has_political_power > 79.9 }
-		complete_effect = {
-			hidden_effect = {
-				add_political_power = -80
-			}
-		}
-		remove_effect = {
-			add_popularity = {
-				ideology = neutrality
-				popularity = -0.07
-			}
-		}
-	}
-}
-
-stg_diplomatic = {
-	
-}
-
-stg_kuromorimine_occupation = {
-	#占领期限
-	stg_occupation_deadline = {
-		allowed = { tag = STG }
-		available = {
-			NOT = {
-				controls_state = 51
-				controls_state = 56
-				controls_state = 57
-				controls_state = 58
-				controls_state = 59
-			}
-		}
-		visible = { OR = { AND = { is_ai = no is_debug = yes } has_country_flag = STG_START_OCCUPATION } }
-		is_good = yes
-		activation = { has_country_flag = STG_START_OCCUPATION } 
-		days_mission_timeout = 365
 		timeout_effect = {
-			country_event = { id = StGloriana.30 days = 1 }
-			KGA = {
-				transfer_state = 51
-				transfer_state = 56
-				transfer_state = 57
-				transfer_state = 58
-				transfer_state = 59
-				country_event = { id = StGloriana.31 days = 1 }
+			if = {
+				limit = { has_idea = STG_General_strike_1 }
+				swap_ideas = {
+					remove_idea = STG_General_strike_1
+					add_idea = STG_General_strike_2
+				}
 			}
-			clr_country_flag = STG_START_OCCUPATION
-        }
-		complete_effect = {
-		}
-	}
-	stg_extend_occupation_deadline = {
-		allowed = { tag = STG }
-		visible = { OR = { AND = { is_ai = no is_debug = yes } has_country_flag = STG_START_OCCUPATION } }
-		fire_only_once = no
-		days_remove = 10
-		days_re_enable = 90
-		custom_cost_text = stg_tooltip20
-		custom_cost_trigger = { check_variable = { gold > 24.9 } }
-		complete_effect = {
-			hidden_effect = { add_to_variable = { gold = -25 } }
-			KGA = { add_to_variable = { gold = 25 } }
-		}
-		remove_effect = {
-			add_days_mission_timeout = {
-				mission = stg_occupation_deadline
-				days = 90
+			else_if = {
+				limit = { has_idea = STG_General_strike_2 }
+				swap_ideas = {
+					remove_idea = STG_General_strike_2
+					add_idea = STG_General_strike_3
+				}
 			}
-		}
-	}
-	stg_return_occupation_region = {
-		allowed = { tag = STG }
-		visible = { OR = { AND = { is_ai = no is_debug = yes } has_country_flag = STG_START_OCCUPATION } }
-		fire_only_once = yes
-		days_remove = 30
-		complete_effect = {
-		}
-		remove_effect = {
-			add_political_power = var:days_mission_timeout@stg_occupation_deadline
-			clr_country_flag = STG_START_OCCUPATION
-			KGA = {
-				transfer_state = 51
-				transfer_state = 56
-				transfer_state = 57
-				transfer_state = 58
-				transfer_state = 59
+			else_if = {
+				limit = { has_idea = STG_General_strike_3 }
+				swap_ideas = {
+					remove_idea = STG_General_strike_3
+					add_idea = STG_General_strike_4
+				}
 			}
-		}
-	}
-	stg_suppress_occupation_zone = {
-		allowed = { tag = STG }
-		visible = { OR = { AND = { is_ai = no is_debug = yes } has_country_flag = STG_START_OCCUPATION } }
-		fire_only_once = no
-		days_re_enable = 30
-		days_remove = 10
-		custom_cost_text = stg_tooltip21
-		custom_cost_trigger = { check_variable = { political_power > 19.9 } }
-		complete_effect = {
-			hidden_effect = { add_political_power = -20 }
-		}
-		remove_effect = {
-			add_stability = -0.01
-			51 = {
-				add_compliance = 1
-				add_resistance = -10
+			else_if = {
+				limit = { has_idea = STG_General_strike_4 }
+				swap_ideas = {
+					remove_idea = STG_General_strike_4
+					add_idea = STG_General_strike_5
+				}
 			}
-			56 = {
-				add_compliance = 1
-				add_resistance = -10
-			}
-			57 = {
-				add_compliance = 1
-				add_resistance = -10
-			}
-			58 = {
-				add_compliance = 1
-				add_resistance = -10
-			}
-			59 = {
-				add_compliance = 1
-				add_resistance = -10
-			}
+			else = { }
 		}
 	}
 }
 
-stg_industry = {
-	#投资外来企业
-	stg_purchase_factory = {
-		allowed = { tag = STG }
-		visible = { OR = { has_completed_focus = STG_foreign_investment_absorption AND = { is_ai = no is_debug = yes } } }
-		fire_only_once = no
-		complete_effect = {
-		}
-		days_re_enable = 50
-		days_remove = 100
-		custom_cost_text = stg_tooltip25
-		custom_cost_trigger = {
-			check_variable = { gold > 59.9 }
-		}
-		complete_effect = {
-			add_to_variable = {
-				gold = -60
-			}
-		}
-		remove_effect = {
-			random_state = {
-				limit = { is_controlled_by = STG is_core_of = STG }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				check_variable = {
-					gold > 180
-				}
-				industrial_complex < 60
-				factor = 10
-			}
-			modifier = {
-				check_variable = {
-					gold > 200
-				}
-				industrial_complex < 70
-				factor = 5
-			}
-		}
-	}
-	#转移黑森峰工业至本土
-	stg_transfer_kga_industry_mainland = {
-		allowed = { tag = STG }
-		visible = { OR = { AND = { is_ai = no is_debug = yes } has_country_flag = STG_TRANSFER_KGA_INDUSTRY_0 } }
-		available = { has_equipment = { convoy > 49 } controls_state = 51 controls_state = 57 controls_state = 59 }
-		fire_only_once = yes
-		days_remove = 150
-		custom_cost_text = stg_tooltip13
-		custom_cost_trigger = { AND = { has_political_power > 99.9 check_variable = { gold > 39.9 } } }
-		cancel_trigger = {
-			NOT = {
-				controls_state = 51
-				controls_state = 57
-				controls_state = 59
-			}
-		}
-		complete_effect = {
-			51 = {
-				remove_building = {
-					type = arms_factory
-					level = 1
-				}
-			}
-			57 = {
-				remove_building = {
-					type = arms_factory
-					level = 1
-				}
-			}
-			59 = {
-				remove_building = {
-					type = arms_factory
-					level = 1
-				}
-			}
-			hidden_effect = {
-				add_to_variable = { gold = -40 }
-			    add_political_power = -100
-			}
-		}
-		remove_effect = {
-			125 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			126 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			127 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-	}
-	#转移黑森峰工业至华夫
-	stg_transfer_kga_industry_waf = {
-		allowed = { tag = STG }
-		visible = { OR = { AND = { is_ai = no is_debug = yes } has_country_flag = STG_TRANSFER_KGA_INDUSTRY_1 } }
-		available = { controls_state = 51 controls_state = 57 controls_state = 59 }
-		fire_only_once = yes
-		days_remove = 60
-		custom_cost_text = stg_tooltip14
-		custom_cost_trigger = { AND = { has_political_power > 49.9 check_variable = { gold > 19.9 } } }
-		cancel_trigger = {
-			OR = {
-				has_war_with = WAF
-				NOT = {
-					controls_state = 51
-					controls_state = 57
-					controls_state = 59
-				}
-			}
-			
-		}
-		complete_effect = {
-			51 = {
-				remove_building = {
-					type = arms_factory
-					level = 1
-				}
-			}
-			57 = {
-				remove_building = {
-					type = arms_factory
-					level = 1
-				}
-			}
-			59 = {
-				remove_building = {
-					type = arms_factory
-					level = 1
-				}
-			}
-			hidden_effect = {
-				add_to_variable = { gold = -20 }
-			    add_political_power = -50
-			}
-		}
-		remove_effect = {
-			35 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			36 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			7 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-	}
-}

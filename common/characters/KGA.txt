@@ -481,23 +481,62 @@ characters={
 			coordination_skill=4
 			legacy_id=0
 		}
-		advisor = {
-			slot = navy_chief
-			idea_token = KGA_eugen
-			removal_cost = 0
-			available = {  }
-			allowed = {
-				original_tag = KGA
-			}
-			visible = { has_completed_focus = KGA_organize_navy }
-			traits = { navy_chief_commerce_raiding_2 }
-			on_add = {}
-			on_remove = {}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
+	}
+	KGA_Z1={
+		name="Z1"
+		portraits={
+			civilian={
+				large="gfx/leaders/KGA/Portrait_KGA_Z1.dds"
+				small="gfx/interface/advisors/idea_z1.dds"
 			}
 		}
-		
+		navy_leader={
+			visible = {  }
+			traits={ inshore_fighter craven }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+	KGA_Z3={
+		name="Z3"
+		portraits={
+			civilian={
+				large="gfx/leaders/KGA/Portrait_KGA_Z3.dds"
+				small="gfx/interface/advisors/idea_z3.dds"
+			}
+		}
+		navy_leader={
+			visible = {  }
+			traits={ smoke_screen_expert craven }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=0
+		}
+	}
+	KGA_Zeppelin={
+		name="Zeppelin"
+		portraits={
+			civilian={
+				large="gfx/leaders/KGA/Portrait_KGA_Zeppelin.dds"
+				small="gfx/interface/advisors/idea_zeppelin.dds"
+			}
+		}
+		navy_leader={
+			visible = {  }
+			traits={ crisis_magician fighter_director torpedo_bomber }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=3
+			legacy_id=0
+		}
 	}
 }

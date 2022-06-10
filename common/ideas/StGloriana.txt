@@ -1,252 +1,8 @@
 ideas = {
 	country = {
-
-		
-		#改进膛线火炮
-		STG_equip_smoothbore_artillery = {
-			picture = GFX_idea_STG_equip_smoothbore_artillery
-			allowed = {
-				tag = STG
-			}
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = no }
-			removal_cost = -1
-			
-			modifier = {
-			}
-			equipment_bonus = {
-				artillery = {
-					hard_attack = 0.1
-					maximum_speed = 0.1
-				}
-				artillery_brigade = {
-					hard_attack = 0.1
-					maximum_speed = 0.1
-				}
-			}
-		}
-
-		#改进膛线火炮
-		STG_improved_rifled_artillery = {
-			picture = GFX_idea_STG_improved_rifled_artillery
-			allowed = {
-				tag = STG
-			}
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = no }
-			removal_cost = -1
-			
-			modifier = {
-			}
-			equipment_bonus = {
-				artillery = {
-					soft_attack = 0.1
-				}
-				artillery_brigade = {
-					soft_attack = 0.1
-				}
-				artillery_equipment = {
-					reliability_factor = 0.15
-					build_cost_ic = 0.05
-				}
-			}
-		}
-
-		#地方民兵
-		STG_local_militia = {
-			picture = GFX_idea_STG_local_militia
-			allowed = {
-				tag = STG
-			}
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = no }
-			removal_cost = -1
-			
-			modifier = {
-				army_core_defence_factor = 0.1
-				army_core_attack_factor = 0.05
-			}
-			equipment_bonus = {
-			}
-		}
-
-		#地方民兵2
-		STG_local_militia_1 = {
-			picture = GFX_idea_STG_local_militia
-			allowed = {
-				tag = STG
-			}
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = no }
-			removal_cost = -1
-			
-			modifier = {
-				army_core_defence_factor = 0.1
-				army_core_attack_factor = 0.05
-				training_time_army_factor = -0.2
-				conscription = 0.01
-				resistance_damage_to_garrison = -0.2
-			}
-			equipment_bonus = {
-			}
-		}
-		
-		#皇家卫队
-		STG_royal_guardian = {
-			picture = GFX_idea_STG_royal_guardian
-			allowed = {
-				tag = STG
-			}
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = no }
-			removal_cost = -1
-			
-			modifier = {
-			}
-			equipment_bonus = {
-				infantry = {
-					default_morale = 0.15
-					max_organisation = 0.15
-				}
-			}
-		}
-
-		#皇家卫队2
-		STG_royal_guardian_1 = {
-			picture = GFX_idea_STG_royal_guardian
-			allowed = {
-				tag = STG
-			}
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = no }
-			removal_cost = -1
-			
-			modifier = {
-				army_infantry_defence_factor = 0.1
-			}
-			equipment_bonus = {
-				infantry = {
-					default_morale = 0.15
-					max_organisation = 0.15
-				}
-			}
-		}
-
-		#工党退却
-		STG_dying_labour_party = {
-			picture = GFX_idea_STG_dying_labour_party
-			allowed = {
-				tag = STG
-			}
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = no }
-			removal_cost = -1
-			
-			modifier = {
-				democratic_drift = 0.05
-				stability_weekly = 0.005
-			}
-		}
-
-		#工人额外假期
-		STG_worker_holidays = {
-			picture = GFX_idea_STG_worker_holidays
-			allowed = {
-				tag = STG
-			}
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = no }
-			removal_cost = -1
-			
-			modifier = {
-				production_speed_buildings_factor = -0.05
-			}
-		}
-	
-		#工党崛起
-		STG_rise_of_the_labor_party = {
-			picture = GFX_idea_STG_chaotic_Parliament
-			allowed = {
-				tag = STG
-			}
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = no }
-			removal_cost = -1
-			
-			modifier = {
-				political_power_cost = 0.3
-				stability_factor = -0.1
-				war_support_factor = 0.05
-				communism_drift = 0.1
-			}
-		}
-
-		#工党崛起0(削弱)
-		STG_rise_of_the_labor_party_0 = {
-			picture = GFX_idea_STG_chaotic_Parliament
-			allowed = {
-				tag = STG
-			}
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = no }
-			removal_cost = -1
-			
-			modifier = {
-				political_power_cost = 0.15
-				stability_factor = -0.05
-				communism_drift = 0.05
-			}
-		}
 		
 		
-		#凯恩斯经济后效0
-		STG_cairns_economy_effect_0 = {
-			picture = GFX_idea_STG_cairns_economy_effect
-			allowed = {
-				tag = STG
-			}
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			
-			modifier = {
-				production_factory_max_efficiency_factor = 0.1
-				production_factory_efficiency_gain_factor = 0.1
-				production_speed_infrastructure_factor = 0.1
-				tax_daily_modifier = -0.5
-				consumer_goods_factor = 0.1
-			}
-		}
-
-		#凯恩斯经济后效1
-		STG_cairns_economy_effect_1 = {
-			picture = GFX_idea_STG_cairns_economy_effect
-			allowed = {
-				tag = STG
-			}
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			
-			modifier = {
-				production_factory_efficiency_gain_factor = 0.1
-				production_speed_infrastructure_factor = 0.1
-				tax_daily_modifier = -0.3
-				consumer_goods_factor = 0.1
-			}
-		}
+#开局精神
 
 		#日落的战车道
 		STG_decaying_senshado = {
@@ -260,18 +16,16 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_armor_attack_factor = -0.1
-				army_armor_defence_factor = -0.1
-				army_speed_factor = -0.1
-				max_planning_factor = -0.1
-				army_org_Factor = -0.1
+				army_attack_factor = -0.1
+				army_speed_factor = -0.15
+				army_org_factor = -0.15
+				army_morale_factor = -0.15
 			}
 		}
 		
-		#三年计划
-		STG_three_year_plan = {
-			picture = GFX_idea_STG_three_year_plan
-			
+		#超速运转的政府
+		STG_Speeding_government = {
+			picture = GFX_idea_STG_Speeding_government
 			allowed = {
 				tag = STG
 			}
@@ -281,446 +35,170 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_arms_factory_factor = 0.1
-				production_speed_infrastructure_factor = 0.1
+				political_power_cost = -0.3
+				political_advisor_cost_factor = 0.5
+				economy_cost_factor = 0.5
 			}
-			
 		}
 		
-		#建立合作社
-		STG_establishment_cooperatives = {
 		
-			picture = GFX_idea_STG_establishment_cooperatives
-			
+#事件精神
+		
+		#在埃及的失败
+		STG_Failure_Egypt = {
+			picture = GFX_idea_STG_Failure_Egypt
 			allowed = {
 				tag = STG
 			}
-			
 			available = { }
 			cancel = { }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.05
-				political_power_factor = 0.1
+				war_support_factor = -0.25
+				offensive_war_stability_factor = -0.5
+				experience_gain_army_factor = -0.15
 			}
-			
 		}
 		
-		#稳步向前
-		STG_steady_forward = {
-		
-			picture = GFX_idea_STG_steady_forward
-			
+		#血肉铸成都柏林
+		STG_Chengdu_Berlin_flesh_blood = {
+			picture = GFX_idea_STG_Chengdu_Berlin_flesh_blood
 			allowed = {
-				tag = STG
+				tag = WKG
 			}
-			
 			available = { }
 			cancel = { }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
 			
 			modifier = {
-				economy_cost_factor = -0.3
-				trade_laws_cost_factor = -0.3
+				autonomy_gain = 0.3
+				political_power_gain = 0.3
 			}
-			
 		}
 		
-		#鼓励科研创新
-		STG_encourage_scientific_research_innovation = {
-		
-			picture = GFX_idea_STG_encourage_scientific_research_innovation
-			
+		#爱尔兰独立叛乱
+		STG_Irish_independence_rebellion = {
+			picture = GFX_idea_STG_Irish_independence_rebellion
 			allowed = {
 				tag = STG
 			}
-			
 			available = { }
 			cancel = { }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
 			
 			modifier = {
-				research_speed_factor = 0.05
-			}
-			
-		}
-		
-		#政府力量
-		STG_government_power = {
-		
-			picture = GFX_idea_STG_government_power
-			
-			allowed = {
-				tag = STG
-			}
-			
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			
-			modifier = {
-				global_building_slots_factor = 0.15
-				drift_defence_factor = 0.1
+				wage_modifier = 0.1
+				political_power_cost = 0.2
 			}
 		}
 		
-		#强化国有企业
-		STG_strengthening_stateowned_enterprises = {
-		
-			picture = GFX_idea_STG_strengthening_stateowned_enterprises
-			
-			allowed = {
-				tag = STG
-			}
-			
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			
-			modifier = {
-				line_change_production_efficiency_factor = 0.1
-			}
-		}
+#决议精神
 
-		#大罢工5
-		STG_worker_great_strike_5 = {
-			picture = GFX_idea_STG_worker_great_strike_5
-			allowed = { tag = STG }
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			modifier = {
-				stability_weekly_factor = -0.01
-				industrial_capacity_factory = -0.3
-				industrial_capacity_dockyard = -0.3
-				production_factory_max_efficiency_factor = -0.3
+		#大罢工
+		STG_General_strike_1 = {
+			picture = GFX_idea_STG_General_strike
+			allowed = {
+				tag = STG
 			}
-		}
-
-		#大罢工4
-		STG_worker_great_strike_4 = {
-			picture = GFX_idea_STG_worker_great_strike_4
-			allowed = { tag = STG }
 			available = { }
 			cancel = { }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
+			
 			modifier = {
-				stability_weekly_factor = -0.008
-				industrial_capacity_factory = -0.25
-				industrial_capacity_dockyard = -0.25
-				production_factory_max_efficiency_factor = -0.25
-			}
-		}
-
-		#大罢工3(为初始状态)
-		STG_worker_great_strike_3 = {
-			picture = GFX_idea_STG_worker_great_strike_3
-			allowed = { tag = STG }
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			modifier = {
-				stability_weekly_factor = -0.006
-				industrial_capacity_factory = -0.2
-				industrial_capacity_dockyard = -0.2
-				production_factory_max_efficiency_factor = -0.2
-			}
-		}
-
-		#大罢工2
-		STG_worker_great_strike_2 = {
-			picture = GFX_idea_STG_worker_great_strike_2
-			allowed = { tag = STG }
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			modifier = {
-				stability_weekly_factor = -0.004
+				civilian_factory_use = 3
 				industrial_capacity_factory = -0.15
 				industrial_capacity_dockyard = -0.15
-				production_factory_max_efficiency_factor = -0.15
 			}
 		}
-
-		#大罢工1
-		STG_worker_great_strike_1 = {
-			picture = GFX_idea_STG_worker_great_strike_1
-			allowed = { tag = STG }
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			modifier = {
-				stability_weekly_factor = -0.002
-				industrial_capacity_factory = -0.10
-				industrial_capacity_dockyard = -0.10
-				production_factory_max_efficiency_factor = -0.10
-			}
-		}
-
-		#大罢工0
-		STG_worker_great_strike_0 = {
-			picture = GFX_idea_STG_worker_great_strike_0
-			allowed = { tag = STG }
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			modifier = {
-				industrial_capacity_factory = -0.05
-				industrial_capacity_dockyard = -0.05
-				production_factory_max_efficiency_factor = -0.05
-			}
-		}
-
-		#交通设施拨款
-		STG_transportation_facilities_project = {
-			picture = GFX_idea_STG_transportation_facilities_project
-			allowed = { tag = STG }
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			modifier = {
-				production_speed_infrastructure_factor = 0.15
-				tax_daily_modifier = -0.1
-				consumer_goods_factor = 0.03
-			}
-		}
-
-		#贵族的不满
-		STG_dissatisfaction_from_nobility = {
-			picture = GFX_idea_STG_dissatisfaction_from_nobility
-			allowed = { tag = STG }
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			modifier = {
-				stability_factor = -0.08
-				war_support_factor = -0.08
-			}
-		}
-
-		#扩大预备役训练
-		STG_expand_reserve_training = {
-			picture = GFX_idea_STG_expand_reserve_training
-			allowed = { tag = STG }
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			modifier = {
-				conscription = 0.01
-				non_core_manpower = 0.1
-			}
-		}
-	
-		#维和军队扩大法
-		STG_peacekeeping_force_expansion_act = {
-			picture = GFX_idea_STG_peacekeeping_force_expansion_act
-			allowed = { tag = STG }
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			modifier = {
-				war_support_factor = 0.1
-				political_power_cost = 0.1
-				send_volunteers_tension = -0.8
-				send_volunteer_factor = 0.2
-			}
-		}
-
-		#保持威慑
-		STG_maintain_deterrence = {
-			picture = GFX_idea_STG_maintain_deterrence
-			allowed = { tag = STG }
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			modifier = {
-				army_defence_factor = 0.1
-				planning_speed = 0.1
-			}
-		}
-
-		#主动出击
-		STG_take_the_initiative = {
-			picture = GFX_idea_STG_take_the_initiative
-			allowed = { tag = STG }
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			modifier = {
-				army_attack_factor = 0.07
-				army_speed_factor = 0.1
-			}
-		}
-
-		#新皇家工会体系
-		STG_royal_labour_league = {
-			picture = GFX_idea_STG_royal_labour_league
-			allowed = { tag = STG }
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			modifier = {
-				production_speed_buildings_factor = 0.05
-				industrial_capacity_factory = 0.05
-			}
-		}
-
-		#新市场经济
-		STG_new_market_economy = {
-			picture = GFX_idea_STG_new_market_economy
-			allowed = { tag = STG }
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			modifier = {
-				tax_daily_modifier = 0.1
-				faction_trade_opinion_factor = 0.1
-				production_speed_industrial_complex_factor = 0.05
-				production_speed_rail_way_factor = 0.05
-				production_speed_infrastructure_factor = 0.05
-			}
-		}
-
-		#机械化协调作战
-		STG_machanized_coordinated_operations = {
-			picture = GFX_idea_STG_machanized_coordinated_operations
-			allowed = { tag = STG }
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			modifier = {
-				
-			}
-			equipment_bonus = {
-				mechanized = {
-					max_organisation = 0.1
-					recon = 0.1
-					max_strength = 0.1
-					default_morale = 0.1
-				}
-				motorized = {
-					max_organisation = 0.1
-					recon = 0.1
-					max_strength = 0.1
-					default_morale = 0.1
-				}
-			}
-		}
-
-		#战车中心作战
-		STG_tank_centre_operation = {
-			picture = GFX_idea_STG_tank_centre_operation
-			allowed = { tag = STG }
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			modifier = {
-				
-			}
-			equipment_bonus = {
-				light_tank_chassis = {
-					max_organisation = 0.25
-					max_strength = 0.2
-				}
-				medium_tank_chassis = {
-					max_organisation = 0.25
-					max_strength = 0.2
-				}
-				heavy_tank_chassis = {
-					max_organisation = 0.25
-					max_strength = 0.2
-				}
-			}
-		}
-
-		#伙食良好
-		STG_army_well_fed = {
-			picture = GFX_idea_STG_army_well_fed
-			allowed = { tag = STG }
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			modifier = {
-			}
-			equipment_bonus = {
-				light_tank_chassis = {
-					default_morale = 0.15
-				}
-				medium_tank_chassis = {
-					default_morale = 0.15
-				}
-				heavy_tank_chassis = {
-					default_morale = 0.15
-				}
-			}
-		}
-
-		#伙食良好2
-		STG_army_well_fed_1 = {
-			picture = GFX_idea_STG_army_well_fed
-			allowed = { tag = STG }
-			available = { }
-			cancel = { }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			modifier = {
-				supply_consumption_factor = -0.1
-				no_supply_grace = 6
-			}
-			equipment_bonus = {
-				light_tank_chassis = {
-					default_morale = 0.15
-				}
-				medium_tank_chassis = {
-					default_morale = 0.15
-				}
-				heavy_tank_chassis = {
-					default_morale = 0.15
-				}
-			}
-		}
-	}
-
-	materiel_manufacturer = {
-		royal_force_RnD = {
-
+		STG_General_strike_2 = {
+			picture = GFX_idea_STG_General_strike
 			allowed = {
-				original_TAG = STG
+				tag = STG
 			}
-			available = {
-				has_completed_focus = STG_royal_force_RnD
-			}
-			research_bonus = {
-				artillery = 0.2
-			}
-			traits = { artillery_manufacturer }
-
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
 			modifier = {
-				army_artillery_attack_factor = 0.05
+				civilian_factory_use = 4
+				industrial_capacity_factory = -0.20
+				industrial_capacity_dockyard = -0.20
 			}
 		}
-	}
+		STG_General_strike_3 = {
+			picture = GFX_idea_STG_General_strike
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				civilian_factory_use = 5
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
+			}
+		}
+		STG_General_strike_4 = {
+			picture = GFX_idea_STG_General_strike
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				civilian_factory_use = 6
+				industrial_capacity_factory = -0.30
+				industrial_capacity_dockyard = -0.30
+			}
+		}
+		STG_General_strike_5 = {
+			picture = GFX_idea_STG_General_strike
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				civilian_factory_use = 7
+				industrial_capacity_factory = -0.35
+				industrial_capacity_dockyard = -0.35
+			}
+		}
+		
+#国策精神
+		
+		#货币理论
+		STG_Monetary_theory = {
+			picture = GFX_idea_STG_Monetary_theory
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				tax_daily_modifier = 0.15
+				line_change_production_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		
 }

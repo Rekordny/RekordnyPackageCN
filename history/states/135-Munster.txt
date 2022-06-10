@@ -7,7 +7,7 @@ state={
 	state_category = town
 
 	history={
-		owner = STG
+		owner = WKG
 		buildings = {
 			infrastructure = 3 #was: 6
 			industrial_complex = 3
@@ -18,7 +18,7 @@ state={
 		victory_points = {
 			6313 1 #Limerick
 		}
-		add_core_of = STG
+		add_core_of = WKG
 	}
 
 	provinces={

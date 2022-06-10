@@ -2,7 +2,18 @@ on_actions = {
     on_startup = {
         effect = {
             STG = {
-				set_country_flag = STG_START_OCCUPATION
+				country_event = { id = StGloriana_new.1 days = 0 }   #一场遗留的战争
+				country_event = { id = StGloriana_new.3 days = 90 }   #爱尔兰西吴王子的白鸟
+				
+				#凯恩斯经济后效
+				add_dynamic_modifier = { modifier = STG_cairns_economy_effect }
+				set_variable = { var = STG_cairns_economy_effect_var_production_speed_rail_way_factor value = 0.15 }
+				set_variable = { var = STG_cairns_economy_effect_var_production_speed_infrastructure_factor value = 0.15 }
+				set_variable = { var = STG_cairns_economy_effect_var_production_factory_max_efficiency_factor value = 0.15 }
+				set_variable = { var = STG_cairns_economy_effect_var_production_factory_efficiency_gain_factor value = 0.15 }
+				set_variable = { var = STG_cairns_economy_effect_var_tax_daily_modifier value = -0.5 }
+				set_variable = { var = STG_cairns_economy_effect_var_consumer_goods_factor value = 0.15 }
+				set_variable = { var = STG_cairns_economy_effect_var_stability_factor value = 0 }
             }
         }
     }

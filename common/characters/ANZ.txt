@@ -168,4 +168,128 @@ characters={
 			legacy_id=1076
 		}
 	}
+	ANZ_aquila={
+		name="Aquila"
+		portraits={
+			civilian={
+				large="gfx/leaders/ANZ/Portrait_ANZ_Aquila.dds"
+				small="gfx/interface/advisors/idea_aquila.dds"
+			}
+		}
+		navy_leader={
+			traits={ aviation_enthusiast bold old_guard }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			maneuvering_skill=4
+			coordination_skill=2
+			legacy_id=0
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = ANZ_aquila
+			removal_cost = 0
+			available = {  }
+			allowed = {
+				original_tag = ANZ
+			}
+			visible = {  }
+			traits = { navy_chief_naval_aviation_2 }
+			on_add = {}
+			on_remove = {}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	ANZ_garibaldi={
+		name="Garibaldi"
+		portraits={
+			civilian={
+				large="gfx/leaders/ANZ/Portrait_ANZ_Garibaldi.dds"
+				small="gfx/interface/advisors/idea_aquila.dds"
+			}
+		}
+		navy_leader={
+			traits={ chief_engineer gentlemanly cruiser_captain }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			maneuvering_skill=4
+			coordination_skill=2
+			legacy_id=0
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = ANZ_garibaldi
+			removal_cost = 0
+			available = {  }
+			allowed = {
+				original_tag = ANZ
+			}
+			visible = {  }
+			traits = { navy_chief_reform_2 }
+			on_add = {}
+			on_remove = {}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	ANZ_abruzzi={
+		name="Abruzzi"
+		portraits={
+			civilian={
+				large="gfx/leaders/ANZ/Portrait_ANZ_Abruzzi.dds"
+				small="gfx/interface/advisors/idea_abruzzi.dds"
+			}
+		}
+		navy_leader={
+			traits={ caustic_personality cruiser_captain }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+	ANZ_pola={
+		name="Pola"
+		portraits={
+			civilian={
+				large="gfx/leaders/ANZ/Portrait_ANZ_Pola.dds"
+				small="gfx/interface/advisors/idea_pola.dds"
+			}
+		}
+		navy_leader={
+			traits={ destroyer_leader gentlemanly }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+	ANZ_zara={
+		name="Zara"
+		portraits={
+			civilian={
+				large="gfx/leaders/ANZ/Portrait_ANZ_Zara.dds"
+				small="gfx/interface/advisors/idea_zara.dds"
+			}
+		}
+		navy_leader={
+			traits={ destroyer_leader craven }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
 }

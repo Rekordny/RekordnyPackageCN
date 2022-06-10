@@ -27,9 +27,9 @@ division_template = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
         motorized = { x = 0 y = 2 }
-		mechanized = { x = 1 y = 0 }
-		mechanized = { x = 1 y = 1 }
-		mechanized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
 	}
 	support = {
 		anti_tank = { x = 0 y = 0 }
@@ -288,5 +288,239 @@ units = {
         division_template = "Armor Division"
         # start_experience_factor = 0.1
         start_equipment_factor = 1
+    }
+}
+units = {
+    fleet = {
+        name = "Saunders fleet" # Name 1
+        naval_base = 6845
+        task_force = {
+            name = "Fleet No.1" # Name 2
+            location = 6845
+            ship = { name = "USS Hancock"  definition = carrier equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = SDS version_name = "Essex Class" } } air_wings = { cv_fighter_equipment_1 =  { owner = "SDS" amount = 22 } cv_nav_bomber_equipment_1 =  { owner = "SDS" amount = 12 } cv_CAS_equipment_1 =  { owner = "SDS" amount = 12 } } }
+            ship = { name = "USS Intrepid"  definition = carrier equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = SDS version_name = "Essex Class" } } air_wings = { cv_fighter_equipment_1 =  { owner = "SDS" amount = 22 } cv_nav_bomber_equipment_1 =  { owner = "SDS" amount = 12 } cv_CAS_equipment_1 =  { owner = "SDS" amount = 12 } } }
+            ship = { name = "John F Kennedy"  definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = SDS version_name = "Kitty Hawk Class" } } air_wings = { cv_fighter_equipment_1 =  { owner = "SDS" amount = 22 } cv_nav_bomber_equipment_1 =  { owner = "SDS" amount = 12 } cv_CAS_equipment_1 =  { owner = "SDS" amount = 12 } } }
+            ship = { name = "Leahy"  definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SDS version_name = "Leahy Class" } } }
+            ship = { name = "Harry E. Yarnell"  definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SDS version_name = "Leahy Class" } } }
+            ship = { name = "Worden"  definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SDS version_name = "Leahy Class" } } }
+            ship = { name = "USS William C. Lawe"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Harold J. Ellison"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "USS Orleck" } } }
+            ship = { name = "USS Cone"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Steinaker"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Vogelgesang"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Robert A. Owens"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS McKean"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Johnston"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Corry"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Newman K. Perry"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Southerland"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Carpenter"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Rupertus"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Joseph P. Kennedy Jr."  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Floyd B. Parks"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Gearing"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Dennis J. Buckley"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Shelton"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Perry"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS James E. Kyes"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Hanson"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Perkins"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Everett F. Larson"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Lloyd Thomas"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Warrington"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+        }
+        task_force = {
+            name = "Fleet No.2" # Name 2
+            location = 3878
+            ship = { name = "USS Oriskany"  definition = carrier equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = SDS version_name = "Essex Class" } } air_wings = { cv_fighter_equipment_1 =  { owner = "SDS" amount = 22 } cv_nav_bomber_equipment_1 =  { owner = "SDS" amount = 12 } cv_CAS_equipment_1 =  { owner = "SDS" amount = 12 } } }
+            ship = { name = "USS O'Harer"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Noa"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Leary"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS McCaffery"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Charles H. Roan"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Eversole"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "Mahan"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Farragut Class" } } }
+            ship = { name = "Macdonough"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Farragut Class" } } }
+            ship = { name = "Dahlgren"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Farragut Class" } } }
+        }
+    }
+    fleet = {
+        name = "Saunders fleet pacific" # Name 1
+        naval_base = 1562
+        task_force = {
+            name = "Fleet No.1" # Name 2
+            location = 1562
+            ship = { name = "Albany"  definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SDS version_name = "Oregon City Class" } } }
+            ship = { name = "Dale"  definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SDS version_name = "Leahy Class" } } }
+            ship = { name = "Richmond K. Turner"  definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SDS version_name = "Leahy Class" } } }
+            ship = { name = "Wainwright"  definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SDS version_name = "Belknap Class" } } }
+            ship = { name = "Josephus Daniels"  definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SDS version_name = "Belknap Class" } } }
+            ship = { name = "Belknap"  definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SDS version_name = "Belknap Class" } } }
+            ship = { name = "Chicago"  definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SDS version_name = "Baltimore Class" } } }
+            ship = { name = "Columbus"  definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SDS version_name = "Baltimore Class" } } }
+            ship = { name = "USS Ozbourn"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Theodore E. Chandler"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Charles R. Ware"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Robert L. Wilson"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Arnold J. Isbell"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Brinkley Bass"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Henry W. Tucker"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "Luce"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Farragut Class" } } }
+            ship = { name = "William V. Pratt"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Farragut Class" } } }
+            ship = { name = "Preble"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Farragut Class" } } }
+            ship = { name = "King"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Farragut Class" } } }
+            ship = { name = "Dewey"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Farragut Class" } } }
+            ship = { name = "Farragut"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Farragut Class" } } }
+            ship = { name = "Coontz"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Farragut Class" } } }
+        }
+        task_force = {
+            name = "Fleet No.2" # Name 2
+            location = 9814
+            ship = { name = "USS Lexington"  definition = carrier equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = SDS version_name = "Essex Class" } } air_wings = { cv_fighter_equipment_1 =  { owner = "SDS" amount = 22 } cv_nav_bomber_equipment_1 =  { owner = "SDS" amount = 12 } cv_CAS_equipment_1 =  { owner = "SDS" amount = 12 } } }
+            ship = { name = "Midway"  definition = carrier equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = SDS version_name = "Midway Class" } } air_wings = { cv_fighter_equipment_1 =  { owner = "SDS" amount = 22 } cv_nav_bomber_equipment_1 =  { owner = "SDS" amount = 12 } cv_CAS_equipment_1 =  { owner = "SDS" amount = 12 } } }
+            ship = { name = "CoralSea"  definition = carrier equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = SDS version_name = "Midway Class" } } air_wings = { cv_fighter_equipment_1 =  { owner = "SDS" amount = 22 } cv_nav_bomber_equipment_1 =  { owner = "SDS" amount = 12 } cv_CAS_equipment_1 =  { owner = "SDS" amount = 12 } } }
+            ship = { name = "Gridley"  definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SDS version_name = "Leahy Class" } } }
+            ship = { name = "Truxtun"  definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SDS version_name = "Belknap Class" } } }
+            ship = { name = "Horne"  definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SDS version_name = "Belknap Class" } } }
+            ship = { name = "USS William M. Wood"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Vesole"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Leonard F. Mason"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Holder"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Glennon"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Brownson"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS George K. MacKenzie"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Richard E. Kraus"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS New"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Stribling"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Gurke"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Richard B. Anderson"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Wiltsie"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Rowan"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Epperson"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Alfred A. Cunningham"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Allen M. Sumner Class" } } }
+            ship = { name = "USS Drexler"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Allen M. Sumner Class" } } }
+            ship = { name = "USS Mannert L. Abele"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Allen M. Sumner Class" } } }
+            ship = { name = "USS Compton"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Allen M. Sumner Class" } } }
+            ship = { name = "USS Moale"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Allen M. Sumner Class" } } }
+            ship = { name = "USS Purdy"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Allen M. Sumner Class" } } }
+            ship = { name = "USS John R. Pierce"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Allen M. Sumner Class" } } }
+            ship = { name = "USS Buck"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Allen M. Sumner Class" } } }
+        }
+        task_force = {
+            name = "Fleet No.3" # Name 2
+            location = 7315
+            ship = { name = "Independence"  definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = SDS version_name = "Forrestal Class" } } air_wings = { cv_fighter_equipment_1 =  { owner = "SDS" amount = 22 } cv_nav_bomber_equipment_1 =  { owner = "SDS" amount = 12 } cv_CAS_equipment_1 =  { owner = "SDS" amount = 12 } } }
+            ship = { name = "Ranger"  definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = SDS version_name = "Forrestal Class" } } air_wings = { cv_fighter_equipment_1 =  { owner = "SDS" amount = 22 } cv_nav_bomber_equipment_1 =  { owner = "SDS" amount = 12 } cv_CAS_equipment_1 =  { owner = "SDS" amount = 12 } } }
+            ship = { name = "England"  definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SDS version_name = "Leahy Class" } } }
+            ship = { name = "Halsey"  definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SDS version_name = "Leahy Class" } } }
+            ship = { name = "Reeves"  definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SDS version_name = "Leahy Class" } } }
+            ship = { name = "Sterett"  definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SDS version_name = "Belknap Class" } } }
+            ship = { name = "Biddle"  definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SDS version_name = "Belknap Class" } } }
+            ship = { name = "Jouett"  definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SDS version_name = "Belknap Class" } } }
+            ship = { name = "William H. Standley"  definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SDS version_name = "Belknap Class" } } }
+            ship = { name = "Fox"  definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SDS version_name = "Belknap Class" } } }
+            ship = { name = "USS Hollister"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS John R. Craig"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Higbee"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Meredith"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Agerholm"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS William R. Rush"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Bausell"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Rich"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Basilone"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Power"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Sarsfield"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Bordelon"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Laffey"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Allen M. Sumner Class" } } }
+            ship = { name = "USS De Haven"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Allen M. Sumner Class" } } }
+            ship = { name = "USS Wallace L. Lind"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Allen M. Sumner Class" } } }
+            ship = { name = "USS Charles S. Sperry"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Allen M. Sumner Class" } } }
+            ship = { name = "USS Douglas H. Fox"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Allen M. Sumner Class" } } }
+        }
+    }
+    fleet = {
+        name = "Saunders fleet hawaii" # Name 1
+        naval_base = 4180
+        task_force = {
+            name = "Fleet No.1" # Name 2
+            location = 4180
+            ship = { name = "Franklin D Roosevelt"  definition = carrier equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = SDS version_name = "Midway Class" } } air_wings = { cv_fighter_equipment_1 =  { owner = "SDS" amount = 22 } cv_nav_bomber_equipment_1 =  { owner = "SDS" amount = 12 } cv_CAS_equipment_1 =  { owner = "SDS" amount = 12 } } }
+            ship = { name = "Saratoga"  definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = SDS version_name = "Forrestal Class" } } air_wings = { cv_fighter_equipment_1 =  { owner = "SDS" amount = 22 } cv_nav_bomber_equipment_1 =  { owner = "SDS" amount = 12 } cv_CAS_equipment_1 =  { owner = "SDS" amount = 12 } } }
+            ship = { name = "Forrestal"  definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = SDS version_name = "Forrestal Class" } } air_wings = { cv_fighter_equipment_1 =  { owner = "SDS" amount = 22 } cv_nav_bomber_equipment_1 =  { owner = "SDS" amount = 12 } cv_CAS_equipment_1 =  { owner = "SDS" amount = 12 } } }
+            ship = { name = "Kitty Hawk"  definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = SDS version_name = "Kitty Hawk Class" } } air_wings = { cv_fighter_equipment_1 =  { owner = "SDS" amount = 22 } cv_nav_bomber_equipment_1 =  { owner = "SDS" amount = 12 } cv_CAS_equipment_1 =  { owner = "SDS" amount = 12 } } }
+            ship = { name = "America"  definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = SDS version_name = "Kitty Hawk Class" } } air_wings = { cv_fighter_equipment_1 =  { owner = "SDS" amount = 22 } cv_nav_bomber_equipment_1 =  { owner = "SDS" amount = 12 } cv_CAS_equipment_1 =  { owner = "SDS" amount = 12 } } }
+            ship = { name = "Constellation"  definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = SDS version_name = "Kitty Hawk Class" } } air_wings = { cv_fighter_equipment_1 =  { owner = "SDS" amount = 22 } cv_nav_bomber_equipment_1 =  { owner = "SDS" amount = 12 } cv_CAS_equipment_1 =  { owner = "SDS" amount = 12 } } }
+            ship = { name = "Bainbridge"  definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SDS version_name = "Leahy Class" } } }
+            ship = { name = "USS Dyess"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Rogers"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Henderson"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Robert H. McCard"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Fiske"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Hamner"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Charles P. Cecil"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Myles C. Fox"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Hawkins"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Gearing Class" } } }
+            ship = { name = "USS Massey"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Allen M. Sumner Class" } } }
+            ship = { name = "USS Lowry"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Allen M. Sumner Class" } } }
+            ship = { name = "USS Waldron"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Allen M. Sumner Class" } } }
+            ship = { name = "USS Strong"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Allen M. Sumner Class" } } }
+            ship = { name = "USS USS James C. Owens"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Allen M. Sumner Class" } } }
+            ship = { name = "USS Ault"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Allen M. Sumner Class" } } }
+            ship = { name = "USS Putnam"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Allen M. Sumner Class" } } }
+            ship = { name = "USS Allen M. Sumner"  definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SDS version_name = "Allen M. Sumner Class" } } }
+        }
+    }
+    fleet = {
+        name = "Saunders fleet submarine" # Name 1
+        naval_base = 788
+        task_force = {
+            name = "Fleet No.1" # Name 2
+            location = 788
+            ship = { name = "Will Rogers"  definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SDS version_name = "Benjamin Franklin Class" } } }
+            ship = { name = "Francis Scott Key"  definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SDS version_name = "Benjamin Franklin Class" } } }
+            ship = { name = "Henry L. Stimson"  definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SDS version_name = "Benjamin Franklin Class" } } }
+            ship = { name = "George Washington Carver"  definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SDS version_name = "Benjamin Franklin Class" } } }
+            ship = { name = "George C. Marshall"  definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SDS version_name = "Benjamin Franklin Class" } } }
+            ship = { name = "James K. Polk"  definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SDS version_name = "Benjamin Franklin Class" } } }
+            ship = { name = "George Bancroft"  definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SDS version_name = "Benjamin Franklin Class" } } }
+            ship = { name = "Lewis and Clark"  definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SDS version_name = "Benjamin Franklin Class" } } }
+            ship = { name = "James Madison"  definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SDS version_name = "James Madison Class" } } }
+            ship = { name = "Tecumseh"  definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SDS version_name = "James Madison Class" } } }
+            ship = { name = "Daniel Boone"  definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SDS version_name = "James Madison Class" } } }
+            ship = { name = "John C. Calhoun"  definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SDS version_name = "James Madison Class" } } }
+            ship = { name = "Ulysses S. Grant"  definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SDS version_name = "James Madison Class" } } }
+            ship = { name = "Von Steuben"  definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SDS version_name = "James Madison Class" } } }
+            ship = { name = "Casimir Pulaski"  definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SDS version_name = "James Madison Class" } } }
+            ship = { name = "Stonewall Jackson"  definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SDS version_name = "James Madison Class" } } }
+            ship = { name = "Sam Rayburn"  definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SDS version_name = "James Madison Class" } } }
+            ship = { name = "Nathanael Greene"  definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SDS version_name = "James Madison Class" } } }
+            
+        }
+        task_force = {
+            name = "Fleet No.1" # Name 2
+            location = 7617
+            ship = { name = "Kamehameha"  definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SDS version_name = "Benjamin Franklin Class" } } }
+            ship = { name = "Simon Bolivar"  definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SDS version_name = "Benjamin Franklin Class" } } }
+            ship = { name = "Benjamin Franklin"  definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SDS version_name = "Benjamin Franklin Class" } } }
+            ship = { name = "Ethan Allen"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SDS version_name = "Ethan Allen Class" } } }
+            ship = { name = "Sam Houston"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SDS version_name = "Ethan Allen Class" } } }
+            ship = { name = "Thomas A. Edison"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SDS version_name = "Ethan Allen Class" } } }
+            ship = { name = "John Marshall"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SDS version_name = "Ethan Allen Class" } } }
+            ship = { name = "Thomas Jefferson"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SDS version_name = "Ethan Allen Class" } } }
+            ship = { name = "George Washington"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SDS version_name = "Ethan Allen Class" } } }
+            ship = { name = "Patrick Henry"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SDS version_name = "Ethan Allen Class" } } }
+            ship = { name = "Theodore Roosevelt"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SDS version_name = "Ethan Allen Class" } } }
+            ship = { name = "Robert E. Lee"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SDS version_name = "Ethan Allen Class" } } }
+            ship = { name = "Abraham Lincoln"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SDS version_name = "Ethan Allen Class" } } }
+            ship = { name = "John Adams"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SDS version_name = "Lafayette Class" } } }
+            ship = { name = "Daniel Webster"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SDS version_name = "Lafayette Class" } } }
+            ship = { name = "Henry Clay"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SDS version_name = "Lafayette Class" } } }
+            ship = { name = "Woodrow Wilson"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SDS version_name = "Lafayette Class" } } }
+            ship = { name = "James Monroe"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SDS version_name = "Lafayette Class" } } }
+            ship = { name = "Nathan Hale"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SDS version_name = "Lafayette Class" } } }
+            ship = { name = "Andrew Jackson"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SDS version_name = "Lafayette Class" } } }
+            ship = { name = "Alexander Hamilton"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SDS version_name = "Lafayette Class" } } }
+            ship = { name = "Lafayette"  definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SDS version_name = "Lafayette Class" } } }
+        }
     }
 }
