@@ -23,7 +23,7 @@ STG_Special_action = {
 	   	}
 		custom_cost_text = STG_suppress_WKG_tt
 		modifier = {
-			subjects_autonomy_gain = -1.2
+			subjects_autonomy_gain = -1.4
 		}
 		complete_effect = {
 			hidden_effect = {
@@ -53,7 +53,7 @@ STG_Special_action = {
 		fire_only_once = no
 		day_re_enable = 0
 		days_re_enable = 0
-		days_mission_timeout = 5
+		days_mission_timeout = 30
 		selectable_mission = yes
 		custom_cost_trigger = {
 			check_variable = { gold > 99.9 }
@@ -120,5 +120,323 @@ STG_Special_action = {
 			else = { }
 		}
 	}
+	
+	#军队镇压
+	STG_Army_repression_WKG = {
+		allowed = { tag = STG }
+		available = { has_army_manpower = { size > 499999 } }
+		visible = { 
+			OR = {
+				country_exists = KWG
+				has_completed_focus = STG_attitude 
+				AND = { 
+					is_ai = no 
+					is_debug = yes
+				}
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = {
+				random_list = {
+					30 = { }
+					70 = { country_event = { id = StGloriana_new.4 days = 1 } }
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	#改编阿尔斯特步枪旅
+	STG_Adaptation_URB_WKG = {
+		allowed = { tag = STG }
+		visible = { 
+			OR = {
+				country_exists = KWG
+				has_completed_focus = STG_attitude 
+				AND = { 
+					is_ai = no 
+					is_debug = yes
+				}
+			}
+		}
+		fire_only_once = yes
+		custom_cost_trigger = {
+			has_army_experience > 9.9
+			has_equipment = { infantry_equipment > 999 } 
+	   	}
+		custom_cost_text = STG_Adaptation_URB_WKG_tt
+		complete_effect = {
+			hidden_effect = {
+				has_army_experience = -10
+				add_equipment_to_stockpile = {                                
+					type = infantry_equipment
+					amount = -1000
+				}
+			}
+			add_tech_bonus = {
+				name = STG_Adaptation_URB_WKG_bonus
+				bonus = 1
+				uses = 1
+				category = military_police_tech
+			}
+			division_template = {
+				name = "BRU"
+				division_names_group = BRU
+				is_locked = no
+				regiments = { 
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 } 
+					infantry = { x = 0 y = 3 } 
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = { 
+					prioritize_location = 3379
+					division = "name = \"BRU\" division_template = \"BRU\" start_experience_factor = 0.5" 
+					owner = ROOT
+				}
+				create_unit = { 
+					prioritize_location = 3379
+					division = "name = \"BRU\" division_template = \"BRU\" start_experience_factor = 0.5" 
+					owner = ROOT
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	#周期性下调军火生产
+	STG_Cyclical_reduction_arms_production = {
+		allowed = { tag = STG }
+		available = { NOT = { has_decision = STG_Periodic_cuts_military_wages } }
+		visible = { 
+			OR = {
+				has_completed_focus = STG_Further_cuts_military_spending 
+				AND = { 
+					is_ai = no 
+					is_debug = yes
+				}
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 365
+		days_remove = 180
+		custom_cost_trigger = { 
+			has_political_power > 49.9 
+			has_war_support > 0.029
+		}
+		custom_cost_text = STG_Cyclical_reduction_arms_production_tt
+		modifier = {
+			consumer_goods_factor = -0.05
+			industrial_capacity_factory = -0.1
+		}
+		complete_effect = {
+			hidden_effect = { 
+				add_political_power = -50 
+				add_war_support = -0.03
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	#周期性下调军队工资
+	STG_Periodic_cuts_military_wages = {
+		allowed = { tag = STG }
+		available = { NOT = { has_decision = STG_Cyclical_reduction_arms_production } }
+		visible = { 
+			OR = {
+				has_completed_focus = STG_Further_cuts_military_spending 
+				AND = { 
+					is_ai = no 
+					is_debug = yes
+				}
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 365
+		days_remove = 180
+		custom_cost_trigger = { 
+			has_political_power > 49.9 
+			has_war_support > 0.029
+		}
+		custom_cost_text = STG_Cyclical_reduction_arms_production_tt
+		modifier = {
+			army_org_factor = -0.1
+			wage_modifier = -0.15
+		}
+		complete_effect = {
+			hidden_effect = { 
+				add_political_power = -50 
+				add_war_support = -0.03
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	#反右游行
+	STG_anti_rightist_march = {
+		available = { fascism > 0.8 }
+		activation = { has_country_flag = StGloriana_event_8_flag }
+		visible = {
+			OR = {
+				has_country_flag = StGloriana_event_8_flag
+				AND = {
+					is_ai = no
+					is_debug = yes
+				}
+			}
+		}
+		fire_only_once = yes
+		day_re_enable = 0
+		days_re_enable = 0
+		days_mission_timeout = 3650
+		timeout_effect = {
+			
+		}
+		remove_effect = {
+			remove_ideas = STG_anti_rightist_march
+		}
+	}
 }
 
+#引言与格言
+STG_Introduction_and_maxim = { 
+		
+	#不会洒的红茶
+	STG_black_tea_spill = {
+		allowed = { tag = STG }
+		available = { 
+			NOT = { has_decision = STG_unscrupulous_battle } 
+			NOT = { has_decision = STG_Courage_transcend_adversity } 
+		}
+		visible = { 
+			OR = {
+				has_completed_focus = STG_Introduction_and_maxim 
+				AND = { 
+					is_ai = no 
+					is_debug = yes
+				}
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 300
+		days_remove = 90
+		custom_cost_trigger = {
+			command_power > 29.9
+			has_fuel > 29999
+			check_variable = { ssdp > 299.9 }
+	   	}
+		custom_cost_text = STG_black_tea_spill_tt
+		modifier = {
+			army_armor_speed_factor = 0.3
+			army_armor_attack_factor = 0.3
+			army_org_factor = 0.3
+			breakthrough_factor = 0.3
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_fuel = -30000
+				add_command_power = -30 
+				add_to_variable = {
+					var = ssdp
+					value = -300
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	#不择手段之战
+	STG_unscrupulous_battle = {
+		allowed = { tag = STG }
+		available = { 
+			NOT = { has_decision = STG_black_tea_spill } 
+			NOT = { has_decision = STG_Courage_transcend_adversity } 
+		}
+		visible = { 
+			OR = {
+				has_completed_focus = STG_Introduction_and_maxim 
+				AND = { 
+					is_ai = no 
+					is_debug = yes
+				}
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 300
+		days_remove = 90
+		custom_cost_trigger = {
+			command_power > 29.9
+			check_variable = { ssdp > 299.9 }
+	   	}
+		custom_cost_text = STG_unscrupulous_battle_tt
+		modifier = {
+			air_bombing_targetting = 0.25
+			air_night_penalty = -0.5
+			air_defence_factor = -0.2
+			air_accidents_factor = 0.2
+			air_strategic_bomber_bombing_factor = 0.3
+			air_escort_efficiency = 0.3
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -30 
+				add_to_variable = {
+					var = ssdp
+					value = -300
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	#跨越绝境的勇猛
+	STG_Courage_transcend_adversity = {
+		allowed = { tag = STG }
+		available = { 
+			NOT = { has_decision = STG_unscrupulous_battle } 
+			NOT = { has_decision = STG_black_tea_spill } 
+		}
+		visible = { 
+			OR = {
+				has_completed_focus = STG_Introduction_and_maxim 
+				AND = { 
+					is_ai = no 
+					is_debug = yes
+				}
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 300
+		days_remove = 90
+		custom_cost_trigger = {
+			command_power > 29.9
+			check_variable = { ssdp > 299.9 }
+	   	}
+		custom_cost_text = STG_Courage_transcend_adversity_tt
+		modifier = {
+			army_defence_factor = -0.15
+			army_morale_factor = -0.15
+			breakthrough_factor = -0.15
+			army_attack_factor = 0.2
+			army_artillery_attack_factor = 0.2
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -30 
+				add_to_variable = {
+					var = ssdp
+					value = -300
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+		
+}

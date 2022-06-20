@@ -1,0 +1,52 @@
+defined_text = {
+	name = GETBREofficiallanguageNAME
+	text = {
+		trigger = {
+			has_country_flag = BRE_english_was_official
+		}
+		localization_key = BRE_english_official_local
+	}
+	text = {
+		trigger = {
+			has_country_flag = BRE_franch_was_official
+		}
+		localization_key = BRE_franch_official_local
+	}
+	text = {
+		trigger = {
+			has_country_flag = BRE_diversity_was_official
+		}
+		localization_key = BRE_diversity_official_local
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = BRE_english_was_official
+				has_country_flag = BRE_franch_was_official
+				has_country_flag = BRE_diversity_was_official
+			}
+		}
+		localization_key = BRE_official_language_not_set_yet
+	}
+}
+defined_text = {
+	name = GETBREofficiallanguageacceptanceNAME
+	text = {
+		trigger = {
+			has_country_flag = BRE_english_was_official
+		}
+		localization_key = BRE_english_official_local_accptance
+	}
+	text = {
+		trigger = {
+			has_country_flag = BRE_franch_was_official
+		}
+		localization_key = BRE_franch_official_local_accptance
+	}
+	text = {
+		trigger = {
+			has_country_flag = BRE_diversity_was_official
+		}
+		localization_key = BRE_diversity_official_local_accptance
+	}
+}

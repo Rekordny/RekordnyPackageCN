@@ -1,0 +1,123 @@
+PRA_1 = 
+{
+	name = "Моторизованная пехотная дивизия"
+
+	for_countries = { PRA }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. Pravda Моторизованная пехотная дивизия"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Pravda Моторизованная пехотная дивизия" }
+		2 = { "%d. Pravda Моторизованная пехотная дивизия" }
+		3 = { "%d. Pravda Моторизованная пехотная дивизия" }
+		4 = { "%d. Pravda Моторизованная пехотная дивизия" }
+		5 = { "%d. Pravda Моторизованная пехотная дивизия" }
+		6 = { "%d. Pravda Моторизованная пехотная дивизия" }
+		7 = { "%d. Pravda Моторизованная пехотная дивизия" }
+		8 = { "%d. Pravda Моторизованная пехотная дивизия" }
+		9 = { "%d. Pravda Моторизованная пехотная дивизия" }
+		10 = { "%d. Pravda Моторизованная пехотная дивизия" }
+		11 = { "%d. Pravda Моторизованная пехотная дивизия" }
+		12 = { "%d. Pravda Моторизованная пехотная дивизия" }
+		13 = { "%d. Pravda Моторизованная пехотная дивизия" }
+		14 = { "%d. Pravda Моторизованная пехотная дивизия" }
+		15 = { "%d. Pravda Моторизованная пехотная дивизия" }
+		16 = { "%d. Pravda Моторизованная пехотная дивизия" }
+		17 = { "%d. Pravda Моторизованная пехотная дивизия" }
+		18 = { "%d. Pravda Моторизованная пехотная дивизия" }
+		19 = { "%d. Pravda Моторизованная пехотная дивизия" }
+
+	}
+}
+PRA_2 = 
+{
+	name = "Подразделение резервуаров"
+
+	for_countries = { PRA }
+
+	can_use = { always = yes }
+
+	division_types = { "medium_armor" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. Pravda Подразделение резервуаров"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Pravda Подразделение резервуаров" }
+		2 = { "%d. Pravda Подразделение резервуаров" }
+		3 = { "%d. Pravda Подразделение резервуаров" }
+		4 = { "%d. Pravda Подразделение резервуаров" }
+		5 = { "%d. Pravda Подразделение резервуаров" }
+		6 = { "%d. Pravda Подразделение резервуаров" }
+		7 = { "%d. Pravda Подразделение резервуаров" }
+		8 = { "%d. Pravda Подразделение резервуаров" }
+		9 = { "%d. Pravda Подразделение резервуаров" }
+		10 = { "%d. Pravda Подразделение резервуаров" }
+		11 = { "%d. Pravda Подразделение резервуаров" }
+		12 = { "%d. Pravda Подразделение резервуаров" }
+		13 = { "%d. Pravda Подразделение резервуаров" }
+		14 = { "%d. Pravda Подразделение резервуаров" }
+		15 = { "%d. Pravda Подразделение резервуаров" }
+		16 = { "%d. Pravda Подразделение резервуаров" }
+		17 = { "%d. Pravda Подразделение резервуаров" }
+		18 = { "%d. Pravda Подразделение резервуаров" }
+		19 = { "%d. Pravda Подразделение резервуаров" }
+
+	}
+}
+PRA_3 = 
+{
+	name = "Пехотная дивизия"
+
+	for_countries = { PRA }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. Pravda Пехотная дивизия"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Pravda Пехотная дивизия" }
+		2 = { "%d. Pravda Пехотная дивизия" }
+		3 = { "%d. Pravda Пехотная дивизия" }
+		4 = { "%d. Pravda Пехотная дивизия" }
+		5 = { "%d. Pravda Пехотная дивизия" }
+		6 = { "%d. Pravda Пехотная дивизия" }
+		7 = { "%d. Pravda Пехотная дивизия" }
+		8 = { "%d. Pravda Пехотная дивизия" }
+		9 = { "%d. Pravda Пехотная дивизия" }
+		10 = { "%d. Pravda Пехотная дивизия" }
+		11 = { "%d. Pravda Пехотная дивизия" }
+		12 = { "%d. Pravda Пехотная дивизия" }
+		13 = { "%d. Pravda Пехотная дивизия" }
+		14 = { "%d. Pravda Пехотная дивизия" }
+		15 = { "%d. Pravda Пехотная дивизия" }
+		16 = { "%d. Pravda Пехотная дивизия" }
+		17 = { "%d. Pravda Пехотная дивизия" }
+		18 = { "%d. Pravda Пехотная дивизия" }
+		19 = { "%d. Pravda Пехотная дивизия" }
+
+	}
+}

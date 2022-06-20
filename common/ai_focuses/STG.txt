@@ -1,8 +1,6 @@
 ai_historical_focus_list_STG = {
 	ai_national_focuses = {
 		# grab as fast as you can if available
-		STG_economics
-		STG_weaken_the_labour_party
 		STG_attitude
 		STG_eliminate_labour_party
 		STG_transfer_kga_industry

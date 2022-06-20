@@ -1,0 +1,19 @@
+leader_traits = {
+
+	
+##################################
+# Common Traits
+##################################
+	#嘉德骑士
+	Order_of_the_Garter = { 
+		type = land
+		trait_type = personality_trait
+		
+		modifier = {
+			army_org_factor = 0.1
+			army_morale_factor = 0.1
+		}
+		planning_skill = 1
+		logistics_skill = 1
+	}
+}

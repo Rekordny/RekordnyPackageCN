@@ -23,6 +23,127 @@ bcf_missions = {
 }
 
 bcf_diplomatic = {
+	BCF_support_KGA_support_to_pommern = {
+		allowed = { 
+			tag = BCF 
+		}
+		visible = { 
+			tag = BCF
+			has_completed_focus = BCF_kga_ally
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 15
+		available = {
+			has_war = no
+		}
+		complete_effect = {
+			KGA = {
+				war_support_factor = 0.05
+			}
+			if = {
+				limit = {
+					BCF = {
+						has_guaranteed = BON
+					}
+				}
+				diplomatic_relation = {
+					country = BON
+					relation = guarantee
+					active = no
+				}
+			}
+		}
+	}
+	BCF_build_faction_with_KGA = {
+		allowed = { 
+			tag = BCF 
+		}
+		visible = { 
+			tag = BCF
+			has_completed_focus = BCF_kga_ally
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 15
+		available = {
+			has_war = no
+			OR = {
+				has_war_with = STG
+				has_war_with = ANZ
+				has_war_with = PRA
+			}
+		}
+		complete_effect = {
+			create_faction = "法德同盟"
+			KGA = {
+				country_event = {
+					id = bcfreedom_kga_faction.1
+				}
+			}
+		}
+	}
+	BCF_build_faction_with_KGA = {
+		allowed = { 
+			tag = BCF 
+		}
+		visible = { 
+			tag = BCF
+			surrender_progress = 0.5
+			STG = {
+				has_same_ideology = yes
+			}
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 0
+		available = {
+			has_war = no
+			has_global_flag = BCF_CIVIL_WAR_START
+			NOT = {
+				has_global_flag = BCF_CIVIL_WAR_END
+			}
+			has_completed_focus = BCF_seek_support_from_stg
+			has_country_flag = BCF_STG_decide_to_support_us
+		}
+		complete_effect = {
+			KGA = {
+				country_event = {
+					id = bcfreedom_kga_faction.1
+				}
+			}
+		}
+	}
+	BCF_rebuild_entente = {
+		allowed = { 
+			tag = BCF 
+		}
+		visible = { 
+			tag = BCF
+			has_completed_focus = BCF_befriend_STG
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 30
+		available = {
+			NOT = {
+				has_war_with = STG
+			}
+			OR = {
+				has_war_with = KGA
+				has_war_with = ANZ
+				has_war_with = PRA
+			}
+		}
+		complete_effect = {
+			create_faction = "协约国"
+			STG = {
+				country_event = {
+					id = bcfreedom_stg_faction.1
+				}
+			}
+		}
+	}
 	BCF_core_Piemonte = {
 		allowed = { 
 			tag = BCF 
@@ -870,7 +991,7 @@ bcf_school_factional_strife = {
 
 } 
 
-BCF_support_factions = {
+bcf_school_factional_strife = {
 	BCF_consolidate_marie_authority = {
 		allowed = { 
 			tag = BCF 
@@ -1226,6 +1347,30 @@ bcf_warfare = {
 		complete_effect = {
 			add_timed_idea = {
 				idea = BCF_war_with_STG
+				days = 120
+			}
+		}
+	}
+	BCF_prepare_for_invasion = {
+		allowed = { 
+			tag = BCF 
+		}
+		visible = { 
+			tag = BCF
+			has_war_with = STG
+		}
+		cost = 50
+		days_remove = 7
+		available = {
+			OR = {
+				has_completed_focus = BCF_beyond_napoleon
+				has_completed_focus = BCF_liberate_britain
+				has_completed_focus = BCF_defeat_an_old_enemy
+			}
+		}
+		complete_effect = {
+			add_timed_idea = {
+				idea = BCF_landing_exercise
 				days = 120
 			}
 		}

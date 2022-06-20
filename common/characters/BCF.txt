@@ -298,27 +298,6 @@ characters = {
 			legacy_id = 1043
 		}
 	}
-	BCF_azumi = {
-		name = "Azumi"
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/BCF/Portrait_BCF_Azumi.dds"
-				small="gfx/interface/advisors/idea_azumi.dds"
-			}
-		}
-		corps_commander = {
-			traits = {
-				armor_officer
-				career_officer
-			}
-			skill = 3
-			attack_skill = 3
-			defense_skill = 4
-			planning_skill = 2
-			logistics_skill = 1
-			legacy_id = 1041
-		}
-	}
 	BCF_asparagus = {
 		name = "Asparagus"
 		portraits = {

@@ -117,30 +117,6 @@ characters={
 			legacy_id=1049
 		}
 	}
-	STG_shiratori={
-		name="Shiratori"
-		portraits={
-			civilian={
-				large="gfx/leaders/STG/Portrait_STG_Shiratori.dds"
-				small="gfx/interface/advisors/idea_shiratori.dds"
-			}
-		}
-		country_leader={
-			desc="She is the best"
-			ideology=moderatism
-			expire="2000.1.1.1"
-			id=-1
-		}
-		corps_commander={
-			traits={ armor_officer }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=3
-			legacy_id=1089
-		}
-	}
 	STG_hana={
 		name="Hana"
 		portraits={

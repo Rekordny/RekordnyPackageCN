@@ -1,0 +1,226 @@
+Update_BRE_acceptance_system = {
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					BRE_acceptance_change_bri = 0
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					BRE_Brittany_acceptance = 6
+				}
+			}
+			custom_effect_tooltip = BRE_acceptance_bri_reach_max
+		}
+		else = {
+			custom_effect_tooltip = BRE_acceptance_bri_change
+			add_to_variable = {
+				BRE_Brittany_acceptance = BRE_acceptance_change_bri
+			}
+			clamp_variable = {
+				var = BRE_Brittany_acceptance
+				min = 0
+				max = 6
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					BRE_acceptance_change_eng = 0
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					BRE_England_acceptance = 10
+				}
+			}
+			custom_effect_tooltip = BRE_acceptance_eng_reach_max
+		}
+		else = {
+			custom_effect_tooltip = BRE_acceptance_eng_change
+			add_to_variable = {
+				BRE_England_acceptance = BRE_acceptance_change_eng
+			}
+			clamp_variable = {
+				var = BRE_England_acceptance
+				min = 0
+				max = 10
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					BRE_acceptance_change_wal = 0
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					BRE_Walse_acceptance = 4
+				}
+			}
+			custom_effect_tooltip = BRE_acceptance_wal_reach_max
+		}
+		else = {
+			custom_effect_tooltip = BRE_acceptance_wal_change
+			add_to_variable = {
+				BRE_Walse_acceptance = BRE_acceptance_change_wal
+			}
+			clamp_variable = {
+				var = BRE_Walse_acceptance
+				min = 0
+				max = 4
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					BRE_acceptance_change_sco = 0
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					BRE_Scotland_acceptance = 5
+				}
+			}
+			custom_effect_tooltip = BRE_acceptance_sco_reach_max
+		}
+		else = {
+			custom_effect_tooltip = BRE_acceptance_sco_change
+			add_to_variable = {
+				BRE_Scotland_acceptance = BRE_acceptance_change_sco
+			}
+			clamp_variable = {
+				var = BRE_Scotland_acceptance
+				min = 0
+				max = 5
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					BRE_acceptance_change_ire = 0
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					BRE_Ireland_acceptance = 5
+				}
+			}
+			custom_effect_tooltip = BRE_acceptance_ire_reach_max
+		}
+		else = {
+			custom_effect_tooltip = BRE_acceptance_ire_change
+			add_to_variable = {
+				BRE_Ireland_acceptance = BRE_acceptance_change_ire
+			}
+			clamp_variable = {
+				var = BRE_Ireland_acceptance
+				min = 0
+				max = 5
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					BRE_language_acceptance_english = 0
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					BRE_Language_English_acceptance = 1
+				}
+			}
+			custom_effect_tooltip = BRE_acceptance_language_english_reach_max
+		}
+		else = {
+			custom_effect_tooltip = BRE_acceptance_language_english_change
+			add_to_variable = {
+				BRE_Language_English_acceptance = BRE_language_acceptance_english
+			}
+			clamp_variable = {
+				var = BRE_Language_English_acceptance
+				min = 0
+				max = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					BRE_language_acceptance_franch = 0
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					BRE_Language_Franch_acceptance = 1
+				}
+			}
+			custom_effect_tooltip = BRE_acceptance_language_franch_reach_max
+		}
+		else = {
+			custom_effect_tooltip = BRE_acceptance_language_franch_change
+			add_to_variable = {
+				BRE_Language_Franch_acceptance = BRE_language_acceptance_franch
+			}
+			clamp_variable = {
+				var = BRE_Language_Franch_acceptance
+				min = 0
+				max = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					BRE_language_acceptance_diversity = 0
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					BRE_Language_Diversity_acceptance = 1
+				}
+			}
+			custom_effect_tooltip = BRE_acceptance_language_diversity_reach_max
+		}
+		else = {
+			custom_effect_tooltip = BRE_acceptance_language_diversity_change
+			add_to_variable = {
+				BRE_Language_Diversity_acceptance = BRE_language_acceptance_diversity
+			}
+			clamp_variable = {
+				var = BRE_Language_Diversity_acceptance
+				min = 0
+				max = 1
+			}
+		}
+	}
+}

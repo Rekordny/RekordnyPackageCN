@@ -37,7 +37,8 @@ ideas = {
 			allowed = { tag = ANZ }
 			allowed_civil_war = { always = no }
 			modifier = {
-				recruitable_population = -0.3
+				recruitable_population = -0.4
+				conscription_factor = -0.4
 			}
 		}
 

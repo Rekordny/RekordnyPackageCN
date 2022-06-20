@@ -66,7 +66,6 @@ oob = "BCF_1972"
 recruit_character = BCF_andou
 recruit_character = BCF_marie
 recruit_character = BCF_oshida
-recruit_character = BCF_azumi
 recruit_character = BCF_sofue
 recruit_character = BCF_isabe
 recruit_character = BCF_asparagus

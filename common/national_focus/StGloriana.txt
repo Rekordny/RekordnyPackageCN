@@ -364,12 +364,16 @@
 		prerequisite = { focus = STG_repeal_the_national_health_service_act }
 		mutually_exclusive = { }
 		bypass = { }
-		cost = 10
+		cost = 8
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_stability = 0.1
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -385,16 +389,17 @@
 		relative_position_id = STG_control_social_media
 		x = -1
 		y = 1
-		available = {  }
+		available = { }
 		prerequisite = { focus = STG_control_social_media }
 		mutually_exclusive = { focus = STG_attitude }
-		bypass = { }
-		cost = 10
+		bypass = { NOT = { WKG = { is_subject_of = ROOT } } }
+		cost = 8
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			unlock_decision_tooltip = STG_Army_repression_WKG
+			unlock_decision_tooltip = STG_Adaptation_URB_WKG
 		}
 		ai_will_do = {
 			factor = 1
@@ -410,16 +415,16 @@
 		relative_position_id = STG_control_social_media
 		x = 1
 		y = 1
-		available = {  }
+		available = { }
 		prerequisite = { focus = STG_control_social_media }
 		mutually_exclusive = { focus = STG_control_social_media }
-		bypass = { }
+		bypass = { NOT = { WKG = { is_subject_of = ROOT } } }
 		cost = 8
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			country_event = { id = StGloriana_focus.7 days = 1 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -435,16 +440,19 @@
 		relative_position_id = STG_control_social_media
 		x = 0
 		y = 2
-		available = { }
+		available = { fascism < 0.15 }
 		prerequisite = { focus = STG_ALSTOM focus = STG_attitude }
 		mutually_exclusive = { }
 		bypass = { }
-		cost = 8
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-		
+			swap_ideas = {
+				remove_idea = STG_Speeding_government
+				add_idea = STG_Speeding_government_1
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -466,12 +474,12 @@
 		prerequisite = { focus = STG_eliminate_labour_party }
 		mutually_exclusive = { }
 		bypass = { }
-		cost = 8
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_political_power = 50
 		}
 		ai_will_do = {
 			factor = 1
@@ -490,22 +498,13 @@
 		available = { }
 		prerequisite = { focus = STG_Strengthen_allies }
 		mutually_exclusive = { }
-		bypass = {
-			OR = {
-				NOT = { country_exists = MAP }
-				MAP = { has_capitulated = YES }
-				AND = {
-					MAP = { is_puppet = YES }
-					NOT = { MAP = { is_subject_of = ROOT } }
-				}
-			}
-		}
+		bypass = { NOT = { is_ally_with = MAP } }
 		cost = 8
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_political_power = 100
 		}
 		ai_will_do = {
 			factor = 1
@@ -524,22 +523,13 @@
 		available = { }
 		prerequisite = { focus = STG_Strengthen_allies }
 		mutually_exclusive = { }
-		bypass = {
-			OR = {
-				NOT = { country_exists = KFA }
-				KFA = { has_capitulated = YES }
-				AND = {
-					KFA = { is_puppet = YES }
-					NOT = { KFA = { is_subject_of = ROOT } }
-				}
-			}
-		}
+		bypass = { NOT = { is_ally_with = KFA } }
 		cost = 8
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_political_power = 100
 		}
 		ai_will_do = {
 			factor = 1
@@ -555,7 +545,7 @@
 		relative_position_id = STG_Strengthen_allies
 		x = 0
 		y = 2
-		available = { }
+		available = { SDS = { has_war_with = GBT } }
 		prerequisite = { focus = STG_Strengthen_MAP focus = STG_Strengthen_KFA }
 		mutually_exclusive = { }
 		bypass = { }
@@ -564,7 +554,10 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = STG_Aid_Sandas
+				days = 365
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -583,22 +576,17 @@
 		available = { }
 		prerequisite = { focus = STG_Lend_helping_hand }
 		mutually_exclusive = { }
-		bypass = {
-			OR = {
-				NOT = { country_exists = PRA }
-				PRA = { has_capitulated = YES }
-				AND = {
-					PRA = { is_puppet = YES }
-					NOT = { PRA = { is_subject_of = ROOT } }
-				}
-			}
-		}
-		cost = 8
+		bypass = { NOT = { country_exists = PRA } }
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_opinion_modifier = { 
+				target = PRA
+				modifier = STG_friendly_diplomacy
+			}
+			add_political_power = 50
 		}
 		ai_will_do = {
 			factor = 1
@@ -614,25 +602,33 @@
 		relative_position_id = STG_Lend_helping_hand
 		x = 1
 		y = 1
-		available = { }
-		prerequisite = { focus = STG_Lend_helping_hand }
-		mutually_exclusive = { }
-		bypass = {
-			OR = {
-				NOT = { country_exists = BCF }
-				BCF = { has_capitulated = YES }
-				AND = {
-					BCF = { is_puppet = YES }
-					NOT = { BCF = { is_subject_of = ROOT } }
+		available = { 
+			BCF = {
+				OR = {
+					has_government =  neutrality
+					has_government =  democratic
 				}
 			}
 		}
-		cost = 8
+		prerequisite = { focus = STG_Lend_helping_hand }
+		mutually_exclusive = { }
+		bypass = { NOT = { country_exists = BCF } }
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			if = {
+				limit = { BCF = { has_government = democratic } }
+				STG = { add_to_faction = BCF }
+			}
+			else = {
+				add_opinion_modifier = { 
+					target = BCF 
+					modifier = STG_friendly_diplomacy
+				}
+			}
+			add_political_power = 50
 		}
 		ai_will_do = {
 			factor = 1
@@ -653,12 +649,34 @@
 		prerequisite = { focus = STG_Show_kindness_BCF }
 		mutually_exclusive = { }
 		bypass = { }
-		cost = 8
+		cost = 5
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			if = { 
+				limit = { KGA = { has_government = fascism } } 
+				create_wargoal = {
+					type = topple_government
+					target = KGA
+					expire = 0
+				}
+			}
+			else_if = {
+				limit = { ANZ = { has_government = fascism } } 
+				create_wargoal = {
+					type = topple_government
+					target = ANZ
+					expire = 0
+				}
+			}
+			else = {
+				create_wargoal = {
+					type = take_state
+					target = GBT
+					expire = 0
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -685,7 +703,8 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			unlock_decision_tooltip = STG_Periodic_cuts_military_wages
+			unlock_decision_tooltip = STG_Cyclical_reduction_arms_production
 		}
 		ai_will_do = {
 			factor = 1
@@ -717,7 +736,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_stability = 0.05
+			add_political_power = 150
 		}
 		ai_will_do = {
 			factor = 1
@@ -742,7 +761,11 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-
+			country_event = { id = StGloriana.18 days = 0 }
+			if = {
+				limit = { is_ai = yes }
+				add_stability = 0.2
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -792,7 +815,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			country_event = { id = StGloriana.20 days = 0 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -816,6 +839,9 @@
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
+		select_effect = {
+			country_event = { id = StGloriana.21 days = 1 }
+		}
 		completion_reward = {
 			add_state_core = 7
 			add_state_core = 35
@@ -838,7 +864,7 @@
 		relative_position_id = STG_Further_cuts_military_spending
 		x = 3
 		y = 1
-		available = { }
+		available = { has_stability > 0.75 }
 		prerequisite = { focus = STG_Further_cuts_military_spending focus = STG_stand_firm }
 		mutually_exclusive = { }
 		bypass = { }
@@ -847,7 +873,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			remove_ideas = STG_Speeding_government_1
 		}
 		ai_will_do = {
 			factor = 1
@@ -867,12 +893,12 @@
 		prerequisite = { focus = STG_Get_rid_shadow }
 		mutually_exclusive = { }
 		bypass = { }
-		cost = 10
+		cost = 8
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-		
+			add_political_power = 100
 		}
 		ai_will_do = {
 			factor = 1
@@ -888,16 +914,21 @@
 		relative_position_id = STG_war_and_love_by_fair_means_or_foul
 		x = -2
 		y = 1
-		available = { }
+		available = { 
+			STG_darjeeling = { skill > 4 } 
+			STG_rosehip = { skill > 4 } 
+			STG_orangepekoe = { skill > 4 } 
+			STG_assam = { skill > 4 } 
+		}
 		prerequisite = { focus = STG_war_and_love_by_fair_means_or_foul }
 		mutually_exclusive = { }
 		bypass = { }
-		cost = 10
+		cost = 8
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-		
+			country_event = { id = StGloriana_focus.8 days = 1 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -917,12 +948,12 @@
 		prerequisite = { focus = STG_war_and_love_by_fair_means_or_foul }
 		mutually_exclusive = { }
 		bypass = { }
-		cost = 10
+		cost = 8
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-		
+			add_ideas = STG_Spectators_and_spectators
 		}
 		ai_will_do = {
 			factor = 1
@@ -942,12 +973,14 @@
 		prerequisite = { focus = STG_war_and_love_by_fair_means_or_foul }
 		mutually_exclusive = { }
 		bypass = { }
-		cost = 10
+		cost = 8
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-		
+			unlock_decision_tooltip = STG_black_tea_spill
+			unlock_decision_tooltip = STG_unscrupulous_battle
+			unlock_decision_tooltip = STG_Courage_transcend_adversity
 		}
 		ai_will_do = {
 			factor = 1
@@ -972,7 +1005,11 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			add_to_variable = { var = STG_cairns_economy_effect_var_tax_daily_modifier value = 0.3 }
+			add_to_variable = { var = STG_cairns_economy_effect_var_stability_factor value = -0.1 }
+			add_to_variable = { var = STG_cairns_economy_effect_var_war_support_factor value = -0.1 }
+			add_to_variable = { var = STG_cairns_economy_effect_var_weekly_manpower value = -1000 }
+			custom_effect_tooltip = STG_Further_increase_individual_income_tax_tt
 		}
 		ai_will_do = {
 			factor = 1
@@ -997,6 +1034,14 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+			set_politics = { ruling_party = fascism }
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
+			add_country_leader_trait = lord_protector
+			country_event = { id = StGloriana_focus.9 days = 1 }
+			news_event = { id = senshado_news.16 days = 1 }
 			
 		}
 		ai_will_do = {
@@ -1111,11 +1156,11 @@
 	focus = {
 		id = STG_Pointing_Paris
 		icon = GFX_focus_STG_Pointing_Paris
-		relative_position_id = STG_Communist_Alliance
+		relative_position_id = STG_commonwealth_alliance
 		x = -2
 		y = 1
 		available = { }
-		prerequisite = { focus = STG_Communist_Alliance focus = STG_stand_firm }
+		prerequisite = { focus = STG_commonwealth_alliance focus = STG_stand_firm }
 		mutually_exclusive = { }
 		bypass = { }
 		cost = 10
@@ -1123,7 +1168,11 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			create_wargoal = {
+				type = annex_everything
+				target = BCF
+				expire = 0
+			} 
 		}
 		ai_will_do = {
 			factor = 1
@@ -1136,11 +1185,11 @@
 	focus = {
 		id = STG_Restoration_dual_constitutional_monarchy
 		icon = GFX_focus_STG_Restoration_dual_constitutional_monarchy
-		relative_position_id = STG_Communist_Alliance
+		relative_position_id = STG_commonwealth_alliance
 		x = 0
 		y = 1
 		available = { }
-		prerequisite = { focus = STG_Communist_Alliance }
+		prerequisite = { focus = STG_commonwealth_alliance }
 		mutually_exclusive = { }
 		bypass = { }
 		cost = 10
@@ -1173,7 +1222,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			set_cosmetic_tag = KGB
 		}
 		ai_will_do = {
 			factor = 1
@@ -2514,36 +2563,6 @@
 			}
 		}
 	}
-
-	#超视距对空能力
-	focus = {
-		id = generic_aa_capability
-		icon = GFX_focus_generic_aa_capability
-		relative_position_id = generic_new_avionics
-		x = 0
-		y = 2
-		available = {  }
-		prerequisite = { focus = generic_new_avionics }
-		#mutually_exclusive = { focus = STG_machanized_coordinated_operations }
-		bypass = { }
-		cost = 8
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-			add_tech_bonus = {
-				category = air_weapon
-				uses = 2
-				bonus = 1.2
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-			}
-		}
-	}
-	
 	
 	#战术动作训练
 	focus = {
@@ -2578,7 +2597,7 @@
 	#多用途化
 	focus = {
 		id = generic_multipurpose
-		icon = GFX_focus_generic_tactical_movement_training
+		icon = GFX_focus_generic_multipurpose
 		relative_position_id = generic_tactical_movement_training
 		x = 0
 		y = 2

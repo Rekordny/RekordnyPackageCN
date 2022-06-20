@@ -15,7 +15,7 @@ set_technology = {
 	senshado_lt_1_chassis_turrent = 1
 	senshado_lt_2_chassis = 1
 	senshado_lt_2_chassis_turrent = 1
-	senshado_lt_3_chassis = 1
+	
 	senshado_mt_1_chassis = 1
 	senshado_mt_1_chassis_turrent = 1
 	senshado_ht_1_chassis = 1
@@ -73,7 +73,7 @@ set_research_slots = 4
 set_convoys = 20
 load_oob = OML_1972
 add_ideas = Ooarai_remnant
-add_ideas = Ooari_Mallard
+add_ideas = Ooarai_Mallard
 recruit_character = OML_midoriko
 set_politics = {
 	ruling_party = neutrality
@@ -118,3 +118,40 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 3
 }
+create_equipment_variant = {
+	name = "SenshadoStandardLT"
+	type = light_tank_chassis_1
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_light_ap_cannon
+		turret_type_slot = tank_lt_turrent_1
+		suspension_type_slot = tank_wheeled_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
+		special_type_slot_1 = tank_radio_1
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 2
+		tank_nsb_armor_upgrade = 2
+	}
+	icon = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_AAA.dds"
+}
+create_equipment_variant = {
+	name = "SenshadoStandardMT"
+	type = medium_tank_chassis_1
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_medium_cannon
+		turret_type_slot = tank_mt_turrent_1
+		suspension_type_slot = tank_bogie_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
+		special_type_slot_1 = tank_radio_1
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 2
+		tank_nsb_armor_upgrade = 2
+	}
+	icon = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_AAA.dds"
+}
+

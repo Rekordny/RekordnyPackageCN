@@ -41,11 +41,11 @@
  old_senshado_allies:0 "Old Senshado allies"
 
 #其他modifier
- modifier_trait_ooari_unit_leader_xp_gain_factor:0 "Ooari graduate trait experience growth rate"
+ modifier_trait_ooari_unit_leader_xp_gain_factor:0 "Ooarai graduate trait experience growth rate"
  
-################Ooari National Policy Tree ################
+################Ooarai National Policy Tree ################
  #focus
- OGA_shared_one:0 "Start rebuilding Ooari"
+ OGA_shared_one:0 "Start rebuilding Ooarai"
  OGA_shared_two:0 "Ministry of Automotive, start the engine"
  OGA_shared_three:0 "Volleyball Department, never give up"
  OGA_shared_four:0 "Game nerd, workout time"
@@ -55,10 +55,10 @@
  OGA_shared_eight:0 "Wind and discipline department, reporting"
  OGA_shared_nine:0 "Hello again, everyone of the first years"
  OGA_shared_ten:0 "Rebuilding everyone's school ship"
- OGA_shared_eleven:0 "Restarting Ooari industry and life operations"
+ OGA_shared_eleven:0 "Restarting Ooarai industry and life operations"
  OGA_shared_twelve:0 "Reopen enrollment"
  OGA_shared_thirteen:0 "Reopen Senshado"
- OGA_shared_fourteen:0 "Ooari. resurrected again"
+ OGA_shared_fourteen:0 "Ooarai. resurrected again"
  OGA_shared_fifteen:0 "Go on, supersonic noble son"
  OGA_shared_sixteen:0 "With faith, anywhere is our home turf"
  OGA_shared_seventeen:0 "Peach will never pull off the shifter again meow"
@@ -72,21 +72,21 @@
 
  #event
  ooari.1.t:0 "A letter from afar"
- ooari.1.d:0 "Just as you were still frazzled with national politics this morning, an envelope with Ooari's school logo was slipped under the door. After skipping the first few lines of curt greetings, you find that the letter is from Nishizumi Miho, the leader of the old Ooari. \n "I hope I can greet you on behalf of the long-abandoned Ooari, and if this letter reaches you successfully, it means that there is still a glimmer of hope for the revival of Ooari for everyone, and that I still remain in Kuromorimine. \n If you, who are highly respected, can reassemble everyone in Senshado again in the name of Ooari, I believe that all Senshado governments in the world will not question the legitimacy of Ooari reconstruction. \n If I am fortunate enough to see that day come, then I will also move to return to Ooari to reunite with everyone as soon as possible. \nGood luck, Commander, and I look forward to reuniting with the new Ooari and to seeing the day when the war ends come soon." (The letter ends with the symbol of the Boko Bear sketched in pencil)"
+ ooari.1.d:0 "Just as you were still frazzled with national politics this morning, an envelope with Ooarai's school logo was slipped under the door. After skipping the first few lines of curt greetings, you find that the letter is from Nishizumi Miho, the leader of the old Ooarai. \n "I hope I can greet you on behalf of the long-abandoned Ooarai, and if this letter reaches you successfully, it means that there is still a glimmer of hope for the revival of Ooarai for everyone, and that I still remain in Kuromorimine. \n If you, who are highly respected, can reassemble everyone in Senshado again in the name of Ooarai, I believe that all Senshado governments in the world will not question the legitimacy of Ooarai reconstruction. \n If I am fortunate enough to see that day come, then I will also move to return to Ooarai to reunite with everyone as soon as possible. \nGood luck, Commander, and I look forward to reuniting with the new Ooarai and to seeing the day when the war ends come soon." (The letter ends with the symbol of the Boko Bear sketched in pencil)"
  ooari.1.a:0 "If that is your only wish."
 
  #idea
- generic_ooari_industry:0 "Ooari Industrial Section"
- generic_ooari_school_enrollment:0 "Ooari Admissions Division"
- generic_ooari_senshado_centre:0 "OoariSenshado Department"
- generic_ooari_revived:0 "Reestablished Ooari"
+ generic_ooari_industry:0 "Ooarai Industrial Section"
+ generic_ooari_school_enrollment:0 "Ooarai Admissions Division"
+ generic_ooari_senshado_centre:0 "OoaraiSenshado Department"
+ generic_ooari_revived:0 "Reestablished Ooarai"
 
  #tooltips
  oga_tooltip1:0 "Complete four of the above decisions to unlock"
  oga_tooltip2:0 "Unlock Army Spirit:§Y Advance Fortifications§!"
  oga_tooltip3:0 "Unlock Army Academy Spirit:§Y Discipline§!"
  oga_tooltip4:0 "Unlock the Force Command Spirit:§Y Learn from history§!"
- oga_tooltip5:0 "Unlock the spirit of the Army Academy:§YOoari school spirit§!"
+ oga_tooltip5:0 "Unlock the spirit of the Army Academy:§YOoarai school spirit§!"
  oga_tooltip6:0 "Unlock the Force Command Spirit:§Yoari School Spirit§!"
  oga_tooltip7:0 "Unlock Army Spirit:§Y Backstabbing§!"
  oga_tooltip8:0 "Unlock Army Spirit:§Y Sea Raid§!"
@@ -96,7 +96,7 @@
  senshado_team_leopon_spirit:0 "Advance fortifications"
  senshado_team_mallard_spirit:0 "Disciplined"
  senshado_team_hippon_spirit:0 "Learning from history"
- senshado_team_turtle_spirit:0 "Ooari school spirit"
+ senshado_team_turtle_spirit:0 "Ooarai school spirit"
  senshado_team_anteater_spirit:0 "Quirky and quirky"
  senshado_team_duck_spirit:0 "Backstabbing"
  senshado_team_shark_spirit:0 "Sea Raid"

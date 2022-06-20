@@ -11,4 +11,6 @@ STG_cairns_economy_effect = {
 	consumer_goods_factor = STG_cairns_economy_effect_var_consumer_goods_factor 
 		
 	stability_factor = STG_cairns_economy_effect_var_stability_factor
+	war_support_factor = STG_cairns_economy_effect_var_war_support_factor
+	weekly_manpower = STG_cairns_economy_effect_var_weekly_manpower
 }

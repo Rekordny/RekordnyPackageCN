@@ -1,0 +1,39 @@
+characters={
+	WKG_shiratori={
+		name="Shiratori"
+		portraits={
+			civilian={
+				large="gfx/leaders/WKG/Portrait_WKG_Shiratori.dds"
+				small="gfx/interface/advisors/idea_shiratori.dds"
+			}
+		}
+		country_leader={
+			desc="She is the best"
+			ideology=conservatism
+			expire="2000.1.1.1"
+			id=-1
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=1089
+		}
+		advisor={
+			cost = 100
+			slot = political_advisor
+			allowed = { original_tag = WKG }
+			idea_token = WKG_shiratori
+			visible = { }
+			traits = { armaments_organizer }
+			on_add = { }
+			on_remove = { }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

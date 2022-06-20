@@ -6,7 +6,7 @@ set_research_slots = 4
 set_convoys = 20
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = neutrality
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
@@ -17,4 +17,81 @@ set_popularities = {
 	communism = 5
 }
 recruit_character = BCF_asparagus
+
+division_template = {
+	name = "Infantry Division"
+	is_locked = yes
+	regiments = {
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
+		infantry = {
+			x = 0
+			y = 2
+		}
+		infantry = {
+			x = 1
+			y = 0
+		}
+		infantry = {
+			x = 1
+			y = 1
+		}
+		infantry = {
+			x = 1
+			y = 2
+		}
+		infantry = {
+			x = 2
+			y = 0
+		}
+		infantry = {
+			x = 2
+			y = 1
+		}
+		infantry = {
+			x = 2
+			y = 2
+		}
+		artillery_brigade = {
+			x = 3
+			y = 0
+		}
+	}
+	support = {
+		engineer = {
+			x = 0
+			y = 0
+		}
+	}
+}
+set_variable = {
+	BRE_Brittany_acceptance = 4
+}
+set_variable = {
+	BRE_England_acceptance = 5
+}
+set_variable = {
+	BRE_Walse_acceptance = 2
+}
+set_variable = {
+	BRE_Scotland_acceptance = 2
+}
+set_variable = {
+	BRE_Ireland_acceptance = 2
+}
+set_variable = {
+	BRE_Language_English_acceptance = 0.6
+}
+set_variable = {
+	BRE_Language_Franch_acceptance = 0.2
+}
+set_variable = {
+	BRE_Language_Diversity_acceptance = 0.8
+}
 

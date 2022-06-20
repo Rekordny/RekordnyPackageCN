@@ -17,3 +17,8 @@ KDR = {
     color = rgb { 161 161 161 }
     color_ui = rgb { 161 161 161 }
 }
+
+KGB = {
+    color = rgb { 143 253 255 }
+    color_ui = rgb { 143 253 255 }
+}

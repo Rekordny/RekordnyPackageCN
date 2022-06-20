@@ -15,7 +15,7 @@ set_technology = {
 	senshado_lt_1_chassis_turrent = 1
 	senshado_lt_2_chassis = 1
 	senshado_lt_2_chassis_turrent = 1
-	senshado_lt_3_chassis = 1
+	
 	senshado_mt_1_chassis = 1
 	senshado_mt_1_chassis_turrent = 1
 	senshado_ht_1_chassis = 1

@@ -46,6 +46,7 @@ country_event = {
 			tag = ORA
 			message = STG_WP_ORA
 		}
+		clr_country_flag = STG_Legacy_war_flag
 	}
 }
 
@@ -64,7 +65,7 @@ country_event = {
 	}
 }
 
-#血腥礼拜(暂无触发)
+#血腥礼拜
 country_event = {
 	id = StGloriana_new.4
 	title = StGloriana_new.4.t
@@ -538,5 +539,185 @@ country_event = {
 		add_to_variable = { var = STG_cairns_economy_effect_var_stability_factor value = -0.05 }
 		custom_effect_tooltip = STG_StGloriana_focus_6_tt
 		hidden_effect = { country_event = { id = StGloriana_event.4 days = 180 } }
+	}
+}
+
+#圣葛罗莉安娜的钢铁厂
+country_event = {
+	id = StGloriana_event.4
+	title = StGloriana_event.4.t
+	desc = StGloriana_event.4.d
+	picture = GFX_StGloriana_event_4
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_event.4.a
+		add_resource = {
+			type = steel
+			amount = -40
+			state = 132
+		}
+		add_resource = {
+			type = steel
+			amount = -40
+			state = 130
+		}
+		add_to_variable = { var = STG_cairns_economy_effect_var_consumer_goods_factor value = -0.05 }
+		custom_effect_tooltip = STG_StGloriana_event_4_a_tt
+		hidden_effect = { country_event = { id = StGloriana_event.5 days = 240 } }
+	}
+	
+	option = {
+		name = StGloriana_event.4.b
+		random_owned_state = {
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		random_owned_state = {
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		add_to_variable = { var = STG_cairns_economy_effect_var_tax_daily_modifier value = 0.15 }
+		custom_effect_tooltip = STG_StGloriana_event_4_b_tt
+		hidden_effect = { country_event = { id = StGloriana_event.5 days = 240 } }
+	}
+}
+
+#股票与黄金
+country_event = {
+	id = StGloriana_event.5
+	title = StGloriana_event.5.t
+	desc = StGloriana_event.5.d
+	picture = GFX_StGloriana_event_5
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_event.5.a
+		hidden_effect = { remove_dynamic_modifier = { modifier = STG_cairns_economy_effect } }
+		custom_effect_tooltip = STG_StGloriana_event_5_tt
+	}
+}
+
+#和谈
+country_event = {
+	id = StGloriana_focus.7
+	title = StGloriana_focus.7.t
+	desc = StGloriana_focus.7.d
+	picture = GFX_StGloriana_focus_7
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_focus.7.a
+		country_event = { id = StGloriana_event.6 days = 1 }
+	}
+}
+
+#独立的要求
+country_event = {
+	id = StGloriana_event.6
+	title = StGloriana_event.6.t
+	desc = StGloriana_event.6.d
+	picture = GFX_StGloriana_event_6
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_event.6.a
+		country_event = { id = StGloriana_event.7 days = 1 }
+	}
+	
+	option = {
+		name = StGloriana_event.6.b
+		add_political_power = 150
+		add_stability = 0.1
+		release = WKG
+		STG = { add_to_faction = WKG }
+		WKG = { set_cosmetic_tag = WGK }
+	}
+}
+
+#谈判破裂
+country_event = {
+	id = StGloriana_event.7
+	title = StGloriana_event.7.t
+	desc = StGloriana_event.7.d
+	picture = GFX_StGloriana_event_7
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_event.7.a
+		swap_ideas = {
+			remove_idea = STG_Irish_independence_rebellion
+			add_idea = STG_Irish_independence_rebellion_1
+		}
+		WKG = {
+			swap_ideas = {
+				remove_idea = STG_Chengdu_Berlin_flesh_blood
+				add_idea = STG_Chengdu_Berlin_flesh_blood_1
+			}	
+		}
+	}
+}
+
+#骑士授勋仪式
+country_event = {
+	id = StGloriana_focus.8
+	title = StGloriana_focus.8.t
+	desc = StGloriana_focus.8.d
+	picture = GFX_StGloriana_focus_8
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_focus.8.a
+		add_trait = {
+			character = STG_darjeeling
+			trait = Order_of_the_Garter
+		}
+		add_trait = {
+			character = STG_rosehip
+			trait = Order_of_the_Garter
+		}
+		add_trait = {
+			character = STG_orangepekoe
+			trait = Order_of_the_Garter
+		}
+		add_trait = {
+			character = STG_assam
+			trait = Order_of_the_Garter
+		}
+	}
+}
+
+#格雷伯爵归来
+country_event = {
+	id = StGloriana_focus.9
+	title = StGloriana_focus.9.t
+	desc = StGloriana_focus.9.d
+	picture = GFX_StGloriana_focus_9
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_focus.9.a
+		add_war_support = 0.1
+		country_event = { id = StGloriana_event.8 days = 10 }
+	}
+}
+
+#反右游行
+country_event = {
+	id = StGloriana_event.8
+	title = StGloriana_event.8.t
+	desc = StGloriana_event.8.d
+	picture = GFX_StGloriana_event_8
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_event.8.a
+		add_ideas = STG_anti_rightist_march
+		activate_mission_tooltip = STG_anti_rightist_march
+		set_country_flag = StGloriana_event_8_flag
 	}
 }

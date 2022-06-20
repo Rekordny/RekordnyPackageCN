@@ -1,0 +1,475 @@
+add_namespace = BRE
+#布列塔尼之星
+country_event = {
+	id = BRE.1
+	title = BRE.1.t
+	desc = BRE.1.d
+	picture = GFX_report_event_german_speech
+	fire_only_once = yes
+	trigger = {
+		BRE = {
+			exists = yes
+		}
+		tag = BRE
+	}
+	option = {
+		name = BRE.1.a
+		14 = {
+			create_unit = {
+				division = "division_template = \"Infantry Division\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+				owner = BRE
+			}
+			create_unit = {
+				division = "division_template = \"Infantry Division\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+				owner = BRE
+			}
+			create_unit = {
+				division = "division_template = \"Infantry Division\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+				owner = BRE
+			}
+			create_unit = {
+				division = "division_template = \"Infantry Division\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+				owner = BRE
+			}
+			create_unit = {
+				division = "division_template = \"Light Armor\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+				owner = BRE
+			}
+			create_unit = {
+				division = "division_template = \"Light Armor\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+				owner = BRE
+			}
+			create_unit = {
+				division = "division_template = \"Marine\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+				owner = BRE
+			}
+			create_unit = {
+				division = "division_template = \"Marine\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+				owner = BRE
+			}
+			create_unit = {
+				division = "division_template = \"Marine\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+				owner = BRE
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BRE.2
+	title = BRE.2.t
+	desc = BRE.2.d
+	picture = GFX_report_event_german_speech
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = BRE.1.a
+		##国策
+		add_political_power = 100
+		30 = {
+			create_unit = {
+				division = "division_template = \"Infantry Division\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+				owner = BRE
+			}
+			create_unit = {
+				division = "division_template = \"Infantry Division\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+				owner = BRE
+			}
+		}
+
+	}
+	option = {
+		name = BRE.1.b
+		##国策
+		add_political_power = -50
+		30 = {
+			create_unit = {
+				division = "division_template = \"Marine\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+				owner = BRE
+			}
+			create_unit = {
+				division = "division_template = \"Marine\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+				owner = BRE
+			}
+		}
+	}
+}
+
+country_event = {
+	id = BRE.3
+	title = BRE.3.t
+	desc = BRE.3.d
+	picture = GFX_report_event_german_speech
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		add_war_support = 0.05
+		add_manpower = 50000
+	}
+}
+country_event = {
+	id = BRE.4
+	title = BRE.4.t
+	desc = BRE.4.d
+	picture = GFX_report_event_german_speech
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		30 = {
+			add_victory_points = {
+				province = 11465
+				value = 10
+			}
+		}
+		set_capital = 30
+		##认同度
+	}
+	option = {
+		set_capital = 126
+		##认同度
+	}
+}
+country_event = {
+	id = BRE.5
+	title = BRE.5.t
+	desc = BRE.5.d
+	picture = GFX_report_event_german_speech
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		##国策
+	}
+	option = {
+		##国策
+		set_country_flag = stg_revolt
+	}
+	option = {
+		##国策
+	}
+}
+country_event = {
+	id = BRE.6
+	title = BRE.6.t
+	desc = BRE.6.d
+	picture = GFX_report_event_german_speech
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		add_stability = 0.25
+		add_manpower = 25000
+		random_owned_state = {
+			limit = {
+				is_core_of = root
+				has_built = {
+					type = industrial_complex
+					value = 1
+				}
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_core_of = root
+				has_built = {
+					type = industrial_complex
+					value = 1
+				}
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_core_of = root
+				has_built = {
+					type = industrial_complex
+					value = 1
+				}
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+			}
+		}
+		set_capital = 16
+	}
+}
+country_event = {
+	id = BRE.7
+	title = BRE.7.t
+	desc = BRE.7.d
+	picture = GFX_report_event_german_speech
+	fire_only_once = yes
+	trigger = {
+		has_country_flag = stg_revolt
+	}
+	mean_time_to_happen = {
+		days = 60
+	}
+	option = {
+		name = BRE.7.a
+		remove_state_core = 128
+		remove_state_core = 129
+		remove_state_core = 130
+		add_stability = -0.15
+		set_country_flag = stg_revolt_prepare
+	}
+}
+country_event = {
+	id = BRE.8
+	title = BRE.8.t
+	desc = BRE.8.d
+	picture = GFX_report_event_german_speech
+	fire_only_once = yes
+	trigger = {
+		has_country_flag = stg_revolt_prepare
+	}
+	mean_time_to_happen = {
+		days = 25
+	}
+	option = {
+		name = BRE.7.a
+		add_war_support = 0.10
+		set_country_flag = stg_revolt_start
+	}
+}
+country_event = {
+	id = BRE.9
+	title = BRE.9.t
+	desc = BRE.9.d
+	picture = GFX_report_event_german_speech
+	fire_only_once = yes
+	trigger = {
+		has_country_flag = stg_revolt_start
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name = BRE.7.a
+		add_ideas = BRE_supress_revolt
+		hidden_effect = {
+			S01 = {
+				transfer_state = 128
+				transfer_state = 129
+				transfer_state = 130
+				division_template = {
+					name = "STG volunteer"
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 0
+							y = 2
+						}
+						infantry = {
+							x = 0
+							y = 3
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 2
+						}
+						infantry = {
+							x = 1
+							y = 3
+						}
+					}
+				}
+				division_template = {
+					name = "STG Guard"
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 0
+							y = 2
+						}
+						infantry = {
+							x = 0
+							y = 3
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 2
+						}
+						artillery_brigade = {
+							x = 1
+							y = 3
+						}
+						artillery_brigade = {
+							x = 1
+							y = 4
+						}
+					}
+				}
+				128 = {
+					create_unit = {
+						division = "division_template = \"STG volunteer\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+						owner = S01
+					}
+					create_unit = {
+						division = "division_template = \"STG volunteer\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+						owner = S01
+					}
+					create_unit = {
+						division = "division_template = \"STG volunteer\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+						owner = S01
+					}
+					create_unit = {
+						division = "division_template = \"STG volunteer\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+						owner = S01
+					}
+					create_unit = {
+						division = "division_template = \"STG Guard\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+						owner = S01
+					}
+					create_unit = {
+						division = "division_template = \"STG Guard\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+						owner = S01
+					}
+				}
+				129 = {
+					create_unit = {
+						division = "division_template = \"STG volunteer\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+						owner = S01
+					}
+					create_unit = {
+						division = "division_template = \"STG volunteer\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+						owner = S01
+					}
+					create_unit = {
+						division = "division_template = \"STG volunteer\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+						owner = S01
+					}
+					create_unit = {
+						division = "division_template = \"STG volunteer\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+						owner = S01
+					}
+					create_unit = {
+						division = "division_template = \"STG Guard\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+						owner = S01
+					}
+					create_unit = {
+						division = "division_template = \"STG Guard\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+						owner = S01
+					}
+				}
+				130 = {
+					create_unit = {
+						division = "division_template = \"STG volunteer\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+						owner = S01
+					}
+					create_unit = {
+						division = "division_template = \"STG volunteer\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+						owner = S01
+					}
+					create_unit = {
+						division = "division_template = \"STG volunteer\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+						owner = S01
+					}
+					create_unit = {
+						division = "division_template = \"STG volunteer\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+						owner = S01
+					}
+					create_unit = {
+						division = "division_template = \"STG Guard\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+						owner = S01
+					}
+					create_unit = {
+						division = "division_template = \"STG Guard\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+						owner = S01
+					}
+				}
+			}
+			S01 = {
+				declare_war_on = {
+					target = BRE
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = BRE.10
+	title = BRE.10.t
+	desc = BRE.10.d
+	picture = GFX_report_event_german_speech
+	fire_only_once = yes
+	trigger = {
+		has_country_flag = stg_revolt_start
+		S01 = {
+			exists = no 
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = BRE.7.a
+		remove_ideas = BRE_supress_revolt
+		clr_country_flag = stg_revolt
+		clr_country_flag = stg_revolt_prepare
+		clr_country_flag = stg_revolt_start
+		add_stability = 0.2
+		BRE = {
+			add_state_core = 128
+			add_state_core = 129
+			add_state_core = 130
+			country_event = {
+				id = BRE.11
+				days = 5
+			}
+		}
+	}
+}
+country_event = {
+	id = BRE.11
+	title = BRE.11.t
+	desc = BRE.11.d
+	picture = GFX_report_event_german_speech
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = BRE.7.a
+		add_political_power = -10
+	}
+	option = {
+		name = BRE.7.b
+		add_stability = 0.05
+		add_war_support = 0.05
+	}
+}

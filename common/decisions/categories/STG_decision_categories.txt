@@ -1,4 +1,11 @@
+#特殊行动
 STG_Special_action = {
+	icon = GFX_decision_STG_Special_action
+	allowed = { original_tag = STG }
+}
+
+#引言与格言
+STG_Introduction_and_maxim = {
 	icon = GFX_decision_STG_Special_action
 	allowed = { original_tag = STG }
 }

@@ -12,7 +12,7 @@ ideas = {
 				conscription_factor = -0.25
 				consumer_goods_factor = 0.1
 				production_speed_buildings_factor = -0.15
-				industrial_capacity_factory = -0.10
+				industrial_capacity_factory = -0.1
 			}
 		}
 		#虚弱的中央政府4
@@ -27,7 +27,7 @@ ideas = {
 				conscription_factor = -0.05
 				consumer_goods_factor = 0.1
 				production_speed_buildings_factor = -0.15
-				industrial_capacity_factory = -0.10
+				industrial_capacity_factory = -0.1
 			}
 		}
 		#虚弱的中央政府3
@@ -41,7 +41,7 @@ ideas = {
 			modifier = {
 				conscription_factor = -0.05
 				production_speed_buildings_factor = -0.15
-				industrial_capacity_factory = -0.10
+				industrial_capacity_factory = -0.1
 			}
 		}
 		#虚弱的中央政府2
@@ -66,7 +66,7 @@ ideas = {
 				always = no
 			}
 			modifier = {
-				production_speed_buildings_factor = -0.10
+				production_speed_buildings_factor = -0.1
 			}
 		}
 		#虚弱的中央政府0
@@ -165,7 +165,7 @@ ideas = {
 			modifier = {
 				political_power_gain = -0.3
 				surrender_limit = -0.25
-				war_support_factor = -0.30
+				war_support_factor = -0.3
 			}
 		}
 		#政局动荡1
@@ -178,7 +178,7 @@ ideas = {
 			}
 			modifier = {
 				political_power_factor = -0.1
-				surrender_limit = -0.10
+				surrender_limit = -0.1
 				war_support_factor = -0.15
 			}
 		}
@@ -959,7 +959,6 @@ ideas = {
 				}
 			}
 		}
-		
 		#光荣孤立1
 		BCF_independenet_1 = {
 			allowed = {
@@ -1052,7 +1051,6 @@ ideas = {
 			allowed_civil_war = {
 				always = no
 			}
-			
 			modifier = {
 				production_speed_bunker_factor = 0.15
 				army_org_Factor = 0.025
@@ -1067,7 +1065,6 @@ ideas = {
 			allowed_civil_war = {
 				always = no
 			}
-			
 			modifier = {
 				stability_factor = 0.1
 				political_power_factor = 0.1
@@ -1088,7 +1085,7 @@ ideas = {
 		}
 		#安抚中间派
 		BCF_unrest_2 = {
-			allowed ={
+			allowed = {
 				tag = BCF
 			}
 			allowed_civil_war = {
@@ -1150,12 +1147,11 @@ ideas = {
 				production_speed_buildings_factor = 0.25
 				consumer_goods_factor = 0.05
 				industrial_capacity_factory = -0.05
-				industrial_capacity_dockyard  = -0.05
+				industrial_capacity_dockyard = -0.05
 				conscription_factor = -0.1
 				war_support_factor = 0.2
 			}
 		}
-
 		#追加战争赔款
 		BCF_KGA_war_reparations = {
 			allowed = {
@@ -1173,7 +1169,6 @@ ideas = {
 				consumer_goods_factor = 0.1
 			}
 		}
-
 		#黑森锋赔款
 		BCF_get_reparations_from_KGA = {
 			allowed = {
@@ -1191,7 +1186,6 @@ ideas = {
 				consumer_goods_factor = -0.1
 			}
 		}
-
 		#与BC自由的合作
 		BCF_PRA_cooperate_with_BCF = {
 			allowed = {
@@ -1221,6 +1215,267 @@ ideas = {
 			}
 			modifier = {
 				communism_drift = 0.05
+			}
+		}
+	}
+	materiel_manufacturer = {
+		designer = yes
+		BCF_GIAT_Infantry_manu = {
+			picture = generic_air_manufacturer_1
+			cost = 150
+			allowed = {
+				OR = {
+					original_tag = BCF
+					has_country_flag = BCF_civil_war_lorder
+				}
+			}
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			traits = {
+				BCF_GIAT_Infantry
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		BCF_ACMAT_mot_manu = {
+			picture = generic_air_manufacturer_1
+			cost = 150
+			allowed = {
+				OR = {
+					original_tag = BCF
+					has_country_flag = BCF_civil_war_lorder
+				}
+			}
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			traits = {
+				BCF_ACMAT_mot
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		BCF_GIAT_arti_manu = {
+			picture = generic_air_manufacturer_1
+			cost = 150
+			allowed = {
+				OR = {
+					original_tag = BCF
+					has_country_flag = BCF_civil_war_lorder
+				}
+			}
+			research_bonus = {
+				artillery = 0.15
+			}
+			traits = {
+				BCF_GIAT_arti
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		BCF_GIAT_mech_manu = {
+			picture = generic_air_manufacturer_1
+			cost = 150
+			allowed = {
+				OR = {
+					original_tag = BCF
+					has_country_flag = BCF_civil_war_lorder
+				}
+			}
+			research_bonus = {
+				cat_mechanized_equipment = 0.15
+			}
+			traits = {
+				BCF_GIAT_mech
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	tank_manufacturer = {
+		designer = yes
+		BCF_AMX_lt_manu = {
+			picture = generic_air_manufacturer_1
+			cost = 150
+			allowed = {
+				OR = {
+					original_tag = BCF
+					has_country_flag = BCF_civil_war_lorder
+				}
+			}
+			research_bonus = {
+				armor = 0.15
+			}
+			traits = {
+				BCF_AMX_lt
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		BCF_Soma_ht_manu = {
+			picture = generic_air_manufacturer_1
+			cost = 150
+			allowed = {
+				OR = {
+					original_tag = BCF
+					has_country_flag = BCF_civil_war_lorder
+				}
+			}
+			research_bonus = {
+				armor = 0.15
+			}
+			traits = {
+				BCF_Soma_ht
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		BCF_GIAT_armor_general_manu = {
+			picture = generic_air_manufacturer_1
+			cost = 150
+			allowed = {
+				OR = {
+					original_tag = BCF
+					has_country_flag = BCF_civil_war_lorder
+				}
+			}
+			research_bonus = {
+				armor = 0.15
+			}
+			traits = {
+				BCF_GIAT_armor_general
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	aircraft_manufacturer = {
+		designer = yes
+		BCF_airbus_four_engine_manu = {
+			picture = generic_air_manufacturer_1
+			cost = 150
+			allowed = {
+				OR = {
+					original_tag = BCF
+					has_country_flag = BCF_civil_war_lorder
+				}
+			}
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			traits = {
+				BCF_airbus_four_engine
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		BCF_Dassault_fighter_manu = {
+			picture = generic_air_manufacturer_1
+			cost = 150
+			allowed = {
+				OR = {
+					original_tag = BCF
+					has_country_flag = BCF_civil_war_lorder
+				}
+			}
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			traits = {
+				BCF_Dassault_fighter
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	naval_manufacturer = {
+		BCF_DCAN_Brittany_manu = {
+			picture = generic_air_manufacturer_1
+			cost = 150
+			allowed = {
+				OR = {
+					original_tag = BCF
+					has_country_flag = BCF_civil_war_lorder
+				}
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			traits = {
+				BCF_DCAN_Brittany
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		BCF_DCAN_Lorient_manu = {
+			picture = generic_air_manufacturer_1
+			cost = 150
+			allowed = {
+				OR = {
+					original_tag = BCF
+					has_country_flag = BCF_civil_war_lorder
+				}
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			traits = {
+				BCF_DCAN_Lorient
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		BCF_DCAN_Toulon_manu = {
+			picture = generic_air_manufacturer_1
+			cost = 150
+			allowed = {
+				OR = {
+					original_tag = BCF
+					has_country_flag = BCF_civil_war_lorder
+				}
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			modifier = {
+				repair_speed_factor = 0.25
+			}
+			traits = {
+				BCF_DCAN_Toulon
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		BCF_DCAN_Cherbourg_manu = {
+			picture = generic_air_manufacturer_1
+			cost = 150
+			allowed = {
+				OR = {
+					original_tag = BCF
+					has_country_flag = BCF_civil_war_lorder
+				}
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			traits = {
+				BCF_DCAN_Cherbourg
+			}
+			ai_will_do = {
+				factor = 1
 			}
 		}
 	}

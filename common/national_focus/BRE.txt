@@ -1,0 +1,2377 @@
+focus_tree = {
+	id = BRE_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BRE
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = {
+		x = 120
+		y = 1600
+	}
+	#重整布列塔尼海军
+	focus = {
+		id = BRE_reorganize_navy
+		icon = GFX_focus_BRE_reorganize_navy
+		x = 13
+		y = 0
+		cost = 5
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			navy_experience = 50
+		}
+	}
+	#远洋海军
+	focus = {
+		id = BRE_naval_doctrine_1
+		icon = GFX_focus_BRE_naval_doctrine_1
+		x = -1
+		y = 1
+		cost = 8
+		relative_position_id = BRE_reorganize_navy
+		prerequisite = {
+			focus = BRE_reorganize_navy
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				category = naval_doctrine
+				bonus = 0.5
+				uses = 2
+			}
+		}
+	}
+	#继续克列孟梭级工程
+	focus = {
+		id = BRE_aircraft_carrier
+		icon = GFX_focus_BRE_aircraft_carrier
+		x = 0
+		y = 1
+		cost = 7
+		relative_position_id = BRE_naval_doctrine_1
+		prerequisite = {
+			focus = BRE_naval_doctrine_1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				category = cv_tech
+				bonus = 1
+				uses = 1
+			}
+			custom_effect_tooltip = BRE_create_two_carrier
+			hidden_effect = {
+				set_technology = {
+					improved_ship_hull_carrier = 1
+				}
+				create_equipment_variant = {
+					name = "Aircraft Carrier"
+					type = ship_hull_carrier_2
+					name_group = FRA_CV_HISTORICAL
+					modules = {
+						fixed_ship_anti_air_slot = ship_anti_air_3
+						fixed_ship_deck_slot_1 = ship_deck_space
+						fixed_ship_deck_slot_2 = ship_deck_space
+						fixed_ship_radar_slot = ship_radar_3
+						fixed_ship_secondaries_slot = dp_light_battery
+						fixed_ship_engine_slot = sub_ship_engine_3
+						mid_1_custom_slot = ship_deck_space
+						front_1_custom_slot = ship_deck_space
+					}
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_carrier_2
+						version_name = "Aircraft Carrier"
+					}
+					name = "Aircraft Carrier"
+					requested_factories = 1
+					progress = 0.6
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_carrier_2
+						version_name = "Aircraft Carrier"
+					}
+					name = "Aircraft Carrier"
+					requested_factories = 1
+					progress = 0.4
+					amount = 1
+				}
+			}
+		}
+	}
+	#成立海军航空兵
+	focus = {
+		id = BRE_naval_plane
+		icon = GFX_focus_BRE_naval_plane
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = BRE_aircraft_carrier
+		prerequisite = {
+			focus = BRE_aircraft_carrier
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				category = naval_air
+				bonus = 1
+				uses = 2
+			}
+		}
+	}
+	#近海防御
+	focus = {
+		id = BRE_naval_doctrine_2
+		icon = GFX_focus_BRE_naval_doctrine_2
+		x = 1
+		y = 1
+		cost = 5
+		relative_position_id = BRE_reorganize_navy
+		prerequisite = {
+			focus = BRE_reorganize_navy
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				category = naval_doctrine
+				bonus = 0.5
+				uses = 2
+			}
+		}
+	}
+	#红宝石级工程    
+	focus = {
+		id = BRE_submarine
+		icon = GFX_focus_BRE_submarine
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = BRE_naval_doctrine_2
+		prerequisite = {
+			focus = BRE_naval_doctrine_2
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				category = ss_tech
+				ahead_reduction = 2
+				uses = 1
+			}
+			add_tech_bonus = {
+				category = ss_tech
+				bonus = 1
+				uses = 1
+			}
+		}
+	}
+	#扩建布雷斯特海军基地    
+	focus = {
+		id = BRE_naval_base
+		icon = GFX_focus_BRE_naval_base
+		x = 3
+		y = 1
+		cost = 5
+		relative_position_id = BRE_reorganize_navy
+		prerequisite = {
+			focus = BRE_reorganize_navy
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			14 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 4
+					province = {
+						limit_to_coastal = yes
+						all_provinces = yes
+					}
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 4
+					province = 6572
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 3
+				}
+			}
+		}
+	}
+	#国防政策
+	focus = {
+		id = BRE_army_1
+		icon = GFX_focus_BRE_army_1
+		x = 20
+		y = 0
+		cost = 5
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			army_experience = 30
+		}
+	}
+	#轻型装甲师主导
+	focus = {
+		id = BRE_light_armor_division
+		icon = GFX_focus_BRE_light_armor_division
+		x = -2
+		y = 1
+		cost = 8
+		relative_position_id = BRE_army_1
+		prerequisite = {
+			focus = BRE_army_1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				category = armor
+				bonus = 1
+				uses = 2
+			}
+			division_template = {
+				name = "Light Armor"
+				regiments = {
+					infantry = {
+						x = 0
+						y = 0
+					}
+					infantry = {
+						x = 0
+						y = 1
+					}
+					infantry = {
+						x = 0
+						y = 2
+					}
+					medium_armor = {
+						x = 1
+						y = 0
+					}
+					medium_armor = {
+						x = 1
+						y = 1
+					}
+					light_sp_artillery_brigade = {
+						x = 1
+						y = 2
+					}
+					mechanized = {
+						x = 2
+						y = 0
+					}
+					artillery_brigade = {
+						x = 3
+						y = 0
+					}
+				}
+				support = {
+					engineer = {
+						x = 0
+						y = 0
+					}
+					maintenance_company = {
+						x = 0
+						y = 1
+					}
+				}
+			}
+		}
+	}
+	#装甲师扩编计划
+	focus = {
+		id = BRE_expand_army
+		icon = GFX_focus_BRE_expand_army
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_light_armor_division
+		prerequisite = {
+			focus = BRE_light_armor_division
+		}
+		mutually_exclusive = {
+			focus = BRE_mechanised_marine
+			focus = BRE_marine_2
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			14 = {
+				create_unit = {
+					division = "division_template = \"Light Armor\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = BRE
+				}
+				create_unit = {
+					division = "division_template = \"Light Armor\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = BRE
+				}
+			}
+		}
+	}
+	#机动优先
+	focus = {
+		id = BRE_maneuver
+		icon = GFX_focus_BRE_maneuver
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_expand_army
+		prerequisite = {
+			focus = BRE_expand_army
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				category = land_doctrine
+				uses = 2
+				bonus = 0.5
+			}
+		}
+	}
+	#机械化两栖部队
+	focus = {
+		id = BRE_mechanised_marine
+		icon = GFX_focus_BRE_mechanised_marine
+		x = 2
+		y = 1
+		cost = 8
+		relative_position_id = BRE_light_armor_division
+		prerequisite = {
+			focus = BRE_light_armor_division
+		}
+		prerequisite = {
+			focus = BRE_marine
+		}
+		mutually_exclusive = {
+			focus = BRE_marine_2
+			focus = BRE_expand_army
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			division_template = {
+				name = "Mechanised Marine"
+				regiments = {
+					marine = {
+						x = 0
+						y = 0
+					}
+					marine = {
+						x = 0
+						y = 1
+					}
+					marine = {
+						x = 0
+						y = 2
+					}
+					marine = {
+						x = 1
+						y = 0
+					}
+					marine = {
+						x = 1
+						y = 1
+					}
+					marine = {
+						x = 1
+						y = 2
+					}
+					marine = {
+						x = 2
+						y = 0
+					}
+					marine = {
+						x = 2
+						y = 1
+					}
+					marine = {
+						x = 2
+						y = 2
+					}
+					amphibious_armor = {
+						x = 3
+						y = 0
+					}
+					amphibious_armor = {
+						x = 3
+						y = 1
+					}
+					amphibious_armor = {
+						x = 3
+						y = 2
+					}
+				}
+				support = {
+					artillery = {
+						x = 0
+						y = 0
+					}
+					engineer = {
+						x = 0
+						y = 1
+					}
+				}
+			}
+			add_tech_bonus = {
+				category = cat_mechanized_equipment
+				uses = 1
+				bonus = 1
+			}
+			add_tech_bonus = {
+				category = marine_tech
+				uses = 1
+				bonus = 1
+			}
+			14 = {
+				create_unit = {
+					division = "division_template = \"Mechanised Marine\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = BRE
+				}
+			}
+		}
+	}
+	#跨海峡作战演习
+	focus = {
+		id = BRE_tunnel
+		icon = GFX_focus_BRE_tunnel
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_mechanised_marine
+		prerequisite = {
+			focus = BRE_mechanised_marine
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			navy_experience = 25
+			army_experience = 25
+			add_tech_bonus = {
+				category = land_doctrine
+				uses = 2
+				bonus = 0.5
+			}
+		}
+	}
+	#海军陆战队的地位
+	focus = {
+		id = BRE_marine
+		icon = GFX_focus_BRE_marine
+		x = 2
+		y = 1
+		cost = 8
+		relative_position_id = BRE_army_1
+		prerequisite = {
+			focus = BRE_army_1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				category = marine_tech
+				uses = 3
+				bonus = 1
+			}
+			add_tech_bonus = {
+				category = mountaineers_tech
+				category = para_tech
+				category = marine_tech
+				bonus = 1
+				uses = 1
+			}
+			division_template = {
+				name = "Marine"
+				regiments = {
+					marine = {
+						x = 0
+						y = 0
+					}
+					marine = {
+						x = 0
+						y = 1
+					}
+					marine = {
+						x = 0
+						y = 2
+					}
+					marine = {
+						x = 1
+						y = 0
+					}
+					marine = {
+						x = 1
+						y = 1
+					}
+					marine = {
+						x = 1
+						y = 2
+					}
+					artillery_brigade = {
+						x = 2
+						y = 0
+					}
+					light_sp_artillery_brigade = {
+						x = 3
+						y = 0
+					}
+					light_sp_artillery_brigade = {
+						x = 3
+						y = 1
+					}
+				}
+			}
+		}
+	}
+	#港口守卫者
+	focus = {
+		id = BRE_marine_2
+		icon = GFX_focus_BRE_marine_2
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_marine
+		prerequisite = {
+			focus = BRE_marine
+		}
+		mutually_exclusive = {
+			focus = BRE_mechanised_marine
+			focus = BRE_expand_army
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = BRE_marine_1
+		}
+	}
+	#陆战队拓编计划
+	focus = {
+		id = BRE_marine_3
+		icon = GFX_focus_BRE_marine_3
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_marine_2
+		prerequisite = {
+			focus = BRE_marine_2
+		}
+		mutually_exclusive = {
+			focus = BRE_mechanised_marine
+			focus = BRE_expand_army
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				category = land_doctrine
+				uses = 2
+				bonus = 0.5
+			}
+			swap_ideas = {
+				remove_idea = BRE_marine_1
+				add_idea = BRE_marine_2
+			}
+			14 = {
+				create_unit = {
+					division = "division_template = \"Marine\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = BRE
+				}
+				create_unit = {
+					division = "division_template = \"Marine\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = BRE
+				}
+			}
+		}
+	}
+	#崭新的布列塔尼陆军
+	focus = {
+		id = BRE_army_2
+		icon = GFX_focus_BRE_army_2
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_tunnel
+		prerequisite = {
+			focus = BRE_marine_3
+			focus = BRE_maneuver
+			focus = BRE_tunnel
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = BRE_new_army
+		}
+	}
+	#统计战机库存
+	focus = {
+		id = BRE_air_1
+		icon = GFX_focus_BRE_air_1
+		x = 4
+		y = 1
+		cost = 8
+		relative_position_id = BRE_army_1
+		prerequisite = {
+			focus = BRE_army_1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment
+				amount = 50
+			}
+		}
+	}
+	#南特空军基地
+	focus = {
+		id = BRE_air_2
+		icon = GFX_focus_BRE_air_2
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_air_1
+		prerequisite = {
+			focus = BRE_air_1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			14 = {
+				add_building_construction = {
+					type = air_base
+					level = 5
+				}
+			}
+		}
+	}
+	#重建飞机工厂
+	focus = {
+		id = BRE_air_3
+		icon = GFX_focus_BRE_air_3
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_air_2
+		prerequisite = {
+			focus = BRE_air_2
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				category = air_doctrine
+				uses = 1
+				bonus = 0.5
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+	}
+	#布列塔尼的现状
+	focus = {
+		id = BRE_politics
+		icon = GFX_focus_BRE_politics
+		x = 5
+		y = 0
+		cost = 5
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 25
+			###触发事件：布列塔尼的现状
+		}
+	}
+	#法兰西神圣的一部分
+	focus = {
+		id = BRE_fra
+		icon = GFX_focus_BRE_fra
+		x = -3
+		y = 1
+		cost = 8
+		relative_position_id = BRE_politics
+		prerequisite = {
+			focus = BRE_politics
+		}
+		mutually_exclusive = {
+			focus = BRE_small_britan
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	#内战的阴霾
+	focus = {
+		id = BRE_civ
+		icon = GFX_focus_BRE_civ
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_fra
+		prerequisite = {
+			focus = BRE_fra
+		}
+		available = {
+		}
+		bypass = {
+			has_global_flag = BCF_CIVIL_WAR_END
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_war_support = 0.15
+			add_ideas = war_economy
+		}
+	}
+	#卢瓦尔防线
+	focus = {
+		id = BRE_fort
+		icon = GFX_focus_BRE_fort
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_civ
+		prerequisite = {
+			focus = BRE_civ
+		}
+		available = {
+		}
+		bypass = {
+			has_global_flag = BCF_CIVIL_WAR_END
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			30 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = {
+						limit_to_border = yes
+						all_provinces = yes
+					}
+				}
+			}
+		}
+	}
+	#肃清叛徒
+	focus = {
+		id = BRE_civ_2
+		icon = GFX_focus_BRE_civ_2
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_fort
+		prerequisite = {
+			focus = BRE_fort
+		}
+		available = {
+		}
+		bypass = {
+			has_global_flag = BCF_CIVIL_WAR_END
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_timed_idea = {
+				idea = BRE_civ_idea
+				days = 270
+			}
+		}
+	}
+	#小不列颠
+	focus = {
+		id = BRE_small_britan
+		icon = GFX_focus_BRE_small_britan
+		x = 3
+		y = 1
+		cost = 8
+		relative_position_id = BRE_politics
+		prerequisite = {
+			focus = BRE_politics
+		}
+		mutually_exclusive = {
+			focus = BRE_fra
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = -0.15
+			###触发事件：小不列颠
+			set_country_flag = BRE_CLAIM_GREAT_BRITANNIA
+		}
+	}
+	#布列塔尼的新星
+	focus = {
+		id = BRE_new_star
+		icon = GFX_focus_BRE_new_star
+		x = 0
+		y = 2
+		cost = 8
+		relative_position_id = BRE_politics
+		prerequisite = {
+			focus = BRE_small_britan
+			focus = BRE_fra
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+			add_political_power = 100
+		}
+	}
+	#南特的战车道政府
+	focus = {
+		id = BRE_government
+		icon = GFX_focus_BRE_government
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_new_star
+		prerequisite = {
+			focus = BRE_new_star
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+		}
+	}
+	#终结BC自由统治
+	focus = {
+		id = BRE_end_bcf
+		icon = GFX_focus_BRE_end_bcf
+		x = -1
+		y = 1
+		cost = 8
+		relative_position_id = BRE_government
+		prerequisite = {
+			focus = BRE_government
+		}
+		available = {
+			controls_province = 911
+			controls_province = 11506
+			NOT = {
+				has_country_flag = BRE_CLAIM_GREAT_BRITANNIA
+			}
+		}
+		bypass = {
+			has_global_flag = BCF_CIVIL_WAR_END
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = BCF
+				}
+				remove_core_of = B01
+				remove_core_of = B02
+				remove_core_of = BCF
+			}
+		}
+	}
+	#新共和国的火种
+	focus = {
+		id = BRE_new_republic
+		icon = GFX_focus_BRE_new_republic
+		x = 1
+		y = 1
+		cost = 8
+		relative_position_id = BRE_government
+		prerequisite = {
+			focus = BRE_government
+		}
+		available = {
+			controls_province = 911
+			controls_province = 11506
+			controls_province = 9737
+			controls_province = 3652
+			controls_province = 512
+			NOT = {
+				has_country_flag = BRE_CLAIM_GREAT_BRITANNIA
+			}
+		}
+		bypass = {
+			has_global_flag = BCF_CIVIL_WAR_END
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			###新共和国的诞生
+		}
+	}
+	#重返巴黎
+	focus = {
+		id = BRE_return
+		icon = GFX_focus_BRE_return
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_end_bcf
+		prerequisite = {
+			focus = BRE_end_bcf
+		}
+		prerequisite = {
+			focus = BRE_civ_2
+		}
+		prerequisite = {
+			focus = BRE_new_republic
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 200
+			###国策具体该怎么切
+		}
+	}
+	#小不列颠
+	focus = {
+		id = BRE_unification
+		icon = GFX_focus_BRE_unification
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_small_britan
+		prerequisite = {
+			focus = BRE_small_britan
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			14 = {
+				create_unit = {
+					division = "division_template = \"Infantry Division\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = BRE
+				}
+				create_unit = {
+					division = "division_template = \"Infantry Division\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = BRE
+				}
+				create_unit = {
+					division = "division_template = \"Infantry Division\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = BRE
+				}
+				create_unit = {
+					division = "division_template = \"Infantry Division\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = BRE
+				}
+				create_unit = {
+					division = "division_template = \"Infantry Division\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = BRE
+				}
+				create_unit = {
+					division = "division_template = \"Infantry Division\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = BRE
+				}
+			}
+		}
+	}
+	#大不列颠尼亚主义
+	focus = {
+		id = BRE_great_britinnia
+		icon = GFX_focus_BRE_great_britinnia
+		x = -1
+		y = 1
+		cost = 8
+		relative_position_id = BRE_unification
+		prerequisite = {
+			focus = BRE_unification
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = BRE
+				}
+				add_claim_by = root
+			}
+		}
+	}
+	#统一之梦
+	focus = {
+		id = BRE_dream_of_unification
+		icon = GFX_focus_BRE_dream_of_unification
+		x = 1
+		y = 1
+		cost = 8
+		relative_position_id = BRE_unification
+		prerequisite = {
+			focus = BRE_unification
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = BRE_dream_of_unification_1
+		}
+	}
+	#强化正统性宣传
+	focus = {
+		id = BRE_legitmacy
+		icon = GFX_focus_BRE_legitmacy
+		x = -1
+		y = 1
+		cost = 8
+		relative_position_id = BRE_dream_of_unification
+		prerequisite = {
+			focus = BRE_dream_of_unification
+		}
+		prerequisite = {
+			focus = BRE_great_britinnia
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			###加强正统性宣传
+			###召集统一志愿军
+			###统一之战
+		}
+	}
+	#统治吧，不列颠尼亚
+	focus = {
+		id = BRE_rule_great_britannia
+		icon = GFX_focus_BRE_rule_great_britannia
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_legitmacy
+		prerequisite = {
+			focus = BRE_legitmacy
+		}
+		available = {
+			controls_province = 6103
+			controls_province = 9297
+			controls_province = 6384
+			controls_province = 9392
+			controls_province = 3379
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			set_cosmetic_tag = BRE_BRITINNIA_TAG
+			###启用认同度
+			add_political_power = 200
+			add_state_core = 123
+			add_state_core = 127
+			add_state_core = 338
+			add_state_core = 125
+			add_state_core = 126
+			add_state_core = 128
+			add_state_core = 129
+			add_state_core = 130
+			add_state_core = 132
+			add_state_core = 131
+		}
+	}
+	#造船业主导
+	focus = {
+		id = BRE_naval_factory_1
+		icon = GFX_focus_BRE_naval_factory_1
+		x = 3
+		y = 7
+		cost = 5
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				category = industry
+				uses = 1
+				bonus = 1
+			}
+			add_ideas = BRE_naval_output_1
+		}
+	}
+	#卢瓦尔河船厂
+	focus = {
+		id = BRE_naval_factory_2
+		icon = GFX_focus_BRE_naval_factory_2
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_naval_factory_1
+		prerequisite = {
+			focus = BRE_naval_factory_1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			30 = {
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+		}
+	}
+	#拓建洛里昂军工厂
+	focus = {
+		id = BRE_naval_factory_3
+		icon = GFX_focus_BRE_naval_factory_3
+		x = -2
+		y = 1
+		cost = 8
+		relative_position_id = BRE_naval_factory_1
+		prerequisite = {
+			focus = BRE_naval_factory_1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			14 = {
+				add_building_construction = {
+					type = dockyard
+					level = 3
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+	}
+	#维持造船补贴
+	focus = {
+		id = BRE_naval_subsidy
+		icon = GFX_focus_BRE_naval_subsidy
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_naval_factory_2
+		prerequisite = {
+			focus = BRE_naval_factory_2
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BRE_naval_output_1
+				add_idea = BRE_naval_output_2
+			}
+		}
+	}
+	#均衡产业发展
+	focus = {
+		id = BRE_industry_1
+		icon = GFX_focus_BRE_industry_1
+		x = 7
+		y = 7
+		cost = 5
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+	#布雷斯特兵工厂
+	focus = {
+		id = BRE_industry_2
+		icon = GFX_focus_BRE_industry_2
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_industry_1
+		prerequisite = {
+			focus = BRE_industry_1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			14 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+			}
+		}
+	}
+	#跨海峡经济联系
+	focus = {
+		id = BRE_extra_factory
+		icon = GFX_focus_BRE_extra_factory
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_industry_2
+		prerequisite = {
+			focus = BRE_industry_2
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+			}
+		}
+	}
+	#战时经济动员
+	focus = {
+		id = BRE_war_econ
+		icon = GFX_focus_BRE_war_econ
+		x = -2
+		y = 1
+		cost = 8
+		relative_position_id = BRE_industry_1
+		prerequisite = {
+			focus = BRE_industry_1
+			focus = BRE_naval_factory_1
+		}
+		available = {
+			has_war = yes
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = war_economy
+			random_owned_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = -2
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = -2
+				}
+			}
+		}
+	}
+	#战争即和平
+	focus = {
+		id = BRE_war_is_peace
+		icon = GFX_focus_BRE_war_is_peace
+		x = 13
+		y = 7
+		cost = 5
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_war_support = 0.05
+		}
+	}
+	#联合舰队计划
+	focus = {
+		id = BRE_new_navy
+		icon = GFX_focus_BRE_new_navy
+		x = -3
+		y = 1
+		cost = 8
+		relative_position_id = BRE_war_is_peace
+		prerequisite = {
+			focus = BRE_war_is_peace
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = BRE_new_fleet
+		}
+	}
+	#北海的威胁
+	focus = {
+		id = BRE_naval_doctrine_3
+		icon = GFX_focus_BRE_naval_doctrine_3
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_new_navy
+		prerequisite = {
+			focus = BRE_new_navy
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			navy_experience = 75
+		}
+	}
+	#木墙
+	focus = {
+		id = BRE_wooden_wall
+		icon = GFX_focus_BRE_wooden_wall
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_naval_doctrine_3
+		prerequisite = {
+			focus = BRE_naval_doctrine_3
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = BRE_wooden_wall
+		}
+	}
+	#不列颠岛防卫计划
+	focus = {
+		id = BRE_defend_island
+		icon = GFX_focus_BRE_defend_island
+		x = -1
+		y = 1
+		cost = 8
+		relative_position_id = BRE_war_is_peace
+		prerequisite = {
+			focus = BRE_war_is_peace
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_manpower = 100000
+		}
+	}
+	#不列颠岛防卫计划
+	focus = {
+		id = BRE_fort_2
+		icon = GFX_focus_BRE_fort_2
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_defend_island
+		prerequisite = {
+			focus = BRE_defend_island
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			14 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = {
+						limit_to_victory_point = yes
+						all_provinces = yes
+					}
+				}
+			}
+			30 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = {
+						limit_to_victory_point = yes
+						all_provinces = yes
+					}
+				}
+			}
+		}
+	}
+	#整合兵工厂
+	focus = {
+		id = BRE_industry_3
+		icon = GFX_focus_BRE_industry_3
+		x = 1
+		y = 1
+		cost = 8
+		relative_position_id = BRE_war_is_peace
+		prerequisite = {
+			focus = BRE_war_is_peace
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+			}
+			add_tech_bonus = {
+				category = industry
+				uses = 2
+				bonus = 1
+			}
+		}
+	}
+	#统一工业规划
+	focus = {
+		id = BRE_industry_4
+		icon = GFX_focus_BRE_industry_4
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_industry_3
+		prerequisite = {
+			focus = BRE_industry_3
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+	#爱尔兰粮仓
+	focus = {
+		id = BRE_industry_5
+		icon = GFX_focus_BRE_industry_5
+		x = 3
+		y = 1
+		cost = 8
+		relative_position_id = BRE_war_is_peace
+		prerequisite = {
+			focus = BRE_war_is_peace
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = BRE_ireland
+		}
+	}
+	#北海的鳕鱼
+	focus = {
+		id = BRE_industry_6
+		icon = GFX_focus_BRE_industry_6
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_industry_5
+		prerequisite = {
+			focus = BRE_industry_5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = BRE_fish
+		}
+	}
+
+	#大不列颠尼亚的未来
+	focus = {
+		id = BRE_future
+		icon = GFX_focus_BRE_future
+		x = 22
+		y = 0
+		cost = 5
+		allow_branch = {
+			if = {
+				limit = {
+					has_completed_focus = BRE_rule_great_britannia
+				}
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = 0.2
+		}
+	}
+	#定都
+	focus = {
+		id = BRE_capital
+		icon = GFX_focus_BRE_capital
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_future
+		prerequisite = {
+			focus = BRE_future
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			##事件
+		}
+	}
+	#语言问题
+	focus = {
+		id = BRE_language
+		icon = GFX_focus_BRE_language
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_capital
+		prerequisite = {
+			focus = BRE_capital
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			##事件
+		}
+	}
+	#英语主导
+	focus = {
+		id = BRE_english
+		icon = GFX_focus_BRE_english
+		x = -4
+		y = 1
+		cost = 8
+		relative_position_id = BRE_language
+		prerequisite = {
+			focus = BRE_language
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			set_country_flag = BRE_english_was_official
+			set_temp_variable = {
+				BRE_acceptance_change_eng = 1
+			}
+			Update_BRE_acceptance_system = yes
+			##决议
+		}
+	}
+	#设立布列塔尼特区
+	focus = {
+		id = BRE_special_district
+		icon = GFX_focus_BRE_special_district
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_english
+		prerequisite = {
+			focus = BRE_english
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			set_temp_variable = {
+				BRE_acceptance_change_bri = 2
+			}
+			Update_BRE_acceptance_system = yes
+		}
+	}
+	#关注欧陆
+	focus = {
+		id = BRE_claim_north_france
+		icon = GFX_focus_BRE_claim_north_france
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_special_district
+		prerequisite = {
+			focus = BRE_special_district
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_state_claim = 15
+			add_state_claim = 29
+			add_state_claim = 25
+			add_state_claim = 31
+			add_state_claim = 806
+			add_state_claim = 19
+			add_stability = 0.1
+		}
+	}
+	#大不列颠尼亚治下的和平
+	focus = {
+		id = BRE_claim_north_france
+		icon = GFX_focus_BRE_claim_north_france
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_special_district
+		prerequisite = {
+			focus = BRE_special_district
+		}
+		available = {
+			controls_province = 9737
+			controls_province = 11548
+			controls_province = 6449
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			##决议
+			add_ideas = BRE_sun
+		}
+	}
+	#多元文化主义
+	focus = {
+		id = BRE_multiculturalism
+		icon = GFX_focus_BRE_multiculturalism
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_language
+		prerequisite = {
+			focus = BRE_language
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			set_temp_variable = {
+				BRE_acceptance_change_bri = 1
+			}
+			set_temp_variable = {
+				BRE_acceptance_change_eng = 1
+			}
+			set_temp_variable = {
+				BRE_acceptance_change_wal = 1
+			}
+			set_temp_variable = {
+				BRE_acceptance_change_sco = 1
+			}
+			set_temp_variable = {
+				BRE_acceptance_change_ire = 1
+			}
+			Update_BRE_acceptance_system = yes
+		}
+	}
+	#接纳前圣葛罗丽安娜成员
+	focus = {
+		id = BRE_accept_stg
+		icon = GFX_focus_BRE_accept_stg
+		x = -2
+		y = 1
+		cost = 8
+		relative_position_id = BRE_multiculturalism
+		prerequisite = {
+			focus = BRE_multiculturalism
+			focus = BRE_english
+		}
+		available = {
+			STG = {
+				exists = no
+			}
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			STG = {
+				every_character = {
+					limit = {
+						is_unit_leader = yes
+					}
+					set_nationality = BRE
+				}
+			}
+		}
+	}
+	#五种官方语言
+	focus = {
+		id = BRE_five_languages
+		icon = GFX_focus_BRE_five_languages
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_multiculturalism
+		prerequisite = {
+			focus = BRE_multiculturalism
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			set_country_flag = BRE_diversity_was_official
+			set_temp_variable = {
+				BRE_acceptance_change_bri = 2
+			}
+			set_temp_variable = {
+				BRE_acceptance_change_eng = 2
+			}
+			set_temp_variable = {
+				BRE_acceptance_change_wal = 2
+			}
+			set_temp_variable = {
+				BRE_acceptance_change_sco = 2
+			}
+			set_temp_variable = {
+				BRE_acceptance_change_ire = 2
+			}
+			Update_BRE_acceptance_system = yes
+		}
+	}
+	#拥抱美丽新世界
+	focus = {
+		id = BRE_new_world
+		icon = GFX_focus_BRE_new_world
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_five_languages
+		prerequisite = {
+			focus = BRE_five_languages
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 150
+			add_war_support = 0.2
+		}
+	}
+	#统一而不可分割
+	focus = {
+		id = BRE_united_great_britannia
+		icon = GFX_focus_BRE_united_great_britannia
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_new_world
+		prerequisite = {
+			focus = BRE_new_world
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = BRE_united_great_britannia
+		}
+	}
+	
+	#法语主导
+	focus = {
+		id = BRE_franch
+		icon = GFX_focus_BRE_franch
+		x = 4
+		y = 1
+		cost = 8
+		relative_position_id = BRE_language
+		prerequisite = {
+			focus = BRE_language
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			set_country_flag = BRE_franch_was_official
+			set_temp_variable = {
+				BRE_acceptance_change_bri = 3
+			}
+			Update_BRE_acceptance_system = yes
+		}
+	}
+	#接纳前BC自由成员
+	focus = {
+		id = BRE_accept_bcf
+		icon = GFX_focus_BRE_accept_bcf
+		x = -2
+		y = 1
+		cost = 8
+		relative_position_id = BRE_franch
+		prerequisite = {
+			focus = BRE_franch
+			focus = BRE_multiculturalism
+		}
+		available = {
+			BCF = {
+				exists = no
+			}
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			BCF = {
+				every_character = {
+					limit = {
+						is_unit_leader = yes
+					}
+					set_nationality = BRE
+				}
+			}
+		}
+	}
+	#法语推广计划
+	focus = {
+		id = BRE_franch_plan
+		icon = GFX_focus_BRE_franch_plan
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_franch
+		prerequisite = {
+			focus = BRE_franch
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			##决议
+		}
+	}
+	#加强与法兰西的链接
+	focus = {
+		id = BRE_franch_connection
+		icon = GFX_focus_BRE_franch_connection
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_franch_plan
+		prerequisite = {
+			focus = BRE_franch_plan
+		}
+		available = {
+			check_variable = {
+				BRE_language_acceptance_franch > 0.39
+			}
+			OR = {
+				NOT = {
+					has_global_flag = BCF_CIVIL_WAR_START
+				}
+				has_global_flag = BCF_CIVIL_WAR_END
+			}
+			OR = {
+				BCF = {
+					exists = yes
+				}
+				FRA = {
+					exist = yes
+				}
+			}
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = bre_asparagus_ambition
+			add_political_power = 200
+		}
+	}
+	#加强与法兰西的链接
+	focus = {
+		id = BRE_claim_franch_and_lowland
+		icon = GFX_focus_BRE_claim_franch_and_lowland
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = BRE_franch_connection
+		prerequisite = {
+			focus = BRE_franch_connection
+		}
+		available = {
+			check_variable = {
+				BRE_language_acceptance_franch > 0.49
+			}
+			OR = {
+				NOT = {
+					has_global_flag = BCF_CIVIL_WAR_START
+				}
+				has_global_flag = BCF_CIVIL_WAR_END
+			}
+			OR = {
+				BCF = {
+					exists = yes
+				}
+				FRA = {
+					exist = yes
+				}
+			}
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			##决议
+		}
+	}
+}

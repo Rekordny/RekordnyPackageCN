@@ -1,0 +1,161 @@
+leader_traits = {
+	#飞机制造商
+	BCF_airbus_four_engine = {
+		random = no
+		equipment_bonus = {
+			transport_plane_equipment = {
+				build_cost_ic = -0.2
+			}
+			strat_bomber_equipment = {
+				build_cost_ic = -0.15
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	BCF_Dassault_fighter = {
+		random = no
+		equipment_bonus = {
+			fighter_equipment = {
+				air_attack = 0.1
+				air_agility = 0.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#舰船设计器
+	BCF_DCAN_Brittany = {
+		random = no
+		equipment_bonus = {
+			capital_ship = {
+				build_cost_ic = -0.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	BCF_DCAN_Lorient = {
+		random = no
+		equipment_bonus = {
+			ship_hull_cruiser = {
+				build_cost_ic = -0.05
+				lg_attack = 0.05
+				hg_attack = 0.05
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	BCF_DCAN_Toulon = {
+		random = no
+		equipment_bonus = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	BCF_DCAN_Cherbourg = {
+		random = no
+		equipment_bonus = {
+			ship_hull_submarine = {
+				attack = 0.1
+				defence = 0.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#坦克设计器
+	BCF_AMX_lt = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				maximum_speed = 0.1
+				breakthrough = 0.05
+				armor_value = -0.15
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	BCF_Soma_ht = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				armor_value = 0.15
+				ap_attack = 0.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	BCF_GIAT_armor_general = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				soft_attack = 0.05
+				breakthrough = 0.03
+				armor_value = 0.05
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#装备制造商
+	BCF_ACMAT_mot = {
+		random = no
+		equipment_bonus = {
+			motorized_equipment = {
+				build_cost_ic = -0.15
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	BCF_GIAT_mech = {
+		random = no
+		equipment_bonus = {
+			mechanized_equipment = {
+				armor_value = 0.1
+				maximum_speed = 0.05
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	BCF_GIAT_arti = {
+		random = no
+		equipment_bonus = {
+			artillery_equipment = {
+				soft_attack = 0.1
+				defence = 0.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	BCF_GIAT_Infantry = {
+		random = no
+		equipment_bonus = {
+			infantry_equipment = {
+				soft_attack = 0.05
+				breakthrough = 0.05
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,7 +1,5 @@
 ideas = {
 	country = {
-		
-		
 #开局精神
 
 		#日落的战车道
@@ -17,7 +15,7 @@ ideas = {
 			
 			modifier = {
 				army_attack_factor = -0.1
-				army_speed_factor = -0.15
+				army_armor_speed_factor = -0.15
 				army_org_factor = -0.15
 				army_morale_factor = -0.15
 			}
@@ -35,9 +33,25 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_power_cost = -0.3
+				political_power_cost = 0.3
 				political_advisor_cost_factor = 0.5
 				economy_cost_factor = 0.5
+			}
+		}
+		STG_Speeding_government_1 = {
+			picture = GFX_idea_STG_Speeding_government
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.15
+				political_advisor_cost_factor = 0.25
+				economy_cost_factor = 0.25
 			}
 		}
 		
@@ -78,6 +92,21 @@ ideas = {
 				political_power_gain = 0.3
 			}
 		}
+		STG_Chengdu_Berlin_flesh_blood_1 = {
+			picture = GFX_idea_STG_Chengdu_Berlin_flesh_blood
+			allowed = {
+				tag = WKG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				autonomy_gain = 0.15
+				political_power_gain = 0.15
+			}
+		}
 		
 		#爱尔兰独立叛乱
 		STG_Irish_independence_rebellion = {
@@ -95,6 +124,22 @@ ideas = {
 				political_power_cost = 0.2
 			}
 		}
+		STG_Irish_independence_rebellion_2 = {
+			picture = GFX_idea_STG_Irish_independence_rebellion
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				wage_modifier = 0.05
+				political_power_cost = 0.1
+			}
+		}
+		
 		
 #决议精神
 
@@ -180,6 +225,23 @@ ideas = {
 			}
 		}
 		
+		#反右游行
+		STG_anti_rightist_march = {
+			picture = GFX_idea_STG_General_strike
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.003
+				political_power_factor = -0.1
+			}
+		}
+		
 #国策精神
 		
 		#货币理论
@@ -201,4 +263,43 @@ ideas = {
 			}
 		}
 		
+		#援助桑达斯
+		STG_Aid_Sandas = {
+			picture = GFX_idea_STG_Aid_Sandas
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				send_volunteer_factor = 0.3
+				send_volunteers_tension = -0.75
+			}
+			targeted_modifier = {
+				tag = GBT
+				defense_bonus_against = 0.1
+			}
+		}
+		
+		#看客与观众
+		STG_Spectators_and_spectators = {
+			picture = GFX_idea_STG_Spectators_and_spectators
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				decryption = 0.25
+				intel_network_gain = 0.25
+				generate_wargoal_tension = -0.5
+			}
+		}
+	}
 }

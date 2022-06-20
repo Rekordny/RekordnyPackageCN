@@ -1,25 +1,28 @@
 division_template = {
 	name = "Kuromorimine Nibelungen Knights"		# Infantry Division - Reserve division called to full strength in time of war
-	division_names_group = KGA_SSD_02
+	division_names_group = KGA_4
 
 	regiments = {
 		heavy_armor = { x = 0 y = 0 }
 		heavy_armor = { x = 0 y = 1 }
+        heavy_armor = { x = 0 y = 2 }
 		medium_armor = { x = 1 y = 0 }
 		medium_armor = { x = 1 y = 1 }
+        medium_armor = { x = 1 y = 2 }
 		medium_armor = { x = 2 y = 0 }
 		medium_armor = { x = 2 y = 1 }
+        medium_armor = { x = 2 y = 2 }
 	}
 	support = {
-		scope_brigade = {
+		signal_company = {
 			x = 0
 			y = 0
 		}
-		armorpiercing_ammunition = {
+		mot_artillery_brigade = {
 			x = 0
 			y = 1
 		}
-		physical_armor = {
+		maintenance_company = {
 			x = 0
 			y = 2
 		}

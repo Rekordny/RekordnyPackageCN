@@ -1,4 +1,6 @@
 add_namespace = bcfreedom_stg
+add_namespace = bcfreedom_stg_faction
+add_namespace = bcfreedom_kga_faction
 add_namespace = bcfreedom_rebuild_senshado
 add_namespace = bcfreedom_diplo
 add_namespace = bcfreedom_kga_issue
@@ -19,6 +21,7 @@ country_event = {
 				id = bcfreedom_stg.2
 				days = 3
 			}
+			set_country_flag = BCF_STG_decide_to_support_us
 			add_opinion_modifier = {
 				target = STG
 				modifier = BCF_civil_war_support
@@ -104,6 +107,41 @@ country_event = {
 	}
 	option = {
 		name = bcfreedom_stg.4.a
+	}
+}
+
+#BCF请求介入内战
+country_event = {
+	id = bcfreedom_stg.1
+	title = bcfreedom_stg.1.t
+	desc = bcfreedom_stg.1.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = bcfreedom_stg.1.a
+		every_country = {
+			limit = {
+				has_war_with = FROM
+			}
+			STG = {
+				add_to_war = {
+					targeted_alliance = FROM
+					enemy = PREV
+					hostility_reason = asked_to_join
+				}
+			}
+		}
+	}
+	option = {
+		name = bcfreedom_stg.1.b
+		BCF = {
+			add_opinion_modifier = {
+				target = STG
+				modifier = BCF_civil_war_support_partial
+			}
+		}
 	}
 }
 
@@ -887,4 +925,123 @@ country_event = {
 			active = yes
 		}
 	}
+}
+
+#--------------------------------------------------------------------------------------------
+#外交事件-BCF寻求与STG的联盟
+#--------------------------------------------------------------------------------------------
+#BCF寻求与STG的联盟
+country_event = {
+	id = bcfreedom_stg_faction.1
+	title = bcfreedom_stg_faction.1.t
+	desc = bcfreedom_stg_faction.1.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = bcfreedom_stg_faction.1.a
+		BCF = {
+			add_to_faction = prev
+			country_event = {
+				id = bcfreedom_stg_faction.2
+			}
+		}
+	}
+	option = {
+		name = bcfreedom_stg_faction.1.b
+		BCF = {
+			country_event = {
+				id = bcfreedom_stg_faction.3
+			}
+		}
+	}
+
+}
+#STG接受盟约
+country_event = {
+	id = bcfreedom_stg_faction.2
+	title = bcfreedom_stg_faction.2.t
+	desc = bcfreedom_stg_faction.2.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = bcfreedom_stg_faction.2.a
+	}
+
+}
+#STG拒绝盟约
+country_event = {
+	id = bcfreedom_stg_faction.3
+	title = bcfreedom_stg_faction.3.t
+	desc = bcfreedom_stg_faction.3.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = bcfreedom_stg_faction.3.a
+	}
+
+}
+#--------------------------------------------------------------------------------------------
+#外交事件-BCF寻求与KGA的联盟
+#--------------------------------------------------------------------------------------------
+#BCF寻求与KGA的联盟
+country_event = {
+	id = bcfreedom_kga_faction.1
+	title = bcfreedom_kga_faction.1.t
+	desc = bcfreedom_kga_faction.1.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = bcfreedom_kga_faction.1.a
+		BCF = {
+			add_to_faction = prev
+			country_event = {
+				id = bcfreedom_kga_faction.2
+			}
+		}
+	}
+	option = {
+		name = bcfreedom_kga_faction.1.b
+		BCF = {
+			country_event = {
+				id = bcfreedom_kga_faction.3
+			}
+		}
+	}
+
+}
+#KGA接受盟约
+country_event = {
+	id = bcfreedom_kga_faction.2
+	title = bcfreedom_kga_faction.2.t
+	desc = bcfreedom_kga_faction.2.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = bcfreedom_kga_faction.2.a
+	}
+
+}
+#KGA拒绝盟约
+country_event = {
+	id = bcfreedom_kga_faction.3
+	title = bcfreedom_kga_faction.3.t
+	desc = bcfreedom_kga_faction.3.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = bcfreedom_kga_faction.3.a
+	}
+
 }

@@ -34,36 +34,36 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_Ooarai_remnant.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_Ooari_Anteater"
-		texturefile = "gfx/interface/ideas/idea_Ooari_Anteater.dds"
+		name = "GFX_idea_Ooarai_Anteater"
+		texturefile = "gfx/interface/ideas/idea_Ooarai_Anteater.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_Ooari_Duck"
-		texturefile = "gfx/interface/ideas/idea_Ooari_Duck.dds"
+		name = "GFX_idea_Ooarai_Duck"
+		texturefile = "gfx/interface/ideas/idea_Ooarai_Duck.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_Ooari_Hippo"
-		texturefile = "gfx/interface/ideas/idea_Ooari_Hippo.dds"
+		name = "GFX_idea_Ooarai_Hippo"
+		texturefile = "gfx/interface/ideas/idea_Ooarai_Hippo.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_Ooari_Leopon"
-		texturefile = "gfx/interface/ideas/idea_Ooari_Leopon.dds"
+		name = "GFX_idea_Ooarai_Leopon"
+		texturefile = "gfx/interface/ideas/idea_Ooarai_Leopon.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_Ooari_Mallard"
-		texturefile = "gfx/interface/ideas/idea_Ooari_Mallard.dds"
+		name = "GFX_idea_Ooarai_Mallard"
+		texturefile = "gfx/interface/ideas/idea_Ooarai_Mallard.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_Ooari_Rabbit"
-		texturefile = "gfx/interface/ideas/idea_Ooari_Rabbit.dds"
+		name = "GFX_idea_Ooarai_Rabbit"
+		texturefile = "gfx/interface/ideas/idea_Ooarai_Rabbit.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_Ooari_Shark"
-		texturefile = "gfx/interface/ideas/idea_Ooari_Shark.dds"
+		name = "GFX_idea_Ooarai_Shark"
+		texturefile = "gfx/interface/ideas/idea_Ooarai_Shark.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_Ooari_Turtle"
-		texturefile = "gfx/interface/ideas/idea_Ooari_Turtle.dds"
+		name = "GFX_idea_Ooarai_Turtle"
+		texturefile = "gfx/interface/ideas/idea_Ooarai_Turtle.dds"
 	}
 
 

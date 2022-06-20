@@ -3903,35 +3903,6 @@ focus_tree = {
 		}
 	}
 
-	#界定北部资源开采权
-	focus = {
-		id = KGA_defining_northern_resources_mining_rights 
-		icon = GFX_focus_KGA_defining_northern_resources_mining_rights
-		relative_position_id = KGA_expand_ruhr_steel
-		x = 0
-		y = 1
-		available = { 58 = { is_controlled_by = KGA } }
-		#allow_branch = { has_completed_focus =  }
-		prerequisite = { focus = KGA_expand_ruhr_steel }
-		#mutually_exclusive = { focus =  }
-		bypass = { }
-		cost = 8
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			country_event = { id = kuromorimine.54 }
-		}
-
-		#AI行动之后具体设计，复制粘贴以下部分即可
-		ai_will_do = {
-			factor = 1
-			modifier = {
-			}
-		}
-	}
-
 	#争夺日德兰半岛
 	focus = {
 		id = KGA_grab_jutland

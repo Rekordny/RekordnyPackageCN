@@ -58,6 +58,7 @@ set_technology = {
 }
 set_research_slots = 3
 set_convoys = 20
+recruit_character = WKG_shiratori
 set_politics = {
 	ruling_party = democratic
 	last_election = "1933.3.5"
@@ -71,19 +72,40 @@ set_popularities = {
 	neutrality = 20
 }
 
-add_equipment_to_stockpile = {
-	type = infantry_equipment
-	amount = 5000
+create_equipment_variant = {
+	name = "SenshadoStandardLT"
+	type = light_tank_chassis_1
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_light_ap_cannon
+		turret_type_slot = tank_lt_turrent_1
+		suspension_type_slot = tank_wheeled_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
+		special_type_slot_1 = tank_radio_1
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 2
+		tank_nsb_armor_upgrade = 2
+	}
+	icon = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_AAA.dds"
 }
-add_equipment_to_stockpile = {
-	type = fighter_equipment_0
-	amount = 200
+create_equipment_variant = {
+	name = "SenshadoStandardMT"
+	type = medium_tank_chassis_1
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_medium_cannon
+		turret_type_slot = tank_mt_turrent_1
+		suspension_type_slot = tank_bogie_suspension
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
+		special_type_slot_1 = tank_radio_1
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 2
+		tank_nsb_armor_upgrade = 2
+	}
+	icon = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_AAA.dds"
 }
-add_equipment_to_stockpile = {
-	type = artillery_equipment
-	amount = 300
-}
-add_equipment_to_stockpile = {
-	type = support_equipment
-	amount = 500
-}
+

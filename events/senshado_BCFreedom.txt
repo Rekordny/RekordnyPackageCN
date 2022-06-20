@@ -2149,9 +2149,6 @@ country_event = {
 				BCF_oshida = {
 					retire = yes
 				}
-				BCF_azumi = {
-					retire = yes
-				}
 				BCF_asparagus = {
 					retire = yes
 				}
@@ -2197,7 +2194,6 @@ country_event = {
 				transfer_state = 29
 				hidden_effect = {
 					recruit_character = BCF_andou
-					recruit_character = BCF_azumi
 					retire_ideology_leader = fascism
 					retire_ideology_leader = communism
 					retire_ideology_leader = democratic
@@ -2632,70 +2628,85 @@ country_event = {
 				target = B02
 				type = civil_war
 			}
+			add_civil_war_target = B02
 			declare_war_on = {
 				target = ORL
 				type = civil_war
 			}
+			add_civil_war_target = ORL
 			declare_war_on = {
 				target = BRE
 				type = civil_war
 			}
+			add_civil_war_target = BRE
 			declare_war_on = {
 				target = MGC
 				type = civil_war
 			}
+			add_civil_war_target = MGC
 			declare_war_on = {
 				target = AQU
 				type = civil_war
 			}
+			add_civil_war_target = AQU
 		}
 		B02 = {
 			declare_war_on = {
 				target = ORL
 				type = civil_war
 			}
+			add_civil_war_target = ORL
 			declare_war_on = {
 				target = BRE
 				type = civil_war
 			}
+			add_civil_war_target = BRE
 			declare_war_on = {
 				target = MGC
 				type = civil_war
 			}
+			add_civil_war_target = MGC
 			declare_war_on = {
 				target = AQU
 				type = civil_war
 			}
+			add_civil_war_target = AQU
 		}
 		BRE = {
 			declare_war_on = {
 				target = ORL
 				type = civil_war
 			}
+			add_civil_war_target = ORL
 			declare_war_on = {
 				target = MGC
 				type = civil_war
 			}
+			add_civil_war_target = MGC
 			declare_war_on = {
 				target = AQU
 				type = civil_war
 			}
+			add_civil_war_target = AQU
 		}
 		MGC = {
 			declare_war_on = {
 				target = ORL
 				type = civil_war
 			}
+			add_civil_war_target = ORL
 			declare_war_on = {
 				target = AQU
 				type = civil_war
 			}
+			add_civil_war_target = AQU
 		}
 		AQU = {
 			declare_war_on = {
 				target = ORL
 				type = civil_war
 			}
+			add_civil_war_target = ORL
 		}
 	}
 }
@@ -2838,6 +2849,7 @@ country_event = {
 	option = {
 		name = bcfreedom_civil_war.7.a
 		add_stability = 0.1
+
 	}
 	option = {
 		name = bcfreedom_civil_war.7.b
@@ -2846,7 +2858,7 @@ country_event = {
 			BCF_remove_civil_warloard_core = yes
 		}
 		BCF = {
-			change_tag_from = B02
+			change_tag_from = ORL
 
 			annex_country = {
 				target = ROOT

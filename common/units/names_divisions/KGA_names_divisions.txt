@@ -123,3 +123,46 @@ KGA_3 =
 
 	}
 }
+
+#尼伯龙根
+KGA_4 = 
+{
+	name = "Nibelungen Knights"
+
+	for_countries = { KGA }
+
+	can_use = { always = yes }
+
+	division_types = { "medium_armor" }
+
+	# Number reservation system will tie to another group.
+	# link_numbering_with = { CRO_MTN_01 }
+
+	fallback_name = "%d. Kuromorimine Nibelungen Knights"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Kuromorimine Nibelungen Knights" }
+		2 = { "%d. Kuromorimine Nibelungen Knights" }
+		3 = { "%d. Kuromorimine Nibelungen Knights" }
+		4 = { "%d. Kuromorimine Nibelungen Knights" }
+		5 = { "%d. Kuromorimine Nibelungen Knights" }
+		6 = { "%d. Kuromorimine Nibelungen Knights" }
+		7 = { "%d. Kuromorimine Nibelungen Knights" }
+		8 = { "%d. Kuromorimine Nibelungen Knights" }
+		9 = { "%d. Kuromorimine Nibelungen Knights" }
+		10 = { "%d. Kuromorimine Nibelungen Knights" }
+		11 = { "%d. Kuromorimine Nibelungen Knights" }
+		12 = { "%d. Kuromorimine Nibelungen Knights" }
+		13 = { "%d. Kuromorimine Nibelungen Knights" }
+		14 = { "%d. Kuromorimine Nibelungen Knights" }
+		15 = { "%d. Kuromorimine Nibelungen Knights" }
+		16 = { "%d. Kuromorimine Nibelungen Knights" }
+		17 = { "%d. Kuromorimine Nibelungen Knights" }
+		18 = { "%d. Kuromorimine Nibelungen Knights" }
+		19 = { "%d. Kuromorimine Nibelungen Knights" }
+
+	}
+}

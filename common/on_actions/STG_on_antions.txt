@@ -14,6 +14,8 @@ on_actions = {
 				set_variable = { var = STG_cairns_economy_effect_var_tax_daily_modifier value = -0.5 }
 				set_variable = { var = STG_cairns_economy_effect_var_consumer_goods_factor value = 0.15 }
 				set_variable = { var = STG_cairns_economy_effect_var_stability_factor value = 0 }
+				set_variable = { var = STG_cairns_economy_effect_var_war_support_factor value = 0 }
+				set_variable = { var = STG_cairns_economy_effect_var_weekly_manpower value = 0 }
             }
         }
     }

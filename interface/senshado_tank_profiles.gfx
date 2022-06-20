@@ -1,0 +1,435 @@
+spriteTypes = {	
+	
+	spriteType = { 
+		name = "GFX_generic_light_AAA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_AAA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_AAB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_AAB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_AAC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_AAC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_ABA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_ABA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_ABB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_ABB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_ABC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_ABC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_ACA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_ACA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_ACB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_ACB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_ACC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_ACC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_BAA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_BAA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_BAB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_BAB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_BAC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_BAC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_BBA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_BBA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_BBB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_BBB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_BBC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_BBC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_BCA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_BCA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_BCB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_BCB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_BCC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_BCC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_CAA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_CAA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_CAB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_CAB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_CAC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_CAC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_CBA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_CBA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_CBB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_CBB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_CBC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_CBC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_CCA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_CCA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_CCB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_CCB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_CCC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_CCC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_DAA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_DAA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_DAB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_DAB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_DAC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_DAC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_DBA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_DBA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_DBB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_DBB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_DBC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_DBC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_DCA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_DCA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_DCB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_DCB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_light_DCC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_DCC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_AAA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_AAA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_AAB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_AAB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_AAC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_AAC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_ABA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_ABA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_ABB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_ABB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_ABC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_ABC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_ACA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_ACA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_ACB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_ACB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_ACC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_ACC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_BAA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_BAA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_BAB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_BAB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_BAC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_BAC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_BBA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_BBA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_BBB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_BBB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_BBC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_BBC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_BCA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_BCA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_BCB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_BCB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_BCC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_BCC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_CAA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_CAA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_CAB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_CAB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_CAC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_CAC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_CBA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_CBA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_CBB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_CBB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_CBC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_CBC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_CCA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_CCA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_CCB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_CCB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_CCC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_CCC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_DAA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_DAA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_DAB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_DAB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_DAC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_DAC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_DBA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_DBA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_DBB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_DBB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_DBC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_DBC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_DCA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_DCA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_DCB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_DCB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_heavy_DCC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_heavy_DCC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_AAA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_AAA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_AAB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_AAB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_AAC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_AAC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_ABA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_ABA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_ABB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_ABB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_ABC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_ABC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_ACA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_ACA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_ACB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_ACB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_ACC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_ACC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_BAA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_BAA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_BAB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_BAB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_BAC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_BAC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_BBA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_BBA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_BBB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_BBB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_BBC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_BBC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_BCA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_BCA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_BCB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_BCB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_BCC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_BCC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_CAA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_CAA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_CAB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_CAB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_CAC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_CAC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_CBA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_CBA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_CBB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_CBB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_CBC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_CBC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_CCA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_CCA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_CCB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_CCB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_CCC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_CCC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_DAA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_DAA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_DAB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_DAB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_DAC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_DAC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_DBA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_DBA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_DBB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_DBB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_DBC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_DBC.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_DCA" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_DCA.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_DCB" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_DCB.dds" 
+	}
+	spriteType = { 
+		name = "GFX_generic_medium_DCC" 
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_DCC.dds" 
+	}
+}  

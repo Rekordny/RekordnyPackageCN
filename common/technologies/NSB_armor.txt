@@ -14,18 +14,18 @@ technologies = {
 	senshado_lt_1_chassis = {
 		#Leichttraktor
 		enable_equipments = {
-			light_tank_chassis_0
-			medium_tank_chassis_0
-			heavy_tank_chassis_0
-			light_tank_destroyer_chassis_0
-			medium_tank_destroyer_chassis_0
-			heavy_tank_destroyer_chassis_0
-			light_tank_artillery_chassis_0
-			medium_tank_artillery_chassis_0
-			heavy_tank_artillery_chassis_0
-			light_tank_aa_chassis_0
-			medium_tank_aa_chassis_0
-			heavy_tank_aa_chassis_0
+			light_tank_chassis_1
+			medium_tank_chassis_1
+			heavy_tank_chassis_1
+			light_tank_destroyer_chassis_1
+			medium_tank_destroyer_chassis_1
+			heavy_tank_destroyer_chassis_1
+			light_tank_artillery_chassis_1
+			medium_tank_artillery_chassis_1
+			heavy_tank_artillery_chassis_1
+			light_tank_aa_chassis_1
+			medium_tank_aa_chassis_1
+			heavy_tank_aa_chassis_1
 		}
 		enable_equipment_modules = {
 			tank_basic_armor
@@ -146,10 +146,10 @@ technologies = {
 	senshado_lt_2_chassis = {
 		#Panzer I
 		enable_equipments = {
-			light_tank_chassis_1
-			light_tank_destroyer_chassis_1
-			light_tank_artillery_chassis_1
-			light_tank_aa_chassis_1
+			light_tank_chassis_2
+			light_tank_destroyer_chassis_2
+			light_tank_artillery_chassis_2
+			light_tank_aa_chassis_2
 		}
 		enable_subunits = {
 			light_armor
@@ -255,67 +255,6 @@ technologies = {
 		}
 	}
 	senshado_lt_3_chassis = {
-		#Panzer II
-		enable_equipments = {
-			light_tank_chassis_2
-			light_tank_destroyer_chassis_2
-			light_tank_artillery_chassis_2
-			light_tank_aa_chassis_2
-		}
-		path = {
-			leads_to_tech = senshado_lt_4_chassis
-			research_cost_coeff = 1
-		}
-		research_cost = 2
-		start_year = 1972
-		folder = {
-			name = nsb_armour_folder
-			position = {
-				x = -5
-				y = 4
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 2
-				is_major = yes
-				not = {
-					tag = JAP
-					num_of_military_factories < 50
-				}
-			}
-			modifier = {
-				is_major = yes
-				not = {
-					tag = JAP
-				}
-				has_war = yes
-				factor = 10				#you are embarassing yourself
-			}
-			modifier = {
-				tag = SOV
-				factor = 3
-			}
-			modifier = {
-				factor = 1.1
-				date > "1973.1.1"
-			}
-			modifier = {
-				factor = 1.1
-				date > "1974.1.1"
-			}
-			modifier = {
-				factor = 1.1
-				date > "1975.1.1"
-			}
-		}
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	senshado_lt_4_chassis = {
 		#Leopard
 		enable_equipments = {
 			light_tank_chassis_3
@@ -324,11 +263,11 @@ technologies = {
 			light_tank_aa_chassis_3
 		}
 		path = {
-			leads_to_tech = senshado_lt_5_chassis
+			leads_to_tech = senshado_lt_4_chassis
 			research_cost_coeff = 1
 		}
 		sub_technologies = {
-			senshado_lt_4_chassis_turrent
+			senshado_lt_3_chassis_turrent
 		}
 		research_cost = 2
 		start_year = 1975
@@ -363,7 +302,7 @@ technologies = {
 			cat_light_armor
 		}
 	}
-	senshado_lt_4_chassis_turrent = {
+	senshado_lt_3_chassis_turrent = {
 		enable_equipment_modules = {
 			tank_lt_turrent_2
 		}
@@ -393,7 +332,7 @@ technologies = {
 			cat_light_armor
 		}
 	}
-	senshado_lt_5_chassis = {
+	senshado_lt_4_chassis = {
 		#Leopard
 		enable_equipments = {
 			light_tank_chassis_4
@@ -402,7 +341,7 @@ technologies = {
 			light_tank_aa_chassis_4
 		}
 		path = {
-			leads_to_tech = senshado_lt_6_chassis
+			leads_to_tech = senshado_lt_5_chassis
 			research_cost_coeff = 1
 		}
 		research_cost = 2
@@ -438,7 +377,7 @@ technologies = {
 			cat_light_armor
 		}
 	}
-	senshado_lt_6_chassis = {
+	senshado_lt_5_chassis = {
 		#Leopard
 		enable_equipments = {
 			light_tank_chassis_5
@@ -451,7 +390,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		sub_technologies = {
-			senshado_lt_6_chassis_turrent
+			senshado_lt_5_chassis_turrent
 		}
 		research_cost = 2
 		start_year = 1979
@@ -486,7 +425,7 @@ technologies = {
 			cat_light_armor
 		}
 	}
-	senshado_lt_6_chassis_turrent = {
+	senshado_lt_5_chassis_turrent = {
 		enable_equipment_modules = {
 			tank_lt_turrent_3
 		}

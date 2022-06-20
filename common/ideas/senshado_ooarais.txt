@@ -10,43 +10,43 @@ ideas = {
 				conscription = 0.05
 			}
 		}
-		Ooari_Anteater = {
-			picture = GFX_idea_Ooari_Anteater
+		Ooarai_Anteater = {
+			picture = GFX_idea_Ooarai_Anteater
 			allowed = { tag = OAN }
 			modifier = { }
 		}
-		Ooari_Duck = {
-			picture = GFX_idea_Ooari_Duck
+		Ooarai_Duck = {
+			picture = GFX_idea_Ooarai_Duck
 			allowed = { tag = ODU }
 			modifier = { }
 		}
-		Ooari_Hippo = {
-			picture = GFX_idea_Ooari_Hippo
+		Ooarai_Hippo = {
+			picture = GFX_idea_Ooarai_Hippo
 			allowed = { tag = OHI }
 			modifier = { }
 		}
-		Ooari_Leopon = {
-			picture = GFX_idea_Ooari_Leopon
+		Ooarai_Leopon = {
+			picture = GFX_idea_Ooarai_Leopon
 			allowed = { tag = OLE }
 			modifier = { }
 		}
-		Ooari_Mallard = {
-			picture = GFX_idea_Ooari_Mallard
+		Ooarai_Mallard = {
+			picture = GFX_idea_Ooarai_Mallard
 			allowed = { tag = OML }
 			modifier = { }
 		}
-		Ooari_Rabbit = {
-			picture = GFX_idea_Ooari_Rabbit
+		Ooarai_Rabbit = {
+			picture = GFX_idea_Ooarai_Rabbit
 			allowed = { tag = ORA }
 			modifier = { }
 		}
-		Ooari_Shark = {
-			picture = GFX_idea_Ooari_Shark
+		Ooarai_Shark = {
+			picture = GFX_idea_Ooarai_Shark
 			allowed = { tag = OSH }
 			modifier = { }
 		}
-		Ooari_Turtle = {
-			picture = GFX_idea_Ooari_Turtle
+		Ooarai_Turtle = {
+			picture = GFX_idea_Ooarai_Turtle
 			allowed = { tag = OTU }
 			modifier = { }
 		}

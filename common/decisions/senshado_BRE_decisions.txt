@@ -1,0 +1,37 @@
+BRE_acceptance_system = {
+	BRE_acc = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			tag = BRE
+		}
+		complete_effect = {
+			set_temp_variable = {
+				BRE_acceptance_change_bri = 1
+			}
+			set_temp_variable = {
+				BRE_acceptance_change_eng = 1
+			}
+			set_temp_variable = {
+				BRE_acceptance_change_wal = 1
+			}
+			set_temp_variable = {
+				BRE_acceptance_change_sco = 1
+			}
+			set_temp_variable = {
+				BRE_acceptance_change_ire = 1
+			}
+			set_temp_variable = {
+				BRE_language_acceptance_english = 0.05
+			}
+			set_temp_variable = {
+				BRE_language_acceptance_franch = 0.05
+			}
+			set_temp_variable = {
+				BRE_language_acceptance_diversity = 0.05
+			}
+			Update_BRE_acceptance_system = yes
+		}
+	}
+}

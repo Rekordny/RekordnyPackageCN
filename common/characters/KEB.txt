@@ -4,6 +4,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/KEB/Portrait_KEB_Bosphorus.dds"
+				small="gfx/interface/advisors/idea_bosphorus.dds"
 			}
 		}
 		country_leader={

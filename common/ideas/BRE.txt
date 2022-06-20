@@ -1,0 +1,386 @@
+ideas = {
+	country = {
+		#重视机动
+		BRE_maneuver = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				army_speed_factor = 0.05
+				breakthrough_factor = 0.05
+				org_loss_when_moving = -0.1
+			}
+		}
+		#港口守卫者1
+		BRE_marine_1 = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				special_forces_attack_factor = 0.1
+				special_forces_defence_factor = 0.1
+			}
+		}
+		#港口守卫者2
+		BRE_marine_2 = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				special_forces_attack_factor = 0.15
+				special_forces_defence_factor = 0.15
+				special_forces_cap = 0.1
+			}
+		}
+		#布列塔尼新军
+		BRE_new_army = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				land_doctrine_cost_factor = -0.1
+				army_org_Factor = 0.05
+			}
+		}
+		#肃清叛徒
+		BRE_civ_idea = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			targeted_modifier = {
+				tag = ORL
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = B01
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = B02
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = AQU
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = MGC
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		#统一之梦1
+		BRE_dream_of_unification_1 = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				political_power_gain = -0.1
+				war_support_factor = 0.05
+				surrender_limit = 0.05
+			}
+			targeted_modifier = {
+				tag = STG
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+		#统一之梦2
+		BRE_dream_of_unification_2 = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				political_power_gain = -0.1
+				war_support_factor = 0.1
+				surrender_limit = 0.1
+			}
+			targeted_modifier = {
+				tag = STG
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		#统一之梦3
+		BRE_dream_of_unification_3 = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				political_power_gain = -0.1
+				war_support_factor = 0.15
+				surrender_limit = 0.15
+			}
+			targeted_modifier = {
+				tag = STG
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+		}
+		#统一之梦4
+		BRE_dream_of_unification_4 = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				political_power_gain = -0.1
+				war_support_factor = 0.2
+				surrender_limit = 0.2
+			}
+			targeted_modifier = {
+				tag = STG
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+		}
+		#统一之梦5
+		BRE_dream_of_unification_5 = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				political_power_gain = -0.1
+				war_support_factor = 0.25
+				surrender_limit = 0.25
+			}
+			targeted_modifier = {
+				tag = STG
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+		}
+		#统一大不列颠尼亚
+		BRE_united_great_britannia = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				political_power_gain = 0.2
+				stability_factor = 0.2
+				global_building_slots_factor = 0.2
+			}
+		}
+		#联合舰队计划
+		BRE_new_fleet = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				industrial_capacity_dockyard = 0.15
+				repair_speed_factor = 0.25
+			}
+		}
+		#木墙
+		BRE_wooden_wall = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				navy_max_range_factor = 0.15
+				spotting_chance = 0.1
+				convoy_raiding_efficiency_factor = 0.15
+				convoy_escort_efficiency = 0.15
+				shore_bombardment_bonus = 0.25
+			}
+			equipment_bonus = {
+				capital_ship = {
+					armor_value = 0.1
+				}
+			}
+		}
+		#爱尔兰粮仓
+		BRE_ireland = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				monthly_population = 0.25
+			}
+		}
+		#炸鱼薯条之魂
+		BRE_fish = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor =-0.05
+			}
+		}
+		#造船业主导1
+		BRE_naval_output_1 = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		#造船业主导2
+		BRE_naval_output_2 = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				industrial_capacity_dockyard = 0.25
+				consumer_goods_factor = 0.05
+			}
+		}
+		#镇压圣葛罗丽安娜叛乱
+		BRE_supress_revolt = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				war_support_factor = 0.25
+				army_defence_factor = 0.1
+			}
+		}
+		#多元文化之国
+		BRE_supress_revolt = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				compliance_gain = 0.2
+				non_core_manpower = 0.1
+				resistance_damage_to_garrison = -0.15
+			}
+		}
+		#日不落的余晖
+		BRE_sun = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				naval_speed_factor = 0.1
+				naval_doctrine_cost_factor = -0.1
+				production_speed_dockyard_factor = 0.2
+			}
+			research_bonus = {
+				naval_equipment = 0.1
+			}
+			equipment_bonus = {
+				ship_hull_carrier = {
+					build_cost_ic = -0.2
+				}
+			}
+		}
+		#阿斯帕拉格斯的野望
+		bre_asparagus_ambition = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				political_power_gain = 0.25
+				research_speed_factor = 0.05
+				army_org_Factor = 0.1
+				navy_org_factor = 0.15
+				training_time_army_factor = -0.1
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.15
+				}
+			}
+		}
+		#保卫法兰西
+		BRE_protect_france = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			targeted_modifier = {
+				tag = ANZ
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = KGA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		#构建二元国
+		BRE_protect_france = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = 0.15
+				political_power_gain = -0.15
+			}
+		}
+	}
+}

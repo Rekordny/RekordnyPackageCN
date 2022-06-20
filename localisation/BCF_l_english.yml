@@ -755,7 +755,7 @@
  bcf_diplomatic:0 "BC Freedom-Diplomatic"
  bcf_internal_strife:0 "sibling rivalry"
  bcf_new_league:0 "belong to BC Freedom's alliance"
- bcf_provide_help_ooari:0 "Provide help for Ooari members"
+ bcf_provide_help_ooari:0 "Provide help for Ooarai members"
  bcf_school_factional_strife:0 "factional strife"
  bcf_school_factional_strife_desc:0 "\n\n\n\n\n\n\n\n\n£GFX_bcf_school_factional_strife_picture\n\n\n\n\n\n\n\n\n\n\n\n The BC Liberty factional struggle has been going on since the merger of BC and Liberty, with protests, demonstrations, and violence rising, and now with the Senshado government in power the issue is being amplified to the point where changes have to be made.\n\n\n\nMarie£GFX_bcf_school_factional_strife_marie  Ando£GFX_bcf_school_factional_strife_andou  Oshida£GFX_bcf_school_factional_strife_oshida \n\n\n\nSupport：     §L[?bcf_marie_support]§!                                        §R[?bcf_andou_support]§!                                          §C[?bcf_oshida_support]§!"
  bcf_the_natural_borders_of_France:0 "The natural borders of France"
