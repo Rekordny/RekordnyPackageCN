@@ -263,7 +263,7 @@ get_industry_weights = {
 get_daily_wages = {
 	set_variable = { wages = max_available_manpower_k }
 	subtract_from_variable = { wages = manpower_k }
-	multiply_variable = { wages = -0.003 }
+	multiply_variable = { wages = -0.001 }
 	set_temp_variable = { temp1 = modifier@wage_modifier }
 	set_temp_variable = { temp2 = wages }
 	add_to_temp_variable = { temp1 = 1 }
