@@ -1,5 +1,7 @@
 ideas = {
 	country = {
+	
+	
 #开局精神
 
 		#日落的战车道
@@ -140,6 +142,61 @@ ideas = {
 			}
 		}
 		
+		#粮食税与商品税
+		STG_Grain_tax_commodity_tax = {
+			picture = GFX_idea_STG_Grain_tax_commodity_tax
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				tax_daily_modifier = 0.2
+			}
+		}
+		
+		
+		#清教徒的怨恨
+		STG_Puritan_resentment = {
+			picture = GFX_idea_STG_Puritan_resentment
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = -0.5
+				stability_factor = -0.05
+				compliance_gain = -0.35
+				tax_daily_modifier = 0.2
+			}
+		}
+		
+		#资本恐慌
+		STG_Capital_panic = {
+			picture = GFX_idea_STG_Capital_panic
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				civilian_factory_use = 5
+				tax_daily_modifier = 0.2
+			}
+		}
+		
 		
 #决议精神
 
@@ -242,6 +299,195 @@ ideas = {
 			}
 		}
 		
+		#对于压迫的反抗
+		STG_Resistance_oppression = {
+			picture = GFX_idea_STG_Resistance_oppression
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1 
+				defensive_war_stability_factor = 0.5
+				war_support_factor = 0.1
+			}
+		}
+		
+		#二元君主立宪
+		STG_constitutional_dual_monarchy = {
+			picture = GFX_idea_STG_constitutional_dual_monarchy
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				political_advisor_cost_factor = -0.25
+			}
+		}
+		
+		#装甲科技支援
+		STG_Maho_Nishizumi_GKA = {
+			picture = GFX_idea_STG_Maho_Nishizumi_GKA
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.15
+					breakthrough = 0.15
+				}
+			}
+		}
+		#装甲科技支援
+		STG_Erica_GKA = {
+			picture = GFX_idea_STG_Erica_GKA
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor = {
+					defense = 0.15
+					reliability = 0.15
+				}
+			}
+		}
+		#装甲科技支援
+		STG_Emi_GKA = {
+			picture = GFX_idea_STG_Emi_GKA
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor = {
+					max_organisation = 0.15
+					ap_attack = 0.15
+				}
+			}
+		}
+		
+		
+		#舰船科技支援
+		STG_Marie_BCF = {
+			picture = GFX_idea_STG_Marie_BCF
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				screening_efficiency = 0.15
+			}
+			
+			equipment_bonus = {
+				screen_ship = { armor_value = 0.15 }
+				carrier = { armor_value = 0.15 }
+				capital_ship = { armor_value = 0.15 }
+				submarine = { armor_value = 0.15 }
+				destroyer = { armor_value = 0.15 }
+			}
+		}
+		#舰船科技支援
+		STG_Andou_BCF = {
+			picture = GFX_idea_STG_Andou_BCF
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				naval_speed_factor = 0.15
+			}
+			
+			equipment_bonus = {
+				destroyer = { torpedo_attack = 0.15 }
+				submarine = { torpedo_attack = 0.15 }
+				light_cruiser = { torpedo_attack = 0.15 }
+				heavy_cruiser = { torpedo_attack = 0.15 }
+				screen_ship = { torpedo_attack = 0.15 }
+			}
+		}
+		#舰船科技支援
+		STG_Oshida_BCF = {
+			picture = GFX_idea_STG_Oshida_BCF
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				naval_strike = 0.15
+				naval_hit_chance = 0.15
+			}
+		}
+		
+		
+		#航空科技支援
+		STG_maiko_BON = {
+			picture = GFX_idea_STG_maiko_BON
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				ground_attack_factor = 0.15
+				air_defence_factor = 0.15
+			}
+		}
+		#航空科技支援
+		STG_jajka_BON = {
+			picture = GFX_idea_STG_jajka_BON
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				air_range_factor = 0.15
+				army_bonus_air_superiority_factor = 0.15
+			}
+		}
+		
 #国策精神
 		
 		#货币理论
@@ -301,5 +547,409 @@ ideas = {
 				generate_wargoal_tension = -0.5
 			}
 		}
+		
+		#小议会
+		STG_Small_parliament = {
+			picture = GFX_idea_STG_Small_parliament
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.1
+				command_power_gain = 0.1
+				experience_gain_army_factor = 0.1
+				experience_gain_navy_factor = 0.1
+				experience_gain_air_factor = 0.1
+			}
+		}
+		
+		#限制股票
+		STG_Limited_stock = {
+			picture = GFX_idea_STG_Limited_stock
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		#新皇家工会体系
+		STG_royal_labour_league = {
+			picture = GFX_idea_STG_royal_labour_league
+			allowed = { tag = STG }
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		
+		#后凯恩斯学派
+		STG_Post_Keynesian_economics = {
+			picture = GFX_idea_STG_Post_Keynesian_economics
+			allowed = { tag = STG }
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+		STG_Post_Keynesian_economics_1 = {
+			picture = GFX_idea_STG_Post_Keynesian_economics
+			allowed = { tag = STG }
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+	
+	
+#########################################
+###################陆军##################
+#########################################
+
+		#机械化协调作战
+		STG_machanized_coordinated_operations = {
+			picture = GFX_idea_STG_machanized_coordinated_operations
+			allowed = { tag = STG }
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = { }
+			equipment_bonus = {
+				mechanized = {
+					max_organisation = 0.1
+					recon = 0.1
+					max_strength = 0.1
+					default_morale = 0.1
+				}
+				motorized = {
+					max_organisation = 0.1
+					recon = 0.1
+					max_strength = 0.1
+					default_morale = 0.1
+				}
+			}
+		}
+
+		#战车中心作战
+		STG_tank_centre_operation = {
+			picture = GFX_idea_STG_tank_centre_operation
+			allowed = { tag = STG }
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = { }
+			equipment_bonus = {
+				light_tank_chassis = {
+					max_organisation = 0.25
+					max_strength = 0.2
+				}
+				medium_tank_chassis = {
+					max_organisation = 0.25
+					max_strength = 0.2
+				}
+				heavy_tank_chassis = {
+					max_organisation = 0.25
+					max_strength = 0.2
+				}
+			}
+		}
+		
+		#伙食良好
+		STG_army_well_fed = {
+			picture = GFX_idea_STG_army_well_fed
+			allowed = { tag = STG }
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = { }
+			equipment_bonus = {
+				light_tank_chassis = {
+					default_morale = 0.15
+				}
+				medium_tank_chassis = {
+					default_morale = 0.15
+				}
+				heavy_tank_chassis = {
+					default_morale = 0.15
+				}
+			}
+		}
+
+		#伙食良好2
+		STG_army_well_fed_1 = {
+			picture = GFX_idea_STG_army_well_fed
+			allowed = { tag = STG }
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = -0.1
+				no_supply_grace = 6
+			}
+			equipment_bonus = {
+				light_tank_chassis = {
+					default_morale = 0.15
+				}
+				medium_tank_chassis = {
+					default_morale = 0.15
+				}
+				heavy_tank_chassis = {
+					default_morale = 0.15
+				}
+			}
+		}
+
+		#地方民兵
+		STG_local_militia = {
+			picture = GFX_idea_STG_local_militia
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				training_time_factor = -0.2
+				conscription_factor = 0.1
+				resistance_damage_to_garrison = -0.2
+			}
+		}
+
+		#地方民兵2
+		STG_local_militia_1 = {
+			picture = GFX_idea_STG_local_militia
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				training_time_factor = -0.2
+				conscription_factor = 0.1
+				resistance_damage_to_garrison = -0.2
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.05
+			}
+		}
+		
+		#皇家卫队
+		STG_royal_guardian = {
+			picture = GFX_idea_STG_royal_guardian
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.1
+				army_morale_factor = 0.1 
+			}
+		}
+
+		#皇家卫队2
+		STG_royal_guardian_1 = {
+			picture = GFX_idea_STG_royal_guardian
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.1
+				army_morale_factor = 0.1 
+				breakthrough_factor = 0.1
+			}
+		}
+		
+		#改进膛线火炮
+		STG_equip_smoothbore_artillery = {
+			picture = GFX_idea_STG_equip_smoothbore_artillery
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+			}
+			equipment_bonus = {
+				artillery = {
+					hard_attack = 0.1
+					maximum_speed = 0.1
+				}
+				artillery_brigade = {
+					hard_attack = 0.1
+					maximum_speed = 0.1
+				}
+			}
+		}
+
+		#改进膛线火炮
+		STG_improved_rifled_artillery = {
+			picture = GFX_idea_STG_improved_rifled_artillery
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+			}
+			equipment_bonus = {
+				artillery = {
+					soft_attack = 0.1
+				}
+				artillery_brigade = {
+					soft_attack = 0.1
+				}
+				artillery_equipment = {
+					reliability_factor = 0.15
+					build_cost_ic = 0.05
+				}
+			}
+		}
+		
+#########################################
+###################海军##################
+#########################################
+		
+		#退役落后潜艇
+		STG_Retired_backward_submarine = {
+			picture = GFX_idea_STG_Retired_backward_submarine
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		#航路封锁学说
+		STG_Route_blockade_theory = {
+			picture = GFX_idea_STG_Route_blockade_theory
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				naval_doctrine_cost_factor = -0.1
+				navy_visibility = -0.2
+				convoy_raiding_efficiency_factor = 0.2
+				
+			}
+		}
+		
+		#舰队核心学说
+		STG_Fleet_core_theory = {
+			picture = GFX_idea_STG_Fleet_core_theory
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				naval_doctrine_cost_factor = -0.1
+				screening_efficiency = 0.2
+				navy_capital_ship_defence_factor = 0.2
+				
+			}
+		}
+		
+		#国家造舰计划
+		STG_National_Shipbuilding_program = {
+			picture = GFX_idea_STG_National_Shipbuilding_program
+			allowed = {
+				tag = STG
+			}
+			available = { }
+			cancel = { }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = { }
+			equipment_bonus = {
+				ship_hull_light = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				ship_hull_heavy = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
 	}
 }

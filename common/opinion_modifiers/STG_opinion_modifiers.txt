@@ -9,7 +9,14 @@
 # trade = yes/no
 
 opinion_modifiers = {
+	#友好外交
 	STG_friendly_diplomacy = {
 		value = +20
 	}
+	
+	#恶意外交
+	STG_Malicious_foreign = {
+		value = -20
+	}
 }
+

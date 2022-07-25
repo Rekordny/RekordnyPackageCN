@@ -119,56 +119,143 @@ spriteTypes = {
 	##################KGA#################
 	######################################
 	spriteType = {
-		name = "GFX_idea_KGA_maho"
-		texturefile = "gfx/interface/advisors/idea_maho.dds"
+		name = "GFX_idea_KGA_infrastructure_dividends"
+		texturefile = "gfx/interface/ideas/idea_factory_medium.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_KGA_miho"
-		texturefile = "gfx/interface/advisors/idea_miho.dds"
+		name = "GFX_idea_LCP_support_from_kuromorimine"
+		texturefile = "gfx/interface/ideas/idea_kuromorimine.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_KGA_koume"
-		texturefile = "gfx/interface/advisors/idea_koume.dds"
+		name = "GFX_idea_KGA_ooari_style_education"
+		texturefile = "gfx/interface/ideas/idea_Ooarai_book.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_KGA_mauko"
-		texturefile = "gfx/interface/advisors/idea_mauko.dds"
+		name = "GFX_idea_KGA_the_cost_of_absolute_neutral"
+		texturefile = "gfx/interface/ideas/idea_hand_arrest.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_KGA_erika"
-		texturefile = "gfx/interface/advisors/idea_erika.dds"
+		name = "GFX_idea_KGA_hallsteinism"
+		texturefile = "gfx/interface/ideas/idea_star_broken.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_KGA_emi"
-		texturefile = "gfx/interface/advisors/idea_emi.dds"
+		name = "GFX_idea_KGA_tightening_of_rights"
+		texturefile = "gfx/interface/ideas/idea_fist_explosion.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_KGA_kojima"
-		texturefile = "gfx/interface/advisors/idea_kojima.dds"
+		name = "GFX_idea_KGA_great_sorting"
+		texturefile = "gfx/interface/ideas/idea_kuromorimine_flag_on_fire.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_KGA_geshiko"
-		texturefile = "gfx/interface/advisors/idea_geshiko.dds"
+		name = "GFX_idea_KGA_white_terror"
+		texturefile = "gfx/interface/ideas/idea_hoose.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_KGA_takami"
-		texturefile = "gfx/interface/advisors/idea_takami.dds"
+		name = "GFX_idea_KGA_broken_kuromorimine"
+		texturefile = "gfx/interface/ideas/idea_broken_kuromorimine.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_KGA_sangou"
-		texturefile = "gfx/interface/advisors/idea_sangou.dds"
+		name = "GFX_idea_KGA_nishizumi_family_origin"
+		texturefile = "gfx/interface/ideas/idea_nishizumi_ryu_1.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_KGA_sheska"
-		texturefile = "gfx/interface/advisors/idea_sheska.dds"
+		name = "GFX_idea_KGA_nishizumi_style"
+		texturefile = "gfx/interface/ideas/idea_nishizumi_ryu_2.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_KGA_kita"
-		texturefile = "gfx/interface/advisors/idea_kita.dds"
+		name = "GFX_idea_KGA_dying_nishizumi_style"
+		texturefile = "gfx/interface/ideas/idea_nishizumi_ryu_3.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_KGA_hitomi"
-		texturefile = "gfx/interface/advisors/idea_hitomi.dds"
+		name = "GFX_idea_KGA_dying_nishizumi_style_1"
+		texturefile = "gfx/interface/ideas/idea_nishizumi_ryu_3.dds"
 	}
-
+	spriteType = {
+		name = "GFX_idea_KGA_huge_debt"
+		texturefile = "gfx/interface/ideas/idea_debt_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KGA_huge_debt_1"
+		texturefile = "gfx/interface/ideas/idea_debt_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KGA_huge_debt_2"
+		texturefile = "gfx/interface/ideas/idea_debt_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KGA_huge_debt_3"
+		texturefile = "gfx/interface/ideas/idea_debt_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KGA_huge_debt_4"
+		texturefile = "gfx/interface/ideas/idea_debt_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KGA_schoolship_onboard_regulation"
+		texturefile = "gfx/interface/ideas/idea_watch_and_board.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KGA_schoolship_onboard_regulation_1"
+		texturefile = "gfx/interface/ideas/idea_watch_and_board.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KGA_non_alcoholic_beer_festival"
+		texturefile = "gfx/interface/ideas/idea_beer.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KGA_new_kuromorimine_economy"
+		texturefile = "gfx/interface/ideas/idea_new_kuromorimine_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KGA_kuromorimine_economy"
+		texturefile = "gfx/interface/ideas/idea_factory_railway.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KGA_kuromorimine_economy_1"
+		texturefile = "gfx/interface/ideas/idea_factory_railway.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KGA_kuromorimine_economy_2"
+		texturefile = "gfx/interface/ideas/idea_factory_railway.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KGA_kuromorimine_economy_3"
+		texturefile = "gfx/interface/ideas/idea_factory_railway.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KGA_gold_store_adjustment"
+		texturefile = "gfx/interface/ideas/idea_adjust_gold_standard.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BCF_trade_contract_with_KGA"
+		texturefile = "gfx/interface/ideas/idea_KGA_trade.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KGA_trade_contract_with_BCF"
+		texturefile = "gfx/interface/ideas/idea_BCF_trade.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KGA_bellwall_threat"
+		texturefile = "gfx/interface/ideas/idea_bellwall_revolution.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KGA_improved_production_indicators"
+		texturefile = "gfx/interface/ideas/idea_force_labour.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KGA_restricted_offensive_operations"
+		texturefile = "gfx/interface/ideas/idea_submarine_unlimit.dds.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KGA_unlimited_submarine_warfare"
+		texturefile = "gfx/interface/ideas/idea_submarine_unlimit.dds.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KGA_caliber_is_justice"
+		texturefile = "gfx/interface/ideas/idea_caliber_is_justice.dds"
+	}
+	spriteType = {
+		name = "KGA_survivability_first"
+		texturefile = "gfx/interface/ideas/idea_survivability_first.dds"
+	}
 }

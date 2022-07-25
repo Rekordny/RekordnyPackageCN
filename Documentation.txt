@@ -1,0 +1,14 @@
+#这里会写下一些模组使用的规格
+#可用小图标
+目前所有的决议只要是需要使用资源的都要在决议名字后显示出来gfx小图标和数量
+黄金 £GFX_gold_icon
+民工 £civ_factory
+政治点数 £GFX_pol_power_icon
+战车道点数 £GFX_money
+指挥点数 £GFX_command_power
+陆军经验 £army_experience
+步兵装备 £infantry_equipment_text_icon
+
+
+#黑森峰占领
+目前拥有OWN_KGA_DEBT的国家拥有黑森峰欠款 在黑森峰的on action添加了开局的占领倒计时，显示在BCF和STG

@@ -72,24 +72,37 @@ set_technology = {
 }
 load_oob = PRA_1972
 add_ideas = {
-    PRA_DDDBJXS_1
-    PRA_QZDJJWJ_1
-    PRA_GLZYZF_1
+    PRA_the_great_patriotic_war
+	PRA_the_rigid_system
+	PRA_malformed_industrial_system
+	PRA_volatile_military_control_zone
 }
 
-set_research_slots = 4
+set_research_slots = 3
 set_convoys = 20
+recruit_character = PRA_katyusha
+recruit_character = PRA_nonna
+recruit_character = PRA_nina
+recruit_character = PRA_kurara
+recruit_character = PRA_mako
+recruit_character = PRA_alina
+recruit_character = FCM_lisa
+recruit_character = FCM_natalia
+recruit_character = KRR_ekaterina
+recruit_character = KRR_polina
+recruit_character = KRR_olga
+
 
 set_politics = {
 	ruling_party = communism
-	last_election = "1936.1.1"
+	last_election = "1967.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 10
-	fascism = 10
+	democratic = 15
+	fascism = 5
 	communism = 70
 	neutrality = 10
 }
@@ -128,45 +141,4 @@ create_equipment_variant = {
 		tank_nsb_armor_upgrade = 0
 	}
 	icon = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_AAA.dds"
-}
-
-create_country_leader = {
-	name = "Katyusha"
-	desc = "She is the best"
-	picture = "Portrait_PRA_Katyusha.dds"
-	expire = "2000.1.1"
-	ideology = nazism
-	traits = {
-		
-	}
-}
-create_country_leader = {
-	name = "Katyusha"
-	desc = "She is the best"
-	picture = "Portrait_PRA_Katyusha.dds"
-	expire = "2000.1.1"
-	ideology = moderatism
-	traits = {
-		
-	}
-}
-create_country_leader = {
-	name = "Katyusha"
-	desc = "She is the best"
-	picture = "Portrait_PRA_Katyusha.dds"
-	expire = "2000.1.1"
-	ideology = leninism
-	traits = {
-		
-	}
-}
-create_country_leader = {
-	name = "Katyusha"
-	desc = "She is the best"
-	picture = "Portrait_PRA_Katyusha.dds"
-	expire = "2000.1.1"
-	ideology = conservatism
-	traits = {
-		
-	}
 }

@@ -1,3 +1,7 @@
+
+
+
+
 #特殊行动
 STG_Special_action = {
 
@@ -6,7 +10,7 @@ STG_Special_action = {
 		allowed = { tag = STG }
 		visible = { 
 			OR = {
-				country_exists = KWG
+				country_exists = WKG
 				has_completed_focus = STG_privatized_state_owned 
 				AND = { 
 					is_ai = no 
@@ -51,7 +55,6 @@ STG_Special_action = {
 			}
 		}
 		fire_only_once = no
-		day_re_enable = 0
 		days_re_enable = 0
 		days_mission_timeout = 30
 		selectable_mission = yes
@@ -127,7 +130,7 @@ STG_Special_action = {
 		available = { has_army_manpower = { size > 499999 } }
 		visible = { 
 			OR = {
-				country_exists = KWG
+				country_exists = WKG
 				has_completed_focus = STG_attitude 
 				AND = { 
 					is_ai = no 
@@ -152,7 +155,7 @@ STG_Special_action = {
 		allowed = { tag = STG }
 		visible = { 
 			OR = {
-				country_exists = KWG
+				country_exists = WKG
 				has_completed_focus = STG_attitude 
 				AND = { 
 					is_ai = no 
@@ -168,7 +171,7 @@ STG_Special_action = {
 		custom_cost_text = STG_Adaptation_URB_WKG_tt
 		complete_effect = {
 			hidden_effect = {
-				has_army_experience = -10
+				army_experience = -10
 				add_equipment_to_stockpile = {                                
 					type = infantry_equipment
 					amount = -1000
@@ -195,7 +198,7 @@ STG_Special_action = {
 					infantry = { x = 1 y = 3 }
 				}
 			}
-			random_owned_controlled_state = {
+			119 = {
 				create_unit = { 
 					prioritize_location = 3379
 					division = "name = \"BRU\" division_template = \"BRU\" start_experience_factor = 0.5" 
@@ -293,7 +296,6 @@ STG_Special_action = {
 			}
 		}
 		fire_only_once = yes
-		day_re_enable = 0
 		days_re_enable = 0
 		days_mission_timeout = 3650
 		timeout_effect = {
@@ -303,6 +305,337 @@ STG_Special_action = {
 			remove_ideas = STG_anti_rightist_march
 		}
 	}
+	
+	
+	#将黑森峰工业资产转移到本土
+	STG_transfer_kga_industry_mainland = {
+		allowed = { tag = STG }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } has_country_flag = STG_TRANSFER_KGA_INDUSTRY_0 } }
+		available = { has_equipment = { convoy > 49 } controls_state = 51 controls_state = 57 controls_state = 59 }
+		fire_only_once = yes
+		days_remove = 150
+		custom_cost_text = STG_transfer_kga_industry_mainland_tt
+		custom_cost_trigger = { AND = { has_political_power > 99.9 check_variable = { gold > 39.9 } } }
+		cancel_trigger = {
+			NOT = {
+				controls_state = 51
+				controls_state = 57
+				controls_state = 59
+			}
+		}
+		complete_effect = {
+			51 = {
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			57 = {
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			59 = {
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			hidden_effect = {
+				add_to_variable = { gold = -40 }
+			    add_political_power = -100
+			}
+		}
+		remove_effect = {
+			125 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			126 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			127 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#转移黑森峰工业至华夫
+	STG_transfer_kga_industry_waf = {
+		allowed = { tag = STG }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } has_country_flag = STG_TRANSFER_KGA_INDUSTRY_1 } }
+		available = { controls_state = 51 controls_state = 57 controls_state = 59 }
+		fire_only_once = yes
+		days_remove = 60
+		custom_cost_text = STG_transfer_kga_industry_waf_tt
+		custom_cost_trigger = { AND = { has_political_power > 49.9 check_variable = { gold > 19.9 } } }
+		cancel_trigger = {
+			OR = {
+				has_war_with = WAF
+				NOT = {
+					controls_state = 51
+					controls_state = 57
+					controls_state = 59
+				}
+			}
+			
+		}
+		complete_effect = {
+			51 = {
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			57 = {
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			59 = {
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			hidden_effect = {
+				add_to_variable = { gold = -20 }
+			    add_political_power = -50
+			}
+		}
+		remove_effect = {
+			35 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			36 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			7 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#恢复重建大不列颠
+	STG_Restoration_reconstruction_The_British = {
+		allowed = { tag = STG }
+		visible = { 
+			OR = {
+				has_completed_focus = STG_Restoration_the_kingdom_of_Great_Britain 
+				AND = { 
+					is_ai = no 
+					is_debug = yes
+				}
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			set_cosmetic_tag = KGB
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	#漫漫长夜
+	STG_All_night_long = {
+		allowed = { tag = STG }
+		visible = { 
+			OR = {
+				has_country_flag = STG_All_night_long_flag
+				AND = { 
+					is_ai = no 
+					is_debug = yes
+				}
+			}
+		}
+		custom_cost_trigger = {
+			has_equipment = { light_tank_chassis > 299 }
+			check_variable = { ssdp > 499.9 }
+	   	}
+		custom_cost_text = STG_All_night_long_tt
+		fire_only_once = yes
+		complete_effect = {
+			swap_ruler_traits = { 
+				remove = lord_protector
+				add = lord_protector_1
+			}
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis
+					amount = -300
+					producer = ROOT
+				}
+				add_to_variable = {
+					var = ssdp
+					value = -500
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	#战车道护国军
+	STG_National_protection_army = {
+		allowed = { tag = STG }
+		available = { senshado_school > 4 }
+		visible = { 
+			OR = {
+				has_completed_focus = STG_Specialized_senshado_Education
+				AND = { 
+					is_ai = no 
+					is_debug = yes
+				}
+			}
+		}
+		custom_cost_trigger = {
+			check_variable = { ssdp > 199.9 }
+	   	}
+		custom_cost_text = STG_National_protection_army_tt
+		days_re_enable = 200
+		days_re_enable = 200
+		days_remove = 30
+		fire_only_once = no
+		remove_effect = {
+			division_template = {
+				name = "NPA"
+				division_names_group = NPA
+				is_locked = no
+				regiments = { 
+					motorized = { x = 0 y = 0 }
+					motorized = { x = 0 y = 1 }
+					motorized = { x = 0 y = 2 } 
+					motorized = { x = 0 y = 3 } 
+					medium_armor = { x = 1 y = 0 }
+					medium_armor = { x = 1 y = 1 }
+					medium_armor = { x = 1 y = 2 }
+					medium_armor = { x = 1 y = 3 }
+				}
+				support = {
+					recon = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					artillery = { x = 0 y = 2 }
+				}
+			}
+			126 = {
+				create_unit = { 
+					prioritize_location = 6103
+					division = "name = \"NPA\" division_template = \"NPA\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1 " 
+					owner = ROOT
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = ssdp
+					value = -200
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	#向社会注资
+	STG_Inject_capital_into_society = {
+		allowed = { tag = STG }
+		visible = { 
+			OR = {
+				and = {
+					has_dynamic_modifier = { modifier = STG_cairns_economy_effect }
+					has_completed_focus = STG_Further_activate_economy 
+				}
+				AND = { 
+					is_ai = no 
+					is_debug = yes
+				}
+			}
+		}
+		days_re_enable = 150
+		fire_only_once = no
+		custom_cost_text = STG_Inject_capital_into_society_tt
+		custom_cost_trigger = { check_variable = { gold > 69.9 } } 
+		complete_effect = {
+			random_list = {
+				20 = {
+					random_owned_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex 
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				30 = {
+					random_owned_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory 
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				30 = {
+					add_tech_bonus = {
+						name = STG_Inject_capital_into_industry_bonus
+						bonus = 1
+						ahead_reduction = 0.3
+						uses = 1
+						category = industry
+					}
+				}
+				20 = {
+					if = {
+						limit = { 
+							NOT = { 
+								has_country_flag = StGloriana_event_24_flag 
+								has_country_flag = StGloriana_event_25_flag 
+							} 
+						}
+						country_event = { id = StGloriana_event.24 days = 1 }
+					}
+					else_if = {
+						limit = { has_country_flag = StGloriana_event_24_flag }
+						country_event = { id = StGloriana_event.25 days = 1 }
+					}
+					else_if = {
+						limit = { has_country_flag = StGloriana_event_25_flag }
+						country_event = { id = StGloriana_event.26 days = 1 }
+					}
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
 }
 
 #引言与格言
@@ -439,4 +772,333 @@ STG_Introduction_and_maxim = {
 		ai_will_do = { factor = 1 }
 	}
 		
+}
+
+#下萨克森选爵
+STG_Elector_Lower_Saxony = {
+
+	#让西住真穗接管黑森峰
+	STG_Maho_Nishizumi = {
+		allowed = { tag = STG }
+		visible = { 
+			OR = {
+				has_country_flag = STG_Marquis_Brunswick_flag
+				AND = { 
+					is_ai = no 
+					is_debug = yes
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 100
+		complete_effect = {
+			clr_country_flag = STG_Marquis_Brunswick_flag
+			puppet = KGA
+			KGA = {
+				set_politics = { ruling_party = fascism }
+				create_country_leader = {
+					name = "Maho Nishizumi"
+					desc = "She is the best"
+					picture = gfx/leaders/KGA/Portrait_KGA_Maho.dds
+					expire = "2000.1.1"
+					ideology = nazism
+					traits = {
+						autocratic_imperialist 
+					}
+				}
+			}
+			add_ideas = STG_Maho_Nishizumi_GKA
+			hidden_effect = {
+				release = KGA
+				puppet = KGA 
+				remove_decision = STG_Erica
+				remove_decision = STG_Emi
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	#让埃莉卡接管黑森峰
+	STG_Erica = {
+		allowed = { tag = STG }
+		visible = { 
+			OR = {
+				has_country_flag = STG_Marquis_Brunswick_flag
+				AND  = { 
+					is_ai = no 
+					is_debug = yes 
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 100
+		complete_effect = {
+			clr_country_flag = STG_Marquis_Brunswick_flag
+			puppet = KGA
+			KGA = {
+				set_politics = { ruling_party = neutrality }
+				create_country_leader = {
+					name = "Erika Itsumi"
+					desc = "hmm"
+					picture = gfx/leaders/KGA/Portrait_KGA_Erika.dds
+					expire = "2000.1.1"
+					ideology = neutrality
+					traits = {
+						a_single_bet 
+					}
+				}
+			}
+			add_ideas = STG_Erica_GKA
+			hidden_effect = {
+				release = KGA
+				puppet = KGA
+				remove_decision = STG_Emi
+				remove_decision = STG_Maho_Nishizumi
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	#让艾米接管黑森峰
+	STG_Emi = {
+		allowed = { tag = STG }
+		visible = { 
+			OR = {
+				has_country_flag = STG_Marquis_Brunswick_flag
+				AND  = { 
+					is_ai = no 
+					is_debug = yes
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 100
+		complete_effect = {
+			clr_country_flag = STG_Marquis_Brunswick_flag
+			puppet = KGA
+			KGA = {
+				set_politics = { ruling_party = communism }
+				create_country_leader = {
+					name = "Emi Nakasuga"
+					desc = "Strange...huh"
+					picture = gfx/leaders/KGA/Portrait_KGA_Emi.dds
+					expire = "2000.1.1"
+					ideology = communism
+					traits = {
+						 revolutionary_general
+					}
+				}
+			}
+			add_ideas = STG_Emi_GKA
+			hidden_effect = {
+				release = KGA
+				puppet = KGA 
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+}
+
+#勃艮第选爵
+STG_Elector_Burgundy = {
+
+	#让玛丽接管BC自由
+	STG_Marie = {
+		allowed = { tag = STG }
+		visible = { 
+			OR = {
+				has_country_flag = STG_Marquis_Burgundy_flag
+				AND  = { 
+					is_ai = no 
+					is_debug = yes
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 100
+		complete_effect = {
+			clr_country_flag = STG_Marquis_Burgundy_flag
+			puppet = BCF
+			BCF = {
+				set_politics = { ruling_party = neutrality }
+				create_country_leader = {
+					name = "Marie"
+					desc = "She is the best"
+					picture = gfx/leaders/BCF/Portrait_BCF_Marie.dds
+					expire = "2000.1.1"
+					ideology = neutrality
+					traits = {
+						 BCF_princess_of_lle_de_france
+					}
+				}
+			}
+			add_ideas = STG_Marie_BCF
+			hidden_effect = {
+				release = BCF
+				puppet = BCF 
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	#让安藤接管BC自由
+	STG_Andou = {
+		allowed = { tag = STG }
+		visible = { 
+			OR = {
+				has_country_flag = STG_Marquis_Burgundy_flag
+				AND  = { 
+					is_ai = no 
+					is_debug = yes
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 100
+		complete_effect = {
+			clr_country_flag = STG_Marquis_Burgundy_flag
+			puppet = BCF
+			BCF = {
+				set_politics = { ruling_party = communism }
+				create_country_leader = {
+					name = "Andou"
+					desc = "She is the best"
+					picture = gfx/leaders/BCF/Portrait_BCF_Andou.dds
+					expire = "2000.1.1"
+					ideology = communism
+					traits = {
+						 BCF_radical
+					}
+				}
+			}
+			add_ideas = STG_Andou_BCF
+			hidden_effect = {
+				release = BCF
+				puppet = BCF 
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	#让押田接管BC自由
+	STG_Oshida = {
+		allowed = { tag = STG }
+		visible = { 
+			OR = {
+				has_country_flag = STG_Marquis_Burgundy_flag
+				AND  = { 
+					is_ai = no 
+					is_debug = yes
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 100
+		complete_effect = {
+			clr_country_flag = STG_Marquis_Burgundy_flag
+			puppet = BCF
+			BCF = {
+				set_politics = { ruling_party = democratic }
+				create_country_leader = {
+					name = "Oshida"
+					desc = "She is the best"
+					picture = gfx/leaders/BCF/Portrait_BCF_Oshida.dds
+					expire = "2000.1.1"
+					ideology = democratic
+					traits = {
+						 BCF_conservative
+					}
+				}
+			}
+			add_ideas = STG_Oshida_BCF
+			hidden_effect = {
+				release = BCF
+				puppet = BCF 
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+}
+
+#恢复施拉赤塔
+STG_Restore_Shlachita_duke = {
+	
+	#Maiko接管冯布诺
+	STG_maiko = {
+		allowed = { tag = STG }
+		visible = { 
+			OR = {
+				has_country_flag = STG_Archduke_shirachita_flag
+				AND  = { 
+					is_ai = no 
+					is_debug = yes
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 100
+		complete_effect = {
+			clr_country_flag = STG_Archduke_shirachita_flag
+			puppet = BON
+			BON = {
+				set_politics = { ruling_party = communism }
+				create_country_leader = {
+					name = "Maiko"
+					desc = "A new leader from Girls und Panzar, YES!"
+					picture = gfx/leaders/BON/Portrait_BON_Maiko.dds
+					expire = "2000.1.1"
+					ideology = communism
+					traits = {
+						 champion_of_peace_5
+					}
+				}
+			}
+			add_ideas = STG_maiko_BON
+			hidden_effect = {
+				release = BON
+				puppet = BON 
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	#Jayika接管冯布诺
+	STG_jajka = {
+		allowed = { tag = STG }
+		visible = { 
+			OR = {
+				has_country_flag = STG_Archduke_shirachita_flag
+				AND  = { 
+					is_ai = no 
+					is_debug = yes
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 100
+		complete_effect = {
+			clr_country_flag = STG_Archduke_shirachita_flag
+			puppet = BON
+			BON = {
+				set_politics = { ruling_party = fascism }
+				create_country_leader = {
+					name = "Jajka"
+					desc = "A new leader from Girls und Panzar, YES!"
+					picture = gfx/leaders/BON/Portrait_BON_Jajka.dds
+					expire = "2000.1.1"
+					ideology = fascism
+					traits = {
+						 disdain_for_politicians_1
+					}
+				}
+			}
+			add_ideas = STG_jajka_BON
+			hidden_effect = {
+				release = BON
+				puppet = BON 
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
 }

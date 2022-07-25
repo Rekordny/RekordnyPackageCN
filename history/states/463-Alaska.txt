@@ -13,7 +13,6 @@ state={
 			}
 
 		}
-		add_core_of = PRA
 		victory_points = {
 			13090 1 
 		}

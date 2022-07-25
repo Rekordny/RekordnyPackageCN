@@ -7,9 +7,62 @@ on_actions = {
                 }
                 country_event = { id = kuromorimine.60 days = 50 }
             }
+            51 = { add_dynamic_modifier = { modifier = kga_debt_zone_modifier_stg } }
+            56 = { add_dynamic_modifier = { modifier = kga_debt_zone_modifier_stg } }
+            57 = { add_dynamic_modifier = { modifier = kga_debt_zone_modifier_stg } }
+            42 = { add_dynamic_modifier = { modifier = kga_debt_zone_modifier_bcf } }
+            50 = { add_dynamic_modifier = { modifier = kga_debt_zone_modifier_bcf } }
         }
     }
-    #检查共产主义程度
+    on_war = {
+		effect = {
+			if = {
+				limit = {
+					tag = KGA has_war_with = STG
+				}
+				51 = { set_demilitarized_zone = no }
+                56 = { set_demilitarized_zone = no }
+                57 = { set_demilitarized_zone = no }
+                if = { limit = { has_idea = KGA_huge_debt } swap_ideas = {
+                    remove_idea = KGA_huge_debt
+                    add_idea = KGA_huge_debt_3
+                } }
+                else_if = {
+                    limit = { has_idea = KGA_huge_debt_1 } swap_ideas = {
+                        remove_idea = KGA_huge_debt
+                        add_idea = KGA_huge_debt_4
+                    }
+                }
+                else = {
+                    remove_ideas = KGA_huge_debt_2
+                    remove_ideas = KGA_huge_debt_3
+                    remove_ideas = KGA_huge_debt_4
+                }
+			}else_if = {
+                limit = {
+					tag = KGA has_war_with = BCF
+				}
+				42 = { set_demilitarized_zone = no }
+                50 = { set_demilitarized_zone = no }
+                if = { limit = { has_idea = KGA_huge_debt } swap_ideas = {
+                    remove_idea = KGA_huge_debt
+                    add_idea = KGA_huge_debt_3
+                } }
+                else_if = {
+                    limit = { has_idea = KGA_huge_debt_1 } swap_ideas = {
+                        remove_idea = KGA_huge_debt
+                        add_idea = KGA_huge_debt_4
+                    }
+                }
+                else = {
+                    remove_ideas = KGA_huge_debt_2
+                    remove_ideas = KGA_huge_debt_3
+                    remove_ideas = KGA_huge_debt_4
+                }
+            }
+		}
+	}
+    #检查共产主义程度和入战
     on_weekly = {
         effect = {
             KGA = {

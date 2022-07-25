@@ -1,3 +1,9 @@
+#黑森峰西部占领事宜
+STG_kuromorimine_occupation = {
+	icon = GFX_decision_STG_kuromorimine_occupation
+	allowed = { original_tag = STG }
+}
+
 #特殊行动
 STG_Special_action = {
 	icon = GFX_decision_STG_Special_action
@@ -6,6 +12,26 @@ STG_Special_action = {
 
 #引言与格言
 STG_Introduction_and_maxim = {
-	icon = GFX_decision_STG_Special_action
+	icon = GFX_decision_STG_Introduction_and_maxim
 	allowed = { original_tag = STG }
 }
+
+#下萨克森选爵
+STG_Elector_Lower_Saxony = {
+	icon = GFX_decision_STG_Elector_Lower_Saxony
+	allowed = { original_tag = STG }
+}
+
+#勃艮第选爵
+STG_Elector_Burgundy = {
+	icon = GFX_decision_STG_Elector_Burgundy
+	allowed = { original_tag = STG }
+}
+
+#恢复施拉赤塔
+STG_Restore_Shlachita_duke = {
+	icon = GFX_decision_STG_Restore_Shlachita_duke
+	allowed = { original_tag = STG }
+}
+
+

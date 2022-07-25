@@ -1,0 +1,23 @@
+kga_debt_zone_modifier_stg = {
+	icon = GFX_idea_unknown
+	enable = { always = yes }
+	remove_trigger = {
+		51 = { is_demilitarized_zone = no }
+		56 = { is_demilitarized_zone = no }
+		57 = { is_demilitarized_zone = no }
+	}
+	local_manpower = -0.5
+	local_resources = -0.5
+	local_factories = -0.5
+}
+kga_debt_zone_modifier_bcf = {
+	icon = GFX_idea_unknown
+	enable = { always = yes }
+	remove_trigger = {
+		42 = { is_demilitarized_zone = no }
+		50 = { is_demilitarized_zone = no }
+	}
+	local_manpower = -0.5
+	local_resources = -0.5
+	local_factories = -0.5
+}

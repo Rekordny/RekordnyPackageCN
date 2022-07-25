@@ -355,25 +355,25 @@ kga_missions = {
 	kga_build_infrastructures = {
 		allowed = { tag = KGA }
 		available = {
-			61 = { infrastructure > 4 }
-			62 = { infrastructure > 4 }
-			60 = { infrastructure > 4 }
+			61 = { infrastructure > 3 }
+			62 = { infrastructure > 3 }
+			60 = { infrastructure > 3 }
 			64 = { infrastructure > 4 }
 			65 = { infrastructure > 4 }
 			54 = { infrastructure > 4 }
 			55 = { infrastructure > 4 }
-			53 = { infrastructure > 4 }
+			53 = { infrastructure > 3 }
 			52 = { infrastructure > 4 }
 		}
 		is_good = no
 		activation = { has_country_flag  = KGA_START_INFRASTRUCTURE_MISSION } 
 		days_mission_timeout = 365
 		complete_effect = {
+			add_timed_idea = { idea = KGA_infrastructure_dividend days = 550 }
 			custom_effect_tooltip = kga_tooltip2
 			hidden_effect = {
-				if = { limit = {date < 1974.6.30} add_ssdp_50 = yes add_stability = 0.1 }
-				add_ssdp_300 = yes
-				clr_country_flag  = KGA_START_INFRASTRUCTURE_MISSION
+				if = { limit = {date < 1974.12.30 } add_ssdp_300 = yes add_stability = 0.1 }
+				clr_country_flag = KGA_START_INFRASTRUCTURE_MISSION
 			}
 			
 		}
@@ -412,7 +412,7 @@ kga_missions = {
 			has_army_experience = 20
 			has_political_power = 100
 			has_equipment = {
-				infantry_equipment > 119999
+				infantry_equipment > 9999
 			}
 	   	}
 		custom_cost_text = kga_tooltip37
@@ -464,7 +464,7 @@ kga_missions = {
 			}
 			send_equipment = {
 				equipment = infantry_equipment
-				amount = 120000
+				amount = 10000
 				target = LCP
 			}
 			puppet = LCP

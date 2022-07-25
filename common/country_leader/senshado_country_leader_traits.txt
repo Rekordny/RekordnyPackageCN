@@ -1,4 +1,33 @@
 leader_traits = {
+	#SDS
+	#乐观的理想主义者
+	optimistic_idealist = {
+		stability_factor = 0.1
+		political_power_cost = 0.5
+	}
+	#务实的保守主义者
+	pragmatic_conservative = {
+		stability_factor = 0.05
+		political_power_gain = 0.5
+	}
+	#沉稳的执行者
+	calm_performer = {
+		production_speed_buildings_factor = 0.05
+		production_factory_max_efficiency_factor = 0.1
+	}
+	#机敏的易怒者
+	quick_witted_irritant = {
+		agency_upgrade_time = -0.4
+		operative_slot = 1
+	}
+	#PRA
+	#可爱的小暴君
+	cute_tyrant = {
+		stability_factor = -0.05
+		political_power_factor = 0.05
+		war_support_factor = 0.05
+		improve_relations_maintain_cost_factor = 0.3
+	}
 
 	#KGA
 	#郁郁寡欢
@@ -65,11 +94,10 @@ leader_traits = {
 	#真正的西住流
 	ture_nishizumi_style = {
 		random = no
-		neutrality_drift = 0.05
-		justify_war_goal_time = -0.3
-		political_power_factor = 0.1
+		neutrality_drift = 0.1
+		justify_war_goal_time = -0.25
+		political_power_factor = 0.05
 	}
-
 	kuromorimine_old_guard = {
 		random = no
 		fascism_drift = 0.05
@@ -86,7 +114,7 @@ leader_traits = {
 		production_speed_rocket_site_factor = 0.05
 		conversion_cost_civ_to_mil_factor = -0.3
 	}
-	#深藏不露的温柔
+	#深藏不露的温柔2
     hidden_tenderness_0 = {
 		random = no
 		war_support_factor = 0.1
@@ -103,7 +131,7 @@ leader_traits = {
 		stability_factor = 0.05
 		required_garrison_factor = -0.25
 	}
-	#唯上知与下愚不移
+	#唯上知与下愚不移2
 	top_ruling_bottom_0 = {
 		random = no
 		resistance_growth = -0.5
@@ -118,7 +146,7 @@ leader_traits = {
 		global_building_slots_factor = 0.1
 		conversion_cost_mil_to_civ_factor = -0.2
 	}
-	#最温柔的智者
+	#最温柔的智者2
     the_most_kind_0 = {
 		random = no
 		production_speed_industrial_complex_factor = 0.15
@@ -187,6 +215,15 @@ leader_traits = {
 		drift_defence_factor = 0.25
 		army_core_attack_factor = 0.1
 		army_core_defence_factor = 0.1
+	}
+	#大护国公
+	lord_protector_1 = {
+		random = no
+		drift_defence_factor = 0.25
+		army_core_attack_factor = 0.15
+		army_core_defence_factor = 0.15
+		stability_factor = 0.15
+		justify_war_goal_time = -0.5
 	}
 	#第一女士
 	the_first_lady = {

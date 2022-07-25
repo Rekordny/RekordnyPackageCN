@@ -227,50 +227,103 @@ refresh_gold_standard_and_ideas = {
 	refresh_gold_storage_ideas = yes
 }
 
-#计算国家产值权重并保存到country_weigths
+#计算核心国家产值权重并保存到country_weigths
 get_industry_weights = {
 	set_temp_variable = { temp10 = 0 } 
 	set_temp_variable = { temp11 = max_manpower_k }
-	multiply_temp_variable = { temp11 = 0.001}
-	multiply_temp_variable = { temp11 = 0.1}
+	multiply_temp_variable = { temp11 = 0.001 }
+	multiply_temp_variable = { temp11 = 0.1 }
 	for_each_scope_loop = {
-		array = controlled_states
+		array = owned_states
 		break = break
 		set_temp_variable = { temp0 = 0 }
 		set_temp_variable = { temp1 = arms_factory_level }
-		multiply_temp_variable = { temp1 = 0.25 }
+		multiply_temp_variable = { temp1 = 0.3 }
 		set_temp_variable = { temp2 = industrial_complex_level }
-		multiply_temp_variable = { temp2 = 0.3 }
+		multiply_temp_variable = { temp2 = 0.4 }
 		set_temp_variable = { temp3 = infrastructure_level }
 		set_temp_variable = { temp4 = buildinglevel@dockyard }
-		multiply_temp_variable = { temp4 = 0.15 }
+		multiply_temp_variable = { temp4 = 0.3 }
 		set_temp_variable = { temp5 = buildinglevel@synthetic_refinery }
-		multiply_temp_variable = { temp5 = 0.2 }
+		multiply_temp_variable = { temp5 = 0.3 }
 		add_to_temp_variable = { temp0 = temp1 }
 		add_to_temp_variable = { temp0 = temp2 }
 		add_to_temp_variable = { temp0 = temp4 }
 		add_to_temp_variable = { temp0 = temp5 }
 		multiply_temp_variable = { temp3 = 0.1 }
-		add_to_temp_variable = { temp3 = infrastructure_level }
+		add_to_temp_variable = { temp3 = 1 }
 		multiply_temp_variable = { temp0 = temp3 }
 		add_to_temp_variable = { temp10 = temp0 }
 	}
 	add_to_temp_variable = { temp10 = temp11 }
 	set_variable = { country_weigths = temp10 }
+	get_industry_weights_1 = yes
+}
+#计算非核心国家产值权重并保存到country_weigths
+get_industry_weights_1 = {
+	set_temp_variable = { temp10 = 0 } 
+	for_each_scope_loop = {
+		array = controlled_states
+		break = break
+		set_temp_variable = { temp0 = 0 }
+		set_temp_variable = { temp1 = arms_factory_level }
+		multiply_temp_variable = { temp1 = 0.1 }
+		set_temp_variable = { temp2 = industrial_complex_level }
+		multiply_temp_variable = { temp2 = 0.2 }
+		set_temp_variable = { temp4 = buildinglevel@dockyard }
+		multiply_temp_variable = { temp4 = 0.1 }
+		set_temp_variable = { temp5 = buildinglevel@synthetic_refinery }
+		multiply_temp_variable = { temp5 = 0.15 }
+		add_to_temp_variable = { temp0 = temp1 }
+		add_to_temp_variable = { temp0 = temp2 }
+		add_to_temp_variable = { temp0 = temp4 }
+		add_to_temp_variable = { temp0 = temp5 }
+		multiply_temp_variable = { temp3 = 0.1 }
+		add_to_temp_variable = { temp10 = temp0 }
+	}
+	add_to_variable = { country_weigths = temp10 }
 }
 
 #获得工资总数(负数)
 get_daily_wages = {
 	set_variable = { wages = max_available_manpower_k }
 	subtract_from_variable = { wages = manpower_k }
-	multiply_variable = { wages = -0.001 }
+	multiply_variable = { wages = -0.002 }
+	get_navy_expenses = yes
+	add_to_variable = { wages = navy_spend }
 	set_temp_variable = { temp1 = modifier@wage_modifier }
 	set_temp_variable = { temp2 = wages }
 	add_to_temp_variable = { temp1 = 1 }
 	multiply_temp_variable = { temp2 = temp1 }
 	set_variable = { wages = temp2 }
 }
-
+#获得舰队维护费用(负数)
+get_navy_expenses = {
+	set_temp_variable = { temp0 = num_ships_with_type@submarine }
+	multiply_temp_variable = { temp0 = 0.002 }
+	set_temp_variable = { temp1 = num_ships_with_type@destroyer }
+	multiply_temp_variable = { temp1 = 0.003 }
+	set_temp_variable = { temp2 = num_ships_with_type@light_cruiser }
+	multiply_temp_variable = { temp2 = 0.005 }
+	set_temp_variable = { temp3 = num_ships_with_type@heavy_cruiser }
+	multiply_temp_variable = { temp3 = 0.009 }
+	set_temp_variable = { temp4 = num_ships_with_type@battle_cruiser }
+	multiply_temp_variable = { temp4 = 0.015 }
+	set_temp_variable = { temp5 = num_ships_with_type@battleship }
+	multiply_temp_variable = { temp5 = 0.020 }
+	set_temp_variable = { temp6 = num_ships_with_type@carrier }
+	multiply_temp_variable = { temp6 = 0.021 }
+	set_temp_variable = { temp7 = 0 }
+	add_to_temp_variable = { temp7 = temp0 }
+	add_to_temp_variable = { temp7 = temp1 }
+	add_to_temp_variable = { temp7 = temp2 }
+	add_to_temp_variable = { temp7 = temp3 }
+	add_to_temp_variable = { temp7 = temp4 }
+	add_to_temp_variable = { temp7 = temp5 }
+	add_to_temp_variable = { temp7 = temp6 }
+	multiply_temp_variable = { temp7 = -1 }
+	set_variable = { navy_spend = temp7 }
+}
 #每日黄金增长
 increase_gold_daily = {
 	get_daily_wages = yes

@@ -71,7 +71,7 @@ country_event = {
 	title = StGloriana_new.4.t
 	desc = StGloriana_new.4.d
 	picture = GFX_StGloriana_new_4
-	is_triggered_only = no
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -698,7 +698,9 @@ country_event = {
 	desc = StGloriana_focus.9.d
 	picture = GFX_StGloriana_focus_9
 	is_triggered_only = yes
-
+	immediate = {
+		news_event = { id = senshado_news.16 days = 1 }
+	}
 	option = {
 		name = StGloriana_focus.9.a
 		add_war_support = 0.1
@@ -719,5 +721,527 @@ country_event = {
 		add_ideas = STG_anti_rightist_march
 		activate_mission_tooltip = STG_anti_rightist_march
 		set_country_flag = StGloriana_event_8_flag
+	}
+}
+
+#二元君主立宪回归
+country_event = {
+	id = StGloriana_focus.10
+	title = StGloriana_focus.10.t
+	desc = StGloriana_focus.10.d
+	picture = GFX_StGloriana_focus_10
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_focus.10.a
+		add_ideas = STG_constitutional_dual_monarchy
+	}
+}
+
+#圣葛罗莉安娜在欧陆的国家利益
+country_event = {
+	id = StGloriana_focus.11
+	title = StGloriana_focus.11.t
+	desc = StGloriana_focus.11.d
+	picture = GFX_StGloriana_focus_11
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_focus.11.a
+		KGA = { country_event = { id = StGloriana_event.9 days = 1 } }
+		BCF = { country_event = { id = StGloriana_event.9 days = 1 } }
+		WAF = { country_event = { id = StGloriana_event.9 days = 1 } }
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#KGA，BCF，WAF:圣葛罗莉安娜重返欧陆
+country_event = {
+	id = StGloriana_event.9
+	title = StGloriana_event.9.t
+	desc = StGloriana_event.9.d
+	picture = GFX_StGloriana_event_9
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_event.9.a
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = StGloriana_event.9.b
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = StGloriana_event.9.c
+		hidden_effect = {
+			
+		}
+	}
+}
+
+
+#黑森峰占领区工业转移事宜
+country_event = {
+	id = StGloriana_focus.12
+	title = StGloriana_focus.12.t
+	desc = StGloriana_focus.12.d
+	picture = GFX_StGloriana_focus_12
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_focus.12.a
+		unlock_decision_tooltip = STG_transfer_kga_industry_mainland
+		hidden_effect = {
+			set_country_flag = STG_TRANSFER_KGA_INDUSTRY_0
+		}
+	}
+	option = {
+		name = StGloriana_focus.12.b
+		unlock_decision_tooltip = STG_transfer_kga_industry_waf
+		hidden_effect = {
+			set_country_flag = STG_TRANSFER_KGA_INDUSTRY_1
+		}
+	}
+	option = {
+		name = StGloriana_focus.12.c
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#站稳脚跟
+country_event = {
+	id = StGloriana_focus.13
+	title = StGloriana_focus.13.t
+	desc = StGloriana_focus.13.d
+	picture = GFX_StGloriana_focus_13
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_focus.13.a
+		hidden_effect = {
+			country_event = { id = StGloriana_event.10 days = 22 }
+		}
+	}
+}
+
+#站稳脚跟：经济帮扶
+country_event = {
+	id = StGloriana_event.10
+	title = StGloriana_event.10.t
+	desc = StGloriana_event.10.d
+	picture = GFX_StGloriana_event_10
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_event.10.a
+		custom_effect_tooltip = StGloriana_event_10_tt
+		add_to_variable = { gold = -50 }
+		trigger = { check_variable = { gold > 49.9 } }
+		hidden_effect = {
+			country_event = { id = StGloriana_event.11 days = 25 }
+		}
+	}
+	option = {
+		name = StGloriana_event.10.b
+		add_political_power = -100
+		hidden_effect = {
+			random_list = {
+				75 = { country_event = { id = StGloriana_event.11 days = 20 } }
+				25 = { country_event = { id = StGloriana_event.15 days = 100 } }
+			}
+			
+		}
+	}
+	option = {
+		name = StGloriana_event.10.c
+		hidden_effect = {
+			random_list = {
+				50 = { country_event = { id = StGloriana_event.11 days = 20 } }
+				50 = { country_event = { id = StGloriana_event.15 days = 100 } }
+			}
+		}
+	}
+}
+
+#站稳脚跟：政府
+country_event = {
+	id = StGloriana_event.11
+	title = StGloriana_event.11.t
+	desc = StGloriana_event.11.d
+	picture = GFX_StGloriana_event_11
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_event.11.a
+		add_political_power = 60
+		hidden_effect = {
+			random_list = {
+				40 = { country_event = { id = StGloriana_event.12 days = 20 } }
+				60 = { country_event = { id = StGloriana_event.14 days = 70 } }
+			}
+		}
+	}
+	option = {
+		name = StGloriana_event.11.b
+		add_political_power = -60
+		hidden_effect = {
+			random_list = {
+				75 = { country_event = { id = StGloriana_event.12 days = 20 } }
+				25 = { country_event = { id = StGloriana_event.14 days = 70 } }
+			}
+		}
+	}
+	option = {
+		name = StGloriana_event.11.c
+		add_political_power = 20
+		hidden_effect = {
+			country_event = { id = StGloriana_event.14 days = 70 }
+		}
+	}
+}
+
+#站稳脚跟：军事
+country_event = {
+	id = StGloriana_event.12
+	title = StGloriana_event.12.t
+	desc = StGloriana_event.12.d
+	picture = GFX_StGloriana_event_12
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_event.12.a
+		hidden_effect = {
+			country_event = { id = StGloriana_event.13 days = 30 }
+		}
+	}
+	option = {
+		name = StGloriana_event.12.b
+		army_experience = 20
+		hidden_effect = {
+			country_event = { id = StGloriana_event.14 days = 30 }
+		}
+	}
+	option = {
+		name = StGloriana_event.12.c
+		add_to_variable = { gold = 45 }
+		add_stability = -0.03
+        custom_effect_tooltip = StGloriana_event_12_tt
+		hidden_effect = {
+			country_event = { id = StGloriana_event.14 days = 30 }
+		}
+	}
+}
+
+
+#站稳脚跟：成功吞并
+country_event = {
+	id = StGloriana_event.13
+	title = StGloriana_event.13.t
+	desc = StGloriana_event.13.d
+	picture = GFX_StGloriana_event_13
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_event.13.a
+		WAF = {
+			transfer_state = 6
+			transfer_state = 7
+			transfer_state = 8
+			transfer_state = 34
+			transfer_state = 34
+			transfer_state = 36
+		}
+		set_country_flag = STG_SUCEESS_PUPPET_WAF
+		hidden_effect = {
+			news_event = senshado_news.12
+		}
+	}
+}
+
+#站稳脚跟：成功傀儡
+country_event = {
+	id = StGloriana_event.14
+	title = StGloriana_event.14.t
+	desc = StGloriana_event.14.d
+	picture = GFX_StGloriana_event_14
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_event.14.a
+		puppet = WAF
+		set_country_flag = STG_SUCEESS_PUPPET_WAF
+		hidden_effect = {
+			news_event = senshado_news.12
+		}
+	}
+}
+
+#站稳脚跟：失败
+country_event = {
+	id = StGloriana_event.15
+	title = StGloriana_event.15.t
+	desc = StGloriana_event.15.d
+	picture = GFX_StGloriana_event_15
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_event.15.a
+		create_wargoal = {
+			target = WAF
+			type = annex_everything
+		}
+		hidden_effect = {
+		}
+	}
+}
+
+
+#KGA:圣葛罗莉安娜归还租借领土
+country_event = {
+	id = StGloriana_event.17
+	title = StGloriana_event.17.t
+	desc = StGloriana_event.17.d
+	picture = GFX_StGloriana_event_17
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_event.17.a
+	}
+}
+
+#汉诺威独立省
+country_event = {
+	id = StGloriana_focus.14
+	title = StGloriana_focus.14.t
+	desc = StGloriana_focus.14.d
+	picture = GFX_StGloriana_focus_14
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_focus.14.a
+		KGA = { country_event = { id = StGloriana_event.18 days = 1 } }
+		IPH = {
+			add_state_core = 56
+			add_state_core = 57
+			add_state_core = 58
+			add_state_core = 59
+			add_state_core = 51
+			
+			transfer_state = 56
+			transfer_state = 57
+			transfer_state = 58
+			transfer_state = 59
+			transfer_state = 51
+		}
+		puppet = IPH
+	}
+}
+
+#KGA:无限延期租借
+country_event = {
+	id = StGloriana_event.18
+	title = StGloriana_event.18.t
+	desc = StGloriana_event.18.d
+	picture = GFX_StGloriana_event_18
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_event.18.a
+		declare_war_on = {
+			type = take_state 
+			target = STG
+		}
+		add_timed_idea = {
+			idea = STG_Resistance_oppression
+			days = 300
+		}
+	}
+	
+	option = {
+		name = StGloriana_event.18.b
+		remove_ideas = KGA_huge_debt 
+		hidden_effect = {
+			news_event = { id = senshado_news.17 days = 1 }
+		}
+	}
+}
+
+
+#旧时代的影子
+country_event = {
+	id = StGloriana_focus.15
+	title = StGloriana_focus.15.t
+	desc = StGloriana_focus.15.d
+	picture = GFX_StGloriana_focus_15
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_focus.15.a
+		country_event = { id = StGloriana_event.19 days = 3 }
+	}
+}
+
+#政府入不敷出
+country_event = {
+	id = StGloriana_event.19
+	title = StGloriana_event.19.t
+	desc = StGloriana_event.19.d
+	picture = GFX_StGloriana_event_19
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_event.19.a
+		add_timed_idea = {
+			idea = STG_Grain_tax_commodity_tax
+			days = 720
+		}
+		country_event = { id = StGloriana_event.20 days = 3 }
+	}
+	
+	option = {
+		name = StGloriana_event.19.b
+		add_timed_idea = {
+			idea = STG_Puritan_resentment
+			days = 720
+		}
+		country_event = { id = StGloriana_event.21 days = 3 }
+	}
+	
+	option = {
+		name = StGloriana_event.19.c
+		add_timed_idea = {
+			idea = STG_Capital_panic
+			days = 720
+		}
+		country_event = { id = StGloriana_event.22 days = 3 }
+	}
+}
+
+#粮食税与商品税的提高
+country_event = {
+	id = StGloriana_event.20
+	title = StGloriana_event.20.t
+	desc = StGloriana_event.20.d
+	picture = GFX_StGloriana_event_20
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_event.20.a
+		country_event = { id = StGloriana_event.23 days = 3 }
+	}
+}
+
+#提高清教会地税
+country_event = {
+	id = StGloriana_event.21
+	title = StGloriana_event.21.t
+	desc = StGloriana_event.21.d
+	picture = GFX_StGloriana_event_21
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_event.21.a
+		country_event = { id = StGloriana_event.23 days = 3 }
+	}
+}
+
+#惊恐的兔子
+country_event = {
+	id = StGloriana_event.22
+	title = StGloriana_event.22.t
+	desc = StGloriana_event.22.d
+	picture = GFX_StGloriana_event_22
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_event.22.a
+		country_event = { id = StGloriana_event.23 days = 3 }
+	}
+}
+
+#前圣葛罗莉安娜的队长
+country_event = {
+	id = StGloriana_event.23
+	title = StGloriana_event.23.t
+	desc = StGloriana_event.23.d
+	picture = GFX_StGloriana_event_23
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_event.23.a
+		unlock_decision_tooltip = STG_All_night_long
+		set_country_flag = STG_All_night_long_flag
+	}
+}
+
+#投资成功
+country_event = {
+	id = StGloriana_event.24
+	title = StGloriana_event.24.t
+	desc = StGloriana_event.24.d
+	picture = GFX_StGloriana_event_24
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_event.24.a
+		set_country_flag = StGloriana_event_24_flag
+		add_to_variable = { var = STG_cairns_economy_effect_var_production_speed_rail_way_factor value = -0.05 }
+		add_to_variable = { var = STG_cairns_economy_effect_var_production_speed_infrastructure_factor value = -0.05 }
+		add_to_variable = { var = STG_cairns_economy_effect_var_production_factory_max_efficiency_factor value = -0.05 }
+		add_to_variable = { var = STG_cairns_economy_effect_var_production_factory_efficiency_gain_factor value = -0.05 }
+		add_to_variable = { var = STG_cairns_economy_effect_var_tax_daily_modifier value = 0.1 }
+		add_to_variable = { var = STG_cairns_economy_effect_var_consumer_goods_factor value = -0.05 }
+		add_to_variable = { var = STG_cairns_economy_effect_var_stability_factor value = 0.05 }
+		add_to_variable = { var = STG_cairns_economy_effect_var_war_support_factor value = 0.05 }
+		add_to_variable = { var = STG_cairns_economy_effect_var_weekly_manpower value = 500 }
+		custom_effect_tooltip = StGloriana_event_24_tt
+	}
+}
+
+#投资成功
+country_event = {
+	id = StGloriana_event.25
+	title = StGloriana_event.25.t
+	desc = StGloriana_event.25.d
+	picture = GFX_StGloriana_event_25
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_event.25.a
+		set_country_flag = StGloriana_event_25_flag
+		add_to_variable = { var = STG_cairns_economy_effect_var_production_speed_rail_way_factor value = -0.05 }
+		add_to_variable = { var = STG_cairns_economy_effect_var_production_speed_infrastructure_factor value = -0.05 }
+		add_to_variable = { var = STG_cairns_economy_effect_var_production_factory_max_efficiency_factor value = -0.05 }
+		add_to_variable = { var = STG_cairns_economy_effect_var_production_factory_efficiency_gain_factor value = -0.05 }
+		add_to_variable = { var = STG_cairns_economy_effect_var_tax_daily_modifier value = 0.1 }
+		add_to_variable = { var = STG_cairns_economy_effect_var_consumer_goods_factor value = -0.05 }
+		add_to_variable = { var = STG_cairns_economy_effect_var_stability_factor value = 0.05 }
+		add_to_variable = { var = STG_cairns_economy_effect_var_war_support_factor value = 0.05 }
+		add_to_variable = { var = STG_cairns_economy_effect_var_weekly_manpower value = 500 }
+		custom_effect_tooltip = StGloriana_event_25_tt
+	}
+}
+
+#投资成功 
+country_event = {
+	id = StGloriana_event.26
+	title = StGloriana_event.26.t
+	desc = StGloriana_event.26.d
+	picture = GFX_StGloriana_event_26
+	is_triggered_only = yes
+
+	option = {
+		name = StGloriana_event.26.a
+		set_country_flag = StGloriana_event_26_flag
+		hidden_effect = { remove_dynamic_modifier = { modifier = STG_cairns_economy_effect } }
+		custom_effect_tooltip = STG_StGloriana_event_5_tt
 	}
 }

@@ -1,6 +1,16 @@
 ideas = {
     country = {
+		#基建任务奖励
+		KGA_infrastructure_dividend = {
+			picture = GFX_idea_KGA_infrastructure_dividend
+			allowed = { tag = KGA }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}
 		LCP_support_from_kuromorimine = {
+			picture = GFX_idea_LCP_support_from_kuromorimine
 			allowed = { tag = LCP }
 			allowed_civil_war = { always = yes }
 			modifier = {
@@ -14,6 +24,7 @@ ideas = {
 			}
 		}
 		KGA_ooari_style_education = {
+			picture = GFX_idea_KGA_ooari_style_education
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = yes }
 			modifier = {
@@ -22,6 +33,7 @@ ideas = {
 			}
 		}
 		KGA_the_cost_of_absolute_neutral = {
+			picture = GFX_idea_KGA_the_cost_of_absolute_neutral
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = yes }
 			modifier = {
@@ -37,6 +49,7 @@ ideas = {
 			}
 		}
 		KGA_hallsteinism = {
+			picture = GFX_idea_KGA_hallsteinism
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = yes }
 			targeted_modifier = {
@@ -53,6 +66,7 @@ ideas = {
 			}
 		}
 		KGA_tightening_of_rights = {
+			picture = GFX_idea_KGA_tightening_of_rights
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = yes }
 			modifier = {
@@ -64,6 +78,7 @@ ideas = {
 		}
 
 		KGA_great_sorting = {
+			picture = GFX_idea_KGA_great_sorting
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = yes }
 			modifier = {
@@ -75,6 +90,7 @@ ideas = {
 		}
 
 		KGA_white_terror = {
+			picture = GFX_idea_KGA_white_terror
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = yes }
 			modifier = {
@@ -84,6 +100,7 @@ ideas = {
 		}
 
         KGA_broken_kuromorimine = {
+			picture = GFX_idea_KGA_broken_kuromorimine
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = yes }
 			modifier = {
@@ -94,6 +111,7 @@ ideas = {
 		}
 
         KGA_nishizumi_family_origin = {
+			picture = GFX_idea_KGA_nishizumi_family_origin
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = yes }
 			modifier = {
@@ -105,6 +123,7 @@ ideas = {
 		}
 
 		KGA_nishizumi_style = {
+			picture = GFX_idea_KGA_nishizumi_style
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = no }
 			modifier = {
@@ -116,6 +135,7 @@ ideas = {
 		}
 
 		KGA_dying_nishizumi_style = {
+			picture = GFX_idea_KGA_dying_nishizumi_style
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = no }
 			modifier = {
@@ -126,6 +146,7 @@ ideas = {
 		}
 
 		KGA_dying_nishizumi_style_1 = {
+			picture = GFX_idea_KGA_dying_nishizumi_style_1
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = no }
 			modifier = {
@@ -133,53 +154,106 @@ ideas = {
 				wage_modifier = -0.05
 			}
 		}
-
+		#债务
         KGA_huge_debt = {
+			picture = GFX_idea_KGA_huge_debt
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = yes }
 			modifier = {
 				tax_daily_modifier = -0.4
                 consumer_goods_factor = 0.2
 			}
+			targeted_modifier = {
+				tag = STG
+				generate_wargoal_tension_against = 0.5
+			}
+			targeted_modifier = {
+				tag = BCF
+				generate_wargoal_tension_against = 0.5
+			}
 		}
 
 		KGA_huge_debt_1 = {
+			picture = GFX_idea_KGA_huge_debt_1
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = yes }
 			modifier = {
 				tax_daily_modifier = -0.32
                 consumer_goods_factor = 0.16
 			}
+			targeted_modifier = {
+				tag = STG
+				generate_wargoal_tension_against = 0.5
+			}
+			targeted_modifier = {
+				tag = BCF
+				generate_wargoal_tension_against = 0.5
+			}
 		}
 
 		KGA_huge_debt_2 = {
+			picture = GFX_idea_KGA_huge_debt_2
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = yes }
 			modifier = {
 				tax_daily_modifier = -0.24
                 consumer_goods_factor = 0.12
 			}
+			targeted_modifier = {
+				tag = STG
+				generate_wargoal_tension_against = 0.5
+			}
+			targeted_modifier = {
+				tag = BCF
+				generate_wargoal_tension_against = 0.5
+			}
 		}
 
 		KGA_huge_debt_3 = {
+			picture = GFX_idea_KGA_huge_debt_3
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = yes }
 			modifier = {
 				tax_daily_modifier = -0.16
                 consumer_goods_factor = 0.08
 			}
+			targeted_modifier = {
+				tag = STG
+				generate_wargoal_tension_against = 0.5
+			}
+			targeted_modifier = {
+				tag = BCF
+				generate_wargoal_tension_against = 0.5
+			}
 		}
 
 		KGA_huge_debt_4 = {
+			picture = GFX_idea_KGA_huge_debt_4
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = yes }
 			modifier = {
 				tax_daily_modifier = -0.08
                 consumer_goods_factor = 0.04
 			}
+			on_remove = {
+				50 = { set_demilitarized_zone = no }
+				42 = { set_demilitarized_zone = no }
+				51 = { set_demilitarized_zone = no }
+				56 = { set_demilitarized_zone = no }
+				57 = { set_demilitarized_zone = no }
+			}
+			targeted_modifier = {
+				tag = STG
+				generate_wargoal_tension_against = 0.5
+			}
+			targeted_modifier = {
+				tag = BCF
+				generate_wargoal_tension_against = 0.5
+			}
 		}
 
         KGA_country_senshado_government = {
+			picture = GFX_idea_KGA_country_senshado_government
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = yes }
 			modifier = {
@@ -188,6 +262,7 @@ ideas = {
 		}
 
 		KGA_schoolship_onboard_regulation = {
+			picture = GFX_idea_KGA_schoolship_onboard_regulation
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = no }
 			modifier = {
@@ -198,6 +273,7 @@ ideas = {
 		}
 
 		KGA_schoolship_onboard_regulation_1 = {
+			picture = GFX_idea_KGA_schoolship_onboard_regulation_1
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = no }
 			modifier = {
@@ -208,6 +284,7 @@ ideas = {
 		}
 
 		KGA_non_alcoholic_beer_festival = {
+			picture = GFX_idea_KGA_non_alcoholic_beer_festival
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = yes }
 			modifier = {
@@ -218,6 +295,7 @@ ideas = {
 		}
 
 		KGA_new_kuromorimine_economy = {
+			picture = GFX_idea_KGA_new_kuromorimine_economy
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = yes }
 			modifier = {
@@ -228,6 +306,7 @@ ideas = {
 		}
 
 		KGA_kuromorimine_economy = {
+			picture = GFX_idea_KGA_kuromorimine_economy
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = yes }
 			modifier = {
@@ -236,6 +315,7 @@ ideas = {
 		}
 
 		KGA_kuromorimine_economy_1 = {
+			picture = GFX_idea_KGA_kuromorimine_economy_1
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = yes }
 			modifier = {
@@ -246,6 +326,7 @@ ideas = {
 		}
 
 		KGA_kuromorimine_economy_2 = {
+			picture = GFX_idea_KGA_kuromorimine_economy_2
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = yes }
 			modifier = {
@@ -258,6 +339,7 @@ ideas = {
 		}
 
 		KGA_kuromorimine_economy_3 = {
+			picture = GFX_idea_KGA_kuromorimine_economy_3
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = yes }
 			modifier = {
@@ -270,6 +352,7 @@ ideas = {
 		}
 
 		KGA_gold_store_adjustment = {
+			picture = GFX_idea_KGA_gold_store_adjustment
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = no }
 			modifier = {
@@ -279,6 +362,7 @@ ideas = {
 
 		#BCF贸易协定
 		BCF_trade_contract_with_KGA = {
+			picture = GFX_idea_BCF_trade_contract_with_KGA
 			allowed = { tag = BCF }
 			allowed_civil_war = { always = yes }
 			modifier = {
@@ -289,6 +373,7 @@ ideas = {
 
 		#贸易协定
 		KGA_trade_contract_with_BCF = {
+			picture = GFX_idea_KGA_trade_contract_with_BCF
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = yes }
 			modifier = {
@@ -299,6 +384,7 @@ ideas = {
 
 		#钟壁主义者的威胁
 		KGA_bellwall_threat = {
+			picture = GFX_idea_KGA_bellwall_threat
 			allowed = { tag = KGA }
 			allowed_civil_war = { always = no }
 			modifier = {
@@ -308,16 +394,18 @@ ideas = {
 		}
 
 		KGA_improved_production_indicators = {
+			picture = GFX_idea_KGA_improved_production_indicators
 			allowed = {
 				tag = KGA
 			}
 			modifier = {
-				production_factory_max_efficiency_factor = 0.05
-				political_power_cost = 0.25
+				production_factory_max_efficiency_factor = 0.1
+				political_power_cost = 0.1
 			}
 		}
 
 		KGA_restricted_offensive_operations = {
+			picture = GFX_idea_KGA_restricted_offensive_operations
 			allowed = {
 				tag = KGA
 			}
@@ -328,6 +416,7 @@ ideas = {
 		}
 
 		KGA_unlimited_submarine_warfare = {
+			picture = GFX_idea_KGA_unlimited_submarine_warfare
 			allowed = {
 				tag = KGA
 			}
@@ -339,6 +428,7 @@ ideas = {
 		}
 
 		KGA_caliber_is_justice = {
+			picture = GFX_idea_KGA_caliber_is_justice
 			allowed = {
 				tag = KGA
 			}
@@ -353,6 +443,7 @@ ideas = {
 		}
 
 		KGA_survivability_first = {
+			picture = GFX_idea_KGA_survivability_first
 			allowed = {
 				tag = KGA
 			}
@@ -367,6 +458,7 @@ ideas = {
 		}
 
 		KGA_land_control_from_sea = {
+			picture = GFX_idea_KGA_land_control_from_sea
 			allowed = {
 				tag = KGA
 			}
@@ -380,6 +472,7 @@ ideas = {
 		}
 
 		KGA_worker_insurance = {
+			picture = GFX_idea_KGA_worker_insurance
 			allowed = {
 				tag = KGA
 			}
@@ -392,6 +485,7 @@ ideas = {
 
 		#恢复征兵法
 		KGA_reinstatement_troops = {
+			picture = GFX_idea_KGA_reinstatement_troops
 			allowed = {
 				tag = KGA
 			}
@@ -402,6 +496,7 @@ ideas = {
 
 		#BON获得的黑森峰援助
 		BON_kuromorimine_support = {
+			picture = GFX_idea_BON_kuromorimine_support
 			allowed = {
 				tag = BON
 			}
@@ -416,6 +511,7 @@ ideas = {
 
 		#BON获得的黑森峰思想渗透
 		BON_unknown_fascism_rising = {
+			picture = GFX_idea_BON_unknown_fascism_rising
 			allowed = {
 				tag = BON
 			}
@@ -427,6 +523,7 @@ ideas = {
 
 		#资源开采政策1:重新投资国家资源开采部门
 		KGA_resource_extraction_policy_1 = {
+			picture = GFX_idea_KGA_resource_extraction_policy
 			allowed = {
 				tag = KGA
 			}
@@ -438,6 +535,7 @@ ideas = {
 
 		#资源开采政策2:开放国外开发商获取执照
 		KGA_resource_extraction_policy_2 = {
+			picture = GFX_idea_KGA_resource_extraction_policy
 			allowed = {
 				tag = KGA
 			}
@@ -451,6 +549,7 @@ ideas = {
 
 		#资源开采政策3:开放个人承包开采资源
 		KGA_resource_extraction_policy_3 = {
+			picture = GFX_idea_KGA_resource_extraction_policy
 			allowed = {
 				tag = KGA
 			}
@@ -462,6 +561,7 @@ ideas = {
 
 		#黑森峰劳工阵线：战车道化工业
 		KGA_senshado_focus_production = {
+			picture = GFX_idea_KGA_senshado_focus_production
 			allowed = {
 				tag = KGA
 			}
@@ -473,6 +573,7 @@ ideas = {
 
 		#黑森峰劳工阵线：稳定的经济发展方案
 		KGA_steady_economic_plan = {
+			picture = GFX_idea_KGA_steady_economic_plan
 			allowed = {
 				tag = KGA
 			}
@@ -484,17 +585,19 @@ ideas = {
 
 		#黑森峰劳工阵线：资源贸易重心
 		KGA_resources_trade_focus = {
+			picture = GFX_idea_KGA_resources_trade_focus
 			allowed = {
 				tag = KGA
 			}
 			modifier = {
 				local_resources_factor = 0.1
-				trade_opinion_factor = 0.05
+				trade_opinion_factor = 0.1
 			}
 		}
 
 		#海军质量优先
 		KGA_quality_priority = {
+			picture = GFX_idea_KGA_quality_priority
 			allowed = {
 				tag = KGA
 			}
@@ -507,6 +610,7 @@ ideas = {
 
 		#海军数量优先 
 		KGA_quantity_priority = {
+			picture = GFX_idea_KGA_quantity_priority
 			allowed = {
 				tag = KGA
 			}
@@ -528,6 +632,7 @@ ideas = {
 
 		#kriegsmarine
 		KGA_kriegsmarine = {
+			picture = GFX_idea_KGA_kriegsmarine
 			allowed = {
 				tag = KGA
 			}
@@ -557,6 +662,7 @@ ideas = {
 
 		#更高效的政府
 		KGA_government_with_more_efficiency = {
+			picture = GFX_idea_KGA_government_with_more_efficiency
 			allowed = {
 				tag = KGA
 			}
@@ -567,6 +673,7 @@ ideas = {
 
 		#黑森峰授权法案
 		KGA_Ermachtigungsgesetz = {
+			picture = GFX_idea_KGA_Ermachtigungsgesetz
 			allowed = {
 				tag = KGA
 			}
@@ -581,6 +688,7 @@ ideas = {
 
 		#提高消费品税收
 		KGA_rise_tax_on_consumer_goods = {
+			picture = GFX_idea_KGA_rise_tax_on_consumer_goods
 			allowed = {
 				tag = KGA
 			}
@@ -594,6 +702,7 @@ ideas = {
 
 		#农业增产计划
 		KGA_agricultural_production_plan = {
+			picture = GFX_idea_KGA_agricultural_production_plan
 			allowed = {
 				tag = KGA
 			}
@@ -605,6 +714,7 @@ ideas = {
 
 		#推广战车道教育
 		KGA_popularize_senshado_education = {
+			picture = GFX_idea_KGA_popularize_senshado_education
 			allowed = {
 				tag = KGA
 			}
@@ -616,6 +726,7 @@ ideas = {
 
 		#最低工资
 		KGA_minimum_wage = {
+			picture = GFX_idea_KGA_minimum_wage
 			allowed = {
 				tag = KGA
 			}
@@ -628,14 +739,18 @@ ideas = {
 
 		#重点部署后勤
 		KGA_focus_on_deployment_supply = {
+			picture = GFX_idea_KGA_focus_on_deployment_supply
 			allowed = {
 				tag = KGA
 			}
 			modifier = {
-				supply_consumption_factor = -0.2
+				supply_consumption_factor = -0.1
 			}
 			equipment_bonus = {
 				support_equipment = {
+					build_cost_ic = -0.2
+				}
+				motorized = {
 					build_cost_ic = -0.2
 				}
 			}
@@ -643,22 +758,19 @@ ideas = {
 
 		#着重于计划
 		KGA_focus_on_battle_plan = {
+			picture = GFX_idea_KGA_focus_on_battle_plan
 			allowed = {
 				tag = KGA
 			}
 			modifier = {
 				max_planning = 0.1
-				planning_speed = 0.1
-			}
-			research_bonus = {
-				land_doctrine = 0.06
-				air_doctrine = 0.06
-				naval_doctrine = 0.06
+				planning_speed = 0.15
 			}
 		}
 
 		#少女们的作战素养
 		KGA_combat_literacy_of_girls = {
+			picture = GFX_idea_KGA_combat_literacy_of_girls
 			allowed = {
 				tag = KGA
 			}
@@ -670,6 +782,7 @@ ideas = {
 
 		#战车指挥中枢
 		KGA_tank_command_center = {
+			picture = GFX_idea_KGA_tank_command_center
 			allowed = {
 				tag = KGA
 			}
@@ -681,6 +794,7 @@ ideas = {
 
 		#国家紧急状态声明
 		KGA_declare_national_emergency_state = {
+			picture = GFX_idea_KGA_declare_national_emergency_state
 			allowed = {
 				tag = KGA
 			}
@@ -697,6 +811,7 @@ ideas = {
 
 		#扳倒巨人
 		KGA_down_the_giant = {
+			picture = GFX_idea_KGA_down_the_giant
 			allowed = {
 				tag = KGA
 			}

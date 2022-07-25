@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		controller = BON
+		owner = BON
 		victory_points = {
 			3174 1 #Voru
 		}

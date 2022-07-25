@@ -1,43 +1,80 @@
 characters={
-	KRR_nonna={
-		name="Nonna"
+	KRR_ekaterina={
+		name="Ekaterina"
 		portraits={
 			civilian={
-				large="gfx/leaders/KRR/Portrait_KRR_Nonna.dds"
+				large="gfx/leaders/KRR/Portrait_KRR_Ekaterina.dds"
 			}
 		}
 		country_leader={
 			desc="She is the best"
 			ideology=conservatism
-			expire="2000.1.1.1"
+			expire="2000.1.1"
 			id=-1
 		}
 		country_leader={
 			desc="She is the best"
 			ideology=leninism
-			expire="2000.1.1.1"
+			expire="2000.1.1"
 			id=-1
 		}
 		country_leader={
 			desc="She is the best"
 			ideology=nazism
-			expire="2000.1.1.1"
+			expire="2000.1.1"
 			id=-1
 		}
 		country_leader={
 			desc="She is the best"
 			ideology=moderatism
-			expire="2000.1.1.1"
+			expire="2000.1.1"
 			id=-1
 		}
-		corps_commander={
+		field_marshal={
 			traits={ armor_officer }
 			skill=3
 			attack_skill=3
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=3
-			legacy_id=1035
+			legacy_id=1040
+		}
+	}
+
+	KRR_olga={
+		name="Olga"
+		portraits={
+			civilian={
+				large="gfx/leaders/KRR/Portrait_KRR_Olga.dds"
+			}
+		}
+		
+		corps_commander={
+			traits={ armor_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=1128
+		}
+	}
+	KRR_polina={
+		name="Polina"
+		portraits={
+			civilian={
+				large="gfx/leaders/KRR/Portrait_KRR_Polina.dds"
+			}
+		}
+		
+		corps_commander={
+			traits={ armor_officer }
+			skill=2
+			attack_skill=1
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=1129
 		}
 	}
 }

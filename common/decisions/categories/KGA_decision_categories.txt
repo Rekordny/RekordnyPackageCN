@@ -30,3 +30,11 @@ kga_political_balance = {
 	icon = GFX_decision_category_senshado
 	allowed = { tag = KGA }
 }
+stg_kuromorimine_occupation = {
+	icon = GFX_decision_category_senshado
+	allowed = { tag = STG }
+}
+bcf_kuromorimine_occupation = {
+	icon = GFX_decision_category_senshado
+	allowed = { tag = BCF }
+}

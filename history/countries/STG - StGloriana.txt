@@ -16,7 +16,7 @@ set_technology = {
 	senshado_lt_1_chassis_turrent = 1
 	senshado_lt_2_chassis = 1
 	senshado_lt_2_chassis_turrent = 1
-	
+	senshado_lt_3_chassis = 1
 	senshado_mt_1_chassis = 1
 	senshado_mt_1_chassis_turrent = 1
 	senshado_ht_1_chassis = 1
@@ -107,6 +107,7 @@ recruit_character = STG_rukuriri
 recruit_character = STG_rosehip
 recruit_character = STG_nilgiri
 recruit_character = STG_hana
+recruit_character = STG_shiratori
 recruit_character = STG_earlGrey
 recruit_character = STG_warspite
 recruit_character = STG_arkRoyal
@@ -127,10 +128,11 @@ create_equipment_variant = {
 		special_type_slot_1 = tank_radio_1
 	}
 	upgrades = {
-		tank_nsb_engine_upgrade = 0
-		tank_nsb_armor_upgrade = 0
+		tank_nsb_engine_upgrade = 2
+		tank_nsb_armor_upgrade = 2
 	}
-	icon = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_light_AAA.dds"
+	obsolete = yes
+	icon = "gfx/interface/equipmentdesigner/tanks/designer/ENG/ENG_light_CCA_camo.dds"
 }
 create_equipment_variant = {
 	name = "FV4011 Centurion Mk. 5/1"
@@ -143,12 +145,14 @@ create_equipment_variant = {
 		armor_type_slot = tank_riveted_armor
 		engine_type_slot = tank_gasoline_engine
 		special_type_slot_1 = tank_radio_1
+		special_type_slot_2 = sloped_armor
 	}
 	upgrades = {
 		tank_nsb_engine_upgrade = 1
 		tank_nsb_armor_upgrade = 1
 	}
-	icon = "gfx/interface/equipmentdesigner/tanks/designer/KGA/KGA_medium_AAA.dds"
+	obsolete = yes
+	icon = "gfx/interface/equipmentdesigner/tanks/designer/ENG/ENG_light_CCA_camo.dds"
 }
 
 if = {

@@ -6,7 +6,7 @@ state={
 	state_category = city
 
 	history={
-		owner = STG
+		owner = KGA
 		victory_points = {
 			241 5 
 		}
@@ -29,6 +29,7 @@ state={
 
 		}
 		add_core_of = KGA
+		set_demilitarized_zone = yes
 	}
 
 	provinces={

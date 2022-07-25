@@ -4,20 +4,22 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/SDS/Portrait_SDS_Kay.dds"
+				small="gfx/interface/advisors/idea_key.dds"
 			}
 		}
 		country_leader={
 			ideology=conservatism
-			expire="2000.1.1.1"
+			traits = { optimistic_idealist }
+			expire="2000.1.1"
 			id=-1
 		}
-		corps_commander={
-			traits={ armor_officer }
+		field_marshal = {
 			skill=3
-			attack_skill=3
-			defense_skill=3
+			traits={ armor_officer organisational_leader }
+			attack_skill=2
+			defense_skill=4
 			planning_skill=3
-			logistics_skill=3
+			logistics_skill=2
 			legacy_id=1071
 		}
 	}
@@ -29,8 +31,9 @@ characters={
 			}
 		}
 		country_leader={
+			traits = { pragmatic_conservative }
 			ideology=conservatism
-			expire="1974.1.1.1"
+			expire="1974.1.1"
 			id=-1
 		}
 	}
@@ -39,17 +42,35 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/SDS/Portrait_SDS_Alisa.dds"
+				small="gfx/interface/advisors/idea_alisa.dds"
 			}
 		}
-		visible = { NOT = { has_country_flag = SDS_ALISA_ESCAPE } }
 		corps_commander={
-			traits={ armor_officer }
+			visible = { NOT = { has_country_flag = SDS_ALISA_ESCAPE } }
+			traits={ armor_officer Trickster }
 			skill=3
 			attack_skill=3
-			defense_skill=3
-			planning_skill=3
+			defense_skill=2
+			planning_skill=2
 			logistics_skill=3
-			legacy_id=1071
+			legacy_id=1072
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SDS_alisa
+			removal_cost = 0
+			available = {  }
+			allowed = {
+				original_tag = SDS
+			}
+			visible = {  }
+			traits = { quick_witted_irritant }
+			on_add = {}
+			on_remove = {}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 	SDS_yukari={
@@ -57,15 +78,16 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/SDS/Portrait_SDS_Yukari.dds"
+				small="gfx/interface/advisors/idea_yukari.dds"
 			}
 		}
 		corps_commander={
 			traits={ armor_officer }
-			skill=3
-			attack_skill=3
-			defense_skill=3
+			skill=2
+			attack_skill=1
+			defense_skill=2
 			planning_skill=3
-			logistics_skill=3
+			logistics_skill=1
 			legacy_id=1074
 		}
 	}
@@ -74,16 +96,34 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/SDS/Portrait_SDS_Naomi.dds"
+				small="gfx/interface/advisors/idea_naomi.dds"
 			}
 		}
 		corps_commander={
-			traits={ armor_officer }
+			traits={ armor_officer Fortress_Buster }
 			skill=3
-			attack_skill=3
-			defense_skill=3
+			attack_skill=5
+			defense_skill=2
 			planning_skill=3
-			logistics_skill=3
+			logistics_skill=1
 			legacy_id=1073
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SDS_naomi
+			removal_cost = 0
+			available = {  }
+			allowed = {
+				original_tag = SDS
+			}
+			visible = {  }
+			traits = { calm_performer  }
+			on_add = {}
+			on_remove = {}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 	SDS_helmet={
@@ -91,16 +131,89 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/SDS/Portrait_SDS_Helmet.dds"
+				small="gfx/interface/advisors/idea_helmet.dds"
 			}
 		}
 		corps_commander={
 			traits={ armor_officer }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
 			legacy_id=1075
+		}
+	}
+	SDS_charlotte={
+		name = "Charlotte"
+		portraits={
+			civilian={
+				large="gfx/leaders/SDS/Portrait_SDS_Charlotte.dds"
+				small="gfx/interface/advisors/idea_charlotte.dds"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=1130
+		}
+	}
+	SDS_carla={
+		name = "Carla"
+		portraits={
+			civilian={
+				large="gfx/leaders/SDS/Portrait_SDS_Carla.dds"
+				small="gfx/interface/advisors/idea_carla.dds"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=1131
+		}
+	}
+	SDS_geena={
+		name = "Geena"
+		portraits={
+			civilian={
+				large="gfx/leaders/SDS/Portrait_SDS_Geena.dds"
+				small="gfx/interface/advisors/idea_geena.dds"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=1132
+		}
+	}
+	SDS_marian={
+		name = "Marian"
+		portraits={
+			civilian={
+				large="gfx/leaders/SDS/Portrait_SDS_Marian.dds"
+				small="gfx/interface/advisors/idea_marian.ddss"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=1132
 		}
 	}
 	SDS_iowa={

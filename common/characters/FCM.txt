@@ -1,43 +1,62 @@
 characters={
-	FCM_kurara={
-		name="Kurara"
+	FCM_natalia={
+		name="Natalia"
 		portraits={
 			civilian={
-				large="gfx/leaders/FCM/Portrait_FCM_Kurara.dds"
+				large="gfx/leaders/FCM/Portrait_FCM_Natalia.dds"
 			}
 		}
 		country_leader={
 			desc="She is the best"
 			ideology=conservatism
-			expire="2000.1.1.1"
+			expire="2000.1.1"
 			id=-1
 		}
 		country_leader={
 			desc="She is the best"
 			ideology=leninism
-			expire="2000.1.1.1"
+			expire="2000.1.1"
 			id=-1
 		}
 		country_leader={
 			desc="She is the best"
 			ideology=nazism
-			expire="2000.1.1.1"
+			expire="2000.1.1"
 			id=-1
 		}
 		country_leader={
 			desc="She is the best"
 			ideology=moderatism
-			expire="2000.1.1.1"
+			expire="2000.1.1"
 			id=-1
 		}
-		corps_commander={
+		field_marshal={
 			traits={ armor_officer }
 			skill=3
 			attack_skill=3
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=3
-			legacy_id=1037
+			legacy_id=1127
+		}
+	}
+
+	FCM_lisa={
+		name="Lisa"
+		portraits={
+			civilian={
+				large="gfx/leaders/FCM/Portrait_FCM_Lisa.dds"
+			}
+		}
+		
+		corps_commander={
+			traits={ armor_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=1126
 		}
 	}
 }

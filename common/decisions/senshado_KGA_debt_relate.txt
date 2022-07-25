@@ -1,0 +1,133 @@
+#黑森峰土地占领事宜
+stg_kuromorimine_occupation = {
+	#土地占有期限
+	stg_occupation_deadline = {
+		allowed = { tag = STG }
+		available = {
+			STG = { exists = yes }
+			KGA = { exists = yes }
+			NOT = {
+				51 = { is_demilitarized_zone = yes } 56 = { is_demilitarized_zone = yes } 57 = { is_demilitarized_zone = yes }
+			}
+		}
+		visible = { OR = { AND = { is_ai = no is_debug = yes } 51 = { is_demilitarized_zone = yes } 56 = { is_demilitarized_zone = yes } 57 = { is_demilitarized_zone = yes } } NOT = { has_war_with = KGA } }
+		modifier = { tax_daily_modifier = 0.03 consumer_goods_factor = -0.03 political_power_cost = 0.2 }
+		is_good = yes
+		selectable_mission = no
+		cancel_trigger = {
+			has_war_with = KGA
+		}
+		activation = { 51 = { is_demilitarized_zone = yes } 56 = { is_demilitarized_zone = yes } 57 = { is_demilitarized_zone = yes } } 
+		days_mission_timeout = 365
+		timeout_effect = {
+			KGA = {
+				country_event = { id = kuromorimine.49 days = 1 }
+			}
+        }
+	}
+	
+	#延长租借期限
+	stg_extend_occupation_deadline = {
+		available = { STG = { exists = yes } KGA = { exists = yes } }
+		allowed = { tag = STG }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } 51 = { is_demilitarized_zone = yes } 56 = { is_demilitarized_zone = yes } 57 = { is_demilitarized_zone = yes } } NOT = { has_war_with = KGA } }
+		fire_only_once = no
+		days_remove = 5
+		days_re_enable = 90
+		custom_cost_text = extend_occupation_deadline_cost_tt
+		custom_cost_trigger = { has_political_power > 69.9 }
+		complete_effect = {
+			hidden_effect = { add_political_power = -70 }
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = stg_occupation_deadline
+				days = 60
+			}
+		}
+	}
+	
+	#主动归还占领区
+	stg_return_occupation_region = {
+		available = { STG = { exists = yes } KGA = { exists = yes } }
+		allowed = { tag = STG }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } 51 = { is_demilitarized_zone = yes } 56 = { is_demilitarized_zone = yes } 57 = { is_demilitarized_zone = yes } } NOT = { has_war_with = KGA } }
+		fire_only_once = yes
+		days_remove = 10
+		complete_effect = {
+		}
+		remove_effect = {
+			add_political_power = var:days_mission_timeout@stg_occupation_deadline
+			KGA = {
+				country_event = { id = kuromorimine.49 days = 1 }
+			}
+		}
+	}
+}
+
+#黑森峰土地占领事宜
+bcf_kuromorimine_occupation = {
+	#土地占有期限
+	bcf_occupation_deadline = {
+		allowed = { tag = BCF }
+		available = {
+			BCF = { exists = yes }
+			KGA = { exists = yes }
+			NOT = {
+				50 = { is_demilitarized_zone = yes } 42 = { is_demilitarized_zone = yes } 
+			}
+		}
+		visible = { OR = { AND = { is_ai = no is_debug = yes }  50 = { is_demilitarized_zone = yes } 42 = { is_demilitarized_zone = yes } } NOT = { has_war_with = KGA } }
+		modifier = { tax_daily_modifier = 0.03 consumer_goods_factor = -0.03 political_power_cost = 0.2 }
+		is_good = yes
+		selectable_mission = no
+		cancel_trigger = {
+			has_war_with = KGA
+		}
+		activation = { 50 = { is_demilitarized_zone = yes } 42 = { is_demilitarized_zone = yes }  } 
+		days_mission_timeout = 365
+		timeout_effect = {
+			KGA = {
+				country_event = { id = kuromorimine.49 days = 1 }
+			}
+        }
+	}
+	
+	#延长租借期限
+	bcf_extend_occupation_deadline = {
+		available = { BCF = { exists = yes } KGA = { exists = yes } }
+		allowed = { tag = BCF }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } 50 = { is_demilitarized_zone = yes } 42 = { is_demilitarized_zone = yes } } NOT = { has_war_with = KGA } }
+		fire_only_once = no
+		days_remove = 5
+		days_re_enable = 90
+		custom_cost_text = extend_occupation_deadline_cost_tt
+		custom_cost_trigger = { has_political_power > 69.9 }
+		complete_effect = {
+			hidden_effect = { add_political_power = -70 }
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = bcf_occupation_deadline
+				days = 60
+			}
+		}
+	}
+	
+	#主动归还占领区
+	bcf_return_occupation_region = {
+		available = { BCF = { exists = yes } KGA = { exists = yes } }
+		allowed = { tag = BCF }
+		visible = { OR = { AND = { is_ai = no is_debug = yes } 50 = { is_demilitarized_zone = yes } 42 = { is_demilitarized_zone = yes } } NOT = { has_war_with = KGA } }
+		fire_only_once = yes
+		days_remove = 10
+		complete_effect = {
+		}
+		remove_effect = {
+			add_political_power = var:days_mission_timeout@bcf_occupation_deadline
+			KGA = {
+				country_event = { id = kuromorimine.49 days = 1 }
+			}
+		}
+	}
+}

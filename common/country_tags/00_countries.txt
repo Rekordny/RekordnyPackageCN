@@ -47,3 +47,4 @@ VAT = "conutries/VAT.txt"
 BWA = "countries/BellWall.txt"
 
 WKG = "countries/WestKureojiGrona.txt"
+IPH = "countries/IndependentProvinceofHannover.txt"

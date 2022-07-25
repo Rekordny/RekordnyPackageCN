@@ -10,7 +10,7 @@ state={
 	state_category = rural
 	
 	history={
-		controller = BON
+		owner = BON
 		victory_points = {
 			10493 1 #Valmiera
 		}

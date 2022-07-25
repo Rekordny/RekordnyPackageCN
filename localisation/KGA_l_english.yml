@@ -640,8 +640,8 @@
  kga_tooltip35:0 "30£GFX_pol_power_icon 10£GFX_army_experience"
  kga_tooltip35_blocked:0 "§R30§! £GFX_pol_power_icon §R10§! £GFX_army_experience"
  kga_tooltip36:0 "§Y The less debt has, the better this national policy brings§!"
- kga_tooltip37:0 "100£GFX_pol_power_icon 20£GFX_army_experience 120000£infantry_equipment_text_icon"
- kga_tooltip37_blocked:0 "§R100§! £GFX_pol_power_icon §R20§! £GFX_army_experience §R120000§! £infantry_equipment_text_icon"
+ kga_tooltip37:0 "100£GFX_pol_power_icon 20£GFX_army_experience 10000£infantry_equipment_text_icon"
+ kga_tooltip37_blocked:0 "§R100§! £GFX_pol_power_icon §R20§! £GFX_army_experience §R10000§! £infantry_equipment_text_icon"
  kga_tooltip38:0 "30£GFX_pol_power_icon 200£GFX_money"
  kga_tooltip38_blocked:0 "§R30§! £GFX_pol_power_icon §R200§! £GFX_money"
  

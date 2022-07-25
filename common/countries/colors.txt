@@ -225,6 +225,11 @@ WKG = {
 	color_ui = rgb { 179 157 95 }
 }
 
+IPH = {
+	color = rgb { 10 100 70 }
+	color_ui = rgb { 10 100 70 }
+}
+
 S01 = {
 	color = rgb { 2 97 71 }
 	color_ui = rgb { 2 97 71 }
