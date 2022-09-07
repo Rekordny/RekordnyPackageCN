@@ -18,7 +18,6 @@ ideas = {
 			}
 		}
 		#肃清东方威胁
-		#2333333333333
 		AQU_eliminate_threat_from_east = {
 			allowed = {
 				B02 = {
