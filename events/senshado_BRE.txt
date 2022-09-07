@@ -1,4 +1,5 @@
 add_namespace = BRE
+add_namespace = BRE_MTG
 #布列塔尼之星
 country_event = {
 	id = BRE.1
@@ -54,7 +55,7 @@ country_event = {
 		}
 	}
 }
-
+#布列塔尼的现状
 country_event = {
 	id = BRE.2
 	title = BRE.2.t
@@ -63,7 +64,7 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-		name = BRE.1.a
+		name = BRE.2.a
 		##国策
 		add_political_power = 100
 		30 = {
@@ -79,7 +80,7 @@ country_event = {
 
 	}
 	option = {
-		name = BRE.1.b
+		name = BRE.2.b
 		##国策
 		add_political_power = -50
 		30 = {
@@ -94,7 +95,7 @@ country_event = {
 		}
 	}
 }
-
+#小不列颠
 country_event = {
 	id = BRE.3
 	title = BRE.3.t
@@ -103,10 +104,12 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
+		name = BER.3.a
 		add_war_support = 0.05
 		add_manpower = 50000
 	}
 }
+#首都问题
 country_event = {
 	id = BRE.4
 	title = BRE.4.t
@@ -115,6 +118,7 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
+		name = BRE.4.a
 		30 = {
 			add_victory_points = {
 				province = 11465
@@ -122,13 +126,45 @@ country_event = {
 			}
 		}
 		set_capital = 30
-		##认同度
+		set_temp_variable = {
+			BRE_acceptance_change_bri = 2
+		}
+		set_temp_variable = {
+			BRE_acceptance_change_eng = -1
+		}
+		set_temp_variable = {
+			BRE_acceptance_change_sco = -1
+		}
+		set_temp_variable = {
+			BRE_acceptance_change_wal = -1
+		}
+		set_temp_variable = {
+			BRE_acceptance_change_ire = -1
+		}
+		Update_BRE_acceptance_system = yes
 	}
 	option = {
+		name = BRE.4.b
 		set_capital = 126
-		##认同度
+		set_temp_variable = {
+			BRE_acceptance_change_bri = -1
+		}
+		set_temp_variable = {
+			BRE_acceptance_change_eng = 2
+		}
+		set_temp_variable = {
+			BRE_acceptance_change_sco = -1
+		}
+		set_temp_variable = {
+			BRE_acceptance_change_wal = -1
+		}
+		set_temp_variable = {
+			BRE_acceptance_change_ire = -1
+		}
+		Update_BRE_acceptance_system = yes
 	}
 }
+#语言问题
 country_event = {
 	id = BRE.5
 	title = BRE.5.t
@@ -137,16 +173,20 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-		##国策
+		name = BRE.5.a
+		complete_national_focus = BRE_english
 	}
 	option = {
-		##国策
+		name = BRE.5.b
+		complete_national_focus = BRE_multiculturalism
 		set_country_flag = stg_revolt
 	}
 	option = {
-		##国策
+		name = BRE.5.c
+		complete_national_focus = BRE_franch
 	}
 }
+#新共和国的诞生
 country_event = {
 	id = BRE.6
 	title = BRE.6.t
@@ -155,6 +195,7 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
+		name = BRE.6.a
 		add_stability = 0.25
 		add_manpower = 25000
 		random_owned_state = {
@@ -199,6 +240,7 @@ country_event = {
 		set_capital = 16
 	}
 }
+#英格兰地区的骚动
 country_event = {
 	id = BRE.7
 	title = BRE.7.t
@@ -220,6 +262,7 @@ country_event = {
 		set_country_flag = stg_revolt_prepare
 	}
 }
+#破获大规模叛乱计划
 country_event = {
 	id = BRE.8
 	title = BRE.8.t
@@ -233,11 +276,12 @@ country_event = {
 		days = 25
 	}
 	option = {
-		name = BRE.7.a
+		name = BRE.8.a
 		add_war_support = 0.10
 		set_country_flag = stg_revolt_start
 	}
 }
+#约克叛乱
 country_event = {
 	id = BRE.9
 	title = BRE.9.t
@@ -251,7 +295,7 @@ country_event = {
 		days = 30
 	}
 	option = {
-		name = BRE.7.a
+		name = BRE.9.a
 		add_ideas = BRE_supress_revolt
 		hidden_effect = {
 			S01 = {
@@ -423,6 +467,7 @@ country_event = {
 		}
 	}
 }
+#叛乱结束
 country_event = {
 	id = BRE.10
 	title = BRE.10.t
@@ -439,7 +484,7 @@ country_event = {
 		days = 1
 	}
 	option = {
-		name = BRE.7.a
+		name = BRE.10.a
 		remove_ideas = BRE_supress_revolt
 		clr_country_flag = stg_revolt
 		clr_country_flag = stg_revolt_prepare
@@ -456,6 +501,7 @@ country_event = {
 		}
 	}
 }
+#说漏嘴了？
 country_event = {
 	id = BRE.11
 	title = BRE.11.t
@@ -464,12 +510,278 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-		name = BRE.7.a
+		name = BRE.11.a
 		add_political_power = -10
 	}
 	option = {
-		name = BRE.7.b
+		name = BRE.11.b
 		add_stability = 0.05
 		add_war_support = 0.05
+	}
+}
+#布列塔尼要求特权
+country_event = {
+	id = BRE.12
+	title = BRE.12.t
+	desc = BRE.12.d
+	picture = GFX_report_event_german_speech
+	trigger = {
+		has_global_flag = BRE_accpetance_system_was_enabled
+	}
+	mean_time_to_happen = {
+		days = 60
+	}
+	option = {
+		name = BRE.12.a
+		set_temp_variable = {
+			BRE_acceptance_change_bri = 1
+		}
+		Update_BRE_acceptance_system = yes
+		add_political_power = -50
+	}
+	option = {
+		name = BRE.12.b
+		set_temp_variable = {
+			BRE_acceptance_change_bri = -2
+		}
+		Update_BRE_acceptance_system = yes
+	}
+}
+#爱尔兰要求加强投资
+country_event = {
+	id = BRE.13
+	title = BRE.13.t
+	desc = BRE.13.d
+	picture = GFX_report_event_german_speech
+	trigger = {
+		has_global_flag = BRE_accpetance_system_was_enabled
+	}
+	mean_time_to_happen = {
+		days = 100
+	}
+	option = {
+		name = BRE.13.a
+		set_temp_variable = {
+			BRE_acceptance_change_ire = 1
+		}
+		Update_BRE_acceptance_system = yes
+		add_political_power = -80
+		random_owned_state = {
+			limit = {
+				is_core_of = root
+				OR = {
+					state = 113
+					state = 119
+					state = 134
+					state = 135
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+	}
+	option = {
+		name = BRE.13.b
+		set_temp_variable = {
+			BRE_acceptance_change_ire = -2
+		}
+		Update_BRE_acceptance_system = yes
+	}
+}
+#苏格兰要求提高自治
+country_event = {
+	id = BRE.14
+	title = BRE.14.t
+	desc = BRE.14.d
+	picture = GFX_report_event_german_speech
+	fire_only_once = yes
+	trigger = {
+		has_global_flag = BRE_accpetance_system_was_enabled
+	}
+	mean_time_to_happen = {
+		days = 100
+	}
+	option = {
+		name = BRE.14.a
+		set_temp_variable = {
+			BRE_acceptance_change_sco = -1
+		}
+		Update_BRE_acceptance_system = yes
+		add_political_power = 50
+		add_stability = 0.05
+	}
+	option = {
+		name = BRE.14.b
+		set_temp_variable = {
+			BRE_acceptance_change_sco = 2
+		}
+		Update_BRE_acceptance_system = yes
+		set_country_flag = BRE-sco_request_approved
+		136 = {
+			add_dynamic_modifier = {
+				modifier = BRE_scotland_auto
+			}
+		}
+		133 = {
+			add_dynamic_modifier = {
+				modifier = BRE_scotland_auto
+			}
+		}
+		120 = {
+			add_dynamic_modifier = {
+				modifier = BRE_scotland_auto
+			}
+		}
+		121 = {
+			add_dynamic_modifier = {
+				modifier = BRE_scotland_auto
+			}
+		}
+	}
+}
+#BCF：加入大不列颠尼亚?
+country_event = {
+	id = BRE_MTG.1
+	title = BRE_MTG.1.t
+	desc = BRE_MTG.1.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = BRE_MTG.1.a
+		BRE = {
+			country_event = {
+				id = BRE_MTG.2
+			}
+		}
+	}
+	option = {
+		name = BRE_MTG.1.b
+		BRE = {
+			country_event = {
+				id = BRE_MTG.3
+			}
+		}
+	}
+}
+#BCF同意了
+country_event = {
+	id = BRE_MTG.2
+	title = BRE_MTG.2.t
+	desc = BRE_MTG.2.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = BRE.7.a
+		BRE = {
+			create_faction = "大不列颠尼亚"
+		}
+		BCF = {
+			add_to_faction = BRE
+		}
+		ANZ = {
+			country_event = {
+				id = BRE_MTG.4
+				days = 7
+			}
+		}
+		KGA = {
+			country_event = {
+				id = BRE_MTG.4
+				days = 7
+			}
+		}
+	}
+}
+#BCF拒绝了
+country_event = {
+	id = BRE_MTG.3
+	title = BRE_MTG.3.t
+	desc = BRE_MTG.3.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = BRE.7.a
+		BRE = {
+			declare_war_on = {
+				target = BCF
+			}
+		}
+	}
+	option = {
+		name = BRE.7.a
+	}
+}
+#一个新崛起的强权
+country_event = {
+	id = BRE_MTG.4
+	title = BRE_MTG.4.t
+	desc = BRE_MTG.4.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	option = {
+		name = BRE.7.a
+		ai_chance = {
+			factor = 1
+		}
+		declare_war_on = {
+			target = BCF
+		}
+		if = {
+			limit = {
+				BRE = {
+					NOT = {
+						has_active_mission = BRE_mission_protect_france
+					}
+				}
+			}
+			BRE = {
+				activate_mission = BRE_mission_protect_france
+			}
+		}
+		if = {
+			limit = {
+				BRE = {
+					NOT = {
+						has_idea = BRE_protect_france
+					}
+				}
+			}
+			BRE = {
+				add_ideas = BRE_protect_france
+			}
+		}
+	}
+	option = {
+		name = BRE.7.a
+		if = {
+			limit = {
+				tag = ANZ
+			}
+			set_global_flag = BRE_ANZ_refuse
+		}
+		if = {
+			limit = {
+				tag = KGA
+			}
+			set_global_flag = BRE_KGA_refuse
+		}
+	}
+}
+#黑森峰与安齐奥拒绝干涉
+country_event = {
+	id = BRE_MTG.5
+	title = BRE_MTG.5.t
+	desc = BRE_MTG.5.d
+	picture = GFX_report_event_german_speech
+	fire_only_once = yes
+	trigger = {
+		has_global_flag = BRE_ANZ_refuse
+		has_global_flag = BRE_KGA_refuse
+	}
+	option = {
+		name = BRE.7.a
 	}
 }

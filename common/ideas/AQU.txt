@@ -1,0 +1,143 @@
+ideas = {
+	country = {
+		#肃清北方威胁
+		AQU_eliminate_threat_from_north = {
+			allowed = {
+				has_war_with = BRE
+				BRE = {
+					exists = yes
+				}
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			targeted_modifier = {
+				tag = BRE
+				army_attack_factor = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		#肃清东方威胁
+		AQU_eliminate_threat_from_east = {
+			allowed = {
+				B02 = {
+					exists = yes
+				}
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			targeted_modifier = {
+				tag = B02
+				army_attack_factor = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		#复兴BC派
+		AQU_revival_BC_party = {
+			allowed = {
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				facism_drift = 0.1
+				experience_gain_army_factor = 0.1
+			}
+		}
+		#波尔多的教诲
+		AQU_teach_from_bordeaux = {
+			allowed = {
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				war_support_factor = 0.15
+				justify_war_goal_time = -0.25
+			}
+		}
+		#波尔多之治1
+		AQU_rule_from_bordeaux_1 = {
+			allowed = {
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.15
+				#税收0.1
+			}
+		}
+		#波尔多之治2
+		AQU_rule_from_bordeaux_2 = {
+			allowed = {
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.15
+				#税收0.15
+				industrial_capacity_factory = 0.1
+				army_attack_factor = 0.05
+			}
+		}
+		#没入历史的学院
+		#开局存在
+		AQU_academic_drop_into_history = {
+			allowed = {
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			rule = {
+				can_join_factions = no
+			}
+			modifier = {
+				experience_gain_army_factor = -0.25
+				land_doctrine_cost_factor = 0.4
+				political_power_factor = -0.25
+			}
+		}
+		#高山上的三色旗
+		AQU_tricolor_flag_on_mountain= {
+			allowed = {
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				special_forces_attack_factor = 0.15
+				special_forces_defence_factor = 0.15
+				special_forces_cap = 0.05
+			}
+		}
+		#波尔多的战车道
+		AQU_bordeaux_senshado= {
+			allowed = {
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				army_attack_factor = 0.05
+				land_doctrine_cost_factor = -0.05
+			}
+		}
+		#不完全的工业化
+		AQU_incomplete_industrialization = {
+			allowed = {
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_factory_efficiency_gain_factor = -0.25
+				production_factory_max_efficiency_factor = -0.1
+				conscription_factor = -0.01
+			}
+		}
+	}
+}

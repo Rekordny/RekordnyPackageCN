@@ -32,3 +32,12 @@ JHS_snow_canteen = {
 	production_factory_efficiency_gain_factor = JHS_snow_canteen_efficiency_gain
 	production_factory_max_efficiency_factor = JHS_snow_canteen_max_effciency
 }
+
+BRE_scotland_auto = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_SOV_second_five_year_plan
+	local_building_slots_factor = -0.25
+	local_manpower = -0.25
+}

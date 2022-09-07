@@ -160,7 +160,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = bcfreedom.3.d
+		name = bcfreedom.3.e
 		29 = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -191,7 +191,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = bcfreedom.3.e
+		name = bcfreedom.3.f
 		add_political_power = 150
 		add_stability = -0.15
 		hidden_effect = {
@@ -328,7 +328,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = bcfreedom.6.d
+		name = bcfreedom.6.e
 		army_experience = 10
 		navy_experience = 10
 		air_experience = 10
@@ -635,7 +635,6 @@ country_event = {
 		BCF = {
 			country_event = bcfreedom.18
 		}
-		custom_effect_tooltip = BCF_tooltip35
 	}
 	option = {
 		name = bcfreedom.161.b
@@ -851,16 +850,16 @@ country_event = {
 	option = {
 		name = bcfreedom_andou.1.a
 		add_stability = 0.05
-		custom_effect_tooltip = bcf_tooltip30
-		add_to_variable = {
-			bcf_andou_support = 4
+		set_temp_variable = {
+			andou_support_change = 4
 		}
-		add_to_variable = {
-			bcf_oshida_support = -2
+		set_temp_variable = {
+			oshida_support_change = -2
 		}
-		add_to_variable = {
-			bcf_marie_support = -2
+		set_temp_variable = {
+			marie_support_change = -2
 		}
+		Update_BCF_party_support = yes
 	}
 	option = {
 		name = bcfreedom_andou.1.b
@@ -869,16 +868,16 @@ country_event = {
 	option = {
 		name = bcfreedom_andou.1.c
 		add_stability = 0.01
-		custom_effect_tooltip = bcf_tooltip31
-		add_to_variable = {
-			bcf_andou_support = 2
+		set_temp_variable = {
+			andou_support_change = 2
 		}
-		add_to_variable = {
-			bcf_oshida_support = -1
+		set_temp_variable = {
+			oshida_support_change = -1
 		}
-		add_to_variable = {
-			bcf_marie_support = -1
+		set_temp_variable = {
+			marie_support_change = -1
 		}
+		Update_BCF_party_support = yes
 	}
 }
 
@@ -915,7 +914,6 @@ country_event = {
 	}
 	option = {
 		name = bcfreedom_andou.2.a
-		custom_effect_tooltip = bcf_tooltip32
 		if = {
 			limit = {
 				has_country_leader = {
@@ -923,9 +921,10 @@ country_event = {
 					ruling_only = yes
 				}
 			}
-			add_to_variable = {
-				bcf_oshida_support = -5
+			set_temp_variable = {
+				oshida_support_change = -5
 			}
+			Update_BCF_party_support = yes
 		}
 		else_if = {
 			limit = {
@@ -934,18 +933,19 @@ country_event = {
 					ruling_only = yes
 				}
 			}
-			add_to_variable = {
-				bcf_marie_support = -5
+			set_temp_variable = {
+				marie_support_change = -5
 			}
+			Update_BCF_party_support = yes
 		}
-		add_to_variable = {
-			bcf_andou_support = 5
+		set_temp_variable = {
+			andou_support_change = 5
 		}
+		Update_BCF_party_support = yes
 	}
 	option = {
 		name = bcfreedom_andou.2.b
 		add_political_power = -20
-		custom_effect_tooltip = bcf_tooltip33
 		if = {
 			limit = {
 				has_country_leader = {
@@ -953,9 +953,10 @@ country_event = {
 					ruling_only = yes
 				}
 			}
-			add_to_variable = {
-				bcf_oshida_support = 6
+			set_temp_variable = {
+				oshida_support_change = 6
 			}
+			Update_BCF_party_support = yes
 		}
 		if = {
 			limit = {
@@ -964,13 +965,15 @@ country_event = {
 					ruling_only = yes
 				}
 			}
-			add_to_variable = {
-				bcf_marie_support = 6
+			set_temp_variable = {
+				marie_support_change = 6
 			}
+			Update_BCF_party_support = yes
 		}
-		add_to_variable = {
-			bcf_andou_support = -6
+		set_temp_variable = {
+			andou_support_change = -6
 		}
+		Update_BCF_party_support = yes
 	}
 }
 
@@ -1007,7 +1010,6 @@ country_event = {
 	}
 	option = {
 		name = bcfreedom_andou.3.a
-		custom_effect_tooltip = bcf_tooltip34_1
 		if = {
 			limit = {
 				has_country_leader = {
@@ -1015,9 +1017,10 @@ country_event = {
 					ruling_only = yes
 				}
 			}
-			add_to_variable = {
-				bcf_oshida_support = -3
+			set_temp_variable = {
+				oshida_support_change = -3
 			}
+			Update_BCF_party_support = yes
 		}
 		else_if = {
 			limit = {
@@ -1026,13 +1029,15 @@ country_event = {
 					ruling_only = yes
 				}
 			}
-			add_to_variable = {
-				bcf_marie_support = -3
+			set_temp_variable = {
+				marie_support_change = -3
 			}
+			Update_BCF_party_support = yes
 		}
-		add_to_variable = {
-			bcf_andou_support = 3
+		set_temp_variable = {
+			andou_support_change = 3
 		}
+		Update_BCF_party_support = yes
 	}
 }
 
@@ -1069,7 +1074,6 @@ country_event = {
 	}
 	option = {
 		name = bcfreedom_andou.4.a
-		custom_effect_tooltip = bcf_tooltip34_2
 		if = {
 			limit = {
 				has_country_leader = {
@@ -1077,9 +1081,10 @@ country_event = {
 					ruling_only = yes
 				}
 			}
-			add_to_variable = {
-				bcf_oshida_support = -2
+			set_temp_variable = {
+				oshida_support_change = -2
 			}
+			Update_BCF_party_support = yes
 		}
 		else_if = {
 			limit = {
@@ -1088,13 +1093,15 @@ country_event = {
 					ruling_only = yes
 				}
 			}
-			add_to_variable = {
-				bcf_marie_support = -2
+			set_temp_variable = {
+				marie_support_change = -2
 			}
+			Update_BCF_party_support = yes
 		}
-		add_to_variable = {
-			bcf_andou_support = 2
+		set_temp_variable = {
+			andou_support_change = 2
 		}
+		Update_BCF_party_support = yes
 		add_political_power = 15
 	}
 	option = {
@@ -1137,16 +1144,16 @@ country_event = {
 	}
 	option = {
 		name = bcfreedom_andou.5.a
-		custom_effect_tooltip = bcf_tooltip34_3
-		add_to_variable = {
-			bcf_oshida_support = -3
+		set_temp_variable = {
+			oshida_support_change = -3
 		}
-		add_to_variable = {
-			bcf_marie_support = -3
+		set_temp_variable = {
+			marie_support_change = -3
 		}
-		add_to_variable = {
-			bcf_andou_support = 6
+		set_temp_variable = {
+			andou_support_change = 6
 		}
+		Update_BCF_party_support = yes
 		add_political_power = -25
 		army_experience = 25
 		add_equipment_to_stockpile = {
@@ -1156,16 +1163,16 @@ country_event = {
 	}
 	option = {
 		name = bcfreedom_andou.5.b
-		custom_effect_tooltip = bcf_tooltip34_4
-		add_to_variable = {
-			bcf_oshida_support = -5
+		set_temp_variable = {
+			oshida_support_change = -5
 		}
-		add_to_variable = {
-			bcf_marie_support = -5
+		set_temp_variable = {
+			marie_support_change = -5
 		}
-		add_to_variable = {
-			bcf_andou_support = 10
+		set_temp_variable = {
+			andou_support_change = 10
 		}
+		Update_BCF_party_support = yes
 		add_political_power = -75
 		army_experience = 60
 		add_equipment_to_stockpile = {
@@ -1203,19 +1210,20 @@ country_event = {
 			character = BCF_marie
 			ruling_only = yes
 		}
-		check_variable = {
-			bcf_marie_support > 70
+		set_temp_variable = {
+			BCF_marie_required_support = 70
 		}
+		check_BCF_party_support_amount = yes
 	}
 	option = {
 		name = bcfreedom_andou.6.a
-		custom_effect_tooltip = bcf_tooltip34_5
-		add_to_variable = {
-			bcf_marie_support = 5
+		set_temp_variable = {
+			marie_support_change = 5
 		}
-		add_to_variable = {
-			bcf_andou_support = -5
+		set_temp_variable = {
+			andou_support_change = -5
 		}
+		Update_BCF_party_support = yes
 		add_political_power = -15
 		set_country_flag = BCF_ANDOU_SUPPORT_US
 	}
@@ -1261,30 +1269,30 @@ country_event = {
 	option = {
 		name = bcfreedom_marie.1.a
 		add_stability = 0.02
-		custom_effect_tooltip = bcf_tooltip34_6
-		add_to_variable = {
-			bcf_oshida_support = -1
+		set_temp_variable = {
+			oshida_support_change = -1
 		}
-		add_to_variable = {
-			bcf_marie_support = 2
+		set_temp_variable = {
+			marie_support_change = 2
 		}
-		add_to_variable = {
-			bcf_andou_support = -1
+		set_temp_variable = {
+			andou_support_change = -1
 		}
+		Update_BCF_party_support = yes
 	}
 	option = {
 		name = bcfreedom_marie.1.b
 		add_stability = 0.05
-		custom_effect_tooltip = bcf_tooltip34_7
-		add_to_variable = {
-			bcf_oshida_support = -2
+		set_temp_variable = {
+			oshida_support_change = -2
 		}
-		add_to_variable = {
-			bcf_marie_support = 4
+		set_temp_variable = {
+			marie_support_change = 4
 		}
-		add_to_variable = {
-			bcf_andou_support = -2
+		set_temp_variable = {
+			andou_support_change = -2
 		}
+		Update_BCF_party_support = yes
 	}
 	option = {
 		name = bcfreedom_marie.1.c
@@ -1326,7 +1334,6 @@ country_event = {
 	}
 	option = {
 		name = bcfreedom_marie.2.a
-		custom_effect_tooltip = bcf_tooltip34_8
 		if = {
 			limit = {
 				NOT = {
@@ -1335,29 +1342,29 @@ country_event = {
 			}
 			add_ideas = BCF_marie
 		}
-		add_to_variable = {
-			bcf_oshida_support = -3
+		set_temp_variable = {
+			oshida_support_change = -3
 		}
-		add_to_variable = {
-			bcf_marie_support = 6
+		set_temp_variable = {
+			marie_support_change = 6
 		}
-		add_to_variable = {
-			bcf_andou_support = -3
+		set_temp_variable = {
+			andou_support_change = -3
 		}
+		Update_BCF_party_support = yes
 	}
 	option = {
 		name = bcfreedom_marie.2.b
-		custom_effect_tooltip = bcf_tooltip34_9
 		remove_ideas = BCF_marie
 		add_political_power = -60
-		add_to_variable = {
-			bcf_oshida_support = 10
+		set_temp_variable = {
+			oshida_support_change = 10
 		}
-		add_to_variable = {
-			bcf_marie_support = -20
+		set_temp_variable = {
+			marie_support_change = -20
 		}
-		add_to_variable = {
-			bcf_andou_support = 10
+		set_temp_variable = {
+			andou_support_change = 10
 		}
 		set_country_flag = BCF_MARY_GAVE_UP_STUDENT_PRESIDENT
 		country_event = {
@@ -1409,16 +1416,16 @@ country_event = {
 	}
 	option = {
 		name = bcfreedom_marie.4.a
-		custom_effect_tooltip = bcf_tooltip34_9
-		add_to_variable = {
-			bcf_oshida_support = 10
+		set_temp_variable = {
+			oshida_support_change = 10
 		}
-		add_to_variable = {
-			bcf_marie_support = -20
+		set_temp_variable = {
+			marie_support_change = -20
 		}
-		add_to_variable = {
-			bcf_andou_support = 10
+		set_temp_variable = {
+			andou_support_change = 10
 		}
+		Update_BCF_party_support = yes
 		add_political_power = 50
 		set_country_flag = BCF_CONTROL_STUDENT_GOV
 	}
@@ -1458,7 +1465,6 @@ country_event = {
 	}
 	option = {
 		name = bcfreedom_marie.5.a
-		custom_effect_tooltip = bcf_tooltip34_10
 		if = {
 			limit = {
 				has_country_leader = {
@@ -1466,9 +1472,10 @@ country_event = {
 					ruling_only = yes
 				}
 			}
-			add_to_variable = {
-				bcf_oshida_support = -1
+			set_temp_variable = {
+				oshida_support_change = -1
 			}
+			Update_BCF_party_support = yes
 		}
 		else_if = {
 			limit = {
@@ -1477,13 +1484,15 @@ country_event = {
 					ruling_only = yes
 				}
 			}
-			add_to_variable = {
-				bcf_andou_support = -1
+			set_temp_variable = {
+				andou_support_change = -1
 			}
+			Update_BCF_party_support = yes
 		}
-		add_to_variable = {
-			bcf_marie_support = 1
+		set_temp_variable = {
+			marie_support_change = 1
 		}
+		Update_BCF_party_support = yes
 	}
 }
 
@@ -1523,7 +1532,6 @@ country_event = {
 	}
 	option = {
 		name = bcfreedom_marie.6.a
-		custom_effect_tooltip = bcf_tooltip34_11
 		if = {
 			limit = {
 				has_country_leader = {
@@ -1531,9 +1539,10 @@ country_event = {
 					ruling_only = yes
 				}
 			}
-			add_to_variable = {
-				bcf_oshida_support = -4
+			set_temp_variable = {
+				oshida_support_change = -4
 			}
+			Update_BCF_party_support = yes
 		}
 		else_if = {
 			limit = {
@@ -1542,13 +1551,15 @@ country_event = {
 					ruling_only = yes
 				}
 			}
-			add_to_variable = {
-				bcf_andou_support = -4
+			set_temp_variable = {
+				andou_support_change = -4
 			}
+			Update_BCF_party_support = yes
 		}
-		add_to_variable = {
-			bcf_marie_support = 4
+		set_temp_variable = {
+			marie_support_change = 4
 		}
+		Update_BCF_party_support = yes
 	}
 }
 
@@ -1578,24 +1589,25 @@ country_event = {
 					character = BCF_andou
 					ruling_only = yes
 				}
-				check_variable = {
-					bcf_andou_support > 60
+				set_temp_variable = {
+					BCF_andou_required_support > 60
 				}
+				check_BCF_party_support_amount = yes
 			}
 			AND = {
 				has_country_leader = {
 					character = BCF_oshida
 					ruling_only = yes
 				}
-				check_variable = {
-					bcf_oshida_support > 60
+				set_temp_variable = {
+					bcf_marie_required_support = 60
 				}
+				check_BCF_party_support_amount = yes
 			}
 		}
 	}
 	option = {
 		name = bcfreedom_marie.7.a
-		custom_effect_tooltip = bcf_tooltip34_12
 		add_stability = 0.05
 		add_political_power = 50
 		if = {
@@ -1605,9 +1617,10 @@ country_event = {
 					ruling_only = yes
 				}
 			}
-			add_to_variable = {
-				bcf_oshida_support = 5
+			set_temp_variable = {
+				oshida_support_change = 5
 			}
+			Update_BCF_party_support = yes
 		}
 		else_if = {
 			limit = {
@@ -1616,13 +1629,15 @@ country_event = {
 					ruling_only = yes
 				}
 			}
-			add_to_variable = {
-				bcf_andou_support = 5
+			set_temp_variable = {
+				andou_support_change = 5
 			}
+			Update_BCF_party_support = yes
 		}
-		add_to_variable = {
-			bcf_marie_support = -5
+		set_temp_variable = {
+			marie_support_change = -5
 		}
+		Update_BCF_party_support = yes
 		set_country_flag = BCF_MARY_SUPPORT_US
 	}
 }
@@ -1663,18 +1678,18 @@ country_event = {
 	}
 	option = {
 		name = bcfreedom_marie.8.a
-		custom_effect_tooltip = bcf_tooltip34_13
 		add_political_power = -30
 		army_experience = 30
-		add_to_variable = {
-			bcf_oshida_support = -4
+		set_temp_variable = {
+			oshida_support_change = -4
 		}
-		add_to_variable = {
-			bcf_andou_support = -4
+		set_temp_variable = {
+			andou_support_change = -4
 		}
-		add_to_variable = {
-			bcf_marie_support = 8
+		set_temp_variable = {
+			marie_support_change = 8
 		}
+		Update_BCF_party_support = yes
 		add_equipment_to_stockpile = {
 			type = light_tank_chassis
 			amount = 20
@@ -1690,18 +1705,18 @@ country_event = {
 	}
 	option = {
 		name = bcfreedom_marie.8.b
-		custom_effect_tooltip = bcf_tooltip34_14
 		add_political_power = -100
 		army_experience = 75
-		add_to_variable = {
-			bcf_oshida_support = -8
+		set_temp_variable = {
+			oshida_support_change = -8
 		}
-		add_to_variable = {
-			bcf_andou_support = -8
+		set_temp_variable = {
+			andou_support_change = -8
 		}
-		add_to_variable = {
-			bcf_marie_support = 16
+		set_temp_variable = {
+			marie_support_change = 16
 		}
+		Update_BCF_party_support = yes
 		add_equipment_to_stockpile = {
 			type = light_tank_chassis
 			amount = 60
@@ -1758,26 +1773,26 @@ country_event = {
 	option = {
 		name = bcfreedom_oshida.1.a
 		add_stability = -0.01
-		custom_effect_tooltip = bcf_tooltip34_15
-		add_to_variable = {
-			bcf_oshida_support = -2
+		set_temp_variable = {
+			oshida_support_change = -2
 		}
-		add_to_variable = {
-			bcf_andou_support = 2
+		set_temp_variable = {
+			andou_support_change = 2
 		}
+		Update_BCF_party_support = yes
 	}
 	option = {
 		name = bcfreedom_oshida.1.b
-		custom_effect_tooltip = bcf_tooltip34_16
-		add_to_variable = {
-			bcf_oshida_support = -4
+		set_temp_variable = {
+			oshida_support_change = -4
 		}
-		add_to_variable = {
-			bcf_marie_support = 2
+		set_temp_variable = {
+			marie_support_change = 2
 		}
-		add_to_variable = {
-			bcf_andou_support = 2
+		set_temp_variable = {
+			andou_support_change = 2
 		}
+		Update_BCF_party_support = yes
 	}
 	option = {
 		name = bcfreedom_oshida.1.c
@@ -1821,7 +1836,6 @@ country_event = {
 	}
 	option = {
 		name = bcfreedom_oshida.2.a
-		custom_effect_tooltip = bcf_tooltip34_17
 		if = {
 			limit = {
 				has_country_leader = {
@@ -1829,9 +1843,10 @@ country_event = {
 					ruling_only = yes
 				}
 			}
-			add_to_variable = {
-				bcf_marie_support = -6
+			set_temp_variable = {
+				marie_support_change = -6
 			}
+			Update_BCF_party_support = yes
 		}
 		else_if = {
 			limit = {
@@ -1840,13 +1855,15 @@ country_event = {
 					ruling_only = yes
 				}
 			}
-			add_to_variable = {
-				bcf_andou_support = -6
+			set_temp_variable = {
+				andou_support_change = -6
 			}
+			Update_BCF_party_support = yes
 		}
-		add_to_variable = {
-			bcf_oshida_support = 6
+		set_temp_variable = {
+			oshida_support_change = 6
 		}
+		Update_BCF_party_support = yes
 	}
 }
 
@@ -1883,16 +1900,16 @@ country_event = {
 	}
 	option = {
 		name = bcfreedom_oshida.3.a
-		custom_effect_tooltip = bcf_tooltip34_18
-		add_to_variable = {
-			bcf_marie_support = 4
+		set_temp_variable = {
+			marie_support_change = 4
 		}
-		add_to_variable = {
-			bcf_oshida_support = -8
+		set_temp_variable = {
+			oshida_support_change = -8
 		}
-		add_to_variable = {
-			bcf_andou_support = 4
+		set_temp_variable = {
+			andou_support_change = 4
 		}
+		Update_BCF_party_support = yes
 	}
 }
 
@@ -1929,7 +1946,6 @@ country_event = {
 	}
 	option = {
 		name = bcfreedom_oshida.4.a
-		custom_effect_tooltip = bcf_tooltip34_19
 		if = {
 			limit = {
 				has_country_leader = {
@@ -1937,9 +1953,10 @@ country_event = {
 					ruling_only = yes
 				}
 			}
-			add_to_variable = {
-				bcf_marie_support = -5
+			set_temp_variable = {
+				marie_support_change = -5
 			}
+			Update_BCF_party_support = yes
 		}
 		else_if = {
 			limit = {
@@ -1948,13 +1965,15 @@ country_event = {
 					ruling_only = yes
 				}
 			}
-			add_to_variable = {
-				bcf_andou_support = -5
+			set_temp_variable = {
+				andou_support_change = -5
 			}
+			Update_BCF_party_support = yes
 		}
-		add_to_variable = {
-			bcf_oshida_support = 5
+		set_temp_variable = {
+			oshida_support_change = 5
 		}
+		Update_BCF_party_support = yes
 		add_equipment_to_stockpile = {
 			type = heavy_tank_chassis
 			amount = 100
@@ -1988,22 +2007,23 @@ country_event = {
 			character = BCF_marie
 			ruling_only = yes
 		}
-		check_variable = {
-			bcf_marie_support > 70
+		set_temp_variable = {
+			BCF_marie_required_support = 70
 		}
+		check_BCF_party_support_amount = yes
 		NOT = {
 			has_country_flag = BCF_OSHIDA_SUPPORT_US
 		}
 	}
 	option = {
 		name = bcfreedom_oshida.5.a
-		custom_effect_tooltip = bcf_tooltip34_20
-		add_to_variable = {
-			bcf_oshida_support = -5
+		set_temp_variable = {
+			oshida_support_change = -5
 		}
-		add_to_variable = {
-			bcf_marie_support = 5
+		set_temp_variable = {
+			marie_support_change = 5
 		}
+		Update_BCF_party_support = yes
 		add_political_power = 100
 		set_country_flag = BCF_OSHIDA_SUPPORT_US
 	}
@@ -2193,6 +2213,7 @@ country_event = {
 				transfer_state = 18
 				transfer_state = 29
 				hidden_effect = {
+					BCF_warlorder_add_basic_army = yes
 					recruit_character = BCF_andou
 					retire_ideology_leader = fascism
 					retire_ideology_leader = communism
@@ -2252,6 +2273,7 @@ country_event = {
 				transfer_state = 21
 				transfer_state = 32
 				hidden_effect = {
+					BCF_warlorder_add_basic_army = yes
 					recruit_character = BCF_oshida
 					recruit_character = BCF_Moule
 					retire_ideology_leader = fascism
@@ -2353,6 +2375,7 @@ country_event = {
 				transfer_state = 30
 				transfer_state = 14
 				hidden_effect = {
+					BCF_warlorder_add_basic_army = yes
 					recruit_character = BCF_asparagus
 					retire_ideology_leader = fascism
 					retire_ideology_leader = communism
@@ -2412,6 +2435,7 @@ country_event = {
 				transfer_state = 806
 				transfer_state = 31
 				hidden_effect = {
+					BCF_warlorder_add_basic_army = yes
 					recruit_character = BCF_bordeaux
 					retire_ideology_leader = fascism
 					retire_ideology_leader = communism
@@ -2468,6 +2492,7 @@ country_event = {
 				transfer_state = 24
 				transfer_state = 33
 				hidden_effect = {
+					BCF_warlorder_add_basic_army = yes
 					recruit_character = BCF_marie
 					recruit_character = BCF_isabe
 					recruit_character = BCF_sofue
@@ -2522,6 +2547,9 @@ country_event = {
 				}
 		}
 		MGC = {
+				hidden_effect = {
+					BCF_warlorder_add_basic_army = yes
+				}
 				set_country_flag = BCF_civil_war_lorder
 				transfer_state = 17
 				transfer_state = 28

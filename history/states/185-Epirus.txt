@@ -21,7 +21,7 @@ state={
 		victory_points = {
 			1205 1
 		}
-		owner = ANZ
+		owner = GRK
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -30,7 +30,7 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = ANZ
+		add_core_of = GRK
 	}
 
 	provinces = {

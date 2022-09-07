@@ -6,7 +6,7 @@ set_research_slots = 4
 set_convoys = 20
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = fascism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no

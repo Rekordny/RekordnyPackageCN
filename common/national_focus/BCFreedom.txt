@@ -764,9 +764,10 @@ focus_tree = {
 			factor = 25
 		}
 		available = {
-			check_variable = {
-				bcf_andou_support > 19
+			set_temp_variable = {
+				bcf_andou_required_support = 19
 			}
+			check_BCF_party_support_amount = yes
 		}
 		relative_position_id = BCF_sworn_in
 		prerequisite = { focus = BCF_sworn_in }
@@ -811,9 +812,10 @@ focus_tree = {
 			factor = 25
 		}
 		available = {
-			check_variable = {
-				bcf_andou_support > 29
+			set_temp_variable = {
+				bcf_andou_required_support = 29
 			}
+			check_BCF_party_support_amount = yes
 		}
 		relative_position_id = BCF_will_of_the_people
 		prerequisite = { focus = BCF_will_of_the_people }
@@ -847,9 +849,10 @@ focus_tree = {
 			factor = 25
 		}
 		available = {
-			check_variable = {
-				bcf_andou_support > 39 
+			set_temp_variable = {
+				bcf_andou_required_support = 39 
 			}
+			check_BCF_party_support_amount = yes
 		}
 		relative_position_id = BCF_france_supreme
 		prerequisite = { focus = BCF_france_supreme }
@@ -872,9 +875,10 @@ focus_tree = {
 			factor = 25
 		}
 		available = {
-			check_variable = {
-				bcf_andou_support > 49
+			set_temp_variable = {
+				bcf_andou_required_support = 49
 			}
+			check_BCF_party_support_amount = yes
 		}
 		relative_position_id = BCF_nationalism
 		prerequisite = { focus = BCF_nationalism }
@@ -900,9 +904,10 @@ focus_tree = {
 			factor = 25
 		}
 		available = {
-			check_variable = {
-				bcf_andou_support > 59
+			set_temp_variable = {
+				bcf_andou_required_support = 59
 			}
+			check_BCF_party_support_amount = yes
 		}
 		relative_position_id = BCF_never_surrounder
 		prerequisite = { focus = BCF_never_surrounder }
@@ -1190,9 +1195,10 @@ focus_tree = {
 			factor = 25
 		}
 		available = {
-			check_variable = {
-				bcf_andou_support > 29
+			set_temp_variable = {
+				bcf_andou_required_support = 29
 			}
+			check_BCF_party_support_amount = yes
 		}
 		relative_position_id = BCF_will_of_the_people
 		prerequisite = { focus = BCF_will_of_the_people }
@@ -1222,9 +1228,10 @@ focus_tree = {
 			factor = 25
 		}
 		available = {
-			check_variable = {
-				bcf_andou_support > 39
+			set_temp_variable = {
+				bcf_andou_required_support = 39
 			}
+			check_BCF_party_support_amount = yes
 		}
 		relative_position_id = BCF_memories_of_the_paris_commune
 		prerequisite = { focus = BCF_memories_of_the_paris_commune }
@@ -1246,9 +1253,10 @@ focus_tree = {
 			factor = 25
 		}
 		available = {
-			check_variable = {
-				bcf_andou_support > 49
+			set_temp_variable = {
+				bcf_andou_required_support = 49
 			}
+			check_BCF_party_support_amount = yes
 		}
 		relative_position_id = BCF_seven_hour_work
 		prerequisite = { focus = BCF_seven_hour_work }
@@ -1273,9 +1281,10 @@ focus_tree = {
 			factor = 25
 		}
 		available = {
-			check_variable = {
-				bcf_andou_support > 59
+			set_temp_variable = {
+				bcf_andou_required_support = 59
 			}
+			check_BCF_party_support_amount = yes
 		}
 		relative_position_id = BCF_raise_the_minimum_wage
 		prerequisite = { focus = BCF_raise_the_minimum_wage }
@@ -1308,9 +1317,10 @@ focus_tree = {
 			factor = 25
 		}
 		available = {
-			check_variable = {
-				bcf_andou_support > 39
+			set_temp_variable = {
+				bcf_andou_required_support = 39
 			}
+			check_BCF_party_support_amount = yes
 		}
 		relative_position_id = BCF_memories_of_the_paris_commune
 		prerequisite = { focus = BCF_memories_of_the_paris_commune }
@@ -1336,9 +1346,10 @@ focus_tree = {
 			factor = 25
 		}
 		available = {
-			check_variable = {
-				bcf_andou_support > 49
+			set_temp_variable = {
+				bcf_andou_required_support = 49
 			}
+			check_BCF_party_support_amount = yes
 		}
 		relative_position_id = BCF_rebuilding_the_left_alliance
 		prerequisite = { focus = BCF_rebuilding_the_left_alliance }
@@ -1360,9 +1371,10 @@ focus_tree = {
 			factor = 25
 		}
 		available = {
-			check_variable = {
-				bcf_andou_support > 59
+			set_temp_variable = {
+				bcf_andou_required_support = 59
 			}
+			check_BCF_party_support_amount = yes
 		}
 		relative_position_id = BCF_to_arms
 		prerequisite = { focus = BCF_to_arms }
@@ -1435,9 +1447,10 @@ focus_tree = {
 		y = 1
 
 		available = {
-			check_variable = {
-				bcf_marie_support >39
+			set_temp_variable = {
+				bcf_marie_required_support = 39
 			}
+			check_BCF_party_support_amount = yes
 		}
 
 		cost = 5
@@ -1469,9 +1482,10 @@ focus_tree = {
 		y = 1
 
 		available = {
-			check_variable = {
-				bcf_oshida_support > 19
+			set_temp_variable = {
+				bcf_oshida_required_support = 19
 			}
+			check_BCF_party_support_amount = yes
 		}
 
 		cost = 5
@@ -1503,7 +1517,10 @@ focus_tree = {
 					}
 				}
 			}
-			add_to_variable = { bcf_oshida_support = 5 }
+			set_temp_variable = {
+				oshida_support_change = 5
+			}
+			Update_BCF_party_support = yes
 			custom_effect_tooltip = bcf_tooltip11
 		}
 	}
@@ -1516,9 +1533,10 @@ focus_tree = {
 		y = 1
 
 		available = {
-			check_variable = {
-				bcf_oshida_support > 29
+			set_temp_variable = {
+				bcf_oshida_required_support = 29
 			}
+			check_BCF_party_support_amount = yes
 		}
 		
 		cost = 5
@@ -1547,9 +1565,10 @@ focus_tree = {
 		y = 1
 
 		available = {
-			check_variable = {
-				bcf_oshida_support > 39
+			set_temp_variable = {
+				bcf_oshida_required_support = 39
 			}
+			check_BCF_party_support_amount = yes
 		}
 
 		cost = 5
@@ -1617,9 +1636,10 @@ focus_tree = {
 		y = 1
 
 		available = {
-			check_variable = {
-				bcf_oshida_support > 49
+			set_temp_variable = {
+				bcf_oshida_required_support = 49
 			}
+			check_BCF_party_support_amount = yes
 		}
 
 		cost = 5
@@ -1746,9 +1766,10 @@ focus_tree = {
 		y = 2
 
 		available = {
-			check_variable = {
-				bcf_oshida_support > 59
+			set_temp_variable = {
+				bcf_oshida_required_support = 59
 			}
+			check_BCF_party_support_amount = yes
 		}
 
 		cost = 5
@@ -1798,9 +1819,10 @@ focus_tree = {
 		y = 1
 
 		available = {
-			check_variable = {
-				bcf_marie_support > 49
+			set_temp_variable = {
+				bcf_marie_required_support = 49
 			}
+			check_BCF_party_support_amount = yes
 		}
 
 		cost = 5
@@ -1835,9 +1857,10 @@ focus_tree = {
 		y = 1
 
 		available = {
-			check_variable = {
-				bcf_marie_support >59
+			set_temp_variable = {
+				bcf_marie_required_support = 59
 			}
+			check_BCF_party_support_amount = yes
 		}
 
 		cost = 5
@@ -1878,9 +1901,10 @@ focus_tree = {
 		y = 1
 
 		available = {
-			check_variable = {
-				bcf_marie_support > 64
+			set_temp_variable = {
+				bcf_marie_required_support = 64
 			}
+			check_BCF_party_support_amount = yes
 		}
 
 		cost = 5
@@ -1968,9 +1992,10 @@ focus_tree = {
 						ruling_only = yes
 					}
 				}
-				add_to_variable = {
-					bcf_oshida_support = -10
+				set_temp_variable = {
+					oshida_support_change = 5
 				}
+				Update_BCF_party_support = yes
 			}
 			else_if = {
 				limit = {
@@ -2006,9 +2031,10 @@ focus_tree = {
 				character = BCF_oshida
 				ruling_only = yes
 			}
-			check_variable = {
-				bcf_oshida_support > 59
+			set_temp_variable = {
+				bcf_oshida_required_support = 59
 			}
+			check_BCF_party_support_amount = yes
 		}
 
 		relative_position_id = BCF_possibility_of_monarchy
@@ -2039,9 +2065,10 @@ focus_tree = {
 				character = BCF_marie
 				ruling_only = yes
 			}
-			check_variable = {
-				bcf_marie_support > 69
+			set_temp_variable = {
+				bcf_marie_required_support = 69
 			}
+			check_BCF_party_support_amount = yes
 			NOR = {
 				has_idea = BCF_republicans_oppose_0
 				has_idea = BCF_republicans_oppose_1
@@ -3481,9 +3508,10 @@ focus_tree = {
 				ideology = democratic
 				popularity = 0.2
 			}
-			add_to_variable = {
-				bcf_oshida_support = 20
+			set_temp_variable = {
+				oshida_support_change = 20
 			}
+			Update_BCF_party_support = yes
 		}
 	}
 
@@ -3508,9 +3536,10 @@ focus_tree = {
 				ideology = communism
 				popularity = 0.2
 			}
-			add_to_variable = {
-				bcf_andou_support = 20
+			set_temp_variable = {
+				andou_support_change = 20
 			}
+			Update_BCF_party_support = yes
 		}
 	}
 

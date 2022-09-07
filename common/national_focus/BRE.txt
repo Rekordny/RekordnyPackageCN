@@ -161,7 +161,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_naval_doctrine_2
 		x = 1
 		y = 1
-		cost = 5
+		cost = 8
 		relative_position_id = BRE_reorganize_navy
 		prerequisite = {
 			focus = BRE_reorganize_navy
@@ -188,7 +188,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_submarine
 		x = 0
 		y = 1
-		cost = 5
+		cost = 8
 		relative_position_id = BRE_naval_doctrine_2
 		prerequisite = {
 			focus = BRE_naval_doctrine_2
@@ -220,7 +220,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_naval_base
 		x = 3
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = BRE_reorganize_navy
 		prerequisite = {
 			focus = BRE_reorganize_navy
@@ -288,7 +288,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_light_armor_division
 		x = -2
 		y = 1
-		cost = 8
+		cost = 7
 		relative_position_id = BRE_army_1
 		prerequisite = {
 			focus = BRE_army_1
@@ -362,7 +362,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_expand_army
 		x = 0
 		y = 1
-		cost = 8
+		cost = 5
 		relative_position_id = BRE_light_armor_division
 		prerequisite = {
 			focus = BRE_light_armor_division
@@ -398,7 +398,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_maneuver
 		x = 0
 		y = 1
-		cost = 8
+		cost = 5
 		relative_position_id = BRE_expand_army
 		prerequisite = {
 			focus = BRE_expand_army
@@ -417,6 +417,7 @@ focus_tree = {
 				uses = 2
 				bonus = 0.5
 			}
+			add_ideas = BRE_maneuver
 		}
 	}
 	#机械化两栖部队
@@ -425,7 +426,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_mechanised_marine
 		x = 2
 		y = 1
-		cost = 8
+		cost = 7
 		relative_position_id = BRE_light_armor_division
 		prerequisite = {
 			focus = BRE_light_armor_division
@@ -533,7 +534,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_tunnel
 		x = 0
 		y = 1
-		cost = 8
+		cost = 5
 		relative_position_id = BRE_mechanised_marine
 		prerequisite = {
 			focus = BRE_mechanised_marine
@@ -562,7 +563,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_marine
 		x = 2
 		y = 1
-		cost = 8
+		cost = 7
 		relative_position_id = BRE_army_1
 		prerequisite = {
 			focus = BRE_army_1
@@ -637,7 +638,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_marine_2
 		x = 0
 		y = 1
-		cost = 8
+		cost = 5
 		relative_position_id = BRE_marine
 		prerequisite = {
 			focus = BRE_marine
@@ -664,7 +665,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_marine_3
 		x = 0
 		y = 1
-		cost = 8
+		cost = 5
 		relative_position_id = BRE_marine_2
 		prerequisite = {
 			focus = BRE_marine_2
@@ -734,7 +735,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_air_1
 		x = 4
 		y = 1
-		cost = 8
+		cost = 5
 		relative_position_id = BRE_army_1
 		prerequisite = {
 			focus = BRE_army_1
@@ -760,7 +761,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_air_2
 		x = 0
 		y = 1
-		cost = 8
+		cost = 5
 		relative_position_id = BRE_air_1
 		prerequisite = {
 			focus = BRE_air_1
@@ -788,7 +789,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_air_3
 		x = 0
 		y = 1
-		cost = 8
+		cost = 7
 		relative_position_id = BRE_air_2
 		prerequisite = {
 			focus = BRE_air_2
@@ -824,7 +825,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_politics
 		x = 5
 		y = 0
-		cost = 5
+		cost = 2
 		available = {
 		}
 		bypass = {
@@ -835,7 +836,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_political_power = 25
-			###触发事件：布列塔尼的现状
+			country_event = {
+				id = BRE.2
+			}
 		}
 	}
 	#法兰西神圣的一部分
@@ -844,7 +847,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_fra
 		x = -3
 		y = 1
-		cost = 8
+		cost = 5
 		relative_position_id = BRE_politics
 		prerequisite = {
 			focus = BRE_politics
@@ -870,7 +873,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_civ
 		x = 0
 		y = 1
-		cost = 8
+		cost = 5
 		relative_position_id = BRE_fra
 		prerequisite = {
 			focus = BRE_fra
@@ -895,7 +898,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_fort
 		x = 0
 		y = 1
-		cost = 8
+		cost = 5
 		relative_position_id = BRE_civ
 		prerequisite = {
 			focus = BRE_civ
@@ -928,7 +931,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_civ_2
 		x = 0
 		y = 1
-		cost = 8
+		cost = 5
 		relative_position_id = BRE_fort
 		prerequisite = {
 			focus = BRE_fort
@@ -949,7 +952,7 @@ focus_tree = {
 			}
 		}
 	}
-	#小不列颠
+	#小不列颠?
 	focus = {
 		id = BRE_small_britan
 		icon = GFX_focus_BRE_small_britan
@@ -973,7 +976,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_stability = -0.15
-			###触发事件：小不列颠
+			country_event = {
+				id = BRE.3
+			}
 			set_country_flag = BRE_CLAIM_GREAT_BRITANNIA
 		}
 	}
@@ -983,7 +988,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_new_star
 		x = 0
 		y = 2
-		cost = 8
+		cost = 7
 		relative_position_id = BRE_politics
 		prerequisite = {
 			focus = BRE_small_britan
@@ -1011,7 +1016,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_government
 		x = 0
 		y = 1
-		cost = 8
+		cost = 7
 		relative_position_id = BRE_new_star
 		prerequisite = {
 			focus = BRE_new_star
@@ -1039,7 +1044,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_end_bcf
 		x = -1
 		y = 1
-		cost = 8
+		cost = 5
 		relative_position_id = BRE_government
 		prerequisite = {
 			focus = BRE_government
@@ -1075,7 +1080,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_new_republic
 		x = 1
 		y = 1
-		cost = 8
+		cost = 5
 		relative_position_id = BRE_government
 		prerequisite = {
 			focus = BRE_government
@@ -1098,7 +1103,9 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			###新共和国的诞生
+			country_event = {
+				id = BRE.6
+			}
 		}
 	}
 	#重返巴黎
@@ -1107,7 +1114,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_return
 		x = 0
 		y = 1
-		cost = 8
+		cost = 5
 		relative_position_id = BRE_end_bcf
 		prerequisite = {
 			focus = BRE_end_bcf
@@ -1131,13 +1138,13 @@ focus_tree = {
 			###国策具体该怎么切
 		}
 	}
-	#小不列颠
+	#不列颠统一计划
 	focus = {
 		id = BRE_unification
 		icon = GFX_focus_BRE_unification
 		x = 0
 		y = 1
-		cost = 8
+		cost = 7
 		relative_position_id = BRE_small_britan
 		prerequisite = {
 			focus = BRE_small_britan
@@ -1185,7 +1192,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_great_britinnia
 		x = -1
 		y = 1
-		cost = 8
+		cost = 5
 		relative_position_id = BRE_unification
 		prerequisite = {
 			focus = BRE_unification
@@ -1213,7 +1220,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_dream_of_unification
 		x = 1
 		y = 1
-		cost = 8
+		cost = 5
 		relative_position_id = BRE_unification
 		prerequisite = {
 			focus = BRE_unification
@@ -1236,7 +1243,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_legitmacy
 		x = -1
 		y = 1
-		cost = 8
+		cost = 5
 		relative_position_id = BRE_dream_of_unification
 		prerequisite = {
 			focus = BRE_dream_of_unification
@@ -1253,9 +1260,9 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			###加强正统性宣传
-			###召集统一志愿军
-			###统一之战
+			unlock_decision_tooltip = BRE_strengthen_legitmacy
+			unlock_decision_tooltip = BRE_call_for_unification_volunteer
+			unlock_decision_tooltip = BRE_war_of_unification
 		}
 	}
 	#统治吧，不列颠尼亚
@@ -1264,7 +1271,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_rule_great_britannia
 		x = 0
 		y = 1
-		cost = 8
+		cost = 10
 		relative_position_id = BRE_legitmacy
 		prerequisite = {
 			focus = BRE_legitmacy
@@ -1284,7 +1291,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			set_cosmetic_tag = BRE_BRITINNIA_TAG
-			###启用认同度
+			custom_effect_tooltip = BRE_accpetance_system_was_enabled_tooltip
+			set_global_flag = BRE_accpetance_system_was_enabled
 			add_political_power = 200
 			add_state_core = 123
 			add_state_core = 127
@@ -1304,7 +1312,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_naval_factory_1
 		x = 3
 		y = 7
-		cost = 5
+		cost = 7
 		available = {
 		}
 		bypass = {
@@ -1328,7 +1336,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_naval_factory_2
 		x = 0
 		y = 1
-		cost = 8
+		cost = 7
 		relative_position_id = BRE_naval_factory_1
 		prerequisite = {
 			focus = BRE_naval_factory_1
@@ -1356,7 +1364,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_naval_factory_3
 		x = -2
 		y = 1
-		cost = 8
+		cost = 7
 		relative_position_id = BRE_naval_factory_1
 		prerequisite = {
 			focus = BRE_naval_factory_1
@@ -1414,7 +1422,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_industry_1
 		x = 7
 		y = 7
-		cost = 5
+		cost = 8
 		available = {
 		}
 		bypass = {
@@ -1516,7 +1524,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_war_econ
 		x = -2
 		y = 1
-		cost = 8
+		cost = 2
 		relative_position_id = BRE_industry_1
 		prerequisite = {
 			focus = BRE_industry_1
@@ -1586,7 +1594,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_new_navy
 		x = -3
 		y = 1
-		cost = 8
+		cost = 7
 		relative_position_id = BRE_war_is_peace
 		prerequisite = {
 			focus = BRE_war_is_peace
@@ -1609,7 +1617,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_naval_doctrine_3
 		x = 0
 		y = 1
-		cost = 8
+		cost = 7
 		relative_position_id = BRE_new_navy
 		prerequisite = {
 			focus = BRE_new_navy
@@ -1632,7 +1640,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_wooden_wall
 		x = 0
 		y = 1
-		cost = 8
+		cost = 7
 		relative_position_id = BRE_naval_doctrine_3
 		prerequisite = {
 			focus = BRE_naval_doctrine_3
@@ -1655,7 +1663,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_defend_island
 		x = -1
 		y = 1
-		cost = 8
+		cost = 5
 		relative_position_id = BRE_war_is_peace
 		prerequisite = {
 			focus = BRE_war_is_peace
@@ -1672,13 +1680,13 @@ focus_tree = {
 			add_manpower = 100000
 		}
 	}
-	#不列颠岛防卫计划
+	#欧陆的桥头堡
 	focus = {
 		id = BRE_fort_2
 		icon = GFX_focus_BRE_fort_2
 		x = 0
 		y = 1
-		cost = 8
+		cost = 5
 		relative_position_id = BRE_defend_island
 		prerequisite = {
 			focus = BRE_defend_island
@@ -1850,7 +1858,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_industry_6
 		x = 0
 		y = 1
-		cost = 8
+		cost = 7
 		relative_position_id = BRE_industry_5
 		prerequisite = {
 			focus = BRE_industry_5
@@ -1873,7 +1881,7 @@ focus_tree = {
 		id = BRE_future
 		icon = GFX_focus_BRE_future
 		x = 22
-		y = 0
+		y = 7
 		cost = 5
 		allow_branch = {
 			if = {
@@ -1900,7 +1908,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_capital
 		x = 0
 		y = 1
-		cost = 8
+		cost = 5
 		relative_position_id = BRE_future
 		prerequisite = {
 			focus = BRE_future
@@ -1914,7 +1922,9 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			##事件
+			country_event = {
+				id = BRE.4
+			}
 		}
 	}
 	#语言问题
@@ -1923,7 +1933,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_language
 		x = 0
 		y = 1
-		cost = 8
+		cost = 5
 		relative_position_id = BRE_capital
 		prerequisite = {
 			focus = BRE_capital
@@ -1937,7 +1947,9 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			##事件
+			country_event = {
+				id = BRE.5
+			}
 		}
 	}
 	#英语主导
@@ -1965,7 +1977,10 @@ focus_tree = {
 				BRE_acceptance_change_eng = 1
 			}
 			Update_BRE_acceptance_system = yes
-			##决议
+			unlock_decision_tooltip = BRE_english_in_brittany
+			unlock_decision_tooltip = BRE_english_in_ireland
+			unlock_decision_tooltip = BRE_integrate_british_island
+			unlock_decision_tooltip = BRE_integrate_ireland
 		}
 	}
 	#设立布列塔尼特区
@@ -2025,11 +2040,11 @@ focus_tree = {
 	}
 	#大不列颠尼亚治下的和平
 	focus = {
-		id = BRE_claim_north_france
-		icon = GFX_focus_BRE_claim_north_france
+		id = BRE_pax_britannia
+		icon = GFX_focus_BRE_pax_britannia
 		x = 0
 		y = 1
-		cost = 8
+		cost = 10
 		relative_position_id = BRE_special_district
 		prerequisite = {
 			focus = BRE_special_district
@@ -2046,8 +2061,14 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			##决议
 			add_ideas = BRE_sun
+			unlock_decision_tooltip = BRE_integrate_normand
+			unlock_decision_tooltip = BRE_integrate_calais
+			unlock_decision_tooltip = BRE_integrate_aquitaine
+			unlock_decision_tooltip = BRE_claim_canada
+			unlock_decision_tooltip = BRE_claim_new_england
+			unlock_decision_tooltip = BRE_integrate_new_england
+			unlock_decision_tooltip = BRE_integrate_canada
 		}
 	}
 	#多元文化主义
@@ -2056,7 +2077,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_multiculturalism
 		x = 0
 		y = 1
-		cost = 8
+		cost = 10
 		relative_position_id = BRE_language
 		prerequisite = {
 			focus = BRE_language
@@ -2086,6 +2107,7 @@ focus_tree = {
 				BRE_acceptance_change_ire = 1
 			}
 			Update_BRE_acceptance_system = yes
+			add_ideas = BRE_multiculturalism
 		}
 	}
 	#接纳前圣葛罗丽安娜成员
@@ -2094,7 +2116,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_accept_stg
 		x = -2
 		y = 1
-		cost = 8
+		cost = 5
 		relative_position_id = BRE_multiculturalism
 		prerequisite = {
 			focus = BRE_multiculturalism
@@ -2128,7 +2150,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_five_languages
 		x = 0
 		y = 1
-		cost = 8
+		cost = 10
 		relative_position_id = BRE_multiculturalism
 		prerequisite = {
 			focus = BRE_multiculturalism
@@ -2167,7 +2189,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_new_world
 		x = 0
 		y = 1
-		cost = 8
+		cost = 5
 		relative_position_id = BRE_five_languages
 		prerequisite = {
 			focus = BRE_five_languages
@@ -2191,7 +2213,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_united_great_britannia
 		x = 0
 		y = 1
-		cost = 8
+		cost = 10
 		relative_position_id = BRE_new_world
 		prerequisite = {
 			focus = BRE_new_world
@@ -2242,7 +2264,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_accept_bcf
 		x = -2
 		y = 1
-		cost = 8
+		cost = 5
 		relative_position_id = BRE_franch
 		prerequisite = {
 			focus = BRE_franch
@@ -2276,7 +2298,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_franch_plan
 		x = 0
 		y = 1
-		cost = 8
+		cost = 7
 		relative_position_id = BRE_franch
 		prerequisite = {
 			focus = BRE_franch
@@ -2290,7 +2312,10 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			##决议
+			unlock_decision_tooltip = BRE_franch_in_ireland
+			unlock_decision_tooltip = BRE_franch_in_scotland
+			unlock_decision_tooltip = BRE_franch_in_walse
+			unlock_decision_tooltip = BRE_franch_in_england
 		}
 	}
 	#加强与法兰西的链接
@@ -2299,7 +2324,7 @@ focus_tree = {
 		icon = GFX_focus_BRE_franch_connection
 		x = 0
 		y = 1
-		cost = 8
+		cost = 7
 		relative_position_id = BRE_franch_plan
 		prerequisite = {
 			focus = BRE_franch_plan
@@ -2330,17 +2355,17 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			add_ideas = bre_asparagus_ambition
+			add_ideas = BRE_asparagus_ambition
 			add_political_power = 200
 		}
 	}
-	#加强与法兰西的链接
+	#宣称大不列颠尼亚-法兰西联盟
 	focus = {
 		id = BRE_claim_franch_and_lowland
 		icon = GFX_focus_BRE_claim_franch_and_lowland
 		x = 0
 		y = 1
-		cost = 8
+		cost = 7
 		relative_position_id = BRE_franch_connection
 		prerequisite = {
 			focus = BRE_franch_connection
@@ -2371,7 +2396,12 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			##决议
+			unlock_decision_tooltip = BRE_claim_belgium
+			unlock_decision_tooltip = BRE_integrate_belgium
+			unlock_decision_tooltip = BRE_integrate_france
+			unlock_decision_tooltip = BRE_ask_BCF_FRA_TO_JOIN
+			unlock_decision_tooltip = BRE_integrate_quebec
+			unlock_decision_tooltip = BRE_claim_quebec
 		}
 	}
 }

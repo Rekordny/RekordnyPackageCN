@@ -252,7 +252,7 @@ ideas = {
 				always = no
 			}
 			modifier = {
-				consumer_goods_factor =-0.05
+				consumer_goods_factor = -0.05
 			}
 		}
 		#造船业主导1
@@ -294,7 +294,7 @@ ideas = {
 			}
 		}
 		#多元文化之国
-		BRE_supress_revolt = {
+		BRE_multiculturalism = {
 			allowed = {
 				tag = BRE
 			}
@@ -330,7 +330,7 @@ ideas = {
 			}
 		}
 		#阿斯帕拉格斯的野望
-		bre_asparagus_ambition = {
+		BRE_asparagus_ambition = {
 			allowed = {
 				tag = BRE
 			}
@@ -370,7 +370,7 @@ ideas = {
 			}
 		}
 		#构建二元国
-		BRE_protect_france = {
+		BRE_integrating_france = {
 			allowed = {
 				tag = BRE
 			}
@@ -380,6 +380,170 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.15
 				political_power_gain = -0.15
+			}
+		}
+		#正统性受到挑战
+		BRE_legitmacy_chanllenged = {
+			allowed = {
+				tag = STG
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				surrender_limit = -0.15
+			}
+		}
+		#地区认同度0
+		BRE_region_accpetance_buff_0 = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.3
+				surrender_limit = -0.3
+			}
+		}
+		#地区认同度1
+		BRE_region_accpetance_buff_1 = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.2
+				surrender_limit = -0.2
+			}
+		}
+		#地区认同度2
+		BRE_region_accpetance_buff_2 = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				surrender_limit = -0.1
+			}
+		}
+		#地区认同度3
+		BRE_region_accpetance_buff_3 = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		#地区认同度4
+		BRE_region_accpetance_buff_4 = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		#地区认同度5
+		BRE_region_accpetance_buff_5 = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				stability_factor = 0.25
+				war_support_factor = 0.25
+				army_org_Factor = 0.05
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		#主流语言认同度0
+		BRE_language_acceptance_buff_0 = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				political_power_factor = -0.25
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+			}
+		}
+		#主流语言认同度1
+		BRE_language_acceptance_buff_1 = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				political_power_factor = -0.15
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+			}
+		}
+		#主流语言认同度2
+		BRE_language_acceptance_buff_2 = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				political_power_factor = -0.5
+				army_attack_factor = -0.5
+				army_defence_factor = -0.5
+			}
+		}
+		#主流语言认同度3
+		BRE_language_acceptance_buff_3 = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+		#主流语言认同度4
+		BRE_language_acceptance_buff_4 = {
+			allowed = {
+				tag = BRE
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				political_power_factor = 0.2
 			}
 		}
 	}

@@ -10,7 +10,7 @@ state={
 	state_category = large_city
 	
 	history={
-		owner = OAN
+		owner = AUT
 		victory_points = {
 			11666 30.0 
 		}
@@ -23,8 +23,7 @@ state={
 			industrial_complex = 5
 			air_base = 6
 		}
-		add_core_of = KGA
-		add_core_of = OAN
+		add_core_of = AUT
 	}
 
 	provinces={

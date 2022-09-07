@@ -107,6 +107,13 @@ on_actions = {
 			refresh_gold_standard_and_ideas = yes
 			#刷新计算税收的国家产值
 			get_industry_weights = yes
+			if = {
+				limit = {
+					tag = BRE
+				}
+				Check_BRE_acceptance_buff = yes
+				
+			}
 		}
 	}
 	

@@ -7,7 +7,7 @@ state={
 	state_category = town
 
 	history={
-		owner = BCF
+		owner = CSC
 		victory_points = { 3838 1 }
 		buildings = {
 			infrastructure = 2
@@ -18,6 +18,7 @@ state={
 			}
 		}
 		add_core_of = BCF
+		add_core_of = CSC
 	}
 
 	provinces={

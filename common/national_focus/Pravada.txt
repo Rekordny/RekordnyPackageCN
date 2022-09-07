@@ -12,14 +12,46 @@ focus_tree = {
 	continuous_focus_position = { x = 800 y = 2000 }
 	default = no
 
-	#第九个五年计划
+	#改组真理最高学生会
 	focus = {
 		id = PRA_restructure_supreme_student_council_of_PRA
 		icon = GFX_focus_PRA_restructure_supreme_student_council_of_PRA
-		x = 2
+		x = 8
 		y = 0
 
-		cost = 2
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			
+		}
+	}
+
+	#内部友谊赛
+	focus = {
+		id = PRA_friendship_tournament
+		icon = GFX_focus_PRA_friendship_tournament
+		relative_position_id = PRA_restructure_supreme_student_council_of_PRA
+		x = 0
+		y = 1
+		prerequisite = { focus = PRA_restructure_supreme_student_council_of_PRA }
+		cost = 5
 
 		ai_will_do = {
 			factor = 4

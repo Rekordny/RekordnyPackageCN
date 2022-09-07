@@ -11,7 +11,7 @@ state={
 	state_category = town
 	
 	history={
-		owner = ANZ
+		owner = ILR
 		victory_points = {
 			9914 5
 		}
@@ -27,7 +27,7 @@ state={
 				naval_base = 4
 			}
 		}
-		add_core_of = ANZ
+		add_core_of = ILR
 	}
 
 	provinces={

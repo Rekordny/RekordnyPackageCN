@@ -16,7 +16,7 @@ Update_BRE_acceptance_system = {
 			custom_effect_tooltip = BRE_acceptance_bri_reach_max
 		}
 		else = {
-			custom_effect_tooltip = BRE_acceptance_bri_change
+			custom_effect_tooltip = BRE_acceptance_bri_change_local
 			add_to_variable = {
 				BRE_Brittany_acceptance = BRE_acceptance_change_bri
 			}
@@ -44,7 +44,7 @@ Update_BRE_acceptance_system = {
 			custom_effect_tooltip = BRE_acceptance_eng_reach_max
 		}
 		else = {
-			custom_effect_tooltip = BRE_acceptance_eng_change
+			custom_effect_tooltip = BRE_acceptance_eng_change_local
 			add_to_variable = {
 				BRE_England_acceptance = BRE_acceptance_change_eng
 			}
@@ -72,7 +72,7 @@ Update_BRE_acceptance_system = {
 			custom_effect_tooltip = BRE_acceptance_wal_reach_max
 		}
 		else = {
-			custom_effect_tooltip = BRE_acceptance_wal_change
+			custom_effect_tooltip = BRE_acceptance_wal_change_local
 			add_to_variable = {
 				BRE_Walse_acceptance = BRE_acceptance_change_wal
 			}
@@ -100,7 +100,7 @@ Update_BRE_acceptance_system = {
 			custom_effect_tooltip = BRE_acceptance_sco_reach_max
 		}
 		else = {
-			custom_effect_tooltip = BRE_acceptance_sco_change
+			custom_effect_tooltip = BRE_acceptance_sco_change_local
 			add_to_variable = {
 				BRE_Scotland_acceptance = BRE_acceptance_change_sco
 			}
@@ -128,7 +128,7 @@ Update_BRE_acceptance_system = {
 			custom_effect_tooltip = BRE_acceptance_ire_reach_max
 		}
 		else = {
-			custom_effect_tooltip = BRE_acceptance_ire_change
+			custom_effect_tooltip = BRE_acceptance_ire_change_local
 			add_to_variable = {
 				BRE_Ireland_acceptance = BRE_acceptance_change_ire
 			}
@@ -143,7 +143,7 @@ Update_BRE_acceptance_system = {
 		limit = {
 			NOT = {
 				check_variable = {
-					BRE_language_acceptance_english = 0
+					BRE_language_acceptance_english_change = 0
 				}
 			}
 		}
@@ -156,9 +156,9 @@ Update_BRE_acceptance_system = {
 			custom_effect_tooltip = BRE_acceptance_language_english_reach_max
 		}
 		else = {
-			custom_effect_tooltip = BRE_acceptance_language_english_change
+			custom_effect_tooltip = BRE_acceptance_language_english_change_local
 			add_to_variable = {
-				BRE_Language_English_acceptance = BRE_language_acceptance_english
+				BRE_Language_English_acceptance = BRE_language_acceptance_english_change
 			}
 			clamp_variable = {
 				var = BRE_Language_English_acceptance
@@ -171,7 +171,7 @@ Update_BRE_acceptance_system = {
 		limit = {
 			NOT = {
 				check_variable = {
-					BRE_language_acceptance_franch = 0
+					BRE_language_acceptance_franch_change = 0
 				}
 			}
 		}
@@ -184,9 +184,9 @@ Update_BRE_acceptance_system = {
 			custom_effect_tooltip = BRE_acceptance_language_franch_reach_max
 		}
 		else = {
-			custom_effect_tooltip = BRE_acceptance_language_franch_change
+			custom_effect_tooltip = BRE_acceptance_language_franch_change_local
 			add_to_variable = {
-				BRE_Language_Franch_acceptance = BRE_language_acceptance_franch
+				BRE_Language_Franch_acceptance = BRE_language_acceptance_franch_change
 			}
 			clamp_variable = {
 				var = BRE_Language_Franch_acceptance
@@ -199,7 +199,7 @@ Update_BRE_acceptance_system = {
 		limit = {
 			NOT = {
 				check_variable = {
-					BRE_language_acceptance_diversity = 0
+					BRE_language_acceptance_diversity_change = 0
 				}
 			}
 		}
@@ -212,9 +212,9 @@ Update_BRE_acceptance_system = {
 			custom_effect_tooltip = BRE_acceptance_language_diversity_reach_max
 		}
 		else = {
-			custom_effect_tooltip = BRE_acceptance_language_diversity_change
+			custom_effect_tooltip = BRE_acceptance_language_diversity_change_local
 			add_to_variable = {
-				BRE_Language_Diversity_acceptance = BRE_language_acceptance_diversity
+				BRE_Language_Diversity_acceptance = BRE_language_acceptance_diversity_change
 			}
 			clamp_variable = {
 				var = BRE_Language_Diversity_acceptance
@@ -222,5 +222,178 @@ Update_BRE_acceptance_system = {
 				max = 1
 			}
 		}
+	}
+}
+
+Check_BRE_acceptance_buff = {
+	set_variable = {
+		BRE_total_acceptance = 0
+	}
+	add_to_variable = {
+		BRE_total_acceptance = BRE_Brittany_acceptance
+	}
+	add_to_variable = {
+		BRE_total_acceptance = BRE_England_acceptance
+	}
+	add_to_variable = {
+		BRE_total_acceptance = BRE_Walse_acceptance
+	}
+	add_to_variable = {
+		BRE_total_acceptance = BRE_Scotland_acceptance
+	}
+	add_to_variable = {
+		BRE_total_acceptance = BRE_Ireland_acceptance
+	}
+	if = {
+		limit = {
+			check_variable = {
+				BRE_total_acceptance < 6
+			}
+		}
+		add_ideas = BRE_region_accpetance_buff_0
+		remove_ideas = BRE_region_accpetance_buff_1
+		remove_ideas = BRE_region_accpetance_buff_2
+		remove_ideas = BRE_region_accpetance_buff_3
+		remove_ideas = BRE_region_accpetance_buff_4
+		remove_ideas = BRE_region_accpetance_buff_5
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				BRE_total_acceptance < 11
+			}
+		}
+		remove_ideas = BRE_region_accpetance_buff_0
+		add_ideas = BRE_region_accpetance_buff_1
+		remove_ideas = BRE_region_accpetance_buff_2
+		remove_ideas = BRE_region_accpetance_buff_3
+		remove_ideas = BRE_region_accpetance_buff_4
+		remove_ideas = BRE_region_accpetance_buff_5
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				BRE_total_acceptance < 16
+			}
+		}
+		remove_ideas = BRE_region_accpetance_buff_0
+		remove_ideas = BRE_region_accpetance_buff_1
+		add_ideas = BRE_region_accpetance_buff_2
+		remove_ideas = BRE_region_accpetance_buff_3
+		remove_ideas = BRE_region_accpetance_buff_4
+		remove_ideas = BRE_region_accpetance_buff_5
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				BRE_total_acceptance < 21
+			}
+		}
+		remove_ideas = BRE_region_accpetance_buff_0
+		remove_ideas = BRE_region_accpetance_buff_1
+		remove_ideas = BRE_region_accpetance_buff_2
+		add_ideas = BRE_region_accpetance_buff_3
+		remove_ideas = BRE_region_accpetance_buff_4
+		remove_ideas = BRE_region_accpetance_buff_5
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				BRE_total_acceptance < 26
+			}
+		}
+		remove_ideas = BRE_region_accpetance_buff_0
+		remove_ideas = BRE_region_accpetance_buff_1
+		remove_ideas = BRE_region_accpetance_buff_2
+		remove_ideas = BRE_region_accpetance_buff_3
+		add_ideas = BRE_region_accpetance_buff_4
+		remove_ideas = BRE_region_accpetance_buff_5
+	}
+	else= {
+		remove_ideas = BRE_region_accpetance_buff_0
+		remove_ideas = BRE_region_accpetance_buff_1
+		remove_ideas = BRE_region_accpetance_buff_2
+		remove_ideas = BRE_region_accpetance_buff_3
+		remove_ideas = BRE_region_accpetance_buff_4
+		add_ideas = BRE_region_accpetance_buff_5
+	}
+	if = {
+		limit = {
+			has_country_flag = BRE_english_was_official
+		}
+		set_variable = {
+			BRE_official_language_accpetance = BRE_Language_English_acceptance
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = BRE_franch_was_official
+		}
+		set_variable = {
+			BRE_official_language_accpetance = BRE_Language_Franch_acceptance
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = BRE_diversity_was_official
+		}
+		set_variable = {
+			BRE_official_language_accpetance = BRE_Language_Diversity_acceptance
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				BRE_official_language_accpetance < 0.21
+			}
+		}
+		add_ideas = BRE_language_acceptance_buff_0
+		remove_ideas = BRE_language_acceptance_buff_1
+		remove_ideas = BRE_language_acceptance_buff_2
+		remove_ideas = BRE_language_acceptance_buff_3
+		remove_ideas = BRE_language_acceptance_buff_4
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				BRE_official_language_accpetance < 0.41
+			}
+		}
+		remove_ideas = BRE_language_acceptance_buff_0
+		add_ideas = BRE_language_acceptance_buff_1
+		remove_ideas = BRE_language_acceptance_buff_2
+		remove_ideas = BRE_language_acceptance_buff_3
+		remove_ideas = BRE_language_acceptance_buff_4
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				BRE_official_language_accpetance < 0.61
+			}
+		}
+		remove_ideas = BRE_language_acceptance_buff_0
+		remove_ideas = BRE_language_acceptance_buff_1
+		add_ideas = BRE_language_acceptance_buff_2
+		remove_ideas = BRE_language_acceptance_buff_3
+		remove_ideas = BRE_language_acceptance_buff_4
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				BRE_official_language_accpetance < 0.81
+			}
+		}
+		remove_ideas = BRE_language_acceptance_buff_0
+		remove_ideas = BRE_language_acceptance_buff_1
+		remove_ideas = BRE_language_acceptance_buff_2
+		add_ideas = BRE_language_acceptance_buff_3
+		remove_ideas = BRE_language_acceptance_buff_4
+	}
+	else = {
+		remove_ideas = BRE_language_acceptance_buff_0
+		remove_ideas = BRE_language_acceptance_buff_1
+		remove_ideas = BRE_language_acceptance_buff_2
+		remove_ideas = BRE_language_acceptance_buff_3
+		add_ideas = BRE_language_acceptance_buff_4
 	}
 }

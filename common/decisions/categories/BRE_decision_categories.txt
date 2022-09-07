@@ -31,4 +31,7 @@ BRE_acceptance_system = {
 	allowed = {
 		original_tag = BRE
 	}
+	visible = {
+		has_global_flag = BRE_accpetance_system_was_enabled
+	}
 }

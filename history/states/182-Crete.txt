@@ -5,7 +5,7 @@ state = {
 	
 	state_category = town
 	history = {
-		owner = ANZ
+		owner = GRK
 		victory_points = {
 			9940 5
 		}
@@ -22,7 +22,7 @@ state = {
 				naval_base = 3
 			}
 		}
-		add_core_of = ANZ
+		add_core_of = GRK
 	}
 	provinces = {
 		1164 4170 9940 12058

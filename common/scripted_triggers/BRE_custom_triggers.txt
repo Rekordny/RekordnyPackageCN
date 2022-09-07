@@ -1,0 +1,122 @@
+BRE_trigger_acceptance_check_lower = {
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					BRE_trigger_acceptance_bri  = 0
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = BRE_trigger_acceptance_bri_local_lower
+			check_variable = {
+				BRE_Brittany_acceptance < BRE_trigger_acceptance_bri
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					BRE_trigger_acceptance_eng  = 0
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = BRE_trigger_acceptance_eng_local_lower
+			check_variable = {
+				BRE_England_acceptance < BRE_trigger_acceptance_eng
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					BRE_trigger_acceptance_wal  = 0
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = BRE_trigger_acceptance_wal_local_lower
+			check_variable = {
+				BRE_Walse_acceptance < BRE_trigger_acceptance_wal
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					BRE_trigger_acceptance_sco  = 0
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = BRE_trigger_acceptance_sco_local_lower
+			check_variable = {
+				BRE_Scotland_acceptance < BRE_trigger_acceptance_sco
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					BRE_trigger_acceptance_ire  = 0
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = BRE_trigger_acceptance_ire_local_lower
+			check_variable = {
+				BRE_Ireland_acceptance < BRE_trigger_acceptance_ire
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					BRE_trigger_language_acceptance_english  = 0
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = BRE_trigger_language_acceptance_english_local_lower
+			check_variable = {
+				BRE_Language_English_acceptance < BRE_trigger_language_acceptance_english
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					BRE_trigger_language_acceptance_franch  = 0
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = BRE_trigger_language_acceptance_franch_local_lower
+			check_variable = {
+				BRE_Language_Franch_acceptance < BRE_trigger_language_acceptance_franch
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					BRE_trigger_language_acceptance_diversity  = 0
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = BRE_trigger_language_acceptance_diversity_local_lower
+			check_variable = {
+				BRE_Language_Diversity_acceptance < BRE_trigger_language_acceptance_diversity
+			}
+		}
+	}
+}

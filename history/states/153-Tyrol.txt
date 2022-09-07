@@ -7,7 +7,7 @@ state={
 	state_category = town
 
 	history={
-		owner = ANZ
+		owner = AUT
 		victory_points = {
 			673 5 
 		}
@@ -16,7 +16,7 @@ state={
 			industrial_complex = 1
 			air_base = 3
 		}
-		add_core_of = KGA
+		add_core_of = AUT
 	}
 
 	provinces={

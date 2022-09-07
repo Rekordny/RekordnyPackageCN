@@ -1,3 +1,783 @@
+
+BRE_missions = {
+	#保卫法兰西
+	BRE_mission_protect_france = {
+		allowed = {
+			always = no
+		}
+		available = {
+		}
+		days_mission_timeout = 365
+		is_good = yes
+		timeout_effect = {
+			BRE = {
+				white_peace = ANZ
+				white_peace = KGA
+			}
+			BCF = {
+				white_peace = ANZ
+				white_peace = KGA
+			}
+			remove_ideas = BRE_protect_france
+		}
+	}
+}
+BRE_government = {
+	#加强正统性宣传
+	BRE_strengthen_legitmacy = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			tag = BRE
+			has_completed_focus = BRE_legitmacy
+		}
+		available = {
+			has_war = no
+			NOT = {
+				has_idea = BRE_dream_of_unification_5
+			}
+			OR = {
+				has_idea = BRE_dream_of_unification_1
+				has_idea = BRE_dream_of_unification_2
+				has_idea = BRE_dream_of_unification_3
+				has_idea = BRE_dream_of_unification_4
+			}
+		}
+		cost = 30
+		days_remove = 60
+		remove_effect = {
+			if = {
+				limit = {
+					has_idea = BRE_dream_of_unification_1
+				}
+				swap_ideas = {
+					remove_idea = BRE_dream_of_unification_1
+					add_idea = BRE_dream_of_unification_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = BRE_dream_of_unification_2
+				}
+				swap_ideas = {
+					remove_idea = BRE_dream_of_unification_2
+					add_idea = BRE_dream_of_unification_3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = BRE_dream_of_unification_3
+				}
+				swap_ideas = {
+					remove_idea = BRE_dream_of_unification_3
+					add_idea = BRE_dream_of_unification_4
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = BRE_dream_of_unification_4
+					add_idea = BRE_dream_of_unification_5
+				}
+			}
+		}
+	}
+	#召集统一志愿军
+	BRE_call_for_unification_volunteer = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			has_completed_focus = BRE_legitmacy
+			tag = BRE
+		}
+		available = {
+			STG = {
+				exists = yes
+			}
+			OR = {
+				has_war = no
+				has_war_with = STG
+			}
+		}
+		custom_cost_trigger = {
+			command_power > 24.99
+		}
+		days_remove = 30
+		remove_effect = {
+			add_command_power = -25
+			hidden_effect = {
+				division_template = {
+					name = "Unification Volunteer"
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 0
+							y = 2
+						}
+						infantry = {
+							x = 0
+							y = 3
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 2
+						}
+						infantry = {
+							x = 1
+							y = 3
+						}
+					}
+				}
+			}
+			14 = {
+				create_unit = {
+					division = "division_template = \"Unification Volunteer\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = BRE
+				}
+				create_unit = {
+					division = "division_template = \"Unification Volunteer\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = BRE
+				}
+				create_unit = {
+					division = "division_template = \"Unification Volunteer\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = BRE
+				}
+			}
+		}
+	}
+	#统一之战
+	BRE_war_of_unification = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			has_completed_focus = BRE_legitmacy
+			tag = BRE
+		}
+		available = {
+			
+		}
+		cost = 0
+		days_remove = 7
+		remove_effect = {
+			declare_war_on = {
+				target = STG
+			}
+			activate_mission = BRE_unification_mission
+			hidden_effect = {
+				division_template = {
+					name = "Marine"
+					regiments = {
+						marine = {
+							x = 0
+							y = 0
+						}
+						marine = {
+							x = 0
+							y = 1
+						}
+						marine = {
+							x = 0
+							y = 2
+						}
+						marine = {
+							x = 1
+							y = 0
+						}
+						marine = {
+							x = 1
+							y = 1
+						}
+						marine = {
+							x = 1
+							y = 2
+						}
+						artillery_brigade = {
+							x = 2
+							y = 0
+						}
+						light_sp_artillery_brigade = {
+							x = 3
+							y = 0
+						}
+						light_sp_artillery_brigade = {
+							x = 3
+							y = 1
+						}
+					}
+				}
+				division_template = {
+					name = "Infantry Division"
+					is_locked = yes
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 0
+							y = 2
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 2
+						}
+						infantry = {
+							x = 2
+							y = 0
+						}
+						infantry = {
+							x = 2
+							y = 1
+						}
+						infantry = {
+							x = 2
+							y = 2
+						}
+						artillery_brigade = {
+							x = 3
+							y = 0
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+					}
+				}
+			}
+			14 = {
+				create_unit = {
+					division = "division_template = \"Infantry Division\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = BRE
+				}
+				create_unit = {
+					division = "division_template = \"Infantry Division\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = BRE
+				}
+				create_unit = {
+					division = "division_template = \"Infantry Division\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = BRE
+				}
+				create_unit = {
+					division = "division_template = \"Infantry Division\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = BRE
+				}
+				create_unit = {
+					division = "division_template = \"Infantry Division\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = BRE
+				}
+				create_unit = {
+					division = "division_template = \"Infantry Division\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = BRE
+				}
+				create_unit = {
+					division = "division_template = \"Marine\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = BRE
+				}
+				create_unit = {
+					division = "division_template = \"Marine\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = BRE
+				}
+			}
+			STG = {
+				add_ideas = BRE_legitmacy_chanllenged
+			}
+		}
+	}
+	#任务：统一不列颠
+	BRE_unification_mission = {
+		allowed = {
+			always = no
+		}
+		available = {
+			STG = {
+				exists = no
+			}
+		}
+		icon = mission_icon
+		is_good = no
+		days_mission_timeout = 270
+		timeout_effect = {
+			remove_ideas = BRE_dream_of_unification_1
+			remove_ideas = BRE_dream_of_unification_2
+			remove_ideas = BRE_dream_of_unification_3
+			remove_ideas = BRE_dream_of_unification_4
+			remove_ideas = BRE_dream_of_unification_5
+		}
+	}
+	#夺取康沃尔
+	BRE_take_over_cornwall = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			tag = BRE
+		}
+		available = {
+			has_war = no
+			OR = {
+				has_idea = BRE_dream_of_unification_3
+				has_idea = BRE_dream_of_unification_4
+				has_idea = BRE_dream_of_unification_5
+			}
+		}
+		cost = 0
+		days_remove = 15
+		remove_effect = {
+			transfer_state = 123
+			hidden_effect = {
+				division_template = {
+					name = "England Infantry"
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 0
+							y = 2
+						}
+						infantry = {
+							x = 0
+							y = 3
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 2
+						}
+						artillery_brigade = {
+							x = 1
+							y = 3
+						}
+						artillery_brigade = {
+							x = 1
+							y = 4
+						}
+					}
+					support = {
+						recon = {
+							x = 0
+							y = 0
+						}
+					}
+				}
+			}
+			123 = {
+				create_unit = {
+					division = "division_template = \"England Infantry\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = BRE
+				}
+				create_unit = {
+					division = "division_template = \"England Infantry\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = BRE
+				}
+				create_unit = {
+					division = "division_template = \"England Infantry\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = BRE
+				}
+			}
+		}
+	}
+	#整合不列颠岛
+	BRE_integrate_british_island = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			has_completed_focus = BRE_english
+			tag = BRE
+		}
+		available = {
+			owns_state = 122
+			owns_state = 121
+			owns_state = 120
+			owns_state = 136
+			owns_state = 133
+		}
+		cost = 100
+		days_remove = 90
+		remove_effect = {
+			add_state_core = 122
+			add_state_core = 121
+			add_state_core = 120
+			add_state_core = 136
+			add_state_core = 133
+		}
+	}
+	#整合爱尔兰
+	BRE_integrate_ireland = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			has_completed_focus = BRE_english
+			tag = BRE
+		}
+		available = {
+			owns_state = 134
+			owns_state = 135
+			owns_state = 113
+			owns_state = 119
+		}
+		cost = 100
+		days_remove = 90
+		remove_effect = {
+			add_state_core = 134
+			add_state_core = 135
+			add_state_core = 113
+			add_state_core = 119
+		}
+	}
+	#整合诺曼底
+	BRE_integrate_normand = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			has_completed_focus = BRE_pax_britannia
+			tag = BRE
+		}
+		available = {
+			owns_state = 15
+		}
+		cost = 25
+		days_remove = 40
+		remove_effect = {
+			add_state_core = 15
+		}
+	}
+	#整合加莱
+	BRE_integrate_calais = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			has_completed_focus = BRE_pax_britannia
+			tag = BRE
+		}
+		available = {
+			owns_state = 29
+		}
+		cost = 25
+		days_remove = 40
+		remove_effect = {
+			add_state_core = 29
+		}
+	}
+	#整合阿基坦
+	BRE_integrate_aquitaine = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			has_completed_focus = BRE_pax_britannia
+			tag = BRE
+		}
+		available = {
+			owns_state = 806
+			owns_state = 31
+			owns_state = 19
+			owns_state = 25
+		}
+		cost = 100
+		days_remove = 90
+		remove_effect = {
+			add_state_core = 806
+			add_state_core = 31
+			add_state_core = 19
+			add_state_core = 25
+		}
+	}
+	#宣称加拿大
+	BRE_claim_canada = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			has_completed_focus = BRE_pax_britannia
+			tag = BRE
+		}
+		available = {
+		}
+		cost = 25
+		days_remove = 0
+		remove_effect = {
+			every_state = {
+				limit = {
+					is_core_of = MAP
+					NOT = {
+						state = 466
+						state = 468
+					}
+				}
+				add_core_of = BRE
+			}
+		}
+	}
+	#宣称新英格兰
+	BRE_claim_new_england = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			has_completed_focus = BRE_pax_britannia
+			tag = BRE
+		}
+		available = {
+		}
+		cost = 25
+		days_remove = 0
+		remove_effect = {
+			add_state_claim = 357
+			add_state_claim = 358
+		}
+	}
+	#整合新英格兰
+	BRE_integrate_new_england = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			has_completed_focus = BRE_pax_britannia
+			tag = BRE
+		}
+		available = {
+			owns_state = 357
+			owns_state = 358
+		}
+		cost = 70
+		days_remove = 60
+		remove_effect = {
+			add_state_core = 357
+			add_state_core = 358
+		}
+	}
+	#整合加拿大
+	BRE_integrate_canada = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			has_completed_focus = BRE_pax_britannia
+			tag = BRE
+		}
+		available = {
+			all_state = {
+				is_core_of = MAP
+				is_owned_and_controlled_by = root
+			}
+		}
+		cost = 150
+		days_remove = 150
+		remove_effect = {
+			every_state = {
+				limit = {
+					is_core_of = MAP
+				}
+				add_core_of = root
+			}
+		}
+	}
+	#整合法兰西
+	BRE_integrate_france = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			has_completed_focus = BRE_claim_franch_and_lowland
+			tag = BRE
+		}
+		available = {
+			OR = {
+				is_in_faction_with = BCF
+				is_in_faction_with = FRA
+				16 = {
+					is_owned_and_controlled_by = root
+				}
+			}
+		}
+		cost = 0
+		days_remove = 0
+		remove_effect = {
+			add_timed_idea = {
+				idea = BRE_integrating_france
+				days = 365
+			}
+			every_state = {
+				limit = {
+					is_core_of = BCF
+				}
+				add_core_of = root
+			}
+		}
+	}
+	#整合比利时
+	BRE_integrate_belgium = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			has_completed_focus = BRE_claim_franch_and_lowland
+			tag = BRE
+		}
+		available = {
+			owns_state = 6
+			owns_state = 34
+		}
+		cost = 75
+		days_remove = 60
+		remove_effect = {
+			add_state_core = 6
+			add_state_core = 34
+		}
+	}
+	#宣称比利时
+	BRE_claim_belgium = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			has_completed_focus = BRE_claim_franch_and_lowland
+			tag = BRE
+		}
+		available = {
+		}
+		cost = 25
+		days_remove = 0
+		remove_effect = {
+			add_state_claim = 6
+			add_state_claim = 34
+		}
+	}
+	#宣称加拿大
+	BRE_claim_canada = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			tag = BRE
+		}
+		available = {
+		}
+		cost = 25
+		days_remove = 0
+		remove_effect = {
+			add_state_claim = 6
+			add_state_claim = 34
+		}
+	}
+	#宣称魁北克
+	BRE_claim_quebec = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			has_completed_focus = BRE_claim_franch_and_lowland
+			tag = BRE
+		}
+		available = {
+		}
+		cost = 25
+		days_remove = 0
+		remove_effect = {
+			add_state_claim =  464
+			add_state_claim =  466
+		}
+	}
+	#整合魁北克
+	BRE_integrate_quebec = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			has_completed_focus = BRE_claim_franch_and_lowland
+			tag = BRE
+		}
+		available = {
+			owns_state = 464
+			owns_state = 466
+		}
+		cost = 50
+		days_remove = 45
+		remove_effect = {
+			add_state_core = 464
+			add_state_core = 466
+		}
+	}
+	#要求法兰西加入大不列颠
+	BRE_ask_BCF_FRA_TO_JOIN = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			has_completed_focus = BRE_claim_franch_and_lowland
+			tag = BRE
+		}
+		available = {
+			OR = {
+				BCF = {
+					exists = yes
+				}
+				FRA = {
+					exists = yes
+				}
+			}
+		}
+		cost = 50
+		days_remove = 45
+		remove_effect = {
+			BCF = {
+				##事件
+			}
+			FRA = {
+				##事件
+			}
+		}
+	}
+
+}
 BRE_acceptance_system = {
 	BRE_acc = {
 		allowed = {
@@ -23,13 +803,552 @@ BRE_acceptance_system = {
 				BRE_acceptance_change_ire = 1
 			}
 			set_temp_variable = {
-				BRE_language_acceptance_english = 0.05
+				BRE_language_acceptance_english_change = 0.05
 			}
 			set_temp_variable = {
-				BRE_language_acceptance_franch = 0.05
+				BRE_language_acceptance_franch_change = 0.05
 			}
 			set_temp_variable = {
-				BRE_language_acceptance_diversity = 0.05
+				BRE_language_acceptance_diversity_change = 0.05
+			}
+			Update_BRE_acceptance_system = yes
+		}
+	}
+	#加强布列塔尼地区认同
+	BRE_strengthen_bri_acceptance = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			tag = BRE
+		}
+		available = {
+			set_temp_variable = {
+				BRE_trigger_acceptance_bri = 6
+			}
+			BRE_trigger_acceptance_check_lower = yes
+		}
+		cost = 25
+		days_remove = 60
+		complete_effect = {
+			set_temp_variable = {
+				BRE_acceptance_change_bri = 1
+			}
+			Update_BRE_acceptance_system = yes
+		}
+	}
+	#加强英格兰地区认同
+	BRE_strengthen_eng_acceptance = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			tag = BRE
+		}
+		available = {
+			set_temp_variable = {
+				BRE_trigger_acceptance_eng = 10
+			}
+			BRE_trigger_acceptance_check_lower = yes
+		}
+		cost = 25
+		days_remove = 60
+		complete_effect = {
+			set_temp_variable = {
+				BRE_acceptance_change_eng = 1
+			}
+			Update_BRE_acceptance_system = yes
+		}
+	}
+	#加强威尔士地区认同
+	BRE_strengthen_wal_acceptance = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			tag = BRE
+		}
+		available = {
+			set_temp_variable = {
+				BRE_trigger_acceptance_wal = 4
+			}
+			BRE_trigger_acceptance_check_lower = yes
+		}
+		cost = 25
+		days_remove = 60
+		complete_effect = {
+			set_temp_variable = {
+				BRE_acceptance_change_wal = 1
+			}
+			Update_BRE_acceptance_system = yes
+		}
+	}
+	#加强苏格兰认同
+	BRE_strengthen_sco_acceptance = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			tag = BRE
+		}
+		available = {
+			set_temp_variable = {
+				BRE_trigger_acceptance_sco = 5
+			}
+			BRE_trigger_acceptance_check_lower = yes
+		}
+		cost = 25
+		days_remove = 60
+		complete_effect = {
+			set_temp_variable = {
+				BRE_acceptance_change_sco = 5
+			}
+			Update_BRE_acceptance_system = yes
+		}
+	}
+	#加强爱尔兰认同
+	BRE_strengthen_ire_acceptance = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			tag = BRE
+		}
+		available = {
+			set_temp_variable = {
+				BRE_trigger_acceptance_ire = 5
+			}
+			BRE_trigger_acceptance_check_lower = yes
+		}
+		cost = 25
+		days_remove = 60
+		complete_effect = {
+			set_temp_variable = {
+				BRE_acceptance_change_ire = 5
+			}
+			Update_BRE_acceptance_system = yes
+		}
+	}
+	#在英格兰推广法语
+	BRE_franch_in_england = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			has_completed_focus = BRE_franch_plan
+			tag = BRE
+		}
+		available = {
+			set_temp_variable = {
+				BRE_trigger_language_acceptance_franch = 1
+			}
+			BRE_trigger_acceptance_check_lower = yes
+		}
+		cost = 25
+		days_remove = 60
+		complete_effect = {
+			set_temp_variable = {
+				BRE_acceptance_change_eng = -1
+			}
+			set_temp_variable = {
+				BRE_language_acceptance_franch_change = 0.03
+			}
+			Update_BRE_acceptance_system = yes
+		}
+	}
+	#在威尔士推广法语
+	BRE_franch_in_walse = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			has_completed_focus = BRE_franch_plan
+			tag = BRE
+		}
+		available = {
+			set_temp_variable = {
+				BRE_trigger_language_acceptance_franch = 1
+			}
+			BRE_trigger_acceptance_check_lower = yes
+		}
+		cost = 25
+		days_remove = 60
+		complete_effect = {
+			set_temp_variable = {
+				BRE_acceptance_change_wal = -1
+			}
+			set_temp_variable = {
+				BRE_language_acceptance_franch_change = 0.03
+			}
+			Update_BRE_acceptance_system = yes
+		}
+	}
+	#在苏格兰推广法语
+	BRE_franch_in_scotland = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			has_completed_focus = BRE_franch_plan
+			tag = BRE
+		}
+		available = {
+			set_temp_variable = {
+				BRE_trigger_language_acceptance_franch = 1
+			}
+			BRE_trigger_acceptance_check_lower = yes
+		}
+		cost = 25
+		days_remove = 60
+		complete_effect = {
+			set_temp_variable = {
+				BRE_acceptance_change_sco = -1
+			}
+			set_temp_variable = {
+				BRE_language_acceptance_franch_change = 0.03
+			}
+			Update_BRE_acceptance_system = yes
+		}
+	}
+	#在爱尔兰推广法语
+	BRE_franch_in_ireland = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			has_completed_focus = BRE_franch_plan
+			tag = BRE
+		}
+		available = {
+			set_temp_variable = {
+				BRE_trigger_language_acceptance_franch = 1
+			}
+			BRE_trigger_acceptance_check_lower = yes
+		}
+		cost = 25
+		days_remove = 60
+		complete_effect = {
+			set_temp_variable = {
+				BRE_acceptance_change_ire = -1
+			}
+			set_temp_variable = {
+				BRE_language_acceptance_franch_change = 0.03
+			}
+			Update_BRE_acceptance_system = yes
+		}
+	}
+	#承诺工业化威尔士
+	BRE_promise_industrialization_in_walse = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			tag = BRE
+		}
+		available = {
+			
+		}
+		cost = 0
+		days_remove = 0
+		complete_effect = {
+			122 = {
+				set_variable = {
+					goal_of_dockyard = building_level@dockyard
+				}
+				set_variable = {
+					goal_of_civil = building_level@industrial_complex
+				}
+				set_variable = {
+					goal_of_arms = building_level@arms_factory
+				}
+				add_to_variable = {
+					goal_of_dockyard = 1
+				}
+				add_to_variable = {
+					goal_of_civil = 1
+				}
+				add_to_variable = {
+					goal_of_arms = 1
+				}
+			}
+			activate_mission = BRE_promise_industrialization_in_walse_mission
+		}
+	}
+	#任务：承诺工业化威尔士
+	BRE_promise_industrialization_in_walse_mission = {
+		allowed = {
+			always = no
+		}
+		available = {
+			122 = {
+				OR = {
+					check_variable = {
+						goal_of_dockyard = building_level@dockyard
+					}
+					check_variable = {
+						goal_of_arms = building_level@arms_factory
+					}
+					check_variable = {
+						goal_of_civil = building_level@industrial_complex
+					}
+				}
+			}
+		}
+		cost = 0
+		days_mission_timeout = 180
+		is_good = yes
+		complete_effect = {
+			set_temp_variable = {
+				BRE_acceptance_change_wal = 1
+			}
+			Update_BRE_acceptance_system = yes
+		}
+		timeout_effect = {
+			set_temp_variable = {
+				BRE_acceptance_change_wal = -1
+			}
+			Update_BRE_acceptance_system = yes
+		}
+	}
+	#承诺工业化苏格兰
+	BRE_promise_industrialization_in_scot = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			tag = BRE
+		}
+		available = {
+			
+		}
+		cost = 0
+		days_remove = 0
+		complete_effect = {
+			121 = {
+				set_variable = {
+					goal_of_dockyard = building_level@dockyard
+				}
+				set_variable = {
+					goal_of_civil = building_level@industrial_complex
+				}
+				set_variable = {
+					goal_of_arms = building_level@arms_factory
+				}
+				add_to_variable = {
+					goal_of_dockyard = 1
+				}
+				add_to_variable = {
+					goal_of_civil = 1
+				}
+				add_to_variable = {
+					goal_of_arms = 1
+				}
+			}
+			activate_mission = BRE_promise_industrialization_in_scot_mission
+		}
+	}
+	#任务：承诺工业化苏格兰
+	BRE_promise_industrialization_in_scot_mission = {
+		allowed = {
+			always = no
+		}
+		available = {
+			121 = {
+				OR = {
+					check_variable = {
+						goal_of_dockyard = building_level@dockyard
+					}
+					check_variable = {
+						goal_of_arms = building_level@arms_factory
+					}
+					check_variable = {
+						goal_of_civil = building_level@industrial_complex
+					}
+				}
+			}
+		}
+		cost = 0
+		days_mission_timeout = 180
+		is_good = yes
+		complete_effect = {
+			set_temp_variable = {
+				BRE_acceptance_change_sco = 1
+			}
+			Update_BRE_acceptance_system = yes
+		}
+		timeout_effect = {
+			set_temp_variable = {
+				BRE_acceptance_change_sco = -1
+			}
+			Update_BRE_acceptance_system = yes
+		}
+	}
+	#承诺工业化爱尔兰
+	BRE_promise_industrialization_in_ire = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			tag = BRE
+		}
+		available = {
+			
+		}
+		cost = 0
+		days_remove = 0
+		complete_effect = {
+			134 = {
+				set_variable = {
+					goal_of_dockyard = building_level@dockyard
+				}
+				set_variable = {
+					goal_of_civil = building_level@industrial_complex
+				}
+				set_variable = {
+					goal_of_arms = building_level@arms_factory
+				}
+				add_to_variable = {
+					goal_of_dockyard = 1
+				}
+				add_to_variable = {
+					goal_of_civil = 1
+				}
+				add_to_variable = {
+					goal_of_arms = 1
+				}
+			}
+			activate_mission = BRE_promise_industrialization_in_ire_mission
+		}
+	}
+	#任务：承诺工业化爱尔兰
+	BRE_promise_industrialization_in_ire_mission = {
+		allowed = {
+			always = no
+		}
+		available = {
+			134 = {
+				OR = {
+					check_variable = {
+						goal_of_dockyard = building_level@dockyard
+					}
+					check_variable = {
+						goal_of_arms = building_level@arms_factory
+					}
+					check_variable = {
+						goal_of_civil = building_level@industrial_complex
+					}
+				}
+			}
+		}
+		cost = 0
+		days_mission_timeout = 180
+		is_good = yes
+		complete_effect = {
+			set_temp_variable = {
+				BRE_acceptance_change_ire = 1
+			}
+			Update_BRE_acceptance_system = yes
+		}
+		timeout_effect = {
+			set_temp_variable = {
+				BRE_acceptance_change_ire = -1
+			}
+			Update_BRE_acceptance_system = yes
+		}
+	}
+	#将北爱尔兰划入爱尔兰地区
+	BRE_integrate_north_ireland_into_ireland = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			tag = BRE
+		}
+		available = {
+			
+		}
+		cost = 25
+		days_remove = 30
+		complete_effect = {
+			add_stability = 0.05
+			set_temp_variable = {
+				BRE_acceptance_change_ire = 1
+			}
+			Update_BRE_acceptance_system = yes
+		}
+	}
+	#调整英格兰行政规划
+	BRE_adjust_england_admini = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			tag = BRE
+		}
+		available = {
+			
+		}
+		cost = 50
+		days_remove = 40
+		complete_effect = {
+			add_stability = -0.1
+			add_war_support = -0.1
+			set_temp_variable = {
+				BRE_acceptance_change_sco = 2
+			}
+			set_temp_variable = {
+				BRE_acceptance_change_wal = 2
+			}
+			set_temp_variable = {
+				BRE_acceptance_change_eng = -3
+			}
+			Update_BRE_acceptance_system = yes
+		}
+	}
+	#在布列塔尼推广英语
+	BRE_english_in_brittany = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			has_completed_focus = BRE_english
+			tag = BRE
+		}
+		available = {
+			
+		}
+		cost = 50
+		days_remove = 70
+		complete_effect = {
+			set_temp_variable = {
+				BRE_acceptance_change_bri = -2
+			}
+			set_temp_variable = {
+				BRE_language_acceptance_english_change = 0.05
+			}
+			Update_BRE_acceptance_system = yes
+		}
+	}
+	#在爱尔兰推广英语
+	BRE_english_in_ireland = {
+		allowed = {
+			tag = BRE
+		}
+		visible = {
+			has_completed_focus = BRE_english
+			tag = BRE
+		}
+		available = {
+			
+		}
+		cost = 35
+		days_remove = 50
+		complete_effect = {
+			set_temp_variable = {
+				BRE_acceptance_change_ire = -2
+			}
+			set_temp_variable = {
+				BRE_language_acceptance_english_change = 0.04
 			}
 			Update_BRE_acceptance_system = yes
 		}
