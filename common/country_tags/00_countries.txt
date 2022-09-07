@@ -61,6 +61,7 @@ TSP = "countries/TSP.txt"
 DLM = "countries/DLM.txt"
 CSC = "countries/CSC.txt"
 DMK = "countries/DMK.txt"
+PTG = "countries/PTG.txt"
 
 WKG = "countries/WestKureojiGrona.txt"
 IPH = "countries/IndependentProvinceofHannover.txt"
