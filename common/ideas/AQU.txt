@@ -126,6 +126,7 @@ ideas = {
 			}
 		}
 		#不完全的工业化
+		#开局
 		AQU_incomplete_industrialization = {
 			allowed = {
 			}
@@ -137,6 +138,60 @@ ideas = {
 				production_factory_efficiency_gain_factor = -0.25
 				production_factory_max_efficiency_factor = -0.1
 				conscription_factor = -0.01
+			}
+		}
+		#偏向农业经济
+		AQU_agri_economic = {
+			allowed = {
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_factory_efficiency_gain_factor = -0.1
+				conscription_factor = 0.15
+			}
+		}
+		#农业主导
+		AQU_agriculture_lead = {
+			allowed = {
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.1
+				conscription_factor = 0.3
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		#阿基坦战争工业
+		AQU_war_industrial = {
+			allowed = {
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				production_speed_arms_factory_factor = 0.25
+				industrial_capacity_factory = 0.1
+				line_change_production_efficiency_factor = 0.1
+			}
+		}
+		#与波尔多的紧密联系
+		AQU_relationship_with_bordeaux = {
+			allowed = {
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			}
+			targeted_modifier = {
+				tag = AQU
+				send_volunteer_size = 3
 			}
 		}
 	}

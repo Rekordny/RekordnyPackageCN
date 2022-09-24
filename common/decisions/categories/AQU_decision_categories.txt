@@ -1,0 +1,33 @@
+aqu_missions = {
+	icon = GFX_decision_category_senshado
+	allowed = { tag = AQU }
+}
+aqu_government = {
+	icon = GFX_decision_category_senshado
+	allowed = { tag = AQU }
+}
+aqu_warfare = {
+	allowed = { tag = AQU }
+}
+aqu_industry = {
+	icon = GFX_decision_category_senshado
+	allowed = { tag = AQU }
+}
+aqu_civil_war = {
+	icon = GFX_decision_category_senshado
+	allowed = { tag = AQU }
+}
+aqu_diplomatic = {
+	icon = GFX_decision_category_senshado
+	allowed = { tag = AQU }
+}
+
+aqu_school_factional_strife = {
+	priority = 10
+
+	icon = GFX_decision_category_senshado
+
+	allowed = {
+		original_tag = AQU
+	}
+}

@@ -1117,7 +1117,6 @@ ideas = {
 		#战后重建
 		BCF_rebuild_1 = {
 			allowed = {
-				tag = BCF
 			}
 			allowed_civil_war = {
 				always = no
