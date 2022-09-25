@@ -7,8 +7,8 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = OLE
-		add_core_of = OLE
+		owner = IDN
+		add_core_of = IDN
 		buildings = {
 			infrastructure = 2
 			1574 = {

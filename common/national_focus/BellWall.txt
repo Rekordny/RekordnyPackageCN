@@ -1,0 +1,17 @@
+focus_tree = {
+	id = BWA_focus
+	country = {
+			factor = 0
+			modifier = {
+				add = 10
+				tag = BWA
+			}
+	}
+	#通用持续国策位置
+	continuous_focus_position = { x = 100 y = 100 }
+	default = no
+
+	shared_focus = OGA_shared_one
+	
+}
+

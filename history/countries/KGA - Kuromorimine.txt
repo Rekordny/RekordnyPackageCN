@@ -77,7 +77,6 @@ set_research_slots = 3
 set_convoys = 20
 recruit_character = KGA_maho
 recruit_character = KGA_miho
-recruit_character = KGA_miho_maho
 recruit_character = KGA_erika
 recruit_character = KGA_koume
 recruit_character = KGA_erwin

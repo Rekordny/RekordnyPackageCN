@@ -1,0 +1,7 @@
+
+
+graphical_culture = africa_gfx
+graphical_culture_2d = africa_2d
+
+
+color = { 9  171  190 }

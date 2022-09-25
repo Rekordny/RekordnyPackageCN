@@ -525,13 +525,13 @@ technologies = {
 				factor = 2
 				is_major = yes
 				not = {
-					tag = JAP
+					tag = CHT
 					num_of_military_factories < 50
 				}
 				date > "1974.1.1"
 			}
 			modifier = {
-				tag = SOV
+				tag = PRA
 				factor = 1.5
 			}
 			modifier = {
@@ -548,7 +548,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 15
-				tag = GER
+				tag = KGA
 				has_opinion_modifier = sov_ger_treaty
 			}
 		}
@@ -617,7 +617,7 @@ technologies = {
 				factor = 2
 				is_major = yes
 				not = {
-					tag = JAP
+					tag = CHT
 					num_of_military_factories < 50
 				}
 			}
@@ -627,11 +627,11 @@ technologies = {
 			}
 			modifier = {
 				factor = 2
-				tag = GER
+				tag = KGA
 			}
 			modifier = {
 				factor = 2
-				tag = SOV
+				tag = PRA
 			}
 			modifier = {
 				factor = 1.1
@@ -949,7 +949,7 @@ technologies = {
 				factor = 3
 			}
 			modifier = {
-				tag = JAP
+				tag = CHT
 				num_of_military_factories < 100
 				factor = 0
 			}
@@ -1016,7 +1016,7 @@ technologies = {
 		ai_will_do = {
 			factor = 0.8
 			modifier = {
-				tag = JAP
+				tag = CHT
 				num_of_military_factories < 100
 				factor = 0
 			}
@@ -2139,8 +2139,8 @@ technologies = {
 			}
 			modifier = {
 			OR = {
-				original_tag = USA
-				original_tag = JAP
+				original_tag = SDS
+				original_tag = CHT
 			}
 			factor = 2
 			}

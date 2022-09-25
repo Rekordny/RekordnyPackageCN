@@ -3,8 +3,8 @@ state={
 	name="STATE_701"
 
 	history={
-		owner = OML
-		add_core_of = OML
+		owner = GBA
+		add_core_of = GBA
 		victory_points = {
 			4989 1 
 		}

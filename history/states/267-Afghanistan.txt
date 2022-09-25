@@ -10,7 +10,7 @@ state={
 		tungsten=3 # was: 3
 	}
 	history={
-		owner = ODU
+		owner = AFH
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
@@ -22,7 +22,7 @@ state={
 		victory_points = {
 			12248 1
 		}
-		add_core_of = ODU
+		add_core_of = AFH
 	}
 
 	provinces={

@@ -7,7 +7,7 @@ state={
 	state_category = wasteland
 
 	history={
-		controller = PRA
+		owner = PRA
 		buildings = {
 			infrastructure = 1
 		}
@@ -17,6 +17,7 @@ state={
 		victory_points = {
 			7990 1 
 		}
+		add_core_of = IRN
 	}
 
 	provinces={

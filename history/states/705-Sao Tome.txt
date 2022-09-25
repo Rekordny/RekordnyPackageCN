@@ -5,8 +5,8 @@ state={
 	state_category = tiny_island
 
 	history={
-		owner = OML
-		add_core_of = OML
+		owner = EQT
+		add_core_of = EQT
 		buildings = {
 			infrastructure = 1
 			13015 ={

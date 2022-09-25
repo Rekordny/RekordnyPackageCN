@@ -83,7 +83,6 @@ add_to_faction = VIK
 add_ideas = BON_holodomor
 add_ideas = BON_military_disloyalty
 add_ideas = BON_volatile_situayion
-add_ideas = BON_senshado_alliance
 recruit_character = BON_maiko
 recruit_character = BON_jajka
 recruit_character = BON_uszka

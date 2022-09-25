@@ -6,14 +6,14 @@ state={
 	}
 
 	history={
-		owner = PRA
+		owner = MGL
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {
 			7843 1 #Ulaangom
 		}
-		add_core_of = PRA
+		add_core_of = MGL
 	}
 	manpower=149000
 	buildings_max_level_factor=1.000

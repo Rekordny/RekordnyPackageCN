@@ -524,7 +524,7 @@ country_event = {
 		ANZ_anchovy = { remove_country_leader_trait = ANZ_nero_syndrome_0 }
 		ANZ_anchovy = { remove_country_leader_trait = ANZ_nero_syndrome_1 }
 		ANZ_anchovy = { add_country_leader_trait = ANZ_nero_syndrome_3 }
-		ANZ_anchovy = { remove_unit_leader_trait = sick }
+		ANZ_anchovy = { remove_trait = {trait = sick} }
 	}
 }
 
@@ -540,7 +540,7 @@ country_event = {
 		ANZ_anchovy = { remove_country_leader_trait = ANZ_nero_syndrome_0 }
 		ANZ_anchovy = { remove_country_leader_trait = ANZ_nero_syndrome_1 }
 		ANZ_anchovy = { add_country_leader_trait = ANZ_nero_syndrome_2 }
-		ANZ_anchovy = { remove_unit_leader_trait = sick }
+		ANZ_anchovy = { remove_trait = {trait = sick} }
 		clr_country_flag = ANZ_START_NERO_SYNDROME
 		hidden_effect = { country_event = { id = Anzio.20 days = 2 } }
 	}

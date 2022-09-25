@@ -71,7 +71,7 @@ set_technology = {
 }
 set_research_slots = 4
 set_convoys = 20
-load_oob = USP_1972
+# load_oob = USP_1972
 set_politics = {
 	ruling_party = fascism
 	last_election = "1972.3.5"

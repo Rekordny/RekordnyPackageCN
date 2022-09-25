@@ -1,0 +1,5 @@
+
+
+graphical_culture = africa_gfx
+graphical_culture_2d = africa_2d
+color = rgb { 255 51 0 }

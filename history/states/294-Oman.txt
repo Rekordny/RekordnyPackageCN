@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = OSH
+		owner = OMN
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
@@ -23,7 +23,7 @@ state={
 		victory_points = {
 			10760 3 
 		}
-		add_core_of = OSH
+		add_core_of = OMN
 	}
 
 	provinces={

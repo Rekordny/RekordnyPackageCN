@@ -12,12 +12,12 @@ state={
 	}
 
 	history={
-		owner = USP
+		owner = AGT
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
-		add_core_of = USP
+		add_core_of = AGT
 	}
 
 	provinces={

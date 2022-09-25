@@ -85,17 +85,6 @@ set_popularities = {
 	neutrality = 25
 }
 
-create_country_leader = {
-	name = ""
-	desc = ""
-	picture = "0.dds"
-	expire = "1965.1.1"
-	ideology = moderatism
-	traits = {
-		
-	}
-}
-
 create_equipment_variant = {
 	name = "SenshadoStandardLT"
 	type = light_tank_chassis_1

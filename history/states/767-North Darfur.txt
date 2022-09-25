@@ -8,8 +8,8 @@ state=
 	impassable = yes
 	
 	history= {
-		add_core_of = OSH
-		owner = OSH
+		add_core_of = SDN
+		owner = SDN
 		buildings = {
 			infrastructure = 0
 		}

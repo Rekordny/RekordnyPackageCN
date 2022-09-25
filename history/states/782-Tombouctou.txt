@@ -8,8 +8,8 @@ state={
 	impassable = yes
 
 	history={
-		owner = OML
-		add_core_of = OML
+		owner = MAI
+		add_core_of = MAI
 		buildings = {
 			infrastructure = 0
 		}

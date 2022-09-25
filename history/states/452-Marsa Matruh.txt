@@ -7,7 +7,7 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = STG
+		owner = EGP
 		buildings = {
 			infrastructure = 2
 		}
@@ -16,8 +16,7 @@ state={
 			9989 1
 		}
 
-		add_core_of = STG
-		add_core_of = ORA
+		add_core_of = EGP
 	}
 
 	provinces={

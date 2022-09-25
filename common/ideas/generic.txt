@@ -687,7 +687,7 @@ ideas = {
 			removal_cost = -1
 			
 			equipment_bonus = {
-				cas_bomber = {
+				CAS_equipment = {
 					air_ground_attack = 0.15
 					instant = yes
 				}

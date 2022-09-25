@@ -11,11 +11,11 @@ state={
 	}
 
 	history={
-		owner = USP
+		owner = PRG
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = USP
+		add_core_of = PRG
 	}
 	
 	provinces={

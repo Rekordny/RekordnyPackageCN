@@ -10,9 +10,8 @@ state={
 
 
 	history={
-		add_core_of = SDS
-		add_core_of = OTU
-		owner = OTU
+		add_core_of = VNZ
+		owner = VNZ
 		victory_points = {
 			3284 1
 		}

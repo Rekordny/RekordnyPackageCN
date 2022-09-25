@@ -6,13 +6,14 @@ state={
 	state_category = small_island
 
 	history={
-		owner = STG
+		owner = BDH
 		buildings = {
 			infrastructure = 2
 			13014 ={
 				naval_base = 1
 			}
 		}
+		add_core_of = GNY
 	}
 
 	provinces={

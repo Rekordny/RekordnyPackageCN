@@ -11,8 +11,8 @@ state={
 			12857 1
 		}
 
-		owner = ANZ
-		add_core_of = ANZ
+		owner = BDH
+		add_core_of = MRC
 		buildings = {
 			infrastructure = 1
 			12857 = {

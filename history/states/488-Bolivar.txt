@@ -7,13 +7,12 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = OTU
+		owner = VNZ
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = SDS
-		add_core_of = OTU
+		add_core_of = VNZ
 		victory_points = {
 			10879 1
 		}

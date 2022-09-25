@@ -551,14 +551,14 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = JAP
-					tag = ENG
-					tag = USA
+					tag = CHT
+					tag = STG
+					tag = SDS
 				}
 				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-					has_war_with = ENG
+					has_war_with = CHT
+					has_war_with = SDS
+					has_war_with = STG
 				}
 				factor = 5
 			}
@@ -602,14 +602,14 @@ technologies = {
 			factor = 2
 			modifier = {
 				OR = {
-					tag = JAP
-					tag = ENG
-					tag = USA
+					tag = CHT
+					tag = STG
+					tag = SDS
 				}
 				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-					has_war_with = ENG
+					has_war_with = CHT
+					has_war_with = SDS
+					has_war_with = STG
 				}
 				factor = 5
 			}
@@ -655,14 +655,14 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = JAP
-					tag = ENG
-					tag = USA
+					tag = CHT
+					tag = STG
+					tag = SDS
 				}
 				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-					has_war_with = ENG
+					has_war_with = CHT
+					has_war_with = SDS
+					has_war_with = STG
 				}
 				factor = 5
 			}
@@ -712,14 +712,14 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = JAP
-					tag = ENG
-					tag = USA
+					tag = CHT
+					tag = STG
+					tag = SDS
 				}
 				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-					has_war_with = ENG
+					has_war_with = CHT
+					has_war_with = SDS
+					has_war_with = STG
 				}
 				factor = 5
 			}
@@ -756,14 +756,14 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = JAP
-					tag = ENG
-					tag = USA
+					tag = CHT
+					tag = STG
+					tag = SDS
 				}
 				OR = {
-					has_war_with = JAP
-					has_war_with = USA
-					has_war_with = ENG
+					has_war_with = CHT
+					has_war_with = SDS
+					has_war_with = STG
 				}
 				factor = 5
 			}
@@ -816,11 +816,11 @@ technologies = {
 				}
 			}
 			modifier = {
-				tag = JAP
+				tag = CHT
 				not = {
 					OR = {
-						has_War_with = SOV
-						has_war_with = USA
+						has_war_with = PRA
+						has_war_with = SDS
 					}
 				}
 				factor = 0.5
@@ -927,11 +927,11 @@ technologies = {
 				}
 			}
 			modifier = {
-				tag = JAP
+				tag = CHT
 				not = {
 					OR = {
-						has_War_with = SOV
-						has_war_with = USA
+						has_war_with = PRA
+						has_war_with = SDS
 					}
 				}
 				factor = 0.5
@@ -1027,11 +1027,11 @@ technologies = {
 				date > "1975.1.9"
 			}
 			modifier = {
-				tag = JAP
+				tag = CHT
 				not = {
 					OR = {
-						has_War_with = SOV
-						has_war_with = USA
+						has_war_with = PRA
+						has_war_with = SDS
 					}
 				}
 				factor = 0.5
@@ -1041,7 +1041,7 @@ technologies = {
 				date > "1976.1.1"
 			}
 			modifier = {
-				tag = USA
+				tag = SDS
 				has_War = no
 				factor = 0.5 #this tank nonsense will never catch on
 			}
@@ -1096,11 +1096,11 @@ technologies = {
 				date > "1977.1.6"
 			}
 			modifier = {
-				tag = JAP
+				tag = CHT
 				not = {
 					OR = {
-						has_War_with = SOV
-						has_war_with = USA
+						has_war_with = PRA
+						has_war_with = SDS
 					}
 				}
 				factor = 0.5
@@ -1160,11 +1160,11 @@ technologies = {
 				date > "1978.1.6"
 			}
 			modifier = {
-				tag = JAP
+				tag = CHT
 				not = {
 					OR = {
-						has_War_with = SOV
-						has_war_with = USA
+						has_war_with = PRA
+						has_war_with = SDS
 					}
 				}
 				factor = 0.5
@@ -1219,11 +1219,11 @@ technologies = {
 				date > "1977.1.6"
 			}
 			modifier = {
-				tag = JAP
+				tag = CHT
 				not = {
 					OR = {
-						has_War_with = SOV
-						has_war_with = USA
+						has_war_with = PRA
+						has_war_with = SDS
 					}
 				}
 				factor = 0.5
@@ -1284,11 +1284,11 @@ technologies = {
 				date > "1978.1.6"
 			}
 			modifier = {
-				tag = JAP
+				tag = CHT
 				not = {
 					OR = {
-						has_War_with = SOV
-						has_war_with = USA
+						has_war_with = PRA
+						has_war_with = SDS
 					}
 				}
 				factor = 0.5
@@ -1373,11 +1373,11 @@ technologies = {
 				date > "1978.1.9"
 			}
 			modifier = {
-				tag = JAP
+				tag = CHT
 				not = {
 					OR = {
-						has_War_with = SOV
-						has_war_with = USA
+						has_war_with = PRA
+						has_war_with = SDS
 					}
 				}
 				factor = 0.5

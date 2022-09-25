@@ -6,7 +6,7 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = ORA
+		owner = SRA
 		victory_points = {
 			3942 1
 		}
@@ -19,7 +19,7 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = ORA
+		add_core_of = SRA
 	}
 
 

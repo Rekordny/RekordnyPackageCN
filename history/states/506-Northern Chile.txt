@@ -7,7 +7,7 @@ state={
 	state_category = rural
 
 	history={
-		owner = USP
+		owner = CLI
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
@@ -19,7 +19,7 @@ state={
 				naval_base = 2
 			}
 		}
-		add_core_of = USP
+		add_core_of = CLI
 		victory_points = {
 			12994 1
 		}

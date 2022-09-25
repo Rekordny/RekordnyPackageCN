@@ -115,51 +115,6 @@ MGC = {
 	color_ui = rgb { 255 153 51  }
 }
 
-ORA = {
-	color = rgb { 212 212 212 }
-	color_ui = rgb { 212 212 212 }
-}
-
-ORA = {
-	color = rgb { 212 212 212 }
-	color_ui = rgb { 212 212 212 }
-}
-
-ODU = {
-	color = rgb { 212 212 212 }
-	color_ui = rgb { 212 212 212 }
-}
-
-OHI = {
-	color = rgb { 212 212 212 }
-	color_ui = rgb { 212 212 212 }
-}
-
-OTU = {
-	color = rgb { 212 212 212 }
-	color_ui = rgb { 212 212 212 }
-}
-
-OAN = {
-	color = rgb { 212 212 212 }
-	color_ui = rgb { 212 212 212 }
-}
-
-OLE = {
-	color = rgb { 212 212 212 }
-	color_ui = rgb { 212 212 212 }
-}
-
-OSH = {
-	color = rgb { 212 212 212 }
-	color_ui = rgb { 212 212 212 }
-}
-
-BKC = {
-	color = rgb { 212 212 212 }
-	color_ui = rgb { 212 212 212 }
-}
-
 KRR = {
 	color = rgb { 189 255 34 }
 	color_ui = rgb { 189 255 34 }
@@ -173,16 +128,6 @@ FCM = {
 USP = {
 	color = rgb { 99 86 50 }
 	color_ui = rgb { 99 86 50 }
-}
-
-ONM = {
-	color = rgb { 25 156 116 }
-	color_ui = rgb { 25 156 116 }
-}
-
-HCA = {
-	color = rgb { 113 255 176 }
-	color_ui = rgb { 113 255 176 }
 }
 
 LCP = {

@@ -11,8 +11,8 @@ state={
 	state_category = rural
 
 	history={
-		add_core_of = OTU
-		owner = OTU
+		add_core_of = SRN
+		controller = WAF
 		victory_points = {
 			10906 1
 		}

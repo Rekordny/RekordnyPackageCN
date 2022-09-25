@@ -8,6 +8,7 @@ state={
 
 	history={
 		owner = BCF
+		add_core_of = BCF
 		buildings = {
 			infrastructure = 1
 			12885 = {

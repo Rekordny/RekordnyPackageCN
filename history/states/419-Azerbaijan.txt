@@ -6,7 +6,7 @@ state={
 	
 	state_category = rural
 	history={
-		owner = ORA
+		owner = PRA
 		buildings = {
 			infrastructure = 2
 		}
@@ -19,8 +19,7 @@ state={
 		victory_points = {
 			1822 1 
 		}
-		add_core_of = PRA
-		add_core_of = ORA
+		add_core_of = IRN
 	}
 
 	provinces={

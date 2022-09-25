@@ -11,14 +11,14 @@ state={
 
 
 	history={
-		owner = OLE
+		owner = THA
 		buildings = {
 			infrastructure = 2
 		}
 		victory_points = {
 			7236 1 
 		}
-		add_core_of = OLE
+		add_core_of = THA
 	}
 	
 	provinces={

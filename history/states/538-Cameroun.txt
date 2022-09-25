@@ -9,11 +9,11 @@ state={
 		rubber=5 # was: 5
 	}
 	history={
-		owner = OML
+		owner = CGO
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = OML
+		add_core_of = CGO
 	}
 
 	provinces={

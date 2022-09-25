@@ -10,7 +10,6 @@ state={
 		}
 		owner = ANZ
 		add_core_of = ANZ
-		add_core_of = YOG
 		buildings = {
 			infrastructure = 1
 			6626 = {

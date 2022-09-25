@@ -10,7 +10,7 @@ state={
 	
 
 	history={
-		owner = ORA
+		owner = PRA
 		buildings = {
 			infrastructure = 1
 		}
@@ -23,7 +23,7 @@ state={
 		victory_points = {
 			8031 1 
 		}
-		add_core_of = ORA
+		add_core_of = IRN
 	}
 
 	provinces={

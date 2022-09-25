@@ -11,7 +11,7 @@ state=
 	
 
 	history= {
-		owner = OML
+		owner = LBR
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
@@ -23,7 +23,7 @@ state=
 		victory_points = {
 			7959 3
 		}
-		add_core_of = OML
+		add_core_of = LBR
 	}
 	provinces={
 		7959 8006

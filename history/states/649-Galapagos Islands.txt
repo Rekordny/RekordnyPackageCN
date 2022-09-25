@@ -6,14 +6,14 @@ state=
 	manpower=11532
 	history=
 	{
-		owner = SDS
+		owner = ECD
 		buildings = {
 			infrastructure = 1
 			5023 = {
 				naval_base = 1
 			}
 		}
-		add_core_of = SDS
+		add_core_of = ECD
 	}
 	provinces= { 5023 }
 

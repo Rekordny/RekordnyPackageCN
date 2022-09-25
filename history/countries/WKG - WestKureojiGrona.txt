@@ -11,8 +11,8 @@ set_technology = {
 	tech_military_police = 1
 	tech_mountaineers = 1
 	paratroopers = 1
-	gwtank_chassis = 1
-	basic_light_tank_chassis = 1
+	senshado_lt_1_chassis = 1
+	senshado_lt_1_chassis_turrent = 1
 	gw_artillery = 1
 	interwar_artillery = 1
 
@@ -60,17 +60,17 @@ set_research_slots = 3
 set_convoys = 20
 set_politics = {
 	ruling_party = democratic
-	last_election = "1933.3.5"
+	last_election = "1969.5.1"
 	election_frequency = 48
 	elections_allowed = no
 }
+recruit_character = WKG_shiratori
 set_popularities = {
-	democratic = 40
-	fascism = 20
-	communism = 20
-	neutrality = 20
+	democratic = 62
+	fascism = 11
+	communism = 4
+	neutrality = 13
 }
-
 add_equipment_to_stockpile = {
 	type = infantry_equipment
 	amount = 5000

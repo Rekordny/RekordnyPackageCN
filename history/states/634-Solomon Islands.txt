@@ -3,8 +3,8 @@ state={
 	name="STATE_634"
 
 	history={
-		owner = KFA
-		add_core_of = KFA
+		owner = PPG
+		add_core_of = PPG
 		buildings = {
 			infrastructure = 1
 			1269 = {

@@ -5,7 +5,7 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = STG
+		owner = TNZ
 		victory_points = {
 			2220 1
 		}
@@ -13,6 +13,7 @@ state={
 			infrastructure = 1
 
 		}
+		add_core_of = TNZ
 	}
 
 	provinces={

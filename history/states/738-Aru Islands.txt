@@ -3,8 +3,8 @@ state={
 	name="STATE_738"
 
 	history={
-		owner = OLE
-		add_core_of = OLE
+		owner = IDN
+		add_core_of = IDN
 		buildings = {
 			infrastructure = 1
 

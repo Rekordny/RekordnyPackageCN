@@ -2,7 +2,7 @@ GGG_1 =
 {
 	name = "Infantry Troops"
 
-	for_countries = { WAF VIK VIG GHS COU YOG BDH ONM USP MAP THS KFA KEB KRR HCA OAN ORA ODU OHI OTU OML OLE OSH BKC }
+	for_countries = { WAF VIK VIG GHS COU YOG BDH USP MAP THS KFA KEB KRR }
 
 	can_use = { always = yes }
 
@@ -43,7 +43,7 @@ GGG_2 =
 {
 	name = "Motorized Troop"
 
-	for_countries = { WAF VIK VIG GHS COU YOG BDH ONM USP MAP THS KFA KEB KRR HCA OAN ORA ODU OHI OTU OML OLE OSH BKC }
+	for_countries = { WAF VIK VIG GHS COU YOG BDH USP MAP THS KFA KEB KRR }
 
 	can_use = { always = yes }
 
@@ -84,7 +84,7 @@ GGG_3 =
 {
 	name = "Armor Troop"
 
-	for_countries = { WAF VIK VIG GHS COU YOG BDH ONM USP MAP THS KFA KEB KRR HCA OAN ORA ODU OHI OTU OML OLE OSH BKC }
+	for_countries = { WAF VIK VIG GHS COU YOG BDH USP MAP THS KFA KEB KRR }
 
 	can_use = { always = yes }
 

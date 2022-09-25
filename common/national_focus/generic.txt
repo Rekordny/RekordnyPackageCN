@@ -21,7 +21,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 7
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -32,14 +32,14 @@ focus_tree = {
 		}
 			
 		ai_will_do = {
-			factor = 1
+			factor = 2
 			modifier = {
 				
 			}
 		}
 	}
 	
-	#民主之光
+	#人民之光
 	focus = {
 		id = Light_democracy
 		icon = GFX_goal_support_democracy
@@ -56,7 +56,7 @@ focus_tree = {
 		}
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -106,7 +106,7 @@ focus_tree = {
 		mutually_exclusive = { focus = proceed_orderly_step_step }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -144,7 +144,7 @@ focus_tree = {
 		mutually_exclusive = { focus = free_will }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -182,7 +182,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -212,7 +212,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -242,7 +242,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -273,7 +273,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -305,14 +305,14 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -342,14 +342,14 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -379,7 +379,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -409,7 +409,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -440,14 +440,14 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -478,14 +478,14 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -517,7 +517,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -556,7 +556,7 @@ focus_tree = {
 		}
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -606,7 +606,7 @@ focus_tree = {
 		mutually_exclusive = { focus = Bureaucracy }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -644,7 +644,7 @@ focus_tree = {
 		mutually_exclusive = { focus = Class_democracy }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -682,7 +682,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -712,7 +712,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -742,7 +742,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -773,7 +773,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -805,7 +805,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -813,7 +813,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 50
-			random_owned_state = {
+			random_core_state = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -843,7 +843,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -851,7 +851,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 50
-			random_owned_state = {
+			random_core_state = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -881,7 +881,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -911,7 +911,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -942,14 +942,14 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
@@ -980,14 +980,14 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -1019,7 +1019,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1059,7 +1059,7 @@ focus_tree = {
 		}
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1105,7 +1105,7 @@ focus_tree = {
 		mutually_exclusive = { focus = centralization }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1142,7 +1142,7 @@ focus_tree = {
 		mutually_exclusive = { focus = Class_cooperation }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1179,7 +1179,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1209,7 +1209,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1239,7 +1239,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1270,7 +1270,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1302,14 +1302,14 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -1344,14 +1344,14 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -1381,14 +1381,14 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -1418,14 +1418,14 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -1456,14 +1456,14 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -1494,14 +1494,14 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
@@ -1533,7 +1533,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1573,7 +1573,7 @@ focus_tree = {
 		}
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1623,7 +1623,7 @@ focus_tree = {
 		mutually_exclusive = { focus = military_autarchy }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1657,7 +1657,7 @@ focus_tree = {
 		mutually_exclusive = { focus = Restoration_monarchy }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1694,7 +1694,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1724,7 +1724,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1754,7 +1754,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1785,7 +1785,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1817,14 +1817,14 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
@@ -1854,7 +1854,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1884,7 +1884,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1914,7 +1914,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1945,7 +1945,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1976,7 +1976,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2008,7 +2008,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2040,7 +2040,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2058,6 +2058,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
+				factor = 1.5
+				num_of_factories < 15
 			}
 		}
 	}
@@ -2075,28 +2077,28 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 7
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			random_owned_state = {
+			random_core_state = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			random_owned_state = {
+			random_core_state = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -2108,6 +2110,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
+				factor = 1.5
+				num_of_factories < 15
 			}
 		}
 	}
@@ -2132,31 +2136,31 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
-			random_owned_state = {
+			random_core_state = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
-			random_owned_state = {
+			random_core_state = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
-			random_owned_state = {
+			random_core_state = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2165,6 +2169,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
+				factor = 1.5
+				num_of_factories < 15
 			}
 		}
 	}
@@ -2182,18 +2188,18 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
-				add_extra_state_shared_building_slots = 2
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2202,6 +2208,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
+				factor = 1.5
+				num_of_factories < 15
 			}
 		}
 	}
@@ -2219,15 +2227,15 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
-				add_extra_state_shared_building_slots = 2
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -2239,6 +2247,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
+				factor = 1.5
+				num_of_factories < 15
 			}
 		}
 	}
@@ -2256,7 +2266,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2269,8 +2279,8 @@ focus_tree = {
 				uses = 1
 				category = industry
 			}
-			random_owned_state = {
-				add_extra_state_shared_building_slots = 2
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -2282,6 +2292,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
+				factor = 1.5
+				num_of_factories < 15
 			}
 		}
 	}
@@ -2299,18 +2311,18 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
-				add_extra_state_shared_building_slots = 2
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2319,6 +2331,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
+				factor = 1.5
+				num_of_factories < 15
 			}
 		}
 	}
@@ -2336,14 +2350,14 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -2356,6 +2370,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
+				factor = 1.5
+				num_of_factories < 15
 			}
 		}
 	}
@@ -2373,7 +2389,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2391,6 +2407,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
+				factor = 1.5
+				num_of_factories < 15
 			}
 		}
 	}
@@ -2408,7 +2426,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2421,6 +2439,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
+				factor = 1.5
+				num_of_factories < 15
 			}
 		}
 	}
@@ -2438,18 +2458,18 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
-				add_extra_state_shared_building_slots = 2
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2458,6 +2478,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
+				factor = 1.5
+				num_of_factories < 15
 			}
 		}
 	}
@@ -2475,18 +2497,18 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
-				add_extra_state_shared_building_slots = 2
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2495,6 +2517,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
+				factor = 1.5
+				num_of_factories < 15
 			}
 		}
 	}
@@ -2512,7 +2536,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2525,6 +2549,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
+				factor = 1.5
+				num_of_factories < 15
 			}
 		}
 	}
@@ -2542,14 +2568,14 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -2579,7 +2605,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2609,14 +2635,14 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -2646,18 +2672,18 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
-				add_extra_state_shared_building_slots = 2
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2683,18 +2709,18 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
-				add_extra_state_shared_building_slots = 2
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2720,14 +2746,14 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -2757,14 +2783,14 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -2794,14 +2820,14 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -2831,14 +2857,14 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -2865,32 +2891,32 @@ focus_tree = {
 		x = 0
 		y = 10
 	
-		available = {  }
+		available = { num_of_factories > 40 }
 		prerequisite = { focus = Expand_production }
 		prerequisite = { focus = private_enterprise_1 }
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
-			random_owned_state = {
+			random_core_state = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2918,18 +2944,18 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_war_support = 0.05
 		}
 			
 		ai_will_do = {
-			factor = 1
+			factor = 2
 			modifier = {
 			}
 		}
@@ -2948,7 +2974,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2961,6 +2987,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
+				factor = 1.5
+				dockyard > 0
 			}
 		}
 	}
@@ -2982,7 +3010,7 @@ focus_tree = {
 		}
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3021,7 +3049,7 @@ focus_tree = {
 		}
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3060,7 +3088,7 @@ focus_tree = {
 		}
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3100,7 +3128,7 @@ focus_tree = {
 		}
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3136,7 +3164,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3176,7 +3204,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3211,7 +3239,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3246,7 +3274,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3276,7 +3304,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3309,14 +3337,14 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = senshado_school
@@ -3353,7 +3381,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3386,14 +3414,14 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
@@ -3424,7 +3452,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3454,7 +3482,7 @@ focus_tree = {
 		mutually_exclusive = { focus = Focus_attack_aircraft focus = Heavy_bomber }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3484,7 +3512,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3514,7 +3542,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3549,7 +3577,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3579,7 +3607,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3609,7 +3637,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3645,7 +3673,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3675,7 +3703,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3710,7 +3738,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3747,7 +3775,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3777,7 +3805,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3807,7 +3835,7 @@ focus_tree = {
 		mutually_exclusive = { focus = Focus_fighter focus = Heavy_bomber }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3837,7 +3865,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3867,7 +3895,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3902,7 +3930,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3932,7 +3960,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3967,7 +3995,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3997,7 +4025,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4034,7 +4062,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4069,7 +4097,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4099,7 +4127,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4129,7 +4157,7 @@ focus_tree = {
 		mutually_exclusive = { focus = Focus_fighter focus = Focus_attack_aircraft }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4159,7 +4187,7 @@ focus_tree = {
 		mutually_exclusive = { }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4189,7 +4217,7 @@ focus_tree = {
 		mutually_exclusive = { }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4219,7 +4247,7 @@ focus_tree = {
 		mutually_exclusive = { }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4249,7 +4277,7 @@ focus_tree = {
 		mutually_exclusive = { }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4284,7 +4312,7 @@ focus_tree = {
 		mutually_exclusive = { }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4314,7 +4342,7 @@ focus_tree = {
 		mutually_exclusive = { }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4349,7 +4377,7 @@ focus_tree = {
 		mutually_exclusive = { }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4384,7 +4412,7 @@ focus_tree = {
 		mutually_exclusive = { }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4414,7 +4442,7 @@ focus_tree = {
 		mutually_exclusive = { }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4444,7 +4472,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4455,9 +4483,7 @@ focus_tree = {
 		}
 			
 		ai_will_do = {
-			factor = 1
-			modifier = {
-			}
+			factor = 2
 		}
 	}
 	
@@ -4474,7 +4500,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4504,7 +4530,7 @@ focus_tree = {
 		mutually_exclusive = { focus = Active_attack }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4534,7 +4560,7 @@ focus_tree = {
 		mutually_exclusive = { focus = Planned_offensive }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4565,7 +4591,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4596,7 +4622,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4627,7 +4653,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4658,7 +4684,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4689,7 +4715,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4720,7 +4746,7 @@ focus_tree = {
 		mutually_exclusive = { focus = Human_sea_offensive }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4751,7 +4777,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4782,7 +4808,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4813,7 +4839,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4844,7 +4870,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4875,7 +4901,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4906,7 +4932,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4937,7 +4963,7 @@ focus_tree = {
 		mutually_exclusive = { focus = Active_defense }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4967,7 +4993,7 @@ focus_tree = {
 		mutually_exclusive = { focus = Assault }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -4998,7 +5024,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -5030,7 +5056,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -5061,7 +5087,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -5092,7 +5118,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -5123,7 +5149,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -5154,7 +5180,7 @@ focus_tree = {
 		mutually_exclusive = { focus = Artillery_offensive }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -5185,7 +5211,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -5216,7 +5242,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -5247,7 +5273,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -5278,7 +5304,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -5309,7 +5335,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -5340,7 +5366,7 @@ focus_tree = {
 		mutually_exclusive = {  }
 		bypass = { }
 
-		cost = 6
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -5414,14 +5440,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			random_owned_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}random_owned_state = {
+			random_core_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -5459,7 +5478,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			random_owned_state = {
+			random_core_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
@@ -5605,7 +5624,7 @@ focus_tree = {
 		relative_position_id = new_economy
 		x = 4
 		y = 1
-		cost = 6
+		cost = 10
 		
 		
 		completion_reward = {
@@ -5635,20 +5654,23 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
+			random_core_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
 			}
-			add_extra_state_shared_building_slots = 1
-		}
-		completion_reward = {
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
+			random_core_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
 			}
-			add_extra_state_shared_building_slots = 1
+			add_stability = 0.05
 		}
 	}
 	
@@ -5660,7 +5682,7 @@ focus_tree = {
 		relative_position_id = industrial_center
 		x = 1
 		y = 1
-		cost = 6
+		cost = 10
 		
 		 
 		
@@ -5674,24 +5696,30 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_building_construction = {
-				type = infrastructure
-				level = 2
-				instant_build = yes
+			random_core_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
 			}
-			add_extra_state_shared_building_slots = 2
-		}
-		completion_reward = {
-			add_building_construction = {
-				type = infrastructure
-				level = 2
-				instant_build = yes
+			random_core_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
 			}
-			add_extra_state_shared_building_slots = 2
-		}
-		
-		completion_reward = {
-			add_stability = -0.05
+			random_core_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 	}
 	
@@ -6147,12 +6175,11 @@ focus_tree = {
 		relative_position_id = Reorganize_army
 		x = 5
 		y = 1
-		cost = 6
+		cost = 10
 		
 		
 		completion_reward = {
-			add_political_power = -50
-			army_experience = 20
+			army_experience = 15
 		}
 	}
 	
@@ -6164,11 +6191,17 @@ focus_tree = {
 		relative_position_id = Standardized_Army
 		x = 2
 		y = 1
-		cost = 2
+		cost = 5
 		
 		
 		completion_reward = {
-			add_political_power = -50
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = senshado_school
+					level = 1
+				}
+			}
 		}
 	}
 	
@@ -6200,7 +6233,7 @@ focus_tree = {
 		
 		
 		completion_reward = {
-			add_political_power = -50
+			add_political_power = 75
 		}
 	}
 	

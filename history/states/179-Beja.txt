@@ -25,6 +25,7 @@ state={
 			}
 		}
 		add_core_of = BDH
+		add_core_of = PTG
 		add_extra_state_shared_building_slots = 1 
 
 	}

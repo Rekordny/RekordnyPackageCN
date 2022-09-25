@@ -11,9 +11,8 @@ state=
 	}
 
 	history={
-		add_core_of = THS
-		add_core_of = OLE
-		owner = OLE
+		add_core_of = IDI
+		controller = THS
 		victory_points = {
 			10201 3 
 		}

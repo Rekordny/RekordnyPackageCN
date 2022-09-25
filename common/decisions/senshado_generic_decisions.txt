@@ -386,7 +386,7 @@ senshado_decisions = {
 			random_list = {
 				8 = {
 					if = { 
-						limit = { OR = { has_unit_leader = 1098 has_unit_leader = 1024 OHI = { exists = yes } } }
+						limit = { OR = { has_unit_leader = 1098 has_unit_leader = 1024 } }
 						hidden_effect = { country_event = senshado_events.3 }
 					}
 					else = {
@@ -426,7 +426,7 @@ senshado_decisions = {
 				}
 				8 = {
 					if = { 
-						limit = { OR = { has_unit_leader = 1031 OLE = { exists = yes } } }
+						limit = { OR = { has_unit_leader = 1031 } }
 						hidden_effect = { country_event = senshado_events.3 }
 					}
 					else = {
@@ -466,7 +466,7 @@ senshado_decisions = {
 				}
 				8 = {
 					if = { 
-						limit = { OR = { has_unit_leader = 1106 ORA = { exists = yes } } }
+						limit = { OR = { has_unit_leader = 1106 } }
 						hidden_effect = { country_event = senshado_events.3 }
 					}
 					else = {
@@ -539,7 +539,7 @@ senshado_decisions = {
 			random_list = {
 				8 = {
 					if = { 
-						limit = { OR = { has_unit_leader = 1006 OSH = { exists = yes } } }
+						limit = { OR = { has_unit_leader = 1006 } }
 						hidden_effect = { country_event = senshado_events.3 }
 					}
 					else = {
@@ -590,7 +590,7 @@ senshado_decisions = {
 				}
 				8 = {
 					if = { 
-						limit = { OR = { has_unit_leader = 1022 ODU = { exists = yes } } }
+						limit = { OR = { has_unit_leader = 1022 } }
 						hidden_effect = { country_event = senshado_events.3 }
 					}
 					else = {
@@ -630,7 +630,7 @@ senshado_decisions = {
 				}
 				8 = {
 					if = { 
-						limit = { OR = { has_unit_leader = 1025 OTU = { exists = yes } } }
+						limit = { OR = { has_unit_leader = 1025 } }
 						hidden_effect = { country_event = senshado_events.3 }
 					}
 					else = {
@@ -660,7 +660,7 @@ senshado_decisions = {
 				}
 				8 = {
 					if = { 
-						limit = { OR = { has_unit_leader = 1115 OAN = { exists = yes } } }
+						limit = { OR = { has_unit_leader = 1115 } }
 						hidden_effect = { country_event = senshado_events.3 }
 					}
 					else = {

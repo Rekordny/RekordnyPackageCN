@@ -15,6 +15,16 @@ technologies = {
 		}
 
 		path = {
+			leads_to_tech = smoke_generator
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = basic_depth_charges
+			research_cost_coeff = 1
+		}
+
+		path = {
 			leads_to_tech = sonar
 			research_cost_coeff = 1
 		}
@@ -167,6 +177,188 @@ technologies = {
 		categories = {
 			naval_equipment
 			dd_tech
+		}
+	}
+
+	basic_depth_charges = {
+
+		enable_equipment_modules = {
+			ship_depth_charge_1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = depth_charges_advice_tt
+		}
+
+		path = {
+			leads_to_tech = improved_depth_charges
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1922
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 1 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				factor = 2
+				anti_submarine_strategy_required_trigger = yes
+			}
+		}
+
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+			ship_modules_tech
+		}
+	}
+	improved_depth_charges = {
+
+		enable_equipment_modules = {
+			ship_depth_charge_2
+		}
+		on_research_complete = {
+			custom_effect_tooltip = depth_charges_advice_tt
+		}
+		path = {
+			leads_to_tech = advanced_depth_charges
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1972
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 1 y = 7 }
+		}
+
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				factor = 2
+				anti_submarine_strategy_required_trigger = yes
+			}
+		}
+
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+			ship_modules_tech
+		}
+	}
+	advanced_depth_charges = {
+
+		enable_equipment_modules = {
+			ship_depth_charge_3
+		}
+		on_research_complete = {
+			custom_effect_tooltip = depth_charges_advice_tt
+		}
+		path = {
+			leads_to_tech = modern_depth_charges
+			research_cost_coeff = 1
+		}
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1976
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 1 y = 13 }
+		}
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 2
+				anti_submarine_strategy_required_trigger = yes
+			}
+		}
+
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+			ship_modules_tech
+		}
+	}
+	modern_depth_charges = {
+
+		enable_equipment_modules = {
+			ship_depth_charge_4
+		}
+		on_research_complete = {
+			custom_effect_tooltip = depth_charges_advice_tt
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1980
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 1 y = 19 }
+		}
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 2
+				anti_submarine_strategy_required_trigger = yes
+			}
+		}
+
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+			ship_modules_tech
+		}
+	}
+
+	smoke_generator = {
+
+		naval_retreat_speed = 0.2
+
+		research_cost = 0.75
+
+		start_year = 1922
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 1 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 8
+		}
+
+		categories = {
+			naval_equipment
+			dd_tech
+			ship_modules_tech
 		}
 	}
 

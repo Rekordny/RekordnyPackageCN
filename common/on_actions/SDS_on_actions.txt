@@ -16,8 +16,8 @@ on_actions = {
         }
     }
 	on_daily_SDS = {
-		effect = {
-			edit_legitimacy_daily = yes
-		}
+		# effect = {
+		# 	edit_legitimacy_daily = yes
+		# }
 	}
 }

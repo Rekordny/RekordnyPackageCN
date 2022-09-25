@@ -6,7 +6,7 @@ state={
 	}
 
 	history={
-		owner = PRA
+		owner = MGL
 		buildings = {
 			infrastructure = 1
 		}
@@ -16,7 +16,7 @@ state={
 		victory_points = {
 			1834 1 #Erdenet
 		}
-		add_core_of = PRA
+		add_core_of = MGL
 	}
 	manpower=88200
 	buildings_max_level_factor=1.000

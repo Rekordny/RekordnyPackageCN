@@ -24,7 +24,7 @@ state={
 			}
 		}
 		add_core_of = BDH
-
+		add_core_of = PTG
 	}
 
 	provinces={

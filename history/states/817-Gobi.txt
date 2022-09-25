@@ -6,14 +6,14 @@ state={
 	}
 
 	history={
-		owner = PRA
+		owner = MGL
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {
 			12612 1 #Sainshand
 		}
-		add_core_of = PRA
+		add_core_of = MGL
 	}
 	manpower=11000
 	buildings_max_level_factor=1.000

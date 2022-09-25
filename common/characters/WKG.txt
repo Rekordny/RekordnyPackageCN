@@ -10,7 +10,7 @@ characters={
 		country_leader={
 			desc="She is the best"
 			ideology=conservatism
-			expire="2000.1.1.1"
+			expire="2000.1.1"
 			id=-1
 		}
 		corps_commander={

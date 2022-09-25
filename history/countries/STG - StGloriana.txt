@@ -75,10 +75,6 @@ set_technology = {
 set_research_slots = 4
 set_convoys = 20
 oob = STG_1972
-declare_war_on = {
-	target = ORA
-	type = annex_everything
-}
 add_ideas = {
 	STG_decaying_senshado
 	STG_Speeding_government
@@ -107,7 +103,6 @@ recruit_character = STG_rukuriri
 recruit_character = STG_rosehip
 recruit_character = STG_nilgiri
 recruit_character = STG_hana
-recruit_character = STG_shiratori
 recruit_character = STG_earlGrey
 recruit_character = STG_warspite
 recruit_character = STG_arkRoyal

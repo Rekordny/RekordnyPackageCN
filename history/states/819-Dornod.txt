@@ -6,14 +6,14 @@ state={
 	}
 
 	history={
-		owner = PRA
+		owner = MGL
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {
 			12557 1 #Choibalsan
 		}
-		add_core_of = PRA
+		add_core_of = MGL
 	}
 	manpower=88250
 	buildings_max_level_factor=1.000

@@ -4,13 +4,14 @@ state={
 	manpower=458
 	state_category = tiny_island
 	history= {
-		owner = STG
+		owner = CDL
 		buildings = {
 			infrastructure = 1
 			13013 = {
 				naval_base = 1
 			}
 		}
+		add_core_of = CDL
 	}
 	
 	provinces={

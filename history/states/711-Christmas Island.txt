@@ -6,7 +6,8 @@ state={
 	
 	history=
 	{
-		owner = OLE
+		owner = IDN
+		add_core_of = IDN
 		buildings = {
 			infrastructure = 2
 			13005 = {

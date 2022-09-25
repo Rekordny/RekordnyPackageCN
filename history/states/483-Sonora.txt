@@ -7,14 +7,14 @@ state={
 	state_category = rural
 
 	history={
-		owner = ONM
+		owner = MXC
 		buildings = {
 			infrastructure = 2
 			4908 = {
 				naval_base = 3
 			}
 		}
-		add_core_of = ONM
+		add_core_of = MXC
 		#victory_points = {
 		#	4977 3
 		#}

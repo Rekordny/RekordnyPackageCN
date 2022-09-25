@@ -280,10 +280,10 @@ focus_tree = {
 			}
 		}
 	}
-	#一个国家两个未来
+	#债务重组
 	focus = {
-		id = KGA_one_country_two_future
-		icon = GFX_focus_KGA_one_country_two_future
+		id = KGA_debt_restructuring
+		icon = GFX_focus_KGA_debt_restructuring
 		relative_position_id = KGA_compromise_to_bellwall
 		x = 0
 		y = 1
@@ -306,16 +306,16 @@ focus_tree = {
 			}
 		}
 	}
-	#债务重组
+	#一个国家两个未来
 	focus = {
-		id = KGA_debt_restructuring
-		icon = GFX_focus_KGA_debt_restructuring
-		relative_position_id = KGA_one_country_two_future
+		id = KGA_one_country_two_future
+		icon = GFX_focus_KGA_one_country_two_future
+		relative_position_id = KGA_debt_restructuring
 		x = 0
 		y = 1
 		available = {  }
 		#allow_branch = { has_completed_focus =  }
-		prerequisite = { focus = KGA_one_country_two_future }
+		prerequisite = { focus = KGA_debt_restructuring }
 		#mutually_exclusive = { focus =  }
 		bypass = { }
 		cost = 10
@@ -332,17 +332,17 @@ focus_tree = {
 			}
 		}
 	}
+	
 	#梦醒时分
 	focus = {
 		id = KGA_awakening_dream
 		icon = GFX_focus_KGA_awakening_dream
-		relative_position_id = KGA_debt_restructuring
-		x = -2
+		relative_position_id = KGA_one_country_two_future
+		x = 0
 		y = 1
 		available = {  }
 		#allow_branch = { has_completed_focus = KGA_return_to_politics }
-		prerequisite = { focus = KGA_debt_restructuring }
-		mutually_exclusive = { focus = KGA_saviour_of_bellwall }
+		prerequisite = { focus = KGA_one_country_two_future }
 		bypass = {  }
 		cost = 10
 		cancel_if_invalid = yes
@@ -354,33 +354,6 @@ focus_tree = {
 				remove = depressed_and_cheerless
 				add = awakening_dream
 			}
-		}
-		#AI行动之后具体设计，复制粘贴以下部分即可
-		ai_will_do = {
-			factor = 1
-			modifier = {
-			}
-		}
-	}
-	#钟壁的救世主
-	focus = {
-		id = KGA_saviour_of_bellwall
-		icon = GFX_focus_KGA_saviour_of_bellwall
-		relative_position_id = KGA_debt_restructuring
-		x = 2
-		y = 1
-		available = {  }
-		#allow_branch = { has_completed_focus = KGA_return_to_politics }
-		prerequisite = { focus = KGA_debt_restructuring }
-		mutually_exclusive = { focus = KGA_awakening_dream }
-		bypass = {  }
-		cost = 10
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			
 		}
 		#AI行动之后具体设计，复制粘贴以下部分即可
 		ai_will_do = {

@@ -25,7 +25,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = STG
 			}
 		}
 		
@@ -61,7 +61,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = STG
 			}
 		}
 		
@@ -96,7 +96,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = STG
 			}
 		}
 		
@@ -126,7 +126,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = STG
 			}
 		}
 		
@@ -166,12 +166,12 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = SDS
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
+				tag = CHT
 			}
 		}
 		
@@ -211,12 +211,12 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = SDS
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
+				tag = CHT
 			}
 		}
 		
@@ -255,12 +255,12 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = SDS
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
+				tag = CHT
 			}
 		}
 		
@@ -295,12 +295,12 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = SDS
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
+				tag = CHT
 			}
 		}
 		
@@ -716,17 +716,17 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = SDS
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
+				tag = CHT
 			}
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = STG
 			}
 		}
 		
@@ -772,46 +772,37 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = SDS
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
+				tag = CHT
 			}
 
 			modifier = {
 				factor = 50
-				tag = JAP
-				OR = {
-					has_war_with = USA
-					CHI = {  
-						OR = { 
-							has_capitulated = yes 
-							exists = no
-		                    is_subject_of = JAP
-						}
-					}
-				}
+				tag = CHT
+				has_war_with = SDS
 			}
 			
 			modifier = {
 				factor = 5
 				OR = {
-					tag = ENG
-					tag = USA
+					tag = STG
+					tag = SDS
 				}
-				has_war_with = GER
+				has_war_with = KGA
 			}
 
 			modifier = {
 				factor = 10
 				OR = {
-					tag = ENG
-					tag = USA
+					tag = STG
+					tag = SDS
 				}
-				has_war_with = GER
-				GER = { has_war_with = SOV }
+				has_war_with = KGA
+				KGA = { has_war_with = PRA }
 			}
 		}
 		
@@ -844,17 +835,17 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = SDS
 			}
 			
 			modifier = {
 				factor = 2
-				tag = JAP
+				tag = CHT
 			}
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = STG
 			}
 		}
 		
@@ -889,12 +880,12 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = USA
+				tag = SDS
 			}
 			
 			modifier = {
 				factor = 5
-				tag = JAP
+				tag = CHT
 			}
 		}
 		
@@ -928,12 +919,12 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = USA
+				tag = SDS
 			}
 			
 			modifier = {
 				factor = 5
-				tag = JAP
+				tag = CHT
 			}
 		}
 		
@@ -968,12 +959,12 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = USA
+				tag = SDS
 			}
 			
 			modifier = {
 				factor = 5
-				tag = JAP
+				tag = CHT
 			}
 		}
 		
@@ -1004,12 +995,12 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = USA
+				tag = SDS
 			}
 			
 			modifier = {
 				factor = 5
-				tag = JAP
+				tag = CHT
 			}
 		}
 		
@@ -1044,7 +1035,7 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = GER
+				tag = KGA
 			}
 		}
 		
@@ -1078,7 +1069,7 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = GER
+				tag = KGA
 			}
 		}
 		
@@ -1113,7 +1104,7 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = GER
+				tag = KGA
 			}
 		}
 		
@@ -1143,7 +1134,7 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = GER
+				tag = KGA
 			}
 		}
 		

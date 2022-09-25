@@ -1,7 +1,7 @@
 #	Example:
 # 
 #	example_trigger = {
-#		tag = GER
+#		tag = KGA
 #		is_ai = no
 #	}
 #
@@ -23,7 +23,7 @@
 # 		is_in_faction_with = GER
 # 		is_in_faction = no
 # 	}
-# 	NOT = { has_war_with = GER }
+# 	NOT = { has_war_with = KGA }
 # 	has_capitulated = no
 # 	exists = yes
 # }

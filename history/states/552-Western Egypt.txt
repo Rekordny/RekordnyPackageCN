@@ -8,13 +8,12 @@ state={
 	impassable = yes
 
 	history={
-		owner = STG
+		owner = EGP
 		buildings = {
 			infrastructure = 0
 		}
 
-		add_core_of = STG
-		add_core_of = ORA
+		add_core_of = EGP
 	}
 
 	provinces={

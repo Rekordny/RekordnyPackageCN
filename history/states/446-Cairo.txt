@@ -8,7 +8,7 @@ state=
 
 	history=
 	{
-		owner = STG
+		owner = EGP
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 1
@@ -34,8 +34,7 @@ state=
 			1068 3
 		}
 
-		add_core_of = STG
-		add_core_of = ORA
+		add_core_of = EGP
 
 	}
 

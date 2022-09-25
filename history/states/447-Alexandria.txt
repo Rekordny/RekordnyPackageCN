@@ -10,7 +10,7 @@ state={
 	state_category = town
 
 	history={
-		owner = STG
+		owner = EGP
 		
 		victory_points = {
 			4076 10 
@@ -27,8 +27,7 @@ state={
 				naval_base = 8
 			}
 		}
-		add_core_of = ORA
-		add_core_of = STG
+		add_core_of = EGP
 	}
 
 	provinces={

@@ -9,8 +9,8 @@ state={
 		rubber=3 # was: 4
 	}
 	history={
-		owner = OML
-		add_core_of = OML
+		owner = CTA
+		add_core_of = CTA
 		victory_points = {
 			12830 1
 		}

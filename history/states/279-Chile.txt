@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = USP
+		owner = CLI
 		buildings = {
 			infrastructure = 3 #was: 5
 			arms_factory = 1
@@ -27,7 +27,7 @@ state={
 				bunker = 1
 			}
 		}
-		add_core_of = USP
+		add_core_of = CLI
 		victory_points = {
 			650 10
 		}

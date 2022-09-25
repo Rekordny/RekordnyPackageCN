@@ -646,10 +646,10 @@ technologies = {
 			leads_to_tech = improved_rocket_engines 
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = jet_engines 
-			research_cost_coeff = 1
-		}
+		# path = {
+		# 	leads_to_tech = jet_engines 
+		# 	research_cost_coeff = 1
+		# }
 		
 		research_cost = 2
 		start_year = 1944
@@ -658,10 +658,10 @@ technologies = {
 			name = electronics_folder
 			position = { x = 0 y = 2 }
 		}
-			folder = {
-			name = secret_weapons_folder
-			position = { x = 10 y = 0 }
-		}
+		# folder = {
+		# 	name = secret_weapons_folder
+		# 	position = { x = 10 y = 0 }
+		# }
 		
 		
 		ai_will_do = {
@@ -798,7 +798,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = USA
+				tag = SDS
 			}
 		}
 		
@@ -829,7 +829,7 @@ technologies = {
 		ai_will_do = {
 			factor = 3
 			modifier = {
-				tag = USA
+				tag = SDS
 				factor = 2
 			}
 		}
@@ -862,8 +862,8 @@ technologies = {
 		on_research_complete = {
 			if = {
 				limit = {
-					tag = USA
-					has_war_with = JAP
+					tag = SDS
+					has_war_with = CHT
 				}
 				play_warning_to_japan_effect = yes
 			}
