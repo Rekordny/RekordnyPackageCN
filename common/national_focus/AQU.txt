@@ -1,0 +1,1380 @@
+focus_tree = {
+	id = AQU_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AQU
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = {
+		x = 120
+		y = 800
+	}
+	#从无到有
+	focus = {
+		id = FRA_establish_navy
+		icon = GFX_focus_BCF_second_orleans_conference
+		x = 6
+		y = 0
+		cost = 7
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			navy_experience = 25
+		}
+	}
+	#启用库存战舰
+	focus = {
+		id = FRA_gain_old_ships
+		icon = GFX_focus_BCF_industrial_renaissance_project
+		x = 1
+		y = 1
+		cost = 7
+		relative_position_id = FRA_establish_navy
+		prerequisite = {
+			focus = FRA_establish_navy
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			hidden_effect = {
+				create_equipment_variant = {
+					name = AQU_DD_old
+					type = destroyer_2
+					parent_version = 0
+					modules = {
+						mid_1_custom_slot = ship_torpedo_2
+						rear_1_custom_slot = ship_depth_charge_1
+						fixed_ship_battery_slot = ship_light_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = ship_sonar_1
+						fixed_ship_torpedo_slot = ship_torpedo_2
+						fixed_ship_engine_slot = light_ship_engine_2
+					}
+				}
+				create_equipment_variant = {
+					name = AQU_CL_old
+					type = light_cruiser_2
+					parent_version = 0
+					modules = {
+						mid_1_custom_slot = ship_torpedo_2
+						mid_2_custom_slot = ship_torpedo_2
+						rear_1_custom_slot = ship_depth_charge_1
+						front_1_custom_slot = ship_light_medium_battery_2
+						fixed_ship_battery_slot = ship_light_medium_battery_2
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = ship_sonar_1
+						fixed_ship_secondaries_slot = ship_CIWS_2
+						fixed_ship_engine_slot = cruiser_ship_engine_2
+						fixed_ship_armor_slot = ship_armor_cruiser_1
+					}
+				}
+				create_equipment_variant = {
+					name = AQU_CA_old
+					type = heavy_cruiser_2
+					parent_version = 0
+					modules = {
+						mid_1_custom_slot = ship_light_medium_battery_2
+						mid_2_custom_slot = ship_light_medium_battery_2
+						rear_1_custom_slot = ship_light_medium_battery_2
+						front_1_custom_slot = ship_medium_battery_2
+						fixed_ship_battery_slot = ship_light_medium_battery_2
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = ship_sonar_1
+						fixed_ship_secondaries_slot = ship_CIWS_2
+						fixed_ship_engine_slot = cruiser_ship_engine_2
+						fixed_ship_armor_slot = ship_armor_cruiser_1
+					}
+				}
+			}
+			#决议，现代化黎塞留
+			#决议，现代化让巴尔
+			create_ship = {
+				type = destroyer_2
+				equipment_variant = AQU_DD_old
+				creator = root
+			}
+			create_ship = {
+				type = destroyer_2
+				equipment_variant = AQU_DD_old
+				creator = root
+			}
+			create_ship = {
+				type = destroyer_2
+				equipment_variant = AQU_DD_old
+				creator = root
+			}
+			create_ship = {
+				type = destroyer_2
+				equipment_variant = AQU_DD_old
+				creator = root
+			}
+			create_ship = {
+				type = destroyer_2
+				equipment_variant = AQU_DD_old
+				creator = root
+			}
+			create_ship = {
+				type = destroyer_2
+				equipment_variant = AQU_DD_old
+				creator = root
+			}
+			create_ship = {
+				type = light_cruiser_2
+				equipment_variant = AQU_CL_old
+				creator = root
+			}
+			create_ship = {
+				type = light_cruiser_2
+				equipment_variant = AQU_CL_old
+				creator = root
+			}
+			create_ship = {
+				type = heavy_cruiser_2
+				equipment_variant = AQU_CA_old
+				creator = root
+			}
+		}
+	}
+	#与DCAN的合作
+	focus = {
+		id = FRA_dcan
+		icon = GFX_focus_BCF_industrial_renaissance_project
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = FRA_gain_old_ships
+		prerequisite = {
+			focus = FRA_gain_old_ships
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = dockyard
+					level = 3
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+	}
+	#海外力量投射
+	focus = {
+		id = FRA_doctrine
+		icon = GFX_focus_BCF_industrial_renaissance_project
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = FRA_dcan
+		prerequisite = {
+			focus = FRA_dcan
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 3
+				category = naval_doctrine
+			}
+		}
+	}
+	#重返殖民地
+	focus = {
+		id = FRA_back_to_colony
+		icon = GFX_focus_BCF_industrial_renaissance_project
+		x = -1
+		y = 1
+		cost = 8
+		relative_position_id = FRA_doctrine
+		prerequisite = {
+			focus = FRA_doctrine
+		}
+		prerequisite = {
+			focus = FRA_blue_water_navy
+		}
+		available = {
+			has_global_flag = BCF_CIVIL_WAR_END
+			has_navy_size = {
+				size > 59
+			}
+			OR = {
+				has_navy_size = {
+					size > 1
+					type = carrier
+				}
+				has_navy_size = {
+					size > 1
+					type = battleship
+				}
+				has_navy_size = {
+					size > 1
+					type = heavy_cruiser
+				}
+			}
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_state_claim = 272
+			add_state_claim = 459
+			add_state_claim = 458
+			add_state_claim = 513
+			add_state_claim = 310
+		}
+	}
+	#征用民船
+	focus = {
+		id = FRA_gain_free_ships
+		icon = GFX_focus_BCF_industrial_renaissance_project
+		x = -1
+		y = 1
+		cost = 7
+		relative_position_id = FRA_establish_navy
+		prerequisite = {
+			focus = FRA_establish_navy
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 100
+			}
+		}
+	}
+	#扩建军港
+	focus = {
+		id = FRA_expand_ports
+		icon = GFX_focus_BCF_industrial_renaissance_project
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = FRA_gain_free_ships
+		prerequisite = {
+			focus = FRA_gain_free_ships
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					any_province_building_level = {
+						building = naval_base
+						level = 1
+						province = {
+							all_provinces = yes
+						}
+					}
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 3
+					province = {
+						limit_to_naval_base = yes
+					}
+				}
+			}
+		}
+	}
+	#建立远洋海军
+	focus = {
+		id = FRA_blue_water_navy
+		icon = GFX_focus_BCF_industrial_renaissance_project
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = FRA_expand_ports
+		prerequisite = {
+			focus = FRA_expand_ports
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				category = cv_tech
+				uses = 1
+				bonus = 1
+			}
+			add_tech_bonus = {
+				category = bb_tech
+				uses = 1
+				bonus = 1
+			}
+		}
+	}
+	#波尔多在波尔多
+	focus = {
+		id = AQU_bordeaux_in_bordeaux
+		icon = GFX_focus_BCF_second_orleans_conference
+		x = 12
+		y = 0
+		cost = 5
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+		}
+	}
+	#燃烧的鸢尾花
+	focus = {
+		id = AQU_civ_war
+		icon = GFX_focus_BCF_second_orleans_conference
+		x = -3
+		y = 1
+		cost = 2
+		relative_position_id = AQU_bordeaux_in_bordeaux
+		prerequisite = {
+			focus = AQU_bordeaux_in_bordeaux
+		}
+		available = {
+			has_global_flag = BCF_CIVIL_WAR_START
+		}
+		bypass = {
+			has_global_flag = BCF_CIVIL_WAR_END
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_war_support = 0.1
+			hidden_effect = {
+			}
+			unlock_decision_tooltip = AQU_collaberate_with_mgc
+			capital_scope = {
+				create_unit = {
+					division = "division_template = \"Franch Militia\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = AQU
+				}
+				create_unit = {
+					division = "division_template = \"Franch Militia\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = AQU
+				}
+				create_unit = {
+					division = "division_template = \"Franch Militia\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = AQU
+				}
+				create_unit = {
+					division = "division_template = \"Franch Militia\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = AQU
+				}
+			}
+		}
+	}
+	#北方的威胁
+	focus = {
+		id = AQU_northen_threat
+		icon = GFX_focus_BCF_second_orleans_conference
+		x = -1
+		y = 1
+		cost = 4
+		relative_position_id = AQU_civ_war
+		prerequisite = {
+			focus = AQU_civ_war
+		}
+		available = {
+			has_war_with = BRE
+		}
+		bypass = {
+			has_global_flag = BCF_CIVIL_WAR_END
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = AQU_eliminate_threat_from_north
+		}
+	}
+	#东方的威胁
+	focus = {
+		id = AQU_eastern_threat
+		icon = GFX_focus_BCF_second_orleans_conference
+		x = 1
+		y = 1
+		cost = 4
+		relative_position_id = AQU_civ_war
+		prerequisite = {
+			focus = AQU_civ_war
+		}
+		available = {
+			has_war_with = BRE
+		}
+		bypass = {
+			has_global_flag = BCF_CIVIL_WAR_END
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = AQU_eliminate_threat_from_east
+		}
+	}
+	#向阿尔卑斯前进
+	focus = {
+		id = AQU_sepcial_units_2
+		icon = GFX_focus_BCF_second_orleans_conference
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = AQU_eastern_threat
+		prerequisite = {
+			focus = AQU_eastern_threat
+		}
+		available = {
+			has_war_with = B02
+		}
+		bypass = {
+			NOT = {
+				country_exists = B02
+			}
+			has_global_flag = BCF_CIVIL_WAR_END
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			capital_scope = {
+				create_unit = {
+					division = "division_template = \"Aquitaine mountaineer\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = AQU
+				}
+				create_unit = {
+					division = "division_template = \"Aquitaine mountaineer\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = AQU
+				}
+			}
+		}
+	}
+	#卢瓦尔河上的怪物
+	focus = {
+		id = AQU_sepcial_units_1
+		icon = GFX_focus_BCF_second_orleans_conference
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = AQU_northen_threat
+		prerequisite = {
+			focus = AQU_northen_threat
+		}
+		available = {
+			has_war_with = BRE
+		}
+		bypass = {
+			NOT = {
+				country_exists = BRE
+			}
+			has_global_flag = BCF_CIVIL_WAR_END
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			capital_scope = {
+				create_unit = {
+					division = "division_template = \"Aquitaine Marines\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = AQU
+				}
+				create_unit = {
+					division = "division_template = \"Aquitaine Marines\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = AQU
+				}
+			}
+		}
+	}
+	#在普罗旺斯的胜利
+	focus = {
+		id = AQU_victory_in_east
+		icon = GFX_focus_BCF_second_orleans_conference
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = AQU_sepcial_units_2
+		prerequisite = {
+			focus = AQU_sepcial_units_2
+		}
+		available = {
+			NOT = {
+				country_exists = BRE
+			}
+			has_full_control_of_state = 21
+		}
+		bypass = {
+			has_global_flag = BCF_CIVIL_WAR_END
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 300
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 200
+			}
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 50
+			}
+			hidden_effect = {
+				create_equipment_variant = {
+					name = AQU_DD
+					type = destroyer_2
+					parent_version = 0
+					modules = {
+						mid_1_custom_slot = ship_torpedo_2
+						rear_1_custom_slot = ship_depth_charge_1
+						fixed_ship_battery_slot = ship_light_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = ship_sonar_1
+						fixed_ship_torpedo_slot = ship_torpedo_2
+						fixed_ship_engine_slot = light_ship_engine_2
+					}
+				}
+				create_equipment_variant = {
+					name = AQU_CA
+					type = heavy_cruiser_2
+					parent_version = 0
+					modules = {
+						mid_1_custom_slot = ship_light_medium_battery_2
+						mid_2_custom_slot = ship_light_medium_battery_2
+						rear_1_custom_slot = ship_light_medium_battery_2
+						front_1_custom_slot = ship_medium_battery_2
+						fixed_ship_battery_slot = ship_light_medium_battery_2
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+						fixed_ship_radar_slot = ship_sonar_2
+						fixed_ship_secondaries_slot = ship_CIWS_2
+						fixed_ship_engine_slot = cruiser_ship_engine_2
+						fixed_ship_armor_slot = ship_armor_cruiser_1
+					}
+				}
+			}
+			create_ship = {
+				type = heavy_cruiser_2
+				equipment_variant = AQU_CA
+				creator = root
+			}
+			create_ship = {
+				type = heavy_cruiser_2
+				equipment_variant = AQU_CA
+				creator = root
+			}
+			create_ship = {
+				type = destroyer_2
+				equipment_variant = AQU_DD
+				creator = root
+			}
+			create_ship = {
+				type = destroyer_2
+				equipment_variant = AQU_DD
+				creator = root
+			}
+			create_ship = {
+				type = destroyer_2
+				equipment_variant = AQU_DD
+				creator = root
+			}
+			create_ship = {
+				type = destroyer_2
+				equipment_variant = AQU_DD
+				creator = root
+			}
+			create_ship = {
+				type = destroyer_2
+				equipment_variant = AQU_DD
+				creator = root
+			}
+			create_ship = {
+				type = destroyer_2
+				equipment_variant = AQU_DD
+				creator = root
+			}
+			create_ship = {
+				type = destroyer_2
+				equipment_variant = AQU_DD
+				creator = root
+			}
+			create_ship = {
+				type = destroyer_2
+				equipment_variant = AQU_DD
+				creator = root
+			}
+			create_ship = {
+				type = destroyer_2
+				equipment_variant = AQU_DD
+				creator = root
+			}
+			create_ship = {
+				type = destroyer_2
+				equipment_variant = AQU_DD
+				creator = root
+			}
+		}
+	}
+	#在布列塔尼的胜利
+	focus = {
+		id = AQU_victory_in_north
+		icon = GFX_focus_BCF_second_orleans_conference
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = AQU_sepcial_units_1
+		prerequisite = {
+			focus = AQU_sepcial_units_1
+		}
+		available = {
+			NOT = {
+				country_exists = BRE
+			}
+			has_full_control_of_state = 14
+		}
+		bypass = {
+			has_global_flag = BCF_CIVIL_WAR_END
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 2000
+			}
+			hidden_effect = {
+				create_equipment_variant = {
+					name = AQU_DD
+					type = destroyer_2
+					parent_version = 0
+					modules = {
+						mid_1_custom_slot = ship_torpedo_2
+						rear_1_custom_slot = ship_depth_charge_1
+						fixed_ship_battery_slot = ship_light_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = ship_sonar_1
+						fixed_ship_torpedo_slot = ship_torpedo_2
+						fixed_ship_engine_slot = light_ship_engine_2
+					}
+				}
+				create_equipment_variant = {
+					name = AQU_SS
+					type = ship_hull_submarine_2
+					parent_version = 0
+					modules = {
+						rear_1_custom_slot = ship_torpedo_sub_2
+						fixed_ship_torpedo_slot = ship_torpedo_sub_2
+						fixed_ship_engine_slot = sub_ship_engine_2
+					}
+				}
+				create_equipment_variant = {
+					name = AQU_CV
+					type = ship_hull_carrier_2
+					parent_version = 0
+					modules = {
+						front_1_custom_slot = ship_deck_space
+						fixed_ship_deck_slot_1 = ship_deck_space
+						fixed_ship_deck_slot_2 = ship_deck_space
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_radar_slot = ship_radar_1
+						fixed_ship_engine_slot = carrier_ship_engine_2
+						fixed_ship_secondaries_slot = ship_secondaries_2
+					}
+				}
+				create_equipment_variant = {
+					name = AQU_CL
+					type = light_cruiser_2
+					parent_version = 0
+					modules = {
+						mid_1_custom_slot = ship_torpedo_2
+						mid_2_custom_slot = ship_torpedo_2
+						rear_1_custom_slot = ship_depth_charge_2
+						front_1_custom_slot = ship_light_medium_battery_2
+						fixed_ship_battery_slot = ship_light_medium_battery_2
+						fixed_ship_anti_air_slot = ship_anti_air_2
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+						fixed_ship_radar_slot = ship_sonar_2
+						fixed_ship_secondaries_slot = ship_CIWS_2
+						fixed_ship_engine_slot = cruiser_ship_engine_2
+						fixed_ship_armor_slot = ship_armor_cruiser_1
+					}
+				}
+			}
+			create_ship = {
+				type = light_cruiser_2
+				equipment_variant = AQU_CL
+				creator = root
+			}
+			create_ship = {
+				type = ship_hull_carrier_2
+				equipment_variant = AQU_CV
+				creator = root
+			}
+			create_ship = {
+				type = ship_hull_carrier_2
+				equipment_variant = AQU_CV
+				creator = root
+			}
+			create_ship = {
+				type = ship_hull_submarine_2
+				equipment_variant = AQU_SS
+				creator = root
+			}
+			create_ship = {
+				type = ship_hull_submarine_2
+				equipment_variant = AQU_SS
+				creator = root
+			}
+			create_ship = {
+				type = ship_hull_submarine_2
+				equipment_variant = AQU_SS
+				creator = root
+			}
+			create_ship = {
+				type = ship_hull_submarine_2
+				equipment_variant = AQU_SS
+				creator = root
+			}
+			create_ship = {
+				type = ship_hull_submarine_2
+				equipment_variant = AQU_SS
+				creator = root
+			}
+			create_ship = {
+				type = destroyer_2
+				equipment_variant = AQU_DD
+				creator = root
+			}
+			create_ship = {
+				type = destroyer_2
+				equipment_variant = AQU_DD
+				creator = root
+			}
+			create_ship = {
+				type = destroyer_2
+				equipment_variant = AQU_DD
+				creator = root
+			}
+			create_ship = {
+				type = destroyer_2
+				equipment_variant = AQU_DD
+				creator = root
+			}
+			create_ship = {
+				type = destroyer_2
+				equipment_variant = AQU_DD
+				creator = root
+			}
+		}
+	}
+	#巴黎在召唤
+	focus = {
+		id = AQU_conquer_paris
+		icon = GFX_focus_BCF_second_orleans_conference
+		x = 1
+		y = 1
+		cost = 5
+		relative_position_id = AQU_victory_in_north
+		prerequisite = {
+			focus = AQU_victory_in_north
+			focus = AQU_victory_in_east
+		}
+		available = {
+		}
+		bypass = {
+			has_global_flag = BCF_CIVIL_WAR_END
+			has_full_control_of_state = 16
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			hidden_effect = {
+				create_equipment_variant = {
+					name = "Medium Tank"
+					type = medium_tank_chassis_1
+					parent_version = 0
+					modules = {
+						main_armament_slot = tank_medium_cannon
+						turret_type_slot = tank_mt_turrent_1
+						suspension_type_slot = tank_bogie_suspension
+						armor_type_slot = tank_riveted_armor
+						engine_type_slot = tank_gasoline_engine
+						special_type_slot_1 = tank_radio_1
+						special_type_slot_2 = sloped_armor
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 8
+						tank_nsb_armor_upgrade = 0
+					}
+					icon = "gfx/interface/technologies/FRA_imp_main_tank.dds"
+				}
+			}
+			capital_scope = {
+				create_unit = {
+					division = "division_template = \"Aquitaine Armor\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = AQU
+				}
+			}
+		}
+	}
+	#第三条路
+	focus = {
+		id = AQU_pol_1
+		icon = GFX_focus_BCF_second_orleans_conference
+		x = 0
+		y = 1
+		cost = 2
+		relative_position_id = AQU_bordeaux_in_bordeaux
+		prerequisite = {
+			focus = AQU_bordeaux_in_bordeaux
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 15
+			}
+		}
+	}
+	#与伊比利亚的联系
+	focus = {
+		id = AQU_pol_2
+		icon = GFX_focus_BCF_second_orleans_conference
+		x = 0
+		y = 1
+		cost = 2
+		relative_position_id = AQU_pol_1
+		prerequisite = {
+			focus = AQU_pol_1
+		}
+		available = {
+			has_government = BDH
+		}
+		bypass = {
+			NOT = {
+				has_government = BDH
+			}
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			BDH = {
+				diplomatic_relation = {
+					country = AQU
+					relation = non_aggression_pact
+					active = yes
+				}
+			}
+			hidden_effect = {
+				division_template = {
+					name = "BDH Volunteer"
+					is_locked = yes
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 0
+							y = 2
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 2
+						}
+						infantry = {
+							x = 2
+							y = 0
+						}
+						infantry = {
+							x = 2
+							y = 1
+						}
+						infantry = {
+							x = 2
+							y = 2
+						}
+						artillery_brigade = {
+							x = 3
+							y = 0
+						}
+						artillery_brigade = {
+							x = 3
+							y = 1
+						}
+						artillery_brigade = {
+							x = 3
+							y = 2
+						}
+						light_armor = {
+							x = 4
+							y = 0
+						}
+					}
+					support = {
+						anti_tank = {
+							x = 0
+							y = 0
+						}
+					}
+				}
+			}
+			capital_scope = {
+				create_unit = {
+					division = "division_template = \"BDH Volunteer\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = AQU
+				}
+				create_unit = {
+					division = "division_template = \"BDH Volunteer\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = AQU
+				}
+			}
+		}
+	}
+	#BC派复兴
+	focus = {
+		id = AQU_pol_3
+		icon = GFX_focus_BCF_second_orleans_conference
+		x = 0
+		y = 1
+		cost = 2
+		relative_position_id = AQU_pol_2
+		prerequisite = {
+			focus = AQU_pol_2
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = AQU_revival_BC_party
+		}
+	}
+	#回归忠诚的巴黎
+	focus = {
+		id = AQU_pol_4
+		icon = GFX_focus_BCF_second_orleans_conference
+		x = 0
+		y = 1
+		cost = 2
+		relative_position_id = AQU_pol_3
+		prerequisite = {
+			focus = AQU_pol_3
+		}
+		available = {
+			has_global_flag = BCF_CIVIL_WAR_END
+			has_full_control_of_state = 16
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			set_capital = 16
+			add_political_power = 150
+			BCF_remove_civil_warloard_core = yes
+		}
+	}
+	#清除自由派
+	focus = {
+		id = AQU_pol_5
+		icon = GFX_focus_BCF_second_orleans_conference
+		x = 2
+		y = 1
+		cost = 2
+		relative_position_id = AQU_pol_4
+		prerequisite = {
+			focus = AQU_pol_4
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -10
+			}
+			add_stability = 0.05
+		}
+	}
+	#大革命的传承
+	focus = {
+		id = AQU_add_ws
+		icon = GFX_focus_BCF_second_orleans_conference
+		x = 2
+		y = 1
+		cost = 2
+		relative_position_id = AQU_bordeaux_in_bordeaux
+		prerequisite = {
+			focus = AQU_bordeaux_in_bordeaux
+		}
+		available = {
+			has_global_flag = BCF_CIVIL_WAR_START
+			NOT = {
+				has_global_flag = BCF_CIVIL_WAR_END
+			}
+		}
+		bypass = {
+			has_idea = limited_conscription
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = limited_conscription
+		}
+	}
+	#重建革命卫队
+	focus = {
+		id = AQU_additional_troops
+		icon = GFX_focus_BCF_second_orleans_conference
+		x = 0
+		y = 1
+		cost = 2
+		relative_position_id = AQU_add_ws
+		prerequisite = {
+			focus = AQU_add_ws
+		}
+		available = {
+			has_global_flag = BCF_CIVIL_WAR_START
+			NOT = {
+				has_global_flag = BCF_CIVIL_WAR_END
+			}
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			unlock_decision_tooltip = AQU_call_up_militia
+		}
+	}
+	#Viva la France
+	focus = {
+		id = AQU_viva_la_france
+		icon = GFX_focus_BCF_second_orleans_conference
+		x = 18
+		y = 0
+		cost = 5
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+		}
+	}
+	#强化民族自豪
+	focus = {
+		id = AQU_add_ws_2
+		icon = GFX_focus_BCF_second_orleans_conference
+		x = -1
+		y = 1
+		cost = 2
+		relative_position_id = AQU_viva_la_france
+		prerequisite = {
+			focus = AQU_viva_la_france
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_war_support = 0.15
+		}
+	}
+	#这就是法兰西
+	focus = {
+		id = AQU_cest_la_france
+		icon = GFX_focus_BCF_second_orleans_conference
+		x = 0
+		y = 1
+		cost = 2
+		relative_position_id = AQU_add_ws_2
+		prerequisite = {
+			focus = AQU_add_ws_2
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = AQU_teach_from_bordeaux
+		}
+	}
+	#元首的演讲
+	focus = {
+		id = AQU_speech
+		icon = GFX_focus_BCF_second_orleans_conference
+		x = 0
+		y = 1
+		cost = 2
+		relative_position_id = AQU_cest_la_france
+		prerequisite = {
+			focus = AQU_cest_la_france
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			country_event = {
+				id = AQU.2
+			}
+		}
+	}
+	#绝对统治
+	focus = {
+		id = AQU_pol_idea_1
+		icon = GFX_focus_BCF_second_orleans_conference
+		x = 1
+		y = 1
+		cost = 2
+		relative_position_id = AQU_viva_la_france
+		prerequisite = {
+			focus = AQU_viva_la_france
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = AQU_rule_from_bordeaux_1
+		}
+	}
+	#肃清左翼势力
+	focus = {
+		id = AQU_remove_communism
+		icon = GFX_focus_BCF_second_orleans_conference
+		x = 0
+		y = 1
+		cost = 2
+		relative_position_id = AQU_pol_idea_1
+		prerequisite = {
+			focus = AQU_pol_idea_1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 20
+			}
+		}
+	}
+	#波尔多的意志
+	focus = {
+		id = AQU_pol_idea_2
+		icon = GFX_focus_BCF_second_orleans_conference
+		x = 0
+		y = 1
+		cost = 2
+		relative_position_id = AQU_remove_communism
+		prerequisite = {
+			focus = AQU_remove_communism
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AQU_rule_from_bordeaux_1
+				add_idea = AQU_rule_from_bordeaux_2
+			}
+		}
+	}
+	#重建BC学院
+	focus = {
+		id = AQU_rebuild_bc
+		icon = GFX_focus_BCF_second_orleans_conference
+		x = 6
+		y = 12
+		cost = 2
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AQU_rule_from_bordeaux_1
+				add_idea = AQU_rule_from_bordeaux_2
+			}
+			
+		}
+	}
+	#肃清左翼势力
+	focus = {
+		id = AQU_remove_communism
+		icon = GFX_focus_BCF_second_orleans_conference
+		x = 0
+		y = 1
+		cost = 2
+		relative_position_id = AQU_remove_communism
+		prerequisite = {
+			focus = AQU_remove_communism
+		}
+		available = {
+		}
+		bypass = {
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AQU_rule_from_bordeaux_1
+				add_idea = AQU_rule_from_bordeaux_2
+			}
+		}
+	}
+}

@@ -1,0 +1,325 @@
+add_namespace = AQU
+
+#介绍
+country_event = {
+	id = AQU.1
+	title = AQU.1.t
+	desc = AQU.1.d
+	picture = GFX_report_event_german_speech
+	fire_only_once = yes
+	trigger = {
+		tag = AQU
+		has_global_flag = BCF_CIVIL_WAR_START
+	}
+	option = {
+		name = AQU.1.a
+		BDH = {
+			if = {
+				limit = {
+					has_government = AQU
+				}
+				add_ideas = AQU_relationship_with_bordeaux
+			}
+		}
+		hidden_effect = {
+		}
+		19 = {
+			create_unit = {
+				division = "division_template = \"AQU Guard\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+				owner = AQU
+			}
+			create_unit = {
+				division = "division_template = \"AQU Guard\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+				owner = AQU
+			}
+			create_unit = {
+				division = "division_template = \"AQU Guard\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+				owner = AQU
+			}
+			create_unit = {
+				division = "division_template = \"AQU Guard\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+				owner = AQU
+			}
+			create_unit = {
+				division = "division_template = \"Franch Militia\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+				owner = AQU
+			}
+			create_unit = {
+				division = "division_template = \"Franch Militia\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+				owner = AQU
+			}
+			create_unit = {
+				division = "division_template = \"Franch Militia\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+				owner = AQU
+			}
+			create_unit = {
+				division = "division_template = \"Franch Militia\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+				owner = AQU
+			}
+			create_unit = {
+				division = "division_template = \"Franch Militia\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+				owner = AQU
+			}
+			create_unit = {
+				division = "division_template = \"Franch Militia\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+				owner = AQU
+			}
+			create_unit = {
+				division = "division_template = \"Franch Militia\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+				owner = AQU
+			}
+			create_unit = {
+				division = "division_template = \"Franch Militia\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+				owner = AQU
+			}
+			create_unit = {
+				division = "division_template = \"Franch Militia\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+				owner = AQU
+			}
+			create_unit = {
+				division = "division_template = \"Franch Militia\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+				owner = AQU
+			}
+		}
+
+	}
+}
+
+#波尔多的演讲
+country_event = {
+	id = AQU.2
+	title = AQU.2.t
+	desc = AQU.2.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = AQU.2.a
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		add_political_power = 20
+
+	}
+}
+#与马奇诺合作？
+country_event = {
+	id = AQU.3
+	title = AQU.3.t
+	desc = AQU.3.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+	}
+	#互不侵犯
+	option = {
+		name = AQU.3.a
+		MGC = {
+			country_event = {
+				id = AQU.4
+			}
+		}
+	}
+	#合作
+	option = {
+		name = AQU.3.b
+		MGC = {
+			country_event = {
+				id = AQU.5
+			}
+		}
+	}
+}
+#马奇诺：BC派要求互不侵犯
+country_event = {
+	id = AQU.4
+	title = AQU.4.t
+	desc = AQU.4.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+	}
+	#同意
+	option = {
+		name = AQU.4.a
+		white_peace = AQU
+		set_global_flag = bc_mgc_non_aggression_formed
+		diplomatic_relation = {
+			country = AQU
+			relation = non_aggression_pact
+			active = yes
+		}
+		AQU = {
+			country_event = {
+				id = AQU.6
+			}
+		}
+	}
+	#拒绝
+	option = {
+		name = AQU.4.b
+		add_political_power = 20
+		AQU = {
+			country_event = {
+				id = AQU.7
+			}
+		}
+	}
+}
+#马奇诺：BC派的橄榄枝
+country_event = {
+	id = AQU.5
+	title = AQU.5.t
+	desc = AQU.5.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+	}
+	#同意
+	option = {
+		name = AQU.5.a
+		white_peace = AQU
+		AQU = {
+			create_faction = AQUMGCfaction
+			add_to_faction = MGC
+		}
+		set_global_flag = bc_mgc_alliance_formed
+	}
+	#拒绝
+	option = {
+		name = AQU.5.b
+		add_political_power = 25
+		AQU = {
+			country_event = {
+				id = AQU.7
+			}
+		}
+
+	}
+}
+
+#马奇诺同意互不侵犯
+country_event = {
+	id = AQU.6
+	title = AQU.6.t
+	desc = AQU.6.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = AQU.6.a
+		add_political_power = 25
+	}
+}
+#马奇诺拒绝邀请
+country_event = {
+	id = AQU.7
+	title = AQU.7.t
+	desc = AQU.7.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = AQU.7.a
+		add_war_support = 0.05
+	}
+}
+#信任的破裂
+country_event = {
+	id = AQU.8
+	title = AQU.8.t
+	desc = AQU.8.d
+	picture = GFX_report_event_german_speech
+	fire_only_once = yes
+	trigger = {
+		tag = AQU
+		has_global_flag = bc_mgc_non_aggression_formed
+		has_global_flag = BCF_CIVIL_WAR_START
+		NOT = {
+			country_exists = B01
+			country_exists = B02
+			country_exists = ORL
+			has_war_with = MGC
+		}
+	}
+	option = {
+		name = AQU.8.a
+		declare_war_on = {
+			target = MGC
+			type = take_core_state
+		}
+	}
+}
+#BC-马奇诺联盟统一BCF
+country_event = {
+	id = AQU.9
+	title = AQU.9.t
+	desc = AQU.9.d
+	picture = GFX_report_event_german_speech
+	trigger = {
+		OR = {
+			tag = AQU
+			tag = MGC
+		}
+		has_global_flag = BCF_CIVIL_WAR_START
+		has_global_flag = bc_mgc_alliance_formed
+		has_war = no
+		NOT = {
+			country_exists = B01
+			country_exists = B02
+			country_exists = ORL
+			has_global_flag = bc_mgc_alliance_win_civil_wars
+		}
+	}
+	option = {
+		name = AQU.9.a
+		add_ideas = BCF_rebuild_1
+		set_global_flag = BCF_CIVIL_WAR_END
+		set_global_flag = bc_mgc_alliance_win_civil_war
+	}
+}
+#归于同一？
+country_event = {
+	id = AQU.10
+	title = AQU.10.t
+	desc = AQU.10.d
+	picture = GFX_report_event_german_speech
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = AQU.10.a
+		AQU = {
+			annex_country = {
+				target = MGC
+				transfer_troops = yes
+			}
+			dismantle_faction = yes
+		}
+		MGC = {
+			every_character = {
+				limit = {
+					is_unit_leader = yes
+				}
+				set_nationality = AQU
+			}
+		}
+
+	}
+	option = {
+		name = AQU.10.b
+		add_stability = -0.2
+		add_war_support = -0.2
+		AQU = {
+			dismantle_faction = yes
+		}
+		declare_war_on = {
+			target = AQU
+			type = take_core_state
+		}
+	}
+}
