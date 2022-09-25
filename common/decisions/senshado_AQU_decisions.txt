@@ -1,0 +1,81 @@
+
+aqu_government = {
+	#与马奇诺合作
+	AQU_collaberate_with_mgc = {
+		allowed = {
+			tag = AQU
+		}
+		visible = {
+			tag = AQU
+			has_war = yes
+			NOT = {
+				has_global_flag = BCF_CIVIL_WAR_END
+			}
+			has_global_flag = BCF_CIVIL_WAR_START
+		}
+		available = {
+			has_completed_focus = AQU_civ_war
+		}
+		cost = 5
+		days_remove = 7
+		fire_only_once = yes
+		complete_effect = {
+			country_event = {
+				id = AQU.3
+			}
+		}
+	}
+	#征召民兵
+	AQU_call_up_militia = {
+		allowed = {
+			tag = AQU
+		}
+		visible = {
+			has_war = yes
+			NOT = {
+				has_global_flag = BCF_CIVIL_WAR_END
+			}
+			has_global_flag = BCF_CIVIL_WAR_START
+			has_completed_focus = AQU_additional_troops
+		}
+		available = {
+		}
+		cost = 5
+		days_remove = 7
+		fire_only_once = yes
+		complete_effect = {
+			capital_scope = {
+				create_unit = {
+					division = "division_template = \"Franch Militia\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = AQU
+				}
+				create_unit = {
+					division = "division_template = \"Franch Militia\" start_experience_factor = 0.3 start_equipment_factor = 1.0"
+					owner = AQU
+				}
+			}
+		}
+	}
+	#要求马奇诺整合
+	AQU_integrate_MGC = {
+		allowed = {
+			tag = AQU
+		}
+		visible = {
+			tag = AQU
+			has_global_flag = BCF_CIVIL_WAR_END
+			is_in_faction_with = MGC
+		}
+		cost = 20
+		days_remove = 15
+		fire_only_once = yes
+		complete_effect = {
+			MGC = {
+				country_event = {
+					id = AQU.10
+				}
+			}
+		}
+	}
+
+}
